@@ -2,7 +2,7 @@ from datetime import datetime, timezone
 
 from openpyxl import load_workbook
 
-from eu_cyber_news_scraper.exporter import export_workbook, safe_excel_text, write_run_summary
+from eu_cyber_news_scraper.exporter import EXCEL_SUMMARY_LIMIT, export_workbook, safe_excel_text, write_run_summary
 from eu_cyber_news_scraper.models import Article, SourceStatus
 
 
@@ -21,6 +21,8 @@ def test_exporter_creates_required_sheets_and_summary(tmp_path):
         matched_keywords=["cyber resilience act"],
         relevance_score=4,
         confidence_level="高",
+        summary="x" * 700,
+        alternate_urls=["https://mirror.example.eu/news/cra"],
     )
     status = SourceStatus("eu", "歐盟機關", "EU", True, True, "feed", 1, 1, 0.2)
     # Coverage validation requires the production source inventory.
@@ -28,7 +30,7 @@ def test_exporter_creates_required_sheets_and_summary(tmp_path):
 
     sources = list(load_sources())
     path = export_workbook([article], [status], sources, tmp_path / "result.xlsx")
-    workbook = load_workbook(path, read_only=True)
+    workbook = load_workbook(path)
     assert workbook.sheetnames == [
         "全部命中新聞",
         "CRA_CSA_NIS2_CER",
@@ -43,6 +45,9 @@ def test_exporter_creates_required_sheets_and_summary(tmp_path):
     assert workbook["全部命中新聞"]["J2"].value == "《網路韌性法》指引"
     assert workbook["全部命中新聞"]["A2"].fill.fgColor.rgb == "00FFC000"
     assert workbook["CRA_CSA_NIS2_CER"]["A2"].fill.fill_type is None
+    assert len(workbook["全部命中新聞"]["K2"].value) == EXCEL_SUMMARY_LIMIT
+    assert workbook["全部命中新聞"]["Q2"].value == "https://mirror.example.eu/news/cra"
+    assert workbook["全部命中新聞"].row_dimensions[2].height == 90
 
     now = datetime.now(timezone.utc)
     summary = write_run_summary(
@@ -56,6 +61,7 @@ def test_exporter_creates_required_sheets_and_summary(tmp_path):
     )
     assert '"status": "complete"' in summary.read_text(encoding="utf-8")
     assert '"source_summary"' in summary.read_text(encoding="utf-8")
+    assert '"schema_version": 4' in summary.read_text(encoding="utf-8")
 
 
 def test_excel_formula_text_is_escaped():

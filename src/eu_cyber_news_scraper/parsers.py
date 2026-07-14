@@ -20,6 +20,20 @@ DATE_SETTINGS = {
     "PREFER_DAY_OF_MONTH": "first",
 }
 
+NAVIGATION_TITLES = {
+    "next",
+    "next page",
+    "previous",
+    "previous page",
+    "nächste seite",
+    "vorherige seite",
+    "weiter",
+    "zurück",
+    "page suivante",
+    "page précédente",
+    "wissenschaft",
+}
+
 
 def parse_datetime(value: str | None, languages: Iterable[str] = ()) -> datetime | None:
     if not value:
@@ -119,20 +133,10 @@ def parse_listing(html: str, source: Source, base_url: str) -> list[Article]:
         if url in seen_urls:
             continue
         link_text = plain_text(link.get_text(" "))
-        context = candidate
-        if candidate.name == "a":
-            # Government cards commonly keep the date beside the title link.
-            # Use the nearest ancestor containing date metadata, without
-            # climbing far enough to mix neighbouring cards.
-            for _ in range(3):
-                if context.parent is None:
-                    break
-                context = context.parent
-                if context.select_one("time") or _extract_date_text(context.get_text(" ")):
-                    break
+        context = _candidate_context(link) if candidate.name == "a" else candidate
         title_node = context.select_one("h1, h2, h3, h4") if len(link_text) < 8 and context.name != "a" else None
         title = plain_text(title_node.get_text(" ") if title_node else link.get_text(" "))
-        if len(title) < 8:
+        if len(title) < 8 or _looks_like_navigation_title(title):
             continue
         time_node = context.select_one("time") if context.name != "a" else None
         date_text = ""
@@ -202,6 +206,7 @@ def enrich_from_detail(article: Article, html: str) -> Article:
     structured = _article_json_ld(soup)
     title = _first(
         structured.get("headline"),
+        _heading_value(soup),
         _meta(soup, "property", "og:title"),
         _meta(soup, "name", "twitter:title"),
         soup.title.string if soup.title else "",
@@ -214,9 +219,10 @@ def enrich_from_detail(article: Article, html: str) -> Article:
     date_value = _first(
         structured.get("datePublished"),
         _meta(soup, "property", "article:published_time"),
+        _visible_date_value(soup),
+        _title_date_value(soup),
         _meta(soup, "name", "date"),
         _time_value(soup),
-        _extract_date_text(soup.get_text(" ", strip=True)),
     )
     if title and len(plain_text(title)) >= 8:
         article.title = plain_text(title)
@@ -244,6 +250,26 @@ def allowed_article_url(source: Source, url: str) -> bool:
 
 def _date_languages(language: str) -> tuple[str, ...]:
     return {"en": ("en",), "fr": ("fr",), "de": ("de",)}.get(language, ())
+
+
+def _candidate_context(link):
+    context = link
+    for parent in link.parents:
+        if getattr(parent, "name", None) in {"article", "li"}:
+            return parent
+        classes = " ".join(parent.get("class", ())).casefold() if hasattr(parent, "get") else ""
+        if re.search(r"(?:^|[-_\s])(card|item|news|teaser|result)(?:$|[-_\s])", classes):
+            return parent
+        if getattr(parent, "name", None) in {"main", "body"}:
+            break
+    return context
+
+
+def _looks_like_navigation_title(value: str) -> bool:
+    normalized = plain_text(value).casefold().strip(" .:›»←→")
+    if normalized in NAVIGATION_TITLES:
+        return True
+    return bool(re.fullmatch(r"(?:page|seite)\s+\d+", normalized))
 
 
 def _extract_date_text(value: str) -> str:
@@ -295,6 +321,22 @@ def _time_value(soup: BeautifulSoup) -> str:
     if not node:
         return ""
     return node.get("datetime") or node.get_text(" ")
+
+
+def _visible_date_value(soup: BeautifulSoup) -> str:
+    node = soup.select_one(
+        "[class*='publish' i], [class*='date' i], [id*='publish' i], [id*='date' i]"
+    )
+    return _extract_date_text(node.get_text(" ", strip=True)) if node else ""
+
+
+def _title_date_value(soup: BeautifulSoup) -> str:
+    return _extract_date_text(soup.title.get_text(" ", strip=True)) if soup.title else ""
+
+
+def _heading_value(soup: BeautifulSoup) -> str:
+    node = soup.select_one("main h1, article h1, h1")
+    return node.get_text(" ", strip=True) if node else ""
 
 
 def _first(*values):

@@ -39,6 +39,6 @@ def test_http_client_reuses_thread_local_retry_session(monkeypatch):
     assert first is second
     assert first.raised
     assert len(sessions) == 1
-    assert sessions[0].calls == [("https://example.eu/one", 7), ("https://example.eu/two", 7)]
+    assert sessions[0].calls == [("https://example.eu/one", (7, 7)), ("https://example.eu/two", (7, 7))]
     assert {prefix for prefix, _ in sessions[0].mounts} == {"https://", "http://"}
     assert "EU-cyber-legal-observation" in sessions[0].headers["User-Agent"]

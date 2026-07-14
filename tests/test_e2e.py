@@ -1,11 +1,11 @@
 import json
-from datetime import datetime, timezone
 from types import SimpleNamespace
 
 from openpyxl import load_workbook
 
 from eu_cyber_news_scraper.cli import _run_pipeline
 from eu_cyber_news_scraper.models import Source
+from eu_cyber_news_scraper.periods import resolve_period
 
 
 class Response:
@@ -40,17 +40,20 @@ def test_offline_pipeline_writes_atomic_artifacts_and_quality_metadata(monkeypat
     )
     args = SimpleNamespace(
         timeout=1, workers=1, all=False, include_undated=False, no_detail=True,
-        topic=None, jsonl=True, fail_on_degraded=False,
+        topic=None, jsonl=True, fail_on_degraded=False, source_budget=10, state_dir=str(tmp_path / ".state"),
     )
     output = tmp_path / "result.xlsx"
+    period = resolve_period("1150501", "1150502", None)
     _run_pipeline(
-        args, [source], datetime(2026, 5, 1, tzinfo=timezone.utc),
-        datetime(2026, 5, 3, tzinfo=timezone.utc), output, "run-e2e",
+        args, [source], period.since, period.until, output, "run-e2e", period=period,
     )
     workbook = load_workbook(output, read_only=True)
     assert "官方規範與執法" in workbook.sheetnames
     summary = json.loads(output.with_suffix(".run.json").read_text(encoding="utf-8"))
     assert summary["run_id"] == "run-e2e"
     assert summary["translation"]["success_rate"] == 1
-    assert (tmp_path / ".source-health.json").exists()
+    assert summary["schema_version"] == 4
+    assert summary["period"]["raw_since"] == "1150501"
+    assert summary["period"]["since_calendar"] == "roc"
+    assert (tmp_path / ".state" / ".source-health.json").exists()
     assert output.with_suffix(".jsonl").exists()

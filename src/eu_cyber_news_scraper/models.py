@@ -51,6 +51,7 @@ class Article:
     authority_level: str = ""
     content_kind: str = ""
     confidence_level: str = ""
+    alternate_urls: list[str] = field(default_factory=list)
 
 
 @dataclass(frozen=True)
@@ -76,6 +77,10 @@ class SourceStatus:
     in_range_count: int = 0
     freshness_lag_days: float = 0.0
     content_warning: str = ""
+    fetch_status: str = "ok"
+    health_status: str = "healthy"
+    invalid_date_count: int = 0
+    timeout_count: int = 0
 
 
 @dataclass

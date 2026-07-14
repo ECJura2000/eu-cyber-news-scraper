@@ -52,15 +52,26 @@ def assess_and_record_health(
                 )
                 baseline_failure = True
 
+        previous_baseline_failure = bool(prior and prior[-1].get("baseline_failure"))
+        if not status.success:
+            health_status = "degraded" if status.critical else "attention"
+        elif status.critical and baseline_failure and previous_baseline_failure:
+            health_status = "degraded"
+        elif alerts:
+            health_status = "attention"
+        else:
+            health_status = "healthy"
+
         warning = status.warning
         if alerts:
             warning = f"{warning} 健康基線警示：{' '.join(alerts)}".strip()
         assessed_status = replace(
             status,
-            success=status.success and not (status.critical and baseline_failure),
             warning=warning,
             historical_median_count=median,
             health_alerts=tuple(alerts),
+            fetch_status="ok" if status.success else "failed",
+            health_status=health_status,
         )
         assessed.append(assessed_status)
         rows = history.setdefault(status.source_id, [])
@@ -68,11 +79,13 @@ def assess_and_record_health(
             {
                 "run_id": run_id,
                 "recorded_at": recorded_at.isoformat(),
-                "success": assessed_status.success,
+                "success": status.success,
                 "raw_count": status.raw_count,
                 "newest_published_at": status.newest_published_at,
                 "in_range_count": status.in_range_count,
                 "freshness_lag_days": status.freshness_lag_days,
+                "baseline_failure": baseline_failure,
+                "health_status": health_status,
             }
         )
         history[status.source_id] = rows[-12:]

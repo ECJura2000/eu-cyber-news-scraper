@@ -2,7 +2,14 @@ import json
 import time
 
 from eu_cyber_news_scraper.models import Article
-from eu_cyber_news_scraper.translation import _translate_with_fallback, load_translations, translate_article_titles
+from eu_cyber_news_scraper.translation import (
+    _translate_with_fallback,
+    _translation_circuit_failures,
+    _translation_timeout,
+    _translation_workers,
+    load_translations,
+    translate_article_titles,
+)
 
 
 def article(title: str) -> Article:
@@ -112,3 +119,28 @@ def test_translation_normalizes_taiwan_terminology():
     from eu_cyber_news_scraper.translation import _to_taiwan_traditional
 
     assert _to_taiwan_traditional("数字产品、人工智能、算法、数据和芯片") == "數位產品、人工智慧、演算法、資料和晶片"
+
+
+def test_translation_configuration_falls_back_on_invalid_environment(monkeypatch):
+    monkeypatch.setenv("EU_CYBER_NEWS_TRANSLATION_WORKERS", "invalid")
+    monkeypatch.setenv("EU_CYBER_NEWS_TRANSLATION_TIMEOUT", "invalid")
+    monkeypatch.setenv("EU_CYBER_NEWS_TRANSLATION_CIRCUIT_FAILURES", "invalid")
+    assert _translation_workers() == 4
+    assert _translation_timeout() == 10
+    assert _translation_circuit_failures() == 3
+
+
+def test_translation_cache_rejects_invalid_payloads(monkeypatch, tmp_path):
+    cache = tmp_path / "translations.json"
+    monkeypatch.setenv("EU_CYBER_NEWS_TRANSLATION_CACHE", str(cache))
+    cache.write_text("not json", encoding="utf-8")
+    assert load_translations() == {}
+    cache.write_text("[]", encoding="utf-8")
+    assert load_translations() == {}
+    cache.write_text(json.dumps({"translations": []}), encoding="utf-8")
+    assert load_translations() == {}
+
+
+def test_empty_article_list_needs_no_translation():
+    report = translate_article_titles([])
+    assert report.total == 0

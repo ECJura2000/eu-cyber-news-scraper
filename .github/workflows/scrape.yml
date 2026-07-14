@@ -4,15 +4,26 @@ on:
   workflow_dispatch:
     inputs:
       days:
-        description: Days to look back
-        default: "14"
-        required: true
+        description: Days to look back; leave blank when using since/until
+        default: ""
+        required: false
+      since:
+        description: Start date, Gregorian or ROC calendar
+        required: false
+      until:
+        description: Inclusive end date, Gregorian or ROC calendar
+        required: false
   schedule:
     - cron: "0 0 * * 1"
+
+concurrency:
+  group: weekly-eu-cyber-news
+  cancel-in-progress: false
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     permissions:
       contents: read
     steps:
@@ -23,6 +34,12 @@ jobs:
           cache: pip
       - run: python -m pip install --upgrade "pip>=26.1.2"
       - run: python -m pip install -e .
+      - uses: actions/cache@v4
+        with:
+          path: .state
+          key: eu-news-state-${{ github.run_id }}
+          restore-keys: |
+            eu-news-state-
       - name: Smoke-test critical sources without translation
         run: >-
           python -m eu_cyber_news_scraper --days 60 --all --no-translate
@@ -30,7 +47,19 @@ jobs:
           --source fr_cybermalveillance --source de_bsi_news --source ie_ncsc
           --source ie_comreg --output /tmp/critical-source-smoke.xlsx --fail-on-degraded
       - name: Scrape official sources
-        run: python -m eu_cyber_news_scraper --days "${{ inputs.days || '14' }}" --jsonl --fail-on-degraded
+        shell: bash
+        env:
+          DAYS: ${{ inputs.days }}
+          SINCE: ${{ inputs.since }}
+          UNTIL: ${{ inputs.until }}
+        run: |
+          args=(--jsonl --fail-on-degraded --state-dir .state --source-budget 60)
+          if [[ -n "$SINCE" || -n "$UNTIL" ]]; then
+            args+=(--since "$SINCE" --until "$UNTIL")
+          else
+            args+=(--days "${DAYS:-14}")
+          fi
+          python -m eu_cyber_news_scraper "${args[@]}"
       - uses: actions/upload-artifact@v7
         with:
           name: eu-cyber-news-${{ github.run_id }}

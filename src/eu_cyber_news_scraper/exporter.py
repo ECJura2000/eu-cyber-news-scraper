@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 import json
+import math
 import os
 import tempfile
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 from openpyxl import Workbook, load_workbook
@@ -12,6 +13,7 @@ from openpyxl.utils import get_column_letter
 
 from .coverage import load_coverage
 from .models import Article, Source, SourceStatus
+from .periods import PeriodSelection
 from .translation import TranslationReport
 
 ARTICLE_HEADERS = (
@@ -31,6 +33,7 @@ ARTICLE_HEADERS = (
     "關聯分數",
     "可信度",
     "官方原文",
+    "其他官方連結",
     "抓取方式",
     "發現來源",
 )
@@ -39,6 +42,7 @@ FORMULA_PREFIXES = ("=", "+", "-", "@")
 HIGH_CONFIDENCE_FILL = PatternFill("solid", fgColor="FFC000")
 MEDIUM_CONFIDENCE_FILL = PatternFill("solid", fgColor="FFF2CC")
 LOW_CONFIDENCE_FILL = PatternFill("solid", fgColor="FFFCE6")
+EXCEL_SUMMARY_LIMIT = 500
 
 
 def safe_excel_text(value: str) -> str:
@@ -119,6 +123,7 @@ def write_jsonl(articles: list[Article], output_path: str | Path) -> Path:
                     "title_zh_tw": article.title_zh_tw,
                     "summary": article.summary,
                     "url": article.url,
+                    "alternate_urls": article.alternate_urls,
                     "matched_topics": article.matched_topics,
                     "matched_keywords": article.matched_keywords,
                     "relevance_score": article.relevance_score,
@@ -150,12 +155,13 @@ def _write_articles(ws, articles: list[Article], *, highlight_matches: bool = Fa
                 article.language,
                 safe_excel_text(article.title),
                 safe_excel_text(article.title_zh_tw),
-                safe_excel_text(article.summary),
+                safe_excel_text(_excel_summary(article.summary)),
                 "；".join(article.matched_topics),
                 "；".join(article.matched_keywords),
                 article.relevance_score,
                 article.confidence_level,
                 article.url,
+                "\n".join(article.alternate_urls),
                 article.fetched_via,
                 "；".join(article.discovered_by or [article.source_id]),
             )
@@ -170,11 +176,11 @@ def _write_articles(ws, articles: list[Article], *, highlight_matches: bool = Fa
             }.get(article.confidence_level, LOW_CONFIDENCE_FILL)
             for cell in ws[ws.max_row]:
                 cell.fill = fill
-    _style_table(ws, widths=(8, 12, 28, 18, 18, 18, 14, 12, 56, 56, 72, 36, 44, 12, 12, 64, 28, 32))
+    _style_table(ws, widths=(8, 12, 28, 18, 18, 18, 14, 12, 56, 56, 72, 36, 44, 12, 12, 64, 64, 28, 32))
 
 
 def _write_statuses(ws, statuses: list[SourceStatus]) -> None:
-    ws.append(("來源代碼", "國家", "機關", "必要來源", "抓取健康", "抓取方式", "抓取頁數", "原始筆數", "期間內筆數", "有日期筆數", "無日期比例", "唯一標題比例", "歷史中位數", "命中筆數", "秒數", "最新日期", "新鮮度落後天數", "健康警示", "抓取警示", "內容結果", "錯誤"))
+    ws.append(("來源代碼", "國家", "機關", "必要來源", "抓取狀態", "健康狀態", "抓取方式", "抓取頁數", "原始筆數", "期間內筆數", "有日期筆數", "無效未來日期", "逾時次數", "無日期比例", "唯一標題比例", "歷史中位數", "命中筆數", "秒數", "最新日期", "新鮮度落後天數", "健康警示", "抓取警示", "內容結果", "錯誤"))
     for status in statuses:
         ws.append(
             (
@@ -182,12 +188,15 @@ def _write_statuses(ws, statuses: list[SourceStatus]) -> None:
                 status.country,
                 safe_excel_text(status.source_name),
                 "是" if status.critical else "否",
-                "是" if status.success else "否",
+                status.fetch_status,
+                status.health_status,
                 status.fetched_via,
                 status.pages_fetched,
                 status.raw_count,
                 status.in_range_count,
                 status.dated_count,
+                status.invalid_date_count,
+                status.timeout_count,
                 status.undated_ratio,
                 status.unique_title_ratio,
                 status.historical_median_count,
@@ -201,7 +210,7 @@ def _write_statuses(ws, statuses: list[SourceStatus]) -> None:
                 safe_excel_text(status.error),
             )
         )
-    _style_table(ws, widths=(22, 10, 30, 12, 12, 20, 12, 12, 12, 12, 14, 14, 14, 12, 10, 26, 16, 52, 52, 52, 72))
+    _style_table(ws, widths=(22, 10, 30, 12, 14, 14, 20, 12, 12, 12, 12, 16, 12, 14, 14, 14, 12, 10, 26, 16, 52, 52, 52, 72))
 
 
 def _write_sources(ws, sources: list[Source]) -> None:
@@ -250,7 +259,7 @@ def _write_coverage(ws, sources: list[Source]) -> None:
     _style_table(ws, widths=(48, 10, 76, 62, 76, 76, 76, 16))
 
 
-def _style_table(ws, widths: tuple[int, ...]) -> None:
+def _style_table(ws, widths: tuple[int, ...], max_row_height: float = 90) -> None:
     header_fill = PatternFill("solid", fgColor="1F4E78")
     for cell in ws[1]:
         cell.font = Font(color="FFFFFF", bold=True)
@@ -259,8 +268,15 @@ def _style_table(ws, widths: tuple[int, ...]) -> None:
     for index, width in enumerate(widths, 1):
         ws.column_dimensions[get_column_letter(index)].width = width
     for row in ws.iter_rows(min_row=2):
-        for cell in row:
+        estimated_lines = 1
+        for cell, width in zip(row, widths):
             cell.alignment = Alignment(vertical="top", wrap_text=True)
+            text = str(cell.value or "")
+            estimated_lines = max(
+                estimated_lines,
+                sum(max(1, math.ceil(len(part) / max(8, width))) for part in text.splitlines() or [""]),
+            )
+        ws.row_dimensions[row[0].row].height = min(max_row_height, max(18, estimated_lines * 15))
     ws.freeze_panes = "A2"
     ws.auto_filter.ref = ws.dimensions
 
@@ -287,21 +303,41 @@ def write_run_summary(
     statuses: list[SourceStatus],
     run_id: str = "",
     translation_report: TranslationReport | None = None,
+    period: PeriodSelection | None = None,
+    discovered_article_count: int | None = None,
 ) -> Path:
     workbook_path = Path(output_path).expanduser().resolve()
     summary_path = workbook_path.with_suffix(".run.json")
     translation = translation_report or TranslationReport(0, 0)
-    hard_failure = any(item.critical and not item.success for item in statuses)
-    attention = any((not item.success) or item.health_alerts for item in statuses) or translation.success_rate < 0.95
+    hard_failure = any(
+        item.critical and (item.fetch_status == "failed" or item.health_status == "degraded")
+        for item in statuses
+    )
+    attention = any(
+        item.fetch_status == "failed" or item.health_status in {"attention", "degraded"}
+        for item in statuses
+    ) or translation.success_rate < 0.95
+    period_payload = period.as_dict() if period else {
+        "mode": "fixed",
+        "timezone": "UTC",
+        "normalized_since": since.date().isoformat(),
+        "normalized_until": (until - timedelta(microseconds=1)).date().isoformat(),
+        "period_start_utc": since.isoformat(),
+        "period_end_exclusive_utc": until.isoformat(),
+    }
+    discovered_count = len(articles) if discovered_article_count is None else discovered_article_count
     payload = {
-        "schema_version": 3,
+        "schema_version": 4,
         "run_id": run_id,
         "started_at": started_at.isoformat(),
         "finished_at": finished_at.isoformat(),
         "period_start": since.isoformat(),
         "period_end_exclusive": until.isoformat(),
+        "period": period_payload,
         "output_file": str(workbook_path),
         "article_count": len(articles),
+        "discovered_article_count": discovered_count,
+        "deduplicated_article_count": discovered_count - len(articles),
         "status": "degraded" if hard_failure else ("attention" if attention else "complete"),
         "translation": {
             "enabled": translation.enabled,
@@ -313,16 +349,27 @@ def write_run_summary(
         },
         "source_summary": {
             "total": len(statuses),
-            "healthy": sum(item.success for item in statuses),
-            "failed": sum(not item.success for item in statuses),
-            "critical_failed": sum(item.critical and not item.success for item in statuses),
+            "fetch_ok": sum(item.fetch_status == "ok" for item in statuses),
+            "fetch_failed": sum(item.fetch_status == "failed" for item in statuses),
+            "healthy": sum(item.health_status == "healthy" for item in statuses),
+            "attention": sum(item.health_status == "attention" for item in statuses),
+            "degraded": sum(item.health_status == "degraded" for item in statuses),
+            "critical_degraded": sum(item.critical and item.health_status == "degraded" for item in statuses),
             "with_health_alerts": sum(bool(item.health_alerts) for item in statuses),
             "with_content_hits": sum(item.relevant_count > 0 for item in statuses),
+            "invalid_date_count": sum(item.invalid_date_count for item in statuses),
+            "timeout_count": sum(item.timeout_count for item in statuses),
         },
         "sources": [status.__dict__ for status in statuses],
     }
     _atomic_write_text(summary_path, json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
     return summary_path
+
+
+def _excel_summary(value: str) -> str:
+    if len(value) <= EXCEL_SUMMARY_LIMIT:
+        return value
+    return value[: EXCEL_SUMMARY_LIMIT - 1].rstrip() + "…"
 
 
 def _atomic_write_text(path: Path, value: str) -> None:
