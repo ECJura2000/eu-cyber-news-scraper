@@ -415,8 +415,8 @@ language = "en"
 homepage = "https://www.dataprotection.ie/"
 listing_url = "https://www.dataprotection.ie/en/news-media/latest-news"
 allow_domains = ["dataprotection.ie", "www.dataprotection.ie"]
-include_patterns = ['/en/news-media/.+']
-exclude_patterns = ['/latest-news/?$']
+include_patterns = ['^/en/news-media/(?:latest-news|press-releases)/[^/?]+/?$', '^/en/news-media/[^/?]+/?$']
+exclude_patterns = ['^/en/news-media/(?:latest-news|press-releases|contact-us|consultations)/?(?:\?.*)?$']
 detail_pages = 10
 
 [[sources]]

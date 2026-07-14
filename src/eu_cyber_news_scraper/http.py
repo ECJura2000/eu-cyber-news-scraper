@@ -22,12 +22,13 @@ class HttpClient:
         session = getattr(self._local, "session", None)
         if session is None:
             retry = Retry(
-                total=2,
-                connect=2,
-                read=2,
+                total=1,
+                connect=1,
+                read=1,
                 backoff_factor=0.5,
                 status_forcelist=(429, 500, 502, 503, 504),
                 allowed_methods=frozenset({"GET", "HEAD"}),
+                respect_retry_after_header=True,
             )
             adapter = HTTPAdapter(max_retries=retry, pool_connections=12, pool_maxsize=12)
             session = requests.Session()
@@ -45,6 +46,6 @@ class HttpClient:
 
     def get(self, url: str) -> requests.Response:
         with _HTTP_LIMITER:
-            response = self._session().get(url, timeout=self.timeout)
+            response = self._session().get(url, timeout=(min(8, self.timeout), self.timeout))
         response.raise_for_status()
         return response

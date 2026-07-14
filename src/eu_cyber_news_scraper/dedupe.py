@@ -27,18 +27,35 @@ def article_key(article: Article) -> tuple[str, ...]:
     return ("title", normalize_text(article.title), date_text)
 
 
+def article_title_key(article: Article) -> tuple[str, ...] | None:
+    if not article.title or not article.published_at:
+        return None
+    return ("title-date", normalize_text(article.title), article.published_at.date().isoformat())
+
+
 def dedupe_articles(articles: list[Article]) -> list[Article]:
-    seen: dict[tuple[str, ...], Article] = {}
+    seen_urls: dict[str, Article] = {}
+    seen_titles: dict[tuple[str, ...], Article] = {}
     result: list[Article] = []
     for article in articles:
         if not article.discovered_by:
             article.discovered_by = [article.source_id]
-        key = article_key(article)
-        existing = seen.get(key)
+        url_key = canonical_url(article.url) if article.url else ""
+        title_key = article_title_key(article)
+        existing = seen_urls.get(url_key) if url_key else None
+        if existing is None and title_key is not None:
+            existing = seen_titles.get(title_key)
         if existing is not None:
             _merge_article(existing, article)
+            if url_key:
+                seen_urls[url_key] = existing
+            if title_key is not None:
+                seen_titles[title_key] = existing
             continue
-        seen[key] = article
+        if url_key:
+            seen_urls[url_key] = article
+        if title_key is not None:
+            seen_titles[title_key] = article
         result.append(article)
     return result
 
@@ -58,3 +75,7 @@ def _merge_article(target: Article, candidate: Article) -> None:
     target.discovered_by = list(
         dict.fromkeys([*target.discovered_by, *(candidate.discovered_by or [candidate.source_id])])
     )
+    alternate_urls = [*target.alternate_urls, *candidate.alternate_urls]
+    if candidate.url and canonical_url(candidate.url) != canonical_url(target.url):
+        alternate_urls.append(candidate.url)
+    target.alternate_urls = list(dict.fromkeys(url for url in alternate_urls if url and url != target.url))

@@ -34,8 +34,11 @@ python -m eu_cyber_news_scraper --days 30 --jsonl
 ## 常用指令
 
 ```bash
-# 指定日期（結束日包含當天）
+# 指定西元日期（起訖日皆包含）
 python -m eu_cyber_news_scraper --since 2026-06-01 --until 2026-06-30
+
+# 指定民國日期；也接受 113-04-05、113/04/05、民國1130405
+python -m eu_cyber_news_scraper --since 1130405 --until 1130430
 
 # 只抓歐盟、法國與德國
 python -m eu_cyber_news_scraper --country EU --country FR --country DE
@@ -57,7 +60,15 @@ python -m eu_cyber_news_scraper --no-detail
 
 # 不呼叫外部翻譯服務
 python -m eu_cyber_news_scraper --no-translate
+
+# 限制每個來源總抓取時間，並指定跨次執行狀態目錄
+python -m eu_cyber_news_scraper --days 14 --source-budget 60 --state-dir .state
 ```
+
+`--days` 與 `--since/--until` 是互斥模式；指定期間時起訖值必須同時提供。日期支援西元
+`YYYY-MM-DD`、`YYYY/MM/DD`、`YYYYMMDD`，以及民國 `YYY-MM-DD`、`YYY/MM/DD`、
+`YYYMMDD` 和帶有「民國」前綴的相同格式。民國日期會先轉為西元，再以臺北時區完整涵蓋起訖日。
+輸出檔名一律使用正規化後的西元日期。
 
 可用的主題代碼為：`AI`、`DATA`、`PRIVACY`、`IDENTITY`、`COPYRIGHT`、`PLATFORM`、`INFO`、`COMPETITION`、`NIS2`、`PRODUCT`、`SUPPLY`、`CERT`、`HYBRID`、`CHIPS`、`QUANTUM`。
 
@@ -91,7 +102,7 @@ python -m eu_cyber_news_scraper --no-translate
 15 個議題 × 4 個法域共 60 格；任一格缺少機關或監測來源，測試即會失敗。
 目前共 55 個來源；研究機構與智庫只作為政策研究、技術評估及生態系觀測來源，不視為具有監理權限的主管機關。
 
-每次成功執行會在輸出資料夾更新 `.source-health.json`，最多保留每個來源最近 12 次紀錄。累積指定觀察次數後，若筆數低於歷史中位數 25%、無日期比例過高或標題重複異常，會在 Excel 與 `.run.json` 顯示健康警示；必要來源的重大警示會使執行狀態降為 `degraded`。
+每次成功執行會在狀態目錄更新 `.source-health.json`，最多保留每個來源最近 12 次紀錄。累積指定觀察次數後，若筆數低於歷史中位數 25%、無日期比例過高或標題重複異常，會在 Excel 與 `.run.json` 顯示健康警示。必要來源的抓取失敗會立即使執行狀態降為 `degraded`；新鮮度或基線異常第一次為 `attention`，連續兩次才為 `degraded`。
 
 來源另有新鮮度門檻：必要來源預設 45 天、其他來源預設 90 天，可在 `sources.toml` 以 `freshness_days` 個別調整。超過門檻的必要來源不會因仍抓得到舊文章而誤判為正常。內容期間內沒有命中議題只會記錄在「內容結果」，不會混入抓取故障。
 
@@ -111,16 +122,17 @@ python -m eu_cyber_news_scraper --no-translate
 ```bash
 python -m pip install -e '.[dev]'
 ruff check .
-pytest --cov=eu_cyber_news_scraper --cov-report=term-missing --cov-fail-under=85
+pytest --cov=eu_cyber_news_scraper --cov-report=term-missing --cov-fail-under=90
 pip-audit
 ```
 
-測試採本地 RSS／HTML fixtures，不依賴即時網站；7 個必要來源各有版型合約 fixture，另有人工標註的多語議題評估集與 precision／recall 門檻。CI 會在 Python 3.11、3.12、3.13 執行，要求至少 85% 覆蓋率並執行 `pip-audit`；每週工作另會先對必要來源執行不翻譯的 smoke test。
+測試採本地 RSS／HTML fixtures，不依賴即時網站；7 個必要來源各有版型合約 fixture，另有 120 筆多語議題原始及文字擾動評估案例與 precision／recall 門檻。CI 會在 Python 3.11、3.12、3.13 執行，要求至少 90% 覆蓋率並執行 `pip-audit`；每週工作另會先對必要來源執行不翻譯的 smoke test。
 
 ## 已知限制
 
 - 通用 HTML 解析器無法保證涵蓋所有動態載入網站；遇到 JavaScript-only 頁面應新增官方 API／feed 或專用解析器。
 - 翻譯會將新聞標題送往外部服務；若有資料治理限制，可預先提供翻譯快取或另行替換翻譯器。
-- `complete` 代表必要來源與品質門檻均正常；非必要來源失敗、健康基線警示或翻譯成功率低於 95% 會標示 `attention`；必要來源失敗則為 `degraded`。
+- `.run.json` 使用 schema v4，分開記錄 `fetch_status` 與 `health_status`，並保存原始日期輸入、辨識紀年、正規化期間、無效日期、逾時及去重統計。
+- `complete` 代表必要來源與品質門檻均正常；非必要來源失敗、單次健康基線警示或翻譯成功率低於 95% 會標示 `attention`；必要來源抓取失敗或連續健康異常則為 `degraded`。
 - 已設定分頁或年度模板的來源會依日期範圍抓取存檔頁；尚未提供穩定分頁規則的網站仍可能受其首頁顯示筆數限制。
 - 公共研究中心的內容屬研究資訊，不等同主管機關的正式法律解釋。
