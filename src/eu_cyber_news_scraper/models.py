@@ -1,0 +1,85 @@
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from datetime import datetime
+
+
+@dataclass(frozen=True)
+class Source:
+    id: str
+    country: str
+    name_zh: str
+    name: str
+    institution_type: str
+    language: str
+    homepage: str
+    listing_url: str
+    feed_urls: tuple[str, ...] = ()
+    allow_domains: tuple[str, ...] = ()
+    include_patterns: tuple[str, ...] = ()
+    exclude_patterns: tuple[str, ...] = ()
+    critical: bool = False
+    detail_pages: int = 12
+    yearly_listing_url: str = ""
+    pagination_url: str = ""
+    max_pages: int = 1
+    observation_runs: int = 3
+    freshness_days: int = 45
+
+    @property
+    def display_name(self) -> str:
+        return f"{self.name_zh}（{self.name}）"
+
+
+@dataclass
+class Article:
+    source_id: str
+    country: str
+    source_name: str
+    institution_type: str
+    language: str
+    title: str
+    url: str
+    published_at: datetime | None = None
+    summary: str = ""
+    fetched_via: str = ""
+    matched_topics: list[str] = field(default_factory=list)
+    matched_keywords: list[str] = field(default_factory=list)
+    relevance_score: int = 0
+    discovered_by: list[str] = field(default_factory=list)
+    title_zh_tw: str = ""
+    authority_level: str = ""
+    content_kind: str = ""
+    confidence_level: str = ""
+
+
+@dataclass(frozen=True)
+class SourceStatus:
+    source_id: str
+    source_name: str
+    country: str
+    critical: bool
+    success: bool
+    fetched_via: str
+    raw_count: int
+    relevant_count: int
+    duration_seconds: float
+    newest_published_at: str = ""
+    warning: str = ""
+    error: str = ""
+    pages_fetched: int = 0
+    historical_median_count: float = 0.0
+    health_alerts: tuple[str, ...] = ()
+    dated_count: int = 0
+    undated_ratio: float = 0.0
+    unique_title_ratio: float = 1.0
+    in_range_count: int = 0
+    freshness_lag_days: float = 0.0
+    content_warning: str = ""
+
+
+@dataclass
+class SourceResult:
+    source: Source
+    articles: list[Article]
+    status: SourceStatus

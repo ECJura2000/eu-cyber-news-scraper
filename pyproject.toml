@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eu-cyber-news-scraper"
+version = "1.0.0"
+description = "Official EU, French, German and Irish cybersecurity news scraper"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = [
+  "beautifulsoup4>=4.13,<5",
+  "dateparser>=1.2.2,<2",
+  "googletrans>=4.0.2,<5",
+  "translate>=3.6.1,<4",
+  "translatepy>=2.3,<3",
+  "feedparser>=6.0.11,<7",
+  "lxml>=5.3,<7",
+  "openpyxl>=3.1.5,<4",
+  "opencc-python-reimplemented>=0.1.7,<1",
+  "requests>=2.32,<3",
+  "truststore>=0.10.4,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3,<10",
+  "pytest-cov>=6,<8",
+  "pip-audit>=2.9,<3",
+  "ruff>=0.11,<1",
+]
+
+[project.scripts]
+eu-cyber-news = "eu_cyber_news_scraper.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+eu_cyber_news_scraper = ["sources.toml", "authority_coverage.toml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Official cyber news</title>
+    <item>
+      <title>NIS2 incident reporting templates adopted</title>
+      <link>https://agency.example/news/nis2-templates</link>
+      <pubDate>Tue, 26 May 2026 10:00:00 GMT</pubDate>
+      <description>New templates support essential and important entities.</description>
+    </item>
+    <item>
+      <title>Unrelated annual picnic</title>
+      <link>https://agency.example/events/picnic</link>
+      <pubDate>Mon, 25 May 2026 10:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
+

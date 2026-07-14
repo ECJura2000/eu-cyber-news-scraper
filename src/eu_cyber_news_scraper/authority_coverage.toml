@@ -1,0 +1,109 @@
+# 經官方職掌頁核對的議題主管／主要執行機關。source_ids 是本程式實際監測入口；
+# 若政策主管機關沒有穩定新聞清單，會由其上級部會或同領域官方來源承接。
+
+verified_on = "2026-07-11"
+
+[[topics]]
+name = "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+EU = { authorities = "歐盟執委會 AI Office／DG CONNECT、JRC、EDPB、EUIPO；EuroHPC 公私協力生態系", source_ids = ["eu_dg_connect", "eu_jrc_news", "eu_edpb", "eu_presscorner", "eu_eurohpc"], evidence_urls = ["https://digital-strategy.ec.europa.eu/en/policies/ai-act-governance-and-enforcement"] }
+FR = { authorities = "DGCCRF／DGE、CNIL、INESIA（ANSSI、Inria、LNE、PEReN）、文化部／CSPLA；CEA-List、Institut Montaigne", source_ids = ["fr_dge", "fr_cnil", "fr_anssi", "fr_inria", "fr_culture", "fr_cea_list", "fr_institut_montaigne"], evidence_urls = ["https://www.cnil.fr/fr/entree-en-vigueur-du-reglement-europeen-sur-lia-les-premieres-questions-reponses-de-la-cnil"] }
+DE = { authorities = "聯邦網路局（AI協調中心）、BfDI、BMJV／DPMA；ATHENE、Interface", source_ids = ["de_bnetza", "de_bfdi", "de_dpma", "de_athene", "de_interface"], evidence_urls = ["https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/1_Ziel/start_ziel.html"] }
+IE = { authorities = "企業部；2026 年法案擬設 Oifig IS na hÉireann（AI Office of Ireland）為中央協調機關，另由 DPC 與產業監理機關分工；CeADAR、Insight", source_ids = ["ie_dete", "ie_dpc", "ie_cnam", "ie_comreg", "ie_ceadar", "ie_insight"], evidence_urls = ["https://enterprise.gov.ie/en/news-and-events/department-news/2026/june/20260617.html"] }
+
+[[topics]]
+name = "跨境資料流通、資料主權、資料開放與再利用"
+EU = { authorities = "DG CONNECT、EDPB、EuroHPC", source_ids = ["eu_dg_connect", "eu_edpb", "eu_eurohpc"] }
+FR = { authorities = "CNIL、DINUM／data.gouv.fr", source_ids = ["fr_cnil", "fr_dinum"] }
+DE = { authorities = "聯邦網路局（Data Act）、BfDI；Interface", source_ids = ["de_bnetza", "de_bfdi", "de_interface"], evidence_urls = ["https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260530_DA.html"] }
+IE = { authorities = "DPC、公共支出及數位化部／OGCIO；Insight、ESRI", source_ids = ["ie_dpc", "ie_dete", "ie_insight", "ie_esri"] }
+
+[[topics]]
+name = "隱私框架（含個人資料保護）"
+EU = { authorities = "EDPB、歐盟執委會司法總署", source_ids = ["eu_edpb", "eu_presscorner"] }
+FR = { authorities = "CNIL", source_ids = ["fr_cnil"] }
+DE = { authorities = "BfDI、各邦資料保護機關；Interface", source_ids = ["de_bfdi", "de_interface"] }
+IE = { authorities = "DPC；Insight", source_ids = ["ie_dpc", "ie_insight"] }
+
+[[topics]]
+name = "數位身份"
+EU = { authorities = "DG CONNECT（歐洲數位身份錢包）", source_ids = ["eu_dg_connect", "eu_presscorner"] }
+FR = { authorities = "DINUM（FranceConnect）、ANTS／France Identité", source_ids = ["fr_dinum"] }
+DE = { authorities = "BMI、聯邦網路局（信任服務）", source_ids = ["de_bmi", "de_bnetza"] }
+IE = { authorities = "公共支出及數位化部／OGCIO", source_ids = ["ie_dete"] }
+
+[[topics]]
+name = "著作權"
+EU = { authorities = "歐盟執委會 DG CONNECT、EUIPO Observatory", source_ids = ["eu_dg_connect", "eu_presscorner"] }
+FR = { authorities = "文化部／CSPLA、Arcom；Institut Montaigne", source_ids = ["fr_culture", "fr_arcom", "fr_institut_montaigne"] }
+DE = { authorities = "BMJV、DPMA；Interface", source_ids = ["de_dpma", "de_interface"] }
+IE = { authorities = "企業部 Intellectual Property Unit", source_ids = ["ie_dete"] }
+
+[[topics]]
+name = "平台責任、內容審查、推薦演算法"
+EU = { authorities = "歐盟執委會 DG CONNECT（DSA）、EDPB", source_ids = ["eu_dg_connect", "eu_edpb"], evidence_urls = ["https://digital-strategy.ec.europa.eu/en/policies/dsa-dscs"] }
+FR = { authorities = "Arcom（DSC）、CNIL；Institut Montaigne", source_ids = ["fr_arcom", "fr_cnil", "fr_institut_montaigne"], evidence_urls = ["https://www.arcom.fr/procedure-dagrement-des-chercheurs-pour-lacces-aux-donnees-des-plateformes"] }
+DE = { authorities = "聯邦網路局（DSC）、邦媒體主管機關；Interface", source_ids = ["de_bnetza", "de_interface"], evidence_urls = ["https://www.dsc.bund.de/DSC/DE/2DSA/start.html"] }
+IE = { authorities = "Coimisiún na Meán（DSC）、DPC；Insight", source_ids = ["ie_cnam", "ie_dpc", "ie_insight"] }
+
+[[topics]]
+name = "媒體多元與資訊操縱"
+EU = { authorities = "DG CONNECT（EMFA）、EEAS（FIMI）；SNS JU研究生態系", source_ids = ["eu_dg_connect", "eu_eeas", "eu_sns_ju"] }
+FR = { authorities = "Arcom、VIGINUM", source_ids = ["fr_arcom", "fr_viginum"] }
+DE = { authorities = "邦媒體主管機關、BMI／聯邦政府；Interface、SWP、ATHENE", source_ids = ["de_bmi", "de_bnetza", "de_interface", "de_swp", "de_athene"] }
+IE = { authorities = "Coimisiún na Meán、選舉委員會；Insight", source_ids = ["ie_cnam", "ie_electoral_commission", "ie_insight"] }
+
+[[topics]]
+name = "競爭規範面向（平台責任的市場結構面）"
+EU = { authorities = "歐盟執委會競爭總署、DG CONNECT（DMA）", source_ids = ["eu_presscorner", "eu_dg_connect"] }
+FR = { authorities = "Autorité de la concurrence、DGCCRF", source_ids = ["fr_concurrence", "fr_dge"] }
+DE = { authorities = "Bundeskartellamt、聯邦網路局；Interface", source_ids = ["de_bundeskartellamt", "de_bnetza", "de_interface"] }
+IE = { authorities = "CCPC、Coimisiún na Meán（部分 DSA 義務）；ESRI", source_ids = ["ie_dete", "ie_cnam", "ie_esri"] }
+
+[[topics]]
+name = "NIS2、關鍵基礎設施保護"
+EU = { authorities = "DG CONNECT、ENISA、DG HOME（CER）", source_ids = ["eu_dg_connect", "eu_enisa_news", "eu_dg_home"] }
+FR = { authorities = "ANSSI、SGDSN／內政體系；Campus Cyber", source_ids = ["fr_anssi", "fr_viginum", "fr_campus_cyber"], evidence_urls = ["https://messervices.cyber.gouv.fr/nis2/"] }
+DE = { authorities = "BMI、BSI、BBK；ATHENE、SWP", source_ids = ["de_bmi", "de_bsi_news", "de_bbk", "de_athene", "de_swp"] }
+IE = { authorities = "NCSC、ComReg及各部門主管機關；Cyber Ireland", source_ids = ["ie_ncsc", "ie_comreg", "ie_cyber_ireland"], evidence_urls = ["https://www.ncsc.gov.ie/nis2/FAQ/"] }
+
+[[topics]]
+name = "產品資安、漏洞揭露義務、SBOM"
+EU = { authorities = "DG CONNECT、ENISA、CERT-EU", source_ids = ["eu_dg_connect", "eu_enisa_news", "eu_cert_advisories"] }
+FR = { authorities = "ANSSI／CERT-FR、DGCCRF；Campus Cyber、CEA-List", source_ids = ["fr_anssi", "fr_dge", "fr_campus_cyber", "fr_cea_list"] }
+DE = { authorities = "BSI、聯邦網路局；ATHENE、SWP", source_ids = ["de_bsi_news", "de_bnetza", "de_athene", "de_swp"] }
+IE = { authorities = "NCSC、CCPC／相關市場監理機關；Cyber Ireland、Tyndall", source_ids = ["ie_ncsc", "ie_dete", "ie_cyber_ireland", "ie_tyndall"] }
+
+[[topics]]
+name = "供應鏈安全"
+EU = { authorities = "DG CONNECT、ENISA、CERT-EU；Chips JU、SNS JU", source_ids = ["eu_dg_connect", "eu_enisa_publications", "eu_cert_threat", "eu_chips_ju", "eu_sns_ju"] }
+FR = { authorities = "ANSSI、DGE；Campus Cyber、CEA-List", source_ids = ["fr_anssi", "fr_dge", "fr_campus_cyber", "fr_cea_list"] }
+DE = { authorities = "BSI、BMI；ATHENE、SWP", source_ids = ["de_bsi_news", "de_bmi", "de_athene", "de_swp"] }
+IE = { authorities = "NCSC、企業部；Cyber Ireland、Tyndall", source_ids = ["ie_ncsc", "ie_dete", "ie_cyber_ireland", "ie_tyndall"] }
+
+[[topics]]
+name = "資安產品認證"
+EU = { authorities = "ENISA、歐盟執委會", source_ids = ["eu_enisa_certification", "eu_dg_connect"] }
+FR = { authorities = "ANSSI", source_ids = ["fr_anssi"] }
+DE = { authorities = "BSI；ATHENE", source_ids = ["de_bsi_news", "de_athene"] }
+IE = { authorities = "NSAI、NCSC；Cyber Ireland", source_ids = ["ie_nsai", "ie_ncsc", "ie_cyber_ireland"] }
+
+[[topics]]
+name = "關鍵基礎設施的實體與數位融合保護"
+EU = { authorities = "DG HOME（CER）、DG CONNECT（NIS2）、ENISA", source_ids = ["eu_dg_home", "eu_dg_connect", "eu_enisa_news"] }
+FR = { authorities = "SGDSN、ANSSI、內政部；Campus Cyber、CEA-List", source_ids = ["fr_anssi", "fr_viginum", "fr_campus_cyber", "fr_cea_list"] }
+DE = { authorities = "BMI、BBK、BSI；ATHENE", source_ids = ["de_bmi", "de_bbk", "de_bsi_news", "de_athene"] }
+IE = { authorities = "NCSC、政府緊急規劃辦公室、部門主管機關；Cyber Ireland", source_ids = ["ie_ncsc", "ie_comreg", "ie_cyber_ireland"] }
+
+[[topics]]
+name = "半導體"
+EU = { authorities = "DG CONNECT、European Semiconductor Board、JRC；Chips JU", source_ids = ["eu_dg_connect", "eu_jrc_news", "eu_chips_ju"] }
+FR = { authorities = "DGE、CEA-Leti／CEA-List", source_ids = ["fr_dge", "fr_inria", "fr_cea_list"] }
+DE = { authorities = "BMFTR、BMWE、Fraunhofer；Interface", source_ids = ["de_fraunhofer_aisec", "de_cispa", "de_interface"] }
+IE = { authorities = "企業部（Silicon Island）、IDA Ireland、Research Ireland；Tyndall", source_ids = ["ie_dete", "ie_research_ireland", "ie_tyndall"] }
+
+[[topics]]
+name = "量子技術"
+EU = { authorities = "DG CONNECT、DG RTD、JRC；EuroHPC、Chips JU", source_ids = ["eu_dg_connect", "eu_jrc_news", "eu_presscorner", "eu_eurohpc", "eu_chips_ju"] }
+FR = { authorities = "DGE、研究部、CEA、Inria", source_ids = ["fr_dge", "fr_inria", "fr_cea_list"] }
+DE = { authorities = "BMFTR、DLR、Fraunhofer；ATHENE", source_ids = ["de_fraunhofer_aisec", "de_cispa", "de_athene"] }
+IE = { authorities = "Research Ireland、企業部、ADAPT、CeADAR、Tyndall等研究中心", source_ids = ["ie_research_ireland", "ie_dete", "ie_adapt", "ie_ceadar", "ie_tyndall"] }

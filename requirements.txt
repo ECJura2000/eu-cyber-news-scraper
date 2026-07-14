@@ -1,0 +1,11 @@
+beautifulsoup4>=4.13,<5
+dateparser>=1.2.2,<2
+googletrans>=4.0.2,<5
+translate>=3.6.1,<4
+translatepy>=2.3,<3
+feedparser>=6.0.11,<7
+lxml>=5.3,<7
+openpyxl>=3.1.5,<4
+opencc-python-reimplemented>=0.1.7,<1
+requests>=2.32,<3
+truststore>=0.10.4,<1

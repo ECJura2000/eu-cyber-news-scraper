@@ -1,0 +1,797 @@
+# Source governance:
+# - critical=true means a failure makes the run summary degraded.
+# - official pages are preferred. No commercial news aggregators are configured.
+# - the generic parser first tries configured feeds, then feed discovery, then HTML.
+
+[[sources]]
+id = "eu_dg_connect"
+country = "EU"
+name_zh = "歐盟執委會通訊網路、內容與技術總署"
+name = "European Commission DG CONNECT - Shaping Europe's Digital Future"
+institution_type = "歐盟執委會／政策主管機關"
+language = "en"
+homepage = "https://digital-strategy.ec.europa.eu/"
+listing_url = "https://digital-strategy.ec.europa.eu/en/news"
+allow_domains = ["digital-strategy.ec.europa.eu"]
+include_patterns = ['/en/news/']
+exclude_patterns = ['^/en/news/?$']
+critical = true
+detail_pages = 18
+
+[[sources]]
+id = "eu_enisa_news"
+country = "EU"
+name_zh = "歐盟資安局（新聞）"
+name = "European Union Agency for Cybersecurity - News"
+institution_type = "歐盟行政機關"
+language = "en"
+homepage = "https://www.enisa.europa.eu/"
+listing_url = "https://www.enisa.europa.eu/news"
+allow_domains = ["enisa.europa.eu", "www.enisa.europa.eu"]
+include_patterns = ['/news/']
+exclude_patterns = ['^/news/?$']
+critical = true
+detail_pages = 18
+
+[[sources]]
+id = "eu_enisa_publications"
+country = "EU"
+name_zh = "歐盟資安局（研究出版品）"
+name = "European Union Agency for Cybersecurity - Publications"
+institution_type = "歐盟行政機關／官方研究"
+language = "en"
+homepage = "https://www.enisa.europa.eu/"
+listing_url = "https://www.enisa.europa.eu/publications"
+allow_domains = ["enisa.europa.eu", "www.enisa.europa.eu"]
+include_patterns = ['/publications/', '/sites/default/files/']
+exclude_patterns = ['^/publications/?$']
+detail_pages = 12
+
+[[sources]]
+id = "eu_cert_threat"
+country = "EU"
+name_zh = "歐盟機構電腦緊急應變小組（威脅情資）"
+name = "CERT-EU Threat Intelligence"
+institution_type = "歐盟資安應變機關／官方研究"
+language = "en"
+homepage = "https://cert.europa.eu/"
+listing_url = "https://cert.europa.eu/publications/threat-intelligence/"
+allow_domains = ["cert.europa.eu"]
+include_patterns = ['/publications/threat-intelligence/.+']
+exclude_patterns = ['/markdown$', '/json$', '/pdf$']
+detail_pages = 10
+
+[[sources]]
+id = "eu_cert_advisories"
+country = "EU"
+name_zh = "歐盟機構電腦緊急應變小組（安全公告）"
+name = "CERT-EU Security Advisories"
+institution_type = "歐盟資安應變機關"
+language = "en"
+homepage = "https://cert.europa.eu/"
+listing_url = "https://cert.europa.eu/publications/security-advisories/"
+allow_domains = ["cert.europa.eu"]
+include_patterns = ['/publications/security-advisories/.+']
+exclude_patterns = ['/markdown$', '/json$', '/pdf$']
+detail_pages = 8
+
+[[sources]]
+id = "eu_jrc_news"
+country = "EU"
+name_zh = "歐盟聯合研究中心"
+name = "European Commission Joint Research Centre"
+institution_type = "歐盟官方研究機構"
+language = "en"
+homepage = "https://joint-research-centre.ec.europa.eu/"
+listing_url = "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates_en"
+allow_domains = ["joint-research-centre.ec.europa.eu"]
+include_patterns = ['/jrc-news-and-updates/']
+detail_pages = 12
+
+[[sources]]
+id = "eu_enisa_certification"
+country = "EU"
+name_zh = "歐盟資安局（資安認證）"
+name = "ENISA European Cybersecurity Certification"
+institution_type = "歐盟行政機關／資安認證"
+language = "en"
+homepage = "https://certification.enisa.europa.eu/"
+listing_url = "https://certification.enisa.europa.eu/news-events_en"
+allow_domains = ["certification.enisa.europa.eu"]
+include_patterns = ['^/news/.+']
+detail_pages = 10
+
+[[sources]]
+id = "eu_presscorner"
+country = "EU"
+name_zh = "歐盟執委會新聞發布中心"
+name = "European Commission Press Corner"
+institution_type = "歐盟執委會"
+language = "en"
+homepage = "https://ec.europa.eu/commission/presscorner/"
+listing_url = "https://ec.europa.eu/commission/presscorner/home/en"
+feed_urls = ["https://ec.europa.eu/commission/presscorner/api/latestnews?language=en&pageSize=100"]
+allow_domains = ["ec.europa.eu"]
+include_patterns = ['/commission/presscorner/detail/']
+detail_pages = 10
+
+[[sources]]
+id = "eu_parliament_press"
+country = "EU"
+name_zh = "歐洲議會新聞中心"
+name = "European Parliament Press Room"
+institution_type = "歐盟立法機關"
+language = "en"
+homepage = "https://www.europarl.europa.eu/"
+listing_url = "https://www.europarl.europa.eu/news/en/press-room"
+allow_domains = ["europarl.europa.eu", "www.europarl.europa.eu"]
+include_patterns = ['/news/en/press-room/']
+exclude_patterns = ['^/news/en/press-room/?$']
+detail_pages = 10
+
+[[sources]]
+id = "fr_anssi"
+country = "FR"
+name_zh = "法國國家資訊系統安全局"
+name = "Agence nationale de la sécurité des systèmes d'information"
+institution_type = "國家主管機關"
+language = "fr"
+homepage = "https://cyber.gouv.fr/"
+listing_url = "https://cyber.gouv.fr/actualites/"
+feed_urls = ["https://cyber.gouv.fr/actualites/rss/", "https://cyber.gouv.fr/actualites/atom/"]
+allow_domains = ["cyber.gouv.fr"]
+include_patterns = ['/actualites/.+']
+exclude_patterns = ['/actualites/(rss|atom)/?$', '^/actualites/\?(tag|page)=']
+critical = true
+detail_pages = 16
+pagination_url = "https://cyber.gouv.fr/actualites/?page={page}"
+max_pages = 10
+
+[[sources]]
+id = "fr_cnil"
+country = "FR"
+name_zh = "法國國家資訊與自由委員會"
+name = "Commission nationale de l'informatique et des libertés"
+institution_type = "獨立行政機關"
+language = "fr"
+homepage = "https://www.cnil.fr/"
+listing_url = "https://www.cnil.fr/fr/actualites"
+allow_domains = ["cnil.fr", "www.cnil.fr"]
+include_patterns = ['/fr/.+']
+exclude_patterns = ['^/fr/actualites/?$']
+detail_pages = 12
+
+[[sources]]
+id = "fr_cybermalveillance"
+country = "FR"
+name_zh = "法國網路惡意行為協助平台"
+name = "Cybermalveillance.gouv.fr - GIP ACYMA"
+institution_type = "公益團體／行政法人性質"
+language = "fr"
+homepage = "https://www.cybermalveillance.gouv.fr/"
+listing_url = "https://www.cybermalveillance.gouv.fr/blog"
+allow_domains = ["cybermalveillance.gouv.fr", "www.cybermalveillance.gouv.fr"]
+include_patterns = ['/tous-nos-contenus/actualites/.+']
+exclude_patterns = ['^/tous-nos-contenus/actualites/?$']
+critical = true
+detail_pages = 12
+
+[[sources]]
+id = "fr_arcep"
+country = "FR"
+name_zh = "法國電子通訊、郵政與新聞傳播監理局"
+name = "Autorité de régulation des communications électroniques, des postes et de la distribution de la presse"
+institution_type = "獨立行政機關／通訊監理"
+language = "fr"
+homepage = "https://www.arcep.fr/"
+listing_url = "https://www.arcep.fr/actualites/actualites-et-communiques.html"
+allow_domains = ["arcep.fr", "www.arcep.fr"]
+include_patterns = ['/actualites/.+']
+exclude_patterns = ['actualites-et-communiques\.html$']
+detail_pages = 10
+
+[[sources]]
+id = "fr_inria"
+country = "FR"
+name_zh = "法國國家資訊與自動化研究院"
+name = "Institut national de recherche en sciences et technologies du numérique"
+institution_type = "國家公共研究機構"
+language = "fr"
+homepage = "https://www.inria.fr/"
+listing_url = "https://www.inria.fr/fr/actualites-recherche-savoir-numerique"
+allow_domains = ["inria.fr", "www.inria.fr"]
+include_patterns = ['/fr/.+']
+exclude_patterns = ['actualites-recherche-savoir-numerique/?$']
+detail_pages = 12
+
+[[sources]]
+id = "fr_dge"
+country = "FR"
+name_zh = "法國企業總署"
+name = "Direction générale des Entreprises"
+institution_type = "中央行政機關／產業政策"
+language = "fr"
+homepage = "https://www.entreprises.gouv.fr/"
+listing_url = "https://www.entreprises.gouv.fr/la-dge/actualites"
+allow_domains = ["entreprises.gouv.fr", "www.entreprises.gouv.fr"]
+include_patterns = ['/la-dge/actualites/.+', '/actualites/.+']
+exclude_patterns = ['^/la-dge/actualites/?$']
+detail_pages = 10
+
+[[sources]]
+id = "fr_arcom"
+country = "FR"
+name_zh = "法國視聽及數位傳播監理局"
+name = "Autorité de régulation de la communication audiovisuelle et numérique"
+institution_type = "獨立行政機關／數位平台與媒體監理"
+language = "fr"
+homepage = "https://www.arcom.fr/"
+listing_url = "https://www.arcom.fr/actualites/toutes-nos-actualites"
+allow_domains = ["arcom.fr", "www.arcom.fr"]
+include_patterns = ['^/(actualites|presse)/.+']
+exclude_patterns = ['^/actualites/toutes-nos-actualites/?$']
+detail_pages = 12
+
+[[sources]]
+id = "fr_concurrence"
+country = "FR"
+name_zh = "法國競爭管理局"
+name = "Autorité de la concurrence"
+institution_type = "獨立行政機關／競爭監理"
+language = "fr"
+homepage = "https://www.autoritedelaconcurrence.fr/"
+listing_url = "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse"
+allow_domains = ["autoritedelaconcurrence.fr", "www.autoritedelaconcurrence.fr"]
+include_patterns = ['^/fr/communiques-de-presse/.+']
+exclude_patterns = ['^/fr/communiques-de-presse/?$']
+detail_pages = 10
+
+[[sources]]
+id = "fr_viginum"
+country = "FR"
+name_zh = "法國防範外國數位干預局"
+name = "VIGINUM - SGDSN"
+institution_type = "總理轄下國家安全機關／資訊操縱防制"
+language = "fr"
+homepage = "https://www.sgdsn.gouv.fr/viginum"
+listing_url = "https://www.sgdsn.gouv.fr/viginum/actualites"
+allow_domains = ["sgdsn.gouv.fr", "www.sgdsn.gouv.fr"]
+include_patterns = ['^/viginum/actualites/.+']
+exclude_patterns = ['^/viginum/actualites/?$']
+detail_pages = 10
+
+[[sources]]
+id = "de_bsi_news"
+country = "DE"
+name_zh = "德國聯邦資訊安全局（所有消息）"
+name = "Bundesamt für Sicherheit in der Informationstechnik"
+institution_type = "聯邦主管機關"
+language = "de"
+homepage = "https://www.bsi.bund.de/"
+listing_url = "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/alle-meldungen-news_node.html"
+allow_domains = ["bsi.bund.de", "www.bsi.bund.de"]
+include_patterns = ['/DE/Service-Navi/Presse/.+\.html$']
+exclude_patterns = ['alle-meldungen-news_node\.html$']
+critical = true
+detail_pages = 16
+
+[[sources]]
+id = "de_bmi"
+country = "DE"
+name_zh = "德國聯邦內政部"
+name = "Bundesministerium des Innern"
+institution_type = "聯邦行政機關"
+language = "de"
+homepage = "https://www.bmi.bund.de/"
+listing_url = "https://www.bmi.bund.de/SiteGlobals/Forms/suche/expertensuche-formular.html?nn=9388812&gts=9398922_list%253DunifiedDate_dt%2Bdesc&documentType_=pbjournal"
+allow_domains = ["bmi.bund.de", "www.bmi.bund.de"]
+include_patterns = ['/SharedDocs/pressemitteilungen/DE/.+\.html$']
+exclude_patterns = ['/pressemitteilungen\.html$']
+detail_pages = 10
+
+[[sources]]
+id = "de_bnetza"
+country = "DE"
+name_zh = "德國聯邦網路管理局"
+name = "Bundesnetzagentur"
+institution_type = "聯邦監理機關"
+language = "de"
+homepage = "https://www.bundesnetzagentur.de/"
+listing_url = "https://www.bundesnetzagentur.de/DE/Allgemeines/Presse/Pressemitteilungen/start.html"
+allow_domains = ["bundesnetzagentur.de", "www.bundesnetzagentur.de"]
+include_patterns = ['/SharedDocs/Pressemitteilungen/DE/.+\.html(?:\?.*)?$']
+exclude_patterns = ['/Presse/Pressemitteilungen/start\.html$']
+detail_pages = 10
+
+[[sources]]
+id = "de_fraunhofer_aisec"
+country = "DE"
+name_zh = "德國弗勞恩霍夫應用暨整合安全研究所"
+name = "Fraunhofer Institute for Applied and Integrated Security AISEC"
+institution_type = "公共研究機構"
+language = "de"
+homepage = "https://www.aisec.fraunhofer.de/"
+listing_url = "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen.html"
+allow_domains = ["aisec.fraunhofer.de", "www.aisec.fraunhofer.de"]
+include_patterns = ['/de/(presse-und-veranstaltungen/pressemitteilungen|spotlights)/.+\.html$']
+exclude_patterns = ['/pressemitteilungen\.html$']
+critical = false
+observation_runs = 3
+detail_pages = 12
+
+[[sources]]
+id = "de_cispa"
+country = "DE"
+name_zh = "德國 CISPA 亥姆霍茲資訊安全中心"
+name = "CISPA Helmholtz Center for Information Security"
+institution_type = "國家大型研究機構"
+language = "en"
+homepage = "https://cispa.de/"
+listing_url = "https://cispa.de/en/news-and-events/all-news"
+allow_domains = ["cispa.de"]
+include_patterns = ['/en/news-and-events/.+']
+exclude_patterns = ['/en/news-and-events/(all-news|all-events)/?$']
+detail_pages = 10
+
+[[sources]]
+id = "de_bfdi"
+country = "DE"
+name_zh = "德國聯邦資料保護與資訊自由專員"
+name = "Bundesbeauftragte für den Datenschutz und die Informationsfreiheit"
+institution_type = "聯邦獨立監理機關／資料保護"
+language = "de"
+homepage = "https://www.bfdi.bund.de/"
+listing_url = "https://www.bfdi.bund.de/DE/BfDI/Presse/Pressemitteilungen/pressemitteilungen_node.html"
+allow_domains = ["bfdi.bund.de", "www.bfdi.bund.de"]
+include_patterns = ['/SharedDocs/Pressemitteilungen/DE/.+\.html(?:\?.*)?$']
+exclude_patterns = ['pressemitteilungen_node\.html$']
+detail_pages = 12
+
+[[sources]]
+id = "de_bundeskartellamt"
+country = "DE"
+name_zh = "德國聯邦卡特爾局"
+name = "Bundeskartellamt"
+institution_type = "聯邦競爭監理機關"
+language = "de"
+homepage = "https://www.bundeskartellamt.de/"
+listing_url = "https://www.bundeskartellamt.de/DE/Home/home_node.html"
+allow_domains = ["bundeskartellamt.de", "www.bundeskartellamt.de"]
+include_patterns = ['/SharedDocs/Meldung/DE/Pressemitteilungen/.+\.html(?:\?.*)?$']
+detail_pages = 12
+
+[[sources]]
+id = "de_dpma"
+country = "DE"
+name_zh = "德國專利商標局"
+name = "Deutsches Patent- und Markenamt"
+institution_type = "聯邦智慧財產權機關"
+language = "de"
+homepage = "https://www.dpma.de/"
+listing_url = "https://www.dpma.de/service/presse/pressemitteilungen/index.html"
+allow_domains = ["dpma.de", "www.dpma.de"]
+include_patterns = ['^/service/presse/pressemitteilungen/\d{8}/index\.html$']
+exclude_patterns = ['^/service/presse/pressemitteilungen/index\.html$']
+detail_pages = 12
+
+[[sources]]
+id = "ie_ncsc"
+country = "IE"
+name_zh = "愛爾蘭國家網路安全中心"
+name = "National Cyber Security Centre Ireland"
+institution_type = "國家主管機關／CSIRT"
+language = "en"
+homepage = "https://www.ncsc.gov.ie/"
+listing_url = "https://www.ncsc.gov.ie/news/"
+feed_urls = ["https://www.ncsc.gov.ie/news/alerts.rss", "https://www.ncsc.gov.ie/news/alerts.atom"]
+allow_domains = ["ncsc.gov.ie", "www.ncsc.gov.ie"]
+include_patterns = ['/news/.+', '/pdfs/.+\.pdf$']
+exclude_patterns = ['/news/alerts\.(rss|atom)$']
+critical = true
+detail_pages = 12
+
+[[sources]]
+id = "ie_comreg"
+country = "IE"
+name_zh = "愛爾蘭通訊監理委員會"
+name = "Commission for Communications Regulation"
+institution_type = "法定獨立監理機關／NIS2主管機關"
+language = "en"
+homepage = "https://www.comreg.ie/"
+listing_url = "https://www.comreg.ie/news/"
+allow_domains = ["comreg.ie", "www.comreg.ie"]
+include_patterns = ['^/[^/]+/?$', '/industry/nis2-cer/.+']
+exclude_patterns = ['^/news/?$']
+critical = true
+detail_pages = 12
+
+[[sources]]
+id = "ie_dpc"
+country = "IE"
+name_zh = "愛爾蘭資料保護委員會"
+name = "Data Protection Commission"
+institution_type = "獨立監理機關"
+language = "en"
+homepage = "https://www.dataprotection.ie/"
+listing_url = "https://www.dataprotection.ie/en/news-media/latest-news"
+allow_domains = ["dataprotection.ie", "www.dataprotection.ie"]
+include_patterns = ['/en/news-media/.+']
+exclude_patterns = ['/latest-news/?$']
+detail_pages = 10
+
+[[sources]]
+id = "ie_nsai"
+country = "IE"
+name_zh = "愛爾蘭國家標準局"
+name = "National Standards Authority of Ireland"
+institution_type = "法定標準與合格評定機構"
+language = "en"
+homepage = "https://www.nsai.ie/"
+listing_url = "https://www.nsai.ie/about/news/"
+allow_domains = ["nsai.ie", "www.nsai.ie"]
+include_patterns = ['/about/news/.+']
+exclude_patterns = ['^/about/news/?$']
+detail_pages = 10
+
+[[sources]]
+id = "ie_adapt"
+country = "IE"
+name_zh = "愛爾蘭 ADAPT 數位內容科技研究中心"
+name = "ADAPT Centre"
+institution_type = "國家資助公共研究中心"
+language = "en"
+homepage = "https://www.adaptcentre.ie/"
+listing_url = "https://www.adaptcentre.ie/news-and-events/"
+allow_domains = ["adaptcentre.ie", "www.adaptcentre.ie"]
+include_patterns = ['/news-and-events/.+']
+exclude_patterns = ['^/news-and-events/?$']
+critical = false
+observation_runs = 3
+detail_pages = 12
+
+[[sources]]
+id = "ie_cnam"
+country = "IE"
+name_zh = "愛爾蘭媒體委員會"
+name = "Coimisiún na Meán"
+institution_type = "獨立監理機關／數位服務與媒體"
+language = "en"
+homepage = "https://www.cnam.ie/"
+listing_url = "https://www.cnam.ie/news-and-publications/news/"
+allow_domains = ["cnam.ie", "www.cnam.ie"]
+include_patterns = ['^/[^/]+/?$']
+exclude_patterns = ['^/(news-and-publications|about|contact|careers|publications|)$']
+detail_pages = 12
+
+[[sources]]
+id = "ie_electoral_commission"
+country = "IE"
+name_zh = "愛爾蘭選舉委員會"
+name = "An Coimisiún Toghcháin - Electoral Commission"
+institution_type = "獨立法定機關／選舉完整性"
+language = "en"
+homepage = "https://www.electoralcommission.ie/"
+listing_url = "https://www.electoralcommission.ie/media-releases/"
+allow_domains = ["electoralcommission.ie", "www.electoralcommission.ie"]
+include_patterns = ['^/(media-release|latest-news-and-research|uncategorised)/.+']
+exclude_patterns = ['^/media-releases/?$']
+detail_pages = 10
+
+[[sources]]
+id = "eu_edpb"
+country = "EU"
+name_zh = "歐洲資料保護委員會"
+name = "European Data Protection Board"
+institution_type = "歐盟獨立資料保護機關"
+language = "en"
+homepage = "https://www.edpb.europa.eu/"
+listing_url = "https://www.edpb.europa.eu/news_en"
+allow_domains = ["edpb.europa.eu", "www.edpb.europa.eu"]
+include_patterns = ['^/news/.+_en$']
+exclude_patterns = ['^/news_en$']
+critical = false
+observation_runs = 3
+detail_pages = 12
+pagination_url = "https://www.edpb.europa.eu/news_en?page={page}"
+max_pages = 5
+
+[[sources]]
+id = "eu_dg_home"
+country = "EU"
+name_zh = "歐盟執委會移民與內政總署"
+name = "Directorate-General for Migration and Home Affairs"
+institution_type = "歐盟政策主管機關／關鍵實體韌性"
+language = "en"
+homepage = "https://home-affairs.ec.europa.eu/"
+listing_url = "https://home-affairs.ec.europa.eu/news_en"
+allow_domains = ["home-affairs.ec.europa.eu"]
+include_patterns = ['^/news/.+_en$']
+exclude_patterns = ['^/news_en$']
+detail_pages = 12
+
+[[sources]]
+id = "eu_eeas"
+country = "EU"
+name_zh = "歐盟對外事務部"
+name = "European External Action Service"
+institution_type = "歐盟外交與安全政策機關／資訊操縱"
+language = "en"
+homepage = "https://www.eeas.europa.eu/"
+listing_url = "https://www.eeas.europa.eu/eeas/press-material_en"
+allow_domains = ["eeas.europa.eu", "www.eeas.europa.eu"]
+include_patterns = ['^/eeas/.+_en$']
+exclude_patterns = ['^/eeas/press-material_en$']
+detail_pages = 10
+
+[[sources]]
+id = "fr_culture"
+country = "FR"
+name_zh = "法國文化部"
+name = "Ministère de la Culture"
+institution_type = "中央政策主管機關／著作權與媒體"
+language = "fr"
+homepage = "https://www.culture.gouv.fr/"
+listing_url = "https://www.culture.gouv.fr/presse/communiques-de-presse"
+allow_domains = ["culture.gouv.fr", "www.culture.gouv.fr"]
+include_patterns = ['^/presse/communiques-de-presse/.+']
+exclude_patterns = ['^/presse/communiques-de-presse/?$']
+critical = false
+observation_runs = 3
+detail_pages = 12
+
+[[sources]]
+id = "fr_dinum"
+country = "FR"
+name_zh = "法國跨部會數位總局"
+name = "Direction interministérielle du numérique"
+institution_type = "中央數位政府主管機關／數位身份與開放資料"
+language = "fr"
+homepage = "https://www.numerique.gouv.fr/"
+listing_url = "https://www.numerique.gouv.fr/sinformer/espace-presse/"
+allow_domains = ["numerique.gouv.fr", "www.numerique.gouv.fr"]
+include_patterns = ['^/actualites/.+']
+detail_pages = 10
+
+[[sources]]
+id = "de_bbk"
+country = "DE"
+name_zh = "德國聯邦民防暨災害救助署"
+name = "Bundesamt für Bevölkerungsschutz und Katastrophenhilfe"
+institution_type = "聯邦民防主管機關／關鍵基礎設施實體韌性"
+language = "de"
+homepage = "https://www.bbk.bund.de/"
+listing_url = "https://www.bbk.bund.de/DE/Infothek/Unsere-Meldungen/unsere-meldungen_node.html"
+allow_domains = ["bbk.bund.de", "www.bbk.bund.de"]
+include_patterns = ['/SharedDocs/(Kurzmeldungen|Pressemitteilungen)/DE/.+\.html']
+exclude_patterns = ['unsere-meldungen_node\.html$']
+detail_pages = 12
+
+[[sources]]
+id = "ie_dete"
+country = "IE"
+name_zh = "愛爾蘭企業、旅遊暨就業部"
+name = "Department of Enterprise, Tourism and Employment"
+institution_type = "中央政策主管機關／AI、競爭、智慧財產與半導體"
+language = "en"
+homepage = "https://enterprise.gov.ie/"
+listing_url = "https://enterprise.gov.ie/en/news-and-events/department-news/"
+yearly_listing_url = "https://enterprise.gov.ie/en/news-and-events/department-news/{year}/"
+allow_domains = ["enterprise.gov.ie"]
+include_patterns = ['^/en/news-and-events/department-news/20\d{2}/.+\.html$']
+exclude_patterns = ['/department-news/20\d{2}/?$']
+critical = false
+observation_runs = 3
+detail_pages = 12
+
+[[sources]]
+id = "ie_research_ireland"
+country = "IE"
+name_zh = "愛爾蘭研究署"
+name = "Research Ireland"
+institution_type = "國家研究與創新資助機關／量子技術"
+language = "en"
+homepage = "https://www.researchireland.ie/"
+listing_url = "https://www.researchireland.ie/news/"
+allow_domains = ["researchireland.ie", "www.researchireland.ie"]
+include_patterns = ['^/news/.+']
+exclude_patterns = ['^/news/?$']
+detail_pages = 10
+
+[[sources]]
+id = "eu_eurohpc"
+country = "EU"
+name_zh = "歐洲高效能運算聯合事業"
+name = "European High Performance Computing Joint Undertaking"
+institution_type = "歐盟法定聯合事業／公私協力"
+language = "en"
+homepage = "https://www.eurohpc-ju.europa.eu/index_en"
+listing_url = "https://www.eurohpc-ju.europa.eu/media-events/press-releases_en"
+allow_domains = ["eurohpc-ju.europa.eu", "www.eurohpc-ju.europa.eu"]
+include_patterns = ['^/.+-20\d{2}-\d{2}-\d{2}_en$']
+detail_pages = 12
+
+[[sources]]
+id = "eu_chips_ju"
+country = "EU"
+name_zh = "歐洲晶片聯合事業"
+name = "Chips Joint Undertaking"
+institution_type = "歐盟法定聯合事業／公私協力"
+language = "en"
+homepage = "https://www.chips-ju.europa.eu/"
+listing_url = "https://www.chips-ju.europa.eu/News/"
+allow_domains = ["chips-ju.europa.eu", "www.chips-ju.europa.eu"]
+include_patterns = ['^/NewsDetails\?id=']
+detail_pages = 12
+
+[[sources]]
+id = "eu_sns_ju"
+country = "EU"
+name_zh = "歐洲智慧網路與服務聯合事業"
+name = "Smart Networks and Services Joint Undertaking"
+institution_type = "歐盟法定聯合事業／公私協力"
+language = "en"
+homepage = "https://smart-networks.europa.eu/"
+listing_url = "https://smart-networks.europa.eu/news/"
+allow_domains = ["smart-networks.europa.eu"]
+include_patterns = ['^/[a-z0-9][a-z0-9-]{12,}/$']
+exclude_patterns = ['^/(missions-and-objectives|reference-documents|current-call-for-proposals|previous-calls-for-proposals|data-protection-declaration)/$']
+detail_pages = 10
+
+[[sources]]
+id = "fr_cea_list"
+country = "FR"
+name_zh = "法國原子能暨替代能源署 CEA-List"
+name = "CEA-List"
+institution_type = "公立科技研究機構／行政法人性質"
+language = "en"
+homepage = "https://list.cea.fr/en/"
+listing_url = "https://list.cea.fr/en/news/"
+feed_urls = ["https://list.cea.fr/en/feed/"]
+allow_domains = ["list.cea.fr"]
+include_patterns = ['^/en/.+']
+exclude_patterns = ['^/en/news/?$']
+detail_pages = 10
+
+[[sources]]
+id = "fr_campus_cyber"
+country = "FR"
+name_zh = "法國 Campus Cyber"
+name = "Campus Cyber"
+institution_type = "國家倡議公私協力平台／簡化股份公司"
+language = "fr"
+homepage = "https://campuscyber.fr/"
+listing_url = "https://campuscyber.fr/"
+feed_urls = ["https://campuscyber.fr/feed/"]
+allow_domains = ["campuscyber.fr"]
+include_patterns = ['^/[a-z0-9][a-z0-9-]+/?$']
+exclude_patterns = ['^/(evenements|formations|innovations|mentions-legales|politique-de-confidentialite|rejoindre-le-campus|services-evenementiels)/?$']
+detail_pages = 10
+
+[[sources]]
+id = "fr_institut_montaigne"
+country = "FR"
+name_zh = "法國蒙田研究所"
+name = "Institut Montaigne"
+institution_type = "私人非營利政策智庫"
+language = "fr"
+homepage = "https://www.institutmontaigne.org/"
+listing_url = "https://www.institutmontaigne.org/expressions"
+allow_domains = ["institutmontaigne.org", "www.institutmontaigne.org"]
+include_patterns = ['^/expressions/.+', '^/publications/.+']
+exclude_patterns = ['^/(expressions|publications)/?$']
+detail_pages = 10
+
+[[sources]]
+id = "de_athene"
+country = "DE"
+name_zh = "德國 ATHENE 國家應用資安研究中心"
+name = "National Research Center for Applied Cybersecurity ATHENE"
+institution_type = "公立聯合研究中心／產學公私協力"
+language = "de"
+homepage = "https://www.athene-center.de/"
+listing_url = "https://www.athene-center.de/aktuelles/news"
+allow_domains = ["athene-center.de", "www.athene-center.de"]
+include_patterns = ['^/aktuelles/news/.+']
+exclude_patterns = ['^/aktuelles/news/?$']
+detail_pages = 10
+
+[[sources]]
+id = "de_interface"
+country = "DE"
+name_zh = "德國 Interface 科技政策智庫"
+name = "interface - Tech analysis and policy ideas for Europe"
+institution_type = "獨立非營利科技政策智庫"
+language = "en"
+homepage = "https://www.interface-eu.org/"
+listing_url = "https://www.interface-eu.org/publications"
+allow_domains = ["interface-eu.org", "www.interface-eu.org"]
+include_patterns = ['^/publications/.+']
+exclude_patterns = ['^/publications/?$', '^/publications/download/.+']
+detail_pages = 10
+
+[[sources]]
+id = "de_swp"
+country = "DE"
+name_zh = "德國國際暨安全事務研究所"
+name = "Stiftung Wissenschaft und Politik"
+institution_type = "聯邦資助獨立政策智庫／基金會"
+language = "de"
+homepage = "https://www.swp-berlin.org/"
+listing_url = "https://www.swp-berlin.org/themen/dossiers/cybersicherheit-und-digitalpolitik-die-rolle-des-digitalen-in-der-internationalen-politik"
+allow_domains = ["swp-berlin.org", "www.swp-berlin.org"]
+include_patterns = ['^/publikation/.+', '^/publications/.+']
+exclude_patterns = ['^/(publikationen|publications)/?$']
+detail_pages = 10
+
+[[sources]]
+id = "ie_ceadar"
+country = "IE"
+name_zh = "愛爾蘭應用 AI 中心 CeADAR"
+name = "CeADAR - Ireland's Centre for Applied AI"
+institution_type = "國家資助產學公私協力研究中心"
+language = "en"
+homepage = "https://ceadar.ie/"
+listing_url = "https://ceadar.ie/latest-news/"
+allow_domains = ["ceadar.ie"]
+include_patterns = ['^/news/.+']
+exclude_patterns = ['^/latest-news/?$']
+detail_pages = 10
+
+[[sources]]
+id = "ie_insight"
+country = "IE"
+name_zh = "愛爾蘭 Insight 資料分析研究中心"
+name = "Insight SFI Research Centre for Data Analytics"
+institution_type = "國家資助跨校產學研究中心"
+language = "en"
+homepage = "https://www.insight-centre.org/"
+listing_url = "https://www.insight-centre.org/news/"
+allow_domains = ["insight-centre.org", "www.insight-centre.org"]
+include_patterns = ['^/[a-z0-9][a-z0-9-]{12,}/$']
+exclude_patterns = ['^/(about-us|governance|people|projects|industry|ecosystem|privacy-statement|copyright-statement|data-protection-notice)/?$']
+detail_pages = 10
+
+[[sources]]
+id = "ie_esri"
+country = "IE"
+name_zh = "愛爾蘭經濟社會研究所"
+name = "Economic and Social Research Institute"
+institution_type = "法定非營利獨立政策研究機構"
+language = "en"
+homepage = "https://www.esri.ie/"
+listing_url = "https://www.esri.ie/news"
+allow_domains = ["esri.ie", "www.esri.ie"]
+include_patterns = ['^/news/.+']
+exclude_patterns = ['^/news/?$']
+detail_pages = 10
+pagination_url = "https://www.esri.ie/news?page={page}"
+max_pages = 5
+
+[[sources]]
+id = "ie_tyndall"
+country = "IE"
+name_zh = "愛爾蘭廷德爾國家研究所"
+name = "Tyndall National Institute"
+institution_type = "公立國家研究機構／產學合作"
+language = "en"
+homepage = "https://www.tyndall.ie/"
+listing_url = "https://www.tyndall.ie/"
+allow_domains = ["tyndall.ie", "www.tyndall.ie"]
+include_patterns = ['^/news/.+', '^/news-and-events/.+']
+exclude_patterns = ['^/(news|news-and-events)/?$']
+detail_pages = 10
+
+[[sources]]
+id = "ie_cyber_ireland"
+country = "IE"
+name_zh = "愛爾蘭 Cyber Ireland 產業群聚"
+name = "Cyber Ireland"
+institution_type = "國家資助資安產業公私協力群聚"
+language = "en"
+homepage = "https://cyberireland.ie/"
+listing_url = "https://cyberireland.ie/news/"
+yearly_listing_url = "https://cyberireland.ie/blog-{year}/"
+allow_domains = ["cyberireland.ie"]
+include_patterns = ['^/[a-z0-9][a-z0-9-]{12,}/$']
+exclude_patterns = ['^/(building-the-community-2|business-growth-2|develop-the-workforce|promotion-and-advocacy|membership-2|event-calendar|about-us|blog-20\d{2})/?$']
+detail_pages = 10
