@@ -1,4 +1,197 @@
 {
   "schema_version": 3,
-  "translations": {}
+  "translations": {
+    "en\u0000Critical Vulnerability exists in Microsoft SharePoint Server (CVE-2026-56164)": {
+      "text": "Microsoft SharePoint Server 中存在嚴重漏洞 (CVE-2026-56164)",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Commission accepts X’s action plan to comply with Digital Services Act": {
+      "text": "委員會接受 X 遵守《數位服務法》的行動計劃",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Multiple Vulnerabilities in SonicWall: SMA1000 Series Appliances": {
+      "text": "SonicWall 中的多個漏洞：SMA1000 系列裝置",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Commission accepts X's corrective measures to terminate breaches of the DSA": {
+      "text": "委員會接受 X 終止違反 DSA 行為的糾正措施",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Critical Memory Corruption Vulnerability in SAP NetWeaver Application Server ABAP (CVE-2026-44747)": {
+      "text": "SAP NetWeaver 應用程式伺服器 ABAP 中的嚴重記憶體損壞漏洞 (CVE-2026-44747)",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Commission approves €659 million German State aid for four new semiconductor facilities": {
+      "text": "委員會批准德國國家為四個新半導體設施提供 6.59 億歐元援助",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000ENISA on Air: Our first podcast launches on Frontier AI": {
+      "text": "ENISA 直播：我們的第一個播客在 Frontier AI 上推出",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000EDPB requires Belgian DPA to handle the merits of NOYB cookie banner complaint | European Data Protection Board": {
+      "text": "EDP​​ 要求比利時 DPA 處理 NOYB cookie 橫幅投訴的實質問題 |歐洲資料保護委員會",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Where do SMEs stand in preparing for the Cyber Resilience Act?": {
+      "text": "中小企業在準備《網路彈性法案》方面處於什麼位置？",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000SME CRA Survey Report": {
+      "text": "中小企業CRA調查報告",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000SBOM Adoption State of Play - 2026": {
+      "text": "SBOM 採用現況 - 2026",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Technical Competence Requirements for CRA Notified Bodies": {
+      "text": "CRA 公告機構的技術能力要求",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Flash Eurobarometer: Europeans call for stronger action on children's online safety, democratic resilience, defence, and the energy transition": {
+      "text": "快速歐洲晴雨表：歐洲人呼籲在兒童網路安全、民主復原力、國防和能源轉型方面採取更強有力的行動",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Commission issues guidance to strengthen resilience of critical infrastructure": {
+      "text": "委員會發布加強關鍵基礎設施彈性的指南",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Commission preliminarily finds the addictive design of Instagram and Facebook in breach of the Digital Services Act": {
+      "text": "委員會初步認定 Instagram 和 Facebook 的令人上癮的設計違反了《數位服務法》",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "fr\u0000Une summer school internationale dédiée à l'IA pour l'interaction humain-robot au Centre Inria de l'Université de Lorraine": {
+      "text": "洛林大學 Inria 中心一所致力於人工智慧人機互動的國際暑期學校",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000ICOS² Project Launches to Strengthen Europe’s Semiconductor Resilience and Global Partnerships": {
+      "text": "ICOS² 計畫啟動以加強歐洲半導體的彈性和全球合作夥伴關係",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "fr\u0000Le CEPD met en lumière l’anonymisation et le moissonnage pour l’IA générative et adopte la version finale des lignes directrices sur la chaîne de blocs": {
+      "text": "EDP​​ 強調產生人工智慧的匿名化和收穫，並採用最終的區塊鏈指南",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "fr\u0000Droits voisins : l’Autorité de la concurrence prononce des mesures conservatoires et enjoint Meta de négocier de bonne foi avec les éditeurs et agences de presse": {
+      "text": "相關權利：競爭管理局發布預防措施，並命令 Meta 與出版商和新聞機構進行善意談判",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Enlargement: MEPs praise Moldova for reforms despite Moscow interference": {
+      "text": "擴大：儘管莫斯科幹預，歐洲議會議員仍讚揚摩爾多瓦的改革",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Critical Vulnerabilities exist in BeyondTrust Remote Support and Privileged Remote Access": {
+      "text": "BeyondTrust 遠端支援和特權遠端存取中存在嚴重漏洞",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Commission refers Ireland, Spain, France and the Netherlands to the Court of Justice for failing to transpose the rules on cybersecurity": {
+      "text": "歐盟委員會因未能轉換網路安全規則而將愛爾蘭、西班牙、法國和荷蘭提交給法院",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000EDPB sheds light on anonymisation and web scraping for generative AI and adopts final version of guidelines on blockchain | European Data Protection Board": {
+      "text": "EDP​​ 闡明瞭產生人工智慧的匿名化和網路抓取，並採用了區塊鏈指南的最終版本 |歐洲資料保護委員會",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Remarks by Executive Vice-President Virkkunen on the Action plan on Cybersecurity and Artificial Intelligence": {
+      "text": "維克庫寧執行副總裁就網路安全和人工智慧行動計畫發表講話",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Critical Vulnerabilities in Joomla Content Editor (JCE) and SP Page Builder Extension": {
+      "text": "Joomla 內容編輯器 (JCE) 和 SP 頁面產生器擴充功能中的嚴重漏洞",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Commission presents EU Action Plan on Cybersecurity and Artificial Intelligence": {
+      "text": "委員會提出歐盟網路安全和人工智慧行動計劃",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000EuroHPC JU Launches Q-Neko Project to Strengthen EU–Japan Collaboration in Quantum Computing": {
+      "text": "EuroHPC JU 啟動 Q-Neko 計畫以加強歐盟-日本在量子運算領域的合作",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Tyndall Welcomes President of the European Commission Ursula von der Leyen in Visit Showcasing Europe’s Semiconductor Ambitions": {
+      "text": "廷德爾歡迎歐盟委員會主席烏蘇拉馮德萊恩來訪，展示歐洲的半導體野心",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000France 24 Special Edition of Talking Europe": {
+      "text": "法國24小時暢談歐洲特別版",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "fr\u0000Le métier de DPO à l’heure de l’intelligence artificielle : publication des résultats de l’enquête": {
+      "text": "人工智慧時代的DPO職業：調查結果公佈",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Ireland secures €10 million investment to launch national gateway to Europe’s AI network": {
+      "text": "愛爾蘭獲得 1000 萬歐元投資，推出通往歐洲人工智慧網路的國家門戶",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    },
+    "en\u0000Report highlights importance of Digital Services Act for protection of minors online": {
+      "text": "報告強調《數位服務法》對於保護網路未成年人的重要性",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T11:55:29.911664+00:00",
+      "last_accessed_at": "2026-07-16T11:55:29.911664+00:00"
+    }
+  }
 }
