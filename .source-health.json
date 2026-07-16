@@ -1876,12 +1876,25 @@
         "include_unmatched": false,
         "source_budget": 60
       },
-      "updated_at": "2026-07-16T12:12:14.486815+00:00",
+      "updated_at": "2026-07-16T12:18:15.347145+00:00",
       "sources": {
         "eu_dg_connect": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 13,
+            "newest_published_at": "2026-07-15T22:00:00+00:00",
+            "in_range_count": 12,
+            "freshness_lag_days": 0.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 13,
             "newest_published_at": "2026-07-15T22:00:00+00:00",
@@ -1906,12 +1919,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 12,
+            "newest_published_at": "2026-07-13T22:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 2.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "eu_enisa_publications": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 14,
+            "newest_published_at": "2026-07-13T10:17:53+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 3.24,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 14,
             "newest_published_at": "2026-07-13T10:17:53+00:00",
@@ -1936,12 +1975,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 9,
+            "newest_published_at": "2026-05-01T13:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 76.12,
+            "parse_status": "exception",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "eu_cert_advisories": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 8,
+            "newest_published_at": "2026-06-08T22:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 37.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 8,
             "newest_published_at": "2026-06-08T22:00:00+00:00",
@@ -1966,12 +2031,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-14T12:00:00+00:00",
+            "in_range_count": 4,
+            "freshness_lag_days": 2.17,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "eu_enisa_certification": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 3,
+            "newest_published_at": "2026-06-02T12:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 44.17,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 3,
             "newest_published_at": "2026-06-02T12:00:00+00:00",
@@ -1996,12 +2087,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 100,
+            "newest_published_at": "2026-07-16T00:00:00+00:00",
+            "in_range_count": 66,
+            "freshness_lag_days": 0.67,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "eu_parliament_press": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 15,
+            "newest_published_at": "2026-07-15T20:38:00+00:00",
+            "in_range_count": 15,
+            "freshness_lag_days": 0.81,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 15,
             "newest_published_at": "2026-07-15T20:38:00+00:00",
@@ -2026,12 +2143,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 20,
+            "newest_published_at": "2026-07-12T22:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 3.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "fr_cnil": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 25,
+            "newest_published_at": "2026-07-08T22:00:00+00:00",
+            "in_range_count": 7,
+            "freshness_lag_days": 7.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 25,
             "newest_published_at": "2026-07-08T22:00:00+00:00",
@@ -2056,12 +2199,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 18,
+            "newest_published_at": "2026-07-15T10:26:15+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 1.23,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "fr_arcep": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 8,
+            "newest_published_at": "2026-07-16T00:00:00+00:00",
+            "in_range_count": 6,
+            "freshness_lag_days": 0.67,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 8,
             "newest_published_at": "2026-07-16T00:00:00+00:00",
@@ -2086,6 +2255,19 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 221,
+            "newest_published_at": "2026-07-09T22:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 6.75,
+            "parse_status": "exception",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "fr_dge": [
@@ -2101,12 +2283,38 @@
             "freshness_status": "unknown",
             "baseline_failure": false,
             "health_status": "attention"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-15T22:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 0.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "fr_arcom": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 9,
+            "newest_published_at": "2026-07-12T22:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 3.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 9,
             "newest_published_at": "2026-07-12T22:00:00+00:00",
@@ -2131,12 +2339,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-15T07:30:45+00:00",
+            "in_range_count": 4,
+            "freshness_lag_days": 1.35,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "fr_viginum": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 5,
+            "newest_published_at": "2026-06-23T22:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 22.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 5,
             "newest_published_at": "2026-06-23T22:00:00+00:00",
@@ -2161,12 +2395,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 15,
+            "newest_published_at": "2026-06-29T22:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 16.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "de_bmi": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 5,
+            "newest_published_at": "2026-06-30T08:07:30+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 16.33,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 5,
             "newest_published_at": "2026-06-30T08:07:30+00:00",
@@ -2191,12 +2451,38 @@
             "freshness_status": "unknown",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "",
+            "in_range_count": 0,
+            "freshness_lag_days": 0.0,
+            "parse_status": "exception",
+            "freshness_status": "unknown",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "de_fraunhofer_aisec": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 19,
+            "newest_published_at": "2026-07-05T22:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 10.75,
+            "parse_status": "exception",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 19,
             "newest_published_at": "2026-07-05T22:00:00+00:00",
@@ -2221,12 +2507,38 @@
             "freshness_status": "unknown",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 6,
+            "newest_published_at": "",
+            "in_range_count": 0,
+            "freshness_lag_days": 0.0,
+            "parse_status": "exception",
+            "freshness_status": "unknown",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "de_bfdi": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 50,
+            "newest_published_at": "",
+            "in_range_count": 0,
+            "freshness_lag_days": 0.0,
+            "parse_status": "exception",
+            "freshness_status": "unknown",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 50,
             "newest_published_at": "",
@@ -2251,12 +2563,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 22,
+            "newest_published_at": "2026-06-08T07:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 38.38,
+            "parse_status": "exception",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "de_dpma": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 12,
+            "newest_published_at": "2026-07-07T22:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 8.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 12,
             "newest_published_at": "2026-07-07T22:00:00+00:00",
@@ -2281,12 +2619,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 220,
+            "newest_published_at": "2026-07-16T00:00:00+00:00",
+            "in_range_count": 5,
+            "freshness_lag_days": 0.67,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "ie_comreg": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-08T08:48:40+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 8.3,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 10,
             "newest_published_at": "2026-07-08T08:48:40+00:00",
@@ -2311,12 +2675,38 @@
             "freshness_status": "unknown",
             "baseline_failure": false,
             "health_status": "attention"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": false,
+            "raw_count": 0,
+            "newest_published_at": "",
+            "in_range_count": 0,
+            "freshness_lag_days": 0.0,
+            "parse_status": "failed",
+            "freshness_status": "unknown",
+            "baseline_failure": false,
+            "health_status": "attention"
           }
         ],
         "ie_nsai": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 8,
+            "newest_published_at": "2026-06-16T23:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 29.71,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 8,
             "newest_published_at": "2026-06-16T23:00:00+00:00",
@@ -2341,12 +2731,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-10T09:19:37+00:00",
+            "in_range_count": 4,
+            "freshness_lag_days": 6.28,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "ie_cnam": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-06-25T11:02:59+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 21.21,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 10,
             "newest_published_at": "2026-06-25T11:02:59+00:00",
@@ -2371,12 +2787,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-06-29T13:10:06+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 17.12,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "eu_edpb": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 31,
+            "newest_published_at": "2026-07-13T22:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 2.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 31,
             "newest_published_at": "2026-07-13T22:00:00+00:00",
@@ -2401,12 +2843,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-16T12:00:00+00:00",
+            "in_range_count": 7,
+            "freshness_lag_days": 0.17,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "eu_eeas": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 65,
+            "newest_published_at": "2026-07-01T22:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 14.75,
+            "parse_status": "exception",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 65,
             "newest_published_at": "2026-07-01T22:00:00+00:00",
@@ -2431,12 +2899,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 15,
+            "newest_published_at": "2026-07-10T00:00:00+00:00",
+            "in_range_count": 7,
+            "freshness_lag_days": 6.67,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "fr_dinum": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 1,
+            "newest_published_at": "",
+            "in_range_count": 0,
+            "freshness_lag_days": 0.0,
+            "parse_status": "exception",
+            "freshness_status": "unknown",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 1,
             "newest_published_at": "",
@@ -2461,12 +2955,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 3,
+            "newest_published_at": "2026-06-12T06:47:47+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 34.38,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "ie_dete": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 12,
+            "newest_published_at": "2026-06-25T23:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 20.71,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 12,
             "newest_published_at": "2026-06-25T23:00:00+00:00",
@@ -2491,12 +3011,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 186,
+            "newest_published_at": "2026-07-06T16:10:29+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 9.99,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "eu_eurohpc": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-16T12:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 0.17,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 10,
             "newest_published_at": "2026-07-16T12:00:00+00:00",
@@ -2521,12 +3067,38 @@
             "freshness_status": "unknown",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 1,
+            "newest_published_at": "",
+            "in_range_count": 0,
+            "freshness_lag_days": 0.0,
+            "parse_status": "exception",
+            "freshness_status": "unknown",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "eu_sns_ju": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-06-29T15:21:56+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 17.03,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 10,
             "newest_published_at": "2026-06-29T15:21:56+00:00",
@@ -2551,12 +3123,38 @@
             "freshness_status": "unknown",
             "baseline_failure": false,
             "health_status": "attention"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": false,
+            "raw_count": 0,
+            "newest_published_at": "",
+            "in_range_count": 0,
+            "freshness_lag_days": 0.0,
+            "parse_status": "failed",
+            "freshness_status": "unknown",
+            "baseline_failure": false,
+            "health_status": "attention"
           }
         ],
         "fr_campus_cyber": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-06-24T09:18:05+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 22.28,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 10,
             "newest_published_at": "2026-06-24T09:18:05+00:00",
@@ -2581,12 +3179,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 21,
+            "newest_published_at": "2026-07-16T09:21:21+00:00",
+            "in_range_count": 13,
+            "freshness_lag_days": 0.28,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "de_athene": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 6,
+            "newest_published_at": "2026-07-09T10:05:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 7.25,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 6,
             "newest_published_at": "2026-07-09T10:05:00+00:00",
@@ -2611,12 +3235,38 @@
             "freshness_status": "unknown",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 12,
+            "newest_published_at": "",
+            "in_range_count": 0,
+            "freshness_lag_days": 0.0,
+            "parse_status": "exception",
+            "freshness_status": "unknown",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "de_swp": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 12,
+            "newest_published_at": "2026-06-30T22:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 15.75,
+            "parse_status": "exception",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 12,
             "newest_published_at": "2026-06-30T22:00:00+00:00",
@@ -2641,12 +3291,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 6,
+            "newest_published_at": "2026-07-03T11:23:04+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 13.19,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "ie_insight": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-02T08:47:28+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 14.3,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 10,
             "newest_published_at": "2026-07-02T08:47:28+00:00",
@@ -2671,6 +3347,19 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 36,
+            "newest_published_at": "2026-07-16T10:18:04+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 0.24,
+            "parse_status": "exception",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "ie_tyndall": [
@@ -2686,12 +3375,38 @@
             "freshness_status": "fresh",
             "baseline_failure": false,
             "health_status": "healthy"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-16T07:39:34+00:00",
+            "in_range_count": 4,
+            "freshness_lag_days": 0.35,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
           }
         ],
         "ie_cyber_ireland": [
           {
             "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
             "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 3,
+            "newest_published_at": "2021-03-12T12:18:02+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 1952.15,
+            "parse_status": "healthy",
+            "freshness_status": "stale",
+            "baseline_failure": true,
+            "health_status": "attention"
+          },
+          {
+            "run_id": "bf024ba82925477c9dc3598c6b743a85",
+            "recorded_at": "2026-07-16T12:18:15.347145+00:00",
             "success": true,
             "raw_count": 3,
             "newest_published_at": "2021-03-12T12:18:02+00:00",
