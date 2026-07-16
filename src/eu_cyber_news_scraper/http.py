@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import asyncio
 import ssl
+import zlib
 from dataclasses import dataclass, field
+from typing import Protocol
 from urllib.parse import urlsplit
 
 import httpx
@@ -16,6 +18,15 @@ RETRYABLE_STATUSES = {429, 500, 502, 503, 504}
 
 class ResponseTooLargeError(RuntimeError):
     pass
+
+
+class _Decoder(Protocol):
+    @property
+    def unconsumed_tail(self) -> bytes: ...
+
+    def decompress(self, data: bytes, max_length: int = 0) -> bytes: ...
+
+    def flush(self, length: int = ...) -> bytes: ...
 
 
 @dataclass
@@ -108,19 +119,73 @@ class HttpClient:
                 declared_size = 0
             if declared_size > self.max_response_bytes:
                 raise ResponseTooLargeError(f"response exceeds {self.max_response_bytes} bytes: {url}")
+            decoder = _content_decoder(streamed.headers.get("content-encoding", ""))
             chunks: list[bytes] = []
             size = 0
-            async for chunk in streamed.aiter_bytes():
+            encoded_size = 0
+
+            def append_chunk(raw_chunk: bytes) -> None:
+                nonlocal encoded_size, size
+                encoded_size += len(raw_chunk)
+                if encoded_size > self.max_response_bytes:
+                    raise ResponseTooLargeError(f"response exceeds {self.max_response_bytes} bytes: {url}")
+                chunk = _decompress_limited(decoder, raw_chunk, self.max_response_bytes - size, url)
                 size += len(chunk)
+                chunks.append(chunk)
+
+            if streamed.is_stream_consumed:
+                # Mock/custom transports may hand httpx an already-decoded body
+                # while retaining the original Content-Encoding header.
+                decoder = None
+                append_chunk(streamed.content)
+            else:
+                async for raw_chunk in streamed.aiter_raw():
+                    append_chunk(raw_chunk)
+            if decoder is not None:
+                tail = decoder.flush(self.max_response_bytes - size + 1)
+                size += len(tail)
                 if size > self.max_response_bytes:
                     raise ResponseTooLargeError(f"response exceeds {self.max_response_bytes} bytes: {url}")
-                chunks.append(chunk)
+                chunks.append(tail)
+            headers = httpx.Headers(streamed.headers)
+            headers.pop("content-encoding", None)
+            headers.pop("content-length", None)
             return httpx.Response(
                 streamed.status_code,
-                headers=streamed.headers,
+                headers=headers,
                 content=b"".join(chunks),
                 request=streamed.request,
             )
+
+
+def _content_decoder(encoding: str) -> _Decoder | None:
+    normalized = encoding.casefold().strip()
+    if not normalized or normalized == "identity":
+        return None
+    if normalized == "gzip":
+        return zlib.decompressobj(16 + zlib.MAX_WBITS)
+    if normalized == "deflate":
+        return zlib.decompressobj()
+    raise httpx.DecodingError(f"unsupported content encoding: {encoding}")
+
+
+def _decompress_limited(
+    decoder: _Decoder | None,
+    chunk: bytes,
+    remaining: int,
+    url: str,
+) -> bytes:
+    if decoder is None:
+        if len(chunk) > remaining:
+            raise ResponseTooLargeError(f"response exceeds limit: {url}")
+        return chunk
+    try:
+        decoded = decoder.decompress(chunk, remaining + 1)
+    except zlib.error as exc:
+        raise httpx.DecodingError(f"invalid compressed response from {url}: {exc}") from exc
+    if len(decoded) > remaining or decoder.unconsumed_tail:
+        raise ResponseTooLargeError(f"decompressed response exceeds limit: {url}")
+    return decoded
 
 
 def _retry_delay(response: httpx.Response | None) -> float:

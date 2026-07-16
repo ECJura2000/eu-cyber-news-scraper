@@ -1,9 +1,21 @@
 import asyncio
+import gzip
 
 import httpx
 import pytest
 
 from eu_cyber_news_scraper.http import HttpClient, HttpStats, ResponseTooLargeError
+
+
+class AsyncBytes(httpx.AsyncByteStream):
+    def __init__(self, payload):
+        self.payload = payload
+
+    async def __aiter__(self):
+        yield self.payload
+
+    async def aclose(self):
+        return None
 
 
 def test_http_client_reuses_async_client_and_records_metrics():
@@ -86,3 +98,40 @@ def test_http_client_limits_each_host_to_two_concurrent_requests():
 
     asyncio.run(run())
     assert peak == 2
+
+
+def test_http_client_decodes_gzip_even_when_server_ignores_identity_request():
+    payload = b"<html><main>Official DGE news</main></html>"
+
+    async def handler(request):
+        return httpx.Response(
+            200,
+            headers={"content-encoding": "gzip"},
+            stream=AsyncBytes(gzip.compress(payload)),
+            request=request,
+        )
+
+    async def run():
+        async with HttpClient(transport=httpx.MockTransport(handler)) as client:
+            return await client.get("https://example.eu/gzip")
+
+    response = asyncio.run(run())
+    assert response.content == payload
+    assert "content-encoding" not in response.headers
+
+
+def test_http_client_rejects_large_decompressed_response():
+    async def handler(request):
+        return httpx.Response(
+            200,
+            headers={"content-encoding": "gzip"},
+            stream=AsyncBytes(gzip.compress(b"x" * 11)),
+            request=request,
+        )
+
+    async def run():
+        async with HttpClient(max_response_bytes=10, transport=httpx.MockTransport(handler)) as client:
+            await client.get("https://example.eu/compressed-large")
+
+    with pytest.raises(ResponseTooLargeError):
+        asyncio.run(run())
