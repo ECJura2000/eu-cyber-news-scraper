@@ -25,6 +25,13 @@ class Source:
     max_pages: int = 1
     observation_runs: int = 3
     freshness_days: int = 45
+    timezone: str = "Europe/Brussels"
+    card_selectors: tuple[str, ...] = ()
+    link_selectors: tuple[str, ...] = ()
+    date_selectors: tuple[str, ...] = ()
+    summary_selectors: tuple[str, ...] = ()
+    parser_adapter: str = ""
+    date_optional: bool = False
 
     @property
     def display_name(self) -> str:
@@ -52,6 +59,13 @@ class Article:
     content_kind: str = ""
     confidence_level: str = ""
     alternate_urls: list[str] = field(default_factory=list)
+    published_at_raw: str = ""
+    published_date_local: str = ""
+    published_timezone: str = "UTC"
+    date_precision: str = "unknown"
+    date_source: str = ""
+    date_confidence: str = ""
+    date_conflict: bool = False
 
 
 @dataclass(frozen=True)
@@ -81,6 +95,14 @@ class SourceStatus:
     health_status: str = "healthy"
     invalid_date_count: int = 0
     timeout_count: int = 0
+    parse_status: str = "healthy"
+    freshness_status: str = "fresh"
+    content_status: str = "hits"
+    request_count: int = 0
+    bytes_downloaded: int = 0
+    retry_count: int = 0
+    budget_exhausted: bool = False
+    http_statuses: tuple[str, ...] = ()
 
 
 @dataclass

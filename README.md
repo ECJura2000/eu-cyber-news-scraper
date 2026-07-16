@@ -12,7 +12,8 @@
 cd eu-cyber-news-scraper
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -e .
+python -m pip install uv
+uv sync --frozen
 python -m eu_cyber_news_scraper --days 14
 ```
 
@@ -21,7 +22,7 @@ python -m eu_cyber_news_scraper --days 14
 - `歐盟資安法制新聞_YYYYMMDD-YYYYMMDD.xlsx`
 - 同名 `.run.json`：來源成功、失敗、筆數、耗時與整體狀態
 
-標題翻譯採多引擎備援，依序嘗試 `googletrans`、`translate` 及 `translatepy` 三個免費模組，支援英文、法文及德文自動辨識。每個引擎可重試一次，只有含中文字且不同於原文的結果才會採用；全部失敗時保留原文，不中斷 Excel 產出。單次引擎預設逾時 10 秒，連續失敗 3 次且尚無成功時會在本次執行開啟斷路器；`.run.json` 會記錄各引擎嘗試、成功、失敗、跳過、耗時及停用狀態。成功快取採 schema v2，另存引擎及快取時間，舊快取仍可讀取。可用 `EU_CYBER_NEWS_TRANSLATION_TIMEOUT`、`EU_CYBER_NEWS_TRANSLATION_CIRCUIT_FAILURES`、`EU_CYBER_NEWS_TRANSLATION_CACHE` 與 `EU_CYBER_NEWS_TRANSLATION_WORKERS` 調整，或使用 `--no-translate` 完全不呼叫外部翻譯服務。
+標題翻譯採多引擎備援，依序嘗試 `googletrans`、`translate` 及 `translatepy` 三個免費模組，支援英文、法文及德文自動辨識。每個引擎可重試一次，只有含中文字且不同於原文的結果才會採用；全部失敗時保留原文，不中斷 Excel 產出。單次引擎預設逾時 10 秒，連續失敗 3 次且尚無成功時會在本次執行開啟斷路器；`.run.json` 會記錄各引擎嘗試、成功、失敗、跳過、耗時及停用狀態。成功快取採 schema v3，鍵包含來源語言與原文，另存引擎、建立時間及最近使用時間，最多保留最近 10,000 筆。每次 provider 呼叫均在可終止的子程序執行，逾時後會終止並回收程序，不留下背景 daemon thread。可用 `EU_CYBER_NEWS_TRANSLATION_TIMEOUT`、`EU_CYBER_NEWS_TRANSLATION_CIRCUIT_FAILURES`、`EU_CYBER_NEWS_TRANSLATION_CACHE` 與 `EU_CYBER_NEWS_TRANSLATION_WORKERS` 調整，或使用 `--no-translate` 完全不呼叫外部翻譯服務。
 
 `translatepy` 若回傳簡體中文，會再以 OpenCC 轉成臺灣繁體用字後才寫入工作簿。
 
@@ -63,6 +64,9 @@ python -m eu_cyber_news_scraper --no-translate
 
 # 限制每個來源總抓取時間，並指定跨次執行狀態目錄
 python -m eu_cyber_news_scraper --days 14 --source-budget 60 --state-dir .state
+
+# 固定歷史期間預設不寫健康基線；需要強制寫入時明確指定
+python -m eu_cyber_news_scraper --days 14 --health-write always --state-dir .state
 ```
 
 `--days` 與 `--since/--until` 是互斥模式；指定期間時起訖值必須同時提供。日期支援西元
@@ -76,7 +80,7 @@ python -m eu_cyber_news_scraper --days 14 --source-budget 60 --state-dir .state
 
 | 工作表 | 內容 |
 | --- | --- |
-| 全部命中新聞 | 國家、機關、機關屬性、日期、原文標題、繁體中文標題、摘要、主題、關鍵字、可信度、原文連結；高可信為深黃、中可信為淺黃、低可信為淡黃 |
+| 全部命中新聞 | 國家、機關、機關屬性、UTC 日期、原始日期文字、來源時區、當地發布日、日期來源／信心／衝突、原文與繁中標題、摘要、主題、關鍵字、可信度及官方連結；高可信為深黃、中可信為中黃、低可信為淺黃 |
 | CRA_CSA_NIS2_CER | 四項核心歐盟資安法制的專表 |
 | 官方規範與執法 | 立法、主管／監理及法定機構發布內容 |
 | 研究智庫與公私協力 | 研究機構、智庫與產學公私協力發布內容 |
@@ -95,6 +99,8 @@ python -m eu_cyber_news_scraper --days 14 --source-budget 60 --state-dir .state
 - 國家、中文與原文機關名稱、機關屬性、語言
 - 官方首頁、新聞列表、已知 RSS／Atom
 - 允許網域、文章網址規則、排除規則
+- IANA 時區、卡片／連結／日期／摘要 CSS selector、具名 parser adapter
+- 無法穩定提供正式日期時的 `date_optional` 文件化例外
 - 是否為必要來源、最多補抓多少篇內頁
 - 跨年度新聞網址、分頁格式、最多頁數及健康基線觀察次數
 
@@ -102,11 +108,11 @@ python -m eu_cyber_news_scraper --days 14 --source-budget 60 --state-dir .state
 15 個議題 × 4 個法域共 60 格；任一格缺少機關或監測來源，測試即會失敗。
 目前共 55 個來源；研究機構與智庫只作為政策研究、技術評估及生態系觀測來源，不視為具有監理權限的主管機關。
 
-每次成功執行會在狀態目錄更新 `.source-health.json`，最多保留每個來源最近 12 次紀錄。累積指定觀察次數後，若筆數低於歷史中位數 25%、無日期比例過高或標題重複異常，會在 Excel 與 `.run.json` 顯示健康警示。必要來源的抓取失敗會立即使執行狀態降為 `degraded`；新鮮度或基線異常第一次為 `attention`，連續兩次才為 `degraded`。
+`.source-health.json` 使用 schema v2，依來源設定、期間模式及抓取參數 fingerprint 分隔基線，最多保留每個來源最近 12 次紀錄；舊 v1 會保存在 `legacy`，但不參與新基線。`--health-write auto` 只讓完整 rolling 且啟用內頁的標準執行寫入；固定歷史期間預設唯讀，也可明確使用 `always` 或 `never`。累積指定觀察次數後，若筆數低於歷史中位數 25%、無日期比例過高或標題重複異常，會在 Excel 與 `.run.json` 顯示健康警示。必要來源的抓取失敗會立即使執行狀態降為 `degraded`；解析、新鮮度或基線異常第一次為 `attention`，連續兩次才為 `degraded`。內容零命中只記錄 `content_status`，不影響來源健康。
 
 來源另有新鮮度門檻：必要來源預設 45 天、其他來源預設 90 天，可在 `sources.toml` 以 `freshness_days` 個別調整。超過門檻的必要來源不會因仍抓得到舊文章而誤判為正常。內容期間內沒有命中議題只會記錄在「內容結果」，不會混入抓取故障。
 
-來源預設以 8 個工作執行緒併發抓取，可用 `--workers` 調整；來源與內頁的總 HTTP 請求另受全域 16 條上限保護。相同輸出檔同一時間只允許一個工作執行，避免覆寫 Excel、摘要或翻譯快取。新增來源後應同步：
+來源以 `asyncio` 與共享 `httpx.AsyncClient` 執行，預設最多同時處理 8 個來源，可用 `--workers` 調整；全域最多 16 個 HTTP 請求、同網域最多 2 個，連線逾時上限 8 秒、最多一次冪等重試、單一回應上限 5 MiB。`--source-budget` 以 `asyncio.timeout` 包住來源的 feed、列表與內頁完整流程，期限到達會取消未完成請求。相同輸出檔同一時間只允許一個工作執行，健康資料與翻譯快取另共用狀態鎖，避免遺失更新。新增來源後應同步：
 
 1. 更新 `sources.toml` 與 `SOURCES.md`。
 2. 先執行 `--source 新代碼 --days 60 --include-undated` 人工檢查。
@@ -115,24 +121,25 @@ python -m eu_cyber_news_scraper --days 14 --source-budget 60 --state-dir .state
 
 ## GitHub Actions
 
-`.github/workflows/scrape.yml` 會在每週一 00:00 UTC（臺灣時間 08:00）執行，將 Excel、JSONL 與執行摘要保存為 30 天的 workflow artifact。它不會自動提交新聞資料回儲存庫，避免讓產出檔污染版本歷史。
+`.github/workflows/scrape.yml` 會在每週一 00:00 UTC（臺灣時間 08:00）執行，將 Excel、JSONL 與執行摘要保存為 30 天的 workflow artifact。新聞輸出不提交到 `main`；健康 state v2 與翻譯快取保存於公開孤立 `state` 分支，分支不存在時 workflow 直接失敗。必要來源 `degraded` 時會建立或更新單一 `EU cyber news source health` Issue，恢復後自動關閉；`attention` 僅寫入 Actions Job Summary。所有第三方 Actions 均固定到完整 commit SHA。
 
 ## 測試
 
 ```bash
-python -m pip install -e '.[dev]'
-ruff check .
-pytest --cov=eu_cyber_news_scraper --cov-report=term-missing --cov-fail-under=90
-pip-audit
+uv sync --frozen --all-extras
+uv run ruff check .
+uv run mypy src/eu_cyber_news_scraper
+uv run pytest --cov=eu_cyber_news_scraper --cov-report=term-missing --cov-fail-under=90
+uv run pip-audit
 ```
 
-測試採本地 RSS／HTML fixtures，不依賴即時網站；7 個必要來源各有版型合約 fixture，另有 120 筆多語議題原始及文字擾動評估案例與 precision／recall 門檻。CI 會在 Python 3.11、3.12、3.13 執行，要求至少 90% 覆蓋率並執行 `pip-audit`；每週工作另會先對必要來源執行不翻譯的 smoke test。
+測試採本地 RSS／HTML fixtures，不依賴即時網站；55 個來源各有版型合約 fixture，另有 120 筆真正獨立的英、法、德多語議題評估案例，要求整體 precision、recall 均至少 0.90，且每個主題 recall 至少 0.75。CI 會在 Python 3.11、3.12、3.13 執行，要求至少 90% 覆蓋率、Ruff、mypy strict、`pip-audit`、requirements 漂移檢查及 wheel／sdist 安裝測試；每週工作另會先對必要來源執行不翻譯的 smoke test。
 
 ## 已知限制
 
 - 通用 HTML 解析器無法保證涵蓋所有動態載入網站；遇到 JavaScript-only 頁面應新增官方 API／feed 或專用解析器。
 - 翻譯會將新聞標題送往外部服務；若有資料治理限制，可預先提供翻譯快取或另行替換翻譯器。
-- `.run.json` 使用 schema v4，分開記錄 `fetch_status` 與 `health_status`，並保存原始日期輸入、辨識紀年、正規化期間、無效日期、逾時及去重統計。
+- `.run.json` 與 JSONL 使用 schema v5；v4 常用欄位仍保留，並新增程式版本、Git SHA、Python 版本、來源設定 SHA-256、run profile、日期 provenance／品質統計及相對 artifact 名稱。來源狀態分為 `fetch_status`、`parse_status`、`freshness_status`、`content_status` 與彙總 `health_status`。
 - `complete` 代表必要來源與品質門檻均正常；非必要來源失敗、單次健康基線警示或翻譯成功率低於 95% 會標示 `attention`；必要來源抓取失敗或連續健康異常則為 `degraded`。
 - 已設定分頁或年度模板的來源會依日期範圍抓取存檔頁；尚未提供穩定分頁規則的網站仍可能受其首頁顯示筆數限制。
 - 公共研究中心的內容屬研究資訊，不等同主管機關的正式法律解釋。

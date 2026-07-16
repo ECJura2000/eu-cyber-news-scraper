@@ -5,6 +5,7 @@ import tomllib
 from importlib.resources import files
 from pathlib import Path
 from urllib.parse import urlsplit
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from .models import Source
 
@@ -17,9 +18,17 @@ DEFAULT_OUTPUT_DIR = Path.cwd() / "新聞放置區"
 DEFAULT_TRANSLATION_WORKERS = 4
 DEFAULT_HTTP_CONCURRENCY = 16
 USER_AGENT = (
-    "Mozilla/5.0 (compatible; EU-cyber-legal-observation/1.0; "
-    "+https://digital-strategy.ec.europa.eu/)"
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 "
+    "EU-cyber-legal-observation/1.1 (+https://github.com/ECJura2000/eu-cyber-news-scraper)"
 )
+
+COUNTRY_TIMEZONES = {
+    "EU": "Europe/Brussels",
+    "FR": "Europe/Paris",
+    "DE": "Europe/Berlin",
+    "IE": "Europe/Dublin",
+}
 
 
 def default_sources_path() -> Path:
@@ -53,6 +62,13 @@ def load_sources(path: str | Path | None = None) -> tuple[Source, ...]:
                 max_pages=int(row.get("max_pages", 1)),
                 observation_runs=int(row.get("observation_runs", 3)),
                 freshness_days=int(row.get("freshness_days", 45 if row.get("critical", False) else 90)),
+                timezone=str(row.get("timezone", COUNTRY_TIMEZONES.get(row["country"], "UTC"))),
+                card_selectors=tuple(row.get("card_selectors", [])),
+                link_selectors=tuple(row.get("link_selectors", [])),
+                date_selectors=tuple(row.get("date_selectors", [])),
+                summary_selectors=tuple(row.get("summary_selectors", [])),
+                parser_adapter=str(row.get("parser_adapter", "")),
+                date_optional=bool(row.get("date_optional", False)),
             )
         )
     _validate_sources(sources)
@@ -76,6 +92,10 @@ def _validate_sources(sources: list[Source]) -> None:
             raise ValueError(f"{source.id}: detail_pages must be non-negative")
         if source.max_pages < 1 or source.observation_runs < 0 or source.freshness_days < 1:
             raise ValueError(f"{source.id}: max_pages must be positive and observation_runs non-negative")
+        try:
+            ZoneInfo(source.timezone)
+        except ZoneInfoNotFoundError as exc:
+            raise ValueError(f"{source.id}: invalid timezone: {source.timezone}") from exc
         urls_to_validate = [
             ("homepage", source.homepage),
             ("listing_url", source.listing_url),

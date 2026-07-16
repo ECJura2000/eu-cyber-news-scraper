@@ -8,21 +8,28 @@ from eu_cyber_news_scraper.models import Source
 from eu_cyber_news_scraper.periods import resolve_period
 
 
-class Response:
-    def __init__(self, content: bytes):
-        self.content = content
-        self.text = content.decode("utf-8")
-
-
 class FakeHttpClient:
     def __init__(self, timeout: int):
         self.payload = b""
 
-    def get(self, url: str):
-        return Response(
-            b"<?xml version='1.0'?><rss><channel><item><title>NIS2 security guidance</title>"
-            b"<link>https://agency.example/news/nis2</link><pubDate>Fri, 01 May 2026 08:00:00 GMT</pubDate>"
-            b"<description>NIS2 risk management requirements</description></item></channel></rss>"
+    async def __aenter__(self):
+        return self
+
+    async def __aexit__(self, *_args):
+        return None
+
+    async def get(self, url: str, *, stats=None):
+        import httpx
+
+        return httpx.Response(
+            200,
+            content=(
+                b"<?xml version='1.0'?><rss><channel><item><title>NIS2 security guidance</title>"
+                b"<link>https://agency.example/news/nis2</link>"
+                b"<pubDate>Fri, 01 May 2026 08:00:00 GMT</pubDate>"
+                b"<description>NIS2 risk management requirements</description></item></channel></rss>"
+            ),
+            request=httpx.Request("GET", url),
         )
 
 
@@ -41,6 +48,7 @@ def test_offline_pipeline_writes_atomic_artifacts_and_quality_metadata(monkeypat
     args = SimpleNamespace(
         timeout=1, workers=1, all=False, include_undated=False, no_detail=True,
         topic=None, jsonl=True, fail_on_degraded=False, source_budget=10, state_dir=str(tmp_path / ".state"),
+        health_write="always",
     )
     output = tmp_path / "result.xlsx"
     period = resolve_period("1150501", "1150502", None)
@@ -52,8 +60,12 @@ def test_offline_pipeline_writes_atomic_artifacts_and_quality_metadata(monkeypat
     summary = json.loads(output.with_suffix(".run.json").read_text(encoding="utf-8"))
     assert summary["run_id"] == "run-e2e"
     assert summary["translation"]["success_rate"] == 1
-    assert summary["schema_version"] == 4
+    assert summary["schema_version"] == 5
     assert summary["period"]["raw_since"] == "1150501"
     assert summary["period"]["since_calendar"] == "roc"
     assert (tmp_path / ".state" / ".source-health.json").exists()
     assert output.with_suffix(".jsonl").exists()
+    row = json.loads(output.with_suffix(".jsonl").read_text(encoding="utf-8").splitlines()[0])
+    assert row["schema_version"] == 5
+    assert row["run_id"] == "run-e2e"
+    assert row["date_source"] == "feed-published"

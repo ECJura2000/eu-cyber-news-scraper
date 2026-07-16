@@ -1,32 +1,33 @@
+import asyncio
 from datetime import datetime, timezone
+
+import httpx
 
 from eu_cyber_news_scraper.models import Source
 from eu_cyber_news_scraper.scraper import _is_non_html_url, _listing_urls, scrape_source
-
-
-class Response:
-    def __init__(self, content: bytes):
-        self.content = content
-        self.text = content.decode("utf-8")
 
 
 class FakeClient:
     def __init__(self, payload):
         self.payload = payload
 
-    def get(self, url):
-        return Response(self.payload)
+    async def get(self, url, *, stats=None):
+        return httpx.Response(200, content=self.payload, request=httpx.Request("GET", url))
 
 
 class MappingClient:
     def __init__(self, payloads):
         self.payloads = payloads
 
-    def get(self, url):
+    async def get(self, url, *, stats=None):
         value = self.payloads[url]
         if isinstance(value, Exception):
             raise value
-        return Response(value)
+        return httpx.Response(200, content=value, request=httpx.Request("GET", url))
+
+
+def run_scraper(*args, **kwargs):
+    return asyncio.run(scrape_source(*args, **kwargs))
 
 
 def test_scrape_source_filters_date_and_topic(fixture_dir):
@@ -43,7 +44,7 @@ def test_scrape_source_filters_date_and_topic(fixture_dir):
         allow_domains=("agency.example",),
         include_patterns=(r"/news/.+",),
     )
-    result = scrape_source(
+    result = run_scraper(
         source,
         FakeClient((fixture_dir / "sample.rss").read_bytes()),
         since=datetime(2026, 5, 1, tzinfo=timezone.utc),
@@ -69,7 +70,7 @@ def test_empty_parse_is_not_reported_as_healthy():
         allow_domains=("agency.example",),
         include_patterns=(r"/news/.+",),
     )
-    result = scrape_source(
+    result = run_scraper(
         source,
         FakeClient(b"<html><main></main></html>"),
         since=datetime(2026, 5, 1, tzinfo=timezone.utc),
@@ -85,7 +86,7 @@ def test_no_topic_hit_is_content_result_not_fetch_warning(fixture_dir):
         "https://agency.example/", "https://agency.example/news/",
         feed_urls=("https://agency.example/feed.xml",), allow_domains=("agency.example",),
     )
-    result = scrape_source(
+    result = run_scraper(
         source,
         FakeClient((fixture_dir / "sample.rss").read_bytes()),
         since=datetime(2026, 4, 1, tzinfo=timezone.utc),
@@ -123,7 +124,7 @@ def test_future_dates_are_invalidated_before_range_filtering():
     payload = b"""<?xml version='1.0'?><rss><channel><item>
       <title>NIS2 future event</title><link>https://agency.example/news/future</link>
       <pubDate>Thu, 31 Dec 2026 08:00:00 GMT</pubDate></item></channel></rss>"""
-    result = scrape_source(
+    result = run_scraper(
         source,
         FakeClient(payload),
         since=datetime(2026, 7, 1, tzinfo=timezone.utc),
@@ -153,7 +154,7 @@ def test_listing_discovers_feed_after_configured_feed_failure():
             "https://agency.example/good.xml": feed,
         }
     )
-    result = scrape_source(
+    result = run_scraper(
         source,
         client,
         since=datetime(2026, 5, 1, tzinfo=timezone.utc),
@@ -171,16 +172,23 @@ def test_source_budget_stops_network_paths():
         "https://agency.example/", "https://agency.example/news/",
         feed_urls=("https://agency.example/feed.xml",),
     )
-    result = scrape_source(
+    class SlowClient:
+        async def get(self, url, *, stats=None):
+            await asyncio.sleep(5)
+            raise AssertionError("cancelled request unexpectedly completed")
+
+    result = run_scraper(
         source,
-        FakeClient(b""),
+        SlowClient(),
         since=datetime(2026, 5, 1, tzinfo=timezone.utc),
         until=datetime(2026, 6, 1, tzinfo=timezone.utc),
-        source_budget_seconds=0,
+        source_budget_seconds=1,
     )
     assert not result.status.success
     assert result.status.timeout_count == 1
-    assert "超過預算" in result.status.error
+    assert result.status.budget_exhausted
+    assert "SourceBudgetExceeded" in result.status.error
+    assert result.status.duration_seconds < 2
 
 
 def test_non_html_url_detection():
