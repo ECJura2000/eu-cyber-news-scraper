@@ -1352,6 +1352,1358 @@
           }
         ]
       }
+    },
+    "3be5c156507e7b67": {
+      "profile": {
+        "period_mode": "rolling",
+        "source_ids": [
+          "eu_dg_connect",
+          "eu_enisa_news",
+          "eu_enisa_publications",
+          "eu_cert_threat",
+          "eu_cert_advisories",
+          "eu_jrc_news",
+          "eu_enisa_certification",
+          "eu_presscorner",
+          "eu_parliament_press",
+          "fr_anssi",
+          "fr_cnil",
+          "fr_cybermalveillance",
+          "fr_arcep",
+          "fr_inria",
+          "fr_dge",
+          "fr_arcom",
+          "fr_concurrence",
+          "fr_viginum",
+          "de_bsi_news",
+          "de_bmi",
+          "de_bnetza",
+          "de_fraunhofer_aisec",
+          "de_cispa",
+          "de_bfdi",
+          "de_bundeskartellamt",
+          "de_dpma",
+          "ie_ncsc",
+          "ie_comreg",
+          "ie_dpc",
+          "ie_nsai",
+          "ie_adapt",
+          "ie_cnam",
+          "ie_electoral_commission",
+          "eu_edpb",
+          "eu_dg_home",
+          "eu_eeas",
+          "fr_culture",
+          "fr_dinum",
+          "de_bbk",
+          "ie_dete",
+          "ie_research_ireland",
+          "eu_eurohpc",
+          "eu_chips_ju",
+          "eu_sns_ju",
+          "fr_cea_list",
+          "fr_campus_cyber",
+          "fr_institut_montaigne",
+          "de_athene",
+          "de_interface",
+          "de_swp",
+          "ie_ceadar",
+          "ie_insight",
+          "ie_esri",
+          "ie_tyndall",
+          "ie_cyber_ireland"
+        ],
+        "source_settings": [
+          {
+            "id": "eu_dg_connect",
+            "listing_url": "https://digital-strategy.ec.europa.eu/en/news",
+            "feed_urls": [],
+            "detail_pages": 18,
+            "timezone": "Europe/Brussels",
+            "date_optional": false
+          },
+          {
+            "id": "eu_enisa_news",
+            "listing_url": "https://www.enisa.europa.eu/news",
+            "feed_urls": [],
+            "detail_pages": 18,
+            "timezone": "Europe/Brussels",
+            "date_optional": false
+          },
+          {
+            "id": "eu_enisa_publications",
+            "listing_url": "https://www.enisa.europa.eu/publications",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Brussels",
+            "date_optional": false
+          },
+          {
+            "id": "eu_cert_threat",
+            "listing_url": "https://cert.europa.eu/publications/threat-intelligence/",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Brussels",
+            "date_optional": true
+          },
+          {
+            "id": "eu_cert_advisories",
+            "listing_url": "https://cert.europa.eu/publications/security-advisories/",
+            "feed_urls": [],
+            "detail_pages": 8,
+            "timezone": "Europe/Brussels",
+            "date_optional": false
+          },
+          {
+            "id": "eu_jrc_news",
+            "listing_url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates_en",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Brussels",
+            "date_optional": false
+          },
+          {
+            "id": "eu_enisa_certification",
+            "listing_url": "https://certification.enisa.europa.eu/news-events_en",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Brussels",
+            "date_optional": false
+          },
+          {
+            "id": "eu_presscorner",
+            "listing_url": "https://ec.europa.eu/commission/presscorner/home/en",
+            "feed_urls": [
+              "https://ec.europa.eu/commission/presscorner/api/latestnews?language=en&pageSize=100"
+            ],
+            "detail_pages": 10,
+            "timezone": "Europe/Brussels",
+            "date_optional": false
+          },
+          {
+            "id": "eu_parliament_press",
+            "listing_url": "https://www.europarl.europa.eu/news/en/press-room",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Brussels",
+            "date_optional": false
+          },
+          {
+            "id": "fr_anssi",
+            "listing_url": "https://cyber.gouv.fr/actualites/",
+            "feed_urls": [
+              "https://cyber.gouv.fr/actualites/rss/",
+              "https://cyber.gouv.fr/actualites/atom/"
+            ],
+            "detail_pages": 16,
+            "timezone": "Europe/Paris",
+            "date_optional": false
+          },
+          {
+            "id": "fr_cnil",
+            "listing_url": "https://www.cnil.fr/fr/actualites",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Paris",
+            "date_optional": false
+          },
+          {
+            "id": "fr_cybermalveillance",
+            "listing_url": "https://www.cybermalveillance.gouv.fr/blog",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Paris",
+            "date_optional": false
+          },
+          {
+            "id": "fr_arcep",
+            "listing_url": "https://www.arcep.fr/actualites/actualites-et-communiques.html",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Paris",
+            "date_optional": false
+          },
+          {
+            "id": "fr_inria",
+            "listing_url": "https://www.inria.fr/fr/actualites-recherche-savoir-numerique",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Paris",
+            "date_optional": true
+          },
+          {
+            "id": "fr_dge",
+            "listing_url": "https://www.entreprises.gouv.fr/la-dge/actualites",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Paris",
+            "date_optional": false
+          },
+          {
+            "id": "fr_arcom",
+            "listing_url": "https://www.arcom.fr/actualites/toutes-nos-actualites",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Paris",
+            "date_optional": false
+          },
+          {
+            "id": "fr_concurrence",
+            "listing_url": "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Paris",
+            "date_optional": false
+          },
+          {
+            "id": "fr_viginum",
+            "listing_url": "https://www.sgdsn.gouv.fr/viginum/actualites",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Paris",
+            "date_optional": false
+          },
+          {
+            "id": "de_bsi_news",
+            "listing_url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/alle-meldungen-news_node.html",
+            "feed_urls": [],
+            "detail_pages": 16,
+            "timezone": "Europe/Berlin",
+            "date_optional": false
+          },
+          {
+            "id": "de_bmi",
+            "listing_url": "https://www.bmi.bund.de/SiteGlobals/Forms/suche/expertensuche-formular.html?nn=9388812&gts=9398922_list%253DunifiedDate_dt%2Bdesc&documentType_=pbjournal",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Berlin",
+            "date_optional": false
+          },
+          {
+            "id": "de_bnetza",
+            "listing_url": "https://www.bundesnetzagentur.de/DE/Allgemeines/Presse/Pressemitteilungen/start.html",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Berlin",
+            "date_optional": true
+          },
+          {
+            "id": "de_fraunhofer_aisec",
+            "listing_url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen.html",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Berlin",
+            "date_optional": true
+          },
+          {
+            "id": "de_cispa",
+            "listing_url": "https://cispa.de/en/news-and-events/all-news",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Berlin",
+            "date_optional": true
+          },
+          {
+            "id": "de_bfdi",
+            "listing_url": "https://www.bfdi.bund.de/DE/BfDI/Presse/Pressemitteilungen/pressemitteilungen_node.html",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Berlin",
+            "date_optional": true
+          },
+          {
+            "id": "de_bundeskartellamt",
+            "listing_url": "https://www.bundeskartellamt.de/DE/Home/home_node.html",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Berlin",
+            "date_optional": true
+          },
+          {
+            "id": "de_dpma",
+            "listing_url": "https://www.dpma.de/service/presse/pressemitteilungen/archiv/index.html",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Berlin",
+            "date_optional": false
+          },
+          {
+            "id": "ie_ncsc",
+            "listing_url": "https://www.ncsc.gov.ie/news/",
+            "feed_urls": [
+              "https://www.ncsc.gov.ie/news/alerts.rss",
+              "https://www.ncsc.gov.ie/news/alerts.atom"
+            ],
+            "detail_pages": 12,
+            "timezone": "Europe/Dublin",
+            "date_optional": false
+          },
+          {
+            "id": "ie_comreg",
+            "listing_url": "https://www.comreg.ie/news/",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Dublin",
+            "date_optional": false
+          },
+          {
+            "id": "ie_dpc",
+            "listing_url": "https://www.dataprotection.ie/en/news-media/latest-news",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Dublin",
+            "date_optional": false
+          },
+          {
+            "id": "ie_nsai",
+            "listing_url": "https://www.nsai.ie/about/news/",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Dublin",
+            "date_optional": false
+          },
+          {
+            "id": "ie_adapt",
+            "listing_url": "https://www.adaptcentre.ie/news/",
+            "feed_urls": [
+              "https://www.adaptcentre.ie/news-and-events/feed/"
+            ],
+            "detail_pages": 12,
+            "timezone": "Europe/Dublin",
+            "date_optional": false
+          },
+          {
+            "id": "ie_cnam",
+            "listing_url": "https://www.cnam.ie/news-and-publications/news/",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Dublin",
+            "date_optional": false
+          },
+          {
+            "id": "ie_electoral_commission",
+            "listing_url": "https://www.electoralcommission.ie/media-releases/",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Dublin",
+            "date_optional": false
+          },
+          {
+            "id": "eu_edpb",
+            "listing_url": "https://www.edpb.europa.eu/news_en",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Brussels",
+            "date_optional": false
+          },
+          {
+            "id": "eu_dg_home",
+            "listing_url": "https://home-affairs.ec.europa.eu/news_en",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Brussels",
+            "date_optional": false
+          },
+          {
+            "id": "eu_eeas",
+            "listing_url": "https://www.eeas.europa.eu/eeas/press-material_en",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Brussels",
+            "date_optional": true
+          },
+          {
+            "id": "fr_culture",
+            "listing_url": "https://www.culture.gouv.fr/presse/communiques-de-presse",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Paris",
+            "date_optional": false
+          },
+          {
+            "id": "fr_dinum",
+            "listing_url": "https://www.numerique.gouv.fr/sinformer/espace-presse/",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Paris",
+            "date_optional": true
+          },
+          {
+            "id": "de_bbk",
+            "listing_url": "https://www.bbk.bund.de/DE/Infothek/Unsere-Meldungen/unsere-meldungen_node.html",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Berlin",
+            "date_optional": false
+          },
+          {
+            "id": "ie_dete",
+            "listing_url": "https://enterprise.gov.ie/en/news-and-events/department-news/",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Dublin",
+            "date_optional": false
+          },
+          {
+            "id": "ie_research_ireland",
+            "listing_url": "https://www.researchireland.ie/news/",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Dublin",
+            "date_optional": false
+          },
+          {
+            "id": "eu_eurohpc",
+            "listing_url": "https://www.eurohpc-ju.europa.eu/media-events/press-releases_en",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Brussels",
+            "date_optional": false
+          },
+          {
+            "id": "eu_chips_ju",
+            "listing_url": "https://www.chips-ju.europa.eu/News/",
+            "feed_urls": [],
+            "detail_pages": 12,
+            "timezone": "Europe/Brussels",
+            "date_optional": true
+          },
+          {
+            "id": "eu_sns_ju",
+            "listing_url": "https://smart-networks.europa.eu/news/",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Brussels",
+            "date_optional": false
+          },
+          {
+            "id": "fr_cea_list",
+            "listing_url": "https://list.cea.fr/en/news/",
+            "feed_urls": [
+              "https://list.cea.fr/en/feed/"
+            ],
+            "detail_pages": 10,
+            "timezone": "Europe/Paris",
+            "date_optional": false
+          },
+          {
+            "id": "fr_campus_cyber",
+            "listing_url": "https://campuscyber.fr/",
+            "feed_urls": [
+              "https://campuscyber.fr/feed/"
+            ],
+            "detail_pages": 10,
+            "timezone": "Europe/Paris",
+            "date_optional": false
+          },
+          {
+            "id": "fr_institut_montaigne",
+            "listing_url": "https://www.institutmontaigne.org/expressions",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Paris",
+            "date_optional": false
+          },
+          {
+            "id": "de_athene",
+            "listing_url": "https://www.athene-center.de/aktuelles/news",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Berlin",
+            "date_optional": false
+          },
+          {
+            "id": "de_interface",
+            "listing_url": "https://www.interface-eu.org/publications",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Berlin",
+            "date_optional": true
+          },
+          {
+            "id": "de_swp",
+            "listing_url": "https://www.swp-berlin.org/themen/dossiers/cybersicherheit-und-digitalpolitik-die-rolle-des-digitalen-in-der-internationalen-politik",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Berlin",
+            "date_optional": true
+          },
+          {
+            "id": "ie_ceadar",
+            "listing_url": "https://ceadar.ie/latest-news/",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Dublin",
+            "date_optional": false
+          },
+          {
+            "id": "ie_insight",
+            "listing_url": "https://www.insight-centre.org/news/",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Dublin",
+            "date_optional": false
+          },
+          {
+            "id": "ie_esri",
+            "listing_url": "https://www.esri.ie/news",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Dublin",
+            "date_optional": true
+          },
+          {
+            "id": "ie_tyndall",
+            "listing_url": "https://www.tyndall.ie/news/",
+            "feed_urls": [
+              "https://www.tyndall.ie/feed/"
+            ],
+            "detail_pages": 10,
+            "timezone": "Europe/Dublin",
+            "date_optional": false
+          },
+          {
+            "id": "ie_cyber_ireland",
+            "listing_url": "https://cyberireland.ie/news/",
+            "feed_urls": [],
+            "detail_pages": 10,
+            "timezone": "Europe/Dublin",
+            "date_optional": false
+          }
+        ],
+        "fetch_details": true,
+        "include_undated": false,
+        "include_unmatched": false,
+        "source_budget": 60
+      },
+      "updated_at": "2026-07-16T12:12:14.486815+00:00",
+      "sources": {
+        "eu_dg_connect": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 13,
+            "newest_published_at": "2026-07-15T22:00:00+00:00",
+            "in_range_count": 12,
+            "freshness_lag_days": 0.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_enisa_news": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 12,
+            "newest_published_at": "2026-07-13T22:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 2.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_enisa_publications": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 14,
+            "newest_published_at": "2026-07-13T10:17:53+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 3.24,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_cert_threat": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 9,
+            "newest_published_at": "2026-05-01T13:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 76.12,
+            "parse_status": "exception",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_cert_advisories": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 8,
+            "newest_published_at": "2026-06-08T22:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 37.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_jrc_news": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-14T12:00:00+00:00",
+            "in_range_count": 4,
+            "freshness_lag_days": 2.17,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_enisa_certification": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 3,
+            "newest_published_at": "2026-06-02T12:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 44.17,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_presscorner": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 100,
+            "newest_published_at": "2026-07-16T00:00:00+00:00",
+            "in_range_count": 66,
+            "freshness_lag_days": 0.67,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_parliament_press": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 15,
+            "newest_published_at": "2026-07-15T20:38:00+00:00",
+            "in_range_count": 15,
+            "freshness_lag_days": 0.81,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_anssi": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 20,
+            "newest_published_at": "2026-07-12T22:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 3.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_cnil": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 25,
+            "newest_published_at": "2026-07-08T22:00:00+00:00",
+            "in_range_count": 7,
+            "freshness_lag_days": 7.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_cybermalveillance": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 18,
+            "newest_published_at": "2026-07-15T10:26:15+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 1.23,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_arcep": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 8,
+            "newest_published_at": "2026-07-16T00:00:00+00:00",
+            "in_range_count": 6,
+            "freshness_lag_days": 0.67,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_inria": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 221,
+            "newest_published_at": "2026-07-09T22:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 6.75,
+            "parse_status": "exception",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_dge": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": false,
+            "raw_count": 0,
+            "newest_published_at": "",
+            "in_range_count": 0,
+            "freshness_lag_days": 0.0,
+            "parse_status": "failed",
+            "freshness_status": "unknown",
+            "baseline_failure": false,
+            "health_status": "attention"
+          }
+        ],
+        "fr_arcom": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 9,
+            "newest_published_at": "2026-07-12T22:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 3.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_concurrence": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-15T07:30:45+00:00",
+            "in_range_count": 4,
+            "freshness_lag_days": 1.35,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_viginum": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 5,
+            "newest_published_at": "2026-06-23T22:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 22.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_bsi_news": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 15,
+            "newest_published_at": "2026-06-29T22:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 16.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_bmi": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 5,
+            "newest_published_at": "2026-06-30T08:07:30+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 16.33,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_bnetza": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "",
+            "in_range_count": 0,
+            "freshness_lag_days": 0.0,
+            "parse_status": "exception",
+            "freshness_status": "unknown",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_fraunhofer_aisec": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 19,
+            "newest_published_at": "2026-07-05T22:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 10.75,
+            "parse_status": "exception",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_cispa": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 6,
+            "newest_published_at": "",
+            "in_range_count": 0,
+            "freshness_lag_days": 0.0,
+            "parse_status": "exception",
+            "freshness_status": "unknown",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_bfdi": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 50,
+            "newest_published_at": "",
+            "in_range_count": 0,
+            "freshness_lag_days": 0.0,
+            "parse_status": "exception",
+            "freshness_status": "unknown",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_bundeskartellamt": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 22,
+            "newest_published_at": "2026-06-08T07:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 38.38,
+            "parse_status": "exception",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_dpma": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 12,
+            "newest_published_at": "2026-07-07T22:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 8.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_ncsc": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 220,
+            "newest_published_at": "2026-07-16T00:00:00+00:00",
+            "in_range_count": 5,
+            "freshness_lag_days": 0.67,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_comreg": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-08T08:48:40+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 8.3,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_dpc": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": false,
+            "raw_count": 0,
+            "newest_published_at": "",
+            "in_range_count": 0,
+            "freshness_lag_days": 0.0,
+            "parse_status": "failed",
+            "freshness_status": "unknown",
+            "baseline_failure": false,
+            "health_status": "attention"
+          }
+        ],
+        "ie_nsai": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 8,
+            "newest_published_at": "2026-06-16T23:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 29.71,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_adapt": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-10T09:19:37+00:00",
+            "in_range_count": 4,
+            "freshness_lag_days": 6.28,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_cnam": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-06-25T11:02:59+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 21.21,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_electoral_commission": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-06-29T13:10:06+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 17.12,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_edpb": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 31,
+            "newest_published_at": "2026-07-13T22:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 2.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_dg_home": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-16T12:00:00+00:00",
+            "in_range_count": 7,
+            "freshness_lag_days": 0.17,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_eeas": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 65,
+            "newest_published_at": "2026-07-01T22:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 14.75,
+            "parse_status": "exception",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_culture": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 15,
+            "newest_published_at": "2026-07-10T00:00:00+00:00",
+            "in_range_count": 7,
+            "freshness_lag_days": 6.67,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_dinum": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 1,
+            "newest_published_at": "",
+            "in_range_count": 0,
+            "freshness_lag_days": 0.0,
+            "parse_status": "exception",
+            "freshness_status": "unknown",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_bbk": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 3,
+            "newest_published_at": "2026-06-12T06:47:47+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 34.38,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_dete": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 12,
+            "newest_published_at": "2026-06-25T23:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 20.71,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_research_ireland": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 186,
+            "newest_published_at": "2026-07-06T16:10:29+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 9.99,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_eurohpc": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-16T12:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 0.17,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_chips_ju": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 1,
+            "newest_published_at": "",
+            "in_range_count": 0,
+            "freshness_lag_days": 0.0,
+            "parse_status": "exception",
+            "freshness_status": "unknown",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_sns_ju": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-06-29T15:21:56+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 17.03,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_cea_list": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": false,
+            "raw_count": 0,
+            "newest_published_at": "",
+            "in_range_count": 0,
+            "freshness_lag_days": 0.0,
+            "parse_status": "failed",
+            "freshness_status": "unknown",
+            "baseline_failure": false,
+            "health_status": "attention"
+          }
+        ],
+        "fr_campus_cyber": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-06-24T09:18:05+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 22.28,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_institut_montaigne": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 21,
+            "newest_published_at": "2026-07-16T09:21:21+00:00",
+            "in_range_count": 13,
+            "freshness_lag_days": 0.28,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_athene": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 6,
+            "newest_published_at": "2026-07-09T10:05:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 7.25,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_interface": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 12,
+            "newest_published_at": "",
+            "in_range_count": 0,
+            "freshness_lag_days": 0.0,
+            "parse_status": "exception",
+            "freshness_status": "unknown",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_swp": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 12,
+            "newest_published_at": "2026-06-30T22:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 15.75,
+            "parse_status": "exception",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_ceadar": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 6,
+            "newest_published_at": "2026-07-03T11:23:04+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 13.19,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_insight": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-02T08:47:28+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 14.3,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_esri": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 36,
+            "newest_published_at": "2026-07-16T10:18:04+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 0.24,
+            "parse_status": "exception",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_tyndall": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-16T07:39:34+00:00",
+            "in_range_count": 4,
+            "freshness_lag_days": 0.35,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_cyber_ireland": [
+          {
+            "run_id": "f028afce8a0d4ba8ab207b95a07a67e0",
+            "recorded_at": "2026-07-16T12:12:14.486815+00:00",
+            "success": true,
+            "raw_count": 3,
+            "newest_published_at": "2021-03-12T12:18:02+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 1952.15,
+            "parse_status": "healthy",
+            "freshness_status": "stale",
+            "baseline_failure": true,
+            "health_status": "attention"
+          }
+        ]
+      }
     }
   }
 }

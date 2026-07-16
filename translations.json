@@ -1,6 +1,18 @@
 {
   "schema_version": 3,
   "translations": {
+    "en\u0000Commission provides guidance to Google for AI interoperability on Android and sharing of Google Search data under the Digital Markets Act": {
+      "text": "委員會根據《數位市場法》向谷歌提供 Android 上人工智慧互通性以及共享谷歌搜尋資料的指導",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T12:12:14.484291+00:00",
+      "last_accessed_at": "2026-07-16T12:12:14.484291+00:00"
+    },
+    "de\u0000Für besseren Transfer: Deutsches Patent- und Markenamt und Technische Hochschule Ingolstadt kooperieren": {
+      "text": "為了更好的轉移：德國專利商標局和因戈爾施塔特工業大學正在合作",
+      "provider": "googletrans",
+      "created_at": "2026-07-16T12:12:14.484291+00:00",
+      "last_accessed_at": "2026-07-16T12:12:14.484291+00:00"
+    },
     "en\u0000Critical Vulnerability exists in Microsoft SharePoint Server (CVE-2026-56164)": {
       "text": "Microsoft SharePoint Server 中存在嚴重漏洞 (CVE-2026-56164)",
       "provider": "googletrans",
