@@ -384,10 +384,11 @@ name = "Deutsches Patent- und Markenamt"
 institution_type = "聯邦智慧財產權機關"
 language = "de"
 homepage = "https://www.dpma.de/"
-listing_url = "https://www.dpma.de/service/presse/pressemitteilungen/index.html"
+listing_url = "https://www.dpma.de/service/presse/pressemitteilungen/archiv/index.html"
 allow_domains = ["dpma.de", "www.dpma.de"]
 include_patterns = ['^/service/presse/pressemitteilungen/\d{8}/index\.html$']
-exclude_patterns = ['^/service/presse/pressemitteilungen/index\.html$']
+exclude_patterns = ['^/service/presse/pressemitteilungen/(?:archiv/)?index\.html$']
+parser_adapter = "dpma_press_release"
 detail_pages = 12
 
 [[sources]]

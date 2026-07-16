@@ -236,7 +236,7 @@ async def _enrich_articles(
             content_type = response.headers.get("content-type", "").casefold()
             if content_type and not any(value in content_type for value in ("html", "xhtml")):
                 return None
-            enrich_from_detail(article, response.text)
+            enrich_from_detail(article, response.text, source)
             return None
         except Exception as exc:
             return f"{article.url}: {type(exc).__name__}: {exc}"

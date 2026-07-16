@@ -57,7 +57,7 @@ def parse_datetime(
         return None
     normalized = value.strip()
     normalized = re.sub(
-        r"^(?:Publié le|Veröffentlicht am|Release Date:)\s+",
+        r"^(?:Publié le|Veröffentlicht am|Pressemitteilung vom|Release Date:)\s+",
         "",
         normalized,
         flags=re.IGNORECASE,
@@ -314,7 +314,7 @@ def _parse_presscorner_json(payload: bytes | str, source: Source, fetched_from: 
     return articles
 
 
-def enrich_from_detail(article: Article, html: str) -> Article:
+def enrich_from_detail(article: Article, html: str, source: Source | None = None) -> Article:
     soup = BeautifulSoup(html, "lxml")
     structured = _article_json_ld(soup)
     title = _first(
@@ -333,11 +333,15 @@ def enrich_from_detail(article: Article, html: str) -> Article:
         article.title = plain_text(title)
     if summary and len(plain_text(summary)) > len(article.summary):
         article.summary = plain_text(summary)
+    adapter_date = _adapter_date_value(soup, source)
+    source_date = _source_date_value(soup, source)
+    generic_date_meta = "" if source and source.parser_adapter == "dpma_press_release" else _meta(soup, "name", "date")
     date_candidates = (
         ("json-ld", "high", structured.get("datePublished")),
         ("article-meta", "high", _meta(soup, "property", "article:published_time")),
-        ("article-meta", "high", _meta(soup, "name", "date")),
+        ("article-meta", "high", generic_date_meta),
         ("time-element", "high", _time_value(soup)),
+        ("source-selector", "high", adapter_date or source_date),
         ("visible-text", "medium", _visible_date_value(soup)),
         ("title-text", "low", _title_date_value(soup)),
     )
@@ -351,6 +355,27 @@ def enrich_from_detail(article: Article, html: str) -> Article:
             confidence=confidence,
         )
     return article
+
+
+def _adapter_date_value(soup: BeautifulSoup, source: Source | None) -> str:
+    if not source or source.parser_adapter != "dpma_press_release":
+        return ""
+    match = re.search(
+        r"Pressemitteilung\s+vom\s+\d{1,2}\.?\s+[A-Za-zÀ-ÿäöüÄÖÜß]+\s+\d{4}",
+        soup.get_text(" ", strip=True),
+        flags=re.IGNORECASE,
+    )
+    return match.group(0) if match else ""
+
+
+def _source_date_value(soup: BeautifulSoup, source: Source | None) -> str:
+    if not source:
+        return ""
+    for selector in source.date_selectors:
+        node = soup.select_one(selector)
+        if node:
+            return _attribute(node, "datetime") or node.get_text(" ", strip=True)
+    return ""
 
 
 def allowed_article_url(source: Source, url: str) -> bool:

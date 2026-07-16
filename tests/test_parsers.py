@@ -110,6 +110,21 @@ def test_detail_prefers_article_meta_over_title_heuristic_and_records_conflict()
     assert item.date_conflict
 
 
+def test_dpma_adapter_uses_formal_release_date_instead_of_page_update_meta():
+    item = Article("de_dpma", "DE", "DPMA", "official", "de", "Original title", "https://www.dpma.de/item")
+    dpma_source = source(id="de_dpma", country="DE", language="de", parser_adapter="dpma_press_release")
+    html = """
+    <html><head><meta name="date" content="2026-07-07"></head>
+      <body><main><h1>DPMA-Jahresstatistik 2025</h1><em>Pressemitteilung vom 10. März 2026</em></main></body>
+    </html>
+    """
+    enrich_from_detail(item, html, dpma_source)
+    assert item.published_date_local == "2026-03-10"
+    assert item.published_at_raw == "Pressemitteilung vom 10. März 2026"
+    assert item.date_source == "source-selector"
+    assert not item.date_conflict
+
+
 def test_detail_accepts_month_first_visible_date_with_compact_comma():
     item = Article("eu", "EU", "Agency", "official", "en", "Original title", "https://agency.example/news/item")
     enrich_from_detail(item, '<main><h1>Frontier AI podcast</h1><span class="date-display">Jul 14,2026</span></main>')
@@ -191,3 +206,26 @@ def test_dpc_source_patterns_exclude_section_and_pagination_links():
     """
     articles = parse_listing(html, dpc_source, "https://dataprotection.ie/en/news-media/latest-news")
     assert [article.title for article in articles] == ["DPC announces final inquiry decision"]
+
+
+def test_dpma_archive_listing_exposes_current_press_releases():
+    dpma_source = source(
+        country="DE",
+        language="de",
+        homepage="https://www.dpma.de/",
+        listing_url="https://www.dpma.de/service/presse/pressemitteilungen/archiv/index.html",
+        allow_domains=("dpma.de", "www.dpma.de"),
+        include_patterns=(r"^/service/presse/pressemitteilungen/\d{8}/index\.html$",),
+        exclude_patterns=(r"^/service/presse/pressemitteilungen/(?:archiv/)?index\.html$",),
+    )
+    html = """
+    <main>
+      <ul><li><a href="/service/presse/pressemitteilungen/08072026/index.html">08.07.2026</a></li></ul>
+      <a href="/service/presse/pressemitteilungen/archiv/index.html">Archiv</a>
+    </main>
+    """
+    articles = parse_listing(html, dpma_source, dpma_source.listing_url)
+    assert len(articles) == 1
+    assert articles[0].url.endswith("/08072026/index.html")
+    assert articles[0].published_at is not None
+    assert articles[0].published_date_local == "2026-07-08"
