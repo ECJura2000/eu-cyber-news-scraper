@@ -23,44 +23,102 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 35
     permissions:
-      contents: read
+      contents: write
+      issues: write
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
+      - name: Checkout durable state branch
+        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
+        with:
+          ref: state
+          path: .state-branch
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: "3.13"
           cache: pip
-      - run: python -m pip install --upgrade "pip>=26.1.2"
-      - run: python -m pip install -e .
-      - uses: actions/cache@v4
-        with:
-          path: .state
-          key: eu-news-state-${{ github.run_id }}
-          restore-keys: |
-            eu-news-state-
+      - name: Install locked runtime
+        run: |
+          python -m pip install --disable-pip-version-check uv==0.11.29
+          uv sync --frozen --no-dev
+      - name: Restore durable state
+        run: |
+          mkdir -p .state
+          cp .state-branch/.source-health.json .state/ 2>/dev/null || true
+          cp .state-branch/translations.json .state/ 2>/dev/null || true
       - name: Smoke-test critical sources without translation
         run: >-
-          python -m eu_cyber_news_scraper --days 60 --all --no-translate
+          uv run python -m eu_cyber_news_scraper --days 60 --all --no-translate
+          --health-write never --state-dir .state
           --source eu_dg_connect --source eu_enisa_news --source fr_anssi
           --source fr_cybermalveillance --source de_bsi_news --source ie_ncsc
           --source ie_comreg --output /tmp/critical-source-smoke.xlsx --fail-on-degraded
       - name: Scrape official sources
+        id: scrape
         shell: bash
         env:
           DAYS: ${{ inputs.days }}
           SINCE: ${{ inputs.since }}
           UNTIL: ${{ inputs.until }}
+          EVENT_NAME: ${{ github.event_name }}
         run: |
           args=(--jsonl --fail-on-degraded --state-dir .state --source-budget 60)
+          if [[ "$EVENT_NAME" == "schedule" ]]; then
+            args+=(--health-write always)
+          else
+            args+=(--health-write auto)
+          fi
           if [[ -n "$SINCE" || -n "$UNTIL" ]]; then
             args+=(--since "$SINCE" --until "$UNTIL")
           else
             args+=(--days "${DAYS:-14}")
           fi
-          python -m eu_cyber_news_scraper "${args[@]}"
-      - uses: actions/upload-artifact@v7
+          uv run python -m eu_cyber_news_scraper "${args[@]}"
+      - name: Persist durable state
+        if: always()
+        working-directory: .state-branch
+        run: |
+          cp ../.state/.source-health.json . 2>/dev/null || true
+          cp ../.state/translations.json . 2>/dev/null || true
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add -A -- .source-health.json translations.json
+          git diff --cached --quiet || git commit -m "Update scraper state for run $GITHUB_RUN_ID"
+          git push origin state
+      - name: Report and reconcile source health issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          summary=$(find 新聞放置區 -maxdepth 1 -name '*.run.json' -type f -print 2>/dev/null | sort | tail -1 || true)
+          if [[ -z "$summary" ]]; then
+            exit 0
+          fi
+          degraded=$(uv run python - "$summary" "$GITHUB_STEP_SUMMARY" <<'PY'
+          import json, sys
+          with open(sys.argv[1], encoding="utf-8") as source:
+              payload = json.load(source)
+          bad = [row["source_id"] for row in payload["sources"] if row["critical"] and row["health_status"] == "degraded"]
+          attention = [row["source_id"] for row in payload["sources"] if row["health_status"] == "attention"]
+          with open(sys.argv[2], "a", encoding="utf-8") as stream:
+              stream.write(f"## EU cyber news source health\n\nAttention: {', '.join(attention) or 'none'}\n")
+          print(" ".join(bad))
+          PY
+          )
+          issue=$(gh issue list --state open --search '"EU cyber news source health" in:title' --json number --jq '.[0].number // empty')
+          if [[ -n "$degraded" ]]; then
+            body=$(printf 'Run %s detected degraded critical sources: %s\n\n%s/%s/actions/runs/%s' "$GITHUB_RUN_ID" "$degraded" "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID")
+            if [[ -n "$issue" ]]; then
+              gh issue edit "$issue" --body "$body"
+            else
+              gh issue create --title "EU cyber news source health" --body "$body"
+            fi
+          elif [[ -n "$issue" ]]; then
+            gh issue close "$issue" --comment "Critical sources recovered in run $GITHUB_RUN_ID."
+          fi
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        if: always()
         with:
           name: eu-cyber-news-${{ github.run_id }}
           path: 新聞放置區/*

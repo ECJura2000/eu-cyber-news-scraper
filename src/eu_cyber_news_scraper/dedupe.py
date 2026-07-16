@@ -30,7 +30,8 @@ def article_key(article: Article) -> tuple[str, ...]:
 def article_title_key(article: Article) -> tuple[str, ...] | None:
     if not article.title or not article.published_at:
         return None
-    return ("title-date", normalize_text(article.title), article.published_at.date().isoformat())
+    local_date = article.published_date_local or article.published_at.date().isoformat()
+    return ("title-date", normalize_text(article.title), local_date)
 
 
 def dedupe_articles(articles: list[Article]) -> list[Article]:
@@ -64,6 +65,13 @@ def _merge_article(target: Article, candidate: Article) -> None:
     """Preserve the best metadata and every source that discovered a duplicate."""
     if not target.published_at and candidate.published_at:
         target.published_at = candidate.published_at
+        target.published_at_raw = candidate.published_at_raw
+        target.published_date_local = candidate.published_date_local
+        target.published_timezone = candidate.published_timezone
+        target.date_precision = candidate.date_precision
+        target.date_source = candidate.date_source
+        target.date_confidence = candidate.date_confidence
+        target.date_conflict = candidate.date_conflict
     if len(candidate.title) > len(target.title):
         target.title = candidate.title
     if len(candidate.summary) > len(target.summary):

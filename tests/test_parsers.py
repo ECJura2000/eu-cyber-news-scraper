@@ -97,7 +97,7 @@ def test_detail_prefers_article_heading_over_generic_social_title():
     assert item.title == "Für besseren Transfer: Amt und Hochschule kooperieren"
 
 
-def test_detail_prefers_publication_date_in_title_over_generic_updated_meta_date():
+def test_detail_prefers_article_meta_over_title_heuristic_and_records_conflict():
     item = Article("de", "DE", "Agency", "official", "de", "Original title", "https://agency.example/news/item")
     html = """
     <html><head><title>DPMA | 10.03.2026</title><meta name="date" content="2026-07-07"></head>
@@ -105,7 +105,17 @@ def test_detail_prefers_publication_date_in_title_over_generic_updated_meta_date
     </html>
     """
     enrich_from_detail(item, html)
-    assert item.published_at.date().isoformat() == "2026-03-10"
+    assert item.published_at.date().isoformat() == "2026-07-07"
+    assert item.date_source == "article-meta"
+    assert item.date_conflict
+
+
+def test_detail_accepts_month_first_visible_date_with_compact_comma():
+    item = Article("eu", "EU", "Agency", "official", "en", "Original title", "https://agency.example/news/item")
+    enrich_from_detail(item, '<main><h1>Frontier AI podcast</h1><span class="date-display">Jul 14,2026</span></main>')
+    assert item.published_at is not None
+    assert item.published_at.date().isoformat() == "2026-07-14"
+    assert item.date_source == "visible-text"
 
 
 def test_listing_reads_empty_overlay_link_from_card():

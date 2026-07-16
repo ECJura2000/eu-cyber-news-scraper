@@ -48,3 +48,34 @@ def test_dedupe_does_not_merge_same_title_on_different_dates():
     first.published_at = datetime(2026, 7, 8, tzinfo=timezone.utc)
     second.published_at = datetime(2026, 7, 9, tzinfo=timezone.utc)
     assert len(dedupe_articles([first, second])) == 2
+
+
+def test_dedupe_uses_source_local_publication_date():
+    first = make("https://agency.example/news/one")
+    second = make("https://press.example/news/two")
+    first.published_at = datetime(2026, 7, 8, 23, 30, tzinfo=timezone.utc)
+    second.published_at = datetime(2026, 7, 9, 0, 30, tzinfo=timezone.utc)
+    first.published_date_local = second.published_date_local = "2026-07-09"
+    assert len(dedupe_articles([first, second])) == 1
+
+
+def test_dedupe_copies_complete_date_provenance_from_dated_duplicate():
+    first = make("https://agency.example/news/item")
+    second = make("https://agency.example/news/item?utm_source=feed")
+    second.published_at = datetime(2026, 7, 9, tzinfo=timezone.utc)
+    second.published_at_raw = "9 July 2026"
+    second.published_date_local = "2026-07-09"
+    second.published_timezone = "Europe/Brussels"
+    second.date_precision = "date"
+    second.date_source = "feed-published"
+    second.date_confidence = "high"
+    second.date_conflict = True
+    merged = dedupe_articles([first, second])[0]
+    assert merged.published_at == second.published_at
+    assert merged.published_at_raw == second.published_at_raw
+    assert merged.published_date_local == second.published_date_local
+    assert merged.published_timezone == second.published_timezone
+    assert merged.date_precision == "date"
+    assert merged.date_source == "feed-published"
+    assert merged.date_confidence == "high"
+    assert merged.date_conflict

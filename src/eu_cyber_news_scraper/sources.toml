@@ -49,6 +49,7 @@ detail_pages = 12
 
 [[sources]]
 id = "eu_cert_threat"
+date_optional = true
 country = "EU"
 name_zh = "歐盟機構電腦緊急應變小組（威脅情資）"
 name = "CERT-EU Threat Intelligence"
@@ -146,6 +147,9 @@ critical = true
 detail_pages = 16
 pagination_url = "https://cyber.gouv.fr/actualites/?page={page}"
 max_pages = 10
+card_selectors = ["div.fr-card__content"]
+link_selectors = ["h3.fr-card__title a[href]"]
+date_selectors = ["p.fr-card__desc"]
 
 [[sources]]
 id = "fr_cnil"
@@ -160,6 +164,9 @@ allow_domains = ["cnil.fr", "www.cnil.fr"]
 include_patterns = ['/fr/.+']
 exclude_patterns = ['^/fr/actualites/?$']
 detail_pages = 12
+card_selectors = ["div.view-content > div.views-row"]
+link_selectors = ["h3.ctn-gen-liste-titre a[href]"]
+date_selectors = [".date"]
 
 [[sources]]
 id = "fr_cybermalveillance"
@@ -192,6 +199,7 @@ detail_pages = 10
 
 [[sources]]
 id = "fr_inria"
+date_optional = true
 country = "FR"
 name_zh = "法國國家資訊與自動化研究院"
 name = "Institut national de recherche en sciences et technologies du numérique"
@@ -274,6 +282,9 @@ include_patterns = ['/DE/Service-Navi/Presse/.+\.html$']
 exclude_patterns = ['alle-meldungen-news_node\.html$']
 critical = true
 detail_pages = 16
+card_selectors = ["table.textualData tbody tr"]
+link_selectors = ["a[href]"]
+date_selectors = ["td:first-child"]
 
 [[sources]]
 id = "de_bmi"
@@ -291,6 +302,7 @@ detail_pages = 10
 
 [[sources]]
 id = "de_bnetza"
+date_optional = true
 country = "DE"
 name_zh = "德國聯邦網路管理局"
 name = "Bundesnetzagentur"
@@ -305,6 +317,7 @@ detail_pages = 10
 
 [[sources]]
 id = "de_fraunhofer_aisec"
+date_optional = true
 country = "DE"
 name_zh = "德國弗勞恩霍夫應用暨整合安全研究所"
 name = "Fraunhofer Institute for Applied and Integrated Security AISEC"
@@ -321,6 +334,7 @@ detail_pages = 12
 
 [[sources]]
 id = "de_cispa"
+date_optional = true
 country = "DE"
 name_zh = "德國 CISPA 亥姆霍茲資訊安全中心"
 name = "CISPA Helmholtz Center for Information Security"
@@ -335,6 +349,7 @@ detail_pages = 10
 
 [[sources]]
 id = "de_bfdi"
+date_optional = true
 country = "DE"
 name_zh = "德國聯邦資料保護與資訊自由專員"
 name = "Bundesbeauftragte für den Datenschutz und die Informationsfreiheit"
@@ -349,6 +364,7 @@ detail_pages = 12
 
 [[sources]]
 id = "de_bundeskartellamt"
+date_optional = true
 country = "DE"
 name_zh = "德國聯邦卡特爾局"
 name = "Bundeskartellamt"
@@ -441,10 +457,11 @@ name = "ADAPT Centre"
 institution_type = "國家資助公共研究中心"
 language = "en"
 homepage = "https://www.adaptcentre.ie/"
-listing_url = "https://www.adaptcentre.ie/news-and-events/"
+listing_url = "https://www.adaptcentre.ie/news/"
+feed_urls = ["https://www.adaptcentre.ie/news-and-events/feed/"]
 allow_domains = ["adaptcentre.ie", "www.adaptcentre.ie"]
-include_patterns = ['/news-and-events/.+']
-exclude_patterns = ['^/news-and-events/?$']
+include_patterns = ['/(?:news|news-and-events)/.+']
+exclude_patterns = ['^/(?:news|news-and-events)/?$']
 critical = false
 observation_runs = 3
 detail_pages = 12
@@ -511,6 +528,7 @@ detail_pages = 12
 
 [[sources]]
 id = "eu_eeas"
+date_optional = true
 country = "EU"
 name_zh = "歐盟對外事務部"
 name = "European External Action Service"
@@ -541,6 +559,7 @@ detail_pages = 12
 
 [[sources]]
 id = "fr_dinum"
+date_optional = true
 country = "FR"
 name_zh = "法國跨部會數位總局"
 name = "Direction interministérielle du numérique"
@@ -612,6 +631,7 @@ detail_pages = 12
 
 [[sources]]
 id = "eu_chips_ju"
+date_optional = true
 country = "EU"
 name_zh = "歐洲晶片聯合事業"
 name = "Chips Joint Undertaking"
@@ -697,6 +717,7 @@ detail_pages = 10
 
 [[sources]]
 id = "de_interface"
+date_optional = true
 country = "DE"
 name_zh = "德國 Interface 科技政策智庫"
 name = "interface - Tech analysis and policy ideas for Europe"
@@ -711,6 +732,7 @@ detail_pages = 10
 
 [[sources]]
 id = "de_swp"
+date_optional = true
 country = "DE"
 name_zh = "德國國際暨安全事務研究所"
 name = "Stiftung Wissenschaft und Politik"
@@ -753,6 +775,7 @@ detail_pages = 10
 
 [[sources]]
 id = "ie_esri"
+date_optional = true
 country = "IE"
 name_zh = "愛爾蘭經濟社會研究所"
 name = "Economic and Social Research Institute"
@@ -775,7 +798,8 @@ name = "Tyndall National Institute"
 institution_type = "公立國家研究機構／產學合作"
 language = "en"
 homepage = "https://www.tyndall.ie/"
-listing_url = "https://www.tyndall.ie/"
+listing_url = "https://www.tyndall.ie/news/"
+feed_urls = ["https://www.tyndall.ie/feed/"]
 allow_domains = ["tyndall.ie", "www.tyndall.ie"]
 include_patterns = ['^/news/.+', '^/news-and-events/.+']
 exclude_patterns = ['^/(news|news-and-events)/?$']

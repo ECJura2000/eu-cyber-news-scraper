@@ -1,19 +1,19 @@
 from __future__ import annotations
 
+import asyncio
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlsplit
 
 from .authority import annotate_authority
 from .dedupe import dedupe_articles
-from .http import HttpClient
+from .http import HttpClient, HttpStats
 from .models import Article, Source, SourceResult, SourceStatus
 from .parsers import discover_feeds, enrich_from_detail, parse_feed, parse_listing
 from .topics import classify_article, is_relevant
 
 
-def scrape_source(
+async def scrape_source(
     source: Source,
     client: HttpClient,
     *,
@@ -26,27 +26,73 @@ def scrape_source(
     observed_at: datetime | None = None,
 ) -> SourceResult:
     started = time.monotonic()
+    stats = HttpStats()
+    budget = max(1, source_budget_seconds)
+    try:
+        async with asyncio.timeout(budget):
+            return await _scrape_source_impl(
+                source,
+                client,
+                since=since,
+                until=until,
+                include_unmatched=include_unmatched,
+                include_undated=include_undated,
+                fetch_details=fetch_details,
+                observed_at=observed_at,
+                started=started,
+                stats=stats,
+            )
+    except TimeoutError:
+        return SourceResult(
+            source=source,
+            articles=[],
+            status=SourceStatus(
+                source_id=source.id,
+                source_name=source.name_zh,
+                country=source.country,
+                critical=source.critical,
+                success=False,
+                fetched_via="",
+                raw_count=0,
+                relevant_count=0,
+                duration_seconds=round(time.monotonic() - started, 3),
+                warning="來源抓取時間超過預算，未完成工作已取消。",
+                error="SourceBudgetExceeded",
+                fetch_status="failed",
+                parse_status="not_run",
+                freshness_status="unknown",
+                content_status="unknown",
+                request_count=stats.request_count,
+                bytes_downloaded=stats.bytes_downloaded,
+                retry_count=stats.retry_count,
+                timeout_count=stats.timeout_count + 1,
+                budget_exhausted=True,
+                http_statuses=tuple(stats.statuses),
+            ),
+        )
+
+
+async def _scrape_source_impl(
+    source: Source,
+    client: HttpClient,
+    *,
+    since: datetime,
+    until: datetime,
+    include_unmatched: bool,
+    include_undated: bool,
+    fetch_details: bool,
+    observed_at: datetime | None,
+    started: float,
+    stats: HttpStats,
+) -> SourceResult:
     articles: list[Article] = []
     errors: list[str] = []
     fetched_via = ""
     pages_fetched = 0
-    timeout_count = 0
-
-    def budget_available() -> bool:
-        return time.monotonic() - started < source_budget_seconds
-
-    def record_budget_exhausted() -> None:
-        nonlocal timeout_count
-        if not errors or errors[-1] != "來源抓取時間超過預算。":
-            errors.append("來源抓取時間超過預算。")
-            timeout_count += 1
 
     for feed_url in source.feed_urls:
-        if not budget_available():
-            record_budget_exhausted()
-            break
         try:
-            response = client.get(feed_url)
+            response = await client.get(feed_url, stats=stats)
             parsed = parse_feed(response.content, source, feed_url)
             if parsed:
                 articles.extend(parsed)
@@ -55,25 +101,23 @@ def scrape_source(
         except Exception as exc:  # source failure must not stop other sources
             errors.append(f"{feed_url}: {type(exc).__name__}: {exc}")
 
-    # Feeds are often truncated to the newest 10-20 items. Sources with
-    # explicit yearly/pagination rules must also traverse their archive.
+    # Feeds are often truncated. Sources with explicit archive rules must also
+    # traverse their listing so historical fixed periods remain complete.
     if not articles or source.yearly_listing_url or source.pagination_url:
         for listing_url in _listing_urls(source, since, until):
-            if not budget_available():
-                record_budget_exhausted()
-                break
             try:
-                response = client.get(listing_url)
+                response = await client.get(listing_url, stats=stats)
                 pages_fetched += 1
                 listing_html = response.text
                 if pages_fetched == 1 and not articles:
-                    discovered = [url for url in discover_feeds(listing_html, listing_url) if url not in source.feed_urls]
+                    discovered = [
+                        url
+                        for url in discover_feeds(listing_html, listing_url)
+                        if url not in source.feed_urls and _same_allowed_host(url, source)
+                    ]
                     for feed_url in discovered[:3]:
-                        if not budget_available():
-                            record_budget_exhausted()
-                            break
                         try:
-                            feed_response = client.get(feed_url)
+                            feed_response = await client.get(feed_url, stats=stats)
                             parsed = parse_feed(feed_response.content, source, feed_url)
                             if parsed:
                                 articles.extend(parsed)
@@ -85,8 +129,8 @@ def scrape_source(
                     parsed = parse_listing(listing_html, source, listing_url)
                     articles.extend(parsed)
                     fetched_via = "feed+html-listing" if "feed" in fetched_via else "html-listing"
-                    dated = [item.published_at for item in parsed if item.published_at]
-                    if dated and max(dated) < since:
+                    parsed_dates = [item.published_at for item in parsed if item.published_at]
+                    if parsed_dates and max(parsed_dates) < since:
                         break
                 else:
                     break
@@ -98,7 +142,7 @@ def scrape_source(
         len({item.title.casefold().strip() for item in articles}) / len(articles) if articles else 1.0
     )
     if fetch_details:
-        _enrich_articles(articles, source, client, errors, budget_available)
+        await _enrich_articles(articles, source, client, errors, stats)
 
     reference_time = observed_at or datetime.now(timezone.utc)
     future_limit = reference_time + timedelta(hours=24)
@@ -106,17 +150,21 @@ def scrape_source(
     for article in articles:
         if article.published_at and article.published_at > future_limit:
             article.published_at = None
+            article.published_date_local = ""
+            article.date_confidence = "invalid"
             invalid_date_count += 1
 
-    dated = [article for article in articles if _in_range(article, since, until, include_undated)]
-    for article in dated:
+    in_range_articles = [article for article in articles if _in_range(article, since, until, include_undated)]
+    for article in in_range_articles:
         classify_article(article)
         annotate_authority(article, source)
-    relevant = dated if include_unmatched else [article for article in dated if is_relevant(article)]
+    relevant = (
+        in_range_articles
+        if include_unmatched
+        else [article for article in in_range_articles if is_relevant(article)]
+    )
     relevant.sort(key=lambda item: item.published_at or since, reverse=True)
 
-    # A reachable page with zero parsed articles is not healthy: it often means
-    # that a feed or HTML layout changed and must not silently pass automation.
     success = bool(articles)
     newest = max((item.published_at for item in articles if item.published_at), default=None)
     dated_count = sum(item.published_at is not None for item in articles)
@@ -132,10 +180,10 @@ def scrape_source(
     if success and errors:
         fallback_warning = f"部分抓取路徑失敗，已使用備援；最近錯誤：{errors[-1]}"
         warning = f"{warning} {fallback_warning}".strip()
-    timeout_count += sum(
-        "timeout" in error.casefold() or "timed out" in error.casefold()
-        for error in errors
-    )
+
+    parse_status = _parse_status(success, undated_ratio, source.date_optional)
+    freshness_lag = max(0.0, (until - newest).total_seconds() / 86400) if newest else 0.0
+    freshness_status = "unknown" if not newest else ("stale" if freshness_lag > source.freshness_days else "fresh")
     status = SourceStatus(
         source_id=source.id,
         source_name=source.name_zh,
@@ -153,35 +201,38 @@ def scrape_source(
         dated_count=dated_count,
         undated_ratio=round(undated_ratio, 4),
         unique_title_ratio=round(unique_title_ratio, 4),
-        in_range_count=len(dated),
-        freshness_lag_days=round(max(0.0, (until - newest).total_seconds() / 86400), 2) if newest else 0.0,
+        in_range_count=len(in_range_articles),
+        freshness_lag_days=round(freshness_lag, 2),
         content_warning=content_warning,
         fetch_status="ok" if success else "failed",
+        parse_status=parse_status,
+        freshness_status=freshness_status,
+        content_status="hits" if relevant else "no_hits",
         invalid_date_count=invalid_date_count,
-        timeout_count=timeout_count,
+        timeout_count=stats.timeout_count,
+        request_count=stats.request_count,
+        bytes_downloaded=stats.bytes_downloaded,
+        retry_count=stats.retry_count,
+        http_statuses=tuple(stats.statuses),
     )
     return SourceResult(source=source, articles=relevant, status=status)
 
 
-def _enrich_articles(
+async def _enrich_articles(
     articles: list[Article],
     source: Source,
     client: HttpClient,
     errors: list[str],
-    budget_available=lambda: True,
+    stats: HttpStats,
 ) -> None:
     candidates = [article for article in articles if not article.published_at or len(article.summary) < 40]
-    selected = [article for article in candidates[: source.detail_pages] if budget_available()]
+    selected = [article for article in candidates[: source.detail_pages] if not _is_non_html_url(article.url)]
     if not selected:
         return
 
-    def enrich(article: Article) -> str | None:
-        if not budget_available():
-            return "來源抓取時間超過預算。"
-        if _is_non_html_url(article.url):
-            return None
+    async def enrich(article: Article) -> str | None:
         try:
-            response = client.get(article.url)
+            response = await client.get(article.url, stats=stats)
             content_type = response.headers.get("content-type", "").casefold()
             if content_type and not any(value in content_type for value in ("html", "xhtml")):
                 return None
@@ -190,11 +241,25 @@ def _enrich_articles(
         except Exception as exc:
             return f"{article.url}: {type(exc).__name__}: {exc}"
 
-    with ThreadPoolExecutor(max_workers=min(4, len(selected))) as executor:
-        futures = [executor.submit(enrich, article) for article in selected]
-        for future in as_completed(futures):
-            if error := future.result():
-                errors.append(error)
+    for result in await asyncio.gather(*(enrich(article) for article in selected)):
+        if result:
+            errors.append(result)
+
+
+def _parse_status(success: bool, undated_ratio: float, date_optional: bool) -> str:
+    if not success:
+        return "failed"
+    if date_optional:
+        return "exception"
+    if undated_ratio > 0.25:
+        return "attention"
+    return "healthy"
+
+
+def _same_allowed_host(url: str, source: Source) -> bool:
+    hostname = (urlsplit(url).hostname or "").casefold()
+    allowed = source.allow_domains or (urlsplit(source.homepage).hostname or "",)
+    return any(hostname == domain.casefold() or hostname.endswith(f".{domain.casefold()}") for domain in allowed)
 
 
 def _is_non_html_url(url: str) -> bool:

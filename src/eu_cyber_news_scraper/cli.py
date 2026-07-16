@@ -1,10 +1,10 @@
 from __future__ import annotations
 
 import argparse
+import asyncio
 import os
 import sys
 import uuid
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import replace
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -23,7 +23,7 @@ from .dedupe import dedupe_articles
 from .exporter import export_workbook, write_jsonl, write_run_summary
 from .health import assess_and_record_health
 from .http import HttpClient
-from .models import SourceResult, SourceStatus
+from .models import Source, SourceResult, SourceStatus
 from .periods import PeriodSelection, resolve_period
 from .runtime_lock import acquire_run_lock, release_run_lock
 from .scraper import scrape_source
@@ -72,6 +72,12 @@ def build_parser() -> argparse.ArgumentParser:
         help=f"每個來源的總抓取時間預算，預設 {DEFAULT_SOURCE_BUDGET} 秒。",
     )
     parser.add_argument("--state-dir", help="來源健康紀錄與翻譯快取目錄。")
+    parser.add_argument(
+        "--health-write",
+        choices=("auto", "always", "never"),
+        default="auto",
+        help="健康基線寫入策略；auto 僅寫入完整 rolling 且啟用內頁的標準執行。",
+    )
     parser.add_argument("--output", help="Excel 輸出路徑。")
     parser.add_argument("--jsonl", action="store_true", help="另輸出同名 JSONL。")
     parser.add_argument("--config", help="自訂 sources.toml 路徑。")
@@ -107,60 +113,88 @@ def main() -> None:
 
 
 def _run_pipeline(
-    args,
-    selected,
-    since,
-    until,
+    args: argparse.Namespace,
+    selected: list[Source],
+    since: datetime,
+    until: datetime,
+    output: Path,
+    run_id: str,
+    *,
+    period: PeriodSelection | None = None,
+) -> None:
+    asyncio.run(
+        _run_pipeline_async(
+            args,
+            selected,
+            since,
+            until,
+            output,
+            run_id,
+            period=period,
+        )
+    )
+
+
+async def _run_pipeline_async(
+    args: argparse.Namespace,
+    selected: list[Source],
+    since: datetime,
+    until: datetime,
     output: Path,
     run_id: str,
     *,
     period: PeriodSelection | None = None,
 ) -> None:
     started_at = datetime.now(timezone.utc)
-    client = HttpClient(timeout=max(1, args.timeout))
-    results = []
+    results: list[SourceResult] = []
     worker_count = max(1, min(args.workers, len(selected)))
 
     display_since, display_until = _display_dates(since, until)
     print(f"期間：{display_since} 至 {display_until}；來源：{len(selected)}；run_id：{run_id}")
-    with ThreadPoolExecutor(max_workers=worker_count) as executor:
-        future_map = {
-            executor.submit(
-                scrape_source,
-                source,
-                client,
-                since=since,
-                until=until,
-                include_unmatched=args.all,
-                include_undated=args.include_undated,
-                fetch_details=not args.no_detail,
-                source_budget_seconds=max(1, getattr(args, "source_budget", DEFAULT_SOURCE_BUDGET)),
-                observed_at=started_at,
-            ): source
-            for source in selected
-        }
-        for future in as_completed(future_map):
-            source = future_map[future]
-            try:
-                result = future.result()
-            except Exception as exc:  # defensive boundary around every source job
-                print(f"[failed] {source.id}: {type(exc).__name__}: {exc}", file=sys.stderr)
-                result = SourceResult(
-                    source=source,
-                    articles=[],
-                    status=SourceStatus(
-                        source_id=source.id,
-                        source_name=source.name_zh,
-                        country=source.country,
-                        critical=source.critical,
-                        success=False,
-                        fetched_via="",
-                        raw_count=0,
-                        relevant_count=0,
-                        duration_seconds=0.0,
-                        error=f"{type(exc).__name__}: {exc}",
-                    ),
-                )
+    source_limiter = asyncio.Semaphore(worker_count)
+
+    async with HttpClient(timeout=max(1, args.timeout)) as client:
+        async def run_one(source: Source) -> tuple[Source, SourceResult]:
+            async with source_limiter:
+                try:
+                    result = await scrape_source(
+                        source,
+                        client,
+                        since=since,
+                        until=until,
+                        include_unmatched=args.all,
+                        include_undated=args.include_undated,
+                        fetch_details=not args.no_detail,
+                        source_budget_seconds=max(1, getattr(args, "source_budget", DEFAULT_SOURCE_BUDGET)),
+                        observed_at=started_at,
+                    )
+                except Exception as exc:  # defensive boundary around every source job
+                    print(f"[failed] {source.id}: {type(exc).__name__}: {exc}", file=sys.stderr)
+                    result = SourceResult(
+                        source=source,
+                        articles=[],
+                        status=SourceStatus(
+                            source_id=source.id,
+                            source_name=source.name_zh,
+                            country=source.country,
+                            critical=source.critical,
+                            success=False,
+                            fetched_via="",
+                            raw_count=0,
+                            relevant_count=0,
+                            duration_seconds=0.0,
+                            error=f"{type(exc).__name__}: {exc}",
+                            fetch_status="failed",
+                            parse_status="not_run",
+                            freshness_status="unknown",
+                            content_status="unknown",
+                        ),
+                    )
+                return source, result
+
+        tasks = [asyncio.create_task(run_one(source)) for source in selected]
+        for task in asyncio.as_completed(tasks):
+            source, result = await task
             results.append(result)
             label = "ok" if result.status.success else "failed"
             print(f"[{label}] {source.id}: 原始 {result.status.raw_count}，命中 {result.status.relevant_count}")
@@ -188,12 +222,41 @@ def _run_pipeline(
         for source_id in article.discovered_by or [article.source_id]:
             output_counts[source_id] = output_counts.get(source_id, 0) + 1
     statuses = [replace(result.status, relevant_count=output_counts.get(result.source.id, 0)) for result in results]
+    health_profile = {
+        "period_mode": period.mode if period else "fixed",
+        "source_ids": [source.id for source in selected],
+        "source_settings": [
+            {
+                "id": source.id,
+                "listing_url": source.listing_url,
+                "feed_urls": list(source.feed_urls),
+                "detail_pages": source.detail_pages,
+                "timezone": source.timezone,
+                "date_optional": source.date_optional,
+            }
+            for source in selected
+        ],
+        "fetch_details": not args.no_detail,
+        "include_undated": args.include_undated,
+        "include_unmatched": args.all,
+        "source_budget": max(1, getattr(args, "source_budget", DEFAULT_SOURCE_BUDGET)),
+    }
+    health_mode = getattr(args, "health_write", "auto")
+    health_write = health_mode == "always" or (
+        health_mode == "auto"
+        and (period is None or period.mode == "rolling")
+        and not args.no_detail
+        and not getattr(args, "source", None)
+        and not getattr(args, "country", None)
+    )
     statuses = assess_and_record_health(
         statuses,
         selected,
         state_dir / ".source-health.json",
         run_id=run_id,
         recorded_at=datetime.now(timezone.utc),
+        profile=health_profile,
+        write=health_write,
     )
 
     workbook = export_workbook(articles, statuses, selected, output)
@@ -210,11 +273,18 @@ def _run_pipeline(
         translation_report=translation,
         period=period,
         discovered_article_count=len(discovered_articles),
+        config_path=getattr(args, "config", None),
+        run_profile={**health_profile, "health_write": health_write},
+        artifact_names=[
+            workbook.name,
+            workbook.with_suffix(".run.json").name,
+            *([workbook.with_suffix(".jsonl").name] if args.jsonl else []),
+        ],
     )
     print(f"Excel：{workbook}")
     print(f"執行摘要：{summary}")
     if args.jsonl:
-        print(f"JSONL：{write_jsonl(articles, workbook.with_suffix('.jsonl'))}")
+        print(f"JSONL：{write_jsonl(articles, workbook.with_suffix('.jsonl'), run_id=run_id)}")
 
     degraded = [
         status.source_id
@@ -229,7 +299,11 @@ def _run_pipeline(
             raise SystemExit(2)
 
 
-def _select_sources(sources, countries, source_ids):
+def _select_sources(
+    sources: list[Source],
+    countries: list[str] | None,
+    source_ids: list[str] | None,
+) -> list[Source]:
     country_set = set(countries or [])
     source_set = set(source_ids or [])
     unknown = source_set - {source.id for source in sources}
@@ -261,7 +335,7 @@ def _display_dates(since: datetime, until: datetime) -> tuple[date, date]:
     return since.astimezone(zone).date(), (until - timedelta(microseconds=1)).astimezone(zone).date()
 
 
-def _print_sources(sources) -> None:
+def _print_sources(sources: list[Source]) -> None:
     for source in sources:
         marker = "*" if source.critical else " "
         print(f"{marker} {source.id:24} {source.country} {source.name_zh}｜{source.institution_type}")

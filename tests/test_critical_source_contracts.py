@@ -21,6 +21,10 @@ def test_critical_source_listing_contract(source_id, fixture_dir):
     articles = parse_listing(html, source, source.listing_url)
     assert [item.title for item in articles] == [EXPECTED[source_id]]
     assert articles[0].published_at is not None
+    assert articles[0].published_at_raw
+    assert articles[0].date_source in {"source-selector", "time-element"}
+    if source_id in {"fr_anssi", "de_bsi_news"}:
+        assert articles[0].date_source == "source-selector"
     assert articles[0].url != source.listing_url
 
 

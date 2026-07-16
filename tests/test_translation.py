@@ -59,8 +59,24 @@ def test_new_translation_is_saved(monkeypatch, tmp_path):
     translate_article_titles([item])
     assert item.title_zh_tw == "網路安全"
     payload = json.loads(cache.read_text(encoding="utf-8"))
-    assert payload["schema_version"] == 2
-    assert payload["translations"]["Cybersicherheit"]["text"] == "網路安全"
+    assert payload["schema_version"] == 3
+    assert payload["translations"]["en\0Cybersicherheit"]["text"] == "網路安全"
+
+
+def test_translation_cache_key_includes_source_language(monkeypatch, tmp_path):
+    cache = tmp_path / "translations.json"
+    monkeypatch.setenv("EU_CYBER_NEWS_TRANSLATION_CACHE", str(cache))
+    monkeypatch.setattr(
+        "eu_cyber_news_scraper.translation._translate_titles",
+        lambda titles: {"Gift": "禮物"},
+    )
+    english = article("Gift")
+    german = article("Gift")
+    german.language = "de"
+    report = translate_article_titles([english, german])
+    payload = json.loads(cache.read_text(encoding="utf-8"))
+    assert report.total == 2
+    assert {"en\0Gift", "de\0Gift"} <= payload["translations"].keys()
 
 
 def test_translation_falls_back_to_second_free_engine(monkeypatch):
