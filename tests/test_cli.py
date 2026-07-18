@@ -3,7 +3,13 @@ from datetime import timedelta
 
 import pytest
 
-from eu_cyber_news_scraper.cli import _date_range, _default_output, _select_sources, build_parser
+from eu_cyber_news_scraper.cli import (
+    _date_range,
+    _default_output,
+    _quality_failures,
+    _select_sources,
+    build_parser,
+)
 from eu_cyber_news_scraper.config import load_sources
 from eu_cyber_news_scraper.models import Source
 
@@ -40,6 +46,34 @@ def test_cli_parser_exposes_resilience_controls():
     assert args.fail_on_degraded
     assert args.source_budget == 45
     assert args.state_dir == ".state"
+
+
+def test_quality_gate_reports_stable_error_codes():
+    from eu_cyber_news_scraper.models import SourceStatus
+
+    args = build_parser().parse_args(
+        ["--min-source-success-rate", "0.95", "--max-unexplained-future-dates", "0"]
+    )
+    statuses = [
+        SourceStatus(
+            "bad",
+            "來源",
+            "EU",
+            False,
+            False,
+            "",
+            0,
+            0,
+            0,
+            invalid_date_count=1,
+            unexplained_future_date_count=1,
+        ),
+        SourceStatus("ok", "來源", "EU", False, True, "html", 1, 0, 0),
+    ]
+    assert [row["code"] for row in _quality_failures(statuses, args)] == [
+        "SOURCE_SUCCESS_RATE_LOW",
+        "FUTURE_DATE_LIMIT_EXCEEDED",
+    ]
 
 
 def test_main_resolves_roc_period_and_releases_lock(monkeypatch, tmp_path):

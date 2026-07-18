@@ -2,7 +2,7 @@ import json
 from datetime import timezone
 
 from eu_cyber_news_scraper.models import Article, Source
-from eu_cyber_news_scraper.parsers import discover_feeds, enrich_from_detail, parse_feed, parse_listing
+from eu_cyber_news_scraper.parsers import discover_feeds, enrich_from_detail, parse_datetime, parse_feed, parse_listing
 
 
 def source(**overrides):
@@ -131,6 +131,12 @@ def test_detail_accepts_month_first_visible_date_with_compact_comma():
     assert item.published_at is not None
     assert item.published_at.date().isoformat() == "2026-07-14"
     assert item.date_source == "visible-text"
+
+
+def test_numeric_european_date_uses_day_month_year_order():
+    parsed = parse_datetime("08-04-2026 16:00:00", ("en",), "Europe/Brussels")
+    assert parsed is not None
+    assert parsed.date().isoformat() == "2026-04-08"
 
 
 def test_listing_reads_empty_overlay_link_from_card():

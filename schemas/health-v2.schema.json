@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ECJura2000/eu-cyber-news-scraper/schemas/health-v2.schema.json",
+  "title": "EU cyber news source health state v2",
+  "type": "object",
+  "required": ["schema_version", "profiles"],
+  "properties": {
+    "schema_version": {"const": 2},
+    "profiles": {"type": "object"},
+    "legacy": {"type": "object"},
+    "legacy_profiles": {"type": "array"}
+  },
+  "additionalProperties": false
+}

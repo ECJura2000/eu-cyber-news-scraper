@@ -65,10 +65,17 @@ def load_sources(path: str | Path | None = None) -> tuple[Source, ...]:
                 timezone=str(row.get("timezone", COUNTRY_TIMEZONES.get(row["country"], "UTC"))),
                 card_selectors=tuple(row.get("card_selectors", [])),
                 link_selectors=tuple(row.get("link_selectors", [])),
+                title_selectors=tuple(row.get("title_selectors", [])),
                 date_selectors=tuple(row.get("date_selectors", [])),
                 summary_selectors=tuple(row.get("summary_selectors", [])),
                 parser_adapter=str(row.get("parser_adapter", "")),
-                date_optional=bool(row.get("date_optional", False)),
+                date_policy=str(
+                    row.get("date_policy", "best_effort" if row.get("date_optional", False) else "required")
+                ),
+                date_exception_reason=str(row.get("date_exception_reason", "")),
+                date_evidence_url=str(row.get("date_evidence_url", "")),
+                date_reviewed_on=str(row.get("date_reviewed_on", "")),
+                date_review_due=str(row.get("date_review_due", "")),
             )
         )
     _validate_sources(sources)
@@ -92,6 +99,21 @@ def _validate_sources(sources: list[Source]) -> None:
             raise ValueError(f"{source.id}: detail_pages must be non-negative")
         if source.max_pages < 1 or source.observation_runs < 0 or source.freshness_days < 1:
             raise ValueError(f"{source.id}: max_pages must be positive and observation_runs non-negative")
+        if source.date_policy not in {"required", "best_effort", "unavailable"}:
+            raise ValueError(f"{source.id}: invalid date_policy: {source.date_policy}")
+        if source.date_policy != "required":
+            missing = [
+                name
+                for name, value in (
+                    ("date_exception_reason", source.date_exception_reason),
+                    ("date_evidence_url", source.date_evidence_url),
+                    ("date_reviewed_on", source.date_reviewed_on),
+                    ("date_review_due", source.date_review_due),
+                )
+                if not value
+            ]
+            if missing:
+                raise ValueError(f"{source.id}: {source.date_policy} date policy requires {', '.join(missing)}")
         try:
             ZoneInfo(source.timezone)
         except ZoneInfoNotFoundError as exc:

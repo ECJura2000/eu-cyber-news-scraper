@@ -5,12 +5,18 @@ import time
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlsplit
 
+import httpx
+
 from .authority import annotate_authority
 from .dedupe import dedupe_articles
 from .http import HttpClient, HttpStats
 from .models import Article, Source, SourceResult, SourceStatus
 from .parsers import discover_feeds, enrich_from_detail, parse_feed, parse_listing
 from .topics import classify_article, is_relevant
+
+
+class RedirectDomainError(RuntimeError):
+    pass
 
 
 async def scrape_source(
@@ -68,6 +74,7 @@ async def scrape_source(
                 timeout_count=stats.timeout_count + 1,
                 budget_exhausted=True,
                 http_statuses=tuple(stats.statuses),
+                error_code="SOURCE_BUDGET_EXCEEDED",
             ),
         )
 
@@ -89,10 +96,12 @@ async def _scrape_source_impl(
     errors: list[str] = []
     fetched_via = ""
     pages_fetched = 0
+    transport_succeeded = False
 
     for feed_url in source.feed_urls:
         try:
-            response = await client.get(feed_url, stats=stats)
+            response = await _get_source_response(client, feed_url, source, stats)
+            transport_succeeded = True
             parsed = parse_feed(response.content, source, feed_url)
             if parsed:
                 articles.extend(parsed)
@@ -106,18 +115,22 @@ async def _scrape_source_impl(
     if not articles or source.yearly_listing_url or source.pagination_url:
         for listing_url in _listing_urls(source, since, until):
             try:
-                response = await client.get(listing_url, stats=stats)
+                response = await _get_source_response(client, listing_url, source, stats)
+                transport_succeeded = True
                 pages_fetched += 1
                 listing_html = response.text
-                if pages_fetched == 1 and not articles:
+                if pages_fetched == 1 and not articles and not source.card_selectors:
                     discovered = [
                         url
                         for url in discover_feeds(listing_html, listing_url)
-                        if url not in source.feed_urls and _same_allowed_host(url, source)
+                        if url not in source.feed_urls
+                        and "/comments/" not in urlsplit(url).path.casefold()
+                        and _same_allowed_host(url, source)
                     ]
                     for feed_url in discovered[:3]:
                         try:
-                            feed_response = await client.get(feed_url, stats=stats)
+                            feed_response = await _get_source_response(client, feed_url, source, stats)
+                            transport_succeeded = True
                             parsed = parse_feed(feed_response.content, source, feed_url)
                             if parsed:
                                 articles.extend(parsed)
@@ -125,14 +138,11 @@ async def _scrape_source_impl(
                                 break
                         except Exception as exc:
                             errors.append(f"{feed_url}: {type(exc).__name__}: {exc}")
-                if fetched_via != "discovered-feed":
-                    parsed = parse_listing(listing_html, source, listing_url)
-                    articles.extend(parsed)
-                    fetched_via = "feed+html-listing" if "feed" in fetched_via else "html-listing"
-                    parsed_dates = [item.published_at for item in parsed if item.published_at]
-                    if parsed_dates and max(parsed_dates) < since:
-                        break
-                else:
+                parsed = parse_listing(listing_html, source, listing_url)
+                articles.extend(parsed)
+                fetched_via = "feed+html-listing" if "feed" in fetched_via else "html-listing"
+                parsed_dates = [item.published_at for item in parsed if item.published_at]
+                if parsed_dates and max(parsed_dates) < since:
                     break
             except Exception as exc:
                 errors.append(f"{listing_url}: {type(exc).__name__}: {exc}")
@@ -147,8 +157,11 @@ async def _scrape_source_impl(
     reference_time = observed_at or datetime.now(timezone.utc)
     future_limit = reference_time + timedelta(hours=24)
     invalid_date_count = 0
+    unexplained_future_date_count = 0
     for article in articles:
         if article.published_at and article.published_at > future_limit:
+            if article.date_source not in {"visible-text", "title-text"} and article.date_confidence != "low":
+                unexplained_future_date_count += 1
             article.published_at = None
             article.published_date_local = ""
             article.date_confidence = "invalid"
@@ -181,7 +194,7 @@ async def _scrape_source_impl(
         fallback_warning = f"部分抓取路徑失敗，已使用備援；最近錯誤：{errors[-1]}"
         warning = f"{warning} {fallback_warning}".strip()
 
-    parse_status = _parse_status(success, undated_ratio, source.date_optional)
+    parse_status = _parse_status(transport_succeeded, success, undated_ratio, source.date_policy)
     freshness_lag = max(0.0, (until - newest).total_seconds() / 86400) if newest else 0.0
     freshness_status = "unknown" if not newest else ("stale" if freshness_lag > source.freshness_days else "fresh")
     status = SourceStatus(
@@ -204,16 +217,18 @@ async def _scrape_source_impl(
         in_range_count=len(in_range_articles),
         freshness_lag_days=round(freshness_lag, 2),
         content_warning=content_warning,
-        fetch_status="ok" if success else "failed",
+        fetch_status="ok" if transport_succeeded else "failed",
         parse_status=parse_status,
         freshness_status=freshness_status,
-        content_status="hits" if relevant else "no_hits",
+        content_status="hits" if relevant else ("no_hits" if success else "unknown"),
         invalid_date_count=invalid_date_count,
+        unexplained_future_date_count=unexplained_future_date_count,
         timeout_count=stats.timeout_count,
         request_count=stats.request_count,
         bytes_downloaded=stats.bytes_downloaded,
         retry_count=stats.retry_count,
         http_statuses=tuple(stats.statuses),
+        error_code="" if success else ("PARSE_EMPTY" if transport_succeeded else "FETCH_FAILED"),
     )
     return SourceResult(source=source, articles=relevant, status=status)
 
@@ -232,7 +247,7 @@ async def _enrich_articles(
 
     async def enrich(article: Article) -> str | None:
         try:
-            response = await client.get(article.url, stats=stats)
+            response = await _get_source_response(client, article.url, source, stats)
             content_type = response.headers.get("content-type", "").casefold()
             if content_type and not any(value in content_type for value in ("html", "xhtml")):
                 return None
@@ -246,11 +261,15 @@ async def _enrich_articles(
             errors.append(result)
 
 
-def _parse_status(success: bool, undated_ratio: float, date_optional: bool) -> str:
-    if not success:
+def _parse_status(transport_succeeded: bool, success: bool, undated_ratio: float, date_policy: str) -> str:
+    if not transport_succeeded:
         return "failed"
-    if date_optional:
+    if not success:
+        return "empty"
+    if date_policy == "unavailable":
         return "exception"
+    if date_policy == "best_effort" and undated_ratio > 0.25:
+        return "attention"
     if undated_ratio > 0.25:
         return "attention"
     return "healthy"
@@ -260,6 +279,19 @@ def _same_allowed_host(url: str, source: Source) -> bool:
     hostname = (urlsplit(url).hostname or "").casefold()
     allowed = source.allow_domains or (urlsplit(source.homepage).hostname or "",)
     return any(hostname == domain.casefold() or hostname.endswith(f".{domain.casefold()}") for domain in allowed)
+
+
+async def _get_source_response(
+    client: HttpClient,
+    url: str,
+    source: Source,
+    stats: HttpStats,
+) -> httpx.Response:
+    response = await client.get(url, stats=stats)
+    final_url = str(response.url)
+    if not _same_allowed_host(final_url, source):
+        raise RedirectDomainError(f"redirect target is outside source allow_domains: {final_url}")
+    return response
 
 
 def _is_non_html_url(url: str) -> bool:

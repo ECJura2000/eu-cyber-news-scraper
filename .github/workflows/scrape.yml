@@ -38,6 +38,7 @@ jobs:
         with:
           python-version: "3.13"
           cache: pip
+          cache-dependency-path: uv.lock
       - name: Install locked runtime
         run: |
           python -m pip install --disable-pip-version-check uv==0.11.29
@@ -63,7 +64,16 @@ jobs:
           UNTIL: ${{ inputs.until }}
           EVENT_NAME: ${{ github.event_name }}
         run: |
-          args=(--jsonl --fail-on-degraded --state-dir .state --source-budget 60)
+          args=(
+            --jsonl
+            --fail-on-degraded
+            --state-dir .state
+            --source-budget 60
+            --min-source-success-rate 0.95
+            --min-critical-date-rate 0.95
+            --max-unexplained-future-dates 0
+            --require-complete-artifacts
+          )
           if [[ "$EVENT_NAME" == "schedule" ]]; then
             args+=(--health-write always)
           else
@@ -79,6 +89,10 @@ jobs:
         if: always()
         working-directory: .state-branch
         run: |
+          if [[ ! -f ../.state/.state-ready ]]; then
+            echo "Artifact bundle did not complete; durable state will not advance."
+            exit 0
+          fi
           cp ../.state/.source-health.json . 2>/dev/null || true
           cp ../.state/translations.json . 2>/dev/null || true
           git config user.name github-actions[bot]

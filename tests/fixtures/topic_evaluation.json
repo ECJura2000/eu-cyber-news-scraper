@@ -1,122 +1,3085 @@
 [
-  {"title":"Commission publishes AI Act model evaluation guidance","summary":"Algorithmic accountability and automated decision-making requirements","topics":["AI法、模型評估、演算法問責、自動化決策、AI與著作權"]},
-  {"title":"Agency opens a new regional office","summary":"Staff welcomed visitors to the building","topics":[]},
-  {"title":"Cadre européen pour la souveraineté des données","summary":"Réutilisation des données ouvertes et flux transfrontières","topics":["跨境資料流通、資料主權、資料開放與再利用"]},
-  {"title":"Open day at the ministry","summary":"The public may visit the historic library","topics":[]},
-  {"title":"DPC issues GDPR personal data decision","summary":"The data protection inquiry concerns a personal data breach","topics":["隱私框架（含個人資料保護）"]},
-  {"title":"Photography competition winners","summary":"Awards were presented in Dublin","topics":[]},
-  {"title":"European digital identity wallet pilot begins","summary":"The eIDAS identity service enters testing","topics":["數位身份"]},
-  {"title":"Identity of new chair announced","summary":"The board elected a new chairperson","topics":[]},
-  {"title":"Urheberrecht und KI-Trainingsdaten","summary":"DPMA erörtert Text und Data Mining sowie Rechteinhaber","topics":["著作權"]},
-  {"title":"Museum extends opening hours","summary":"The exhibition remains open on Friday","topics":[]},
-  {"title":"DSA content moderation and recommender systems report","summary":"Online platform transparency duties are assessed","topics":["平台責任、內容審查、推薦演算法"]},
-  {"title":"Local services platform relaunched","summary":"The website has a new visual design","topics":[]},
-  {"title":"EEAS report on foreign information manipulation","summary":"The report examines disinformation and media pluralism","topics":["平台責任、內容審查、推薦演算法","媒體多元與資訊操縱"]},
-  {"title":"Media invitation to annual conference","summary":"Journalists may register before Monday","topics":[]},
-  {"title":"Bundeskartellamt applies Digital Markets Act","summary":"The gatekeeper decision concerns market power and competition","topics":["競爭規範面向（平台責任的市場結構面）"]},
-  {"title":"Sports competition registration opens","summary":"Teams can submit entries online","topics":[]},
-  {"title":"NIS-2-Umsetzungsgesetz für kritische Einrichtungen","summary":"Wesentliche Einrichtungen müssen Cyberrisiken melden","topics":["NIS2、關鍵基礎設施保護"]},
-  {"title":"Road maintenance near government offices","summary":"Traffic restrictions apply this weekend","topics":[]},
-  {"title":"Cyber Resilience Act SBOM guidance","summary":"Manufacturers must handle vulnerabilities in products with digital elements","topics":["產品資安、漏洞揭露義務、SBOM","NIS2、關鍵基礎設施保護"]},
-  {"title":"Consumer product awards announced","summary":"The design prize recognises packaging","topics":[]},
-  {"title":"Sécurité de la chaîne d'approvisionnement numérique","summary":"L'ANSSI publie des recommandations sur les fournisseurs","topics":["供應鏈安全"]},
-  {"title":"Food supply figures published","summary":"Agricultural production increased this quarter","topics":[]},
-  {"title":"ENISA launches EUCC cybersecurity certification scheme","summary":"The European cybersecurity certification framework enters operation","topics":["資安產品認證"]},
-  {"title":"Training certificates available","summary":"Participants may download attendance records","topics":[]},
-  {"title":"CER physical and cyber resilience exercise","summary":"Critical infrastructure operators test hybrid threat response","topics":["NIS2、關鍵基礎設施保護","關鍵基礎設施的實體與數位融合保護"]},
-  {"title":"Office evacuation drill completed","summary":"Employees returned to work after the alarm","topics":[]},
-  {"title":"European Chips Act semiconductor pilot line","summary":"The microelectronics facility will support advanced chips","topics":["半導體"]},
-  {"title":"Potato chips promotion at canteen","summary":"A new lunch menu starts today","topics":[]},
-  {"title":"EuroHPC opens quantum computing access","summary":"Researchers can use new quantum technologies","topics":["量子技術"]},
-  {"title":"Quarterly procurement notice","summary":"The agency published contract award figures","topics":[]},
-  {"title":"AI Act compliance timetable published","summary":"Authorities explain duties for artificial intelligence systems","topics":["AI法、模型評估、演算法問責、自動化決策、AI與著作權"]},
-  {"title":"Évaluation des modèles d'intelligence artificielle","summary":"Le règlement sur l'intelligence artificielle impose des contrôles","topics":["AI法、模型評估、演算法問責、自動化決策、AI與著作權"]},
-  {"title":"Leitfaden zur KI-Verordnung","summary":"Die Behörde erläutert algorithmische Transparenz","topics":["AI法、模型評估、演算法問責、自動化決策、AI與著作權"]},
-  {"title":"Automated decision-making audit framework","summary":"The framework covers explainability and algorithmic fairness","topics":["AI法、模型評估、演算法問責、自動化決策、AI與著作權"]},
-  {"title":"Foundation model safety testing opens","summary":"Independent experts will conduct model evaluation","topics":["AI法、模型評估、演算法問責、自動化決策、AI與著作權"]},
-  {"title":"Sécurité de l'IA générative","summary":"Une consultation porte sur la responsabilité algorithmique","topics":["AI法、模型評估、演算法問責、自動化決策、AI與著作權"]},
-  {"title":"Cross-border data governance rule adopted","summary":"The measure supports the free flow of data","topics":["跨境資料流通、資料主權、資料開放與再利用"]},
-  {"title":"Portail national de données ouvertes","summary":"De nouvelles règles organisent la réutilisation des données","topics":["跨境資料流通、資料主權、資料開放與再利用"]},
-  {"title":"Strategie für Datensouveränität","summary":"Ein europäischer Datenraum wird vorbereitet","topics":["跨境資料流通、資料主權、資料開放與再利用"]},
-  {"title":"Public sector data reuse licence","summary":"Open data may be reused across borders","topics":["跨境資料流通、資料主權、資料開放與再利用"]},
-  {"title":"Libre circulation des données en Europe","summary":"Le cadre précise la gouvernance des données","topics":["跨境資料流通、資料主權、資料開放與再利用"]},
-  {"title":"Offene Daten zur Weiterverwendung","summary":"Neue Vorgaben stärken den freien Datenverkehr","topics":["跨境資料流通、資料主權、資料開放與再利用"]},
-  {"title":"GDPR enforcement decision on profiling","summary":"The authority found unlawful personal data processing","topics":["隱私框架（含個人資料保護）"]},
-  {"title":"Violation de données à caractère personnel","summary":"L'autorité de protection des données ouvre une enquête","topics":["隱私框架（含個人資料保護）"]},
-  {"title":"Datenschutzverletzung bei einem Anbieter","summary":"Personenbezogene Daten waren betroffen","topics":["隱私框架（含個人資料保護）"]},
-  {"title":"Data protection impact assessment guidance","summary":"Controllers must document risks under GDPR","topics":["隱私框架（含個人資料保護）"]},
-  {"title":"Sanction pour traitement de données personnelles","summary":"La CNIL applique le règlement général sur la protection des données","topics":["隱私框架（含個人資料保護）"]},
-  {"title":"Bußgeld wegen unzulässiger Datenverarbeitung","summary":"Die Aufsicht setzt das Datenschutzrecht durch","topics":["隱私框架（含個人資料保護）"]},
-  {"title":"Digital identity wallet certification begins","summary":"Citizens test the new eIDAS service","topics":["數位身份"]},
-  {"title":"Portefeuille européen d'identité numérique","summary":"Le pilote vérifie l'identité électronique","topics":["數位身份"]},
-  {"title":"Europäische digitale Identität startet","summary":"Die digitale Identität wird grenzüberschreitend erprobt","topics":["數位身份"]},
-  {"title":"Electronic identity trust services update","summary":"The eIDAS implementing rules enter force","topics":["數位身份"]},
-  {"title":"Identité numérique pour les services publics","summary":"Un nouveau portefeuille est testé","topics":["數位身份"]},
-  {"title":"Sicherheitsanforderungen für elektronische Identität","summary":"Digitale Ausweise werden geprüft","topics":["數位身份"]},
-  {"title":"Copyright licensing for AI training data","summary":"The study examines the text and data mining exception","topics":["著作權"]},
-  {"title":"Droit d'auteur et données d'entraînement","summary":"Les titulaires discutent la fouille de textes et de données","topics":["著作權"]},
-  {"title":"Urheberrecht bei KI-Trainingsdaten","summary":"Die Text- und Data-Mining-Ausnahme wird bewertet","topics":["著作權"]},
-  {"title":"Neighbouring rights consultation opens","summary":"Publishers comment on copyright law","topics":["著作權"]},
-  {"title":"Contenu généré par IA et droits voisins","summary":"Le rapport analyse le droit d'auteur","topics":["著作權"]},
-  {"title":"Lizenzierung von KI-generierten Inhalten","summary":"Das Leistungsschutzrecht steht im Mittelpunkt","topics":["著作權"]},
-  {"title":"Digital Services Act transparency report","summary":"A very large online platform explains content moderation","topics":["平台責任、內容審查、推薦演算法"]},
-  {"title":"Modération des contenus sur les plateformes","summary":"Le règlement sur les services numériques impose un audit","topics":["平台責任、內容審查、推薦演算法"]},
-  {"title":"Inhaltsmoderation nach dem Gesetz über digitale Dienste","summary":"Ein Empfehlungssystem wird untersucht","topics":["平台責任、內容審查、推薦演算法"]},
-  {"title":"Online platform recommender system inquiry","summary":"Regulators assess recommendation algorithm transparency","topics":["平台責任、內容審查、推薦演算法"]},
-  {"title":"Responsabilité des plateformes en ligne","summary":"Les algorithmes de recommandation doivent être expliqués","topics":["平台責任、內容審查、推薦演算法"]},
-  {"title":"Pflichten sehr großer Online-Plattformen","summary":"Die Plattformverantwortung wird durchgesetzt","topics":["平台責任、內容審查、推薦演算法"]},
-  {"title":"Foreign information manipulation report","summary":"Investigators document coordinated influence operations","topics":["媒體多元與資訊操縱"]},
-  {"title":"Pluralisme des médias sous surveillance","summary":"Le rapport mesure la diversité des médias","topics":["媒體多元與資訊操縱"]},
-  {"title":"Informationsmanipulation vor der Wahl","summary":"Die Behörde schützt die Wahlintegrität","topics":["媒體多元與資訊操縱"]},
-  {"title":"Election integrity threat assessment","summary":"Foreign interference campaigns are analysed","topics":["媒體多元與資訊操縱"]},
-  {"title":"Ingérences numériques étrangères","summary":"Une étude examine la manipulation de l'information","topics":["媒體多元與資訊操縱"]},
-  {"title":"Medienpluralismus in Europa","summary":"Der Bericht bewertet ausländische Einflussnahme","topics":["媒體多元與資訊操縱"]},
-  {"title":"Digital Markets Act gatekeeper decision","summary":"The competition authority addresses market power","topics":["競爭規範面向（平台責任的市場結構面）"]},
-  {"title":"Contrôleur d'accès sanctionné","summary":"Le règlement sur les marchés numériques protège la concurrence","topics":["競爭規範面向（平台責任的市場結構面）"]},
-  {"title":"Torwächter nach dem Gesetz über digitale Märkte","summary":"Das Wettbewerbsrecht begrenzt Marktmacht","topics":["競爭規範面向（平台責任的市場結構面）"]},
-  {"title":"Competition law investigation of app stores","summary":"Officials examine gatekeeper conduct","topics":["競爭規範面向（平台責任的市場結構面）"]},
-  {"title":"Pouvoir de marché des contrôleurs d'accès","summary":"L'autorité applique le droit de la concurrence","topics":["競爭規範面向（平台責任的市場結構面）"]},
-  {"title":"Marktmacht digitaler Torwächter","summary":"Die Behörde wendet das Wettbewerbsrecht an","topics":["競爭規範面向（平台責任的市場結構面）"]},
-  {"title":"NIS2 registration portal opens","summary":"Essential entities must report cyber risks","topics":["NIS2、關鍵基礎設施保護"]},
-  {"title":"Transposition de la directive NIS 2","summary":"Les entités importantes appliquent des mesures de sécurité","topics":["NIS2、關鍵基礎設施保護"]},
-  {"title":"Umsetzung der NIS-2-Richtlinie","summary":"Wichtige Einrichtungen erfüllen die Meldepflicht","topics":["NIS2、關鍵基礎設施保護"]},
-  {"title":"Cyber incident reporting under NIS2","summary":"Risk management duties apply to essential entities","topics":["NIS2、關鍵基礎設施保護"]},
-  {"title":"Mesures de gestion des risques cyber","summary":"La directive SRI 2 couvre les opérateurs essentiels","topics":["NIS2、關鍵基礎設施保護"]},
-  {"title":"NIS2-Meldepflicht für Einrichtungen","summary":"Das Cybersicherheitsstärkungsgesetz tritt in Kraft","topics":["NIS2、關鍵基礎設施保護"]},
-  {"title":"Cyber Resilience Act implementation guide","summary":"Manufacturers of products with digital elements receive guidance","topics":["產品資安、漏洞揭露義務、SBOM","NIS2、關鍵基礎設施保護"]},
-  {"title":"Divulgation coordonnée des vulnérabilités","summary":"Le traitement des vulnérabilités est obligatoire","topics":["產品資安、漏洞揭露義務、SBOM"]},
-  {"title":"Software-Stückliste für digitale Produkte","summary":"Hersteller verbessern das Schwachstellenmanagement","topics":["產品資安、漏洞揭露義務、SBOM"]},
-  {"title":"SBOM format for secure software","summary":"The document explains vulnerability handling","topics":["產品資安、漏洞揭露義務、SBOM"]},
-  {"title":"Produits comportant des éléments numériques","summary":"La sécurité dès la conception devient obligatoire","topics":["產品資安、漏洞揭露義務、SBOM"]},
-  {"title":"Koordinierte Offenlegung von Schwachstellen","summary":"Neue Regeln gelten für Produkte mit digitalen Elementen","topics":["產品資安、漏洞揭露義務、SBOM"]},
-  {"title":"ICT supply chain security review","summary":"Authorities assess software suppliers","topics":["供應鏈安全"]},
-  {"title":"Sécurité de la chaîne logistique numérique","summary":"Les fournisseurs doivent évaluer leurs risques","topics":["供應鏈安全"]},
-  {"title":"Sicherheit der Lieferkette","summary":"Bundesbehörden prüfen ihre digitalen Zulieferer","topics":["供應鏈安全"]},
-  {"title":"Cloud supply chain security principles","summary":"Procurement teams assess third-party providers","topics":["供應鏈安全"]},
-  {"title":"Sécurité de la chaîne d'approvisionnement","summary":"Le guide cible les prestataires informatiques","topics":["供應鏈安全"]},
-  {"title":"Lieferkettensicherheit für Software","summary":"Anbieter müssen Risiken ihrer Zulieferer bewerten","topics":["供應鏈安全"]},
-  {"title":"EUCC certification scheme enters operation","summary":"ICT cybersecurity certification applications open","topics":["資安產品認證"]},
-  {"title":"Schéma européen de certification de cybersécurité","summary":"La certification de sécurité des TIC est harmonisée","topics":["資安產品認證"]},
-  {"title":"Europäisches Cybersicherheitszertifizierungsschema","summary":"IKT-Produkte erhalten ein EUCC-Zertifikat","topics":["資安產品認證"]},
-  {"title":"Cybersecurity Act assurance levels updated","summary":"The European certification framework is revised","topics":["資安產品認證"]},
-  {"title":"Certification de cybersécurité des services cloud","summary":"Le projet EUCS fait l'objet d'une consultation","topics":["資安產品認證"]},
-  {"title":"Zertifizierung der Cybersicherheit von IKT-Produkten","summary":"Der europäische Rahmen wird umgesetzt","topics":["資安產品認證"]},
-  {"title":"Hybrid threat exercise for public operators","summary":"Teams coordinate physical and cyber security","topics":["關鍵基礎設施的實體與數位融合保護"]},
-  {"title":"Menaces hybrides et résilience physique","summary":"Les opérateurs testent la sécurité cyber-physique","topics":["關鍵基礎設施的實體與數位融合保護"]},
-  {"title":"Hybride Bedrohungen im Krisentest","summary":"Physische und digitale Sicherheit werden verbunden","topics":["關鍵基礎設施的實體與數位融合保護"]},
-  {"title":"Protective security coordination drill","summary":"The scenario tests physical resilience","topics":["關鍵基礎設施的實體與數位融合保護"]},
-  {"title":"Protection des entités face aux menaces hybrides","summary":"La résilience physique est évaluée","topics":["關鍵基礎設施的實體與數位融合保護"]},
-  {"title":"Cyber-physische Sicherheit im Ernstfall","summary":"Ein Schutzkonzept behandelt hybride Bedrohungen","topics":["關鍵基礎設施的實體與數位融合保護"]},
-  {"title":"European Chips Act funding call","summary":"New semiconductor pilot lines receive support","topics":["半導體"]},
-  {"title":"Législation européenne sur les semi-conducteurs","summary":"Une usine de microélectronique est financée","topics":["半導體"]},
-  {"title":"EU-Chip-Gesetz fördert Halbleiter","summary":"Neue Produktionskapazitäten entstehen","topics":["半導體"]},
-  {"title":"Semiconductor skills academy launched","summary":"Engineers will train for chip manufacturing","topics":["半導體"]},
-  {"title":"Projet pilote pour les semi-conducteurs","summary":"Le programme soutient une ligne de production","topics":["半導體"]},
-  {"title":"Halbleiterforschung erhält Förderung","summary":"Ein neues Werk entwickelt Mikrochips","topics":["半導體"]},
-  {"title":"Post-quantum cryptography roadmap","summary":"Agencies prepare migration to quantum-safe systems","topics":["量子技術"]},
-  {"title":"Technologies quantiques pour le calcul","summary":"Un ordinateur quantique rejoint le centre de recherche","topics":["量子技術"]},
-  {"title":"Post-Quanten-Kryptografie wird erprobt","summary":"Ein Quantencomputer unterstützt die Forschung","topics":["量子技術"]},
-  {"title":"Quantum computing access programme","summary":"Researchers test new quantum processors","topics":["量子技術"]},
-  {"title":"Cryptographie post-quantique","summary":"Le plan prépare les administrations aux technologies quantiques","topics":["量子技術"]},
-  {"title":"Quantentechnologie für sichere Kommunikation","summary":"Das Projekt entwickelt ein Quantennetz","topics":["量子技術"]}
+  {
+    "title": "European AI Competitiveness Beyond Frontier Models\n \n \n    Insights From AI Startups in Five Strategic Markets\n \n \n \n \n    Dr. Nicole Lemke",
+    "summary": "",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "en",
+    "source_id": "de_interface",
+    "url": "https://www.interface-eu.org/publications/european-ai-competitiveness-beyond-frontier-models",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "2026-008: Critical vulnerabilities in Ivanti Sentry\n                             \n Wednesday, June 10, 2026 01:55:39 PM CEST \n On 9 June 2026, Ivanti released a security advisory addressing two critical vulnerabilities in their Sentry products[1]. An attacker could exploit those flaws to achieve unauthenticated remote code execution on the vulnerable device.",
+    "summary": "On 9 June 2026, Ivanti released a security advisory addressing two critical vulnerabilities in their Sentry products[1]. An attacker could exploit those flaws to achieve unauthenticated remote code execution on the vulnerable device.",
+    "topics": [
+      "產品資安、漏洞揭露義務、SBOM",
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "en",
+    "source_id": "eu_cert_advisories",
+    "url": "https://cert.europa.eu/publications/security-advisories/2026-008/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Cyber Threat Intelligence Framework\n                             \n Wednesday, April 08, 2026 06:00:00 PM CEST \n Cyber Threat Intelligence Framework",
+    "summary": "Cyber Threat Intelligence Framework",
+    "topics": [
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "en",
+    "source_id": "eu_cert_threat",
+    "url": "https://cert.europa.eu/publications/threat-intelligence/cyber-threat-intelligence-framework/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Commission accepts X’s action plan to comply with Digital Services Act",
+    "summary": "",
+    "topics": [
+      "平台責任、內容審查、推薦演算法"
+    ],
+    "language": "en",
+    "source_id": "eu_dg_connect",
+    "url": "https://digital-strategy.ec.europa.eu/en/news/commission-accepts-xs-action-plan-comply-digital-services-act",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Commission issues guidance to strengthen resilience of critical infrastructure",
+    "summary": "On 10 July, the Commission adopted a Communication providing EU countries and their critical entities with guidance on technical, security and organisational measures to strengthen the resilience of critical infrastructure, supporting the implementation of the Critical Entities Resilience Directive.",
+    "topics": [
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "en",
+    "source_id": "eu_dg_home",
+    "url": "https://home-affairs.ec.europa.eu/news/commission-issues-guidance-strengthen-resilience-critical-infrastructure-2026-07-10_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "EDPB sheds light on anonymisation and web scraping for generative AI and adopts final version of guidelines on blockchain",
+    "summary": "",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "en",
+    "source_id": "eu_edpb",
+    "url": "https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Tackling Disinformation, Foreign Information Manipulation & Interference",
+    "summary": "",
+    "topics": [
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱"
+    ],
+    "language": "en",
+    "source_id": "eu_eeas",
+    "url": "https://www.eeas.europa.eu/eeas/information-integrity-and-countering-foreign-information-manipulation-interference-fimi_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Support services in relation to EU cybersecurity certification schemes and CRA implementation",
+    "summary": "",
+    "topics": [
+      "資安產品認證",
+      "產品資安、漏洞揭露義務、SBOM"
+    ],
+    "language": "en",
+    "source_id": "eu_enisa_certification",
+    "url": "https://certification.enisa.europa.eu/news/support-services-relation-eu-cybersecurity-certification-schemes-and-cra-implementation-2026-03-04_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Where do SMEs stand in preparing for the Cyber Resilience Act?",
+    "summary": "News Item 13 July, 2026",
+    "topics": [
+      "產品資安、漏洞揭露義務、SBOM",
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "en",
+    "source_id": "eu_enisa_news",
+    "url": "https://www.enisa.europa.eu/news/where-do-smes-stand-in-preparing-for-the-cyber-resilience-act",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "SME Cyber Resilience Maturity Assessment Model",
+    "summary": "13 July, 2026",
+    "topics": [
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "en",
+    "source_id": "eu_enisa_publications",
+    "url": "https://www.enisa.europa.eu/publications/sme-cyber-resilience-maturity-assessment-model",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "EuroHPC JU Launches Q-Neko Project to Strengthen EU–Japan Collaboration in Quantum Computing",
+    "summary": "The newly launched project supports the implementation of the EU-Japan Digital Partnership.",
+    "topics": [
+      "量子技術"
+    ],
+    "language": "en",
+    "source_id": "eu_eurohpc",
+    "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-launches-q-neko-project-strengthen-eu-japan-collaboration-quantum-computing-2026-07-06_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Enlargement: MEPs praise Moldova for reforms despite Moscow interference",
+    "summary": "In their report on Moldova’s progress towards EU membership, MEPs commend the country for its exemplary commitment despite continued Russian-led foreign interference.",
+    "topics": [
+      "媒體多元與資訊操縱"
+    ],
+    "language": "en",
+    "source_id": "eu_parliament_press",
+    "url": "https://www.europarl.europa.eu/news/en/press-room/20260706IPR46313/enlargement-meps-praise-moldova-for-reforms-despite-moscow-interference",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Remarks by Executive Vice-President Virkkunen on the Action plan on Cybersecurity and Artificial Intelligence",
+    "summary": "",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "en",
+    "source_id": "eu_presscorner",
+    "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1546",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "June 10, 2026 | SHM: When cyberattacks cross the physical divide",
+    "summary": "Structural monitoring: What are the consequences for the physical world when the AI models used in SHM are attacked? CEA-List provides an answer—a world first! The post June 10, 2026 | SHM: When cyberattacks cross the physical divide appeared first on CEA-List .",
+    "topics": [
+      "NIS2、關鍵基礎設施保護",
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "en",
+    "source_id": "fr_cea_list",
+    "url": "https://list.cea.fr/en/june-10-2026-shm-when-cyberattacks-cross-the-physical-divide/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Cyber threats, AI and democracy in focus at Trinity as Ireland takes up EU Presidency",
+    "summary": "The post Cyber threats, AI and democracy in focus at Trinity as Ireland takes up EU Presidency appeared first on ADAPT, the Research Ireland Research Centre for AI-Driven Digital Content Technology .",
+    "topics": [
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "en",
+    "source_id": "ie_adapt",
+    "url": "https://www.adaptcentre.ie/news-and-events/cyber-threats-ai-and-democracy-in-focus-at-trinity-as-ireland-takes-up-eu-presidency/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "France 24 Special Edition of Talking Europe",
+    "summary": "France 24 Special Edition of Talking Europe This month CeADAR featured on France24’s coverage of Europe’s fight to stay in the AI race. The special edition of Talking Europe asks whether the EU is ready for the disruption that comes with Artificial Intelligence. Dr Ricardo Simon Carbajo , Director o",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "en",
+    "source_id": "ie_ceadar",
+    "url": "https://ceadar.ie/news/france-24-special-edition-of-talking-europe/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Trusted Flagger status granted to three new organisations",
+    "summary": "Coimisiún na Meán, has today (25.06.2026) announced the decision to grant Trusted Flagger status to the Irish Internet Hotline (IIH), the Irish Music Rights Organisation (IMRO), and the Jewish Representative Council of Ireland (JRCI). The bodies will join the Central Bank of Ireland which was awarde",
+    "topics": [],
+    "language": "en",
+    "source_id": "ie_cnam",
+    "url": "https://www.cnam.ie/trusted-flagger-status-granted-to-three-new-organisations/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Copyright",
+    "summary": "",
+    "topics": [
+      "著作權"
+    ],
+    "language": "en",
+    "source_id": "ie_comreg",
+    "url": "https://www.comreg.ie/copyright/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Building Cyber Resilience from the Classroom Up: UCD Centre for Cyber Resilience Education Leading Cybersecurity Education",
+    "summary": "",
+    "topics": [
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "en",
+    "source_id": "ie_cyber_ireland",
+    "url": "https://cyberireland.ie/building-cyber-resilience-from-the-classroom-up-ucd-centre-for-cyber-resilience-education-leading-cybersecurity-education/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Publication of the Regulation of Artificial Intelligence Bill 2026",
+    "summary": "17th June 2026",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "en",
+    "source_id": "ie_dete",
+    "url": "https://enterprise.gov.ie/en/news-and-events/department-news/2026/june/20260617.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Data Protection Commission Publishes Annual Report for 2025 and Results of “Sharenting” Survey",
+    "summary": "The Data Protection Commission (DPC) published its Annual Report for 2025 today. At a press conference at the DPC’s offices, Commissioners for Data Protection, Dr Des Hogan (Chairperson), Mr Dale Sunderland and Ms Niamh Sweeney detailed the significant work of the office throughout the year. ... Rea",
+    "topics": [
+      "隱私框架（含個人資料保護）"
+    ],
+    "language": "en",
+    "source_id": "ie_dpc",
+    "url": "https://dataprotection.ie/en/data-protection-commission-publishes-2025-annual-report",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Challenges and opportunities posed by artificial intelligence for income inequality and the public finances",
+    "summary": "",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "en",
+    "source_id": "ie_esri",
+    "url": "https://www.esri.ie/news/challenges-and-opportunities-posed-by-artificial-intelligence-for-income-inequality-and-the",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Paul Banahan named Young AI Role Model of the Year",
+    "summary": "",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "en",
+    "source_id": "ie_insight",
+    "url": "https://www.insight-centre.org/paul-banahan-named-young-ai-role-model-of-the-year/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Critical Vulnerability exists in Microsoft SharePoint Server (CVE-2026-56164)",
+    "summary": "",
+    "topics": [
+      "產品資安、漏洞揭露義務、SBOM"
+    ],
+    "language": "en",
+    "source_id": "ie_ncsc",
+    "url": "https://www.ncsc.gov.ie/pdfs/2607150243_CVE-2026-56164.pdf",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Ireland’s Age-Friendly AI Training Programme Launches in Cavan",
+    "summary": "The Age-Friendly AI training programme, Ireland’s National Artificial Intelligence Literacy Initiative for Older Adults, was officially launched at Johnston Central Library in the Farnham Centre in Ca...",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "en",
+    "source_id": "ie_research_ireland",
+    "url": "https://www.researchireland.ie/news/age-friendly-ai-cavan/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "ICOS² Project Launches to Strengthen Europe’s Semiconductor Resilience and Global Partnerships",
+    "summary": "The post ICOS² Project Launches to Strengthen Europe’s Semiconductor Resilience and Global Partnerships appeared first on Tyndall National Institute - Excellence in ICT Research .",
+    "topics": [
+      "半導體"
+    ],
+    "language": "en",
+    "source_id": "ie_tyndall",
+    "url": "https://www.tyndall.ie/news/icos%c2%b2-project-launches-to-strengthen-europes-semiconductor-resilience-and-global-partnerships/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Building a Centralised National AI Authority\n \n \n    Poland's AI Act Implementation Model in a European Context\n \n \n \n \n    Jan Króliński",
+    "summary": "",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "en",
+    "source_id": "de_interface",
+    "url": "https://www.interface-eu.org/publications/poland-ai-act-implementation",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "2026-007: Critical Vulnerability in Windows Netlogon\n                             \n Wednesday, June 10, 2026 08:47:08 AM CEST \n On 12 May 2026, Microsoft published a security advisory addressing a critical vulnerability affecting Windows Server when acting as a domain controller. This vulnerability allows an unauthenticated attacker to execute arbitrary code over a network. \nAccording to The Centre for Cybersecurity Belgium (CCB), this vulnerability is currently exploited by threat actors. It is strongly recommended updating affected Windows servers as soon as possible.",
+    "summary": "On 12 May 2026, Microsoft published a security advisory addressing a critical vulnerability affecting Windows Server when acting as a domain controller. This vulnerability allows an unauthenticated attacker to execute arbitrary code over a network. According to The Centre for Cybersecurity Belgium (",
+    "topics": [
+      "產品資安、漏洞揭露義務、SBOM",
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "en",
+    "source_id": "eu_cert_advisories",
+    "url": "https://cert.europa.eu/publications/security-advisories/2026-007/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Threat Landscape Report 2025 - A Year In Review\n                             \n Wednesday, April 08, 2026 06:00:00 PM CEST \n CERT-EU Cyber Threat Landscape Report for 2025 - Year Review",
+    "summary": "CERT-EU Cyber Threat Landscape Report for 2025 - Year Review",
+    "topics": [
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "en",
+    "source_id": "eu_cert_threat",
+    "url": "https://cert.europa.eu/publications/threat-intelligence/tlr2025/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Commission provides guidance to Google for AI interoperability on Android and sharing of Google Search data under the Digital Markets Act",
+    "summary": "Today, the European Commission has issued two sets of binding specification measures to Google under the Digital Markets Act.",
+    "topics": [
+      "競爭規範面向（平台責任的市場結構面）"
+    ],
+    "language": "en",
+    "source_id": "eu_dg_connect",
+    "url": "https://digital-strategy.ec.europa.eu/en/news/commission-provides-guidance-google-ai-interoperability-android-and-sharing-google-search-data",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Supporting GDPR consistency: EDPB launches dedicated form",
+    "summary": "",
+    "topics": [
+      "隱私框架（含個人資料保護）"
+    ],
+    "language": "en",
+    "source_id": "eu_edpb",
+    "url": "https://www.edpb.europa.eu/news/supporting-gdpr-consistency-edpb-launches-dedicated-form_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Data protection",
+    "summary": "",
+    "topics": [
+      "隱私框架（含個人資料保護）"
+    ],
+    "language": "en",
+    "source_id": "eu_eeas",
+    "url": "https://www.eeas.europa.eu/eeas/data-protection_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "SBOM Adoption State of Play - 2026",
+    "summary": "9 June, 2026",
+    "topics": [
+      "產品資安、漏洞揭露義務、SBOM"
+    ],
+    "language": "en",
+    "source_id": "eu_enisa_publications",
+    "url": "https://www.enisa.europa.eu/publications/sbom-adoption-state-of-play-2026",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "EuroHPC JU Opens Access to its Quantum Computers",
+    "summary": "A major milestone for European science and innovation is reached today, as European users can now request free access to the EuroHPC quantum computers through the newly launched EuroHPC quantum access pilot call.",
+    "topics": [
+      "量子技術"
+    ],
+    "language": "en",
+    "source_id": "eu_eurohpc",
+    "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-opens-access-its-quantum-computers-2026-06-25_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "AI algorithms for gamma-ray spectrometry used in field measurement",
+    "summary": "In gamma spectrometry, the demand for automated algorithms for rapid decision-making in low-statistics in situ measurements is high. The post AI algorithms for gamma-ray spectrometry used in field measurement appeared first on CEA-List .",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "en",
+    "source_id": "fr_cea_list",
+    "url": "https://list.cea.fr/en/ai-algorithms-for-gamma-ray-spectrometry-used-in-field-measurement-3/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Ireland secures €10 million investment to launch national gateway to Europe’s AI network",
+    "summary": "Ireland secures €10 million investment to launch national gateway to Europe’s AI network Photo from left : Cédric Auliac; Josephine Wood; JC Desplat; James Harkin; Minister James Lawless, TD; Arnaud Lambert; and John Lonsdale. Image: Kenneth O’Halloran New AIF IRL-Antenna initiative will provide Iri",
+    "topics": [],
+    "language": "en",
+    "source_id": "ie_ceadar",
+    "url": "https://ceadar.ie/news/ireland-secures-e10-million-investment-to-launch-national-gateway-to-europes-ai-network/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Second Out-of-Court Dispute Settlement Body in Ireland certified",
+    "summary": "Coimisiún na Meán has today 11.06.2026 published details of the certification of Impress Dispute Resolutions (IDR) as an Out-of-Court Dispute Settlement (ODS) Body. Under the Digital Services Act (DSA), bodies which are established in Ireland may apply to us for certification as an ODS Body. An ODS ",
+    "topics": [
+      "平台責任、內容審查、推薦演算法"
+    ],
+    "language": "en",
+    "source_id": "ie_cnam",
+    "url": "https://www.cnam.ie/second-out-of-court-dispute-settlement-body-in-ireland-certified/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "“Cyber Resilience: Strategies for an Evolving Threat Landscape”",
+    "summary": "",
+    "topics": [
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "en",
+    "source_id": "ie_cyber_ireland",
+    "url": "https://cyberireland.ie/cyber-resilience-strategies-for-an-evolving-threat-landscape/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Data Protection Commission Publishes Final Decision Following Inquiry into Permanent TSB",
+    "summary": "The Data Protection Commission (DPC) has announced its final decision following an inquiry into a series of personal data breaches at Permanent TSB (PTSB), which were first reported to the DPC in May 2022. ... Read more about Data Protection Commission Publishes Final Decision Following Inquiry into",
+    "topics": [
+      "隱私框架（含個人資料保護）"
+    ],
+    "language": "en",
+    "source_id": "ie_dpc",
+    "url": "https://dataprotection.ie/en/news-media/press-releases/data-protection-commission-announces-decision-in-pemanent-tsb-inquiry",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "AGENDA: Chamber of Intelligence: An AI Showcase, UCD November 25",
+    "summary": "",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "en",
+    "source_id": "ie_insight",
+    "url": "https://www.insight-centre.org/agenda-chamber-of-intelligence-an-ai-showcase-ucd-november-25/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "CISPA DLS",
+    "summary": "",
+    "topics": [],
+    "language": "en",
+    "source_id": "de_cispa",
+    "url": "https://cispa.de/en/news-and-events/all-events/distinguished-lecture-series",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "A UN Effect? How the EU Implements the Norms of Responsible State Behavior in Cyberspace\n \n \n \n \n \n \n    Dr. Patryk Pawlak, Christina Rupp",
+    "summary": "",
+    "topics": [],
+    "language": "en",
+    "source_id": "de_interface",
+    "url": "https://www.interface-eu.org/publications/how-the-eu-implements-the-un-cyber-norms",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Cyber Brief 26-07 - June 2026\n                             \n Wednesday, July 01, 2026 04:00:00 PM CEST \n Cyber Briefs are monthly executive reports that aim to present an overview of the most relevant developments in cyber security, based exclusively on open sources, with a view to inform political leadership and senior management in its constituency. Additional information on any item in this Brief can be provided upon request. Cyber Briefs are TLP:CLEAR.",
+    "summary": "Cyber Briefs are monthly executive reports that aim to present an overview of the most relevant developments in cyber security, based exclusively on open sources, with a view to inform political leadership and senior management in its constituency. Additional information on any item in this Brief ca",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_cert_threat",
+    "url": "https://cert.europa.eu/publications/threat-intelligence/cb26-07/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Consultation: 'Do No Significant Harm’ (DNSH) guidance for the next Multiannual Financial Framework",
+    "summary": "",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_chips_ju",
+    "url": "https://www.chips-ju.europa.eu/NewsDetails?id=54268b1b-0d81-f111-ab0e-7c1e5287eb89",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "2026 Rule of Law Report strengthens Europe's prosperity, security and democratic resilience",
+    "summary": "Today, the European Commission published its seventh annual Rule of Law Report, assessing the state of the rule of law across all EU Member States, as well as four candidate countries: Albania, Montenegro, North Macedonia and Serbia.",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_dg_connect",
+    "url": "https://digital-strategy.ec.europa.eu/en/news/2026-rule-law-report-strengthens-europes-prosperity-security-and-democratic-resilience",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Commissioner Brunner co-hosted the third Ministerial meeting of the European Ports Alliance in Dublin",
+    "summary": "On 16 July, Commissioner for Internal Affairs and Migration, Magnus Brunner, co-hosted the 3rd Ministerial Meeting of the European Ports Alliance Public-Private Partnership together with the Irish Presidency, as part of the Justice and Home Affairs Council.",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_dg_home",
+    "url": "https://home-affairs.ec.europa.eu/news/commissioner-brunner-co-hosted-third-ministerial-meeting-european-ports-alliance-dublin-2026-07-17_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "EDPB calls for legal basis for cross-regulatory information sharing",
+    "summary": "",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_edpb",
+    "url": "https://www.edpb.europa.eu/news/edpb-calls-for-legal-basis-for-cross-regulatory-information-sharing_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "EU–Viet Nam Human Rights Dialogue - 2 July 2026, Brussels, Belgium",
+    "summary": "",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_eeas",
+    "url": "https://www.eeas.europa.eu/eeas/eu-viet-nam-human-rights-dialogue-2-july-2026-brussels-belgium_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Participate to the public review of the new draft of “Agreed Cryptographic Mechanisms”",
+    "summary": "",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_enisa_certification",
+    "url": "https://certification.enisa.europa.eu/news/participate-public-review-new-draft-agreed-cryptographic-mechanisms-2026-06-02_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Team Europe wins 1st ever International Cybersecurity Challenge for women",
+    "summary": "News Item 10 July, 2026",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_enisa_news",
+    "url": "https://www.enisa.europa.eu/news/team-europe-wins-1st-ever-international-cybersecurity-challenge-for-women",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "ENISA’s view on Cybersecurity in the Frontier AI Era",
+    "summary": "7 July, 2026",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_enisa_publications",
+    "url": "https://www.enisa.europa.eu/publications/enisas-view-on-cybersecurity-in-the-frontier-ai-era",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "EuroHPC JU launches call for tender for new industrial supercomputer in Bologna, Italy",
+    "summary": "The European High Performance Computing Joint Undertaking launched a call for tender to select a vendor for the acquisition, delivery, installation and maintenance of the first EuroHPC industrial supercomputer, INNOVATE, to be located in Italy.",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_eurohpc",
+    "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-launches-call-tender-new-industrial-supercomputer-bologna-italy-2026-07-16_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Demographic transformation in the EU: challenges and opportunities",
+    "summary": "The report provides up-to-date evidence on population trends across the EU",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_jrc_news",
+    "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/demographic-transformation-eu-challenges-and-opportunities-2026-07-14_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "EU-China relations: Parliament’s Foreign Affairs Committee to visit Beijing and Shanghai",
+    "summary": "A delegation from Parliament’s Committee on Foreign Affairs, led by Chair David McAllister, will be in China on 21-23 July for high-level meetings with the Chinese authorities.",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_parliament_press",
+    "url": "https://www.europarl.europa.eu/news/en/press-room/20260716IPR46531/eu-china-relations-foreign-affairs-committee-to-visit-beijing-and-shanghai",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Remarks by Commissioner Albuquerque at the press conference on the Report on the competitiveness of the EU banking sector",
+    "summary": "",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_presscorner",
+    "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1650",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "6G-VERSUS Venture Accelerator deadline has been extended to July 25!",
+    "summary": "More time to apply! The deadline for the 6G-VERSUS Venture Accelerator has been extended to July 25. Are you an EU-based startup developing innovative solutions in 5G, 6G, AI, IoT, […] The post 6G-VERSUS Venture Accelerator deadline has been extended to July 25! appeared first on SNS JU .",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_sns_ju",
+    "url": "https://smart-networks.europa.eu/6g-versus-venture-accelerator-deadline-has-been-extended-to-july-25/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "April 22 2026 | Institut Curie, the CEA and Thales Sign a Partnership to Build a Unique FLASH Radiotherapy Platform to Accelerate the Cure for Cancers Throughout the World",
+    "summary": "One year after its launch, the FRATHEA radiotherapy project (Flash RAdiation THerapy Electron Acceleration), supported by Institut Curie in collaboration with the CEA, is taking a major new step: Thales has been selected as a partner in charge of building and installing a very high energy electron i",
+    "topics": [],
+    "language": "en",
+    "source_id": "fr_cea_list",
+    "url": "https://list.cea.fr/en/april-22-2026-institut-curie-the-cea-and-thales-sign-a-partnership-to-build-a-unique-flash-radiotherapy-platform-to-accelerate-the-cure-for-cancers-throughout-the-world/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "ADAPT Trinity College Dublin Researchers Help Uncover How the Brain Tracks Multiple Conversations",
+    "summary": "The post ADAPT Trinity College Dublin Researchers Help Uncover How the Brain Tracks Multiple Conversations appeared first on ADAPT, the Research Ireland Research Centre for AI-Driven Digital Content Technology .",
+    "topics": [],
+    "language": "en",
+    "source_id": "ie_adapt",
+    "url": "https://www.adaptcentre.ie/news-and-events/adapt-trinity-college-dublin-researchers-help-uncover-how-the-brain-tracks-multiple-conversations/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Digital News Report Ireland 2026",
+    "summary": "Irish people continue to trust major news brands but are losing trust in news more generally according to the annual Digital News Report Ireland 2026. The report is published today (16.06.2026) by Coimisiún na Meán. The Report shows that 42% of Irish people say they can trust most news most of the t",
+    "topics": [],
+    "language": "en",
+    "source_id": "ie_cnam",
+    "url": "https://www.cnam.ie/digital-news-report-ireland-2026/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Consumer News from Q2 2026",
+    "summary": "During the second quarter of 2026 (April to June), ComReg had a range of news for consumers that included some of the following topics: We … The post Consumer News from Q2 2026 first appeared on Commission for Communications Regulation .",
+    "topics": [],
+    "language": "en",
+    "source_id": "ie_comreg",
+    "url": "https://www.comreg.ie/consumer-news-from-q2-2026/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Cybersecurity for Health Annual Conference. July 1st 2026, Dundalk",
+    "summary": "",
+    "topics": [],
+    "language": "en",
+    "source_id": "ie_cyber_ireland",
+    "url": "https://cyberireland.ie/cybersecurity-for-health-annual-conference-july-1st-2026-dundalk/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Ministers Burke and Smyth announce appointments of two new Members and Chairperson to the Corporate Enforcement Authority",
+    "summary": "26th June 2026",
+    "topics": [],
+    "language": "en",
+    "source_id": "ie_dete",
+    "url": "https://enterprise.gov.ie/en/news-and-events/department-news/2026/june/20260626.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Appeal Related to the Ireland First Party Concluded",
+    "summary": "",
+    "topics": [],
+    "language": "en",
+    "source_id": "ie_electoral_commission",
+    "url": "https://www.electoralcommission.ie/latest-news-and-research/appeal-related-to-the-ireland-first-party-concluded/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Nowcast (as of 16 July 2026)",
+    "summary": "",
+    "topics": [],
+    "language": "en",
+    "source_id": "ie_esri",
+    "url": "https://www.esri.ie/news/nowcast-as-of-16-july-2026",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Rinn AI – the next chapter for Ireland’s data and AI research ecosystem",
+    "summary": "The post Rinn AI – the next chapter for Ireland’s data and AI research ecosystem appeared first on Insight .",
+    "topics": [],
+    "language": "en",
+    "source_id": "ie_insight",
+    "url": "https://www.insight-centre.org/rinn-ai-the-next-chapter-for-irelands-data-and-ai-research-ecosystem/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Global Targeting of Fortinet Firewalls and VPN\n              Gateways - Fortibleed",
+    "summary": "",
+    "topics": [],
+    "language": "en",
+    "source_id": "ie_ncsc",
+    "url": "https://www.ncsc.gov.ie/pdfs/Fortinet-Fortibleed-180626.pdf",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "National Metrology Laboratory\n\t                                             \n Insight \n \n Metrology Meets Regulation \n \n \n \n                                                    17th June 2026",
+    "summary": "Insight",
+    "topics": [],
+    "language": "en",
+    "source_id": "ie_nsai",
+    "url": "https://www.nsai.ie/about/news/metrology-meets-regulation/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "06 July 2026 From the Gobi Desert to Gaza: early career researchers from 28 countries gather to tackle global sustainability challenges",
+    "summary": "",
+    "topics": [],
+    "language": "en",
+    "source_id": "ie_research_ireland",
+    "url": "https://www.researchireland.ie/news/restore-international-summer-school/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Intel Recognises Tyndall Researcher with 2025 Outstanding Researcher Award",
+    "summary": "The post Intel Recognises Tyndall Researcher with 2025 Outstanding Researcher Award appeared first on Tyndall National Institute - Excellence in ICT Research .",
+    "topics": [],
+    "language": "en",
+    "source_id": "ie_tyndall",
+    "url": "https://www.tyndall.ie/news/intel-recognises-tyndall-researcher-with-2025-outstanding-researcher-award/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "CISPA Insights",
+    "summary": "",
+    "topics": [],
+    "language": "en",
+    "source_id": "de_cispa",
+    "url": "https://cispa.de/en/news-and-events/insights",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Making Public Compute Work for Applied AI Startups\n \n \n    A Deep Dive Into Poland’s AI Factory Ecosystem\n \n \n \n \n    Jan Króliński, Dr. Nicole Lemke",
+    "summary": "",
+    "topics": [],
+    "language": "en",
+    "source_id": "de_interface",
+    "url": "https://www.interface-eu.org/publications/public-compute-applied-ai-startups",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Cyber Brief 26-06 - May 2026\n                             \n Tuesday, June 02, 2026 06:00:00 PM CEST \n Cyber Briefs are monthly executive reports that aim to present an overview of the most relevant developments in cyber security, based exclusively on open sources, with a view to inform political leadership and senior management in its constituency. Additional information on any item in this Brief can be provided upon request. Cyber Briefs are TLP:CLEAR.",
+    "summary": "Cyber Briefs are monthly executive reports that aim to present an overview of the most relevant developments in cyber security, based exclusively on open sources, with a view to inform political leadership and senior management in its constituency. Additional information on any item in this Brief ca",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_cert_threat",
+    "url": "https://cert.europa.eu/publications/threat-intelligence/cb26-06/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "EU and India strengthen strategic partnership with third Trade and Technology Council",
+    "summary": "Today, the European Union and India held the third meeting of their Trade and Technology Council (TTC) in Brussels, reaffirming the TTC as a central platform for cooperation on trade, technology and security.",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_dg_connect",
+    "url": "https://digital-strategy.ec.europa.eu/en/news/eu-and-india-strengthen-strategic-partnership-third-trade-and-technology-council",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Portugal sees developments in migrant integration initiatives, policies and research",
+    "summary": "Portugal’s Council of Ministers published Resolution No. 53-A/2026 in the Diário da República, extending the validity of Temporary Protection Titles for displaced persons from Ukraine until 4 March 2027.",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_dg_home",
+    "url": "https://home-affairs.ec.europa.eu/news/portugal-sees-developments-migrant-integration-initiatives-policies-and-research-2026-07-16_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "EDPB requires Belgian DPA to handle the merits of NOYB cookie banner complaint",
+    "summary": "",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_edpb",
+    "url": "https://www.edpb.europa.eu/news/edpb-requires-belgian-dpa-to-handle-the-merits-of-noyb-cookie-banner-complaint_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Israel/Palestine: Statement by the Spokesperson on settlement expansion",
+    "summary": "",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_eeas",
+    "url": "https://www.eeas.europa.eu/eeas/israelpalestine-statement-spokesperson-settlement-expansion_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Public Consultation on the draft candidate EUDIW Certification scheme",
+    "summary": "",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_enisa_certification",
+    "url": "https://certification.enisa.europa.eu/news/public-consultation-draft-candidate-eudiw-certification-scheme-2026-04-02_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Your Perspective Matters: Join the NIS360 survey",
+    "summary": "News Item 1 July, 2026",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_enisa_news",
+    "url": "https://www.enisa.europa.eu/news/your-perspective-matters-join-the-nis360-survey",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "ENISA Consolidated Annual Activity Report 2025",
+    "summary": "29 June, 2026",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_enisa_publications",
+    "url": "https://www.enisa.europa.eu/publications/enisa-consolidated-annual-activity-report-2025",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Two New EuroHPC Systems Join the TOP500 as JUPITER Remains Among the World's Fastest Supercomputers",
+    "summary": "Today, the latest TOP500 and Green500 rankings once again featured all operational EuroHPC supercomputers, including two new systems, DAEDALUS and Arrhenius, while JUPITER remains among the world's top five with its exascale capabilities.",
+    "topics": [],
+    "language": "en",
+    "source_id": "eu_eurohpc",
+    "url": "https://www.eurohpc-ju.europa.eu/two-new-eurohpc-systems-join-top500-jupiter-remains-among-worlds-fastest-supercomputers-2026-06-23_en",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "NIS 2 : l’ANSSI poursuit et renforce sa dynamique d’accompagnement",
+    "summary": "Publié le mercredi 18 mars 2026",
+    "topics": [
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "fr",
+    "source_id": "fr_anssi",
+    "url": "https://cyber.gouv.fr/actualites/nis-2-lanssi-poursuit-et-renforce-sa-dynamique-daccompagnement/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Réseaux du futur",
+    "summary": "« Les technologies du quantique et leur impact sur les réseaux », cinquième note publiée par l’Arcep dans le cadre de son cycle de réflexion prospective « Réseaux du futur »",
+    "topics": [
+      "量子技術"
+    ],
+    "language": "fr",
+    "source_id": "fr_arcep",
+    "url": "https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/reseaux-du-futur-110626.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Accompagner la transition vers la cryptographie post-quantique",
+    "summary": "Le groupe de travail Cryptographie Post-Quantique du Campus Cyber annonce la publication de deux nouveaux livrables destinés à accompagner les organisations dans leur transition vers la cryptographie post-quantique : • Panorama des outils de migration vers la cryptographie post-quantique • Guide de ",
+    "topics": [
+      "量子技術"
+    ],
+    "language": "fr",
+    "source_id": "fr_campus_cyber",
+    "url": "https://campuscyber.fr/5893/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Le CEPD met en lumière l’anonymisation et le moissonnage pour l’IA générative et adopte la version finale des lignes directrices sur la chaîne de blocs",
+    "summary": "09 juillet 2026",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "fr",
+    "source_id": "fr_cnil",
+    "url": "https://www.cnil.fr/fr/cepd-ia-generative-chaines-blocs",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Agents d’IA : l’Autorité de la concurrence rend son avis sur le fonctionnement concurrentiel du secteur des agents d’intelligence artificielle",
+    "summary": "",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "fr",
+    "source_id": "fr_concurrence",
+    "url": "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse/agents-dia-lautorite-de-la-concurrence-rend-son-avis-sur-le-fonctionnement",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Quelles sont les principales cybermalveillances qui ont affecté les particuliers en 2025 ?",
+    "summary": "Hameçonnage, piratage de compte, violation de données… Ces menaces figurent parmi les plus fréquemment rencontrées par les particuliers. Découvrez les principales tendances et évolutions observées à partir des données issues de notre dernier rapport d’activité.",
+    "topics": [
+      "隱私框架（含個人資料保護）"
+    ],
+    "language": "fr",
+    "source_id": "fr_cybermalveillance",
+    "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/top-10-cybermalveillances-particuliers-2025",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Technologies immersives : 14 nouveaux lauréats de l'appels à projets de France 2030",
+    "summary": "La ministre déléguée chargée de l’Intelligence artificielle et du Numérique a annoncé le soutien de l'État à 14 projets qui développent des solutions immersives innovantes. Retrouvez le détail des pro...",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "fr",
+    "source_id": "fr_dge",
+    "url": "https://www.entreprises.gouv.fr/la-dge/actualites/technologies-immersives-14-nouveaux-laureats-de-lappels-projets-de-france-2030",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Intelligence artificielle\n                   \n \n \n \n « Notre IA » : Inria contribue au déploiement d'une IA de confiance dans les services publics \n \n \n \n 15/07/2026",
+    "summary": "15/07/2026",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/notre-ia-inria-contribue-deploiement-intelligence-artificielle-confiance-services-publics",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "17/06/2026 Chips Act 2.0 : pour une politique étrangère économique européenne \n                            Mathieu Duchâtel",
+    "summary": "",
+    "topics": [
+      "半導體"
+    ],
+    "language": "fr",
+    "source_id": "fr_institut_montaigne",
+    "url": "https://www.institutmontaigne.org/expressions/chips-act-20-pour-une-politique-etrangere-economique-europeenne",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Bilan des ingérences numériques étrangères ayant ciblé les élections municipales de mars 2026",
+    "summary": "",
+    "topics": [
+      "媒體多元與資訊操縱"
+    ],
+    "language": "fr",
+    "source_id": "fr_viginum",
+    "url": "https://www.sgdsn.gouv.fr/viginum/actualites/bilan-des-ingerences-numeriques-etrangeres-ayant-cible-les-elections-municipales",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Appel à manifestation d’intérêt pour le test d’un outil d’audit RGPD des modèles d’IA",
+    "summary": "Publié le lundi 2 mars 2026",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "fr",
+    "source_id": "fr_anssi",
+    "url": "https://cyber.gouv.fr/actualites/ami-outil-audit-rgpd-ia/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "MYTHOS ET AUTRES MODÈLES-FRONTIÈRE : IMPLICATIONS DES PROGRÈS DE L’IA POUR LA CYBER EN FRANCE ET EN EUROPE",
+    "summary": "Le Campus Cyber publie une analyse des progrès de l’intelligence artificielle en cybersécurité suite aux dernières sorties médiatisées de modèles d’entreprises américaines. La note résulte d’un travail réalisé en mode agile, en à peine deux semaines, grâce à des consultations informelles et à la par",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "fr",
+    "source_id": "fr_campus_cyber",
+    "url": "https://campuscyber.fr/mythos/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Le métier de DPO à l’heure de l’intelligence artificielle : publication des résultats de l’enquête",
+    "summary": "03 juillet 2026",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "fr",
+    "source_id": "fr_cnil",
+    "url": "https://www.cnil.fr/fr/enquete-dpo-ia",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Droits voisins : l’Autorité de la concurrence prononce des mesures conservatoires et enjoint Meta de négocier de bonne foi avec les éditeurs et agences de presse",
+    "summary": "",
+    "topics": [
+      "著作權"
+    ],
+    "language": "fr",
+    "source_id": "fr_concurrence",
+    "url": "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse/droits-voisins-lautorite-de-la-concurrence-prononce-des-mesures",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Cybermalveillance.gouv.fr lance une AlerteCyber concernant une faille de sécurité critique dans Adobe Acrobat et Acrobat Reader \n \n 16/04/2026 \n \n \n Cybermalveillance.gouv.fr déclenche ce jour une nouvelle AlerteCyber concernant une faille de sécurité critique dans Adobe Acrobat et Acrobat Reader. Il est primordial de la corriger le plus rapidement possible en mettant à jour les systèmes concernés pour réduire les risques d’une cyberattaque.",
+    "summary": "Cybermalveillance.gouv.fr déclenche ce jour une nouvelle AlerteCyber concernant une faille de sécurité critique dans Adobe Acrobat et Acrobat Reader. Il est primordial de la corriger le plus rapidement possible en mettant à jour les systèmes concernés pour réduire les risques d’une cyberattaque.",
+    "topics": [
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "fr",
+    "source_id": "fr_cybermalveillance",
+    "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/alertecyber-faille-securite-critique-adobe-acrobat-acrobat-reader",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "6–10 juillet 2026\n                   \n \n \n \n \n \n \n Une summer school internationale dédiée à l'IA pour l'interaction humain-robot au Centre Inria de l'Université de Lorraine",
+    "summary": "Du 6 au 10 juillet, le Centre Inria de l'Université de Lorraine a accueilli la Summer School internationale \"AI for Human-Robot Interaction\", organisée par l'équipe-projet Hucebot* et pilotée par Serena Ivaldi, directrice de recherche Inria. Pendant cinq jours, scientifiques, doctorant(e)s et étudia",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/une-summer-school-internationale-dediee-lia-pour-linteraction-humain-robot-au-centre-inria-de",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Opération spéciale Mars 2025 Chips Diplomacy Support Initiative La Chips Diplomacy Support Initiative (CHIPDIPLO) est un projet de 18 mois piloté par l’Institut Montaigne et co-financé par la Commission européenne. Il vise à renforcer la stratégie européenne en matière de semi-conducteurs face aux tensions géopolitiques. Ses objectifs : anticiper les risques industriels, coordonner les politiques des États membres et développer des partenariats internationaux. Le consortium associe experts, industriels et chercheurs pour analyser les défis et fournir des recommandations à l’UE. CHIPDIPLO soutient l’EU Chips Act et promeut l’attractivité de l’Europe en matière d’innovation et d’investissements.",
+    "summary": "",
+    "topics": [
+      "半導體"
+    ],
+    "language": "fr",
+    "source_id": "fr_institut_montaigne",
+    "url": "https://www.institutmontaigne.org/publications/chips-diplomacy-support-initiative",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Synthèse de la menace sur l’IA générative face aux attaques informatiques",
+    "summary": "Publié le mercredi 4 février 2026",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "fr",
+    "source_id": "fr_anssi",
+    "url": "https://cyber.gouv.fr/actualites/synthese-de-la-menace-sur-lia-generative-face-aux-attaques-informatiques/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Technologies émergentes et protection des mineurs : les autorités de protection des données du G7 s’accordent sur des principes clés",
+    "summary": "26 juin 2026",
+    "topics": [
+      "隱私框架（含個人資料保護）"
+    ],
+    "language": "fr",
+    "source_id": "fr_cnil",
+    "url": "https://www.cnil.fr/fr/g7-technologies-protection-mineurs",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Protection des données personnelles\n                   \n \n \n \n Protection des données : le combat de Cristiana Santos \n \n \n \n 02/07/2026",
+    "summary": "02/07/2026",
+    "topics": [
+      "隱私框架（含個人資料保護）"
+    ],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/protection-des-donnees-le-combat-de-cristiana-santos",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Etat de la menace informatique sur les équipements mobiles",
+    "summary": "Publié le mercredi 26 novembre 2025",
+    "topics": [
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "fr",
+    "source_id": "fr_anssi",
+    "url": "https://cyber.gouv.fr/actualites/etat-de-la-menace-informatique-sur-les-equipements-mobiles/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Cyberattaque : le sous-traitant au centre de la crise",
+    "summary": "27 mai 2026",
+    "topics": [
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "fr",
+    "source_id": "fr_cnil",
+    "url": "https://www.cnil.fr/fr/cyberattaque-le-sous-traitant-au-centre-de-la-crise",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Partenariats européens\n                   \n \n \n \n Stratégie pour le Post-Exascale : une vision européenne pour l'avenir du calcul haute performance, de l'IA et du quantique \n \n \n \n 22/06/2026",
+    "summary": "22/06/2026",
+    "topics": [
+      "量子技術"
+    ],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/strategie-post-exascale-lancement",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "NIS 2 : les entités assujetties peuvent se pré-enregistrer",
+    "summary": "Publié le lundi 24 novembre 2025",
+    "topics": [
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "fr",
+    "source_id": "fr_anssi",
+    "url": "https://cyber.gouv.fr/actualites/nis-2-les-entit%C3%A9s-assujetties-peuvent-se-pre-enregistrer/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "« IA générative et vie privée » : une affiche coproduite par la PIPC et la CNIL pour sensibiliser les utilisateurs d’IA à la protection de leurs données",
+    "summary": "27 mai 2026",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "fr",
+    "source_id": "fr_cnil",
+    "url": "https://www.cnil.fr/fr/ia-generative-et-vie-privee-affiche-coproduite-pipc-cnil",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "18–24 mai 2026\n                   \n \n \n \n \n \n \n                Intelligence artificielle\n                   \n \n \n \n Découvrez la programmation de la Semaine de l'IA pour Tous dans le Grand Est !",
+    "summary": "Inspirée par la nécessité de rendre l’IA concrète, compréhensible et appropriable par tous, la Semaine de l’IA pour Tous est un événement grand public de 7 jours, du 18 au 24 mai 2026, pendant lequel des animations et activités seront organisées partout en France. La mission de ce temps fort : sensi",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/decouvrez-la-programmation-de-la-semaine-de-lia-pour-tous-dans-le-grand-est",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Premiers visas de sécurité incluant de la cryptographie post-quantique",
+    "summary": "Publié le jeudi 16 octobre 2025",
+    "topics": [
+      "量子技術"
+    ],
+    "language": "fr",
+    "source_id": "fr_anssi",
+    "url": "https://cyber.gouv.fr/actualites/pour-lanssi-la-cryptographie-post-quantique-post-quantum-cryptography-ou-pqc-repr%C3%A9sente-la-voie-la-plus-prometteuse-pour-se-pr%C3%A9munir-contre-la-menace-quantique-la-transition-post-quantique-repose-notamment-sur-la-mise-%C3%A0-disposition-pour-les-uti/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "La Fête de la Science 2025 sous le signe de l'intelligence artificielle en Bretagne",
+    "summary": "Le Centre Inria de l'Université de Rennes perpétue sa participation à la Fête de la Science en octobre 2025 dans la région Bretagne, à Rennes (35) et Ploufagran (22), centrée autour de l'intelligence artificielle.",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/inria-fete-science-bretagne-ia",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Cryptographie post-quantique, les travaux de l’ANSSI",
+    "summary": "Publié le mercredi 8 octobre 2025",
+    "topics": [
+      "量子技術"
+    ],
+    "language": "fr",
+    "source_id": "fr_anssi",
+    "url": "https://cyber.gouv.fr/actualites/cryptographie-post-quantique-les-travaux-de-lanssi/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Journée Interaction Humain Machine et Intelligence Artificielle",
+    "summary": "L’Association Francophone d’Interaction Humain-Machine (AFIHM) et l’Association Française pour l’Intelligence Artificielle (AFIA) organisent le lundi 10 mars 2025 la 7ème journée scientifique IHM et IA, au centre Inria de l’université de Lille. Au programme, présentations, débats et posters mettant ",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/7e-journee-ihm-ia",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Intelligence Artificielle responsable et durable : où en est la recherche française ?",
+    "summary": "À l’occasion de l’évènement AI Action Summit organisé par l’Élysée, le centre Inria de l’Université de Lille et ses partenaires du Contrat de Plan État-Région (CPER) CornellA organisent, avec le soutien de la Ville de Faches-Thumesnil, une matinée de réflexion sur le sujet de l’intelligence artifici",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/intelligence-artificielle-responsable-et-durable-ou-en-est-la-recherche-francaise-0",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "IABM 2025 - Colloque Français d'Intelligence Artificielle en Imagerie Biomédicale",
+    "summary": "Le 3ème Colloque Français d’Intelligence Artificielle en Imagerie Biomédicale (IABM) se tiendra à Nice les 17 et 18 Mars 2025, au Palais de la Méditerranée.",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/iabm-2025-colloque-francais-dintelligence-artificielle-en-imagerie-biomedicale",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "L'IA au service de la francophonie ?",
+    "summary": "De janvier à mars 2025 et à travers le prisme de la langue, la médiathèque l'Ourse à Dinard vous invite à décortiquer l'Intelligence Artifcielle avec l'aide de nos scientifiques. Au programme : conférences, ateliers, démonstrations, projections et même des jeux !",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/ia-francophonie-mediation-dinard",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Première Learning Week pour le projet Tenors du 3 au 6 février 2025",
+    "summary": "La \"Learning week\" du projet TENORS proposera des cours d'introduction de courte durée et des cours de troisième cycle afin d'élargir le champ scientifique des doctorants et de doter les doctorants TENORS de compétences supplémentaires, spécifiques au domaine de la modélisation et du calcul tensorie",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/premiere-learning-week-projet-tenors-fevrier-2025",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Conférence SAMO 2025 : inscriptions ouvertes",
+    "summary": "Dédiée à l'analyse de sensibilité des sorties de modèles, la conférence internationale SAMO est un rendez-vous interdisciplinaire qui rassemble des chercheurs académiques, des experts technologiques et des praticiens de divers domaines (ingénierie, environnement, agronomie, finance, etc.). C’est l’o",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/conference-samo-2025-inscriptions-ouvertes",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Inria participe à l'European Cyber Week en novembre 2024 à Rennes",
+    "summary": "Du 18 au 21 novembre 2024, la European Cyber Week (ECW) confirme sa dimension européenne et internationale, et voit également son format évoluer. Si le congrès reste traditionnellement centré sur l’autonomie stratégique en cybersécurité et cyberdéfense, l'intelligence artificielle de défense voit sa",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/european-cyber-week-novembre-2024-rennes",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Première participation d'Inria à Who Run the Tech 2024 à Rennes",
+    "summary": "Inria participe pour la première fois le 28 novembre 2024 à Who run the tech, une journée pour promouvoir les femmes qui font carrière dans le numérique et valoriser leur expertise technique ! Cette journée a pour objectif de partager, échanger et découvrir les dernières tendances technlogiques sur ",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/evenement-who-run-tech-feminisation-2024-rennes",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Du 4 au 8 novembre 2024, participez à une semaine sur le quantique au Centre Inria de Paris !",
+    "summary": "Rendez-vous du 4 au 8 novembre 2024 au Centre Inria de Paris pour les événements We Are Quantum (WAQ) et Young Quantum Information Scientists (YQIS), deux rendez-vous sur la thématique du quantique à destination de jeunes en master, doctorat et postdoctorat. Cette semaine événementielle est organisé",
+    "topics": [
+      "量子技術"
+    ],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/waq-yqis-semaine-quantique-centre-inria-paris-novembre-2024",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Débat : réflexions sur l’impact de l’IA générative sur notre société et nos métiers",
+    "summary": "Les grands modèles de langage (LLM) comme ChatGPT, Co-Pilot, Llama2 sont désormais omniprésents ! Ces outils d'intelligence artificielle évoluent à une vitesse vertigineuse, s'intégrant dans notre quotidien et révolutionnant notre vie personnelle et professionnelle. Or, ils restent difficiles à appr",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/debat-impact-llm-ia-generative-science-societe-talence-juillet-2024",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "École d'été EURASIP - IEEE SPS sur la télédétection et le traitement d'images microscopiques",
+    "summary": "Cette école est organisée en l’honneur de Josiane Zerubia, par ses anciens étudiants. Josiane Zerubia est à l'origine d'avancées majeures dans le domaine de la télédétection en ayant eu recours à des modèles stochastiques. Reconnue internationalement par la IEEE Signal Processing Society (Fellow) et",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/ecole-ete-teledetection-traitement-images-microscopiques",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Ciblage et compromission d’entités françaises par le Centre du service fédéral de sécurité de la fédération de Russie (FSB)",
+    "summary": "Publié le lundi 13 juillet 2026",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_anssi",
+    "url": "https://cyber.gouv.fr/actualites/ciblage-et-compromission-dentites-francaises-par-le-fsb/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "La consultation publique",
+    "summary": "L'Arcep lance une consultation publique sur la fixation du taux réglementaire de rémunération du capital pour les activités fixes régulées à compter de l’année 2027.",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_arcep",
+    "url": "https://www.arcep.fr/actualites/les-consultations-publiques/p/gp/detail/consultation-rcap2027-juillet2026.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "\"Nous sommes la France\" : les médias audiovisuels mobilisés pour une juste représentation de la diversité de la société française",
+    "summary": "Publications, chiffres-clés, rencontres, études, recommandations, actions, conférences ... Suivez toute l’actualité de l'Arcom, l'Autorité de régulation de la communication audiovisuelle et numérique.",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_arcom",
+    "url": "https://www.arcom.fr/actualites/nous-sommes-la-france-les-medias-audiovisuels-mobilises-pour-une-juste-representation-de-la-diversite-de-la-societe-francaise",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Le Campus Cyber dresse le bilan de la première année de sa transformation",
+    "summary": "Un an après le lancement de sa feuille de route stratégique, le Campus Cyber franchit une nouvelle étape de sa transformation. Cette première année a permis de poser les bases d’un nouveau modèle de développement, avec une organisation renforcée, une dynamique collective retrouvée et de nombreuses r",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_campus_cyber",
+    "url": "https://campuscyber.fr/le-campus-cyber-dresse-le-bilan-de-la-premiere-annee-de-sa-transformation/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Revoir le webinaire : Nouveau téléservice santé et recherche, ce qui change pour vos demandes d’autorisation",
+    "summary": "10 juillet 2026",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_cnil",
+    "url": "https://www.cnil.fr/fr/revoir-le-webinaire-nouveau-teleservice-sante-et-recherche-ce-qui-change-pour-vos-demandes",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Coopératives agricoles : l’Autorité de la concurrence autorise la fusion des groupes coopératifs Euralis et Maïsadour, sous réserve d’engagements",
+    "summary": "",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_concurrence",
+    "url": "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse/cooperatives-agricoles-lautorite-de-la-concurrence-autorise-la-fusion-des",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Le ministère de la Culture annonce le lancement de la 11e édition des Journées nationales de l'architecture, du 15 au 18 octobre 2026, sur le thème...",
+    "summary": "Du jeudi 15 au dimanche 18 octobre 2026, les Journées nationales de l'architecture reviennent partout en France pour leur 11e édition. Organisé par le ministère de la Culture, cet...",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_culture",
+    "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/le-ministere-de-la-culture-annonce-le-lancement-de-la-11e-edition-des-journees-nationales-de-l-architecture-du-15-au-18-octobre-2026-sur-le-theme",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Remboursement d’impôt : attention aux tentatives d’hameçonnage \n \n 15/07/2026",
+    "summary": "À l’approche de la campagne annuelle de remboursement de l’impôt sur le revenu, dont les versements interviendront les 24 et 31 juillet 2026, la vigilance est de mise. Comme chaque année, cette période est propice aux campagnes d’hameçonnage usurpant l’identité de l’administration…",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_cybermalveillance",
+    "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/remboursement-impot-hameconnage",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Le Conseil national du commerce publie son rapport d'activité 2025",
+    "summary": "Ce document dresse un bilan des groupes de travail et des actions engagées en 2025 visant à accompagner les acteurs économiques et l’attractivité des territoires.",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_dge",
+    "url": "https://www.entreprises.gouv.fr/la-dge/actualites/le-conseil-national-du-commerce-publie-son-rapport-dactivite-2025",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Lien de consultation",
+    "summary": "",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_dinum",
+    "url": "https://www.numerique.gouv.fr/actualites/franceconnect-10-ans-identite-numerique-francais/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "S'abonner à Ma recherche",
+    "summary": "15/07/2026",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/rss/recherche/actualites",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "16/07/2026 [Le grand jeu du Pakistan] - Entre les États-Unis et la Chine, tactique et ... \n                            Christophe Jaffrelot                         \n                 [3/3] Les ennemis de mes amis sont mes ennemis ? Pas pour le Pakistan, qui joue de ses bonnes relations avec la Chine et les États-Unis, bien qu’elles ne soient pas sur le même plan. Comment...",
+    "summary": "[3/3] Les ennemis de mes amis sont mes ennemis ? Pas pour le Pakistan, qui joue de ses bonnes relations avec la Chine et les États-Unis, bien qu’elles ne soient pas sur le même plan. Comment comprendre le récent rapprochement entre Washington et Islamabad et dans quelle mesure s’inscrit-il dans l’hi",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_institut_montaigne",
+    "url": "https://www.institutmontaigne.org/expressions/le-grand-jeu-du-pakistan-entre-les-etats-unis-et-la-chine-tactique-et-strategie",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Nouveau - Un guide pratique pour les familles « Grandir dans un monde connecté, ça s’apprend ! »",
+    "summary": "",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_viginum",
+    "url": "https://www.sgdsn.gouv.fr/viginum/actualites/nouveau-un-guide-pratique-pour-les-familles-grandir-dans-un-monde-connecte-ca",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "L’ANSSI, l’ACPR et la Banque de France signent un accord de coopération",
+    "summary": "Publié le lundi 6 juillet 2026",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_anssi",
+    "url": "https://cyber.gouv.fr/actualites/lanssi-lacpr-et-la-banque-de-france-signe-un-accord-de-cooperation/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Rapport annuel",
+    "summary": "Nouvelle édition du rapport sur l’état de l’internet en France",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_arcep",
+    "url": "https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/rapport-annuel-tome3-160726.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Campagne \"enfants et écrans\" 2026 : les conseils de l'Arcom pour protéger les plus jeunes",
+    "summary": "Actualité",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_arcom",
+    "url": "https://www.arcom.fr/actualites/campagne-enfants-et-ecrans-2026-les-conseils-de-larcom-pour-proteger-les-plus-jeunes",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Cartographie 2026 des associations : un écosystème engagé au Campus Cyber",
+    "summary": "Au sein du Campus Cyber, le collège des associations publie la Cartographie des associations – Édition 2026 . Cette initiative collective met en lumière un écosystème structuré de 21 associations engagées dans le développement de la cybersécurité. Pensée comme un outil simple et accessible, cette ca",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_campus_cyber",
+    "url": "https://campuscyber.fr/cartographie-2026-des-associations-un-ecosysteme-engage-au-campus-cyber/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Travail, ressources humaines : le contrôle de l’activité des personnes employées",
+    "summary": "09 juillet 2026",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_cnil",
+    "url": "https://www.cnil.fr/fr/controle-de-lactivite-des-personnes-employees",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Télécoms – SFR : l’Autorité de la concurrence sera l’autorité en charge de l’examen du rachat de SFR (Altice France)",
+    "summary": "",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_concurrence",
+    "url": "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse/telecoms-sfr-lautorite-de-la-concurrence-sera-lautorite-en-charge-de-lexamen",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Deuxième édition du Prix du livre pour les bébés : le ministère de la Culture dévoile la composition du jury et les ouvrages retenus dans la sélection",
+    "summary": "Fort du succès de sa première édition, le Prix du livre pour les bébés, qui récompense un livre paru dans l’année écoulée parmi la production de littérature jeunesse destinée...",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_culture",
+    "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/deuxieme-edition-du-prix-du-livre-pour-les-bebes-le-ministere-de-la-culture-devoile-la-composition-du-jury-et-les-ouvrages-retenus-dans-la-selection",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Faire ses démarches administratives en ligne en évitant les pièges \n \n 09/07/2026",
+    "summary": "De nombreuses démarches administratives peuvent être réalisées en ligne : documents d’identité, aides sociales, impôts, carte grise, etc. Mais des escrocs ou des sites Internet douteux utilisent cette thématique à des fins frauduleuses : arnaque commerciale, vol d’informations,…",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_cybermalveillance",
+    "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/faire-ses-demarches-administratives-en-ligne-en-evitant-les-pieges",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "La filière ferroviaire s’engage dans un plan d’action pour réduire les délais de livraison et renforcer la compétitivité",
+    "summary": "Le 7 juillet 2026, le Gouvernement et les industriels ont signé un plan d’action commun pour améliorer la conduite des programmes de livraison des matériels roulants neufs, réduire les délais de livra...",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_dge",
+    "url": "https://www.entreprises.gouv.fr/la-dge/actualites/la-filiere-ferroviaire-sengage-dans-un-plan-daction-pour-reduire-les-delais-de",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Partenariats internationaux\n                   \n \n \n \n  L'appel 2027 du programme \"Équipes associées\" est lancé !  \n \n \n \n 15/07/2026",
+    "summary": "15/07/2026",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/appel-projets-equipes-associees-partenariats-internationaux-2027",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "16/07/2026 [Paroles de candidats] - David Lisnard, le libéral qui parle pour toute la ... \n                            Bruno Cautrès",
+    "summary": "Le 3 juillet à Saint-Raphaël, le président de Nouvelle Énergie rassemblait ses soutiens pour un premier meeting de campagne avant 2027. Le but : convaincre l'électorat de droite. Comment le candidat s'est-il différencié ? Que retenir d'un discours au style atypique, jouant la proximité, le crédo lib",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_institut_montaigne",
+    "url": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-david-lisnard-le-liberal-qui-parle-pour-toute-la-france-mais-qui-joue-domicile",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Remise du Premier prix scientifique Inria-VIGINUM",
+    "summary": "",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_viginum",
+    "url": "https://www.sgdsn.gouv.fr/viginum/actualites/remise-du-premier-prix-scientifique-inria-viginum",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "L’ANSSI publie un kit d’exercice de crise pour le secteur agroalimentaire.",
+    "summary": "Publié le jeudi 25 juin 2026",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_anssi",
+    "url": "https://cyber.gouv.fr/actualites/lanssi-publie-un-kit-dexercice-de-crise-pour-le-secteur-agroalimentaire/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Mutualisation des réseaux mobiles",
+    "summary": "Modification de l’accord de partage entre Bouygues Telecom et SFR : l’Arcep a reçu un nouvel avenant et estime qu’il n’est pas nécessaire de le modifier",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_arcep",
+    "url": "https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/mutualisation-des-reseaux-mobiles-090726.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Appel aux candidatures pour un service de télévision à vocation locale en région parisienne : auditions publiques des candidats sélectionnés",
+    "summary": "Actualité",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_arcom",
+    "url": "https://www.arcom.fr/actualites/appel-aux-candidatures-pour-un-service-de-television-vocation-locale-en-region-parisienne-auditions-publiques-des-candidats-selectionnes",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Cyber Job Dating 2026 : un rendez-vous stratégique pour recruter les talents de la cybersécurité",
+    "summary": "Dans un contexte de tension croissante sur les profils en cybersécurité, le Campus Cyber organise, le mercredi 27 mai, une nouvelle édition du Cyber Job Dating. Pensé comme un véritable accélérateur de rencontres entre recruteurs et talents qualifiés, cet événement s’inscrit au cœur des enjeux actue",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_campus_cyber",
+    "url": "https://campuscyber.fr/cyber-job-dating-2026/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Géolocalisation et applications mobiles : quelles règles pour protéger les données des utilisateurs ?",
+    "summary": "07 juillet 2026",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_cnil",
+    "url": "https://www.cnil.fr/fr/geolocalisation-applications-mobiles-quelles-regles",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Benoît Cœuré présente le rapport annuel 2025 et dresse les perspectives pour les prochains mois",
+    "summary": "",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_concurrence",
+    "url": "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse/benoit-coeure-presente-le-rapport-annuel-2025-et-dresse-les-perspectives-pour",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "La Tapisserie de Bayeux est arrivée cette nuit au British Museum (Londres)",
+    "summary": "Un voyage historique sous haute sécurité La Tapisserie de Bayeux, chef-d’œuvre médiéval classée monument historique dès 1842 et inscrite au registre « Mémoire du Monde »...",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_culture",
+    "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/la-tapisserie-de-bayeux-est-arrivee-cette-nuit-au-british-museum-londres",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Lettres d’information \n \n 03/07/2026 \n \n \n Actualités, contenus et ressources thématiques pour vous sensibiliser aux risques numériques et aux bonnes pratiques associées, informations sur les cybermenaces… Retrouvez dans cette section les lettres d’informations de Cybermalveillance.gouv.fr.",
+    "summary": "Actualités, contenus et ressources thématiques pour vous sensibiliser aux risques numériques et aux bonnes pratiques associées, informations sur les cybermenaces… Retrouvez dans cette section les lettres d’informations de Cybermalveillance.gouv.fr.",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_cybermalveillance",
+    "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/lettres-d-information",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Actualisation du plan Deeptech : relever le défi du passage à l’échelle",
+    "summary": "Conçu comme une stratégie de consolidation, ce plan doit permettre d'amplifier la transformation de la recherche en force productive, de bâtir des acteurs industriels souverains et de faire de l'innov...",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_dge",
+    "url": "https://www.entreprises.gouv.fr/la-dge/actualites/actualisation-du-plan-deeptech-relever-le-defi-du-passage-lechelle",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "S'abonner à Ma recherche",
+    "summary": "",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_inria",
+    "url": "https://www.inria.fr/fr/rss/recherche/evenements",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "15/07/2026\n                                     \n                 \n                    L'Ossétie du Sud, laboratoire discret des...\n                 \n                                           Théo Bourgery Gonse",
+    "summary": "Mai 2026 : le président de l’Ossétie du Sud signe un traité d’alliance avec Poutine ; en juin, il est remplacé, ainsi que plusieurs ministres, par des figures proches du Kremlin. Depuis deux mois, l’emprise de la Russie s’accroît sur ce territoire séparatiste que revendique la Géorgie et dont Moscou",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_institut_montaigne",
+    "url": "https://www.institutmontaigne.org/expressions/lossetie-du-sud-laboratoire-discret-des-poussees-imperialistes-russes",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "G7 RRM - Adoption d'un cadre commun sur le concept de \"Mode opératoire informationnel\"",
+    "summary": "",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_viginum",
+    "url": "https://www.sgdsn.gouv.fr/viginum/actualites/g7-rrm-adoption-dun-cadre-commun-sur-le-concept-de-mode-operatoire",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Publication d’un nouveau référentiel de formation dédié au pilotage de la remédiation",
+    "summary": "Publié le mercredi 17 juin 2026",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_anssi",
+    "url": "https://cyber.gouv.fr/actualites/publication-dun-nouveau-r%C3%A9f%C3%A9rentiel-de-formation-d%C3%A9di%C3%A9-au-pilotage-de-la-rem%C3%A9diation/",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Observatoire des marchés des communications électroniques",
+    "summary": "L’Arcep publie le suivi de l’observatoire des marchés des communications électroniques au premier trimestre 2026",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_arcep",
+    "url": "https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/observatoire-des-marches-des-communications-electroniques-t1-2026-090726.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Assises de la radio 2026 : \"radio et audio numérique, l'heure des décisions ?\"",
+    "summary": "Actualité",
+    "topics": [],
+    "language": "fr",
+    "source_id": "fr_arcom",
+    "url": "https://www.arcom.fr/actualites/assises-de-la-radio-2026-radio-et-audio-numerique-lheure-des-decisions",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "G7-Datenschutzbehörden fokussieren Kinder und Jugendliche – Gemeinsame Erklärung zu datenschutzfreundlicher Altersverifizierung im Netz",
+    "summary": "",
+    "topics": [
+      "隱私框架（含個人資料保護）"
+    ],
+    "language": "de",
+    "source_id": "de_bfdi",
+    "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/11_G7.html?nn=251944",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Digital Services Coordinator in der Bundesnetzagentur fordert eBay zur Einhaltung von Nutzerrechten nach dem Digital Services Act auf",
+    "summary": "Digitales",
+    "topics": [
+      "平台責任、內容審查、推薦演算法"
+    ],
+    "language": "de",
+    "source_id": "de_bnetza",
+    "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260706_DSC_ebay.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "CRA: Marktüberwachungsbehörden tagen in Berlin - erste Meldepflichten ab September",
+    "summary": "",
+    "topics": [
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "de",
+    "source_id": "de_bsi_news",
+    "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Treffen_CRA_Markt%C3%BCberwachungsbeh%C3%B6rden_260625.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Fraunhofer AISEC und IOSB sind Security-Partner für  sicheren Datenaustausch bei Semiconductor-X",
+    "summary": "Pressemitteilung / 29. Juni 2026",
+    "topics": [
+      "半導體"
+    ],
+    "language": "de",
+    "source_id": "de_fraunhofer_aisec",
+    "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2026/semiconductor-x.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Neue Zuständigkeit: BfDI übernimmt Datenschutzaufsicht nach dem Data Act",
+    "summary": "",
+    "topics": [
+      "隱私框架（含個人資料保護）"
+    ],
+    "language": "de",
+    "source_id": "de_bfdi",
+    "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/07_Data-Act-Datenschutzaufsicht.html?nn=251944",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "BSI-Magazin: NIS-2 und BSI-Gesetz stärken Cybersicherheit in Unternehmen",
+    "summary": "",
+    "topics": [
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "de",
+    "source_id": "de_bsi_news",
+    "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/BSI-Magazin_NIS-2_BSIG_260611.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "IPCEI-CIS-Projekt KIbSIS entwickelt vollautomatische  KI-gestützte Sicherheitsquittierung für  Werkzeugmaschinen",
+    "summary": "Pressemitteilung / 12. Februar 2026",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "de",
+    "source_id": "de_fraunhofer_aisec",
+    "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2026/ipcei-cis-projekt-kibsis.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Datenschutzaufsicht 2025: beraten, kontrollieren, Rechtsklarheit schaffen",
+    "summary": "",
+    "topics": [
+      "隱私框架（含個人資料保護）"
+    ],
+    "language": "de",
+    "source_id": "de_bfdi",
+    "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/06_TB34.html?nn=251944",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Umfrage: Feedback und Bedarfe zu NIS-2-Unterstützungsangeboten für die Wirtschaft",
+    "summary": "",
+    "topics": [
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "de",
+    "source_id": "de_bsi_news",
+    "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Umfrage_NIS-2_Produkte_260610.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Forschungsvorhaben schafft gerichtsfeste Methoden zur Forensik von KI-Systemen",
+    "summary": "Pressemitteilung / 09. Dezember 2025",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "de",
+    "source_id": "de_fraunhofer_aisec",
+    "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2025/Forensik-intelligenter-Systeme.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Bundesdatenschutzbeauftragte kündigt Rückzug an",
+    "summary": "",
+    "topics": [
+      "隱私框架（含個人資料保護）"
+    ],
+    "language": "de",
+    "source_id": "de_bfdi",
+    "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/05_BfDI-R%C3%BCckzug.html?nn=251944",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Bundeswehr und BSI stärken Resilienz Kritischer Infrastrukturen",
+    "summary": "",
+    "topics": [
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "de",
+    "source_id": "de_bsi_news",
+    "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Bundeswehr_BSI_Resilienz_KRITIS_260429.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "»QuBA-libre«: Open-Source-Tool für schnelle Risikobewertung zur Umsetzung des Cyber Resilience Acts",
+    "summary": "Pressemitteilung / 04. Dezember 2025",
+    "topics": [
+      "產品資安、漏洞揭露義務、SBOM",
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "de",
+    "source_id": "de_fraunhofer_aisec",
+    "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2025/QuBA-libre.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "„Was ist Datenschutz?“",
+    "summary": "",
+    "topics": [
+      "隱私框架（含個人資料保護）"
+    ],
+    "language": "de",
+    "source_id": "de_bfdi",
+    "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/03_Unterrichtsmaterialien.html?nn=251944",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Wie Künstliche Intelligenz bei der Erkennung von Audio-Deepfakes helfen kann",
+    "summary": "Pressemitteilung / 30. September 2025",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+    ],
+    "language": "de",
+    "source_id": "de_fraunhofer_aisec",
+    "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2025/kuenstliche-intelligenz-erkennt-audiodeepfakes.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "BfDI startet Sandbox „ReguLab“: Mehr Klarheit beim Datenschutz",
+    "summary": "",
+    "topics": [
+      "隱私框架（含個人資料保護）"
+    ],
+    "language": "de",
+    "source_id": "de_bfdi",
+    "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/01_ReguLab.html?nn=251944",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Cyber Resilience Act",
+    "summary": "",
+    "topics": [
+      "產品資安、漏洞揭露義務、SBOM",
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "de",
+    "source_id": "de_fraunhofer_aisec",
+    "url": "https://www.aisec.fraunhofer.de/de/spotlights/Cyber-Resilience-Act-Sicherheitsanforderungen-fuer-Produkte-mit-digitalen-Elementen.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Künstliche Intelligenz: Datenschutz von Anfang an mitdenken",
+    "summary": "",
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "隱私框架（含個人資料保護）"
+    ],
+    "language": "de",
+    "source_id": "de_bfdi",
+    "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2025/19_Handreichung-DS-und-KI.html?nn=251944",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Post-Quanten-Kryptografie",
+    "summary": "",
+    "topics": [
+      "量子技術"
+    ],
+    "language": "de",
+    "source_id": "de_fraunhofer_aisec",
+    "url": "https://www.aisec.fraunhofer.de/de/spotlights/kompetenzzentrum-post-quanten-kryptografie.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Elektronische Patientenakte: Datenschutz stärkt Vertrauen und Nutzung",
+    "summary": "",
+    "topics": [
+      "隱私框架（含個人資料保護）"
+    ],
+    "language": "de",
+    "source_id": "de_bfdi",
+    "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2025/18_Datenbarometer-ePA.html?nn=251944",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "NIS-2-Richtline",
+    "summary": "",
+    "topics": [
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "language": "de",
+    "source_id": "de_fraunhofer_aisec",
+    "url": "https://www.aisec.fraunhofer.de/de/spotlights/nis-2-richtlinie-massnahmen-fuer-ein-hohes-cybersicherheitsniveau-in-der-europaeischen-union.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "G7-Datenschutzbehörden setzen gemeinsames Engagement für den internationalen Datenschutz fort",
+    "summary": "",
+    "topics": [
+      "隱私框架（含個人資料保護）"
+    ],
+    "language": "de",
+    "source_id": "de_bfdi",
+    "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2025/17-G7.html?nn=251944",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "Quantum Cybersecurity",
+    "summary": "",
+    "topics": [
+      "量子技術"
+    ],
+    "language": "de",
+    "source_id": "de_fraunhofer_aisec",
+    "url": "https://www.aisec.fraunhofer.de/de/spotlights/quantum-cybersecurity-das-zusammenspiel-von-quantentechnologien-und-cybersicherheit.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": false
+  },
+  {
+    "title": "BfDI startet neues Datenbarometer – mehr Evidenz für wirksamen Datenschutz",
+    "summary": "",
+    "topics": [
+      "隱私框架（含個人資料保護）"
+    ],
+    "language": "de",
+    "source_id": "de_bfdi",
+    "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2025/15_Datenbarometer.html?nn=251944",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": false
+  },
+  {
+    "title": "Paper accepted auf der USENIX Security 2026",
+    "summary": "Das USENIX Security Symposium zählt zu den weltweit angesehensten Konferenzen für Cyber­sicher­heits­forschung und bringt jährlich Forschende, Praktikerinnen und Praktiker sowie Entwicklerinnen und Entwickler zusammen, um aktuelle Erkenntnisse zu Sicherheit und Da­ten­schutz in Computersystemen und ",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_athene",
+    "url": "https://www.athene-center.de/aktuelles/news/paper-accepted-auf-der-usenix-security-2026-1817",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Meldung lesen",
+    "summary": "12.06.2026 Meldung",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bbk",
+    "url": "https://www.bbk.bund.de/SharedDocs/Kurzmeldungen/DE/2026/06/om-17-70-jahre-bevschmag.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Bundestag wählt Moritz Hennemann als Nachfolger von Louisa Specht-Riemenschneider",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bfdi",
+    "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/10_BfDI-Wahl-Hennemann.html?nn=251944",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Verfassungsschutzbericht 2025 vorgestellt: BfV verteidigt Demokratie in Deutschland gegen Angriffe …",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bmi",
+    "url": "https://www.bmi.bund.de/SharedDocs/pressemitteilungen/DE/2026/06/vsb2025-pm.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Mehr Wettbewerb im Fernverkehr – Bundesnetzagentur schafft faire Chancen für neue Anbieter",
+    "summary": "Eisenbahnen",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bnetza",
+    "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260717_EisenbahnenItalo.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Sichere Online-Angebote: TR-03188 Passkey Server veröffentlicht",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bsi_news",
+    "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/TR-03188_Passkey_260630.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Erhöhung der RWE-Anteile an Amprion freigegeben",
+    "summary": "Pressemitteilungen 17.07.2026",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bundeskartellamt",
+    "url": "https://www.bundeskartellamt.de/SharedDocs/Meldung/DE/Pressemitteilungen/2026/07_17_2026_RWE_Amprion.html?nn=52004",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "08.07.2026",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_dpma",
+    "url": "https://www.dpma.de/service/presse/pressemitteilungen/08072026/index.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Sicherheitschip »Made in Germany« dient als  Vertrauensanker für vernetzte Geräte",
+    "summary": "Pressemitteilung / 06. Juli 2026",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_fraunhofer_aisec",
+    "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2026/sicherheitschip-made-in-germany-dient-als-vertrauensanker-fuer-vernetzte-geraete.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Die neue Arktisstrategie der EU",
+    "summary": "Chancen für Europas digitale Souveränität",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_swp",
+    "url": "https://www.swp-berlin.org/publikation/die-neue-arktisstrategie-der-eu-chancen-fuer-europas-digitale-souveraenitaet",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Erfolgreiche Einreichungen auf der ACL 2026",
+    "summary": "Auf dem jährlichen Treffen der Association for Computational Linguistics, kurz ACL, platzierte ATHENE-Forscherin Prof. Dr. Iryna Gurevych mit ihren Fachkollegen und -kolleginnen zahlreiche wissenschaftliche Paper. Ein von den ATHENE-Forschenden Anna und Marcus Rohrbach mitverfasste Paper wurde zudem",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_athene",
+    "url": "https://www.athene-center.de/aktuelles/news/erfolgreiche-einreichungen-auf-der-acl-2026-1837",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Meldung lesen",
+    "summary": "22.05.2026 Meldung",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bbk",
+    "url": "https://www.bbk.bund.de/SharedDocs/Kurzmeldungen/DE/2026/05/om-22-pakt-bevoelkerungsschutz.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "BfDI fordert Bundestransparenzgesetz",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bfdi",
+    "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/09_Informationsfreiheit_Symposium.html?nn=251944",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Gemeinsames Zentrum zur Abwehr hybrider Bedrohungen",
+    "summary": "In Berlin wurde das Gemeinsame Zentrum zur Abwehr hybrider Bedrohungen (GAZ Hybrid) von Bundesinnenminister Dobrindt eröffnet.",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bmi",
+    "url": "https://www.bmi.bund.de/SharedDocs/pressemitteilungen/DE/2026/06/gazh-eroeffnung.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Ausschreibung für Aufdach-Solaranlagen zum 1. Juni 2026 trotz deutlichen Anstiegs der Gebotsmenge nochmals unterzeichnet",
+    "summary": "Elektrizität und Gas",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bnetza",
+    "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260716_Solar2.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Digitale Siegel: BSI veröffentlicht Version 0.9 der TR-03171",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bsi_news",
+    "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/TR-03171_Aktualisierung_Digitale_Siegel_260617.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Bundeskartellamt verhängt Bußgelder wegen Preisabsprachen beim Vertrieb von Prüf- und Messgeräten",
+    "summary": "Pressemitteilungen 15.07.2026",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bundeskartellamt",
+    "url": "https://www.bundeskartellamt.de/SharedDocs/Meldung/DE/Pressemitteilungen/2026/07_14_2026_CalPlusEkomess_TVW.html?nn=52004",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "02.07.2026",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_dpma",
+    "url": "https://www.dpma.de/service/presse/pressemitteilungen/02072026/index.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Fraunhofer AISEC ist zentraler Partner der OpenTitan Coalition für Sicherheitstests",
+    "summary": "Pressemitteilung / 09. Juni 2026",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_fraunhofer_aisec",
+    "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2026/fraunhofer-aisec-ist-zentraler-partner-der-opentitan-coalition-f.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Cybersicherheit braucht sichere Software",
+    "summary": "Wie die Politik Softwarehersteller in die Pflicht nehmen kann und weshalb sie es sollte",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_swp",
+    "url": "https://www.swp-berlin.org/publikation/cybersicherheit-braucht-sichere-software",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Zeit für Security-Innovationen: Jetzt für den ATHENE Startup Award UP26@it-sa bewerben!",
+    "summary": "Cyber­security-Startups aus der DACH-Region können sich jetzt bis 12. Juli 2026 für den ATHENE Startup Award UP26@it-sa bewerben. Die Sieger-Teams erhalten Preisgelder, Vernetzungsmöglichkeiten mit zentralen Akteuren des deutschen Cyber­security-Markts und hohe Sichtbarkeit auf der wichtigsten Secur",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_athene",
+    "url": "https://www.athene-center.de/aktuelles/news/zeit-fuer-security-innovationen-jetzt-fuer-den-ath-1826",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Meldung lesen",
+    "summary": "16.03.2026 Meldung",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bbk",
+    "url": "https://www.bbk.bund.de/SharedDocs/Kurzmeldungen/DE/2026/03/om-16-teilprojekte-jordanien.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Informationsfreiheit ist Vertrauensgarant, kein Sicherheitsrisiko",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bfdi",
+    "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/08_Informationsfreiheit.html?nn=251944",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Start des Asyl-Pakts: Mehr Kontrolle, klare Zuständigkeiten und gemeinsame Verantwortung in Europa",
+    "summary": "Das Gemeinsame europäische Asylsystem (GEAS) ist die Grundlage, um illegale Migration in Europa zu reduzieren",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bmi",
+    "url": "https://www.bmi.bund.de/SharedDocs/pressemitteilungen/DE/2026/06/geas.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Energiewendekompetenz und Digitalisierung – Bundesnetzagentur misst nun auch die Netzleistungsfähigkeit der Netzbetreiber",
+    "summary": "Elektrizität und Gas",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bnetza",
+    "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260715_Q.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Erstes BSI NESAS Zertifikat für eine 5G-Kernnetzkomponente erteilt",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bsi_news",
+    "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Erstes-NESAS-Zertifikat-5G_260615.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Weitergabe der Energiesteuersenkung | 12 Uhr-Regel | Quartalsbericht der Markttransparenzstelle für Kraftstoffe",
+    "summary": "Pressemitteilungen 10.07.2026",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bundeskartellamt",
+    "url": "https://www.bundeskartellamt.de/SharedDocs/Meldung/DE/Pressemitteilungen/2026/07_10_2026_Quartalsbericht_MTSK.html?nn=52004",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "26.06.2026",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_dpma",
+    "url": "https://www.dpma.de/service/presse/pressemitteilungen/26062026/index.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Fraunhofer AISEC tritt OpenHW Foundation bei – offene Hardware als Basis für digitale Souveränität",
+    "summary": "Pressemitteilung / 01. Juni 2026",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_fraunhofer_aisec",
+    "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2026/FraunhoferAISEC-tritt-OpenHW-Foundation-bei.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "SWP-WebMonitor Cybersicherheit und Digitalpolitik Nr. 3/2026",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_swp",
+    "url": "https://www.swp-berlin.org/publications/products/WebMonitore/SWP-WebMonitor_Cybersicherheit_und_Digitalpolitik_03_2026.pdf",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Sharenting und Portscans: Zwei neue Fälle vor dem ATHENE-Si­mu­la­tionsgericht",
+    "summary": "Vor wenigen Tagen verhandelte das ATHENE-Si­mu­la­tionsgericht am Fraunhofer SIT zwei fiktive, aber realitätsnahe Fälle zu aktuellen Rechtsfragen der Cybersicherheit. Dabei zeigten die Urteile, dass sowohl das Verhalten von Privatpersonen in sozialen Netzwerken als auch der Einsatz von Scanning-Werk",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_athene",
+    "url": "https://www.athene-center.de/aktuelles/news/sharenting-und-portscans-zwei-neue-faelle-vor-dem-1829",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Trilaterales Pilotprojekt zur Simulation eines KI-Reallabors erfolgreich abgeschlossen",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bfdi",
+    "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/04_Pilotprojekt-KI-Reallabor.html?nn=251944",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Politisch motivierte Gewalt erreicht neuen Höchststand",
+    "summary": "Statistik 2025 zeigt deutlichen Anstieg linksmotivierter Gewalt.",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bmi",
+    "url": "https://www.bmi.bund.de/SharedDocs/pressemitteilungen/DE/2026/06/pmk2025-pm.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Erste Ergebnisse der zweiten bundesweiten Mobilfunkmesswoche",
+    "summary": "Telekommunikation",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bnetza",
+    "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260709_Messwoche.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "BSI und ANSSI erneuern Abkommen zur Anerkennung von IT-Sicherheitszertifikaten",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bsi_news",
+    "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/ANSSI_IT-Sicherheitszertifikate_260527.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Ravensburger darf Mehrheit an Steiff übernehmen",
+    "summary": "Pressemitteilungen 09.07.2026",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bundeskartellamt",
+    "url": "https://www.bundeskartellamt.de/SharedDocs/Meldung/DE/Pressemitteilungen/2026/07_09_2026_Ravensburger_Steiff.html?nn=52004",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "28.05.2026",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_dpma",
+    "url": "https://www.dpma.de/service/presse/pressemitteilungen/28052026/index.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Führendes Netzwerktreffen PQC-Update zeigt den aktuellen Stand der PQC-Migration in Deutschland und Europa und gibt Handlungsempfehlungen für Unternehmen und Behörden",
+    "summary": "Pressemitteilung / 11. Mai 2026",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_fraunhofer_aisec",
+    "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2026/pqc-update-2026.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Cybersicherheit: Wie Europa von den USA unabhängig werden kann",
+    "summary": "Deutschland und die EU sind im Cyber- und Technologiebereich stark von den USA abhängig. Es ist nicht auszuschließen, dass Washington diese Abhängigkeit als Waffe gegen Deutschland und Europa einsetzen wird. Alexandra Paulus erklärt, welche Szenarien denkbar sind und wie sich politische Entscheidung",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_swp",
+    "url": "https://www.swp-berlin.org/publikation/cybersicherheit-wie-europa-von-den-usa-unabhaengig-werden-kann",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "ATHENE Forschende stellen fest: KI-Bildgeneratoren erzeugen unbeabsichtigt Darstellungen Min­der­jähriger",
+    "summary": "ATHENE-Forschende des Fraunhofer SIT haben in einer aktuellen Studie nachgewiesen, dass verbreitete KI-Bildgeneratoren trotz expliziter Anweisung zur Darstellung Erwachsener in erheblichem Umfang sexualisierte Abbildungen Min­der­jähriger produzieren. Da in Deutschland bereits der unbeabsichtigte Be",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_athene",
+    "url": "https://www.athene-center.de/aktuelles/news/athene-forschende-stellen-fest-ki-bildgeneratoren-1828",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Bundesverwaltungsgericht weist Klage der BfDI ab",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bfdi",
+    "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/02_Entscheidung-BVerwG-BND.html?nn=251944",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Dr. Christoph Hübner wird neuer Präsident der Bundesanstalt für den Digitalfunk der Bundesbehörden …",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bmi",
+    "url": "https://www.bmi.bund.de/SharedDocs/pressemitteilungen/DE/2026/05/bdbos-neuer-praesident.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Bundesnetzagentur veröffentlicht Bericht zu den Eisenbahn-Marktentwicklungen 2025",
+    "summary": "Eisenbahnen",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bnetza",
+    "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260701_Eisenbahnen.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Secure Elements: BSI veröffentlicht CSP-Prototyp für sichere Anwendungen",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bsi_news",
+    "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/CSP_Proof-of-Concept_260520.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Übernahmen von Dremio und  Prior Labs  durch SAP genehmigt",
+    "summary": "Pressemitteilungen 08.07.2026",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bundeskartellamt",
+    "url": "https://www.bundeskartellamt.de/SharedDocs/Meldung/DE/Pressemitteilungen/2026/07_08_2026_SAP_Dremio_Prior.html?nn=52004",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "26.05.2026",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_dpma",
+    "url": "https://www.dpma.de/service/presse/pressemitteilungen/26052026/index.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Vernetzte und automatisierte Fahrzeuge für das Quantenzeitalter fit machen",
+    "summary": "Pressemitteilung / 24. Juli 2025",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_fraunhofer_aisec",
+    "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2025/vernetzte-und-automatisierte-fahrzeuge-fuer-das-quantenzeitalter.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "SWP-WebMonitor Cybersicherheit und Digitalpolitik Nr. 2/2026",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_swp",
+    "url": "https://www.swp-berlin.org/publications/products/WebMonitore/SWP-WebMonitor_Cybersicherheit_und_Digitalpolitik_02_2026.pdf",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Startups",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_athene",
+    "url": "https://www.athene-center.de/aktuelles/news/startups-3",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Mehrheit der Nutzerinnen und -nutzer wünscht sich mehr Kontrolle über ihre Daten – erster Cookie-Manager in Deutschland anerkannt",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bfdi",
+    "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2025/16-Cookie-Einwilligung.html?nn=251944",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Mehr Wettbewerb im Fernverkehr – Bundesnetzagentur will faire Chancen für neue Anbieter schaffen",
+    "summary": "Eisenbahnen",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bnetza",
+    "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260630_WettebwerbFernverkehr.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "BSI veröffentlicht Bericht zur IT-Sicherheit der öffentlichen Ladeinfrastruktur",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bsi_news",
+    "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Sicherheit_oeffentliche_Ladeinfrastruktur_260507.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Erwerb der  Accell -Gruppe durch die  Dutech -Gruppe freigegeben",
+    "summary": "Pressemitteilungen 08.07.2026",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_bundeskartellamt",
+    "url": "https://www.bundeskartellamt.de/SharedDocs/Meldung/DE/Pressemitteilungen/2026/07_08_2026_Dutech_Accell.html?nn=52004",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "22.04.2026",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_dpma",
+    "url": "https://www.dpma.de/service/presse/pressemitteilungen/22042026/index.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "dev",
+    "hard_negative": true
+  },
+  {
+    "title": "Vertrauenswürdige Elektronik",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_fraunhofer_aisec",
+    "url": "https://www.aisec.fraunhofer.de/de/spotlights/vertrauenswuerdige-elektronik.html",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  },
+  {
+    "title": "Zum Volltext (PDF) | 369 KB",
+    "summary": "",
+    "topics": [],
+    "language": "de",
+    "source_id": "de_swp",
+    "url": "https://www.swp-berlin.org/publications/products/aktuell/2026A33_EU-Arktisstrategie.pdf",
+    "captured_at": "2026-07-18",
+    "reviewer": "codex-assisted-review",
+    "split": "locked_test",
+    "hard_negative": true
+  }
 ]

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ECJura2000/eu-cyber-news-scraper/schemas/article-v5.schema.json",
+  "title": "EU cyber news article v5",
+  "type": "object",
+  "required": ["schema_version", "run_id", "source_id", "title", "url", "date_source", "date_confidence"],
+  "properties": {
+    "schema_version": {"const": 5},
+    "run_id": {"type": "string", "minLength": 1},
+    "source_id": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "url": {"type": "string", "format": "uri", "pattern": "^https?://"},
+    "published_at": {"type": ["string", "null"], "format": "date-time"},
+    "date_source": {"type": "string"},
+    "date_confidence": {"type": "string"},
+    "date_conflict": {"type": "boolean"}
+  },
+  "additionalProperties": true
+}

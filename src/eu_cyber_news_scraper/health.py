@@ -19,6 +19,26 @@ def health_profile_fingerprint(profile: dict[str, Any]) -> str:
     return hashlib.sha256(encoded).hexdigest()[:16]
 
 
+def source_config_fingerprint(source: Source) -> str:
+    values = {
+        "listing_url": source.listing_url,
+        "feed_urls": source.feed_urls,
+        "allow_domains": source.allow_domains,
+        "include_patterns": source.include_patterns,
+        "exclude_patterns": source.exclude_patterns,
+        "detail_pages": source.detail_pages,
+        "timezone": source.timezone,
+        "card_selectors": source.card_selectors,
+        "link_selectors": source.link_selectors,
+        "title_selectors": source.title_selectors,
+        "date_selectors": source.date_selectors,
+        "summary_selectors": source.summary_selectors,
+        "parser_adapter": source.parser_adapter,
+        "date_policy": source.date_policy,
+    }
+    return health_profile_fingerprint(values)
+
+
 def assess_and_record_health(
     statuses: list[SourceStatus],
     sources: list[Source],
@@ -27,19 +47,46 @@ def assess_and_record_health(
     run_id: str,
     recorded_at: datetime,
     profile: dict[str, Any] | None = None,
+    observation_key: str | None = None,
     write: bool = True,
 ) -> list[SourceStatus]:
     health_path = Path(path)
     effective_profile = profile or {"mode": "legacy-compatible"}
-    fingerprint = health_profile_fingerprint(effective_profile)
+    baseline_profile = {
+        key: value
+        for key, value in effective_profile.items()
+        if key not in {"source_ids", "source_settings"}
+    }
+    fingerprint = health_profile_fingerprint(baseline_profile)
+    effective_observation_key = observation_key or recorded_at.date().isoformat()
     if write:
         with state_lock(health_path, run_id):
             payload = _load_v2(health_path)
-            assessed = _assess(statuses, sources, payload, fingerprint, effective_profile, run_id, recorded_at, True)
+            assessed = _assess(
+                statuses,
+                sources,
+                payload,
+                fingerprint,
+                baseline_profile,
+                run_id,
+                recorded_at,
+                effective_observation_key,
+                True,
+            )
             _atomic_json(health_path, payload)
             return assessed
     payload = _load_v2(health_path)
-    return _assess(statuses, sources, payload, fingerprint, effective_profile, run_id, recorded_at, False)
+    return _assess(
+        statuses,
+        sources,
+        payload,
+        fingerprint,
+        baseline_profile,
+        run_id,
+        recorded_at,
+        effective_observation_key,
+        False,
+    )
 
 
 def _assess(
@@ -50,6 +97,7 @@ def _assess(
     profile: dict[str, Any],
     run_id: str,
     recorded_at: datetime,
+    observation_key: str,
     write: bool,
 ) -> list[SourceStatus]:
     profiles = payload.setdefault("profiles", {})
@@ -59,16 +107,30 @@ def _assess(
     assessed: list[SourceStatus] = []
 
     for status in statuses:
-        prior = [row for row in history.get(status.source_id, []) if row.get("success")]
-        counts = [int(row.get("raw_count", 0)) for row in prior[-8:] if int(row.get("raw_count", 0)) > 0]
+        source = source_map[status.source_id]
+        source_fingerprint = source_config_fingerprint(source)
+        source_rows = [
+            row
+            for row in history.get(status.source_id, [])
+            if row.get("observation_key") != observation_key
+            and row.get("source_fingerprint", source_fingerprint) == source_fingerprint
+        ]
+        prior = source_rows[-12:]
+        counts = [
+            int(row.get("raw_count", 0))
+            for row in prior[-8:]
+            if row.get("success") and int(row.get("raw_count", 0)) > 0
+        ]
         median = float(statistics.median(counts)) if counts else 0.0
         alerts: list[str] = []
-        source = source_map[status.source_id]
         baseline_failure = False
         if len(counts) >= source.observation_runs and median >= 4 and status.raw_count < median * 0.25:
             alerts.append(f"原始筆數 {status.raw_count} 低於歷史中位數 {median:g} 的 25%。")
             baseline_failure = True
-        if status.parse_status == "attention":
+        if status.parse_status == "empty":
+            alerts.append("來源可連線，但未解析出任何新聞卡片。")
+            baseline_failure = True
+        elif status.parse_status == "attention":
             alerts.append(f"無日期新聞比例過高（{status.undated_ratio:.0%}）。")
             baseline_failure = True
         if status.raw_count >= 4 and status.unique_title_ratio < 0.7:
@@ -80,6 +142,15 @@ def _assess(
                 f"超過來源門檻 {source.freshness_days} 天。"
             )
             baseline_failure = True
+
+        if source.date_policy != "required" and source.date_review_due:
+            try:
+                exception_overdue = recorded_at.date() > datetime.fromisoformat(source.date_review_due).date()
+            except ValueError:
+                exception_overdue = True
+            if exception_overdue:
+                alerts.append(f"日期例外已超過複查期限 {source.date_review_due}。")
+                baseline_failure = True
 
         previous_baseline_failure = bool(prior and prior[-1].get("baseline_failure"))
         if status.fetch_status == "failed":
@@ -104,10 +175,13 @@ def _assess(
         assessed.append(assessed_status)
         if write:
             rows = history.setdefault(status.source_id, [])
+            rows[:] = [row for row in rows if row.get("observation_key") != observation_key]
             rows.append(
                 {
                     "run_id": run_id,
                     "recorded_at": recorded_at.isoformat(),
+                    "observation_key": observation_key,
+                    "source_fingerprint": source_fingerprint,
                     "success": status.success,
                     "raw_count": status.raw_count,
                     "newest_published_at": status.newest_published_at,
@@ -127,8 +201,30 @@ def _assess(
             "updated_at": recorded_at.isoformat(),
             "sources": history,
         }
+        _prune_profiles(payload)
     payload["schema_version"] = 2
     return assessed
+
+
+def _prune_profiles(payload: dict[str, Any], *, keep: int = 8) -> None:
+    profiles = payload.get("profiles", {})
+    if not isinstance(profiles, dict) or len(profiles) <= keep:
+        return
+    ordered = sorted(
+        profiles.items(),
+        key=lambda item: str(item[1].get("updated_at", "")) if isinstance(item[1], dict) else "",
+        reverse=True,
+    )
+    payload["profiles"] = dict(ordered[:keep])
+    archived = payload.setdefault("legacy_profiles", [])
+    for fingerprint, row in ordered[keep:]:
+        archived.append(
+            {
+                "fingerprint": fingerprint,
+                "updated_at": row.get("updated_at", "") if isinstance(row, dict) else "",
+            }
+        )
+    payload["legacy_profiles"] = archived[-24:]
 
 
 def _load_v2(path: Path) -> dict[str, Any]:

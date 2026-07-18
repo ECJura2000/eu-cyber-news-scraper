@@ -1,57 +1,442 @@
 [
-  {"source_id":"eu_dg_connect","title":"DG CONNECT digital policy contract"},
-  {"source_id":"eu_enisa_news","title":"ENISA security news contract"},
-  {"source_id":"eu_enisa_publications","title":"ENISA publication contract"},
-  {"source_id":"eu_cert_threat","title":"CERT-EU threat report contract"},
-  {"source_id":"eu_cert_advisories","title":"CERT-EU advisory contract"},
-  {"source_id":"eu_jrc_news","title":"JRC research news contract"},
-  {"source_id":"eu_enisa_certification","title":"ENISA certification contract"},
-  {"source_id":"eu_presscorner","title":"Commission press contract"},
-  {"source_id":"eu_parliament_press","title":"Parliament press contract"},
-  {"source_id":"fr_anssi","title":"ANSSI actualité contractuelle"},
-  {"source_id":"fr_cnil","title":"CNIL décision contractuelle"},
-  {"source_id":"fr_cybermalveillance","title":"Cybermalveillance conseil contractuel"},
-  {"source_id":"fr_arcep","title":"ARCEP communiqué contractuel"},
-  {"source_id":"fr_inria","title":"Inria recherche contractuelle"},
-  {"source_id":"fr_dge","title":"DGE actualité contractuelle"},
-  {"source_id":"fr_arcom","title":"Arcom communiqué contractuel"},
-  {"source_id":"fr_concurrence","title":"Concurrence communiqué contractuel"},
-  {"source_id":"fr_viginum","title":"Viginum analyse contractuelle"},
-  {"source_id":"de_bsi_news","title":"BSI Meldung Vertragsprüfung"},
-  {"source_id":"de_bmi","title":"BMI Presse Vertragsprüfung"},
-  {"source_id":"de_bnetza","title":"Bundesnetzagentur Vertragsprüfung"},
-  {"source_id":"de_fraunhofer_aisec","title":"AISEC Forschung Vertragsprüfung"},
-  {"source_id":"de_cispa","title":"CISPA Forschung Vertragsprüfung"},
-  {"source_id":"de_bfdi","title":"BfDI Datenschutz Vertragsprüfung"},
-  {"source_id":"de_bundeskartellamt","title":"Bundeskartellamt Vertragsprüfung"},
-  {"source_id":"de_dpma","title":"DPMA Presse Vertragsprüfung"},
-  {"source_id":"ie_ncsc","title":"NCSC Ireland advisory contract"},
-  {"source_id":"ie_comreg","title":"ComReg regulatory contract"},
-  {"source_id":"ie_dpc","title":"DPC enforcement contract"},
-  {"source_id":"ie_nsai","title":"NSAI standards contract"},
-  {"source_id":"ie_adapt","title":"ADAPT research contract"},
-  {"source_id":"ie_cnam","title":"CNAM media contract"},
-  {"source_id":"ie_electoral_commission","title":"Electoral Commission contract"},
-  {"source_id":"eu_edpb","title":"EDPB data protection contract"},
-  {"source_id":"eu_dg_home","title":"DG HOME resilience contract"},
-  {"source_id":"eu_eeas","title":"EEAS information contract"},
-  {"source_id":"fr_culture","title":"Culture numérique contractuelle"},
-  {"source_id":"fr_dinum","title":"DINUM numérique contractuel"},
-  {"source_id":"de_bbk","title":"BBK Resilienz Vertragsprüfung"},
-  {"source_id":"ie_dete","title":"DETE enterprise contract"},
-  {"source_id":"ie_research_ireland","title":"Research Ireland contract"},
-  {"source_id":"eu_eurohpc","title":"EuroHPC computing contract"},
-  {"source_id":"eu_chips_ju","title":"Chips Joint Undertaking contract"},
-  {"source_id":"eu_sns_ju","title":"Smart Networks contract"},
-  {"source_id":"fr_cea_list","title":"CEA List recherche contractuelle"},
-  {"source_id":"fr_campus_cyber","title":"Campus Cyber contractuel"},
-  {"source_id":"fr_institut_montaigne","title":"Institut Montaigne contractuel"},
-  {"source_id":"de_athene","title":"ATHENE Forschung Vertragsprüfung"},
-  {"source_id":"de_interface","title":"Interface Politik Vertragsprüfung"},
-  {"source_id":"de_swp","title":"SWP Analyse Vertragsprüfung"},
-  {"source_id":"ie_ceadar","title":"CeADAR innovation contract"},
-  {"source_id":"ie_insight","title":"Insight research contract"},
-  {"source_id":"ie_esri","title":"ESRI research contract"},
-  {"source_id":"ie_tyndall","title":"Tyndall technology contract"},
-  {"source_id":"ie_cyber_ireland","title":"Cyber Ireland ecosystem contract"}
+  {
+    "source_id": "de_athene",
+    "title": "Paper accepted auf der USENIX Security 2026",
+    "url": "https://www.athene-center.de/aktuelles/news/paper-accepted-auf-der-usenix-security-2026-1817",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.athene-center.de/aktuelles/news",
+    "sha256": "b502f10edb9b36494484ef5db26e33f5a2da97392942f3b05a4f3e32476854c9"
+  },
+  {
+    "source_id": "de_bbk",
+    "title": "Meldung lesen",
+    "url": "https://www.bbk.bund.de/SharedDocs/Kurzmeldungen/DE/2026/06/om-17-70-jahre-bevschmag.html",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.bbk.bund.de/DE/Infothek/Unsere-Meldungen/unsere-meldungen_node.html",
+    "sha256": "9f02872aaa57d9ba87b2ffb4df9dca430f82c213b939cda7ac91579d1e6a7f9a"
+  },
+  {
+    "source_id": "de_bfdi",
+    "title": "G7-Datenschutzbehörden fokussieren Kinder und Jugendliche – Gemeinsame Erklärung zu datenschutzfreundlicher Altersverifizierung im Netz",
+    "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/11_G7.html?nn=251944",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.bfdi.bund.de/DE/BfDI/Presse/Pressemitteilungen/pressemitteilungen_node.html",
+    "sha256": "854a25a34937eb841f7f96e7d89d390e2ac2019d215034f2f6e431227100c678"
+  },
+  {
+    "source_id": "de_bmi",
+    "title": "Verfassungsschutzbericht 2025 vorgestellt: BfV verteidigt Demokratie in Deutschland gegen Angriffe …",
+    "url": "https://www.bmi.bund.de/SharedDocs/pressemitteilungen/DE/2026/06/vsb2025-pm.html",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.bmi.bund.de/SiteGlobals/Forms/suche/expertensuche-formular.html?nn=9388812&gts=9398922_list%253DunifiedDate_dt%2Bdesc&documentType_=pbjournal",
+    "sha256": "e32952449bc4733e9517c65284d4731a450641758350b8604bc918d32c150110"
+  },
+  {
+    "source_id": "de_bnetza",
+    "title": "Mehr Wettbewerb im Fernverkehr – Bundesnetzagentur schafft faire Chancen für neue Anbieter",
+    "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260717_EisenbahnenItalo.html",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.bundesnetzagentur.de/DE/Allgemeines/Presse/Pressemitteilungen/start.html",
+    "sha256": "78f9b8bfb0470397e258bdd0c5032ae2788f86fff5c70edb4ec19c228e68b92c"
+  },
+  {
+    "source_id": "de_bsi_news",
+    "title": "Sichere Online-Angebote: TR-03188 Passkey Server veröffentlicht",
+    "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/TR-03188_Passkey_260630.html",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/alle-meldungen-news_node.html",
+    "sha256": "d0d772bfffb6d0d5058a6377931a138c46d252a6bdb9d0c9d29713f4c76626d5"
+  },
+  {
+    "source_id": "de_bundeskartellamt",
+    "title": "Erhöhung der RWE-Anteile an Amprion freigegeben",
+    "url": "https://www.bundeskartellamt.de/SharedDocs/Meldung/DE/Pressemitteilungen/2026/07_17_2026_RWE_Amprion.html?nn=52004",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.bundeskartellamt.de/DE/Home/home_node.html",
+    "sha256": "17049f7428da636c193036d35254ad6bc48bf2d6c178024dadd134787223d236"
+  },
+  {
+    "source_id": "de_cispa",
+    "title": "CISPA DLS",
+    "url": "https://cispa.de/en/news-and-events/all-events/distinguished-lecture-series",
+    "captured_at": "2026-07-18",
+    "source_url": "https://cispa.de/en/news-and-events/all-news",
+    "sha256": "577d3d80853f32842b35773933638b43a27a52c8c119f2d97b7f7f6872bd74c7"
+  },
+  {
+    "source_id": "de_dpma",
+    "title": "08.07.2026",
+    "url": "https://www.dpma.de/service/presse/pressemitteilungen/08072026/index.html",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.dpma.de/service/presse/pressemitteilungen/archiv/index.html",
+    "sha256": "69650bfaec14bb633bdffe6dde834f4594c0e7cb9c9b2e744f49d0d058682341"
+  },
+  {
+    "source_id": "de_fraunhofer_aisec",
+    "title": "Sicherheitschip »Made in Germany« dient als  Vertrauensanker für vernetzte Geräte",
+    "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2026/sicherheitschip-made-in-germany-dient-als-vertrauensanker-fuer-vernetzte-geraete.html",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen.html",
+    "sha256": "e29b984bdf13c9d013419d39026f11355ffd6f00f3a21b657e918e607c6317f6"
+  },
+  {
+    "source_id": "de_interface",
+    "title": "A UN Effect? How the EU Implements the Norms of Responsible State Behavior in Cyberspace\n \n \n \n \n \n \n    Dr. Patryk Pawlak, Christina Rupp",
+    "url": "https://www.interface-eu.org/publications/how-the-eu-implements-the-un-cyber-norms",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.interface-eu.org/publications",
+    "sha256": "4311f7f105a034e8e7b2360c365522dd4a9a11295c76c956dbd57248ff3e6643"
+  },
+  {
+    "source_id": "de_swp",
+    "title": "Die neue Arktisstrategie der EU",
+    "url": "https://www.swp-berlin.org/publikation/die-neue-arktisstrategie-der-eu-chancen-fuer-europas-digitale-souveraenitaet",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.swp-berlin.org/themen/dossiers/cybersicherheit-und-digitalpolitik-die-rolle-des-digitalen-in-der-internationalen-politik",
+    "sha256": "46dc1cee390501bb47fa419070c937136cccd289b5adfec535127e072564495f"
+  },
+  {
+    "source_id": "eu_cert_advisories",
+    "title": "2026-008: Critical vulnerabilities in Ivanti Sentry\n                             \n Wednesday, June 10, 2026 01:55:39 PM CEST \n On 9 June 2026, Ivanti released a security advisory addressing two critical vulnerabilities in their Sentry products[1]. An attacker could exploit those flaws to achieve unauthenticated remote code execution on the vulnerable device.",
+    "url": "https://cert.europa.eu/publications/security-advisories/2026-008/",
+    "captured_at": "2026-07-18",
+    "source_url": "https://cert.europa.eu/publications/security-advisories/",
+    "sha256": "6457fc7bfcc6ec8784f9905864b1f3809d1d7a865d8de83394ef88c0e732a835"
+  },
+  {
+    "source_id": "eu_cert_threat",
+    "title": "Cyber Brief 26-07 - June 2026\n                             \n Wednesday, July 01, 2026 04:00:00 PM CEST \n Cyber Briefs are monthly executive reports that aim to present an overview of the most relevant developments in cyber security, based exclusively on open sources, with a view to inform political leadership and senior management in its constituency. Additional information on any item in this Brief can be provided upon request. Cyber Briefs are TLP:CLEAR.",
+    "url": "https://cert.europa.eu/publications/threat-intelligence/cb26-07/",
+    "captured_at": "2026-07-18",
+    "source_url": "https://cert.europa.eu/publications/threat-intelligence/",
+    "sha256": "8656ee92ecbd2e4650384f14d215acbf5919905e6ad7d8624d98cf28b734a5af"
+  },
+  {
+    "source_id": "eu_chips_ju",
+    "title": "Consultation: 'Do No Significant Harm’ (DNSH) guidance for the next Multiannual Financial Framework",
+    "url": "https://www.chips-ju.europa.eu/NewsDetails?id=54268b1b-0d81-f111-ab0e-7c1e5287eb89",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.chips-ju.europa.eu/News/",
+    "sha256": "61eb3a7f7df375ec2beff75f2968d58c04c87e9fc90bbc5b4c52c64d83432b5f"
+  },
+  {
+    "source_id": "eu_dg_connect",
+    "title": "2026 Rule of Law Report strengthens Europe's prosperity, security and democratic resilience",
+    "url": "https://digital-strategy.ec.europa.eu/en/news/2026-rule-law-report-strengthens-europes-prosperity-security-and-democratic-resilience",
+    "captured_at": "2026-07-18",
+    "source_url": "https://digital-strategy.ec.europa.eu/en/news",
+    "sha256": "29e5ea2b7681024b400c54cd9af31b1a96e3044289631d85ad5c1119470536aa"
+  },
+  {
+    "source_id": "eu_dg_home",
+    "title": "Commissioner Brunner co-hosted the third Ministerial meeting of the European Ports Alliance in Dublin",
+    "url": "https://home-affairs.ec.europa.eu/news/commissioner-brunner-co-hosted-third-ministerial-meeting-european-ports-alliance-dublin-2026-07-17_en",
+    "captured_at": "2026-07-18",
+    "source_url": "https://home-affairs.ec.europa.eu/news_en",
+    "sha256": "b973e3bbd72fdd84a5aeeb8a90bddf9b5b762b9e29826c84d3770b7b2888caad"
+  },
+  {
+    "source_id": "eu_edpb",
+    "title": "EDPB calls for legal basis for cross-regulatory information sharing",
+    "url": "https://www.edpb.europa.eu/news/edpb-calls-for-legal-basis-for-cross-regulatory-information-sharing_en",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.edpb.europa.eu/news_en",
+    "sha256": "3b1057ede8016f3525e4dc1f880cd13c31dc1dd28e3b60f169895a4495d553c0"
+  },
+  {
+    "source_id": "eu_eeas",
+    "title": "EU–Viet Nam Human Rights Dialogue - 2 July 2026, Brussels, Belgium",
+    "url": "https://www.eeas.europa.eu/eeas/eu-viet-nam-human-rights-dialogue-2-july-2026-brussels-belgium_en",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.eeas.europa.eu/eeas/press-material_en",
+    "sha256": "39420d06da0f6289a35eff55e3e6aec12373cb76cc89793bca06cf974c6e3940"
+  },
+  {
+    "source_id": "eu_enisa_certification",
+    "title": "Participate to the public review of the new draft of “Agreed Cryptographic Mechanisms”",
+    "url": "https://certification.enisa.europa.eu/news/participate-public-review-new-draft-agreed-cryptographic-mechanisms-2026-06-02_en",
+    "captured_at": "2026-07-18",
+    "source_url": "https://certification.enisa.europa.eu/news-events_en",
+    "sha256": "4d508875604f897db7f430bcafcc062bc1f27ec796c21c895a47ba7dff2d8c29"
+  },
+  {
+    "source_id": "eu_enisa_news",
+    "title": "Where do SMEs stand in preparing for the Cyber Resilience Act?",
+    "url": "https://www.enisa.europa.eu/news/where-do-smes-stand-in-preparing-for-the-cyber-resilience-act",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.enisa.europa.eu/news",
+    "sha256": "2563eda4936a44aed2dac39449653a142356095009ddbe7e46e8fbfe4db604c4"
+  },
+  {
+    "source_id": "eu_enisa_publications",
+    "title": "SME Cyber Resilience Maturity Assessment Model",
+    "url": "https://www.enisa.europa.eu/publications/sme-cyber-resilience-maturity-assessment-model",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.enisa.europa.eu/publications",
+    "sha256": "87dbe46fbdbc27ba3f2c1595154df788266939739c31cead36bd7d406f9e4468"
+  },
+  {
+    "source_id": "eu_eurohpc",
+    "title": "EuroHPC JU launches call for tender for new industrial supercomputer in Bologna, Italy",
+    "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-launches-call-tender-new-industrial-supercomputer-bologna-italy-2026-07-16_en",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.eurohpc-ju.europa.eu/media-events/press-releases_en",
+    "sha256": "b6459557b23928bdd3ef8d6c06e91f879c3e026b7b3c57fcb041c22bc76ba8a9"
+  },
+  {
+    "source_id": "eu_jrc_news",
+    "title": "Demographic transformation in the EU: challenges and opportunities",
+    "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/demographic-transformation-eu-challenges-and-opportunities-2026-07-14_en",
+    "captured_at": "2026-07-18",
+    "source_url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates_en",
+    "sha256": "79b39bf6cbfed817bdc9e92baacc40e076562008b5fb906819859fa09221ef9e"
+  },
+  {
+    "source_id": "eu_parliament_press",
+    "title": "EU-China relations: Parliament’s Foreign Affairs Committee to visit Beijing and Shanghai",
+    "url": "https://www.europarl.europa.eu/news/en/press-room/20260716IPR46531/eu-china-relations-foreign-affairs-committee-to-visit-beijing-and-shanghai",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.europarl.europa.eu/news/en/press-room",
+    "sha256": "cc703e2a670e3745b79151eab7133ed66bb2333bf13d381dced6b418665b9ed5"
+  },
+  {
+    "source_id": "eu_presscorner",
+    "title": "Remarks by Commissioner Albuquerque at the press conference on the Report on the competitiveness of the EU banking sector",
+    "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1650",
+    "captured_at": "2026-07-18",
+    "source_url": "https://ec.europa.eu/commission/presscorner/api/latestnews?language=en&pageSize=100",
+    "sha256": "b9f3e7da376b232965ac86a35852180419b024c8feefc6e6fe6504fe17ca3add"
+  },
+  {
+    "source_id": "eu_sns_ju",
+    "title": "6G-VERSUS Venture Accelerator deadline has been extended to July 25!",
+    "url": "https://smart-networks.europa.eu/6g-versus-venture-accelerator-deadline-has-been-extended-to-july-25/",
+    "captured_at": "2026-07-18",
+    "source_url": "https://smart-networks.europa.eu/feed/",
+    "sha256": "e4dae829b6b0d35290585a8b5f0a912aa6e3531d0eb67a3da4d183b3c1b52982"
+  },
+  {
+    "source_id": "fr_anssi",
+    "title": "Ciblage et compromission d’entités françaises par le Centre du service fédéral de sécurité de la fédération de Russie (FSB)",
+    "url": "https://cyber.gouv.fr/actualites/ciblage-et-compromission-dentites-francaises-par-le-fsb/",
+    "captured_at": "2026-07-18",
+    "source_url": "https://cyber.gouv.fr/actualites/",
+    "sha256": "4c83461d59fe8d6d76d057b9c8b85d81e8b538ce62eafe888c202e4f0f684e01"
+  },
+  {
+    "source_id": "fr_arcep",
+    "title": "La consultation publique",
+    "url": "https://www.arcep.fr/actualites/les-consultations-publiques/p/gp/detail/consultation-rcap2027-juillet2026.html",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.arcep.fr/actualites/actualites-et-communiques.html",
+    "sha256": "aed86c8ab23a814a05a1f90ec5c0a89c4b308b3b5bc3a1f5ec0fdcf9f3341b5b"
+  },
+  {
+    "source_id": "fr_arcom",
+    "title": "\"Nous sommes la France\" : les médias audiovisuels mobilisés pour une juste représentation de la diversité de la société française",
+    "url": "https://www.arcom.fr/actualites/nous-sommes-la-france-les-medias-audiovisuels-mobilises-pour-une-juste-representation-de-la-diversite-de-la-societe-francaise",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.arcom.fr/actualites/toutes-nos-actualites",
+    "sha256": "224f1a86dac01a9b2aaaa7e142db3690dcbd82c3170bed23406289ef6dca8dd7"
+  },
+  {
+    "source_id": "fr_campus_cyber",
+    "title": "Le Campus Cyber dresse le bilan de la première année de sa transformation",
+    "url": "https://campuscyber.fr/le-campus-cyber-dresse-le-bilan-de-la-premiere-annee-de-sa-transformation/",
+    "captured_at": "2026-07-18",
+    "source_url": "https://campuscyber.fr/feed/",
+    "sha256": "b4592c9ad2d111f3e0c6c75f49d284b99cc03dbf76047e5ca8e59b35614c80da"
+  },
+  {
+    "source_id": "fr_cea_list",
+    "title": "June 10, 2026 | SHM: When cyberattacks cross the physical divide",
+    "url": "https://list.cea.fr/en/june-10-2026-shm-when-cyberattacks-cross-the-physical-divide/",
+    "captured_at": "2026-07-18",
+    "source_url": "https://list.cea.fr/en/feed/",
+    "sha256": "0f66fd32396c9b823080267326b69b6d680be1ebd52883d3f18260bf46b66858"
+  },
+  {
+    "source_id": "fr_cnil",
+    "title": "Revoir le webinaire : Nouveau téléservice santé et recherche, ce qui change pour vos demandes d’autorisation",
+    "url": "https://www.cnil.fr/fr/revoir-le-webinaire-nouveau-teleservice-sante-et-recherche-ce-qui-change-pour-vos-demandes",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.cnil.fr/fr/actualites",
+    "sha256": "99fe336d98855a5b4e9c4078d5b9e2e1c794f0f3639872ed07bee98d5e3d695c"
+  },
+  {
+    "source_id": "fr_concurrence",
+    "title": "Coopératives agricoles : l’Autorité de la concurrence autorise la fusion des groupes coopératifs Euralis et Maïsadour, sous réserve d’engagements",
+    "url": "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse/cooperatives-agricoles-lautorite-de-la-concurrence-autorise-la-fusion-des",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse",
+    "sha256": "b6b384fe30d3e030e66d99a29125a6a9536297394ccbf61484fbb3860035b199"
+  },
+  {
+    "source_id": "fr_culture",
+    "title": "Le ministère de la Culture annonce le lancement de la 11e édition des Journées nationales de l'architecture, du 15 au 18 octobre 2026, sur le thème...",
+    "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/le-ministere-de-la-culture-annonce-le-lancement-de-la-11e-edition-des-journees-nationales-de-l-architecture-du-15-au-18-octobre-2026-sur-le-theme",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.culture.gouv.fr/presse/communiques-de-presse",
+    "sha256": "3f152f581b8cc26513c22677b1186aee76d1d8568d8075c6a1ea30ab96d0444a"
+  },
+  {
+    "source_id": "fr_cybermalveillance",
+    "title": "Remboursement d’impôt : attention aux tentatives d’hameçonnage \n \n 15/07/2026",
+    "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/remboursement-impot-hameconnage",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.cybermalveillance.gouv.fr/feed/atom-flux-complet",
+    "sha256": "379d92bf96c5fc472dea56434b8a76b228176f6dc02676fe5b0fe91f0d885614"
+  },
+  {
+    "source_id": "fr_dge",
+    "title": "Le Conseil national du commerce publie son rapport d'activité 2025",
+    "url": "https://www.entreprises.gouv.fr/la-dge/actualites/le-conseil-national-du-commerce-publie-son-rapport-dactivite-2025",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.entreprises.gouv.fr/la-dge/actualites",
+    "sha256": "764875f75f599795c6190a4f9974d6bf9ff74d708addfd6348ca07358a0fce2e"
+  },
+  {
+    "source_id": "fr_dinum",
+    "title": "Lien de consultation",
+    "url": "https://www.numerique.gouv.fr/actualites/franceconnect-10-ans-identite-numerique-francais/",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.numerique.gouv.fr/sinformer/espace-presse/",
+    "sha256": "6f64b08e157692fd4a80e5a57895d6269cbb2b1e99110c6e6f344a14b82c3e3a"
+  },
+  {
+    "source_id": "fr_inria",
+    "title": "Intelligence artificielle\n                   \n \n \n \n « Notre IA » : Inria contribue au déploiement d'une IA de confiance dans les services publics \n \n \n \n 15/07/2026",
+    "url": "https://www.inria.fr/fr/notre-ia-inria-contribue-deploiement-intelligence-artificielle-confiance-services-publics",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.inria.fr/fr/actualites-recherche-savoir-numerique",
+    "sha256": "908e03d58f51f4844199903b1b93530f2b1a5a4d2e281b8872a88e54efeda5d3"
+  },
+  {
+    "source_id": "fr_institut_montaigne",
+    "title": "16/07/2026 [Le grand jeu du Pakistan] - Entre les États-Unis et la Chine, tactique et ... \n                            Christophe Jaffrelot                         \n                 [3/3] Les ennemis de mes amis sont mes ennemis ? Pas pour le Pakistan, qui joue de ses bonnes relations avec la Chine et les États-Unis, bien qu’elles ne soient pas sur le même plan. Comment...",
+    "url": "https://www.institutmontaigne.org/expressions/le-grand-jeu-du-pakistan-entre-les-etats-unis-et-la-chine-tactique-et-strategie",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.institutmontaigne.org/rss.xml",
+    "sha256": "d53d8ef8b4fb217890d9ffe9600c41239cf1e9541b67d29301efaaa6414484a5"
+  },
+  {
+    "source_id": "fr_viginum",
+    "title": "Nouveau - Un guide pratique pour les familles « Grandir dans un monde connecté, ça s’apprend ! »",
+    "url": "https://www.sgdsn.gouv.fr/viginum/actualites/nouveau-un-guide-pratique-pour-les-familles-grandir-dans-un-monde-connecte-ca",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.sgdsn.gouv.fr/viginum/actualites",
+    "sha256": "c0b9d370196be58d277fd607f794b4f8940fbc285b5025923377e98e8a26df40"
+  },
+  {
+    "source_id": "ie_adapt",
+    "title": "ADAPT Trinity College Dublin Researchers Help Uncover How the Brain Tracks Multiple Conversations",
+    "url": "https://www.adaptcentre.ie/news-and-events/adapt-trinity-college-dublin-researchers-help-uncover-how-the-brain-tracks-multiple-conversations/",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.adaptcentre.ie/news-and-events/feed/",
+    "sha256": "a871fca90af6b4e1381afb7a11ad1fff2acc4a72d839edf65c8643c2230709fc"
+  },
+  {
+    "source_id": "ie_ceadar",
+    "title": "France 24 Special Edition of Talking Europe",
+    "url": "https://ceadar.ie/news/france-24-special-edition-of-talking-europe/",
+    "captured_at": "2026-07-18",
+    "source_url": "https://ceadar.ie/feed/",
+    "sha256": "64c96e6be81edb3616030dc48f37966a1b7d2ca4bc2e6ac34c3808ead4ead5e1"
+  },
+  {
+    "source_id": "ie_cnam",
+    "title": "Trusted Flagger status granted to three new organisations",
+    "url": "https://www.cnam.ie/trusted-flagger-status-granted-to-three-new-organisations/",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.cnam.ie/feed/",
+    "sha256": "b3b3137369814fdd1908955de681ee87e412517de067563858b93b7076fd34e1"
+  },
+  {
+    "source_id": "ie_comreg",
+    "title": "Consumer News from Q2 2026",
+    "url": "https://www.comreg.ie/consumer-news-from-q2-2026/",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.comreg.ie/feed/",
+    "sha256": "eeac2ebc90abbf16981f3f386933eafc6d37a0d5e220a04ccd7453a60f3810ef"
+  },
+  {
+    "source_id": "ie_cyber_ireland",
+    "title": "Cybersecurity for Health Annual Conference. July 1st 2026, Dundalk",
+    "url": "https://cyberireland.ie/cybersecurity-for-health-annual-conference-july-1st-2026-dundalk/",
+    "captured_at": "2026-07-18",
+    "source_url": "https://cyberireland.ie/blog-2026/",
+    "sha256": "7ff1931916b17bfa7ef796c0cded3d4b027b44f71e0d16d59137440f12b45072"
+  },
+  {
+    "source_id": "ie_dete",
+    "title": "Ministers Burke and Smyth announce appointments of two new Members and Chairperson to the Corporate Enforcement Authority",
+    "url": "https://enterprise.gov.ie/en/news-and-events/department-news/2026/june/20260626.html",
+    "captured_at": "2026-07-18",
+    "source_url": "https://enterprise.gov.ie/en/news-and-events/department-news/2026/",
+    "sha256": "d40d4d14117f7e6ea9bab049fb3c22cf358efe92c936f1c340dd4e3b7fb20333"
+  },
+  {
+    "source_id": "ie_dpc",
+    "title": "Data Protection Commission Publishes Annual Report for 2025 and Results of “Sharenting” Survey",
+    "url": "https://dataprotection.ie/en/data-protection-commission-publishes-2025-annual-report",
+    "captured_at": "2026-07-18",
+    "source_url": "https://dataprotection.ie/en/news-media/press-releases?page=0",
+    "sha256": "945c56c9c4b057645cd9d63d4a64dd15731c8c51db58ac8acdbc269859658529"
+  },
+  {
+    "source_id": "ie_electoral_commission",
+    "title": "Appeal Related to the Ireland First Party Concluded",
+    "url": "https://www.electoralcommission.ie/latest-news-and-research/appeal-related-to-the-ireland-first-party-concluded/",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.electoralcommission.ie/media-releases/",
+    "sha256": "bc9a4cda82a70e632a72b59499ac4260174bfd5842dc38b1392f70ffd1ec56b5"
+  },
+  {
+    "source_id": "ie_esri",
+    "title": "Nowcast (as of 16 July 2026)",
+    "url": "https://www.esri.ie/news/nowcast-as-of-16-july-2026",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.esri.ie/news",
+    "sha256": "fb2bea53262f680807e8b08472aacc9b9faf55e95f73e74fda7009aaa34ff326"
+  },
+  {
+    "source_id": "ie_insight",
+    "title": "Rinn AI – the next chapter for Ireland’s data and AI research ecosystem",
+    "url": "https://www.insight-centre.org/rinn-ai-the-next-chapter-for-irelands-data-and-ai-research-ecosystem/",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.insight-centre.org/feed/",
+    "sha256": "6ca735aab51fa34ad5472f70b97e13f9e015331fefe55438590f23f1f560b823"
+  },
+  {
+    "source_id": "ie_ncsc",
+    "title": "Critical Vulnerability exists in Microsoft SharePoint Server (CVE-2026-56164)",
+    "url": "https://www.ncsc.gov.ie/pdfs/2607150243_CVE-2026-56164.pdf",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.ncsc.gov.ie/news/alerts.rss",
+    "sha256": "3a44353526cd9ea92abb6e141437db55b31958b91782ba989c9054355683317f"
+  },
+  {
+    "source_id": "ie_nsai",
+    "title": "National Metrology Laboratory\n\t                                             \n Insight \n \n Metrology Meets Regulation \n \n \n \n                                                    17th June 2026",
+    "url": "https://www.nsai.ie/about/news/metrology-meets-regulation/",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.nsai.ie/about/news/",
+    "sha256": "5909e7e7a7a44c99c7a8ad184ee115837c07a3ed240878467011439df37d1d77"
+  },
+  {
+    "source_id": "ie_research_ireland",
+    "title": "06 July 2026 From the Gobi Desert to Gaza: early career researchers from 28 countries gather to tackle global sustainability challenges",
+    "url": "https://www.researchireland.ie/news/restore-international-summer-school/",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.researchireland.ie/news/",
+    "sha256": "1d42578f775ecb3f3ac77ab6aad552bcc7555230f5f00da8e7b906d374982bfe"
+  },
+  {
+    "source_id": "ie_tyndall",
+    "title": "Intel Recognises Tyndall Researcher with 2025 Outstanding Researcher Award",
+    "url": "https://www.tyndall.ie/news/intel-recognises-tyndall-researcher-with-2025-outstanding-researcher-award/",
+    "captured_at": "2026-07-18",
+    "source_url": "https://www.tyndall.ie/feed/",
+    "sha256": "4889c5eb6d25bc75d0889009d3522721283ce5cb601481bc85dc832595e776c8"
+  }
 ]

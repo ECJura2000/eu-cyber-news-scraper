@@ -114,3 +114,42 @@ def test_read_only_health_does_not_create_or_modify_state(tmp_path):
     status = SourceStatus("s", "來源", "EU", False, True, "html", 10, 0, 1.0)
     assess(status, source, path, write=False)
     assert not path.exists()
+
+
+def test_same_observation_replaces_prior_row_instead_of_incrementing_streak(tmp_path):
+    path = tmp_path / ".source-health.json"
+    source = Source("s", "EU", "來源", "Source", "主管機關", "en", "https://x.eu", "https://x.eu/news")
+    status = SourceStatus("s", "來源", "EU", False, True, "html", 10, 0, 1.0)
+    for run_id in ("first", "rerun"):
+        assess_and_record_health(
+            [status],
+            [source],
+            path,
+            run_id=run_id,
+            recorded_at=datetime(2026, 3, 1, tzinfo=timezone.utc),
+            profile=PROFILE,
+            observation_key="rolling-2026-03-01",
+            write=True,
+        )
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    rows = next(iter(payload["profiles"].values()))["sources"]["s"]
+    assert len(rows) == 1
+    assert rows[0]["run_id"] == "rerun"
+
+
+def test_source_config_change_resets_only_that_source_baseline(tmp_path):
+    path = tmp_path / ".source-health.json"
+    source = Source("s", "EU", "來源", "Source", "主管機關", "en", "https://x.eu", "https://x.eu/news")
+    status = SourceStatus("s", "來源", "EU", False, True, "html", 20, 0, 1.0)
+    assess_and_record_health(
+        [status], [source], path, run_id="first", recorded_at=datetime(2026, 3, 1, tzinfo=timezone.utc),
+        profile=PROFILE, observation_key="one", write=True,
+    )
+    changed = Source(
+        "s", "EU", "來源", "Source", "主管機關", "en", "https://x.eu", "https://x.eu/updated-news"
+    )
+    current = assess_and_record_health(
+        [status], [changed], path, run_id="second", recorded_at=datetime(2026, 3, 8, tzinfo=timezone.utc),
+        profile=PROFILE, observation_key="two", write=False,
+    )[0]
+    assert current.historical_median_count == 0
