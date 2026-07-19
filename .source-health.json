@@ -3428,14 +3428,14 @@
         "include_unmatched": false,
         "source_budget": 60
       },
-      "updated_at": "2026-07-19T01:49:54.669196+00:00",
+      "updated_at": "2026-07-19T02:00:14.961411+00:00",
       "sources": {
         "eu_dg_connect": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "69e694f566225e8b",
+            "source_fingerprint": "a917a841772390fd",
             "success": true,
             "raw_count": 13,
             "newest_published_at": "2026-07-16T22:00:00+00:00",
@@ -3449,10 +3449,10 @@
         ],
         "eu_enisa_news": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "bb9996e50e41c5c3",
+            "source_fingerprint": "5fe2bd3b09e4c53c",
             "success": true,
             "raw_count": 12,
             "newest_published_at": "2026-07-13T22:00:00+00:00",
@@ -3466,10 +3466,10 @@
         ],
         "eu_enisa_publications": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "9122a025c0548c62",
+            "source_fingerprint": "41330af00f1e26ef",
             "success": true,
             "raw_count": 14,
             "newest_published_at": "2026-07-13T10:17:53+00:00",
@@ -3483,10 +3483,10 @@
         ],
         "eu_cert_threat": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "17cc715e7b704078",
+            "source_fingerprint": "2b04fe7d437c8479",
             "success": true,
             "raw_count": 9,
             "newest_published_at": "2026-07-01T12:00:00+00:00",
@@ -3500,10 +3500,10 @@
         ],
         "eu_cert_advisories": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "08fce643cb372922",
+            "source_fingerprint": "c410113d6c15ca8c",
             "success": true,
             "raw_count": 8,
             "newest_published_at": "2026-06-08T22:00:00+00:00",
@@ -3517,10 +3517,10 @@
         ],
         "eu_jrc_news": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "a41cf4ba9a87c707",
+            "source_fingerprint": "86772d87fc6baab1",
             "success": true,
             "raw_count": 10,
             "newest_published_at": "2026-07-14T12:00:00+00:00",
@@ -3534,10 +3534,10 @@
         ],
         "eu_enisa_certification": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "398964184e07e90e",
+            "source_fingerprint": "29290c8fa63040ba",
             "success": true,
             "raw_count": 3,
             "newest_published_at": "2026-06-02T12:00:00+00:00",
@@ -3551,10 +3551,10 @@
         ],
         "eu_presscorner": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "4dcd6c0149a2abb5",
+            "source_fingerprint": "eefd5875f1610a7a",
             "success": true,
             "raw_count": 100,
             "newest_published_at": "2026-07-17T00:00:00+00:00",
@@ -3568,10 +3568,10 @@
         ],
         "eu_parliament_press": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "c3826f1d8f40f49d",
+            "source_fingerprint": "3f4ecc8b6654c881",
             "success": true,
             "raw_count": 15,
             "newest_published_at": "2026-07-17T09:41:00+00:00",
@@ -3585,10 +3585,10 @@
         ],
         "fr_anssi": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "b9b010e5e39940eb",
+            "source_fingerprint": "9e9893bb30deb59d",
             "success": true,
             "raw_count": 20,
             "newest_published_at": "2026-07-12T22:00:00+00:00",
@@ -3602,10 +3602,10 @@
         ],
         "fr_cnil": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "5b310855755c0ac6",
+            "source_fingerprint": "e8fbc83fdba66fad",
             "success": true,
             "raw_count": 25,
             "newest_published_at": "2026-07-08T22:00:00+00:00",
@@ -3619,10 +3619,10 @@
         ],
         "fr_cybermalveillance": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "b6e1b097a3a6e0d8",
+            "source_fingerprint": "41521dc1d075542c",
             "success": true,
             "raw_count": 24,
             "newest_published_at": "2026-07-15T10:26:15+00:00",
@@ -3636,10 +3636,10 @@
         ],
         "fr_arcep": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "039b5816d95a5c93",
+            "source_fingerprint": "12143704574dbb6f",
             "success": true,
             "raw_count": 21,
             "newest_published_at": "2026-07-17T00:00:00+00:00",
@@ -3653,10 +3653,10 @@
         ],
         "fr_inria": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "fc46d79dbe38ff11",
+            "source_fingerprint": "6f457c2919eacda0",
             "success": true,
             "raw_count": 265,
             "newest_published_at": "2026-07-15T09:21:09+00:00",
@@ -3670,10 +3670,10 @@
         ],
         "fr_dge": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "dee42d2fefb9b3e4",
+            "source_fingerprint": "1c9b60c6c560b2c4",
             "success": true,
             "raw_count": 10,
             "newest_published_at": "2026-07-15T22:00:00+00:00",
@@ -3687,10 +3687,10 @@
         ],
         "fr_arcom": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "49dfbadfc799e0b8",
+            "source_fingerprint": "4b8b57c27e3e50c7",
             "success": true,
             "raw_count": 9,
             "newest_published_at": "2026-07-12T22:00:00+00:00",
@@ -3704,10 +3704,10 @@
         ],
         "fr_concurrence": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "db36f7d3336b0965",
+            "source_fingerprint": "4a92990e20cc0b75",
             "success": true,
             "raw_count": 10,
             "newest_published_at": "2026-07-17T09:35:25+00:00",
@@ -3721,10 +3721,10 @@
         ],
         "fr_viginum": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "b06b313db268c4ee",
+            "source_fingerprint": "8759f079e14c3891",
             "success": true,
             "raw_count": 5,
             "newest_published_at": "2026-06-23T22:00:00+00:00",
@@ -3738,10 +3738,10 @@
         ],
         "de_bsi_news": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "71a6ccabe27a8745",
+            "source_fingerprint": "0a83dff0150380c9",
             "success": true,
             "raw_count": 15,
             "newest_published_at": "2026-06-29T22:00:00+00:00",
@@ -3755,10 +3755,10 @@
         ],
         "de_bmi": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "aacbc6d9c5b980a0",
+            "source_fingerprint": "56e7c6484e1201a3",
             "success": true,
             "raw_count": 5,
             "newest_published_at": "2026-06-30T08:07:30+00:00",
@@ -3772,10 +3772,10 @@
         ],
         "de_bnetza": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "3560500e2578cd2e",
+            "source_fingerprint": "573cdd92d51ab8c4",
             "success": true,
             "raw_count": 10,
             "newest_published_at": "2026-07-16T22:00:00+00:00",
@@ -3789,10 +3789,10 @@
         ],
         "de_fraunhofer_aisec": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "7a3b739bc7327b26",
+            "source_fingerprint": "3513151e44d28ec0",
             "success": true,
             "raw_count": 19,
             "newest_published_at": "2026-07-05T22:00:00+00:00",
@@ -3806,10 +3806,10 @@
         ],
         "de_cispa": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "9ab33336350df29c",
+            "source_fingerprint": "f9a8f7986b8e9193",
             "success": true,
             "raw_count": 6,
             "newest_published_at": "",
@@ -3823,10 +3823,10 @@
         ],
         "de_bfdi": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "e584dd4da8f0f67f",
+            "source_fingerprint": "6b7acdeb0982fd41",
             "success": true,
             "raw_count": 50,
             "newest_published_at": "2026-06-25T22:00:00+00:00",
@@ -3840,10 +3840,10 @@
         ],
         "de_bundeskartellamt": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "a2aac51781e9c71a",
+            "source_fingerprint": "e0e285efdead4424",
             "success": true,
             "raw_count": 11,
             "newest_published_at": "2026-07-16T22:00:00+00:00",
@@ -3857,10 +3857,10 @@
         ],
         "de_dpma": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "32b5dba70d7ffb29",
+            "source_fingerprint": "c1bb86e5dd276091",
             "success": true,
             "raw_count": 12,
             "newest_published_at": "2026-07-07T22:00:00+00:00",
@@ -3874,10 +3874,10 @@
         ],
         "ie_ncsc": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "fa2a6e6a3cdb63da",
+            "source_fingerprint": "52ccacc84be64e3e",
             "success": true,
             "raw_count": 220,
             "newest_published_at": "2026-07-16T00:00:00+00:00",
@@ -3891,10 +3891,10 @@
         ],
         "ie_comreg": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "8b103bd39e4ae67e",
+            "source_fingerprint": "ccd42732f1b7c764",
             "success": true,
             "raw_count": 33,
             "newest_published_at": "2026-07-08T08:48:40+00:00",
@@ -3908,27 +3908,27 @@
         ],
         "ie_dpc": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "8d5d90878a34f4c3",
-            "success": false,
-            "raw_count": 0,
-            "newest_published_at": "",
+            "source_fingerprint": "5c88f3600e9d425d",
+            "success": true,
+            "raw_count": 5,
+            "newest_published_at": "2026-06-29T23:00:00+00:00",
             "in_range_count": 0,
-            "freshness_lag_days": 0.0,
-            "parse_status": "failed",
-            "freshness_status": "unknown",
+            "freshness_lag_days": 19.71,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
             "baseline_failure": false,
-            "health_status": "attention"
+            "health_status": "healthy"
           }
         ],
         "ie_nsai": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "7a69b80901dc83f7",
+            "source_fingerprint": "7016eed4b88b915e",
             "success": true,
             "raw_count": 8,
             "newest_published_at": "2026-06-16T23:00:00+00:00",
@@ -3942,10 +3942,10 @@
         ],
         "ie_adapt": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "b59a80721c2a64f5",
+            "source_fingerprint": "e08e10c0a6a1860b",
             "success": true,
             "raw_count": 10,
             "newest_published_at": "2026-07-17T09:39:11+00:00",
@@ -3959,10 +3959,10 @@
         ],
         "ie_cnam": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "5d9580470ec93f96",
+            "source_fingerprint": "4620715836a17a7a",
             "success": true,
             "raw_count": 23,
             "newest_published_at": "2026-06-25T11:02:59+00:00",
@@ -3976,10 +3976,10 @@
         ],
         "ie_electoral_commission": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "37f05f18b65601a7",
+            "source_fingerprint": "9fd054d55ce3f7c7",
             "success": true,
             "raw_count": 10,
             "newest_published_at": "2026-07-17T11:37:17+00:00",
@@ -3993,10 +3993,10 @@
         ],
         "eu_edpb": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "f5f3f2b131a67bc0",
+            "source_fingerprint": "9516813e06a2d222",
             "success": true,
             "raw_count": 31,
             "newest_published_at": "2026-07-16T22:00:00+00:00",
@@ -4010,10 +4010,10 @@
         ],
         "eu_dg_home": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "75758997f2eb1f38",
+            "source_fingerprint": "d9b78b1f56401cf4",
             "success": true,
             "raw_count": 10,
             "newest_published_at": "2026-07-17T12:00:00+00:00",
@@ -4027,10 +4027,10 @@
         ],
         "eu_eeas": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "a682628b656639aa",
+            "source_fingerprint": "38d88574e7b95f8e",
             "success": true,
             "raw_count": 64,
             "newest_published_at": "2026-07-01T22:00:00+00:00",
@@ -4044,10 +4044,10 @@
         ],
         "fr_culture": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "cfcbb5cbacf39ce3",
+            "source_fingerprint": "88e0a9d7433aeaae",
             "success": true,
             "raw_count": 15,
             "newest_published_at": "2026-07-17T00:00:00+00:00",
@@ -4061,10 +4061,10 @@
         ],
         "fr_dinum": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "b09e744dc935b248",
+            "source_fingerprint": "5d6a542f72ac3d78",
             "success": true,
             "raw_count": 1,
             "newest_published_at": "",
@@ -4078,10 +4078,10 @@
         ],
         "de_bbk": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "eb477c31f64b5b16",
+            "source_fingerprint": "51069799ca41de6a",
             "success": true,
             "raw_count": 3,
             "newest_published_at": "2026-06-12T06:47:47+00:00",
@@ -4095,10 +4095,10 @@
         ],
         "ie_dete": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "551c6009452c7778",
+            "source_fingerprint": "1655fcb396f7b3b0",
             "success": true,
             "raw_count": 12,
             "newest_published_at": "2026-06-25T23:00:00+00:00",
@@ -4112,10 +4112,10 @@
         ],
         "ie_research_ireland": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "33bb655eef3efa27",
+            "source_fingerprint": "72a32795ee6b6df7",
             "success": true,
             "raw_count": 186,
             "newest_published_at": "2026-07-06T16:10:29+00:00",
@@ -4129,10 +4129,10 @@
         ],
         "eu_eurohpc": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "2f29ed113244a19e",
+            "source_fingerprint": "39f93e83baf09b8b",
             "success": true,
             "raw_count": 10,
             "newest_published_at": "2026-07-16T12:00:00+00:00",
@@ -4146,10 +4146,10 @@
         ],
         "eu_chips_ju": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "cdc4ab2a75de8d65",
+            "source_fingerprint": "23e6f137d991a5b7",
             "success": true,
             "raw_count": 1,
             "newest_published_at": "",
@@ -4163,10 +4163,10 @@
         ],
         "eu_sns_ju": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "0d0f563e7a2f15cb",
+            "source_fingerprint": "e19a4b52be8b23e2",
             "success": true,
             "raw_count": 281,
             "newest_published_at": "2026-07-16T16:08:14+00:00",
@@ -4180,27 +4180,27 @@
         ],
         "fr_cea_list": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "4cc041b3af463eee",
-            "success": false,
-            "raw_count": 0,
-            "newest_published_at": "",
+            "source_fingerprint": "09923903924d4da2",
+            "success": true,
+            "raw_count": 5,
+            "newest_published_at": "2026-06-10T12:53:04+00:00",
             "in_range_count": 0,
-            "freshness_lag_days": 0.0,
-            "parse_status": "failed",
-            "freshness_status": "unknown",
+            "freshness_lag_days": 39.13,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
             "baseline_failure": false,
-            "health_status": "attention"
+            "health_status": "healthy"
           }
         ],
         "fr_campus_cyber": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "fc0a97e58060a12d",
+            "source_fingerprint": "9955477e0d15e66c",
             "success": true,
             "raw_count": 10,
             "newest_published_at": "2026-07-16T14:34:31+00:00",
@@ -4214,10 +4214,10 @@
         ],
         "fr_institut_montaigne": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "1c9377a437de8541",
+            "source_fingerprint": "c496a220fdde3aa1",
             "success": true,
             "raw_count": 35,
             "newest_published_at": "2026-07-16T14:56:17+00:00",
@@ -4231,10 +4231,10 @@
         ],
         "de_athene": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "785f4a789c2aa9f7",
+            "source_fingerprint": "d43df769675b1191",
             "success": true,
             "raw_count": 6,
             "newest_published_at": "2026-07-09T10:05:00+00:00",
@@ -4248,10 +4248,10 @@
         ],
         "de_interface": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "8f0b3ca796649b87",
+            "source_fingerprint": "f375dcb6b482a4e1",
             "success": true,
             "raw_count": 12,
             "newest_published_at": "",
@@ -4265,10 +4265,10 @@
         ],
         "de_swp": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "c950f9d83936a592",
+            "source_fingerprint": "e6f2595bb088c081",
             "success": true,
             "raw_count": 12,
             "newest_published_at": "2026-06-30T22:00:00+00:00",
@@ -4282,10 +4282,10 @@
         ],
         "ie_ceadar": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "24311fd21f17d442",
+            "source_fingerprint": "90cb24baf2157a41",
             "success": true,
             "raw_count": 6,
             "newest_published_at": "2026-07-03T11:23:04+00:00",
@@ -4299,10 +4299,10 @@
         ],
         "ie_insight": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "efabcb8a43ae7797",
+            "source_fingerprint": "acb5d4d2217d1081",
             "success": true,
             "raw_count": 508,
             "newest_published_at": "2026-07-02T08:47:28+00:00",
@@ -4316,10 +4316,10 @@
         ],
         "ie_esri": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "82ba2f85b3dbd5c3",
+            "source_fingerprint": "692c45fd62ceed4f",
             "success": true,
             "raw_count": 36,
             "newest_published_at": "2026-07-16T10:18:04+00:00",
@@ -4333,10 +4333,10 @@
         ],
         "ie_tyndall": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "bc2dad19d69d4b36",
+            "source_fingerprint": "0d55698d5cb6a8cd",
             "success": true,
             "raw_count": 10,
             "newest_published_at": "2026-07-16T07:39:34+00:00",
@@ -4350,10 +4350,10 @@
         ],
         "ie_cyber_ireland": [
           {
-            "run_id": "69ce4e91f6c1468590ad0f7072eb1182",
-            "recorded_at": "2026-07-19T01:49:54.669196+00:00",
+            "run_id": "6c4c2293eed4458c91c855d6fc385525",
+            "recorded_at": "2026-07-19T02:00:14.961411+00:00",
             "observation_key": "c47f5281dac75364",
-            "source_fingerprint": "37ff36e8bc96bc53",
+            "source_fingerprint": "3d24fd7ef1d99265",
             "success": true,
             "raw_count": 12,
             "newest_published_at": "2026-07-17T13:53:43+00:00",
