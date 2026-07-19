@@ -350,7 +350,13 @@ async def _run_pipeline_async(
             manifest=summary_output,
         )
 
-    if health_write:
+    degraded = [
+        status.source_id
+        for status in statuses
+        if status.critical and (not status.success or status.health_status == "degraded")
+    ]
+    state_write_eligible = _state_write_eligible(statuses, quality_failures)
+    if health_write and state_write_eligible:
         assess_and_record_health(
             statuses,
             selected,
@@ -362,12 +368,22 @@ async def _run_pipeline_async(
             write=True,
         )
 
-    state_ready_temporary = state_ready.with_suffix(".tmp")
-    state_ready_temporary.write_text(
-        f'{{"run_id":"{run_id}","manifest":"{summary_output.name}"}}\n',
-        encoding="utf-8",
-    )
-    state_ready_temporary.replace(state_ready)
+    if state_write_eligible:
+        state_ready_temporary = state_ready.with_suffix(".tmp")
+        state_ready_temporary.write_text(
+            f'{{"run_id":"{run_id}","manifest":"{summary_output.name}"}}\n',
+            encoding="utf-8",
+        )
+        state_ready_temporary.replace(state_ready)
+    else:
+        emit_event(
+            "state_update_skipped",
+            run_id=run_id,
+            stage="state",
+            error_code="RUN_NOT_BASELINE_ELIGIBLE",
+            quality_failure_count=len(quality_failures),
+            degraded_sources=degraded,
+        )
 
     emit_event(
         "artifact_bundle_published",
@@ -378,11 +394,6 @@ async def _run_pipeline_async(
         article_count=len(articles),
     )
 
-    degraded = [
-        status.source_id
-        for status in statuses
-        if status.critical and (not status.success or status.health_status == "degraded")
-    ]
     if translation.success_rate < 0.95:
         print(f"[warning] 標題翻譯成功率：{translation.success_rate:.1%}", file=sys.stderr)
     if degraded:
@@ -459,6 +470,15 @@ def _quality_failures(statuses: list[SourceStatus], args: argparse.Namespace) ->
             }
         )
     return failures
+
+
+def _state_write_eligible(statuses: list[SourceStatus], quality_failures: list[dict[str, str]]) -> bool:
+    if quality_failures:
+        return False
+    return not any(
+        status.critical and (not status.success or status.health_status == "degraded")
+        for status in statuses
+    )
 
 
 def _health_observation_key(
