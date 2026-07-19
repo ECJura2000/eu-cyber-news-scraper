@@ -45,7 +45,7 @@ include-package-data = true
 where = ["src"]
 
 [tool.setuptools.package-data]
-eu_cyber_news_scraper = ["sources.toml", "authority_coverage.toml"]
+eu_cyber_news_scraper = ["sources.toml", "authority_coverage.toml", "certificates/*.pem"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

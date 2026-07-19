@@ -450,6 +450,7 @@ detail_pages = 12
 
 [[sources]]
 id = "ie_dpc"
+tls_intermediate_bundle = "sectigo-dv-r36.pem"
 country = "IE"
 name_zh = "愛爾蘭資料保護委員會"
 name = "Data Protection Commission"
@@ -702,6 +703,7 @@ detail_pages = 10
 
 [[sources]]
 id = "fr_cea_list"
+tls_intermediate_bundle = "geant-tls-rsa-1.pem"
 country = "FR"
 name_zh = "法國原子能暨替代能源署 CEA-List"
 name = "CEA-List"

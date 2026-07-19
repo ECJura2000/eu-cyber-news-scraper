@@ -76,6 +76,7 @@ def load_sources(path: str | Path | None = None) -> tuple[Source, ...]:
                 date_evidence_url=str(row.get("date_evidence_url", "")),
                 date_reviewed_on=str(row.get("date_reviewed_on", "")),
                 date_review_due=str(row.get("date_review_due", "")),
+                tls_intermediate_bundle=str(row.get("tls_intermediate_bundle", "")),
             )
         )
     _validate_sources(sources)
@@ -114,6 +115,10 @@ def _validate_sources(sources: list[Source]) -> None:
             ]
             if missing:
                 raise ValueError(f"{source.id}: {source.date_policy} date policy requires {', '.join(missing)}")
+        if source.tls_intermediate_bundle:
+            bundle = Path(__file__).with_name("certificates") / source.tls_intermediate_bundle
+            if Path(source.tls_intermediate_bundle).name != source.tls_intermediate_bundle or not bundle.is_file():
+                raise ValueError(f"{source.id}: unknown TLS intermediate bundle: {source.tls_intermediate_bundle}")
         try:
             ZoneInfo(source.timezone)
         except ZoneInfoNotFoundError as exc:

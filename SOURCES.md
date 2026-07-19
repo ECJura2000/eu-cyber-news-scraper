@@ -37,7 +37,7 @@
 | `fr_viginum` | VIGINUM／SGDSN | 外國數位干預與資訊操縱防制 | [Actualités](https://www.sgdsn.gouv.fr/viginum/actualites) |
 | `fr_culture` | Ministère de la Culture／CSPLA | 著作權、AI 與媒體政策 | [Communiqués](https://www.culture.gouv.fr/presse/communiques-de-presse) |
 | `fr_dinum` | DINUM | 數位政府、FranceConnect 與開放資料 | [Espace presse](https://www.numerique.gouv.fr/sinformer/espace-presse/) |
-| `fr_cea_list` | CEA-List | AI、產品資安、半導體及數位系統公立研究機構 | [News](https://list.cea.fr/en/news/) |
+| `fr_cea_list` | CEA-List | AI、產品資安、半導體及數位系統公立研究機構 | [News](https://list.cea.fr/en/news/)（公開 GEANT intermediate 補鏈，維持 TLS 驗證） |
 | `fr_campus_cyber` | Campus Cyber | 國家倡議的資安公私協力平台 | [Actualités](https://campuscyber.fr/) |
 | `fr_institut_montaigne` | Institut Montaigne | 私人非營利政策智庫；AI、數位治理與競爭 | [Expressions](https://www.institutmontaigne.org/expressions) |
 
@@ -64,7 +64,7 @@
 | --- | --- | --- | --- |
 | `ie_ncsc` | NCSC Ireland | 國家資安主管機關與 CSIRT | [News & Advisories](https://www.ncsc.gov.ie/news/) |
 | `ie_comreg` | ComReg | 法定獨立監理機關；數位基礎設施等 NIS2 主管機關 | [News](https://www.comreg.ie/news/) |
-| `ie_dpc` | Data Protection Commission | 獨立資料保護監理機關 | [Press Releases](https://dataprotection.ie/en/news-media/press-releases?page=0) |
+| `ie_dpc` | Data Protection Commission | 獨立資料保護監理機關 | [Press Releases](https://dataprotection.ie/en/news-media/press-releases?page=0)（公開 Sectigo intermediate 補鏈，維持 TLS 驗證） |
 | `ie_nsai` | NSAI | 法定標準及合格評定機構 | [News](https://www.nsai.ie/about/news/) |
 | `ie_adapt` | ADAPT Centre | 國家資助公共研究中心 | [News and Events](https://www.adaptcentre.ie/news-and-events/) |
 | `ie_cnam` | Coimisiún na Meán | 數位服務、平台安全、媒體多元與反資訊操縱 | [News](https://www.cnam.ie/news-and-publications/news/) |

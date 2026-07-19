@@ -287,7 +287,10 @@ async def _get_source_response(
     source: Source,
     stats: HttpStats,
 ) -> httpx.Response:
-    response = await client.get(url, stats=stats)
+    if source.tls_intermediate_bundle:
+        response = await client.get(url, stats=stats, ssl_bundle=source.tls_intermediate_bundle)
+    else:
+        response = await client.get(url, stats=stats)
     final_url = str(response.url)
     if not _same_allowed_host(final_url, source):
         raise RedirectDomainError(f"redirect target is outside source allow_domains: {final_url}")

@@ -4,6 +4,7 @@ import asyncio
 import ssl
 import zlib
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Protocol
 from urllib.parse import urlsplit
 
@@ -53,20 +54,18 @@ class HttpClient:
         self._global_limiter = asyncio.Semaphore(max_connections)
         self._per_host_limit = per_host
         self._host_limiters: dict[str, asyncio.Semaphore] = {}
-        self._client = httpx.AsyncClient(
-            headers={
-                "User-Agent": USER_AGENT,
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-                "Accept-Language": "en,fr,de;q=0.9",
-                # Several public-sector CDNs mislabel compressed payloads.
-                # Requesting identity encoding keeps streaming size checks reliable.
-                "Accept-Encoding": "identity",
-            },
-            follow_redirects=True,
-            verify=truststore.SSLContext(ssl.PROTOCOL_TLS_CLIENT),
-            limits=httpx.Limits(max_connections=max_connections, max_keepalive_connections=max_connections),
-            transport=transport,
-        )
+        self._headers = {
+            "User-Agent": USER_AGENT,
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en,fr,de;q=0.9",
+            # Several public-sector CDNs mislabel compressed payloads.
+            # Requesting identity encoding keeps streaming size checks reliable.
+            "Accept-Encoding": "identity",
+        }
+        self._limits = httpx.Limits(max_connections=max_connections, max_keepalive_connections=max_connections)
+        self._transport = transport
+        self._client = self._new_client(truststore.SSLContext(ssl.PROTOCOL_TLS_CLIENT))
+        self._special_clients: dict[str, httpx.AsyncClient] = {}
 
     async def __aenter__(self) -> HttpClient:
         return self
@@ -76,8 +75,15 @@ class HttpClient:
 
     async def aclose(self) -> None:
         await self._client.aclose()
+        await asyncio.gather(*(client.aclose() for client in self._special_clients.values()))
 
-    async def get(self, url: str, *, stats: HttpStats | None = None) -> httpx.Response:
+    async def get(
+        self,
+        url: str,
+        *,
+        stats: HttpStats | None = None,
+        ssl_bundle: str = "",
+    ) -> httpx.Response:
         metrics = stats or HttpStats()
         host = (urlsplit(url).hostname or "").casefold()
         host_limiter = self._host_limiters.setdefault(host, asyncio.Semaphore(self._per_host_limit))
@@ -87,7 +93,7 @@ class HttpClient:
             metrics.request_count += 1
             try:
                 async with self._global_limiter, host_limiter:
-                    response = await self._read_response(url)
+                    response = await self._read_response(url, self._client_for_bundle(ssl_bundle))
                 metrics.statuses.append(str(response.status_code))
                 metrics.bytes_downloaded += len(response.content)
                 if response.status_code not in RETRYABLE_STATUSES or attempt == 1:
@@ -109,9 +115,25 @@ class HttpClient:
         assert last_error is not None
         raise last_error
 
-    async def _read_response(self, url: str) -> httpx.Response:
+    def _new_client(self, verify: ssl.SSLContext) -> httpx.AsyncClient:
+        return httpx.AsyncClient(
+            headers=self._headers,
+            follow_redirects=True,
+            verify=verify,
+            limits=self._limits,
+            transport=self._transport,
+        )
+
+    def _client_for_bundle(self, bundle: str) -> httpx.AsyncClient:
+        if not bundle:
+            return self._client
+        if bundle not in self._special_clients:
+            self._special_clients[bundle] = self._new_client(_ssl_context_with_intermediate(bundle))
+        return self._special_clients[bundle]
+
+    async def _read_response(self, url: str, client: httpx.AsyncClient) -> httpx.Response:
         timeout = httpx.Timeout(self.timeout, connect=min(8, self.timeout))
-        async with self._client.stream("GET", url, timeout=timeout) as streamed:
+        async with client.stream("GET", url, timeout=timeout) as streamed:
             content_length = streamed.headers.get("content-length")
             try:
                 declared_size = int(content_length) if content_length else 0
@@ -156,6 +178,17 @@ class HttpClient:
                 content=b"".join(chunks),
                 request=streamed.request,
             )
+
+
+def _ssl_context_with_intermediate(bundle: str) -> ssl.SSLContext:
+    if Path(bundle).name != bundle:
+        raise ValueError(f"invalid TLS intermediate bundle: {bundle}")
+    certificate = Path(__file__).with_name("certificates") / bundle
+    if not certificate.is_file():
+        raise ValueError(f"unknown TLS intermediate bundle: {bundle}")
+    context = truststore.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+    context.load_verify_locations(cafile=str(certificate))
+    return context
 
 
 def _content_decoder(encoding: str) -> _Decoder | None:
