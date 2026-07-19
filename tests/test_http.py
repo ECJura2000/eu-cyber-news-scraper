@@ -4,7 +4,7 @@ import gzip
 import httpx
 import pytest
 
-from eu_cyber_news_scraper.http import HttpClient, HttpStats, ResponseTooLargeError
+from eu_cyber_news_scraper.http import HttpClient, HttpStats, ResponseTooLargeError, _ssl_context_with_intermediate
 
 
 class AsyncBytes(httpx.AsyncByteStream):
@@ -40,6 +40,25 @@ def test_http_client_reuses_async_client_and_records_metrics():
     assert stats.request_count == 2
     assert stats.bytes_downloaded == 4
     assert stats.statuses == ["200", "200"]
+
+
+def test_http_client_reuses_source_specific_verified_context():
+    async def handler(request):
+        return httpx.Response(200, content=b"ok", request=request)
+
+    async def run():
+        async with HttpClient(transport=httpx.MockTransport(handler)) as client:
+            await client.get("https://dataprotection.ie/one", ssl_bundle="sectigo-dv-r36.pem")
+            await client.get("https://dataprotection.ie/two", ssl_bundle="sectigo-dv-r36.pem")
+            return len(client._special_clients)
+
+    assert asyncio.run(run()) == 1
+
+
+def test_tls_intermediate_bundle_rejects_unknown_or_nested_paths():
+    for name in ("missing.pem", "../sectigo-dv-r36.pem"):
+        with pytest.raises(ValueError):
+            _ssl_context_with_intermediate(name)
 
 
 def test_http_client_retries_once_for_idempotent_server_failure(monkeypatch):

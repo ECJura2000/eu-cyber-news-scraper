@@ -37,6 +37,8 @@ class Source:
     date_evidence_url: str = ""
     date_reviewed_on: str = ""
     date_review_due: str = ""
+    tls_intermediate_bundle: str = ""
+
     @property
     def display_name(self) -> str:
         return f"{self.name_zh}（{self.name}）"

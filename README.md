@@ -103,6 +103,7 @@ python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95
 - 官方首頁、新聞列表、已知 RSS／Atom
 - 允許網域、文章網址規則、排除規則
 - IANA 時區、卡片／連結／標題／日期／摘要 CSS selector、具名 parser adapter
+- 僅限官方伺服器缺漏鏈結時使用的公開 issuer intermediate bundle；仍維持 hostname 與憑證驗證
 - `required`、`best_effort`、`unavailable` 日期政策及例外理由、證據、查核日與複查期限
 - 是否為必要來源、最多補抓多少篇內頁
 - 跨年度新聞網址、分頁格式、最多頁數及健康基線觀察次數

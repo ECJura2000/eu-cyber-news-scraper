@@ -35,6 +35,7 @@ def source_config_fingerprint(source: Source) -> str:
         "summary_selectors": source.summary_selectors,
         "parser_adapter": source.parser_adapter,
         "date_policy": source.date_policy,
+        "tls_intermediate_bundle": source.tls_intermediate_bundle,
     }
     return health_profile_fingerprint(values)
 
