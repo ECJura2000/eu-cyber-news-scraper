@@ -1,6 +1,36 @@
 {
   "schema_version": 3,
   "translations": {
+    "fr\u0000Agents d’IA : l’Autorité de la concurrence rend son avis sur le fonctionnement concurrentiel du secteur des agents d’intelligence artificielle": {
+      "text": "人工智慧代理：競爭管理局就人工智慧代理產業的競爭運作發表意見",
+      "provider": "googletrans",
+      "created_at": "2026-07-19T01:49:54.444114+00:00",
+      "last_accessed_at": "2026-07-19T01:49:54.444114+00:00"
+    },
+    "en\u0000EDPB calls for legal basis for cross-regulatory information sharing | European Data Protection Board": {
+      "text": "EDP​​ 呼籲為跨監管資訊共享提供法律依據 |歐洲資料保護委員會",
+      "provider": "googletrans",
+      "created_at": "2026-07-19T01:49:54.444114+00:00",
+      "last_accessed_at": "2026-07-19T01:49:54.444114+00:00"
+    },
+    "fr\u0000Intelligence artificielle\n                   \n \n \n \n « Notre IA » : Inria contribue au déploiement d'une IA de confiance dans les services publics \n \n \n \n 15/07/2026": {
+      "text": "人工智慧「我們的人工智慧」：Inria 致力於在公共服務中部署可信任人工智慧\n \n \n \n 2026年7月15日",
+      "provider": "googletrans",
+      "created_at": "2026-07-19T01:49:54.444114+00:00",
+      "last_accessed_at": "2026-07-19T01:49:54.444114+00:00"
+    },
+    "fr\u00006–10 juillet 2026\n                   \n \n \n \n \n \n \n Une summer school internationale dédiée à l'IA pour l'interaction humain-robot au Centre Inria de l'Université de Lorraine": {
+      "text": "2026 年 7 月 6 日至 10 日\n                   \n \n \n \n \n \n \n 洛林大學 Inria 中心一所致力於人工智慧人機互動的國際暑期學校",
+      "provider": "googletrans",
+      "created_at": "2026-07-19T01:49:54.444114+00:00",
+      "last_accessed_at": "2026-07-19T01:49:54.444114+00:00"
+    },
+    "fr\u0000Quatre auteurs reçoivent le deuxième prix CNIL/EHESS pour leur recherche sur la réception du règlement IA par les citoyens européens": {
+      "text": "四位作者因其關於歐洲公民接受人工智慧監管的研究而獲得第二屆 CNIL/EHESS 獎",
+      "provider": "googletrans",
+      "created_at": "2026-07-19T01:49:54.444114+00:00",
+      "last_accessed_at": "2026-07-19T01:49:54.444114+00:00"
+    },
     "en\u0000Commission provides guidance to Google for AI interoperability on Android and sharing of Google Search data under the Digital Markets Act": {
       "text": "委員會根據《數位市場法》向谷歌提供 Android 上人工智慧互通性以及共享谷歌搜尋資料的指導",
       "provider": "googletrans",
