@@ -49,7 +49,11 @@ detail_pages = 12
 
 [[sources]]
 id = "eu_cert_threat"
-date_optional = true
+date_policy = "best_effort"
+date_exception_reason = "Threat reports do not expose a consistent machine-readable publication date on every listing card."
+date_evidence_url = "https://cert.europa.eu/publications/threat-intelligence/"
+date_reviewed_on = "2026-07-18"
+date_review_due = "2027-01-31"
 country = "EU"
 name_zh = "歐盟機構電腦緊急應變小組（威脅情資）"
 name = "CERT-EU Threat Intelligence"
@@ -194,12 +198,16 @@ homepage = "https://www.arcep.fr/"
 listing_url = "https://www.arcep.fr/actualites/actualites-et-communiques.html"
 allow_domains = ["arcep.fr", "www.arcep.fr"]
 include_patterns = ['/actualites/.+']
-exclude_patterns = ['actualites-et-communiques\.html$']
+exclude_patterns = ['actualites-et-communiques\.html$', '/actualites/agenda-et-evenements\.html$']
 detail_pages = 10
 
 [[sources]]
 id = "fr_inria"
-date_optional = true
+date_policy = "best_effort"
+date_exception_reason = "The research listing mixes dated releases with evergreen institutional content."
+date_evidence_url = "https://www.inria.fr/fr/actualites-recherche-savoir-numerique"
+date_reviewed_on = "2026-07-18"
+date_review_due = "2027-01-31"
 country = "FR"
 name_zh = "法國國家資訊與自動化研究院"
 name = "Institut national de recherche en sciences et technologies du numérique"
@@ -302,7 +310,7 @@ detail_pages = 10
 
 [[sources]]
 id = "de_bnetza"
-date_optional = true
+date_policy = "required"
 country = "DE"
 name_zh = "德國聯邦網路管理局"
 name = "Bundesnetzagentur"
@@ -313,11 +321,18 @@ listing_url = "https://www.bundesnetzagentur.de/DE/Allgemeines/Presse/Pressemitt
 allow_domains = ["bundesnetzagentur.de", "www.bundesnetzagentur.de"]
 include_patterns = ['/SharedDocs/Pressemitteilungen/DE/.+\.html(?:\?.*)?$']
 exclude_patterns = ['/Presse/Pressemitteilungen/start\.html$']
+card_selectors = ["table.textualData tbody tr"]
+link_selectors = ["a.titleLink"]
+date_selectors = ["td:first-child"]
 detail_pages = 10
 
 [[sources]]
 id = "de_fraunhofer_aisec"
-date_optional = true
+date_policy = "best_effort"
+date_exception_reason = "The listing contains event and release cards with inconsistent date markup."
+date_evidence_url = "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen.html"
+date_reviewed_on = "2026-07-18"
+date_review_due = "2027-01-31"
 country = "DE"
 name_zh = "德國弗勞恩霍夫應用暨整合安全研究所"
 name = "Fraunhofer Institute for Applied and Integrated Security AISEC"
@@ -334,7 +349,11 @@ detail_pages = 12
 
 [[sources]]
 id = "de_cispa"
-date_optional = true
+date_policy = "best_effort"
+date_exception_reason = "The current news layout does not expose a stable date field for every card."
+date_evidence_url = "https://cispa.de/en/news-and-events/all-news"
+date_reviewed_on = "2026-07-18"
+date_review_due = "2027-01-31"
 country = "DE"
 name_zh = "德國 CISPA 亥姆霍茲資訊安全中心"
 name = "CISPA Helmholtz Center for Information Security"
@@ -349,7 +368,7 @@ detail_pages = 10
 
 [[sources]]
 id = "de_bfdi"
-date_optional = true
+date_policy = "required"
 country = "DE"
 name_zh = "德國聯邦資料保護與資訊自由專員"
 name = "Bundesbeauftragte für den Datenschutz und die Informationsfreiheit"
@@ -360,11 +379,14 @@ listing_url = "https://www.bfdi.bund.de/DE/BfDI/Presse/Pressemitteilungen/presse
 allow_domains = ["bfdi.bund.de", "www.bfdi.bund.de"]
 include_patterns = ['/SharedDocs/Pressemitteilungen/DE/.+\.html(?:\?.*)?$']
 exclude_patterns = ['pressemitteilungen_node\.html$']
+card_selectors = ["table.textualData tbody tr"]
+link_selectors = ["td:nth-child(2) a"]
+date_selectors = ["td:first-child"]
 detail_pages = 12
 
 [[sources]]
 id = "de_bundeskartellamt"
-date_optional = true
+date_policy = "required"
 country = "DE"
 name_zh = "德國聯邦卡特爾局"
 name = "Bundeskartellamt"
@@ -374,6 +396,10 @@ homepage = "https://www.bundeskartellamt.de/"
 listing_url = "https://www.bundeskartellamt.de/DE/Home/home_node.html"
 allow_domains = ["bundeskartellamt.de", "www.bundeskartellamt.de"]
 include_patterns = ['/SharedDocs/Meldung/DE/Pressemitteilungen/.+\.html(?:\?.*)?$']
+card_selectors = ["div.c-teaser"]
+link_selectors = [".c-teaser__link-wrapper a"]
+title_selectors = [".c-teaser__headline"]
+date_selectors = [".c-topline__item:last-child"]
 detail_pages = 12
 
 [[sources]]
@@ -429,11 +455,15 @@ name_zh = "愛爾蘭資料保護委員會"
 name = "Data Protection Commission"
 institution_type = "獨立監理機關"
 language = "en"
-homepage = "https://www.dataprotection.ie/"
-listing_url = "https://www.dataprotection.ie/en/news-media/latest-news"
+homepage = "https://dataprotection.ie/"
+listing_url = "https://dataprotection.ie/en/news-media/press-releases?page=0"
 allow_domains = ["dataprotection.ie", "www.dataprotection.ie"]
-include_patterns = ['^/en/news-media/(?:latest-news|press-releases)/[^/?]+/?$', '^/en/news-media/[^/?]+/?$']
+include_patterns = ['^/en/news-media/(?:latest-news|press-releases)/[^/?]+/?$', '^/en/news-media/[^/?]+/?$', '^/en/[^/?]+/?$']
 exclude_patterns = ['^/en/news-media/(?:latest-news|press-releases|contact-us|consultations)/?(?:\?.*)?$']
+card_selectors = ["article.node--type-article"]
+link_selectors = ["h2 a[rel='bookmark']"]
+date_selectors = ["p.date"]
+summary_selectors = [".node__content"]
 detail_pages = 10
 
 [[sources]]
@@ -529,7 +559,11 @@ detail_pages = 12
 
 [[sources]]
 id = "eu_eeas"
-date_optional = true
+date_policy = "best_effort"
+date_exception_reason = "The press-material listing mixes several card variants with inconsistent visible dates."
+date_evidence_url = "https://www.eeas.europa.eu/eeas/press-material_en"
+date_reviewed_on = "2026-07-18"
+date_review_due = "2027-01-31"
 country = "EU"
 name_zh = "歐盟對外事務部"
 name = "European External Action Service"
@@ -560,7 +594,11 @@ detail_pages = 12
 
 [[sources]]
 id = "fr_dinum"
-date_optional = true
+date_policy = "best_effort"
+date_exception_reason = "The press page does not expose a stable publication-date selector for every item."
+date_evidence_url = "https://www.numerique.gouv.fr/sinformer/espace-presse/"
+date_reviewed_on = "2026-07-18"
+date_review_due = "2027-01-31"
 country = "FR"
 name_zh = "法國跨部會數位總局"
 name = "Direction interministérielle du numérique"
@@ -632,7 +670,11 @@ detail_pages = 12
 
 [[sources]]
 id = "eu_chips_ju"
-date_optional = true
+date_policy = "best_effort"
+date_exception_reason = "Legacy NewsDetails entries do not consistently expose machine-readable publication dates."
+date_evidence_url = "https://www.chips-ju.europa.eu/News/"
+date_reviewed_on = "2026-07-18"
+date_review_due = "2027-01-31"
 country = "EU"
 name_zh = "歐洲晶片聯合事業"
 name = "Chips Joint Undertaking"
@@ -718,7 +760,11 @@ detail_pages = 10
 
 [[sources]]
 id = "de_interface"
-date_optional = true
+date_policy = "best_effort"
+date_exception_reason = "Publication cards use multiple templates and some dates are only available on detail pages."
+date_evidence_url = "https://www.interface-eu.org/publications"
+date_reviewed_on = "2026-07-18"
+date_review_due = "2027-01-31"
 country = "DE"
 name_zh = "德國 Interface 科技政策智庫"
 name = "interface - Tech analysis and policy ideas for Europe"
@@ -733,7 +779,11 @@ detail_pages = 10
 
 [[sources]]
 id = "de_swp"
-date_optional = true
+date_policy = "best_effort"
+date_exception_reason = "The dossier page aggregates publications with inconsistent date presentation."
+date_evidence_url = "https://www.swp-berlin.org/themen/dossiers/cybersicherheit-und-digitalpolitik-die-rolle-des-digitalen-in-der-internationalen-politik"
+date_reviewed_on = "2026-07-18"
+date_review_due = "2027-01-31"
 country = "DE"
 name_zh = "德國國際暨安全事務研究所"
 name = "Stiftung Wissenschaft und Politik"
@@ -776,7 +826,11 @@ detail_pages = 10
 
 [[sources]]
 id = "ie_esri"
-date_optional = true
+date_policy = "best_effort"
+date_exception_reason = "The news archive mixes content types and does not expose a uniform date field on every card."
+date_evidence_url = "https://www.esri.ie/news"
+date_reviewed_on = "2026-07-18"
+date_review_due = "2027-01-31"
 country = "IE"
 name_zh = "愛爾蘭經濟社會研究所"
 name = "Economic and Social Research Institute"
@@ -815,8 +869,12 @@ institution_type = "國家資助資安產業公私協力群聚"
 language = "en"
 homepage = "https://cyberireland.ie/"
 listing_url = "https://cyberireland.ie/news/"
+feed_urls = ["https://cyberireland.ie/feed/"]
 yearly_listing_url = "https://cyberireland.ie/blog-{year}/"
 allow_domains = ["cyberireland.ie"]
 include_patterns = ['^/[a-z0-9][a-z0-9-]{12,}/$']
 exclude_patterns = ['^/(building-the-community-2|business-growth-2|develop-the-workforce|promotion-and-advocacy|membership-2|event-calendar|about-us|blog-20\d{2})/?$']
+card_selectors = ["article.elementor-post"]
+link_selectors = ["h3.elementor-post__title a"]
+date_selectors = [".elementor-post-date"]
 detail_pages = 10

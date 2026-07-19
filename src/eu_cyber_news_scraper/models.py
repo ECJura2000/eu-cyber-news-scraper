@@ -28,11 +28,15 @@ class Source:
     timezone: str = "Europe/Brussels"
     card_selectors: tuple[str, ...] = ()
     link_selectors: tuple[str, ...] = ()
+    title_selectors: tuple[str, ...] = ()
     date_selectors: tuple[str, ...] = ()
     summary_selectors: tuple[str, ...] = ()
     parser_adapter: str = ""
-    date_optional: bool = False
-
+    date_policy: str = "required"
+    date_exception_reason: str = ""
+    date_evidence_url: str = ""
+    date_reviewed_on: str = ""
+    date_review_due: str = ""
     @property
     def display_name(self) -> str:
         return f"{self.name_zh}（{self.name}）"
@@ -94,6 +98,7 @@ class SourceStatus:
     fetch_status: str = "ok"
     health_status: str = "healthy"
     invalid_date_count: int = 0
+    unexplained_future_date_count: int = 0
     timeout_count: int = 0
     parse_status: str = "healthy"
     freshness_status: str = "fresh"
@@ -103,6 +108,7 @@ class SourceStatus:
     retry_count: int = 0
     budget_exhausted: bool = False
     http_statuses: tuple[str, ...] = ()
+    error_code: str = ""
 
 
 @dataclass

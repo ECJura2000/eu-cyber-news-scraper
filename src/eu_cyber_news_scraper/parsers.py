@@ -19,6 +19,9 @@ DATE_SETTINGS = {
     "RETURN_AS_TIMEZONE_AWARE": True,
     "TIMEZONE": "UTC",
     "TO_TIMEZONE": "UTC",
+    # Every configured authority is European; numeric dates such as
+    # 08-04-2026 therefore mean 8 April, not August 4.
+    "DATE_ORDER": "DMY",
     "PREFER_DAY_OF_MONTH": "first",
 }
 
@@ -213,7 +216,14 @@ def parse_listing(html: str, source: Source, base_url: str) -> list[Article]:
             continue
         link_text = plain_text(link.get_text(" "))
         context = _candidate_context(link) if candidate.name == "a" else candidate
-        title_node = context.select_one("h1, h2, h3, h4") if len(link_text) < 8 and context.name != "a" else None
+        title_node = None
+        if source.title_selectors and context.name != "a":
+            title_node = next(
+                (context.select_one(selector) for selector in source.title_selectors if context.select_one(selector)),
+                None,
+            )
+        elif len(link_text) < 8 and context.name != "a":
+            title_node = context.select_one("h1, h2, h3, h4")
         title = plain_text(title_node.get_text(" ") if title_node else link.get_text(" "))
         if len(title) < 8 or _looks_like_navigation_title(title):
             continue

@@ -39,7 +39,9 @@ def test_exporter_creates_required_sheets_and_summary(tmp_path):
         "來源健康狀態",
         "官方來源清單",
         "議題主管機關覆蓋",
+        "_run_metadata",
     ]
+    assert workbook["_run_metadata"].sheet_state == "hidden"
     assert workbook["議題主管機關覆蓋"].max_row == 61
     assert workbook["CRA_CSA_NIS2_CER"].max_row == 2
     assert workbook["全部命中新聞"]["Q2"].value == "《網路韌性法》指引"
@@ -66,4 +68,5 @@ def test_exporter_creates_required_sheets_and_summary(tmp_path):
 
 def test_excel_formula_text_is_escaped():
     assert safe_excel_text("=HYPERLINK(\"bad\")").startswith("'")
+    assert safe_excel_text("control\bcharacter") == "controlcharacter"
     assert safe_excel_text("ordinary title") == "ordinary title"

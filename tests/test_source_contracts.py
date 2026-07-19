@@ -1,41 +1,51 @@
+import hashlib
 import json
-from dataclasses import replace
-from urllib.parse import urljoin
+from pathlib import Path
 
 import pytest
 
 from eu_cyber_news_scraper.config import load_sources
-from eu_cyber_news_scraper.parsers import parse_listing
+from eu_cyber_news_scraper.parsers import allowed_article_url, parse_listing
 
 
 def contract_rows():
-    path = __file__.replace("test_source_contracts.py", "fixtures/source_contracts.json")
-    with open(path, encoding="utf-8") as stream:
-        return json.load(stream)
+    path = Path(__file__).parent / "fixtures" / "source_contracts.json"
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 @pytest.mark.parametrize("row", contract_rows(), ids=lambda row: row["source_id"])
-def test_source_listing_contract(row):
+def test_real_official_url_contract(row):
     source = next(item for item in load_sources() if item.id == row["source_id"])
-    official_url = urljoin(source.homepage, f"contract-fixture/{source.id}")
-    parser_source = replace(source, include_patterns=(), exclude_patterns=())
-    if source.id == "fr_anssi":
-        html = f'<div class="fr-card__content"><h3 class="fr-card__title"><a href="{official_url}">{row["title"]}</a></h3><p class="fr-card__desc">Publié le 3 juillet 2026</p></div>'
-    elif source.id == "de_bsi_news":
-        html = f'<table class="textualData"><tbody><tr><td>05.07.2026</td><td><a href="{official_url}">{row["title"]}</a></td></tr></tbody></table>'
-    elif source.id == "fr_cnil":
-        html = f'<div class="view-content"><div class="views-row"><h3 class="ctn-gen-liste-titre"><a href="{official_url}">{row["title"]}</a></h3><span class="date">3 juillet 2026</span></div></div>'
-    else:
-        html = f'<main><article><h2><a href="{official_url}">{row["title"]}</a></h2><time datetime="2026-07-03">3 July 2026</time><p>Official publication summary.</p></article><a href="{source.listing_url}">Next page</a></main>'
-    articles = parse_listing(html, parser_source, source.listing_url)
+    assert allowed_article_url(source, row["url"])
+    assert row["source_url"].startswith("https://")
+    assert row["captured_at"] == "2026-07-18"
+    digest = hashlib.sha256(f"{row['title']}\n{row['url']}".encode()).hexdigest()
+    assert digest == row["sha256"]
+    assert row["title"].casefold().strip() not in {"next", "next page", "nächste seite", "page suivante"}
+
+
+LAYOUT_CONTRACTS = {
+    "ie_dpc": ("contract_ie_dpc.html", "Data Protection Commission Publishes Annual Report", "2026-06-29"),
+    "ie_cyber_ireland": ("contract_ie_cyber_ireland.html", "AI Changes the Rules of Cybersecurity", "2026-07-16"),
+    "de_bnetza": ("contract_de_bnetza.html", "Digital Services Coordinator", "2026-07-05"),
+    "de_bfdi": ("contract_de_bfdi.html", "datenschutzfreundlicher Altersverifizierung", "2026-06-25"),
+    "de_bundeskartellamt": ("contract_de_bundeskartellamt.html", "RWE-Anteile an Amprion", "2026-07-16"),
+}
+
+
+@pytest.mark.parametrize("source_id", LAYOUT_CONTRACTS)
+def test_high_risk_listing_layout_contract(source_id):
+    fixture_name, expected_title, expected_utc_date = LAYOUT_CONTRACTS[source_id]
+    source = next(item for item in load_sources() if item.id == source_id)
+    html = (Path(__file__).parent / "fixtures" / fixture_name).read_text(encoding="utf-8")
+    articles = parse_listing(html, source, source.listing_url)
     assert len(articles) == 1
-    assert articles[0].title == row["title"]
-    assert articles[0].url.startswith(("http://", "https://"))
-    assert articles[0].published_at is not None
+    assert expected_title in articles[0].title
+    assert articles[0].published_at.date().isoformat() == expected_utc_date
     assert "Next page" not in articles[0].title
 
 
-def test_all_configured_sources_have_one_contract_fixture():
+def test_all_configured_sources_have_one_real_url_contract():
     source_ids = {source.id for source in load_sources()}
     fixture_ids = {row["source_id"] for row in contract_rows()}
     assert len(fixture_ids) == 55

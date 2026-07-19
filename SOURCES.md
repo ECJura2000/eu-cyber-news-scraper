@@ -52,7 +52,7 @@
 | `de_cispa` | CISPA Helmholtz Center | 國家大型資訊安全研究機構 | [News](https://cispa.de/en/news-and-events/all-news) |
 | `de_bfdi` | BfDI | 資料保護、跨境資料與 AI 個資治理 | [Pressemitteilungen](https://www.bfdi.bund.de/DE/BfDI/Presse/Pressemitteilungen/pressemitteilungen_node.html) |
 | `de_bundeskartellamt` | Bundeskartellamt | 數位市場與平台競爭監理 | [Presse](https://www.bundeskartellamt.de/DE/Home/home_node.html) |
-| `de_dpma` | DPMA | 智慧財產權、AI 與著作權政策資訊 | [Pressemitteilungen](https://www.dpma.de/service/presse/pressemitteilungen/index.html) |
+| `de_dpma` | DPMA | 智慧財產權、AI 與著作權政策資訊 | [Pressemitteilungen](https://www.dpma.de/service/presse/pressemitteilungen/archiv/index.html) |
 | `de_bbk` | BBK | 關鍵基礎設施實體韌性、民防與混合威脅 | [Meldungen](https://www.bbk.bund.de/DE/Infothek/Unsere-Meldungen/unsere-meldungen_node.html) |
 | `de_athene` | ATHENE | 國家應用資安聯合研究中心 | [News](https://www.athene-center.de/aktuelles/news) |
 | `de_interface` | Interface | 非營利科技政策智庫；AI、平台、資料、資安與晶片 | [Publications](https://www.interface-eu.org/publications) |
@@ -64,7 +64,7 @@
 | --- | --- | --- | --- |
 | `ie_ncsc` | NCSC Ireland | 國家資安主管機關與 CSIRT | [News & Advisories](https://www.ncsc.gov.ie/news/) |
 | `ie_comreg` | ComReg | 法定獨立監理機關；數位基礎設施等 NIS2 主管機關 | [News](https://www.comreg.ie/news/) |
-| `ie_dpc` | Data Protection Commission | 獨立資料保護監理機關 | [Latest News](https://www.dataprotection.ie/en/news-media/latest-news) |
+| `ie_dpc` | Data Protection Commission | 獨立資料保護監理機關 | [Press Releases](https://dataprotection.ie/en/news-media/press-releases?page=0) |
 | `ie_nsai` | NSAI | 法定標準及合格評定機構 | [News](https://www.nsai.ie/about/news/) |
 | `ie_adapt` | ADAPT Centre | 國家資助公共研究中心 | [News and Events](https://www.adaptcentre.ie/news-and-events/) |
 | `ie_cnam` | Coimisiún na Meán | 數位服務、平台安全、媒體多元與反資訊操縱 | [News](https://www.cnam.ie/news-and-publications/news/) |

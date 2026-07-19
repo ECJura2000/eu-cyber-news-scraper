@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 import asyncio
+import concurrent.futures
 import json
 import multiprocessing as mp
 import os
+import queue
 import re
 import threading
 import time
@@ -230,18 +232,27 @@ def skip_article_title_translation(articles: list[Article]) -> TranslationReport
 
 def _translate_titles(titles: list[str]) -> TranslationResults:
     tracker = _ProviderTracker()
-
     translations = TranslationResults()
-    for title in titles:
-        value = _translate_with_fallback(title, tracker)
-        if _is_translated(title, value):
-            translations[title] = value
+    with _ProviderWorkerPool(_translation_workers()) as workers:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=_translation_workers()) as executor:
+            futures = {
+                executor.submit(_translate_with_fallback, title, tracker, workers.call): title
+                for title in titles
+            }
+            for future, title in ((future, futures[future]) for future in futures):
+                value = future.result()
+                if _is_translated(title, value):
+                    translations[title] = value
     translations.provider_stats = tracker.report()
     translations.providers_by_title = tracker.providers_by_title
     return translations
 
 
-def _translate_with_fallback(title: str, tracker: _ProviderTracker | None = None) -> str:
+def _translate_with_fallback(
+    title: str,
+    tracker: _ProviderTracker | None = None,
+    runner: Callable[[str, Callable[[str], str], str], str] | None = None,
+) -> str:
     providers = (
         ("googletrans", _translate_googletrans),
         ("translate", _translate_translate_module),
@@ -253,7 +264,8 @@ def _translate_with_fallback(title: str, tracker: _ProviderTracker | None = None
         for attempt in range(2):
             started = time.monotonic()
             try:
-                value = _to_taiwan_traditional(_call_provider_with_timeout(provider, title) or "")
+                raw_value = runner(name, provider, title) if runner else _call_provider_with_timeout(provider, title)
+                value = _to_taiwan_traditional(raw_value or "")
             except Exception:
                 value = ""
             succeeded = _is_translated(title, value)
@@ -284,11 +296,15 @@ def _translate_translatepy(title: str) -> str:
 
 
 def _call_provider_with_timeout(provider: Callable[[str], str], title: str) -> str:
-    method = "fork" if "fork" in mp.get_all_start_methods() else "spawn"
-    context: Any = mp.get_context(method)
+    context: Any = mp.get_context("spawn")
     result = context.Queue(maxsize=1)
     process = context.Process(target=_provider_process_target, args=(provider, title, result))
-    process.start()
+    try:
+        process.start()
+    except Exception:
+        result.close()
+        result.join_thread()
+        return ""
     process.join(_translation_timeout())
     try:
         if process.is_alive():
@@ -311,6 +327,99 @@ def _provider_process_target(provider: Callable[[str], str], title: str, result:
         result.put(str(provider(title) or ""))
     except Exception:
         result.put("")
+
+
+class _ProviderWorker:
+    def __init__(self) -> None:
+        self._context: Any = mp.get_context("spawn")
+        self._requests: Any = None
+        self._results: Any = None
+        self._process: Any = None
+        self._start()
+
+    def call(self, provider_name: str, title: str) -> str:
+        task_id = uuid4().hex
+        self._requests.put((task_id, provider_name, title))
+        try:
+            returned_id, value = self._results.get(timeout=_translation_timeout())
+        except queue.Empty:
+            self._restart()
+            return ""
+        if returned_id != task_id:
+            self._restart()
+            return ""
+        return str(value or "")
+
+    def close(self) -> None:
+        if self._process is not None and self._process.is_alive():
+            self._requests.put(None)
+            self._process.join(1)
+        self._stop()
+
+    def _start(self) -> None:
+        self._requests = self._context.Queue()
+        self._results = self._context.Queue()
+        self._process = self._context.Process(
+            target=_provider_worker_target,
+            args=(self._requests, self._results),
+        )
+        self._process.start()
+
+    def _restart(self) -> None:
+        self._stop()
+        self._start()
+
+    def _stop(self) -> None:
+        if self._process is not None and self._process.is_alive():
+            self._process.terminate()
+            self._process.join(1)
+        if self._process is not None and self._process.is_alive():
+            self._process.kill()
+            self._process.join(1)
+        for channel in (self._requests, self._results):
+            if channel is not None:
+                channel.close()
+                channel.join_thread()
+
+
+class _ProviderWorkerPool:
+    def __init__(self, size: int) -> None:
+        self._available: queue.Queue[_ProviderWorker] = queue.Queue()
+        self._workers = [_ProviderWorker() for _ in range(max(1, size))]
+        for worker in self._workers:
+            self._available.put(worker)
+
+    def __enter__(self) -> _ProviderWorkerPool:
+        return self
+
+    def __exit__(self, *_args: object) -> None:
+        for worker in self._workers:
+            worker.close()
+
+    def call(self, provider_name: str, _provider: Callable[[str], str], title: str) -> str:
+        worker = self._available.get()
+        try:
+            return worker.call(provider_name, title)
+        finally:
+            self._available.put(worker)
+
+
+def _provider_worker_target(requests: Any, results: Any) -> None:
+    providers = {
+        "googletrans": _translate_googletrans,
+        "translate": _translate_translate_module,
+        "translatepy": _translate_translatepy,
+    }
+    while True:
+        request = requests.get()
+        if request is None:
+            return
+        task_id, provider_name, title = request
+        try:
+            value = providers[provider_name](title)
+        except Exception:
+            value = ""
+        results.put((task_id, value))
 
 
 def _cache_key(title: str, language: str) -> str:

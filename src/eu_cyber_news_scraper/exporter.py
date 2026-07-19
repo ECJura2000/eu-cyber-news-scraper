@@ -4,6 +4,7 @@ import json
 import math
 import os
 import platform
+import re
 import subprocess
 import tempfile
 from datetime import datetime, timedelta
@@ -52,6 +53,7 @@ ARTICLE_HEADERS = (
 )
 
 FORMULA_PREFIXES = ("=", "+", "-", "@")
+ILLEGAL_XML_CHARACTERS = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f]")
 HIGH_CONFIDENCE_FILL = PatternFill("solid", fgColor="FFC000")
 MEDIUM_CONFIDENCE_FILL = PatternFill("solid", fgColor="FFF2CC")
 LOW_CONFIDENCE_FILL = PatternFill("solid", fgColor="FFFCE6")
@@ -60,6 +62,7 @@ EXCEL_SUMMARY_LIMIT = 500
 
 def safe_excel_text(value: str) -> str:
     """Prevent externally supplied text from being interpreted as a formula."""
+    value = ILLEGAL_XML_CHARACTERS.sub("", value)
     if value.startswith(FORMULA_PREFIXES):
         return f"'{value}"
     return value
@@ -70,6 +73,11 @@ def export_workbook(
     statuses: list[SourceStatus],
     sources: list[Source],
     output_path: str | Path,
+    *,
+    run_id: str = "",
+    period: PeriodSelection | None = None,
+    since: datetime | None = None,
+    until: datetime | None = None,
 ) -> Path:
     path = Path(output_path).expanduser().resolve()
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -107,6 +115,10 @@ def export_workbook(
 
     ws_coverage = wb.create_sheet("議題主管機關覆蓋")
     _write_coverage(ws_coverage, sources)
+
+    ws_metadata = wb.create_sheet("_run_metadata")
+    _write_run_metadata(ws_metadata, run_id, period, since, until, len(articles))
+    ws_metadata.sheet_state = "hidden"
 
     temporary = path.with_name(f"{path.stem}.tmp{path.suffix}")
     try:
@@ -212,7 +224,7 @@ def _write_articles(ws: Any, articles: list[Article], *, highlight_matches: bool
 
 
 def _write_statuses(ws: Any, statuses: list[SourceStatus]) -> None:
-    ws.append(("來源代碼", "國家", "機關", "必要來源", "抓取狀態", "解析狀態", "新鮮度狀態", "內容狀態", "健康狀態", "抓取方式", "抓取頁數", "HTTP 請求", "下載位元組", "重試次數", "HTTP 狀態碼", "預算耗盡", "原始筆數", "期間內筆數", "有日期筆數", "無效未來日期", "逾時次數", "無日期比例", "唯一標題比例", "歷史中位數", "命中筆數", "秒數", "最新日期", "新鮮度落後天數", "健康警示", "抓取警示", "內容結果", "錯誤"))
+    ws.append(("來源代碼", "國家", "機關", "必要來源", "抓取狀態", "解析狀態", "新鮮度狀態", "內容狀態", "健康狀態", "抓取方式", "抓取頁數", "HTTP 請求", "下載位元組", "重試次數", "HTTP 狀態碼", "預算耗盡", "原始筆數", "期間內筆數", "有日期筆數", "無效未來日期", "未解釋未來日期", "逾時次數", "無日期比例", "唯一標題比例", "歷史中位數", "命中筆數", "秒數", "最新日期", "新鮮度落後天數", "健康警示", "抓取警示", "內容結果", "錯誤碼", "錯誤"))
     for status in statuses:
         ws.append(
             (
@@ -236,6 +248,7 @@ def _write_statuses(ws: Any, statuses: list[SourceStatus]) -> None:
                 status.in_range_count,
                 status.dated_count,
                 status.invalid_date_count,
+                status.unexplained_future_date_count,
                 status.timeout_count,
                 status.undated_ratio,
                 status.unique_title_ratio,
@@ -247,14 +260,15 @@ def _write_statuses(ws: Any, statuses: list[SourceStatus]) -> None:
                 " ".join(status.health_alerts),
                 safe_excel_text(status.warning),
                 safe_excel_text(status.content_warning),
+                status.error_code,
                 safe_excel_text(status.error),
             )
         )
-    _style_table(ws, widths=(22, 10, 30, 12, 14, 14, 14, 14, 14, 20, 12, 12, 16, 12, 24, 12, 12, 12, 12, 16, 12, 14, 14, 14, 12, 10, 26, 16, 52, 52, 52, 72))
+    _style_table(ws, widths=(22, 10, 30, 12, 14, 14, 14, 14, 14, 20, 12, 12, 16, 12, 24, 12, 12, 12, 12, 16, 16, 12, 14, 14, 14, 12, 10, 26, 16, 52, 52, 52, 24, 72))
 
 
 def _write_sources(ws: Any, sources: list[Source]) -> None:
-    ws.append(("來源代碼", "國家", "中文名稱", "原文名稱", "機關屬性", "語言", "IANA 時區", "首頁", "新聞入口", "RSS／Atom", "必要來源", "日期可省略", "卡片 selector", "日期 selector", "具名 parser", "健康基線觀察次數", "新鮮度門檻天數"))
+    ws.append(("來源代碼", "國家", "中文名稱", "原文名稱", "機關屬性", "語言", "IANA 時區", "首頁", "新聞入口", "RSS／Atom", "必要來源", "日期政策", "日期例外理由", "日期證據", "日期查核日", "日期複查期限", "卡片 selector", "連結 selector", "標題 selector", "日期 selector", "具名 parser", "健康基線觀察次數", "新鮮度門檻天數"))
     for source in sources:
         ws.append(
             (
@@ -269,8 +283,14 @@ def _write_sources(ws: Any, sources: list[Source]) -> None:
                 source.listing_url,
                 "\n".join(source.feed_urls),
                 "是" if source.critical else "否",
-                "是" if source.date_optional else "否",
+                source.date_policy,
+                safe_excel_text(source.date_exception_reason),
+                source.date_evidence_url,
+                source.date_reviewed_on,
+                source.date_review_due,
                 "\n".join(source.card_selectors),
+                "\n".join(source.link_selectors),
+                "\n".join(source.title_selectors),
                 "\n".join(source.date_selectors),
                 source.parser_adapter,
                 source.observation_runs,
@@ -280,7 +300,7 @@ def _write_sources(ws: Any, sources: list[Source]) -> None:
         for column in (8, 9):
             ws.cell(ws.max_row, column).hyperlink = ws.cell(ws.max_row, column).value
             ws.cell(ws.max_row, column).style = "Hyperlink"
-    _style_table(ws, widths=(22, 10, 28, 42, 18, 10, 22, 50, 64, 64, 12, 12, 40, 40, 20, 18, 18))
+    _style_table(ws, widths=(22, 10, 28, 42, 18, 10, 22, 50, 64, 64, 12, 16, 52, 56, 16, 16, 40, 40, 40, 40, 20, 18, 18))
 
 
 def _write_coverage(ws: Any, sources: list[Source]) -> None:
@@ -302,6 +322,36 @@ def _write_coverage(ws: Any, sources: list[Source]) -> None:
         ws.cell(ws.max_row, 7).hyperlink = row.evidence_urls[0]
         ws.cell(ws.max_row, 7).style = "Hyperlink"
     _style_table(ws, widths=(48, 10, 76, 62, 76, 76, 76, 16))
+
+
+def _write_run_metadata(
+    ws: Any,
+    run_id: str,
+    period: PeriodSelection | None,
+    since: datetime | None,
+    until: datetime | None,
+    article_count: int,
+) -> None:
+    period_payload = period.as_dict() if period else {}
+    rows = {
+        "schema_version": 5,
+        "run_id": run_id,
+        "period_mode": period_payload.get("mode", ""),
+        "normalized_since": period_payload.get("normalized_since", since.date().isoformat() if since else ""),
+        "normalized_until": period_payload.get(
+            "normalized_until",
+            (until - timedelta(microseconds=1)).date().isoformat() if until else "",
+        ),
+        "period_start_utc": period_payload.get("period_start_utc", since.isoformat() if since else ""),
+        "period_end_exclusive_utc": period_payload.get(
+            "period_end_exclusive_utc",
+            until.isoformat() if until else "",
+        ),
+        "article_count": article_count,
+    }
+    ws.append(("key", "value"))
+    for key, value in rows.items():
+        ws.append((key, value))
 
 
 def _style_table(ws: Any, widths: tuple[int, ...], max_row_height: float = 90) -> None:
@@ -329,13 +379,16 @@ def _style_table(ws: Any, widths: tuple[int, ...], max_row_height: float = 90) -
 
 def _verify_workbook(path: Path) -> None:
     workbook = load_workbook(path, read_only=True, data_only=True)
-    required = {
-        "全部命中新聞", "CRA_CSA_NIS2_CER", "官方規範與執法", "研究智庫與公私協力",
-        "來源健康狀態", "官方來源清單", "議題主管機關覆蓋",
-    }
-    missing = required - set(workbook.sheetnames)
-    if missing:
-        raise ValueError(f"Workbook is missing sheets: {', '.join(sorted(missing))}")
+    try:
+        required = {
+            "全部命中新聞", "CRA_CSA_NIS2_CER", "官方規範與執法", "研究智庫與公私協力",
+            "來源健康狀態", "官方來源清單", "議題主管機關覆蓋", "_run_metadata",
+        }
+        missing = required - set(workbook.sheetnames)
+        if missing:
+            raise ValueError(f"Workbook is missing sheets: {', '.join(sorted(missing))}")
+    finally:
+        workbook.close()
 
 
 def write_run_summary(
@@ -354,11 +407,18 @@ def write_run_summary(
     config_path: str | Path | None = None,
     run_profile: dict[str, Any] | None = None,
     artifact_names: list[str] | None = None,
+    artifact_paths: list[str | Path] | None = None,
+    published_output_path: str | Path | None = None,
+    quality_failures: list[dict[str, str]] | None = None,
 ) -> Path:
     workbook_path = Path(output_path).expanduser().resolve()
+    published_workbook = (
+        Path(published_output_path).expanduser().resolve() if published_output_path else workbook_path
+    )
     summary_path = workbook_path.with_suffix(".run.json")
     translation = translation_report or TranslationReport(0, 0)
-    hard_failure = any(
+    quality_failures = quality_failures or []
+    hard_failure = bool(quality_failures) or any(
         item.critical and (item.fetch_status == "failed" or item.health_status == "degraded")
         for item in statuses
     )
@@ -376,7 +436,19 @@ def write_run_summary(
     }
     discovered_count = len(articles) if discovered_article_count is None else discovered_article_count
     source_config_path = Path(config_path).expanduser().resolve() if config_path else default_sources_path().resolve()
-    artifacts = artifact_names or [workbook_path.name, summary_path.name]
+    artifacts = artifact_names or [published_workbook.name, published_workbook.with_suffix(".run.json").name]
+    artifact_manifest = [
+        {
+            "name": path.name,
+            "relative_path": path.name,
+            "sha256": _file_sha256(path),
+            "size_bytes": path.stat().st_size,
+            "row_count": _artifact_row_count(path),
+            "complete": True,
+        }
+        for value in (artifact_paths or [workbook_path])
+        if (path := Path(value).expanduser().resolve()).is_file()
+    ]
     payload = {
         "schema_version": 5,
         "program_version": _program_version(),
@@ -390,8 +462,14 @@ def write_run_summary(
         "period_start": since.isoformat(),
         "period_end_exclusive": until.isoformat(),
         "period": period_payload,
-        "output_file": str(workbook_path),
+        "output_file": str(published_workbook),
         "artifacts": artifacts,
+        "artifact_manifest": artifact_manifest,
+        "artifact_bundle_complete": True,
+        "quality_gate": {
+            "passed": not quality_failures,
+            "failures": quality_failures,
+        },
         "article_count": len(articles),
         "discovered_article_count": discovered_count,
         "deduplicated_article_count": discovered_count - len(articles),
@@ -416,6 +494,7 @@ def write_run_summary(
             "with_health_alerts": sum(bool(item.health_alerts) for item in statuses),
             "with_content_hits": sum(item.relevant_count > 0 for item in statuses),
             "invalid_date_count": sum(item.invalid_date_count for item in statuses),
+            "unexplained_future_date_count": sum(item.unexplained_future_date_count for item in statuses),
             "timeout_count": sum(item.timeout_count for item in statuses),
             "budget_exhausted_count": sum(item.budget_exhausted for item in statuses),
             "request_count": sum(item.request_count for item in statuses),
@@ -482,6 +561,18 @@ def _file_sha256(path: Path) -> str:
         return sha256(path.read_bytes()).hexdigest()
     except OSError:
         return ""
+
+
+def _artifact_row_count(path: Path) -> int:
+    if path.suffix.casefold() == ".jsonl":
+        return sum(bool(line) for line in path.read_text(encoding="utf-8").splitlines())
+    if path.suffix.casefold() == ".xlsx":
+        workbook = load_workbook(path, read_only=True, data_only=True)
+        try:
+            return max(0, int(workbook["全部命中新聞"].max_row) - 1)
+        finally:
+            workbook.close()
+    return 0
 
 
 def _count_values(values: Iterable[str]) -> dict[str, int]:

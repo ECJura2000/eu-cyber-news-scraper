@@ -10,6 +10,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+from .artifacts import ArtifactBundle, verify_artifact_bundle
 from .config import (
     DEFAULT_DAYS,
     DEFAULT_OUTPUT_DIR,
@@ -20,8 +21,9 @@ from .config import (
     load_sources,
 )
 from .dedupe import dedupe_articles
+from .events import emit_event
 from .exporter import export_workbook, write_jsonl, write_run_summary
-from .health import assess_and_record_health
+from .health import assess_and_record_health, health_profile_fingerprint
 from .http import HttpClient
 from .models import Source, SourceResult, SourceStatus
 from .periods import PeriodSelection, resolve_period
@@ -83,11 +85,16 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--config", help="自訂 sources.toml 路徑。")
     parser.add_argument("--list-sources", action="store_true", help="列出來源後結束。")
     parser.add_argument("--fail-on-degraded", action="store_true", help="必要來源失敗時回傳非零結束碼。")
+    parser.add_argument("--min-source-success-rate", type=float, help="最低來源成功率，範圍 0 至 1。")
+    parser.add_argument("--min-critical-date-rate", type=float, help="最低必要來源日期完整率，範圍 0 至 1。")
+    parser.add_argument("--max-unexplained-future-dates", type=int, help="允許的未來日期筆數上限。")
+    parser.add_argument("--require-complete-artifacts", action="store_true", help="要求完整且交叉驗證成功的產物集合。")
     return parser
 
 
 def main() -> None:
     args = build_parser().parse_args()
+    _validate_quality_options(args)
     sources = list(load_sources(args.config))
     if args.list_sources:
         _print_sources(sources)
@@ -148,9 +155,22 @@ async def _run_pipeline_async(
     started_at = datetime.now(timezone.utc)
     results: list[SourceResult] = []
     worker_count = max(1, min(args.workers, len(selected)))
+    state_dir_value = getattr(args, "state_dir", None)
+    state_dir = Path(state_dir_value).expanduser() if state_dir_value else output.parent
+    state_dir.mkdir(parents=True, exist_ok=True)
+    state_ready = state_dir / ".state-ready"
+    state_ready.unlink(missing_ok=True)
+    if state_dir_value and "EU_CYBER_NEWS_TRANSLATION_CACHE" not in os.environ:
+        os.environ["EU_CYBER_NEWS_TRANSLATION_CACHE"] = str(state_dir / "translations.json")
 
     display_since, display_until = _display_dates(since, until)
-    print(f"期間：{display_since} 至 {display_until}；來源：{len(selected)}；run_id：{run_id}")
+    emit_event(
+        "run_started",
+        run_id=run_id,
+        period_start=str(display_since),
+        period_end=str(display_until),
+        source_count=len(selected),
+    )
     source_limiter = asyncio.Semaphore(worker_count)
 
     async with HttpClient(timeout=max(1, args.timeout)) as client:
@@ -169,7 +189,14 @@ async def _run_pipeline_async(
                         observed_at=started_at,
                     )
                 except Exception as exc:  # defensive boundary around every source job
-                    print(f"[failed] {source.id}: {type(exc).__name__}: {exc}", file=sys.stderr)
+                    emit_event(
+                        "source_failed",
+                        run_id=run_id,
+                        source_id=source.id,
+                        stage="source_boundary",
+                        error_code="UNHANDLED_SOURCE_ERROR",
+                        error=f"{type(exc).__name__}: {exc}",
+                    )
                     result = SourceResult(
                         source=source,
                         articles=[],
@@ -188,6 +215,7 @@ async def _run_pipeline_async(
                             parse_status="not_run",
                             freshness_status="unknown",
                             content_status="unknown",
+                            error_code="UNHANDLED_SOURCE_ERROR",
                         ),
                     )
                 return source, result
@@ -196,8 +224,20 @@ async def _run_pipeline_async(
         for task in asyncio.as_completed(tasks):
             source, result = await task
             results.append(result)
-            label = "ok" if result.status.success else "failed"
-            print(f"[{label}] {source.id}: 原始 {result.status.raw_count}，命中 {result.status.relevant_count}")
+            emit_event(
+                "source_completed",
+                run_id=run_id,
+                source_id=source.id,
+                fetch_status=result.status.fetch_status,
+                parse_status=result.status.parse_status,
+                health_status=result.status.health_status,
+                raw_count=result.status.raw_count,
+                relevant_count=result.status.relevant_count,
+                duration_seconds=result.status.duration_seconds,
+                request_count=result.status.request_count,
+                bytes_downloaded=result.status.bytes_downloaded,
+                error_code=result.status.error_code,
+            )
 
     order = {source.id: index for index, source in enumerate(selected)}
     results.sort(key=lambda result: order[result.source.id])
@@ -207,11 +247,6 @@ async def _run_pipeline_async(
         wanted = {TOPIC_ALIASES[value] for value in args.topic}
         articles = [article for article in articles if wanted.intersection(article.matched_topics)]
     articles.sort(key=lambda item: item.published_at or since, reverse=True)
-    state_dir_value = getattr(args, "state_dir", None)
-    state_dir = Path(state_dir_value).expanduser() if state_dir_value else output.parent
-    state_dir.mkdir(parents=True, exist_ok=True)
-    if state_dir_value and "EU_CYBER_NEWS_TRANSLATION_CACHE" not in os.environ:
-        os.environ["EU_CYBER_NEWS_TRANSLATION_CACHE"] = str(state_dir / "translations.json")
     translation = (
         skip_article_title_translation(articles)
         if getattr(args, "no_translate", False)
@@ -232,7 +267,7 @@ async def _run_pipeline_async(
                 "feed_urls": list(source.feed_urls),
                 "detail_pages": source.detail_pages,
                 "timezone": source.timezone,
-                "date_optional": source.date_optional,
+                "date_policy": source.date_policy,
             }
             for source in selected
         ],
@@ -249,6 +284,7 @@ async def _run_pipeline_async(
         and not getattr(args, "source", None)
         and not getattr(args, "country", None)
     )
+    observation_key = _health_observation_key(period, since, until, health_profile)
     statuses = assess_and_record_health(
         statuses,
         selected,
@@ -256,35 +292,91 @@ async def _run_pipeline_async(
         run_id=run_id,
         recorded_at=datetime.now(timezone.utc),
         profile=health_profile,
-        write=health_write,
+        observation_key=observation_key,
+        write=False,
     )
+    quality_failures = _quality_failures(statuses, args)
+    jsonl_output = output.with_suffix(".jsonl") if args.jsonl else None
+    summary_output = output.with_suffix(".run.json")
+    with ArtifactBundle(output, run_id) as bundle:
+        staged_workbook = export_workbook(
+            articles,
+            statuses,
+            selected,
+            bundle.staged(output),
+            run_id=run_id,
+            period=period,
+            since=since,
+            until=until,
+        )
+        staged_jsonl = (
+            write_jsonl(articles, bundle.staged(jsonl_output), run_id=run_id)
+            if jsonl_output is not None
+            else None
+        )
+        finished_at = datetime.now(timezone.utc)
+        staged_summary = write_run_summary(
+            staged_workbook,
+            started_at=started_at,
+            finished_at=finished_at,
+            since=since,
+            until=until,
+            articles=articles,
+            statuses=statuses,
+            run_id=run_id,
+            translation_report=translation,
+            period=period,
+            discovered_article_count=len(discovered_articles),
+            config_path=getattr(args, "config", None),
+            run_profile={**health_profile, "health_write": health_write, "observation_key": observation_key},
+            artifact_names=[output.name, summary_output.name, *([jsonl_output.name] if jsonl_output else [])],
+            artifact_paths=[staged_workbook, *([staged_jsonl] if staged_jsonl else [])],
+            published_output_path=output,
+            quality_failures=quality_failures,
+        )
+        verify_artifact_bundle(
+            staged_workbook,
+            staged_jsonl,
+            staged_summary,
+            run_id=run_id,
+            article_count=len(articles),
+        )
+        bundle.publish(
+            [
+                (staged_workbook, output),
+                *([(staged_jsonl, jsonl_output)] if staged_jsonl and jsonl_output else []),
+                (staged_summary, summary_output),
+            ],
+            manifest=summary_output,
+        )
 
-    workbook = export_workbook(articles, statuses, selected, output)
-    finished_at = datetime.now(timezone.utc)
-    summary = write_run_summary(
-        workbook,
-        started_at=started_at,
-        finished_at=finished_at,
-        since=since,
-        until=until,
-        articles=articles,
-        statuses=statuses,
-        run_id=run_id,
-        translation_report=translation,
-        period=period,
-        discovered_article_count=len(discovered_articles),
-        config_path=getattr(args, "config", None),
-        run_profile={**health_profile, "health_write": health_write},
-        artifact_names=[
-            workbook.name,
-            workbook.with_suffix(".run.json").name,
-            *([workbook.with_suffix(".jsonl").name] if args.jsonl else []),
-        ],
+    if health_write:
+        assess_and_record_health(
+            statuses,
+            selected,
+            state_dir / ".source-health.json",
+            run_id=run_id,
+            recorded_at=finished_at,
+            profile=health_profile,
+            observation_key=observation_key,
+            write=True,
+        )
+
+    state_ready_temporary = state_ready.with_suffix(".tmp")
+    state_ready_temporary.write_text(
+        f'{{"run_id":"{run_id}","manifest":"{summary_output.name}"}}\n',
+        encoding="utf-8",
     )
-    print(f"Excel：{workbook}")
-    print(f"執行摘要：{summary}")
-    if args.jsonl:
-        print(f"JSONL：{write_jsonl(articles, workbook.with_suffix('.jsonl'), run_id=run_id)}")
+    state_ready_temporary.replace(state_ready)
+
+    emit_event(
+        "artifact_bundle_published",
+        run_id=run_id,
+        workbook=str(output),
+        manifest=str(summary_output),
+        jsonl=str(jsonl_output) if jsonl_output else "",
+        article_count=len(articles),
+    )
 
     degraded = [
         status.source_id
@@ -297,6 +389,10 @@ async def _run_pipeline_async(
         print(f"[warning] 必要來源失敗：{', '.join(degraded)}", file=sys.stderr)
         if args.fail_on_degraded:
             raise SystemExit(2)
+    if quality_failures:
+        for failure in quality_failures:
+            print(f"[quality] {failure['code']}: {failure['message']}", file=sys.stderr)
+        raise SystemExit(3)
 
 
 def _select_sources(
@@ -314,6 +410,76 @@ def _select_sources(
         for source in sources
         if (not country_set or source.country in country_set) and (not source_set or source.id in source_set)
     ]
+
+
+def _validate_quality_options(args: argparse.Namespace) -> None:
+    for name in ("min_source_success_rate", "min_critical_date_rate"):
+        value = getattr(args, name, None)
+        if value is not None and not 0 <= value <= 1:
+            raise SystemExit(f"[error] --{name.replace('_', '-')} 必須介於 0 與 1。")
+    future_limit = getattr(args, "max_unexplained_future_dates", None)
+    if future_limit is not None and future_limit < 0:
+        raise SystemExit("[error] --max-unexplained-future-dates 不可為負數。")
+
+
+def _quality_failures(statuses: list[SourceStatus], args: argparse.Namespace) -> list[dict[str, str]]:
+    failures: list[dict[str, str]] = []
+    success_rate = sum(status.success for status in statuses) / len(statuses) if statuses else 0.0
+    minimum_success = getattr(args, "min_source_success_rate", None)
+    if minimum_success is not None and success_rate < minimum_success:
+        failures.append(
+            {
+                "code": "SOURCE_SUCCESS_RATE_LOW",
+                "message": f"來源成功率 {success_rate:.2%} 低於門檻 {minimum_success:.2%}。",
+            }
+        )
+
+    critical = [status for status in statuses if status.critical]
+    critical_date_rates = [
+        status.dated_count / status.raw_count if status.raw_count else 0.0
+        for status in critical
+    ]
+    critical_date_rate = sum(critical_date_rates) / len(critical_date_rates) if critical_date_rates else 1.0
+    minimum_critical_dates = getattr(args, "min_critical_date_rate", None)
+    if minimum_critical_dates is not None and critical_date_rate < minimum_critical_dates:
+        failures.append(
+            {
+                "code": "CRITICAL_DATE_RATE_LOW",
+                "message": f"必要來源平均日期完整率 {critical_date_rate:.2%} 低於門檻 {minimum_critical_dates:.2%}。",
+            }
+        )
+
+    future_dates = sum(status.unexplained_future_date_count for status in statuses)
+    maximum_future_dates = getattr(args, "max_unexplained_future_dates", None)
+    if maximum_future_dates is not None and future_dates > maximum_future_dates:
+        failures.append(
+            {
+                "code": "FUTURE_DATE_LIMIT_EXCEEDED",
+                "message": f"未解釋未來日期 {future_dates} 筆，超過上限 {maximum_future_dates}。",
+            }
+        )
+    return failures
+
+
+def _health_observation_key(
+    period: PeriodSelection | None,
+    since: datetime,
+    until: datetime,
+    profile: dict[str, object],
+) -> str:
+    period_value = period.as_dict() if period else {
+        "mode": "fixed",
+        "period_start_utc": since.isoformat(),
+        "period_end_exclusive_utc": until.isoformat(),
+    }
+    observation = {
+        "period": period_value,
+        "period_mode": profile.get("period_mode"),
+        "fetch_details": profile.get("fetch_details"),
+        "include_undated": profile.get("include_undated"),
+        "include_unmatched": profile.get("include_unmatched"),
+    }
+    return health_profile_fingerprint(observation)
 
 
 def _date_range(since_value: str | None, until_value: str | None, days: int) -> tuple[datetime, datetime]:

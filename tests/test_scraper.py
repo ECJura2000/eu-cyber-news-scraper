@@ -77,6 +77,9 @@ def test_empty_parse_is_not_reported_as_healthy():
         until=datetime(2026, 6, 1, tzinfo=timezone.utc),
     )
     assert not result.status.success
+    assert result.status.fetch_status == "ok"
+    assert result.status.parse_status == "empty"
+    assert result.status.error_code == "PARSE_EMPTY"
     assert "未解析出新聞" in result.status.warning
 
 
@@ -162,8 +165,40 @@ def test_listing_discovers_feed_after_configured_feed_failure():
         fetch_details=False,
     )
     assert result.status.success
-    assert result.status.fetched_via == "discovered-feed"
+    assert result.status.fetched_via == "feed+html-listing"
     assert "備援" in result.status.warning
+
+
+def test_yearly_listing_is_parsed_even_when_a_discovered_feed_has_entries():
+    source = Source(
+        "yearly-feed", "IE", "來源", "Source", "official", "en",
+        "https://agency.example/", "https://agency.example/news/",
+        allow_domains=("agency.example",), include_patterns=(r"/news/.+",),
+        yearly_listing_url="https://agency.example/news/{year}/",
+    )
+    listing = b"""<html><head>
+      <link rel='alternate' type='application/rss+xml' href='/comments/feed/' />
+      <link rel='alternate' type='application/rss+xml' href='/feed.xml' />
+      </head><main><article><h2><a href='/news/current'>Current NIS2 guidance</a></h2>
+      <time datetime='2026-05-10'>10 May 2026</time></article></main></html>"""
+    feed = b"""<rss><channel><item><title>Older NIS2 guidance</title>
+      <link>https://agency.example/news/older</link><pubDate>Fri, 01 May 2020 08:00:00 GMT</pubDate>
+      </item></channel></rss>"""
+    client = MappingClient(
+        {
+            "https://agency.example/news/2026/": listing,
+            "https://agency.example/feed.xml": feed,
+        }
+    )
+    result = run_scraper(
+        source,
+        client,
+        since=datetime(2026, 1, 1, tzinfo=timezone.utc),
+        until=datetime(2027, 1, 1, tzinfo=timezone.utc),
+        fetch_details=False,
+    )
+    assert result.status.newest_published_at.startswith("2026-05-10")
+    assert result.status.in_range_count == 1
 
 
 def test_source_budget_stops_network_paths():
@@ -195,3 +230,24 @@ def test_non_html_url_detection():
     assert _is_non_html_url("https://example.eu/report.pdf")
     assert _is_non_html_url("https://example.eu/news/feed/")
     assert not _is_non_html_url("https://example.eu/news/item")
+
+
+def test_cross_domain_redirect_is_rejected():
+    source = Source(
+        "redirect", "EU", "來源", "Source", "official", "en",
+        "https://agency.example/", "https://agency.example/news/",
+        allow_domains=("agency.example",),
+    )
+
+    class RedirectClient:
+        async def get(self, url, *, stats=None):
+            return httpx.Response(200, content=b"<html></html>", request=httpx.Request("GET", "https://evil.example/"))
+
+    result = run_scraper(
+        source,
+        RedirectClient(),
+        since=datetime(2026, 5, 1, tzinfo=timezone.utc),
+        until=datetime(2026, 6, 1, tzinfo=timezone.utc),
+    )
+    assert result.status.fetch_status == "failed"
+    assert "RedirectDomainError" in result.status.error
