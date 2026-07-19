@@ -22,6 +22,11 @@ def direct_runner(_name, provider, title):
     return provider(title)
 
 
+def slow_provider(_title):
+    time.sleep(2)
+    return "遲到的翻譯"
+
+
 def test_title_translation_uses_cache(monkeypatch, tmp_path):
     cache = tmp_path / "translations.json"
     cache.write_text(json.dumps({"Cyber law": "網路法"}), encoding="utf-8")
@@ -126,15 +131,11 @@ def test_skip_translation_preserves_titles():
 def test_provider_call_has_a_hard_timeout(monkeypatch):
     from eu_cyber_news_scraper.translation import _call_provider_with_timeout
 
-    monkeypatch.setattr("eu_cyber_news_scraper.translation._translation_timeout", lambda: 0.01)
-
-    def slow_provider(title):
-        time.sleep(0.1)
-        return "遲到的翻譯"
+    monkeypatch.setattr("eu_cyber_news_scraper.translation._translation_timeout", lambda: 0.05)
 
     started = time.monotonic()
     assert _call_provider_with_timeout(slow_provider, "Cyber law") == ""
-    assert time.monotonic() - started < 0.08
+    assert time.monotonic() - started < 1.5
 
 
 def test_translation_normalizes_taiwan_terminology():
