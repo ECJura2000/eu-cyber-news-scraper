@@ -8,6 +8,7 @@ from eu_cyber_news_scraper.cli import (
     _default_output,
     _quality_failures,
     _select_sources,
+    _state_write_eligible,
     build_parser,
 )
 from eu_cyber_news_scraper.config import load_sources
@@ -74,6 +75,18 @@ def test_quality_gate_reports_stable_error_codes():
         "SOURCE_SUCCESS_RATE_LOW",
         "FUTURE_DATE_LIMIT_EXCEEDED",
     ]
+
+
+def test_health_state_requires_a_successful_quality_eligible_run():
+    from eu_cyber_news_scraper.models import SourceStatus
+
+    healthy = SourceStatus("ok", "來源", "EU", True, True, "html", 1, 1, 0)
+    failed_critical = SourceStatus(
+        "bad", "來源", "EU", True, False, "", 0, 0, 0, fetch_status="failed", health_status="degraded"
+    )
+    assert _state_write_eligible([healthy], [])
+    assert not _state_write_eligible([healthy], [{"code": "QUALITY_FAILED", "message": "failed"}])
+    assert not _state_write_eligible([failed_critical], [])
 
 
 def test_main_resolves_roc_period_and_releases_lock(monkeypatch, tmp_path):
