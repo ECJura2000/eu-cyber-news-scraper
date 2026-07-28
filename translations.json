@@ -1,6 +1,156 @@
 {
   "schema_version": 3,
   "translations": {
+    "en\u0000Commission publishes new guidance to support businesses' implementation of the Cyber Resilience Act": {
+      "text": "委員會發布新指南以支援企業實施《網路彈性法案》",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000Have your say on the certification of EU Managed Security Services": {
+      "text": "對歐盟託管安全服務認證發表您的看法",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000Commission preliminary finds TikTok in breach of Digital Services Act for failing to ensure safe accounts for minors": {
+      "text": "委員會初步認定 TikTok 未能確保未成年人帳戶安全，違反了《數位服務法》",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000EuroHPC JU Launches Procurement for a Quantum Computer in Luxembourg": {
+      "text": "EuroHPC JU 在盧森堡啟動量子電腦採購",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "fr\u0000Cybermalveillance.gouv.fr lance une AlerteCyber concernant des failles de sécurité critiques dans WordPress \n \n 23/07/2026 \n \n \n Cybermalveillance.gouv.fr déclenche ce jour une nouvelle AlerteCyber concernant des failles de sécurité critiques dans WordPress. Il est primordial de les corriger le plus rapidement possible en mettant à jour les systèmes concernés pour réduire les risques d’une cyberattaque.": {
+      "text": "Cybermalveillance.gouv.fr 發布有關 WordPress 嚴重安全漏洞的 CyberAlert 2026年7月23日\n \n \n Cybermalveillance.gouv.fr今天觸發了有關 WordPress 嚴重安全漏洞的新 CyberAlert。必須透過更新受影響的系統來盡快修正這些問題，以降低網路攻擊的風險。",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000CeADAR Contributes to EU Code of Practice on Transparency of AI-Generated Content": {
+      "text": "CeADAR 為歐盟人工智慧產生內容透明度行為準則做出貢獻",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000Commission fines Google €890 million for breaches of the Digital Markets Act": {
+      "text": "歐盟委員會因谷歌違反《數位市場法》對谷歌處以 8.9 億歐元罰款",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000Stakeholder event on guidelines on the interplay between data protection and competition law: save the date | European Data Protection Board": {
+      "text": "關於資料保護和競爭法之間相互作用的指導方針的利益相關者活動：節省日期|歐洲資料保護委員會",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000First steps forward for the implementation of the Health Action Plan": {
+      "text": "實施衛生行動計畫的第一步",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000Your Perspective Matters: Join the NIS360 survey": {
+      "text": "您的觀點很重要：加入 NIS360 調查",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000NIS2 Technical Implementation Guidance": {
+      "text": "NIS2 技術實施指南",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000Commission concludes eligibility checks for two European Citizens' Initiatives on digital identity and age-verification, and on migration and asylum": {
+      "text": "委員會完成了關於數位身分和年齡驗證以及移民和庇護的兩項歐洲公民倡議的資格檢查",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000EuropAI - Reusable European Generative AI solutions for public administrations": {
+      "text": "EuropAI - 用於公共管理的可重複使用的歐洲生成人工智慧解決方案",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000FLOODS & DROUGHTS - Generative AI for managing floods, droughts and water-related risks": {
+      "text": "洪水和乾旱 - 用於管理洪水、乾旱和水相關風險的生成式人工智慧",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000EUNOMIA.AI - Trustworthy Generative AI for efficient and accessible public services": {
+      "text": "EUNOMIA.AI - 值得信賴的生成式人工智慧，提供高效率、便利的公共服務",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000New GenAI pilots for public administrations": {
+      "text": "公共管理的新 GenAI 試點",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "fr\u0000Exigences du CRA : processus de notification pour les organismes notifiés": {
+      "text": "CRA 要求：公告機構的通知流程",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000ADAPT Researcher Presents Two Papers on Large Reasoning Models at Workshop at ICML 2026": {
+      "text": "ADAPT 研究人員在 ICML 2026 研討會上發表了兩篇關於大型推理模型的論文",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000Multiple Vulnerabilities in WordPress Core (CVE-2026-63030_CVE-2026-60137)": {
+      "text": "WordPress 核心中的多個漏洞 (CVE-2026-63030_CVE-2026-60137)",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000Commission publishes guidelines on transparency obligations for providers and deployers of certain AI systems": {
+      "text": "委員會發布關於某些人工智慧系統的提供者和部署者的透明度義務的指南",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000Commission fines AliExpress €550 million for breaching the Digital Services Act": {
+      "text": "速賣通因違反《數位服務法》而被歐盟委員會罰款 5.5 億歐元",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000Future-proof your career with Digital4Security certified micro-credential courses": {
+      "text": "透過 Digital4Security 認證的微證書課程讓您的職業生涯面向未來",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u0000AI Changes the Rules of Cybersecurity": {
+      "text": "人工智慧改變網路安全規則",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "fr\u0000Intelligence artificielle\n                   \n \n \n \n \"Notre IA\" : Inria contribue au déploiement d'une IA de confiance dans les services publics \n \n \n \n 15/07/2026": {
+      "text": "人工智慧「我們的人工智慧」：Inria 致力於在公共服務中部署可信任人工智慧\n \n \n \n 2026年7月15日",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
+    "en\u00002026-009: Critical Vulnerabilities in Microsoft SharePoint\n                             \n Thursday, July 23, 2026 09:13:03 AM CEST \n [UPDATED] On 14 July 2026, Microsoft released security updates addressing critical remote code execution (RCE) vulnerabilities in Microsoft SharePoint Server. On 20 July 2026, WatchTowr identified a proof-of-concept exploit code and subsequently observed active exploitation of CVE-2026-50522, a vulnerability part of an ongoing series of actively exploited flaws affecting on-premise SharePoint Server instances, including CVE-2026-32201, CVE-2026-45659, CVE-2026-56164, and CVE-2026-58644. \nCERT-EU strongly recommends updating affected servers immediately, rotating credentials for any assets that may have been exposed to the internet, and conducting a compromise assessment.": {
+      "text": "2026-009：Microsoft SharePoint 中的嚴重漏洞\n                             \n 2026 年 7 月 23 日星期四上午 09:13:03 中歐夏令時間\n [已更新] 2026 年 7 月 14 日，Microsoft 發布了安全性更新，解決 Microsoft SharePoint Server 中的關鍵遠端程式碼執行 (RCE) 漏洞。 2026 年 7 月 20 日，WatchTowr 發現了概念驗證漏洞利用程式碼，隨後觀察到 CVE-2026-50522 的主動利用，該漏洞是影響本地 SharePoint Server 例項的一系列持續被主動利用的缺陷的一部分，包括 CVE-2026-32201、CVE-2026-C和CVE-2026-58644。 \nCERT-EU 強烈建議立即更新受影響的伺服器，輪換可能暴露在網路上的任何資產的憑證，並進行妥協評估。",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T07:47:33.041282+00:00",
+      "last_accessed_at": "2026-07-28T07:47:33.041282+00:00"
+    },
     "fr\u0000Agents d’IA : l’Autorité de la concurrence rend son avis sur le fonctionnement concurrentiel du secteur des agents d’intelligence artificielle": {
       "text": "人工智慧代理：競爭管理局就人工智慧代理產業的競爭運作發表意見",
       "provider": "googletrans",
