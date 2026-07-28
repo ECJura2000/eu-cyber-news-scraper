@@ -134,6 +134,7 @@ institution_type = "歐盟立法機關"
 language = "en"
 homepage = "https://www.europarl.europa.eu/"
 listing_url = "https://www.europarl.europa.eu/news/en/press-room"
+feed_urls = ["https://www.europarl.europa.eu/rss/doc/press-releases/en.xml"]
 allow_domains = ["europarl.europa.eu", "www.europarl.europa.eu"]
 include_patterns = ['/news/en/press-room/']
 exclude_patterns = ['^/news/en/press-room/?$']

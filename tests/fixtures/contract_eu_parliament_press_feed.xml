@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- source_url: https://www.europarl.europa.eu/rss/doc/press-releases/en.xml -->
+<!-- captured_at: 2026-07-28 -->
+<rss version="2.0">
+  <channel>
+    <title>Press releases - European Parliament</title>
+    <link>https://www.europarl.europa.eu/news/en</link>
+    <description>Press releases on debates and decisions in plenary and in committee</description>
+    <language>EN</language>
+    <item>
+      <title>EU defence innovation: deal with Council on new AGILE programme</title>
+      <link>https://www.europarl.europa.eu/news/en/press-room/20260715IPR46501/</link>
+      <description>The draft law responds to a security environment requiring faster defence innovation cycles.</description>
+      <pubDate>Wed, 15 Jul 2026 20:38:00 GMT</pubDate>
+      <guid isPermaLink="false">IPR-COM_IPR-2026-07-15-46501_EN</guid>
+    </item>
+  </channel>
+</rss>
