@@ -35,6 +35,13 @@ def test_paused_source_has_auditable_review_metadata():
     assert source.pause_evidence_url == source.listing_url
 
 
+def test_comreg_uses_complete_listing_without_slow_detail_requests():
+    source = next(item for item in load_sources() if item.id == "ie_comreg")
+    assert source.card_selectors
+    assert source.date_selectors
+    assert source.detail_pages == 0
+
+
 def test_tls_intermediate_bundles_are_limited_to_affected_sources():
     bundles = {source.id: source.tls_intermediate_bundle for source in load_sources() if source.tls_intermediate_bundle}
     assert bundles == {

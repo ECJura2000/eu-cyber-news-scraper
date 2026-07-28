@@ -109,6 +109,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           summary=$(find 新聞放置區 -maxdepth 1 -name '*.run.json' -type f -print 2>/dev/null | sort | tail -1 || true)
+          if [[ -z "$summary" && -f /tmp/critical-source-smoke.run.json ]]; then
+            summary=/tmp/critical-source-smoke.run.json
+          fi
           if [[ -z "$summary" ]]; then
             exit 0
           fi
@@ -145,10 +148,21 @@ jobs:
           elif [[ -n "$issue" ]]; then
             gh issue close "$issue" --comment "Sources and quality gates recovered in run $GITHUB_RUN_ID."
           fi
-      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
-        if: always()
+      - name: Upload completed news artifacts
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        if: steps.scrape.outcome == 'success'
         with:
           name: eu-cyber-news-${{ github.run_id }}
           path: 新聞放置區/*
           if-no-files-found: error
+          retention-days: 30
+      - name: Upload failure diagnostics
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        if: failure()
+        with:
+          name: eu-cyber-news-diagnostics-${{ github.run_id }}
+          path: |
+            /tmp/critical-source-smoke.*
+            新聞放置區/*
+          if-no-files-found: warn
           retention-days: 30
