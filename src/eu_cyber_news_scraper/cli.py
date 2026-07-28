@@ -86,6 +86,9 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--list-sources", action="store_true", help="列出來源後結束。")
     parser.add_argument("--fail-on-degraded", action="store_true", help="必要來源失敗時回傳非零結束碼。")
     parser.add_argument("--min-source-success-rate", type=float, help="最低來源成功率，範圍 0 至 1。")
+    parser.add_argument("--min-parse-success-rate", type=float, help="最低解析成功率，範圍 0 至 1。")
+    parser.add_argument("--max-empty-sources", type=int, help="允許解析為空的來源數上限。")
+    parser.add_argument("--min-overall-date-rate", type=float, help="最低整體日期完整率，範圍 0 至 1。")
     parser.add_argument("--min-critical-date-rate", type=float, help="最低必要來源日期完整率，範圍 0 至 1。")
     parser.add_argument("--max-unexplained-future-dates", type=int, help="允許的未來日期筆數上限。")
     parser.add_argument("--require-complete-artifacts", action="store_true", help="要求完整且交叉驗證成功的產物集合。")
@@ -103,6 +106,13 @@ def main() -> None:
     selected = _select_sources(sources, args.country, args.source)
     if not selected:
         raise SystemExit("[error] 沒有符合條件的來源。")
+    args.paused_sources = [
+        _paused_source_payload(source)
+        for source in sources
+        if _source_matches(source, args.country, args.source)
+        and source.is_paused(date.today())
+        and not (args.source and source.id in args.source)
+    ]
     try:
         period = resolve_period(args.since, args.until, args.days)
     except ValueError as exc:
@@ -171,6 +181,8 @@ async def _run_pipeline_async(
         period_end=str(display_until),
         source_count=len(selected),
     )
+    for paused in getattr(args, "paused_sources", []):
+        emit_event("source_paused", run_id=run_id, **paused)
     source_limiter = asyncio.Semaphore(worker_count)
 
     async with HttpClient(timeout=max(1, args.timeout)) as client:
@@ -275,6 +287,7 @@ async def _run_pipeline_async(
         "include_undated": args.include_undated,
         "include_unmatched": args.all,
         "source_budget": max(1, getattr(args, "source_budget", DEFAULT_SOURCE_BUDGET)),
+        "paused_source_ids": [row["source_id"] for row in getattr(args, "paused_sources", [])],
     }
     health_mode = getattr(args, "health_write", "auto")
     health_write = health_mode == "always" or (
@@ -333,6 +346,7 @@ async def _run_pipeline_async(
             artifact_paths=[staged_workbook, *([staged_jsonl] if staged_jsonl else [])],
             published_output_path=output,
             quality_failures=quality_failures,
+            paused_sources=getattr(args, "paused_sources", []),
         )
         verify_artifact_bundle(
             staged_workbook,
@@ -411,7 +425,6 @@ def _select_sources(
     countries: list[str] | None,
     source_ids: list[str] | None,
 ) -> list[Source]:
-    country_set = set(countries or [])
     source_set = set(source_ids or [])
     unknown = source_set - {source.id for source in sources}
     if unknown:
@@ -419,15 +432,44 @@ def _select_sources(
     return [
         source
         for source in sources
-        if (not country_set or source.country in country_set) and (not source_set or source.id in source_set)
+        if _source_matches(source, countries, source_ids)
+        and (bool(source_set) or not source.is_paused(date.today()))
     ]
 
 
+def _source_matches(
+    source: Source,
+    countries: list[str] | None,
+    source_ids: list[str] | None,
+) -> bool:
+    country_set = set(countries or [])
+    source_set = set(source_ids or [])
+    return (not country_set or source.country in country_set) and (not source_set or source.id in source_set)
+
+
+def _paused_source_payload(source: Source) -> dict[str, str]:
+    return {
+        "source_id": source.id,
+        "source_name": source.name_zh,
+        "paused_until": source.paused_until,
+        "reason": source.pause_reason,
+        "evidence_url": source.pause_evidence_url,
+    }
+
+
 def _validate_quality_options(args: argparse.Namespace) -> None:
-    for name in ("min_source_success_rate", "min_critical_date_rate"):
+    for name in (
+        "min_source_success_rate",
+        "min_parse_success_rate",
+        "min_overall_date_rate",
+        "min_critical_date_rate",
+    ):
         value = getattr(args, name, None)
         if value is not None and not 0 <= value <= 1:
             raise SystemExit(f"[error] --{name.replace('_', '-')} 必須介於 0 與 1。")
+    empty_limit = getattr(args, "max_empty_sources", None)
+    if empty_limit is not None and empty_limit < 0:
+        raise SystemExit("[error] --max-empty-sources 不可為負數。")
     future_limit = getattr(args, "max_unexplained_future_dates", None)
     if future_limit is not None and future_limit < 0:
         raise SystemExit("[error] --max-unexplained-future-dates 不可為負數。")
@@ -442,6 +484,45 @@ def _quality_failures(statuses: list[SourceStatus], args: argparse.Namespace) ->
             {
                 "code": "SOURCE_SUCCESS_RATE_LOW",
                 "message": f"來源成功率 {success_rate:.2%} 低於門檻 {minimum_success:.2%}。",
+            }
+        )
+
+    parse_success_rate = (
+        sum(status.parse_status not in {"empty", "failed", "not_run"} for status in statuses) / len(statuses)
+        if statuses
+        else 0.0
+    )
+    minimum_parse_success = getattr(args, "min_parse_success_rate", None)
+    if minimum_parse_success is not None and parse_success_rate < minimum_parse_success:
+        failures.append(
+            {
+                "code": "PARSE_SUCCESS_RATE_LOW",
+                "message": f"解析成功率 {parse_success_rate:.2%} 低於門檻 {minimum_parse_success:.2%}。",
+            }
+        )
+
+    empty_sources = [status.source_id for status in statuses if status.parse_status == "empty"]
+    maximum_empty_sources = getattr(args, "max_empty_sources", None)
+    if maximum_empty_sources is not None and len(empty_sources) > maximum_empty_sources:
+        failures.append(
+            {
+                "code": "EMPTY_SOURCE_LIMIT_EXCEEDED",
+                "message": (
+                    f"解析為空來源 {len(empty_sources)} 個，超過上限 {maximum_empty_sources}："
+                    f"{', '.join(empty_sources)}。"
+                ),
+            }
+        )
+
+    total_articles = sum(status.raw_count for status in statuses)
+    total_dated = sum(status.dated_count for status in statuses)
+    overall_date_rate = total_dated / total_articles if total_articles else 1.0
+    minimum_overall_dates = getattr(args, "min_overall_date_rate", None)
+    if minimum_overall_dates is not None and overall_date_rate < minimum_overall_dates:
+        failures.append(
+            {
+                "code": "OVERALL_DATE_RATE_LOW",
+                "message": f"整體日期完整率 {overall_date_rate:.2%} 低於門檻 {minimum_overall_dates:.2%}。",
             }
         )
 
@@ -523,7 +604,7 @@ def _display_dates(since: datetime, until: datetime) -> tuple[date, date]:
 
 def _print_sources(sources: list[Source]) -> None:
     for source in sources:
-        marker = "*" if source.critical else " "
+        marker = "P" if source.is_paused(date.today()) else ("*" if source.critical else " ")
         print(f"{marker} {source.id:24} {source.country} {source.name_zh}｜{source.institution_type}")
 
 

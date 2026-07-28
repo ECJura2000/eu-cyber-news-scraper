@@ -1,8 +1,10 @@
 import hashlib
 import ssl
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from eu_cyber_news_scraper.config import load_sources
+from eu_cyber_news_scraper import __version__
+from eu_cyber_news_scraper.config import USER_AGENT, load_sources
 
 
 def test_default_sources_cover_all_target_jurisdictions():
@@ -21,6 +23,18 @@ def test_source_ids_are_unique():
     assert len({source.id for source in sources}) == len(sources)
 
 
+def test_user_agent_identifies_version_and_public_repository():
+    assert f"eu-cyber-news-scraper/{__version__}" in USER_AGENT
+    assert "github.com/ECJura2000/eu-cyber-news-scraper" in USER_AGENT
+
+
+def test_paused_source_has_auditable_review_metadata():
+    source = next(item for item in load_sources() if item.id == "fr_cea_list")
+    assert source.paused_until == "2026-10-31"
+    assert source.pause_reason
+    assert source.pause_evidence_url == source.listing_url
+
+
 def test_tls_intermediate_bundles_are_limited_to_affected_sources():
     bundles = {source.id: source.tls_intermediate_bundle for source in load_sources() if source.tls_intermediate_bundle}
     assert bundles == {
@@ -33,5 +47,9 @@ def test_tls_intermediate_bundles_are_limited_to_affected_sources():
     }
     certificate_dir = Path("src/eu_cyber_news_scraper/certificates")
     for name, expected in expected_fingerprints.items():
-        der = ssl.PEM_cert_to_DER_cert((certificate_dir / name).read_text(encoding="ascii"))
+        path = certificate_dir / name
+        der = ssl.PEM_cert_to_DER_cert(path.read_text(encoding="ascii"))
         assert hashlib.sha256(der).hexdigest() == expected
+        decoded = ssl._ssl._test_decode_cert(str(path))  # type: ignore[attr-defined]
+        expires_at = datetime.strptime(decoded["notAfter"], "%b %d %H:%M:%S %Y %Z").replace(tzinfo=timezone.utc)
+        assert expires_at > datetime.now(timezone.utc) + timedelta(days=180)

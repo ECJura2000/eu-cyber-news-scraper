@@ -144,6 +144,35 @@ def test_translation_normalizes_taiwan_terminology():
     assert _to_taiwan_traditional("数字产品、人工智能、算法、数据和芯片") == "數位產品、人工智慧、演算法、資料和晶片"
 
 
+def test_translation_gold_set_has_independent_multilingual_semantic_checks(fixture_dir):
+    from collections import Counter
+
+    from eu_cyber_news_scraper.translation import translation_quality_issues
+
+    rows = json.loads((fixture_dir / "translation_evaluation.json").read_text(encoding="utf-8"))
+    assert len(rows) == 60
+    assert Counter(row["language"] for row in rows) == {"en": 20, "fr": 20, "de": 20}
+    assert len({(row["language"], row["title"]) for row in rows}) == 60
+    for row in rows:
+        assert row["reviewer"] == "human-reviewed-v1"
+        assert row["source_url"].startswith("https://")
+        assert not translation_quality_issues(
+            row["title"],
+            row["translation"],
+            tuple(row["required_terms"]),
+        )
+
+
+def test_translation_semantic_check_rejects_missing_required_terms():
+    from eu_cyber_news_scraper.translation import translation_quality_issues
+
+    assert translation_quality_issues(
+        "Commission opens consultation on the Cyber Resilience Act",
+        "歐盟執委會發布新消息",
+        ("網路韌性法",),
+    ) == ("missing_terms:網路韌性法",)
+
+
 def test_translation_configuration_falls_back_on_invalid_environment(monkeypatch):
     monkeypatch.setenv("EU_CYBER_NEWS_TRANSLATION_WORKERS", "invalid")
     monkeypatch.setenv("EU_CYBER_NEWS_TRANSLATION_TIMEOUT", "invalid")

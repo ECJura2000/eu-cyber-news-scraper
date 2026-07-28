@@ -38,6 +38,24 @@ def test_select_sources_rejects_unknown_ids():
         _select_sources(load_sources(), None, ["missing-source"])
 
 
+def test_select_sources_skips_paused_sources_unless_explicitly_requested():
+    source = Source(
+        id="paused",
+        country="EU",
+        name_zh="暫停來源",
+        name="Paused",
+        institution_type="test",
+        language="en",
+        homepage="https://example.eu/",
+        listing_url="https://example.eu/news",
+        paused_until="2999-12-31",
+        pause_reason="temporary outage",
+        pause_evidence_url="https://example.eu/status",
+    )
+    assert _select_sources([source], None, None) == []
+    assert _select_sources([source], None, ["paused"]) == [source]
+
+
 def test_cli_parser_exposes_resilience_controls():
     args = build_parser().parse_args(
         ["--workers", "8", "--source-budget", "45", "--state-dir", ".state", "--no-translate", "--fail-on-degraded"]
@@ -97,6 +115,58 @@ def test_source_success_gate_uses_fetch_status_not_parsed_card_count():
     )
 
     assert _quality_failures([connected_but_empty], args) == []
+
+
+def test_parse_and_empty_source_quality_gates_are_independent_from_transport():
+    from eu_cyber_news_scraper.models import SourceStatus
+
+    args = build_parser().parse_args(["--min-parse-success-rate", "1", "--max-empty-sources", "0"])
+    connected_but_empty = SourceStatus(
+        "empty",
+        "來源",
+        "EU",
+        False,
+        False,
+        "",
+        0,
+        0,
+        0,
+        fetch_status="ok",
+        parse_status="empty",
+    )
+
+    assert [row["code"] for row in _quality_failures([connected_but_empty], args)] == [
+        "PARSE_SUCCESS_RATE_LOW",
+        "EMPTY_SOURCE_LIMIT_EXCEEDED",
+    ]
+
+
+def test_overall_date_quality_gate_uses_article_weighted_rate():
+    from eu_cyber_news_scraper.models import SourceStatus
+
+    args = build_parser().parse_args(["--min-overall-date-rate", "0.8"])
+    statuses = [
+        SourceStatus("large", "來源", "EU", False, True, "html", 9, 0, 0, dated_count=9),
+        SourceStatus("small", "來源", "EU", False, True, "html", 1, 0, 0, dated_count=0),
+    ]
+    assert _quality_failures(statuses, args) == []
+    statuses[0] = SourceStatus("large", "來源", "EU", False, True, "html", 9, 0, 0, dated_count=7)
+    assert [row["code"] for row in _quality_failures(statuses, args)] == ["OVERALL_DATE_RATE_LOW"]
+
+
+@pytest.mark.parametrize(
+    ("arguments", "message"),
+    [
+        (["--min-parse-success-rate", "1.1"], "--min-parse-success-rate"),
+        (["--min-overall-date-rate", "-0.1"], "--min-overall-date-rate"),
+        (["--max-empty-sources", "-1"], "--max-empty-sources"),
+    ],
+)
+def test_quality_options_reject_invalid_values(arguments, message):
+    from eu_cyber_news_scraper.cli import _validate_quality_options
+
+    with pytest.raises(SystemExit, match=message):
+        _validate_quality_options(build_parser().parse_args(arguments))
 
 
 def test_health_state_requires_a_successful_quality_eligible_run():

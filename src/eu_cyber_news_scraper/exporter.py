@@ -410,6 +410,7 @@ def write_run_summary(
     artifact_paths: list[str | Path] | None = None,
     published_output_path: str | Path | None = None,
     quality_failures: list[dict[str, str]] | None = None,
+    paused_sources: list[dict[str, str]] | None = None,
 ) -> Path:
     workbook_path = Path(output_path).expanduser().resolve()
     published_workbook = (
@@ -418,6 +419,7 @@ def write_run_summary(
     summary_path = workbook_path.with_suffix(".run.json")
     translation = translation_report or TranslationReport(0, 0)
     quality_failures = quality_failures or []
+    paused_sources = paused_sources or []
     hard_failure = bool(quality_failures) or any(
         item.critical and (item.fetch_status == "failed" or item.health_status == "degraded")
         for item in statuses
@@ -456,6 +458,7 @@ def write_run_summary(
         "python_version": platform.python_version(),
         "source_config_sha256": _file_sha256(source_config_path),
         "run_profile": run_profile or {},
+        "paused_sources": paused_sources,
         "run_id": run_id,
         "started_at": started_at.isoformat(),
         "finished_at": finished_at.isoformat(),
@@ -485,6 +488,8 @@ def write_run_summary(
         },
         "source_summary": {
             "total": len(statuses),
+            "configured_total": len(statuses) + len(paused_sources),
+            "paused": len(paused_sources),
             "fetch_ok": sum(item.fetch_status == "ok" for item in statuses),
             "fetch_failed": sum(item.fetch_status == "failed" for item in statuses),
             "healthy": sum(item.health_status == "healthy" for item in statuses),

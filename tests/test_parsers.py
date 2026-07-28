@@ -152,6 +152,21 @@ def test_listing_reads_empty_overlay_link_from_card():
     assert articles[0].published_at is not None
 
 
+def test_listing_preserves_functional_query_parameters_when_deduplicating():
+    query_source = source(include_patterns=(r"^/NewsDetails\?id=",))
+    html = """
+    <main>
+      <article><a href="/NewsDetails?id=first">First official semiconductor update</a></article>
+      <article><a href="/NewsDetails?id=second">Second official semiconductor update</a></article>
+    </main>
+    """
+    articles = parse_listing(html, query_source, "https://agency.example/News")
+    assert [article.title for article in articles] == [
+        "First official semiconductor update",
+        "Second official semiconductor update",
+    ]
+
+
 def test_parse_presscorner_json_feed():
     payload = json.dumps(
         {

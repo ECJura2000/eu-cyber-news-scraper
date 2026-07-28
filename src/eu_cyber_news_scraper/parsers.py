@@ -5,7 +5,7 @@ import json
 import re
 from datetime import datetime, timezone
 from typing import Any, Iterable, Iterator
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit
 from zoneinfo import ZoneInfo
 
 import dateparser
@@ -177,19 +177,24 @@ def parse_listing(html: str, source: Source, base_url: str) -> list[Article]:
     soup = BeautifulSoup(html, "lxml")
     base_node = soup.select_one("base[href]")
     document_base = urljoin(base_url, _attribute(base_node, "href")) if base_node else base_url
-    # Some government sites render news links outside <main> or use a very
-    # shallow list.  Always include anchors as a final candidate pool; URL
-    # allow/include/exclude rules below keep navigation links out.
-    candidates = (
-        [node for selector in source.card_selectors for node in soup.select(selector)]
-        if source.card_selectors
-        else [
-            *soup.select("article"),
-            *soup.select("main li"),
-            *soup.select("main a[href]"),
-            *soup.select("a[href]"),
+    if source.card_selectors:
+        candidates = [node for selector in source.card_selectors for node in soup.select(selector)]
+    else:
+        # Prefer semantic content containers. Falling back to anchors inside
+        # main avoids treating site-wide headers and footers as news.
+        candidates = [
+            node
+            for node in soup.select(
+                "article, [class*='news-item' i], [class*='teaser' i], [class*='card' i], main li"
+            )
+            if not node.find_parent(("header", "footer", "nav"))
         ]
-    )
+        if not candidates:
+            candidates = [
+                node
+                for node in soup.select("main a[href], body a[href]")
+                if not node.find_parent(("header", "footer", "nav"))
+            ]
     articles = []
     seen_urls: set[str] = set()
     for candidate in candidates:
@@ -237,7 +242,8 @@ def parse_listing(html: str, source: Source, base_url: str) -> list[Article]:
                 None,
             )
             if date_node:
-                date_text = _attribute(date_node, "datetime") or date_node.get_text(" ")
+                raw_date_text = _attribute(date_node, "datetime") or date_node.get_text(" ")
+                date_text = _extract_date_text(raw_date_text) or raw_date_text
                 date_source = "source-selector"
                 date_confidence = "medium"
         if time_node:
@@ -513,4 +519,12 @@ def _attribute(node: Tag, name: str) -> str:
 def _canonical_candidate_url(value: str) -> str:
     parts = urlsplit(value)
     path = re.sub(r"/{2,}", "/", parts.path).rstrip("/") or "/"
-    return f"{parts.scheme.casefold()}://{parts.netloc.casefold()}{path}"
+    query = urlencode(
+        sorted(
+            (key, item)
+            for key, item in parse_qsl(parts.query, keep_blank_values=True)
+            if not key.casefold().startswith("utm_")
+        )
+    )
+    suffix = f"?{query}" if query else ""
+    return f"{parts.scheme.casefold()}://{parts.netloc.casefold()}{path}{suffix}"

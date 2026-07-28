@@ -1,3 +1,8 @@
 """EU cybersecurity official-news scraper."""
 
-__version__ = "1.1.0"
+from importlib.metadata import PackageNotFoundError, version
+
+try:
+    __version__ = version("eu-cyber-news-scraper")
+except PackageNotFoundError:
+    __version__ = "1.2.0"

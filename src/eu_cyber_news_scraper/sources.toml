@@ -32,6 +32,11 @@ include_patterns = ['/news/']
 exclude_patterns = ['^/news/?$']
 critical = true
 detail_pages = 18
+card_selectors = [".featured-items", ".publications-item", "main article"]
+link_selectors = ["h3 a[href]", "h2 a[href]"]
+title_selectors = ["h3", "h2"]
+date_selectors = ["time[datetime]"]
+summary_selectors = [".content", "p"]
 
 [[sources]]
 id = "eu_enisa_publications"
@@ -133,6 +138,11 @@ allow_domains = ["europarl.europa.eu", "www.europarl.europa.eu"]
 include_patterns = ['/news/en/press-room/']
 exclude_patterns = ['^/news/en/press-room/?$']
 detail_pages = 10
+card_selectors = ["article.ep_gridcolumn.ep-m_product", "article.ep-m_product"]
+link_selectors = [".ep_title a[href]"]
+title_selectors = [".ep_title .ep_name"]
+date_selectors = ["time[datetime]"]
+summary_selectors = [".ep_description"]
 
 [[sources]]
 id = "fr_anssi"
@@ -200,6 +210,11 @@ allow_domains = ["arcep.fr", "www.arcep.fr"]
 include_patterns = ['/actualites/.+']
 exclude_patterns = ['actualites-et-communiques\.html$', '/actualites/agenda-et-evenements\.html$']
 detail_pages = 10
+card_selectors = ["ol.list-group > li.list-group-item.row"]
+link_selectors = ["h3 a[href]"]
+title_selectors = ["h3"]
+date_selectors = ["time[datetime]"]
+summary_selectors = [".col-sm-8 p"]
 
 [[sources]]
 id = "fr_inria"
@@ -219,6 +234,10 @@ allow_domains = ["inria.fr", "www.inria.fr"]
 include_patterns = ['/fr/.+']
 exclude_patterns = ['actualites-recherche-savoir-numerique/?$']
 detail_pages = 12
+card_selectors = ["article.news"]
+link_selectors = ["a[rel='bookmark']"]
+title_selectors = ["h3"]
+date_selectors = ["time[datetime]", ".date"]
 
 [[sources]]
 id = "fr_dge"
@@ -261,6 +280,10 @@ allow_domains = ["autoritedelaconcurrence.fr", "www.autoritedelaconcurrence.fr"]
 include_patterns = ['^/fr/communiques-de-presse/.+']
 exclude_patterns = ['^/fr/communiques-de-presse/?$']
 detail_pages = 10
+card_selectors = [".views-row .press.search-index"]
+link_selectors = ["h2 a[href]"]
+title_selectors = ["h2"]
+date_selectors = ["time"]
 
 [[sources]]
 id = "fr_viginum"
@@ -272,9 +295,14 @@ language = "fr"
 homepage = "https://www.sgdsn.gouv.fr/viginum"
 listing_url = "https://www.sgdsn.gouv.fr/viginum/actualites"
 allow_domains = ["sgdsn.gouv.fr", "www.sgdsn.gouv.fr"]
-include_patterns = ['^/viginum/actualites/.+']
+include_patterns = ['^/(?:index%2Ephp/)?viginum/actualites/.+']
 exclude_patterns = ['^/viginum/actualites/?$']
 detail_pages = 10
+card_selectors = ["article.node--type-actualite.fr-card"]
+link_selectors = [".fr-card__link"]
+title_selectors = [".fr-card__title"]
+date_selectors = [".fr-card__detail"]
+summary_selectors = [".fr-card__desc"]
 
 [[sources]]
 id = "de_bsi_news"
@@ -346,14 +374,15 @@ exclude_patterns = ['/pressemitteilungen\.html$']
 critical = false
 observation_runs = 3
 detail_pages = 12
+card_selectors = ["article"]
+link_selectors = ["h3 a[href]"]
+title_selectors = ["h3"]
+date_selectors = [".heading p.text-meta .date"]
+summary_selectors = [".copytext"]
 
 [[sources]]
 id = "de_cispa"
-date_policy = "best_effort"
-date_exception_reason = "The current news layout does not expose a stable date field for every card."
-date_evidence_url = "https://cispa.de/en/news-and-events/all-news"
-date_reviewed_on = "2026-07-18"
-date_review_due = "2027-01-31"
+date_policy = "required"
 country = "DE"
 name_zh = "德國 CISPA 亥姆霍茲資訊安全中心"
 name = "CISPA Helmholtz Center for Information Security"
@@ -362,9 +391,13 @@ language = "en"
 homepage = "https://cispa.de/"
 listing_url = "https://cispa.de/en/news-and-events/all-news"
 allow_domains = ["cispa.de"]
-include_patterns = ['/en/news-and-events/.+']
+include_patterns = ['^/en/[a-z0-9][a-z0-9-]+$']
 exclude_patterns = ['/en/news-and-events/(all-news|all-events)/?$']
 detail_pages = 10
+card_selectors = [".news-card a.news[href]"]
+title_selectors = ["h3.news-title"]
+date_selectors = [".label"]
+summary_selectors = ["p"]
 
 [[sources]]
 id = "de_bfdi"
@@ -382,7 +415,7 @@ exclude_patterns = ['pressemitteilungen_node\.html$']
 card_selectors = ["table.textualData tbody tr"]
 link_selectors = ["td:nth-child(2) a"]
 date_selectors = ["td:first-child"]
-detail_pages = 12
+detail_pages = 0
 
 [[sources]]
 id = "de_bundeskartellamt"
@@ -579,7 +612,12 @@ listing_url = "https://www.eeas.europa.eu/eeas/press-material_en"
 allow_domains = ["eeas.europa.eu", "www.eeas.europa.eu"]
 include_patterns = ['^/eeas/.+_en$']
 exclude_patterns = ['^/eeas/press-material_en$']
-detail_pages = 10
+detail_pages = 0
+card_selectors = [".related-grid > .card"]
+link_selectors = [".card-title a[href]"]
+title_selectors = [".card-title"]
+date_selectors = [".card-footer.node__meta"]
+summary_selectors = [".card-text"]
 
 [[sources]]
 id = "fr_culture"
@@ -599,11 +637,7 @@ detail_pages = 12
 
 [[sources]]
 id = "fr_dinum"
-date_policy = "best_effort"
-date_exception_reason = "The press page does not expose a stable publication-date selector for every item."
-date_evidence_url = "https://www.numerique.gouv.fr/sinformer/espace-presse/"
-date_reviewed_on = "2026-07-18"
-date_review_due = "2027-01-31"
+date_policy = "required"
 country = "FR"
 name_zh = "法國跨部會數位總局"
 name = "Direction interministérielle du numérique"
@@ -612,8 +646,14 @@ language = "fr"
 homepage = "https://www.numerique.gouv.fr/"
 listing_url = "https://www.numerique.gouv.fr/sinformer/espace-presse/"
 allow_domains = ["numerique.gouv.fr", "www.numerique.gouv.fr"]
-include_patterns = ['^/actualites/.+']
-detail_pages = 10
+include_patterns = ['^/sinformer/espace-presse/.+']
+exclude_patterns = ['^/sinformer/espace-presse/(?:atom|rss)/?$']
+detail_pages = 0
+card_selectors = [".fr-card"]
+link_selectors = [".fr-card__title a[href]"]
+title_selectors = [".fr-card__title"]
+date_selectors = [".fr-card__detail"]
+summary_selectors = [".fr-card__desc"]
 
 [[sources]]
 id = "de_bbk"
@@ -628,6 +668,11 @@ allow_domains = ["bbk.bund.de", "www.bbk.bund.de"]
 include_patterns = ['/SharedDocs/(Kurzmeldungen|Pressemitteilungen)/DE/.+\.html']
 exclude_patterns = ['unsere-meldungen_node\.html$']
 detail_pages = 12
+card_selectors = [".c-news-grid__element"]
+link_selectors = ["a.c-link[href]"]
+title_selectors = [".c-news-grid__headline"]
+date_selectors = ["time[datetime]"]
+summary_selectors = [".c-news-grid__text > p:not(.c-news-grid__topline)"]
 
 [[sources]]
 id = "ie_dete"
@@ -675,11 +720,7 @@ detail_pages = 12
 
 [[sources]]
 id = "eu_chips_ju"
-date_policy = "best_effort"
-date_exception_reason = "Legacy NewsDetails entries do not consistently expose machine-readable publication dates."
-date_evidence_url = "https://www.chips-ju.europa.eu/News/"
-date_reviewed_on = "2026-07-18"
-date_review_due = "2027-01-31"
+date_policy = "required"
 country = "EU"
 name_zh = "歐洲晶片聯合事業"
 name = "Chips Joint Undertaking"
@@ -690,6 +731,10 @@ listing_url = "https://www.chips-ju.europa.eu/News/"
 allow_domains = ["chips-ju.europa.eu", "www.chips-ju.europa.eu"]
 include_patterns = ['^/NewsDetails\?id=']
 detail_pages = 12
+card_selectors = ["div.col-lg-4.col-md-6.mb10"]
+link_selectors = ["h4 a[href*='NewsDetails']"]
+title_selectors = ["h4"]
+date_selectors = [".mb-1 .d-inline", ".de-bloglist-type-1 .blog-item-row:nth-child(1) div"]
 
 [[sources]]
 id = "eu_sns_ju"
@@ -708,6 +753,9 @@ detail_pages = 10
 [[sources]]
 id = "fr_cea_list"
 tls_intermediate_bundle = "geant-tls-rsa-1.pem"
+paused_until = "2026-10-31"
+pause_reason = "Direct TLS connections to the official home, news and feed endpoints repeatedly exceeded the connection budget on 2026-07-28; retain the source but avoid weekly no-op waits until review."
+pause_evidence_url = "https://list.cea.fr/en/news/"
 country = "FR"
 name_zh = "法國原子能暨替代能源署 CEA-List"
 name = "CEA-List"
@@ -766,11 +814,7 @@ detail_pages = 10
 
 [[sources]]
 id = "de_interface"
-date_policy = "best_effort"
-date_exception_reason = "Publication cards use multiple templates and some dates are only available on detail pages."
-date_evidence_url = "https://www.interface-eu.org/publications"
-date_reviewed_on = "2026-07-18"
-date_review_due = "2027-01-31"
+date_policy = "required"
 country = "DE"
 name_zh = "德國 Interface 科技政策智庫"
 name = "interface - Tech analysis and policy ideas for Europe"
@@ -781,7 +825,10 @@ listing_url = "https://www.interface-eu.org/publications"
 allow_domains = ["interface-eu.org", "www.interface-eu.org"]
 include_patterns = ['^/publications/.+']
 exclude_patterns = ['^/publications/?$', '^/publications/download/.+']
-detail_pages = 10
+detail_pages = 12
+card_selectors = ["main a[href^='/publications/']"]
+title_selectors = ["h2"]
+date_selectors = ["div.space-y-1 > p:last-child"]
 
 [[sources]]
 id = "de_swp"
@@ -801,6 +848,11 @@ allow_domains = ["swp-berlin.org", "www.swp-berlin.org"]
 include_patterns = ['^/publikation/.+', '^/publications/.+']
 exclude_patterns = ['^/(publikationen|publications)/?$']
 detail_pages = 10
+card_selectors = ["li.publication-list__item"]
+link_selectors = ["h3 a[href]"]
+title_selectors = ["h3"]
+date_selectors = [".publication-list__information"]
+summary_selectors = ["h3 + p"]
 
 [[sources]]
 id = "ie_ceadar"
@@ -829,6 +881,10 @@ allow_domains = ["insight-centre.org", "www.insight-centre.org"]
 include_patterns = ['^/[a-z0-9][a-z0-9-]{12,}/$']
 exclude_patterns = ['^/(about-us|governance|people|projects|industry|ecosystem|privacy-statement|copyright-statement|data-protection-notice)/?$']
 detail_pages = 10
+card_selectors = [".news-list .news-item"]
+link_selectors = [".news-title a[href]"]
+title_selectors = [".news-title"]
+date_selectors = [".news-date"]
 
 [[sources]]
 id = "ie_esri"
@@ -850,6 +906,10 @@ exclude_patterns = ['^/news/?$']
 detail_pages = 10
 pagination_url = "https://www.esri.ie/news?page={page}"
 max_pages = 5
+card_selectors = ["article.teaser.node--type-news"]
+link_selectors = [".teaser__title a[href]"]
+title_selectors = [".teaser__title"]
+date_selectors = [".teaser__date"]
 
 [[sources]]
 id = "ie_tyndall"
