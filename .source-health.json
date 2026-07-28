@@ -5191,6 +5191,939 @@
           }
         ]
       }
+    },
+    "5bbebef5d4463a2e": {
+      "profile": {
+        "period_mode": "rolling",
+        "fetch_details": true,
+        "include_undated": false,
+        "include_unmatched": false,
+        "source_budget": 60,
+        "paused_source_ids": [
+          "fr_cea_list"
+        ]
+      },
+      "updated_at": "2026-07-28T14:54:00.484059+00:00",
+      "sources": {
+        "eu_dg_connect": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "a917a841772390fd",
+            "success": true,
+            "raw_count": 13,
+            "newest_published_at": "2026-07-26T22:00:00+00:00",
+            "in_range_count": 13,
+            "freshness_lag_days": 1.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_enisa_news": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "ba4b483965136992",
+            "success": true,
+            "raw_count": 12,
+            "newest_published_at": "2026-07-24T10:00:13+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 4.25,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_enisa_publications": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "41330af00f1e26ef",
+            "success": true,
+            "raw_count": 3,
+            "newest_published_at": "2026-07-22T12:21:41+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 6.15,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_cert_threat": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "2b04fe7d437c8479",
+            "success": true,
+            "raw_count": 9,
+            "newest_published_at": "2026-07-01T12:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 27.17,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_cert_advisories": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "c410113d6c15ca8c",
+            "success": true,
+            "raw_count": 9,
+            "newest_published_at": "2026-07-13T22:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 14.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_jrc_news": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "86772d87fc6baab1",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-28T12:00:00+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 0.17,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_enisa_certification": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "29290c8fa63040ba",
+            "success": true,
+            "raw_count": 3,
+            "newest_published_at": "2026-07-24T12:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 4.17,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_presscorner": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "eefd5875f1610a7a",
+            "success": true,
+            "raw_count": 100,
+            "newest_published_at": "2026-07-28T00:00:00+00:00",
+            "in_range_count": 61,
+            "freshness_lag_days": 0.67,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_parliament_press": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "a50c90985d6a075e",
+            "success": false,
+            "raw_count": 0,
+            "newest_published_at": "",
+            "in_range_count": 0,
+            "freshness_lag_days": 0.0,
+            "parse_status": "empty",
+            "freshness_status": "unknown",
+            "baseline_failure": true,
+            "health_status": "attention"
+          }
+        ],
+        "fr_anssi": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "9e9893bb30deb59d",
+            "success": true,
+            "raw_count": 20,
+            "newest_published_at": "2026-07-20T22:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 7.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_cnil": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "e8fbc83fdba66fad",
+            "success": true,
+            "raw_count": 25,
+            "newest_published_at": "2026-07-21T22:00:00+00:00",
+            "in_range_count": 6,
+            "freshness_lag_days": 6.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_cybermalveillance": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "41521dc1d075542c",
+            "success": true,
+            "raw_count": 23,
+            "newest_published_at": "2026-07-28T13:22:05+00:00",
+            "in_range_count": 5,
+            "freshness_lag_days": 0.11,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_arcep": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "08d325a35a92ef6b",
+            "success": true,
+            "raw_count": 9,
+            "newest_published_at": "2026-07-27T00:00:00+00:00",
+            "in_range_count": 9,
+            "freshness_lag_days": 1.67,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_inria": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "8fe6562761261c98",
+            "success": true,
+            "raw_count": 15,
+            "newest_published_at": "2026-07-15T09:21:09+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 13.28,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_dge": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "1c9b60c6c560b2c4",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-27T22:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 0.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_arcom": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "4b8b57c27e3e50c7",
+            "success": true,
+            "raw_count": 9,
+            "newest_published_at": "2026-07-19T22:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 8.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_concurrence": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "900715150cf7ce59",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-17T09:35:25+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 11.27,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_viginum": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "890f0a86b90e2f78",
+            "success": true,
+            "raw_count": 5,
+            "newest_published_at": "2026-06-23T22:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 34.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_bsi_news": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "0a83dff0150380c9",
+            "success": true,
+            "raw_count": 15,
+            "newest_published_at": "2026-07-26T22:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 1.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_bmi": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "56e7c6484e1201a3",
+            "success": true,
+            "raw_count": 5,
+            "newest_published_at": "2026-07-20T22:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 7.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_bnetza": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "573cdd92d51ab8c4",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-21T22:00:00+00:00",
+            "in_range_count": 7,
+            "freshness_lag_days": 6.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_fraunhofer_aisec": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "399ac49ebeca5eaa",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-05T22:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 22.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_cispa": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "1b3a3b04fed8490c",
+            "success": true,
+            "raw_count": 6,
+            "newest_published_at": "2026-07-27T22:00:00+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 0.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_bfdi": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "819621f86fe0b9d1",
+            "success": true,
+            "raw_count": 50,
+            "newest_published_at": "2026-06-25T22:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 32.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_bundeskartellamt": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "e0e285efdead4424",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-20T22:00:00+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 7.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_dpma": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "c1bb86e5dd276091",
+            "success": true,
+            "raw_count": 12,
+            "newest_published_at": "2026-07-07T22:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 20.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_ncsc": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "52ccacc84be64e3e",
+            "success": true,
+            "raw_count": 223,
+            "newest_published_at": "2026-07-22T00:00:00+00:00",
+            "in_range_count": 6,
+            "freshness_lag_days": 6.67,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_comreg": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "a8a1305759bd82f3",
+            "success": true,
+            "raw_count": 20,
+            "newest_published_at": "2026-07-08T08:48:40+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 20.3,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_dpc": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "5c88f3600e9d425d",
+            "success": true,
+            "raw_count": 5,
+            "newest_published_at": "2026-06-29T23:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 28.71,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_nsai": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "7016eed4b88b915e",
+            "success": true,
+            "raw_count": 8,
+            "newest_published_at": "2026-06-16T23:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 41.71,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_adapt": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "e08e10c0a6a1860b",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-27T09:56:50+00:00",
+            "in_range_count": 9,
+            "freshness_lag_days": 1.25,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_cnam": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "4620715836a17a7a",
+            "success": true,
+            "raw_count": 20,
+            "newest_published_at": "2026-07-23T10:56:52+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 5.21,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_electoral_commission": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "9fd054d55ce3f7c7",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-17T11:37:17+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 11.18,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_edpb": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "9516813e06a2d222",
+            "success": true,
+            "raw_count": 31,
+            "newest_published_at": "2026-07-22T22:00:00+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 5.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_dg_home": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "d9b78b1f56401cf4",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-28T12:00:00+00:00",
+            "in_range_count": 10,
+            "freshness_lag_days": 0.17,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_eeas": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "0911f59373f2077b",
+            "success": true,
+            "raw_count": 5,
+            "newest_published_at": "2026-07-27T22:00:00+00:00",
+            "in_range_count": 5,
+            "freshness_lag_days": 0.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_culture": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "88e0a9d7433aeaae",
+            "success": true,
+            "raw_count": 15,
+            "newest_published_at": "2026-07-27T00:00:00+00:00",
+            "in_range_count": 7,
+            "freshness_lag_days": 1.67,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_dinum": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "2de327861b9b0853",
+            "success": true,
+            "raw_count": 4,
+            "newest_published_at": "2026-07-09T22:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 18.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_bbk": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "8bd9f3f58d2ab9fd",
+            "success": true,
+            "raw_count": 3,
+            "newest_published_at": "2026-06-12T00:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 46.67,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_dete": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "1655fcb396f7b3b0",
+            "success": true,
+            "raw_count": 12,
+            "newest_published_at": "2026-06-25T23:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 32.71,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_research_ireland": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "72a32795ee6b6df7",
+            "success": true,
+            "raw_count": 185,
+            "newest_published_at": "2026-07-06T16:10:29+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 21.99,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_eurohpc": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "39f93e83baf09b8b",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-23T12:00:00+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 5.17,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_chips_ju": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "e15c896c73ce6ddf",
+            "success": true,
+            "raw_count": 6,
+            "newest_published_at": "2026-07-15T22:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 12.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "eu_sns_ju": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "e19a4b52be8b23e2",
+            "success": true,
+            "raw_count": 252,
+            "newest_published_at": "2026-07-20T08:01:01+00:00",
+            "in_range_count": 4,
+            "freshness_lag_days": 8.33,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_campus_cyber": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "9955477e0d15e66c",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-16T14:34:31+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 12.06,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "fr_institut_montaigne": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "c496a220fdde3aa1",
+            "success": true,
+            "raw_count": 25,
+            "newest_published_at": "2026-07-27T14:14:57+00:00",
+            "in_range_count": 13,
+            "freshness_lag_days": 1.07,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_athene": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "d43df769675b1191",
+            "success": true,
+            "raw_count": 1,
+            "newest_published_at": "2026-06-26T07:28:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 32.36,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_interface": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "8e8110094da7091b",
+            "success": true,
+            "raw_count": 12,
+            "newest_published_at": "2026-07-14T22:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 13.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "de_swp": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "6663e0dfe990182d",
+            "success": true,
+            "raw_count": 5,
+            "newest_published_at": "2026-07-19T22:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 8.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_ceadar": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "90cb24baf2157a41",
+            "success": true,
+            "raw_count": 7,
+            "newest_published_at": "2026-07-23T09:04:31+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 5.29,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_insight": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "3e5449bf8ae69acd",
+            "success": true,
+            "raw_count": 494,
+            "newest_published_at": "2026-07-02T08:47:28+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 26.3,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_esri": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "ba89917ea9b070cd",
+            "success": true,
+            "raw_count": 24,
+            "newest_published_at": "2026-07-16T10:18:04+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 12.24,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_tyndall": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "0d55698d5cb6a8cd",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-07-16T07:39:34+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 12.35,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ],
+        "ie_cyber_ireland": [
+          {
+            "run_id": "4150f4766f2947b489ac3950c0f829d0",
+            "recorded_at": "2026-07-28T14:54:00.484059+00:00",
+            "observation_key": "6db95655c65ff654",
+            "source_fingerprint": "3d24fd7ef1d99265",
+            "success": true,
+            "raw_count": 13,
+            "newest_published_at": "2026-07-22T08:38:02+00:00",
+            "in_range_count": 6,
+            "freshness_lag_days": 6.31,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy"
+          }
+        ]
+      }
     }
   }
 }

@@ -1,6 +1,24 @@
 {
   "schema_version": 3,
   "translations": {
+    "fr\u0000Cybermalveillance.gouv.fr lance une AlerteCyber concernant deux failles de sécurité critiques dans Microsoft SharePoint \n \n 28/07/2026 \n \n \n Cybermalveillance.gouv.fr déclenche ce jour une nouvelle AlerteCyber concernant deux failles de sécurité critiques dans Microsoft SharePoint. Il est primordial de les corriger le plus rapidement possible en mettant à jour les systèmes concernés pour réduire les risques d’une cyberattaque.": {
+      "text": "Cybermalveillance.gouv.fr 針對 Microsoft SharePoint 中的兩個關鍵安全漏洞發布了 CyberAlert 2026年7月28日\n \n \n Cybermalveillance.gouv.fr今天觸發了一個新的 CyberAlert，涉及 Microsoft SharePoint 中的兩個關鍵安全漏洞。必須透過更新受影響的系統來盡快修正這些問題，以降低網路攻擊的風險。",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T14:54:00.167129+00:00",
+      "last_accessed_at": "2026-07-28T14:54:00.167129+00:00"
+    },
+    "en\u0000Climate vulnerability of buildings is shifting from colder to hotter regions": {
+      "text": "建築物的氣候脆弱性正在從寒冷地區轉向炎熱地區",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T14:54:00.167129+00:00",
+      "last_accessed_at": "2026-07-28T14:54:00.167129+00:00"
+    },
+    "fr\u0000Environnement": {
+      "text": "環境",
+      "provider": "googletrans",
+      "created_at": "2026-07-28T14:54:00.167129+00:00",
+      "last_accessed_at": "2026-07-28T14:54:00.167129+00:00"
+    },
     "en\u0000Commission publishes new guidance to support businesses' implementation of the Cyber Resilience Act": {
       "text": "委員會發布新指南以支援企業實施《網路彈性法案》",
       "provider": "googletrans",
