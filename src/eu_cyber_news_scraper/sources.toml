@@ -484,7 +484,7 @@ card_selectors = [".ajax-posts"]
 link_selectors = [".News_Block_content_inn_title h3 a"]
 title_selectors = [".News_Block_content_inn_title h3"]
 date_selectors = [".News_Block_content_inn_date span"]
-detail_pages = 12
+detail_pages = 0
 
 [[sources]]
 id = "ie_dpc"
