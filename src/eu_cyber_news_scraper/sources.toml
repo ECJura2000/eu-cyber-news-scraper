@@ -127,6 +127,9 @@ detail_pages = 10
 
 [[sources]]
 id = "eu_parliament_press"
+paused_until = "2026-08-31"
+pause_reason = "The official listing and RSS endpoints returned an HTTP 202 JavaScript challenge to GitHub-hosted runners on 2026-07-28, while the same RSS feed returned valid XML locally; pause scheduled requests until review."
+pause_evidence_url = "https://www.europarl.europa.eu/at-your-service/en/stay-informed/rss-feeds"
 country = "EU"
 name_zh = "歐洲議會新聞中心"
 name = "European Parliament Press Room"

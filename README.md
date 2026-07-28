@@ -127,7 +127,7 @@ python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95
 
 `.github/workflows/scrape.yml` 會在每週一 00:00 UTC（臺灣時間 08:00）執行，將 Excel、JSONL 與執行摘要保存為 30 天的 workflow artifact。新聞輸出不提交到 `main`；健康 state v2 與翻譯快取保存於公開孤立 `state` 分支，分支不存在時 workflow 直接失敗。必要來源進入 `degraded` 或正式品質 gate 失敗時，會建立或更新單一 `EU cyber news source health` Issue，恢復後自動關閉；其他來源的 `degraded` 與單次 `attention` 僅寫入 Actions Job Summary。所有第三方 Actions 均固定到完整 commit SHA。推送符合 `v*` 的版本標籤時，Release workflow 會重新驗證測試、建置 wheel／sdist、產生 SHA-256、建立 provenance attestation 並發布 GitHub Release。
 
-來源可用 `paused_until`、`pause_reason` 與 `pause_evidence_url` 暫停到指定複查日；一般全量執行會跳過並在 `.run.json` 留下稽核資料，明確使用 `--source <id>` 時仍可強制複查。目前 CEA LIST 因官方端點 TLS 連線持續超時，暫停至 2026-10-31。
+來源可用 `paused_until`、`pause_reason` 與 `pause_evidence_url` 暫停到指定複查日；一般全量執行會跳過並在 `.run.json` 留下稽核資料，明確使用 `--source <id>` 時仍可強制複查。目前 CEA LIST 因官方端點 TLS 連線持續超時，暫停至 2026-10-31；歐洲議會官方 RSS 與列表因 GitHub-hosted runner 收到 HTTP 202 JavaScript challenge，暫停排程至 2026-08-31，本機仍可用 `--source eu_parliament_press` 複查。
 
 ## 測試
 

@@ -35,6 +35,13 @@ def test_paused_source_has_auditable_review_metadata():
     assert source.pause_evidence_url == source.listing_url
 
 
+def test_europarl_runner_challenge_is_auditable_and_overridable():
+    source = next(item for item in load_sources() if item.id == "eu_parliament_press")
+    assert source.paused_until == "2026-08-31"
+    assert "HTTP 202" in source.pause_reason
+    assert source.pause_evidence_url == "https://www.europarl.europa.eu/at-your-service/en/stay-informed/rss-feeds"
+
+
 def test_comreg_uses_complete_listing_without_slow_detail_requests():
     source = next(item for item in load_sources() if item.id == "ie_comreg")
     assert source.card_selectors

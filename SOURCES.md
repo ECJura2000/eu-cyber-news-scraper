@@ -14,7 +14,7 @@
 | `eu_cert_advisories` | CERT-EU | 歐盟機構安全公告 | [Security advisories](https://cert.europa.eu/publications/security-advisories/) |
 | `eu_jrc_news` | Joint Research Centre | 歐盟執委會官方研究機構 | [News and updates](https://joint-research-centre.ec.europa.eu/jrc-news-and-updates_en) |
 | `eu_presscorner` | European Commission | 執委會正式新聞稿 | [Press Corner](https://ec.europa.eu/commission/presscorner/home/en) |
-| `eu_parliament_press` | European Parliament | 歐盟立法機關新聞 | [Press Room](https://www.europarl.europa.eu/news/en/press-room) |
+| `eu_parliament_press` | European Parliament | 歐盟立法機關新聞 | [Press Room](https://www.europarl.europa.eu/news/en/press-room)（GitHub-hosted runner 收到 HTTP 202 challenge，排程暫停至 2026-08-31；可明確指定來源複查） |
 | `eu_edpb` | European Data Protection Board | 個資保護、跨境資料與 AI 資料治理 | [News](https://www.edpb.europa.eu/news_en) |
 | `eu_dg_home` | DG HOME | CER 與關鍵實體的實體韌性政策 | [News](https://home-affairs.ec.europa.eu/news_en) |
 | `eu_eeas` | European External Action Service | 外國資訊操縱（FIMI）與混合威脅 | [Press material](https://www.eeas.europa.eu/eeas/press-material_en) |
