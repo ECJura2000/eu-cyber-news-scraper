@@ -6,7 +6,7 @@ from pathlib import Path
 import pytest
 
 from eu_cyber_news_scraper.config import load_sources
-from eu_cyber_news_scraper.parsers import allowed_article_url, enrich_from_detail, parse_listing
+from eu_cyber_news_scraper.parsers import allowed_article_url, enrich_from_detail, parse_feed, parse_listing
 
 
 def contract_rows():
@@ -88,3 +88,15 @@ def test_interface_listing_and_detail_date_contract():
     assert article.published_at is None
     enrich_from_detail(article, detail.read_text(encoding="utf-8"), source)
     assert article.published_date_local == "2026-07-15"
+
+
+def test_european_parliament_official_rss_contract(fixture_dir):
+    source = next(item for item in load_sources() if item.id == "eu_parliament_press")
+    feed_url = "https://www.europarl.europa.eu/rss/doc/press-releases/en.xml"
+    assert source.feed_urls == (feed_url,)
+    payload = (fixture_dir / "contract_eu_parliament_press_feed.xml").read_bytes()
+    articles = parse_feed(payload, source, feed_url)
+    assert len(articles) == 1
+    assert articles[0].title == "EU defence innovation: deal with Council on new AGILE programme"
+    assert articles[0].url == "https://www.europarl.europa.eu/news/en/press-room/20260715IPR46501/"
+    assert articles[0].published_date_local == "2026-07-15"
