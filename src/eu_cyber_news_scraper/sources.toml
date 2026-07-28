@@ -446,6 +446,10 @@ allow_domains = ["comreg.ie", "www.comreg.ie"]
 include_patterns = ['^/[^/]+/?$', '/industry/nis2-cer/.+']
 exclude_patterns = ['^/news/?$']
 critical = true
+card_selectors = [".ajax-posts"]
+link_selectors = [".News_Block_content_inn_title h3 a"]
+title_selectors = [".News_Block_content_inn_title h3"]
+date_selectors = [".News_Block_content_inn_date span"]
 detail_pages = 12
 
 [[sources]]

@@ -10,7 +10,7 @@ EXPECTED = {
     "fr_cybermalveillance": "Conseils contre les rançongiciels",
     "de_bsi_news": "BSI veröffentlicht Lagebericht",
     "ie_ncsc": "NCSC publishes security alert",
-    "ie_comreg": "ComReg issues NIS2 update",
+    "ie_comreg": "Consumer News from Q2 2026",
 }
 
 

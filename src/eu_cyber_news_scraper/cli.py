@@ -435,7 +435,7 @@ def _validate_quality_options(args: argparse.Namespace) -> None:
 
 def _quality_failures(statuses: list[SourceStatus], args: argparse.Namespace) -> list[dict[str, str]]:
     failures: list[dict[str, str]] = []
-    success_rate = sum(status.success for status in statuses) / len(statuses) if statuses else 0.0
+    success_rate = sum(status.fetch_status == "ok" for status in statuses) / len(statuses) if statuses else 0.0
     minimum_success = getattr(args, "min_source_success_rate", None)
     if minimum_success is not None and success_rate < minimum_success:
         failures.append(

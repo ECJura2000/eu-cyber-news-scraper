@@ -68,6 +68,7 @@ def test_quality_gate_reports_stable_error_codes():
             0,
             invalid_date_count=1,
             unexplained_future_date_count=1,
+            fetch_status="failed",
         ),
         SourceStatus("ok", "來源", "EU", False, True, "html", 1, 0, 0),
     ]
@@ -75,6 +76,27 @@ def test_quality_gate_reports_stable_error_codes():
         "SOURCE_SUCCESS_RATE_LOW",
         "FUTURE_DATE_LIMIT_EXCEEDED",
     ]
+
+
+def test_source_success_gate_uses_fetch_status_not_parsed_card_count():
+    from eu_cyber_news_scraper.models import SourceStatus
+
+    args = build_parser().parse_args(["--min-source-success-rate", "1"])
+    connected_but_empty = SourceStatus(
+        "empty",
+        "來源",
+        "EU",
+        False,
+        False,
+        "",
+        0,
+        0,
+        0,
+        fetch_status="ok",
+        parse_status="empty",
+    )
+
+    assert _quality_failures([connected_but_empty], args) == []
 
 
 def test_health_state_requires_a_successful_quality_eligible_run():
