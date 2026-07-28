@@ -57,11 +57,11 @@
   },
   {
     "source_id": "de_cispa",
-    "title": "CISPA DLS",
-    "url": "https://cispa.de/en/news-and-events/all-events/distinguished-lecture-series",
+    "title": "Test-of-Time Award for CISPA-Faculty Cas Cremers and Colleagues from ETH Zurich",
+    "url": "https://cispa.de/en/test-of-time-award",
     "captured_at": "2026-07-18",
     "source_url": "https://cispa.de/en/news-and-events/all-news",
-    "sha256": "577d3d80853f32842b35773933638b43a27a52c8c119f2d97b7f7f6872bd74c7"
+    "sha256": "74cc56073dd79f502a670267a5db1c0770f67c0cd420989e158605986717f0ff"
   },
   {
     "source_id": "de_dpma",
@@ -297,11 +297,11 @@
   },
   {
     "source_id": "fr_dinum",
-    "title": "Lien de consultation",
-    "url": "https://www.numerique.gouv.fr/actualites/franceconnect-10-ans-identite-numerique-francais/",
+    "title": "Incident de sécurité sur Tchap : la DINUM sécurise la plateforme et informe les usagers après une intrusion maîtrisée",
+    "url": "https://www.numerique.gouv.fr/sinformer/espace-presse/incident-tchap/",
     "captured_at": "2026-07-18",
     "source_url": "https://www.numerique.gouv.fr/sinformer/espace-presse/",
-    "sha256": "6f64b08e157692fd4a80e5a57895d6269cbb2b1e99110c6e6f344a14b82c3e3a"
+    "sha256": "75fe1404e18b191e700a664be678a032ddc0cca3fe163f653bdaa487d55fbfae"
   },
   {
     "source_id": "fr_inria",

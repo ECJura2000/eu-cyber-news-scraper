@@ -69,7 +69,7 @@ python -m eu_cyber_news_scraper --days 14 --source-budget 60 --state-dir .state
 python -m eu_cyber_news_scraper --days 14 --health-write always --state-dir .state
 
 # 正式品質 gate；產物仍會在 gate 失敗時完整發布供診斷
-python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95 --min-critical-date-rate 0.95 --max-unexplained-future-dates 0 --require-complete-artifacts
+python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95 --min-parse-success-rate 0.95 --max-empty-sources 1 --min-overall-date-rate 0.75 --min-critical-date-rate 0.95 --max-unexplained-future-dates 0 --require-complete-artifacts
 ```
 
 `--days` 與 `--since/--until` 是互斥模式；指定期間時起訖值必須同時提供。日期支援西元
@@ -125,7 +125,9 @@ python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95
 
 ## GitHub Actions
 
-`.github/workflows/scrape.yml` 會在每週一 00:00 UTC（臺灣時間 08:00）執行，將 Excel、JSONL 與執行摘要保存為 30 天的 workflow artifact。新聞輸出不提交到 `main`；健康 state v2 與翻譯快取保存於公開孤立 `state` 分支，分支不存在時 workflow 直接失敗。必要來源 `degraded` 時會建立或更新單一 `EU cyber news source health` Issue，恢復後自動關閉；`attention` 僅寫入 Actions Job Summary。所有第三方 Actions 均固定到完整 commit SHA。
+`.github/workflows/scrape.yml` 會在每週一 00:00 UTC（臺灣時間 08:00）執行，將 Excel、JSONL 與執行摘要保存為 30 天的 workflow artifact。新聞輸出不提交到 `main`；健康 state v2 與翻譯快取保存於公開孤立 `state` 分支，分支不存在時 workflow 直接失敗。必要來源進入 `degraded` 或正式品質 gate 失敗時，會建立或更新單一 `EU cyber news source health` Issue，恢復後自動關閉；其他來源的 `degraded` 與單次 `attention` 僅寫入 Actions Job Summary。所有第三方 Actions 均固定到完整 commit SHA。推送符合 `v*` 的版本標籤時，Release workflow 會重新驗證測試、建置 wheel／sdist、產生 SHA-256、建立 provenance attestation 並發布 GitHub Release。
+
+來源可用 `paused_until`、`pause_reason` 與 `pause_evidence_url` 暫停到指定複查日；一般全量執行會跳過並在 `.run.json` 留下稽核資料，明確使用 `--source <id>` 時仍可強制複查。目前 CEA LIST 因官方端點 TLS 連線持續超時，暫停至 2026-10-31。
 
 ## 測試
 
@@ -137,7 +139,7 @@ uv run pytest --cov=eu_cyber_news_scraper --cov-report=term-missing --cov-fail-u
 uv run pip-audit
 ```
 
-測試採本地 RSS／HTML fixtures，不依賴即時網站；55 個來源各保存實際官方 URL、來源入口、擷取日與 SHA-256 合約，高風險 selector 另有精簡官方 HTML fixture。議題評估集包含 240 筆獨立官方英、法、德項目，每種語言 80 筆，並區分 dev 與 locked test、hard negative 及 provenance；要求整體 precision、recall 均至少 0.90，每個主題 recall 至少 0.75。CI 會在 Python 3.11、3.12、3.13 執行，要求至少 90% 覆蓋率、Ruff、mypy strict、`pip-audit`、`uv.lock` 一致性及 wheel／sdist 安裝測試；每週工作另會先對必要來源執行不翻譯的 smoke test。
+測試採本地 RSS／HTML fixtures，不依賴即時網站；55 個來源各保存實際官方 URL、來源入口、擷取日與 SHA-256 合約，高風險 selector 另有精簡官方 HTML fixture。議題評估集包含 240 筆獨立官方英、法、德項目，每種語言 80 筆，並區分 dev 與 locked test、hard negative 及 provenance；要求整體 precision、recall 均至少 0.90，每個主題 recall 至少 0.75。翻譯另有 60 筆英、法、德人工審核黃金集，驗證繁體中文輸出與必要法制／資安術語。CI 會在 Python 3.11、3.12、3.13 執行，要求至少 90% 覆蓋率、Ruff、mypy strict、`pip-audit`、`uv.lock` 一致性及 wheel／sdist 安裝測試；每週工作另會先對必要來源執行不翻譯的 smoke test。
 
 ## 已知限制
 

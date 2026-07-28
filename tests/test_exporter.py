@@ -1,6 +1,7 @@
+import json
 from datetime import datetime, timezone
 
-from openpyxl import load_workbook
+from openpyxl import Workbook, load_workbook
 
 from eu_cyber_news_scraper.exporter import EXCEL_SUMMARY_LIMIT, export_workbook, safe_excel_text, write_run_summary
 from eu_cyber_news_scraper.models import Article, SourceStatus
@@ -64,6 +65,37 @@ def test_exporter_creates_required_sheets_and_summary(tmp_path):
     assert '"status": "complete"' in summary.read_text(encoding="utf-8")
     assert '"source_summary"' in summary.read_text(encoding="utf-8")
     assert '"schema_version": 5' in summary.read_text(encoding="utf-8")
+
+
+def test_run_summary_records_paused_sources(tmp_path):
+    path = tmp_path / "result.xlsx"
+    workbook = Workbook()
+    workbook.active.title = "全部命中新聞"
+    workbook.save(path)
+    now = datetime.now(timezone.utc)
+    paused = [
+        {
+            "source_id": "paused",
+            "source_name": "暫停來源",
+            "paused_until": "2999-12-31",
+            "reason": "temporary outage",
+            "evidence_url": "https://example.eu/status",
+        }
+    ]
+    summary = write_run_summary(
+        path,
+        started_at=now,
+        finished_at=now,
+        since=now,
+        until=now,
+        articles=[],
+        statuses=[],
+        paused_sources=paused,
+    )
+    payload = json.loads(summary.read_text(encoding="utf-8"))
+    assert payload["paused_sources"] == paused
+    assert payload["source_summary"]["configured_total"] == 1
+    assert payload["source_summary"]["paused"] == 1
 
 
 def test_excel_formula_text_is_escaped():

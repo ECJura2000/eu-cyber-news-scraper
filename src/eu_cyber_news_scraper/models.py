@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from datetime import datetime
+from datetime import date, datetime
 
 
 @dataclass(frozen=True)
@@ -38,10 +38,16 @@ class Source:
     date_reviewed_on: str = ""
     date_review_due: str = ""
     tls_intermediate_bundle: str = ""
+    paused_until: str = ""
+    pause_reason: str = ""
+    pause_evidence_url: str = ""
 
     @property
     def display_name(self) -> str:
         return f"{self.name_zh}（{self.name}）"
+
+    def is_paused(self, on_date: date) -> bool:
+        return bool(self.paused_until) and date.fromisoformat(self.paused_until) >= on_date
 
 
 @dataclass

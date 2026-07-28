@@ -28,13 +28,13 @@ jobs:
       contents: write
       issues: write
     steps:
-      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
       - name: Checkout durable state branch
-        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
         with:
           ref: state
           path: .state-branch
-      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
         with:
           python-version: "3.13"
           cache: pip
@@ -70,6 +70,9 @@ jobs:
             --state-dir .state
             --source-budget 60
             --min-source-success-rate 0.95
+            --min-parse-success-rate 0.95
+            --max-empty-sources 1
+            --min-overall-date-rate 0.75
             --min-critical-date-rate 0.95
             --max-unexplained-future-dates 0
             --require-complete-artifacts
@@ -90,7 +93,7 @@ jobs:
         working-directory: .state-branch
         run: |
           if [[ ! -f ../.state/.state-ready ]]; then
-            echo "Artifact bundle did not complete; durable state will not advance."
+            echo "Run is not baseline-eligible; durable state will not advance (RUN_NOT_BASELINE_ELIGIBLE)."
             exit 0
           fi
           cp ../.state/.source-health.json . 2>/dev/null || true
@@ -113,23 +116,34 @@ jobs:
           import json, sys
           with open(sys.argv[1], encoding="utf-8") as source:
               payload = json.load(source)
-          bad = [row["source_id"] for row in payload["sources"] if row["critical"] and row["health_status"] == "degraded"]
+          degraded = [row["source_id"] for row in payload["sources"] if row["health_status"] == "degraded"]
+          critical = [
+              row["source_id"]
+              for row in payload["sources"]
+              if row["critical"] and row["health_status"] == "degraded"
+          ]
+          quality = [row["code"] for row in payload.get("quality_gate", {}).get("failures", [])]
           attention = [row["source_id"] for row in payload["sources"] if row["health_status"] == "attention"]
           with open(sys.argv[2], "a", encoding="utf-8") as stream:
-              stream.write(f"## EU cyber news source health\n\nAttention: {', '.join(attention) or 'none'}\n")
-          print(" ".join(bad))
+              stream.write(
+                  "## EU cyber news source health\n\n"
+                  f"Attention: {', '.join(attention) or 'none'}\n\n"
+                  f"Degraded: {', '.join(degraded) or 'none'}\n\n"
+                  f"Quality failures: {', '.join(quality) or 'none'}\n"
+              )
+          print(" ".join([*critical, *quality]))
           PY
           )
           issue=$(gh issue list --state open --search '"EU cyber news source health" in:title' --json number --jq '.[0].number // empty')
           if [[ -n "$degraded" ]]; then
-            body=$(printf 'Run %s detected degraded critical sources: %s\n\n%s/%s/actions/runs/%s' "$GITHUB_RUN_ID" "$degraded" "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID")
+            body=$(printf 'Run %s detected degraded critical sources or quality failures: %s\n\n%s/%s/actions/runs/%s' "$GITHUB_RUN_ID" "$degraded" "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID")
             if [[ -n "$issue" ]]; then
               gh issue edit "$issue" --body "$body"
             else
               gh issue create --title "EU cyber news source health" --body "$body"
             fi
           elif [[ -n "$issue" ]]; then
-            gh issue close "$issue" --comment "Critical sources recovered in run $GITHUB_RUN_ID."
+            gh issue close "$issue" --comment "Sources and quality gates recovered in run $GITHUB_RUN_ID."
           fi
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         if: always()

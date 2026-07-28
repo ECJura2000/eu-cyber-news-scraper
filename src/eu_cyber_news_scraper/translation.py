@@ -466,6 +466,22 @@ def _is_translated(source: str, target: str) -> bool:
     )
 
 
+def translation_quality_issues(
+    source: str,
+    target: str,
+    required_terms: tuple[str, ...] = (),
+) -> tuple[str, ...]:
+    issues = []
+    if not _is_translated(source, target):
+        issues.append("not_traditional_chinese_translation")
+    missing = [term for term in required_terms if term not in target]
+    if missing:
+        issues.append(f"missing_terms:{','.join(missing)}")
+    if re.search(r"\b(?:error|forbidden|timeout|service unavailable)\b", target, flags=re.IGNORECASE):
+        issues.append("provider_error_text")
+    return tuple(issues)
+
+
 def _normalize(value: str) -> str:
     return " ".join(value.casefold().split())
 

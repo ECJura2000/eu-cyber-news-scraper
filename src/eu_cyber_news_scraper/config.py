@@ -2,11 +2,13 @@ from __future__ import annotations
 
 import re
 import tomllib
+from datetime import date
 from importlib.resources import files
 from pathlib import Path
 from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
+from . import __version__
 from .models import Source
 
 DEFAULT_DAYS = 14
@@ -18,9 +20,8 @@ DEFAULT_OUTPUT_DIR = Path.cwd() / "新聞放置區"
 DEFAULT_TRANSLATION_WORKERS = 4
 DEFAULT_HTTP_CONCURRENCY = 16
 USER_AGENT = (
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 "
-    "EU-cyber-legal-observation/1.1 (+https://github.com/ECJura2000/eu-cyber-news-scraper)"
+    f"Mozilla/5.0 (compatible; eu-cyber-news-scraper/{__version__}; "
+    "+https://github.com/ECJura2000/eu-cyber-news-scraper)"
 )
 
 COUNTRY_TIMEZONES = {
@@ -77,6 +78,9 @@ def load_sources(path: str | Path | None = None) -> tuple[Source, ...]:
                 date_reviewed_on=str(row.get("date_reviewed_on", "")),
                 date_review_due=str(row.get("date_review_due", "")),
                 tls_intermediate_bundle=str(row.get("tls_intermediate_bundle", "")),
+                paused_until=str(row.get("paused_until", "")),
+                pause_reason=str(row.get("pause_reason", "")),
+                pause_evidence_url=str(row.get("pause_evidence_url", "")),
             )
         )
     _validate_sources(sources)
@@ -119,6 +123,17 @@ def _validate_sources(sources: list[Source]) -> None:
             bundle = Path(__file__).with_name("certificates") / source.tls_intermediate_bundle
             if Path(source.tls_intermediate_bundle).name != source.tls_intermediate_bundle or not bundle.is_file():
                 raise ValueError(f"{source.id}: unknown TLS intermediate bundle: {source.tls_intermediate_bundle}")
+        pause_values = (source.paused_until, source.pause_reason, source.pause_evidence_url)
+        if any(pause_values):
+            if not all(pause_values):
+                raise ValueError(f"{source.id}: paused source requires paused_until, pause_reason and pause_evidence_url")
+            try:
+                date.fromisoformat(source.paused_until)
+            except ValueError as exc:
+                raise ValueError(f"{source.id}: invalid paused_until: {source.paused_until}") from exc
+            evidence = urlsplit(source.pause_evidence_url)
+            if evidence.scheme not in {"http", "https"} or not evidence.netloc:
+                raise ValueError(f"{source.id}: invalid pause_evidence_url: {source.pause_evidence_url}")
         try:
             ZoneInfo(source.timezone)
         except ZoneInfoNotFoundError as exc:
