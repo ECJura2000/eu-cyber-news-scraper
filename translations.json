@@ -1,6 +1,36 @@
 {
   "schema_version": 3,
   "translations": {
+    "en\u0000Maria Grazia Porcedda Contributes to ICONS Conference Discussions on Data Protection, Cybercrime and EU Law": {
+      "text": "Maria Grazia Porcedda 為 ICONS 會議有關資料保護、網路犯罪和歐盟法律的討論做出貢獻",
+      "provider": "googletrans",
+      "created_at": "2026-08-03T03:22:08.693866+00:00",
+      "last_accessed_at": "2026-08-03T03:22:08.693866+00:00"
+    },
+    "en\u0000Commission starts enforcing AI Act rules and new transparency requirements on 2 August": {
+      "text": "委員會於 8 月 2 日開始執行《人工智慧法案》規則和新的透明度要求",
+      "provider": "googletrans",
+      "created_at": "2026-08-03T03:22:08.693866+00:00",
+      "last_accessed_at": "2026-08-03T03:22:08.693866+00:00"
+    },
+    "fr\u0000La DGE et Hub France IA publient une liste de solutions d'IA adaptées aux PME et ETI": {
+      "text": "DGE 和 Hub France IA 發布了適閤中小企業和 ETI 的人工智慧解決方案清單",
+      "provider": "googletrans",
+      "created_at": "2026-08-03T03:22:08.693866+00:00",
+      "last_accessed_at": "2026-08-03T03:22:08.693866+00:00"
+    },
+    "en\u0000Stakeholder event on guidelines on the interplay between data protection and competition law: express your interest | European Data Protection Board": {
+      "text": "關於資料保護與競爭法之間的互動準則利害關係人活動：表達您的興趣 |歐洲資料保護委員會",
+      "provider": "googletrans",
+      "created_at": "2026-08-03T03:22:08.693866+00:00",
+      "last_accessed_at": "2026-08-03T03:22:08.693866+00:00"
+    },
+    "de\u0000Navigation und Service": {
+      "text": "導航與服務",
+      "provider": "googletrans",
+      "created_at": "2026-08-03T03:22:08.693866+00:00",
+      "last_accessed_at": "2026-08-03T03:22:08.693866+00:00"
+    },
     "fr\u0000Cybermalveillance.gouv.fr lance une AlerteCyber concernant deux failles de sécurité critiques dans Microsoft SharePoint \n \n 28/07/2026 \n \n \n Cybermalveillance.gouv.fr déclenche ce jour une nouvelle AlerteCyber concernant deux failles de sécurité critiques dans Microsoft SharePoint. Il est primordial de les corriger le plus rapidement possible en mettant à jour les systèmes concernés pour réduire les risques d’une cyberattaque.": {
       "text": "Cybermalveillance.gouv.fr 針對 Microsoft SharePoint 中的兩個關鍵安全漏洞發布了 CyberAlert 2026年7月28日\n \n \n Cybermalveillance.gouv.fr今天觸發了一個新的 CyberAlert，涉及 Microsoft SharePoint 中的兩個關鍵安全漏洞。必須透過更新受影響的系統來盡快修正這些問題，以降低網路攻擊的風險。",
       "provider": "googletrans",
