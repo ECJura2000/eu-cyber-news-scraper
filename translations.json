@@ -1,6 +1,36 @@
 {
   "schema_version": 3,
   "translations": {
+    "en\u0000Fourth GPAI Signatory Taskforce meeting": {
+      "text": "第四次 GPAI 簽署工作小組會議",
+      "provider": "googletrans",
+      "created_at": "2026-08-04T07:22:17.784058+00:00",
+      "last_accessed_at": "2026-08-04T07:22:17.784058+00:00"
+    },
+    "de\u0000Software-Bestandteillisten: Minimum Elements for SBOM aktualisiert": {
+      "text": "軟體元件清單：更新 SBOM 的最小元素",
+      "provider": "googletrans",
+      "created_at": "2026-08-04T07:22:17.784058+00:00",
+      "last_accessed_at": "2026-08-04T07:22:17.784058+00:00"
+    },
+    "en\u0000Security Advisory 2026-009": {
+      "text": "安全諮詢 2026-009",
+      "provider": "googletrans",
+      "created_at": "2026-08-04T07:22:17.784058+00:00",
+      "last_accessed_at": "2026-08-04T07:22:17.784058+00:00"
+    },
+    "fr\u0000Protection des données : le combat de Cristiana Santos": {
+      "text": "資料保護：克里斯蒂安娜·桑托斯的鬥爭",
+      "provider": "googletrans",
+      "created_at": "2026-08-04T07:22:17.784058+00:00",
+      "last_accessed_at": "2026-08-04T07:22:17.784058+00:00"
+    },
+    "fr\u0000\"Notre IA\" : Inria contribue au déploiement d'une IA de confiance dans les services publics": {
+      "text": "「我們的人工智慧」：Inria 致力於在公共服務中部署可信任人工智慧",
+      "provider": "googletrans",
+      "created_at": "2026-08-04T07:22:17.784058+00:00",
+      "last_accessed_at": "2026-08-04T07:22:17.784058+00:00"
+    },
     "en\u0000Maria Grazia Porcedda Contributes to ICONS Conference Discussions on Data Protection, Cybercrime and EU Law": {
       "text": "Maria Grazia Porcedda 為 ICONS 會議有關資料保護、網路犯罪和歐盟法律的討論做出貢獻",
       "provider": "googletrans",
