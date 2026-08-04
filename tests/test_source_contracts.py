@@ -6,6 +6,7 @@ from pathlib import Path
 import pytest
 
 from eu_cyber_news_scraper.config import load_sources
+from eu_cyber_news_scraper.models import Article
 from eu_cyber_news_scraper.parsers import allowed_article_url, enrich_from_detail, parse_feed, parse_listing
 
 
@@ -22,7 +23,9 @@ def test_real_official_url_contract(row):
     assert date.fromisoformat(row["captured_at"]) <= date.today()
     digest = hashlib.sha256(f"{row['title']}\n{row['url']}".encode()).hexdigest()
     assert digest == row["sha256"]
-    assert row["title"].casefold().strip() not in {"next", "next page", "nächste seite", "page suivante"}
+    assert row["title"].casefold().strip() not in {
+        "next", "next page", "nächste seite", "page suivante", "meldung lesen", "s'abonner à ma recherche",
+    }
 
 
 LAYOUT_CONTRACTS = {
@@ -31,6 +34,7 @@ LAYOUT_CONTRACTS = {
     "de_bnetza": ("contract_de_bnetza.html", "Digital Services Coordinator", "2026-07-05"),
     "de_bfdi": ("contract_de_bfdi.html", "datenschutzfreundlicher Altersverifizierung", "2026-06-25"),
     "de_bundeskartellamt": ("contract_de_bundeskartellamt.html", "RWE-Anteile an Amprion", "2026-07-16"),
+    "de_athene": ("contract_de_athene.html", "externe Angriffsfläche", "2026-07-24"),
 }
 
 
@@ -44,6 +48,8 @@ def test_high_risk_listing_layout_contract(source_id):
     assert expected_title in articles[0].title
     assert articles[0].published_at.date().isoformat() == expected_utc_date
     assert "Next page" not in articles[0].title
+    if source_id == "de_athene":
+        assert articles[0].summary
 
 
 def test_all_configured_sources_have_one_real_url_contract():
@@ -55,6 +61,11 @@ def test_all_configured_sources_have_one_real_url_contract():
 
 def attention_layout_rows():
     path = Path(__file__).parent / "fixtures" / "attention_layout_contracts.json"
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def parser_detail_rows():
+    path = Path(__file__).parent / "fixtures" / "parser_detail_contracts.json"
     return json.loads(path.read_text(encoding="utf-8"))
 
 
@@ -90,6 +101,34 @@ def test_interface_listing_and_detail_date_contract():
     assert article.published_date_local == "2026-07-15"
 
 
+@pytest.mark.parametrize("row", parser_detail_rows(), ids=lambda row: row["source_id"])
+def test_official_detail_parser_contract(row):
+    fixture = Path(__file__).parent / "fixtures" / row["fixture"]
+    assert hashlib.sha256(fixture.read_bytes()).hexdigest() == row["sha256"]
+    assert date.fromisoformat(row["captured_at"]) <= date.today()
+    source = next(item for item in load_sources() if item.id == row["source_id"])
+    article = Article(
+        source.id, source.country, source.name_zh, source.institution_type,
+        source.language, row["title"], row["url"], published_timezone=source.timezone,
+    )
+    enrich_from_detail(article, fixture.read_text(encoding="utf-8"), source)
+    assert article.title == row["title"]
+    assert article.url == row["url"]
+    assert article.published_date_local == row["date"]
+    assert article.summary.startswith(row["summary"])
+    assert article.title.casefold() not in {"navigation und service", "meldung lesen"}
+
+
+def test_all_sources_have_an_executable_parser_fixture(fixture_dir):
+    source_ids = {source.id for source in load_sources()}
+    covered = {path.stem.removeprefix("critical_") for path in fixture_dir.glob("critical_*.html")}
+    covered.update(row["source_id"] for row in attention_layout_rows())
+    covered.update(LAYOUT_CONTRACTS)
+    covered.update(row["source_id"] for row in parser_detail_rows())
+    covered.add("de_interface")
+    assert covered == source_ids
+
+
 def test_european_parliament_official_rss_contract(fixture_dir):
     source = next(item for item in load_sources() if item.id == "eu_parliament_press")
     feed_url = "https://www.europarl.europa.eu/rss/doc/press-releases/en.xml"
@@ -100,3 +139,14 @@ def test_european_parliament_official_rss_contract(fixture_dir):
     assert articles[0].title == "EU defence innovation: deal with Council on new AGILE programme"
     assert articles[0].url == "https://www.europarl.europa.eu/news/en/press-room/20260715IPR46501/"
     assert articles[0].published_date_local == "2026-07-15"
+
+
+def test_inria_official_rss_contract(fixture_dir):
+    source = next(item for item in load_sources() if item.id == "fr_inria")
+    feed_url = "https://www.inria.fr/fr/rss/recherche/actualites"
+    assert source.feed_urls == (feed_url,)
+    articles = parse_feed((fixture_dir / "contract_fr_inria_feed.xml").read_bytes(), source, feed_url)
+    assert len(articles) == 1
+    assert articles[0].title.startswith('"Notre IA"')
+    assert articles[0].published_date_local == "2026-07-21"
+    assert articles[0].date_confidence == "high"

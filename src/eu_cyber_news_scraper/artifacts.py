@@ -2,9 +2,12 @@ from __future__ import annotations
 
 import json
 import shutil
+from hashlib import sha256
 from pathlib import Path
 
 from openpyxl import load_workbook
+
+from .schema_validation import validate_schema_payload
 
 
 class ArtifactBundle:
@@ -74,7 +77,7 @@ def verify_artifact_bundle(
         workbook.close()
     if workbook_count != article_count:
         raise ValueError(f"workbook article count mismatch: {workbook_count} != {article_count}")
-    if metadata.get("schema_version") != 5 or metadata.get("run_id") != run_id:
+    if metadata.get("schema_version") != 6 or metadata.get("run_id") != run_id:
         raise ValueError("workbook run_id or schema_version mismatch")
     if metadata.get("article_count") != article_count:
         raise ValueError("workbook metadata article count mismatch")
@@ -83,12 +86,15 @@ def verify_artifact_bundle(
         rows = [json.loads(line) for line in jsonl_path.read_text(encoding="utf-8").splitlines() if line]
         if len(rows) != article_count:
             raise ValueError(f"JSONL article count mismatch: {len(rows)} != {article_count}")
-        if any(row.get("run_id") != run_id or row.get("schema_version") != 5 for row in rows):
+        if any(row.get("run_id") != run_id or row.get("schema_version") != 6 for row in rows):
             raise ValueError("JSONL run_id or schema_version mismatch")
+        for row in rows:
+            validate_schema_payload(row, "article-v6.schema.json")
 
     summary = json.loads(summary_path.read_text(encoding="utf-8"))
-    if summary.get("run_id") != run_id or summary.get("schema_version") != 5:
+    if summary.get("run_id") != run_id or summary.get("schema_version") != 6:
         raise ValueError("run manifest identity mismatch")
+    validate_schema_payload(summary, "run-v6.schema.json")
     if summary.get("article_count") != article_count:
         raise ValueError("run manifest article count mismatch")
     if not summary.get("artifact_bundle_complete"):
@@ -103,3 +109,43 @@ def verify_artifact_bundle(
     artifacts = summary.get("artifact_manifest", [])
     if not artifacts or any(not row.get("complete") or not row.get("relative_path") for row in artifacts):
         raise ValueError("run manifest artifact entries are incomplete")
+    actual_paths = [workbook_path, *([jsonl_path] if jsonl_path is not None else [])]
+    actual_by_name = {path.name: path for path in actual_paths}
+    declared_by_name = {str(row.get("name", "")): row for row in artifacts}
+    if (
+        len(artifacts) != len(actual_paths)
+        or len(declared_by_name) != len(artifacts)
+        or set(declared_by_name) != set(actual_by_name)
+    ):
+        raise ValueError("run manifest artifact set mismatch")
+    for name, row in declared_by_name.items():
+        relative_path = str(row["relative_path"])
+        if relative_path != name or Path(relative_path).name != relative_path:
+            raise ValueError(f"unsafe artifact relative path: {relative_path}")
+        path = actual_by_name[name]
+        expected = {
+            "sha256": _file_sha256(path),
+            "size_bytes": path.stat().st_size,
+            "row_count": _artifact_row_count(path),
+        }
+        for field, actual in expected.items():
+            if row.get(field) != actual:
+                raise ValueError(f"artifact {field} mismatch for {name}")
+
+
+def _file_sha256(path: Path) -> str:
+    digest = sha256()
+    with path.open("rb") as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def _artifact_row_count(path: Path) -> int:
+    if path.suffix == ".jsonl":
+        return sum(bool(line.strip()) for line in path.read_text(encoding="utf-8").splitlines())
+    workbook = load_workbook(path, read_only=True, data_only=True)
+    try:
+        return max(0, int(workbook["全部命中新聞"].max_row) - 1)
+    finally:
+        workbook.close()

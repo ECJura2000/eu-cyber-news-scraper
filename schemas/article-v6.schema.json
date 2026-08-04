@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ECJura2000/eu-cyber-news-scraper/schemas/article-v6.schema.json",
+  "title": "EU cyber news article v6",
+  "type": "object",
+  "required": [
+    "schema_version", "run_id", "source_id", "title", "url", "date_source",
+    "date_confidence", "date_conflict", "date_candidates"
+  ],
+  "properties": {
+    "schema_version": {"const": 6},
+    "run_id": {"type": "string", "minLength": 1},
+    "source_id": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "url": {"type": "string", "format": "uri", "pattern": "^https?://"},
+    "published_at": {"type": ["string", "null"], "format": "date-time"},
+    "date_source": {"type": "string"},
+    "date_confidence": {"type": "string"},
+    "date_conflict": {"type": "boolean"},
+    "date_candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "raw_value", "parsed_at_utc", "local_date", "timezone", "precision",
+          "source", "confidence", "selected"
+        ],
+        "properties": {
+          "raw_value": {"type": "string", "minLength": 1},
+          "parsed_at_utc": {"type": "string", "format": "date-time"},
+          "local_date": {"type": "string", "format": "date"},
+          "timezone": {"type": "string", "minLength": 1},
+          "precision": {"enum": ["date", "datetime"]},
+          "source": {"type": "string", "minLength": 1},
+          "confidence": {"type": "string", "minLength": 1},
+          "selected": {"type": "boolean"}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": true
+}

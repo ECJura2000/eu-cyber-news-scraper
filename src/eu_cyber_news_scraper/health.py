@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Any
 
 from .models import Source, SourceStatus
+from .schema_validation import validate_schema_payload
 from .state_lock import state_lock
 
 
@@ -36,6 +37,8 @@ def source_config_fingerprint(source: Source) -> str:
         "parser_adapter": source.parser_adapter,
         "date_policy": source.date_policy,
         "tls_intermediate_bundle": source.tls_intermediate_bundle,
+        "min_listing_bytes": source.min_listing_bytes,
+        "user_agent": source.user_agent,
     }
     return health_profile_fingerprint(values)
 
@@ -110,10 +113,17 @@ def _assess(
     for status in statuses:
         source = source_map[status.source_id]
         source_fingerprint = source_config_fingerprint(source)
+        source_observation_key = health_profile_fingerprint(
+            {
+                "source_id": status.source_id,
+                "source_fingerprint": source_fingerprint,
+                "observation_key": observation_key,
+            }
+        )
         source_rows = [
             row
             for row in history.get(status.source_id, [])
-            if row.get("observation_key") != observation_key
+            if row.get("observation_key") != source_observation_key
             and row.get("source_fingerprint", source_fingerprint) == source_fingerprint
         ]
         prior = source_rows[-12:]
@@ -123,8 +133,15 @@ def _assess(
             if row.get("success") and int(row.get("raw_count", 0)) > 0
         ]
         median = float(statistics.median(counts)) if counts else 0.0
+        successful_prior = [row for row in prior[-8:] if row.get("success")]
+        median_requests = _positive_median(successful_prior, "request_count")
+        median_bytes = _positive_median(successful_prior, "bytes_downloaded")
+        median_duration = _positive_median(successful_prior, "duration_seconds")
         alerts: list[str] = []
         baseline_failure = False
+        if status.fetch_status == "failed":
+            alerts.append("來源抓取失敗。")
+            baseline_failure = True
         if len(counts) >= source.observation_runs and median >= 4 and status.raw_count < median * 0.25:
             alerts.append(f"原始筆數 {status.raw_count} 低於歷史中位數 {median:g} 的 25%。")
             baseline_failure = True
@@ -144,6 +161,16 @@ def _assess(
             )
             baseline_failure = True
 
+        performance_metrics = (
+            ("HTTP 請求數", float(status.request_count), median_requests),
+            ("下載位元組", float(status.bytes_downloaded), median_bytes),
+            ("來源耗時", status.duration_seconds, median_duration),
+        )
+        if len(successful_prior) >= source.observation_runs:
+            for label, current, historical in performance_metrics:
+                if historical > 0 and current > historical * 2.5:
+                    alerts.append(f"{label} {current:g} 超過歷史中位數 {historical:g} 的 2.5 倍。")
+
         if source.date_policy != "required" and source.date_review_due:
             try:
                 exception_overdue = recorded_at.date() > datetime.fromisoformat(source.date_review_due).date()
@@ -153,10 +180,17 @@ def _assess(
                 alerts.append(f"日期例外已超過複查期限 {source.date_review_due}。")
                 baseline_failure = True
 
-        previous_baseline_failure = bool(prior and prior[-1].get("baseline_failure"))
+        consecutive_prior_failures = 0
+        for row in reversed(prior):
+            if not row.get("baseline_failure"):
+                break
+            consecutive_prior_failures += 1
         if status.fetch_status == "failed":
-            health_status = "degraded" if status.critical else "attention"
-        elif status.critical and baseline_failure and previous_baseline_failure:
+            health_status = "degraded" if status.critical or consecutive_prior_failures >= 2 else "attention"
+        elif baseline_failure and (
+            (status.critical and consecutive_prior_failures >= 1)
+            or (not status.critical and consecutive_prior_failures >= 2)
+        ):
             health_status = "degraded"
         elif alerts:
             health_status = "attention"
@@ -170,18 +204,21 @@ def _assess(
             status,
             warning=warning,
             historical_median_count=median,
+            historical_median_requests=median_requests,
+            historical_median_bytes=median_bytes,
+            historical_median_duration=median_duration,
             health_alerts=tuple(alerts),
             health_status=health_status,
         )
         assessed.append(assessed_status)
         if write:
             rows = history.setdefault(status.source_id, [])
-            rows[:] = [row for row in rows if row.get("observation_key") != observation_key]
+            rows[:] = [row for row in rows if row.get("observation_key") != source_observation_key]
             rows.append(
                 {
                     "run_id": run_id,
                     "recorded_at": recorded_at.isoformat(),
-                    "observation_key": observation_key,
+                    "observation_key": source_observation_key,
                     "source_fingerprint": source_fingerprint,
                     "success": status.success,
                     "raw_count": status.raw_count,
@@ -192,6 +229,9 @@ def _assess(
                     "freshness_status": status.freshness_status,
                     "baseline_failure": baseline_failure,
                     "health_status": health_status,
+                    "request_count": status.request_count,
+                    "bytes_downloaded": status.bytes_downloaded,
+                    "duration_seconds": status.duration_seconds,
                 }
             )
             history[status.source_id] = rows[-12:]
@@ -205,6 +245,11 @@ def _assess(
         _prune_profiles(payload)
     payload["schema_version"] = 2
     return assessed
+
+
+def _positive_median(rows: list[dict[str, Any]], field: str) -> float:
+    values = [float(row.get(field, 0)) for row in rows if float(row.get(field, 0)) > 0]
+    return float(statistics.median(values)) if values else 0.0
 
 
 def _prune_profiles(payload: dict[str, Any], *, keep: int = 8) -> None:
@@ -247,6 +292,7 @@ def _load(path: Path) -> dict[str, Any]:
 
 
 def _atomic_json(path: Path, payload: dict[str, Any]) -> None:
+    validate_schema_payload(payload, "health-v2.schema.json")
     path.parent.mkdir(parents=True, exist_ok=True)
     descriptor, name = tempfile.mkstemp(prefix=f".{path.name}.", dir=path.parent)
     temporary = Path(name)

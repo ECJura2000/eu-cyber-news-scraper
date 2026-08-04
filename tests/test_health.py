@@ -1,7 +1,7 @@
 import json
 from datetime import datetime, timezone
 
-from eu_cyber_news_scraper.health import assess_and_record_health, health_profile_fingerprint
+from eu_cyber_news_scraper.health import _prune_profiles, assess_and_record_health, health_profile_fingerprint
 from eu_cyber_news_scraper.models import Source, SourceStatus
 
 PROFILE = {"period_mode": "rolling", "fetch_details": True}
@@ -96,6 +96,46 @@ def test_second_consecutive_stale_critical_run_is_degraded(tmp_path):
     assert result.health_status == "degraded"
 
 
+def test_third_consecutive_noncritical_failure_is_degraded(tmp_path):
+    path = tmp_path / ".source-health.json"
+    write_v2(
+        path,
+        [
+            {"success": True, "raw_count": 0, "baseline_failure": True},
+            {"success": True, "raw_count": 0, "baseline_failure": True},
+        ],
+    )
+    source = Source("s", "EU", "來源", "Source", "研究", "en", "https://x.eu", "https://x.eu/news")
+    status = SourceStatus(
+        "s", "來源", "EU", False, False, "html", 0, 0, 1.0,
+        fetch_status="ok", parse_status="empty",
+    )
+    assert assess(status, source, path).health_status == "degraded"
+
+
+def test_performance_regression_uses_source_history_without_marking_baseline_failure(tmp_path):
+    path = tmp_path / ".source-health.json"
+    write_v2(
+        path,
+        [
+            {
+                "success": True, "raw_count": 10, "baseline_failure": False,
+                "request_count": 4, "bytes_downloaded": 1000, "duration_seconds": 2,
+            }
+            for _ in range(3)
+        ],
+    )
+    source = Source("s", "EU", "來源", "Source", "研究", "en", "https://x.eu", "https://x.eu/news")
+    status = SourceStatus(
+        "s", "來源", "EU", False, True, "html", 10, 0, 8.0,
+        request_count=12, bytes_downloaded=3000,
+    )
+    result = assess(status, source, path)
+    assert result.health_status == "attention"
+    assert result.historical_median_requests == 4
+    assert any("2.5 倍" in alert for alert in result.health_alerts)
+
+
 def test_v1_history_is_preserved_as_legacy_but_not_used(tmp_path):
     path = tmp_path / ".source-health.json"
     path.write_text(json.dumps({"schema_version": 1, "sources": {"s": [{"raw_count": 99}]}}), encoding="utf-8")
@@ -153,3 +193,53 @@ def test_source_config_change_resets_only_that_source_baseline(tmp_path):
         profile=PROFILE, observation_key="two", write=False,
     )[0]
     assert current.historical_median_count == 0
+
+
+def test_health_reports_parse_duplicate_and_overdue_date_exception_alerts(tmp_path):
+    path = tmp_path / ".source-health.json"
+    source = Source(
+        "s", "EU", "來源", "Source", "研究", "en", "https://x.eu", "https://x.eu/news",
+        date_policy="best_effort", date_review_due="invalid-date",
+    )
+    status = SourceStatus(
+        "s", "來源", "EU", False, True, "html", 8, 0, 1.0,
+        parse_status="attention", undated_ratio=0.75, unique_title_ratio=0.5,
+    )
+
+    result = assess(status, source, path)
+
+    assert result.health_status == "attention"
+    assert any("無日期新聞" in alert for alert in result.health_alerts)
+    assert any("唯一標題比例" in alert for alert in result.health_alerts)
+    assert any("複查期限" in alert for alert in result.health_alerts)
+
+
+def test_health_profile_pruning_keeps_newest_and_archives_older_profiles():
+    payload = {
+        "profiles": {
+            f"profile-{index}": {"updated_at": f"2026-01-{index + 1:02d}T00:00:00+00:00"}
+            for index in range(10)
+        }
+    }
+
+    _prune_profiles(payload, keep=8)
+
+    assert len(payload["profiles"]) == 8
+    assert "profile-9" in payload["profiles"]
+    assert payload["legacy_profiles"] == [
+        {"fingerprint": "profile-1", "updated_at": "2026-01-02T00:00:00+00:00"},
+        {"fingerprint": "profile-0", "updated_at": "2026-01-01T00:00:00+00:00"},
+    ]
+
+
+def test_invalid_health_json_starts_a_clean_v2_state(tmp_path):
+    path = tmp_path / ".source-health.json"
+    path.write_text("{invalid", encoding="utf-8")
+    source = Source("s", "EU", "來源", "Source", "研究", "en", "https://x.eu", "https://x.eu/news")
+    status = SourceStatus("s", "來源", "EU", False, True, "html", 2, 1, 0.1)
+
+    assess(status, source, path)
+
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    assert payload["schema_version"] == 2
+    assert "legacy" not in payload

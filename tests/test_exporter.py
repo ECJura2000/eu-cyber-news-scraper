@@ -64,7 +64,7 @@ def test_exporter_creates_required_sheets_and_summary(tmp_path):
     )
     assert '"status": "complete"' in summary.read_text(encoding="utf-8")
     assert '"source_summary"' in summary.read_text(encoding="utf-8")
-    assert '"schema_version": 5' in summary.read_text(encoding="utf-8")
+    assert '"schema_version": 6' in summary.read_text(encoding="utf-8")
 
 
 def test_run_summary_records_paused_sources(tmp_path):

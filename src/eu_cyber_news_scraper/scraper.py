@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import asyncio
+import re
 import time
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlsplit
@@ -16,6 +17,10 @@ from .topics import classify_article, is_relevant
 
 
 class RedirectDomainError(RuntimeError):
+    pass
+
+
+class ChallengePageError(RuntimeError):
     pass
 
 
@@ -101,6 +106,7 @@ async def _scrape_source_impl(
     for feed_url in source.feed_urls:
         try:
             response = await _get_source_response(client, feed_url, source, stats)
+            _validate_source_response(response, source, feed_url)
             transport_succeeded = True
             parsed = parse_feed(response.content, source, feed_url)
             if parsed:
@@ -116,6 +122,7 @@ async def _scrape_source_impl(
         for listing_url in _listing_urls(source, since, until):
             try:
                 response = await _get_source_response(client, listing_url, source, stats)
+                _validate_source_response(response, source, listing_url)
                 transport_succeeded = True
                 pages_fetched += 1
                 listing_html = response.text
@@ -130,6 +137,7 @@ async def _scrape_source_impl(
                     for feed_url in discovered[:3]:
                         try:
                             feed_response = await _get_source_response(client, feed_url, source, stats)
+                            _validate_source_response(feed_response, source, feed_url)
                             transport_succeeded = True
                             parsed = parse_feed(feed_response.content, source, feed_url)
                             if parsed:
@@ -152,7 +160,7 @@ async def _scrape_source_impl(
         len({item.title.casefold().strip() for item in articles}) / len(articles) if articles else 1.0
     )
     if fetch_details:
-        await _enrich_articles(articles, source, client, errors, stats)
+        await _enrich_articles(articles, source, client, errors, stats, since=since, until=until)
 
     reference_time = observed_at or datetime.now(timezone.utc)
     future_limit = reference_time + timedelta(hours=24)
@@ -228,7 +236,15 @@ async def _scrape_source_impl(
         bytes_downloaded=stats.bytes_downloaded,
         retry_count=stats.retry_count,
         http_statuses=tuple(stats.statuses),
-        error_code="" if success else ("PARSE_EMPTY" if transport_succeeded else "FETCH_FAILED"),
+        error_code=(
+            ""
+            if success
+            else (
+                "HTTP_CHALLENGE"
+                if any("ChallengePageError" in error for error in errors)
+                else ("PARSE_EMPTY" if transport_succeeded else "FETCH_FAILED")
+            )
+        ),
     )
     return SourceResult(source=source, articles=relevant, status=status)
 
@@ -239,8 +255,32 @@ async def _enrich_articles(
     client: HttpClient,
     errors: list[str],
     stats: HttpStats,
+    *,
+    since: datetime,
+    until: datetime,
 ) -> None:
-    candidates = [article for article in articles if not article.published_at or len(article.summary) < 40]
+    candidates = [
+        article
+        for article in articles
+        if (
+            not article.published_at
+            or article.date_confidence != "high"
+            or len(article.summary) < 40
+        )
+        and not (
+            article.published_at
+            and article.date_confidence == "high"
+            and not since <= article.published_at < until
+        )
+    ]
+    candidates.sort(
+        key=lambda article: (
+            article.published_at is not None,
+            not bool(article.published_at and since <= article.published_at < until),
+            article.date_confidence == "high",
+            -len(article.summary),
+        )
+    )
     selected = [article for article in candidates[: source.detail_pages] if not _is_non_html_url(article.url)]
     if not selected:
         return
@@ -259,6 +299,27 @@ async def _enrich_articles(
     for result in await asyncio.gather(*(enrich(article) for article in selected)):
         if result:
             errors.append(result)
+
+
+def _validate_source_response(response: httpx.Response, source: Source, url: str) -> None:
+    content_type = response.headers.get("content-type", "").casefold()
+    if "html" not in content_type and "xhtml" not in content_type:
+        return
+    body = response.text.casefold()
+    challenge_markers = ("cf-chl-", "/cdn-cgi/challenge-platform/", 'id="challenge-form"', "anubis_challenge")
+    title_match = re.search(r"<title[^>]*>\s*([^<]+)", body[:16384])
+    challenge_title = bool(
+        title_match
+        and any(
+            marker in title_match.group(1)
+            for marker in ("just a moment", "access denied", "checking your browser", "attention required")
+        )
+    )
+    too_small = source.min_listing_bytes and len(response.content) < source.min_listing_bytes
+    if any(marker in body for marker in challenge_markers) or challenge_title or too_small:
+        raise ChallengePageError(
+            f"unexpected challenge or undersized listing ({len(response.content)} bytes): {url}"
+        )
 
 
 def _parse_status(transport_succeeded: bool, success: bool, undated_ratio: float, date_policy: str) -> str:
@@ -287,8 +348,13 @@ async def _get_source_response(
     source: Source,
     stats: HttpStats,
 ) -> httpx.Response:
-    if source.tls_intermediate_bundle:
-        response = await client.get(url, stats=stats, ssl_bundle=source.tls_intermediate_bundle)
+    if source.tls_intermediate_bundle or source.user_agent:
+        response = await client.get(
+            url,
+            stats=stats,
+            ssl_bundle=source.tls_intermediate_bundle,
+            user_agent=source.user_agent,
+        )
     else:
         response = await client.get(url, stats=stats)
     final_url = str(response.url)

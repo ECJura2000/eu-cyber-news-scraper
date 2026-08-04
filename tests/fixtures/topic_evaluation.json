@@ -10,6 +10,7 @@
     "url": "https://www.interface-eu.org/publications/european-ai-competitiveness-beyond-frontier-models",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -25,6 +26,7 @@
     "url": "https://cert.europa.eu/publications/security-advisories/2026-008/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -39,6 +41,7 @@
     "url": "https://cert.europa.eu/publications/threat-intelligence/cyber-threat-intelligence-framework/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -53,6 +56,7 @@
     "url": "https://digital-strategy.ec.europa.eu/en/news/commission-accepts-xs-action-plan-comply-digital-services-act",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -67,6 +71,7 @@
     "url": "https://home-affairs.ec.europa.eu/news/commission-issues-guidance-strengthen-resilience-critical-infrastructure-2026-07-10_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -81,6 +86,7 @@
     "url": "https://www.edpb.europa.eu/news/edpb-sheds-light-on-anonymisation-and-web-scraping-for-generative-ai-and-adopts-final-version_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -96,6 +102,7 @@
     "url": "https://www.eeas.europa.eu/eeas/information-integrity-and-countering-foreign-information-manipulation-interference-fimi_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -111,6 +118,7 @@
     "url": "https://certification.enisa.europa.eu/news/support-services-relation-eu-cybersecurity-certification-schemes-and-cra-implementation-2026-03-04_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -126,6 +134,7 @@
     "url": "https://www.enisa.europa.eu/news/where-do-smes-stand-in-preparing-for-the-cyber-resilience-act",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -140,6 +149,7 @@
     "url": "https://www.enisa.europa.eu/publications/sme-cyber-resilience-maturity-assessment-model",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -154,6 +164,7 @@
     "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-launches-q-neko-project-strengthen-eu-japan-collaboration-quantum-computing-2026-07-06_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -168,6 +179,7 @@
     "url": "https://www.europarl.europa.eu/news/en/press-room/20260706IPR46313/enlargement-meps-praise-moldova-for-reforms-despite-moscow-interference",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -182,6 +194,7 @@
     "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1546",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -197,6 +210,7 @@
     "url": "https://list.cea.fr/en/june-10-2026-shm-when-cyberattacks-cross-the-physical-divide/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -211,6 +225,7 @@
     "url": "https://www.adaptcentre.ie/news-and-events/cyber-threats-ai-and-democracy-in-focus-at-trinity-as-ireland-takes-up-eu-presidency/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -225,6 +240,7 @@
     "url": "https://ceadar.ie/news/france-24-special-edition-of-talking-europe/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -237,6 +253,7 @@
     "url": "https://www.cnam.ie/trusted-flagger-status-granted-to-three-new-organisations/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -251,6 +268,7 @@
     "url": "https://www.comreg.ie/copyright/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -265,6 +283,7 @@
     "url": "https://cyberireland.ie/building-cyber-resilience-from-the-classroom-up-ucd-centre-for-cyber-resilience-education-leading-cybersecurity-education/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -279,6 +298,7 @@
     "url": "https://enterprise.gov.ie/en/news-and-events/department-news/2026/june/20260617.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -293,6 +313,7 @@
     "url": "https://dataprotection.ie/en/data-protection-commission-publishes-2025-annual-report",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -307,6 +328,7 @@
     "url": "https://www.esri.ie/news/challenges-and-opportunities-posed-by-artificial-intelligence-for-income-inequality-and-the",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -321,6 +343,7 @@
     "url": "https://www.insight-centre.org/paul-banahan-named-young-ai-role-model-of-the-year/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -335,6 +358,7 @@
     "url": "https://www.ncsc.gov.ie/pdfs/2607150243_CVE-2026-56164.pdf",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -349,6 +373,7 @@
     "url": "https://www.researchireland.ie/news/age-friendly-ai-cavan/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -363,6 +388,7 @@
     "url": "https://www.tyndall.ie/news/icos%c2%b2-project-launches-to-strengthen-europes-semiconductor-resilience-and-global-partnerships/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -377,6 +403,7 @@
     "url": "https://www.interface-eu.org/publications/poland-ai-act-implementation",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -392,6 +419,7 @@
     "url": "https://cert.europa.eu/publications/security-advisories/2026-007/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -406,6 +434,7 @@
     "url": "https://cert.europa.eu/publications/threat-intelligence/tlr2025/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -420,6 +449,7 @@
     "url": "https://digital-strategy.ec.europa.eu/en/news/commission-provides-guidance-google-ai-interoperability-android-and-sharing-google-search-data",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -434,6 +464,7 @@
     "url": "https://www.edpb.europa.eu/news/supporting-gdpr-consistency-edpb-launches-dedicated-form_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -448,6 +479,7 @@
     "url": "https://www.eeas.europa.eu/eeas/data-protection_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -462,6 +494,7 @@
     "url": "https://www.enisa.europa.eu/publications/sbom-adoption-state-of-play-2026",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -476,6 +509,7 @@
     "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-opens-access-its-quantum-computers-2026-06-25_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -490,6 +524,7 @@
     "url": "https://list.cea.fr/en/ai-algorithms-for-gamma-ray-spectrometry-used-in-field-measurement-3/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -502,6 +537,7 @@
     "url": "https://ceadar.ie/news/ireland-secures-e10-million-investment-to-launch-national-gateway-to-europes-ai-network/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -516,6 +552,7 @@
     "url": "https://www.cnam.ie/second-out-of-court-dispute-settlement-body-in-ireland-certified/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -530,6 +567,7 @@
     "url": "https://cyberireland.ie/cyber-resilience-strategies-for-an-evolving-threat-landscape/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -544,6 +582,7 @@
     "url": "https://dataprotection.ie/en/news-media/press-releases/data-protection-commission-announces-decision-in-pemanent-tsb-inquiry",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -558,6 +597,7 @@
     "url": "https://www.insight-centre.org/agenda-chamber-of-intelligence-an-ai-showcase-ucd-november-25/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -570,6 +610,7 @@
     "url": "https://cispa.de/en/news-and-events/all-events/distinguished-lecture-series",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -582,6 +623,7 @@
     "url": "https://www.interface-eu.org/publications/how-the-eu-implements-the-un-cyber-norms",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -594,6 +636,7 @@
     "url": "https://cert.europa.eu/publications/threat-intelligence/cb26-07/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -606,6 +649,7 @@
     "url": "https://www.chips-ju.europa.eu/NewsDetails?id=54268b1b-0d81-f111-ab0e-7c1e5287eb89",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -618,6 +662,7 @@
     "url": "https://digital-strategy.ec.europa.eu/en/news/2026-rule-law-report-strengthens-europes-prosperity-security-and-democratic-resilience",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -630,6 +675,7 @@
     "url": "https://home-affairs.ec.europa.eu/news/commissioner-brunner-co-hosted-third-ministerial-meeting-european-ports-alliance-dublin-2026-07-17_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -642,6 +688,7 @@
     "url": "https://www.edpb.europa.eu/news/edpb-calls-for-legal-basis-for-cross-regulatory-information-sharing_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -654,6 +701,7 @@
     "url": "https://www.eeas.europa.eu/eeas/eu-viet-nam-human-rights-dialogue-2-july-2026-brussels-belgium_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -666,6 +714,7 @@
     "url": "https://certification.enisa.europa.eu/news/participate-public-review-new-draft-agreed-cryptographic-mechanisms-2026-06-02_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -678,6 +727,7 @@
     "url": "https://www.enisa.europa.eu/news/team-europe-wins-1st-ever-international-cybersecurity-challenge-for-women",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -690,6 +740,7 @@
     "url": "https://www.enisa.europa.eu/publications/enisas-view-on-cybersecurity-in-the-frontier-ai-era",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -702,6 +753,7 @@
     "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-launches-call-tender-new-industrial-supercomputer-bologna-italy-2026-07-16_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -714,6 +766,7 @@
     "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/demographic-transformation-eu-challenges-and-opportunities-2026-07-14_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -726,6 +779,7 @@
     "url": "https://www.europarl.europa.eu/news/en/press-room/20260716IPR46531/eu-china-relations-foreign-affairs-committee-to-visit-beijing-and-shanghai",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -738,6 +792,7 @@
     "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1650",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -750,6 +805,7 @@
     "url": "https://smart-networks.europa.eu/6g-versus-venture-accelerator-deadline-has-been-extended-to-july-25/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -762,6 +818,7 @@
     "url": "https://list.cea.fr/en/april-22-2026-institut-curie-the-cea-and-thales-sign-a-partnership-to-build-a-unique-flash-radiotherapy-platform-to-accelerate-the-cure-for-cancers-throughout-the-world/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -774,6 +831,7 @@
     "url": "https://www.adaptcentre.ie/news-and-events/adapt-trinity-college-dublin-researchers-help-uncover-how-the-brain-tracks-multiple-conversations/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -786,6 +844,7 @@
     "url": "https://www.cnam.ie/digital-news-report-ireland-2026/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -798,6 +857,7 @@
     "url": "https://www.comreg.ie/consumer-news-from-q2-2026/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -810,6 +870,7 @@
     "url": "https://cyberireland.ie/cybersecurity-for-health-annual-conference-july-1st-2026-dundalk/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -822,6 +883,7 @@
     "url": "https://enterprise.gov.ie/en/news-and-events/department-news/2026/june/20260626.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -834,6 +896,7 @@
     "url": "https://www.electoralcommission.ie/latest-news-and-research/appeal-related-to-the-ireland-first-party-concluded/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -846,6 +909,7 @@
     "url": "https://www.esri.ie/news/nowcast-as-of-16-july-2026",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -858,6 +922,7 @@
     "url": "https://www.insight-centre.org/rinn-ai-the-next-chapter-for-irelands-data-and-ai-research-ecosystem/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -870,6 +935,7 @@
     "url": "https://www.ncsc.gov.ie/pdfs/Fortinet-Fortibleed-180626.pdf",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -882,6 +948,7 @@
     "url": "https://www.nsai.ie/about/news/metrology-meets-regulation/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -894,6 +961,7 @@
     "url": "https://www.researchireland.ie/news/restore-international-summer-school/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -906,6 +974,7 @@
     "url": "https://www.tyndall.ie/news/intel-recognises-tyndall-researcher-with-2025-outstanding-researcher-award/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -918,6 +987,7 @@
     "url": "https://cispa.de/en/news-and-events/insights",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -930,6 +1000,7 @@
     "url": "https://www.interface-eu.org/publications/public-compute-applied-ai-startups",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -942,6 +1013,7 @@
     "url": "https://cert.europa.eu/publications/threat-intelligence/cb26-06/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -954,6 +1026,7 @@
     "url": "https://digital-strategy.ec.europa.eu/en/news/eu-and-india-strengthen-strategic-partnership-third-trade-and-technology-council",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -966,6 +1039,7 @@
     "url": "https://home-affairs.ec.europa.eu/news/portugal-sees-developments-migrant-integration-initiatives-policies-and-research-2026-07-16_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -978,6 +1052,7 @@
     "url": "https://www.edpb.europa.eu/news/edpb-requires-belgian-dpa-to-handle-the-merits-of-noyb-cookie-banner-complaint_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -990,6 +1065,7 @@
     "url": "https://www.eeas.europa.eu/eeas/israelpalestine-statement-spokesperson-settlement-expansion_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -1002,6 +1078,7 @@
     "url": "https://certification.enisa.europa.eu/news/public-consultation-draft-candidate-eudiw-certification-scheme-2026-04-02_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1014,6 +1091,7 @@
     "url": "https://www.enisa.europa.eu/news/your-perspective-matters-join-the-nis360-survey",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1026,6 +1104,7 @@
     "url": "https://www.enisa.europa.eu/publications/enisa-consolidated-annual-activity-report-2025",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -1038,6 +1117,7 @@
     "url": "https://www.eurohpc-ju.europa.eu/two-new-eurohpc-systems-join-top500-jupiter-remains-among-worlds-fastest-supercomputers-2026-06-23_en",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1052,6 +1132,7 @@
     "url": "https://cyber.gouv.fr/actualites/nis-2-lanssi-poursuit-et-renforce-sa-dynamique-daccompagnement/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1066,6 +1147,7 @@
     "url": "https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/reseaux-du-futur-110626.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -1080,6 +1162,7 @@
     "url": "https://campuscyber.fr/5893/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1094,6 +1177,7 @@
     "url": "https://www.cnil.fr/fr/cepd-ia-generative-chaines-blocs",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1108,6 +1192,7 @@
     "url": "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse/agents-dia-lautorite-de-la-concurrence-rend-son-avis-sur-le-fonctionnement",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -1122,6 +1207,7 @@
     "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/top-10-cybermalveillances-particuliers-2025",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1136,6 +1222,7 @@
     "url": "https://www.entreprises.gouv.fr/la-dge/actualites/technologies-immersives-14-nouveaux-laureats-de-lappels-projets-de-france-2030",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1150,6 +1237,7 @@
     "url": "https://www.inria.fr/fr/notre-ia-inria-contribue-deploiement-intelligence-artificielle-confiance-services-publics",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -1164,6 +1252,7 @@
     "url": "https://www.institutmontaigne.org/expressions/chips-act-20-pour-une-politique-etrangere-economique-europeenne",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1178,6 +1267,7 @@
     "url": "https://www.sgdsn.gouv.fr/viginum/actualites/bilan-des-ingerences-numeriques-etrangeres-ayant-cible-les-elections-municipales",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1192,6 +1282,7 @@
     "url": "https://cyber.gouv.fr/actualites/ami-outil-audit-rgpd-ia/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -1206,6 +1297,7 @@
     "url": "https://campuscyber.fr/mythos/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1220,6 +1312,7 @@
     "url": "https://www.cnil.fr/fr/enquete-dpo-ia",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1234,6 +1327,7 @@
     "url": "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse/droits-voisins-lautorite-de-la-concurrence-prononce-des-mesures",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -1248,6 +1342,7 @@
     "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/alertecyber-faille-securite-critique-adobe-acrobat-acrobat-reader",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1260,6 +1355,7 @@
     "url": "https://www.inria.fr/fr/une-summer-school-internationale-dediee-lia-pour-linteraction-humain-robot-au-centre-inria-de",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1274,6 +1370,7 @@
     "url": "https://www.institutmontaigne.org/publications/chips-diplomacy-support-initiative",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -1288,6 +1385,7 @@
     "url": "https://cyber.gouv.fr/actualites/synthese-de-la-menace-sur-lia-generative-face-aux-attaques-informatiques/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1302,6 +1400,7 @@
     "url": "https://www.cnil.fr/fr/g7-technologies-protection-mineurs",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1316,6 +1415,7 @@
     "url": "https://www.inria.fr/fr/protection-des-donnees-le-combat-de-cristiana-santos",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -1330,6 +1430,7 @@
     "url": "https://cyber.gouv.fr/actualites/etat-de-la-menace-informatique-sur-les-equipements-mobiles/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1344,6 +1445,7 @@
     "url": "https://www.cnil.fr/fr/cyberattaque-le-sous-traitant-au-centre-de-la-crise",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1358,6 +1460,7 @@
     "url": "https://www.inria.fr/fr/strategie-post-exascale-lancement",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -1372,6 +1475,7 @@
     "url": "https://cyber.gouv.fr/actualites/nis-2-les-entit%C3%A9s-assujetties-peuvent-se-pre-enregistrer/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1386,6 +1490,7 @@
     "url": "https://www.cnil.fr/fr/ia-generative-et-vie-privee-affiche-coproduite-pipc-cnil",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1400,6 +1505,7 @@
     "url": "https://www.inria.fr/fr/decouvrez-la-programmation-de-la-semaine-de-lia-pour-tous-dans-le-grand-est",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -1414,6 +1520,7 @@
     "url": "https://cyber.gouv.fr/actualites/pour-lanssi-la-cryptographie-post-quantique-post-quantum-cryptography-ou-pqc-repr%C3%A9sente-la-voie-la-plus-prometteuse-pour-se-pr%C3%A9munir-contre-la-menace-quantique-la-transition-post-quantique-repose-notamment-sur-la-mise-%C3%A0-disposition-pour-les-uti/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1428,6 +1535,7 @@
     "url": "https://www.inria.fr/fr/inria-fete-science-bretagne-ia",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1442,6 +1550,7 @@
     "url": "https://cyber.gouv.fr/actualites/cryptographie-post-quantique-les-travaux-de-lanssi/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -1456,6 +1565,7 @@
     "url": "https://www.inria.fr/fr/7e-journee-ihm-ia",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1470,6 +1580,7 @@
     "url": "https://www.inria.fr/fr/intelligence-artificielle-responsable-et-durable-ou-en-est-la-recherche-francaise-0",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1484,6 +1595,7 @@
     "url": "https://www.inria.fr/fr/iabm-2025-colloque-francais-dintelligence-artificielle-en-imagerie-biomedicale",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -1498,6 +1610,7 @@
     "url": "https://www.inria.fr/fr/ia-francophonie-mediation-dinard",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1510,6 +1623,7 @@
     "url": "https://www.inria.fr/fr/premiere-learning-week-projet-tenors-fevrier-2025",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1522,6 +1636,7 @@
     "url": "https://www.inria.fr/fr/conference-samo-2025-inscriptions-ouvertes",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -1536,6 +1651,7 @@
     "url": "https://www.inria.fr/fr/european-cyber-week-novembre-2024-rennes",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1548,6 +1664,7 @@
     "url": "https://www.inria.fr/fr/evenement-who-run-tech-feminisation-2024-rennes",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1562,6 +1679,7 @@
     "url": "https://www.inria.fr/fr/waq-yqis-semaine-quantique-centre-inria-paris-novembre-2024",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -1576,6 +1694,7 @@
     "url": "https://www.inria.fr/fr/debat-impact-llm-ia-generative-science-societe-talence-juillet-2024",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -1588,6 +1707,7 @@
     "url": "https://www.inria.fr/fr/ecole-ete-teledetection-traitement-images-microscopiques",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1600,6 +1720,7 @@
     "url": "https://cyber.gouv.fr/actualites/ciblage-et-compromission-dentites-francaises-par-le-fsb/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -1612,6 +1733,7 @@
     "url": "https://www.arcep.fr/actualites/les-consultations-publiques/p/gp/detail/consultation-rcap2027-juillet2026.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1624,6 +1746,7 @@
     "url": "https://www.arcom.fr/actualites/nous-sommes-la-france-les-medias-audiovisuels-mobilises-pour-une-juste-representation-de-la-diversite-de-la-societe-francaise",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1636,6 +1759,7 @@
     "url": "https://campuscyber.fr/le-campus-cyber-dresse-le-bilan-de-la-premiere-annee-de-sa-transformation/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -1648,6 +1772,7 @@
     "url": "https://www.cnil.fr/fr/revoir-le-webinaire-nouveau-teleservice-sante-et-recherche-ce-qui-change-pour-vos-demandes",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1660,6 +1785,7 @@
     "url": "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse/cooperatives-agricoles-lautorite-de-la-concurrence-autorise-la-fusion-des",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1672,6 +1798,7 @@
     "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/le-ministere-de-la-culture-annonce-le-lancement-de-la-11e-edition-des-journees-nationales-de-l-architecture-du-15-au-18-octobre-2026-sur-le-theme",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -1684,6 +1811,7 @@
     "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/remboursement-impot-hameconnage",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1696,6 +1824,7 @@
     "url": "https://www.entreprises.gouv.fr/la-dge/actualites/le-conseil-national-du-commerce-publie-son-rapport-dactivite-2025",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1708,18 +1837,20 @@
     "url": "https://www.numerique.gouv.fr/actualites/franceconnect-10-ans-identite-numerique-francais/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
   {
-    "title": "S'abonner à Ma recherche",
-    "summary": "15/07/2026",
+    "title": "L'appel 2027 du programme \"Équipes associées\" est lancé !",
+    "summary": "Le programme Équipes associées soutient les collaborations scientifiques bilatérales et les partenariats stratégiques internationaux.",
     "topics": [],
     "language": "fr",
     "source_id": "fr_inria",
-    "url": "https://www.inria.fr/fr/rss/recherche/actualites",
-    "captured_at": "2026-07-18",
+    "url": "https://www.inria.fr/fr/appel-projets-equipes-associees-partenariats-internationaux-2027",
+    "captured_at": "2026-08-04",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1732,6 +1863,7 @@
     "url": "https://www.institutmontaigne.org/expressions/le-grand-jeu-du-pakistan-entre-les-etats-unis-et-la-chine-tactique-et-strategie",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1744,6 +1876,7 @@
     "url": "https://www.sgdsn.gouv.fr/viginum/actualites/nouveau-un-guide-pratique-pour-les-familles-grandir-dans-un-monde-connecte-ca",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -1756,6 +1889,7 @@
     "url": "https://cyber.gouv.fr/actualites/lanssi-lacpr-et-la-banque-de-france-signe-un-accord-de-cooperation/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1768,6 +1902,7 @@
     "url": "https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/rapport-annuel-tome3-160726.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1780,6 +1915,7 @@
     "url": "https://www.arcom.fr/actualites/campagne-enfants-et-ecrans-2026-les-conseils-de-larcom-pour-proteger-les-plus-jeunes",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -1792,6 +1928,7 @@
     "url": "https://campuscyber.fr/cartographie-2026-des-associations-un-ecosysteme-engage-au-campus-cyber/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1804,6 +1941,7 @@
     "url": "https://www.cnil.fr/fr/controle-de-lactivite-des-personnes-employees",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1816,6 +1954,7 @@
     "url": "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse/telecoms-sfr-lautorite-de-la-concurrence-sera-lautorite-en-charge-de-lexamen",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -1828,6 +1967,7 @@
     "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/deuxieme-edition-du-prix-du-livre-pour-les-bebes-le-ministere-de-la-culture-devoile-la-composition-du-jury-et-les-ouvrages-retenus-dans-la-selection",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1840,6 +1980,7 @@
     "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/faire-ses-demarches-administratives-en-ligne-en-evitant-les-pieges",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1852,6 +1993,7 @@
     "url": "https://www.entreprises.gouv.fr/la-dge/actualites/la-filiere-ferroviaire-sengage-dans-un-plan-daction-pour-reduire-les-delais-de",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -1864,6 +2006,7 @@
     "url": "https://www.inria.fr/fr/appel-projets-equipes-associees-partenariats-internationaux-2027",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1876,6 +2019,7 @@
     "url": "https://www.institutmontaigne.org/expressions/paroles-de-candidats-david-lisnard-le-liberal-qui-parle-pour-toute-la-france-mais-qui-joue-domicile",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1888,6 +2032,7 @@
     "url": "https://www.sgdsn.gouv.fr/viginum/actualites/remise-du-premier-prix-scientifique-inria-viginum",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -1900,6 +2045,7 @@
     "url": "https://cyber.gouv.fr/actualites/lanssi-publie-un-kit-dexercice-de-crise-pour-le-secteur-agroalimentaire/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1912,6 +2058,7 @@
     "url": "https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/mutualisation-des-reseaux-mobiles-090726.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1924,6 +2071,7 @@
     "url": "https://www.arcom.fr/actualites/appel-aux-candidatures-pour-un-service-de-television-vocation-locale-en-region-parisienne-auditions-publiques-des-candidats-selectionnes",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -1936,6 +2084,7 @@
     "url": "https://campuscyber.fr/cyber-job-dating-2026/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1948,6 +2097,7 @@
     "url": "https://www.cnil.fr/fr/geolocalisation-applications-mobiles-quelles-regles",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1960,6 +2110,7 @@
     "url": "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse/benoit-coeure-presente-le-rapport-annuel-2025-et-dresse-les-perspectives-pour",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -1972,6 +2123,7 @@
     "url": "https://www.culture.gouv.fr/presse/communiques-de-presse/la-tapisserie-de-bayeux-est-arrivee-cette-nuit-au-british-museum-londres",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1984,6 +2136,7 @@
     "url": "https://www.cybermalveillance.gouv.fr/tous-nos-contenus/actualites/lettres-d-information",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -1996,18 +2149,20 @@
     "url": "https://www.entreprises.gouv.fr/la-dge/actualites/actualisation-du-plan-deeptech-relever-le-defi-du-passage-lechelle",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
   {
-    "title": "S'abonner à Ma recherche",
-    "summary": "",
+    "title": "Appui aux politiques publiques : découvrez le rapport 2025 d'Inria",
+    "summary": "Le rapport présente les actions menées par Inria en appui aux politiques publiques et leurs perspectives de développement.",
     "topics": [],
     "language": "fr",
     "source_id": "fr_inria",
-    "url": "https://www.inria.fr/fr/rss/recherche/evenements",
-    "captured_at": "2026-07-18",
+    "url": "https://www.inria.fr/fr/rapport-app-2025-inria-appui-politiques-publiques",
+    "captured_at": "2026-08-04",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2020,6 +2175,7 @@
     "url": "https://www.institutmontaigne.org/expressions/lossetie-du-sud-laboratoire-discret-des-poussees-imperialistes-russes",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2032,6 +2188,7 @@
     "url": "https://www.sgdsn.gouv.fr/viginum/actualites/g7-rrm-adoption-dun-cadre-commun-sur-le-concept-de-mode-operatoire",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -2044,6 +2201,7 @@
     "url": "https://cyber.gouv.fr/actualites/publication-dun-nouveau-r%C3%A9f%C3%A9rentiel-de-formation-d%C3%A9di%C3%A9-au-pilotage-de-la-rem%C3%A9diation/",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2056,6 +2214,7 @@
     "url": "https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/observatoire-des-marches-des-communications-electroniques-t1-2026-090726.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2068,6 +2227,7 @@
     "url": "https://www.arcom.fr/actualites/assises-de-la-radio-2026-radio-et-audio-numerique-lheure-des-decisions",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -2082,6 +2242,7 @@
     "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/11_G7.html?nn=251944",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -2096,6 +2257,7 @@
     "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260706_DSC_ebay.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -2110,6 +2272,7 @@
     "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Treffen_CRA_Markt%C3%BCberwachungsbeh%C3%B6rden_260625.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -2124,6 +2287,7 @@
     "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2026/semiconductor-x.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -2138,6 +2302,7 @@
     "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/07_Data-Act-Datenschutzaufsicht.html?nn=251944",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -2152,6 +2317,7 @@
     "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/BSI-Magazin_NIS-2_BSIG_260611.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -2166,6 +2332,7 @@
     "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2026/ipcei-cis-projekt-kibsis.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -2180,6 +2347,7 @@
     "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/06_TB34.html?nn=251944",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -2194,6 +2362,7 @@
     "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Umfrage_NIS-2_Produkte_260610.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -2208,6 +2377,7 @@
     "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2025/Forensik-intelligenter-Systeme.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -2222,6 +2392,7 @@
     "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/05_BfDI-R%C3%BCckzug.html?nn=251944",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -2236,6 +2407,7 @@
     "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Bundeswehr_BSI_Resilienz_KRITIS_260429.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -2251,6 +2423,7 @@
     "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2025/QuBA-libre.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -2265,6 +2438,7 @@
     "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/03_Unterrichtsmaterialien.html?nn=251944",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -2279,6 +2453,7 @@
     "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2025/kuenstliche-intelligenz-erkennt-audiodeepfakes.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -2293,6 +2468,7 @@
     "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/01_ReguLab.html?nn=251944",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -2308,6 +2484,7 @@
     "url": "https://www.aisec.fraunhofer.de/de/spotlights/Cyber-Resilience-Act-Sicherheitsanforderungen-fuer-Produkte-mit-digitalen-Elementen.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -2323,6 +2500,7 @@
     "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2025/19_Handreichung-DS-und-KI.html?nn=251944",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -2337,6 +2515,7 @@
     "url": "https://www.aisec.fraunhofer.de/de/spotlights/kompetenzzentrum-post-quanten-kryptografie.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -2351,6 +2530,7 @@
     "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2025/18_Datenbarometer-ePA.html?nn=251944",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -2365,6 +2545,7 @@
     "url": "https://www.aisec.fraunhofer.de/de/spotlights/nis-2-richtlinie-massnahmen-fuer-ein-hohes-cybersicherheitsniveau-in-der-europaeischen-union.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -2379,6 +2560,7 @@
     "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2025/17-G7.html?nn=251944",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -2393,6 +2575,7 @@
     "url": "https://www.aisec.fraunhofer.de/de/spotlights/quantum-cybersecurity-das-zusammenspiel-von-quantentechnologien-und-cybersicherheit.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": false
   },
@@ -2407,6 +2590,7 @@
     "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2025/15_Datenbarometer.html?nn=251944",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": false
   },
@@ -2419,18 +2603,20 @@
     "url": "https://www.athene-center.de/aktuelles/news/paper-accepted-auf-der-usenix-security-2026-1817",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
   {
-    "title": "Meldung lesen",
-    "summary": "12.06.2026 Meldung",
+    "title": "Bundesnetzagentur genehmigt Trassenentgelte 2026 nach Urteil des EuGH neu",
+    "summary": "Die Mitteilung betrifft Eisenbahnregulierung und neu genehmigte Trassenentgelte.",
     "topics": [],
     "language": "de",
-    "source_id": "de_bbk",
-    "url": "https://www.bbk.bund.de/SharedDocs/Kurzmeldungen/DE/2026/06/om-17-70-jahre-bevschmag.html",
-    "captured_at": "2026-07-18",
+    "source_id": "de_bnetza",
+    "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260722_Trassenengelte.html",
+    "captured_at": "2026-08-04",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2443,6 +2629,7 @@
     "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/10_BfDI-Wahl-Hennemann.html?nn=251944",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -2455,6 +2642,7 @@
     "url": "https://www.bmi.bund.de/SharedDocs/pressemitteilungen/DE/2026/06/vsb2025-pm.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2467,6 +2655,7 @@
     "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260717_EisenbahnenItalo.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2479,6 +2668,7 @@
     "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/TR-03188_Passkey_260630.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -2491,6 +2681,7 @@
     "url": "https://www.bundeskartellamt.de/SharedDocs/Meldung/DE/Pressemitteilungen/2026/07_17_2026_RWE_Amprion.html?nn=52004",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2503,6 +2694,7 @@
     "url": "https://www.dpma.de/service/presse/pressemitteilungen/08072026/index.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2515,6 +2707,7 @@
     "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2026/sicherheitschip-made-in-germany-dient-als-vertrauensanker-fuer-vernetzte-geraete.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -2527,6 +2720,7 @@
     "url": "https://www.swp-berlin.org/publikation/die-neue-arktisstrategie-der-eu-chancen-fuer-europas-digitale-souveraenitaet",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2539,18 +2733,20 @@
     "url": "https://www.athene-center.de/aktuelles/news/erfolgreiche-einreichungen-auf-der-acl-2026-1837",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
   {
-    "title": "Meldung lesen",
-    "summary": "22.05.2026 Meldung",
+    "title": "Bundesnetzagentur veröffentlicht Deutschlandkarte zur Versorgungsqualität der Verteilernetzbetreiber",
+    "summary": "Die Deutschlandkarte vergleicht die Versorgungsqualität der Elektrizitäts- und Gasnetzbetreiber.",
     "topics": [],
     "language": "de",
-    "source_id": "de_bbk",
-    "url": "https://www.bbk.bund.de/SharedDocs/Kurzmeldungen/DE/2026/05/om-22-pakt-bevoelkerungsschutz.html",
-    "captured_at": "2026-07-18",
+    "source_id": "de_bnetza",
+    "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260722_Versorgungssicherheit.html",
+    "captured_at": "2026-08-04",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -2563,6 +2759,7 @@
     "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/09_Informationsfreiheit_Symposium.html?nn=251944",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2575,6 +2772,7 @@
     "url": "https://www.bmi.bund.de/SharedDocs/pressemitteilungen/DE/2026/06/gazh-eroeffnung.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2587,6 +2785,7 @@
     "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260716_Solar2.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -2599,6 +2798,7 @@
     "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/TR-03171_Aktualisierung_Digitale_Siegel_260617.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2611,6 +2811,7 @@
     "url": "https://www.bundeskartellamt.de/SharedDocs/Meldung/DE/Pressemitteilungen/2026/07_14_2026_CalPlusEkomess_TVW.html?nn=52004",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2623,6 +2824,7 @@
     "url": "https://www.dpma.de/service/presse/pressemitteilungen/02072026/index.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -2635,6 +2837,7 @@
     "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2026/fraunhofer-aisec-ist-zentraler-partner-der-opentitan-coalition-f.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2647,6 +2850,7 @@
     "url": "https://www.swp-berlin.org/publikation/cybersicherheit-braucht-sichere-software",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2659,18 +2863,20 @@
     "url": "https://www.athene-center.de/aktuelles/news/zeit-fuer-security-innovationen-jetzt-fuer-den-ath-1826",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
   {
-    "title": "Meldung lesen",
-    "summary": "16.03.2026 Meldung",
+    "title": "Bundesnetzagentur legt die Bedingungen für den Zugang zu Leerrohren der Telekom fest",
+    "summary": "Die Entscheidung regelt den Zugang zu Telekommunikations-Leerrohren.",
     "topics": [],
     "language": "de",
-    "source_id": "de_bbk",
-    "url": "https://www.bbk.bund.de/SharedDocs/Kurzmeldungen/DE/2026/03/om-16-teilprojekte-jordanien.html",
-    "captured_at": "2026-07-18",
+    "source_id": "de_bnetza",
+    "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260722_Leerrohre.html",
+    "captured_at": "2026-08-04",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2683,6 +2889,7 @@
     "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/08_Informationsfreiheit.html?nn=251944",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2695,6 +2902,7 @@
     "url": "https://www.bmi.bund.de/SharedDocs/pressemitteilungen/DE/2026/06/geas.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -2707,6 +2915,7 @@
     "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260715_Q.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2719,6 +2928,7 @@
     "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Erstes-NESAS-Zertifikat-5G_260615.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2731,6 +2941,7 @@
     "url": "https://www.bundeskartellamt.de/SharedDocs/Meldung/DE/Pressemitteilungen/2026/07_10_2026_Quartalsbericht_MTSK.html?nn=52004",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -2743,6 +2954,7 @@
     "url": "https://www.dpma.de/service/presse/pressemitteilungen/26062026/index.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2755,6 +2967,7 @@
     "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2026/FraunhoferAISEC-tritt-OpenHW-Foundation-bei.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2767,6 +2980,7 @@
     "url": "https://www.swp-berlin.org/publications/products/WebMonitore/SWP-WebMonitor_Cybersicherheit_und_Digitalpolitik_03_2026.pdf",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -2779,6 +2993,7 @@
     "url": "https://www.athene-center.de/aktuelles/news/sharenting-und-portscans-zwei-neue-faelle-vor-dem-1829",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2791,6 +3006,7 @@
     "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/04_Pilotprojekt-KI-Reallabor.html?nn=251944",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2803,6 +3019,7 @@
     "url": "https://www.bmi.bund.de/SharedDocs/pressemitteilungen/DE/2026/06/pmk2025-pm.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -2815,6 +3032,7 @@
     "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260709_Messwoche.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2827,6 +3045,7 @@
     "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/ANSSI_IT-Sicherheitszertifikate_260527.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2839,6 +3058,7 @@
     "url": "https://www.bundeskartellamt.de/SharedDocs/Meldung/DE/Pressemitteilungen/2026/07_09_2026_Ravensburger_Steiff.html?nn=52004",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -2851,6 +3071,7 @@
     "url": "https://www.dpma.de/service/presse/pressemitteilungen/28052026/index.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2863,6 +3084,7 @@
     "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2026/pqc-update-2026.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2875,6 +3097,7 @@
     "url": "https://www.swp-berlin.org/publikation/cybersicherheit-wie-europa-von-den-usa-unabhaengig-werden-kann",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -2887,6 +3110,7 @@
     "url": "https://www.athene-center.de/aktuelles/news/athene-forschende-stellen-fest-ki-bildgeneratoren-1828",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2899,6 +3123,7 @@
     "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2026/02_Entscheidung-BVerwG-BND.html?nn=251944",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2911,6 +3136,7 @@
     "url": "https://www.bmi.bund.de/SharedDocs/pressemitteilungen/DE/2026/05/bdbos-neuer-praesident.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -2923,6 +3149,7 @@
     "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260701_Eisenbahnen.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2935,6 +3162,7 @@
     "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/CSP_Proof-of-Concept_260520.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2947,6 +3175,7 @@
     "url": "https://www.bundeskartellamt.de/SharedDocs/Meldung/DE/Pressemitteilungen/2026/07_08_2026_SAP_Dremio_Prior.html?nn=52004",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -2959,6 +3188,7 @@
     "url": "https://www.dpma.de/service/presse/pressemitteilungen/26052026/index.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2971,6 +3201,7 @@
     "url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen/2025/vernetzte-und-automatisierte-fahrzeuge-fuer-das-quantenzeitalter.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -2983,6 +3214,7 @@
     "url": "https://www.swp-berlin.org/publications/products/WebMonitore/SWP-WebMonitor_Cybersicherheit_und_Digitalpolitik_02_2026.pdf",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -2995,6 +3227,7 @@
     "url": "https://www.athene-center.de/aktuelles/news/startups-3",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -3007,6 +3240,7 @@
     "url": "https://www.bfdi.bund.de/SharedDocs/Pressemitteilungen/DE/2025/16-Cookie-Einwilligung.html?nn=251944",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -3019,6 +3253,7 @@
     "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260630_WettebwerbFernverkehr.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -3031,6 +3266,7 @@
     "url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/Meldungen/2026/Sicherheit_oeffentliche_Ladeinfrastruktur_260507.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -3043,6 +3279,7 @@
     "url": "https://www.bundeskartellamt.de/SharedDocs/Meldung/DE/Pressemitteilungen/2026/07_08_2026_Dutech_Accell.html?nn=52004",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -3055,6 +3292,7 @@
     "url": "https://www.dpma.de/service/presse/pressemitteilungen/22042026/index.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "dev",
     "hard_negative": true
   },
@@ -3067,6 +3305,7 @@
     "url": "https://www.aisec.fraunhofer.de/de/spotlights/vertrauenswuerdige-elektronik.html",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   },
@@ -3079,6 +3318,7 @@
     "url": "https://www.swp-berlin.org/publications/products/aktuell/2026A33_EU-Arktisstrategie.pdf",
     "captured_at": "2026-07-18",
     "reviewer": "codex-assisted-review",
+    "review_status": "assisted",
     "split": "locked_test",
     "hard_negative": true
   }

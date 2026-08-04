@@ -83,6 +83,7 @@ class HttpClient:
         *,
         stats: HttpStats | None = None,
         ssl_bundle: str = "",
+        user_agent: str = "",
     ) -> httpx.Response:
         metrics = stats or HttpStats()
         host = (urlsplit(url).hostname or "").casefold()
@@ -93,7 +94,11 @@ class HttpClient:
             metrics.request_count += 1
             try:
                 async with self._global_limiter, host_limiter:
-                    response = await self._read_response(url, self._client_for_bundle(ssl_bundle))
+                    response = await self._read_response(
+                        url,
+                        self._client_for_bundle(ssl_bundle),
+                        user_agent=user_agent,
+                    )
                 metrics.statuses.append(str(response.status_code))
                 metrics.bytes_downloaded += len(response.content)
                 if response.status_code not in RETRYABLE_STATUSES or attempt == 1:
@@ -131,9 +136,16 @@ class HttpClient:
             self._special_clients[bundle] = self._new_client(_ssl_context_with_intermediate(bundle))
         return self._special_clients[bundle]
 
-    async def _read_response(self, url: str, client: httpx.AsyncClient) -> httpx.Response:
+    async def _read_response(
+        self,
+        url: str,
+        client: httpx.AsyncClient,
+        *,
+        user_agent: str = "",
+    ) -> httpx.Response:
         timeout = httpx.Timeout(self.timeout, connect=min(8, self.timeout))
-        async with client.stream("GET", url, timeout=timeout) as streamed:
+        request_headers = {"User-Agent": user_agent} if user_agent else None
+        async with client.stream("GET", url, timeout=timeout, headers=request_headers) as streamed:
             content_length = streamed.headers.get("content-length")
             try:
                 declared_size = int(content_length) if content_length else 0
@@ -169,12 +181,12 @@ class HttpClient:
                 if size > self.max_response_bytes:
                     raise ResponseTooLargeError(f"response exceeds {self.max_response_bytes} bytes: {url}")
                 chunks.append(tail)
-            headers = httpx.Headers(streamed.headers)
-            headers.pop("content-encoding", None)
-            headers.pop("content-length", None)
+            response_headers = httpx.Headers(streamed.headers)
+            response_headers.pop("content-encoding", None)
+            response_headers.pop("content-length", None)
             return httpx.Response(
                 streamed.status_code,
-                headers=headers,
+                headers=response_headers,
                 content=b"".join(chunks),
                 request=streamed.request,
             )

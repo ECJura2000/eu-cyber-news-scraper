@@ -13,7 +13,7 @@ import feedparser
 from bs4 import BeautifulSoup
 from bs4.element import Tag
 
-from .models import Article, Source
+from .models import Article, DateCandidate, Source, has_credible_date_conflict
 
 DATE_SETTINGS = {
     "RETURN_AS_TIMEZONE_AWARE": True,
@@ -48,6 +48,7 @@ NAVIGATION_TITLES = {
     "page suivante",
     "page précédente",
     "wissenschaft",
+    "navigation und service",
 }
 
 
@@ -103,17 +104,31 @@ def apply_publication_date(
     parsed = parse_datetime(raw, languages, timezone_name)
     if not parsed:
         return False
-    if article.published_at and article.published_at != parsed:
-        article.date_conflict = True
+    precision = "datetime" if re.search(r"\d{1,2}:\d{2}|T\d{2}", raw) else "date"
+    local_date = parsed.astimezone(ZoneInfo(timezone_name)).date().isoformat()
+    candidate = DateCandidate(
+        raw_value=raw,
+        parsed_at_utc=parsed.isoformat(),
+        local_date=local_date,
+        timezone=timezone_name,
+        precision=precision,
+        source=source,
+        confidence=confidence,
+    )
+    article.date_candidates.append(candidate)
+    article.date_conflict = has_credible_date_conflict(article.date_candidates)
     current_priority = DATE_SOURCE_PRIORITY.get(article.date_source, -1)
     candidate_priority = DATE_SOURCE_PRIORITY.get(source, 0)
     if article.published_at and current_priority > candidate_priority:
         return False
+    for item in article.date_candidates:
+        item.selected = False
+    candidate.selected = True
     article.published_at = parsed
     article.published_at_raw = raw
     article.published_timezone = timezone_name
-    article.published_date_local = parsed.astimezone(ZoneInfo(timezone_name)).date().isoformat()
-    article.date_precision = "datetime" if re.search(r"\d{1,2}:\d{2}|T\d{2}", raw) else "date"
+    article.published_date_local = local_date
+    article.date_precision = precision
     article.date_source = source
     article.date_confidence = confidence
     return True
@@ -165,7 +180,7 @@ def parse_feed(payload: bytes | str, source: Source, fetched_from: str) -> list[
             article,
             raw_date,
             timezone_name=source.timezone,
-            languages=_date_languages(source.language),
+            languages=tuple(dict.fromkeys(("en", *_date_languages(source.language)))),
             source="feed-published",
             confidence="high",
         )
@@ -245,7 +260,7 @@ def parse_listing(html: str, source: Source, base_url: str) -> list[Article]:
                 raw_date_text = _attribute(date_node, "datetime") or date_node.get_text(" ")
                 date_text = _extract_date_text(raw_date_text) or raw_date_text
                 date_source = "source-selector"
-                date_confidence = "medium"
+                date_confidence = "high"
         if time_node:
             date_text = date_text or _attribute(time_node, "datetime") or time_node.get_text(" ")
             if date_source == "visible-text":
@@ -345,8 +360,9 @@ def enrich_from_detail(article: Article, html: str, source: Source | None = None
         _meta(soup, "property", "og:description"),
         _meta(soup, "name", "description"),
     )
-    if title and len(plain_text(title)) >= 8:
-        article.title = plain_text(title)
+    normalized_title = plain_text(title)
+    if title and len(normalized_title) >= 8 and not _looks_like_navigation_title(normalized_title):
+        article.title = normalized_title
     if summary and len(plain_text(summary)) > len(article.summary):
         article.summary = plain_text(summary)
     adapter_date = _adapter_date_value(soup, source)

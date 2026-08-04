@@ -1,18 +1,20 @@
 import sys
-from datetime import timedelta
+from datetime import datetime, timedelta, timezone
 
 import pytest
 
 from eu_cyber_news_scraper.cli import (
     _date_range,
     _default_output,
+    _health_observation_key,
     _quality_failures,
     _select_sources,
     _state_write_eligible,
     build_parser,
 )
 from eu_cyber_news_scraper.config import load_sources
-from eu_cyber_news_scraper.models import Source
+from eu_cyber_news_scraper.models import Article, Source
+from eu_cyber_news_scraper.periods import resolve_period
 
 
 def test_date_range_treats_until_as_inclusive_calendar_day():
@@ -20,6 +22,15 @@ def test_date_range_treats_until_as_inclusive_calendar_day():
     assert (until - since) == timedelta(days=3)
     assert since.date().isoformat() == "2026-04-30"  # Taipei midnight expressed in UTC
     assert _default_output(since, until).name == "歐盟資安法制新聞_20260501-20260503.xlsx"
+
+
+def test_health_observation_key_normalizes_equivalent_calendar_inputs():
+    profile = {"period_mode": "fixed", "fetch_details": True}
+    roc = resolve_period("1150721", "1150804", None)
+    gregorian = resolve_period("2026-07-21", "2026-08-04", None)
+    assert _health_observation_key(roc, roc.since, roc.until, profile) == _health_observation_key(
+        gregorian, gregorian.since, gregorian.until, profile
+    )
 
 
 def test_date_range_rejects_invalid_calendar_dates():
@@ -154,11 +165,33 @@ def test_overall_date_quality_gate_uses_article_weighted_rate():
     assert [row["code"] for row in _quality_failures(statuses, args)] == ["OVERALL_DATE_RATE_LOW"]
 
 
+def test_output_date_confidence_and_conflict_quality_gates():
+    args = build_parser().parse_args(
+        ["--min-high-confidence-date-rate", "0.75", "--max-date-conflict-rate", "0.05"]
+    )
+    articles = [
+        Article(
+            f"s{index}", "EU", "來源", "official", "en", f"Title {index}",
+            f"https://example.eu/news/{index}",
+            published_at=datetime(2026, 7, 1, tzinfo=timezone.utc),
+            date_confidence="high" if index < 7 else "low",
+            date_conflict=index == 0,
+        )
+        for index in range(10)
+    ]
+    articles[-1].published_at = None
+    assert [row["code"] for row in _quality_failures([], args, articles)] == [
+        "HIGH_CONFIDENCE_DATE_RATE_LOW",
+        "DATE_CONFLICT_RATE_HIGH",
+    ]
+
+
 @pytest.mark.parametrize(
     ("arguments", "message"),
     [
         (["--min-parse-success-rate", "1.1"], "--min-parse-success-rate"),
         (["--min-overall-date-rate", "-0.1"], "--min-overall-date-rate"),
+        (["--max-date-conflict-rate", "1.1"], "--max-date-conflict-rate"),
         (["--max-empty-sources", "-1"], "--max-empty-sources"),
     ],
 )
@@ -216,6 +249,12 @@ def test_main_lists_sources_without_starting_run(monkeypatch, capsys):
     monkeypatch.setattr(sys, "argv", ["eu-cyber-news", "--list-sources"])
     cli.main()
     assert "eu_dg_connect" in capsys.readouterr().out
+
+
+def test_cli_reports_package_version(capsys):
+    with pytest.raises(SystemExit, match="0"):
+        build_parser().parse_args(["--version"])
+    assert capsys.readouterr().out.endswith(" 1.3.0\n")
 
 
 def test_main_reports_period_and_lock_errors(monkeypatch, tmp_path):

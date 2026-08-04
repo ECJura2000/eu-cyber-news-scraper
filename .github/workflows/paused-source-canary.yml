@@ -1,0 +1,78 @@
+name: Paused source canary
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 1 * *"
+
+concurrency:
+  group: paused-source-canary
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  canary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: uv.lock
+      - name: Install locked runtime
+        run: |
+          python -m pip install --disable-pip-version-check uv==0.11.29
+          uv sync --frozen --no-dev
+      - name: Probe paused official sources
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/paused-source-canary
+          recovered=()
+          for source in eu_parliament_press fr_cea_list; do
+            output="/tmp/paused-source-canary/${source}.xlsx"
+            uv run python -m eu_cyber_news_scraper \
+              --source "$source" --days 60 --all --no-translate --no-detail \
+              --health-write never --source-budget 20 --state-dir /tmp/paused-source-canary/state \
+              --output "$output" || true
+            manifest="${output%.xlsx}.run.json"
+            if [[ -f "$manifest" ]] && uv run python - "$manifest" <<'PY'
+          import json, sys
+          payload = json.load(open(sys.argv[1], encoding="utf-8"))
+          row = payload["sources"][0]
+          raise SystemExit(not (
+              row["fetch_status"] == "ok"
+              and row["parse_status"] not in {"empty", "failed", "not_run"}
+              and row["raw_count"] > 0
+          ))
+          PY
+            then
+              recovered+=("$source")
+              echo "- $source: recovered" >> "$GITHUB_STEP_SUMMARY"
+            else
+              echo "- $source: still unavailable" >> "$GITHUB_STEP_SUMMARY"
+            fi
+          done
+          if (( ${#recovered[@]} )); then
+            title="Paused EU cyber news source recovered"
+            body="Run $GITHUB_RUN_ID found recoverable paused sources: ${recovered[*]}. Review the official endpoint before removing paused_until.\n\n$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+            issue=$(gh issue list --state open --search "\"$title\" in:title" --json number --jq '.[0].number // empty')
+            if [[ -n "$issue" ]]; then
+              gh issue edit "$issue" --body "$body"
+            else
+              gh issue create --title "$title" --body "$body"
+            fi
+          fi
+      - name: Upload canary diagnostics
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: paused-source-canary-${{ github.run_id }}
+          path: /tmp/paused-source-canary/*
+          if-no-files-found: warn
+          retention-days: 14

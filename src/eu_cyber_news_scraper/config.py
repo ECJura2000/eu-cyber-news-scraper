@@ -81,6 +81,8 @@ def load_sources(path: str | Path | None = None) -> tuple[Source, ...]:
                 paused_until=str(row.get("paused_until", "")),
                 pause_reason=str(row.get("pause_reason", "")),
                 pause_evidence_url=str(row.get("pause_evidence_url", "")),
+                min_listing_bytes=int(row.get("min_listing_bytes", 0)),
+                user_agent=str(row.get("user_agent", "")),
             )
         )
     _validate_sources(sources)
@@ -102,6 +104,8 @@ def _validate_sources(sources: list[Source]) -> None:
             raise ValueError("Source id and names must not be blank")
         if source.detail_pages < 0:
             raise ValueError(f"{source.id}: detail_pages must be non-negative")
+        if source.min_listing_bytes < 0:
+            raise ValueError(f"{source.id}: min_listing_bytes must be non-negative")
         if source.max_pages < 1 or source.observation_runs < 0 or source.freshness_days < 1:
             raise ValueError(f"{source.id}: max_pages must be positive and observation_runs non-negative")
         if source.date_policy not in {"required", "best_effort", "unavailable"}:

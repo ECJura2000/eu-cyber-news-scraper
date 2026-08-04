@@ -41,6 +41,8 @@ class Source:
     paused_until: str = ""
     pause_reason: str = ""
     pause_evidence_url: str = ""
+    min_listing_bytes: int = 0
+    user_agent: str = ""
 
     @property
     def display_name(self) -> str:
@@ -48,6 +50,23 @@ class Source:
 
     def is_paused(self, on_date: date) -> bool:
         return bool(self.paused_until) and date.fromisoformat(self.paused_until) >= on_date
+
+
+@dataclass
+class DateCandidate:
+    raw_value: str
+    parsed_at_utc: str
+    local_date: str
+    timezone: str
+    precision: str
+    source: str
+    confidence: str
+    selected: bool = False
+
+
+def has_credible_date_conflict(candidates: list[DateCandidate]) -> bool:
+    """Only actionable date candidates participate in the quality conflict metric."""
+    return len({item.local_date for item in candidates if item.confidence != "low"}) > 1
 
 
 @dataclass
@@ -78,6 +97,7 @@ class Article:
     date_source: str = ""
     date_confidence: str = ""
     date_conflict: bool = False
+    date_candidates: list[DateCandidate] = field(default_factory=list)
 
 
 @dataclass(frozen=True)
@@ -117,6 +137,9 @@ class SourceStatus:
     budget_exhausted: bool = False
     http_statuses: tuple[str, ...] = ()
     error_code: str = ""
+    historical_median_requests: float = 0.0
+    historical_median_bytes: float = 0.0
+    historical_median_duration: float = 0.0
 
 
 @dataclass

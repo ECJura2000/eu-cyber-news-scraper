@@ -2,7 +2,14 @@ import json
 from datetime import timezone
 
 from eu_cyber_news_scraper.models import Article, Source
-from eu_cyber_news_scraper.parsers import discover_feeds, enrich_from_detail, parse_datetime, parse_feed, parse_listing
+from eu_cyber_news_scraper.parsers import (
+    apply_publication_date,
+    discover_feeds,
+    enrich_from_detail,
+    parse_datetime,
+    parse_feed,
+    parse_listing,
+)
 
 
 def source(**overrides):
@@ -97,7 +104,24 @@ def test_detail_prefers_article_heading_over_generic_social_title():
     assert item.title == "Für besseren Transfer: Amt und Hochschule kooperieren"
 
 
-def test_detail_prefers_article_meta_over_title_heuristic_and_records_conflict():
+def test_detail_does_not_replace_news_title_with_bsi_navigation_heading():
+    item = Article(
+        "de_bsi_news", "DE", "BSI", "official", "de",
+        "Software-Bestandteillisten: Minimum Elements for SBOM aktualisiert",
+        "https://www.bsi.bund.de/DE/news/item.html",
+    )
+    enrich_from_detail(
+        item,
+        """
+        <html><head><meta name="description" content="Das BSI aktualisiert die SBOM-Mindestanforderungen."></head>
+        <body><main><h1>Navigation und Service</h1><time datetime="2026-07-29">29.07.2026</time></main></body></html>
+        """,
+    )
+    assert item.title.startswith("Software-Bestandteillisten")
+    assert "SBOM" in item.summary
+
+
+def test_detail_prefers_article_meta_and_preserves_low_confidence_title_date():
     item = Article("de", "DE", "Agency", "official", "de", "Original title", "https://agency.example/news/item")
     html = """
     <html><head><title>DPMA | 10.03.2026</title><meta name="date" content="2026-07-07"></head>
@@ -107,7 +131,52 @@ def test_detail_prefers_article_meta_over_title_heuristic_and_records_conflict()
     enrich_from_detail(item, html)
     assert item.published_at.date().isoformat() == "2026-07-07"
     assert item.date_source == "article-meta"
+    assert not item.date_conflict
+    assert len(item.date_candidates) >= 2
+
+
+def test_same_local_publication_day_with_different_precision_is_not_a_conflict():
+    item = Article("eu", "EU", "Agency", "official", "en", "Title", "https://agency.example/news/item")
+    assert apply_publication_date(
+        item, "30 July 2026", timezone_name="Europe/Brussels", languages=("en",),
+        source="source-selector", confidence="high",
+    )
+    assert apply_publication_date(
+        item, "2026-07-30T14:30:00+02:00", timezone_name="Europe/Brussels", languages=("en",),
+        source="article-meta", confidence="high",
+    )
+    assert not item.date_conflict
+    assert len(item.date_candidates) == 2
+    assert sum(candidate.selected for candidate in item.date_candidates) == 1
+    assert item.published_date_local == "2026-07-30"
+
+
+def test_different_local_publication_days_record_a_conflict():
+    item = Article("eu", "EU", "Agency", "official", "en", "Title", "https://agency.example/news/item")
+    apply_publication_date(
+        item, "30 July 2026", timezone_name="Europe/Brussels", languages=("en",),
+        source="source-selector", confidence="high",
+    )
+    apply_publication_date(
+        item, "2026-07-31T09:00:00+02:00", timezone_name="Europe/Brussels", languages=("en",),
+        source="article-meta", confidence="high",
+    )
     assert item.date_conflict
+
+
+def test_low_confidence_visible_date_is_preserved_without_creating_conflict():
+    item = Article("eu", "EU", "Agency", "official", "en", "Title", "https://agency.example/news/item")
+    apply_publication_date(
+        item, "30 July 2026", timezone_name="Europe/Brussels", languages=("en",),
+        source="feed-published", confidence="high",
+    )
+    apply_publication_date(
+        item, "14 July 2026", timezone_name="Europe/Brussels", languages=("en",),
+        source="visible-text", confidence="low",
+    )
+    assert not item.date_conflict
+    assert len(item.date_candidates) == 2
+    assert {candidate.local_date for candidate in item.date_candidates} == {"2026-07-14", "2026-07-30"}
 
 
 def test_dpma_adapter_uses_formal_release_date_instead_of_page_update_meta():
