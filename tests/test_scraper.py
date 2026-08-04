@@ -83,6 +83,71 @@ def test_empty_parse_is_not_reported_as_healthy():
     assert "未解析出新聞" in result.status.warning
 
 
+def test_undersized_html_challenge_is_not_reported_as_successful_transport():
+    source = Source(
+        "challenge", "FR", "來源", "Source", "official", "fr",
+        "https://agency.example/", "https://agency.example/news/",
+        allow_domains=("agency.example",), min_listing_bytes=50000,
+    )
+
+    class ChallengeClient:
+        async def get(self, url, *, stats=None):
+            return httpx.Response(
+                200,
+                headers={"content-type": "text/html"},
+                content=b"<html><title>Checking your browser</title></html>",
+                request=httpx.Request("GET", url),
+            )
+
+    result = run_scraper(
+        source,
+        ChallengeClient(),
+        since=datetime(2026, 5, 1, tzinfo=timezone.utc),
+        until=datetime(2026, 6, 1, tzinfo=timezone.utc),
+        fetch_details=False,
+    )
+    assert result.status.fetch_status == "failed"
+    assert result.status.error_code == "HTTP_CHALLENGE"
+
+
+def test_configured_feed_challenge_is_not_reported_as_successful_transport():
+    source = Source(
+        "feed-challenge", "FR", "來源", "Source", "official", "fr",
+        "https://agency.example/", "https://agency.example/news",
+        feed_urls=("https://agency.example/feed.xml",),
+        allow_domains=("agency.example",), min_listing_bytes=50000,
+    )
+
+    class FeedChallengeClient:
+        async def get(self, url, *, stats=None):
+            if url.endswith("feed.xml"):
+                return httpx.Response(
+                    200,
+                    headers={"content-type": "text/html"},
+                    content=b"<html><title>Checking your browser</title></html>",
+                    request=httpx.Request("GET", url),
+                )
+            raise RuntimeError("listing unavailable")
+
+    client = FeedChallengeClient()
+
+    result = asyncio.run(
+        scrape_source(
+            source,
+            client,
+            since=datetime(2026, 1, 1, tzinfo=timezone.utc),
+            until=datetime(2026, 2, 1, tzinfo=timezone.utc),
+            include_unmatched=True,
+            include_undated=True,
+            fetch_details=False,
+        )
+    )
+
+    assert result.status.fetch_status == "failed"
+    assert result.status.error_code == "HTTP_CHALLENGE"
+    assert "ChallengePageError" in result.status.error
+
+
 def test_no_topic_hit_is_content_result_not_fetch_warning(fixture_dir):
     source = Source(
         "content", "EU", "來源", "Source", "official", "en",

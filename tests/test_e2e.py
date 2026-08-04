@@ -60,12 +60,12 @@ def test_offline_pipeline_writes_atomic_artifacts_and_quality_metadata(monkeypat
     summary = json.loads(output.with_suffix(".run.json").read_text(encoding="utf-8"))
     assert summary["run_id"] == "run-e2e"
     assert summary["translation"]["success_rate"] == 1
-    assert summary["schema_version"] == 5
+    assert summary["schema_version"] == 6
     assert summary["period"]["raw_since"] == "1150501"
     assert summary["period"]["since_calendar"] == "roc"
     assert (tmp_path / ".state" / ".source-health.json").exists()
     assert output.with_suffix(".jsonl").exists()
     row = json.loads(output.with_suffix(".jsonl").read_text(encoding="utf-8").splitlines()[0])
-    assert row["schema_version"] == 5
+    assert row["schema_version"] == 6
     assert row["run_id"] == "run-e2e"
     assert row["date_source"] == "feed-published"

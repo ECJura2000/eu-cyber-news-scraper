@@ -10,6 +10,9 @@ concurrency:
   group: ci-${{ github.workflow }}-${{ github.head_ref || github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -30,7 +33,7 @@ jobs:
         run: uv sync --frozen --all-extras
       - run: uv run ruff check .
       - run: uv run mypy src/eu_cyber_news_scraper
-      - run: uv run pytest --cov=eu_cyber_news_scraper --cov-report=term-missing --cov-fail-under=90
+      - run: uv run pytest --cov=eu_cyber_news_scraper --cov-report=term-missing --cov-fail-under=92
       - run: uv run pip-audit
       - name: Build and install distributions
         if: matrix.python-version == '3.13'

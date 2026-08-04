@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ECJura2000/eu-cyber-news-scraper/schemas/translations-v3.schema.json",
+  "title": "EU cyber news translation cache v3",
+  "type": "object",
+  "required": ["schema_version", "translations"],
+  "properties": {
+    "schema_version": {"const": 3},
+    "translations": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["text", "provider", "created_at", "last_accessed_at"],
+        "properties": {
+          "text": {"type": "string", "minLength": 1},
+          "provider": {"type": "string", "minLength": 1},
+          "created_at": {"type": "string", "format": "date-time"},
+          "last_accessed_at": {"type": "string", "format": "date-time"}
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

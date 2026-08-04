@@ -1,0 +1,15 @@
+#!/bin/sh
+set -eu
+
+root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+cd "$root"
+
+if [ ! -x .venv/bin/python ]; then
+  printf '%s\n' 'Missing .venv. Run: python3 -m pip install --user uv==0.11.29 && uv sync --frozen --all-extras' >&2
+  exit 2
+fi
+
+.venv/bin/ruff check .
+.venv/bin/mypy src/eu_cyber_news_scraper
+.venv/bin/pytest --cov=eu_cyber_news_scraper --cov-report=term-missing --cov-fail-under=92
+.venv/bin/pip-audit

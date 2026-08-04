@@ -71,9 +71,11 @@ jobs:
             --source-budget 60
             --min-source-success-rate 0.95
             --min-parse-success-rate 0.95
-            --max-empty-sources 1
+            --max-empty-sources 0
             --min-overall-date-rate 0.75
             --min-critical-date-rate 0.95
+            --min-high-confidence-date-rate 0.75
+            --max-date-conflict-rate 0.05
             --max-unexplained-future-dates 0
             --require-complete-artifacts
           )

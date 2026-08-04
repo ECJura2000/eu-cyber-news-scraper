@@ -10,6 +10,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+from . import __version__
 from .artifacts import ArtifactBundle, verify_artifact_bundle
 from .config import (
     DEFAULT_DAYS,
@@ -25,7 +26,7 @@ from .events import emit_event
 from .exporter import export_workbook, write_jsonl, write_run_summary
 from .health import assess_and_record_health, health_profile_fingerprint
 from .http import HttpClient
-from .models import Source, SourceResult, SourceStatus
+from .models import Article, Source, SourceResult, SourceStatus
 from .periods import PeriodSelection, resolve_period
 from .runtime_lock import acquire_run_lock, release_run_lock
 from .scraper import scrape_source
@@ -55,6 +56,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="抓取歐盟、法國、德國與愛爾蘭官方機關及公共研究機構的資安法制新聞。"
     )
+    parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     parser.add_argument("--days", type=int, default=None, help=f"回推日數；未指定期間時預設 {DEFAULT_DAYS} 天。")
     parser.add_argument("--since", help="起始日；支援西元或民國日期。")
     parser.add_argument("--until", help="結束日；支援西元或民國日期，並包含該日。")
@@ -90,6 +92,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--max-empty-sources", type=int, help="允許解析為空的來源數上限。")
     parser.add_argument("--min-overall-date-rate", type=float, help="最低整體日期完整率，範圍 0 至 1。")
     parser.add_argument("--min-critical-date-rate", type=float, help="最低必要來源日期完整率，範圍 0 至 1。")
+    parser.add_argument("--min-high-confidence-date-rate", type=float, help="最低輸出文章高信心日期比例，範圍 0 至 1。")
+    parser.add_argument("--max-date-conflict-rate", type=float, help="最高輸出文章日期衝突比例，範圍 0 至 1。")
     parser.add_argument("--max-unexplained-future-dates", type=int, help="允許的未來日期筆數上限。")
     parser.add_argument("--require-complete-artifacts", action="store_true", help="要求完整且交叉驗證成功的產物集合。")
     return parser
@@ -237,12 +241,11 @@ async def _run_pipeline_async(
             source, result = await task
             results.append(result)
             emit_event(
-                "source_completed",
+                "source_fetched",
                 run_id=run_id,
                 source_id=source.id,
                 fetch_status=result.status.fetch_status,
                 parse_status=result.status.parse_status,
-                health_status=result.status.health_status,
                 raw_count=result.status.raw_count,
                 relevant_count=result.status.relevant_count,
                 duration_seconds=result.status.duration_seconds,
@@ -308,7 +311,20 @@ async def _run_pipeline_async(
         observation_key=observation_key,
         write=False,
     )
-    quality_failures = _quality_failures(statuses, args)
+    for status in statuses:
+        emit_event(
+            "source_assessed",
+            run_id=run_id,
+            source_id=status.source_id,
+            fetch_status=status.fetch_status,
+            parse_status=status.parse_status,
+            freshness_status=status.freshness_status,
+            content_status=status.content_status,
+            health_status=status.health_status,
+            health_alerts=list(status.health_alerts),
+            error_code=status.error_code,
+        )
+    quality_failures = _quality_failures(statuses, args, articles)
     jsonl_output = output.with_suffix(".jsonl") if args.jsonl else None
     summary_output = output.with_suffix(".run.json")
     with ArtifactBundle(output, run_id) as bundle:
@@ -463,6 +479,8 @@ def _validate_quality_options(args: argparse.Namespace) -> None:
         "min_parse_success_rate",
         "min_overall_date_rate",
         "min_critical_date_rate",
+        "min_high_confidence_date_rate",
+        "max_date_conflict_rate",
     ):
         value = getattr(args, name, None)
         if value is not None and not 0 <= value <= 1:
@@ -475,7 +493,11 @@ def _validate_quality_options(args: argparse.Namespace) -> None:
         raise SystemExit("[error] --max-unexplained-future-dates 不可為負數。")
 
 
-def _quality_failures(statuses: list[SourceStatus], args: argparse.Namespace) -> list[dict[str, str]]:
+def _quality_failures(
+    statuses: list[SourceStatus],
+    args: argparse.Namespace,
+    articles: list[Article] | None = None,
+) -> list[dict[str, str]]:
     failures: list[dict[str, str]] = []
     success_rate = sum(status.fetch_status == "ok" for status in statuses) / len(statuses) if statuses else 0.0
     minimum_success = getattr(args, "min_source_success_rate", None)
@@ -550,6 +572,36 @@ def _quality_failures(statuses: list[SourceStatus], args: argparse.Namespace) ->
                 "message": f"未解釋未來日期 {future_dates} 筆，超過上限 {maximum_future_dates}。",
             }
         )
+    output_articles = articles or []
+    high_confidence_rate = (
+        sum(article.date_confidence == "high" for article in output_articles) / len(output_articles)
+        if output_articles
+        else 1.0
+    )
+    minimum_high_confidence = getattr(args, "min_high_confidence_date_rate", None)
+    if minimum_high_confidence is not None and high_confidence_rate < minimum_high_confidence:
+        failures.append(
+            {
+                "code": "HIGH_CONFIDENCE_DATE_RATE_LOW",
+                "message": (
+                    f"高信心日期比例 {high_confidence_rate:.2%} "
+                    f"低於門檻 {minimum_high_confidence:.2%}。"
+                ),
+            }
+        )
+    conflict_rate = (
+        sum(article.date_conflict for article in output_articles) / len(output_articles)
+        if output_articles
+        else 0.0
+    )
+    maximum_conflicts = getattr(args, "max_date_conflict_rate", None)
+    if maximum_conflicts is not None and conflict_rate > maximum_conflicts:
+        failures.append(
+            {
+                "code": "DATE_CONFLICT_RATE_HIGH",
+                "message": f"日期衝突比例 {conflict_rate:.2%} 高於門檻 {maximum_conflicts:.2%}。",
+            }
+        )
     return failures
 
 
@@ -570,15 +622,12 @@ def _health_observation_key(
 ) -> str:
     period_value = period.as_dict() if period else {
         "mode": "fixed",
-        "period_start_utc": since.isoformat(),
         "period_end_exclusive_utc": until.isoformat(),
     }
     observation = {
-        "period": period_value,
+        "period_end": period_value.get("normalized_until", period_value.get("period_end_exclusive_utc")),
         "period_mode": profile.get("period_mode"),
-        "fetch_details": profile.get("fetch_details"),
-        "include_undated": profile.get("include_undated"),
-        "include_unmatched": profile.get("include_unmatched"),
+        "profile_fingerprint": health_profile_fingerprint(profile),
     }
     return health_profile_fingerprint(observation)
 

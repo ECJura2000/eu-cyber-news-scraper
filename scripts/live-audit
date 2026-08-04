@@ -1,0 +1,21 @@
+#!/bin/sh
+set -eu
+
+root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+cd "$root"
+
+if [ ! -x .venv/bin/python ]; then
+  printf '%s\n' 'Missing .venv. Run scripts/check for bootstrap guidance.' >&2
+  exit 2
+fi
+
+audit_dir=$(mktemp -d /tmp/eu-live-audit.XXXXXX)
+.venv/bin/python -m eu_cyber_news_scraper \
+  --days 14 --no-translate --jsonl --health-write never \
+  --state-dir "$audit_dir/state" --source-budget 60 \
+  --min-source-success-rate 0.95 --min-parse-success-rate 0.95 \
+  --max-empty-sources 0 --min-overall-date-rate 0.75 \
+  --min-critical-date-rate 0.95 --min-high-confidence-date-rate 0.75 \
+  --max-date-conflict-rate 0.05 --max-unexplained-future-dates 0 \
+  --require-complete-artifacts --output "$audit_dir/live-audit.xlsx" "$@"
+printf 'Audit artifacts: %s\n' "$audit_dir"

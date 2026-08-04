@@ -5,14 +5,17 @@ from eu_cyber_news_scraper.models import Article
 from eu_cyber_news_scraper.topics import classify_article
 
 
-def test_gold_topic_set_meets_precision_and_recall_floor(fixture_dir):
+def test_assisted_topic_regression_set_meets_precision_and_recall_floor(fixture_dir):
     rows = json.loads((fixture_dir / "topic_evaluation.json").read_text(encoding="utf-8"))
     assert len(rows) >= 240
     assert len({(row["title"], row["summary"]) for row in rows}) == len(rows)
+    assert len({row["title"].casefold().strip() for row in rows}) == len(rows)
     assert Counter(row["language"] for row in rows) == {"en": 80, "fr": 80, "de": 80}
     assert Counter(row["split"] for row in rows) == {"dev": 80, "locked_test": 160}
     assert all(row["url"].startswith("https://") and row["source_id"] for row in rows)
     assert all(row["captured_at"] and row["reviewer"] for row in rows)
+    assert all(row["review_status"] == "assisted" for row in rows)
+    assert all(row["title"].casefold().strip() not in {"meldung lesen", "s'abonner à ma recherche"} for row in rows)
     true_positive = false_positive = false_negative = 0
     topic_true_positive = Counter()
     topic_false_negative = Counter()

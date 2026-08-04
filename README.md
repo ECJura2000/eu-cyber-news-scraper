@@ -69,7 +69,7 @@ python -m eu_cyber_news_scraper --days 14 --source-budget 60 --state-dir .state
 python -m eu_cyber_news_scraper --days 14 --health-write always --state-dir .state
 
 # 正式品質 gate；產物仍會在 gate 失敗時完整發布供診斷
-python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95 --min-parse-success-rate 0.95 --max-empty-sources 1 --min-overall-date-rate 0.75 --min-critical-date-rate 0.95 --max-unexplained-future-dates 0 --require-complete-artifacts
+python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95 --min-parse-success-rate 0.95 --max-empty-sources 0 --min-overall-date-rate 0.75 --min-critical-date-rate 0.95 --min-high-confidence-date-rate 0.75 --max-date-conflict-rate 0.05 --max-unexplained-future-dates 0 --require-complete-artifacts
 ```
 
 `--days` 與 `--since/--until` 是互斥模式；指定期間時起訖值必須同時提供。日期支援西元
@@ -132,20 +132,24 @@ python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95
 ## 測試
 
 ```bash
+python3 -m pip install --user uv==0.11.29  # 尚未安裝 uv 時
 uv sync --frozen --all-extras
 uv run ruff check .
 uv run mypy src/eu_cyber_news_scraper
-uv run pytest --cov=eu_cyber_news_scraper --cov-report=term-missing --cov-fail-under=90
+uv run pytest --cov=eu_cyber_news_scraper --cov-report=term-missing --cov-fail-under=92
 uv run pip-audit
 ```
 
-測試採本地 RSS／HTML fixtures，不依賴即時網站；55 個來源各保存實際官方 URL、來源入口、擷取日與 SHA-256 合約，高風險 selector 另有精簡官方 HTML fixture。議題評估集包含 240 筆獨立官方英、法、德項目，每種語言 80 筆，並區分 dev 與 locked test、hard negative 及 provenance；要求整體 precision、recall 均至少 0.90，每個主題 recall 至少 0.75。翻譯另有 60 筆英、法、德人工審核黃金集，驗證繁體中文輸出與必要法制／資安術語。CI 會在 Python 3.11、3.12、3.13 執行，要求至少 90% 覆蓋率、Ruff、mypy strict、`pip-audit`、`uv.lock` 一致性及 wheel／sdist 安裝測試；每週工作另會先對必要來源執行不翻譯的 smoke test。
+既有專案 `.venv` 可直接執行 `scripts/check`，不依賴 shell 的 `uv` PATH；`scripts/live-audit`
+會在 `/tmp` 以正式品質門檻執行 rolling 14 天全量驗收，且固定使用 `--health-write never`。
+
+測試採本地 RSS／HTML fixtures，不依賴即時網站；55 個來源各保存實際官方 URL、來源入口、擷取日與 SHA-256 合約，並為每個來源保存可執行的精簡 parser fixture。議題輔助回歸集包含 240 筆獨立官方英、法、德項目，每種語言 80 筆，並區分 dev 與 locked test、hard negative 及 provenance；目前全部標示為 `assisted`，尚未完成具名人工覆核，因此不宣稱為人工 gold set。回歸門檻為整體 precision、recall 均至少 0.90，每個主題 recall 至少 0.75。翻譯另有 60 筆英、法、德審核資料，驗證繁體中文輸出與必要法制／資安術語。CI 會在 Python 3.11、3.12、3.13 執行，要求至少 92% 覆蓋率、Ruff、mypy strict、`pip-audit`、`uv.lock` 一致性及 wheel／sdist 安裝測試；每週工作另會先對必要來源執行不翻譯的 smoke test。
 
 ## 已知限制
 
 - 通用 HTML 解析器無法保證涵蓋所有動態載入網站；遇到 JavaScript-only 頁面應新增官方 API／feed 或專用解析器。
 - 翻譯會將新聞標題送往外部服務；若有資料治理限制，可預先提供翻譯快取或另行替換翻譯器。
-- `.run.json` 與 JSONL 使用 schema v5；公開 schema 位於 `schemas/`。v4 常用欄位仍保留，並新增程式版本、Git SHA、Python 版本、來源設定 SHA-256、run profile、日期 provenance、品質統計、artifact SHA-256／大小／筆數及相對名稱。來源狀態分為 `fetch_status`、`parse_status`、`freshness_status`、`content_status` 與彙總 `health_status`。
+- `.run.json` 與 JSONL 使用 schema v6；公開 schema 位於 `schemas/`。v5 常用欄位仍保留，並新增完整日期候選 provenance、日期衝突率與高信心日期率。來源狀態分為 `fetch_status`、`parse_status`、`freshness_status`、`content_status` 與彙總 `health_status`。
 - `complete` 代表必要來源與品質門檻均正常；非必要來源失敗、單次健康基線警示或翻譯成功率低於 95% 會標示 `attention`；必要來源抓取失敗或連續健康異常則為 `degraded`。
 - 已設定分頁或年度模板的來源會依日期範圍抓取存檔頁；尚未提供穩定分頁規則的網站仍可能受其首頁顯示筆數限制。
 - 公共研究中心的內容屬研究資訊，不等同主管機關的正式法律解釋。

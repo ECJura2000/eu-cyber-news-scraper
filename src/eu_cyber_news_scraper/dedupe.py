@@ -3,7 +3,7 @@ from __future__ import annotations
 import re
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
-from .models import Article
+from .models import Article, has_credible_date_conflict
 from .topics import normalize_text
 
 TRACKING_KEYS = {"fbclid", "gclid", "mc_cid", "mc_eid"}
@@ -72,6 +72,24 @@ def _merge_article(target: Article, candidate: Article) -> None:
         target.date_source = candidate.date_source
         target.date_confidence = candidate.date_confidence
         target.date_conflict = candidate.date_conflict
+    known_candidates = {
+        (item.raw_value, item.parsed_at_utc, item.source, item.timezone)
+        for item in target.date_candidates
+    }
+    for item in candidate.date_candidates:
+        key = (item.raw_value, item.parsed_at_utc, item.source, item.timezone)
+        if key not in known_candidates:
+            target.date_candidates.append(item)
+            known_candidates.add(key)
+    for item in target.date_candidates:
+        item.selected = bool(
+            target.published_at
+            and item.parsed_at_utc == target.published_at.isoformat()
+            and item.source == target.date_source
+            and item.raw_value == target.published_at_raw
+        )
+    if target.date_candidates:
+        target.date_conflict = has_credible_date_conflict(target.date_candidates)
     if len(candidate.title) > len(target.title):
         target.title = candidate.title
     if len(candidate.summary) > len(target.summary):

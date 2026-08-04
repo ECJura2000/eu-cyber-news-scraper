@@ -7,6 +7,7 @@ import platform
 import re
 import subprocess
 import tempfile
+from dataclasses import asdict
 from datetime import datetime, timedelta
 from hashlib import sha256
 from importlib.metadata import PackageNotFoundError, version
@@ -138,7 +139,7 @@ def write_jsonl(articles: list[Article], output_path: str | Path, *, run_id: str
         lines.append(
             json.dumps(
                 {
-                    "schema_version": 5,
+                    "schema_version": 6,
                     "run_id": run_id,
                     "source_id": article.source_id,
                     "country": article.country,
@@ -153,6 +154,7 @@ def write_jsonl(articles: list[Article], output_path: str | Path, *, run_id: str
                     "date_source": article.date_source,
                     "date_confidence": article.date_confidence,
                     "date_conflict": article.date_conflict,
+                    "date_candidates": [asdict(item) for item in article.date_candidates],
                     "title": article.title,
                     "title_zh_tw": article.title_zh_tw,
                     "summary": article.summary,
@@ -224,7 +226,7 @@ def _write_articles(ws: Any, articles: list[Article], *, highlight_matches: bool
 
 
 def _write_statuses(ws: Any, statuses: list[SourceStatus]) -> None:
-    ws.append(("來源代碼", "國家", "機關", "必要來源", "抓取狀態", "解析狀態", "新鮮度狀態", "內容狀態", "健康狀態", "抓取方式", "抓取頁數", "HTTP 請求", "下載位元組", "重試次數", "HTTP 狀態碼", "預算耗盡", "原始筆數", "期間內筆數", "有日期筆數", "無效未來日期", "未解釋未來日期", "逾時次數", "無日期比例", "唯一標題比例", "歷史中位數", "命中筆數", "秒數", "最新日期", "新鮮度落後天數", "健康警示", "抓取警示", "內容結果", "錯誤碼", "錯誤"))
+    ws.append(("來源代碼", "國家", "機關", "必要來源", "抓取狀態", "解析狀態", "新鮮度狀態", "內容狀態", "健康狀態", "抓取方式", "抓取頁數", "HTTP 請求", "下載位元組", "重試次數", "HTTP 狀態碼", "預算耗盡", "原始筆數", "期間內筆數", "有日期筆數", "無效未來日期", "未解釋未來日期", "逾時次數", "無日期比例", "唯一標題比例", "歷史原始筆數中位數", "歷史請求中位數", "歷史下載中位數", "歷史耗時中位數", "命中筆數", "秒數", "最新日期", "新鮮度落後天數", "健康警示", "抓取警示", "內容結果", "錯誤碼", "錯誤"))
     for status in statuses:
         ws.append(
             (
@@ -253,6 +255,9 @@ def _write_statuses(ws: Any, statuses: list[SourceStatus]) -> None:
                 status.undated_ratio,
                 status.unique_title_ratio,
                 status.historical_median_count,
+                status.historical_median_requests,
+                status.historical_median_bytes,
+                status.historical_median_duration,
                 status.relevant_count,
                 status.duration_seconds,
                 status.newest_published_at,
@@ -264,7 +269,7 @@ def _write_statuses(ws: Any, statuses: list[SourceStatus]) -> None:
                 safe_excel_text(status.error),
             )
         )
-    _style_table(ws, widths=(22, 10, 30, 12, 14, 14, 14, 14, 14, 20, 12, 12, 16, 12, 24, 12, 12, 12, 12, 16, 16, 12, 14, 14, 14, 12, 10, 26, 16, 52, 52, 52, 24, 72))
+    _style_table(ws, widths=(22, 10, 30, 12, 14, 14, 14, 14, 14, 20, 12, 12, 16, 12, 24, 12, 12, 12, 12, 16, 16, 12, 14, 14, 18, 18, 20, 18, 12, 10, 26, 16, 52, 52, 52, 24, 72))
 
 
 def _write_sources(ws: Any, sources: list[Source]) -> None:
@@ -334,7 +339,7 @@ def _write_run_metadata(
 ) -> None:
     period_payload = period.as_dict() if period else {}
     rows = {
-        "schema_version": 5,
+        "schema_version": 6,
         "run_id": run_id,
         "period_mode": period_payload.get("mode", ""),
         "normalized_since": period_payload.get("normalized_since", since.date().isoformat() if since else ""),
@@ -451,8 +456,9 @@ def write_run_summary(
         for value in (artifact_paths or [workbook_path])
         if (path := Path(value).expanduser().resolve()).is_file()
     ]
+    dated_articles = [item for item in articles if item.published_at is not None]
     payload = {
-        "schema_version": 5,
+        "schema_version": 6,
         "program_version": _program_version(),
         "git_sha": _git_sha(),
         "python_version": platform.python_version(),
@@ -507,9 +513,19 @@ def write_run_summary(
             "retry_count": sum(item.retry_count for item in statuses),
         },
         "date_quality": {
-            "dated_articles": sum(item.published_at is not None for item in articles),
+            "dated_articles": len(dated_articles),
             "undated_articles": sum(item.published_at is None for item in articles),
             "conflict_count": sum(item.date_conflict for item in articles),
+            "conflict_rate": round(
+                sum(item.date_conflict for item in articles) / len(articles) if articles else 0.0,
+                4,
+            ),
+            "high_confidence_rate": round(
+                sum(item.date_confidence == "high" for item in articles) / len(articles)
+                if articles
+                else 1.0,
+                4,
+            ),
             "by_source": _count_values(item.date_source or "unknown" for item in articles),
             "by_confidence": _count_values(item.date_confidence or "unknown" for item in articles),
         },

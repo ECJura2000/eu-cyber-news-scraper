@@ -21,6 +21,7 @@ from opencc import OpenCC
 
 from .config import DEFAULT_TRANSLATION_WORKERS
 from .models import Article
+from .schema_validation import validate_schema_payload
 from .state_lock import state_lock
 
 _CACHE_LOCK = Lock()
@@ -164,6 +165,7 @@ def save_translations(translations: dict[str, str], providers: dict[str, str] | 
                 reverse=True,
             )[:10000]
             payload = {"schema_version": 3, "translations": dict(ordered)}
+            validate_schema_payload(payload, "translations-v3.schema.json")
             path.parent.mkdir(parents=True, exist_ok=True)
             temporary = path.with_suffix(f"{path.suffix}.tmp")
             try:

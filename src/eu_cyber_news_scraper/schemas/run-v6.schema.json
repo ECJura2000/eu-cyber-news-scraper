@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ECJura2000/eu-cyber-news-scraper/schemas/run-v6.schema.json",
+  "title": "EU cyber news run manifest v6",
+  "type": "object",
+  "required": [
+    "schema_version", "run_id", "period", "article_count", "artifact_bundle_complete",
+    "artifact_manifest", "quality_gate", "date_quality", "sources"
+  ],
+  "properties": {
+    "schema_version": {"const": 6},
+    "run_id": {"type": "string", "minLength": 1},
+    "period": {"type": "object"},
+    "article_count": {"type": "integer", "minimum": 0},
+    "artifact_bundle_complete": {"const": true},
+    "artifacts": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "artifact_manifest": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "relative_path", "sha256", "size_bytes", "row_count", "complete"],
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "relative_path": {"type": "string", "minLength": 1, "pattern": "^[^/\\\\]+$"},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "size_bytes": {"type": "integer", "minimum": 0},
+          "row_count": {"type": "integer", "minimum": 0},
+          "complete": {"const": true}
+        },
+        "additionalProperties": false
+      }
+    },
+    "quality_gate": {
+      "type": "object",
+      "required": ["passed", "failures"],
+      "properties": {
+        "passed": {"type": "boolean"},
+        "failures": {"type": "array"}
+      }
+    },
+    "date_quality": {
+      "type": "object",
+      "required": ["dated_articles", "undated_articles", "conflict_count", "conflict_rate", "high_confidence_rate"],
+      "properties": {
+        "dated_articles": {"type": "integer", "minimum": 0},
+        "undated_articles": {"type": "integer", "minimum": 0},
+        "conflict_count": {"type": "integer", "minimum": 0},
+        "conflict_rate": {"type": "number", "minimum": 0, "maximum": 1},
+        "high_confidence_rate": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    },
+    "sources": {"type": "array"}
+  },
+  "additionalProperties": true
+}
