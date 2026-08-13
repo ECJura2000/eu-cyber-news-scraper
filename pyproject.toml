@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=83", "wheel"]
+requires = ["setuptools>=84.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -11,11 +11,11 @@ requires-python = ">=3.11"
 license = "MIT"
 dependencies = [
   "beautifulsoup4>=4.13,<5",
-  "dateparser>=1.2.2,<2",
+  "dateparser>=1.4.2,<2",
   "googletrans>=4.0.2,<5",
   "translate>=3.6.1,<4",
   "translatepy>=2.3,<3",
-  "feedparser>=6.0.13,<7",
+  "feedparser>=6.0.14,<7",
   "httpx>=0.28,<1",
   "jsonschema>=4.25,<5",
   "lxml>=5.3,<7",
@@ -31,7 +31,7 @@ dev = [
   "pytest>=8.3,<10",
   "pytest-cov>=6,<8",
   "pip-audit>=2.9,<3",
-  "ruff>=0.16,<1",
+  "ruff>=0.16.2,<1",
 ]
 
 [project.scripts]
