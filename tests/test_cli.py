@@ -254,7 +254,7 @@ def test_main_lists_sources_without_starting_run(monkeypatch, capsys):
 def test_cli_reports_package_version(capsys):
     with pytest.raises(SystemExit, match="0"):
         build_parser().parse_args(["--version"])
-    assert capsys.readouterr().out.endswith(" 1.3.0\n")
+    assert capsys.readouterr().out.endswith(" 1.3.1\n")
 
 
 def test_main_reports_period_and_lock_errors(monkeypatch, tmp_path):
