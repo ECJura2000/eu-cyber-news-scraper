@@ -152,6 +152,8 @@ def discover_feeds(html: str, base_url: str) -> list[str]:
 
 def parse_feed(payload: bytes | str, source: Source, fetched_from: str) -> list[Article]:
     if _looks_like_json(payload):
+        if source.parser_adapter == "wordpress_rest":
+            return _parse_wordpress_json(payload, source, fetched_from)
         return _parse_presscorner_json(payload, source, fetched_from)
     feed = feedparser.parse(payload)
     if feed.bozo and not feed.entries:
@@ -302,7 +304,52 @@ def parse_listing(html: str, source: Source, base_url: str) -> list[Article]:
 
 def _looks_like_json(payload: bytes | str) -> bool:
     prefix = payload[:100].decode("utf-8", errors="ignore") if isinstance(payload, bytes) else payload[:100]
-    return prefix.lstrip().startswith("{")
+    return prefix.lstrip().startswith(("{", "["))
+
+
+def _parse_wordpress_json(payload: bytes | str, source: Source, fetched_from: str) -> list[Article]:
+    try:
+        data = json.loads(payload)
+    except (json.JSONDecodeError, UnicodeDecodeError, TypeError) as exc:
+        raise ValueError(f"Invalid WordPress JSON feed: {exc}") from exc
+    if not isinstance(data, list):
+        raise ValueError("Invalid WordPress JSON feed: expected a list of posts")
+    articles = []
+    for row in data:
+        if not isinstance(row, dict):
+            continue
+        title_data = row.get("title")
+        title = plain_text(title_data.get("rendered") if isinstance(title_data, dict) else str(title_data or ""))
+        url = str(row.get("link") or "")
+        if not title or not url or not allowed_article_url(source, url):
+            continue
+        excerpt_data = row.get("excerpt")
+        summary = plain_text(
+            excerpt_data.get("rendered") if isinstance(excerpt_data, dict) else str(excerpt_data or "")
+        )
+        article = Article(
+            source_id=source.id,
+            country=source.country,
+            source_name=source.name_zh,
+            institution_type=source.institution_type,
+            language=source.language,
+            title=title,
+            url=url,
+            summary=summary,
+            fetched_via=f"json:{fetched_from}",
+            published_timezone=source.timezone,
+        )
+        date_gmt = str(row.get("date_gmt") or "")
+        apply_publication_date(
+            article,
+            f"{date_gmt}Z" if date_gmt else str(row.get("date") or ""),
+            timezone_name=source.timezone,
+            languages=_date_languages(source.language),
+            source="json-api",
+            confidence="high",
+        )
+        articles.append(article)
+    return articles
 
 
 def _parse_presscorner_json(payload: bytes | str, source: Source, fetched_from: str) -> list[Article]:

@@ -1,6 +1,8 @@
 import json
 from datetime import timezone
 
+import pytest
+
 from eu_cyber_news_scraper.models import Article, Source
 from eu_cyber_news_scraper.parsers import (
     apply_publication_date,
@@ -257,6 +259,41 @@ def test_parse_presscorner_json_feed():
     articles = parse_feed(payload, press_source, "official-api")
     assert articles[0].url.endswith("/ip_26_1579")
     assert articles[0].published_at.date().isoformat() == "2026-07-10"
+
+
+def test_parse_wordpress_rest_feed():
+    payload = json.dumps(
+        [
+            {
+                "link": "https://cyberireland.ie/cyber-ireland-board-appointment/",
+                "date": "2026-07-22T09:38:02",
+                "date_gmt": "2026-07-22T08:38:02",
+                "title": {"rendered": "Cyber Ireland&#8217;s board appointment"},
+                "excerpt": {"rendered": "<p>A new European cybersecurity appointment.</p>"},
+            }
+        ]
+    )
+    wordpress_source = source(
+        id="ie_cyber_ireland",
+        listing_url="https://cyberireland.ie/news/",
+        allow_domains=("cyberireland.ie",),
+        include_patterns=(r"^/[a-z0-9][a-z0-9-]{12,}/$",),
+        parser_adapter="wordpress_rest",
+        timezone="Europe/Dublin",
+    )
+    articles = parse_feed(payload, wordpress_source, "official-api")
+    assert len(articles) == 1
+    assert articles[0].title == "Cyber Ireland’s board appointment"
+    assert articles[0].summary == "A new European cybersecurity appointment."
+    assert articles[0].published_date_local == "2026-07-22"
+    assert articles[0].published_at.isoformat() == "2026-07-22T08:38:02+00:00"
+    assert articles[0].date_source == "json-api"
+
+
+def test_wordpress_rest_feed_rejects_non_list_payload():
+    wordpress_source = source(parser_adapter="wordpress_rest")
+    with pytest.raises(ValueError, match="expected a list of posts"):
+        parse_feed('{"code": "rest_error"}', wordpress_source, "official-api")
 
 
 def test_listing_rejects_navigation_links_and_does_not_borrow_neighbour_date():

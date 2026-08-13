@@ -240,7 +240,7 @@ language = "fr"
 homepage = "https://www.inria.fr/"
 listing_url = "https://www.inria.fr/fr/actualites-recherche-savoir-numerique"
 feed_urls = ["https://www.inria.fr/fr/rss/recherche/actualites"]
-user_agent = "eu-cyber-news-scraper/1.3.0 (+https://github.com/ECJura2000/eu-cyber-news-scraper)"
+user_agent = "eu-cyber-news-scraper/1.3.1 (+https://github.com/ECJura2000/eu-cyber-news-scraper)"
 allow_domains = ["inria.fr", "www.inria.fr"]
 include_patterns = ['/fr/.+']
 exclude_patterns = ['actualites-recherche-savoir-numerique/?$']
@@ -952,7 +952,10 @@ institution_type = "國家資助資安產業公私協力群聚"
 language = "en"
 homepage = "https://cyberireland.ie/"
 listing_url = "https://cyberireland.ie/news/"
-feed_urls = ["https://cyberireland.ie/feed/"]
+feed_urls = [
+  "https://cyberireland.ie/wp-json/wp/v2/posts?per_page=100&_fields=link,date,date_gmt,title,excerpt",
+  "https://cyberireland.ie/feed/",
+]
 yearly_listing_url = "https://cyberireland.ie/blog-{year}/"
 allow_domains = ["cyberireland.ie"]
 include_patterns = ['^/[a-z0-9][a-z0-9-]{12,}/$']
@@ -960,4 +963,5 @@ exclude_patterns = ['^/(building-the-community-2|business-growth-2|develop-the-w
 card_selectors = ["article.elementor-post"]
 link_selectors = ["h3.elementor-post__title a"]
 date_selectors = [".elementor-post-date"]
+parser_adapter = "wordpress_rest"
 detail_pages = 10
