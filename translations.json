@@ -1,6 +1,54 @@
 {
   "schema_version": 3,
   "translations": {
+    "en\u0000How is the market of cybersecurity assessments doing?": {
+      "text": "網路安全評估市場表現如何？",
+      "provider": "googletrans",
+      "created_at": "2026-08-13T14:26:28.639169+00:00",
+      "last_accessed_at": "2026-08-13T14:26:28.639169+00:00"
+    },
+    "en\u0000Join the MANOLO Summer School and Innovation Lab in Thessaloniki": {
+      "text": "加入塞薩洛尼基的 MANOLO 暑期學校和創新實驗室",
+      "provider": "googletrans",
+      "created_at": "2026-08-13T14:26:28.639169+00:00",
+      "last_accessed_at": "2026-08-13T14:26:28.639169+00:00"
+    },
+    "en\u0000ENISA scales up its role in the CVE Program": {
+      "text": "ENISA 擴大其在 CVE 計劃中的作用",
+      "provider": "googletrans",
+      "created_at": "2026-08-13T14:26:28.639169+00:00",
+      "last_accessed_at": "2026-08-13T14:26:28.639169+00:00"
+    },
+    "en\u0000Revised Media Pluralism Policy published": {
+      "text": "修訂後的媒體多元化政策發布",
+      "provider": "googletrans",
+      "created_at": "2026-08-13T14:26:28.639169+00:00",
+      "last_accessed_at": "2026-08-13T14:26:28.639169+00:00"
+    },
+    "en\u0000CeADAR launches fully funded course to help professionals use generative AI effectively": {
+      "text": "CeADAR 推出全額資助課程，幫助專業人士有效使用生成式人工智慧",
+      "provider": "googletrans",
+      "created_at": "2026-08-13T14:26:28.639169+00:00",
+      "last_accessed_at": "2026-08-13T14:26:28.639169+00:00"
+    },
+    "en\u0000Tyndall’s Annual Report Highlights Growing Indigenous Semiconductor Sector with Record Spinout Success": {
+      "text": "Tyndall 的年度報告強調了本土半導體產業的不斷增長，並取得了創紀錄的分拆成功",
+      "provider": "googletrans",
+      "created_at": "2026-08-13T14:26:28.639169+00:00",
+      "last_accessed_at": "2026-08-13T14:26:28.639169+00:00"
+    },
+    "de\u0000Technische Richtlinie TR-03183-1 in Version 1.0.0 veröffentlicht": {
+      "text": "技術指南 TR-03183-1 1.0.0 版發布",
+      "provider": "googletrans",
+      "created_at": "2026-08-13T14:26:28.639169+00:00",
+      "last_accessed_at": "2026-08-13T14:26:28.639169+00:00"
+    },
+    "en\u0000DCU FuJo Hosts International Media Literacy Initiative to Tackle Disinformation": {
+      "text": "都柏林城市大學 FuJo 主辦國際媒體素養倡議以應對虛假訊息",
+      "provider": "googletrans",
+      "created_at": "2026-08-13T14:26:28.639169+00:00",
+      "last_accessed_at": "2026-08-13T14:26:28.639169+00:00"
+    },
     "en\u0000Fourth GPAI Signatory Taskforce meeting": {
       "text": "第四次 GPAI 簽署工作小組會議",
       "provider": "googletrans",
