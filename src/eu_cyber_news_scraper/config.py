@@ -10,6 +10,7 @@ from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from . import __version__
 from .models import Source
+from .organisation_registry import load_organisation_registry
 
 DEFAULT_DAYS = 14
 DEFAULT_WORKERS = 8
@@ -86,6 +87,8 @@ def load_sources(path: str | Path | None = None) -> tuple[Source, ...]:
             )
         )
     _validate_sources(sources)
+    source_ids = {source.id for source in sources}
+    load_organisation_registry(known_source_ids=source_ids)
     return tuple(sources)
 
 
