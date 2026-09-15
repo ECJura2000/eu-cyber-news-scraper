@@ -51,6 +51,16 @@
       }
     },
     "sources": {"type": "array"}
+    ,"organisation_registry_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+    ,"organisation_registry_version": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+    ,"organisation_modules": {"type": "array"}
+    ,"organisation_module_errors": {"type": "array", "items": {"type": "string"}}
+    ,"organisation_module_overrides": {"type": "array", "items": {"type": "string"}}
+    ,"organisation_changes": {"type": "array", "items": {"type": "string"}}
+    ,"transitional_sources": {"type": "array"}
+    ,"organisation_audit_status": {"enum": ["complete", "degraded"]}
+    ,"filter_method": {"const": "boolean_then_bm25"}
+    ,"bm25": {"type": "object"}
   },
   "additionalProperties": true
 }

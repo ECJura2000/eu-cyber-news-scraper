@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "fr_cybermalveillance",
+  "names": {
+    "zh": "法國網路惡意行為協助平台",
+    "en": "Cybermalveillance.gouv.fr - GIP ACYMA",
+    "short": "fr_cybermalveillance",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "fr_cybermalveillance",
+      "country": "FR",
+      "name_zh": "法國網路惡意行為協助平台",
+      "name": "Cybermalveillance.gouv.fr - GIP ACYMA",
+      "institution_type": "公益團體／行政法人性質",
+      "language": "fr",
+      "homepage": "https://www.cybermalveillance.gouv.fr/",
+      "listing_url": "https://www.cybermalveillance.gouv.fr/blog",
+      "allow_domains": [
+        "cybermalveillance.gouv.fr",
+        "www.cybermalveillance.gouv.fr"
+      ],
+      "include_patterns": [
+        "/tous-nos-contenus/actualites/.+"
+      ],
+      "exclude_patterns": [
+        "^/tous-nos-contenus/actualites/?$"
+      ],
+      "critical": true,
+      "detail_pages": 12
+    }
+  ],
+  "filter": {
+    "topics": [
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全"
+    ],
+    "include_patterns": [
+      "/tous-nos-contenus/actualites/.+"
+    ],
+    "exclude_patterns": [
+      "^/tous-nos-contenus/actualites/?$"
+    ]
+  },
+  "health": {
+    "required": true,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {}
+}

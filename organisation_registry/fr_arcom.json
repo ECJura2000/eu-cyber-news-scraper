@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "fr_arcom",
+  "names": {
+    "zh": "法國視聽及數位傳播監理局",
+    "en": "Autorité de régulation de la communication audiovisuelle et numérique",
+    "short": "fr_arcom",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "fr_arcom",
+      "country": "FR",
+      "name_zh": "法國視聽及數位傳播監理局",
+      "name": "Autorité de régulation de la communication audiovisuelle et numérique",
+      "institution_type": "獨立行政機關／數位平台與媒體監理",
+      "language": "fr",
+      "homepage": "https://www.arcom.fr/",
+      "listing_url": "https://www.arcom.fr/actualites/toutes-nos-actualites",
+      "allow_domains": [
+        "arcom.fr",
+        "www.arcom.fr"
+      ],
+      "include_patterns": [
+        "^/(actualites|presse)/.+"
+      ],
+      "exclude_patterns": [
+        "^/actualites/toutes-nos-actualites/?$"
+      ],
+      "detail_pages": 12
+    }
+  ],
+  "filter": {
+    "topics": [
+      "著作權",
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱"
+    ],
+    "include_patterns": [
+      "^/(actualites|presse)/.+"
+    ],
+    "exclude_patterns": [
+      "^/actualites/toutes-nos-actualites/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "著作權": "文化部／CSPLA、Arcom；Institut Montaigne",
+    "平台責任、內容審查、推薦演算法": "Arcom（DSC）、CNIL；Institut Montaigne",
+    "媒體多元與資訊操縱": "Arcom、VIGINUM"
+  }
+}

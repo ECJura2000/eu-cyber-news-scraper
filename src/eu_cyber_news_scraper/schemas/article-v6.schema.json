@@ -5,7 +5,9 @@
   "type": "object",
   "required": [
     "schema_version", "run_id", "source_id", "title", "url", "date_source",
-    "date_confidence", "date_conflict", "date_candidates"
+    "date_confidence", "date_conflict", "date_candidates", "boolean_score",
+    "bm25_score", "bm25_topic_scores", "matched_synonyms", "publisher_organisation",
+    "responsibility_owner"
   ],
   "properties": {
     "schema_version": {"const": 6},
@@ -17,6 +19,12 @@
     "date_source": {"type": "string"},
     "date_confidence": {"type": "string"},
     "date_conflict": {"type": "boolean"},
+    "boolean_score": {"type": "integer", "minimum": 0},
+    "bm25_score": {"type": "number", "minimum": 0},
+    "bm25_topic_scores": {"type": "object", "additionalProperties": {"type": "number", "minimum": 0}},
+    "matched_synonyms": {"type": "array", "items": {"type": "string"}},
+    "publisher_organisation": {"type": "string"},
+    "responsibility_owner": {"type": "array", "items": {"type": "string"}},
     "date_candidates": {
       "type": "array",
       "items": {

@@ -1,0 +1,88 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "de_athene",
+  "names": {
+    "zh": "德國 ATHENE 國家應用資安研究中心",
+    "en": "National Research Center for Applied Cybersecurity ATHENE",
+    "short": "de_athene",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "de_athene",
+      "country": "DE",
+      "name_zh": "德國 ATHENE 國家應用資安研究中心",
+      "name": "National Research Center for Applied Cybersecurity ATHENE",
+      "institution_type": "公立聯合研究中心／產學公私協力",
+      "language": "de",
+      "homepage": "https://www.athene-center.de/",
+      "listing_url": "https://www.athene-center.de/aktuelles/news",
+      "allow_domains": [
+        "athene-center.de",
+        "www.athene-center.de"
+      ],
+      "include_patterns": [
+        "^/aktuelles/news/.+"
+      ],
+      "exclude_patterns": [
+        "^/aktuelles/news/?$"
+      ],
+      "detail_pages": 10,
+      "card_selectors": [
+        ".news-list"
+      ],
+      "link_selectors": [
+        ".news-list__title a[href]"
+      ],
+      "title_selectors": [
+        ".news-list__title"
+      ],
+      "date_selectors": [
+        ".news-list__date"
+      ],
+      "summary_selectors": [
+        "p"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "媒體多元與資訊操縱",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護",
+      "量子技術"
+    ],
+    "include_patterns": [
+      "^/aktuelles/news/.+"
+    ],
+    "exclude_patterns": [
+      "^/aktuelles/news/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "聯邦網路局（AI協調中心）、BfDI、BMJV／DPMA；ATHENE、Interface",
+    "媒體多元與資訊操縱": "邦媒體主管機關、BMI／聯邦政府；Interface、SWP、ATHENE",
+    "NIS2、關鍵基礎設施保護": "BMI、BSI、BBK；ATHENE、SWP",
+    "產品資安、漏洞揭露義務、SBOM": "BSI、聯邦網路局；ATHENE、SWP",
+    "供應鏈安全": "BSI、BMI；ATHENE、SWP",
+    "資安產品認證": "BSI；ATHENE",
+    "關鍵基礎設施的實體與數位融合保護": "BMI、BBK、BSI；ATHENE",
+    "量子技術": "BMFTR、DLR、Fraunhofer；ATHENE"
+  }
+}

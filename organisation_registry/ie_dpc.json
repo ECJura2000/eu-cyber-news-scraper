@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "ie_dpc",
+  "names": {
+    "zh": "愛爾蘭資料保護委員會",
+    "en": "Data Protection Commission",
+    "short": "ie_dpc",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "ie_dpc",
+      "tls_intermediate_bundle": "sectigo-dv-r36.pem",
+      "country": "IE",
+      "name_zh": "愛爾蘭資料保護委員會",
+      "name": "Data Protection Commission",
+      "institution_type": "獨立監理機關",
+      "language": "en",
+      "homepage": "https://dataprotection.ie/",
+      "listing_url": "https://dataprotection.ie/en/news-media/press-releases?page=0",
+      "allow_domains": [
+        "dataprotection.ie",
+        "www.dataprotection.ie"
+      ],
+      "include_patterns": [
+        "^/en/news-media/(?:latest-news|press-releases)/[^/?]+/?$",
+        "^/en/news-media/[^/?]+/?$",
+        "^/en/[^/?]+/?$"
+      ],
+      "exclude_patterns": [
+        "^/en/news-media/(?:latest-news|press-releases|contact-us|consultations)/?(?:\\?.*)?$"
+      ],
+      "card_selectors": [
+        "article.node--type-article"
+      ],
+      "link_selectors": [
+        "h2 a[rel='bookmark']"
+      ],
+      "date_selectors": [
+        "p.date"
+      ],
+      "summary_selectors": [
+        ".node__content"
+      ],
+      "detail_pages": 10
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "平台責任、內容審查、推薦演算法"
+    ],
+    "include_patterns": [
+      "^/en/news-media/(?:latest-news|press-releases)/[^/?]+/?$",
+      "^/en/news-media/[^/?]+/?$",
+      "^/en/[^/?]+/?$"
+    ],
+    "exclude_patterns": [
+      "^/en/news-media/(?:latest-news|press-releases|contact-us|consultations)/?(?:\\?.*)?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "企業部；2026 年法案擬設 Oifig IS na hÉireann（AI Office of Ireland）為中央協調機關，另由 DPC 與產業監理機關分工；CeADAR、Insight",
+    "跨境資料流通、資料主權、資料開放與再利用": "DPC、公共支出及數位化部／OGCIO；Insight、ESRI",
+    "隱私框架（含個人資料保護）": "DPC；Insight",
+    "平台責任、內容審查、推薦演算法": "Coimisiún na Meán（DSC）、DPC；Insight"
+  }
+}

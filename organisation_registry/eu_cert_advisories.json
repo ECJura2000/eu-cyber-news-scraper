@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "eu_cert_advisories",
+  "names": {
+    "zh": "歐盟機構電腦緊急應變小組（安全公告）",
+    "en": "CERT-EU Security Advisories",
+    "short": "eu_cert_advisories",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "eu_cert_advisories",
+      "country": "EU",
+      "name_zh": "歐盟機構電腦緊急應變小組（安全公告）",
+      "name": "CERT-EU Security Advisories",
+      "institution_type": "歐盟資安應變機關",
+      "language": "en",
+      "homepage": "https://cert.europa.eu/",
+      "listing_url": "https://cert.europa.eu/publications/security-advisories/",
+      "allow_domains": [
+        "cert.europa.eu"
+      ],
+      "include_patterns": [
+        "/publications/security-advisories/.+"
+      ],
+      "exclude_patterns": [
+        "/markdown$",
+        "/json$",
+        "/pdf$"
+      ],
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "產品資安、漏洞揭露義務、SBOM"
+    ],
+    "include_patterns": [
+      "/publications/security-advisories/.+"
+    ],
+    "exclude_patterns": [
+      "/markdown$",
+      "/json$",
+      "/pdf$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "產品資安、漏洞揭露義務、SBOM": "DG CONNECT、ENISA、CERT-EU"
+  }
+}

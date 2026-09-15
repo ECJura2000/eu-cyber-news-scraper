@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "ie_cyber_ireland",
+  "names": {
+    "zh": "愛爾蘭 Cyber Ireland 產業群聚",
+    "en": "Cyber Ireland",
+    "short": "ie_cyber_ireland",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "ie_cyber_ireland",
+      "country": "IE",
+      "name_zh": "愛爾蘭 Cyber Ireland 產業群聚",
+      "name": "Cyber Ireland",
+      "institution_type": "國家資助資安產業公私協力群聚",
+      "language": "en",
+      "homepage": "https://cyberireland.ie/",
+      "listing_url": "https://cyberireland.ie/news/",
+      "feed_urls": [
+        "https://cyberireland.ie/wp-json/wp/v2/posts?per_page=100&_fields=link,date,date_gmt,title,excerpt",
+        "https://cyberireland.ie/feed/"
+      ],
+      "yearly_listing_url": "https://cyberireland.ie/blog-{year}/",
+      "allow_domains": [
+        "cyberireland.ie"
+      ],
+      "include_patterns": [
+        "^/[a-z0-9][a-z0-9-]{12,}/$"
+      ],
+      "exclude_patterns": [
+        "^/(building-the-community-2|business-growth-2|develop-the-workforce|promotion-and-advocacy|membership-2|event-calendar|about-us|blog-20\\d{2})/?$"
+      ],
+      "card_selectors": [
+        "article.elementor-post"
+      ],
+      "link_selectors": [
+        "h3.elementor-post__title a"
+      ],
+      "date_selectors": [
+        ".elementor-post-date"
+      ],
+      "parser_adapter": "wordpress_rest",
+      "detail_pages": 10
+    }
+  ],
+  "filter": {
+    "topics": [
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護"
+    ],
+    "include_patterns": [
+      "^/[a-z0-9][a-z0-9-]{12,}/$"
+    ],
+    "exclude_patterns": [
+      "^/(building-the-community-2|business-growth-2|develop-the-workforce|promotion-and-advocacy|membership-2|event-calendar|about-us|blog-20\\d{2})/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "NIS2、關鍵基礎設施保護": "NCSC、ComReg及各部門主管機關；Cyber Ireland",
+    "產品資安、漏洞揭露義務、SBOM": "NCSC、CCPC／相關市場監理機關；Cyber Ireland、Tyndall",
+    "供應鏈安全": "NCSC、企業部；Cyber Ireland、Tyndall",
+    "資安產品認證": "NSAI、NCSC；Cyber Ireland",
+    "關鍵基礎設施的實體與數位融合保護": "NCSC、政府緊急規劃辦公室、部門主管機關；Cyber Ireland"
+  }
+}

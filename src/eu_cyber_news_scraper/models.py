@@ -84,6 +84,12 @@ class Article:
     matched_topics: list[str] = field(default_factory=list)
     matched_keywords: list[str] = field(default_factory=list)
     relevance_score: int = 0
+    boolean_score: int = 0
+    bm25_score: float = 0.0
+    bm25_topic_scores: dict[str, float] = field(default_factory=dict)
+    matched_synonyms: list[str] = field(default_factory=list)
+    publisher_organisation: str = ""
+    responsibility_owner: list[str] = field(default_factory=list)
     discovered_by: list[str] = field(default_factory=list)
     title_zh_tw: str = ""
     authority_level: str = ""

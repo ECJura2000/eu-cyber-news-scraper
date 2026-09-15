@@ -222,11 +222,12 @@ def test_main_resolves_roc_period_and_releases_lock(monkeypatch, tmp_path):
         "https://example.eu", "https://example.eu/news",
     )
     calls = {}
-    monkeypatch.setattr(cli, "load_sources", lambda path: (source,))
+    registry = cli.load_organisation_registry()
+    monkeypatch.setattr(cli, "load_sources_and_registry", lambda path: ((source,), registry))
     monkeypatch.setattr(cli, "acquire_run_lock", lambda output, run_id: tmp_path / "run.lock")
     monkeypatch.setattr(cli, "release_run_lock", lambda lock, run_id: calls.update(released=(lock, run_id)))
 
-    def run_pipeline(args, selected, since, until, output, run_id, *, period):
+    def run_pipeline(args, selected, since, until, output, run_id, *, period, registry):
         calls.update(period=period, selected=selected, output=output, run_id=run_id)
 
     monkeypatch.setattr(cli, "_run_pipeline", run_pipeline)
@@ -251,10 +252,20 @@ def test_main_lists_sources_without_starting_run(monkeypatch, capsys):
     assert "eu_dg_connect" in capsys.readouterr().out
 
 
+def test_organisation_status_prints_hash_and_modules(capsys):
+    from eu_cyber_news_scraper import cli
+
+    cli._print_organisation_status(cli.load_organisation_registry())
+    output = capsys.readouterr().out
+    assert "registry_sha256" in output
+    assert "audit_status complete" in output
+    assert "eu_dg_connect" in output
+
+
 def test_cli_reports_package_version(capsys):
     with pytest.raises(SystemExit, match="0"):
         build_parser().parse_args(["--version"])
-    assert capsys.readouterr().out.endswith(" 1.3.2\n")
+    assert capsys.readouterr().out.endswith(" 1.4.0\n")
 
 
 def test_main_reports_period_and_lock_errors(monkeypatch, tmp_path):

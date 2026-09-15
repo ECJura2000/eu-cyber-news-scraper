@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "eu_eurohpc",
+  "names": {
+    "zh": "歐洲高效能運算聯合事業",
+    "en": "European High Performance Computing Joint Undertaking",
+    "short": "eu_eurohpc",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "eu_eurohpc",
+      "country": "EU",
+      "name_zh": "歐洲高效能運算聯合事業",
+      "name": "European High Performance Computing Joint Undertaking",
+      "institution_type": "歐盟法定聯合事業／公私協力",
+      "language": "en",
+      "homepage": "https://www.eurohpc-ju.europa.eu/index_en",
+      "listing_url": "https://www.eurohpc-ju.europa.eu/media-events/press-releases_en",
+      "allow_domains": [
+        "eurohpc-ju.europa.eu",
+        "www.eurohpc-ju.europa.eu"
+      ],
+      "include_patterns": [
+        "^/.+-20\\d{2}-\\d{2}-\\d{2}_en$"
+      ],
+      "detail_pages": 12
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "量子技術"
+    ],
+    "include_patterns": [
+      "^/.+-20\\d{2}-\\d{2}-\\d{2}_en$"
+    ],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "歐盟執委會 AI Office／DG CONNECT、JRC、EDPB、EUIPO；EuroHPC 公私協力生態系",
+    "跨境資料流通、資料主權、資料開放與再利用": "DG CONNECT、EDPB、EuroHPC",
+    "量子技術": "DG CONNECT、DG RTD、JRC；EuroHPC、Chips JU"
+  }
+}

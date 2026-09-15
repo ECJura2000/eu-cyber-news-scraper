@@ -1,0 +1,78 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "ie_comreg",
+  "names": {
+    "zh": "愛爾蘭通訊監理委員會",
+    "en": "Commission for Communications Regulation",
+    "short": "ie_comreg",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "ie_comreg",
+      "country": "IE",
+      "name_zh": "愛爾蘭通訊監理委員會",
+      "name": "Commission for Communications Regulation",
+      "institution_type": "法定獨立監理機關／NIS2主管機關",
+      "language": "en",
+      "homepage": "https://www.comreg.ie/",
+      "listing_url": "https://www.comreg.ie/news/",
+      "allow_domains": [
+        "comreg.ie",
+        "www.comreg.ie"
+      ],
+      "include_patterns": [
+        "^/[^/]+/?$",
+        "/industry/nis2-cer/.+"
+      ],
+      "exclude_patterns": [
+        "^/news/?$"
+      ],
+      "critical": true,
+      "card_selectors": [
+        ".ajax-posts"
+      ],
+      "link_selectors": [
+        ".News_Block_content_inn_title h3 a"
+      ],
+      "title_selectors": [
+        ".News_Block_content_inn_title h3"
+      ],
+      "date_selectors": [
+        ".News_Block_content_inn_date span"
+      ],
+      "detail_pages": 0
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "NIS2、關鍵基礎設施保護",
+      "關鍵基礎設施的實體與數位融合保護"
+    ],
+    "include_patterns": [
+      "^/[^/]+/?$",
+      "/industry/nis2-cer/.+"
+    ],
+    "exclude_patterns": [
+      "^/news/?$"
+    ]
+  },
+  "health": {
+    "required": true,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "企業部；2026 年法案擬設 Oifig IS na hÉireann（AI Office of Ireland）為中央協調機關，另由 DPC 與產業監理機關分工；CeADAR、Insight",
+    "NIS2、關鍵基礎設施保護": "NCSC、ComReg及各部門主管機關；Cyber Ireland",
+    "關鍵基礎設施的實體與數位融合保護": "NCSC、政府緊急規劃辦公室、部門主管機關；Cyber Ireland"
+  }
+}

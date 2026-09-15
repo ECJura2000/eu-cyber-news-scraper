@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "de_bundeskartellamt",
+  "names": {
+    "zh": "德國聯邦卡特爾局",
+    "en": "Bundeskartellamt",
+    "short": "de_bundeskartellamt",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "de_bundeskartellamt",
+      "date_policy": "required",
+      "country": "DE",
+      "name_zh": "德國聯邦卡特爾局",
+      "name": "Bundeskartellamt",
+      "institution_type": "聯邦競爭監理機關",
+      "language": "de",
+      "homepage": "https://www.bundeskartellamt.de/",
+      "listing_url": "https://www.bundeskartellamt.de/DE/Home/home_node.html",
+      "allow_domains": [
+        "bundeskartellamt.de",
+        "www.bundeskartellamt.de"
+      ],
+      "include_patterns": [
+        "/SharedDocs/Meldung/DE/Pressemitteilungen/.+\\.html(?:\\?.*)?$"
+      ],
+      "card_selectors": [
+        "div.c-teaser"
+      ],
+      "link_selectors": [
+        ".c-teaser__link-wrapper a"
+      ],
+      "title_selectors": [
+        ".c-teaser__headline"
+      ],
+      "date_selectors": [
+        ".c-topline__item:last-child"
+      ],
+      "detail_pages": 12
+    }
+  ],
+  "filter": {
+    "topics": [
+      "競爭規範面向（平台責任的市場結構面）"
+    ],
+    "include_patterns": [
+      "/SharedDocs/Meldung/DE/Pressemitteilungen/.+\\.html(?:\\?.*)?$"
+    ],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "競爭規範面向（平台責任的市場結構面）": "Bundeskartellamt、聯邦網路局；Interface"
+  }
+}

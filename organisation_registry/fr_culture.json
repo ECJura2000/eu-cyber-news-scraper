@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "fr_culture",
+  "names": {
+    "zh": "法國文化部",
+    "en": "Ministère de la Culture",
+    "short": "fr_culture",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "fr_culture",
+      "country": "FR",
+      "name_zh": "法國文化部",
+      "name": "Ministère de la Culture",
+      "institution_type": "中央政策主管機關／著作權與媒體",
+      "language": "fr",
+      "homepage": "https://www.culture.gouv.fr/",
+      "listing_url": "https://www.culture.gouv.fr/presse/communiques-de-presse",
+      "allow_domains": [
+        "culture.gouv.fr",
+        "www.culture.gouv.fr"
+      ],
+      "include_patterns": [
+        "^/presse/communiques-de-presse/.+"
+      ],
+      "exclude_patterns": [
+        "^/presse/communiques-de-presse/?$"
+      ],
+      "critical": false,
+      "observation_runs": 3,
+      "detail_pages": 12
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "著作權"
+    ],
+    "include_patterns": [
+      "^/presse/communiques-de-presse/.+"
+    ],
+    "exclude_patterns": [
+      "^/presse/communiques-de-presse/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "DGCCRF／DGE、CNIL、INESIA（ANSSI、Inria、LNE、PEReN）、文化部／CSPLA；CEA-List、Institut Montaigne",
+    "著作權": "文化部／CSPLA、Arcom；Institut Montaigne"
+  }
+}

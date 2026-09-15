@@ -1,9 +1,0 @@
-{
-  "schema_version": 1,
-  "module_version": "2026-09-15.1",
-  "canonical_id": "FR",
-  "names": {"zh": "法國機關與官方研究來源", "en": "French authorities and official research bodies", "short": "FR", "publisher_aliases": []},
-  "source_ids": ["fr_anssi", "fr_cnil", "fr_cybermalveillance", "fr_arcep", "fr_inria", "fr_dge", "fr_arcom", "fr_concurrence", "fr_viginum", "fr_culture", "fr_dinum", "fr_cea_list", "fr_campus_cyber", "fr_institut_montaigne"],
-  "topics": ["AI法", "跨境資料流通", "隱私框架", "數位身份", "著作權", "平台責任", "媒體多元", "NIS2", "產品資安", "半導體", "量子技術", "供應鏈安全", "事件應變", "數位治理", "研究創新"],
-  "responsibility_by_topic": {"隱私框架": "fr_cnil", "NIS2": "fr_anssi", "平台責任": "fr_arcom"}
-}

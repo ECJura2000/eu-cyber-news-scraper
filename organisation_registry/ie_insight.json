@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "ie_insight",
+  "names": {
+    "zh": "愛爾蘭 Insight 資料分析研究中心",
+    "en": "Insight SFI Research Centre for Data Analytics",
+    "short": "ie_insight",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "ie_insight",
+      "country": "IE",
+      "name_zh": "愛爾蘭 Insight 資料分析研究中心",
+      "name": "Insight SFI Research Centre for Data Analytics",
+      "institution_type": "國家資助跨校產學研究中心",
+      "language": "en",
+      "homepage": "https://www.insight-centre.org/",
+      "listing_url": "https://www.insight-centre.org/news/",
+      "allow_domains": [
+        "insight-centre.org",
+        "www.insight-centre.org"
+      ],
+      "include_patterns": [
+        "^/[a-z0-9][a-z0-9-]{12,}/$"
+      ],
+      "exclude_patterns": [
+        "^/(about-us|governance|people|projects|industry|ecosystem|privacy-statement|copyright-statement|data-protection-notice)/?$"
+      ],
+      "detail_pages": 10,
+      "card_selectors": [
+        ".news-list .news-item"
+      ],
+      "link_selectors": [
+        ".news-title a[href]"
+      ],
+      "title_selectors": [
+        ".news-title"
+      ],
+      "date_selectors": [
+        ".news-date"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱"
+    ],
+    "include_patterns": [
+      "^/[a-z0-9][a-z0-9-]{12,}/$"
+    ],
+    "exclude_patterns": [
+      "^/(about-us|governance|people|projects|industry|ecosystem|privacy-statement|copyright-statement|data-protection-notice)/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "企業部；2026 年法案擬設 Oifig IS na hÉireann（AI Office of Ireland）為中央協調機關，另由 DPC 與產業監理機關分工；CeADAR、Insight",
+    "跨境資料流通、資料主權、資料開放與再利用": "DPC、公共支出及數位化部／OGCIO；Insight、ESRI",
+    "隱私框架（含個人資料保護）": "DPC；Insight",
+    "平台責任、內容審查、推薦演算法": "Coimisiún na Meán（DSC）、DPC；Insight",
+    "媒體多元與資訊操縱": "Coimisiún na Meán、選舉委員會；Insight"
+  }
+}

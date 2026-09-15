@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "de_bfdi",
+  "names": {
+    "zh": "德國聯邦資料保護與資訊自由專員",
+    "en": "Bundesbeauftragte für den Datenschutz und die Informationsfreiheit",
+    "short": "de_bfdi",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "de_bfdi",
+      "date_policy": "required",
+      "country": "DE",
+      "name_zh": "德國聯邦資料保護與資訊自由專員",
+      "name": "Bundesbeauftragte für den Datenschutz und die Informationsfreiheit",
+      "institution_type": "聯邦獨立監理機關／資料保護",
+      "language": "de",
+      "homepage": "https://www.bfdi.bund.de/",
+      "listing_url": "https://www.bfdi.bund.de/DE/BfDI/Presse/Pressemitteilungen/pressemitteilungen_node.html",
+      "allow_domains": [
+        "bfdi.bund.de",
+        "www.bfdi.bund.de"
+      ],
+      "include_patterns": [
+        "/SharedDocs/Pressemitteilungen/DE/.+\\.html(?:\\?.*)?$"
+      ],
+      "exclude_patterns": [
+        "pressemitteilungen_node\\.html$"
+      ],
+      "card_selectors": [
+        "table.textualData tbody tr"
+      ],
+      "link_selectors": [
+        "td:nth-child(2) a"
+      ],
+      "date_selectors": [
+        "td:first-child"
+      ],
+      "detail_pages": 0
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）"
+    ],
+    "include_patterns": [
+      "/SharedDocs/Pressemitteilungen/DE/.+\\.html(?:\\?.*)?$"
+    ],
+    "exclude_patterns": [
+      "pressemitteilungen_node\\.html$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "聯邦網路局（AI協調中心）、BfDI、BMJV／DPMA；ATHENE、Interface",
+    "跨境資料流通、資料主權、資料開放與再利用": "聯邦網路局（Data Act）、BfDI；Interface",
+    "隱私框架（含個人資料保護）": "BfDI、各邦資料保護機關；Interface"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "fr_campus_cyber",
+  "names": {
+    "zh": "法國 Campus Cyber",
+    "en": "Campus Cyber",
+    "short": "fr_campus_cyber",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "fr_campus_cyber",
+      "country": "FR",
+      "name_zh": "法國 Campus Cyber",
+      "name": "Campus Cyber",
+      "institution_type": "國家倡議公私協力平台／簡化股份公司",
+      "language": "fr",
+      "homepage": "https://campuscyber.fr/",
+      "listing_url": "https://campuscyber.fr/",
+      "feed_urls": [
+        "https://campuscyber.fr/feed/"
+      ],
+      "allow_domains": [
+        "campuscyber.fr"
+      ],
+      "include_patterns": [
+        "^/[a-z0-9][a-z0-9-]+/?$"
+      ],
+      "exclude_patterns": [
+        "^/(evenements|formations|innovations|mentions-legales|politique-de-confidentialite|rejoindre-le-campus|services-evenementiels)/?$"
+      ],
+      "detail_pages": 10
+    }
+  ],
+  "filter": {
+    "topics": [
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "關鍵基礎設施的實體與數位融合保護"
+    ],
+    "include_patterns": [
+      "^/[a-z0-9][a-z0-9-]+/?$"
+    ],
+    "exclude_patterns": [
+      "^/(evenements|formations|innovations|mentions-legales|politique-de-confidentialite|rejoindre-le-campus|services-evenementiels)/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "NIS2、關鍵基礎設施保護": "ANSSI、SGDSN／內政體系；Campus Cyber",
+    "產品資安、漏洞揭露義務、SBOM": "ANSSI／CERT-FR、DGCCRF；Campus Cyber、CEA-List",
+    "供應鏈安全": "ANSSI、DGE；Campus Cyber、CEA-List",
+    "關鍵基礎設施的實體與數位融合保護": "SGDSN、ANSSI、內政部；Campus Cyber、CEA-List"
+  }
+}

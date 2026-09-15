@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "de_dpma",
+  "names": {
+    "zh": "德國專利商標局",
+    "en": "Deutsches Patent- und Markenamt",
+    "short": "de_dpma",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "de_dpma",
+      "country": "DE",
+      "name_zh": "德國專利商標局",
+      "name": "Deutsches Patent- und Markenamt",
+      "institution_type": "聯邦智慧財產權機關",
+      "language": "de",
+      "homepage": "https://www.dpma.de/",
+      "listing_url": "https://www.dpma.de/service/presse/pressemitteilungen/archiv/index.html",
+      "allow_domains": [
+        "dpma.de",
+        "www.dpma.de"
+      ],
+      "include_patterns": [
+        "^/service/presse/pressemitteilungen/\\d{8}/index\\.html$"
+      ],
+      "exclude_patterns": [
+        "^/service/presse/pressemitteilungen/(?:archiv/)?index\\.html$"
+      ],
+      "parser_adapter": "dpma_press_release",
+      "detail_pages": 12
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "著作權"
+    ],
+    "include_patterns": [
+      "^/service/presse/pressemitteilungen/\\d{8}/index\\.html$"
+    ],
+    "exclude_patterns": [
+      "^/service/presse/pressemitteilungen/(?:archiv/)?index\\.html$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "聯邦網路局（AI協調中心）、BfDI、BMJV／DPMA；ATHENE、Interface",
+    "著作權": "BMJV、DPMA；Interface"
+  }
+}

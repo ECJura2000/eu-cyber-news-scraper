@@ -1,0 +1,86 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "fr_anssi",
+  "names": {
+    "zh": "法國國家資訊系統安全局",
+    "en": "Agence nationale de la sécurité des systèmes d'information",
+    "short": "fr_anssi",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "fr_anssi",
+      "country": "FR",
+      "name_zh": "法國國家資訊系統安全局",
+      "name": "Agence nationale de la sécurité des systèmes d'information",
+      "institution_type": "國家主管機關",
+      "language": "fr",
+      "homepage": "https://cyber.gouv.fr/",
+      "listing_url": "https://cyber.gouv.fr/actualites/",
+      "feed_urls": [
+        "https://cyber.gouv.fr/actualites/rss/",
+        "https://cyber.gouv.fr/actualites/atom/"
+      ],
+      "allow_domains": [
+        "cyber.gouv.fr"
+      ],
+      "include_patterns": [
+        "/actualites/.+"
+      ],
+      "exclude_patterns": [
+        "/actualites/(rss|atom)/?$",
+        "^/actualites/\\?(tag|page)="
+      ],
+      "critical": true,
+      "detail_pages": 16,
+      "pagination_url": "https://cyber.gouv.fr/actualites/?page={page}",
+      "max_pages": 10,
+      "card_selectors": [
+        "div.fr-card__content"
+      ],
+      "link_selectors": [
+        "h3.fr-card__title a[href]"
+      ],
+      "date_selectors": [
+        "p.fr-card__desc"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護"
+    ],
+    "include_patterns": [
+      "/actualites/.+"
+    ],
+    "exclude_patterns": [
+      "/actualites/(rss|atom)/?$",
+      "^/actualites/\\?(tag|page)="
+    ]
+  },
+  "health": {
+    "required": true,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "DGCCRF／DGE、CNIL、INESIA（ANSSI、Inria、LNE、PEReN）、文化部／CSPLA；CEA-List、Institut Montaigne",
+    "NIS2、關鍵基礎設施保護": "ANSSI、SGDSN／內政體系；Campus Cyber",
+    "產品資安、漏洞揭露義務、SBOM": "ANSSI／CERT-FR、DGCCRF；Campus Cyber、CEA-List",
+    "供應鏈安全": "ANSSI、DGE；Campus Cyber、CEA-List",
+    "資安產品認證": "ANSSI",
+    "關鍵基礎設施的實體與數位融合保護": "SGDSN、ANSSI、內政部；Campus Cyber、CEA-List"
+  }
+}

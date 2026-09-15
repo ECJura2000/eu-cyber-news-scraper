@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "de_bmi",
+  "names": {
+    "zh": "德國聯邦內政部",
+    "en": "Bundesministerium des Innern",
+    "short": "de_bmi",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "de_bmi",
+      "country": "DE",
+      "name_zh": "德國聯邦內政部",
+      "name": "Bundesministerium des Innern",
+      "institution_type": "聯邦行政機關",
+      "language": "de",
+      "homepage": "https://www.bmi.bund.de/",
+      "listing_url": "https://www.bmi.bund.de/SiteGlobals/Forms/suche/expertensuche-formular.html?nn=9388812&gts=9398922_list%253DunifiedDate_dt%2Bdesc&documentType_=pbjournal",
+      "allow_domains": [
+        "bmi.bund.de",
+        "www.bmi.bund.de"
+      ],
+      "include_patterns": [
+        "/SharedDocs/pressemitteilungen/DE/.+\\.html$"
+      ],
+      "exclude_patterns": [
+        "/pressemitteilungen\\.html$"
+      ],
+      "detail_pages": 10
+    }
+  ],
+  "filter": {
+    "topics": [
+      "數位身份",
+      "媒體多元與資訊操縱",
+      "NIS2、關鍵基礎設施保護",
+      "供應鏈安全",
+      "關鍵基礎設施的實體與數位融合保護"
+    ],
+    "include_patterns": [
+      "/SharedDocs/pressemitteilungen/DE/.+\\.html$"
+    ],
+    "exclude_patterns": [
+      "/pressemitteilungen\\.html$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "數位身份": "BMI、聯邦網路局（信任服務）",
+    "媒體多元與資訊操縱": "邦媒體主管機關、BMI／聯邦政府；Interface、SWP、ATHENE",
+    "NIS2、關鍵基礎設施保護": "BMI、BSI、BBK；ATHENE、SWP",
+    "供應鏈安全": "BSI、BMI；ATHENE、SWP",
+    "關鍵基礎設施的實體與數位融合保護": "BMI、BBK、BSI；ATHENE"
+  }
+}

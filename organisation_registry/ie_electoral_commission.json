@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "ie_electoral_commission",
+  "names": {
+    "zh": "愛爾蘭選舉委員會",
+    "en": "An Coimisiún Toghcháin - Electoral Commission",
+    "short": "ie_electoral_commission",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "ie_electoral_commission",
+      "country": "IE",
+      "name_zh": "愛爾蘭選舉委員會",
+      "name": "An Coimisiún Toghcháin - Electoral Commission",
+      "institution_type": "獨立法定機關／選舉完整性",
+      "language": "en",
+      "homepage": "https://www.electoralcommission.ie/",
+      "listing_url": "https://www.electoralcommission.ie/media-releases/",
+      "allow_domains": [
+        "electoralcommission.ie",
+        "www.electoralcommission.ie"
+      ],
+      "include_patterns": [
+        "^/(media-release|latest-news-and-research|uncategorised)/.+"
+      ],
+      "exclude_patterns": [
+        "^/media-releases/?$"
+      ],
+      "detail_pages": 10
+    }
+  ],
+  "filter": {
+    "topics": [
+      "媒體多元與資訊操縱"
+    ],
+    "include_patterns": [
+      "^/(media-release|latest-news-and-research|uncategorised)/.+"
+    ],
+    "exclude_patterns": [
+      "^/media-releases/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "媒體多元與資訊操縱": "Coimisiún na Meán、選舉委員會；Insight"
+  }
+}

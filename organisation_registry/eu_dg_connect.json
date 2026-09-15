@@ -1,0 +1,100 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "eu_dg_connect",
+  "names": {
+    "zh": "歐盟執委會通訊網路、內容與技術總署",
+    "en": "European Commission DG CONNECT - Shaping Europe's Digital Future",
+    "short": "eu_dg_connect",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "eu_dg_connect",
+      "country": "EU",
+      "name_zh": "歐盟執委會通訊網路、內容與技術總署",
+      "name": "European Commission DG CONNECT - Shaping Europe's Digital Future",
+      "institution_type": "歐盟執委會／政策主管機關",
+      "language": "en",
+      "homepage": "https://digital-strategy.ec.europa.eu/",
+      "listing_url": "https://digital-strategy.ec.europa.eu/en/news",
+      "allow_domains": [
+        "digital-strategy.ec.europa.eu"
+      ],
+      "include_patterns": [
+        "/en/news/"
+      ],
+      "exclude_patterns": [
+        "^/en/news/?$"
+      ],
+      "critical": true,
+      "detail_pages": 18,
+      "card_selectors": [
+        ".ecl-content-item--divider"
+      ],
+      "link_selectors": [
+        ".ecl-content-block__title a[href]"
+      ],
+      "title_selectors": [
+        ".ecl-content-block__title"
+      ],
+      "date_selectors": [
+        ".ecl-content-block__primary-meta-item:last-child"
+      ],
+      "summary_selectors": [
+        ".ecl-content-block__description"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "數位身份",
+      "著作權",
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱",
+      "競爭規範面向（平台責任的市場結構面）",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [
+      "/en/news/"
+    ],
+    "exclude_patterns": [
+      "^/en/news/?$"
+    ]
+  },
+  "health": {
+    "required": true,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "歐盟執委會 AI Office／DG CONNECT、JRC、EDPB、EUIPO；EuroHPC 公私協力生態系",
+    "跨境資料流通、資料主權、資料開放與再利用": "DG CONNECT、EDPB、EuroHPC",
+    "數位身份": "DG CONNECT（歐洲數位身份錢包）",
+    "著作權": "歐盟執委會 DG CONNECT、EUIPO Observatory",
+    "平台責任、內容審查、推薦演算法": "歐盟執委會 DG CONNECT（DSA）、EDPB",
+    "媒體多元與資訊操縱": "DG CONNECT（EMFA）、EEAS（FIMI）；SNS JU研究生態系",
+    "競爭規範面向（平台責任的市場結構面）": "歐盟執委會競爭總署、DG CONNECT（DMA）",
+    "NIS2、關鍵基礎設施保護": "DG CONNECT、ENISA、DG HOME（CER）",
+    "產品資安、漏洞揭露義務、SBOM": "DG CONNECT、ENISA、CERT-EU",
+    "供應鏈安全": "DG CONNECT、ENISA、CERT-EU；Chips JU、SNS JU",
+    "資安產品認證": "ENISA、歐盟執委會",
+    "關鍵基礎設施的實體與數位融合保護": "DG HOME（CER）、DG CONNECT（NIS2）、ENISA",
+    "半導體": "DG CONNECT、European Semiconductor Board、JRC；Chips JU",
+    "量子技術": "DG CONNECT、DG RTD、JRC；EuroHPC、Chips JU"
+  }
+}

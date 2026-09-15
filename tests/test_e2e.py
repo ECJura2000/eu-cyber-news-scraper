@@ -63,9 +63,15 @@ def test_offline_pipeline_writes_atomic_artifacts_and_quality_metadata(monkeypat
     assert summary["schema_version"] == 6
     assert summary["period"]["raw_since"] == "1150501"
     assert summary["period"]["since_calendar"] == "roc"
+    assert summary["organisation_audit_status"] == "complete"
+    assert len(summary["organisation_registry_hash"]) == 64
+    assert len(summary["organisation_modules"]) == 55
     assert (tmp_path / ".state" / ".source-health.json").exists()
     assert output.with_suffix(".jsonl").exists()
     row = json.loads(output.with_suffix(".jsonl").read_text(encoding="utf-8").splitlines()[0])
     assert row["schema_version"] == 6
     assert row["run_id"] == "run-e2e"
     assert row["date_source"] == "feed-published"
+    assert row["boolean_score"] > 0
+    assert row["bm25_score"] > 0
+    assert row["publisher_organisation"] == "測試主管機關"

@@ -1,0 +1,72 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "eu_chips_ju",
+  "names": {
+    "zh": "歐洲晶片聯合事業",
+    "en": "Chips Joint Undertaking",
+    "short": "eu_chips_ju",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "eu_chips_ju",
+      "date_policy": "required",
+      "country": "EU",
+      "name_zh": "歐洲晶片聯合事業",
+      "name": "Chips Joint Undertaking",
+      "institution_type": "歐盟法定聯合事業／公私協力",
+      "language": "en",
+      "homepage": "https://www.chips-ju.europa.eu/",
+      "listing_url": "https://www.chips-ju.europa.eu/News/",
+      "allow_domains": [
+        "chips-ju.europa.eu",
+        "www.chips-ju.europa.eu"
+      ],
+      "include_patterns": [
+        "^/NewsDetails\\?id="
+      ],
+      "detail_pages": 12,
+      "card_selectors": [
+        "div.col-lg-4.col-md-6.mb10"
+      ],
+      "link_selectors": [
+        "h4 a[href*='NewsDetails']"
+      ],
+      "title_selectors": [
+        "h4"
+      ],
+      "date_selectors": [
+        ".mb-1 .d-inline",
+        ".de-bloglist-type-1 .blog-item-row:nth-child(1) div"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "供應鏈安全",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [
+      "^/NewsDetails\\?id="
+    ],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "供應鏈安全": "DG CONNECT、ENISA、CERT-EU；Chips JU、SNS JU",
+    "半導體": "DG CONNECT、European Semiconductor Board、JRC；Chips JU",
+    "量子技術": "DG CONNECT、DG RTD、JRC；EuroHPC、Chips JU"
+  }
+}

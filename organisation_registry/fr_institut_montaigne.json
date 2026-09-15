@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "fr_institut_montaigne",
+  "names": {
+    "zh": "法國蒙田研究所",
+    "en": "Institut Montaigne",
+    "short": "fr_institut_montaigne",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "fr_institut_montaigne",
+      "country": "FR",
+      "name_zh": "法國蒙田研究所",
+      "name": "Institut Montaigne",
+      "institution_type": "私人非營利政策智庫",
+      "language": "fr",
+      "homepage": "https://www.institutmontaigne.org/",
+      "listing_url": "https://www.institutmontaigne.org/expressions",
+      "allow_domains": [
+        "institutmontaigne.org",
+        "www.institutmontaigne.org"
+      ],
+      "include_patterns": [
+        "^/expressions/.+",
+        "^/publications/.+"
+      ],
+      "exclude_patterns": [
+        "^/(expressions|publications)/?$"
+      ],
+      "detail_pages": 10
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "著作權",
+      "平台責任、內容審查、推薦演算法"
+    ],
+    "include_patterns": [
+      "^/expressions/.+",
+      "^/publications/.+"
+    ],
+    "exclude_patterns": [
+      "^/(expressions|publications)/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "DGCCRF／DGE、CNIL、INESIA（ANSSI、Inria、LNE、PEReN）、文化部／CSPLA；CEA-List、Institut Montaigne",
+    "著作權": "文化部／CSPLA、Arcom；Institut Montaigne",
+    "平台責任、內容審查、推薦演算法": "Arcom（DSC）、CNIL；Institut Montaigne"
+  }
+}

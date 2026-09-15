@@ -1,0 +1,86 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "fr_inria",
+  "names": {
+    "zh": "法國國家資訊與自動化研究院",
+    "en": "Institut national de recherche en sciences et technologies du numérique",
+    "short": "fr_inria",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "fr_inria",
+      "date_policy": "best_effort",
+      "date_exception_reason": "The research listing mixes dated releases with evergreen institutional content.",
+      "date_evidence_url": "https://www.inria.fr/fr/actualites-recherche-savoir-numerique",
+      "date_reviewed_on": "2026-07-18",
+      "date_review_due": "2027-01-31",
+      "country": "FR",
+      "name_zh": "法國國家資訊與自動化研究院",
+      "name": "Institut national de recherche en sciences et technologies du numérique",
+      "institution_type": "國家公共研究機構",
+      "language": "fr",
+      "homepage": "https://www.inria.fr/",
+      "listing_url": "https://www.inria.fr/fr/actualites-recherche-savoir-numerique",
+      "feed_urls": [
+        "https://www.inria.fr/fr/rss/recherche/actualites"
+      ],
+      "user_agent": "eu-cyber-news-scraper/1.4.0 (+https://github.com/ECJura2000/eu-cyber-news-scraper)",
+      "allow_domains": [
+        "inria.fr",
+        "www.inria.fr"
+      ],
+      "include_patterns": [
+        "/fr/.+"
+      ],
+      "exclude_patterns": [
+        "actualites-recherche-savoir-numerique/?$"
+      ],
+      "detail_pages": 12,
+      "min_listing_bytes": 50000,
+      "card_selectors": [
+        "article.news"
+      ],
+      "link_selectors": [
+        "a[rel='bookmark']"
+      ],
+      "title_selectors": [
+        "h3"
+      ],
+      "date_selectors": [
+        "time[datetime]",
+        ".date"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [
+      "/fr/.+"
+    ],
+    "exclude_patterns": [
+      "actualites-recherche-savoir-numerique/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "DGCCRF／DGE、CNIL、INESIA（ANSSI、Inria、LNE、PEReN）、文化部／CSPLA；CEA-List、Institut Montaigne",
+    "半導體": "DGE、CEA-Leti／CEA-List",
+    "量子技術": "DGE、研究部、CEA、Inria"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "eu_sns_ju",
+  "names": {
+    "zh": "歐洲智慧網路與服務聯合事業",
+    "en": "Smart Networks and Services Joint Undertaking",
+    "short": "eu_sns_ju",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "eu_sns_ju",
+      "country": "EU",
+      "name_zh": "歐洲智慧網路與服務聯合事業",
+      "name": "Smart Networks and Services Joint Undertaking",
+      "institution_type": "歐盟法定聯合事業／公私協力",
+      "language": "en",
+      "homepage": "https://smart-networks.europa.eu/",
+      "listing_url": "https://smart-networks.europa.eu/news/",
+      "allow_domains": [
+        "smart-networks.europa.eu"
+      ],
+      "include_patterns": [
+        "^/[a-z0-9][a-z0-9-]{12,}/$"
+      ],
+      "exclude_patterns": [
+        "^/(missions-and-objectives|reference-documents|current-call-for-proposals|previous-calls-for-proposals|data-protection-declaration)/$"
+      ],
+      "detail_pages": 10
+    }
+  ],
+  "filter": {
+    "topics": [
+      "媒體多元與資訊操縱",
+      "供應鏈安全"
+    ],
+    "include_patterns": [
+      "^/[a-z0-9][a-z0-9-]{12,}/$"
+    ],
+    "exclude_patterns": [
+      "^/(missions-and-objectives|reference-documents|current-call-for-proposals|previous-calls-for-proposals|data-protection-declaration)/$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "媒體多元與資訊操縱": "DG CONNECT（EMFA）、EEAS（FIMI）；SNS JU研究生態系",
+    "供應鏈安全": "DG CONNECT、ENISA、CERT-EU；Chips JU、SNS JU"
+  }
+}

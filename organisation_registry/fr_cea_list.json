@@ -1,0 +1,75 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "fr_cea_list",
+  "names": {
+    "zh": "法國原子能暨替代能源署 CEA-List",
+    "en": "CEA-List",
+    "short": "fr_cea_list",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "fr_cea_list",
+      "tls_intermediate_bundle": "geant-tls-rsa-1.pem",
+      "paused_until": "2026-10-31",
+      "pause_reason": "Direct TLS connections to the official home, news and feed endpoints repeatedly exceeded the connection budget on 2026-07-28; retain the source but avoid weekly no-op waits until review.",
+      "pause_evidence_url": "https://list.cea.fr/en/news/",
+      "country": "FR",
+      "name_zh": "法國原子能暨替代能源署 CEA-List",
+      "name": "CEA-List",
+      "institution_type": "公立科技研究機構／行政法人性質",
+      "language": "en",
+      "homepage": "https://list.cea.fr/en/",
+      "listing_url": "https://list.cea.fr/en/news/",
+      "feed_urls": [
+        "https://list.cea.fr/en/feed/"
+      ],
+      "allow_domains": [
+        "list.cea.fr"
+      ],
+      "include_patterns": [
+        "^/en/.+"
+      ],
+      "exclude_patterns": [
+        "^/en/news/?$"
+      ],
+      "detail_pages": 10
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "關鍵基礎設施的實體與數位融合保護",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [
+      "^/en/.+"
+    ],
+    "exclude_patterns": [
+      "^/en/news/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "DGCCRF／DGE、CNIL、INESIA（ANSSI、Inria、LNE、PEReN）、文化部／CSPLA；CEA-List、Institut Montaigne",
+    "產品資安、漏洞揭露義務、SBOM": "ANSSI／CERT-FR、DGCCRF；Campus Cyber、CEA-List",
+    "供應鏈安全": "ANSSI、DGE；Campus Cyber、CEA-List",
+    "關鍵基礎設施的實體與數位融合保護": "SGDSN、ANSSI、內政部；Campus Cyber、CEA-List",
+    "半導體": "DGE、CEA-Leti／CEA-List",
+    "量子技術": "DGE、研究部、CEA、Inria"
+  }
+}

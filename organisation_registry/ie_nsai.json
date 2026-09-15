@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "ie_nsai",
+  "names": {
+    "zh": "愛爾蘭國家標準局",
+    "en": "National Standards Authority of Ireland",
+    "short": "ie_nsai",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "ie_nsai",
+      "country": "IE",
+      "name_zh": "愛爾蘭國家標準局",
+      "name": "National Standards Authority of Ireland",
+      "institution_type": "法定標準與合格評定機構",
+      "language": "en",
+      "homepage": "https://www.nsai.ie/",
+      "listing_url": "https://www.nsai.ie/about/news/",
+      "allow_domains": [
+        "nsai.ie",
+        "www.nsai.ie"
+      ],
+      "include_patterns": [
+        "/about/news/.+"
+      ],
+      "exclude_patterns": [
+        "^/about/news/?$"
+      ],
+      "detail_pages": 10
+    }
+  ],
+  "filter": {
+    "topics": [
+      "資安產品認證"
+    ],
+    "include_patterns": [
+      "/about/news/.+"
+    ],
+    "exclude_patterns": [
+      "^/about/news/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "資安產品認證": "NSAI、NCSC；Cyber Ireland"
+  }
+}

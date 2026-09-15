@@ -1,0 +1,71 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "fr_dge",
+  "names": {
+    "zh": "法國企業總署",
+    "en": "Direction générale des Entreprises",
+    "short": "fr_dge",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "fr_dge",
+      "country": "FR",
+      "name_zh": "法國企業總署",
+      "name": "Direction générale des Entreprises",
+      "institution_type": "中央行政機關／產業政策",
+      "language": "fr",
+      "homepage": "https://www.entreprises.gouv.fr/",
+      "listing_url": "https://www.entreprises.gouv.fr/la-dge/actualites",
+      "allow_domains": [
+        "entreprises.gouv.fr",
+        "www.entreprises.gouv.fr"
+      ],
+      "include_patterns": [
+        "/la-dge/actualites/.+",
+        "/actualites/.+"
+      ],
+      "exclude_patterns": [
+        "^/la-dge/actualites/?$"
+      ],
+      "detail_pages": 10
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "競爭規範面向（平台責任的市場結構面）",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [
+      "/la-dge/actualites/.+",
+      "/actualites/.+"
+    ],
+    "exclude_patterns": [
+      "^/la-dge/actualites/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "DGCCRF／DGE、CNIL、INESIA（ANSSI、Inria、LNE、PEReN）、文化部／CSPLA；CEA-List、Institut Montaigne",
+    "競爭規範面向（平台責任的市場結構面）": "Autorité de la concurrence、DGCCRF",
+    "產品資安、漏洞揭露義務、SBOM": "ANSSI／CERT-FR、DGCCRF；Campus Cyber、CEA-List",
+    "供應鏈安全": "ANSSI、DGE；Campus Cyber、CEA-List",
+    "半導體": "DGE、CEA-Leti／CEA-List",
+    "量子技術": "DGE、研究部、CEA、Inria"
+  }
+}

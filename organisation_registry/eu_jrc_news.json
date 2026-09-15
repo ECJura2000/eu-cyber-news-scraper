@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "eu_jrc_news",
+  "names": {
+    "zh": "歐盟聯合研究中心",
+    "en": "European Commission Joint Research Centre",
+    "short": "eu_jrc_news",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "eu_jrc_news",
+      "country": "EU",
+      "name_zh": "歐盟聯合研究中心",
+      "name": "European Commission Joint Research Centre",
+      "institution_type": "歐盟官方研究機構",
+      "language": "en",
+      "homepage": "https://joint-research-centre.ec.europa.eu/",
+      "listing_url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates_en",
+      "allow_domains": [
+        "joint-research-centre.ec.europa.eu"
+      ],
+      "include_patterns": [
+        "/jrc-news-and-updates/"
+      ],
+      "detail_pages": 12
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [
+      "/jrc-news-and-updates/"
+    ],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "歐盟執委會 AI Office／DG CONNECT、JRC、EDPB、EUIPO；EuroHPC 公私協力生態系",
+    "半導體": "DG CONNECT、European Semiconductor Board、JRC；Chips JU",
+    "量子技術": "DG CONNECT、DG RTD、JRC；EuroHPC、Chips JU"
+  }
+}

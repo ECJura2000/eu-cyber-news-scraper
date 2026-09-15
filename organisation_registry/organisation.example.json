@@ -1,9 +1,11 @@
 {
-  "schema_version": 1,
-  "module_version": "1.0.0",
-  "canonical_id": "EXAMPLE",
-  "names": {"zh": "範例機關", "en": "Example authority", "short": "EXAMPLE", "publisher_aliases": []},
-  "source_ids": ["source_id_from_sources.toml"],
-  "topics": ["AI法"],
-  "responsibility_by_topic": {}
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "example_authority",
+  "names": {"zh": "範例機關", "en": "Example Authority", "short": "Example", "publisher_aliases": []},
+  "sources": [{"id": "example_authority", "country": "EU", "name_zh": "範例機關", "name": "Example Authority", "institution_type": "主管機關", "language": "en", "homepage": "https://example.eu/", "listing_url": "https://example.eu/news", "parser_adapter": ""}],
+  "filter": {"topics": ["NIS2、關鍵基礎設施保護"], "include_patterns": ["/news/"], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-15", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {"NIS2、關鍵基礎設施保護": "Example Authority"}
 }

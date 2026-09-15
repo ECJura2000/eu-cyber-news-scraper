@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "ie_esri",
+  "names": {
+    "zh": "愛爾蘭經濟社會研究所",
+    "en": "Economic and Social Research Institute",
+    "short": "ie_esri",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "ie_esri",
+      "date_policy": "best_effort",
+      "date_exception_reason": "The news archive mixes content types and does not expose a uniform date field on every card.",
+      "date_evidence_url": "https://www.esri.ie/news",
+      "date_reviewed_on": "2026-07-18",
+      "date_review_due": "2027-01-31",
+      "country": "IE",
+      "name_zh": "愛爾蘭經濟社會研究所",
+      "name": "Economic and Social Research Institute",
+      "institution_type": "法定非營利獨立政策研究機構",
+      "language": "en",
+      "homepage": "https://www.esri.ie/",
+      "listing_url": "https://www.esri.ie/news",
+      "allow_domains": [
+        "esri.ie",
+        "www.esri.ie"
+      ],
+      "include_patterns": [
+        "^/news/.+"
+      ],
+      "exclude_patterns": [
+        "^/news/?$"
+      ],
+      "detail_pages": 10,
+      "pagination_url": "https://www.esri.ie/news?page={page}",
+      "max_pages": 5,
+      "card_selectors": [
+        "article.teaser.node--type-news"
+      ],
+      "link_selectors": [
+        ".teaser__title a[href]"
+      ],
+      "title_selectors": [
+        ".teaser__title"
+      ],
+      "date_selectors": [
+        ".teaser__date"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "競爭規範面向（平台責任的市場結構面）"
+    ],
+    "include_patterns": [
+      "^/news/.+"
+    ],
+    "exclude_patterns": [
+      "^/news/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "跨境資料流通、資料主權、資料開放與再利用": "DPC、公共支出及數位化部／OGCIO；Insight、ESRI",
+    "競爭規範面向（平台責任的市場結構面）": "CCPC、Coimisiún na Meán（部分 DSA 義務）；ESRI"
+  }
+}

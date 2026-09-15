@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "ie_cnam",
+  "names": {
+    "zh": "愛爾蘭媒體委員會",
+    "en": "Coimisiún na Meán",
+    "short": "ie_cnam",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "ie_cnam",
+      "country": "IE",
+      "name_zh": "愛爾蘭媒體委員會",
+      "name": "Coimisiún na Meán",
+      "institution_type": "獨立監理機關／數位服務與媒體",
+      "language": "en",
+      "homepage": "https://www.cnam.ie/",
+      "listing_url": "https://www.cnam.ie/news-and-publications/news/",
+      "allow_domains": [
+        "cnam.ie",
+        "www.cnam.ie"
+      ],
+      "include_patterns": [
+        "^/[^/]+/?$"
+      ],
+      "exclude_patterns": [
+        "^/(news-and-publications|about|contact|careers|publications|)$"
+      ],
+      "detail_pages": 12
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱",
+      "競爭規範面向（平台責任的市場結構面）"
+    ],
+    "include_patterns": [
+      "^/[^/]+/?$"
+    ],
+    "exclude_patterns": [
+      "^/(news-and-publications|about|contact|careers|publications|)$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "企業部；2026 年法案擬設 Oifig IS na hÉireann（AI Office of Ireland）為中央協調機關，另由 DPC 與產業監理機關分工；CeADAR、Insight",
+    "平台責任、內容審查、推薦演算法": "Coimisiún na Meán（DSC）、DPC；Insight",
+    "媒體多元與資訊操縱": "Coimisiún na Meán、選舉委員會；Insight",
+    "競爭規範面向（平台責任的市場結構面）": "CCPC、Coimisiún na Meán（部分 DSA 義務）；ESRI"
+  }
+}

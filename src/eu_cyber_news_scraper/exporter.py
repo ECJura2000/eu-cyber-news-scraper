@@ -21,7 +21,9 @@ from openpyxl.utils import get_column_letter
 from .config import default_sources_path
 from .coverage import load_coverage
 from .models import Article, Source, SourceStatus
+from .organisation_registry import OrganisationRegistry
 from .periods import PeriodSelection
+from .ranking import BM25_B, BM25_K1, BM25_MINIMUM_SCORE, SUMMARY_WEIGHT, TITLE_WEIGHT
 from .translation import TranslationReport
 
 ARTICLE_HEADERS = (
@@ -46,6 +48,13 @@ ARTICLE_HEADERS = (
     "觀測主題",
     "命中關鍵字",
     "關聯分數",
+    "Boolean 分數",
+    "BM25 分數",
+    "BM25 門檻",
+    "BM25 主題分數",
+    "命中同義詞",
+    "實際發布機關",
+    "責任機關",
     "可信度",
     "官方原文",
     "其他官方連結",
@@ -79,6 +88,7 @@ def export_workbook(
     period: PeriodSelection | None = None,
     since: datetime | None = None,
     until: datetime | None = None,
+    organisation_registry: OrganisationRegistry | None = None,
 ) -> Path:
     path = Path(output_path).expanduser().resolve()
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -116,6 +126,9 @@ def export_workbook(
 
     ws_coverage = wb.create_sheet("議題主管機關覆蓋")
     _write_coverage(ws_coverage, sources)
+
+    ws_filter = wb.create_sheet("篩選設定")
+    _write_filter_settings(ws_filter, organisation_registry)
 
     ws_metadata = wb.create_sheet("_run_metadata")
     _write_run_metadata(ws_metadata, run_id, period, since, until, len(articles))
@@ -163,6 +176,12 @@ def write_jsonl(articles: list[Article], output_path: str | Path, *, run_id: str
                     "matched_topics": article.matched_topics,
                     "matched_keywords": article.matched_keywords,
                     "relevance_score": article.relevance_score,
+                    "boolean_score": article.boolean_score,
+                    "bm25_score": article.bm25_score,
+                    "bm25_topic_scores": article.bm25_topic_scores,
+                    "matched_synonyms": article.matched_synonyms,
+                    "publisher_organisation": article.publisher_organisation,
+                    "responsibility_owner": article.responsibility_owner,
                     "confidence_level": article.confidence_level,
                     "fetched_via": article.fetched_via,
                     "discovered_by": article.discovered_by,
@@ -202,6 +221,13 @@ def _write_articles(ws: Any, articles: list[Article], *, highlight_matches: bool
                 "；".join(article.matched_topics),
                 "；".join(article.matched_keywords),
                 article.relevance_score,
+                article.boolean_score,
+                article.bm25_score,
+                BM25_MINIMUM_SCORE,
+                json.dumps(article.bm25_topic_scores, ensure_ascii=False, sort_keys=True),
+                "；".join(article.matched_synonyms),
+                safe_excel_text(article.publisher_organisation),
+                "；".join(article.responsibility_owner),
                 article.confidence_level,
                 article.url,
                 "\n".join(article.alternate_urls),
@@ -209,8 +235,9 @@ def _write_articles(ws: Any, articles: list[Article], *, highlight_matches: bool
                 "；".join(article.discovered_by or [article.source_id]),
             )
         )
-        ws.cell(ws.max_row, 23).hyperlink = article.url
-        ws.cell(ws.max_row, 23).style = "Hyperlink"
+        url_column = ARTICLE_HEADERS.index("官方原文") + 1
+        ws.cell(ws.max_row, url_column).hyperlink = article.url
+        ws.cell(ws.max_row, url_column).style = "Hyperlink"
         if highlight_matches and article.matched_keywords:
             fill = {
                 "高": HIGH_CONFIDENCE_FILL,
@@ -221,8 +248,27 @@ def _write_articles(ws: Any, articles: list[Article], *, highlight_matches: bool
                 cell.fill = fill
     _style_table(
         ws,
-        widths=(8, 12, 28, 18, 18, 18, 18, 30, 20, 18, 14, 20, 14, 12, 12, 56, 56, 72, 36, 44, 12, 12, 64, 64, 28, 32),
+        widths=(8, 12, 28, 18, 18, 18, 18, 30, 20, 18, 14, 20, 14, 12, 12, 56, 56, 72, 36, 44, 12, 12, 12, 12, 52, 44, 32, 44, 12, 64, 64, 28, 32),
     )
+
+
+def _write_filter_settings(ws: Any, registry: OrganisationRegistry | None) -> None:
+    ws.append(("設定", "值"))
+    rows = (
+        ("filter_method", "boolean_then_bm25"),
+        ("bm25_k1", BM25_K1),
+        ("bm25_b", BM25_B),
+        ("title_weight", TITLE_WEIGHT),
+        ("summary_weight", SUMMARY_WEIGHT),
+        ("minimum_bm25_score", BM25_MINIMUM_SCORE),
+        ("score_precision", 4),
+        ("organisation_registry_hash", registry.registry_hash if registry else ""),
+        ("organisation_module_count", len(registry.modules) if registry else 0),
+        ("organisation_audit_status", registry.audit_payload()["organisation_audit_status"] if registry else "unknown"),
+    )
+    for row in rows:
+        ws.append(row)
+    _style_table(ws, widths=(34, 80))
 
 
 def _write_statuses(ws: Any, statuses: list[SourceStatus]) -> None:
@@ -388,6 +434,7 @@ def _verify_workbook(path: Path) -> None:
         required = {
             "全部命中新聞", "CRA_CSA_NIS2_CER", "官方規範與執法", "研究智庫與公私協力",
             "來源健康狀態", "官方來源清單", "議題主管機關覆蓋", "_run_metadata",
+            "篩選設定",
         }
         missing = required - set(workbook.sheetnames)
         if missing:
@@ -416,6 +463,7 @@ def write_run_summary(
     published_output_path: str | Path | None = None,
     quality_failures: list[dict[str, str]] | None = None,
     paused_sources: list[dict[str, str]] | None = None,
+    organisation_registry: OrganisationRegistry | None = None,
 ) -> Path:
     workbook_path = Path(output_path).expanduser().resolve()
     published_workbook = (
@@ -425,14 +473,15 @@ def write_run_summary(
     translation = translation_report or TranslationReport(0, 0)
     quality_failures = quality_failures or []
     paused_sources = paused_sources or []
-    hard_failure = bool(quality_failures) or any(
+    registry_degraded = bool(organisation_registry and organisation_registry.errors)
+    hard_failure = bool(quality_failures) or registry_degraded or any(
         item.critical and (item.fetch_status == "failed" or item.health_status == "degraded")
         for item in statuses
     )
     attention = any(
         item.fetch_status == "failed" or item.health_status in {"attention", "degraded"}
         for item in statuses
-    ) or translation.success_rate < 0.95
+    ) or translation.success_rate < 0.95 or registry_degraded
     period_payload = period.as_dict() if period else {
         "mode": "fixed",
         "timezone": "UTC",
@@ -463,7 +512,17 @@ def write_run_summary(
         "git_sha": _git_sha(),
         "python_version": platform.python_version(),
         "source_config_sha256": _file_sha256(source_config_path),
+        "filter_method": "boolean_then_bm25",
+        "bm25": {
+            "k1": BM25_K1,
+            "b": BM25_B,
+            "minimum_score": BM25_MINIMUM_SCORE,
+            "title_weight": TITLE_WEIGHT,
+            "summary_weight": SUMMARY_WEIGHT,
+            "score_precision": 4,
+        },
         "run_profile": run_profile or {},
+        **(organisation_registry.audit_payload() if organisation_registry else {}),
         "paused_sources": paused_sources,
         "run_id": run_id,
         "started_at": started_at.isoformat(),

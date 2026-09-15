@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "eu_enisa_certification",
+  "names": {
+    "zh": "歐盟資安局（資安認證）",
+    "en": "ENISA European Cybersecurity Certification",
+    "short": "eu_enisa_certification",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "eu_enisa_certification",
+      "country": "EU",
+      "name_zh": "歐盟資安局（資安認證）",
+      "name": "ENISA European Cybersecurity Certification",
+      "institution_type": "歐盟行政機關／資安認證",
+      "language": "en",
+      "homepage": "https://certification.enisa.europa.eu/",
+      "listing_url": "https://certification.enisa.europa.eu/news-events_en",
+      "allow_domains": [
+        "certification.enisa.europa.eu"
+      ],
+      "include_patterns": [
+        "^/news/.+"
+      ],
+      "detail_pages": 10
+    }
+  ],
+  "filter": {
+    "topics": [
+      "資安產品認證"
+    ],
+    "include_patterns": [
+      "^/news/.+"
+    ],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "資安產品認證": "ENISA、歐盟執委會"
+  }
+}

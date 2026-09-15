@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "ie_research_ireland",
+  "names": {
+    "zh": "愛爾蘭研究署",
+    "en": "Research Ireland",
+    "short": "ie_research_ireland",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "ie_research_ireland",
+      "country": "IE",
+      "name_zh": "愛爾蘭研究署",
+      "name": "Research Ireland",
+      "institution_type": "國家研究與創新資助機關／量子技術",
+      "language": "en",
+      "homepage": "https://www.researchireland.ie/",
+      "listing_url": "https://www.researchireland.ie/news/",
+      "allow_domains": [
+        "researchireland.ie",
+        "www.researchireland.ie"
+      ],
+      "include_patterns": [
+        "^/news/.+"
+      ],
+      "exclude_patterns": [
+        "^/news/?$"
+      ],
+      "detail_pages": 10
+    }
+  ],
+  "filter": {
+    "topics": [
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [
+      "^/news/.+"
+    ],
+    "exclude_patterns": [
+      "^/news/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "半導體": "企業部（Silicon Island）、IDA Ireland、Research Ireland；Tyndall",
+    "量子技術": "Research Ireland、企業部、ADAPT、CeADAR、Tyndall等研究中心"
+  }
+}

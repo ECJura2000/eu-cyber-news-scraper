@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "fr_arcep",
+  "names": {
+    "zh": "法國電子通訊、郵政與新聞傳播監理局",
+    "en": "Autorité de régulation des communications électroniques, des postes et de la distribution de la presse",
+    "short": "fr_arcep",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "fr_arcep",
+      "country": "FR",
+      "name_zh": "法國電子通訊、郵政與新聞傳播監理局",
+      "name": "Autorité de régulation des communications électroniques, des postes et de la distribution de la presse",
+      "institution_type": "獨立行政機關／通訊監理",
+      "language": "fr",
+      "homepage": "https://www.arcep.fr/",
+      "listing_url": "https://www.arcep.fr/actualites/actualites-et-communiques.html",
+      "allow_domains": [
+        "arcep.fr",
+        "www.arcep.fr"
+      ],
+      "include_patterns": [
+        "/actualites/.+"
+      ],
+      "exclude_patterns": [
+        "actualites-et-communiques\\.html$",
+        "/actualites/agenda-et-evenements\\.html$"
+      ],
+      "detail_pages": 10,
+      "card_selectors": [
+        "ol.list-group > li.list-group-item.row"
+      ],
+      "link_selectors": [
+        "h3 a[href]"
+      ],
+      "title_selectors": [
+        "h3"
+      ],
+      "date_selectors": [
+        "time[datetime]"
+      ],
+      "summary_selectors": [
+        ".col-sm-8 p"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "平台責任、內容審查、推薦演算法",
+      "競爭規範面向（平台責任的市場結構面）",
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "include_patterns": [
+      "/actualites/.+"
+    ],
+    "exclude_patterns": [
+      "actualites-et-communiques\\.html$",
+      "/actualites/agenda-et-evenements\\.html$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {}
+}
