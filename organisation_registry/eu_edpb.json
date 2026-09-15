@@ -1,0 +1,69 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "eu_edpb",
+  "names": {
+    "zh": "歐洲資料保護委員會",
+    "en": "European Data Protection Board",
+    "short": "eu_edpb",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "eu_edpb",
+      "country": "EU",
+      "name_zh": "歐洲資料保護委員會",
+      "name": "European Data Protection Board",
+      "institution_type": "歐盟獨立資料保護機關",
+      "language": "en",
+      "homepage": "https://www.edpb.europa.eu/",
+      "listing_url": "https://www.edpb.europa.eu/news_en",
+      "allow_domains": [
+        "edpb.europa.eu",
+        "www.edpb.europa.eu"
+      ],
+      "include_patterns": [
+        "^/news/.+_en$"
+      ],
+      "exclude_patterns": [
+        "^/news_en$"
+      ],
+      "critical": false,
+      "observation_runs": 3,
+      "detail_pages": 12,
+      "pagination_url": "https://www.edpb.europa.eu/news_en?page={page}",
+      "max_pages": 5
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "平台責任、內容審查、推薦演算法"
+    ],
+    "include_patterns": [
+      "^/news/.+_en$"
+    ],
+    "exclude_patterns": [
+      "^/news_en$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "歐盟執委會 AI Office／DG CONNECT、JRC、EDPB、EUIPO；EuroHPC 公私協力生態系",
+    "跨境資料流通、資料主權、資料開放與再利用": "DG CONNECT、EDPB、EuroHPC",
+    "隱私框架（含個人資料保護）": "EDPB、歐盟執委會司法總署",
+    "平台責任、內容審查、推薦演算法": "歐盟執委會 DG CONNECT（DSA）、EDPB"
+  }
+}

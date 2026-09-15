@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 import os
+import subprocess
 import sys
 import uuid
 from dataclasses import replace
@@ -19,7 +20,7 @@ from .config import (
     DEFAULT_TIMEOUT,
     DEFAULT_TIMEZONE,
     DEFAULT_WORKERS,
-    load_sources,
+    load_sources_and_registry,
 )
 from .dedupe import dedupe_articles
 from .events import emit_event
@@ -27,7 +28,14 @@ from .exporter import export_workbook, write_jsonl, write_run_summary
 from .health import assess_and_record_health, health_profile_fingerprint
 from .http import HttpClient
 from .models import Article, Source, SourceResult, SourceStatus
+from .organisation_registry import (
+    OrganisationRegistry,
+    export_example,
+    external_registry_dir,
+    load_organisation_registry,
+)
 from .periods import PeriodSelection, resolve_period
+from .ranking import BM25_B, BM25_K1, BM25_MINIMUM_SCORE, is_hybrid_relevant, rank_articles
 from .runtime_lock import acquire_run_lock, release_run_lock
 from .scraper import scrape_source
 from .translation import skip_article_title_translation, translate_article_titles
@@ -86,6 +94,9 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--jsonl", action="store_true", help="另輸出同名 JSONL。")
     parser.add_argument("--config", help="自訂 sources.toml 路徑。")
     parser.add_argument("--list-sources", action="store_true", help="列出來源後結束。")
+    parser.add_argument("--organisation-status", action="store_true", help="列出機關模組、覆寫與驗證錯誤後結束。")
+    parser.add_argument("--export-organisation-example", metavar="PATH", help="匯出完整機關 JSON 範本後結束。")
+    parser.add_argument("--open-organisation-dir", action="store_true", help="建立並開啟外部機關模組資料夾後結束。")
     parser.add_argument("--fail-on-degraded", action="store_true", help="必要來源失敗時回傳非零結束碼。")
     parser.add_argument("--min-source-success-rate", type=float, help="最低來源成功率，範圍 0 至 1。")
     parser.add_argument("--min-parse-success-rate", type=float, help="最低解析成功率，範圍 0 至 1。")
@@ -102,9 +113,19 @@ def build_parser() -> argparse.ArgumentParser:
 def main() -> None:
     args = build_parser().parse_args()
     _validate_quality_options(args)
-    sources = list(load_sources(args.config))
+    loaded_sources, registry = load_sources_and_registry(args.config)
+    sources = list(loaded_sources)
     if args.list_sources:
         _print_sources(sources)
+        return
+    if args.organisation_status:
+        _print_organisation_status(registry)
+        return
+    if args.export_organisation_example:
+        print(export_example(args.export_organisation_example))
+        return
+    if args.open_organisation_dir:
+        _open_organisation_directory()
         return
 
     selected = _select_sources(sources, args.country, args.source)
@@ -128,7 +149,7 @@ def main() -> None:
     except RuntimeError as exc:
         raise SystemExit(f"[error] {exc}") from exc
     try:
-        _run_pipeline(args, selected, period.since, period.until, output, run_id, period=period)
+        _run_pipeline(args, selected, period.since, period.until, output, run_id, period=period, registry=registry)
     finally:
         release_run_lock(lock_path, run_id)
 
@@ -142,6 +163,7 @@ def _run_pipeline(
     run_id: str,
     *,
     period: PeriodSelection | None = None,
+    registry: OrganisationRegistry | None = None,
 ) -> None:
     asyncio.run(
         _run_pipeline_async(
@@ -152,6 +174,7 @@ def _run_pipeline(
             output,
             run_id,
             period=period,
+            registry=registry,
         )
     )
 
@@ -165,7 +188,9 @@ async def _run_pipeline_async(
     run_id: str,
     *,
     period: PeriodSelection | None = None,
+    registry: OrganisationRegistry | None = None,
 ) -> None:
+    registry = registry or load_organisation_registry()
     started_at = datetime.now(timezone.utc)
     results: list[SourceResult] = []
     worker_count = max(1, min(args.workers, len(selected)))
@@ -198,7 +223,7 @@ async def _run_pipeline_async(
                         client,
                         since=since,
                         until=until,
-                        include_unmatched=args.all,
+                        include_unmatched=True,
                         include_undated=args.include_undated,
                         fetch_details=not args.no_detail,
                         source_budget_seconds=max(1, getattr(args, "source_budget", DEFAULT_SOURCE_BUDGET)),
@@ -258,6 +283,9 @@ async def _run_pipeline_async(
     results.sort(key=lambda result: order[result.source.id])
     discovered_articles = [article for result in results for article in result.articles]
     articles = dedupe_articles(discovered_articles)
+    rank_articles(articles, registry)
+    if not args.all:
+        articles = [article for article in articles if is_hybrid_relevant(article)]
     if args.topic:
         wanted = {TOPIC_ALIASES[value] for value in args.topic}
         articles = [article for article in articles if wanted.intersection(article.matched_topics)]
@@ -337,6 +365,7 @@ async def _run_pipeline_async(
             period=period,
             since=since,
             until=until,
+            organisation_registry=registry,
         )
         staged_jsonl = (
             write_jsonl(articles, bundle.staged(jsonl_output), run_id=run_id)
@@ -357,12 +386,19 @@ async def _run_pipeline_async(
             period=period,
             discovered_article_count=len(discovered_articles),
             config_path=getattr(args, "config", None),
-            run_profile={**health_profile, "health_write": health_write, "observation_key": observation_key},
+            run_profile={
+                **health_profile,
+                "health_write": health_write,
+                "observation_key": observation_key,
+                "filter_method": "boolean_then_bm25",
+                "bm25": {"k1": BM25_K1, "b": BM25_B, "minimum_score": BM25_MINIMUM_SCORE, "title_weight": 2, "summary_weight": 1},
+            },
             artifact_names=[output.name, summary_output.name, *([jsonl_output.name] if jsonl_output else [])],
             artifact_paths=[staged_workbook, *([staged_jsonl] if staged_jsonl else [])],
             published_output_path=output,
             quality_failures=quality_failures,
             paused_sources=getattr(args, "paused_sources", []),
+            organisation_registry=registry,
         )
         verify_artifact_bundle(
             staged_workbook,
@@ -655,6 +691,28 @@ def _print_sources(sources: list[Source]) -> None:
     for source in sources:
         marker = "P" if source.is_paused(date.today()) else ("*" if source.critical else " ")
         print(f"{marker} {source.id:24} {source.country} {source.name_zh}｜{source.institution_type}")
+
+
+def _print_organisation_status(registry: OrganisationRegistry) -> None:
+    print(f"registry_sha256 {registry.registry_hash}")
+    print(f"audit_status {registry.audit_payload()['organisation_audit_status']}")
+    for module in registry.modules:
+        origin = "external" if module.external else "builtin"
+        print(f"{origin:8} {module.canonical_id:28} {module.module_version} {','.join(module.source_ids)}")
+    for error in registry.errors:
+        print(f"error {error}", file=sys.stderr)
+
+
+def _open_organisation_directory() -> None:
+    directory = external_registry_dir()
+    directory.mkdir(parents=True, exist_ok=True)
+    if sys.platform == "darwin":
+        subprocess.run(["open", str(directory)], check=False)
+    elif os.name == "nt":
+        os.startfile(directory)  # type: ignore[attr-defined]
+    else:
+        subprocess.run(["xdg-open", str(directory)], check=False)
+    print(directory)
 
 
 if __name__ == "__main__":

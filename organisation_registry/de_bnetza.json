@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "de_bnetza",
+  "names": {
+    "zh": "德國聯邦網路管理局",
+    "en": "Bundesnetzagentur",
+    "short": "de_bnetza",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "de_bnetza",
+      "date_policy": "required",
+      "country": "DE",
+      "name_zh": "德國聯邦網路管理局",
+      "name": "Bundesnetzagentur",
+      "institution_type": "聯邦監理機關",
+      "language": "de",
+      "homepage": "https://www.bundesnetzagentur.de/",
+      "listing_url": "https://www.bundesnetzagentur.de/DE/Allgemeines/Presse/Pressemitteilungen/start.html",
+      "allow_domains": [
+        "bundesnetzagentur.de",
+        "www.bundesnetzagentur.de"
+      ],
+      "include_patterns": [
+        "/SharedDocs/Pressemitteilungen/DE/.+\\.html(?:\\?.*)?$"
+      ],
+      "exclude_patterns": [
+        "/Presse/Pressemitteilungen/start\\.html$"
+      ],
+      "card_selectors": [
+        "table.textualData tbody tr"
+      ],
+      "link_selectors": [
+        "a.titleLink"
+      ],
+      "date_selectors": [
+        "td:first-child"
+      ],
+      "detail_pages": 10
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "數位身份",
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱",
+      "競爭規範面向（平台責任的市場結構面）",
+      "產品資安、漏洞揭露義務、SBOM"
+    ],
+    "include_patterns": [
+      "/SharedDocs/Pressemitteilungen/DE/.+\\.html(?:\\?.*)?$"
+    ],
+    "exclude_patterns": [
+      "/Presse/Pressemitteilungen/start\\.html$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "聯邦網路局（AI協調中心）、BfDI、BMJV／DPMA；ATHENE、Interface",
+    "跨境資料流通、資料主權、資料開放與再利用": "聯邦網路局（Data Act）、BfDI；Interface",
+    "數位身份": "BMI、聯邦網路局（信任服務）",
+    "平台責任、內容審查、推薦演算法": "聯邦網路局（DSC）、邦媒體主管機關；Interface",
+    "媒體多元與資訊操縱": "邦媒體主管機關、BMI／聯邦政府；Interface、SWP、ATHENE",
+    "競爭規範面向（平台責任的市場結構面）": "Bundeskartellamt、聯邦網路局；Interface",
+    "產品資安、漏洞揭露義務、SBOM": "BSI、聯邦網路局；ATHENE、SWP"
+  }
+}

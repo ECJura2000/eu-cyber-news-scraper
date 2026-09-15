@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "eu_eeas",
+  "names": {
+    "zh": "歐盟對外事務部",
+    "en": "European External Action Service",
+    "short": "eu_eeas",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "eu_eeas",
+      "date_policy": "best_effort",
+      "date_exception_reason": "The press-material listing mixes several card variants with inconsistent visible dates.",
+      "date_evidence_url": "https://www.eeas.europa.eu/eeas/press-material_en",
+      "date_reviewed_on": "2026-07-18",
+      "date_review_due": "2027-01-31",
+      "country": "EU",
+      "name_zh": "歐盟對外事務部",
+      "name": "European External Action Service",
+      "institution_type": "歐盟外交與安全政策機關／資訊操縱",
+      "language": "en",
+      "homepage": "https://www.eeas.europa.eu/",
+      "listing_url": "https://www.eeas.europa.eu/eeas/press-material_en",
+      "allow_domains": [
+        "eeas.europa.eu",
+        "www.eeas.europa.eu"
+      ],
+      "include_patterns": [
+        "^/eeas/.+_en$"
+      ],
+      "exclude_patterns": [
+        "^/eeas/press-material_en$"
+      ],
+      "detail_pages": 0,
+      "card_selectors": [
+        ".related-grid > .card"
+      ],
+      "link_selectors": [
+        ".card-title a[href]"
+      ],
+      "title_selectors": [
+        ".card-title"
+      ],
+      "date_selectors": [
+        ".card-footer.node__meta"
+      ],
+      "summary_selectors": [
+        ".card-text"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "媒體多元與資訊操縱"
+    ],
+    "include_patterns": [
+      "^/eeas/.+_en$"
+    ],
+    "exclude_patterns": [
+      "^/eeas/press-material_en$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "媒體多元與資訊操縱": "DG CONNECT（EMFA）、EEAS（FIMI）；SNS JU研究生態系"
+  }
+}

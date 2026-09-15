@@ -6,7 +6,18 @@
 
 ## 機關 Registry
 
-機關模組位於 [`organisation_registry/`](organisation_registry/)，分為 EU、FR、DE、IE 四個 JSON 檔，涵蓋 `sources.toml` 的全部 55 個來源。模組記錄來源 ID、觀測議題與責任機關；新增或覆寫模組可放在 macOS 的 `~/Library/Application Support/EUCyberNewsScraper/organisations.d`，或使用 `EU_CYBER_ORGANISATION_DIR` 指定目錄，重啟後載入。外部模組驗證失敗會保留內建模組並留下可稽核錯誤。
+機關模組位於 [`organisation_registry/`](organisation_registry/)，55 個新聞來源各有一份 schema v2 JSON。每個模組包含來源 URL 與解析設定、主題白名單、健康門檻、機關沿革及各主題責任機關；預設執行直接由這些 JSON 建立來源清單。新增或覆寫模組可放在 macOS 的 `~/Library/Application Support/EUCyberNewsScraper/organisations.d`，或使用 `EU_CYBER_ORGANISATION_DIR` 指定目錄，重啟後載入。外部模組驗證失敗會保留同 ID 的內建模組；無內建版本的新模組會略過，並讓 `.run.json` 的 `organisation_audit_status` 成為 `degraded`。
+
+篩選流程採 Boolean 候選判定後接 BM25 主題評分，標題權重 2、摘要權重 1、`k1=1.2`、`b=0.75`，分數固定四位小數。機關模組的 `filter.topics` 是正式白名單；Excel 的「篩選設定」及新聞欄位會記錄 Boolean/BM25 分數、命中同義詞、實際發布機關與責任機關，JSONL 與 `.run.json` 也保留相同稽核資訊。
+
+```bash
+# 檢視載入來源、覆寫、錯誤及 registry hash
+python -m eu_cyber_news_scraper --organisation-status
+
+# 匯出範例，或開啟外部模組資料夾
+python -m eu_cyber_news_scraper --export-organisation-example organisation.example.json
+python -m eu_cyber_news_scraper --open-organisation-dir
+```
 
 ## 快速開始
 

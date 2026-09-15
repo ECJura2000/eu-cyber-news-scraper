@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "ie_dete",
+  "names": {
+    "zh": "愛爾蘭企業、旅遊暨就業部",
+    "en": "Department of Enterprise, Tourism and Employment",
+    "short": "ie_dete",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "ie_dete",
+      "country": "IE",
+      "name_zh": "愛爾蘭企業、旅遊暨就業部",
+      "name": "Department of Enterprise, Tourism and Employment",
+      "institution_type": "中央政策主管機關／AI、競爭、智慧財產與半導體",
+      "language": "en",
+      "homepage": "https://enterprise.gov.ie/",
+      "listing_url": "https://enterprise.gov.ie/en/news-and-events/department-news/",
+      "yearly_listing_url": "https://enterprise.gov.ie/en/news-and-events/department-news/{year}/",
+      "allow_domains": [
+        "enterprise.gov.ie"
+      ],
+      "include_patterns": [
+        "^/en/news-and-events/department-news/20\\d{2}/.+\\.html$"
+      ],
+      "exclude_patterns": [
+        "/department-news/20\\d{2}/?$"
+      ],
+      "critical": false,
+      "observation_runs": 3,
+      "detail_pages": 12
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "數位身份",
+      "著作權",
+      "競爭規範面向（平台責任的市場結構面）",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [
+      "^/en/news-and-events/department-news/20\\d{2}/.+\\.html$"
+    ],
+    "exclude_patterns": [
+      "/department-news/20\\d{2}/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "企業部；2026 年法案擬設 Oifig IS na hÉireann（AI Office of Ireland）為中央協調機關，另由 DPC 與產業監理機關分工；CeADAR、Insight",
+    "跨境資料流通、資料主權、資料開放與再利用": "DPC、公共支出及數位化部／OGCIO；Insight、ESRI",
+    "數位身份": "公共支出及數位化部／OGCIO",
+    "著作權": "企業部 Intellectual Property Unit",
+    "競爭規範面向（平台責任的市場結構面）": "CCPC、Coimisiún na Meán（部分 DSA 義務）；ESRI",
+    "產品資安、漏洞揭露義務、SBOM": "NCSC、CCPC／相關市場監理機關；Cyber Ireland、Tyndall",
+    "供應鏈安全": "NCSC、企業部；Cyber Ireland、Tyndall",
+    "半導體": "企業部（Silicon Island）、IDA Ireland、Research Ireland；Tyndall",
+    "量子技術": "Research Ireland、企業部、ADAPT、CeADAR、Tyndall等研究中心"
+  }
+}

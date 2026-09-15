@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "de_bsi_news",
+  "names": {
+    "zh": "德國聯邦資訊安全局（所有消息）",
+    "en": "Bundesamt für Sicherheit in der Informationstechnik",
+    "short": "de_bsi_news",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "de_bsi_news",
+      "country": "DE",
+      "name_zh": "德國聯邦資訊安全局（所有消息）",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "institution_type": "聯邦主管機關",
+      "language": "de",
+      "homepage": "https://www.bsi.bund.de/",
+      "listing_url": "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/alle-meldungen-news_node.html",
+      "allow_domains": [
+        "bsi.bund.de",
+        "www.bsi.bund.de"
+      ],
+      "include_patterns": [
+        "/DE/Service-Navi/Presse/.+\\.html$"
+      ],
+      "exclude_patterns": [
+        "alle-meldungen-news_node\\.html$"
+      ],
+      "critical": true,
+      "detail_pages": 16,
+      "card_selectors": [
+        "table.textualData tbody tr"
+      ],
+      "link_selectors": [
+        "a[href]"
+      ],
+      "date_selectors": [
+        "td:first-child"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護"
+    ],
+    "include_patterns": [
+      "/DE/Service-Navi/Presse/.+\\.html$"
+    ],
+    "exclude_patterns": [
+      "alle-meldungen-news_node\\.html$"
+    ]
+  },
+  "health": {
+    "required": true,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "NIS2、關鍵基礎設施保護": "BMI、BSI、BBK；ATHENE、SWP",
+    "產品資安、漏洞揭露義務、SBOM": "BSI、聯邦網路局；ATHENE、SWP",
+    "供應鏈安全": "BSI、BMI；ATHENE、SWP",
+    "資安產品認證": "BSI；ATHENE",
+    "關鍵基礎設施的實體與數位融合保護": "BMI、BBK、BSI；ATHENE"
+  }
+}

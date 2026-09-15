@@ -1,0 +1,71 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "fr_concurrence",
+  "names": {
+    "zh": "法國競爭管理局",
+    "en": "Autorité de la concurrence",
+    "short": "fr_concurrence",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "fr_concurrence",
+      "country": "FR",
+      "name_zh": "法國競爭管理局",
+      "name": "Autorité de la concurrence",
+      "institution_type": "獨立行政機關／競爭監理",
+      "language": "fr",
+      "homepage": "https://www.autoritedelaconcurrence.fr/",
+      "listing_url": "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse",
+      "allow_domains": [
+        "autoritedelaconcurrence.fr",
+        "www.autoritedelaconcurrence.fr"
+      ],
+      "include_patterns": [
+        "^/fr/communiques-de-presse/.+"
+      ],
+      "exclude_patterns": [
+        "^/fr/communiques-de-presse/?$"
+      ],
+      "detail_pages": 10,
+      "card_selectors": [
+        ".views-row .press.search-index"
+      ],
+      "link_selectors": [
+        "h2 a[href]"
+      ],
+      "title_selectors": [
+        "h2"
+      ],
+      "date_selectors": [
+        "time"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "競爭規範面向（平台責任的市場結構面）"
+    ],
+    "include_patterns": [
+      "^/fr/communiques-de-presse/.+"
+    ],
+    "exclude_patterns": [
+      "^/fr/communiques-de-presse/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "競爭規範面向（平台責任的市場結構面）": "Autorité de la concurrence、DGCCRF"
+  }
+}

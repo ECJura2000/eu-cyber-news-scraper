@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "eu_enisa_publications",
+  "names": {
+    "zh": "歐盟資安局（研究出版品）",
+    "en": "European Union Agency for Cybersecurity - Publications",
+    "short": "eu_enisa_publications",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "eu_enisa_publications",
+      "country": "EU",
+      "name_zh": "歐盟資安局（研究出版品）",
+      "name": "European Union Agency for Cybersecurity - Publications",
+      "institution_type": "歐盟行政機關／官方研究",
+      "language": "en",
+      "homepage": "https://www.enisa.europa.eu/",
+      "listing_url": "https://www.enisa.europa.eu/publications",
+      "allow_domains": [
+        "enisa.europa.eu",
+        "www.enisa.europa.eu"
+      ],
+      "include_patterns": [
+        "/publications/",
+        "/sites/default/files/"
+      ],
+      "exclude_patterns": [
+        "^/publications/?$"
+      ],
+      "detail_pages": 12
+    }
+  ],
+  "filter": {
+    "topics": [
+      "供應鏈安全"
+    ],
+    "include_patterns": [
+      "/publications/",
+      "/sites/default/files/"
+    ],
+    "exclude_patterns": [
+      "^/publications/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "供應鏈安全": "DG CONNECT、ENISA、CERT-EU；Chips JU、SNS JU"
+  }
+}

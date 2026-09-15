@@ -1,9 +1,0 @@
-{
-  "schema_version": 1,
-  "module_version": "2026-09-15.1",
-  "canonical_id": "DE",
-  "names": {"zh": "德國機關與官方研究來源", "en": "German authorities and official research bodies", "short": "DE", "publisher_aliases": []},
-  "source_ids": ["de_bsi_news", "de_bmi", "de_bnetza", "de_fraunhofer_aisec", "de_cispa", "de_bfdi", "de_bundeskartellamt", "de_dpma", "de_bbk", "de_athene", "de_interface", "de_swp"],
-  "topics": ["AI法", "跨境資料流通", "隱私框架", "數位身份", "著作權", "平台責任", "媒體多元", "NIS2", "產品資安", "半導體", "量子技術", "供應鏈安全", "事件應變", "數位治理", "研究創新"],
-  "responsibility_by_topic": {"隱私框架": "de_bfdi", "NIS2": "de_bsi_news", "平台責任": "de_bnetza"}
-}

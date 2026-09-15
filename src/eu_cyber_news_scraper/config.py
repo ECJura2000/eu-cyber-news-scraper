@@ -10,7 +10,7 @@ from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from . import __version__
 from .models import Source
-from .organisation_registry import load_organisation_registry
+from .organisation_registry import OrganisationRegistry, load_organisation_registry
 
 DEFAULT_DAYS = 14
 DEFAULT_WORKERS = 8
@@ -38,11 +38,21 @@ def default_sources_path() -> Path:
 
 
 def load_sources(path: str | Path | None = None) -> tuple[Source, ...]:
-    source_path = Path(path) if path else default_sources_path()
-    with source_path.open("rb") as stream:
-        data = tomllib.load(stream)
+    sources, _ = load_sources_and_registry(path)
+    return sources
+
+
+def load_sources_and_registry(
+    path: str | Path | None = None,
+) -> tuple[tuple[Source, ...], OrganisationRegistry]:
+    registry = load_organisation_registry()
+    if path:
+        with Path(path).open("rb") as stream:
+            rows = tomllib.load(stream).get("sources", [])
+    else:
+        rows = registry.source_rows
     sources = []
-    for row in data.get("sources", []):
+    for row in rows:
         sources.append(
             Source(
                 id=row["id"],
@@ -87,9 +97,7 @@ def load_sources(path: str | Path | None = None) -> tuple[Source, ...]:
             )
         )
     _validate_sources(sources)
-    source_ids = {source.id for source in sources}
-    load_organisation_registry(known_source_ids=source_ids)
-    return tuple(sources)
+    return tuple(sources), registry
 
 
 def _validate_sources(sources: list[Source]) -> None:

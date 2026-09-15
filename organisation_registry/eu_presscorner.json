@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "eu_presscorner",
+  "names": {
+    "zh": "歐盟執委會新聞發布中心",
+    "en": "European Commission Press Corner",
+    "short": "eu_presscorner",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "eu_presscorner",
+      "country": "EU",
+      "name_zh": "歐盟執委會新聞發布中心",
+      "name": "European Commission Press Corner",
+      "institution_type": "歐盟執委會",
+      "language": "en",
+      "homepage": "https://ec.europa.eu/commission/presscorner/",
+      "listing_url": "https://ec.europa.eu/commission/presscorner/home/en",
+      "feed_urls": [
+        "https://ec.europa.eu/commission/presscorner/api/latestnews?language=en&pageSize=100"
+      ],
+      "allow_domains": [
+        "ec.europa.eu"
+      ],
+      "include_patterns": [
+        "/commission/presscorner/detail/"
+      ],
+      "detail_pages": 10
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "隱私框架（含個人資料保護）",
+      "數位身份",
+      "著作權",
+      "競爭規範面向（平台責任的市場結構面）",
+      "量子技術"
+    ],
+    "include_patterns": [
+      "/commission/presscorner/detail/"
+    ],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "歐盟執委會 AI Office／DG CONNECT、JRC、EDPB、EUIPO；EuroHPC 公私協力生態系",
+    "隱私框架（含個人資料保護）": "EDPB、歐盟執委會司法總署",
+    "數位身份": "DG CONNECT（歐洲數位身份錢包）",
+    "著作權": "歐盟執委會 DG CONNECT、EUIPO Observatory",
+    "競爭規範面向（平台責任的市場結構面）": "歐盟執委會競爭總署、DG CONNECT（DMA）",
+    "量子技術": "DG CONNECT、DG RTD、JRC；EuroHPC、Chips JU"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "eu_dg_home",
+  "names": {
+    "zh": "歐盟執委會移民與內政總署",
+    "en": "Directorate-General for Migration and Home Affairs",
+    "short": "eu_dg_home",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "eu_dg_home",
+      "country": "EU",
+      "name_zh": "歐盟執委會移民與內政總署",
+      "name": "Directorate-General for Migration and Home Affairs",
+      "institution_type": "歐盟政策主管機關／關鍵實體韌性",
+      "language": "en",
+      "homepage": "https://home-affairs.ec.europa.eu/",
+      "listing_url": "https://home-affairs.ec.europa.eu/news_en",
+      "allow_domains": [
+        "home-affairs.ec.europa.eu"
+      ],
+      "include_patterns": [
+        "^/news/.+_en$"
+      ],
+      "exclude_patterns": [
+        "^/news_en$"
+      ],
+      "detail_pages": 12
+    }
+  ],
+  "filter": {
+    "topics": [
+      "NIS2、關鍵基礎設施保護",
+      "關鍵基礎設施的實體與數位融合保護"
+    ],
+    "include_patterns": [
+      "^/news/.+_en$"
+    ],
+    "exclude_patterns": [
+      "^/news_en$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "NIS2、關鍵基礎設施保護": "DG CONNECT、ENISA、DG HOME（CER）",
+    "關鍵基礎設施的實體與數位融合保護": "DG HOME（CER）、DG CONNECT（NIS2）、ENISA"
+  }
+}

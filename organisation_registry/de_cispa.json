@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "de_cispa",
+  "names": {
+    "zh": "德國 CISPA 亥姆霍茲資訊安全中心",
+    "en": "CISPA Helmholtz Center for Information Security",
+    "short": "de_cispa",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "de_cispa",
+      "date_policy": "required",
+      "country": "DE",
+      "name_zh": "德國 CISPA 亥姆霍茲資訊安全中心",
+      "name": "CISPA Helmholtz Center for Information Security",
+      "institution_type": "國家大型研究機構",
+      "language": "en",
+      "homepage": "https://cispa.de/",
+      "listing_url": "https://cispa.de/en/news-and-events/all-news",
+      "allow_domains": [
+        "cispa.de"
+      ],
+      "include_patterns": [
+        "^/en/[a-z0-9][a-z0-9-]+$"
+      ],
+      "exclude_patterns": [
+        "/en/news-and-events/(all-news|all-events)/?$"
+      ],
+      "detail_pages": 10,
+      "card_selectors": [
+        ".news-card a.news[href]"
+      ],
+      "title_selectors": [
+        "h3.news-title"
+      ],
+      "date_selectors": [
+        ".label"
+      ],
+      "summary_selectors": [
+        "p"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [
+      "^/en/[a-z0-9][a-z0-9-]+$"
+    ],
+    "exclude_patterns": [
+      "/en/news-and-events/(all-news|all-events)/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "半導體": "BMFTR、BMWE、Fraunhofer；Interface",
+    "量子技術": "BMFTR、DLR、Fraunhofer；ATHENE"
+  }
+}

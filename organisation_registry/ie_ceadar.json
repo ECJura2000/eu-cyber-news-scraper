@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "ie_ceadar",
+  "names": {
+    "zh": "愛爾蘭應用 AI 中心 CeADAR",
+    "en": "CeADAR - Ireland's Centre for Applied AI",
+    "short": "ie_ceadar",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "ie_ceadar",
+      "country": "IE",
+      "name_zh": "愛爾蘭應用 AI 中心 CeADAR",
+      "name": "CeADAR - Ireland's Centre for Applied AI",
+      "institution_type": "國家資助產學公私協力研究中心",
+      "language": "en",
+      "homepage": "https://ceadar.ie/",
+      "listing_url": "https://ceadar.ie/latest-news/",
+      "allow_domains": [
+        "ceadar.ie"
+      ],
+      "include_patterns": [
+        "^/news/.+"
+      ],
+      "exclude_patterns": [
+        "^/latest-news/?$"
+      ],
+      "detail_pages": 10
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "量子技術"
+    ],
+    "include_patterns": [
+      "^/news/.+"
+    ],
+    "exclude_patterns": [
+      "^/latest-news/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "企業部；2026 年法案擬設 Oifig IS na hÉireann（AI Office of Ireland）為中央協調機關，另由 DPC 與產業監理機關分工；CeADAR、Insight",
+    "量子技術": "Research Ireland、企業部、ADAPT、CeADAR、Tyndall等研究中心"
+  }
+}

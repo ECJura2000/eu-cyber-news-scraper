@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "de_fraunhofer_aisec",
+  "names": {
+    "zh": "德國弗勞恩霍夫應用暨整合安全研究所",
+    "en": "Fraunhofer Institute for Applied and Integrated Security AISEC",
+    "short": "de_fraunhofer_aisec",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "de_fraunhofer_aisec",
+      "date_policy": "best_effort",
+      "date_exception_reason": "The listing contains event and release cards with inconsistent date markup.",
+      "date_evidence_url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen.html",
+      "date_reviewed_on": "2026-07-18",
+      "date_review_due": "2027-01-31",
+      "country": "DE",
+      "name_zh": "德國弗勞恩霍夫應用暨整合安全研究所",
+      "name": "Fraunhofer Institute for Applied and Integrated Security AISEC",
+      "institution_type": "公共研究機構",
+      "language": "de",
+      "homepage": "https://www.aisec.fraunhofer.de/",
+      "listing_url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen.html",
+      "allow_domains": [
+        "aisec.fraunhofer.de",
+        "www.aisec.fraunhofer.de"
+      ],
+      "include_patterns": [
+        "/de/(presse-und-veranstaltungen/pressemitteilungen|spotlights)/.+\\.html$"
+      ],
+      "exclude_patterns": [
+        "/pressemitteilungen\\.html$"
+      ],
+      "critical": false,
+      "observation_runs": 3,
+      "detail_pages": 12,
+      "card_selectors": [
+        "article"
+      ],
+      "link_selectors": [
+        "h3 a[href]"
+      ],
+      "title_selectors": [
+        "h3"
+      ],
+      "date_selectors": [
+        ".heading p.text-meta .date"
+      ],
+      "summary_selectors": [
+        ".copytext"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [
+      "/de/(presse-und-veranstaltungen/pressemitteilungen|spotlights)/.+\\.html$"
+    ],
+    "exclude_patterns": [
+      "/pressemitteilungen\\.html$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "半導體": "BMFTR、BMWE、Fraunhofer；Interface",
+    "量子技術": "BMFTR、DLR、Fraunhofer；ATHENE"
+  }
+}

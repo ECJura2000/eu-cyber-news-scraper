@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "ie_ncsc",
+  "names": {
+    "zh": "愛爾蘭國家網路安全中心",
+    "en": "National Cyber Security Centre Ireland",
+    "short": "ie_ncsc",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "ie_ncsc",
+      "country": "IE",
+      "name_zh": "愛爾蘭國家網路安全中心",
+      "name": "National Cyber Security Centre Ireland",
+      "institution_type": "國家主管機關／CSIRT",
+      "language": "en",
+      "homepage": "https://www.ncsc.gov.ie/",
+      "listing_url": "https://www.ncsc.gov.ie/news/",
+      "feed_urls": [
+        "https://www.ncsc.gov.ie/news/alerts.rss",
+        "https://www.ncsc.gov.ie/news/alerts.atom"
+      ],
+      "allow_domains": [
+        "ncsc.gov.ie",
+        "www.ncsc.gov.ie"
+      ],
+      "include_patterns": [
+        "/news/.+",
+        "/pdfs/.+\\.pdf$"
+      ],
+      "exclude_patterns": [
+        "/news/alerts\\.(rss|atom)$"
+      ],
+      "critical": true,
+      "detail_pages": 12
+    }
+  ],
+  "filter": {
+    "topics": [
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護"
+    ],
+    "include_patterns": [
+      "/news/.+",
+      "/pdfs/.+\\.pdf$"
+    ],
+    "exclude_patterns": [
+      "/news/alerts\\.(rss|atom)$"
+    ]
+  },
+  "health": {
+    "required": true,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "NIS2、關鍵基礎設施保護": "NCSC、ComReg及各部門主管機關；Cyber Ireland",
+    "產品資安、漏洞揭露義務、SBOM": "NCSC、CCPC／相關市場監理機關；Cyber Ireland、Tyndall",
+    "供應鏈安全": "NCSC、企業部；Cyber Ireland、Tyndall",
+    "資安產品認證": "NSAI、NCSC；Cyber Ireland",
+    "關鍵基礎設施的實體與數位融合保護": "NCSC、政府緊急規劃辦公室、部門主管機關；Cyber Ireland"
+  }
+}

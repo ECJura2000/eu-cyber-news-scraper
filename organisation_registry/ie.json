@@ -1,9 +1,0 @@
-{
-  "schema_version": 1,
-  "module_version": "2026-09-15.1",
-  "canonical_id": "IE",
-  "names": {"zh": "愛爾蘭機關與官方研究來源", "en": "Irish authorities and official research bodies", "short": "IE", "publisher_aliases": []},
-  "source_ids": ["ie_ncsc", "ie_comreg", "ie_dpc", "ie_nsai", "ie_adapt", "ie_cnam", "ie_electoral_commission", "ie_dete", "ie_research_ireland", "ie_ceadar", "ie_insight", "ie_esri", "ie_tyndall", "ie_cyber_ireland"],
-  "topics": ["AI法", "跨境資料流通", "隱私框架", "數位身份", "著作權", "平台責任", "媒體多元", "NIS2", "產品資安", "半導體", "量子技術", "供應鏈安全", "事件應變", "數位治理", "研究創新"],
-  "responsibility_by_topic": {"隱私框架": "ie_dpc", "NIS2": "ie_ncsc", "平台責任": "ie_cnam"}
-}

@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "ie_tyndall",
+  "names": {
+    "zh": "愛爾蘭廷德爾國家研究所",
+    "en": "Tyndall National Institute",
+    "short": "ie_tyndall",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "ie_tyndall",
+      "country": "IE",
+      "name_zh": "愛爾蘭廷德爾國家研究所",
+      "name": "Tyndall National Institute",
+      "institution_type": "公立國家研究機構／產學合作",
+      "language": "en",
+      "homepage": "https://www.tyndall.ie/",
+      "listing_url": "https://www.tyndall.ie/news/",
+      "feed_urls": [
+        "https://www.tyndall.ie/feed/"
+      ],
+      "allow_domains": [
+        "tyndall.ie",
+        "www.tyndall.ie"
+      ],
+      "include_patterns": [
+        "^/news/.+",
+        "^/news-and-events/.+"
+      ],
+      "exclude_patterns": [
+        "^/(news|news-and-events)/?$"
+      ],
+      "detail_pages": 10
+    }
+  ],
+  "filter": {
+    "topics": [
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [
+      "^/news/.+",
+      "^/news-and-events/.+"
+    ],
+    "exclude_patterns": [
+      "^/(news|news-and-events)/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "產品資安、漏洞揭露義務、SBOM": "NCSC、CCPC／相關市場監理機關；Cyber Ireland、Tyndall",
+    "供應鏈安全": "NCSC、企業部；Cyber Ireland、Tyndall",
+    "半導體": "企業部（Silicon Island）、IDA Ireland、Research Ireland；Tyndall",
+    "量子技術": "Research Ireland、企業部、ADAPT、CeADAR、Tyndall等研究中心"
+  }
+}

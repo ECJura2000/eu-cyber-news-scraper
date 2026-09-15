@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "fr_cnil",
+  "names": {
+    "zh": "法國國家資訊與自由委員會",
+    "en": "Commission nationale de l'informatique et des libertés",
+    "short": "fr_cnil",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "fr_cnil",
+      "country": "FR",
+      "name_zh": "法國國家資訊與自由委員會",
+      "name": "Commission nationale de l'informatique et des libertés",
+      "institution_type": "獨立行政機關",
+      "language": "fr",
+      "homepage": "https://www.cnil.fr/",
+      "listing_url": "https://www.cnil.fr/fr/actualites",
+      "allow_domains": [
+        "cnil.fr",
+        "www.cnil.fr"
+      ],
+      "include_patterns": [
+        "/fr/.+"
+      ],
+      "exclude_patterns": [
+        "^/fr/actualites/?$"
+      ],
+      "detail_pages": 12,
+      "card_selectors": [
+        "div.view-content > div.views-row"
+      ],
+      "link_selectors": [
+        "h3.ctn-gen-liste-titre a[href]"
+      ],
+      "date_selectors": [
+        ".date"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "平台責任、內容審查、推薦演算法"
+    ],
+    "include_patterns": [
+      "/fr/.+"
+    ],
+    "exclude_patterns": [
+      "^/fr/actualites/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "AI法、模型評估、演算法問責、自動化決策、AI與著作權": "DGCCRF／DGE、CNIL、INESIA（ANSSI、Inria、LNE、PEReN）、文化部／CSPLA；CEA-List、Institut Montaigne",
+    "跨境資料流通、資料主權、資料開放與再利用": "CNIL、DINUM／data.gouv.fr",
+    "隱私框架（含個人資料保護）": "CNIL",
+    "平台責任、內容審查、推薦演算法": "Arcom（DSC）、CNIL；Institut Montaigne"
+  }
+}

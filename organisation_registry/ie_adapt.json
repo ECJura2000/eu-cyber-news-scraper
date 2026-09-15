@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "ie_adapt",
+  "names": {
+    "zh": "愛爾蘭 ADAPT 數位內容科技研究中心",
+    "en": "ADAPT Centre",
+    "short": "ie_adapt",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "ie_adapt",
+      "country": "IE",
+      "name_zh": "愛爾蘭 ADAPT 數位內容科技研究中心",
+      "name": "ADAPT Centre",
+      "institution_type": "國家資助公共研究中心",
+      "language": "en",
+      "homepage": "https://www.adaptcentre.ie/",
+      "listing_url": "https://www.adaptcentre.ie/news/",
+      "feed_urls": [
+        "https://www.adaptcentre.ie/news-and-events/feed/"
+      ],
+      "allow_domains": [
+        "adaptcentre.ie",
+        "www.adaptcentre.ie"
+      ],
+      "include_patterns": [
+        "/(?:news|news-and-events)/.+"
+      ],
+      "exclude_patterns": [
+        "^/(?:news|news-and-events)/?$"
+      ],
+      "critical": false,
+      "observation_runs": 3,
+      "detail_pages": 12
+    }
+  ],
+  "filter": {
+    "topics": [
+      "量子技術"
+    ],
+    "include_patterns": [
+      "/(?:news|news-and-events)/.+"
+    ],
+    "exclude_patterns": [
+      "^/(?:news|news-and-events)/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "量子技術": "Research Ireland、企業部、ADAPT、CeADAR、Tyndall等研究中心"
+  }
+}

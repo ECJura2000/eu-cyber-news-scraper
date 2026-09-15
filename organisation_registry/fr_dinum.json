@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "fr_dinum",
+  "names": {
+    "zh": "法國跨部會數位總局",
+    "en": "Direction interministérielle du numérique",
+    "short": "fr_dinum",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "fr_dinum",
+      "date_policy": "required",
+      "country": "FR",
+      "name_zh": "法國跨部會數位總局",
+      "name": "Direction interministérielle du numérique",
+      "institution_type": "中央數位政府主管機關／數位身份與開放資料",
+      "language": "fr",
+      "homepage": "https://www.numerique.gouv.fr/",
+      "listing_url": "https://www.numerique.gouv.fr/sinformer/espace-presse/",
+      "allow_domains": [
+        "numerique.gouv.fr",
+        "www.numerique.gouv.fr"
+      ],
+      "include_patterns": [
+        "^/sinformer/espace-presse/.+"
+      ],
+      "exclude_patterns": [
+        "^/sinformer/espace-presse/(?:atom|rss)/?$"
+      ],
+      "detail_pages": 0,
+      "card_selectors": [
+        ".fr-card"
+      ],
+      "link_selectors": [
+        ".fr-card__title a[href]"
+      ],
+      "title_selectors": [
+        ".fr-card__title"
+      ],
+      "date_selectors": [
+        ".fr-card__detail"
+      ],
+      "summary_selectors": [
+        ".fr-card__desc"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "數位身份"
+    ],
+    "include_patterns": [
+      "^/sinformer/espace-presse/.+"
+    ],
+    "exclude_patterns": [
+      "^/sinformer/espace-presse/(?:atom|rss)/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "跨境資料流通、資料主權、資料開放與再利用": "CNIL、DINUM／data.gouv.fr",
+    "數位身份": "DINUM（FranceConnect）、ANTS／France Identité"
+  }
+}

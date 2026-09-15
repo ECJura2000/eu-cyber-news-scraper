@@ -1,10 +1,12 @@
 import json
+from dataclasses import replace
 from datetime import datetime, timezone
 
 from openpyxl import Workbook, load_workbook
 
 from eu_cyber_news_scraper.exporter import EXCEL_SUMMARY_LIMIT, export_workbook, safe_excel_text, write_run_summary
 from eu_cyber_news_scraper.models import Article, SourceStatus
+from eu_cyber_news_scraper.organisation_registry import load_organisation_registry
 
 
 def test_exporter_creates_required_sheets_and_summary(tmp_path):
@@ -40,6 +42,7 @@ def test_exporter_creates_required_sheets_and_summary(tmp_path):
         "來源健康狀態",
         "官方來源清單",
         "議題主管機關覆蓋",
+        "篩選設定",
         "_run_metadata",
     ]
     assert workbook["_run_metadata"].sheet_state == "hidden"
@@ -49,7 +52,7 @@ def test_exporter_creates_required_sheets_and_summary(tmp_path):
     assert workbook["全部命中新聞"]["A2"].fill.fgColor.rgb == "00FFC000"
     assert workbook["CRA_CSA_NIS2_CER"]["A2"].fill.fill_type is None
     assert len(workbook["全部命中新聞"]["R2"].value) == EXCEL_SUMMARY_LIMIT
-    assert workbook["全部命中新聞"]["X2"].value == "https://mirror.example.eu/news/cra"
+    assert workbook["全部命中新聞"]["AE2"].value == "https://mirror.example.eu/news/cra"
     assert workbook["全部命中新聞"].row_dimensions[2].height == 90
 
     now = datetime.now(timezone.utc)
@@ -96,6 +99,29 @@ def test_run_summary_records_paused_sources(tmp_path):
     assert payload["paused_sources"] == paused
     assert payload["source_summary"]["configured_total"] == 1
     assert payload["source_summary"]["paused"] == 1
+
+
+def test_run_summary_is_degraded_when_registry_has_errors(tmp_path):
+    path = tmp_path / "result.xlsx"
+    workbook = Workbook()
+    workbook.active.title = "全部命中新聞"
+    workbook.save(path)
+    now = datetime.now(timezone.utc)
+    registry = replace(load_organisation_registry(), errors=("invalid external module",))
+    summary = write_run_summary(
+        path,
+        started_at=now,
+        finished_at=now,
+        since=now,
+        until=now,
+        articles=[],
+        statuses=[],
+        organisation_registry=registry,
+    )
+    payload = json.loads(summary.read_text(encoding="utf-8"))
+    assert payload["status"] == "degraded"
+    assert payload["organisation_audit_status"] == "degraded"
+    assert payload["organisation_module_errors"] == ["invalid external module"]
 
 
 def test_excel_formula_text_is_escaped():

@@ -1,0 +1,84 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "eu_enisa_news",
+  "names": {
+    "zh": "歐盟資安局（新聞）",
+    "en": "European Union Agency for Cybersecurity - News",
+    "short": "eu_enisa_news",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "eu_enisa_news",
+      "country": "EU",
+      "name_zh": "歐盟資安局（新聞）",
+      "name": "European Union Agency for Cybersecurity - News",
+      "institution_type": "歐盟行政機關",
+      "language": "en",
+      "homepage": "https://www.enisa.europa.eu/",
+      "listing_url": "https://www.enisa.europa.eu/news",
+      "allow_domains": [
+        "enisa.europa.eu",
+        "www.enisa.europa.eu"
+      ],
+      "include_patterns": [
+        "/news/"
+      ],
+      "exclude_patterns": [
+        "^/news/?$"
+      ],
+      "critical": true,
+      "detail_pages": 18,
+      "card_selectors": [
+        ".featured-items",
+        ".publications-item",
+        "main article"
+      ],
+      "link_selectors": [
+        "h3 a[href]",
+        "h2 a[href]"
+      ],
+      "title_selectors": [
+        "h3",
+        "h2"
+      ],
+      "date_selectors": [
+        "time[datetime]"
+      ],
+      "summary_selectors": [
+        ".content",
+        "p"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "關鍵基礎設施的實體與數位融合保護"
+    ],
+    "include_patterns": [
+      "/news/"
+    ],
+    "exclude_patterns": [
+      "^/news/?$"
+    ]
+  },
+  "health": {
+    "required": true,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "NIS2、關鍵基礎設施保護": "DG CONNECT、ENISA、DG HOME（CER）",
+    "產品資安、漏洞揭露義務、SBOM": "DG CONNECT、ENISA、CERT-EU",
+    "關鍵基礎設施的實體與數位融合保護": "DG HOME（CER）、DG CONNECT（NIS2）、ENISA"
+  }
+}

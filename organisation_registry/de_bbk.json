@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "de_bbk",
+  "names": {
+    "zh": "德國聯邦民防暨災害救助署",
+    "en": "Bundesamt für Bevölkerungsschutz und Katastrophenhilfe",
+    "short": "de_bbk",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "de_bbk",
+      "country": "DE",
+      "name_zh": "德國聯邦民防暨災害救助署",
+      "name": "Bundesamt für Bevölkerungsschutz und Katastrophenhilfe",
+      "institution_type": "聯邦民防主管機關／關鍵基礎設施實體韌性",
+      "language": "de",
+      "homepage": "https://www.bbk.bund.de/",
+      "listing_url": "https://www.bbk.bund.de/DE/Infothek/Unsere-Meldungen/unsere-meldungen_node.html",
+      "allow_domains": [
+        "bbk.bund.de",
+        "www.bbk.bund.de"
+      ],
+      "include_patterns": [
+        "/SharedDocs/(Kurzmeldungen|Pressemitteilungen)/DE/.+\\.html"
+      ],
+      "exclude_patterns": [
+        "unsere-meldungen_node\\.html$"
+      ],
+      "detail_pages": 12,
+      "card_selectors": [
+        ".c-news-grid__element"
+      ],
+      "link_selectors": [
+        "a.c-link[href]"
+      ],
+      "title_selectors": [
+        ".c-news-grid__headline"
+      ],
+      "date_selectors": [
+        "time[datetime]"
+      ],
+      "summary_selectors": [
+        ".c-news-grid__text > p:not(.c-news-grid__topline)"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "NIS2、關鍵基礎設施保護",
+      "關鍵基礎設施的實體與數位融合保護"
+    ],
+    "include_patterns": [
+      "/SharedDocs/(Kurzmeldungen|Pressemitteilungen)/DE/.+\\.html"
+    ],
+    "exclude_patterns": [
+      "unsere-meldungen_node\\.html$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "NIS2、關鍵基礎設施保護": "BMI、BSI、BBK；ATHENE、SWP",
+    "關鍵基礎設施的實體與數位融合保護": "BMI、BBK、BSI；ATHENE"
+  }
+}

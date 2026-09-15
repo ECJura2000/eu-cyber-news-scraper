@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "eu_parliament_press",
+  "names": {
+    "zh": "歐洲議會新聞中心",
+    "en": "European Parliament Press Room",
+    "short": "eu_parliament_press",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "eu_parliament_press",
+      "paused_until": "2026-08-31",
+      "pause_reason": "The official listing and RSS endpoints returned an HTTP 202 JavaScript challenge to GitHub-hosted runners on 2026-07-28, while the same RSS feed returned valid XML locally; pause scheduled requests until review.",
+      "pause_evidence_url": "https://www.europarl.europa.eu/at-your-service/en/stay-informed/rss-feeds",
+      "country": "EU",
+      "name_zh": "歐洲議會新聞中心",
+      "name": "European Parliament Press Room",
+      "institution_type": "歐盟立法機關",
+      "language": "en",
+      "homepage": "https://www.europarl.europa.eu/",
+      "listing_url": "https://www.europarl.europa.eu/news/en/press-room",
+      "feed_urls": [
+        "https://www.europarl.europa.eu/rss/doc/press-releases/en.xml"
+      ],
+      "allow_domains": [
+        "europarl.europa.eu",
+        "www.europarl.europa.eu"
+      ],
+      "include_patterns": [
+        "/news/en/press-room/"
+      ],
+      "exclude_patterns": [
+        "^/news/en/press-room/?$"
+      ],
+      "detail_pages": 10,
+      "card_selectors": [
+        "article.ep_gridcolumn.ep-m_product",
+        "article.ep-m_product"
+      ],
+      "link_selectors": [
+        ".ep_title a[href]"
+      ],
+      "title_selectors": [
+        ".ep_title .ep_name"
+      ],
+      "date_selectors": [
+        "time[datetime]"
+      ],
+      "summary_selectors": [
+        ".ep_description"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "平台責任、內容審查、推薦演算法",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM"
+    ],
+    "include_patterns": [
+      "/news/en/press-room/"
+    ],
+    "exclude_patterns": [
+      "^/news/en/press-room/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {}
+}

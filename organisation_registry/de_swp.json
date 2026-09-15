@@ -1,0 +1,87 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-15.2",
+  "canonical_id": "de_swp",
+  "names": {
+    "zh": "德國國際暨安全事務研究所",
+    "en": "Stiftung Wissenschaft und Politik",
+    "short": "de_swp",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "de_swp",
+      "date_policy": "best_effort",
+      "date_exception_reason": "The dossier page aggregates publications with inconsistent date presentation.",
+      "date_evidence_url": "https://www.swp-berlin.org/themen/dossiers/cybersicherheit-und-digitalpolitik-die-rolle-des-digitalen-in-der-internationalen-politik",
+      "date_reviewed_on": "2026-07-18",
+      "date_review_due": "2027-01-31",
+      "country": "DE",
+      "name_zh": "德國國際暨安全事務研究所",
+      "name": "Stiftung Wissenschaft und Politik",
+      "institution_type": "聯邦資助獨立政策智庫／基金會",
+      "language": "de",
+      "homepage": "https://www.swp-berlin.org/",
+      "listing_url": "https://www.swp-berlin.org/themen/dossiers/cybersicherheit-und-digitalpolitik-die-rolle-des-digitalen-in-der-internationalen-politik",
+      "allow_domains": [
+        "swp-berlin.org",
+        "www.swp-berlin.org"
+      ],
+      "include_patterns": [
+        "^/publikation/.+",
+        "^/publications/.+"
+      ],
+      "exclude_patterns": [
+        "^/(publikationen|publications)/?$"
+      ],
+      "detail_pages": 10,
+      "card_selectors": [
+        "li.publication-list__item"
+      ],
+      "link_selectors": [
+        "h3 a[href]"
+      ],
+      "title_selectors": [
+        "h3"
+      ],
+      "date_selectors": [
+        ".publication-list__information"
+      ],
+      "summary_selectors": [
+        "h3 + p"
+      ]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "媒體多元與資訊操縱",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全"
+    ],
+    "include_patterns": [
+      "^/publikation/.+",
+      "^/publications/.+"
+    ],
+    "exclude_patterns": [
+      "^/(publikationen|publications)/?$"
+    ]
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-15",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {
+    "媒體多元與資訊操縱": "邦媒體主管機關、BMI／聯邦政府；Interface、SWP、ATHENE",
+    "NIS2、關鍵基礎設施保護": "BMI、BSI、BBK；ATHENE、SWP",
+    "產品資安、漏洞揭露義務、SBOM": "BSI、聯邦網路局；ATHENE、SWP",
+    "供應鏈安全": "BSI、BMI；ATHENE、SWP"
+  }
+}

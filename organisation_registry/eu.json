@@ -1,9 +1,0 @@
-{
-  "schema_version": 1,
-  "module_version": "2026-09-15.1",
-  "canonical_id": "EU",
-  "names": {"zh": "歐盟機關與官方研究來源", "en": "European Union institutions and official research bodies", "short": "EU", "publisher_aliases": []},
-  "source_ids": ["eu_dg_connect", "eu_enisa_news", "eu_enisa_publications", "eu_cert_threat", "eu_cert_advisories", "eu_jrc_news", "eu_enisa_certification", "eu_presscorner", "eu_parliament_press", "eu_edpb", "eu_dg_home", "eu_eeas", "eu_eurohpc", "eu_chips_ju", "eu_sns_ju"],
-  "topics": ["AI法", "跨境資料流通", "隱私框架", "數位身份", "著作權", "平台責任", "媒體多元", "NIS2", "產品資安", "半導體", "量子技術", "供應鏈安全", "事件應變", "數位治理", "研究創新"],
-  "responsibility_by_topic": {"AI法": "eu_dg_connect", "NIS2": "eu_dg_connect", "產品資安": "eu_enisa_news", "事件應變": "eu_cert_advisories"}
-}
