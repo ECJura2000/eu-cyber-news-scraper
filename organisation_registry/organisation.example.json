@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "module_version": "1.0.0",
+  "canonical_id": "EXAMPLE",
+  "names": {"zh": "範例機關", "en": "Example authority", "short": "EXAMPLE", "publisher_aliases": []},
+  "source_ids": ["source_id_from_sources.toml"],
+  "topics": ["AI法"],
+  "responsibility_by_topic": {}
+}

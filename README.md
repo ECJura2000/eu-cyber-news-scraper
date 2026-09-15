@@ -4,6 +4,10 @@
 
 設計承接既有 `UK-news-scraper` 的實務做法：優先使用 RSS／Atom，找不到 feed 時才解析 HTML；每個來源獨立失敗、併發執行、穩定去重、輸出 Excel 與 JSON 執行摘要，並保留來源健康狀態。程式只設定官方或公共研究來源，不以商業媒體或 Google News 作為預設備援。
 
+## 機關 Registry
+
+機關模組位於 [`organisation_registry/`](organisation_registry/)，分為 EU、FR、DE、IE 四個 JSON 檔，涵蓋 `sources.toml` 的全部 55 個來源。模組記錄來源 ID、觀測議題與責任機關；新增或覆寫模組可放在 macOS 的 `~/Library/Application Support/EUCyberNewsScraper/organisations.d`，或使用 `EU_CYBER_ORGANISATION_DIR` 指定目錄，重啟後載入。外部模組驗證失敗會保留內建模組並留下可稽核錯誤。
+
 ## 快速開始
 
 需要 Python 3.11 以上。macOS 可在終端機執行：
