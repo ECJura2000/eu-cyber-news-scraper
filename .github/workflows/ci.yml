@@ -34,6 +34,7 @@ jobs:
       - run: uv run ruff check .
       - run: uv run mypy src/eu_cyber_news_scraper
       - run: uv run pytest --cov=eu_cyber_news_scraper --cov-report=term-missing --cov-fail-under=92
+      - run: uv pip install --upgrade pip
       - run: uv run pip-audit
       - name: Build and install distributions
         if: matrix.python-version == '3.13'
