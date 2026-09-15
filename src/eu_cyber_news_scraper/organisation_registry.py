@@ -46,7 +46,12 @@ class OrganisationRegistry:
 def builtin_registry_dir() -> Path:
     if getattr(sys, "frozen", False) and hasattr(sys, "_MEIPASS"):
         return Path(sys._MEIPASS) / "organisation_registry"
-    return Path(__file__).resolve().parents[2] / "organisation_registry"
+    candidates = (
+        Path(__file__).resolve().parents[2] / "organisation_registry",
+        Path(sys.prefix) / "organisation_registry",
+        Path(__file__).resolve().parent / "organisation_registry",
+    )
+    return next((candidate for candidate in candidates if candidate.is_dir()), candidates[0])
 
 
 def external_registry_dir() -> Path:
