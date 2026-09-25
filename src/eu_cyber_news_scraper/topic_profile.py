@@ -73,6 +73,8 @@ def apply_profile(article: Article, profile: Profile) -> Article:
     legacy = set(article.matched_topics)
     matches: list[str] = []
     keywords: list[str] = []
+    scores: list[float] = []
+    kept_legacy = False
     for row in profile.topics:
         if not row["enabled"]:
             continue
@@ -88,10 +90,12 @@ def apply_profile(article: Article, profile: Profile) -> Article:
             score += 1
         if score > 0:
             matches.append(name)
+            scores.append(score)
+            kept_legacy = kept_legacy or bool(inherited)
             keywords.extend(item["term"] for item in row.get("keywords", []) if _contains(text, item["term"]))
             keywords.extend(term for term in row.get("synonyms", []) if _contains(text, term))
     article.matched_topics = matches
     article.matched_keywords = list(dict.fromkeys([*article.matched_keywords, *keywords])) if matches else []
-    article.relevance_score = max(article.relevance_score, 1) if matches else 0
+    article.relevance_score = int(max([*scores, article.relevance_score if kept_legacy else 0], default=0))
     article.confidence_level = confidence_level(article.relevance_score)
     return article

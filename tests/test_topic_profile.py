@@ -102,4 +102,5 @@ def test_new_topic_is_not_limited_by_existing_source_whitelist(tmp_path):
     rank_articles([article], load_organisation_registry(), profile=profile)
     assert is_hybrid_relevant(article)
     assert article.matched_topics == ["新量子政策"]
+    assert article.relevance_score == 2
     assert article.responsibility_owner == ["未設定"]
