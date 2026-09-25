@@ -19,6 +19,19 @@ python -m eu_cyber_news_scraper --export-organisation-example organisation.examp
 python -m eu_cyber_news_scraper --open-organisation-dir
 ```
 
+## 自訂主題與離線重查
+
+內建 [`topic_profile.json`](src/eu_cyber_news_scraper/topic_profile.json) 是 schema v1 範例，列出 15 個既有主題。複製後可用 `--topics-json 路徑` 載入；修改 `name`、`enabled` 或刪除主題即可改名、停用或移除。既有主題預設沿用已驗證的多語規則與來源白名單；改名時填 `legacy_name` 指向原名稱。新主題用 `keywords: [{"term":"...","weight":2}]`、`synonyms`、`penalties`、`excludes` 設定，預設搜尋所有啟用來源；`excludes` 只移除本主題命中，不影響文章的其他主題。`inherit_legacy: false` 可停用該主題舊詞規則。可選填 `responsibility_owner`；未填時 Excel 顯示「未設定」，不沿用其他主題的責任機關。
+
+`schedule.days` 設每週回溯天數；`manual` 可設 `days` 或 `since` 加 `until`。命令列日期優先於 JSON，日期仍支援西元／民國及臺北時區起訖日含當日。JSON 無效時在抓取前停止。每次執行會在摘要與事件紀錄保存規則 SHA-256；規則變更會分開健康觀察基線。
+
+```bash
+python -m eu_cyber_news_scraper --jsonl --topics-json my-topics.json
+python -m eu_cyber_news_scraper search --corpus-dir 新聞放置區 --topics-json my-topics.json --since 1150901 --until 1150930 --output results.xlsx
+```
+
+離線搜尋會在資料夾建立 `.offline-search.sqlite3` 增量索引；相同規則、日期、來源與文章資料時重用既有結果。只有正式 manifest 顯示該日期期間、所選來源、產物與品質門檻均完整時，結果才標為「資料涵蓋完整」；否則輸出部分結果並明示缺口。每週 artifact 同時提供入選 `.jsonl` 與篩選前 `.corpus.jsonl`，驗證器重算兩者與 Excel 的筆數、SHA-256。
+
 ## 快速開始
 
 需要 Python 3.11 以上。macOS 可在終端機執行：
@@ -112,7 +125,7 @@ python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95
 
 ## 來源治理
 
-來源設定集中於 `src/eu_cyber_news_scraper/sources.toml`。每個來源可設定：
+來源設定集中於 `organisation_registry/*.json`（預設）及 `src/eu_cyber_news_scraper/sources.toml`（`--config` 時）。每個來源可設定：
 
 - 國家、中文與原文機關名稱、機關屬性、語言
 - 官方首頁、新聞列表、已知 RSS／Atom
@@ -140,9 +153,9 @@ python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95
 
 ## GitHub Actions
 
-`.github/workflows/scrape.yml` 會在每週一 00:00 UTC（臺灣時間 08:00）執行，將 Excel、JSONL 與執行摘要保存為 30 天的 workflow artifact。新聞輸出不提交到 `main`；健康 state v2 與翻譯快取保存於公開孤立 `state` 分支，分支不存在時 workflow 直接失敗。必要來源進入 `degraded` 或正式品質 gate 失敗時，會建立或更新單一 `EU cyber news source health` Issue，恢復後自動關閉；其他來源的 `degraded` 與單次 `attention` 僅寫入 Actions Job Summary。所有第三方 Actions 均固定到完整 commit SHA。推送符合 `v*` 的版本標籤時，Release workflow 會重新驗證測試、建置 wheel／sdist、產生 SHA-256、建立 provenance attestation 並發布 GitHub Release。
+`.github/workflows/scrape.yml` 會在每週一 00:00 UTC（臺灣時間 08:00）執行，將 Excel、入選 JSONL、篩選前 JSONL 與執行摘要保存為 30 天的 workflow artifact；必要來源由同一次完整抓取結果檢查，不另做重複網路 smoke。新聞輸出不提交到 `main`；健康 state v2 與翻譯快取保存於公開孤立 `state` 分支，分支不存在時 workflow 直接失敗。必要來源進入 `degraded` 或正式品質 gate 失敗時，會建立或更新單一 `EU cyber news source health` Issue，恢復後自動關閉；其他來源的 `degraded` 與單次 `attention` 僅寫入 Actions Job Summary。所有第三方 Actions 均固定到完整 commit SHA。推送符合 `v*` 的版本標籤時，Release workflow 會重新驗證測試、建置 wheel／sdist、產生 SHA-256、建立 provenance attestation 並發布 GitHub Release。
 
-來源可用 `paused_until`、`pause_reason` 與 `pause_evidence_url` 暫停到指定複查日；一般全量執行會跳過並在 `.run.json` 留下稽核資料，明確使用 `--source <id>` 時仍可強制複查。目前 CEA LIST 因官方端點 TLS 連線持續超時，暫停至 2026-10-31；歐洲議會官方 RSS 與列表因 GitHub-hosted runner 收到 HTTP 202 JavaScript challenge，暫停排程至 2026-08-31，本機仍可用 `--source eu_parliament_press` 複查。
+來源可用 `paused_until`、`pause_reason` 與 `pause_evidence_url` 暫停到指定複查日；一般全量執行會跳過並在 `.run.json` 留下稽核資料，明確使用 `--source <id>` 時仍可強制複查。目前 CEA LIST 因官方端點 TLS 連線持續超時，暫停至 2026-10-31；歐洲議會官方 RSS 與列表因 GitHub-hosted runner 收到 HTTP 202 JavaScript challenge，暫停排程至 2026-10-31，本機仍可用 `--source eu_parliament_press` 複查。
 
 ## 測試
 

@@ -456,6 +456,7 @@ def write_run_summary(
     translation_report: TranslationReport | None = None,
     period: PeriodSelection | None = None,
     discovered_article_count: int | None = None,
+    pre_filter_article_count: int | None = None,
     config_path: str | Path | None = None,
     run_profile: dict[str, Any] | None = None,
     artifact_names: list[str] | None = None,
@@ -540,7 +541,8 @@ def write_run_summary(
         },
         "article_count": len(articles),
         "discovered_article_count": discovered_count,
-        "deduplicated_article_count": discovered_count - len(articles),
+        "pre_filter_article_count": pre_filter_article_count if pre_filter_article_count is not None else len(articles),
+        "deduplicated_article_count": discovered_count - (pre_filter_article_count if pre_filter_article_count is not None else len(articles)),
         "status": "degraded" if hard_failure else ("attention" if attention else "complete"),
         "translation": {
             "enabled": translation.enabled,

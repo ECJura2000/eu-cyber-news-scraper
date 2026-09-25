@@ -48,13 +48,6 @@ jobs:
           mkdir -p .state
           cp .state-branch/.source-health.json .state/ 2>/dev/null || true
           cp .state-branch/translations.json .state/ 2>/dev/null || true
-      - name: Smoke-test critical sources without translation
-        run: >-
-          uv run python -m eu_cyber_news_scraper --days 60 --all --no-translate
-          --health-write never --state-dir .state
-          --source eu_dg_connect --source eu_enisa_news --source fr_anssi
-          --source fr_cybermalveillance --source de_bsi_news --source ie_ncsc
-          --source ie_comreg --output /tmp/critical-source-smoke.xlsx --fail-on-degraded
       - name: Scrape official sources
         id: scrape
         shell: bash
@@ -87,11 +80,11 @@ jobs:
           if [[ -n "$SINCE" || -n "$UNTIL" ]]; then
             args+=(--since "$SINCE" --until "$UNTIL")
           else
-            args+=(--days "${DAYS:-14}")
+            if [[ -n "$DAYS" ]]; then args+=(--days "$DAYS"); fi
           fi
           uv run python -m eu_cyber_news_scraper "${args[@]}"
       - name: Persist durable state
-        if: always()
+        if: always() && github.event_name == 'schedule'
         working-directory: .state-branch
         run: |
           if [[ ! -f ../.state/.state-ready ]]; then
@@ -106,14 +99,11 @@ jobs:
           git diff --cached --quiet || git commit -m "Update scraper state for run $GITHUB_RUN_ID"
           git push origin state
       - name: Report and reconcile source health issue
-        if: always()
+        if: always() && github.event_name == 'schedule'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           summary=$(find 新聞放置區 -maxdepth 1 -name '*.run.json' -type f -print 2>/dev/null | sort | tail -1 || true)
-          if [[ -z "$summary" && -f /tmp/critical-source-smoke.run.json ]]; then
-            summary=/tmp/critical-source-smoke.run.json
-          fi
           if [[ -z "$summary" ]]; then
             exit 0
           fi
@@ -164,7 +154,6 @@ jobs:
         with:
           name: eu-cyber-news-diagnostics-${{ github.run_id }}
           path: |
-            /tmp/critical-source-smoke.*
             新聞放置區/*
           if-no-files-found: warn
           retention-days: 30

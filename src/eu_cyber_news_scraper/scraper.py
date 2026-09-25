@@ -118,7 +118,9 @@ async def _scrape_source_impl(
 
     # Feeds are often truncated. Sources with explicit archive rules must also
     # traverse their listing so historical fixed periods remain complete.
-    if not articles or source.yearly_listing_url or source.pagination_url:
+    feed_dates = [item.published_at for item in articles if item.published_at]
+    archive_gap = source.id == "ie_comreg" and bool(feed_dates) and since < min(feed_dates)
+    if not articles or archive_gap or source.yearly_listing_url or source.pagination_url:
         for listing_url in _listing_urls(source, since, until):
             try:
                 response = await _get_source_response(client, listing_url, source, stats)
