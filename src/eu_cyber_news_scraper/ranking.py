@@ -6,6 +6,7 @@ from collections import Counter, defaultdict
 
 from .models import Article
 from .organisation_registry import OrganisationRegistry
+from .topic_profile import Profile
 from .topics import OBSERVATION_TOPICS, TOPIC_RULES, _output_topics, normalize_text
 
 BM25_K1 = 1.2
@@ -28,6 +29,7 @@ def rank_articles(
     registry: OrganisationRegistry,
     *,
     minimum_score: float = BM25_MINIMUM_SCORE,
+    profile: Profile | None = None,
 ) -> list[Article]:
     if not articles:
         return articles
@@ -37,18 +39,36 @@ def rank_articles(
         document_frequency.update(set(tokens))
     average_length = sum(len(tokens) for tokens in documents) / len(documents)
     queries = _topic_queries()
+    if profile:
+        for row in profile.topics:
+            name = row["name"]
+            original = row.get("legacy_name", name)
+            terms = set(queries.get(original, ())) if row.get("inherit_legacy", True) else set()
+            for item in row.get("keywords", []):
+                terms.update(_tokens(item["term"]))
+            for term in row.get("synonyms", []):
+                terms.update(_tokens(term))
+            queries[name] = tuple(sorted(terms))
 
     for article, tokens in zip(articles, documents, strict=True):
         module = registry.module_for_source(article.source_id)
         allowed = module.topics if module else frozenset(OBSERVATION_TOPICS)
+        if profile:
+            allowed = frozenset(
+                row["name"] for row in profile.topics
+                if row["enabled"] and (row.get("legacy_name", row["name"]) not in OBSERVATION_TOPICS
+                or row.get("legacy_name", row["name"]) in allowed)
+            )
         article.matched_topics = [topic for topic in article.matched_topics if topic in allowed]
         article.matched_synonyms = list(dict.fromkeys(article.matched_keywords))
         article.boolean_score = article.relevance_score if article.matched_topics else 0
         article.publisher_organisation = article.source_name
         scores: dict[str, float] = {}
+        frequencies = Counter(tokens)
         for topic in article.matched_topics:
             score = _bm25_score(
-                tokens,
+                frequencies,
+                len(tokens),
                 queries[topic],
                 document_frequency,
                 len(documents),
@@ -57,6 +77,10 @@ def rank_articles(
             scores[topic] = round(score, 4)
         article.bm25_topic_scores = scores
         article.bm25_score = round(max(scores.values(), default=0.0), 4)
+        explicit_owners = [
+            row["responsibility_owner"] for row in profile.topics
+            if profile and row["name"] in article.matched_topics and row.get("responsibility_owner")
+        ] if profile else []
         if module:
             article.responsibility_owner = list(
                 dict.fromkeys(
@@ -65,6 +89,9 @@ def rank_articles(
                     if (owner := module.responsibility_owner(topic))
                 )
             )
+        article.responsibility_owner = list(dict.fromkeys([*article.responsibility_owner, *explicit_owners]))
+        if article.matched_topics and not article.responsibility_owner:
+            article.responsibility_owner = ["未設定"]
         if article.bm25_score < minimum_score:
             article.confidence_level = "未命中"
     return articles
@@ -94,14 +121,14 @@ def _topic_queries() -> dict[str, tuple[str, ...]]:
 
 
 def _bm25_score(
-    tokens: list[str],
+    frequencies: Counter[str],
+    token_count: int,
     query: tuple[str, ...],
     document_frequency: Counter[str],
     document_count: int,
     average_length: float,
 ) -> float:
-    frequencies = Counter(tokens)
-    length_ratio = len(tokens) / average_length if average_length else 0.0
+    length_ratio = token_count / average_length if average_length else 0.0
     score = 0.0
     for term in query:
         frequency = frequencies[term]

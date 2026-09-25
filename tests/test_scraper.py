@@ -3,6 +3,7 @@ from datetime import datetime, timezone
 
 import httpx
 
+from eu_cyber_news_scraper.config import load_sources
 from eu_cyber_news_scraper.models import Source
 from eu_cyber_news_scraper.scraper import _is_non_html_url, _listing_urls, scrape_source
 
@@ -28,6 +29,31 @@ class MappingClient:
 
 def run_scraper(*args, **kwargs):
     return asyncio.run(scrape_source(*args, **kwargs))
+
+
+def test_comreg_uses_feed_for_recent_period_and_listing_for_archive():
+    source = next(item for item in load_sources() if item.id == "ie_comreg")
+    feed = b"""<?xml version='1.0'?><rss version='2.0'><channel><item>
+        <title>NIS2 security update</title><link>https://www.comreg.ie/security-update/</link>
+        <pubDate>Sun, 20 Sep 2026 10:00:00 GMT</pubDate></item></channel></rss>"""
+
+    class Client:
+        def __init__(self):
+            self.urls = []
+
+        async def get(self, url, *, stats=None):
+            self.urls.append(url)
+            payload = feed if url.endswith("/feed/") else b"<html><main></main></html>"
+            return httpx.Response(200, content=payload, request=httpx.Request("GET", url))
+
+    recent = Client()
+    run_scraper(source, recent, since=datetime(2026, 9, 20, 10, tzinfo=timezone.utc),
+                until=datetime(2026, 9, 25, tzinfo=timezone.utc), fetch_details=False)
+    assert recent.urls == ["https://www.comreg.ie/feed/"]
+    archive = Client()
+    run_scraper(source, archive, since=datetime(2026, 8, 1, tzinfo=timezone.utc),
+                until=datetime(2026, 8, 10, tzinfo=timezone.utc), fetch_details=False)
+    assert "https://www.comreg.ie/news/" in archive.urls
 
 
 def test_scrape_source_filters_date_and_topic(fixture_dir):

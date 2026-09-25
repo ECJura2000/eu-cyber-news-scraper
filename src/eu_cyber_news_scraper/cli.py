@@ -2,9 +2,11 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+import json
 import os
 import subprocess
 import sys
+import time
 import uuid
 from dataclasses import replace
 from datetime import date, datetime, timedelta, timezone
@@ -38,6 +40,7 @@ from .periods import PeriodSelection, resolve_period
 from .ranking import BM25_B, BM25_K1, BM25_MINIMUM_SCORE, is_hybrid_relevant, rank_articles
 from .runtime_lock import acquire_run_lock, release_run_lock
 from .scraper import scrape_source
+from .topic_profile import Profile, apply_profile, load_profile
 from .translation import skip_article_title_translation, translate_article_titles
 
 COUNTRY_LABELS = {"EU": "歐盟", "FR": "法國", "DE": "德國", "IE": "愛爾蘭"}
@@ -71,6 +74,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--country", action="append", choices=sorted(COUNTRY_LABELS), help="可重複指定 EU、FR、DE、IE。")
     parser.add_argument("--source", action="append", help="可重複指定來源代碼；用 --list-sources 查看。")
     parser.add_argument("--topic", action="append", choices=sorted(TOPIC_ALIASES), help="只輸出指定主題；可重複。")
+    parser.add_argument("--topic-name", action="append", help="依 JSON 中的完整主題名稱輸出；可重複。")
     parser.add_argument("--all", action="store_true", help="保留未命中觀測主題的官方新聞。")
     parser.add_argument("--include-undated", action="store_true", help="保留無法辨識發布日的資料。")
     parser.add_argument("--no-detail", action="store_true", help="不進入新聞內頁補抓日期與摘要。")
@@ -93,6 +97,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--output", help="Excel 輸出路徑。")
     parser.add_argument("--jsonl", action="store_true", help="另輸出同名 JSONL。")
     parser.add_argument("--config", help="自訂 sources.toml 路徑。")
+    parser.add_argument("--topics-json", help="主題與日期設定 JSON；預設使用專案內建範例。")
     parser.add_argument("--list-sources", action="store_true", help="列出來源後結束。")
     parser.add_argument("--organisation-status", action="store_true", help="列出機關模組、覆寫與驗證錯誤後結束。")
     parser.add_argument("--export-organisation-example", metavar="PATH", help="匯出完整機關 JSON 範本後結束。")
@@ -111,6 +116,10 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main() -> None:
+    if len(sys.argv) > 1 and sys.argv[1] == "search":
+        from .offline_search import main as search_main
+        search_main(sys.argv[2:])
+        return
     args = build_parser().parse_args()
     _validate_quality_options(args)
     loaded_sources, registry = load_sources_and_registry(args.config)
@@ -128,6 +137,14 @@ def main() -> None:
         _open_organisation_directory()
         return
 
+    try:
+        profile = load_profile(args.topics_json)
+    except ValueError as exc:
+        raise SystemExit(f"[error] {exc}") from exc
+    emit_event("topic_profile_loaded", sha256=profile.hash, topic_count=len(profile.names))
+    if args.topic_name and set(args.topic_name) - profile.names:
+        raise SystemExit(f"[error] 未知主題：{', '.join(sorted(set(args.topic_name) - profile.names))}")
+
     selected = _select_sources(sources, args.country, args.source)
     if not selected:
         raise SystemExit("[error] 沒有符合條件的來源。")
@@ -139,7 +156,15 @@ def main() -> None:
         and not (args.source and source.id in args.source)
     ]
     try:
-        period = resolve_period(args.since, args.until, args.days)
+        settings = profile.schedule if os.environ.get("GITHUB_EVENT_NAME") == "schedule" else profile.manual
+        if args.since is not None or args.until is not None:
+            period = resolve_period(args.since, args.until, None)
+        elif args.days is not None:
+            period = resolve_period(None, None, args.days)
+        elif settings.get("since") or settings.get("until"):
+            period = resolve_period(settings.get("since"), settings.get("until"), None)
+        else:
+            period = resolve_period(None, None, settings.get("days", DEFAULT_DAYS))
     except ValueError as exc:
         raise SystemExit(f"[error] {exc}") from exc
     output = Path(args.output) if args.output else _default_output(period.since, period.until)
@@ -149,7 +174,7 @@ def main() -> None:
     except RuntimeError as exc:
         raise SystemExit(f"[error] {exc}") from exc
     try:
-        _run_pipeline(args, selected, period.since, period.until, output, run_id, period=period, registry=registry)
+        _run_pipeline(args, selected, period.since, period.until, output, run_id, period=period, registry=registry, profile=profile)
     finally:
         release_run_lock(lock_path, run_id)
 
@@ -164,6 +189,7 @@ def _run_pipeline(
     *,
     period: PeriodSelection | None = None,
     registry: OrganisationRegistry | None = None,
+    profile: Profile | None = None,
 ) -> None:
     asyncio.run(
         _run_pipeline_async(
@@ -175,6 +201,7 @@ def _run_pipeline(
             run_id,
             period=period,
             registry=registry,
+            profile=profile,
         )
     )
 
@@ -189,14 +216,28 @@ async def _run_pipeline_async(
     *,
     period: PeriodSelection | None = None,
     registry: OrganisationRegistry | None = None,
+    profile: Profile | None = None,
 ) -> None:
     registry = registry or load_organisation_registry()
     started_at = datetime.now(timezone.utc)
+    phase_start = time.perf_counter()
     results: list[SourceResult] = []
     worker_count = max(1, min(args.workers, len(selected)))
     state_dir_value = getattr(args, "state_dir", None)
     state_dir = Path(state_dir_value).expanduser() if state_dir_value else output.parent
     state_dir.mkdir(parents=True, exist_ok=True)
+    if profile:
+        prior_hashes: set[str] = set()
+        health_path = state_dir / ".source-health.json"
+        if health_path.exists():
+            try:
+                prior = json.loads(health_path.read_text(encoding="utf-8"))
+                prior_hashes = {row.get("profile", {}).get("topic_profile_sha256", "")
+                                for row in prior.get("profiles", {}).values()}
+            except (OSError, ValueError, AttributeError):
+                emit_event("topic_profile_history_invalid", run_id=run_id)
+        state = "unchanged" if profile.hash in prior_hashes else ("changed" if prior_hashes else "new")
+        emit_event("topic_profile_compared", run_id=run_id, state=state, sha256=profile.hash)
     state_ready = state_dir / ".state-ready"
     state_ready.unlink(missing_ok=True)
     if state_dir_value and "EU_CYBER_NEWS_TRANSLATION_CACHE" not in os.environ:
@@ -280,21 +321,31 @@ async def _run_pipeline_async(
             )
 
     order = {source.id: index for index, source in enumerate(selected)}
+    fetch_seconds = time.perf_counter() - phase_start
+    phase_start = time.perf_counter()
     results.sort(key=lambda result: order[result.source.id])
     discovered_articles = [article for result in results for article in result.articles]
     articles = dedupe_articles(discovered_articles)
-    rank_articles(articles, registry)
+    if profile:
+        for article in articles:
+            apply_profile(article, profile)
+    corpus_articles = list(articles)
+    rank_articles(articles, registry, profile=profile)
     if not args.all:
         articles = [article for article in articles if is_hybrid_relevant(article)]
-    if args.topic:
-        wanted = {TOPIC_ALIASES[value] for value in args.topic}
+    if args.topic or getattr(args, "topic_name", None):
+        wanted = {TOPIC_ALIASES[value] for value in (args.topic or [])} | set(getattr(args, "topic_name", None) or [])
         articles = [article for article in articles if wanted.intersection(article.matched_topics)]
     articles.sort(key=lambda item: item.published_at or since, reverse=True)
+    filter_seconds = time.perf_counter() - phase_start
+    phase_start = time.perf_counter()
     translation = (
         skip_article_title_translation(articles)
         if getattr(args, "no_translate", False)
         else translate_article_titles(articles)
     )
+    translation_seconds = time.perf_counter() - phase_start
+    phase_start = time.perf_counter()
     output_counts: dict[str, int] = {}
     for article in articles:
         for source_id in article.discovered_by or [article.source_id]:
@@ -319,6 +370,7 @@ async def _run_pipeline_async(
         "include_unmatched": args.all,
         "source_budget": max(1, getattr(args, "source_budget", DEFAULT_SOURCE_BUDGET)),
         "paused_source_ids": [row["source_id"] for row in getattr(args, "paused_sources", [])],
+        "topic_profile_sha256": profile.hash if profile else "legacy",
     }
     health_mode = getattr(args, "health_write", "auto")
     health_write = health_mode == "always" or (
@@ -354,6 +406,7 @@ async def _run_pipeline_async(
         )
     quality_failures = _quality_failures(statuses, args, articles)
     jsonl_output = output.with_suffix(".jsonl") if args.jsonl else None
+    corpus_output = output.with_suffix(".corpus.jsonl") if args.jsonl else None
     summary_output = output.with_suffix(".run.json")
     with ArtifactBundle(output, run_id) as bundle:
         staged_workbook = export_workbook(
@@ -372,6 +425,10 @@ async def _run_pipeline_async(
             if jsonl_output is not None
             else None
         )
+        staged_corpus = (
+            write_jsonl(corpus_articles, bundle.staged(corpus_output), run_id=run_id)
+            if corpus_output is not None else None
+        )
         finished_at = datetime.now(timezone.utc)
         staged_summary = write_run_summary(
             staged_workbook,
@@ -385,6 +442,7 @@ async def _run_pipeline_async(
             translation_report=translation,
             period=period,
             discovered_article_count=len(discovered_articles),
+            pre_filter_article_count=len(corpus_articles),
             config_path=getattr(args, "config", None),
             run_profile={
                 **health_profile,
@@ -393,8 +451,8 @@ async def _run_pipeline_async(
                 "filter_method": "boolean_then_bm25",
                 "bm25": {"k1": BM25_K1, "b": BM25_B, "minimum_score": BM25_MINIMUM_SCORE, "title_weight": 2, "summary_weight": 1},
             },
-            artifact_names=[output.name, summary_output.name, *([jsonl_output.name] if jsonl_output else [])],
-            artifact_paths=[staged_workbook, *([staged_jsonl] if staged_jsonl else [])],
+            artifact_names=[output.name, summary_output.name, *([jsonl_output.name] if jsonl_output else []), *([corpus_output.name] if corpus_output else [])],
+            artifact_paths=[staged_workbook, *([staged_jsonl] if staged_jsonl else []), *([staged_corpus] if staged_corpus else [])],
             published_output_path=output,
             quality_failures=quality_failures,
             paused_sources=getattr(args, "paused_sources", []),
@@ -406,15 +464,22 @@ async def _run_pipeline_async(
             staged_summary,
             run_id=run_id,
             article_count=len(articles),
+            corpus_path=staged_corpus,
+            corpus_count=len(corpus_articles),
         )
         bundle.publish(
             [
                 (staged_workbook, output),
                 *([(staged_jsonl, jsonl_output)] if staged_jsonl and jsonl_output else []),
+                *([(staged_corpus, corpus_output)] if staged_corpus and corpus_output else []),
                 (staged_summary, summary_output),
             ],
             manifest=summary_output,
         )
+    export_seconds = time.perf_counter() - phase_start
+    emit_event("run_phases", run_id=run_id, fetch_and_detail_seconds=round(fetch_seconds, 3),
+               filter_seconds=round(filter_seconds, 3), translation_seconds=round(translation_seconds, 3),
+               export_and_verify_seconds=round(export_seconds, 3))
 
     degraded = [
         status.source_id

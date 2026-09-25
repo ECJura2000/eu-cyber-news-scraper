@@ -227,7 +227,7 @@ def test_main_resolves_roc_period_and_releases_lock(monkeypatch, tmp_path):
     monkeypatch.setattr(cli, "acquire_run_lock", lambda output, run_id: tmp_path / "run.lock")
     monkeypatch.setattr(cli, "release_run_lock", lambda lock, run_id: calls.update(released=(lock, run_id)))
 
-    def run_pipeline(args, selected, since, until, output, run_id, *, period, registry):
+    def run_pipeline(args, selected, since, until, output, run_id, *, period, registry, profile):
         calls.update(period=period, selected=selected, output=output, run_id=run_id)
 
     monkeypatch.setattr(cli, "_run_pipeline", run_pipeline)

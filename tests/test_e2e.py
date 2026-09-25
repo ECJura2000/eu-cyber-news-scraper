@@ -6,6 +6,7 @@ from openpyxl import load_workbook
 from eu_cyber_news_scraper.cli import _run_pipeline
 from eu_cyber_news_scraper.models import Source
 from eu_cyber_news_scraper.periods import resolve_period
+from eu_cyber_news_scraper.topic_profile import load_profile
 
 
 class FakeHttpClient:
@@ -54,6 +55,7 @@ def test_offline_pipeline_writes_atomic_artifacts_and_quality_metadata(monkeypat
     period = resolve_period("1150501", "1150502", None)
     _run_pipeline(
         args, [source], period.since, period.until, output, "run-e2e", period=period,
+        profile=load_profile(),
     )
     workbook = load_workbook(output, read_only=True)
     assert "官方規範與執法" in workbook.sheetnames
@@ -61,6 +63,7 @@ def test_offline_pipeline_writes_atomic_artifacts_and_quality_metadata(monkeypat
     assert summary["run_id"] == "run-e2e"
     assert summary["translation"]["success_rate"] == 1
     assert summary["schema_version"] == 6
+    assert summary["run_profile"]["topic_profile_sha256"] == load_profile().hash
     assert summary["period"]["raw_since"] == "1150501"
     assert summary["period"]["since_calendar"] == "roc"
     assert summary["organisation_audit_status"] == "complete"
@@ -68,6 +71,7 @@ def test_offline_pipeline_writes_atomic_artifacts_and_quality_metadata(monkeypat
     assert len(summary["organisation_modules"]) == 55
     assert (tmp_path / ".state" / ".source-health.json").exists()
     assert output.with_suffix(".jsonl").exists()
+    assert output.with_suffix(".corpus.jsonl").exists()
     row = json.loads(output.with_suffix(".jsonl").read_text(encoding="utf-8").splitlines()[0])
     assert row["schema_version"] == 6
     assert row["run_id"] == "run-e2e"

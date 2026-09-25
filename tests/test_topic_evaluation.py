@@ -2,6 +2,7 @@ import json
 from collections import Counter
 
 from eu_cyber_news_scraper.models import Article
+from eu_cyber_news_scraper.topic_profile import apply_profile, load_profile
 from eu_cyber_news_scraper.topics import classify_article
 
 
@@ -22,12 +23,16 @@ def test_assisted_topic_regression_set_meets_precision_and_recall_floor(fixture_
     language_true_positive = Counter()
     language_false_positive = Counter()
     language_false_negative = Counter()
+    profile = load_profile()
     for row in rows:
         article = Article(
             row["source_id"], "EU", "Gold", "test", row["language"],
             row["title"], row["url"], summary=row["summary"],
         )
         classify_article(article)
+        baseline_topics = set(article.matched_topics)
+        apply_profile(article, profile)
+        assert set(article.matched_topics) == baseline_topics
         actual = set(article.matched_topics)
         expected = set(row["topics"])
         true_positive += len(actual & expected)

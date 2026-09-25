@@ -64,6 +64,8 @@ def verify_artifact_bundle(
     *,
     run_id: str,
     article_count: int,
+    corpus_path: Path | None = None,
+    corpus_count: int | None = None,
 ) -> None:
     workbook = load_workbook(workbook_path, read_only=True, data_only=True)
     try:
@@ -82,10 +84,12 @@ def verify_artifact_bundle(
     if metadata.get("article_count") != article_count:
         raise ValueError("workbook metadata article count mismatch")
 
-    if jsonl_path is not None:
-        rows = [json.loads(line) for line in jsonl_path.read_text(encoding="utf-8").splitlines() if line]
-        if len(rows) != article_count:
-            raise ValueError(f"JSONL article count mismatch: {len(rows)} != {article_count}")
+    for path, expected_count in ((jsonl_path, article_count), (corpus_path, corpus_count)):
+        if path is None:
+            continue
+        rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line]
+        if expected_count is None or len(rows) != expected_count:
+            raise ValueError(f"JSONL article count mismatch: {len(rows)} != {expected_count}")
         if any(row.get("run_id") != run_id or row.get("schema_version") != 6 for row in rows):
             raise ValueError("JSONL run_id or schema_version mismatch")
         for row in rows:
@@ -109,7 +113,7 @@ def verify_artifact_bundle(
     artifacts = summary.get("artifact_manifest", [])
     if not artifacts or any(not row.get("complete") or not row.get("relative_path") for row in artifacts):
         raise ValueError("run manifest artifact entries are incomplete")
-    actual_paths = [workbook_path, *([jsonl_path] if jsonl_path is not None else [])]
+    actual_paths = [workbook_path, *([jsonl_path] if jsonl_path is not None else []), *([corpus_path] if corpus_path is not None else [])]
     actual_by_name = {path.name: path for path in actual_paths}
     declared_by_name = {str(row.get("name", "")): row for row in artifacts}
     if (

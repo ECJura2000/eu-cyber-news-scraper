@@ -3,6 +3,7 @@ from __future__ import annotations
 import re
 import unicodedata
 from dataclasses import dataclass
+from functools import lru_cache
 
 from .models import Article
 
@@ -494,10 +495,17 @@ def normalize_text(value: str) -> str:
 
 
 def _contains(text: str, keyword: str) -> bool:
-    normalized_keyword = normalize_text(keyword)
-    if len(normalized_keyword) <= 4 and normalized_keyword.isalnum():
-        return bool(re.search(rf"(?<!\w){re.escape(normalized_keyword)}(?!\w)", text))
+    normalized_keyword, pattern = _compiled_keyword(keyword)
+    if pattern is not None:
+        return bool(pattern.search(text))
     return normalized_keyword in text
+
+
+@lru_cache(maxsize=4096)
+def _compiled_keyword(keyword: str) -> tuple[str, re.Pattern[str] | None]:
+    normalized = normalize_text(keyword)
+    pattern = re.compile(rf"(?<!\w){re.escape(normalized)}(?!\w)") if len(normalized) <= 4 and normalized.isalnum() else None
+    return normalized, pattern
 
 
 def classify_article(article: Article) -> Article:
