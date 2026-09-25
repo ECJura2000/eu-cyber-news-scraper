@@ -17,7 +17,7 @@
       "institution_type": "政府數位政策及服務機關",
       "language": "da",
       "homepage": "https://digst.dk/",
-      "listing_url": "https://digst.dk/nyheder/",
+      "listing_url": "https://digst.dk/nyheder/nyhedsarkiv/",
       "allow_domains": [
         "digst.dk"
       ],
@@ -51,10 +51,10 @@
   },
   "responsibility_by_topic": {},
   "verification": {
-    "status": "smoke_attention",
+    "status": "smoke_healthy",
     "verified_on": "2026-09-25",
     "evidence_urls": [
-      "https://digst.dk/nyheder/"
+      "https://digst.dk/nyheder/nyhedsarkiv/"
     ],
     "schedule_batch": "nordic"
   }

@@ -17,12 +17,15 @@
       "institution_type": "獨立資料保護監管機關",
       "language": "it",
       "homepage": "https://www.garanteprivacy.it/",
-      "listing_url": "https://www.garanteprivacy.it/it/news-e-comunicazione/news",
+      "listing_url": "https://www.garanteprivacy.it/news",
       "allow_domains": [
         "www.garanteprivacy.it"
       ],
       "critical": false,
       "schedule_enabled": false,
+      "card_selectors": [".journal-content-article p"],
+      "link_selectors": ["a[href*='/garante/doc.jsp']"],
+      "date_selectors": ["em"],
       "detail_pages": 8
     }
   ],
@@ -50,10 +53,10 @@
   },
   "responsibility_by_topic": {},
   "verification": {
-    "status": "blocked_runner",
+    "status": "smoke_healthy",
     "verified_on": "2026-09-25",
     "evidence_urls": [
-      "https://www.garanteprivacy.it/it/news-e-comunicazione/news"
+      "https://www.garanteprivacy.it/news"
     ],
     "schedule_batch": "southern_and_poland"
   }

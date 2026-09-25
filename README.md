@@ -6,7 +6,7 @@
 
 ## 機關 Registry
 
-機關模組位於 [`organisation_registry/`](organisation_registry/)，75 個新聞來源各有一份 schema v2 JSON（55 個原來源、20 個十國待驗證來源）。每個模組包含來源 URL 與解析設定、主題白名單、健康門檻、機關沿革及各主題責任機關；預設執行直接由這些 JSON 建立來源清單。新增或覆寫模組可放在 macOS 的 `~/Library/Application Support/EUCyberNewsScraper/organisations.d`，或使用 `EU_CYBER_ORGANISATION_DIR` 指定目錄，重啟後載入。外部模組驗證失敗會保留同 ID 的內建模組；無內建版本的新模組會略過，並讓 `.run.json` 的 `organisation_audit_status` 成為 `degraded`。
+機關模組位於 [`organisation_registry/`](organisation_registry/)，85 個新聞來源各有一份 schema v2 JSON（55 個原來源、30 個十國待驗證來源）。每個模組包含來源 URL 與解析設定、主題白名單、健康門檻、機關沿革及各主題責任機關；預設執行直接由這些 JSON 建立來源清單。新增或覆寫模組可放在 macOS 的 `~/Library/Application Support/EUCyberNewsScraper/organisations.d`，或使用 `EU_CYBER_ORGANISATION_DIR` 指定目錄，重啟後載入。外部模組驗證失敗會保留同 ID 的內建模組；無內建版本的新模組會略過，並讓 `.run.json` 的 `organisation_audit_status` 成為 `degraded`。
 
 篩選流程採 Boolean 候選判定後接 BM25 主題評分，標題權重 2、摘要權重 1、`k1=1.2`、`b=0.75`，分數固定四位小數。機關模組的 `filter.topics` 是正式白名單；Excel 的「篩選設定」及新聞欄位會記錄 Boolean/BM25 分數、命中同義詞、實際發布機關與責任機關，JSONL 與 `.run.json` 也保留相同稽核資訊。
 
@@ -142,7 +142,7 @@ python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95
 
 主管機關覆蓋矩陣集中於 `src/eu_cyber_news_scraper/authority_coverage.toml`。目前固定驗證
 原 15 個議題 × 4 個法域共 60 格仍需完整；十國另列 150 格，未有可信來源的格子明示「未覆蓋」，有來源但未查證權責則為「未設定」。
-目前共 75 個來源；十國新增的 20 個均為 `schedule_enabled = false`，只有明確指定 `--country` 或 `--source` 才會手動抓取。研究機構與智庫只作為政策研究、技術評估及生態系觀測來源，不視為具有監理權限的主管機關。
+目前共 85 個來源；十國新增的 30 個均為 `schedule_enabled = false`，只有明確指定 `--country` 或 `--source` 才會手動抓取。研究機構與智庫只作為政策研究、技術評估及生態系觀測來源，不視為具有監理權限的主管機關。
 
 `.source-health.json` 使用 schema v2，以執行 profile 與每來源設定 fingerprint 分隔基線，最多保留每個來源最近 12 個獨立 observation；同一期間重跑會取代既有 observation，不會累積成連續異常。舊 v1 會保存在 `legacy`，但不參與新基線。`--health-write auto` 只讓完整 rolling 且啟用內頁的標準執行寫入；固定歷史期間預設唯讀，也可明確使用 `always` 或 `never`。健康 state 只在 Excel、JSONL 與 manifest 完整驗證並發布後寫入。
 
@@ -158,6 +158,8 @@ python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95
 ## GitHub Actions
 
 `.github/workflows/scrape.yml` 會在每週一 00:00 UTC（臺灣時間 08:00）執行，將 Excel、入選 JSONL、篩選前 JSONL 與執行摘要保存為 30 天的 workflow artifact；必要來源由同一次完整抓取結果檢查，不另做重複網路 smoke。新聞輸出不提交到 `main`；健康 state v2 與翻譯快取保存於公開孤立 `state` 分支，分支不存在時 workflow 直接失敗。必要來源進入 `degraded` 或正式品質 gate 失敗時，會建立或更新單一 `EU cyber news source health` Issue，恢復後自動關閉；其他來源的 `degraded` 與單次 `attention` 僅寫入 Actions Job Summary。所有第三方 Actions 均固定到完整 commit SHA。推送符合 `v*` 的版本標籤時，Release workflow 會重新驗證測試、建置 wheel／sdist、產生 SHA-256、建立 provenance attestation 並發布 GitHub Release。
+
+手動觸發 `Weekly official cyber news` 時，可填 `source` 指定一個候選來源在 GitHub runner 上驗證；未填時維持原有全量執行。手動執行不會寫入耐久 `state`，也不能取代正式排程的同一 run observation 驗收。
 
 來源可用 `paused_until`、`pause_reason` 與 `pause_evidence_url` 暫停到指定複查日；一般全量執行會跳過並在 `.run.json` 留下稽核資料，明確使用 `--source <id>` 時仍可強制複查。目前 CEA LIST 因官方端點 TLS 連線持續超時，暫停至 2026-10-31；歐洲議會官方 RSS 與列表因 GitHub-hosted runner 收到 HTTP 202 JavaScript challenge，暫停排程至 2026-10-31，本機仍可用 `--source eu_parliament_press` 複查。
 

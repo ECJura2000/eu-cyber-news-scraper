@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-25.1",
+  "canonical_id": "es_congreso",
+  "names": {"zh": "西班牙眾議院", "en": "Congreso de los Diputados", "short": "es_congreso", "publisher_aliases": []},
+  "sources": [{
+    "id": "es_congreso", "country": "ES", "name_zh": "西班牙眾議院",
+    "name": "Congreso de los Diputados", "institution_type": "國會下議院",
+    "language": "es", "homepage": "https://www.congreso.es/",
+    "listing_url": "https://www.congreso.es/es/notas-de-prensa",
+    "allow_domains": ["www.congreso.es"], "critical": false,
+    "schedule_enabled": false, "detail_pages": 8
+  }],
+  "filter": {"topics": ["AI法、模型評估、演算法問責、自動化決策、AI與著作權", "隱私框架（含個人資料保護）", "平台責任、內容審查、推薦演算法", "NIS2、關鍵基礎設施保護", "半導體", "量子技術"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-25", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "blocked_runner", "verified_on": "2026-09-25", "evidence_urls": ["https://www.congreso.es/es/notas-de-prensa", "https://www.congreso.es/es/cem/func"], "schedule_batch": "parliaments_research_candidate"}
+}

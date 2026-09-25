@@ -8,7 +8,7 @@ def test_all_topics_cover_four_legacy_and_ten_new_jurisdictions():
     rows = load_coverage(sources)
     topics = {row.topic for row in rows}
 
-    assert len(sources) == 75
+    assert len(sources) == 85
     assert len(topics) == 15
     assert topics == set(OBSERVATION_TOPICS)
     assert len(rows) == 210

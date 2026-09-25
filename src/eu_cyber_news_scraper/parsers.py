@@ -67,7 +67,8 @@ def parse_datetime(
     for locative, nominative in {"janvārī": "janvāris", "februārī": "februāris", "martā": "marts", "aprīlī": "aprīlis", "maijā": "maijs", "jūnijā": "jūnijs", "jūlijā": "jūlijs", "augustā": "augusts", "septembrī": "septembris", "oktobrī": "oktobris", "novembrī": "novembris", "decembrī": "decembris"}.items():
         normalized = re.sub(rf"\b{locative}\b", nominative, normalized, flags=re.IGNORECASE)
     normalized = re.sub(
-        r"^(?:Publié le|Veröffentlicht am|Pressemitteilung vom|Release Date:)\s+",
+        r"^(?:Publié le|Veröffentlicht am|Pressemitteilung vom|Release Date:|"
+        r"Publicerades:?|Publiceret:?|Dato:)\s+",
         "",
         normalized,
         flags=re.IGNORECASE,
@@ -561,10 +562,23 @@ def _visible_date_value(soup: BeautifulSoup) -> str:
     node = soup.select_one(
         "[class*='publish' i], [class*='date' i], [id*='publish' i], [id*='date' i]"
     )
-    if not node:
-        return ""
-    text = node.get_text(" ", strip=True)
-    return _extract_date_text(text) or text
+    if node:
+        text = node.get_text(" ", strip=True)
+        return _extract_date_text(text) or text
+    # Some authorities publish an explicitly labelled date without a date
+    # class or <time> element. Restrict the fallback to article content and
+    # publication labels so event dates in the body are not mistaken for it.
+    content = soup.select_one("main, article")
+    if content:
+        match = re.search(
+            r"\b(?:Publicerades|Publiceret|Dato)\s*:?\s*"
+            r"(\d{4}-\d{2}-\d{2}|\d{1,2}[./-]\d{1,2}[./-]\d{4})\b",
+            content.get_text(" ", strip=True),
+            flags=re.IGNORECASE,
+        )
+        if match:
+            return match.group(0)
+    return ""
 
 
 def _title_date_value(soup: BeautifulSoup) -> str:

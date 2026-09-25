@@ -13,6 +13,9 @@ on:
       until:
         description: Inclusive end date, Gregorian or ROC calendar
         required: false
+      source:
+        description: Optional source ID for a manual-only single-source validation; never writes durable state
+        required: false
   schedule:
     - cron: "0 0 * * 1"
 
@@ -55,6 +58,7 @@ jobs:
           DAYS: ${{ inputs.days }}
           SINCE: ${{ inputs.since }}
           UNTIL: ${{ inputs.until }}
+          SOURCE: ${{ inputs.source }}
           EVENT_NAME: ${{ github.event_name }}
         run: |
           args=(
@@ -82,6 +86,7 @@ jobs:
           else
             if [[ -n "$DAYS" ]]; then args+=(--days "$DAYS"); fi
           fi
+          if [[ -n "$SOURCE" ]]; then args+=(--source "$SOURCE"); fi
           uv run python -m eu_cyber_news_scraper "${args[@]}"
       - name: Persist durable state
         if: always() && github.event_name == 'schedule'

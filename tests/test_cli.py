@@ -48,7 +48,7 @@ def test_new_sources_are_manual_only_until_promoted():
     sources = load_sources()
     assert len(_select_sources(sources, None, None, scheduled=True)) == 53
     assert len(_select_sources(sources, None, None)) == 53
-    assert {source.id for source in _select_sources(sources, ["ES"], None)} == {"es_aepd", "es_cnmc"}
+    assert {source.id for source in _select_sources(sources, ["ES"], None)} == {"es_aepd", "es_cnmc", "es_congreso"}
     assert not _select_sources(sources, ["ES"], None, scheduled=True)
 
 

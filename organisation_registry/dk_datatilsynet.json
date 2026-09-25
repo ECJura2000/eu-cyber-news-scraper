@@ -18,6 +18,9 @@
       "language": "da",
       "homepage": "https://www.datatilsynet.dk/",
       "listing_url": "https://www.datatilsynet.dk/presse-og-nyheder",
+      "feed_urls": [
+        "https://www.datatilsynet.dk/gbapi/rss/feed?id=N2Y3M2VkM2EtODEzYi00MDZlLWJkNzEtY2I4ZWQ0YmJmYTVmfDIwY2VlNWY4LTQ5MGMtNDdiYy05NjIxLTZmNjAwZGQwNzhhOA%3D%3D"
+      ],
       "allow_domains": [
         "www.datatilsynet.dk"
       ],
@@ -49,10 +52,11 @@
   },
   "responsibility_by_topic": {},
   "verification": {
-    "status": "smoke_attention",
+    "status": "smoke_healthy",
     "verified_on": "2026-09-25",
     "evidence_urls": [
-      "https://www.datatilsynet.dk/presse-og-nyheder"
+      "https://www.datatilsynet.dk/presse-og-nyheder",
+      "https://www.datatilsynet.dk/gbapi/rss/feed?id=N2Y3M2VkM2EtODEzYi00MDZlLWJkNzEtY2I4ZWQ0YmJmYTVmfDIwY2VlNWY4LTQ5MGMtNDdiYy05NjIxLTZmNjAwZGQwNzhhOA%3D%3D"
     ],
     "schedule_batch": "nordic"
   }

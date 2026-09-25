@@ -87,12 +87,12 @@
 | 西班牙 | `es_cnmc` 西班牙國家市場及競爭委員會（獨立市場及競爭監管機關） | [官方頁面](https://www.cnmc.es/prensa/noticias?page=0) | M |
 | 葡萄牙 | `pt_cnpd` 葡萄牙國家資料保護委員會（獨立資料保護監管機關） | [官方頁面](https://www.cnpd.pt/comunicacao-publica/noticias/) | M |
 | 葡萄牙 | `pt_anacom` 葡萄牙國家通訊管理局（獨立通訊監管機關） | [官方頁面](https://www.anacom.pt/render.jsp?categoryId=166043) | M |
-| 義大利 | `it_garante` 義大利個人資料保護局（獨立資料保護監管機關） | [官方頁面](https://www.garanteprivacy.it/it/news-e-comunicazione/news) | B |
+| 義大利 | `it_garante` 義大利個人資料保護局（獨立資料保護監管機關） | [官方頁面](https://www.garanteprivacy.it/news) | M |
 | 義大利 | `it_mur` 義大利大學及研究部（政府研究主管機關） | [官方頁面](https://www.mur.gov.it/it/news) | B |
 | 波蘭 | `pl_cyfryzacja` 波蘭數位事務部（政府數位政策主管機關） | [官方頁面](https://www.gov.pl/web/cyfryzacja/wiadomosci?page=1) | M |
 | 波蘭 | `pl_uodo` 波蘭個人資料保護局（獨立資料保護監管機關） | [官方頁面](https://uodo.gov.pl/pl/138) | M |
-| 丹麥 | `dk_digst` 丹麥數位政府署（政府數位政策及服務機關） | [官方頁面](https://digst.dk/nyheder/) | M |
-| 丹麥 | `dk_datatilsynet` 丹麥資料保護局（獨立資料保護監管機關） | [官方頁面](https://www.datatilsynet.dk/presse-og-nyheder) | M |
+| 丹麥 | `dk_digst` 丹麥數位政府署（政府數位政策及服務機關） | [新聞存檔](https://digst.dk/nyheder/nyhedsarkiv/) | M |
+| 丹麥 | `dk_datatilsynet` 丹麥資料保護局（獨立資料保護監管機關） | [官方頁面](https://www.datatilsynet.dk/presse-og-nyheder)／[RSS](https://www.datatilsynet.dk/gbapi/rss/feed?id=N2Y3M2VkM2EtODEzYi00MDZlLWJkNzEtY2I4ZWQ0YmJmYTVmfDIwY2VlNWY4LTQ5MGMtNDdiYy05NjIxLTZmNjAwZGQwNzhhOA%3D%3D) | M |
 | 挪威 | `no_nsm` 挪威國家安全局（國家安全及資安主管機關） | [官方頁面](https://nsm.no/aktuelt/) | B |
 | 挪威 | `no_datatilsynet` 挪威資料保護局（獨立資料保護監管機關） | [官方頁面](https://www.datatilsynet.no/aktuelt/) | M |
 | 瑞典 | `se_pts` 瑞典郵政及電信局（獨立通訊監管機關） | [官方頁面](https://www.pts.se/nyheter-och-pressmeddelanden/) | M |
@@ -103,6 +103,21 @@
 | 拉脫維亞 | `lv_dvi` 拉脫維亞國家資料監察局（獨立資料保護監管機關） | [官方頁面](https://www.dvi.gov.lv/lv/jaunumi) | M |
 | 立陶宛 | `lt_nksc` 立陶宛國家網路安全中心（國家資安主管機關） | [官方頁面](https://nksc.lrv.lt/lt/naujienos/) | B |
 | 立陶宛 | `lt_vdai` 立陶宛國家資料保護監察局（獨立資料保護監管機關） | [官方頁面](https://vdai.lrv.lt/lt/naujienos/) | B |
+
+第二批新增國會及公立研究來源，同樣只供手動驗證。`M` 代表本機擷取可用但尚未通過完整內頁、翻譯與 runner 驗證；`B` 代表本機入口失敗；`A` 代表日期解析仍需改善。
+
+| 國家 | 來源 | 官方新聞入口 | 首次本機狀態 |
+| --- | --- | --- | --- |
+| 西班牙 | `es_congreso` 西班牙眾議院 | [新聞稿](https://www.congreso.es/es/notas-de-prensa) | B：403 |
+| 葡萄牙 | `pt_fct` 葡萄牙科學與技術基金會 | [新聞](https://www.fct.pt/media/noticias) | M：12/12 有日期 |
+| 義大利 | `it_camera` 義大利眾議院 | [新聞稿](https://comunicazione.camera.it/comunicati-stampa) | M：10/11 有日期 |
+| 波蘭 | `pl_sejm` 波蘭眾議院 | [動態](https://www.sejm.gov.pl/Sejm10.nsf/wydarzenia.xsp) | A：0/35 有日期 |
+| 丹麥 | `dk_folketing` 丹麥國會 | [新聞](https://www.ft.dk/da/aktuelt/nyheder) | B：403 |
+| 挪威 | `no_storting` 挪威國會 | [新聞庫](https://www.stortinget.no/no/Hva-skjer-pa-Stortinget/Nyhetsarkiv/) | A：0/1 有日期 |
+| 瑞典 | `se_riksdag` 瑞典國會 | [動態](https://www.riksdagen.se/sv/aktuellt/) | A：17/25 有日期 |
+| 愛沙尼亞 | `ee_riigikogu` 愛沙尼亞國會 | [新聞稿](https://www.riigikogu.ee/info-ja-meedia/uudised-ja-pressiteated/) | B：入口已更正，本機仍遇 HTTP challenge |
+| 拉脫維亞 | `lv_saeima` 拉脫維亞國會 | [新聞](https://www.saeima.lv/lv/aktualitates/saeimas-zinas) | A：21/80 有日期 |
+| 立陶宛 | `lt_seimas` 立陶宛國會 | [新聞](https://www.lrs.lt/sip/portal.show?p_k=1&p_r=35403) | A：9/75 有日期 |
 
 瑞典 PTS 官方已公告其與 Digg 預定於 2027 年合併；啟用前須重新核對新機關及新聞入口。挪威為獨立 EEA 國家來源，不標示為歐盟成員國。
 

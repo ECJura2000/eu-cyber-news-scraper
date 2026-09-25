@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-25.1",
+  "canonical_id": "no_storting",
+  "names": {"zh": "挪威國會", "en": "Stortinget", "short": "no_storting", "publisher_aliases": []},
+  "sources": [{
+    "id": "no_storting", "country": "NO", "name_zh": "挪威國會",
+    "name": "Stortinget", "institution_type": "國會",
+    "language": "no", "homepage": "https://www.stortinget.no/",
+    "listing_url": "https://www.stortinget.no/no/Hva-skjer-pa-Stortinget/Nyhetsarkiv/",
+    "allow_domains": ["www.stortinget.no", "stortinget.no"], "critical": false,
+    "schedule_enabled": false, "detail_pages": 8
+  }],
+  "filter": {"topics": ["AI法、模型評估、演算法問責、自動化決策、AI與著作權", "隱私框架（含個人資料保護）", "平台責任、內容審查、推薦演算法", "NIS2、關鍵基礎設施保護", "半導體", "量子技術"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-25", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "smoke_attention", "verified_on": "2026-09-25", "evidence_urls": ["https://www.stortinget.no/no/Hva-skjer-pa-Stortinget/Nyhetsarkiv/", "https://www.stortinget.no/Stortinget-og-demokratiet/"], "schedule_batch": "parliaments_research_candidate"}
+}

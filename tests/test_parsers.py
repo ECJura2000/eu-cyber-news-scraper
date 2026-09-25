@@ -49,6 +49,63 @@ def test_new_country_local_dates(language, date_text):
     assert parse_datetime(date_text, (language,)).date().isoformat() == "2026-09-23"
 
 
+@pytest.mark.parametrize("language,date_text,expected", [
+    ("da", "Dato: 16-09-2026", "2026-09-16"),
+    ("da", "Publiceret 22.09.2026", "2026-09-22"),
+    ("sv", "Publicerades: 2026-09-22", "2026-09-22"),
+    ("lv", "[2026-09-11]", "2026-09-11"),
+])
+def test_official_date_labels_and_formats(language, date_text, expected):
+    from eu_cyber_news_scraper.parsers import _extract_date_text
+
+    value = _extract_date_text(date_text) or date_text
+    assert parse_datetime(value, (language,)).date().isoformat() == expected
+
+
+def test_danish_digst_archive_card_keeps_its_own_date():
+    digst = source(language="da", country="DK", timezone="Europe/Copenhagen")
+    html = """
+    <main><ul class="results-list">
+      <li class="results-list__item"><div class="results-item">
+        <h2><a href="/news/first">Første tilsyn med forbudt AI-praksis er afsluttet</a></h2>
+        <span>Publiceret 14.09.2026</span></div></li>
+      <li class="results-list__item"><div class="results-item">
+        <h2><a href="/news/second">Nye økonomiske nøgletal for telebranchen</a></h2>
+        <span>Publiceret 22.09.2026</span></div></li>
+    </ul></main>
+    """
+    articles = parse_listing(html, digst, digst.listing_url)
+    assert [item.published_date_local for item in articles] == ["2026-09-14", "2026-09-22"]
+
+
+def test_swedish_and_danish_labelled_detail_dates_do_not_use_event_dates():
+    for language, marker, expected in (
+        ("sv", "Publicerades: 2026-09-22", "2026-09-22"),
+        ("da", "Dato: 16-09-2026", "2026-09-16"),
+    ):
+        item = Article("test", "EU", "Agency", "official", language, "Original title", "https://agency.example/news/item")
+        html = f"<main><h1>Official article title</h1><p>Event on 2026-10-12.</p><p>{marker}</p></main>"
+        enrich_from_detail(item, html)
+        assert item.published_date_local == expected
+        assert item.date_source == "visible-text"
+
+
+def test_unlabelled_event_date_does_not_become_publication_date():
+    item = Article("test", "SE", "Agency", "official", "sv", "Original title", "https://agency.example/news/item")
+    enrich_from_detail(item, "<main><h1>Official article title</h1><p>Event on 2026-10-12.</p></main>")
+    assert item.published_at is None
+
+
+def test_danish_registry_uses_verified_dated_entrances():
+    from eu_cyber_news_scraper.config import load_sources
+
+    sources = {item.id: item for item in load_sources()}
+    assert sources["dk_datatilsynet"].feed_urls[0].startswith("https://www.datatilsynet.dk/gbapi/rss/feed?")
+    assert sources["dk_digst"].listing_url == "https://digst.dk/nyheder/nyhedsarkiv/"
+    assert not sources["dk_datatilsynet"].schedule_enabled
+    assert not sources["dk_digst"].schedule_enabled
+
+
 def test_norwegian_source_uses_bokmal_date_parser():
     from eu_cyber_news_scraper.parsers import _date_languages
 

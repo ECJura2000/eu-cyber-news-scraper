@@ -1031,10 +1031,13 @@ name = "Garante per la protezione dei dati personali"
 institution_type = "獨立資料保護監管機關"
 language = "it"
 homepage = "https://www.garanteprivacy.it/"
-listing_url = "https://www.garanteprivacy.it/it/news-e-comunicazione/news"
+listing_url = "https://www.garanteprivacy.it/news"
 allow_domains = ["www.garanteprivacy.it"]
 critical = false
 schedule_enabled = false
+card_selectors = [".journal-content-article p"]
+link_selectors = ["a[href*='/garante/doc.jsp']"]
+date_selectors = ["em"]
 detail_pages = 8
 
 [[sources]]
@@ -1087,7 +1090,7 @@ name = "Digitaliseringsstyrelsen"
 institution_type = "政府數位政策及服務機關"
 language = "da"
 homepage = "https://digst.dk/"
-listing_url = "https://digst.dk/nyheder/"
+listing_url = "https://digst.dk/nyheder/nyhedsarkiv/"
 allow_domains = ["digst.dk"]
 critical = false
 schedule_enabled = false
@@ -1102,6 +1105,7 @@ institution_type = "獨立資料保護監管機關"
 language = "da"
 homepage = "https://www.datatilsynet.dk/"
 listing_url = "https://www.datatilsynet.dk/presse-og-nyheder"
+feed_urls = ["https://www.datatilsynet.dk/gbapi/rss/feed?id=N2Y3M2VkM2EtODEzYi00MDZlLWJkNzEtY2I4ZWQ0YmJmYTVmfDIwY2VlNWY4LTQ5MGMtNDdiYy05NjIxLTZmNjAwZGQwNzhhOA%3D%3D"]
 allow_domains = ["www.datatilsynet.dk"]
 critical = false
 schedule_enabled = false
@@ -1243,6 +1247,146 @@ language = "lt"
 homepage = "https://vdai.lrv.lt/lt/"
 listing_url = "https://vdai.lrv.lt/lt/naujienos/"
 allow_domains = ["vdai.lrv.lt"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "es_congreso"
+country = "ES"
+name_zh = "西班牙眾議院"
+name = "Congreso de los Diputados"
+institution_type = "國會下議院"
+language = "es"
+homepage = "https://www.congreso.es/"
+listing_url = "https://www.congreso.es/es/notas-de-prensa"
+allow_domains = ["www.congreso.es"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "pt_fct"
+country = "PT"
+name_zh = "葡萄牙科學與技術基金會"
+name = "Fundação para a Ciência e a Tecnologia"
+institution_type = "公立研究資助機構"
+language = "pt"
+homepage = "https://www.fct.pt/"
+listing_url = "https://www.fct.pt/media/noticias"
+allow_domains = ["www.fct.pt"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "it_camera"
+country = "IT"
+name_zh = "義大利眾議院"
+name = "Camera dei deputati"
+institution_type = "國會下議院"
+language = "it"
+homepage = "https://www.camera.it/"
+listing_url = "https://comunicazione.camera.it/comunicati-stampa"
+allow_domains = ["comunicazione.camera.it", "www.camera.it"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "pl_sejm"
+country = "PL"
+name_zh = "波蘭眾議院"
+name = "Sejm Rzeczypospolitej Polskiej"
+institution_type = "國會下議院"
+language = "pl"
+homepage = "https://www.sejm.gov.pl/"
+listing_url = "https://www.sejm.gov.pl/Sejm10.nsf/wydarzenia.xsp"
+allow_domains = ["www.sejm.gov.pl", "sejm.gov.pl"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "dk_folketing"
+country = "DK"
+name_zh = "丹麥國會"
+name = "Folketinget"
+institution_type = "國會"
+language = "da"
+homepage = "https://www.ft.dk/"
+listing_url = "https://www.ft.dk/da/aktuelt/nyheder"
+allow_domains = ["www.ft.dk"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "no_storting"
+country = "NO"
+name_zh = "挪威國會"
+name = "Stortinget"
+institution_type = "國會"
+language = "no"
+homepage = "https://www.stortinget.no/"
+listing_url = "https://www.stortinget.no/no/Hva-skjer-pa-Stortinget/Nyhetsarkiv/"
+allow_domains = ["www.stortinget.no", "stortinget.no"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "se_riksdag"
+country = "SE"
+name_zh = "瑞典國會"
+name = "Sveriges riksdag"
+institution_type = "國會"
+language = "sv"
+homepage = "https://www.riksdagen.se/"
+listing_url = "https://www.riksdagen.se/sv/aktuellt/"
+allow_domains = ["www.riksdagen.se"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "ee_riigikogu"
+country = "EE"
+name_zh = "愛沙尼亞國會"
+name = "Riigikogu"
+institution_type = "國會"
+language = "et"
+homepage = "https://www.riigikogu.ee/"
+listing_url = "https://www.riigikogu.ee/info-ja-meedia/uudised-ja-pressiteated/"
+allow_domains = ["www.riigikogu.ee"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "lv_saeima"
+country = "LV"
+name_zh = "拉脫維亞國會"
+name = "Saeima"
+institution_type = "國會"
+language = "lv"
+homepage = "https://www.saeima.lv/"
+listing_url = "https://www.saeima.lv/lv/aktualitates/saeimas-zinas"
+allow_domains = ["www.saeima.lv", "saeima.lv"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "lt_seimas"
+country = "LT"
+name_zh = "立陶宛國會"
+name = "Lietuvos Respublikos Seimas"
+institution_type = "國會"
+language = "lt"
+homepage = "https://www.lrs.lt/"
+listing_url = "https://www.lrs.lt/sip/portal.show?p_k=1&p_r=35403"
+allow_domains = ["www.lrs.lt"]
 critical = false
 schedule_enabled = false
 detail_pages = 8
