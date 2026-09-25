@@ -18,6 +18,7 @@
       "language": "es",
       "homepage": "https://www.cnmc.es/",
       "listing_url": "https://www.cnmc.es/prensa/noticias?page=0",
+      "feed_urls": ["https://www.cnmc.es/feed/prensa/noticias"],
       "allow_domains": [
         "www.cnmc.es"
       ],
@@ -49,10 +50,11 @@
   },
   "responsibility_by_topic": {},
   "verification": {
-    "status": "parse_empty",
+    "status": "smoke_healthy",
     "verified_on": "2026-09-25",
     "evidence_urls": [
-      "https://www.cnmc.es/prensa/noticias?page=0"
+      "https://www.cnmc.es/prensa/noticias?page=0",
+      "https://www.cnmc.es/feed/prensa/noticias"
     ],
     "schedule_batch": "southern_and_poland"
   }

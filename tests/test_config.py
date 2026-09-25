@@ -20,6 +20,9 @@ def test_default_sources_cover_all_target_jurisdictions():
     assert any(source.id == "fr_viginum" for source in sources)
     assert any(source.id == "de_bfdi" for source in sources)
     assert any(source.id == "ie_cnam" for source in sources)
+    assert next(source for source in sources if source.id == "es_cnmc").feed_urls == (
+        "https://www.cnmc.es/feed/prensa/noticias",
+    )
 
 
 def test_source_ids_are_unique():

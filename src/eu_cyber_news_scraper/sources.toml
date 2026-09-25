@@ -989,6 +989,7 @@ institution_type = "獨立市場及競爭監管機關"
 language = "es"
 homepage = "https://www.cnmc.es/"
 listing_url = "https://www.cnmc.es/prensa/noticias?page=0"
+feed_urls = ["https://www.cnmc.es/feed/prensa/noticias"]
 allow_domains = ["www.cnmc.es"]
 critical = false
 schedule_enabled = false
