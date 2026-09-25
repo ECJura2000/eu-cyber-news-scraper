@@ -18,11 +18,11 @@ def test_builtin_registry_covers_all_configured_sources():
     sources = load_sources()
     registry = load_organisation_registry()
     assert {source.id for source in sources} == set(registry.source_ids)
-    assert len(registry.modules) == 55
+    assert len(registry.modules) == 75
     assert not registry.errors
     assert len(registry.registry_hash) == 64
     assert all(module.topics for module in registry.modules)
-    assert len(registry.source_rows) == 55
+    assert len(registry.source_rows) == 75
     assert registry.module_for_source("missing") is None
 
 

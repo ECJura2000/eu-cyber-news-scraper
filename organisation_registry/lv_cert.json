@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-25.1",
+  "canonical_id": "lv_cert",
+  "names": {
+    "zh": "拉脫維亞國家資安事件應變中心",
+    "en": "CERT.LV",
+    "short": "lv_cert",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "lv_cert",
+      "country": "LV",
+      "name_zh": "拉脫維亞國家資安事件應變中心",
+      "name": "CERT.LV",
+      "institution_type": "國家資安事件應變機構",
+      "language": "lv",
+      "homepage": "https://www.cert.gov.lv/",
+      "listing_url": "https://www.cert.gov.lv/lv/",
+      "allow_domains": [
+        "www.cert.gov.lv"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "關鍵基礎設施的實體與數位融合保護"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-25",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_attention",
+    "verified_on": "2026-09-25",
+    "evidence_urls": [
+      "https://www.cert.gov.lv/lv/"
+    ],
+    "schedule_batch": "baltic"
+  }
+}

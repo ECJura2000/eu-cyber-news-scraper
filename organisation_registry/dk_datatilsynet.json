@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-25.1",
+  "canonical_id": "dk_datatilsynet",
+  "names": {
+    "zh": "丹麥資料保護局",
+    "en": "Datatilsynet",
+    "short": "dk_datatilsynet",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "dk_datatilsynet",
+      "country": "DK",
+      "name_zh": "丹麥資料保護局",
+      "name": "Datatilsynet",
+      "institution_type": "獨立資料保護監管機關",
+      "language": "da",
+      "homepage": "https://www.datatilsynet.dk/",
+      "listing_url": "https://www.datatilsynet.dk/presse-og-nyheder",
+      "allow_domains": [
+        "www.datatilsynet.dk"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "隱私框架（含個人資料保護）",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "數位身份"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-25",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_attention",
+    "verified_on": "2026-09-25",
+    "evidence_urls": [
+      "https://www.datatilsynet.dk/presse-og-nyheder"
+    ],
+    "schedule_batch": "nordic"
+  }
+}

@@ -52,8 +52,8 @@ def test_high_risk_listing_layout_contract(source_id):
         assert articles[0].summary
 
 
-def test_all_configured_sources_have_one_real_url_contract():
-    source_ids = {source.id for source in load_sources()}
+def test_all_scheduled_sources_have_one_real_url_contract():
+    source_ids = {source.id for source in load_sources() if source.schedule_enabled}
     fixture_ids = {row["source_id"] for row in contract_rows()}
     assert len(fixture_ids) == 55
     assert fixture_ids == source_ids
@@ -119,8 +119,8 @@ def test_official_detail_parser_contract(row):
     assert article.title.casefold() not in {"navigation und service", "meldung lesen"}
 
 
-def test_all_sources_have_an_executable_parser_fixture(fixture_dir):
-    source_ids = {source.id for source in load_sources()}
+def test_all_scheduled_sources_have_an_executable_parser_fixture(fixture_dir):
+    source_ids = {source.id for source in load_sources() if source.schedule_enabled}
     covered = {path.stem.removeprefix("critical_") for path in fixture_dir.glob("critical_*.html")}
     covered.update(row["source_id"] for row in attention_layout_rows())
     covered.update(LAYOUT_CONTRACTS)

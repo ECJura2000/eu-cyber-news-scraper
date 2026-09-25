@@ -31,6 +31,12 @@ def test_offline_search_index_reuse_and_coverage(tmp_path, capsys):
     assert workbook["查詢資訊"]["B4"].value == "是"
     assert sum(1 for _ in workbook["查詢結果"].values) == 2
     workbook.close()
+    main([*args, "--country", "IE"])
+    workbook = load_workbook(output, read_only=True)
+    assert sum(1 for _ in workbook["查詢結果"].values) == 2
+    workbook.close()
+    with pytest.raises(SystemExit, match="沒有符合條件"):
+        main([*args, "--country", "ES"])
     main(args)
     assert "沿用未變規則" in capsys.readouterr().out
     main(["--corpus-dir", str(corpus), "--source", "ie_comreg", "--since", "2026-08-01", "--until", "2026-09-21", "--output", str(output)])

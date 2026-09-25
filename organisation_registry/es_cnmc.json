@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-25.1",
+  "canonical_id": "es_cnmc",
+  "names": {
+    "zh": "西班牙國家市場及競爭委員會",
+    "en": "Comisión Nacional de los Mercados y la Competencia",
+    "short": "es_cnmc",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "es_cnmc",
+      "country": "ES",
+      "name_zh": "西班牙國家市場及競爭委員會",
+      "name": "Comisión Nacional de los Mercados y la Competencia",
+      "institution_type": "獨立市場及競爭監管機關",
+      "language": "es",
+      "homepage": "https://www.cnmc.es/",
+      "listing_url": "https://www.cnmc.es/prensa/noticias?page=0",
+      "allow_domains": [
+        "www.cnmc.es"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "平台責任、內容審查、推薦演算法",
+      "競爭規範面向（平台責任的市場結構面）",
+      "NIS2、關鍵基礎設施保護",
+      "跨境資料流通、資料主權、資料開放與再利用"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-25",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "parse_empty",
+    "verified_on": "2026-09-25",
+    "evidence_urls": [
+      "https://www.cnmc.es/prensa/noticias?page=0"
+    ],
+    "schedule_batch": "southern_and_poland"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-25.1",
+  "canonical_id": "se_pts",
+  "names": {
+    "zh": "瑞典郵政及電信局",
+    "en": "Post- och telestyrelsen",
+    "short": "se_pts",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "se_pts",
+      "country": "SE",
+      "name_zh": "瑞典郵政及電信局",
+      "name": "Post- och telestyrelsen",
+      "institution_type": "獨立通訊監管機關",
+      "language": "sv",
+      "homepage": "https://www.pts.se/",
+      "listing_url": "https://www.pts.se/nyheter-och-pressmeddelanden/",
+      "allow_domains": [
+        "www.pts.se"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "數位身份",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "關鍵基礎設施的實體與數位融合保護"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-25",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_attention",
+    "verified_on": "2026-09-25",
+    "evidence_urls": [
+      "https://www.pts.se/nyheter-och-pressmeddelanden/"
+    ],
+    "schedule_batch": "nordic"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-25.1",
+  "canonical_id": "pl_uodo",
+  "names": {
+    "zh": "波蘭個人資料保護局",
+    "en": "Urząd Ochrony Danych Osobowych",
+    "short": "pl_uodo",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "pl_uodo",
+      "country": "PL",
+      "name_zh": "波蘭個人資料保護局",
+      "name": "Urząd Ochrony Danych Osobowych",
+      "institution_type": "獨立資料保護監管機關",
+      "language": "pl",
+      "homepage": "https://uodo.gov.pl/",
+      "listing_url": "https://uodo.gov.pl/pl/138",
+      "allow_domains": [
+        "uodo.gov.pl"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "隱私框架（含個人資料保護）",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "數位身份"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-25",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-09-25",
+    "evidence_urls": [
+      "https://uodo.gov.pl/pl/138"
+    ],
+    "schedule_batch": "southern_and_poland"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-25.1",
+  "canonical_id": "it_mur",
+  "names": {
+    "zh": "義大利大學及研究部",
+    "en": "Ministero dell'Università e della Ricerca",
+    "short": "it_mur",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "it_mur",
+      "country": "IT",
+      "name_zh": "義大利大學及研究部",
+      "name": "Ministero dell'Università e della Ricerca",
+      "institution_type": "政府研究主管機關",
+      "language": "it",
+      "homepage": "https://www.mur.gov.it/",
+      "listing_url": "https://www.mur.gov.it/it/news",
+      "allow_domains": [
+        "www.mur.gov.it"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "半導體",
+      "量子技術",
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-25",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "blocked_runner",
+    "verified_on": "2026-09-25",
+    "evidence_urls": [
+      "https://www.mur.gov.it/it/news"
+    ],
+    "schedule_batch": "southern_and_poland"
+  }
+}

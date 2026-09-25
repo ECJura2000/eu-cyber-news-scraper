@@ -12,6 +12,7 @@ from pathlib import Path
 
 from openpyxl import Workbook
 
+from .cli import COUNTRY_LABELS
 from .config import load_sources_and_registry
 from .exporter import safe_excel_text
 from .models import Article
@@ -77,6 +78,7 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument("--until")
     parser.add_argument("--days", type=int)
     parser.add_argument("--source", action="append")
+    parser.add_argument("--country", action="append", choices=sorted(COUNTRY_LABELS))
     parser.add_argument("--topic", action="append", help="JSON 中的完整主題名稱；可重複。")
     parser.add_argument("--output", type=Path, default=Path("eu-search.xlsx"))
     args = parser.parse_args(argv)
@@ -100,7 +102,14 @@ def main(argv: list[str] | None = None) -> None:
         raise SystemExit("[error] 找不到篩選前官方文章 *.corpus.jsonl")
     args.corpus_dir.mkdir(parents=True, exist_ok=True)
     sources, registry = load_sources_and_registry()
-    wanted_sources = set(args.source or [source.id for source in sources if not source.is_paused(period.end_date)])
+    selected = [source for source in sources if (not args.country or source.country in args.country)
+                and (not args.source or source.id in args.source)]
+    if args.source and set(args.source) - {source.id for source in sources}:
+        raise SystemExit("[error] 未知來源代碼")
+    if not selected:
+        raise SystemExit("[error] 沒有符合條件的來源")
+    wanted_sources = {source.id for source in selected if (source.schedule_enabled or args.source or args.country)
+                      and (not source.is_paused(period.end_date) or args.source)}
     database = args.corpus_dir / ".offline-search.sqlite3"
     with closing(sqlite3.connect(database)) as connection:
         _index(connection, paths)
@@ -125,7 +134,7 @@ def main(argv: list[str] | None = None) -> None:
         if not covered:
             print("[warning] 保存資料未涵蓋完整查詢期間；結果僅為部分搜尋。", file=sys.stderr)
         fingerprint = sha256(repr((
-            profile.hash, period.since.isoformat(), period.until.isoformat(), args.source, args.topic,
+            profile.hash, registry.registry_hash, period.since.isoformat(), period.until.isoformat(), args.source, args.country, args.topic,
             [(str(path), path.stat().st_size, path.stat().st_mtime_ns) for path in paths],
             [(str(path), path.stat().st_mtime_ns) for path in (item.with_name(item.name.replace(".corpus.jsonl", ".run.json")) for item in paths) if path.exists()],
         )).encode()).hexdigest()
@@ -137,9 +146,9 @@ def main(argv: list[str] | None = None) -> None:
             return
         clause = "WHERE published_at>=? AND published_at<?"
         params: list[str] = [period.since.isoformat(), period.until.isoformat()]
-        if args.source:
-            clause += f" AND source_id IN ({','.join('?' for _ in args.source)})"
-            params.extend(args.source)
+        if args.source or args.country:
+            clause += f" AND source_id IN ({','.join('?' for _ in wanted_sources)})"
+            params.extend(sorted(wanted_sources))
         rows = connection.execute(f"SELECT payload FROM articles {clause}", params).fetchall()
     unique: dict[str, Article] = {}
     for (value,) in rows:

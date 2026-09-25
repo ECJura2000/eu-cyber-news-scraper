@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-25.1",
+  "canonical_id": "dk_digst",
+  "names": {
+    "zh": "丹麥數位政府署",
+    "en": "Digitaliseringsstyrelsen",
+    "short": "dk_digst",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "dk_digst",
+      "country": "DK",
+      "name_zh": "丹麥數位政府署",
+      "name": "Digitaliseringsstyrelsen",
+      "institution_type": "政府數位政策及服務機關",
+      "language": "da",
+      "homepage": "https://digst.dk/",
+      "listing_url": "https://digst.dk/nyheder/",
+      "allow_domains": [
+        "digst.dk"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "數位身份",
+      "平台責任、內容審查、推薦演算法",
+      "NIS2、關鍵基礎設施保護",
+      "關鍵基礎設施的實體與數位融合保護"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-25",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_attention",
+    "verified_on": "2026-09-25",
+    "evidence_urls": [
+      "https://digst.dk/nyheder/"
+    ],
+    "schedule_batch": "nordic"
+  }
+}

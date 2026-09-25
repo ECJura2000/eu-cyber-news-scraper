@@ -3,16 +3,18 @@ from eu_cyber_news_scraper.coverage import load_coverage
 from eu_cyber_news_scraper.topics import OBSERVATION_TOPICS
 
 
-def test_all_topics_cover_all_four_jurisdictions_with_known_sources():
+def test_all_topics_cover_four_legacy_and_ten_new_jurisdictions():
     sources = load_sources()
     rows = load_coverage(sources)
     topics = {row.topic for row in rows}
 
-    assert len(sources) == 55
+    assert len(sources) == 75
     assert len(topics) == 15
     assert topics == set(OBSERVATION_TOPICS)
-    assert len(rows) == 60
+    assert len(rows) == 210
     for topic in topics:
-        assert {row.country for row in rows if row.topic == topic} == {"EU", "FR", "DE", "IE"}
-    assert all(row.roles and row.evidence_urls and row.verified_on == "2026-07-11" for row in rows)
+        assert {row.country for row in rows if row.topic == topic} == {"EU", "FR", "DE", "IE", "ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT"}
+    assert all(row.roles and row.verified_on == ("2026-07-11" if row.country in {"EU", "FR", "DE", "IE"} else "2026-09-25") for row in rows)
+    assert all(row.evidence_urls for row in rows if row.source_ids)
+    assert all(row.authorities == "未覆蓋" for row in rows if not row.source_ids)
     assert all(url.startswith("https://") for row in rows for url in row.evidence_urls)

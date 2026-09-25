@@ -1,12 +1,12 @@
 # 歐盟資安法制官方新聞爬蟲
 
-本專案抓取歐盟、法國、德國與愛爾蘭的官方機關、法定監理機構、行政法人、公私協力組織、公共研究機構及政策智庫新聞，分類器與主管機關矩陣使用相同的 15 項觀測議題。
+本專案抓取歐洲官方機關、法定監理機構、行政法人與公共研究機構新聞。原有 EU、FR、DE、IE 來源維持每週排程；另登錄 ES、PT、IT、PL、DK、NO、SE、EE、LV、LT 十國官方入口，先供手動驗證。分類器與主管機關矩陣使用相同的 15 項觀測議題。
 
 設計承接既有 `UK-news-scraper` 的實務做法：優先使用 RSS／Atom，找不到 feed 時才解析 HTML；每個來源獨立失敗、併發執行、穩定去重、輸出 Excel 與 JSON 執行摘要，並保留來源健康狀態。程式只設定官方或公共研究來源，不以商業媒體或 Google News 作為預設備援。
 
 ## 機關 Registry
 
-機關模組位於 [`organisation_registry/`](organisation_registry/)，55 個新聞來源各有一份 schema v2 JSON。每個模組包含來源 URL 與解析設定、主題白名單、健康門檻、機關沿革及各主題責任機關；預設執行直接由這些 JSON 建立來源清單。新增或覆寫模組可放在 macOS 的 `~/Library/Application Support/EUCyberNewsScraper/organisations.d`，或使用 `EU_CYBER_ORGANISATION_DIR` 指定目錄，重啟後載入。外部模組驗證失敗會保留同 ID 的內建模組；無內建版本的新模組會略過，並讓 `.run.json` 的 `organisation_audit_status` 成為 `degraded`。
+機關模組位於 [`organisation_registry/`](organisation_registry/)，75 個新聞來源各有一份 schema v2 JSON（55 個原來源、20 個十國待驗證來源）。每個模組包含來源 URL 與解析設定、主題白名單、健康門檻、機關沿革及各主題責任機關；預設執行直接由這些 JSON 建立來源清單。新增或覆寫模組可放在 macOS 的 `~/Library/Application Support/EUCyberNewsScraper/organisations.d`，或使用 `EU_CYBER_ORGANISATION_DIR` 指定目錄，重啟後載入。外部模組驗證失敗會保留同 ID 的內建模組；無內建版本的新模組會略過，並讓 `.run.json` 的 `organisation_audit_status` 成為 `degraded`。
 
 篩選流程採 Boolean 候選判定後接 BM25 主題評分，標題權重 2、摘要權重 1、`k1=1.2`、`b=0.75`，分數固定四位小數。機關模組的 `filter.topics` 是正式白名單；Excel 的「篩選設定」及新聞欄位會記錄 Boolean/BM25 分數、命中同義詞、實際發布機關與責任機關，JSONL 與 `.run.json` 也保留相同稽核資訊。
 
@@ -21,13 +21,17 @@ python -m eu_cyber_news_scraper --open-organisation-dir
 
 ## 自訂主題與離線重查
 
-內建 [`topic_profile.json`](src/eu_cyber_news_scraper/topic_profile.json) 是 schema v1 範例，列出 15 個既有主題。複製後可用 `--topics-json 路徑` 載入；修改 `name`、`enabled` 或刪除主題即可改名、停用或移除。既有主題預設沿用已驗證的多語規則與來源白名單；改名時填 `legacy_name` 指向原名稱。新主題用 `keywords: [{"term":"...","weight":2}]`、`synonyms`、`penalties`、`excludes` 設定，預設搜尋所有啟用來源；`excludes` 只移除本主題命中，不影響文章的其他主題。`inherit_legacy: false` 可停用該主題舊詞規則。可選填 `responsibility_owner`；未填時 Excel 顯示「未設定」，不沿用其他主題的責任機關。
+詞項可用字串（舊格式），或用 `{ "term": "inteligencia artificial", "language": "es", "concept": "ai" }`；加權詞另需 `weight`。`language` 可為十國語言代碼、en／fr／de，或 `*`（明確跨語言縮寫）。同一 `concept` 的譯名與詞形只取最高權重一次；比對原文、保留重音與詞界，不使用繁中標題反推命中。`penalties`、`excludes` 也可指定語言，且只作用於所屬主題。
+
+內建 [`topic_profile.json`](src/eu_cyber_news_scraper/topic_profile.json) 是 schema v2 完整替換範例，列出原有 15 個主題及十國原文同義詞。複製後可用 `--topics-json 路徑` 隨時換檔、重跑；舊 schema v1 仍可讀取。`mode: "replace"` 表示整份替換；`mode: "merge"` 表示以內建 15 主題為基礎，同名主題整筆取代、新名稱新增，`remove_topics` 才會刪除主題。增補格式見 [`multilingual-merge.json`](examples/topics/multilingual-merge.json)。改名時填 `legacy_name` 指向原名稱；新主題預設搜尋所有來源，舊主題沿用來源白名單。
 
 `schedule.days` 設每週回溯天數；`manual` 可設 `days` 或 `since` 加 `until`。命令列日期優先於 JSON，日期仍支援西元／民國及臺北時區起訖日含當日。JSON 無效時在抓取前停止。每次執行會在摘要與事件紀錄保存規則 SHA-256；規則變更會分開健康觀察基線。
 
 ```bash
 python -m eu_cyber_news_scraper --jsonl --topics-json my-topics.json
 python -m eu_cyber_news_scraper search --corpus-dir 新聞放置區 --topics-json my-topics.json --since 1150901 --until 1150930 --output results.xlsx
+python -m eu_cyber_news_scraper --country ES --topics-json examples/topics/multilingual-merge.json --days 30
+python -m eu_cyber_news_scraper search --corpus-dir 新聞放置區 --country ES --topics-json my-topics.json --output spain.xlsx
 ```
 
 離線搜尋會在資料夾建立 `.offline-search.sqlite3` 增量索引；相同規則、日期、來源與文章資料時重用既有結果。只有正式 manifest 顯示該日期期間、所選來源、產物與品質門檻均完整時，結果才標為「資料涵蓋完整」；否則輸出部分結果並明示缺口。每週 artifact 同時提供入選 `.jsonl` 與篩選前 `.corpus.jsonl`，驗證器重算兩者與 Excel 的筆數、SHA-256。
@@ -137,8 +141,8 @@ python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95
 - 跨年度新聞網址、分頁格式、最多頁數及健康基線觀察次數
 
 主管機關覆蓋矩陣集中於 `src/eu_cyber_news_scraper/authority_coverage.toml`。目前固定驗證
-15 個議題 × 4 個法域共 60 格；任一格缺少機關或監測來源，測試即會失敗。
-目前共 55 個來源；研究機構與智庫只作為政策研究、技術評估及生態系觀測來源，不視為具有監理權限的主管機關。
+原 15 個議題 × 4 個法域共 60 格仍需完整；十國另列 150 格，未有可信來源的格子明示「未覆蓋」，有來源但未查證權責則為「未設定」。
+目前共 75 個來源；十國新增的 20 個均為 `schedule_enabled = false`，只有明確指定 `--country` 或 `--source` 才會手動抓取。研究機構與智庫只作為政策研究、技術評估及生態系觀測來源，不視為具有監理權限的主管機關。
 
 `.source-health.json` 使用 schema v2，以執行 profile 與每來源設定 fingerprint 分隔基線，最多保留每個來源最近 12 個獨立 observation；同一期間重跑會取代既有 observation，不會累積成連續異常。舊 v1 會保存在 `legacy`，但不參與新基線。`--health-write auto` 只讓完整 rolling 且啟用內頁的標準執行寫入；固定歷史期間預設唯讀，也可明確使用 `always` 或 `never`。健康 state 只在 Excel、JSONL 與 manifest 完整驗證並發布後寫入。
 

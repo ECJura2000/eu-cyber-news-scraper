@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-25.1",
+  "canonical_id": "lv_dvi",
+  "names": {
+    "zh": "拉脫維亞國家資料監察局",
+    "en": "Datu valsts inspekcija",
+    "short": "lv_dvi",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "lv_dvi",
+      "country": "LV",
+      "name_zh": "拉脫維亞國家資料監察局",
+      "name": "Datu valsts inspekcija",
+      "institution_type": "獨立資料保護監管機關",
+      "language": "lv",
+      "homepage": "https://www.dvi.gov.lv/lv",
+      "listing_url": "https://www.dvi.gov.lv/lv/jaunumi",
+      "allow_domains": [
+        "www.dvi.gov.lv"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "隱私框架（含個人資料保護）",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "數位身份"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-25",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-09-25",
+    "evidence_urls": [
+      "https://www.dvi.gov.lv/lv/jaunumi"
+    ],
+    "schedule_batch": "baltic"
+  }
+}

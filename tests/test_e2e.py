@@ -68,7 +68,7 @@ def test_offline_pipeline_writes_atomic_artifacts_and_quality_metadata(monkeypat
     assert summary["period"]["since_calendar"] == "roc"
     assert summary["organisation_audit_status"] == "complete"
     assert len(summary["organisation_registry_hash"]) == 64
-    assert len(summary["organisation_modules"]) == 55
+    assert len(summary["organisation_modules"]) == 75
     assert (tmp_path / ".state" / ".source-health.json").exists()
     assert output.with_suffix(".jsonl").exists()
     assert output.with_suffix(".corpus.jsonl").exists()

@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-25.1",
+  "canonical_id": "pt_anacom",
+  "names": {
+    "zh": "葡萄牙國家通訊管理局",
+    "en": "Autoridade Nacional de Comunicações",
+    "short": "pt_anacom",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "pt_anacom",
+      "country": "PT",
+      "name_zh": "葡萄牙國家通訊管理局",
+      "name": "Autoridade Nacional de Comunicações",
+      "institution_type": "獨立通訊監管機關",
+      "language": "pt",
+      "homepage": "https://www.anacom.pt/",
+      "listing_url": "https://www.anacom.pt/render.jsp?categoryId=166043",
+      "allow_domains": [
+        "www.anacom.pt"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "NIS2、關鍵基礎設施保護",
+      "關鍵基礎設施的實體與數位融合保護",
+      "平台責任、內容審查、推薦演算法",
+      "數位身份",
+      "跨境資料流通、資料主權、資料開放與再利用"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-25",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-09-25",
+    "evidence_urls": [
+      "https://www.anacom.pt/render.jsp?categoryId=166043"
+    ],
+    "schedule_batch": "southern_and_poland"
+  }
+}

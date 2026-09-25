@@ -44,6 +44,14 @@ def test_select_sources_combines_country_and_source_filters():
     assert [source.id for source in selected] == ["fr_anssi"]
 
 
+def test_new_sources_are_manual_only_until_promoted():
+    sources = load_sources()
+    assert len(_select_sources(sources, None, None, scheduled=True)) == 53
+    assert len(_select_sources(sources, None, None)) == 53
+    assert {source.id for source in _select_sources(sources, ["ES"], None)} == {"es_aepd", "es_cnmc"}
+    assert not _select_sources(sources, ["ES"], None, scheduled=True)
+
+
 def test_select_sources_rejects_unknown_ids():
     with pytest.raises(SystemExit, match="未知來源代碼"):
         _select_sources(load_sources(), None, ["missing-source"])

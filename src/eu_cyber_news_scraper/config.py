@@ -30,6 +30,16 @@ COUNTRY_TIMEZONES = {
     "FR": "Europe/Paris",
     "DE": "Europe/Berlin",
     "IE": "Europe/Dublin",
+    "ES": "Europe/Madrid",
+    "PT": "Europe/Lisbon",
+    "IT": "Europe/Rome",
+    "PL": "Europe/Warsaw",
+    "DK": "Europe/Copenhagen",
+    "NO": "Europe/Oslo",
+    "SE": "Europe/Stockholm",
+    "EE": "Europe/Tallinn",
+    "LV": "Europe/Riga",
+    "LT": "Europe/Vilnius",
 }
 
 
@@ -53,6 +63,8 @@ def load_sources_and_registry(
         rows = registry.source_rows
     sources = []
     for row in rows:
+        if "schedule_enabled" in row and not isinstance(row["schedule_enabled"], bool):
+            raise ValueError(f"{row['id']}: schedule_enabled must be boolean")
         sources.append(
             Source(
                 id=row["id"],
@@ -94,6 +106,7 @@ def load_sources_and_registry(
                 pause_evidence_url=str(row.get("pause_evidence_url", "")),
                 min_listing_bytes=int(row.get("min_listing_bytes", 0)),
                 user_agent=str(row.get("user_agent", "")),
+                schedule_enabled=row.get("schedule_enabled", True),
             )
         )
     _validate_sources(sources)
@@ -105,7 +118,7 @@ def _validate_sources(sources: list[Source]) -> None:
     duplicates = sorted({value for value in ids if ids.count(value) > 1})
     if duplicates:
         raise ValueError(f"Duplicate source ids: {', '.join(duplicates)}")
-    invalid_countries = sorted({source.country for source in sources} - {"EU", "FR", "DE", "IE"})
+    invalid_countries = sorted({source.country for source in sources} - set(COUNTRY_TIMEZONES))
     if invalid_countries:
         raise ValueError(f"Unsupported country codes: {', '.join(invalid_countries)}")
     if not sources:

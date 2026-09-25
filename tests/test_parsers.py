@@ -38,6 +38,24 @@ def test_parse_rss_applies_domain_and_path_policy(fixture_dir):
     assert articles[0].published_at.tzinfo == timezone.utc
 
 
+@pytest.mark.parametrize("language,date_text", [
+    ("es", "23 de septiembre de 2026"), ("pt", "23 de setembro de 2026"),
+    ("it", "23 settembre 2026"), ("pl", "23 września 2026"),
+    ("da", "23. september 2026"), ("sv", "23 september 2026"),
+    ("et", "23. september 2026"), ("lv", "2026. gada 23. septembrī"),
+    ("lt", "2026 m. rugsėjo 23 d."),
+])
+def test_new_country_local_dates(language, date_text):
+    assert parse_datetime(date_text, (language,)).date().isoformat() == "2026-09-23"
+
+
+def test_norwegian_source_uses_bokmal_date_parser():
+    from eu_cyber_news_scraper.parsers import _date_languages
+
+    assert _date_languages("no") == ("nb",)
+    assert parse_datetime("23. september 2026", _date_languages("no")).date().isoformat() == "2026-09-23"
+
+
 def test_discover_and_parse_french_listing(fixture_dir):
     html = (fixture_dir / "listing_fr.html").read_text(encoding="utf-8")
     fr_source = source(

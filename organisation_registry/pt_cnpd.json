@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-25.1",
+  "canonical_id": "pt_cnpd",
+  "names": {
+    "zh": "葡萄牙國家資料保護委員會",
+    "en": "Comissão Nacional de Proteção de Dados",
+    "short": "pt_cnpd",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "pt_cnpd",
+      "country": "PT",
+      "name_zh": "葡萄牙國家資料保護委員會",
+      "name": "Comissão Nacional de Proteção de Dados",
+      "institution_type": "獨立資料保護監管機關",
+      "language": "pt",
+      "homepage": "https://www.cnpd.pt/",
+      "listing_url": "https://www.cnpd.pt/comunicacao-publica/noticias/",
+      "allow_domains": [
+        "www.cnpd.pt"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "隱私框架（含個人資料保護）",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "數位身份",
+      "平台責任、內容審查、推薦演算法"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-25",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-09-25",
+    "evidence_urls": [
+      "https://www.cnpd.pt/comunicacao-publica/noticias/"
+    ],
+    "schedule_batch": "southern_and_poland"
+  }
+}
