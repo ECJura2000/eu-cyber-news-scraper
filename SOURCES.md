@@ -122,6 +122,31 @@
 瑞典 PTS 官方已公告其與 Digg 預定於 2027 年合併；啟用前須重新核對新機關及新聞入口。挪威為獨立 EEA 國家來源，不標示為歐盟成員國。
 
 
+## 荷蘭、葡萄牙、羅馬尼亞、芬蘭新增候選來源
+
+以下 16 個來源涵蓋主管機關、獨立監管機關、非營利公私協力平台、國家研究機構與大學。全部僅供手動查詢（`schedule_enabled = false`）；表中的本機檢查不等於 GitHub runner 或完整抓取驗收。官方站點可暫時阻擋自動連線，需在後續批次測試確認。
+
+| 國家 | 代碼與制度定位 | 官方新聞入口 | 2026-09-26 本機檢查 |
+| --- | --- | --- | --- |
+| 荷蘭 | `nl_ncsc` 國家資安中心 | [新聞](https://www.ncsc.nl/nieuws)、[官方 RSS 說明](https://www.ncsc.nl/rss) | RSS 353/353 有日期 |
+| 荷蘭 | `nl_ap` 獨立資料保護監管機關 | [新聞](https://www.autoriteitpersoonsgegevens.nl/actueel) | 官方 RSS 10/10 有日期 |
+| 荷蘭 | `nl_surf` 教育與研究 ICT 合作社 | [新聞](https://www.surf.nl/en/news) | 手動抓取健康，9 筆列表結果 |
+| 荷蘭 | `nl_security_delta` 企業、政府與學研公私協力群聚 | [新聞](https://securitydelta.nl/news/overview) | 專用卡片規則重跑，12/12 標題與日期正確 |
+| 荷蘭 | `nl_tudelft` 公立大學資安研究 | [新聞](https://www.tudelft.nl/en/cybersecurity/news) | 通用解析誤含導覽；待專用選擇器 |
+| 葡萄牙 | `pt_cncs` 國家資安中心 | [新聞](https://dyn.cncs.gov.pt/pt/noticias/) | 本機 HTTP 513／連線異常；待重試 |
+| 葡萄牙 | `pt_inesc_tec` 非營利產學聯合研究機構 | [新聞稿](https://www.inesctec.pt/en/press-releases) | 通用解析有非新聞項目；待專用選擇器 |
+| 葡萄牙 | `pt_ist` 里斯本大學高等技術學院 | [新聞](https://tecnico.ulisboa.pt/pt/noticias/) | 新聞卡片未顯示日期；需內頁核對 |
+| 羅馬尼亞 | `ro_dnsc` 國家資安局 | [官網](https://www.dnsc.ro/) | 本機 HTTP 403；待取得穩定新聞入口 |
+| 羅馬尼亞 | `ro_anspdcp` 獨立資料保護監管機關 | [官網新聞](https://www.dataprotection.ro/index.jsp?page=home&lang=ro) | 通用解析混入導覽；待專用選擇器 |
+| 羅馬尼亞 | `ro_ici` 國家資訊科技研究發展院 | [官網](https://ici.ro/) | 本機連線逾時；待重試 |
+| 羅馬尼亞 | `ro_upb` 布加勒斯特理工大學 | [新聞](https://upb.ro/category/stiri/) | 專用卡片規則排除作者頁；手動抓取健康 |
+| 芬蘭 | `fi_ncsc` 交通與通訊局國家資安中心 | [新聞](https://www.kyberturvallisuuskeskus.fi/fi/ajankohtaista)、[官方 RSS 說明](https://kyberturvallisuuskeskus.fi/fi/rss-syotteet) | RSS 500/500 有日期 |
+| 芬蘭 | `fi_tietosuoja` 獨立資料保護監管機關 | [新聞](https://tietosuoja.fi/uutiset-tiedotteet) | 本機 HTTP 403；待重試 |
+| 芬蘭 | `fi_vtt` 國有非營利應用研究機構 | [新聞](https://www.vttresearch.com/en/news-stories/news-and-stories) | 通用解析有非新聞項目；待專用選擇器 |
+| 芬蘭 | `fi_haic` 阿爾托／赫爾辛基大學與 VTT 聯合資安研究所 | [新聞首頁](https://haic.aalto.fi/) | 手動抓取健康；11 筆列表結果 |
+
+上述研究與公私協力來源的文章不等於法定主管機關意見。每個來源的職掌與範圍、原文語言、主題、查證日期及連結均記於同名 `organisation_registry/*.json`；職掌未查證為正式責任機關時 `responsibility_by_topic` 維持空值。
+
 ## 維護原則
 
 - 優先官方 RSS／Atom，其次是官方 HTML；預設不採商業媒體摘要。

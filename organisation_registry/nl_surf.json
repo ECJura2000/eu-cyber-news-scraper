@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "nl_surf",
+  "names": {
+    "zh": "荷蘭 SURF 教育研究數位合作社",
+    "en": "SURF",
+    "short": "nl_surf",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "nl_surf",
+      "country": "NL",
+      "name_zh": "荷蘭 SURF 教育研究數位合作社",
+      "name": "SURF",
+      "institution_type": "教育研究機構數位基礎設施合作社",
+      "language": "en",
+      "homepage": "https://www.surf.nl/en",
+      "listing_url": "https://www.surf.nl/en/news",
+      "allow_domains": [
+        "www.surf.nl"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "數位身份",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-26",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-09-26",
+    "evidence_urls": [
+      "https://www.surf.nl/en",
+      "https://www.surf.nl/en/news"
+    ],
+    "schedule_batch": "nl_pt_ro_fi_candidate"
+  }
+}

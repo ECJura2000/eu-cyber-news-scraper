@@ -1,0 +1,63 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "nl_ap",
+  "names": {
+    "zh": "荷蘭個人資料保護局",
+    "en": "Autoriteit Persoonsgegevens",
+    "short": "nl_ap",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "nl_ap",
+      "country": "NL",
+      "name_zh": "荷蘭個人資料保護局",
+      "name": "Autoriteit Persoonsgegevens",
+      "institution_type": "獨立資料保護監管機關",
+      "language": "nl",
+      "homepage": "https://www.autoriteitpersoonsgegevens.nl/",
+      "listing_url": "https://www.autoriteitpersoonsgegevens.nl/actueel",
+      "feed_urls": ["https://www.autoriteitpersoonsgegevens.nl/feed/article/rss.xml"],
+      "allow_domains": [
+        "www.autoriteitpersoonsgegevens.nl",
+        "autoriteitpersoonsgegevens.nl"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "數位身份"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-26",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-09-26",
+    "evidence_urls": [
+      "https://www.autoriteitpersoonsgegevens.nl/",
+      "https://www.autoriteitpersoonsgegevens.nl/actueel",
+      "https://www.autoriteitpersoonsgegevens.nl/feed/article/rss.xml"
+    ],
+    "schedule_batch": "nl_pt_ro_fi_candidate"
+  }
+}

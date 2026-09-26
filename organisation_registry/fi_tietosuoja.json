@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "fi_tietosuoja",
+  "names": {
+    "zh": "芬蘭資料保護監察官辦公室",
+    "en": "Tietosuojavaltuutetun toimisto",
+    "short": "fi_tietosuoja",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "fi_tietosuoja",
+      "country": "FI",
+      "name_zh": "芬蘭資料保護監察官辦公室",
+      "name": "Tietosuojavaltuutetun toimisto",
+      "institution_type": "獨立資料保護監管機關",
+      "language": "fi",
+      "homepage": "https://tietosuoja.fi/",
+      "listing_url": "https://tietosuoja.fi/uutiset-tiedotteet",
+      "allow_domains": [
+        "tietosuoja.fi",
+        "www.tietosuoja.fi"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "數位身份"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-26",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "official_url_confirmed_parser_pending",
+    "verified_on": "2026-09-26",
+    "evidence_urls": [
+      "https://tietosuoja.fi/",
+      "https://tietosuoja.fi/uutiset-tiedotteet"
+    ],
+    "schedule_batch": "nl_pt_ro_fi_candidate"
+  }
+}

@@ -44,6 +44,8 @@ def test_parse_rss_applies_domain_and_path_policy(fixture_dir):
     ("da", "23. september 2026"), ("sv", "23 september 2026"),
     ("et", "23. september 2026"), ("lv", "2026. gada 23. septembrī"),
     ("lt", "2026 m. rugsėjo 23 d."),
+    ("nl", "23 september 2026"), ("ro", "23 septembrie 2026"),
+    ("fi", "23. syyskuuta 2026"),
 ])
 def test_new_country_local_dates(language, date_text):
     assert parse_datetime(date_text, (language,)).date().isoformat() == "2026-09-23"
@@ -76,6 +78,55 @@ def test_danish_digst_archive_card_keeps_its_own_date():
     """
     articles = parse_listing(html, digst, digst.listing_url)
     assert [item.published_date_local for item in articles] == ["2026-09-14", "2026-09-22"]
+
+
+def test_explicit_anchor_cards_keep_their_own_dates_and_titles():
+    delta = source(
+        country="NL", card_selectors=("a.item.news-item[href]",),
+        title_selectors=(".title",), date_selectors=(".date",),
+    )
+    html = """<main><div class="grid-layout">
+      <a class="item news-item" href="/news/first"><span class="date">25 Sep 2026</span>
+        <h3 class="title">First cybersecurity story</h3></a>
+      <a class="item news-item" href="/news/second"><span class="date">24 Sep 2026</span>
+        <h3 class="title">Second cybersecurity story</h3></a>
+    </div></main>"""
+    articles = parse_listing(html, delta, delta.listing_url)
+    assert [item.title for item in articles] == ["First cybersecurity story", "Second cybersecurity story"]
+    assert [item.published_date_local for item in articles] == ["2026-09-25", "2026-09-24"]
+
+
+def test_university_news_card_does_not_pick_author_link():
+    university = source(
+        country="RO", language="ro", card_selectors=("article.post",),
+        link_selectors=("h3.entry-title a[href]",), date_selectors=("time.entry-date",),
+    )
+    html = """<main><article class="post"><h3 class="entry-title">
+      <a href="/news/ai">Inteligență artificială în cercetare</a></h3>
+      <a href="/author/editor">By Editor</a>
+      <time class="entry-date" datetime="2026-09-11T10:59:21+03:00">11 septembrie 2026</time>
+      </article></main>"""
+    articles = parse_listing(html, university, university.listing_url)
+    assert len(articles) == 1
+    assert articles[0].title == "Inteligență artificială în cercetare"
+    assert articles[0].url == "https://agency.example/news/ai"
+    assert articles[0].published_date_local == "2026-09-11"
+
+
+def test_unconfigured_anchor_fallback_uses_nearby_card_date():
+    html = """<main><div class="news"><a href="/news/fallback">
+      Fallback cybersecurity news</a><time datetime="2026-09-23">23 September 2026</time>
+      </div></main>"""
+    articles = parse_listing(html, source(), "https://agency.example/news/")
+    assert len(articles) == 1
+    assert articles[0].published_date_local == "2026-09-23"
+
+
+def test_unconfigured_bare_anchor_has_no_invented_date():
+    html = '<main><a href="/news/fallback">Fallback cybersecurity news</a></main>'
+    articles = parse_listing(html, source(), "https://agency.example/news/")
+    assert len(articles) == 1
+    assert articles[0].published_at is None
 
 
 def test_swedish_and_danish_labelled_detail_dates_do_not_use_event_dates():

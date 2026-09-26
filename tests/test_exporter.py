@@ -46,7 +46,7 @@ def test_exporter_creates_required_sheets_and_summary(tmp_path):
         "_run_metadata",
     ]
     assert workbook["_run_metadata"].sheet_state == "hidden"
-    assert workbook["議題主管機關覆蓋"].max_row == 211
+    assert workbook["議題主管機關覆蓋"].max_row == 256
     assert workbook["CRA_CSA_NIS2_CER"].max_row == 2
     assert workbook["全部命中新聞"]["Q2"].value == "《網路韌性法》指引"
     assert workbook["全部命中新聞"]["A2"].fill.fgColor.rgb == "00FFC000"

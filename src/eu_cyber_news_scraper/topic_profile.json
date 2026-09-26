@@ -62,6 +62,21 @@
           "term": "dirbtinis intelektas",
           "language": "lt",
           "concept": "topic-0-local"
+        },
+        {
+          "term": "kunstmatige intelligentie",
+          "language": "nl",
+          "concept": "topic-0-local"
+        },
+        {
+          "term": "inteligență artificială",
+          "language": "ro",
+          "concept": "topic-0-local"
+        },
+        {
+          "term": "tekoäly",
+          "language": "fi",
+          "concept": "topic-0-local"
         }
       ]
     },
@@ -117,6 +132,21 @@
         {
           "term": "atvirieji duomenys",
           "language": "lt",
+          "concept": "topic-1-local"
+        },
+        {
+          "term": "open data",
+          "language": "nl",
+          "concept": "topic-1-local"
+        },
+        {
+          "term": "date deschise",
+          "language": "ro",
+          "concept": "topic-1-local"
+        },
+        {
+          "term": "avoin data",
+          "language": "fi",
           "concept": "topic-1-local"
         }
       ]
@@ -174,6 +204,21 @@
           "term": "asmens duomenų apsauga",
           "language": "lt",
           "concept": "topic-2-local"
+        },
+        {
+          "term": "bescherming van persoonsgegevens",
+          "language": "nl",
+          "concept": "topic-2-local"
+        },
+        {
+          "term": "protecția datelor cu caracter personal",
+          "language": "ro",
+          "concept": "topic-2-local"
+        },
+        {
+          "term": "henkilötietojen suoja",
+          "language": "fi",
+          "concept": "topic-2-local"
         }
       ]
     },
@@ -229,6 +274,21 @@
         {
           "term": "skaitmeninė tapatybė",
           "language": "lt",
+          "concept": "topic-3-local"
+        },
+        {
+          "term": "digitale identiteit",
+          "language": "nl",
+          "concept": "topic-3-local"
+        },
+        {
+          "term": "identitate digitală",
+          "language": "ro",
+          "concept": "topic-3-local"
+        },
+        {
+          "term": "digitaalinen identiteetti",
+          "language": "fi",
           "concept": "topic-3-local"
         }
       ]
@@ -286,6 +346,21 @@
           "term": "autorių teisės",
           "language": "lt",
           "concept": "topic-4-local"
+        },
+        {
+          "term": "auteursrecht",
+          "language": "nl",
+          "concept": "topic-4-local"
+        },
+        {
+          "term": "drepturi de autor",
+          "language": "ro",
+          "concept": "topic-4-local"
+        },
+        {
+          "term": "tekijänoikeus",
+          "language": "fi",
+          "concept": "topic-4-local"
         }
       ]
     },
@@ -341,6 +416,21 @@
         {
           "term": "internetinės platformos",
           "language": "lt",
+          "concept": "topic-5-local"
+        },
+        {
+          "term": "onlineplatforms",
+          "language": "nl",
+          "concept": "topic-5-local"
+        },
+        {
+          "term": "platforme online",
+          "language": "ro",
+          "concept": "topic-5-local"
+        },
+        {
+          "term": "verkkoalustat",
+          "language": "fi",
           "concept": "topic-5-local"
         }
       ]
@@ -398,6 +488,21 @@
           "term": "dezinformacija",
           "language": "lt",
           "concept": "topic-6-local"
+        },
+        {
+          "term": "desinformatie",
+          "language": "nl",
+          "concept": "topic-6-local"
+        },
+        {
+          "term": "dezinformare",
+          "language": "ro",
+          "concept": "topic-6-local"
+        },
+        {
+          "term": "disinformaatio",
+          "language": "fi",
+          "concept": "topic-6-local"
         }
       ]
     },
@@ -453,6 +558,21 @@
         {
           "term": "skaitmeninės rinkos",
           "language": "lt",
+          "concept": "topic-7-local"
+        },
+        {
+          "term": "digitale markten",
+          "language": "nl",
+          "concept": "topic-7-local"
+        },
+        {
+          "term": "piețe digitale",
+          "language": "ro",
+          "concept": "topic-7-local"
+        },
+        {
+          "term": "digitaaliset markkinat",
+          "language": "fi",
           "concept": "topic-7-local"
         }
       ]
@@ -510,6 +630,21 @@
           "term": "kritinė infrastruktūra",
           "language": "lt",
           "concept": "topic-8-local"
+        },
+        {
+          "term": "vitale infrastructuur",
+          "language": "nl",
+          "concept": "topic-8-local"
+        },
+        {
+          "term": "infrastructuri critice",
+          "language": "ro",
+          "concept": "topic-8-local"
+        },
+        {
+          "term": "kriittinen infrastruktuuri",
+          "language": "fi",
+          "concept": "topic-8-local"
         }
       ]
     },
@@ -565,6 +700,21 @@
         {
           "term": "saugumo spragos",
           "language": "lt",
+          "concept": "topic-9-local"
+        },
+        {
+          "term": "beveiligingskwetsbaarheden",
+          "language": "nl",
+          "concept": "topic-9-local"
+        },
+        {
+          "term": "vulnerabilități de securitate",
+          "language": "ro",
+          "concept": "topic-9-local"
+        },
+        {
+          "term": "tietoturvahaavoittuvuudet",
+          "language": "fi",
           "concept": "topic-9-local"
         }
       ]
@@ -622,6 +772,21 @@
           "term": "tiekimo grandinės saugumas",
           "language": "lt",
           "concept": "topic-10-local"
+        },
+        {
+          "term": "beveiliging van de toeleveringsketen",
+          "language": "nl",
+          "concept": "topic-10-local"
+        },
+        {
+          "term": "securitatea lanțului de aprovizionare",
+          "language": "ro",
+          "concept": "topic-10-local"
+        },
+        {
+          "term": "toimitusketjun turvallisuus",
+          "language": "fi",
+          "concept": "topic-10-local"
         }
       ]
     },
@@ -677,6 +842,21 @@
         {
           "term": "kibernetinio saugumo sertifikavimas",
           "language": "lt",
+          "concept": "topic-11-local"
+        },
+        {
+          "term": "cyberbeveiligingscertificering",
+          "language": "nl",
+          "concept": "topic-11-local"
+        },
+        {
+          "term": "certificare de securitate cibernetică",
+          "language": "ro",
+          "concept": "topic-11-local"
+        },
+        {
+          "term": "kyberturvallisuussertifiointi",
+          "language": "fi",
           "concept": "topic-11-local"
         }
       ]
@@ -734,6 +914,21 @@
           "term": "kritinės infrastruktūros atsparumas",
           "language": "lt",
           "concept": "topic-12-local"
+        },
+        {
+          "term": "weerbaarheid van vitale infrastructuur",
+          "language": "nl",
+          "concept": "topic-12-local"
+        },
+        {
+          "term": "reziliența infrastructurilor critice",
+          "language": "ro",
+          "concept": "topic-12-local"
+        },
+        {
+          "term": "kriittisen infrastruktuurin häiriönsietokyky",
+          "language": "fi",
+          "concept": "topic-12-local"
         }
       ]
     },
@@ -790,6 +985,21 @@
           "term": "puslaidininkiai",
           "language": "lt",
           "concept": "topic-13-local"
+        },
+        {
+          "term": "halfgeleiders",
+          "language": "nl",
+          "concept": "topic-13-local"
+        },
+        {
+          "term": "semiconductori",
+          "language": "ro",
+          "concept": "topic-13-local"
+        },
+        {
+          "term": "puolijohteet",
+          "language": "fi",
+          "concept": "topic-13-local"
         }
       ]
     },
@@ -845,6 +1055,21 @@
         {
           "term": "kvantinė technologija",
           "language": "lt",
+          "concept": "topic-14-local"
+        },
+        {
+          "term": "kwantumtechnologie",
+          "language": "nl",
+          "concept": "topic-14-local"
+        },
+        {
+          "term": "tehnologie cuantică",
+          "language": "ro",
+          "concept": "topic-14-local"
+        },
+        {
+          "term": "kvanttiteknologia",
+          "language": "fi",
           "concept": "topic-14-local"
         }
       ]

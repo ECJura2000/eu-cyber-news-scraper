@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "ro_anspdcp",
+  "names": {
+    "zh": "羅馬尼亞個人資料處理監督局",
+    "en": "Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal",
+    "short": "ro_anspdcp",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "ro_anspdcp",
+      "country": "RO",
+      "name_zh": "羅馬尼亞個人資料處理監督局",
+      "name": "Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal",
+      "institution_type": "獨立資料保護監管機關",
+      "language": "ro",
+      "homepage": "https://www.dataprotection.ro/",
+      "listing_url": "https://www.dataprotection.ro/index.jsp?page=home&lang=ro",
+      "allow_domains": [
+        "www.dataprotection.ro",
+        "dataprotection.ro"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "數位身份"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-26",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "official_url_confirmed_parser_pending",
+    "verified_on": "2026-09-26",
+    "evidence_urls": [
+      "https://www.dataprotection.ro/",
+      "https://www.dataprotection.ro/index.jsp?page=home&lang=ro"
+    ],
+    "schedule_batch": "nl_pt_ro_fi_candidate"
+  }
+}

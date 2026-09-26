@@ -9,6 +9,9 @@
       "keywords": [
         {"term": "cartera de identidad digital", "weight": 3, "language": "es", "concept": "eudi-wallet"},
         {"term": "carteira de identidade digital", "weight": 3, "language": "pt", "concept": "eudi-wallet"},
+        {"term": "digitale identiteitswallet", "weight": 3, "language": "nl", "concept": "eudi-wallet"},
+        {"term": "portofel de identitate digitală", "weight": 3, "language": "ro", "concept": "eudi-wallet"},
+        {"term": "digitaalinen identiteettilompakko", "weight": 3, "language": "fi", "concept": "eudi-wallet"},
         {"term": "digital identity wallet", "weight": 3, "language": "*", "concept": "eudi-wallet"}
       ],
       "synonyms": [

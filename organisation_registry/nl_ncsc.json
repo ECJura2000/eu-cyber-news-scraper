@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "nl_ncsc",
+  "names": {
+    "zh": "荷蘭國家網路安全中心",
+    "en": "Nationaal Cyber Security Centrum",
+    "short": "nl_ncsc",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "nl_ncsc",
+      "country": "NL",
+      "name_zh": "荷蘭國家網路安全中心",
+      "name": "Nationaal Cyber Security Centrum",
+      "institution_type": "國家資安主管機關",
+      "language": "nl",
+      "homepage": "https://www.ncsc.nl/",
+      "listing_url": "https://www.ncsc.nl/nieuws",
+      "feed_urls": ["https://feeds.ncsc.nl/nieuws.rss"],
+      "allow_domains": [
+        "www.ncsc.nl",
+        "feeds.ncsc.nl"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-26",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-09-26",
+    "evidence_urls": [
+      "https://www.ncsc.nl/",
+      "https://www.ncsc.nl/nieuws",
+      "https://www.ncsc.nl/rss"
+    ],
+    "schedule_batch": "nl_pt_ro_fi_candidate"
+  }
+}
