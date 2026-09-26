@@ -38,7 +38,9 @@ python -m eu_cyber_news_scraper search --corpus-dir 新聞放置區 --country ES
 
 ## 快速開始
 
-需要 Python 3.11 以上。macOS 可在終端機執行：
+需要 Python 3.11 以上。macOS 與 Windows 均可從終端機執行；以下分別列出建立環境及啟動程式的指令。
+
+macOS（終端機）：
 
 ```bash
 cd eu-cyber-news-scraper
@@ -48,6 +50,27 @@ python -m pip install uv
 uv sync --frozen
 python -m eu_cyber_news_scraper --days 14
 ```
+
+Windows（PowerShell）：
+
+```powershell
+cd C:\你的路徑\eu-cyber-news-scraper
+py -3.11 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install uv
+uv sync --frozen
+python -m eu_cyber_news_scraper --days 14
+```
+
+若 PowerShell 因執行原則而不允許啟用 `Activate.ps1`，可略過啟用步驟，改用虛擬環境的 Python：
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install uv
+.\.venv\Scripts\python.exe -m uv sync --frozen
+.\.venv\Scripts\python.exe -m eu_cyber_news_scraper --days 14
+```
+
+目前自動化 CI 在 Linux 上驗證 Python 3.11、3.12、3.13；尚未加入 Windows 執行環境測試。
 
 預設會抓取臺北時區最近 14 天，將新聞標題翻譯為繁體中文，並在專案的 `新聞放置區` 資料夾產生：
 
