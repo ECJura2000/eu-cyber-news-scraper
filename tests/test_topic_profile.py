@@ -120,6 +120,10 @@ def test_new_topic_is_not_limited_by_existing_source_whitelist(tmp_path):
     ("nl", "Kunstmatige intelligentie en bescherming van persoonsgegevens"),
     ("ro", "Inteligență artificială și protecția datelor cu caracter personal"),
     ("fi", "Tekoäly ja henkilötietojen suoja"),
+    ("bg", "Изкуствен интелект и защита на личните данни"),
+    ("hr", "Umjetna inteligencija i zaštita osobnih podataka"),
+    ("el", "Τεχνητή νοημοσύνη και προστασία προσωπικών δεδομένων"),
+    ("hu", "Mesterséges intelligencia és személyes adatok védelme"),
 ])
 def test_builtin_profile_matches_local_ai_and_privacy(language, title):
     article = _article(title)
@@ -143,12 +147,28 @@ def test_builtin_profile_matches_local_ai_and_privacy(language, title):
     ("nl", "tekoäly"),
     ("ro", "kunstmatige intelligentie"),
     ("fi", "inteligență artificială"),
+    ("bg", "umjetna inteligencija"),
+    ("hr", "τεχνητή νοημοσύνη"),
+    ("el", "mesterséges intelligencia"),
+    ("hu", "изкуствен интелект"),
 ])
 def test_builtin_profile_does_not_treat_foreign_synonym_as_local_hit(language, foreign_phrase):
     article = _article(foreign_phrase)
     article.language = language
     apply_profile(article, load_profile())
     assert "AI法、模型評估、演算法問責、自動化決策、AI與著作權" not in article.matched_topics
+
+
+def test_slovenian_official_cyber_terms_match_original_language_only():
+    title = "Akt o kibernetski odpornosti in varnost dobavnih verig"
+    article = _article(title)
+    article.language = "sl"
+    apply_profile(article, load_profile())
+    assert "產品資安、漏洞揭露義務、SBOM" in article.matched_topics
+    assert "供應鏈安全" in article.matched_topics
+    english_article = _article(title)
+    apply_profile(english_article, load_profile())
+    assert "供應鏈安全" not in english_article.matched_topics
 
 
 def test_multilingual_concept_counts_once_and_respects_language_and_word_boundary(tmp_path):

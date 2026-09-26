@@ -6,6 +6,7 @@ from datetime import date
 from importlib.resources import files
 from pathlib import Path
 
+from .config import EU_MEMBER_COUNTRIES
 from .models import Source
 from .topics import OBSERVATION_TOPICS
 
@@ -64,8 +65,9 @@ def load_coverage(
     from .organisation_registry import load_organisation_registry
 
     registry = load_organisation_registry()
+    additional_countries = sorted((EU_MEMBER_COUNTRIES | {"NO"}) - {"DE", "FR", "IE"})
     for topic in OBSERVATION_TOPICS:
-        for country in ("ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT", "NL", "RO", "FI"):
+        for country in additional_countries:
             relevant = [
                 source for source in source_map.values()
                 if source.country == country and (module := registry.module_for_source(source.id)) and topic in module.topics

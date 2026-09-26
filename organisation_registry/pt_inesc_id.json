@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "pt_inesc_id",
+  "names": {
+    "zh": "葡萄牙 INESC-ID 資訊與電機研究所",
+    "en": "INESC-ID",
+    "short": "pt_inesc_id",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "pt_inesc_id",
+      "country": "PT",
+      "name_zh": "葡萄牙 INESC-ID 資訊與電機研究所",
+      "name": "INESC-ID",
+      "institution_type": "公益非營利聯合研究所",
+      "language": "en",
+      "homepage": "https://www.inesc-id.pt/",
+      "listing_url": "https://www.inesc-id.pt/news-events/",
+      "allow_domains": ["www.inesc-id.pt"],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "隱私框架（含個人資料保護）",
+      "產品資安、漏洞揭露義務、SBOM",
+      "半導體"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"healthy","health_status":"healthy","raw_count":12,"dated_count":12,"http_statuses":["200","200"],"reason":""},
+    "verified_on": "2026-09-26",
+    "evidence_urls": [
+      "https://www.inesc-id.pt/about-us/",
+      "https://www.inesc-id.pt/news-events/"
+    ]
+  }
+}

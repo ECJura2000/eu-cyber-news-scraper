@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "ee_taltech",
+  "names": {"zh": "愛沙尼亞塔林理工大學", "en": "Tallinn University of Technology (TalTech)", "short": "ee_taltech", "publisher_aliases": []},
+  "sources": [{"id": "ee_taltech", "country": "EE", "name_zh": "愛沙尼亞塔林理工大學", "name": "Tallinn University of Technology (TalTech)", "institution_type": "公立科技研究型大學", "language": "en", "homepage": "https://taltech.ee/en", "listing_url": "https://taltech.ee/en/news", "allow_domains": ["taltech.ee", "www.taltech.ee"], "critical": false, "schedule_enabled": false, "detail_pages": 8}],
+  "filter": {"topics": ["AI法、模型評估、演算法問責、自動化決策、AI與著作權", "NIS2、關鍵基礎設施保護", "產品資安、漏洞揭露義務、SBOM", "量子技術"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "blocked_runner", "verified_on": "2026-09-26", "evidence_urls": ["https://taltech.ee/en/our-story", "https://taltech.ee/en/department-of-software-science/about", "https://taltech.ee/en/news"], "schedule_batch": "eastern_baltic_candidates", "last_smoke": {"tested_on":"2026-09-26","fetch_status":"failed","parse_status":"failed","health_status":"attention","raw_count":0,"dated_count":0,"http_statuses":["200"],"reason":"來源抓取失敗。"}}
+}

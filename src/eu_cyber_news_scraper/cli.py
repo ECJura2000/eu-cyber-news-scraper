@@ -43,7 +43,16 @@ from .scraper import scrape_source
 from .topic_profile import Profile, apply_profile, load_profile
 from .translation import skip_article_title_translation, translate_article_titles
 
-COUNTRY_LABELS = {"EU": "歐盟", "FR": "法國", "DE": "德國", "IE": "愛爾蘭", "ES": "西班牙", "PT": "葡萄牙", "IT": "義大利", "PL": "波蘭", "DK": "丹麥", "NO": "挪威", "SE": "瑞典", "EE": "愛沙尼亞", "LV": "拉脫維亞", "LT": "立陶宛", "NL": "荷蘭", "RO": "羅馬尼亞", "FI": "芬蘭"}
+COUNTRY_LABELS = {
+    "EU": "歐盟", "FR": "法國", "DE": "德國", "IE": "愛爾蘭",
+    "ES": "西班牙", "PT": "葡萄牙", "IT": "義大利", "PL": "波蘭",
+    "DK": "丹麥", "NO": "挪威", "SE": "瑞典", "EE": "愛沙尼亞",
+    "LV": "拉脫維亞", "LT": "立陶宛", "NL": "荷蘭", "RO": "羅馬尼亞",
+    "FI": "芬蘭", "AT": "奧地利", "BE": "比利時", "BG": "保加利亞",
+    "CY": "賽普勒斯", "CZ": "捷克", "GR": "希臘", "HR": "克羅埃西亞",
+    "HU": "匈牙利", "LU": "盧森堡", "MT": "馬爾他",
+    "SK": "斯洛伐克", "SI": "斯洛維尼亞",
+}
 TOPIC_ALIASES = {
     "AI": "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
     "DATA": "跨境資料流通、資料主權、資料開放與再利用",

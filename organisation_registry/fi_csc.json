@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "fi_csc",
+  "names": {
+    "zh": "芬蘭 CSC 科學資訊中心",
+    "en": "CSC – IT Center for Science",
+    "short": "fi_csc",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "fi_csc",
+      "country": "FI",
+      "name_zh": "芬蘭 CSC 科學資訊中心",
+      "name": "CSC – IT Center for Science",
+      "institution_type": "政府與高等教育機構持有的非營利特殊任務公司",
+      "language": "en",
+      "homepage": "https://csc.fi/en/",
+      "listing_url": "https://csc.fi/en/category/news/",
+      "allow_domains": ["csc.fi"],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {
+    "effective_from": "2026-09-26",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"healthy","health_status":"healthy","raw_count":10,"dated_count":10,"http_statuses":["200","200"],"reason":""},
+    "verified_on": "2026-09-26",
+    "evidence_urls": ["https://csc.fi/en/about-us/governance/", "https://csc.fi/en/category/news/"],
+    "schedule_batch": "nordic_candidate"
+  }
+}

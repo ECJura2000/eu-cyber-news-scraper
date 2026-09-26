@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "pl_nask",
+  "names": {"zh": "波蘭國家研究院 NASK", "en": "NASK – Państwowy Instytut Badawczy", "short": "pl_nask", "publisher_aliases": []},
+  "sources": [{"id": "pl_nask", "country": "PL", "name_zh": "波蘭國家研究院 NASK", "name": "NASK – Państwowy Instytut Badawczy", "institution_type": "國家網路安全與人工智慧研究機構", "language": "pl", "homepage": "https://www.nask.pl/", "listing_url": "https://www.nask.pl/aktualnosci", "allow_domains": ["www.nask.pl", "nask.pl"], "critical": false, "schedule_enabled": false, "detail_pages": 8}],
+  "filter": {"topics": ["AI法、模型評估、演算法問責、自動化決策、AI與著作權", "NIS2、關鍵基礎設施保護", "產品資安、漏洞揭露義務、SBOM", "供應鏈安全", "媒體多元與資訊操縱"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "smoke_attention", "verified_on": "2026-09-26", "evidence_urls": ["https://www.nask.pl/en/institute", "https://www.nask.pl/aktualnosci"], "schedule_batch": "eastern_baltic_candidates", "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"attention","health_status":"attention","raw_count":17,"dated_count":0,"http_statuses":["200"],"reason":"無日期新聞比例過高（100%）。"}}
+}

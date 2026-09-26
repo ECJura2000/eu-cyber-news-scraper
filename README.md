@@ -1,12 +1,29 @@
 # 歐盟資安法制官方新聞爬蟲
 
-本專案抓取歐洲官方機關、法定監理機構、行政法人與公共研究機構新聞。原有 EU、FR、DE、IE 來源維持每週排程；另登錄 ES、PT、IT、PL、DK、NO、SE、EE、LV、LT、NL、RO、FI 等國官方與公共研究入口，先供手動驗證。分類器與主管機關矩陣使用相同的 15 項觀測議題。
+本專案抓取歐洲官方機關、法定監理機構、行政法人與公共研究機構新聞。來源清單涵蓋歐盟 27 個成員國、歐盟機構及既有挪威來源。原有 EU、FR、DE、IE 來源維持每週排程；新增來源先供手動查詢與驗證。分類器與主管機關矩陣使用相同的 15 項觀測議題。
 
 設計承接既有 `UK-news-scraper` 的實務做法：優先使用 RSS／Atom，找不到 feed 時才解析 HTML；每個來源獨立失敗、併發執行、穩定去重、輸出 Excel 與 JSON 執行摘要，並保留來源健康狀態。程式只設定官方或公共研究來源，不以商業媒體或 Google News 作為預設備援。
 
 ## 機關 Registry
 
-機關模組位於 [`organisation_registry/`](organisation_registry/)，101 個新聞來源各有一份 schema v2 JSON（55 個原來源、30 個先前十國候選來源、16 個本次新增候選來源）。每個模組包含來源 URL 與解析設定、主題白名單、健康門檻、機關沿革及各主題責任機關；預設執行直接由這些 JSON 建立來源清單。新增或覆寫模組可放在 macOS 的 `~/Library/Application Support/EUCyberNewsScraper/organisations.d`，或使用 `EU_CYBER_ORGANISATION_DIR` 指定目錄，重啟後載入。外部模組驗證失敗會保留同 ID 的內建模組；無內建版本的新模組會略過，並讓 `.run.json` 的 `organisation_audit_status` 成為 `degraded`。
+機關模組位於 [`organisation_registry/`](organisation_registry/)，148 個新聞來源各有一份 schema v2 JSON（PR #37 的 101 個來源，加上 24 個原未登錄歐盟國家來源與 23 個既有歐盟國家補充來源）。每個模組包含來源 URL 與解析設定、主題白名單、健康門檻、機關沿革、官方證據及驗證狀態；預設執行直接由這些 JSON 建立來源清單。新增或覆寫模組可放在 macOS 的 `~/Library/Application Support/EUCyberNewsScraper/organisations.d`，或使用 `EU_CYBER_ORGANISATION_DIR` 指定目錄，重啟後載入。外部模組驗證失敗會保留同 ID 的內建模組；無內建版本的新模組會略過，並讓 `.run.json` 的 `organisation_audit_status` 成為 `degraded`。
+
+原未登錄的 12 個歐盟國家現均有手動來源，2026-09-26 首輪檢查如下；各模組 `verification.last_smoke` 保留原始筆數、日期筆數及錯誤原因。
+
+| 國家 | 新來源 | 首輪結果 |
+| --- | --- | --- |
+| 奧地利 AT | `at_cert`、`at_dsb`、`at_rtr` | 前二者健康；RTR 列表日期不足 |
+| 比利時 BE | `be_apd`、`be_bipt`、`be_ccb` | APD 健康；BIPT 日期不足；CCB 回傳 HTTP 403 |
+| 保加利亞 BG | `govcert_bg` | 健康 |
+| 賽普勒斯 CY | `cy_dsa` | 可抓取，部分文章無日期 |
+| 捷克 CZ | `cz_nukib` | 健康 |
+| 希臘 GR | `gr_ncsa`、`gr_dpa`、`gr_grnet` | NCSA 健康；另二者日期不足 |
+| 克羅埃西亞 HR | `cert_hr` | 健康 |
+| 匈牙利 HU | `hu_nmhh`、`hu_nki` | NMHH 健康；NKI 列表目前解析為空 |
+| 盧森堡 LU | `lu_list`、`lu_cnpd`、`lu_govcert`、`lu_ilr` | LIST 健康；其他來源日期不足或過舊 |
+| 馬爾他 MT | `mt_idpc`、`mt_ncc` | IDPC 健康；NCC 回傳 HTTP 403 |
+| 斯洛維尼亞 SI | `si_ursiv`、`si_sicert` | URSIV 健康；SI-CERT 英文新聞頁過舊 |
+| 斯洛伐克 SK | `sk_nbu_cra` | 健康 |
 
 篩選流程採 Boolean 候選判定後接 BM25 主題評分，標題權重 2、摘要權重 1、`k1=1.2`、`b=0.75`，分數固定四位小數。機關模組的 `filter.topics` 是正式白名單；Excel 的「篩選設定」及新聞欄位會記錄 Boolean/BM25 分數、命中同義詞、實際發布機關與責任機關，JSONL 與 `.run.json` 也保留相同稽核資訊。
 
@@ -21,7 +38,7 @@ python -m eu_cyber_news_scraper --open-organisation-dir
 
 ## 自訂主題與離線重查
 
-詞項可用字串（舊格式），或用 `{ "term": "inteligencia artificial", "language": "es", "concept": "ai" }`；加權詞另需 `weight`。`language` 可為來源使用的語言代碼（包括 nl／pt／ro／fi）、en／fr／de，或 `*`（明確跨語言縮寫）。同一 `concept` 的譯名與詞形只取最高權重一次；比對原文、保留重音與詞界，不使用繁中標題反推命中。`penalties`、`excludes` 也可指定語言，且只作用於所屬主題。
+詞項可用字串（舊格式），或用 `{ "term": "inteligencia artificial", "language": "es", "concept": "ai" }`；加權詞另需 `weight`。`language` 可為來源使用的語言代碼（包括 bg／hr／el／hu 等新增語言）、en／fr／de，或 `*`（明確跨語言縮寫）。同一 `concept` 的譯名與詞形只取最高權重一次；比對原文、保留重音與詞界，不使用繁中標題反推命中。`penalties`、`excludes` 也可指定語言，且只作用於所屬主題。
 
 內建 [`topic_profile.json`](src/eu_cyber_news_scraper/topic_profile.json) 是 schema v2 完整替換範例，列出原有 15 個主題及各國原文同義詞。複製後可用 `--topics-json 路徑` 隨時換檔、重跑；舊 schema v1 仍可讀取。`mode: "replace"` 表示整份替換；`mode: "merge"` 表示以內建 15 主題為基礎，同名主題整筆取代、新名稱新增，`remove_topics` 才會刪除主題。增補格式見 [`multilingual-merge.json`](examples/topics/multilingual-merge.json)。改名時填 `legacy_name` 指向原名稱；新主題預設搜尋所有來源，舊主題沿用來源白名單。
 
@@ -33,6 +50,7 @@ python -m eu_cyber_news_scraper search --corpus-dir 新聞放置區 --topics-jso
 python -m eu_cyber_news_scraper --country ES --topics-json examples/topics/multilingual-merge.json --days 30
 python -m eu_cyber_news_scraper search --corpus-dir 新聞放置區 --country ES --topics-json my-topics.json --output spain.xlsx
 python -m eu_cyber_news_scraper --country NL --country PT --country RO --country FI --days 30 --no-translate
+python -m eu_cyber_news_scraper --country GR --country HR --days 30 --no-translate
 ```
 
 離線搜尋會在資料夾建立 `.offline-search.sqlite3` 增量索引；相同規則、日期、來源與文章資料時重用既有結果。只有正式 manifest 顯示該日期期間、所選來源、產物與品質門檻均完整時，結果才標為「資料涵蓋完整」；否則輸出部分結果並明示缺口。每週 artifact 同時提供入選 `.jsonl` 與篩選前 `.corpus.jsonl`，驗證器重算兩者與 Excel 的筆數、SHA-256。
@@ -145,7 +163,7 @@ python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95
 | 研究智庫與公私協力 | 研究機構、智庫與產學公私協力發布內容 |
 | 來源健康狀態 | 抓取健康、期間內與命中筆數、新鮮度、日期完整率、唯一標題比例、歷史中位數；抓取警示與內容零命中分欄顯示 |
 | 官方來源清單 | 本次使用的官方／公共研究來源與新聞入口 |
-| 議題主管機關覆蓋 | 15 個議題在 EU、FR、DE、IE 的主管機關、行政法人／法定機構、公私協力、智庫、角色、官方證據網址與最後查核日期 |
+| 議題主管機關覆蓋 | 15 個議題在歐盟機構、27 個成員國及挪威的主管機關或研究機構、角色、官方證據網址與最後查核日期；未查證權責明示「未設定」 |
 
 ## 主題判斷方式
 
@@ -165,8 +183,8 @@ python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95
 - 跨年度新聞網址、分頁格式、最多頁數及健康基線觀察次數
 
 主管機關覆蓋矩陣集中於 `src/eu_cyber_news_scraper/authority_coverage.toml`。目前固定驗證
-原 15 個議題 × 4 個法域共 60 格仍需完整；另外 13 國共列 195 格，未有可信來源的格子明示「未覆蓋」，有來源但未查證權責則為「未設定」。
-目前共 101 個來源；46 個新增候選來源均為 `schedule_enabled = false`，只有明確指定 `--country` 或 `--source` 才會手動抓取。研究機構、大學與公私協力單位只作為政策研究、技術評估及生態系觀測來源，不視為具有監理權限的主管機關。
+原 15 個議題 × 4 個法域共 60 格仍需完整；另外 25 國共列 375 格，未有可信來源的格子明示「未覆蓋」，有來源但未查證權責則為「未設定」。
+目前共 148 個來源；本 PR 新增的 47 個候選來源均為 `schedule_enabled = false`，只有明確指定 `--country` 或 `--source` 才會手動抓取。其中 24 個原未登錄歐盟國家來源完成首輪手動抓取：12 個健康，其他來源依 `verification.status` 與 `last_smoke` 記錄日期不完整、過舊、版型無法解析或網站拒絕存取等原因。研究機構、大學與公私協力單位只作為政策研究、技術評估及生態系觀測來源，不視為具有監理權限的主管機關。
 
 `.source-health.json` 使用 schema v2，以執行 profile 與每來源設定 fingerprint 分隔基線，最多保留每個來源最近 12 個獨立 observation；同一期間重跑會取代既有 observation，不會累積成連續異常。舊 v1 會保存在 `legacy`，但不參與新基線。`--health-write auto` 只讓完整 rolling 且啟用內頁的標準執行寫入；固定歷史期間預設唯讀，也可明確使用 `always` 或 `never`。健康 state 只在 Excel、JSONL 與 manifest 完整驗證並發布後寫入。
 

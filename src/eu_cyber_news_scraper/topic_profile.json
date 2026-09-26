@@ -77,6 +77,26 @@
           "term": "tekoäly",
           "language": "fi",
           "concept": "topic-0-local"
+        },
+        {
+          "term": "изкуствен интелект",
+          "language": "bg",
+          "concept": "topic-0-local"
+        },
+        {
+          "term": "umjetna inteligencija",
+          "language": "hr",
+          "concept": "topic-0-local"
+        },
+        {
+          "term": "τεχνητή νοημοσύνη",
+          "language": "el",
+          "concept": "topic-0-local"
+        },
+        {
+          "term": "mesterséges intelligencia",
+          "language": "hu",
+          "concept": "topic-0-local"
         }
       ]
     },
@@ -147,6 +167,26 @@
         {
           "term": "avoin data",
           "language": "fi",
+          "concept": "topic-1-local"
+        },
+        {
+          "term": "отворени данни",
+          "language": "bg",
+          "concept": "topic-1-local"
+        },
+        {
+          "term": "otvoreni podaci",
+          "language": "hr",
+          "concept": "topic-1-local"
+        },
+        {
+          "term": "ανοικτά δεδομένα",
+          "language": "el",
+          "concept": "topic-1-local"
+        },
+        {
+          "term": "nyílt adatok",
+          "language": "hu",
           "concept": "topic-1-local"
         }
       ]
@@ -219,6 +259,26 @@
           "term": "henkilötietojen suoja",
           "language": "fi",
           "concept": "topic-2-local"
+        },
+        {
+          "term": "защита на личните данни",
+          "language": "bg",
+          "concept": "topic-2-local"
+        },
+        {
+          "term": "zaštita osobnih podataka",
+          "language": "hr",
+          "concept": "topic-2-local"
+        },
+        {
+          "term": "προστασία προσωπικών δεδομένων",
+          "language": "el",
+          "concept": "topic-2-local"
+        },
+        {
+          "term": "személyes adatok védelme",
+          "language": "hu",
+          "concept": "topic-2-local"
         }
       ]
     },
@@ -289,6 +349,26 @@
         {
           "term": "digitaalinen identiteetti",
           "language": "fi",
+          "concept": "topic-3-local"
+        },
+        {
+          "term": "цифрова идентичност",
+          "language": "bg",
+          "concept": "topic-3-local"
+        },
+        {
+          "term": "digitalni identitet",
+          "language": "hr",
+          "concept": "topic-3-local"
+        },
+        {
+          "term": "ψηφιακή ταυτότητα",
+          "language": "el",
+          "concept": "topic-3-local"
+        },
+        {
+          "term": "digitális identitás",
+          "language": "hu",
           "concept": "topic-3-local"
         }
       ]
@@ -503,6 +583,26 @@
           "term": "disinformaatio",
           "language": "fi",
           "concept": "topic-6-local"
+        },
+        {
+          "term": "дезинформация",
+          "language": "bg",
+          "concept": "topic-6-local"
+        },
+        {
+          "term": "dezinformacije",
+          "language": "hr",
+          "concept": "topic-6-local"
+        },
+        {
+          "term": "παραπληροφόρηση",
+          "language": "el",
+          "concept": "topic-6-local"
+        },
+        {
+          "term": "dezinformáció",
+          "language": "hu",
+          "concept": "topic-6-local"
         }
       ]
     },
@@ -645,6 +745,31 @@
           "term": "kriittinen infrastruktuuri",
           "language": "fi",
           "concept": "topic-8-local"
+        },
+        {
+          "term": "директива NIS2",
+          "language": "bg",
+          "concept": "topic-8-local"
+        },
+        {
+          "term": "direktiva NIS2",
+          "language": "hr",
+          "concept": "topic-8-local"
+        },
+        {
+          "term": "οδηγία NIS2",
+          "language": "el",
+          "concept": "topic-8-local"
+        },
+        {
+          "term": "NIS2 irányelv",
+          "language": "hu",
+          "concept": "topic-8-local"
+        },
+        {
+          "term": "direktiva NIS2",
+          "language": "sl",
+          "concept": "topic-8-local"
         }
       ]
     },
@@ -715,6 +840,11 @@
         {
           "term": "tietoturvahaavoittuvuudet",
           "language": "fi",
+          "concept": "topic-9-local"
+        },
+        {
+          "term": "Akt o kibernetski odpornosti",
+          "language": "sl",
           "concept": "topic-9-local"
         }
       ]
@@ -787,6 +917,31 @@
           "term": "toimitusketjun turvallisuus",
           "language": "fi",
           "concept": "topic-10-local"
+        },
+        {
+          "term": "сигурност на веригата за доставки",
+          "language": "bg",
+          "concept": "topic-10-local"
+        },
+        {
+          "term": "sigurnost lanca opskrbe",
+          "language": "hr",
+          "concept": "topic-10-local"
+        },
+        {
+          "term": "ασφάλεια εφοδιαστικής αλυσίδας",
+          "language": "el",
+          "concept": "topic-10-local"
+        },
+        {
+          "term": "ellátási lánc biztonsága",
+          "language": "hu",
+          "concept": "topic-10-local"
+        },
+        {
+          "term": "varnost dobavnih verig",
+          "language": "sl",
+          "concept": "topic-10-local"
         }
       ]
     },
@@ -857,6 +1012,11 @@
         {
           "term": "kyberturvallisuussertifiointi",
           "language": "fi",
+          "concept": "topic-11-local"
+        },
+        {
+          "term": "kibernetsko certificiranje",
+          "language": "sl",
           "concept": "topic-11-local"
         }
       ]
@@ -929,6 +1089,11 @@
           "term": "kriittisen infrastruktuurin häiriönsietokyky",
           "language": "fi",
           "concept": "topic-12-local"
+        },
+        {
+          "term": "kritična infrastruktura",
+          "language": "sl",
+          "concept": "topic-12-local"
         }
       ]
     },
@@ -1000,6 +1165,26 @@
           "term": "puolijohteet",
           "language": "fi",
           "concept": "topic-13-local"
+        },
+        {
+          "term": "полупроводници",
+          "language": "bg",
+          "concept": "topic-13-local"
+        },
+        {
+          "term": "poluvodiči",
+          "language": "hr",
+          "concept": "topic-13-local"
+        },
+        {
+          "term": "ημιαγωγοί",
+          "language": "el",
+          "concept": "topic-13-local"
+        },
+        {
+          "term": "félvezetők",
+          "language": "hu",
+          "concept": "topic-13-local"
         }
       ]
     },
@@ -1070,6 +1255,26 @@
         {
           "term": "kvanttiteknologia",
           "language": "fi",
+          "concept": "topic-14-local"
+        },
+        {
+          "term": "квантови технологии",
+          "language": "bg",
+          "concept": "topic-14-local"
+        },
+        {
+          "term": "kvantne tehnologije",
+          "language": "hr",
+          "concept": "topic-14-local"
+        },
+        {
+          "term": "κβαντικές τεχνολογίες",
+          "language": "el",
+          "concept": "topic-14-local"
+        },
+        {
+          "term": "kvantumtechnológia",
+          "language": "hu",
           "concept": "topic-14-local"
         }
       ]

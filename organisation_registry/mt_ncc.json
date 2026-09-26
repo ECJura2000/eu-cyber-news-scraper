@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "mt_ncc",
+  "names": {"zh": "馬爾他國家網路安全協調中心", "en": "National Cybersecurity Coordination Centre Malta", "short": "mt_ncc", "publisher_aliases": []},
+  "sources": [{
+    "id": "mt_ncc", "country": "MT", "name_zh": "馬爾他國家網路安全協調中心", "name": "National Cybersecurity Coordination Centre (NCC-MT)",
+    "institution_type": "政府機構／國家協調中心／產學研 PPP", "language": "en",
+    "homepage": "https://ncc-mita.gov.mt/about-us/", "listing_url": "https://ncc-mita.gov.mt/category/news/",
+    "allow_domains": ["ncc-mita.gov.mt", "mita.gov.mt"], "include_patterns": [], "exclude_patterns": [],
+    "critical": false, "schedule_enabled": false, "detail_pages": 8
+  }],
+  "filter": {"topics": ["NIS2、關鍵基礎設施保護", "產品資安、漏洞揭露義務、SBOM", "供應鏈安全", "資安產品認證", "關鍵基礎設施的實體與數位融合保護"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "blocked_runner", "verified_on": "2026-09-26", "evidence_urls": ["https://ncc-mita.gov.mt/about-us/", "https://ncc-mita.gov.mt/category/news/"], "schedule_batch": "bg_hr_cy_cz_hu_mt_sk_si_candidates", "last_smoke": {"tested_on":"2026-09-26","fetch_status":"failed","parse_status":"failed","health_status":"attention","raw_count":0,"dated_count":0,"http_statuses":["403"],"reason":"來源抓取失敗。"}}
+}

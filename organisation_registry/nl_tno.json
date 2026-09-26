@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "nl_tno",
+  "names": {"zh": "荷蘭應用科學研究組織", "en": "TNO", "short": "nl_tno", "publisher_aliases": []},
+  "sources": [{"id": "nl_tno", "country": "NL", "name_zh": "荷蘭應用科學研究組織", "name": "TNO", "institution_type": "公法組織之獨立應用研究機構", "language": "en", "homepage": "https://www.tno.nl/en/", "listing_url": "https://www.tno.nl/en/newsroom/", "allow_domains": ["www.tno.nl", "tno.nl"], "include_patterns": ["^/en/newsroom/"], "critical": false, "schedule_enabled": false, "detail_pages": 8, "card_selectors": [".rol-collage-card"], "link_selectors": [".collage-card-content .tno-button a[href]"], "title_selectors": ["h3"], "date_selectors": [".meta-date"], "summary_selectors": [".iprox-content"]}],
+  "filter": {"topics": ["AI法、模型評估、演算法問責、自動化決策、AI與著作權", "NIS2、關鍵基礎設施保護", "產品資安、漏洞揭露義務、SBOM", "供應鏈安全", "半導體", "量子技術"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "smoke_healthy", "verified_on": "2026-09-26", "evidence_urls": ["https://www.tno.nl/en/about-tno/organisation/", "https://www.tno.nl/en/newsroom/"], "schedule_batch": "additional_european_institutions", "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"healthy","health_status":"healthy","raw_count":5,"dated_count":5,"http_statuses":["200"],"reason":""}}
+}

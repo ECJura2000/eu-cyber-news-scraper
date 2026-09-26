@@ -1,0 +1,8 @@
+{
+  "schema_version": 2, "module_version": "2026-09-26.1", "canonical_id": "lu_list",
+  "names": {"zh": "盧森堡科學與技術研究院", "en": "Luxembourg Institute of Science and Technology", "short": "lu_list", "publisher_aliases": []},
+  "sources": [{"id": "lu_list", "country": "LU", "name_zh": "盧森堡科學與技術研究院", "name": "Luxembourg Institute of Science and Technology", "institution_type": "公共研究與技術組織", "language": "en", "homepage": "https://www.list.lu/en/", "listing_url": "https://www.list.lu/media-events/news", "allow_domains": ["www.list.lu", "list.lu"], "include_patterns": ["/media-events/news/news-detail/"], "exclude_patterns": [], "card_selectors": ["article.lt-event-card"], "link_selectors": ["a.lt-button[href]"], "title_selectors": ["h6.lt-heading"], "date_selectors": [".lt-info p"], "critical": false, "schedule_enabled": false, "detail_pages": 8}],
+  "filter": {"topics": ["AI法、模型評估、演算法問責、自動化決策、AI與著作權", "跨境資料流通、資料主權、資料開放與再利用", "隱私框架（含個人資料保護）", "數位身份", "著作權", "平台責任、內容審查、推薦演算法", "媒體多元與資訊操縱", "競爭規範面向（平台責任的市場結構面）", "NIS2、關鍵基礎設施保護", "產品資安、漏洞揭露義務、SBOM", "供應鏈安全", "資安產品認證", "關鍵基礎設施的實體與數位融合保護", "半導體", "量子技術"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90}, "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []}, "responsibility_by_topic": {},
+  "verification": {"status": "smoke_healthy", "verified_on": "2026-09-26", "evidence_urls": ["https://www.list.lu/en/", "https://www.list.lu/media-events/news", "https://www.list.lu/vulnerability-and-disclosure"], "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"healthy","health_status":"healthy","raw_count":12,"dated_count":12,"http_statuses":["200"],"reason":""}}
+}

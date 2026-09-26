@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "nl_acm",
+  "names": {"zh": "荷蘭消費者與市場管理局", "en": "Autoriteit Consument & Markt", "short": "nl_acm", "publisher_aliases": []},
+  "sources": [{"id": "nl_acm", "country": "NL", "name_zh": "荷蘭消費者與市場管理局", "name": "Autoriteit Consument & Markt", "institution_type": "獨立市場與消費者監管機關", "language": "nl", "homepage": "https://www.acm.nl/", "listing_url": "https://www.acm.nl/nl/nieuws", "allow_domains": ["www.acm.nl", "acm.nl"], "include_patterns": ["^/nl/publicaties/"], "critical": false, "schedule_enabled": false, "detail_pages": 8}],
+  "filter": {"topics": ["平台責任、內容審查、推薦演算法", "競爭規範面向（平台責任的市場結構面）", "跨境資料流通、資料主權、資料開放與再利用", "NIS2、關鍵基礎設施保護"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "smoke_healthy", "verified_on": "2026-09-26", "evidence_urls": ["https://www.acm.nl/en/about-acm", "https://www.acm.nl/nl/nieuws"], "schedule_batch": "additional_european_institutions", "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"healthy","health_status":"healthy","raw_count":10,"dated_count":10,"http_statuses":["200"],"reason":""}}
+}

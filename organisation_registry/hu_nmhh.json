@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "hu_nmhh",
+  "names": {"zh": "匈牙利國家媒體與資訊通訊管理局", "en": "National Media and Infocommunications Authority", "short": "NMHH", "publisher_aliases": []},
+  "sources": [{
+    "id": "hu_nmhh", "country": "HU", "name_zh": "匈牙利國家媒體與資訊通訊管理局",
+    "name": "National Media and Infocommunications Authority", "institution_type": "法定媒體與通訊監管機關",
+    "language": "hu", "homepage": "https://nmhh.hu/",
+    "listing_url": "https://nmhh.hu/hirek-esemenyek",
+    "allow_domains": ["nmhh.hu"], "include_patterns": [], "exclude_patterns": [],
+    "critical": false, "schedule_enabled": false, "detail_pages": 8
+  }],
+  "filter": {"topics": ["平台責任、內容審查、推薦演算法", "媒體多元與資訊操縱", "競爭規範面向（平台責任的市場結構面）", "隱私框架（含個人資料保護）", "數位身份"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "smoke_healthy", "verified_on": "2026-09-26", "evidence_urls": ["https://nmhh.hu/", "https://nmhh.hu/hirek-esemenyek"], "schedule_batch": "eu_unregistered_candidates", "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"healthy","health_status":"healthy","raw_count":66,"dated_count":61,"http_statuses":["200","200"],"reason":""}}
+}

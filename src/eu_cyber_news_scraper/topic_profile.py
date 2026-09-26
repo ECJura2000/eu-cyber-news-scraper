@@ -13,7 +13,7 @@ from typing import Any
 from .models import Article
 from .topics import OBSERVATION_TOPICS, confidence_level, normalize_text
 
-SUPPORTED_LANGUAGES = frozenset({"en", "fr", "de", "es", "pt", "it", "pl", "da", "no", "sv", "et", "lv", "lt", "nl", "ro", "fi", "*"})
+SUPPORTED_LANGUAGES = frozenset({"en", "fr", "de", "es", "pt", "it", "pl", "da", "no", "sv", "et", "lv", "lt", "nl", "ro", "fi", "bg", "hr", "el", "cs", "hu", "lb", "mt", "sk", "sl", "*"})
 
 
 @dataclass(frozen=True)

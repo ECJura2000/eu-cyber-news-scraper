@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "cy_dsa",
+  "names": {"zh": "塞浦路斯數位安全局", "en": "Digital Security Authority", "short": "cy_dsa", "publisher_aliases": []},
+  "sources": [{
+    "id": "cy_dsa", "country": "CY", "name_zh": "塞浦路斯數位安全局", "name": "Digital Security Authority",
+    "institution_type": "國家資安主管機關／National CSIRT", "language": "en",
+    "homepage": "https://dsa.cy/EN", "listing_url": "https://dsa.cy/EN",
+    "allow_domains": ["dsa.cy", "www.dsa.cy"], "include_patterns": [], "exclude_patterns": [],
+    "critical": false, "schedule_enabled": false, "detail_pages": 8
+  }],
+  "filter": {"topics": ["NIS2、關鍵基礎設施保護", "產品資安、漏洞揭露義務、SBOM", "供應鏈安全", "資安產品認證", "關鍵基礎設施的實體與數位融合保護"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "smoke_attention", "verified_on": "2026-09-26", "evidence_urls": ["https://dsa.cy/EN", "https://www.gov.cy/en/transport-communications-and-works/announcement-by-the-digital-security-authority-regarding-the-establishment-of-a-national-cybersecurity-certification-authority-in-cyprus/"], "schedule_batch": "bg_hr_cy_cz_hu_mt_sk_si_candidates", "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"attention","health_status":"attention","raw_count":8,"dated_count":5,"http_statuses":["200","200","200"],"reason":"無日期新聞比例過高（38%）。"}}
+}

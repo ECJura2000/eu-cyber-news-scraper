@@ -25,6 +25,12 @@ USER_AGENT = (
     "+https://github.com/ECJura2000/eu-cyber-news-scraper)"
 )
 
+EU_MEMBER_COUNTRIES = frozenset({
+    "AT", "BE", "BG", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR",
+    "GR", "HR", "HU", "IE", "IT", "LT", "LU", "LV", "MT", "NL", "PL",
+    "PT", "RO", "SE", "SI", "SK",
+})
+
 COUNTRY_TIMEZONES = {
     "EU": "Europe/Brussels",
     "FR": "Europe/Paris",
@@ -43,6 +49,18 @@ COUNTRY_TIMEZONES = {
     "NL": "Europe/Amsterdam",
     "RO": "Europe/Bucharest",
     "FI": "Europe/Helsinki",
+    "AT": "Europe/Vienna",
+    "BE": "Europe/Brussels",
+    "BG": "Europe/Sofia",
+    "CY": "Asia/Nicosia",
+    "CZ": "Europe/Prague",
+    "GR": "Europe/Athens",
+    "HR": "Europe/Zagreb",
+    "HU": "Europe/Budapest",
+    "LU": "Europe/Luxembourg",
+    "MT": "Europe/Malta",
+    "SK": "Europe/Bratislava",
+    "SI": "Europe/Ljubljana",
 }
 
 

@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "nl_rdi",
+  "names": {"zh": "荷蘭數位基礎設施監察局", "en": "Rijksinspectie Digitale Infrastructuur", "short": "nl_rdi", "publisher_aliases": []},
+  "sources": [{"id": "nl_rdi", "country": "NL", "name_zh": "荷蘭數位基礎設施監察局", "name": "Rijksinspectie Digitale Infrastructuur", "institution_type": "政府數位基礎設施與資安監管機關", "language": "nl", "homepage": "https://www.rdi.nl/", "listing_url": "https://www.rdi.nl/actueel/nieuws", "allow_domains": ["www.rdi.nl", "rdi.nl"], "critical": false, "schedule_enabled": false, "detail_pages": 8}],
+  "filter": {"topics": ["NIS2、關鍵基礎設施保護", "產品資安、漏洞揭露義務、SBOM", "資安產品認證", "供應鏈安全", "關鍵基礎設施的實體與數位融合保護"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "parse_empty", "verified_on": "2026-09-26", "evidence_urls": ["https://www.rdi.nl/onderwerpen/digitale-weerbaarheid/cyberbeveiligingswet/toezicht-rdi", "https://www.rdi.nl/actueel/nieuws", "https://www.rdi.nl/service/rss"], "schedule_batch": "additional_european_institutions", "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"empty","health_status":"attention","raw_count":0,"dated_count":0,"http_statuses":["200"],"reason":"來源可連線，但未解析出任何新聞卡片。"}}
+}

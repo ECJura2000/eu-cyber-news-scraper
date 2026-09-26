@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "it_agid",
+  "names": {
+    "zh": "義大利數位署",
+    "en": "Agenzia per l'Italia Digitale",
+    "short": "it_agid",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "it_agid",
+      "country": "IT",
+      "name_zh": "義大利數位署",
+      "name": "Agenzia per l'Italia Digitale",
+      "institution_type": "國家數位政策技術機構",
+      "language": "it",
+      "homepage": "https://www.agid.gov.it/it",
+      "listing_url": "https://www.agid.gov.it/it/stampa-e-comunicazione",
+      "allow_domains": ["www.agid.gov.it"],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "數位身份"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_attention",
+    "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"healthy","health_status":"attention","raw_count":25,"dated_count":23,"http_statuses":["200"],"reason":"原始標題重複率異常（唯一標題比例 12%）。"},
+    "verified_on": "2026-09-26",
+    "evidence_urls": [
+      "https://www.agid.gov.it/it/argomenti/agenda-digitale",
+      "https://www.agid.gov.it/it/stampa-e-comunicazione"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "dk_dtu",
+  "names": {
+    "zh": "丹麥技術大學",
+    "en": "Technical University of Denmark",
+    "short": "dk_dtu",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "dk_dtu",
+      "country": "DK",
+      "name_zh": "丹麥技術大學",
+      "name": "Technical University of Denmark",
+      "institution_type": "政府資助的自治技術大學",
+      "language": "en",
+      "homepage": "https://www.dtu.dk/english",
+      "listing_url": "https://www.dtu.dk/english/news/all-news",
+      "allow_domains": ["www.dtu.dk", "dtu.dk"],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {
+    "effective_from": "2026-09-26",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_attention",
+    "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"attention","health_status":"attention","raw_count":5,"dated_count":0,"http_statuses":["200"],"reason":"無日期新聞比例過高（100%）。"},
+    "verified_on": "2026-09-26",
+    "evidence_urls": [
+      "https://www.dtu.dk/english/about/organization",
+      "https://www.dtu.dk/english/news/all-news",
+      "https://www.dtu.dk/english/news/all-news/New-quantum-communication-network-protects-data-now-and-in-the-future?id=83129c45-491d-4a56-beea-62c806f72bb9"
+    ],
+    "schedule_batch": "nordic_candidate"
+  }
+}

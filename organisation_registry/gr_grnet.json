@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "gr_grnet",
+  "names": {"zh": "希臘國家研究與技術網路", "en": "National Infrastructures for Research and Technology", "short": "GRNET", "publisher_aliases": []},
+  "sources": [{
+    "id": "gr_grnet", "country": "GR", "name_zh": "希臘國家研究與技術網路",
+    "name": "National Infrastructures for Research and Technology", "institution_type": "公營研究與教育網路機構",
+    "language": "en", "homepage": "https://grnet.gr/en/",
+    "listing_url": "https://grnet.gr/en/category/news_en-en/",
+    "allow_domains": ["grnet.gr", "www.grnet.gr"], "include_patterns": [], "exclude_patterns": [],
+    "critical": false, "schedule_enabled": false, "detail_pages": 8
+  }],
+  "filter": {"topics": ["量子技術", "半導體", "跨境資料流通、資料主權、資料開放與再利用", "供應鏈安全"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "smoke_attention", "verified_on": "2026-09-26", "evidence_urls": ["https://grnet.gr/en/", "https://grnet.gr/en/category/news_en-en/"], "schedule_batch": "eu_unregistered_candidates", "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"attention","health_status":"attention","raw_count":51,"dated_count":21,"http_statuses":["200","200"],"reason":"無日期新聞比例過高（59%）。"}}
+}

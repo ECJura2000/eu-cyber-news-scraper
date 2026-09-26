@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "gr_ncsa",
+  "names": {"zh": "希臘國家網路安全局", "en": "Hellenic National Cybersecurity Authority", "short": "NCSA", "publisher_aliases": []},
+  "sources": [{
+    "id": "gr_ncsa", "country": "GR", "name_zh": "希臘國家網路安全局",
+    "name": "National Cybersecurity Authority", "institution_type": "國家資安主管機關",
+    "language": "el", "homepage": "https://cyber.gov.gr/",
+    "listing_url": "https://cyber.gov.gr/nea-plirofories/grafeio-typoy-old/",
+    "allow_domains": ["cyber.gov.gr"], "include_patterns": [], "exclude_patterns": [],
+    "critical": false, "schedule_enabled": false, "detail_pages": 8
+  }],
+  "filter": {"topics": ["NIS2、關鍵基礎設施保護", "產品資安、漏洞揭露義務、SBOM", "供應鏈安全", "資安產品認證", "關鍵基礎設施的實體與數位融合保護"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "smoke_healthy", "verified_on": "2026-09-26", "evidence_urls": ["https://cyber.gov.gr/eak/tautotita/", "https://cyber.gov.gr/nea-plirofories/grafeio-typoy-old/"], "schedule_batch": "eu_unregistered_candidates", "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"healthy","health_status":"healthy","raw_count":73,"dated_count":72,"http_statuses":["200","200"],"reason":""}}
+}
