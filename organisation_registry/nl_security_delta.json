@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "nl_security_delta",
+  "names": {
+    "zh": "荷蘭 Security Delta 公私協力資安群聚",
+    "en": "Security Delta (HSD)",
+    "short": "nl_security_delta",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "nl_security_delta",
+      "country": "NL",
+      "name_zh": "荷蘭 Security Delta 公私協力資安群聚",
+      "name": "Security Delta (HSD)",
+      "institution_type": "企業、政府與研究機構公私協力群聚",
+      "language": "en",
+      "homepage": "https://securitydelta.nl/",
+      "listing_url": "https://securitydelta.nl/news/overview",
+      "allow_domains": [
+        "securitydelta.nl"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8,
+      "card_selectors": [".grid-layout a.item.news-item[href]"],
+      "title_selectors": [".title"],
+      "date_selectors": [".date"]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "關鍵基礎設施的實體與數位融合保護"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-26",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-09-26",
+    "evidence_urls": [
+      "https://securitydelta.nl/",
+      "https://securitydelta.nl/news/overview"
+    ],
+    "schedule_batch": "nl_pt_ro_fi_candidate"
+  }
+}

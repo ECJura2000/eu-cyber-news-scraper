@@ -13,10 +13,12 @@ from eu_cyber_news_scraper.config import USER_AGENT, _validate_sources, load_sou
 def test_default_sources_cover_all_target_jurisdictions():
     sources = load_sources()
     assert len(sources) >= 33
-    assert {source.country for source in sources} == {"EU", "FR", "DE", "IE", "ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT"}
+    assert {source.country for source in sources} == {"EU", "FR", "DE", "IE", "ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT", "NL", "RO", "FI"}
     assert sum(source.schedule_enabled for source in sources) == 55
-    assert len([source for source in sources if source.country in {"ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT"}]) == 30
+    assert len([source for source in sources if source.country in {"ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT"}]) == 33
     assert all(not source.schedule_enabled for source in sources if source.country in {"ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT"})
+    assert sum(source.country in {"NL", "RO", "FI"} or source.id in {"pt_cncs", "pt_inesc_tec", "pt_ist"} for source in sources) == 16
+    assert all(not source.schedule_enabled for source in sources if source.country in {"NL", "RO", "FI"} or source.id in {"pt_cncs", "pt_inesc_tec", "pt_ist"})
     assert any(source.id == "fr_anssi" and source.feed_urls for source in sources)
     assert any(source.id == "ie_ncsc" and source.critical for source in sources)
     assert any(source.id == "fr_viginum" for source in sources)

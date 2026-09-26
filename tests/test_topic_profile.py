@@ -117,6 +117,9 @@ def test_new_topic_is_not_limited_by_existing_source_whitelist(tmp_path):
     ("et", "Tehisintellekt ja isikuandmete kaitse"),
     ("lv", "Mākslīgais intelekts un personas datu aizsardzība"),
     ("lt", "Dirbtinis intelektas ir asmens duomenų apsauga"),
+    ("nl", "Kunstmatige intelligentie en bescherming van persoonsgegevens"),
+    ("ro", "Inteligență artificială și protecția datelor cu caracter personal"),
+    ("fi", "Tekoäly ja henkilötietojen suoja"),
 ])
 def test_builtin_profile_matches_local_ai_and_privacy(language, title):
     article = _article(title)
@@ -137,6 +140,9 @@ def test_builtin_profile_matches_local_ai_and_privacy(language, title):
     ("et", "kunstig intelligens"),
     ("lv", "artificiell intelligens"),
     ("lt", "künstliche intelligenz"),
+    ("nl", "tekoäly"),
+    ("ro", "kunstmatige intelligentie"),
+    ("fi", "inteligență artificială"),
 ])
 def test_builtin_profile_does_not_treat_foreign_synonym_as_local_hit(language, foreign_phrase):
     article = _article(foreign_phrase)

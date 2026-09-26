@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "fi_vtt",
+  "names": {
+    "zh": "芬蘭國家技術研究中心 VTT",
+    "en": "VTT Technical Research Centre of Finland",
+    "short": "fi_vtt",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "fi_vtt",
+      "country": "FI",
+      "name_zh": "芬蘭國家技術研究中心 VTT",
+      "name": "VTT Technical Research Centre of Finland",
+      "institution_type": "國有非營利應用研究機構",
+      "language": "en",
+      "homepage": "https://www.vttresearch.com/en",
+      "listing_url": "https://www.vttresearch.com/en/news-stories/news-and-stories",
+      "allow_domains": [
+        "www.vttresearch.com"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-26",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "official_url_confirmed_parser_pending",
+    "verified_on": "2026-09-26",
+    "evidence_urls": [
+      "https://www.vttresearch.com/en",
+      "https://www.vttresearch.com/en/news-stories/news-and-stories"
+    ],
+    "schedule_batch": "nl_pt_ro_fi_candidate"
+  }
+}

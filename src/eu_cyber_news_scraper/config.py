@@ -40,6 +40,9 @@ COUNTRY_TIMEZONES = {
     "EE": "Europe/Tallinn",
     "LV": "Europe/Riga",
     "LT": "Europe/Vilnius",
+    "NL": "Europe/Amsterdam",
+    "RO": "Europe/Bucharest",
+    "FI": "Europe/Helsinki",
 }
 
 

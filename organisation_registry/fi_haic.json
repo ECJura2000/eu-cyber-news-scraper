@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "fi_haic",
+  "names": {
+    "zh": "赫爾辛基－阿爾托大學資安研究所",
+    "en": "Helsinki-Aalto Institute for Cybersecurity",
+    "short": "fi_haic",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "fi_haic",
+      "country": "FI",
+      "name_zh": "赫爾辛基－阿爾托大學資安研究所",
+      "name": "Helsinki-Aalto Institute for Cybersecurity",
+      "institution_type": "大學與國家研究機構聯合資安研究所",
+      "language": "en",
+      "homepage": "https://haic.aalto.fi/",
+      "listing_url": "https://haic.aalto.fi/",
+      "allow_domains": [
+        "haic.aalto.fi",
+        "haic.fi"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-26",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-09-26",
+    "evidence_urls": [
+      "https://haic.aalto.fi/",
+      "https://haic.aalto.fi/"
+    ],
+    "schedule_batch": "nl_pt_ro_fi_candidate"
+  }
+}

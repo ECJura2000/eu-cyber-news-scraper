@@ -244,23 +244,25 @@ def parse_listing(html: str, source: Source, base_url: str) -> list[Article]:
         if canonical in seen_urls:
             continue
         link_text = plain_text(link.get_text(" "))
-        context = _candidate_context(link) if candidate.name == "a" else candidate
+        context = candidate if source.card_selectors and candidate.name == "a" else (
+            _candidate_context(link) if candidate.name == "a" else candidate
+        )
         title_node = None
-        if source.title_selectors and context.name != "a":
+        if source.title_selectors:
             title_node = next(
                 (context.select_one(selector) for selector in source.title_selectors if context.select_one(selector)),
                 None,
             )
-        elif len(link_text) < 8 and context.name != "a":
+        elif len(link_text) < 8:
             title_node = context.select_one("h1, h2, h3, h4")
         title = plain_text(title_node.get_text(" ") if title_node else link.get_text(" "))
         if len(title) < 8 or _looks_like_navigation_title(title):
             continue
-        time_node = context.select_one("time") if context.name != "a" else None
+        time_node = context.select_one("time")
         date_text = ""
         date_source = "visible-text"
         date_confidence = "low"
-        if source.date_selectors and context.name != "a":
+        if source.date_selectors:
             date_node = next(
                 (context.select_one(selector) for selector in source.date_selectors if context.select_one(selector)),
                 None,
@@ -277,13 +279,13 @@ def parse_listing(html: str, source: Source, base_url: str) -> list[Article]:
                 date_confidence = "high"
         if not date_text:
             date_text = _extract_date_text(context.get_text(" "))
-        if source.summary_selectors and context.name != "a":
+        if source.summary_selectors:
             summary_node = next(
                 (context.select_one(selector) for selector in source.summary_selectors if context.select_one(selector)),
                 None,
             )
         else:
-            summary_node = context.select_one("p") if context.name != "a" else None
+            summary_node = context.select_one("p")
         seen_urls.add(canonical)
         article = Article(
                 source_id=source.id,
@@ -480,7 +482,7 @@ def allowed_article_url(source: Source, url: str) -> bool:
 
 
 def _date_languages(language: str) -> tuple[str, ...]:
-    return ("nb",) if language == "no" else ((language,) if language in {"en", "fr", "de", "es", "pt", "it", "pl", "da", "sv", "et", "lv", "lt"} else ())
+    return ("nb",) if language == "no" else ((language,) if language in {"en", "fr", "de", "es", "pt", "it", "pl", "da", "sv", "et", "lv", "lt", "nl", "ro", "fi"} else ())
 
 
 def _candidate_context(link: Tag) -> Tag:

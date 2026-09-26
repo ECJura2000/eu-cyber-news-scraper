@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "ro_upb",
+  "names": {
+    "zh": "羅馬尼亞布加勒斯特理工大學",
+    "en": "Universitatea Națională de Știință și Tehnologie POLITEHNICA București",
+    "short": "ro_upb",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "ro_upb",
+      "country": "RO",
+      "name_zh": "羅馬尼亞布加勒斯特理工大學",
+      "name": "Universitatea Națională de Știință și Tehnologie POLITEHNICA București",
+      "institution_type": "公立大學科技與資安研究機構",
+      "language": "ro",
+      "homepage": "https://upb.ro/",
+      "listing_url": "https://upb.ro/category/stiri/",
+      "allow_domains": [
+        "upb.ro"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8,
+      "card_selectors": ["article.post"],
+      "link_selectors": ["h3.entry-title a[href]"],
+      "date_selectors": ["time.entry-date"]
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-26",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-09-26",
+    "evidence_urls": [
+      "https://upb.ro/",
+      "https://upb.ro/category/stiri/"
+    ],
+    "schedule_batch": "nl_pt_ro_fi_candidate"
+  }
+}

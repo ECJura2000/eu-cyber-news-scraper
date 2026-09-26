@@ -65,7 +65,7 @@ def load_coverage(
 
     registry = load_organisation_registry()
     for topic in OBSERVATION_TOPICS:
-        for country in ("ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT"):
+        for country in ("ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT", "NL", "RO", "FI"):
             relevant = [
                 source for source in source_map.values()
                 if source.country == country and (module := registry.module_for_source(source.id)) and topic in module.topics

@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "ro_ici",
+  "names": {
+    "zh": "羅馬尼亞布加勒斯特資訊研究發展院",
+    "en": "ICI București",
+    "short": "ro_ici",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "ro_ici",
+      "country": "RO",
+      "name_zh": "羅馬尼亞布加勒斯特資訊研究發展院",
+      "name": "ICI București",
+      "institution_type": "國家資訊科技研究發展機構",
+      "language": "ro",
+      "homepage": "https://ici.ro/",
+      "listing_url": "https://ici.ro/",
+      "allow_domains": [
+        "ici.ro",
+        "www.ici.ro"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-26",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "official_url_confirmed_parser_pending",
+    "verified_on": "2026-09-26",
+    "evidence_urls": [
+      "https://ici.ro/",
+      "https://ici.ro/"
+    ],
+    "schedule_batch": "nl_pt_ro_fi_candidate"
+  }
+}

@@ -1399,3 +1399,236 @@ link_selectors = [".naujiena-title > a[href]"]
 title_selectors = [".naujiena-title > a[href]"]
 date_selectors = [".naujiena-laikas"]
 detail_pages = 8
+
+[[sources]]
+id = "nl_ncsc"
+country = "NL"
+name_zh = "荷蘭國家網路安全中心"
+name = "Nationaal Cyber Security Centrum"
+institution_type = "國家資安主管機關"
+language = "nl"
+homepage = "https://www.ncsc.nl/"
+listing_url = "https://www.ncsc.nl/nieuws"
+feed_urls = ["https://feeds.ncsc.nl/nieuws.rss"]
+allow_domains = ["www.ncsc.nl", "feeds.ncsc.nl"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "nl_ap"
+country = "NL"
+name_zh = "荷蘭個人資料保護局"
+name = "Autoriteit Persoonsgegevens"
+institution_type = "獨立資料保護監管機關"
+language = "nl"
+homepage = "https://www.autoriteitpersoonsgegevens.nl/"
+listing_url = "https://www.autoriteitpersoonsgegevens.nl/actueel"
+feed_urls = ["https://www.autoriteitpersoonsgegevens.nl/feed/article/rss.xml"]
+allow_domains = ["www.autoriteitpersoonsgegevens.nl","autoriteitpersoonsgegevens.nl"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "nl_surf"
+country = "NL"
+name_zh = "荷蘭 SURF 教育研究數位合作社"
+name = "SURF"
+institution_type = "教育研究機構數位基礎設施合作社"
+language = "en"
+homepage = "https://www.surf.nl/en"
+listing_url = "https://www.surf.nl/en/news"
+allow_domains = ["www.surf.nl"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "nl_security_delta"
+country = "NL"
+name_zh = "荷蘭 Security Delta 公私協力資安群聚"
+name = "Security Delta (HSD)"
+institution_type = "企業、政府與研究機構公私協力群聚"
+language = "en"
+homepage = "https://securitydelta.nl/"
+listing_url = "https://securitydelta.nl/news/overview"
+allow_domains = ["securitydelta.nl"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+card_selectors = [".grid-layout a.item.news-item[href]"]
+title_selectors = [".title"]
+date_selectors = [".date"]
+
+[[sources]]
+id = "nl_tudelft"
+country = "NL"
+name_zh = "荷蘭代爾夫特理工大學資安研究"
+name = "TU Delft Cybersecurity"
+institution_type = "公立大學資安研究中心"
+language = "en"
+homepage = "https://www.tudelft.nl/en/cybersecurity"
+listing_url = "https://www.tudelft.nl/en/cybersecurity/news"
+allow_domains = ["www.tudelft.nl"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "pt_cncs"
+country = "PT"
+name_zh = "葡萄牙國家網路安全中心"
+name = "Centro Nacional de Cibersegurança"
+institution_type = "國家資安主管機關"
+language = "pt"
+homepage = "https://www.cncs.gov.pt/"
+listing_url = "https://dyn.cncs.gov.pt/pt/noticias/"
+allow_domains = ["www.cncs.gov.pt","dyn.cncs.gov.pt"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "pt_inesc_tec"
+country = "PT"
+name_zh = "葡萄牙 INESC TEC 產學研究機構"
+name = "INESC TEC"
+institution_type = "公私協力非營利聯合研究機構"
+language = "en"
+homepage = "https://www.inesctec.pt/en"
+listing_url = "https://www.inesctec.pt/en/press-releases"
+allow_domains = ["www.inesctec.pt"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "pt_ist"
+country = "PT"
+name_zh = "葡萄牙里斯本大學高等技術學院"
+name = "Instituto Superior Técnico"
+institution_type = "公立大學工程與資安研究機構"
+language = "pt"
+homepage = "https://tecnico.ulisboa.pt/pt/"
+listing_url = "https://tecnico.ulisboa.pt/pt/noticias/"
+allow_domains = ["tecnico.ulisboa.pt"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "ro_dnsc"
+country = "RO"
+name_zh = "羅馬尼亞國家網路安全局"
+name = "Directoratul Național de Securitate Cibernetică"
+institution_type = "國家資安主管機關"
+language = "ro"
+homepage = "https://www.dnsc.ro/"
+listing_url = "https://www.dnsc.ro/"
+allow_domains = ["www.dnsc.ro","dnsc.ro"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "ro_anspdcp"
+country = "RO"
+name_zh = "羅馬尼亞個人資料處理監督局"
+name = "Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal"
+institution_type = "獨立資料保護監管機關"
+language = "ro"
+homepage = "https://www.dataprotection.ro/"
+listing_url = "https://www.dataprotection.ro/index.jsp?page=home&lang=ro"
+allow_domains = ["www.dataprotection.ro","dataprotection.ro"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "ro_ici"
+country = "RO"
+name_zh = "羅馬尼亞布加勒斯特資訊研究發展院"
+name = "ICI București"
+institution_type = "國家資訊科技研究發展機構"
+language = "ro"
+homepage = "https://ici.ro/"
+listing_url = "https://ici.ro/"
+allow_domains = ["ici.ro","www.ici.ro"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "ro_upb"
+country = "RO"
+name_zh = "羅馬尼亞布加勒斯特理工大學"
+name = "Universitatea Națională de Știință și Tehnologie POLITEHNICA București"
+institution_type = "公立大學科技與資安研究機構"
+language = "ro"
+homepage = "https://upb.ro/"
+listing_url = "https://upb.ro/category/stiri/"
+allow_domains = ["upb.ro"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+card_selectors = ["article.post"]
+link_selectors = ["h3.entry-title a[href]"]
+date_selectors = ["time.entry-date"]
+
+[[sources]]
+id = "fi_ncsc"
+country = "FI"
+name_zh = "芬蘭交通與通訊局國家網路安全中心"
+name = "Traficomin Kyberturvallisuuskeskus"
+institution_type = "國家資安主管機關"
+language = "fi"
+homepage = "https://www.kyberturvallisuuskeskus.fi/"
+listing_url = "https://www.kyberturvallisuuskeskus.fi/fi/ajankohtaista"
+feed_urls = ["https://www.kyberturvallisuuskeskus.fi/feed/rss/fi"]
+allow_domains = ["www.kyberturvallisuuskeskus.fi","kyberturvallisuuskeskus.fi"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "fi_tietosuoja"
+country = "FI"
+name_zh = "芬蘭資料保護監察官辦公室"
+name = "Tietosuojavaltuutetun toimisto"
+institution_type = "獨立資料保護監管機關"
+language = "fi"
+homepage = "https://tietosuoja.fi/"
+listing_url = "https://tietosuoja.fi/uutiset-tiedotteet"
+allow_domains = ["tietosuoja.fi","www.tietosuoja.fi"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "fi_vtt"
+country = "FI"
+name_zh = "芬蘭國家技術研究中心 VTT"
+name = "VTT Technical Research Centre of Finland"
+institution_type = "國有非營利應用研究機構"
+language = "en"
+homepage = "https://www.vttresearch.com/en"
+listing_url = "https://www.vttresearch.com/en/news-stories/news-and-stories"
+allow_domains = ["www.vttresearch.com"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "fi_haic"
+country = "FI"
+name_zh = "赫爾辛基－阿爾托大學資安研究所"
+name = "Helsinki-Aalto Institute for Cybersecurity"
+institution_type = "大學與國家研究機構聯合資安研究所"
+language = "en"
+homepage = "https://haic.aalto.fi/"
+listing_url = "https://haic.aalto.fi/"
+allow_domains = ["haic.aalto.fi","haic.fi"]
+critical = false
+schedule_enabled = false
+detail_pages = 8

@@ -190,7 +190,7 @@ def _validate_payload(payload: Any) -> None:
     for row in payload["sources"]:
         if not isinstance(row, dict) or (missing := required_source - row.keys()):
             raise ValueError(f"source missing fields: {sorted(missing)}")
-        if row["country"] not in {"EU", "FR", "DE", "IE", "ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT"}:
+        if row["country"] not in {"EU", "FR", "DE", "IE", "ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT", "NL", "RO", "FI"}:
             raise ValueError(f"unsupported source country: {row['country']}")
         if "schedule_enabled" in row and not isinstance(row["schedule_enabled"], bool):
             raise ValueError("schedule_enabled must be boolean")
