@@ -275,7 +275,7 @@ def test_organisation_status_prints_hash_and_modules(capsys):
 def test_cli_reports_package_version(capsys):
     with pytest.raises(SystemExit, match="0"):
         build_parser().parse_args(["--version"])
-    assert capsys.readouterr().out.endswith(" 1.5.0\n")
+    assert capsys.readouterr().out.endswith(" 1.6.0\n")
 
 
 def test_main_reports_period_and_lock_errors(monkeypatch, tmp_path):
