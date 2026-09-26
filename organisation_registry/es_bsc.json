@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "es_bsc",
+  "names": {
+    "zh": "巴塞隆納超級運算中心",
+    "en": "Barcelona Supercomputing Center - Centro Nacional de Supercomputación",
+    "short": "es_bsc",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "es_bsc",
+      "country": "ES",
+      "name_zh": "巴塞隆納超級運算中心",
+      "name": "Barcelona Supercomputing Center - Centro Nacional de Supercomputación",
+      "institution_type": "公共超級運算研究聯合體",
+      "language": "es",
+      "homepage": "https://www.bsc.es/es",
+      "listing_url": "https://www.bsc.es/es/noticias",
+      "allow_domains": ["www.bsc.es"],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "parse_empty",
+    "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"empty","health_status":"attention","raw_count":0,"dated_count":0,"http_statuses":["200"],"reason":"來源可連線，但未解析出任何新聞卡片。"},
+    "verified_on": "2026-09-26",
+    "evidence_urls": [
+      "https://www.bsc.es/es/descubre-el-bsc/transparencia",
+      "https://www.bsc.es/es/noticias",
+      "https://www.bsc.es/news/bsc-news/bsc-presents-sargantana-the-new-generation-the-first-open-source-chips-designed-spain",
+      "https://www.bsc.es/news/bsc-news/bsc-presents-the-first-quantum-computer-spain-developed-100-european-technology"
+    ]
+  }
+}

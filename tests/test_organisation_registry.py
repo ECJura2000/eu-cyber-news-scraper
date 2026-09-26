@@ -18,11 +18,11 @@ def test_builtin_registry_covers_all_configured_sources():
     sources = load_sources()
     registry = load_organisation_registry()
     assert {source.id for source in sources} == set(registry.source_ids)
-    assert len(registry.modules) == 101
+    assert len(registry.modules) == 148
     assert not registry.errors
     assert len(registry.registry_hash) == 64
     assert all(module.topics for module in registry.modules)
-    assert len(registry.source_rows) == 101
+    assert len(registry.source_rows) == 148
     assert registry.module_for_source("missing") is None
 
 
@@ -115,7 +115,7 @@ def test_invalid_builtin_registry_is_fatal(tmp_path):
     ],
 )
 def test_registry_schema_validation_rejects_invalid_fields(mutation, message):
-    module = load_organisation_registry().modules[0]
+    module = next(module for module in load_organisation_registry().modules if module.canonical_id == "eu_edpb")
     payload = json.loads(Path(module.source_path).read_text(encoding="utf-8"))
     mutation(payload)
     with pytest.raises(ValueError, match=message):

@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "pt_arte",
+  "names": {
+    "zh": "葡萄牙國家技術改革局",
+    "en": "Agência para a Reforma Tecnológica do Estado",
+    "short": "pt_arte",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "pt_arte",
+      "country": "PT",
+      "name_zh": "葡萄牙國家技術改革局",
+      "name": "Agência para a Reforma Tecnológica do Estado",
+      "institution_type": "公共行政數位轉型機構",
+      "language": "pt",
+      "homepage": "https://www.arte.gov.pt/",
+      "listing_url": "https://www.arte.gov.pt/noticias/",
+      "allow_domains": ["www.arte.gov.pt"],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "數位身份",
+      "NIS2、關鍵基礎設施保護"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_attention",
+    "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"attention","health_status":"attention","raw_count":9,"dated_count":0,"http_statuses":["200"],"reason":"無日期新聞比例過高（100%）。"},
+    "verified_on": "2026-09-26",
+    "evidence_urls": [
+      "https://www.arte.gov.pt/quem-somos/",
+      "https://www.arte.gov.pt/noticias/"
+    ]
+  }
+}

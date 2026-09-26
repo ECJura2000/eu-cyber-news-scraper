@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "nl_nwo",
+  "names": {"zh": "荷蘭研究委員會", "en": "Dutch Research Council (NWO)", "short": "nl_nwo", "publisher_aliases": []},
+  "sources": [{"id": "nl_nwo", "country": "NL", "name_zh": "荷蘭研究委員會", "name": "Dutch Research Council (NWO)", "institution_type": "國家研究資助與研究基礎設施機構", "language": "en", "homepage": "https://www.nwo.nl/en", "listing_url": "https://www.nwo.nl/en/news", "allow_domains": ["www.nwo.nl", "nwo.nl"], "critical": false, "schedule_enabled": false, "detail_pages": 8}],
+  "filter": {"topics": ["AI法、模型評估、演算法問責、自動化決策、AI與著作權", "半導體", "量子技術", "產品資安、漏洞揭露義務、SBOM"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "smoke_healthy", "verified_on": "2026-09-26", "evidence_urls": ["https://www.nwo.nl/en/about-nwo", "https://www.nwo.nl/en/news"], "schedule_batch": "additional_european_institutions", "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"healthy","health_status":"healthy","raw_count":12,"dated_count":12,"http_statuses":["200"],"reason":""}}
+}

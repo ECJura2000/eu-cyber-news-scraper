@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "si_sicert",
+  "names": {"zh": "斯洛維尼亞 SI-CERT", "en": "Slovenian Computer Emergency Response Team", "short": "si_sicert", "publisher_aliases": []},
+  "sources": [{
+    "id": "si_sicert", "country": "SI", "name_zh": "斯洛維尼亞 SI-CERT", "name": "SI-CERT",
+    "institution_type": "國家 CERT／學術與研究網路機構", "language": "en",
+    "homepage": "https://www.cert.si/", "listing_url": "https://www.cert.si/en/category/news/",
+    "allow_domains": ["cert.si", "www.cert.si"], "include_patterns": [], "exclude_patterns": [],
+    "critical": false, "schedule_enabled": false, "detail_pages": 8
+  }],
+  "filter": {"topics": ["NIS2、關鍵基礎設施保護", "產品資安、漏洞揭露義務、SBOM", "供應鏈安全", "關鍵基礎設施的實體與數位融合保護"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "smoke_attention", "verified_on": "2026-09-26", "evidence_urls": ["https://www.cert.si/", "https://www.cert.si/en/category/news/", "https://www.cert.si/o-nas/"], "schedule_batch": "bg_hr_cy_cz_hu_mt_sk_si_candidates", "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"healthy","health_status":"attention","raw_count":11,"dated_count":11,"http_statuses":["200","200"],"reason":"最新可辨識文章距今 120 天，超過來源門檻 90 天。"}}
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "es_aesia",
+  "names": {
+    "zh": "西班牙人工智慧監督局",
+    "en": "Agencia Española de Supervisión de Inteligencia Artificial",
+    "short": "es_aesia",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "es_aesia",
+      "country": "ES",
+      "name_zh": "西班牙人工智慧監督局",
+      "name": "Agencia Española de Supervisión de Inteligencia Artificial",
+      "institution_type": "國家人工智慧監督機構",
+      "language": "es",
+      "homepage": "https://aesia.digital.gob.es/es",
+      "listing_url": "https://aesia.digital.gob.es/es/actualidad",
+      "allow_domains": ["aesia.digital.gob.es"],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": ["AI法、模型評估、演算法問責、自動化決策、AI與著作權"],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_attention",
+    "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"attention","health_status":"attention","raw_count":21,"dated_count":0,"http_statuses":["200"],"reason":"無日期新聞比例過高（100%）。"},
+    "verified_on": "2026-09-26",
+    "evidence_urls": [
+      "https://aesia.digital.gob.es/storage/media/informacion-institucional.pdf",
+      "https://aesia.digital.gob.es/es/actualidad"
+    ]
+  }
+}

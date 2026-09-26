@@ -482,7 +482,7 @@ def allowed_article_url(source: Source, url: str) -> bool:
 
 
 def _date_languages(language: str) -> tuple[str, ...]:
-    return ("nb",) if language == "no" else ((language,) if language in {"en", "fr", "de", "es", "pt", "it", "pl", "da", "sv", "et", "lv", "lt", "nl", "ro", "fi"} else ())
+    return ("nb",) if language == "no" else ((language,) if language in {"en", "fr", "de", "es", "pt", "it", "pl", "da", "sv", "et", "lv", "lt", "nl", "ro", "fi", "bg", "hr", "el", "cs", "hu", "lb", "mt", "sk", "sl"} else ())
 
 
 def _candidate_context(link: Tag) -> Tag:

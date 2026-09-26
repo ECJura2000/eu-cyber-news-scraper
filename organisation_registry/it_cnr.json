@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "it_cnr",
+  "names": {
+    "zh": "義大利國家研究委員會",
+    "en": "Consiglio Nazionale delle Ricerche",
+    "short": "it_cnr",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "it_cnr",
+      "country": "IT",
+      "name_zh": "義大利國家研究委員會",
+      "name": "Consiglio Nazionale delle Ricerche",
+      "institution_type": "國家公共研究機構",
+      "language": "it",
+      "homepage": "https://www.cnr.it/it",
+      "listing_url": "https://www.cnr.it/it/news?area-tematica=ingegneria-ict",
+      "allow_domains": ["www.cnr.it"],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"healthy","health_status":"healthy","raw_count":35,"dated_count":31,"http_statuses":["200"],"reason":""},
+    "verified_on": "2026-09-26",
+    "evidence_urls": [
+      "https://www.cnr.it/it/chi-siamo",
+      "https://www.cnr.it/it/news?area-tematica=ingegneria-ict",
+      "https://www.cnr.it/it/news/11707/l-italia-si-prepara-a-normare-le-tecnologie-quantistiche"
+    ]
+  }
+}

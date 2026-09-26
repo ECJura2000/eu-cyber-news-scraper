@@ -91,6 +91,475 @@ exclude_patterns = ['/markdown$', '/json$', '/pdf$']
 detail_pages = 8
 
 [[sources]]
+id = "cy_dsa"
+country = "CY"
+name_zh = "塞浦路斯數位安全局"
+name = "Digital Security Authority"
+institution_type = "國家資安主管機關／National CSIRT"
+language = "en"
+homepage = "https://dsa.cy/EN"
+listing_url = "https://dsa.cy/EN"
+allow_domains = ["dsa.cy", "www.dsa.cy"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "at_cert"
+country = "AT"
+name_zh = "奧地利國家 CERT"
+name = "CERT.at"
+institution_type = "國家資安事件應變團隊"
+language = "de"
+homepage = "https://www.cert.at/en/"
+listing_url = "https://www.cert.at/en/"
+allow_domains = ["www.cert.at", "cert.at"]
+include_patterns = []
+exclude_patterns = []
+critical = false
+schedule_enabled = false
+detail_pages = 8
+feed_urls = ["https://www.cert.at/cert-at.de.warnings.rss_2.0.xml", "https://www.cert.at/cert-at.de.blog.rss_2.0.xml"]
+
+[[sources]]
+id = "at_dsb"
+country = "AT"
+name_zh = "奧地利資料保護局"
+name = "Datenschutzbehörde"
+institution_type = "資料保護監管機構"
+language = "de"
+homepage = "https://dsb.gv.at/"
+listing_url = "https://dsb.gv.at/aktuelles"
+allow_domains = ["dsb.gv.at"]
+include_patterns = []
+exclude_patterns = []
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "at_rtr"
+country = "AT"
+name_zh = "奧地利廣播與電信監管機關"
+name = "Austrian Regulatory Authority for Broadcasting and Telecommunications"
+institution_type = "法定電信與媒體監管機構"
+language = "de"
+homepage = "https://www.rtr.at/rtr/wer_wir_sind/Organisation/Organisation.en.html"
+listing_url = "https://www.rtr.at/TKP/aktuelles/pressemitteilungen/Presse.de.html"
+allow_domains = ["www.rtr.at", "rtr.at"]
+include_patterns = []
+exclude_patterns = []
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "be_apd"
+country = "BE"
+name_zh = "比利時資料保護局"
+name = "Autorité de protection des données / Gegevensbeschermingsautoriteit"
+institution_type = "獨立資料保護監管機構"
+language = "en"
+homepage = "https://gegevensbeschermingsautoriteit.be/"
+listing_url = "https://www.dataprotectionauthority.be/citizen/pressreleases"
+allow_domains = ["gegevensbeschermingsautoriteit.be", "www.gegevensbeschermingsautoriteit.be", "www.dataprotectionauthority.be", "dataprotectionauthority.be"]
+include_patterns = ["/citizen/"]
+exclude_patterns = []
+card_selectors = ["div.media"]
+link_selectors = ["h3.media-title a[href]"]
+title_selectors = ["h3.media-title"]
+date_selectors = [".media-img .text"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "be_bipt"
+country = "BE"
+name_zh = "比利時郵政與電信研究所"
+name = "Belgian Institute for Postal Services and Telecommunications"
+institution_type = "聯邦電信與郵政監管機構"
+language = "en"
+homepage = "https://www.bipt.be/"
+listing_url = "https://www.bipt.be/consumers/bipt/press"
+allow_domains = ["www.bipt.be", "bipt.be"]
+include_patterns = []
+exclude_patterns = []
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "be_ccb"
+country = "BE"
+name_zh = "比利時網路安全中心"
+name = "Centre for Cybersecurity Belgium"
+institution_type = "聯邦網路安全主管機關"
+language = "en"
+homepage = "https://ccb.belgium.be/en"
+listing_url = "https://ccb.belgium.be/en/news"
+allow_domains = ["ccb.belgium.be"]
+include_patterns = []
+exclude_patterns = []
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "cert_hr"
+country = "HR"
+name_zh = "克羅埃西亞國家 CERT"
+name = "National CERT (CERT.hr)"
+institution_type = "國家 CERT／學術與研究網路機構"
+language = "hr"
+homepage = "https://www.cert.hr/en/home-page/"
+listing_url = "https://www.cert.hr/novosti/"
+allow_domains = ["cert.hr", "www.cert.hr"]
+include_patterns = []
+exclude_patterns = []
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "govcert_bg"
+country = "BG"
+name_zh = "保加利亞 CERT"
+name = "CERT Bulgaria"
+institution_type = "國家 CSIRT／政府網路安全機構"
+language = "bg"
+homepage = "https://www.govcert.bg/en/"
+listing_url = "https://www.govcert.bg/en/?id=767"
+allow_domains = ["govcert.bg", "www.govcert.bg"]
+include_patterns = []
+exclude_patterns = []
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "lu_cnpd"
+country = "LU"
+name_zh = "盧森堡國家資料保護委員會"
+name = "Commission nationale pour la protection des données"
+institution_type = "資料保護監管機構"
+language = "en"
+homepage = "https://cnpd.public.lu/en.html"
+listing_url = "https://cnpd.public.lu/en.html"
+allow_domains = ["cnpd.public.lu"]
+include_patterns = []
+exclude_patterns = []
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "lu_govcert"
+country = "LU"
+name_zh = "盧森堡政府 CERT"
+name = "GOVCERT.LU"
+institution_type = "政府 CSIRT／國家事件應變團隊"
+language = "en"
+homepage = "https://govcert.lu/"
+listing_url = "https://govcert.lu/announcements/"
+allow_domains = ["govcert.lu"]
+include_patterns = []
+exclude_patterns = []
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "lu_ilr"
+country = "LU"
+name_zh = "盧森堡監管研究所"
+name = "Institut Luxembourgeois de Régulation"
+institution_type = "法定電信與網路安全監管機構"
+language = "fr"
+homepage = "https://www.ilr.lu/"
+listing_url = "https://www.ilr.lu/"
+allow_domains = ["www.ilr.lu", "ilr.lu"]
+include_patterns = []
+exclude_patterns = []
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "lu_list"
+country = "LU"
+name_zh = "盧森堡科學與技術研究院"
+name = "Luxembourg Institute of Science and Technology"
+institution_type = "公共研究與技術組織"
+language = "en"
+homepage = "https://www.list.lu/en/"
+listing_url = "https://www.list.lu/media-events/news"
+allow_domains = ["www.list.lu", "list.lu"]
+include_patterns = ["/media-events/news/news-detail/"]
+exclude_patterns = []
+card_selectors = ["article.lt-event-card"]
+link_selectors = ["a.lt-button[href]"]
+title_selectors = ["h6.lt-heading"]
+date_selectors = [".lt-info p"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "cz_nukib"
+country = "CZ"
+name_zh = "捷克國家網路與資訊安全局"
+name = "National Cyber and Information Security Agency (NÚKIB)"
+institution_type = "中央行政機關／國家資安主管機關"
+language = "en"
+homepage = "https://nukib.gov.cz/en/"
+listing_url = "https://nukib.gov.cz/en/infoservis-en/news/"
+allow_domains = ["nukib.gov.cz"]
+critical = false
+schedule_enabled = false
+detail_pages = 12
+
+[[sources]]
+id = "hu_nki"
+country = "HU"
+name_zh = "匈牙利國家網路安全研究所"
+name = "National Cyber Security Centre (NKI)"
+institution_type = "政府國家資安中心／CSIRT"
+language = "hu"
+homepage = "https://en.nki.gov.hu/"
+listing_url = "https://nki.gov.hu/figyelmeztetesek/tajekoztatas/"
+allow_domains = ["nki.gov.hu", "en.nki.gov.hu"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "mt_ncc"
+country = "MT"
+name_zh = "馬爾他國家網路安全協調中心"
+name = "National Cybersecurity Coordination Centre (NCC-MT)"
+institution_type = "政府機構／國家協調中心／產學研 PPP"
+language = "en"
+homepage = "https://ncc-mita.gov.mt/about-us/"
+listing_url = "https://ncc-mita.gov.mt/category/news/"
+allow_domains = ["ncc-mita.gov.mt", "mita.gov.mt"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "sk_nbu_cra"
+country = "SK"
+name_zh = "斯洛伐克國家安全局 CRA 資訊服務"
+name = "National Security Authority of the Slovak Republic – Cyber Resilience Act"
+institution_type = "國家安全局／CRA 資安法規與認證主管服務"
+language = "en"
+homepage = "https://cra.nbu.gov.sk/en/"
+listing_url = "https://cra.nbu.gov.sk/en/guidance-and-updates/news-and-events/"
+allow_domains = ["cra.nbu.gov.sk", "nbu.gov.sk"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "si_sicert"
+country = "SI"
+name_zh = "斯洛維尼亞 SI-CERT"
+name = "SI-CERT"
+institution_type = "國家 CERT／學術與研究網路機構"
+language = "en"
+homepage = "https://www.cert.si/"
+listing_url = "https://www.cert.si/en/category/news/"
+allow_domains = ["cert.si", "www.cert.si"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "si_ursiv"
+country = "SI"
+name_zh = "斯洛維尼亞政府資訊安全辦公室"
+name = "Urad Vlade Republike Slovenije za informacijsko varnost (URSIV)"
+institution_type = "政府資訊安全主管機關／國家協調中心"
+language = "sl"
+homepage = "https://www.gov.si/en/state-authorities/government-offices/government-information-security-office/"
+listing_url = "https://www.gov.si/drzavni-organi/vladne-sluzbe/urad-vlade-za-informacijsko-varnost/novice-urada-za-informacijsko-varnost/"
+allow_domains = ["gov.si"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "dk_samsik"
+country = "DK"
+name_zh = "丹麥社會安全署"
+name = "Styrelsen for Samfundssikkerhed"
+institution_type = "政府社會安全、資安與危機協調機關"
+language = "da"
+homepage = "https://samsik.dk/"
+listing_url = "https://samsik.dk/nyheder/"
+allow_domains = ["samsik.dk"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "dk_dtu"
+country = "DK"
+name_zh = "丹麥技術大學"
+name = "Technical University of Denmark"
+institution_type = "政府資助的自治技術大學"
+language = "en"
+homepage = "https://www.dtu.dk/english"
+listing_url = "https://www.dtu.dk/english/news/all-news"
+allow_domains = ["www.dtu.dk", "dtu.dk"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "fi_csc"
+country = "FI"
+name_zh = "芬蘭 CSC 科學資訊中心"
+name = "CSC – IT Center for Science"
+institution_type = "政府與高等教育機構持有的非營利特殊任務公司"
+language = "en"
+homepage = "https://csc.fi/en/"
+listing_url = "https://csc.fi/en/category/news/"
+allow_domains = ["csc.fi"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "fi_business_finland"
+country = "FI"
+name_zh = "芬蘭商務署"
+name = "Business Finland"
+institution_type = "公共創新資助與成長服務機構"
+language = "en"
+homepage = "https://www.businessfinland.fi/en/"
+listing_url = "https://www.businessfinland.fi/en/whats-new/news/"
+allow_domains = ["www.businessfinland.fi", "businessfinland.fi"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+
+[[sources]]
+id = "es_incibe"
+country = "ES"
+name_zh = "西班牙國家網路安全研究所"
+name = "Instituto Nacional de Ciberseguridad de España"
+institution_type = "國有資安公共服務公司"
+language = "es"
+homepage = "https://www.incibe.es/"
+listing_url = "https://www.incibe.es/incibe/sala-de-prensa"
+feed_urls = ["https://www.incibe.es/incibe/sala-de-prensa/feed"]
+allow_domains = ["www.incibe.es"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "es_aesia"
+country = "ES"
+name_zh = "西班牙人工智慧監督局"
+name = "Agencia Española de Supervisión de Inteligencia Artificial"
+institution_type = "國家人工智慧監督機構"
+language = "es"
+homepage = "https://aesia.digital.gob.es/es"
+listing_url = "https://aesia.digital.gob.es/es/actualidad"
+allow_domains = ["aesia.digital.gob.es"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "es_bsc"
+country = "ES"
+name_zh = "巴塞隆納超級運算中心"
+name = "Barcelona Supercomputing Center - Centro Nacional de Supercomputación"
+institution_type = "公共超級運算研究聯合體"
+language = "es"
+homepage = "https://www.bsc.es/es"
+listing_url = "https://www.bsc.es/es/noticias"
+allow_domains = ["www.bsc.es"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "pt_arte"
+country = "PT"
+name_zh = "葡萄牙國家技術改革局"
+name = "Agência para a Reforma Tecnológica do Estado"
+institution_type = "公共行政數位轉型機構"
+language = "pt"
+homepage = "https://www.arte.gov.pt/"
+listing_url = "https://www.arte.gov.pt/noticias/"
+allow_domains = ["www.arte.gov.pt"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "pt_inesc_id"
+country = "PT"
+name_zh = "葡萄牙 INESC-ID 資訊與電機研究所"
+name = "INESC-ID"
+institution_type = "公益非營利聯合研究所"
+language = "en"
+homepage = "https://www.inesc-id.pt/"
+listing_url = "https://www.inesc-id.pt/news-events/"
+allow_domains = ["www.inesc-id.pt"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "it_acn"
+country = "IT"
+name_zh = "義大利國家網路安全局"
+name = "Agenzia per la Cybersicurezza Nazionale"
+institution_type = "國家資安主管機關"
+language = "it"
+homepage = "https://www.acn.gov.it/portale/home"
+listing_url = "https://www.acn.gov.it/portale/comunicazione"
+allow_domains = ["www.acn.gov.it"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "it_agid"
+country = "IT"
+name_zh = "義大利數位署"
+name = "Agenzia per l'Italia Digitale"
+institution_type = "國家數位政策技術機構"
+language = "it"
+homepage = "https://www.agid.gov.it/it"
+listing_url = "https://www.agid.gov.it/it/stampa-e-comunicazione"
+allow_domains = ["www.agid.gov.it"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "it_cnr"
+country = "IT"
+name_zh = "義大利國家研究委員會"
+name = "Consiglio Nazionale delle Ricerche"
+institution_type = "國家公共研究機構"
+language = "it"
+homepage = "https://www.cnr.it/it"
+listing_url = "https://www.cnr.it/it/news?area-tematica=ingegneria-ict"
+allow_domains = ["www.cnr.it"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
 id = "eu_jrc_news"
 country = "EU"
 name_zh = "歐盟聯合研究中心"
@@ -1629,6 +2098,247 @@ language = "en"
 homepage = "https://haic.aalto.fi/"
 listing_url = "https://haic.aalto.fi/"
 allow_domains = ["haic.aalto.fi","haic.fi"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "nl_acm"
+country = "NL"
+name_zh = "荷蘭消費者與市場管理局"
+name = "Autoriteit Consument & Markt"
+institution_type = "獨立市場與消費者監管機關"
+language = "nl"
+homepage = "https://www.acm.nl/"
+listing_url = "https://www.acm.nl/nl/nieuws"
+allow_domains = ["www.acm.nl", "acm.nl"]
+include_patterns = ["^/nl/publicaties/"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "nl_rdi"
+country = "NL"
+name_zh = "荷蘭數位基礎設施監察局"
+name = "Rijksinspectie Digitale Infrastructuur"
+institution_type = "政府數位基礎設施與資安監管機關"
+language = "nl"
+homepage = "https://www.rdi.nl/"
+listing_url = "https://www.rdi.nl/actueel/nieuws"
+allow_domains = ["www.rdi.nl", "rdi.nl"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "nl_tno"
+country = "NL"
+name_zh = "荷蘭應用科學研究組織"
+name = "TNO"
+institution_type = "公法組織之獨立應用研究機構"
+language = "en"
+homepage = "https://www.tno.nl/en/"
+listing_url = "https://www.tno.nl/en/newsroom/"
+allow_domains = ["www.tno.nl", "tno.nl"]
+include_patterns = ["^/en/newsroom/"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+card_selectors = [".rol-collage-card"]
+link_selectors = [".collage-card-content .tno-button a[href]"]
+title_selectors = ["h3"]
+date_selectors = [".meta-date"]
+summary_selectors = [".iprox-content"]
+
+[[sources]]
+id = "nl_nwo"
+country = "NL"
+name_zh = "荷蘭研究委員會"
+name = "Dutch Research Council (NWO)"
+institution_type = "國家研究資助與研究基礎設施機構"
+language = "en"
+homepage = "https://www.nwo.nl/en"
+listing_url = "https://www.nwo.nl/en/news"
+allow_domains = ["www.nwo.nl", "nwo.nl"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "pl_nask"
+country = "PL"
+name_zh = "波蘭國家研究院 NASK"
+name = "NASK – Państwowy Instytut Badawczy"
+institution_type = "國家網路安全與人工智慧研究機構"
+language = "pl"
+homepage = "https://www.nask.pl/"
+listing_url = "https://www.nask.pl/aktualnosci"
+allow_domains = ["www.nask.pl", "nask.pl"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "pl_uke"
+country = "PL"
+name_zh = "波蘭電子通訊局"
+name = "Urząd Komunikacji Elektronicznej"
+institution_type = "獨立通訊與頻譜監管機關"
+language = "en"
+homepage = "https://uke.gov.pl/en/"
+listing_url = "https://uke.gov.pl/en/newsroom/"
+allow_domains = ["uke.gov.pl", "www.uke.gov.pl"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "ro_ancom"
+country = "RO"
+name_zh = "羅馬尼亞通訊管理與監管局"
+name = "Autoritatea Națională pentru Administrare și Reglementare în Comunicații"
+institution_type = "國會監督下的獨立通訊與數位服務監管機關"
+language = "en"
+homepage = "https://www.ancom.ro/en/home/"
+listing_url = "https://www.ancom.ro/en/category/about-us/media-en/press-releases/"
+allow_domains = ["www.ancom.ro", "ancom.ro"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "ro_adr"
+country = "RO"
+name_zh = "羅馬尼亞數位化局"
+name = "Autoritatea pentru Digitalizarea României"
+institution_type = "政府數位轉型政策與公共服務機關"
+language = "ro"
+homepage = "https://www.adr.gov.ro/"
+listing_url = "https://www.adr.gov.ro/articole"
+allow_domains = ["www.adr.gov.ro", "adr.gov.ro"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "ee_taltech"
+country = "EE"
+name_zh = "愛沙尼亞塔林理工大學"
+name = "Tallinn University of Technology (TalTech)"
+institution_type = "公立科技研究型大學"
+language = "en"
+homepage = "https://taltech.ee/en"
+listing_url = "https://taltech.ee/en/news"
+allow_domains = ["taltech.ee", "www.taltech.ee"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "lv_lvrtc"
+country = "LV"
+name_zh = "拉脫維亞國家廣播電視中心"
+name = "Latvijas Valsts radio un televīzijas centrs"
+institution_type = "百分之百國有的關鍵數位基礎設施與信任服務公司"
+language = "en"
+homepage = "https://www.lvrtc.lv/en/"
+listing_url = "https://www.lvrtc.lv/en/news/"
+allow_domains = ["www.lvrtc.lv", "lvrtc.lv"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "lt_rrt"
+country = "LT"
+name_zh = "立陶宛通訊監管局"
+name = "Lietuvos Respublikos ryšių reguliavimo tarnyba"
+institution_type = "獨立通訊與數位空間監管機關"
+language = "lt"
+homepage = "https://rrt.lt/"
+listing_url = "https://rrt.lt/en/about-rrt/news"
+allow_domains = ["rrt.lt", "www.rrt.lt"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "gr_dpa"
+country = "GR"
+name_zh = "希臘資料保護局"
+name = "Hellenic Data Protection Authority"
+institution_type = "獨立資料保護監管機關"
+language = "en"
+homepage = "https://www.dpa.gr/en"
+listing_url = "https://www.dpa.gr/en/enimerwtiko/press-releases"
+allow_domains = ["www.dpa.gr", "dpa.gr"]
+include_patterns = []
+exclude_patterns = []
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "gr_grnet"
+country = "GR"
+name_zh = "希臘國家研究與技術網路"
+name = "National Infrastructures for Research and Technology"
+institution_type = "公營研究與教育網路機構"
+language = "en"
+homepage = "https://grnet.gr/en/"
+listing_url = "https://grnet.gr/en/category/news_en-en/"
+allow_domains = ["grnet.gr", "www.grnet.gr"]
+include_patterns = []
+exclude_patterns = []
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "gr_ncsa"
+country = "GR"
+name_zh = "希臘國家網路安全局"
+name = "National Cybersecurity Authority"
+institution_type = "國家資安主管機關"
+language = "el"
+homepage = "https://cyber.gov.gr/"
+listing_url = "https://cyber.gov.gr/nea-plirofories/grafeio-typoy-old/"
+allow_domains = ["cyber.gov.gr"]
+include_patterns = []
+exclude_patterns = []
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "hu_nmhh"
+country = "HU"
+name_zh = "匈牙利國家媒體與資訊通訊管理局"
+name = "National Media and Infocommunications Authority"
+institution_type = "法定媒體與通訊監管機關"
+language = "hu"
+homepage = "https://nmhh.hu/"
+listing_url = "https://nmhh.hu/hirek-esemenyek"
+allow_domains = ["nmhh.hu"]
+include_patterns = []
+exclude_patterns = []
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "mt_idpc"
+country = "MT"
+name_zh = "馬爾他資訊與資料保護專員公署"
+name = "Information and Data Protection Commissioner"
+institution_type = "獨立資料保護監管機關"
+language = "en"
+homepage = "https://idpc.org.mt/"
+listing_url = "https://idpc.org.mt/news-latest/"
+allow_domains = ["idpc.org.mt", "www.idpc.org.mt"]
+include_patterns = []
+exclude_patterns = []
 critical = false
 schedule_enabled = false
 detail_pages = 8

@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "si_ursiv",
+  "names": {"zh": "斯洛維尼亞政府資訊安全辦公室", "en": "Government Information Security Office", "short": "si_ursiv", "publisher_aliases": []},
+  "sources": [{
+    "id": "si_ursiv", "country": "SI", "name_zh": "斯洛維尼亞政府資訊安全辦公室", "name": "Urad Vlade Republike Slovenije za informacijsko varnost (URSIV)",
+    "institution_type": "政府資訊安全主管機關／國家協調中心", "language": "sl",
+    "homepage": "https://www.gov.si/en/state-authorities/government-offices/government-information-security-office/", "listing_url": "https://www.gov.si/drzavni-organi/vladne-sluzbe/urad-vlade-za-informacijsko-varnost/novice-urada-za-informacijsko-varnost/",
+    "allow_domains": ["gov.si"], "include_patterns": [], "exclude_patterns": [],
+    "critical": false, "schedule_enabled": false, "detail_pages": 8
+  }],
+  "filter": {"topics": ["NIS2、關鍵基礎設施保護", "供應鏈安全", "資安產品認證", "關鍵基礎設施的實體與數位融合保護"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "smoke_healthy", "verified_on": "2026-09-26", "evidence_urls": ["https://www.gov.si/en/state-authorities/government-offices/government-information-security-office/about-the-office/", "https://www.gov.si/drzavni-organi/vladne-sluzbe/urad-vlade-za-informacijsko-varnost/novice-urada-za-informacijsko-varnost/"], "schedule_batch": "bg_hr_cy_cz_hu_mt_sk_si_candidates", "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"healthy","health_status":"healthy","raw_count":11,"dated_count":11,"http_statuses":["200"],"reason":""}}
+}

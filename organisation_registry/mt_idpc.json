@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "mt_idpc",
+  "names": {"zh": "馬爾他資訊與資料保護專員公署", "en": "Information and Data Protection Commissioner", "short": "IDPC", "publisher_aliases": []},
+  "sources": [{
+    "id": "mt_idpc", "country": "MT", "name_zh": "馬爾他資訊與資料保護專員公署",
+    "name": "Information and Data Protection Commissioner", "institution_type": "獨立資料保護監管機關",
+    "language": "en", "homepage": "https://idpc.org.mt/",
+    "listing_url": "https://idpc.org.mt/news-latest/",
+    "allow_domains": ["idpc.org.mt", "www.idpc.org.mt"], "include_patterns": [], "exclude_patterns": [],
+    "critical": false, "schedule_enabled": false, "detail_pages": 8
+  }],
+  "filter": {"topics": ["隱私框架（含個人資料保護）", "跨境資料流通、資料主權、資料開放與再利用", "AI法、模型評估、演算法問責、自動化決策、AI與著作權"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "smoke_healthy", "verified_on": "2026-09-26", "evidence_urls": ["https://idpc.org.mt/news-latest/", "https://idpc.org.mt/news-latest/new-information-and-data-protection-commissioner-takes-oath-of-office/"], "schedule_batch": "eu_unregistered_candidates", "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"healthy","health_status":"healthy","raw_count":11,"dated_count":11,"http_statuses":["200","200"],"reason":""}}
+}

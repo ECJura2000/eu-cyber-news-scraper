@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "lv_lvrtc",
+  "names": {"zh": "拉脫維亞國家廣播電視中心", "en": "Latvijas Valsts radio un televīzijas centrs", "short": "lv_lvrtc", "publisher_aliases": []},
+  "sources": [{"id": "lv_lvrtc", "country": "LV", "name_zh": "拉脫維亞國家廣播電視中心", "name": "Latvijas Valsts radio un televīzijas centrs", "institution_type": "百分之百國有的關鍵數位基礎設施與信任服務公司", "language": "en", "homepage": "https://www.lvrtc.lv/en/", "listing_url": "https://www.lvrtc.lv/en/news/", "allow_domains": ["www.lvrtc.lv", "lvrtc.lv"], "critical": false, "schedule_enabled": false, "detail_pages": 8}],
+  "filter": {"topics": ["數位身份", "跨境資料流通、資料主權、資料開放與再利用", "NIS2、關鍵基礎設施保護", "關鍵基礎設施的實體與數位融合保護", "量子技術"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "smoke_attention", "verified_on": "2026-09-26", "evidence_urls": ["https://www.lvrtc.lv/en/about-us/", "https://www.lvrtc.lv/en/quantum/", "https://www.lvrtc.lv/en/news/"], "schedule_batch": "eastern_baltic_candidates", "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"attention","health_status":"attention","raw_count":28,"dated_count":0,"http_statuses":["200","403"],"reason":"無日期新聞比例過高（100%）。"}}
+}

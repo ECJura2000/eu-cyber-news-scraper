@@ -5,4 +5,4 @@ from importlib.metadata import PackageNotFoundError, version
 try:
     __version__ = version("eu-cyber-news-scraper")
 except PackageNotFoundError:
-    __version__ = "1.5.0"
+    __version__ = "1.6.0"

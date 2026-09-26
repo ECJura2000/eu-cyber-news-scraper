@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "dk_samsik",
+  "names": {
+    "zh": "丹麥社會安全署",
+    "en": "Styrelsen for Samfundssikkerhed",
+    "short": "dk_samsik",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "dk_samsik",
+      "country": "DK",
+      "name_zh": "丹麥社會安全署",
+      "name": "Styrelsen for Samfundssikkerhed",
+      "institution_type": "政府社會安全、資安與危機協調機關",
+      "language": "da",
+      "homepage": "https://samsik.dk/",
+      "listing_url": "https://samsik.dk/nyheder/",
+      "allow_domains": ["samsik.dk"],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "媒體多元與資訊操縱",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "關鍵基礎設施的實體與數位融合保護"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {
+    "effective_from": "2026-09-26",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "last_smoke": {"tested_on":"2026-09-26","fetch_status":"ok","parse_status":"healthy","health_status":"healthy","raw_count":12,"dated_count":12,"http_statuses":["200","200"],"reason":""},
+    "verified_on": "2026-09-26",
+    "evidence_urls": ["https://samsik.dk/om-os/", "https://samsik.dk/nyheder/"],
+    "schedule_batch": "nordic_candidate"
+  }
+}
