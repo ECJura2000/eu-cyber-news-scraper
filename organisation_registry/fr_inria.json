@@ -26,7 +26,7 @@
       "feed_urls": [
         "https://www.inria.fr/fr/rss/recherche/actualites"
       ],
-      "user_agent": "eu-cyber-news-scraper/1.4.0 (+https://github.com/ECJura2000/eu-cyber-news-scraper)",
+      "user_agent": "eu-cyber-news-scraper/1.5.0 (+https://github.com/ECJura2000/eu-cyber-news-scraper)",
       "allow_domains": [
         "inria.fr",
         "www.inria.fr"

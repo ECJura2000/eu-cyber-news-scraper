@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "module_version": "2026-09-25.1",
+  "module_version": "2026-09-26.1",
   "canonical_id": "lt_seimas",
   "names": {"zh": "立陶宛國會", "en": "Lietuvos Respublikos Seimas", "short": "lt_seimas", "publisher_aliases": []},
   "sources": [{
@@ -9,11 +9,15 @@
     "language": "lt", "homepage": "https://www.lrs.lt/",
     "listing_url": "https://www.lrs.lt/sip/portal.show?p_k=1&p_r=35403",
     "allow_domains": ["www.lrs.lt"], "critical": false,
-    "schedule_enabled": false, "detail_pages": 8
+    "schedule_enabled": false, "detail_pages": 8,
+    "card_selectors": [".naujiena"],
+    "link_selectors": [".naujiena-title > a[href]"],
+    "title_selectors": [".naujiena-title > a[href]"],
+    "date_selectors": [".naujiena-laikas"]
   }],
   "filter": {"topics": ["AI法、模型評估、演算法問責、自動化決策、AI與著作權", "隱私框架（含個人資料保護）", "平台責任、內容審查、推薦演算法", "NIS2、關鍵基礎設施保護", "半導體", "量子技術"], "include_patterns": [], "exclude_patterns": []},
   "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
   "history": {"effective_from": "2026-09-25", "predecessors": [], "successors": [], "transitional_sources": []},
   "responsibility_by_topic": {},
-  "verification": {"status": "smoke_attention", "verified_on": "2026-09-25", "evidence_urls": ["https://www.lrs.lt/sip/portal.show?p_k=1&p_r=35403", "https://www.lrs.lt/home/Konstitucija/Konstitucija.htm"], "schedule_batch": "parliaments_research_candidate"}
+  "verification": {"status": "smoke_healthy", "verified_on": "2026-09-26", "evidence_urls": ["https://www.lrs.lt/sip/portal.show?p_k=1&p_r=35403", "https://www.lrs.lt/home/Konstitucija/Konstitucija.htm"], "schedule_batch": "parliaments_research_candidate"}
 }

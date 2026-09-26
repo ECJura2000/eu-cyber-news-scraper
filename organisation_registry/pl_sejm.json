@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "module_version": "2026-09-25.1",
+  "module_version": "2026-09-26.1",
   "canonical_id": "pl_sejm",
   "names": {"zh": "波蘭眾議院", "en": "Sejm Rzeczypospolitej Polskiej", "short": "pl_sejm", "publisher_aliases": []},
   "sources": [{
@@ -15,5 +15,5 @@
   "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
   "history": {"effective_from": "2026-09-25", "predecessors": [], "successors": [], "transitional_sources": []},
   "responsibility_by_topic": {},
-  "verification": {"status": "smoke_attention", "verified_on": "2026-09-25", "evidence_urls": ["https://www.sejm.gov.pl/Sejm10.nsf/wydarzenia.xsp", "https://www.sejm.gov.pl/sejm10.nsf/komunikat.xsp?documentId=D4DA65D2C0408DA3C1258A62004E1FB4&symbol=KONTAKT"], "schedule_batch": "parliaments_research_candidate"}
+  "verification": {"status": "smoke_attention", "verified_on": "2026-09-26", "evidence_urls": ["https://www.sejm.gov.pl/Sejm10.nsf/wydarzenia.xsp", "https://www.sejm.gov.pl/sejm10.nsf/komunikat.xsp?documentId=D4DA65D2C0408DA3C1258A62004E1FB4&symbol=KONTAKT"], "schedule_batch": "parliaments_research_candidate"}
 }

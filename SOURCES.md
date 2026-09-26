@@ -115,9 +115,9 @@
 | 丹麥 | `dk_folketing` 丹麥國會 | [新聞](https://www.ft.dk/da/aktuelt/nyheder) | B：403 |
 | 挪威 | `no_storting` 挪威國會 | [新聞庫](https://www.stortinget.no/no/Hva-skjer-pa-Stortinget/Nyhetsarkiv/) | A：0/1 有日期 |
 | 瑞典 | `se_riksdag` 瑞典國會 | [動態](https://www.riksdagen.se/sv/aktuellt/) | A：17/25 有日期 |
-| 愛沙尼亞 | `ee_riigikogu` 愛沙尼亞國會 | [新聞稿](https://www.riigikogu.ee/info-ja-meedia/uudised-ja-pressiteated/) | B：入口已更正，本機仍遇 HTTP challenge |
-| 拉脫維亞 | `lv_saeima` 拉脫維亞國會 | [新聞](https://www.saeima.lv/lv/aktualitates/saeimas-zinas) | A：21/80 有日期 |
-| 立陶宛 | `lt_seimas` 立陶宛國會 | [新聞](https://www.lrs.lt/sip/portal.show?p_k=1&p_r=35403) | A：9/75 有日期 |
+| 愛沙尼亞 | `ee_riigikogu` 愛沙尼亞國會 | [新聞稿](https://www.riigikogu.ee/info-ja-meedia/uudised-ja-pressiteated/)／[官網列示 RSS](https://www.riigikogu.ee/telli-rss/) | M：RSS 10/10 有日期 |
+| 拉脫維亞 | `lv_saeima` 拉脫維亞國會 | [新聞](https://www.saeima.lv/lv/aktualitates/saeimas-zinas) | M：新聞卡片 10/10 有日期 |
+| 立陶宛 | `lt_seimas` 立陶宛國會 | [新聞](https://www.lrs.lt/sip/portal.show?p_k=1&p_r=35403) | M：新聞卡片 9/9 有日期 |
 
 瑞典 PTS 官方已公告其與 Digg 預定於 2027 年合併；啟用前須重新核對新機關及新聞入口。挪威為獨立 EEA 國家來源，不標示為歐盟成員國。
 
