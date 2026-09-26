@@ -47,7 +47,7 @@ def rank_articles(
             for item in row.get("keywords", []):
                 terms.update(_tokens(item["term"]))
             for term in row.get("synonyms", []):
-                terms.update(_tokens(term))
+                terms.update(_tokens(term if isinstance(term, str) else term["term"]))
             queries[name] = tuple(sorted(terms))
 
     for article, tokens in zip(articles, documents, strict=True):

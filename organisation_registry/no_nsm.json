@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-25.1",
+  "canonical_id": "no_nsm",
+  "names": {
+    "zh": "挪威國家安全局",
+    "en": "Nasjonal sikkerhetsmyndighet",
+    "short": "no_nsm",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "no_nsm",
+      "country": "NO",
+      "name_zh": "挪威國家安全局",
+      "name": "Nasjonal sikkerhetsmyndighet",
+      "institution_type": "國家安全及資安主管機關",
+      "language": "no",
+      "homepage": "https://nsm.no/",
+      "listing_url": "https://nsm.no/aktuelt/",
+      "allow_domains": [
+        "nsm.no"
+      ],
+      "critical": false,
+      "schedule_enabled": false,
+      "detail_pages": 8
+    }
+  ],
+  "filter": {
+    "topics": [
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-09-25",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "blocked_runner",
+    "verified_on": "2026-09-25",
+    "evidence_urls": [
+      "https://nsm.no/aktuelt/"
+    ],
+    "schedule_batch": "nordic"
+  }
+}

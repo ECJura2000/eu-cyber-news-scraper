@@ -70,6 +70,8 @@ class OrganisationRegistry:
                     "source_path": module.source_path,
                     "external": module.external,
                     "source_ids": list(module.source_ids),
+                    "verification_status": module.payload.get("verification", {}).get("status", "legacy"),
+                    "schedule_enabled": [row.get("schedule_enabled", True) for row in module.payload["sources"]],
                 }
                 for module in self.modules
             ],
@@ -188,8 +190,10 @@ def _validate_payload(payload: Any) -> None:
     for row in payload["sources"]:
         if not isinstance(row, dict) or (missing := required_source - row.keys()):
             raise ValueError(f"source missing fields: {sorted(missing)}")
-        if row["country"] not in {"EU", "FR", "DE", "IE"}:
+        if row["country"] not in {"EU", "FR", "DE", "IE", "ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT"}:
             raise ValueError(f"unsupported source country: {row['country']}")
+        if "schedule_enabled" in row and not isinstance(row["schedule_enabled"], bool):
+            raise ValueError("schedule_enabled must be boolean")
         if not str(row["homepage"]).startswith("https://") or not str(row["listing_url"]).startswith("https://"):
             raise ValueError("source URLs must use https")
     topics = payload["filter"].get("topics") if isinstance(payload["filter"], dict) else None
@@ -199,3 +203,18 @@ def _validate_payload(payload: Any) -> None:
         raise ValueError(f"unknown topics: {unknown}")
     if unknown := sorted(set(payload["responsibility_by_topic"]) - set(topics)):
         raise ValueError(f"responsibility topics not in filter.topics: {unknown}")
+    if "verification" in payload:
+        verification = payload["verification"]
+        if not isinstance(verification, dict) or verification.get("status") not in {
+            "official_url_confirmed_parser_pending", "smoke_healthy", "smoke_attention", "parse_empty", "blocked_runner"
+        }:
+            raise ValueError("invalid verification status")
+        try:
+            from datetime import date
+
+            date.fromisoformat(str(verification["verified_on"]))
+        except (KeyError, TypeError, ValueError) as exc:
+            raise ValueError("verification.verified_on must be ISO date") from exc
+        urls = verification.get("evidence_urls")
+        if not isinstance(urls, list) or not urls or any(not isinstance(url, str) or not url.startswith("https://") for url in urls):
+            raise ValueError("verification.evidence_urls must contain official HTTPS URLs")

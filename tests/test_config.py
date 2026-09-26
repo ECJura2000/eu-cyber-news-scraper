@@ -13,17 +13,32 @@ from eu_cyber_news_scraper.config import USER_AGENT, _validate_sources, load_sou
 def test_default_sources_cover_all_target_jurisdictions():
     sources = load_sources()
     assert len(sources) >= 33
-    assert {source.country for source in sources} == {"EU", "FR", "DE", "IE"}
+    assert {source.country for source in sources} == {"EU", "FR", "DE", "IE", "ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT"}
+    assert sum(source.schedule_enabled for source in sources) == 55
+    assert len([source for source in sources if source.country in {"ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT"}]) == 30
+    assert all(not source.schedule_enabled for source in sources if source.country in {"ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT"})
     assert any(source.id == "fr_anssi" and source.feed_urls for source in sources)
     assert any(source.id == "ie_ncsc" and source.critical for source in sources)
     assert any(source.id == "fr_viginum" for source in sources)
     assert any(source.id == "de_bfdi" for source in sources)
     assert any(source.id == "ie_cnam" for source in sources)
+    assert next(source for source in sources if source.id == "es_cnmc").feed_urls == (
+        "https://www.cnmc.es/feed/prensa/noticias",
+    )
+    garante = next(source for source in sources if source.id == "it_garante")
+    assert garante.listing_url == "https://www.garanteprivacy.it/news"
+    assert garante.date_selectors == ("em",)
 
 
 def test_source_ids_are_unique():
     sources = load_sources()
     assert len({source.id for source in sources}) == len(sources)
+
+
+def test_builtin_registry_and_toml_source_settings_match():
+    registry_sources = {source.id: source for source in load_sources()}
+    toml_sources = {source.id: source for source in load_sources("src/eu_cyber_news_scraper/sources.toml")}
+    assert registry_sources == toml_sources
 
 
 def test_user_agent_identifies_version_and_public_repository():

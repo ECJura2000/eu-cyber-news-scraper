@@ -90,6 +90,18 @@ def test_translation_cache_key_includes_source_language(monkeypatch, tmp_path):
     assert {"en\0Gift", "de\0Gift"} <= payload["translations"].keys()
 
 
+def test_ten_new_source_languages_can_use_traditional_chinese_title_pipeline(monkeypatch, tmp_path):
+    monkeypatch.setenv("EU_CYBER_NEWS_TRANSLATION_CACHE", str(tmp_path / "translations.json"))
+    monkeypatch.setattr("eu_cyber_news_scraper.translation._translate_titles", lambda titles: {title: f"繁體：{title}" for title in titles})
+    languages = ("es", "pt", "it", "pl", "da", "no", "sv", "et", "lv", "lt")
+    articles = [article(f"Official title {language}") for language in languages]
+    for item, language in zip(articles, languages, strict=True):
+        item.language = language
+    report = translate_article_titles(articles)
+    assert report.total == report.translated == 10
+    assert all(item.title_zh_tw.startswith("繁體：") for item in articles)
+
+
 def test_translation_falls_back_to_second_free_engine(monkeypatch):
     monkeypatch.setattr("eu_cyber_news_scraper.translation._translate_googletrans", lambda title: "")
     monkeypatch.setattr("eu_cyber_news_scraper.translation._translate_translate_module", lambda title: "備援翻譯")

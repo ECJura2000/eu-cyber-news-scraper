@@ -1,22 +1,854 @@
 {
-  "schema_version": 1,
-  "schedule": {"days": 14},
-  "manual": {"days": 14, "since": null, "until": null},
+  "schema_version": 2,
+  "schedule": {
+    "days": 14
+  },
+  "manual": {
+    "days": 14,
+    "since": null,
+    "until": null
+  },
   "topics": [
-    {"name": "AI法、模型評估、演算法問責、自動化決策、AI與著作權", "enabled": true},
-    {"name": "跨境資料流通、資料主權、資料開放與再利用", "enabled": true},
-    {"name": "隱私框架（含個人資料保護）", "enabled": true},
-    {"name": "數位身份", "enabled": true},
-    {"name": "著作權", "enabled": true},
-    {"name": "平台責任、內容審查、推薦演算法", "enabled": true},
-    {"name": "媒體多元與資訊操縱", "enabled": true},
-    {"name": "競爭規範面向（平台責任的市場結構面）", "enabled": true},
-    {"name": "NIS2、關鍵基礎設施保護", "enabled": true},
-    {"name": "產品資安、漏洞揭露義務、SBOM", "enabled": true},
-    {"name": "供應鏈安全", "enabled": true},
-    {"name": "資安產品認證", "enabled": true},
-    {"name": "關鍵基礎設施的實體與數位融合保護", "enabled": true},
-    {"name": "半導體", "enabled": true},
-    {"name": "量子技術", "enabled": true}
-  ]
+    {
+      "name": "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "enabled": true,
+      "synonyms": [
+        {
+          "term": "inteligencia artificial",
+          "language": "es",
+          "concept": "topic-0-local"
+        },
+        {
+          "term": "inteligência artificial",
+          "language": "pt",
+          "concept": "topic-0-local"
+        },
+        {
+          "term": "intelligenza artificiale",
+          "language": "it",
+          "concept": "topic-0-local"
+        },
+        {
+          "term": "sztuczna inteligencja",
+          "language": "pl",
+          "concept": "topic-0-local"
+        },
+        {
+          "term": "kunstig intelligens",
+          "language": "da",
+          "concept": "topic-0-local"
+        },
+        {
+          "term": "kunstig intelligens",
+          "language": "no",
+          "concept": "topic-0-local"
+        },
+        {
+          "term": "artificiell intelligens",
+          "language": "sv",
+          "concept": "topic-0-local"
+        },
+        {
+          "term": "tehisintellekt",
+          "language": "et",
+          "concept": "topic-0-local"
+        },
+        {
+          "term": "mākslīgais intelekts",
+          "language": "lv",
+          "concept": "topic-0-local"
+        },
+        {
+          "term": "dirbtinis intelektas",
+          "language": "lt",
+          "concept": "topic-0-local"
+        }
+      ]
+    },
+    {
+      "name": "跨境資料流通、資料主權、資料開放與再利用",
+      "enabled": true,
+      "synonyms": [
+        {
+          "term": "datos abiertos",
+          "language": "es",
+          "concept": "topic-1-local"
+        },
+        {
+          "term": "dados abertos",
+          "language": "pt",
+          "concept": "topic-1-local"
+        },
+        {
+          "term": "dati aperti",
+          "language": "it",
+          "concept": "topic-1-local"
+        },
+        {
+          "term": "otwarte dane",
+          "language": "pl",
+          "concept": "topic-1-local"
+        },
+        {
+          "term": "åbne data",
+          "language": "da",
+          "concept": "topic-1-local"
+        },
+        {
+          "term": "åpne data",
+          "language": "no",
+          "concept": "topic-1-local"
+        },
+        {
+          "term": "öppna data",
+          "language": "sv",
+          "concept": "topic-1-local"
+        },
+        {
+          "term": "avaandmed",
+          "language": "et",
+          "concept": "topic-1-local"
+        },
+        {
+          "term": "atvērtie dati",
+          "language": "lv",
+          "concept": "topic-1-local"
+        },
+        {
+          "term": "atvirieji duomenys",
+          "language": "lt",
+          "concept": "topic-1-local"
+        }
+      ]
+    },
+    {
+      "name": "隱私框架（含個人資料保護）",
+      "enabled": true,
+      "synonyms": [
+        {
+          "term": "protección de datos personales",
+          "language": "es",
+          "concept": "topic-2-local"
+        },
+        {
+          "term": "proteção de dados pessoais",
+          "language": "pt",
+          "concept": "topic-2-local"
+        },
+        {
+          "term": "protezione dei dati personali",
+          "language": "it",
+          "concept": "topic-2-local"
+        },
+        {
+          "term": "ochrona danych osobowych",
+          "language": "pl",
+          "concept": "topic-2-local"
+        },
+        {
+          "term": "beskyttelse af personoplysninger",
+          "language": "da",
+          "concept": "topic-2-local"
+        },
+        {
+          "term": "vern av personopplysninger",
+          "language": "no",
+          "concept": "topic-2-local"
+        },
+        {
+          "term": "skydd av personuppgifter",
+          "language": "sv",
+          "concept": "topic-2-local"
+        },
+        {
+          "term": "isikuandmete kaitse",
+          "language": "et",
+          "concept": "topic-2-local"
+        },
+        {
+          "term": "personas datu aizsardzība",
+          "language": "lv",
+          "concept": "topic-2-local"
+        },
+        {
+          "term": "asmens duomenų apsauga",
+          "language": "lt",
+          "concept": "topic-2-local"
+        }
+      ]
+    },
+    {
+      "name": "數位身份",
+      "enabled": true,
+      "synonyms": [
+        {
+          "term": "identidad digital",
+          "language": "es",
+          "concept": "topic-3-local"
+        },
+        {
+          "term": "identidade digital",
+          "language": "pt",
+          "concept": "topic-3-local"
+        },
+        {
+          "term": "identità digitale",
+          "language": "it",
+          "concept": "topic-3-local"
+        },
+        {
+          "term": "tożsamość cyfrowa",
+          "language": "pl",
+          "concept": "topic-3-local"
+        },
+        {
+          "term": "digital identitet",
+          "language": "da",
+          "concept": "topic-3-local"
+        },
+        {
+          "term": "digital identitet",
+          "language": "no",
+          "concept": "topic-3-local"
+        },
+        {
+          "term": "digital identitet",
+          "language": "sv",
+          "concept": "topic-3-local"
+        },
+        {
+          "term": "digitaalne identiteet",
+          "language": "et",
+          "concept": "topic-3-local"
+        },
+        {
+          "term": "digitālā identitāte",
+          "language": "lv",
+          "concept": "topic-3-local"
+        },
+        {
+          "term": "skaitmeninė tapatybė",
+          "language": "lt",
+          "concept": "topic-3-local"
+        }
+      ]
+    },
+    {
+      "name": "著作權",
+      "enabled": true,
+      "synonyms": [
+        {
+          "term": "derechos de autor",
+          "language": "es",
+          "concept": "topic-4-local"
+        },
+        {
+          "term": "direitos de autor",
+          "language": "pt",
+          "concept": "topic-4-local"
+        },
+        {
+          "term": "diritto d'autore",
+          "language": "it",
+          "concept": "topic-4-local"
+        },
+        {
+          "term": "prawo autorskie",
+          "language": "pl",
+          "concept": "topic-4-local"
+        },
+        {
+          "term": "ophavsret",
+          "language": "da",
+          "concept": "topic-4-local"
+        },
+        {
+          "term": "opphavsrett",
+          "language": "no",
+          "concept": "topic-4-local"
+        },
+        {
+          "term": "upphovsrätt",
+          "language": "sv",
+          "concept": "topic-4-local"
+        },
+        {
+          "term": "autoriõigus",
+          "language": "et",
+          "concept": "topic-4-local"
+        },
+        {
+          "term": "autortiesības",
+          "language": "lv",
+          "concept": "topic-4-local"
+        },
+        {
+          "term": "autorių teisės",
+          "language": "lt",
+          "concept": "topic-4-local"
+        }
+      ]
+    },
+    {
+      "name": "平台責任、內容審查、推薦演算法",
+      "enabled": true,
+      "synonyms": [
+        {
+          "term": "plataformas en línea",
+          "language": "es",
+          "concept": "topic-5-local"
+        },
+        {
+          "term": "plataformas em linha",
+          "language": "pt",
+          "concept": "topic-5-local"
+        },
+        {
+          "term": "piattaforme online",
+          "language": "it",
+          "concept": "topic-5-local"
+        },
+        {
+          "term": "platformy internetowe",
+          "language": "pl",
+          "concept": "topic-5-local"
+        },
+        {
+          "term": "onlineplatforme",
+          "language": "da",
+          "concept": "topic-5-local"
+        },
+        {
+          "term": "nettplattformer",
+          "language": "no",
+          "concept": "topic-5-local"
+        },
+        {
+          "term": "onlineplattformar",
+          "language": "sv",
+          "concept": "topic-5-local"
+        },
+        {
+          "term": "veebiplatvormid",
+          "language": "et",
+          "concept": "topic-5-local"
+        },
+        {
+          "term": "tiešsaistes platformas",
+          "language": "lv",
+          "concept": "topic-5-local"
+        },
+        {
+          "term": "internetinės platformos",
+          "language": "lt",
+          "concept": "topic-5-local"
+        }
+      ]
+    },
+    {
+      "name": "媒體多元與資訊操縱",
+      "enabled": true,
+      "synonyms": [
+        {
+          "term": "desinformación",
+          "language": "es",
+          "concept": "topic-6-local"
+        },
+        {
+          "term": "desinformação",
+          "language": "pt",
+          "concept": "topic-6-local"
+        },
+        {
+          "term": "disinformazione",
+          "language": "it",
+          "concept": "topic-6-local"
+        },
+        {
+          "term": "dezinformacja",
+          "language": "pl",
+          "concept": "topic-6-local"
+        },
+        {
+          "term": "desinformation",
+          "language": "da",
+          "concept": "topic-6-local"
+        },
+        {
+          "term": "desinformasjon",
+          "language": "no",
+          "concept": "topic-6-local"
+        },
+        {
+          "term": "desinformation",
+          "language": "sv",
+          "concept": "topic-6-local"
+        },
+        {
+          "term": "desinformatsioon",
+          "language": "et",
+          "concept": "topic-6-local"
+        },
+        {
+          "term": "dezinformācija",
+          "language": "lv",
+          "concept": "topic-6-local"
+        },
+        {
+          "term": "dezinformacija",
+          "language": "lt",
+          "concept": "topic-6-local"
+        }
+      ]
+    },
+    {
+      "name": "競爭規範面向（平台責任的市場結構面）",
+      "enabled": true,
+      "synonyms": [
+        {
+          "term": "mercados digitales",
+          "language": "es",
+          "concept": "topic-7-local"
+        },
+        {
+          "term": "mercados digitais",
+          "language": "pt",
+          "concept": "topic-7-local"
+        },
+        {
+          "term": "mercati digitali",
+          "language": "it",
+          "concept": "topic-7-local"
+        },
+        {
+          "term": "rynki cyfrowe",
+          "language": "pl",
+          "concept": "topic-7-local"
+        },
+        {
+          "term": "digitale markeder",
+          "language": "da",
+          "concept": "topic-7-local"
+        },
+        {
+          "term": "digitale markeder",
+          "language": "no",
+          "concept": "topic-7-local"
+        },
+        {
+          "term": "digitala marknader",
+          "language": "sv",
+          "concept": "topic-7-local"
+        },
+        {
+          "term": "digititaalsed turud",
+          "language": "et",
+          "concept": "topic-7-local"
+        },
+        {
+          "term": "digitālie tirgi",
+          "language": "lv",
+          "concept": "topic-7-local"
+        },
+        {
+          "term": "skaitmeninės rinkos",
+          "language": "lt",
+          "concept": "topic-7-local"
+        }
+      ]
+    },
+    {
+      "name": "NIS2、關鍵基礎設施保護",
+      "enabled": true,
+      "synonyms": [
+        {
+          "term": "infraestructuras críticas",
+          "language": "es",
+          "concept": "topic-8-local"
+        },
+        {
+          "term": "infraestruturas críticas",
+          "language": "pt",
+          "concept": "topic-8-local"
+        },
+        {
+          "term": "infrastrutture critiche",
+          "language": "it",
+          "concept": "topic-8-local"
+        },
+        {
+          "term": "infrastruktura krytyczna",
+          "language": "pl",
+          "concept": "topic-8-local"
+        },
+        {
+          "term": "kritisk infrastruktur",
+          "language": "da",
+          "concept": "topic-8-local"
+        },
+        {
+          "term": "kritisk infrastruktur",
+          "language": "no",
+          "concept": "topic-8-local"
+        },
+        {
+          "term": "kritisk infrastruktur",
+          "language": "sv",
+          "concept": "topic-8-local"
+        },
+        {
+          "term": "elutähtis taristu",
+          "language": "et",
+          "concept": "topic-8-local"
+        },
+        {
+          "term": "kritiskā infrastruktūra",
+          "language": "lv",
+          "concept": "topic-8-local"
+        },
+        {
+          "term": "kritinė infrastruktūra",
+          "language": "lt",
+          "concept": "topic-8-local"
+        }
+      ]
+    },
+    {
+      "name": "產品資安、漏洞揭露義務、SBOM",
+      "enabled": true,
+      "synonyms": [
+        {
+          "term": "vulnerabilidades de seguridad",
+          "language": "es",
+          "concept": "topic-9-local"
+        },
+        {
+          "term": "vulnerabilidades de segurança",
+          "language": "pt",
+          "concept": "topic-9-local"
+        },
+        {
+          "term": "vulnerabilità di sicurezza",
+          "language": "it",
+          "concept": "topic-9-local"
+        },
+        {
+          "term": "luki w zabezpieczeniach",
+          "language": "pl",
+          "concept": "topic-9-local"
+        },
+        {
+          "term": "sikkerhedssårbarheder",
+          "language": "da",
+          "concept": "topic-9-local"
+        },
+        {
+          "term": "sikkerhetssårbarheter",
+          "language": "no",
+          "concept": "topic-9-local"
+        },
+        {
+          "term": "säkerhetssårbarheter",
+          "language": "sv",
+          "concept": "topic-9-local"
+        },
+        {
+          "term": "turvanõrkused",
+          "language": "et",
+          "concept": "topic-9-local"
+        },
+        {
+          "term": "drošības ievainojamības",
+          "language": "lv",
+          "concept": "topic-9-local"
+        },
+        {
+          "term": "saugumo spragos",
+          "language": "lt",
+          "concept": "topic-9-local"
+        }
+      ]
+    },
+    {
+      "name": "供應鏈安全",
+      "enabled": true,
+      "synonyms": [
+        {
+          "term": "seguridad de la cadena de suministro",
+          "language": "es",
+          "concept": "topic-10-local"
+        },
+        {
+          "term": "segurança da cadeia de abastecimento",
+          "language": "pt",
+          "concept": "topic-10-local"
+        },
+        {
+          "term": "sicurezza della catena di fornitura",
+          "language": "it",
+          "concept": "topic-10-local"
+        },
+        {
+          "term": "bezpieczeństwo łańcucha dostaw",
+          "language": "pl",
+          "concept": "topic-10-local"
+        },
+        {
+          "term": "forsyningskædesikkerhed",
+          "language": "da",
+          "concept": "topic-10-local"
+        },
+        {
+          "term": "sikkerhet i leverandørkjeden",
+          "language": "no",
+          "concept": "topic-10-local"
+        },
+        {
+          "term": "säkerhet i leveranskedjan",
+          "language": "sv",
+          "concept": "topic-10-local"
+        },
+        {
+          "term": "tarneahela turvalisus",
+          "language": "et",
+          "concept": "topic-10-local"
+        },
+        {
+          "term": "piegādes ķēdes drošība",
+          "language": "lv",
+          "concept": "topic-10-local"
+        },
+        {
+          "term": "tiekimo grandinės saugumas",
+          "language": "lt",
+          "concept": "topic-10-local"
+        }
+      ]
+    },
+    {
+      "name": "資安產品認證",
+      "enabled": true,
+      "synonyms": [
+        {
+          "term": "certificación de ciberseguridad",
+          "language": "es",
+          "concept": "topic-11-local"
+        },
+        {
+          "term": "certificação de cibersegurança",
+          "language": "pt",
+          "concept": "topic-11-local"
+        },
+        {
+          "term": "certificazione della cibersicurezza",
+          "language": "it",
+          "concept": "topic-11-local"
+        },
+        {
+          "term": "certyfikacja cyberbezpieczeństwa",
+          "language": "pl",
+          "concept": "topic-11-local"
+        },
+        {
+          "term": "cybersikkerhedscertificering",
+          "language": "da",
+          "concept": "topic-11-local"
+        },
+        {
+          "term": "sertifisering av cybersikkerhet",
+          "language": "no",
+          "concept": "topic-11-local"
+        },
+        {
+          "term": "cybersäkerhetscertifiering",
+          "language": "sv",
+          "concept": "topic-11-local"
+        },
+        {
+          "term": "küberturvalisuse sertifitseerimine",
+          "language": "et",
+          "concept": "topic-11-local"
+        },
+        {
+          "term": "kiberdrošības sertifikācija",
+          "language": "lv",
+          "concept": "topic-11-local"
+        },
+        {
+          "term": "kibernetinio saugumo sertifikavimas",
+          "language": "lt",
+          "concept": "topic-11-local"
+        }
+      ]
+    },
+    {
+      "name": "關鍵基礎設施的實體與數位融合保護",
+      "enabled": true,
+      "synonyms": [
+        {
+          "term": "resiliencia de infraestructuras críticas",
+          "language": "es",
+          "concept": "topic-12-local"
+        },
+        {
+          "term": "resiliência das infraestruturas críticas",
+          "language": "pt",
+          "concept": "topic-12-local"
+        },
+        {
+          "term": "resilienza delle infrastrutture critiche",
+          "language": "it",
+          "concept": "topic-12-local"
+        },
+        {
+          "term": "odporność infrastruktury krytycznej",
+          "language": "pl",
+          "concept": "topic-12-local"
+        },
+        {
+          "term": "kritisk infrastrukturs modstandsdygtighed",
+          "language": "da",
+          "concept": "topic-12-local"
+        },
+        {
+          "term": "motstandsdyktighet i kritisk infrastruktur",
+          "language": "no",
+          "concept": "topic-12-local"
+        },
+        {
+          "term": "motståndskraft i kritisk infrastruktur",
+          "language": "sv",
+          "concept": "topic-12-local"
+        },
+        {
+          "term": "elutähtsa taristu vastupidavus",
+          "language": "et",
+          "concept": "topic-12-local"
+        },
+        {
+          "term": "kritiskās infrastruktūras noturība",
+          "language": "lv",
+          "concept": "topic-12-local"
+        },
+        {
+          "term": "kritinės infrastruktūros atsparumas",
+          "language": "lt",
+          "concept": "topic-12-local"
+        }
+      ]
+    },
+    {
+      "name": "半導體",
+      "enabled": true,
+      "synonyms": [
+        {
+          "term": "semiconductores",
+          "language": "es",
+          "concept": "topic-13-local"
+        },
+        {
+          "term": "semicondutores",
+          "language": "pt",
+          "concept": "topic-13-local"
+        },
+        {
+          "term": "semiconduttori",
+          "language": "it",
+          "concept": "topic-13-local"
+        },
+        {
+          "term": "półprzewodniki",
+          "language": "pl",
+          "concept": "topic-13-local"
+        },
+        {
+          "term": "halvledere",
+          "language": "da",
+          "concept": "topic-13-local"
+        },
+        {
+          "term": "halvledere",
+          "language": "no",
+          "concept": "topic-13-local"
+        },
+        {
+          "term": "halvledare",
+          "language": "sv",
+          "concept": "topic-13-local"
+        },
+        {
+          "term": "pooljuhid",
+          "language": "et",
+          "concept": "topic-13-local"
+        },
+        {
+          "term": "pusvadītāji",
+          "language": "lv",
+          "concept": "topic-13-local"
+        },
+        {
+          "term": "puslaidininkiai",
+          "language": "lt",
+          "concept": "topic-13-local"
+        }
+      ]
+    },
+    {
+      "name": "量子技術",
+      "enabled": true,
+      "synonyms": [
+        {
+          "term": "tecnología cuántica",
+          "language": "es",
+          "concept": "topic-14-local"
+        },
+        {
+          "term": "tecnologia quântica",
+          "language": "pt",
+          "concept": "topic-14-local"
+        },
+        {
+          "term": "tecnologia quantistica",
+          "language": "it",
+          "concept": "topic-14-local"
+        },
+        {
+          "term": "technologia kwantowa",
+          "language": "pl",
+          "concept": "topic-14-local"
+        },
+        {
+          "term": "kvanteteknologi",
+          "language": "da",
+          "concept": "topic-14-local"
+        },
+        {
+          "term": "kvanteteknologi",
+          "language": "no",
+          "concept": "topic-14-local"
+        },
+        {
+          "term": "kvantteknik",
+          "language": "sv",
+          "concept": "topic-14-local"
+        },
+        {
+          "term": "kvanttehnoloogia",
+          "language": "et",
+          "concept": "topic-14-local"
+        },
+        {
+          "term": "kvantu tehnoloģija",
+          "language": "lv",
+          "concept": "topic-14-local"
+        },
+        {
+          "term": "kvantinė technologija",
+          "language": "lt",
+          "concept": "topic-14-local"
+        }
+      ]
+    }
+  ],
+  "mode": "replace"
 }

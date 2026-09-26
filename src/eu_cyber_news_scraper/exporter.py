@@ -370,8 +370,9 @@ def _write_coverage(ws: Any, sources: list[Source]) -> None:
                 row.verified_on,
             )
         )
-        ws.cell(ws.max_row, 7).hyperlink = row.evidence_urls[0]
-        ws.cell(ws.max_row, 7).style = "Hyperlink"
+        if row.evidence_urls:
+            ws.cell(ws.max_row, 7).hyperlink = row.evidence_urls[0]
+            ws.cell(ws.max_row, 7).style = "Hyperlink"
     _style_table(ws, widths=(48, 10, 76, 62, 76, 76, 76, 16))
 
 

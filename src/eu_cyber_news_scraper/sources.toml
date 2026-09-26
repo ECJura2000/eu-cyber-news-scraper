@@ -240,7 +240,7 @@ language = "fr"
 homepage = "https://www.inria.fr/"
 listing_url = "https://www.inria.fr/fr/actualites-recherche-savoir-numerique"
 feed_urls = ["https://www.inria.fr/fr/rss/recherche/actualites"]
-user_agent = "eu-cyber-news-scraper/1.4.0 (+https://github.com/ECJura2000/eu-cyber-news-scraper)"
+user_agent = "eu-cyber-news-scraper/1.5.0 (+https://github.com/ECJura2000/eu-cyber-news-scraper)"
 allow_domains = ["inria.fr", "www.inria.fr"]
 include_patterns = ['/fr/.+']
 exclude_patterns = ['actualites-recherche-savoir-numerique/?$']
@@ -966,3 +966,436 @@ link_selectors = ["h3.elementor-post__title a"]
 date_selectors = [".elementor-post-date"]
 parser_adapter = "wordpress_rest"
 detail_pages = 10
+[[sources]]
+id = "es_aepd"
+country = "ES"
+name_zh = "西班牙資料保護局"
+name = "Agencia Española de Protección de Datos"
+institution_type = "獨立資料保護監管機關"
+language = "es"
+homepage = "https://www.aepd.es/"
+listing_url = "https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa"
+allow_domains = ["www.aepd.es"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "es_cnmc"
+country = "ES"
+name_zh = "西班牙國家市場及競爭委員會"
+name = "Comisión Nacional de los Mercados y la Competencia"
+institution_type = "獨立市場及競爭監管機關"
+language = "es"
+homepage = "https://www.cnmc.es/"
+listing_url = "https://www.cnmc.es/prensa/noticias?page=0"
+feed_urls = ["https://www.cnmc.es/feed/prensa/noticias"]
+allow_domains = ["www.cnmc.es"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "pt_cnpd"
+country = "PT"
+name_zh = "葡萄牙國家資料保護委員會"
+name = "Comissão Nacional de Proteção de Dados"
+institution_type = "獨立資料保護監管機關"
+language = "pt"
+homepage = "https://www.cnpd.pt/"
+listing_url = "https://www.cnpd.pt/comunicacao-publica/noticias/"
+allow_domains = ["www.cnpd.pt"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "pt_anacom"
+country = "PT"
+name_zh = "葡萄牙國家通訊管理局"
+name = "Autoridade Nacional de Comunicações"
+institution_type = "獨立通訊監管機關"
+language = "pt"
+homepage = "https://www.anacom.pt/"
+listing_url = "https://www.anacom.pt/render.jsp?categoryId=166043"
+allow_domains = ["www.anacom.pt"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "it_garante"
+country = "IT"
+name_zh = "義大利個人資料保護局"
+name = "Garante per la protezione dei dati personali"
+institution_type = "獨立資料保護監管機關"
+language = "it"
+homepage = "https://www.garanteprivacy.it/"
+listing_url = "https://www.garanteprivacy.it/news"
+allow_domains = ["www.garanteprivacy.it"]
+critical = false
+schedule_enabled = false
+card_selectors = [".journal-content-article p"]
+link_selectors = ["a[href*='/garante/doc.jsp']"]
+date_selectors = ["em"]
+detail_pages = 8
+
+[[sources]]
+id = "it_mur"
+country = "IT"
+name_zh = "義大利大學及研究部"
+name = "Ministero dell'Università e della Ricerca"
+institution_type = "政府研究主管機關"
+language = "it"
+homepage = "https://www.mur.gov.it/"
+listing_url = "https://www.mur.gov.it/it/news"
+allow_domains = ["www.mur.gov.it"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "pl_cyfryzacja"
+country = "PL"
+name_zh = "波蘭數位事務部"
+name = "Ministerstwo Cyfryzacji"
+institution_type = "政府數位政策主管機關"
+language = "pl"
+homepage = "https://www.gov.pl/web/cyfryzacja"
+listing_url = "https://www.gov.pl/web/cyfryzacja/wiadomosci?page=1"
+allow_domains = ["www.gov.pl"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "pl_uodo"
+country = "PL"
+name_zh = "波蘭個人資料保護局"
+name = "Urząd Ochrony Danych Osobowych"
+institution_type = "獨立資料保護監管機關"
+language = "pl"
+homepage = "https://uodo.gov.pl/"
+listing_url = "https://uodo.gov.pl/pl/138"
+allow_domains = ["uodo.gov.pl"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "dk_digst"
+country = "DK"
+name_zh = "丹麥數位政府署"
+name = "Digitaliseringsstyrelsen"
+institution_type = "政府數位政策及服務機關"
+language = "da"
+homepage = "https://digst.dk/"
+listing_url = "https://digst.dk/nyheder/nyhedsarkiv/"
+allow_domains = ["digst.dk"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "dk_datatilsynet"
+country = "DK"
+name_zh = "丹麥資料保護局"
+name = "Datatilsynet"
+institution_type = "獨立資料保護監管機關"
+language = "da"
+homepage = "https://www.datatilsynet.dk/"
+listing_url = "https://www.datatilsynet.dk/presse-og-nyheder"
+feed_urls = ["https://www.datatilsynet.dk/gbapi/rss/feed?id=N2Y3M2VkM2EtODEzYi00MDZlLWJkNzEtY2I4ZWQ0YmJmYTVmfDIwY2VlNWY4LTQ5MGMtNDdiYy05NjIxLTZmNjAwZGQwNzhhOA%3D%3D"]
+allow_domains = ["www.datatilsynet.dk"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "no_nsm"
+country = "NO"
+name_zh = "挪威國家安全局"
+name = "Nasjonal sikkerhetsmyndighet"
+institution_type = "國家安全及資安主管機關"
+language = "no"
+homepage = "https://nsm.no/"
+listing_url = "https://nsm.no/aktuelt/"
+allow_domains = ["nsm.no"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "no_datatilsynet"
+country = "NO"
+name_zh = "挪威資料保護局"
+name = "Datatilsynet"
+institution_type = "獨立資料保護監管機關"
+language = "no"
+homepage = "https://www.datatilsynet.no/"
+listing_url = "https://www.datatilsynet.no/aktuelt/"
+allow_domains = ["www.datatilsynet.no"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "se_pts"
+country = "SE"
+name_zh = "瑞典郵政及電信局"
+name = "Post- och telestyrelsen"
+institution_type = "獨立通訊監管機關"
+language = "sv"
+homepage = "https://www.pts.se/"
+listing_url = "https://www.pts.se/nyheter-och-pressmeddelanden/"
+allow_domains = ["www.pts.se"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "se_imy"
+country = "SE"
+name_zh = "瑞典隱私保護局"
+name = "Integritetsskyddsmyndigheten"
+institution_type = "獨立資料保護監管機關"
+language = "sv"
+homepage = "https://www.imy.se/"
+listing_url = "https://www.imy.se/nyheter/"
+allow_domains = ["www.imy.se"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "ee_ria"
+country = "EE"
+name_zh = "愛沙尼亞資訊系統局"
+name = "Riigi Infosüsteemi Amet"
+institution_type = "國家資訊系統及資安主管機關"
+language = "et"
+homepage = "https://www.ria.ee/"
+listing_url = "https://www.ria.ee/otsing?type=Uudis"
+allow_domains = ["www.ria.ee"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "ee_aki"
+country = "EE"
+name_zh = "愛沙尼亞資料保護監察局"
+name = "Andmekaitse Inspektsioon"
+institution_type = "獨立資料保護監管機關"
+language = "et"
+homepage = "https://www.aki.ee/"
+listing_url = "https://www.aki.ee/otsing?f%5B0%5D=type%3Anews"
+allow_domains = ["www.aki.ee"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "lv_cert"
+country = "LV"
+name_zh = "拉脫維亞國家資安事件應變中心"
+name = "CERT.LV"
+institution_type = "國家資安事件應變機構"
+language = "lv"
+homepage = "https://www.cert.gov.lv/"
+listing_url = "https://www.cert.gov.lv/lv/"
+allow_domains = ["www.cert.gov.lv"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "lv_dvi"
+country = "LV"
+name_zh = "拉脫維亞國家資料監察局"
+name = "Datu valsts inspekcija"
+institution_type = "獨立資料保護監管機關"
+language = "lv"
+homepage = "https://www.dvi.gov.lv/lv"
+listing_url = "https://www.dvi.gov.lv/lv/jaunumi"
+allow_domains = ["www.dvi.gov.lv"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "lt_nksc"
+country = "LT"
+name_zh = "立陶宛國家網路安全中心"
+name = "Nacionalinis kibernetinio saugumo centras"
+institution_type = "國家資安主管機關"
+language = "lt"
+homepage = "https://nksc.lrv.lt/lt/"
+listing_url = "https://nksc.lrv.lt/lt/naujienos/"
+allow_domains = ["nksc.lrv.lt"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "lt_vdai"
+country = "LT"
+name_zh = "立陶宛國家資料保護監察局"
+name = "Valstybinė duomenų apsaugos inspekcija"
+institution_type = "獨立資料保護監管機關"
+language = "lt"
+homepage = "https://vdai.lrv.lt/lt/"
+listing_url = "https://vdai.lrv.lt/lt/naujienos/"
+allow_domains = ["vdai.lrv.lt"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "es_congreso"
+country = "ES"
+name_zh = "西班牙眾議院"
+name = "Congreso de los Diputados"
+institution_type = "國會下議院"
+language = "es"
+homepage = "https://www.congreso.es/"
+listing_url = "https://www.congreso.es/es/notas-de-prensa"
+allow_domains = ["www.congreso.es"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "pt_fct"
+country = "PT"
+name_zh = "葡萄牙科學與技術基金會"
+name = "Fundação para a Ciência e a Tecnologia"
+institution_type = "公立研究資助機構"
+language = "pt"
+homepage = "https://www.fct.pt/"
+listing_url = "https://www.fct.pt/media/noticias"
+allow_domains = ["www.fct.pt"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "it_camera"
+country = "IT"
+name_zh = "義大利眾議院"
+name = "Camera dei deputati"
+institution_type = "國會下議院"
+language = "it"
+homepage = "https://www.camera.it/"
+listing_url = "https://comunicazione.camera.it/comunicati-stampa"
+allow_domains = ["comunicazione.camera.it", "www.camera.it"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "pl_sejm"
+country = "PL"
+name_zh = "波蘭眾議院"
+name = "Sejm Rzeczypospolitej Polskiej"
+institution_type = "國會下議院"
+language = "pl"
+homepage = "https://www.sejm.gov.pl/"
+listing_url = "https://www.sejm.gov.pl/Sejm10.nsf/wydarzenia.xsp"
+allow_domains = ["www.sejm.gov.pl", "sejm.gov.pl"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "dk_folketing"
+country = "DK"
+name_zh = "丹麥國會"
+name = "Folketinget"
+institution_type = "國會"
+language = "da"
+homepage = "https://www.ft.dk/"
+listing_url = "https://www.ft.dk/da/aktuelt/nyheder"
+allow_domains = ["www.ft.dk"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "no_storting"
+country = "NO"
+name_zh = "挪威國會"
+name = "Stortinget"
+institution_type = "國會"
+language = "no"
+homepage = "https://www.stortinget.no/"
+listing_url = "https://www.stortinget.no/no/Hva-skjer-pa-Stortinget/Nyhetsarkiv/"
+allow_domains = ["www.stortinget.no", "stortinget.no"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "se_riksdag"
+country = "SE"
+name_zh = "瑞典國會"
+name = "Sveriges riksdag"
+institution_type = "國會"
+language = "sv"
+homepage = "https://www.riksdagen.se/"
+listing_url = "https://www.riksdagen.se/sv/aktuellt/"
+allow_domains = ["www.riksdagen.se"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "ee_riigikogu"
+country = "EE"
+name_zh = "愛沙尼亞國會"
+name = "Riigikogu"
+institution_type = "國會"
+language = "et"
+homepage = "https://www.riigikogu.ee/"
+listing_url = "https://www.riigikogu.ee/info-ja-meedia/uudised-ja-pressiteated/"
+feed_urls = ["https://feeds.feedburner.com/RiigikoguPressiteated"]
+allow_domains = ["www.riigikogu.ee", "feeds.feedburner.com"]
+critical = false
+schedule_enabled = false
+detail_pages = 8
+
+[[sources]]
+id = "lv_saeima"
+country = "LV"
+name_zh = "拉脫維亞國會"
+name = "Saeima"
+institution_type = "國會"
+language = "lv"
+homepage = "https://www.saeima.lv/"
+listing_url = "https://www.saeima.lv/lv/aktualitates/saeimas-zinas"
+allow_domains = ["www.saeima.lv", "saeima.lv"]
+critical = false
+schedule_enabled = false
+card_selectors = [".news-block"]
+link_selectors = [".post-content .title > a[href]"]
+title_selectors = [".post-content .title > a[href]"]
+date_selectors = [".post-content .title > .date"]
+detail_pages = 8
+
+[[sources]]
+id = "lt_seimas"
+country = "LT"
+name_zh = "立陶宛國會"
+name = "Lietuvos Respublikos Seimas"
+institution_type = "國會"
+language = "lt"
+homepage = "https://www.lrs.lt/"
+listing_url = "https://www.lrs.lt/sip/portal.show?p_k=1&p_r=35403"
+allow_domains = ["www.lrs.lt"]
+critical = false
+schedule_enabled = false
+card_selectors = [".naujiena"]
+link_selectors = [".naujiena-title > a[href]"]
+title_selectors = [".naujiena-title > a[href]"]
+date_selectors = [".naujiena-laikas"]
+detail_pages = 8

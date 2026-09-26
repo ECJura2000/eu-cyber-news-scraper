@@ -43,7 +43,7 @@ from .scraper import scrape_source
 from .topic_profile import Profile, apply_profile, load_profile
 from .translation import skip_article_title_translation, translate_article_titles
 
-COUNTRY_LABELS = {"EU": "歐盟", "FR": "法國", "DE": "德國", "IE": "愛爾蘭"}
+COUNTRY_LABELS = {"EU": "歐盟", "FR": "法國", "DE": "德國", "IE": "愛爾蘭", "ES": "西班牙", "PT": "葡萄牙", "IT": "義大利", "PL": "波蘭", "DK": "丹麥", "NO": "挪威", "SE": "瑞典", "EE": "愛沙尼亞", "LV": "拉脫維亞", "LT": "立陶宛"}
 TOPIC_ALIASES = {
     "AI": "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
     "DATA": "跨境資料流通、資料主權、資料開放與再利用",
@@ -65,13 +65,13 @@ TOPIC_ALIASES = {
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="抓取歐盟、法國、德國與愛爾蘭官方機關及公共研究機構的資安法制新聞。"
+        description="抓取歐洲官方機關及公共研究機構的科技與資安法制新聞。"
     )
     parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     parser.add_argument("--days", type=int, default=None, help=f"回推日數；未指定期間時預設 {DEFAULT_DAYS} 天。")
     parser.add_argument("--since", help="起始日；支援西元或民國日期。")
     parser.add_argument("--until", help="結束日；支援西元或民國日期，並包含該日。")
-    parser.add_argument("--country", action="append", choices=sorted(COUNTRY_LABELS), help="可重複指定 EU、FR、DE、IE。")
+    parser.add_argument("--country", action="append", choices=sorted(COUNTRY_LABELS), help="可重複指定國家代碼；用 --list-sources 查看。")
     parser.add_argument("--source", action="append", help="可重複指定來源代碼；用 --list-sources 查看。")
     parser.add_argument("--topic", action="append", choices=sorted(TOPIC_ALIASES), help="只輸出指定主題；可重複。")
     parser.add_argument("--topic-name", action="append", help="依 JSON 中的完整主題名稱輸出；可重複。")
@@ -145,7 +145,7 @@ def main() -> None:
     if args.topic_name and set(args.topic_name) - profile.names:
         raise SystemExit(f"[error] 未知主題：{', '.join(sorted(set(args.topic_name) - profile.names))}")
 
-    selected = _select_sources(sources, args.country, args.source)
+    selected = _select_sources(sources, args.country, args.source, scheduled=os.environ.get("GITHUB_EVENT_NAME") == "schedule")
     if not selected:
         raise SystemExit("[error] 沒有符合條件的來源。")
     args.paused_sources = [
@@ -541,6 +541,7 @@ def _select_sources(
     sources: list[Source],
     countries: list[str] | None,
     source_ids: list[str] | None,
+    *, scheduled: bool = False,
 ) -> list[Source]:
     source_set = set(source_ids or [])
     unknown = source_set - {source.id for source in sources}
@@ -550,6 +551,7 @@ def _select_sources(
         source
         for source in sources
         if _source_matches(source, countries, source_ids)
+        and (source.schedule_enabled or (not scheduled and bool(countries or source_ids)))
         and (bool(source_set) or not source.is_paused(date.today()))
     ]
 
@@ -754,7 +756,7 @@ def _display_dates(since: datetime, until: datetime) -> tuple[date, date]:
 
 def _print_sources(sources: list[Source]) -> None:
     for source in sources:
-        marker = "P" if source.is_paused(date.today()) else ("*" if source.critical else " ")
+        marker = "P" if source.is_paused(date.today()) else ("M" if not source.schedule_enabled else ("*" if source.critical else " "))
         print(f"{marker} {source.id:24} {source.country} {source.name_zh}｜{source.institution_type}")
 
 
@@ -763,7 +765,8 @@ def _print_organisation_status(registry: OrganisationRegistry) -> None:
     print(f"audit_status {registry.audit_payload()['organisation_audit_status']}")
     for module in registry.modules:
         origin = "external" if module.external else "builtin"
-        print(f"{origin:8} {module.canonical_id:28} {module.module_version} {','.join(module.source_ids)}")
+        status = module.payload.get("verification", {}).get("status", "legacy")
+        print(f"{origin:8} {module.canonical_id:28} {module.module_version} {status} {','.join(module.source_ids)}")
     for error in registry.errors:
         print(f"error {error}", file=sys.stderr)
 

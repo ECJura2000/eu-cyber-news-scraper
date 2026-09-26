@@ -7,6 +7,7 @@ from importlib.resources import files
 from pathlib import Path
 
 from .models import Source
+from .topics import OBSERVATION_TOPICS
 
 
 @dataclass(frozen=True)
@@ -58,6 +59,31 @@ def load_coverage(
             rows.append(
                 CoverageRow(topic["name"], country, entry["authorities"], source_ids, roles, evidence_urls, verified_on)
             )
-    if len(rows) != 60:
-        raise ValueError(f"Expected 15 topics x 4 jurisdictions, got {len(rows)} rows")
+    if len(rows) != len(OBSERVATION_TOPICS) * 4:
+        raise ValueError(f"Expected 15 topics x 4 legacy jurisdictions, got {len(rows)} rows")
+    from .organisation_registry import load_organisation_registry
+
+    registry = load_organisation_registry()
+    for topic in OBSERVATION_TOPICS:
+        for country in ("ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT"):
+            relevant = [
+                source for source in source_map.values()
+                if source.country == country and (module := registry.module_for_source(source.id)) and topic in module.topics
+            ]
+            owners = list(dict.fromkeys(
+                owner for source in relevant
+                if (module := registry.module_for_source(source.id))
+                if (owner := module.responsibility_owner(topic))
+            ))
+            dates = [
+                str(module.payload.get("verification", {}).get("verified_on", verified_on))
+                for source in relevant
+                if (module := registry.module_for_source(source.id))
+            ]
+            rows.append(CoverageRow(
+                topic, country, "；".join(owners) if owners else ("未設定" if relevant else "未覆蓋"),
+                tuple(source.id for source in relevant),
+                "；".join(dict.fromkeys(source.institution_type for source in relevant)) if relevant else "未覆蓋",
+                tuple(source.listing_url for source in relevant), max(dates, default="2026-09-25"),
+            ))
     return tuple(rows)

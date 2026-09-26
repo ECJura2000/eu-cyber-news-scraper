@@ -14,7 +14,7 @@
 | `eu_cert_advisories` | CERT-EU | 歐盟機構安全公告 | [Security advisories](https://cert.europa.eu/publications/security-advisories/) |
 | `eu_jrc_news` | Joint Research Centre | 歐盟執委會官方研究機構 | [News and updates](https://joint-research-centre.ec.europa.eu/jrc-news-and-updates_en) |
 | `eu_presscorner` | European Commission | 執委會正式新聞稿 | [Press Corner](https://ec.europa.eu/commission/presscorner/home/en) |
-| `eu_parliament_press` | European Parliament | 歐盟立法機關新聞 | [Press Room](https://www.europarl.europa.eu/news/en/press-room)（GitHub-hosted runner 收到 HTTP 202 challenge，排程暫停至 2026-08-31；可明確指定來源複查） |
+| `eu_parliament_press` | European Parliament | 歐盟立法機關新聞 | [Press Room](https://www.europarl.europa.eu/news/en/press-room)（GitHub-hosted runner 收到 HTTP 202 challenge，排程暫停至 2026-10-31；可明確指定來源複查） |
 | `eu_edpb` | European Data Protection Board | 個資保護、跨境資料與 AI 資料治理 | [News](https://www.edpb.europa.eu/news_en) |
 | `eu_dg_home` | DG HOME | CER 與關鍵實體的實體韌性政策 | [News](https://home-affairs.ec.europa.eu/news_en) |
 | `eu_eeas` | European External Action Service | 外國資訊操縱（FIMI）與混合威脅 | [Press material](https://www.eeas.europa.eu/eeas/press-material_en) |
@@ -76,6 +76,51 @@
 | `ie_esri` | ESRI | 法定非營利獨立政策研究機構 | [News](https://www.esri.ie/news) |
 | `ie_tyndall` | Tyndall National Institute | 半導體、量子與資安公立研究機構 | [News](https://www.tyndall.ie/) |
 | `ie_cyber_ireland` | Cyber Ireland | 國家資助資安產業公私協力群聚 | [Blog](https://cyberireland.ie/blog-2026/) |
+
+## 新增十國官方入口（手動查詢階段）
+
+新增機關均標記 `schedule_enabled = false`，不計入既有每週排程。下表為官方入口查證，不代表抓取、日期及翻譯皆已通過；需以來源健康報告為準。`M` 表示手動待驗證，`B` 表示首次本機抓取遭 HTTP challenge／403／404，需修復或取得穩定官方入口後再啟用排程。
+
+| 國家 | 來源 | 官方新聞入口 | 首次本機狀態 |
+| --- | --- | --- | --- |
+| 西班牙 | `es_aepd` 西班牙資料保護局（獨立資料保護監管機關） | [官方頁面](https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa) | M |
+| 西班牙 | `es_cnmc` 西班牙國家市場及競爭委員會（獨立市場及競爭監管機關） | [官方頁面](https://www.cnmc.es/prensa/noticias?page=0) | M |
+| 葡萄牙 | `pt_cnpd` 葡萄牙國家資料保護委員會（獨立資料保護監管機關） | [官方頁面](https://www.cnpd.pt/comunicacao-publica/noticias/) | M |
+| 葡萄牙 | `pt_anacom` 葡萄牙國家通訊管理局（獨立通訊監管機關） | [官方頁面](https://www.anacom.pt/render.jsp?categoryId=166043) | M |
+| 義大利 | `it_garante` 義大利個人資料保護局（獨立資料保護監管機關） | [官方頁面](https://www.garanteprivacy.it/news) | M |
+| 義大利 | `it_mur` 義大利大學及研究部（政府研究主管機關） | [官方頁面](https://www.mur.gov.it/it/news) | B |
+| 波蘭 | `pl_cyfryzacja` 波蘭數位事務部（政府數位政策主管機關） | [官方頁面](https://www.gov.pl/web/cyfryzacja/wiadomosci?page=1) | M |
+| 波蘭 | `pl_uodo` 波蘭個人資料保護局（獨立資料保護監管機關） | [官方頁面](https://uodo.gov.pl/pl/138) | M |
+| 丹麥 | `dk_digst` 丹麥數位政府署（政府數位政策及服務機關） | [新聞存檔](https://digst.dk/nyheder/nyhedsarkiv/) | M |
+| 丹麥 | `dk_datatilsynet` 丹麥資料保護局（獨立資料保護監管機關） | [官方頁面](https://www.datatilsynet.dk/presse-og-nyheder)／[RSS](https://www.datatilsynet.dk/gbapi/rss/feed?id=N2Y3M2VkM2EtODEzYi00MDZlLWJkNzEtY2I4ZWQ0YmJmYTVmfDIwY2VlNWY4LTQ5MGMtNDdiYy05NjIxLTZmNjAwZGQwNzhhOA%3D%3D) | M |
+| 挪威 | `no_nsm` 挪威國家安全局（國家安全及資安主管機關） | [官方頁面](https://nsm.no/aktuelt/) | B |
+| 挪威 | `no_datatilsynet` 挪威資料保護局（獨立資料保護監管機關） | [官方頁面](https://www.datatilsynet.no/aktuelt/) | M |
+| 瑞典 | `se_pts` 瑞典郵政及電信局（獨立通訊監管機關） | [官方頁面](https://www.pts.se/nyheter-och-pressmeddelanden/) | M |
+| 瑞典 | `se_imy` 瑞典隱私保護局（獨立資料保護監管機關） | [官方頁面](https://www.imy.se/nyheter/) | M |
+| 愛沙尼亞 | `ee_ria` 愛沙尼亞資訊系統局（國家資訊系統及資安主管機關） | [官方頁面](https://www.ria.ee/otsing?type=Uudis) | B |
+| 愛沙尼亞 | `ee_aki` 愛沙尼亞資料保護監察局（獨立資料保護監管機關） | [官方頁面](https://www.aki.ee/otsing?f%5B0%5D=type%3Anews) | B |
+| 拉脫維亞 | `lv_cert` 拉脫維亞國家資安事件應變中心（國家資安事件應變機構） | [官方頁面](https://www.cert.gov.lv/lv/) | M |
+| 拉脫維亞 | `lv_dvi` 拉脫維亞國家資料監察局（獨立資料保護監管機關） | [官方頁面](https://www.dvi.gov.lv/lv/jaunumi) | M |
+| 立陶宛 | `lt_nksc` 立陶宛國家網路安全中心（國家資安主管機關） | [官方頁面](https://nksc.lrv.lt/lt/naujienos/) | B |
+| 立陶宛 | `lt_vdai` 立陶宛國家資料保護監察局（獨立資料保護監管機關） | [官方頁面](https://vdai.lrv.lt/lt/naujienos/) | B |
+
+第二批新增國會及公立研究來源，同樣只供手動驗證。`M` 代表本機擷取可用但尚未通過完整內頁、翻譯與 runner 驗證；`B` 代表本機入口失敗；`A` 代表日期解析仍需改善。
+
+| 國家 | 來源 | 官方新聞入口 | 首次本機狀態 |
+| --- | --- | --- | --- |
+| 西班牙 | `es_congreso` 西班牙眾議院 | [新聞稿](https://www.congreso.es/es/notas-de-prensa) | B：403 |
+| 葡萄牙 | `pt_fct` 葡萄牙科學與技術基金會 | [新聞](https://www.fct.pt/media/noticias) | M：12/12 有日期 |
+| 義大利 | `it_camera` 義大利眾議院 | [新聞稿](https://comunicazione.camera.it/comunicati-stampa) | M：10/11 有日期 |
+| 波蘭 | `pl_sejm` 波蘭眾議院 | [動態](https://www.sejm.gov.pl/Sejm10.nsf/wydarzenia.xsp) | A：0/35 有日期 |
+| 丹麥 | `dk_folketing` 丹麥國會 | [新聞](https://www.ft.dk/da/aktuelt/nyheder) | B：403 |
+| 挪威 | `no_storting` 挪威國會 | [新聞庫](https://www.stortinget.no/no/Hva-skjer-pa-Stortinget/Nyhetsarkiv/) | A：0/1 有日期 |
+| 瑞典 | `se_riksdag` 瑞典國會 | [動態](https://www.riksdagen.se/sv/aktuellt/) | A：17/25 有日期 |
+| 愛沙尼亞 | `ee_riigikogu` 愛沙尼亞國會 | [新聞稿](https://www.riigikogu.ee/info-ja-meedia/uudised-ja-pressiteated/)／[官網列示 RSS](https://www.riigikogu.ee/telli-rss/) | M：RSS 10/10 有日期 |
+| 拉脫維亞 | `lv_saeima` 拉脫維亞國會 | [新聞](https://www.saeima.lv/lv/aktualitates/saeimas-zinas) | M：新聞卡片 10/10 有日期 |
+| 立陶宛 | `lt_seimas` 立陶宛國會 | [新聞](https://www.lrs.lt/sip/portal.show?p_k=1&p_r=35403) | M：新聞卡片 9/9 有日期 |
+
+瑞典 PTS 官方已公告其與 Digg 預定於 2027 年合併；啟用前須重新核對新機關及新聞入口。挪威為獨立 EEA 國家來源，不標示為歐盟成員國。
+
 
 ## 維護原則
 

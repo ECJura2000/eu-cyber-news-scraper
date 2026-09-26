@@ -60,8 +60,15 @@ def parse_datetime(
     if not value:
         return None
     normalized = value.strip()
+    latvian = re.match(r"^(\d{4})\.\s*gada\s+(\d{1,2})\.\s*(.+)$", normalized, flags=re.IGNORECASE)
+    if latvian:
+        normalized = f"{latvian.group(2)}. {latvian.group(3)} {latvian.group(1)}"
+    normalized = re.sub(r"\s+d\.\s*$", "", normalized, flags=re.IGNORECASE)
+    for locative, nominative in {"janvārī": "janvāris", "februārī": "februāris", "martā": "marts", "aprīlī": "aprīlis", "maijā": "maijs", "jūnijā": "jūnijs", "jūlijā": "jūlijs", "augustā": "augusts", "septembrī": "septembris", "oktobrī": "oktobris", "novembrī": "novembris", "decembrī": "decembris"}.items():
+        normalized = re.sub(rf"\b{locative}\b", nominative, normalized, flags=re.IGNORECASE)
     normalized = re.sub(
-        r"^(?:Publié le|Veröffentlicht am|Pressemitteilung vom|Release Date:)\s+",
+        r"^(?:Publié le|Veröffentlicht am|Pressemitteilung vom|Release Date:|"
+        r"Publicerades:?|Publiceret:?|Dato:)\s+",
         "",
         normalized,
         flags=re.IGNORECASE,
@@ -473,7 +480,7 @@ def allowed_article_url(source: Source, url: str) -> bool:
 
 
 def _date_languages(language: str) -> tuple[str, ...]:
-    return {"en": ("en",), "fr": ("fr",), "de": ("de",)}.get(language, ())
+    return ("nb",) if language == "no" else ((language,) if language in {"en", "fr", "de", "es", "pt", "it", "pl", "da", "sv", "et", "lv", "lt"} else ())
 
 
 def _candidate_context(link: Tag) -> Tag:
@@ -502,7 +509,9 @@ def _extract_date_text(value: str) -> str:
     patterns = (
         r"\b\d{1,2}[./-]\d{1,2}[./-]\d{4}\b",
         r"\b\d{4}-\d{2}-\d{2}\b",
-        r"\b\d{1,2}\s+[A-Za-zÀ-ÿäöüÄÖÜß]+\s+\d{4}\b",
+        r"\b\d{1,2}\.?\s+[^\W\d_]+\s+\d{4}\b",
+        r"\b\d{4}\s+m\.\s+[^\W\d_]+\s+\d{1,2}(?:\s+d\.)?",
+        r"\b\d{4}\.\s+gada\s+\d{1,2}\.\s+[^\W\d_]+",
         r"\b\d{1,2}(?:st|nd|rd|th)\s+[A-Za-z]+\s+\d{4}\b",
         r"\b(?:Publié le|Veröffentlicht am|Release Date:)\s+[^|]{6,40}",
     )
@@ -553,10 +562,23 @@ def _visible_date_value(soup: BeautifulSoup) -> str:
     node = soup.select_one(
         "[class*='publish' i], [class*='date' i], [id*='publish' i], [id*='date' i]"
     )
-    if not node:
-        return ""
-    text = node.get_text(" ", strip=True)
-    return _extract_date_text(text) or text
+    if node:
+        text = node.get_text(" ", strip=True)
+        return _extract_date_text(text) or text
+    # Some authorities publish an explicitly labelled date without a date
+    # class or <time> element. Restrict the fallback to article content and
+    # publication labels so event dates in the body are not mistaken for it.
+    content = soup.select_one("main, article")
+    if content:
+        match = re.search(
+            r"\b(?:Publicerades|Publiceret|Dato)\s*:?\s*"
+            r"(\d{4}-\d{2}-\d{2}|\d{1,2}[./-]\d{1,2}[./-]\d{4})\b",
+            content.get_text(" ", strip=True),
+            flags=re.IGNORECASE,
+        )
+        if match:
+            return match.group(0)
+    return ""
 
 
 def _title_date_value(soup: BeautifulSoup) -> str:

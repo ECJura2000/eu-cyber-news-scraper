@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "eu-cyber-news-scraper"
-version = "1.4.0"
-description = "Official EU, French, German and Irish cybersecurity news scraper"
+version = "1.5.0"
+description = "Official European cybersecurity and technology news scraper"
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"

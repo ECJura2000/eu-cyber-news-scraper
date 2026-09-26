@@ -43,6 +43,7 @@ class Source:
     pause_evidence_url: str = ""
     min_listing_bytes: int = 0
     user_agent: str = ""
+    schedule_enabled: bool = True
 
     @property
     def display_name(self) -> str:

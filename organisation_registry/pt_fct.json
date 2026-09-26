@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-25.1",
+  "canonical_id": "pt_fct",
+  "names": {"zh": "葡萄牙科學與技術基金會", "en": "Fundação para a Ciência e a Tecnologia", "short": "pt_fct", "publisher_aliases": []},
+  "sources": [{
+    "id": "pt_fct", "country": "PT", "name_zh": "葡萄牙科學與技術基金會",
+    "name": "Fundação para a Ciência e a Tecnologia", "institution_type": "公立研究資助機構",
+    "language": "pt", "homepage": "https://www.fct.pt/",
+    "listing_url": "https://www.fct.pt/media/noticias",
+    "allow_domains": ["www.fct.pt"], "critical": false,
+    "schedule_enabled": false, "detail_pages": 8
+  }],
+  "filter": {"topics": ["AI法、模型評估、演算法問責、自動化決策、AI與著作權", "半導體", "量子技術"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-25", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "smoke_healthy", "verified_on": "2026-09-25", "evidence_urls": ["https://www.fct.pt/media/noticias", "https://www.fct.pt/sobre/a-fct/"], "schedule_batch": "parliaments_research_candidate"}
+}

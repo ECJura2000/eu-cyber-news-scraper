@@ -44,6 +44,14 @@ def test_select_sources_combines_country_and_source_filters():
     assert [source.id for source in selected] == ["fr_anssi"]
 
 
+def test_new_sources_are_manual_only_until_promoted():
+    sources = load_sources()
+    assert len(_select_sources(sources, None, None, scheduled=True)) == 53
+    assert len(_select_sources(sources, None, None)) == 53
+    assert {source.id for source in _select_sources(sources, ["ES"], None)} == {"es_aepd", "es_cnmc", "es_congreso"}
+    assert not _select_sources(sources, ["ES"], None, scheduled=True)
+
+
 def test_select_sources_rejects_unknown_ids():
     with pytest.raises(SystemExit, match="未知來源代碼"):
         _select_sources(load_sources(), None, ["missing-source"])
@@ -265,7 +273,7 @@ def test_organisation_status_prints_hash_and_modules(capsys):
 def test_cli_reports_package_version(capsys):
     with pytest.raises(SystemExit, match="0"):
         build_parser().parse_args(["--version"])
-    assert capsys.readouterr().out.endswith(" 1.4.0\n")
+    assert capsys.readouterr().out.endswith(" 1.5.0\n")
 
 
 def test_main_reports_period_and_lock_errors(monkeypatch, tmp_path):

@@ -104,3 +104,112 @@ def test_new_topic_is_not_limited_by_existing_source_whitelist(tmp_path):
     assert article.matched_topics == ["新量子政策"]
     assert article.relevance_score == 2
     assert article.responsibility_owner == ["未設定"]
+
+
+@pytest.mark.parametrize("language,title", [
+    ("es", "La inteligencia artificial y la protección de datos personales"),
+    ("pt", "Inteligência artificial e proteção de dados pessoais"),
+    ("it", "Intelligenza artificiale e protezione dei dati personali"),
+    ("pl", "Sztuczna inteligencja i ochrona danych osobowych"),
+    ("da", "Kunstig intelligens og beskyttelse af personoplysninger"),
+    ("no", "Kunstig intelligens og vern av personopplysninger"),
+    ("sv", "Artificiell intelligens och skydd av personuppgifter"),
+    ("et", "Tehisintellekt ja isikuandmete kaitse"),
+    ("lv", "Mākslīgais intelekts un personas datu aizsardzība"),
+    ("lt", "Dirbtinis intelektas ir asmens duomenų apsauga"),
+])
+def test_builtin_profile_matches_local_ai_and_privacy(language, title):
+    article = _article(title)
+    article.language = language
+    apply_profile(article, load_profile())
+    assert "AI法、模型評估、演算法問責、自動化決策、AI與著作權" in article.matched_topics
+    assert "隱私框架（含個人資料保護）" in article.matched_topics
+
+
+@pytest.mark.parametrize("language,foreign_phrase", [
+    ("es", "sztuczna inteligencja"),
+    ("pt", "tehisintellekt"),
+    ("it", "dirbtinis intelektas"),
+    ("pl", "inteligencia artificial"),
+    ("da", "intelligenza artificiale"),
+    ("no", "inteligência artificial"),
+    ("sv", "mākslīgais intelekts"),
+    ("et", "kunstig intelligens"),
+    ("lv", "artificiell intelligens"),
+    ("lt", "künstliche intelligenz"),
+])
+def test_builtin_profile_does_not_treat_foreign_synonym_as_local_hit(language, foreign_phrase):
+    article = _article(foreign_phrase)
+    article.language = language
+    apply_profile(article, load_profile())
+    assert "AI法、模型評估、演算法問責、自動化決策、AI與著作權" not in article.matched_topics
+
+
+def test_multilingual_concept_counts_once_and_respects_language_and_word_boundary(tmp_path):
+    payload = {"schema_version": 2, "mode": "replace", "topics": [{
+        "name": "測試主題", "keywords": [
+            {"term": "inteligencia artificial", "weight": 3, "language": "es", "concept": "ai"},
+            {"term": "IA", "weight": 2, "language": "es", "concept": "ai"},
+        ], "synonyms": [{"term": "AI", "language": "*", "concept": "ai"}],
+        "excludes": [{"term": "publicidad", "language": "es"}],
+    }]}
+    path = tmp_path / "topics.json"
+    path.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+    profile = load_profile(path)
+    article = _article("Inteligencia artificial IA AI")
+    article.language = "es"
+    apply_profile(article, profile)
+    assert article.relevance_score == 3
+    other = _article("Inteligencia artificial")
+    other.language = "pt"
+    apply_profile(other, profile)
+    assert not other.matched_topics
+    boundary = _article("La AIM mejora")
+    boundary.language = "es"
+    apply_profile(boundary, profile)
+    assert not boundary.matched_topics
+    excluded = _article("Inteligencia artificial publicidad")
+    excluded.language = "es"
+    apply_profile(excluded, profile)
+    assert not excluded.matched_topics
+
+
+def test_schema_v2_merge_add_replace_remove_and_hash(tmp_path):
+    payload = {"schema_version": 2, "mode": "merge", "remove_topics": ["量子技術"], "topics": [
+        {"name": "半導體", "enabled": False},
+        {"name": "新增主題", "keywords": [{"term": "nueva norma", "weight": 2, "language": "es"}]},
+    ]}
+    path = tmp_path / "topics.json"
+    path.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+    profile = load_profile(path)
+    assert "量子技術" not in {row["name"] for row in profile.topics}
+    assert "半導體" not in profile.names
+    assert "新增主題" in profile.names
+    assert len(profile.topics) == 15
+    assert profile.hash != load_profile().hash
+    payload["topics"][1]["keywords"][0]["term"] = "nova norma"
+    path.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+    assert load_profile(path).hash != profile.hash
+
+
+@pytest.mark.parametrize("changes", [
+    {"mode": "append"},
+    {"remove_topics": "半導體"},
+    {"topics": [{"name": "半導體"}, {"name": "半導體"}]},
+    {"remove_topics": ["半導體"]},
+    {"mode": "merge", "remove_topics": ["不存在的主題"]},
+    {"mode": "merge", "remove_topics": ["半導體"], "topics": [{"name": "半導體"}]},
+    {"topics": [{"name": ""}]},
+    {"topics": [{"name": "測試", "inherit_legacy": False}]},
+    {"topics": []},
+    {"topics": [{"name": "測試", "keywords": [{"term": "", "weight": 2}]}]},
+    {"topics": [{"name": "測試", "keywords": [{"term": "test", "weight": 2, "language": "xx"}]}]},
+    {"topics": [{"name": "測試", "keywords": [{"term": "test", "weight": 2, "concept": ""}]}]},
+])
+def test_schema_v2_rejects_invalid_rules(tmp_path, changes):
+    payload = {"schema_version": 2, "mode": "replace", "topics": [{"name": "半導體"}]}
+    payload.update(changes)
+    path = tmp_path / "topics.json"
+    path.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+    with pytest.raises(ValueError):
+        load_profile(path)

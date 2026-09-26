@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-26.1",
+  "canonical_id": "ee_riigikogu",
+  "names": {"zh": "愛沙尼亞國會", "en": "Riigikogu", "short": "ee_riigikogu", "publisher_aliases": []},
+  "sources": [{
+    "id": "ee_riigikogu", "country": "EE", "name_zh": "愛沙尼亞國會",
+    "name": "Riigikogu", "institution_type": "國會",
+    "language": "et", "homepage": "https://www.riigikogu.ee/",
+    "listing_url": "https://www.riigikogu.ee/info-ja-meedia/uudised-ja-pressiteated/",
+    "feed_urls": ["https://feeds.feedburner.com/RiigikoguPressiteated"],
+    "allow_domains": ["www.riigikogu.ee", "feeds.feedburner.com"], "critical": false,
+    "schedule_enabled": false, "detail_pages": 8
+  }],
+  "filter": {"topics": ["AI法、模型評估、演算法問責、自動化決策、AI與著作權", "隱私框架（含個人資料保護）", "平台責任、內容審查、推薦演算法", "NIS2、關鍵基礎設施保護", "半導體", "量子技術"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-25", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "smoke_healthy", "verified_on": "2026-09-25", "evidence_urls": ["https://www.riigikogu.ee/telli-rss/", "https://feeds.feedburner.com/RiigikoguPressiteated", "https://www.riigikogu.ee/tutvustus-ja-ajalugu/riigikogu-ulesanded-ja-tookorraldus/"], "schedule_batch": "parliaments_research_candidate"}
+}

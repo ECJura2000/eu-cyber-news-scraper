@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "mode": "merge",
+  "topics": [
+    {
+      "name": "數位錢包安全觀察",
+      "enabled": true,
+      "inherit_legacy": false,
+      "keywords": [
+        {"term": "cartera de identidad digital", "weight": 3, "language": "es", "concept": "eudi-wallet"},
+        {"term": "carteira de identidade digital", "weight": 3, "language": "pt", "concept": "eudi-wallet"},
+        {"term": "digital identity wallet", "weight": 3, "language": "*", "concept": "eudi-wallet"}
+      ],
+      "synonyms": [
+        {"term": "EUDI Wallet", "language": "*", "concept": "eudi-wallet"}
+      ],
+      "penalties": [{"term": "webinar", "language": "*"}],
+      "excludes": [{"term": "oferta de empleo", "language": "es"}],
+      "responsibility_owner": "未設定"
+    }
+  ]
+}

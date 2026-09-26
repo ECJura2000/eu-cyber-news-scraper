@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-09-25.1",
+  "canonical_id": "dk_folketing",
+  "names": {"zh": "丹麥國會", "en": "Folketinget", "short": "dk_folketing", "publisher_aliases": []},
+  "sources": [{
+    "id": "dk_folketing", "country": "DK", "name_zh": "丹麥國會",
+    "name": "Folketinget", "institution_type": "國會",
+    "language": "da", "homepage": "https://www.ft.dk/",
+    "listing_url": "https://www.ft.dk/da/aktuelt/nyheder",
+    "allow_domains": ["www.ft.dk"], "critical": false,
+    "schedule_enabled": false, "detail_pages": 8
+  }],
+  "filter": {"topics": ["AI法、模型評估、演算法問責、自動化決策、AI與著作權", "隱私框架（含個人資料保護）", "平台責任、內容審查、推薦演算法", "NIS2、關鍵基礎設施保護", "半導體", "量子技術"], "include_patterns": [], "exclude_patterns": []},
+  "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
+  "history": {"effective_from": "2026-09-25", "predecessors": [], "successors": [], "transitional_sources": []},
+  "responsibility_by_topic": {},
+  "verification": {"status": "blocked_runner", "verified_on": "2026-09-25", "evidence_urls": ["https://www.ft.dk/da/aktuelt/nyheder", "https://www.ft.dk/da/folkestyret/folketinget/folketingets-arbejde"], "schedule_batch": "parliaments_research_candidate"}
+}
