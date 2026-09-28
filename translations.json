@@ -1,6 +1,282 @@
 {
   "schema_version": 3,
   "translations": {
+    "en\u0000Security Advisory 2026-014": {
+      "text": "安全諮詢 2026-014",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "de\u0000CRA-Konformität: BSI und DAkkS schaffen Prüfkompetenz für die Cybersicherheit": {
+      "text": "CRA 合規性：BSI 和 DAkkS 打造網路安全測試專業知識",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Michael Arbel : une bourse ERC pour des modèles d’IA plus fiables": {
+      "text": "Michael Arbel：ERC 資助更可靠的人工智慧模型",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "en\u0000Platform signatories publish latest reports under the Code of Conduct on Disinformation": {
+      "text": "平臺簽署者根據《虛假資訊行為準則》發布最新報告",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "en\u0000Executive Vice-President Virkkunen visits Greenland to discuss Arctic security and connectivity": {
+      "text": "維克庫寧執行副主席訪問格陵蘭討論北極安全和互聯互通",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Grand mercredi et VIGINUM sensibilisent les grands-parents aux ingérences numériques étrangères": {
+      "text": "大星期三和 VIGINUM 提高祖父母對外國數位幹擾的認識",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Le projet-pilote REGALIA au service de la régulation des algorithmes": {
+      "text": "服務於演演算法監管的 REGALIA 試點專案",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Lab IA : Inria au service de l’État pour sa transformation numérique": {
+      "text": "AI 實驗室：Inria 為全國數位轉型服務",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Intelligence artificielle : quels impacts sur le monde du travail ?": {
+      "text": "人工智慧：對工作世界有何影響？",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Fact checking : l’intelligence artificielle au service des journalistes": {
+      "text": "事實查核：人工智慧為記者服務",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000LaborIA : où en est le laboratoire dédié à l’intelligence artificielle créé par le ministère du Travail et Inria ?": {
+      "text": "LaborIA：勞動部和Inria建立的專門研究人工智慧的實驗室在哪裡？",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Impacts de l’intelligence artificielle sur le travail : Le LaborIA publie les résultats de son étude exploratoire et ses recommandations": {
+      "text": "人工智慧對工作的影響：LaborIA 發布探索性研究結果及其建議",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Réinventer l’éducation : quand le numérique transforme les apprentissages": {
+      "text": "重塑教育：當數位科技改變學習時",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000France 2030 | Lancement du programme Évaluation de l’IA : une feuille de route scientifique pour l’évaluation et la sécurité de l’intelligence artificielle": {
+      "text": "法國 2030 |啟動AI評估計畫：人工智慧評估與安全的科學路線圖",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Dialogue science & société : le projet DiFuSE d’Inria retenu par la Commission européenne": {
+      "text": "科學與社會對話：Inria 的 DiFuSE 計畫被歐盟委員會選中",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "en\u0000Critical vulnerabilities in Citrix NetScaler Gaetway & ADC": {
+      "text": "Citrix NetScaler Gaetway 與 ADC 中的嚴重漏洞",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "en\u0000Critical vulnerability in F5: BIG-IP APM": {
+      "text": "F5 的嚴重漏洞：BIG-IP APM",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "en\u0000Critical vulnerability in Arista Networks: VeloCloud Orchestrator (VCO) On-Prem": {
+      "text": "Arista Networks 中的嚴重漏洞：VeloCloud Orchestrator (VCO) On-Prem",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "en\u0000Fifth Roundtable with Civil Society Organisations and Researchers on the implementation of the Digital Services Act": {
+      "text": "與民間組織和研究人員就《數位服務法》實施情況舉行第五次圓桌會議",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "en\u0000The Irish Data Protection Commission fines Google 403 000 000 EUR following Inquiry into Google’s processing of location data | European Data Protection Board": {
+      "text": "愛爾蘭資料保護委員會在對谷歌位置資料處理進行調查後對谷歌處以 403 000 000 歐元的罰款 |歐洲資料保護委員會",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Cyber Résilience Act : l'ANSSI, l'ANFR et la DGE accompagnent les fabricants dans la conformité des produits numériques": {
+      "text": "網路彈性法案：ANSSI、ANFR 和 DGE 支援製造商實現數位產品的合規性",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "en\u0000Security Advisory 2026-013": {
+      "text": "安全公告 2026-013",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000IA : qu’est-ce que P16, le projet confié à Inria dans le cadre de France 2030 ?": {
+      "text": "AI：作為法國2030計畫一部分委託給Inria的P16計畫是什麼？",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000France 2030 | Lancement de P16, pour le développement de communs numériques au service d’une IA souveraine": {
+      "text": "法國 2030 |推出 P16，用於開發服務於主權人工智慧的數位公共資源",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Inria renforce son engagement pour la coopération internationale en IA avec un centre d’expertise dédié": {
+      "text": "Inria 透過專門的專業中心加強對人工智慧國際合作的承諾",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Inria participe à la création de l’Institut national pour l’évaluation et la sécurité de l’intelligence artificielle": {
+      "text": "Inria參與建立國家人工智慧評估與安全研究所",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Inria au Sommet pour l'action sur l'intelligence artificielle": {
+      "text": "INRIA在人工智慧峰會上",
+      "provider": "translate",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Position Paper : cinq défis pour une intelligence artificielle plus respectueuse de l’environnement": {
+      "text": "立場檔案：更環保的人工智慧的五個挑戰",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Lancement du Dialogue national sur l’intelligence artificielle": {
+      "text": "全國人工智慧對話啟動",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Sur Parcoursup, l’IA conduit-elle à des décisions éthiques ?": {
+      "text": "在 Parcoursup 上，人工智慧會導致道德決策嗎？",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000La CNIL et Inria renforcent leur partenariat pour la protection des données personnelles et l'évaluation des algorithmes": {
+      "text": "CNIL 和 Inria 加強了在個人資料保護和演演算法評估方面的合作夥伴關係",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Probabl lève 13M€ pour bâtir le champion européen du logiciel open source en intelligence artificielle": {
+      "text": "Probabl 募集 1,300 萬歐元打造歐洲開源人工智慧軟體冠軍",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Et si votre voix aidait à préserver les langues de France ?": {
+      "text": "如果你的聲音有助於保護法國語言怎麼辦？",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000L’équipe-projet Flowers ou l’éloge de la curiosité": {
+      "text": "Flowers專案組還是對好奇心的讚揚",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000L’Institut national pour l’évaluation et la sécurité de l’IA adopte sa feuille de route 2026-2027": {
+      "text": "國家人工智慧評估與安全研究所透過2026-2027年路線圖",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Dialogue franco-allemand des dirigeants de l’industrie de l’IA : affirmation d’une ambition européenne commune et remise d’un rapport aux autorités françaises et allemandes": {
+      "text": "法德人工智慧產業領袖對話：確認歐洲共同雄心並向法國和德國當局提交報告",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000Une étape importante pour la souveraineté numérique de l'Europe :  le DFKI et Inria créent un Centre de recherche franco-allemand sur l'IA": {
+      "text": "歐洲數位主權的重要一步：DFKI 和 Inria 建立法德人工智慧研究中心",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "en\u0000Exploring the evolution of the cyber threat landscape: How dependencies weaken our digital resilience": {
+      "text": "探索網路威脅格局的演變：依賴性如何削弱我們的數位彈性",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "en\u0000Speech by President von der Leyen at the high-level dialogue on ‘Protecting Children\\'s Rights facing Artificial Intelligence\\'": {
+      "text": "馮德萊恩總統在「人工智慧面前保護兒童權利」高階對話會上的講話",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "en\u0000Two Commission reports show impact of artificial intelligence and digital technologies on teaching and learning in Europe": {
+      "text": "兩份委員會報告顯示了人工智慧和數位科技對歐洲教學的影響",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "en\u0000The Spanish DPA fined Securitas Direct 100 000 EUR for making the exercise of data subject rights more difficult by directing individuals to a chargeable telephone number | European Data Protection Board": {
+      "text": "西班牙 DPA 對 Securitas Direct 處以 100 000 歐元罰款，原因是其將個人引導至收費電話號碼，從而使資料主體權利的行使變得更加困難 |歐洲資料保護委員會",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "en\u0000Data Protection Commission fines Google €403 million following Inquiry into Google’s processing of location data": {
+      "text": "資料保護委員會在調查谷歌處理位置資料的情況後對谷歌處以 4.03 億歐元罰款",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "en\u0000EDPB harmonises fining methodology and adopts final DSA-GDPR guidelines | European Data Protection Board": {
+      "text": "EDP​​ 協調罰款方法並採用最終的 DSA-GDPR 指南 |歐洲資料保護委員會",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "en\u0000Critical vulnerabilities in Cisco ISE Passive Identity Connector and Cisco Identity Services Engine": {
+      "text": "思科 ISE 被動式身分識別聯結器和思科身分服務引擎中的嚴重漏洞",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "en\u0000AI Board holds its ninth meeting": {
+      "text": "人工智慧委員會召開第九次會議",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
+    "fr\u0000« Comprendre les ingérences étrangères », une série de vidéos pour faire dialoguer lycéens et enseignants": {
+      "text": "「理解外國干涉」系列影片讓高中生和老師對話",
+      "provider": "googletrans",
+      "created_at": "2026-09-28T04:32:49.884544+00:00",
+      "last_accessed_at": "2026-09-28T04:32:49.884544+00:00"
+    },
     "en\u0000How is the market of cybersecurity assessments doing?": {
       "text": "網路安全評估市場表現如何？",
       "provider": "googletrans",
