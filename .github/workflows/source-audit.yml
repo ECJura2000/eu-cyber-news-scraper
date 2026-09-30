@@ -1,0 +1,142 @@
+name: Institution URL audit and discovery
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 1 * * 3"
+
+concurrency:
+  group: eu-institution-url-audit
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: "3.13"
+      - name: Install locked runtime
+        run: |
+          python -m pip install --disable-pip-version-check uv==0.11.29
+          uv sync --frozen --no-dev
+      - name: Restore prior diagnostic inventory
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p .source-inventory/history
+          previous_runs=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow source-audit.yml --branch main --status completed --limit 15 --json databaseId --jq '.[].databaseId')
+          restored=false
+          while IFS= read -r previous; do
+            if [[ -z "$previous" ]]; then continue; fi
+            staging=$(mktemp -d "$RUNNER_TEMP/source-inventory.XXXXXX")
+            if gh run download "$previous" --repo "$GITHUB_REPOSITORY" --name source-inventory-state --dir "$staging"; then
+              if [[ ! -s "$staging/catalog-report.json" ]] && [[ -z "$(find "$staging/history" "$staging/catalog-history" -type f -name '*.json' -print -quit 2>/dev/null || true)" ]]; then
+                echo "Run $previous has no accumulated inventory; trying an older completed run."
+                continue
+              fi
+              # Restore accumulated data only; a prior fatal .next report is not current evidence.
+              for item in history catalog-history url-checks catalog-report.json; do
+                if [[ -e "$staging/$item" ]]; then cp -a "$staging/$item" .source-inventory/; fi
+              done
+              restored=true
+              echo "Restored diagnostic inventory from completed run $previous."
+              break
+            fi
+            echo "Inventory from run $previous unavailable; trying an older completed run."
+          done <<< "$previous_runs"
+          if [[ "$restored" == false ]]; then
+            echo "No prior diagnostic inventory could be restored; starting a new observation baseline."
+          elif [[ -z "$(find .source-inventory/history -type f -name '*.json' -print -quit)" ]]; then
+            echo "Restored inventory has no source observations; starting a new observation baseline."
+          fi
+      - name: Validate canonical source data
+        run: |
+          uv run python scripts/generate_organisation_registry.py --check
+          uv run python -m eu_cyber_news_scraper.source_catalog --check
+      - name: Inspect registered source URLs and parsers
+        id: sources
+        run: |
+          uv run python -m eu_cyber_news_scraper.source_audit --parse --days 30 --timeout 15 --workers 8 --output-dir source-audit --history-dir .source-inventory/history --allow-unhealthy
+      - name: Inspect catalog URLs and collect directory candidates
+        id: catalog
+        if: always()
+        run: |
+          echo "freshness=unavailable" >> "$GITHUB_OUTPUT"
+          status=0
+          uv run python -m eu_cyber_news_scraper.source_catalog --check --discover --audit-urls --previous .source-inventory/catalog-report.json --output .source-inventory/catalog-report.next.json || status=$?
+          if [[ "$status" -gt 1 ]]; then
+            printf 'freshness=fatal\nexit_code=%s\n' "$status" >> "$GITHUB_OUTPUT"
+            exit "$status"
+          fi
+          mv .source-inventory/catalog-report.next.json .source-inventory/catalog-report.json
+          echo "freshness=current" >> "$GITHUB_OUTPUT"
+      - name: Publish diagnostic summary
+        if: always()
+        env:
+          CATALOG_FRESHNESS: ${{ steps.catalog.outputs.freshness }}
+          CATALOG_EXIT_CODE: ${{ steps.catalog.outputs.exit_code }}
+        run: |
+          uv run python - "$GITHUB_STEP_SUMMARY" <<'PY'
+          import json, os, pathlib, sys
+          with open(sys.argv[1], "a", encoding="utf-8") as output:
+              output.write("## Institution URL diagnostics\n\n")
+              files = sorted(pathlib.Path("source-audit").glob("source-audit-*.json"))
+              if files:
+                  report = json.loads(files[-1].read_text())
+                  rows = report["sources"]
+                  output.write(f"Checked sources: {len(rows)}; healthy: {sum(row['healthy'] for row in rows)}.\n\n")
+                  output.write("| Source | Endpoint problems | Parser status | Ready for full validation |\n|---|---|---|---|\n")
+                  for row in rows:
+                      failures = ", ".join(f"{item['kind']}: {item['error_code']}" for item in row["endpoints"] if not item["healthy"])
+                      parsed = (row.get("parse") or {}).get("source_status", {}).get("parse_status", "not_completed")
+                      output.write(f"| {row['source_id']} | {failures or 'none'} | {parsed} | {row['promotion']['promotion_eligible']} |\n")
+              catalog = pathlib.Path(".source-inventory/catalog-report.json")
+              def describe_catalog(path, label):
+                  try:
+                      value = json.loads(path.read_text())
+                  except (OSError, ValueError) as exc:
+                      output.write(f"\n{label}: report unavailable ({type(exc).__name__}).\n")
+                      return
+                  discovery = value.get("discovery", {})
+                  output.write(f"\n{label}: {value.get('status', 'unknown')}; retained directory candidates: {discovery.get('candidate_count', 0)}; new in that report: {discovery.get('new_candidate_count', 0)}.\n")
+                  if value.get("validation_errors"):
+                      output.write("\nValidation errors: " + "; ".join(value["validation_errors"]) + ".\n")
+              freshness = os.environ.get("CATALOG_FRESHNESS", "unavailable")
+              if freshness == "current":
+                  describe_catalog(catalog, "Current catalog result")
+              else:
+                  if freshness == "fatal":
+                      output.write(f"\nCurrent catalog check failed (exit code {os.environ.get('CATALOG_EXIT_CODE', 'unknown')}).\n")
+                      current_failure = pathlib.Path(".source-inventory/catalog-report.next.json")
+                      if current_failure.exists():
+                          describe_catalog(current_failure, "Current fatal catalog report")
+                  else:
+                      output.write("\nCurrent catalog result unavailable.\n")
+                  if catalog.exists():
+                      describe_catalog(catalog, "Historical catalog inventory retained for retry (not a current result)")
+              output.write("\nObservations are diagnostic only. Full translation, artifact and production-state checks are still required before source promotion.\n")
+          PY
+      - name: Save accumulated diagnostic inventory
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: source-inventory-state
+          path: .source-inventory/
+          include-hidden-files: true
+          retention-days: 90
+          if-no-files-found: error
+      - name: Upload URL audit evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: institution-url-audit-${{ github.run_id }}
+          path: source-audit/
+          retention-days: 90
+          if-no-files-found: warn

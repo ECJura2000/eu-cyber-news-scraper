@@ -125,6 +125,12 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main() -> None:
+    if len(sys.argv) > 1 and sys.argv[1] == "audit-sources":
+        from .source_audit import main as audit_main
+        raise SystemExit(audit_main(sys.argv[2:]))
+    if len(sys.argv) > 1 and sys.argv[1] == "catalog":
+        from .source_catalog import main as catalog_main
+        raise SystemExit(catalog_main(sys.argv[2:]))
     if len(sys.argv) > 1 and sys.argv[1] == "search":
         from .offline_search import main as search_main
         search_main(sys.argv[2:])
@@ -264,7 +270,8 @@ async def _run_pipeline_async(
         emit_event("source_paused", run_id=run_id, **paused)
     source_limiter = asyncio.Semaphore(worker_count)
 
-    async with HttpClient(timeout=max(1, args.timeout)) as client:
+    async with HttpClient(timeout=max(1, args.timeout), obey_robots=True, min_interval=0.5,
+                          cache_dir=state_dir / ".http-cache") as client:
         async def run_one(source: Source) -> tuple[Source, SourceResult]:
             async with source_limiter:
                 try:

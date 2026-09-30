@@ -76,6 +76,7 @@ async def scrape_source(
                 request_count=stats.request_count,
                 bytes_downloaded=stats.bytes_downloaded,
                 retry_count=stats.retry_count,
+                cache_hits=stats.cache_hits,
                 timeout_count=stats.timeout_count + 1,
                 budget_exhausted=True,
                 http_statuses=tuple(stats.statuses),
@@ -237,18 +238,25 @@ async def _scrape_source_impl(
         request_count=stats.request_count,
         bytes_downloaded=stats.bytes_downloaded,
         retry_count=stats.retry_count,
+        cache_hits=stats.cache_hits,
         http_statuses=tuple(stats.statuses),
         error_code=(
             ""
             if success
             else (
-                "HTTP_CHALLENGE"
+                "ROBOTS_DENIED"
+                if any("RobotsDeniedError" in error for error in errors)
+                else "ROBOTS_UNAVAILABLE"
+                if any("RobotsUnavailableError" in error for error in errors)
+                else "RETRY_DEFERRED"
+                if any("RetryDeferredError" in error for error in errors)
+                else "HTTP_CHALLENGE"
                 if any("ChallengePageError" in error for error in errors)
                 else ("PARSE_EMPTY" if transport_succeeded else "FETCH_FAILED")
             )
         ),
     )
-    return SourceResult(source=source, articles=relevant, status=status)
+    return SourceResult(source=source, articles=relevant, status=status, parsed_articles=articles)
 
 
 async def _enrich_articles(

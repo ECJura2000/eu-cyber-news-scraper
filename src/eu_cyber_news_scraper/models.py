@@ -141,6 +141,7 @@ class SourceStatus:
     request_count: int = 0
     bytes_downloaded: int = 0
     retry_count: int = 0
+    cache_hits: int = 0
     budget_exhausted: bool = False
     http_statuses: tuple[str, ...] = ()
     error_code: str = ""
@@ -154,3 +155,4 @@ class SourceResult:
     source: Source
     articles: list[Article]
     status: SourceStatus
+    parsed_articles: list[Article] | None = None

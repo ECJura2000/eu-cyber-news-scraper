@@ -10,7 +10,7 @@ from eu_cyber_news_scraper.topic_profile import load_profile
 
 
 class FakeHttpClient:
-    def __init__(self, timeout: int):
+    def __init__(self, timeout: int, **_kwargs):
         self.payload = b""
 
     async def __aenter__(self):
