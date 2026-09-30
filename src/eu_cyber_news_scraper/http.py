@@ -186,6 +186,11 @@ class HttpClient:
                     metrics.cache_hits += 1
                 if self._cache and response.status_code == 200:
                     self._cache.save(response, variant)
+                if attempt == 1 and response.status_code in RETRYABLE_STATUSES and response.headers.get("retry-after"):
+                    # Exhausting this request's retries does not release other
+                    # requests from a fresh server-specified origin cooldown.
+                    delay = _retry_delay(response, attempt)
+                    self._host_cooldowns[host] = max(self._host_cooldowns.get(host, 0.0), time.monotonic() + delay)
                 if response.status_code not in RETRYABLE_STATUSES or attempt == 1:
                     if not response.has_redirect_location:
                         response.raise_for_status()

@@ -152,6 +152,24 @@ def test_long_retry_after_defers_all_requests_to_same_host():
     assert len(calls) == 1
 
 
+def test_retry_exhaustion_keeps_fresh_retry_after_for_other_host_requests():
+    calls = []
+
+    async def handler(request):
+        calls.append(request)
+        return httpx.Response(429, headers={"retry-after": "0" if len(calls) == 1 else "120"}, request=request)
+
+    async def run():
+        async with HttpClient(transport=httpx.MockTransport(handler)) as client:
+            with pytest.raises(httpx.HTTPStatusError):
+                await client.get("https://example.eu/one")
+            with pytest.raises(RetryDeferredError):
+                await client.get("https://example.eu/two")
+
+    asyncio.run(run())
+    assert len(calls) == 2
+
+
 def test_conditional_cache_revalidates_across_clients_and_keeps_body(tmp_path):
     headers_seen = []
     async def handler(request):
