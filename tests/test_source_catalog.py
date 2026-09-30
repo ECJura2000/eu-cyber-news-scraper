@@ -111,7 +111,7 @@ def test_discovery_only_fetches_directories_and_deduplicates_known_hosts(data):
     assert result["candidate_count"] == 1
     assert result["candidates"][0]["verification_status"] == "unverified"
     assert result["candidate_pages_fetched"] == result["auto_enrolled"] == 0
-    assert not any("networks.imdea.org" in url for url in calls)
+    assert all(httpx.URL(url).host != "networks.imdea.org" for url in calls)
     assert result["seed_results"][0]["duplicates"] >= 2
 
 
@@ -131,7 +131,7 @@ def test_discovery_reports_bounds_and_fetch_failure_without_claiming_absence(dat
 def test_discovery_rejects_redirect_off_directory_domain(data):
     result, calls = discover_mock(data, "", redirect="https://attacker.eu/news")
     assert result["status"] == "attention"
-    assert not any(url.startswith("https://attacker.eu/") for url in calls)
+    assert all(httpx.URL(url).host != "attacker.eu" for url in calls)
 
 
 def test_candidate_history_survives_missing_directory_and_remains_unverified(data):
