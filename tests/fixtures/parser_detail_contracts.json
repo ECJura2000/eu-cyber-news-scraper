@@ -77,17 +77,6 @@
     "summary": "ENISA opens a call to participate in the public review of “Agreed Cryptographic "
   },
   {
-    "source_id": "eu_enisa_publications",
-    "fixture": "parser_contract_eu_enisa_publications.html",
-    "source_url": "https://www.enisa.europa.eu/publications/sme-cyber-resilience-maturity-assessment-model",
-    "captured_at": "2026-08-04",
-    "sha256": "f7780dd1c16ebcfcfe1bb9fc27688f8ff51cab3cec9a424f45006392a3d895d8",
-    "title": "SME Cyber Resilience Maturity Assessment Model",
-    "url": "https://www.enisa.europa.eu/publications/sme-cyber-resilience-maturity-assessment-model",
-    "date": "2026-07-30",
-    "summary": "ENISA is the EU agency dedicated to enhancing cybersecurity in Europe. They offe"
-  },
-  {
     "source_id": "eu_eurohpc",
     "fixture": "parser_contract_eu_eurohpc.html",
     "source_url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-launches-call-tender-new-industrial-supercomputer-bologna-italy-2026-07-16_en",
@@ -196,17 +185,6 @@
     "url": "https://www.entreprises.gouv.fr/la-dge/actualites/le-conseil-national-du-commerce-publie-son-rapport-dactivite-2025",
     "date": "2026-07-16",
     "summary": "Ce document dresse un bilan des groupes de travail et des actions engagées en 20"
-  },
-  {
-    "source_id": "fr_institut_montaigne",
-    "fixture": "parser_contract_fr_institut_montaigne.html",
-    "source_url": "https://www.institutmontaigne.org/expressions/le-grand-jeu-du-pakistan-entre-les-etats-unis-et-la-chine-tactique-et-strategie",
-    "captured_at": "2026-08-04",
-    "sha256": "405ab9302116f14a44ede91b5ceb80d00a40094dbfadcac8b7eff512bea4a087",
-    "title": "[Le grand jeu du Pakistan] - Entre les États-Unis et la Chine, tactique et stratégie",
-    "url": "https://www.institutmontaigne.org/expressions/le-grand-jeu-du-pakistan-entre-les-etats-unis-et-la-chine-tactique-et-strategie",
-    "date": "2026-07-16",
-    "summary": "Les ennemis de mes amis sont mes ennemis ? Pas pour le Pakistan, qui joue de ses"
   },
   {
     "source_id": "ie_adapt",

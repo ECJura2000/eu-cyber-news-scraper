@@ -1,0 +1,518 @@
+{
+  "schema_version": 1,
+  "catalog_version": "2026-09-30.1",
+  "scope": "EU27",
+  "metadata": {
+    "verified_on": "2026-09-30",
+    "description": "Twelve first-party-reviewed institutions missing from the shared built-in registry at research time. Replace/append JSON records without code edits; --check validates schema, recorded evidence and known identity/listing collisions.",
+    "limitations": [
+      "First-party browsing verifies identity, institutional country, mandate and official news/publication URL only. No news parser or article extraction is validated; every entry is directory_only and searchable=false.",
+      "This is a partial EU27 inventory, not a complete network or production coverage assessment. Topic assignments record documented relevance, not a finding of statutory responsibility.",
+      "Language is the reviewed listing interface; individual articles may use other languages. Full local names are institutional names; English names can be translations.",
+      "Directory discovery fetches only predeclared HTTPS official directory pages and robots rules. Candidate-domain declarations bound EU27 country scope but do not verify candidates' identity or mandate.",
+      "JRC country directory entries are historical self-reported survey data. Their external links can be stale or commercial: candidate output remains unverified and is never automatically enrolled.",
+      "Reports, candidates and live discovery failures are written separately. Registry responsibility-owner and consistency checks belong to another workflow."
+    ]
+  },
+  "institutions": [
+    {
+      "canonical_id": "be_imec",
+      "country": "BE",
+      "full_names": {
+        "en": "Interuniversity Microelectronics Centre (imec)",
+        "local": "Interuniversitair Micro-Electronica Centrum vzw"
+      },
+      "language": "en",
+      "institution_type": "public_research_body",
+      "official_domains": [
+        "imec-int.com",
+        "imec.be"
+      ],
+      "homepage": "https://www.imec-int.com/en",
+      "news_url": "https://www.imec-int.com/en/reading-room?type=press",
+      "listing_kind": "news",
+      "mandate_evidence_url": "https://www.imec-int.com/en/about-us",
+      "topics": [
+        "半導體"
+      ],
+      "status": "directory_only",
+      "searchable": false,
+      "verification": {
+        "status": "first_party_pages_reviewed",
+        "verified_on": "2026-09-30",
+        "method": "web_browsing",
+        "note": "First-party About page identifies Leuven, Belgium headquarters and chip R&D with businesses and governments. Homepage links current press releases; listing is dynamically rendered and parser remains pending.",
+        "urls": [
+          "https://www.imec-int.com/en",
+          "https://www.imec-int.com/en/reading-room?type=press",
+          "https://www.imec-int.com/en/about-us",
+          "https://www.imec.be/nl/articles/hoe-je-groot-kan-zijn-iets-heel-erg-kleins-een-terugblik-op-veertig-jaar-imec",
+          "https://www.imec-int.com/sites/default/files/inline-files/imec%20code%20of%20conduct.pdf"
+        ]
+      }
+    },
+    {
+      "canonical_id": "be_kuleuven_citip",
+      "country": "BE",
+      "full_names": {
+        "en": "KU Leuven Centre for IT & IP Law",
+        "local": "KU Leuven Centre for IT & IP Law"
+      },
+      "language": "en",
+      "institution_type": "university_policy_center",
+      "official_domains": [
+        "law.kuleuven.be"
+      ],
+      "homepage": "https://www.law.kuleuven.be/citip/en",
+      "news_url": "https://www.law.kuleuven.be/citip/blog/",
+      "listing_kind": "blog",
+      "mandate_evidence_url": "https://www.law.kuleuven.be/citip/en/research",
+      "topics": [
+        "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+        "跨境資料流通、資料主權、資料開放與再利用",
+        "隱私框架（含個人資料保護）",
+        "著作權",
+        "平台責任、內容審查、推薦演算法",
+        "NIS2、關鍵基礎設施保護"
+      ],
+      "status": "directory_only",
+      "searchable": false,
+      "verification": {
+        "status": "first_party_pages_reviewed",
+        "verified_on": "2026-09-30",
+        "method": "web_browsing",
+        "note": "KU Leuven's centre describes legal and ethical research in AI governance, data economy, privacy, copyright, platform regulation and cybersecurity. About page confirms Leuven/Brussels university affiliation; first-party blog contains dated policy updates.",
+        "urls": [
+          "https://www.law.kuleuven.be/citip/en",
+          "https://www.law.kuleuven.be/citip/blog/",
+          "https://www.law.kuleuven.be/citip/en/research",
+          "https://www.law.kuleuven.be/citip/en/about"
+        ]
+      }
+    },
+    {
+      "canonical_id": "be_ceps",
+      "country": "BE",
+      "full_names": {
+        "en": "Centre for European Policy Studies",
+        "local": "Centre for European Policy Studies"
+      },
+      "language": "en",
+      "institution_type": "think_tank",
+      "official_domains": [
+        "ceps.eu"
+      ],
+      "homepage": "https://www.ceps.eu/",
+      "news_url": "https://www.ceps.eu/ceps-publications/",
+      "listing_kind": "publications",
+      "mandate_evidence_url": "https://www.ceps.eu/ceps-topic/ai-digitalisation-innovation/",
+      "topics": [
+        "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+        "跨境資料流通、資料主權、資料開放與再利用",
+        "NIS2、關鍵基礎設施保護",
+        "量子技術"
+      ],
+      "status": "directory_only",
+      "searchable": false,
+      "verification": {
+        "status": "first_party_pages_reviewed",
+        "verified_on": "2026-09-30",
+        "method": "web_browsing",
+        "note": "Homepage identifies Brussels-based independent EU policy think tank. Digital research topic page lists AI/digital law, cybersecurity governance and quantum-safe transition activities. Publications endpoint is an institutional policy listing.",
+        "urls": [
+          "https://www.ceps.eu/",
+          "https://www.ceps.eu/ceps-publications/",
+          "https://www.ceps.eu/ceps-topic/ai-digitalisation-innovation/"
+        ]
+      }
+    },
+    {
+      "canonical_id": "de_weizenbaum",
+      "country": "DE",
+      "full_names": {
+        "en": "Weizenbaum Institute for the Networked Society",
+        "local": "Weizenbaum-Institut für die vernetzte Gesellschaft"
+      },
+      "language": "en",
+      "institution_type": "public_research_body",
+      "official_domains": [
+        "weizenbaum-institut.de"
+      ],
+      "homepage": "https://www.weizenbaum-institut.de/en/",
+      "news_url": "https://www.weizenbaum-institut.de/en/news/",
+      "listing_kind": "news",
+      "mandate_evidence_url": "https://www.weizenbaum-institut.de/en/",
+      "topics": [
+        "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+        "平台責任、內容審查、推薦演算法",
+        "媒體多元與資訊操縱",
+        "競爭規範面向（平台責任的市場結構面）"
+      ],
+      "status": "directory_only",
+      "searchable": false,
+      "verification": {
+        "status": "first_party_pages_reviewed",
+        "verified_on": "2026-09-30",
+        "method": "web_browsing",
+        "note": "Research foci address algorithmic systems, platform markets and digital news/propaganda. Consortium page confirms public funding by the federal research ministry and Berlin and a Berlin/Brandenburg university research network. News endpoint explicitly notes some articles are German.",
+        "urls": [
+          "https://www.weizenbaum-institut.de/en/",
+          "https://www.weizenbaum-institut.de/en/news/",
+          "https://www.weizenbaum-institut.de/en/institute/organisation/consortium/"
+        ]
+      }
+    },
+    {
+      "canonical_id": "de_dfki",
+      "country": "DE",
+      "full_names": {
+        "en": "German Research Center for Artificial Intelligence",
+        "local": "Deutsches Forschungszentrum für Künstliche Intelligenz GmbH"
+      },
+      "language": "en",
+      "institution_type": "public_private_research_body",
+      "official_domains": [
+        "dfki.de"
+      ],
+      "homepage": "https://www.dfki.de/en/web",
+      "news_url": "https://www.dfki.de/en/web/news-media/news-events/news-overview",
+      "listing_kind": "news",
+      "mandate_evidence_url": "https://www.dfki.de/en/web/about-us/governance/mission-statement",
+      "topics": [
+        "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+      ],
+      "status": "directory_only",
+      "searchable": false,
+      "verification": {
+        "status": "first_party_pages_reviewed",
+        "verified_on": "2026-09-30",
+        "method": "web_browsing",
+        "note": "Official mission commits to reliable, trustworthy, human-centric AI. Company profile identifies non-profit public-private partnership, German research sites and public/industry funding. Official news overview reviewed; no parser validation performed.",
+        "urls": [
+          "https://www.dfki.de/en/web",
+          "https://www.dfki.de/en/web/news-media/news-events/news-overview",
+          "https://www.dfki.de/en/web/about-us/governance/mission-statement",
+          "https://www.dfki.de/en/web/about-us/dfki-at-a-glance/company-profile/"
+        ]
+      }
+    },
+    {
+      "canonical_id": "at_ait",
+      "country": "AT",
+      "full_names": {
+        "en": "AIT Austrian Institute of Technology GmbH",
+        "local": "AIT Austrian Institute of Technology GmbH"
+      },
+      "language": "en",
+      "institution_type": "public_private_research_body",
+      "official_domains": [
+        "ait.ac.at"
+      ],
+      "homepage": "https://www.ait.ac.at/en/research-topics/cyber-security-communication-technologies/cyber-security",
+      "news_url": "https://www.ait.ac.at/en/news-events",
+      "listing_kind": "news",
+      "mandate_evidence_url": "https://www.ait.ac.at/en/research-topics/cyber-security-communication-technologies/cyber-security",
+      "topics": [
+        "隱私框架（含個人資料保護）",
+        "NIS2、關鍵基礎設施保護",
+        "關鍵基礎設施的實體與數位融合保護"
+      ],
+      "status": "directory_only",
+      "searchable": false,
+      "verification": {
+        "status": "first_party_pages_reviewed",
+        "verified_on": "2026-09-30",
+        "method": "web_browsing",
+        "note": "Cyber Security research page identifies Vienna/Austria and services for critical networks, IT infrastructure resilience and privacy-enhancing cryptography. First-party corporate profile describes public/industry ownership. News & Events landing page is pending parser review.",
+        "urls": [
+          "https://www.ait.ac.at/en/research-topics/cyber-security-communication-technologies/cyber-security",
+          "https://www.ait.ac.at/en/news-events",
+          "https://presse.ait.ac.at/Info.aspx?l=deutsch&menueid=33896"
+        ]
+      }
+    },
+    {
+      "canonical_id": "at_oeaw_ita",
+      "country": "AT",
+      "full_names": {
+        "en": "Institute of Technology Assessment, Austrian Academy of Sciences",
+        "local": "Institut für Technikfolgen-Abschätzung, Österreichische Akademie der Wissenschaften"
+      },
+      "language": "en",
+      "institution_type": "public_research_body",
+      "official_domains": [
+        "oeaw.ac.at"
+      ],
+      "homepage": "https://www.oeaw.ac.at/en/ita",
+      "news_url": "https://www.oeaw.ac.at/en/ita/news/news",
+      "listing_kind": "news",
+      "mandate_evidence_url": "https://www.oeaw.ac.at/en/ita",
+      "topics": [
+        "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
+      ],
+      "status": "directory_only",
+      "searchable": false,
+      "verification": {
+        "status": "first_party_pages_reviewed",
+        "verified_on": "2026-09-30",
+        "method": "web_browsing",
+        "note": "Institute homepage identifies the Austrian Academy of Sciences and Vienna address. It conducts scientific technology assessment supporting policy decisions; featured work explicitly covers AI decision-making and algorithmic power. Separate news listing reviewed.",
+        "urls": [
+          "https://www.oeaw.ac.at/en/ita",
+          "https://www.oeaw.ac.at/en/ita/news/news",
+          "https://www.oeaw.ac.at/en/ita/the-ita/about-us"
+        ]
+      }
+    },
+    {
+      "canonical_id": "it_fbk",
+      "country": "IT",
+      "full_names": {
+        "en": "Bruno Kessler Foundation",
+        "local": "Fondazione Bruno Kessler"
+      },
+      "language": "en",
+      "institution_type": "public_research_foundation",
+      "official_domains": [
+        "fbk.eu"
+      ],
+      "homepage": "https://www.fbk.eu/en/",
+      "news_url": "https://magazine.fbk.eu/en/",
+      "listing_kind": "news",
+      "mandate_evidence_url": "https://www.fbk.eu/en/",
+      "topics": [
+        "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+        "數位身份",
+        "量子技術"
+      ],
+      "status": "directory_only",
+      "searchable": false,
+      "verification": {
+        "status": "first_party_pages_reviewed",
+        "verified_on": "2026-09-30",
+        "method": "web_browsing",
+        "note": "Official site describes AI research, cybersecurity focused on digital identity and cloud-edge security, and quantum technologies. About page identifies Trento and foundation established by provincial law as a private entity. First-party magazine is the news channel.",
+        "urls": [
+          "https://www.fbk.eu/en/",
+          "https://magazine.fbk.eu/en/",
+          "https://www.fbk.eu/en/about-fbk/"
+        ]
+      }
+    },
+    {
+      "canonical_id": "se_rise",
+      "country": "SE",
+      "full_names": {
+        "en": "RISE Research Institutes of Sweden",
+        "local": "RISE Research Institutes of Sweden AB"
+      },
+      "language": "en",
+      "institution_type": "public_research_body",
+      "official_domains": [
+        "ri.se"
+      ],
+      "homepage": "https://www.ri.se/en",
+      "news_url": "https://www.ri.se/en/news",
+      "listing_kind": "news",
+      "mandate_evidence_url": "https://www.ri.se/en/cybersecurity",
+      "topics": [
+        "NIS2、關鍵基礎設施保護",
+        "產品資安、漏洞揭露義務、SBOM",
+        "資安產品認證",
+        "關鍵基礎設施的實體與數位融合保護"
+      ],
+      "status": "directory_only",
+      "searchable": false,
+      "verification": {
+        "status": "first_party_pages_reviewed",
+        "verified_on": "2026-09-30",
+        "method": "web_browsing",
+        "note": "Official cybersecurity page explicitly covers NIS2, product vulnerability testing, IoT cybersecurity certification and critical infrastructure resilience. News page identifies RISE as Sweden's independent government research institute and exposes press releases.",
+        "urls": [
+          "https://www.ri.se/en",
+          "https://www.ri.se/en/news",
+          "https://www.ri.se/en/cybersecurity",
+          "https://www.ri.se/en/about-rise"
+        ]
+      }
+    },
+    {
+      "canonical_id": "nl_rathenau",
+      "country": "NL",
+      "full_names": {
+        "en": "Rathenau Institute",
+        "local": "Rathenau Instituut"
+      },
+      "language": "en",
+      "institution_type": "think_tank",
+      "official_domains": [
+        "rathenau.nl"
+      ],
+      "homepage": "https://www.rathenau.nl/en",
+      "news_url": "https://www.rathenau.nl/en",
+      "listing_kind": "homepage_news",
+      "mandate_evidence_url": "https://www.rathenau.nl/en/digitalisation",
+      "topics": [
+        "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+        "跨境資料流通、資料主權、資料開放與再利用",
+        "平台責任、內容審查、推薦演算法",
+        "媒體多元與資訊操縱"
+      ],
+      "status": "directory_only",
+      "searchable": false,
+      "verification": {
+        "status": "first_party_pages_reviewed",
+        "verified_on": "2026-09-30",
+        "method": "web_browsing",
+        "note": "Official site describes research supporting democratic science/technology decisions and The Hague address. Digitalisation theme and homepage highlight recommendation systems/election interference and digital autonomy. News is a homepage section, not a separately validated parser.",
+        "urls": [
+          "https://www.rathenau.nl/en",
+          "https://www.rathenau.nl/en/digitalisation",
+          "https://www.rathenau.nl/en/what-we-do"
+        ]
+      }
+    },
+    {
+      "canonical_id": "es_imdea_software",
+      "country": "ES",
+      "full_names": {
+        "en": "IMDEA Software Institute",
+        "local": "Instituto IMDEA Software"
+      },
+      "language": "en",
+      "institution_type": "public_research_foundation",
+      "official_domains": [
+        "software.imdea.org"
+      ],
+      "homepage": "https://software.imdea.org/",
+      "news_url": "https://software.imdea.org/news/",
+      "listing_kind": "news",
+      "mandate_evidence_url": "https://software.imdea.org/research/",
+      "topics": [
+        "隱私框架（含個人資料保護）",
+        "產品資安、漏洞揭露義務、SBOM"
+      ],
+      "status": "directory_only",
+      "searchable": false,
+      "verification": {
+        "status": "first_party_pages_reviewed",
+        "verified_on": "2026-09-30",
+        "method": "web_browsing",
+        "note": "Research mandate explicitly covers security/privacy, cryptographic protocols and detection of software/hardware vulnerabilities. Legal Status page identifies a non-profit foundation in the Madrid research network, managing public funds; site provides a Madrid, Spain address and news listing.",
+        "urls": [
+          "https://software.imdea.org/",
+          "https://software.imdea.org/news/",
+          "https://software.imdea.org/research/",
+          "https://software.imdea.org/about/legal-status/"
+        ]
+      }
+    },
+    {
+      "canonical_id": "cz_ceitec",
+      "country": "CZ",
+      "full_names": {
+        "en": "Central European Institute of Technology",
+        "local": "Středoevropský technologický institut"
+      },
+      "language": "en",
+      "institution_type": "university_policy_center",
+      "official_domains": [
+        "ceitec.eu"
+      ],
+      "homepage": "https://www.ceitec.eu/",
+      "news_url": "https://www.ceitec.eu/news/",
+      "listing_kind": "news",
+      "mandate_evidence_url": "https://www.ceitec.eu/advanced-nano-and-microtechnologies/rp1",
+      "topics": [
+        "量子技術"
+      ],
+      "status": "directory_only",
+      "searchable": false,
+      "verification": {
+        "status": "first_party_pages_reviewed",
+        "verified_on": "2026-09-30",
+        "method": "web_browsing",
+        "note": "Official nano/microtechnology research area lists Quantum Molecular Magnetism. About/home pages identify the consortium of six Brno universities and research institutions in the Czech Republic. Included for the existing quantum-technology topic only; news listing reviewed.",
+        "urls": [
+          "https://www.ceitec.eu/",
+          "https://www.ceitec.eu/news/",
+          "https://www.ceitec.eu/advanced-nano-and-microtechnologies/rp1",
+          "https://www.ceitec.eu/about-us/"
+        ]
+      }
+    }
+  ],
+  "discovery": {
+    "max_seed_pages": 2,
+    "max_links_per_page": 350,
+    "max_candidates": 30,
+    "directory_seeds": [
+      {
+        "id": "jrc_spain",
+        "url": "https://joint-research-centre.ec.europa.eu/cybersecurity-competence-survey/spain_en",
+        "official_domains": [
+          "joint-research-centre.ec.europa.eu"
+        ],
+        "country": "ES",
+        "candidate_domains": [
+          {
+            "domain": "software.imdea.org",
+            "country": "ES"
+          },
+          {
+            "domain": "networks.imdea.org",
+            "country": "ES"
+          },
+          {
+            "domain": "cosec.inf.uc3m.es",
+            "country": "ES"
+          },
+          {
+            "domain": "crises-deim.urv.cat",
+            "country": "ES"
+          },
+          {
+            "domain": "icmat.es",
+            "country": "ES"
+          },
+          {
+            "domain": "mondragon.edu",
+            "country": "ES"
+          }
+        ],
+        "verification": {
+          "status": "first_party_pages_reviewed",
+          "verified_on": "2026-09-30",
+          "method": "web_browsing",
+          "note": "European Commission JRC Spain cybersecurity competence directory lists named Spanish research institutions and their external links. Historical directory, reviewed through official webpage; external candidates require new independent first-party evidence.",
+          "urls": [
+            "https://joint-research-centre.ec.europa.eu/cybersecurity-competence-survey/spain_en"
+          ]
+        }
+      },
+      {
+        "id": "eccc_luxembourg",
+        "url": "https://cybersecurity-centre.europa.eu/luxembourg-ncc_en",
+        "official_domains": [
+          "cybersecurity-centre.europa.eu"
+        ],
+        "country": "LU",
+        "candidate_domains": [
+          {
+            "domain": "nc3.lu",
+            "country": "LU"
+          }
+        ],
+        "verification": {
+          "status": "first_party_pages_reviewed",
+          "verified_on": "2026-09-30",
+          "method": "web_browsing",
+          "note": "Official ECCC National Coordination Centre directory entry links the Luxembourg NC3 website and describes national cybersecurity capacity/research coordination. Seed authority is verified; extracted candidate links remain unverified.",
+          "urls": [
+            "https://cybersecurity-centre.europa.eu/luxembourg-ncc_en"
+          ]
+        }
+      }
+    ]
+  }
+}

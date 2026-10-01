@@ -84,8 +84,12 @@ def load_sources_and_registry(
         rows = registry.source_rows
     sources = []
     for row in rows:
-        if "schedule_enabled" in row and not isinstance(row["schedule_enabled"], bool):
-            raise ValueError(f"{row['id']}: schedule_enabled must be boolean")
+        for flag in ("schedule_enabled", "feed_archive_fallback"):
+            if flag in row and not isinstance(row[flag], bool):
+                raise ValueError(f"{row['id']}: {flag} must be boolean")
+        minimum_budget = row.get("minimum_budget_seconds", 0)
+        if type(minimum_budget) is not int or not 0 <= minimum_budget <= 900:
+            raise ValueError(f"{row['id']}: minimum_budget_seconds must be an integer between 0 and 900")
         sources.append(
             Source(
                 id=row["id"],
@@ -128,6 +132,8 @@ def load_sources_and_registry(
                 min_listing_bytes=int(row.get("min_listing_bytes", 0)),
                 user_agent=str(row.get("user_agent", "")),
                 schedule_enabled=row.get("schedule_enabled", True),
+                feed_archive_fallback=row.get("feed_archive_fallback", False),
+                minimum_budget_seconds=minimum_budget,
             )
         )
     _validate_sources(sources)
@@ -149,6 +155,8 @@ def _validate_sources(sources: list[Source]) -> None:
             raise ValueError("Source id and names must not be blank")
         if source.detail_pages < 0:
             raise ValueError(f"{source.id}: detail_pages must be non-negative")
+        if type(source.minimum_budget_seconds) is not int or not 0 <= source.minimum_budget_seconds <= 900:
+            raise ValueError(f"{source.id}: minimum_budget_seconds must be an integer between 0 and 900")
         if source.min_listing_bytes < 0:
             raise ValueError(f"{source.id}: min_listing_bytes must be non-negative")
         if source.max_pages < 1 or source.observation_runs < 0 or source.freshness_days < 1:

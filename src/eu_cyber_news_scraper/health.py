@@ -40,6 +40,11 @@ def source_config_fingerprint(source: Source) -> str:
         "min_listing_bytes": source.min_listing_bytes,
         "user_agent": source.user_agent,
     }
+    # New optional defaults must not reset unchanged production baselines.
+    if source.feed_archive_fallback:
+        values["feed_archive_fallback"] = True
+    if source.minimum_budget_seconds:
+        values["minimum_budget_seconds"] = source.minimum_budget_seconds
     return health_profile_fingerprint(values)
 
 

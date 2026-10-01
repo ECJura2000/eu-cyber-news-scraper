@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "module_version": "2026-09-15.2",
+  "module_version": "2026-09-30.1",
   "canonical_id": "de_bmi",
   "names": {
     "zh": "德國聯邦內政部",
@@ -17,7 +17,14 @@
       "institution_type": "聯邦行政機關",
       "language": "de",
       "homepage": "https://www.bmi.bund.de/",
-      "listing_url": "https://www.bmi.bund.de/SiteGlobals/Forms/suche/expertensuche-formular.html?nn=9388812&gts=9398922_list%253DunifiedDate_dt%2Bdesc&documentType_=pbjournal",
+      "listing_url": "https://www.bmi.bund.de/DE/presse/presse-node.html",
+      "feed_urls": [
+        "https://www.bmi.bund.de/DE/service/rss-newsfeed/function/rssnewsfeed-pressemitteilungen.xml"
+      ],
+      "feed_archive_fallback": true,
+      "date_selectors": [
+        ".c-content-teaser__small"
+      ],
       "allow_domains": [
         "bmi.bund.de",
         "www.bmi.bund.de"

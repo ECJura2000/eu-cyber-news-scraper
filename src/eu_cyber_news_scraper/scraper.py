@@ -38,7 +38,7 @@ async def scrape_source(
 ) -> SourceResult:
     started = time.monotonic()
     stats = HttpStats()
-    budget = max(1, source_budget_seconds)
+    budget = max(1, source_budget_seconds, source.minimum_budget_seconds)
     try:
         async with asyncio.timeout(budget):
             return await _scrape_source_impl(
@@ -76,6 +76,7 @@ async def scrape_source(
                 request_count=stats.request_count,
                 bytes_downloaded=stats.bytes_downloaded,
                 retry_count=stats.retry_count,
+                cache_hits=stats.cache_hits,
                 timeout_count=stats.timeout_count + 1,
                 budget_exhausted=True,
                 http_statuses=tuple(stats.statuses),
@@ -119,7 +120,10 @@ async def _scrape_source_impl(
     # Feeds are often truncated. Sources with explicit archive rules must also
     # traverse their listing so historical fixed periods remain complete.
     feed_dates = [item.published_at for item in articles if item.published_at]
-    archive_gap = source.id == "ie_comreg" and bool(feed_dates) and since < min(feed_dates)
+    archive_capable = source.feed_archive_fallback or source.id == "ie_comreg"
+    archive_gap = archive_capable and bool(articles) and (
+        not feed_dates or since < min(feed_dates)
+    )
     if not articles or archive_gap or source.yearly_listing_url or source.pagination_url:
         for listing_url in _listing_urls(source, since, until):
             try:
@@ -237,18 +241,25 @@ async def _scrape_source_impl(
         request_count=stats.request_count,
         bytes_downloaded=stats.bytes_downloaded,
         retry_count=stats.retry_count,
+        cache_hits=stats.cache_hits,
         http_statuses=tuple(stats.statuses),
         error_code=(
             ""
             if success
             else (
-                "HTTP_CHALLENGE"
+                "ROBOTS_DENIED"
+                if any("RobotsDeniedError" in error for error in errors)
+                else "ROBOTS_UNAVAILABLE"
+                if any("RobotsUnavailableError" in error for error in errors)
+                else "RETRY_DEFERRED"
+                if any("RetryDeferredError" in error for error in errors)
+                else "HTTP_CHALLENGE"
                 if any("ChallengePageError" in error for error in errors)
                 else ("PARSE_EMPTY" if transport_succeeded else "FETCH_FAILED")
             )
         ),
     )
-    return SourceResult(source=source, articles=relevant, status=status)
+    return SourceResult(source=source, articles=relevant, status=status, parsed_articles=articles)
 
 
 async def _enrich_articles(

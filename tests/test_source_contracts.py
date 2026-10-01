@@ -55,7 +55,7 @@ def test_high_risk_listing_layout_contract(source_id):
 def test_all_scheduled_sources_have_one_real_url_contract():
     source_ids = {source.id for source in load_sources() if source.schedule_enabled}
     fixture_ids = {row["source_id"] for row in contract_rows()}
-    assert len(fixture_ids) == 55
+    assert len(fixture_ids) == 52
     assert fixture_ids == source_ids
 
 
@@ -67,6 +67,12 @@ def attention_layout_rows():
 def parser_detail_rows():
     path = Path(__file__).parent / "fixtures" / "parser_detail_contracts.json"
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def test_live_contracts_exclude_retired_sources():
+    retired = {"eu_enisa_publications", "fr_institut_montaigne", "ie_insight"}
+    for rows in (contract_rows(), attention_layout_rows(), parser_detail_rows()):
+        assert not retired.intersection(row["source_id"] for row in rows)
 
 
 @pytest.mark.parametrize("row", attention_layout_rows(), ids=lambda row: row["source_id"])
