@@ -44,6 +44,8 @@ class Source:
     min_listing_bytes: int = 0
     user_agent: str = ""
     schedule_enabled: bool = True
+    feed_archive_fallback: bool = False
+    minimum_budget_seconds: int = 0
 
     @property
     def display_name(self) -> str:

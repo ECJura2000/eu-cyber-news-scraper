@@ -210,6 +210,10 @@ python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95
 
 正式抓取另在 state 目錄的 `.http-cache/responses.sqlite3` 保存條件式 HTTP 快取：優先使用 ETag／`If-None-Match`，其次使用 Last-Modified／`If-Modified-Since`，每次仍向伺服器重新驗證，只有 304 才重用內容。快取包含內容 SHA-256 檢查，保留最多 30 天、本文合計最多 100 MiB；`no-store`、`Set-Cookie`、不支援的 `Vary` 或沒有驗證標頭的回應不保存。URL 稽核與目錄探索目前未配置持久 HTTP 本文快取。
 
+有效來源預算取 `--source-budget` 與 JSON 的 `minimum_budget_seconds` 較大值；來源下限僅接受 0～900 秒整數，預設 0。Bundeskartellamt 的[官方 robots](https://www.bundeskartellamt.de/robots.txt) 指定每次間隔 30 秒，因此單獨設定 600 秒下限，保留最多 12 篇內頁的日期及摘要查證；其他來源仍維持基本 60 秒。這是等待時間預算，不改變日期、來源健康或 state 寫入門檻，較短的命令列基本預算也不會覆蓋此下限。BNetzA 的純文字 robots 雖被官網標成 HTML，仍依實際規則解析；真正的 HTML／驗證頁繼續阻擋，`/SiteGlobals` 也仍禁止存取。首頁採用不會降至 HTTP 的已驗證 HTTPS 入口。
+
+BMI 近期新聞使用[官方 RSS](https://www.bmi.bund.de/DE/service/rss-newsfeed/function/rssnewsfeed-pressemitteilungen.xml)，不再存取 robots 禁止的搜尋表單。設定 `feed_archive_fallback: true` 時，feed 失敗、沒有文章、缺乏日期，或查詢起日早於 feed 最舊日期，仍會查允許的新聞列表；ComReg 保留既有較早期間回查行為。列表回查不保證完整歷史覆蓋，未設定歷史分頁的來源不能因此宣稱已找齊較早期間新聞。此旗標與時間預算變更都會改變來源 fingerprint，重新累積該設定的健康觀察。
+
 新增正式來源應依序完成：
 
 1. 更新內建 JSON 模組與 `SOURCES.md`，明確匯出 `sources.toml` 後執行 `--check`。

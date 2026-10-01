@@ -1,7 +1,9 @@
 import asyncio
+from dataclasses import replace
 from datetime import datetime, timezone
 
 import httpx
+import pytest
 
 from eu_cyber_news_scraper.config import load_sources
 from eu_cyber_news_scraper.models import Source
@@ -31,6 +33,37 @@ def run_scraper(*args, **kwargs):
     return asyncio.run(scrape_source(*args, **kwargs))
 
 
+@pytest.mark.parametrize("floor, requested, effective", [(0, 60, 60), (600, 60, 600), (600, 700, 700)])
+def test_source_budget_floor_preserves_permitted_crawl_delay(monkeypatch, floor, requested, effective):
+    from eu_cyber_news_scraper import scraper
+
+    source = replace(next(item for item in load_sources() if item.id == "de_bundeskartellamt"),
+                     minimum_budget_seconds=floor)
+    seen = []
+    timeout_impl = asyncio.timeout
+
+    def capture_timeout(seconds):
+        seen.append(seconds)
+        return timeout_impl(seconds)
+
+    monkeypatch.setattr(scraper.asyncio, "timeout", capture_timeout)
+    result = run_scraper(source, FakeClient(b"<main></main>"),
+                         since=datetime(2026, 9, 1, tzinfo=timezone.utc),
+                         until=datetime(2026, 9, 30, tzinfo=timezone.utc),
+                         source_budget_seconds=requested)
+    assert seen == [effective]
+    assert not result.status.success and result.status.error_code == "PARSE_EMPTY"
+
+
+def test_fetch_policy_changes_reset_source_fingerprint():
+    from eu_cyber_news_scraper.health import source_config_fingerprint
+
+    source = next(item for item in load_sources() if item.id == "ie_comreg")
+    original = source_config_fingerprint(source)
+    assert original != source_config_fingerprint(replace(source, feed_archive_fallback=True))
+    assert original != source_config_fingerprint(replace(source, minimum_budget_seconds=600))
+
+
 def test_comreg_uses_feed_for_recent_period_and_listing_for_archive():
     source = next(item for item in load_sources() if item.id == "ie_comreg")
     feed = b"""<?xml version='1.0'?><rss version='2.0'><channel><item>
@@ -54,6 +87,34 @@ def test_comreg_uses_feed_for_recent_period_and_listing_for_archive():
     run_scraper(source, archive, since=datetime(2026, 8, 1, tzinfo=timezone.utc),
                 until=datetime(2026, 8, 10, tzinfo=timezone.utc), fetch_details=False)
     assert "https://www.comreg.ie/news/" in archive.urls
+
+
+@pytest.mark.parametrize("enabled, older, undated, fallback", [
+    (True, True, False, True), (True, False, False, False),
+    (True, False, True, True), (False, True, False, False),
+])
+def test_feed_archive_fallback_is_explicit_and_date_aware(enabled, older, undated, fallback):
+    source = replace(next(item for item in load_sources() if item.id == "ie_comreg"),
+                     id="custom_feed", feed_archive_fallback=enabled)
+    date_xml = "" if undated else "<pubDate>Sun, 20 Sep 2026 10:00:00 GMT</pubDate>"
+    feed = ("<rss version='2.0'><channel><item><title>NIS2 security update</title>"
+            "<link>https://www.comreg.ie/security-update/</link>"
+            f"{date_xml}</item></channel></rss>").encode()
+
+    class Client:
+        def __init__(self):
+            self.urls = []
+
+        async def get(self, url, *, stats=None):
+            self.urls.append(url)
+            return httpx.Response(200, content=feed if url in source.feed_urls else b"<main></main>",
+                                  request=httpx.Request("GET", url))
+
+    client = Client()
+    run_scraper(source, client,
+                since=datetime(2026, 8 if older else 9, 21, tzinfo=timezone.utc),
+                until=datetime(2026, 9, 30, tzinfo=timezone.utc), fetch_details=False)
+    assert (source.listing_url in client.urls) is fallback
 
 
 def test_scrape_source_filters_date_and_topic(fixture_dir):

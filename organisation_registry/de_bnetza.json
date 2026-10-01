@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "module_version": "2026-09-15.2",
+  "module_version": "2026-09-30.1",
   "canonical_id": "de_bnetza",
   "names": {
     "zh": "德國聯邦網路管理局",
@@ -17,7 +17,7 @@
       "name": "Bundesnetzagentur",
       "institution_type": "聯邦監理機關",
       "language": "de",
-      "homepage": "https://www.bundesnetzagentur.de/",
+      "homepage": "https://www.bundesnetzagentur.de/DE/Home/home_node.html",
       "listing_url": "https://www.bundesnetzagentur.de/DE/Allgemeines/Presse/Pressemitteilungen/start.html",
       "allow_domains": [
         "bundesnetzagentur.de",

@@ -818,36 +818,39 @@ link_selectors = ["a[href]"]
 date_selectors = ["td:first-child"]
 
 [[sources]]
-id = "de_bmi"
-country = "DE"
-name_zh = "德國聯邦內政部"
-name = "Bundesministerium des Innern"
-institution_type = "聯邦行政機關"
-language = "de"
-homepage = "https://www.bmi.bund.de/"
-listing_url = "https://www.bmi.bund.de/SiteGlobals/Forms/suche/expertensuche-formular.html?nn=9388812&gts=9398922_list%253DunifiedDate_dt%2Bdesc&documentType_=pbjournal"
-allow_domains = ["bmi.bund.de", "www.bmi.bund.de"]
-include_patterns = ['/SharedDocs/pressemitteilungen/DE/.+\.html$']
-exclude_patterns = ['/pressemitteilungen\.html$']
-detail_pages = 10
+"id" = "de_bmi"
+"allow_domains" = ["bmi.bund.de", "www.bmi.bund.de"]
+"country" = "DE"
+"date_selectors" = [".c-content-teaser__small"]
+"detail_pages" = 10
+"exclude_patterns" = ["/pressemitteilungen\\.html$"]
+"feed_archive_fallback" = true
+"feed_urls" = ["https://www.bmi.bund.de/DE/service/rss-newsfeed/function/rssnewsfeed-pressemitteilungen.xml"]
+"homepage" = "https://www.bmi.bund.de/"
+"include_patterns" = ["/SharedDocs/pressemitteilungen/DE/.+\\.html$"]
+"institution_type" = "聯邦行政機關"
+"language" = "de"
+"listing_url" = "https://www.bmi.bund.de/DE/presse/presse-node.html"
+"name" = "Bundesministerium des Innern"
+"name_zh" = "德國聯邦內政部"
 
 [[sources]]
-id = "de_bnetza"
-date_policy = "required"
-country = "DE"
-name_zh = "德國聯邦網路管理局"
-name = "Bundesnetzagentur"
-institution_type = "聯邦監理機關"
-language = "de"
-homepage = "https://www.bundesnetzagentur.de/"
-listing_url = "https://www.bundesnetzagentur.de/DE/Allgemeines/Presse/Pressemitteilungen/start.html"
-allow_domains = ["bundesnetzagentur.de", "www.bundesnetzagentur.de"]
-include_patterns = ['/SharedDocs/Pressemitteilungen/DE/.+\.html(?:\?.*)?$']
-exclude_patterns = ['/Presse/Pressemitteilungen/start\.html$']
-card_selectors = ["table.textualData tbody tr"]
-link_selectors = ["a.titleLink"]
-date_selectors = ["td:first-child"]
-detail_pages = 10
+"id" = "de_bnetza"
+"allow_domains" = ["bundesnetzagentur.de", "www.bundesnetzagentur.de"]
+"card_selectors" = ["table.textualData tbody tr"]
+"country" = "DE"
+"date_policy" = "required"
+"date_selectors" = ["td:first-child"]
+"detail_pages" = 10
+"exclude_patterns" = ["/Presse/Pressemitteilungen/start\\.html$"]
+"homepage" = "https://www.bundesnetzagentur.de/DE/Home/home_node.html"
+"include_patterns" = ["/SharedDocs/Pressemitteilungen/DE/.+\\.html(?:\\?.*)?$"]
+"institution_type" = "聯邦監理機關"
+"language" = "de"
+"link_selectors" = ["a.titleLink"]
+"listing_url" = "https://www.bundesnetzagentur.de/DE/Allgemeines/Presse/Pressemitteilungen/start.html"
+"name" = "Bundesnetzagentur"
+"name_zh" = "德國聯邦網路管理局"
 
 [[sources]]
 id = "de_fraunhofer_aisec"
@@ -913,22 +916,23 @@ date_selectors = ["td:first-child"]
 detail_pages = 0
 
 [[sources]]
-id = "de_bundeskartellamt"
-date_policy = "required"
-country = "DE"
-name_zh = "德國聯邦卡特爾局"
-name = "Bundeskartellamt"
-institution_type = "聯邦競爭監理機關"
-language = "de"
-homepage = "https://www.bundeskartellamt.de/"
-listing_url = "https://www.bundeskartellamt.de/DE/Home/home_node.html"
-allow_domains = ["bundeskartellamt.de", "www.bundeskartellamt.de"]
-include_patterns = ['/SharedDocs/Meldung/DE/Pressemitteilungen/.+\.html(?:\?.*)?$']
-card_selectors = ["div.c-teaser"]
-link_selectors = [".c-teaser__link-wrapper a"]
-title_selectors = [".c-teaser__headline"]
-date_selectors = [".c-topline__item:last-child"]
-detail_pages = 12
+"id" = "de_bundeskartellamt"
+"allow_domains" = ["bundeskartellamt.de", "www.bundeskartellamt.de"]
+"card_selectors" = ["div.c-teaser"]
+"country" = "DE"
+"date_policy" = "required"
+"date_selectors" = [".c-topline__item:last-child"]
+"detail_pages" = 12
+"homepage" = "https://www.bundeskartellamt.de/"
+"include_patterns" = ["/SharedDocs/Meldung/DE/Pressemitteilungen/.+\\.html(?:\\?.*)?$"]
+"institution_type" = "聯邦競爭監理機關"
+"language" = "de"
+"link_selectors" = [".c-teaser__link-wrapper a"]
+"listing_url" = "https://www.bundeskartellamt.de/DE/Home/home_node.html"
+"minimum_budget_seconds" = 600
+"name" = "Bundeskartellamt"
+"name_zh" = "德國聯邦卡特爾局"
+"title_selectors" = [".c-teaser__headline"]
 
 [[sources]]
 id = "de_dpma"

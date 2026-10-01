@@ -46,7 +46,7 @@
 | 代碼 | 機關 | 制度定位 | 新聞入口 |
 | --- | --- | --- | --- |
 | `de_bsi_news` | BSI | 聯邦資安主管機關；NIS2 登記與監督 | [Alle Meldungen](https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/alle-meldungen-news_node.html) |
-| `de_bmi` | Bundesministerium des Innern | 聯邦內政與資安政策機關 | [Pressemitteilungen](https://www.bmi.bund.de/DE/presse/presse-node.html) |
+| `de_bmi` | Bundesministerium des Innern | 聯邦內政與資安政策機關 | [官方 RSS](https://www.bmi.bund.de/DE/service/rss-newsfeed/function/rssnewsfeed-pressemitteilungen.xml)／[Pressemitteilungen](https://www.bmi.bund.de/DE/presse/presse-node.html) |
 | `de_bnetza` | Bundesnetzagentur | 聯邦網路與通訊監理機關 | [Pressemitteilungen](https://www.bundesnetzagentur.de/DE/Allgemeines/Presse/Pressemitteilungen/start.html) |
 | `de_fraunhofer_aisec` | Fraunhofer AISEC | 公共應用資安研究機構 | [Pressemitteilungen](https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen.html) |
 | `de_cispa` | CISPA Helmholtz Center | 國家大型資訊安全研究機構 | [News](https://cispa.de/en/news-and-events/all-news) |

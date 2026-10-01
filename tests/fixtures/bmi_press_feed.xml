@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- source_url: https://www.bmi.bund.de/DE/service/rss-newsfeed/function/rssnewsfeed-pressemitteilungen.xml -->
+<!-- captured_at: 2026-09-30; bounded public item projection, not the full ten-item feed -->
+<rss version="2.0"><channel>
+  <title>BMI - RSS-Newsfeed für Pressemitteilungen</title>
+  <link>https://www.bmi.bund.de/DE/presse/presse-node.html</link>
+  <description>Public BMI press releases</description>
+  <item>
+    <title>Zweites Munich Migration Meeting: München wird Mittelpunkt der europäischen Migrationspolitik</title>
+    <link>https://www.bmi.bund.de/SharedDocs/pressemitteilungen/DE/2026/09/munichmigrationmeeting.html</link>
+    <description>Bundesinnenminister Alexander Dobrindt hat am 26. September 2026 den EU-Innenkommissar Magnus Brunner und 17 weitere Migrations- und Innenminister nach M&amp;#252;nchen eingeladen.</description>
+    <pubDate>Sat, 26 Sep 2026 07:37:00 +0200</pubDate>
+  </item>
+  <item>
+    <title>Sozialstaat schützen und Missbrauch verhindern: Bundesregierung beschließt 10-Punkte-Plan</title>
+    <link>https://www.bmi.bund.de/SharedDocs/pressemitteilungen/DE/2026/09/bas-dobrindt.html</link>
+    <description>Die Bundesregierung hat heute im Kabinett den Aktionsplan gegen Sozialleistungsmissbrauch und Ausbeutung, insbesondere im Zusammenhang mit EU-Zuwanderung beschlossen.</description>
+    <pubDate>Wed, 23 Sep 2026 11:08:00 +0200</pubDate>
+  </item>
+  <item>
+    <title>Sicherheit stärken, Freiheit bewahren, Radikalisierung verhindern: Bundeskabinett beschließt Maßnahmenplan zu einem besseren Schutz vor islamistischem Terrorismus</title>
+    <link>https://www.bmi.bund.de/SharedDocs/pressemitteilungen/DE/2026/09/10-punkte-bmjv-bmi.html</link>
+    <description>Der von Bundesinnenminister Alexander Dobrindt und von Bundesjustizministerin Stefanie Hubig gemeinsam vorgelegte Plan enth&amp;#228;lt Ma&amp;#223;nahmen f&amp;#252;r eine bessere &amp;#220;berwachung von islamistischen Gef&amp;#228;hrdern, eine konsequentere Bestrafung von terroristischen Taten, ein gezielteres Vorgehen gegen Terrorismusfinanzierung und zur Verhinderung von Radikalisierung.</description>
+    <pubDate>Wed, 16 Sep 2026 13:15:00 +0200</pubDate>
+  </item>
+</channel></rss>

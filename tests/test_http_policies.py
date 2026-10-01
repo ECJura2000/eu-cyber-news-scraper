@@ -138,6 +138,52 @@ def test_retry_after_accepts_full_seconds_and_http_dates():
     assert .5 <= _retry_delay(None) <= .75
 
 
+@pytest.mark.parametrize("content_type", ["text/plain", "text/html;charset=utf-8"])
+def test_plain_robots_with_mislabelled_html_mime_keeps_disallowed_paths(content_type):
+    calls = []
+
+    async def handler(request):
+        calls.append(request.url.path)
+        if request.url.path == "/robots.txt":
+            return httpx.Response(200, text="\ufeffUser-agent: *\nDisallow: /SiteGlobals\n",
+                                  headers={"content-type": content_type}, request=request)
+        return httpx.Response(200, text="news", request=request)
+
+    async def run():
+        async with HttpClient(obey_robots=True, transport=httpx.MockTransport(handler)) as client:
+            await client.get("https://agency.example/DE/Presse/news.html")
+            with pytest.raises(RobotsDeniedError):
+                await client.get("https://agency.example/SiteGlobals/feed.xml")
+
+    asyncio.run(run())
+    assert calls == ["/robots.txt", "/DE/Presse/news.html"]
+
+
+@pytest.mark.parametrize("body", [
+    "<html><pre>\nUser-agent: *\nAllow: /\n</pre></html>",
+    "<!-- challenge -->\n<script>check()</script>\nUser-agent: *\nAllow: /",
+    'User-agent: *\n<div class="cf-chl-container">Checking your browser</div>',
+    'User-agent: *\n<span>Access denied</span>',
+    'User-agent: *\n<!-- challenge with no visible markup -->',
+    'User-agent: *\n<?xml version="1.0"?><response>Forbidden</response>',
+    "Access denied", "",
+])
+def test_html_robot_documents_and_empty_html_fail_closed(body):
+    calls = []
+
+    async def handler(request):
+        calls.append(request.url.path)
+        return httpx.Response(200, text=body, headers={"content-type": "text/html"}, request=request)
+
+    async def run():
+        async with HttpClient(obey_robots=True, transport=httpx.MockTransport(handler)) as client:
+            with pytest.raises(RobotsUnavailableError):
+                await client.get("https://agency.example/news")
+
+    asyncio.run(run())
+    assert calls == ["/robots.txt"]
+
+
 def test_long_retry_after_defers_all_requests_to_same_host():
     calls = []
     async def handler(request):

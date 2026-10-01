@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import asyncio
 import random
+import re
 import ssl
 import time
 import zlib
@@ -240,10 +241,18 @@ class HttpClient:
                     response = await self.get(origin + "/robots.txt", stats=stats, ssl_bundle=bundle,
                                               user_agent=user_agent, _check_robots=False)
                     content_type = response.headers.get("content-type", "").casefold()
-                    if "html" in content_type or response.text.lstrip().lower().startswith(("<!doctype html", "<html")):
+                    text = response.text.lstrip("\ufeff")
+                    # Some official servers label plain robots rules text/html.
+                    # A MIME mismatch must not hide valid Disallow rules, while
+                    # actual HTML/challenges still fail closed, even if they
+                    # contain a robots-looking line inside their document.
+                    has_agent = re.search(r"(?im)^\s*user-agent\s*:\s*\S+", text) is not None
+                    has_markup = (text.lstrip().startswith("<")
+                                  or re.search(r"<\s*(?:/?[a-z][\w:-]*\b|[!?])", text, re.I) is not None)
+                    if has_markup or ("html" in content_type and not has_agent):
                         policy = "robots.txt returned HTML/challenge content"
                     else:
-                        policy = RobotsPolicy.parse(response.text)
+                        policy = RobotsPolicy.parse(text)
                 except httpx.HTTPStatusError as exc:
                     code = exc.response.status_code
                     if 400 <= code < 500 and code != 429:
