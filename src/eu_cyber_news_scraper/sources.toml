@@ -44,20 +44,6 @@ date_selectors = ["time[datetime]"]
 summary_selectors = [".content", "p"]
 
 [[sources]]
-id = "eu_enisa_publications"
-country = "EU"
-name_zh = "歐盟資安局（研究出版品）"
-name = "European Union Agency for Cybersecurity - Publications"
-institution_type = "歐盟行政機關／官方研究"
-language = "en"
-homepage = "https://www.enisa.europa.eu/"
-listing_url = "https://www.enisa.europa.eu/publications"
-allow_domains = ["enisa.europa.eu", "www.enisa.europa.eu"]
-include_patterns = ['/publications/', '/sites/default/files/']
-exclude_patterns = ['^/publications/?$']
-detail_pages = 12
-
-[[sources]]
 id = "eu_cert_threat"
 date_policy = "best_effort"
 date_exception_reason = "Threat reports do not expose a consistent machine-readable publication date on every listing card."
@@ -1285,20 +1271,6 @@ exclude_patterns = ['^/(evenements|formations|innovations|mentions-legales|polit
 detail_pages = 10
 
 [[sources]]
-id = "fr_institut_montaigne"
-country = "FR"
-name_zh = "法國蒙田研究所"
-name = "Institut Montaigne"
-institution_type = "私人非營利政策智庫"
-language = "fr"
-homepage = "https://www.institutmontaigne.org/"
-listing_url = "https://www.institutmontaigne.org/expressions"
-allow_domains = ["institutmontaigne.org", "www.institutmontaigne.org"]
-include_patterns = ['^/expressions/.+', '^/publications/.+']
-exclude_patterns = ['^/(expressions|publications)/?$']
-detail_pages = 10
-
-[[sources]]
 id = "de_athene"
 country = "DE"
 name_zh = "德國 ATHENE 國家應用資安研究中心"
@@ -1372,24 +1344,6 @@ allow_domains = ["ceadar.ie"]
 include_patterns = ['^/news/.+']
 exclude_patterns = ['^/latest-news/?$']
 detail_pages = 10
-
-[[sources]]
-id = "ie_insight"
-country = "IE"
-name_zh = "愛爾蘭 Insight 資料分析研究中心"
-name = "Insight SFI Research Centre for Data Analytics"
-institution_type = "國家資助跨校產學研究中心"
-language = "en"
-homepage = "https://www.insight-centre.org/"
-listing_url = "https://www.insight-centre.org/news/"
-allow_domains = ["insight-centre.org", "www.insight-centre.org"]
-include_patterns = ['^/[a-z0-9][a-z0-9-]{12,}/$']
-exclude_patterns = ['^/(about-us|governance|people|projects|industry|ecosystem|privacy-statement|copyright-statement|data-protection-notice)/?$']
-detail_pages = 10
-card_selectors = [".news-list .news-item"]
-link_selectors = [".news-title a[href]"]
-title_selectors = [".news-title"]
-date_selectors = [".news-date"]
 
 [[sources]]
 id = "ie_esri"

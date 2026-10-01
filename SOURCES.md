@@ -8,7 +8,6 @@
 | --- | --- | --- | --- |
 | `eu_dg_connect` | DG CONNECT／Shaping Europe’s Digital Future | 歐盟數位與資安政策主管機關 | [News](https://digital-strategy.ec.europa.eu/en/news) |
 | `eu_enisa_news` | ENISA | 歐盟行政機關；NIS2、CSA、CRA 支援機關 | [News](https://www.enisa.europa.eu/news) |
-| `eu_enisa_publications` | ENISA | 官方指引、成熟度與技術研究 | [Publications](https://www.enisa.europa.eu/publications) |
 | `eu_enisa_certification` | ENISA European Cybersecurity Certification | 歐盟資安認證與 CRA 支援資訊 | [News & Events](https://certification.enisa.europa.eu/news-events_en) |
 | `eu_cert_threat` | CERT-EU | 歐盟機構威脅情資 | [Threat intelligence](https://cert.europa.eu/publications/threat-intelligence/) |
 | `eu_cert_advisories` | CERT-EU | 歐盟機構安全公告 | [Security advisories](https://cert.europa.eu/publications/security-advisories/) |
@@ -39,7 +38,6 @@
 | `fr_dinum` | DINUM | 數位政府、FranceConnect 與開放資料 | [Espace presse](https://www.numerique.gouv.fr/sinformer/espace-presse/) |
 | `fr_cea_list` | CEA-List | AI、產品資安、半導體及數位系統公立研究機構 | [News](https://list.cea.fr/en/news/)（公開 GEANT intermediate 補鏈，維持 TLS 驗證） |
 | `fr_campus_cyber` | Campus Cyber | 國家倡議的資安公私協力平台 | [Actualités](https://campuscyber.fr/) |
-| `fr_institut_montaigne` | Institut Montaigne | 私人非營利政策智庫；AI、數位治理與競爭 | [Expressions](https://www.institutmontaigne.org/expressions) |
 
 ## 德國
 
@@ -72,7 +70,6 @@
 | `ie_dete` | Department of Enterprise, Tourism and Employment | AI、競爭、智慧財產、半導體與產業政策 | [Department News](https://enterprise.gov.ie/en/news-and-events/department-news/) |
 | `ie_research_ireland` | Research Ireland | 國家研究創新、量子與半導體研究資助 | [News](https://www.researchireland.ie/news/) |
 | `ie_ceadar` | CeADAR | 國家資助應用 AI 產學研究中心 | [News](https://ceadar.ie/latest-news/) |
-| `ie_insight` | Insight | 國家資助資料分析與 AI 跨校產學研究中心 | [News](https://www.insight-centre.org/news/) |
 | `ie_esri` | ESRI | 法定非營利獨立政策研究機構 | [News](https://www.esri.ie/news) |
 | `ie_tyndall` | Tyndall National Institute | 半導體、量子與資安公立研究機構 | [News](https://www.tyndall.ie/) |
 | `ie_cyber_ireland` | Cyber Ireland | 國家資助資安產業公私協力群聚 | [Blog](https://cyberireland.ie/blog-2026/) |

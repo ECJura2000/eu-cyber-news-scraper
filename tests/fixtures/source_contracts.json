@@ -168,14 +168,6 @@
     "sha256": "2563eda4936a44aed2dac39449653a142356095009ddbe7e46e8fbfe4db604c4"
   },
   {
-    "source_id": "eu_enisa_publications",
-    "title": "SME Cyber Resilience Maturity Assessment Model",
-    "url": "https://www.enisa.europa.eu/publications/sme-cyber-resilience-maturity-assessment-model",
-    "captured_at": "2026-07-18",
-    "source_url": "https://www.enisa.europa.eu/publications",
-    "sha256": "87dbe46fbdbc27ba3f2c1595154df788266939739c31cead36bd7d406f9e4468"
-  },
-  {
     "source_id": "eu_eurohpc",
     "title": "EuroHPC JU launches call for tender for new industrial supercomputer in Bologna, Italy",
     "url": "https://www.eurohpc-ju.europa.eu/eurohpc-ju-launches-call-tender-new-industrial-supercomputer-bologna-italy-2026-07-16_en",
@@ -312,14 +304,6 @@
     "sha256": "908e03d58f51f4844199903b1b93530f2b1a5a4d2e281b8872a88e54efeda5d3"
   },
   {
-    "source_id": "fr_institut_montaigne",
-    "title": "16/07/2026 [Le grand jeu du Pakistan] - Entre les États-Unis et la Chine, tactique et ... \n                            Christophe Jaffrelot                         \n                 [3/3] Les ennemis de mes amis sont mes ennemis ? Pas pour le Pakistan, qui joue de ses bonnes relations avec la Chine et les États-Unis, bien qu’elles ne soient pas sur le même plan. Comment...",
-    "url": "https://www.institutmontaigne.org/expressions/le-grand-jeu-du-pakistan-entre-les-etats-unis-et-la-chine-tactique-et-strategie",
-    "captured_at": "2026-07-18",
-    "source_url": "https://www.institutmontaigne.org/rss.xml",
-    "sha256": "d53d8ef8b4fb217890d9ffe9600c41239cf1e9541b67d29301efaaa6414484a5"
-  },
-  {
     "source_id": "fr_viginum",
     "title": "Nouveau - Un guide pratique pour les familles « Grandir dans un monde connecté, ça s’apprend ! »",
     "url": "https://www.sgdsn.gouv.fr/viginum/actualites/nouveau-un-guide-pratique-pour-les-familles-grandir-dans-un-monde-connecte-ca",
@@ -398,14 +382,6 @@
     "captured_at": "2026-07-18",
     "source_url": "https://www.esri.ie/news",
     "sha256": "fb2bea53262f680807e8b08472aacc9b9faf55e95f73e74fda7009aaa34ff326"
-  },
-  {
-    "source_id": "ie_insight",
-    "title": "Rinn AI – the next chapter for Ireland’s data and AI research ecosystem",
-    "url": "https://www.insight-centre.org/rinn-ai-the-next-chapter-for-irelands-data-and-ai-research-ecosystem/",
-    "captured_at": "2026-07-18",
-    "source_url": "https://www.insight-centre.org/feed/",
-    "sha256": "6ca735aab51fa34ad5472f70b97e13f9e015331fefe55438590f23f1f560b823"
   },
   {
     "source_id": "ie_ncsc",

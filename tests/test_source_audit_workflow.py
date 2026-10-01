@@ -22,15 +22,15 @@ ROOT = Path(__file__).resolve().parents[1]
 AUDIT = "source-audit.yml"
 PRODUCTION = "scrape.yml"
 WEEKLY_SOURCE_IDS = frozenset("""
-eu_dg_connect eu_enisa_news eu_enisa_publications eu_cert_threat eu_cert_advisories
+eu_dg_connect eu_enisa_news eu_cert_threat eu_cert_advisories
 eu_jrc_news eu_enisa_certification eu_presscorner eu_parliament_press
 fr_anssi fr_cnil fr_cybermalveillance fr_arcep fr_inria fr_dge fr_arcom
 fr_concurrence fr_viginum de_bsi_news de_bmi de_bnetza de_fraunhofer_aisec
 de_cispa de_bfdi de_bundeskartellamt de_dpma ie_ncsc ie_comreg ie_dpc ie_nsai
 ie_adapt ie_cnam ie_electoral_commission eu_edpb eu_dg_home eu_eeas fr_culture
 fr_dinum de_bbk ie_dete ie_research_ireland eu_eurohpc eu_chips_ju eu_sns_ju
-fr_cea_list fr_campus_cyber fr_institut_montaigne de_athene de_interface de_swp
-ie_ceadar ie_insight ie_esri ie_tyndall ie_cyber_ireland
+fr_cea_list fr_campus_cyber de_athene de_interface de_swp
+ie_ceadar ie_esri ie_tyndall ie_cyber_ireland
 """.split())
 
 

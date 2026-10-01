@@ -6,7 +6,11 @@
 
 ## 機關 Registry
 
-機關模組位於 [`organisation_registry/`](organisation_registry/)，148 個新聞來源各有一份 schema v2 JSON（PR #37 的 101 個來源，加上 24 個原未登錄歐盟國家來源與 23 個既有歐盟國家補充來源）。每個模組包含來源 URL 與解析設定、主題白名單、健康門檻、機關沿革、官方證據及驗證狀態；預設執行直接由這些 JSON 建立來源清單。新增或覆寫模組可放在 macOS 的 `~/Library/Application Support/EUCyberNewsScraper/organisations.d`，或使用 `EU_CYBER_ORGANISATION_DIR` 指定目錄，重啟後載入。外部模組驗證失敗會保留同 ID 的內建模組；無內建版本的新模組會略過，並讓 `.run.json` 的 `organisation_audit_status` 成為 `degraded`。
+v1.7.0 依使用者指示移除 `fr_institut_montaigne`、`eu_enisa_publications`、`ie_insight` 三個新聞入口。現有來源共 145 個，其中 52 個設定排程、50 個目前未暫停；ENISA 新聞與認證仍保留，歐洲議會及 CEA 的暫停不變。更新後預設線上抓取與離線查詢不再使用這三個來源；既存文章與 240 筆歷史分類回歸資料不刪除，外部自訂模組仍可由使用者明確提供。完整更新內容見 [CHANGELOG.md](CHANGELOG.md)。
+
+新聞表使用英國新聞專案的三階黃色：高 `FFD966`、中 `FFE699`、低 `FFF2CC`。只標示標題、繁中標題、摘要、命中主題／詞與關聯分數，不把日期、來源健康或官方網址塗黃。沿用 EU 的 Boolean 關聯程度（4 分以上為高，2～3 分為中，1 分為低），BM25 仍是另列的主題排序分數；黃色不代表日期可信度或百分比。線上四個新聞工作表與離線查詢均採相同配色，規則未變重查仍可沿用結果；程式版本更新會重建查詢 Excel 快取，以套用新版格式。
+
+機關模組位於 [`organisation_registry/`](organisation_registry/)，145 個新聞來源各有一份 schema v2 JSON（PR #37 的 101 個來源，加上 24 個原未登錄歐盟國家來源與 23 個既有歐盟國家補充來源，再移除三個問題來源）。每個模組包含來源 URL 與解析設定、主題白名單、健康門檻、機關沿革、官方證據及驗證狀態；預設執行直接由這些 JSON 建立來源清單。新增或覆寫模組可放在 macOS 的 `~/Library/Application Support/EUCyberNewsScraper/organisations.d`，或使用 `EU_CYBER_ORGANISATION_DIR` 指定目錄，重啟後載入。外部模組驗證失敗會保留同 ID 的內建模組；無內建版本的新模組會略過，並讓 `.run.json` 的 `organisation_audit_status` 成為 `degraded`。
 
 內建 `organisation_registry/*.json` 是正式設定的唯一來源；`src/eu_cyber_news_scraper/sources.toml` 是由 JSON 匯出的相容設定，仍可透過 `--config` 使用。修改內建來源時應先編輯 JSON，再匯出 TOML，不可反向從 TOML 重建機關 metadata。產生器只讀取內建模組，不納入環境變數或使用者覆寫；不帶參數與 `--check` 都只檢查，不寫檔。檢查依來源 ID 比對所有欄位與型別，不要求文字格式或排列順序相同；重複 ID、無效模組或設定不同均會失敗。
 
@@ -198,7 +202,7 @@ python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95
 
 主管機關覆蓋矩陣集中於 `src/eu_cyber_news_scraper/authority_coverage.toml`。目前固定驗證
 原 15 個議題 × 4 個法域共 60 格仍需完整；另外 25 國共列 375 格，未有可信來源的格子明示「未覆蓋」，有來源但未查證權責則為「未設定」。
-目前共 148 個來源；本 PR 新增的 47 個候選來源均為 `schedule_enabled = false`，只有明確指定 `--country` 或 `--source` 才會手動抓取。其中 24 個原未登錄歐盟國家來源完成首輪手動抓取：12 個健康，其他來源依 `verification.status` 與 `last_smoke` 記錄日期不完整、過舊、版型無法解析或網站拒絕存取等原因。研究機構、大學與公私協力單位只作為政策研究、技術評估及生態系觀測來源，不視為具有監理權限的主管機關。
+目前共 145 個來源；新增的 47 個候選來源均為 `schedule_enabled = false`，只有明確指定 `--country` 或 `--source` 才會手動抓取。其中 24 個原未登錄歐盟國家來源完成首輪手動抓取：12 個健康，其他來源依 `verification.status` 與 `last_smoke` 記錄日期不完整、過舊、版型無法解析或網站拒絕存取等原因。研究機構、大學與公私協力單位只作為政策研究、技術評估及生態系觀測來源，不視為具有監理權限的主管機關。
 
 `.source-health.json` 使用 schema v2，以執行 profile 與每來源設定 fingerprint 分隔基線，最多保留每個來源最近 12 個獨立 observation；同一期間重跑會取代既有 observation，不會累積成連續異常。舊 v1 會保存在 `legacy`，但不參與新基線。`--health-write auto` 只讓完整 rolling 且啟用內頁的標準執行寫入；固定歷史期間預設唯讀，也可明確使用 `always` 或 `never`。健康 state 只在 Excel、JSONL 與 manifest 完整驗證並發布後寫入。
 
@@ -240,7 +244,7 @@ python -m eu_cyber_news_scraper.source_audit --country FR --limit 3 --capture-fi
 
 只有加上 `--parse`，且所有設定端點健康、解析成功且新鮮、原始筆數大於零、所有原始文章均完成評估、高信心日期比例至少 0.75、日期衝突比例至多 0.05、未來日期為零、必要日期無缺漏，且探索／內頁等請求無失敗，才算一次合格觀察。同一來源須有三次連續合格、不同 `run_id` 且設定 `config_hash` 一致的觀察；重複 run 不累計，失敗、只查 URL 或設定變更會中斷連續紀錄。`promotion_eligible=true` 與 `review_for_promotion` 只代表可進入人工審查，仍不足以加入正式排程：完整 workflow 品質門檻、翻譯、Excel／JSONL／manifest 交叉驗證及同一次執行的 state observation 都必須通過。任何稽核結果都不會自動登錄來源、啟用排程或解除暫停。
 
-候選機關目錄 [`source_catalog/eu27.seed.json`](source_catalog/eu27.seed.json) 與正式 registry 分開，以 [`catalog.schema.json`](source_catalog/catalog.schema.json) 定義可整份替換或增補的 JSON；也可用 `--catalog 自訂檔.json` 換檔，不必修改程式。每筆包含機關完整名稱、國家、語言、機關屬性、官方網域、首頁、新聞／出版入口、職掌證據、觀測議題與查核紀錄。目前十二個機關均為 `directory_only`、`searchable=false`，只完成機關自有網站證據的人工／agent 查閱，尚未驗證新聞解析器，因此不能以 `--source` 查詢其新聞，也不計入 148 個正式來源。
+候選機關目錄 [`source_catalog/eu27.seed.json`](source_catalog/eu27.seed.json) 與正式 registry 分開，以 [`catalog.schema.json`](source_catalog/catalog.schema.json) 定義可整份替換或增補的 JSON；也可用 `--catalog 自訂檔.json` 換檔，不必修改程式。每筆包含機關完整名稱、國家、語言、機關屬性、官方網域、首頁、新聞／出版入口、職掌證據、觀測議題與查核紀錄。目前十二個機關均為 `directory_only`、`searchable=false`，只完成機關自有網站證據的人工／agent 查閱，尚未驗證新聞解析器，因此不能以 `--source` 查詢其新聞，也不計入 145 個正式來源。
 
 ```bash
 # 離線檢查 schema、既存證據紀錄、URL 與 registry／目錄重複項目
@@ -260,9 +264,9 @@ python -m eu_cyber_news_scraper catalog --check --discover --previous source-aud
 
 2026-09-30 本次即時稽核回報：十二個目錄機關中八個 URL 檢查健康；`de_dfki` 為 `robots_denied`，`at_oeaw_ita` 與 `it_fbk` 為 HTTP 403，`se_rise` 為 `robots_unavailable`。官方目錄探索的 JRC 種子回傳 HTTP 403；ECCC 種子成功，保留 `nc3.lu` 的未驗證候選連結。這些是當次存取結果，八個 URL 健康也不代表新聞解析器已驗證，十二個目錄機關仍全部不可查詢新聞。
 
-2026-09-30 本機另對 53 個當日啟用排程來源執行完整診斷：48 個解析成功，42 個同時通過所有設定 URL 與解析請求健康檢查。這不是正式 GitHub 排程驗收，也未檢驗翻譯、正式 artifact 或同一 run 的 `state` observation；URL／解析健康仍不代表各來源日期品質或升級條件合格。
+2026-09-30 的歷史診斷（來源異動前）曾對 53 個當日啟用排程來源執行完整診斷：48 個解析成功，42 個同時通過所有設定 URL 與解析請求健康檢查。這不是正式 GitHub 排程驗收，也未檢驗翻譯、正式 artifact 或同一 run 的 `state` observation；URL／解析健康仍不代表各來源日期品質或升級條件合格。
 
-其中 BNetzA 的 `robots.txt` 回傳 HTML，無法驗證規則；BMI 列表、Institut Montaigne 與 ANSSI 的分頁請求受 robots 限制；BfDI、Bundeskartellamt 達到 60 秒來源預算。ComReg feed 被 robots 禁止，改抓列表雖解析出 20 筆、日期完整率 100%，仍不能消除被禁止的 feed 請求或視為已通過完整品質門檻。Press Corner 與 Cyber Ireland 的 feed 未通過結構檢查，ADAPT 與 Tyndall 首頁／列表回傳 HTTP 403。這些問題須個別查證官方允許入口、feed 格式或延遲原因，不能以忽略 robots、解除暫停或降低品質門檻處理。網站可能拒絕請求、要求互動驗證或變更 robots 規則，本專案不保證持續可存取，也不會因替代入口成功而自動加入排程或解除暫停。
+當時 BNetzA 的 `robots.txt` 回傳 HTML，無法驗證規則；BMI 列表、Institut Montaigne 與 ANSSI 的分頁請求受 robots 限制；BfDI、Bundeskartellamt 達到 60 秒來源預算。ComReg feed 被 robots 禁止，改抓列表雖解析出 20 筆、日期完整率 100%，仍不能消除被禁止的 feed 請求或視為已通過完整品質門檻。Press Corner 與 Cyber Ireland 的 feed 未通過結構檢查，ADAPT 與 Tyndall 首頁／列表回傳 HTTP 403。這些問題須個別查證官方允許入口、feed 格式或延遲原因，不能以忽略 robots、解除暫停或降低品質門檻處理。網站可能拒絕請求、要求互動驗證或變更 robots 規則，本專案不保證持續可存取，也不會因替代入口成功而自動加入排程或解除暫停。
 
 ## GitHub Actions
 
@@ -290,7 +294,7 @@ uv run pip-audit
 既有專案 `.venv` 可直接執行 `scripts/check`，不依賴 shell 的 `uv` PATH；`scripts/live-audit`
 會在 `/tmp` 以正式品質門檻執行 rolling 14 天全量驗收，且固定使用 `--health-write never`。
 
-測試採本地 RSS／HTML fixtures，不依賴即時網站；原 55 個排程來源各保存實際官方 URL、來源入口、擷取日與 SHA-256 合約，並保存可執行的精簡 parser fixture。新增候選來源仍需逐一完成同等驗證，通過前不加入排程。議題輔助回歸集包含 240 筆獨立官方英、法、德項目，每種語言 80 筆，並區分 dev 與 locked test、hard negative 及 provenance；目前全部標示為 `assisted`，尚未完成具名人工覆核，因此不宣稱為人工 gold set。回歸門檻為整體 precision、recall 均至少 0.90，每個主題 recall 至少 0.75。翻譯另有 60 筆英、法、德審核資料，驗證繁體中文輸出與必要法制／資安術語；新語言仍須另做人工覆核。CI 會在 Python 3.11、3.12、3.13 執行，要求至少 92% 覆蓋率、Ruff、mypy strict、`pip-audit`、`uv.lock` 一致性及 wheel／sdist 安裝測試；每週工作的必要來源由同一次完整抓取結果檢查。
+測試採本地 RSS／HTML fixtures，不依賴即時網站；目前 52 個排程來源各保存實際官方 URL、來源入口、擷取日與 SHA-256 合約，並保存可執行的精簡 parser fixture。新增候選來源仍需逐一完成同等驗證，通過前不加入排程。議題輔助回歸集包含 240 筆獨立官方英、法、德項目，每種語言 80 筆，並區分 dev 與 locked test、hard negative 及 provenance；目前全部標示為 `assisted`，尚未完成具名人工覆核，因此不宣稱為人工 gold set。回歸門檻為整體 precision、recall 均至少 0.90，每個主題 recall 至少 0.75。翻譯另有 60 筆英、法、德審核資料，驗證繁體中文輸出與必要法制／資安術語；新語言仍須另做人工覆核。CI 會在 Python 3.11、3.12、3.13 執行，要求至少 92% 覆蓋率、Ruff、mypy strict、`pip-audit`、`uv.lock` 一致性及 wheel／sdist 安裝測試；每週工作的必要來源由同一次完整抓取結果檢查。
 
 ## 已知限制
 

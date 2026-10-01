@@ -11,10 +11,12 @@ from hashlib import sha256
 from pathlib import Path
 
 from openpyxl import Workbook
+from openpyxl.cell import WriteOnlyCell
 
+from . import __version__
 from .cli import COUNTRY_LABELS
 from .config import load_sources_and_registry
-from .exporter import safe_excel_text
+from .exporter import relevance_fill, safe_excel_text
 from .models import Article
 from .periods import resolve_period
 from .ranking import is_hybrid_relevant, rank_articles
@@ -134,7 +136,7 @@ def main(argv: list[str] | None = None) -> None:
         if not covered:
             print("[warning] 保存資料未涵蓋完整查詢期間；結果僅為部分搜尋。", file=sys.stderr)
         fingerprint = sha256(repr((
-            profile.hash, registry.registry_hash, period.since.isoformat(), period.until.isoformat(), args.source, args.country, args.topic,
+            __version__, profile.hash, registry.registry_hash, period.since.isoformat(), period.until.isoformat(), args.source, args.country, args.topic,
             [(str(path), path.stat().st_size, path.stat().st_mtime_ns) for path in paths],
             [(str(path), path.stat().st_mtime_ns) for path in (item.with_name(item.name.replace(".corpus.jsonl", ".run.json")) for item in paths) if path.exists()],
         )).encode()).hexdigest()
@@ -146,9 +148,11 @@ def main(argv: list[str] | None = None) -> None:
             return
         clause = "WHERE published_at>=? AND published_at<?"
         params: list[str] = [period.since.isoformat(), period.until.isoformat()]
-        if args.source or args.country:
+        if wanted_sources:
             clause += f" AND source_id IN ({','.join('?' for _ in wanted_sources)})"
             params.extend(sorted(wanted_sources))
+        else:
+            clause += " AND 0"
         rows = connection.execute(f"SELECT payload FROM articles {clause}", params).fetchall()
     unique: dict[str, Article] = {}
     for (value,) in rows:
@@ -164,17 +168,24 @@ def main(argv: list[str] | None = None) -> None:
     sheet = workbook.create_sheet("查詢結果")
     sheet.append(("日期", "來源", "標題", "繁體標題", "主題", "關鍵詞", "責任機關", "官方網址"))
     for item in matches:
-        sheet.append(tuple(safe_excel_text(value) for value in (
+        values = tuple(safe_excel_text(value) for value in (
             item.published_date_local or (item.published_at.date().isoformat() if item.published_at else ""),
             item.source_name, item.title, item.title_zh_tw, "；".join(item.matched_topics),
             "；".join(item.matched_keywords), "；".join(item.responsibility_owner or ["未設定"]), item.url,
-        )))
+        ))
+        fill = relevance_fill(item)
+        cells = [WriteOnlyCell(sheet, value=value) for value in values]
+        if fill is not None:
+            for cell in cells[2:6]:
+                cell.fill = fill
+        sheet.append(cells)
     info = workbook.create_sheet("查詢資訊")
     info.append(("規則 SHA-256", profile.hash))
     info.append(("查詢開始", period.start_date.isoformat()))
     info.append(("查詢結束（含當日）", period.end_date.isoformat()))
     info.append(("資料涵蓋完整", "是" if covered else "否"))
     info.append(("筆數", len(matches)))
+    info.append(("關聯度黃底", "高：FFD966（Boolean ≥4）；中：FFE699（2～3）；低：FFF2CC（1）。須命中主題與詞項，不代表日期信心。"))
     args.output.parent.mkdir(parents=True, exist_ok=True)
     workbook.save(args.output)
     with closing(sqlite3.connect(database)) as connection:
