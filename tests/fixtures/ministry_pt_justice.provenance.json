@@ -1,0 +1,72 @@
+{
+  "source_id": "pt_justice",
+  "url": "https://justica.gov.pt/API/JusticaGovPt.News/PublishingNews/Feed?myPortalId=0&myTabId=380&myModuleId=1649&organismo=",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:50:06.555613+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "0c95cd458204aa4e58b8b968099d1d359f92d972f8871a00f1ac61f3ccd52de2",
+  "sha256": "a836e58e66f9a45aaef7b2a425ac59e554fe3c6a3bd412a0fc6a73b7ec36657d",
+  "fixture_count": 4,
+  "parsed_count": 4,
+  "dated_count": 4,
+  "live_parser_count": 16,
+  "expected": [
+    {
+      "title": "INPI e Registo Nacional da Costa Rica assinam Memorando de Entendimento",
+      "url": "https://inpi.justica.gov.pt/Noticias-do-INPI/INPI-e-Registo-Nacional-da-Costa-Rica-assinam-Memorando-de-Entendimento",
+      "published_date_local": "2026-10-01",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Cerimónia de encerramento da terceira edição do LAB Justiça",
+      "url": "https://igfej.justica.gov.pt/Noticias-do-IGFEJ/Cerimonia-de-encerramento-da-terceira-edicao-do-LAB-Justica",
+      "published_date_local": "2026-10-01",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Abertura do 1.º Ciclo dos Cursos de Formação Inicial de Magistrados do ano 2026/2027",
+      "url": "https://cej.justica.gov.pt/Noticias/Abertura-do-1%C2%BA-Ciclo-dos-Cursos-de-Forma%C3%A7%C3%A3o-Inicial-de-Magistrados-do-ano-2026-2027",
+      "published_date_local": "2026-09-30",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Encontro | Discussão de Projeto sobre a criação de Casas de Detenção",
+      "url": "https://igsj.justica.gov.pt/Noticias-da-IGSJ/Encontro-Discussao-de-Projeto-sobre-a-criacao-de-Casas-de-Detencao",
+      "published_date_local": "2026-09-28",
+      "date_source": "feed-published"
+    }
+  ],
+  "expected_date_confidence": {
+    "https://inpi.justica.gov.pt/Noticias-do-INPI/INPI-e-Registo-Nacional-da-Costa-Rica-assinam-Memorando-de-Entendimento": "high",
+    "https://igfej.justica.gov.pt/Noticias-do-IGFEJ/Cerimonia-de-encerramento-da-terceira-edicao-do-LAB-Justica": "high",
+    "https://cej.justica.gov.pt/Noticias/Abertura-do-1%C2%BA-Ciclo-dos-Cursos-de-Forma%C3%A7%C3%A3o-Inicial-de-Magistrados-do-ano-2026-2027": "high",
+    "https://igsj.justica.gov.pt/Noticias-da-IGSJ/Encontro-Discussao-de-Projeto-sobre-a-criacao-de-Casas-de-Detencao": "high"
+  },
+  "transform": "Complete first original cards/feed entries; LF normalized before saving; original response checksum immutable.",
+  "source": {
+    "id": "pt_justice",
+    "country": "PT",
+    "name_zh": "葡萄牙司法部",
+    "name": "Ministério da Justiça",
+    "institution_type": "ministry",
+    "language": "pt",
+    "homepage": "https://justica.gov.pt/",
+    "listing_url": "https://justica.gov.pt/API/JusticaGovPt.News/PublishingNews/Feed?myPortalId=0&myTabId=380&myModuleId=1649&organismo=",
+    "feed_urls": [
+      "https://justica.gov.pt/API/JusticaGovPt.News/PublishingNews/Feed?myPortalId=0&myTabId=380&myModuleId=1649&organismo="
+    ],
+    "allow_domains": [
+      "justica.gov.pt"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Lisbon",
+    "schedule_enabled": false
+  },
+  "ownership_evidence": {
+    "url": "https://justica.gov.pt/",
+    "description": "Portal footer identifies Secretaria-Geral do Ministério da Justiça; news page directly advertises this public RSS endpoint. It covers the ministry and justice organisations, not other ministries."
+  }
+}

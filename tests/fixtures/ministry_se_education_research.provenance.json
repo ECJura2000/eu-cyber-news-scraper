@@ -1,0 +1,41 @@
+{
+  "url": "https://www.regeringen.se/sveriges-regering/utbildningsdepartementet/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:20.560850+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "73abc6fb915524a89d96dc3fe8a9caae88a3f71c3b2212fb198432e0ff57b0ed",
+  "sha256": "ab1a388e349eb1eb2a6e050fe806bbc5585bedfb47164427bec6b1c5a75554f3",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 20,
+  "dated_count": 20,
+  "fixture_count": 4,
+  "source_id": "se_education_research",
+  "expected": [
+    {
+      "title": "Regeringsärenden vecka 40, 2026",
+      "url": "https://www.regeringen.se/regeringsarenden/regeringsarenden-vecka-40-2026/",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Remiss av Universitets- och högskolerådets hemställan om registerförfattning för den nationella betygsdatabasen (BEDA), U2023/01297",
+      "url": "https://www.regeringen.se/remisser/2026/06/remiss-av-universitets--och-hogskoleradets-hemstallan-om-registerforfattning-for-den-nationella-betygsdatabasen-beda/",
+      "published_date_local": "2026-06-26",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Regeringsärenden vecka 38, 2026",
+      "url": "https://www.regeringen.se/regeringsarenden/regeringsarenden-vecka-38-2026/",
+      "published_date_local": "2026-09-16",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Remiss av betänkandet En ny speciallärarutbildning (SOU 2026:50), U2026/01497",
+      "url": "https://www.regeringen.se/remisser/2026/09/remiss-av-betankandet-en-ny-speciallararutbildning-sou-202650/",
+      "published_date_local": "2026-09-01",
+      "date_source": "source-selector"
+    }
+  ]
+}

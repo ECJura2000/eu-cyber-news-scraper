@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "country": "SK",
+  "reviewed_on": "2026-10-01",
+  "official_roster_urls": [
+    "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/"
+  ],
+  "roster_complete": true,
+  "limitations": [],
+  "ministries": [
+    {
+      "canonical_id": "sk_defence",
+      "name_zh": "斯洛伐克國防部",
+      "name_local": "Ministerstvo obrany SR",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "sk",
+      "homepage": "https://www.mosr.sk/",
+      "news_url": "https://www.mosr.sk/54297-sk/aktuality/",
+      "source_ids": [
+        "sk_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 precise official HTML article cards verified: HTTP 200, 30 dated items, 8 genuine fixture items. Official RSS has malformed hostless article URLs and is not used. Manual only; latest article is 2026-08-28, not a weekly freshness acceptance.",
+      "evidence_urls": [
+        "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
+        "https://www.mosr.sk/",
+        "https://www.mosr.sk/54297-sk/aktuality/",
+        "https://www.mosr.sk/29066-sk/aktuality/",
+        "https://www.mosr.sk/data/rss/aktuality.xml"
+      ]
+    },
+    {
+      "canonical_id": "sk_economy",
+      "name_zh": "斯洛伐克經濟部",
+      "name_local": "Ministerstvo hospodárstva SR",
+      "name_en": "Ministry of Economy",
+      "kind": "ministry",
+      "language": "sk",
+      "homepage": "https://www.mhsr.sk/",
+      "news_url": "https://www.mhsr.sk/feed",
+      "source_ids": [
+        "sk_economy"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-aware HttpClient live feed parse returned 50 items, all dated; bounded genuine fixture replays 4 items with production parser. Scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
+        "https://www.mhsr.sk/",
+        "https://www.mhsr.sk/media/tlacove-spravy",
+        "https://www.mhsr.sk/feed"
+      ]
+    },
+    {
+      "canonical_id": "sk_environment",
+      "name_zh": "斯洛伐克環境部",
+      "name_local": "Ministerstvo životného prostredia SR",
+      "name_en": "Ministry of Environment",
+      "kind": "ministry",
+      "language": "sk",
+      "homepage": "https://www.minzp.sk/",
+      "news_url": "https://www.minzp.sk/spravy/",
+      "source_ids": [
+        "sk_environment"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 robots/TLS-aware production scrape: 200 dated items; genuine fixture replay 8 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
+        "https://www.minzp.sk/",
+        "https://www.minzp.sk/spravy/"
+      ]
+    },
+    {
+      "canonical_id": "sk_recovery_knowledge",
+      "name_zh": "斯洛伐克復甦計畫與知識經濟副總理辦公室",
+      "name_local": "Úrad podpredsedu vlády SR pre plán obnovy a znalostnú ekonomiku",
+      "name_en": "Office of the Deputy Prime Minister for the Recovery Plan and Knowledge Economy",
+      "kind": "ministry_equivalent",
+      "language": "sk",
+      "homepage": "https://www.vicepremier.gov.sk/uvod/urad-podpredsedu-vlady/",
+      "news_url": "https://www.vicepremier.gov.sk/feed/",
+      "source_ids": [
+        "sk_recovery_knowledge"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-aware HttpClient live feed parse returned 14 items, all dated; bounded genuine fixture replays 4 items with production parser. Scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
+        "https://www.vicepremier.gov.sk/uvod/urad-podpredsedu-vlady/",
+        "https://www.vicepremier.gov.sk/aktuality/",
+        "https://www.vicepremier.gov.sk/feed/"
+      ]
+    },
+    {
+      "canonical_id": "sk_finance",
+      "name_zh": "斯洛伐克財政部",
+      "name_local": "Ministerstvo financií SR",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "sk",
+      "homepage": "https://www.mfsr.sk/sk/",
+      "news_url": "https://www.mfsr.sk/sk/media/tlacove-spravy/",
+      "source_ids": [
+        "sk_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 robots/TLS-aware production scrape: 20 dated items; genuine fixture replay 20 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
+        "https://www.mfsr.sk/sk/",
+        "https://www.mfsr.sk/sk/media/tlacove-spravy/"
+      ]
+    },
+    {
+      "canonical_id": "sk_transport",
+      "name_zh": "斯洛伐克交通部",
+      "name_local": "Ministerstvo dopravy SR",
+      "name_en": "Ministry of Transport",
+      "kind": "ministry",
+      "language": "sk",
+      "homepage": "https://www.mindop.sk/",
+      "news_url": "https://www.mindop.sk/pre-verejnost/tlacove-spravy",
+      "source_ids": [
+        "sk_transport"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 2 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
+        "https://www.mindop.sk/",
+        "https://www.mindop.sk/pre-verejnost/tlacove-spravy"
+      ]
+    },
+    {
+      "canonical_id": "sk_agriculture",
+      "name_zh": "斯洛伐克農業與農村發展部",
+      "name_local": "Ministerstvo pôdohospodárstva a rozvoja vidieka SR",
+      "name_en": "Ministry of Agriculture and Rural Development",
+      "kind": "ministry",
+      "language": "sk",
+      "homepage": "https://www.mpsr.sk/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "RobotsDeniedError: robots.txt disallows: https://www.mpsr.sk/",
+      "evidence_urls": [
+        "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
+        "https://www.mpsr.sk/"
+      ]
+    },
+    {
+      "canonical_id": "sk_investment_regional_digital",
+      "name_zh": "斯洛伐克投資區域發展與資訊化部",
+      "name_local": "Ministerstvo investícií, regionálneho rozvoja a informatizácie SR",
+      "name_en": "Ministry of Investments, Regional Development and Informatization",
+      "kind": "ministry",
+      "language": "sk",
+      "homepage": "https://mirri.gov.sk/",
+      "news_url": "https://mirri.gov.sk/aktuality/tlacove-spravy/",
+      "source_ids": [
+        "sk_investment_regional_digital"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 robots/TLS-aware production scrape: 6 dated items; genuine fixture replay 6 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
+        "https://www.mirri.gov.sk/",
+        "https://mirri.gov.sk/aktuality/tlacove-spravy/"
+      ]
+    },
+    {
+      "canonical_id": "sk_interior",
+      "name_zh": "斯洛伐克內政部",
+      "name_local": "Ministerstvo vnútra SR",
+      "name_en": "Ministry of Interior",
+      "kind": "ministry",
+      "language": "sk",
+      "homepage": "https://www.minv.sk/",
+      "news_url": "https://www.minv.sk/rss.php?rss-tlacove-spravy",
+      "source_ids": [
+        "sk_interior"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 robots/TLS-aware production scrape: 2983 dated items; genuine fixture replay 8 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
+        "https://www.minv.sk/",
+        "https://www.minv.sk/?tlacove-spravy",
+        "https://www.minv.sk/rss.php?rss-tlacove-spravy"
+      ]
+    },
+    {
+      "canonical_id": "sk_justice",
+      "name_zh": "斯洛伐克司法部",
+      "name_local": "Ministerstvo spravodlivosti SR",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "sk",
+      "homepage": "https://www.justice.gov.sk/",
+      "news_url": "https://www.justice.gov.sk/tlacovespravy/",
+      "source_ids": [
+        "sk_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 5 dated items; genuine bounded fixture replay: 2 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
+        "https://www.justice.gov.sk/",
+        "https://www.justice.gov.sk/tlacovespravy/"
+      ]
+    },
+    {
+      "canonical_id": "sk_foreign_affairs",
+      "name_zh": "斯洛伐克外交與歐洲事務部",
+      "name_local": "Ministerstvo zahraničných vecí a európskych záležitostí SR",
+      "name_en": "Ministry of Foreign and European Affairs",
+      "kind": "ministry",
+      "language": "sk",
+      "homepage": "https://www.mzv.sk/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "HTTPStatusError: Client error '403 Forbidden' for url 'https://www.mzv.sk/'\nFor more information check: https://developer.mozilla.org/en-",
+      "evidence_urls": [
+        "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
+        "https://www.mzv.sk/"
+      ]
+    },
+    {
+      "canonical_id": "sk_labour_social_family",
+      "name_zh": "斯洛伐克勞動社會事務與家庭部",
+      "name_local": "Ministerstvo práce, sociálnych vecí a rodiny SR",
+      "name_en": "Ministry of Labour, Social Affairs and Family",
+      "kind": "ministry",
+      "language": "sk",
+      "homepage": "https://www.employment.gov.sk/sk/",
+      "news_url": "https://www.employment.gov.sk/sk/informacie-media/aktuality/",
+      "source_ids": [
+        "sk_labour_social_family"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 robots/TLS-aware production scrape: 4 dated items; genuine fixture replay 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
+        "https://www.employment.gov.sk/sk/",
+        "https://www.employment.gov.sk/sk/informacie-media/aktuality/"
+      ]
+    },
+    {
+      "canonical_id": "sk_education_research",
+      "name_zh": "斯洛伐克教育研究發展與青年部",
+      "name_local": "Ministerstvo školstva, výskumu, vývoja a mládeže SR",
+      "name_en": "Ministry of Education, Research, Development and Youth",
+      "kind": "ministry",
+      "language": "sk",
+      "homepage": "https://www.minedu.sk/",
+      "news_url": "https://www.minedu.sk/rss/",
+      "source_ids": [
+        "sk_education_research"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware feed production parse: 50 dated items; genuine bounded fixture replay: 1 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
+        "https://www.minedu.sk/",
+        "https://www.minedu.sk/aktuality/",
+        "https://www.minedu.sk/rss/"
+      ]
+    },
+    {
+      "canonical_id": "sk_culture",
+      "name_zh": "斯洛伐克文化部",
+      "name_local": "Ministerstvo kultúry SR",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "sk",
+      "homepage": "https://www.culture.gov.sk/sk",
+      "news_url": "https://www.culture.gov.sk/sk/aktuality",
+      "source_ids": [
+        "sk_culture"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 7 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
+        "https://www.culture.gov.sk/sk/aktuality"
+      ]
+    },
+    {
+      "canonical_id": "sk_health",
+      "name_zh": "斯洛伐克衛生部",
+      "name_local": "Ministerstvo zdravotníctva SR",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "sk",
+      "homepage": "https://www.health.gov.sk/Titulka",
+      "news_url": "https://www.health.gov.sk/Clanky?tlacove-spravy",
+      "source_ids": [
+        "sk_health"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 robots/TLS-aware production scrape: 20 dated items; genuine fixture replay 8 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
+        "https://www.health.gov.sk/",
+        "https://www.health.gov.sk/Clanky?tlacove-spravy"
+      ]
+    },
+    {
+      "canonical_id": "sk_tourism_sport",
+      "name_zh": "斯洛伐克觀光與體育部",
+      "name_local": "Ministerstvo cestovného ruchu a športu SR",
+      "name_en": "Ministry of Tourism and Sports",
+      "kind": "ministry",
+      "language": "sk",
+      "homepage": "https://www.mincrs.sk/",
+      "news_url": "https://www.mincrs.sk/aktuality",
+      "source_ids": [
+        "sk_tourism_sport"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 12 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
+        "https://www.mincrs.sk/",
+        "https://www.mincrs.sk/aktuality"
+      ]
+    },
+    {
+      "canonical_id": "sk_government_office",
+      "name_zh": "斯洛伐克政府辦公室",
+      "name_local": "Úrad vlády Slovenskej republiky",
+      "name_en": "Government Office of the Slovak Republic",
+      "kind": "government_head_office",
+      "language": "sk",
+      "homepage": "https://www.vlada.gov.sk/",
+      "news_url": "https://www.vlada.gov.sk/rss/",
+      "source_ids": [
+        "sk_government_office"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware feed production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
+        "https://www.vlada.gov.sk/",
+        "https://www.vlada.gov.sk/tlacove-spravy/",
+        "https://www.vlada.gov.sk/rss/"
+      ]
+    }
+  ]
+}

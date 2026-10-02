@@ -1,0 +1,329 @@
+{
+  "schema_version": 1,
+  "country": "LT",
+  "reviewed_on": "2026-10-02",
+  "official_roster_urls": [
+    "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+    "https://lrv.lt/en/ministries/"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "2026-10-02 ministry news audit: 0 manually verified and 0 existing-source ministries; 15 unresolved. Roster enumeration does not imply searchable completeness. Exact tried URLs and robots/transport/parser/attribution limitations are recorded per ministry; unresolved rows have no runnable source. New sources retain disabled scheduling/noncritical status, all 15 topics, empty responsibility, and genuine checksum-backed fixture replay."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "lt_environment",
+      "name_zh": "立陶宛環境部",
+      "name_local": "Aplinkos ministerija",
+      "name_en": "Ministry of Environment",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://am.lrv.lt/",
+      "news_url": "https://am.lrv.lt/lt/naujienos/",
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Official listing, homepage and RSS-format alternatives were denied by production robots enforcement. No disallowed article content was fetched and no registry enrollment is justified. Tested alternatives: https://am.lrv.lt/lt/naujienos/ => RobotsDeniedError: robots.txt disallows: https://am.lrv.lt/lt/naujienos/; https://am.lrv.lt/ => RobotsDeniedError: robots.txt disallows: https://am.lrv.lt/; https://am.lrv.lt/rss/ => RobotsDeniedError: robots.txt disallows: https://am.lrv.lt/rss/; https://am.lrv.lt/lt/rss/ => RobotsDeniedError: robots.txt disallows: https://am.lrv.lt/lt/rss/; https://am.lrv.lt/lt/naujienos/?format=rss => RobotsDeniedError: robots.txt disallows: https://am.lrv.lt/lt/naujienos/?format=rss",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://am.lrv.lt/",
+        "https://am.lrv.lt/lt/naujienos/",
+        "https://am.lrv.lt/rss/",
+        "https://am.lrv.lt/lt/rss/",
+        "https://am.lrv.lt/lt/naujienos/?format=rss"
+      ]
+    },
+    {
+      "canonical_id": "lt_economy",
+      "name_zh": "立陶宛經濟暨創新部",
+      "name_local": "Ekonomikos ir inovacijų ministerija",
+      "name_en": "Ministry of Economy and Innovation",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://eimin.lrv.lt/",
+      "news_url": "https://eimin.lrv.lt/lt/ziniasklaidai/naujienos/",
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Official listing, homepage and RSS-format alternatives were denied by production robots enforcement. No disallowed article content was fetched and no registry enrollment is justified. Tested alternatives: https://eimin.lrv.lt/lt/ziniasklaidai/naujienos/ => RobotsDeniedError: robots.txt disallows: https://eimin.lrv.lt/lt/ziniasklaidai/naujienos/; https://eimin.lrv.lt/ => RobotsDeniedError: robots.txt disallows: https://eimin.lrv.lt/; https://eimin.lrv.lt/rss/ => RobotsDeniedError: robots.txt disallows: https://eimin.lrv.lt/rss/; https://eimin.lrv.lt/lt/rss/ => RobotsDeniedError: robots.txt disallows: https://eimin.lrv.lt/lt/rss/; https://eimin.lrv.lt/lt/naujienos/?format=rss => RobotsDeniedError: robots.txt disallows: https://eimin.lrv.lt/lt/naujienos/?format=rss",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://eimin.lrv.lt/",
+        "https://eimin.lrv.lt/lt/ziniasklaidai/naujienos/",
+        "https://eimin.lrv.lt/rss/",
+        "https://eimin.lrv.lt/lt/rss/",
+        "https://eimin.lrv.lt/lt/naujienos/?format=rss"
+      ]
+    },
+    {
+      "canonical_id": "lt_energy",
+      "name_zh": "立陶宛能源部",
+      "name_local": "Energetikos ministerija",
+      "name_en": "Ministry of Energy",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://enmin.lrv.lt/",
+      "news_url": "https://enmin.lrv.lt/lt/naujienos/",
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Official listing, homepage and RSS-format alternatives were denied by production robots enforcement. No disallowed article content was fetched and no registry enrollment is justified. Tested alternatives: https://enmin.lrv.lt/lt/naujienos/ => RobotsDeniedError: robots.txt disallows: https://enmin.lrv.lt/lt/naujienos/; https://enmin.lrv.lt/ => RobotsDeniedError: robots.txt disallows: https://enmin.lrv.lt/; https://enmin.lrv.lt/rss/ => RobotsDeniedError: robots.txt disallows: https://enmin.lrv.lt/rss/; https://enmin.lrv.lt/lt/rss/ => RobotsDeniedError: robots.txt disallows: https://enmin.lrv.lt/lt/rss/; https://enmin.lrv.lt/lt/naujienos/?format=rss => RobotsDeniedError: robots.txt disallows: https://enmin.lrv.lt/lt/naujienos/?format=rss",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://enmin.lrv.lt/",
+        "https://enmin.lrv.lt/lt/naujienos/",
+        "https://enmin.lrv.lt/rss/",
+        "https://enmin.lrv.lt/lt/rss/",
+        "https://enmin.lrv.lt/lt/naujienos/?format=rss"
+      ]
+    },
+    {
+      "canonical_id": "lt_finance",
+      "name_zh": "立陶宛財政部",
+      "name_local": "Finansų ministerija",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://finmin.lrv.lt/",
+      "news_url": "https://finmin.lrv.lt/lt/naujienos/",
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Official listing, homepage and RSS-format alternatives were denied by production robots enforcement. No disallowed article content was fetched and no registry enrollment is justified. Tested alternatives: https://finmin.lrv.lt/lt/naujienos/ => RobotsDeniedError: robots.txt disallows: https://finmin.lrv.lt/lt/naujienos/; https://finmin.lrv.lt/ => RobotsDeniedError: robots.txt disallows: https://finmin.lrv.lt/; https://finmin.lrv.lt/rss/ => RobotsDeniedError: robots.txt disallows: https://finmin.lrv.lt/rss/; https://finmin.lrv.lt/lt/rss/ => RobotsDeniedError: robots.txt disallows: https://finmin.lrv.lt/lt/rss/; https://finmin.lrv.lt/lt/naujienos/?format=rss => RobotsDeniedError: robots.txt disallows: https://finmin.lrv.lt/lt/naujienos/?format=rss",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://finmin.lrv.lt/",
+        "https://finmin.lrv.lt/lt/naujienos/",
+        "https://finmin.lrv.lt/rss/",
+        "https://finmin.lrv.lt/lt/rss/",
+        "https://finmin.lrv.lt/lt/naujienos/?format=rss"
+      ]
+    },
+    {
+      "canonical_id": "lt_defence",
+      "name_zh": "立陶宛國防部",
+      "name_local": "Krašto apsaugos ministerija",
+      "name_en": "Ministry of National Defence",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://kam.lt/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Official listing, homepage and RSS-format alternatives were denied by production robots enforcement. No disallowed article content was fetched and no registry enrollment is justified. Tested alternatives: https://kam.lt/ => RobotsDeniedError: robots.txt disallows: https://kam.lt/; https://kam.lt/rss/ => RobotsDeniedError: robots.txt disallows: https://kam.lt/rss/; https://kam.lt/lt/rss/ => RobotsDeniedError: robots.txt disallows: https://kam.lt/lt/rss/; https://kam.lt/lt/naujienos/?format=rss => RobotsDeniedError: robots.txt disallows: https://kam.lt/lt/naujienos/?format=rss",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://kam.lt/",
+        "https://kam.lt/rss/",
+        "https://kam.lt/lt/rss/",
+        "https://kam.lt/lt/naujienos/?format=rss"
+      ]
+    },
+    {
+      "canonical_id": "lt_culture",
+      "name_zh": "立陶宛文化部",
+      "name_local": "Kultūros ministerija",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://lrkm.lrv.lt/",
+      "news_url": "https://lrkm.lrv.lt/lt/naujienos/",
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Official listing, homepage and RSS-format alternatives were denied by production robots enforcement. No disallowed article content was fetched and no registry enrollment is justified. Tested alternatives: https://lrkm.lrv.lt/lt/naujienos/ => RobotsDeniedError: robots.txt disallows: https://lrkm.lrv.lt/lt/naujienos/; https://lrkm.lrv.lt/ => RobotsDeniedError: robots.txt disallows: https://lrkm.lrv.lt/; https://lrkm.lrv.lt/rss/ => RobotsDeniedError: robots.txt disallows: https://lrkm.lrv.lt/rss/; https://lrkm.lrv.lt/lt/rss/ => RobotsDeniedError: robots.txt disallows: https://lrkm.lrv.lt/lt/rss/; https://lrkm.lrv.lt/lt/naujienos/?format=rss => RobotsDeniedError: robots.txt disallows: https://lrkm.lrv.lt/lt/naujienos/?format=rss",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://lrkm.lrv.lt/",
+        "https://lrkm.lrv.lt/lt/naujienos/",
+        "https://lrkm.lrv.lt/rss/",
+        "https://lrkm.lrv.lt/lt/rss/",
+        "https://lrkm.lrv.lt/lt/naujienos/?format=rss"
+      ]
+    },
+    {
+      "canonical_id": "lt_social_security",
+      "name_zh": "立陶宛社會保障暨勞動部",
+      "name_local": "Socialinės apsaugos ir darbo ministerija",
+      "name_en": "Ministry of Social Security and Labour",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://socmin.lrv.lt/",
+      "news_url": "https://socmin.lrv.lt/lt/naujienos/",
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Official listing, homepage and RSS-format alternatives were denied by production robots enforcement. No disallowed article content was fetched and no registry enrollment is justified. Tested alternatives: https://socmin.lrv.lt/lt/naujienos/ => RobotsDeniedError: robots.txt disallows: https://socmin.lrv.lt/lt/naujienos/; https://socmin.lrv.lt/ => RobotsDeniedError: robots.txt disallows: https://socmin.lrv.lt/; https://socmin.lrv.lt/rss/ => RobotsDeniedError: robots.txt disallows: https://socmin.lrv.lt/rss/; https://socmin.lrv.lt/lt/rss/ => RobotsDeniedError: robots.txt disallows: https://socmin.lrv.lt/lt/rss/; https://socmin.lrv.lt/lt/naujienos/?format=rss => RobotsDeniedError: robots.txt disallows: https://socmin.lrv.lt/lt/naujienos/?format=rss",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://socmin.lrv.lt/",
+        "https://socmin.lrv.lt/lt/naujienos/",
+        "https://socmin.lrv.lt/rss/",
+        "https://socmin.lrv.lt/lt/rss/",
+        "https://socmin.lrv.lt/lt/naujienos/?format=rss"
+      ]
+    },
+    {
+      "canonical_id": "lt_transport",
+      "name_zh": "立陶宛交通暨通訊部",
+      "name_local": "Susisiekimo ministerija",
+      "name_en": "Ministry of Transport and Communications",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://sumin.lrv.lt/",
+      "news_url": "https://sumin.lrv.lt/lt/naujienos/",
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Official listing, homepage and RSS-format alternatives were denied by production robots enforcement. No disallowed article content was fetched and no registry enrollment is justified. Tested alternatives: https://sumin.lrv.lt/lt/naujienos/ => RobotsDeniedError: robots.txt disallows: https://sumin.lrv.lt/lt/naujienos/; https://sumin.lrv.lt/ => RobotsDeniedError: robots.txt disallows: https://sumin.lrv.lt/; https://sumin.lrv.lt/rss/ => RobotsDeniedError: robots.txt disallows: https://sumin.lrv.lt/rss/; https://sumin.lrv.lt/lt/rss/ => RobotsDeniedError: robots.txt disallows: https://sumin.lrv.lt/lt/rss/; https://sumin.lrv.lt/lt/naujienos/?format=rss => RobotsDeniedError: robots.txt disallows: https://sumin.lrv.lt/lt/naujienos/?format=rss",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://sumin.lrv.lt/",
+        "https://sumin.lrv.lt/lt/naujienos/",
+        "https://sumin.lrv.lt/rss/",
+        "https://sumin.lrv.lt/lt/rss/",
+        "https://sumin.lrv.lt/lt/naujienos/?format=rss"
+      ]
+    },
+    {
+      "canonical_id": "lt_health",
+      "name_zh": "立陶宛衛生部",
+      "name_local": "Sveikatos apsaugos ministerija",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://sam.lrv.lt/",
+      "news_url": "https://sam.lrv.lt/lt/news/",
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Official listing, homepage and RSS-format alternatives were denied by production robots enforcement. No disallowed article content was fetched and no registry enrollment is justified. Tested alternatives: https://sam.lrv.lt/lt/news/ => RobotsDeniedError: robots.txt disallows: https://sam.lrv.lt/lt/news/; https://sam.lrv.lt/ => RobotsDeniedError: robots.txt disallows: https://sam.lrv.lt/; https://sam.lrv.lt/rss/ => RobotsDeniedError: robots.txt disallows: https://sam.lrv.lt/rss/; https://sam.lrv.lt/lt/rss/ => RobotsDeniedError: robots.txt disallows: https://sam.lrv.lt/lt/rss/; https://sam.lrv.lt/lt/naujienos/?format=rss => RobotsDeniedError: robots.txt disallows: https://sam.lrv.lt/lt/naujienos/?format=rss",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://sam.lrv.lt/",
+        "https://sam.lrv.lt/lt/news/",
+        "https://sam.lrv.lt/rss/",
+        "https://sam.lrv.lt/lt/rss/",
+        "https://sam.lrv.lt/lt/naujienos/?format=rss"
+      ]
+    },
+    {
+      "canonical_id": "lt_education",
+      "name_zh": "立陶宛教育、科學暨體育部",
+      "name_local": "Švietimo, mokslo ir sporto ministerija",
+      "name_en": "Ministry of Education, Science and Sport",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://smsm.lrv.lt/",
+      "news_url": "https://smsm.lrv.lt/lt/naujienos-1/pranesimai-ziniasklaidai-1/",
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Official listing, homepage and RSS-format alternatives were denied by production robots enforcement. No disallowed article content was fetched and no registry enrollment is justified. Tested alternatives: https://smsm.lrv.lt/lt/naujienos-1/pranesimai-ziniasklaidai-1/ => RobotsDeniedError: robots.txt disallows: https://smsm.lrv.lt/lt/naujienos-1/pranesimai-ziniasklaidai-1/; https://smsm.lrv.lt/ => RobotsDeniedError: robots.txt disallows: https://smsm.lrv.lt/; https://smsm.lrv.lt/rss/ => RobotsDeniedError: robots.txt disallows: https://smsm.lrv.lt/rss/; https://smsm.lrv.lt/lt/rss/ => RobotsDeniedError: robots.txt disallows: https://smsm.lrv.lt/lt/rss/; https://smsm.lrv.lt/lt/naujienos/?format=rss => RobotsDeniedError: robots.txt disallows: https://smsm.lrv.lt/lt/naujienos/?format=rss",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://smsm.lrv.lt/",
+        "https://smsm.lrv.lt/lt/naujienos-1/pranesimai-ziniasklaidai-1/",
+        "https://smsm.lrv.lt/rss/",
+        "https://smsm.lrv.lt/lt/rss/",
+        "https://smsm.lrv.lt/lt/naujienos/?format=rss"
+      ]
+    },
+    {
+      "canonical_id": "lt_justice",
+      "name_zh": "立陶宛司法部",
+      "name_local": "Teisingumo ministerija",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://tm.lrv.lt/",
+      "news_url": "https://tm.lrv.lt/lt/naujienos-2/",
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Official listing, homepage and RSS-format alternatives were denied by production robots enforcement. No disallowed article content was fetched and no registry enrollment is justified. Tested alternatives: https://tm.lrv.lt/lt/naujienos-2/ => RobotsDeniedError: robots.txt disallows: https://tm.lrv.lt/lt/naujienos-2/; https://tm.lrv.lt/ => RobotsDeniedError: robots.txt disallows: https://tm.lrv.lt/; https://tm.lrv.lt/rss/ => RobotsDeniedError: robots.txt disallows: https://tm.lrv.lt/rss/; https://tm.lrv.lt/lt/rss/ => RobotsDeniedError: robots.txt disallows: https://tm.lrv.lt/lt/rss/; https://tm.lrv.lt/lt/naujienos/?format=rss => RobotsDeniedError: robots.txt disallows: https://tm.lrv.lt/lt/naujienos/?format=rss",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://tm.lrv.lt/",
+        "https://tm.lrv.lt/lt/naujienos-2/",
+        "https://tm.lrv.lt/rss/",
+        "https://tm.lrv.lt/lt/rss/",
+        "https://tm.lrv.lt/lt/naujienos/?format=rss"
+      ]
+    },
+    {
+      "canonical_id": "lt_foreign_affairs",
+      "name_zh": "立陶宛外交部",
+      "name_local": "Užsienio reikalų ministerija",
+      "name_en": "Ministry of Foreign Affairs",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://www.urm.lt/",
+      "news_url": "https://www.urm.lt/naujienos/141",
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Official listing, homepage and RSS-format alternatives were denied by production robots enforcement. No disallowed article content was fetched and no registry enrollment is justified. Tested alternatives: https://www.urm.lt/naujienos/141 => RobotsDeniedError: robots.txt disallows: https://www.urm.lt/naujienos/141; https://www.urm.lt/ => RobotsDeniedError: robots.txt disallows: https://www.urm.lt/; https://www.urm.lt/rss/ => RobotsDeniedError: robots.txt disallows: https://www.urm.lt/rss/; https://www.urm.lt/lt/rss/ => RobotsDeniedError: robots.txt disallows: https://www.urm.lt/lt/rss/; https://www.urm.lt/lt/naujienos/?format=rss => RobotsDeniedError: robots.txt disallows: https://www.urm.lt/lt/naujienos/?format=rss",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://www.urm.lt/",
+        "https://www.urm.lt/naujienos/141",
+        "https://www.urm.lt/rss/",
+        "https://www.urm.lt/lt/rss/",
+        "https://www.urm.lt/lt/naujienos/?format=rss"
+      ]
+    },
+    {
+      "canonical_id": "lt_interior",
+      "name_zh": "立陶宛內政部",
+      "name_local": "Vidaus reikalų ministerija",
+      "name_en": "Ministry of Interior",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://vrm.lrv.lt/",
+      "news_url": "https://vrm.lrv.lt/lt/naujienos/",
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Official listing, homepage and RSS-format alternatives were denied by production robots enforcement. No disallowed article content was fetched and no registry enrollment is justified. Tested alternatives: https://vrm.lrv.lt/lt/naujienos/ => RobotsDeniedError: robots.txt disallows: https://vrm.lrv.lt/lt/naujienos/; https://vrm.lrv.lt/ => RobotsDeniedError: robots.txt disallows: https://vrm.lrv.lt/; https://vrm.lrv.lt/rss/ => RobotsDeniedError: robots.txt disallows: https://vrm.lrv.lt/rss/; https://vrm.lrv.lt/lt/rss/ => RobotsDeniedError: robots.txt disallows: https://vrm.lrv.lt/lt/rss/; https://vrm.lrv.lt/lt/naujienos/?format=rss => RobotsDeniedError: robots.txt disallows: https://vrm.lrv.lt/lt/naujienos/?format=rss",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://vrm.lrv.lt/",
+        "https://vrm.lrv.lt/lt/naujienos/",
+        "https://vrm.lrv.lt/rss/",
+        "https://vrm.lrv.lt/lt/rss/",
+        "https://vrm.lrv.lt/lt/naujienos/?format=rss"
+      ]
+    },
+    {
+      "canonical_id": "lt_agriculture",
+      "name_zh": "立陶宛農業部",
+      "name_local": "Žemės ūkio ministerija",
+      "name_en": "Ministry of Agriculture",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://zum.lrv.lt/",
+      "news_url": "https://zum.lrv.lt/lt/naujienos/",
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Official listing, homepage and RSS-format alternatives were denied by production robots enforcement. No disallowed article content was fetched and no registry enrollment is justified. Tested alternatives: https://zum.lrv.lt/lt/naujienos/ => RobotsDeniedError: robots.txt disallows: https://zum.lrv.lt/lt/naujienos/; https://zum.lrv.lt/ => RobotsDeniedError: robots.txt disallows: https://zum.lrv.lt/; https://zum.lrv.lt/rss/ => RobotsDeniedError: robots.txt disallows: https://zum.lrv.lt/rss/; https://zum.lrv.lt/lt/rss/ => RobotsDeniedError: robots.txt disallows: https://zum.lrv.lt/lt/rss/; https://zum.lrv.lt/lt/naujienos/?format=rss => RobotsDeniedError: robots.txt disallows: https://zum.lrv.lt/lt/naujienos/?format=rss",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://zum.lrv.lt/",
+        "https://zum.lrv.lt/lt/naujienos/",
+        "https://zum.lrv.lt/rss/",
+        "https://zum.lrv.lt/lt/rss/",
+        "https://zum.lrv.lt/lt/naujienos/?format=rss"
+      ]
+    },
+    {
+      "canonical_id": "lt_government_office",
+      "name_zh": "立陶宛政府辦公室",
+      "name_local": "Lietuvos Respublikos Vyriausybės kanceliarija",
+      "name_en": "Office of the Government of the Republic of Lithuania",
+      "kind": "government_head_office",
+      "language": "lt",
+      "homepage": "https://lrv.lt/",
+      "news_url": "https://lrv.lt/lt/naujienos/",
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Official listing, homepage and RSS-format alternatives were denied by production robots enforcement. No disallowed article content was fetched and no registry enrollment is justified. Tested alternatives: https://lrv.lt/lt/naujienos/ => RobotsDeniedError: robots.txt disallows: https://lrv.lt/lt/naujienos/; https://lrv.lt/ => RobotsDeniedError: robots.txt disallows: https://lrv.lt/; https://lrv.lt/rss/ => RobotsDeniedError: robots.txt disallows: https://lrv.lt/rss/; https://lrv.lt/lt/rss/ => RobotsDeniedError: robots.txt disallows: https://lrv.lt/lt/rss/; https://lrv.lt/lt/naujienos/?format=rss => RobotsDeniedError: robots.txt disallows: https://lrv.lt/lt/naujienos/?format=rss",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://lrv.lt/",
+        "https://lrv.lt/lt/naujienos/",
+        "https://lrv.lt/rss/",
+        "https://lrv.lt/lt/rss/",
+        "https://lrv.lt/lt/naujienos/?format=rss"
+      ]
+    }
+  ]
+}

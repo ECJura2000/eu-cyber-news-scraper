@@ -1,0 +1,135 @@
+{
+  "url": "https://msp.gov.cz/web/msp/tiskove-zpravy",
+  "final_url": "https://msp.gov.cz/web/msp/tiskove-zpravy",
+  "observed_at": "2026-10-01T11:52:38.206471+00:00",
+  "observed_on": "2026-10-01",
+  "http_status": 200,
+  "sha256": "bb210d5098a25fc5c9acac9a58c864f06506934fb4d3f62af4268d43460688e0",
+  "transform": "BeautifulSoup main/body extraction; remove scripts/styles/nav/header/footer/form; first 32000 UTF-8 bytes",
+  "fixture": "ministry_cz_justice.html",
+  "parsed_count": 9,
+  "dated_count": 9,
+  "replay_count": 9,
+  "source": {
+    "id": "cz_justice",
+    "country": "CZ",
+    "name_zh": "捷克司法部",
+    "name": "Ministerstvo spravedlnosti",
+    "institution_type": "ministry",
+    "language": "cs",
+    "homepage": "https://msp.gov.cz/",
+    "listing_url": "https://msp.gov.cz/web/msp/tiskove-zpravy",
+    "feed_urls": [],
+    "allow_domains": [
+      "msp.gov.cz"
+    ],
+    "critical": false,
+    "schedule_enabled": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Prague"
+  },
+  "live_status": {
+    "source_id": "cz_justice",
+    "source_name": "捷克司法部",
+    "country": "CZ",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 9,
+    "relevant_count": 9,
+    "duration_seconds": 0.605,
+    "newest_published_at": "2026-09-28T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0,
+    "health_alerts": [],
+    "dated_count": 9,
+    "undated_ratio": 0,
+    "unique_title_ratio": 1,
+    "in_range_count": 9,
+    "freshness_lag_days": 3.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 107625,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0,
+    "historical_median_bytes": 0,
+    "historical_median_duration": 0
+  },
+  "source_id": "cz_justice",
+  "fixture_count": 9,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "expected": [
+    {
+      "title": "V Abú Dhabí probíhá 15. kongres OSN o prevenci kriminality a trestní spravedlnosti\n\t\t\t\t\t \n\t\t29.09.2026",
+      "url": "https://msp.gov.cz/web/msp/tiskove-zpravy/-/clanek/v-ab%C3%BA-dhab%C3%AD-prob%C3%ADh%C3%A1-15.-kongres-osn-o-prevenci-kriminality-a-trestn%C3%AD-spravedlnosti?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM_redirect=https%3A%2F%2Fmsp.gov.cz%2Fweb%2Fmsp%2Ftiskove-zpravy%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D8013362%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM_cur%3D0%26p_r_p_resetCur%3Dfalse",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Ministerstvo prověřuje okolnosti testovací verze obchodního rejstříku\n\t\t\t\t\t \n\t\t22.09.2026",
+      "url": "https://msp.gov.cz/web/msp/tiskove-zpravy/-/clanek/ministerstvo-prov%C4%9B%C5%99uje-okolnosti-testovac%C3%AD-verze-obchodn%C3%ADho-rejst%C5%99%C3%ADku?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM_redirect=https%3A%2F%2Fmsp.gov.cz%2Fweb%2Fmsp%2Ftiskove-zpravy%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D7987859%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM_cur%3D0%26p_r_p_resetCur%3Dfalse",
+      "published_date_local": "2026-09-22",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Ministr spravedlnosti Jeroným Tejc jednal v Praze se svým slovenským protějškem\n\t\t\t\t\t \n\t\t11.09.2026",
+      "url": "https://msp.gov.cz/web/msp/tiskove-zpravy/-/clanek/ministr-spravedlnosti-jeron%C3%BDm-tejc-jednal-v-praze-se-sv%C3%BDm-slovensk%C3%BDm-prot%C4%9Bj%C5%A1kem?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM_redirect=https%3A%2F%2Fmsp.gov.cz%2Fweb%2Fmsp%2Ftiskove-zpravy%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D7948100%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM_cur%3D0%26p_r_p_resetCur%3Dfalse",
+      "published_date_local": "2026-09-11",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Ministerstvo spravedlnosti zprostředkovalo brněnskému soudci vzdělávací stáž u Vrchního zemského soudu v Mnichově\n\t\t\t\t\t \n\t\t08.09.2026",
+      "url": "https://msp.gov.cz/web/msp/tiskove-zpravy/-/clanek/ministerstvo-spravedlnosti-zprost%C5%99edkovalo-brn%C4%9Bnsk%C3%A9mu-soudci-vzd%C4%9Bl%C3%A1vac%C3%AD-st%C3%A1%C5%BE-u-vrchn%C3%ADho-zemsk%C3%A9ho-soudu-v-mnichov%C4%9B?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM_redirect=https%3A%2F%2Fmsp.gov.cz%2Fweb%2Fmsp%2Ftiskove-zpravy%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D7935164%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM_cur%3D0%26p_r_p_resetCur%3Dfalse",
+      "published_date_local": "2026-09-08",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Rozpočet Ministerstva spravedlnosti na rok 2027 posílí financování soudů i vězeňství\n\t\t\t\t\t \n\t\t02.09.2026",
+      "url": "https://msp.gov.cz/web/msp/tiskove-zpravy/-/clanek/rozpo%C4%8Det-ministerstva-spravedlnosti-na-rok-2027-pos%C3%ADl%C3%AD-financov%C3%A1n%C3%AD-soud%C5%AF-i-v%C4%9Bze%C5%88stv%C3%AD?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM_redirect=https%3A%2F%2Fmsp.gov.cz%2Fweb%2Fmsp%2Ftiskove-zpravy%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D7912295%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM_cur%3D0%26p_r_p_resetCur%3Dfalse",
+      "published_date_local": "2026-09-02",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Ministerstvo spravedlnosti preventivně posiluje právní ochranu státu v souvislosti s bitcoinovou kauzou\n\t\t\t\t\t \n\t\t01.09.2026",
+      "url": "https://msp.gov.cz/web/msp/tiskove-zpravy/-/clanek/ministerstvo-spravedlnosti-preventivn%C4%9B-posiluje-pr%C3%A1vn%C3%AD-ochranu-st%C3%A1tu-v-souvislosti-s-bitcoinovou-kauzou-kop%C3%ADrovat-?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM_redirect=https%3A%2F%2Fmsp.gov.cz%2Fweb%2Fmsp%2Ftiskove-zpravy%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D7909778%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM_cur%3D0%26p_r_p_resetCur%3Dfalse",
+      "published_date_local": "2026-09-01",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Ministerstvo spravedlnosti navrhuje posílení ochrany před násilím doma i na internetu\n\t\t\t\t\t \n\t\t01.09.2026",
+      "url": "https://msp.gov.cz/web/msp/tiskove-zpravy/-/clanek/ministerstvo-spravedlnosti-navrhuje-pos%C3%ADlen%C3%AD-ochrany-p%C5%99ed-n%C3%A1sil%C3%ADm-doma-i-na-internetu-kop%C3%ADrovat-?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM_redirect=https%3A%2F%2Fmsp.gov.cz%2Fweb%2Fmsp%2Ftiskove-zpravy%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D7907955%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM_cur%3D0%26p_r_p_resetCur%3Dfalse",
+      "published_date_local": "2026-09-01",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Vláda projednala novelu posilující flexibilitu veřejného opatrovnictví\n\t\t\t\t\t \n\t\t17.08.2026",
+      "url": "https://msp.gov.cz/web/msp/tiskove-zpravy/-/clanek/vl%C3%A1da-projednala-novelu-posiluj%C3%ADc%C3%AD-flexibilitu-ve%C5%99ejn%C3%A9ho-opatrovnictv%C3%AD?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM_redirect=https%3A%2F%2Fmsp.gov.cz%2Fweb%2Fmsp%2Ftiskove-zpravy%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D7849875%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM_cur%3D0%26p_r_p_resetCur%3Dfalse",
+      "published_date_local": "2026-08-17",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Vláda projednala návrh na posílení ochrany obchodního tajemství\n\t\t\t\t\t \n\t\t17.08.2026",
+      "url": "https://msp.gov.cz/web/msp/tiskove-zpravy/-/clanek/vl%C3%A1da-projednala-n%C3%A1vrh-na-pos%C3%ADlen%C3%AD-ochrany-obchodn%C3%ADho-tajemstv%C3%AD?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM_redirect=https%3A%2F%2Fmsp.gov.cz%2Fweb%2Fmsp%2Ftiskove-zpravy%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D7849739%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_YTpeLSPs71GM_cur%3D0%26p_r_p_resetCur%3Dfalse",
+      "published_date_local": "2026-08-17",
+      "date_source": "source-selector"
+    }
+  ]
+}
+

@@ -1,0 +1,345 @@
+{
+  "schema_version": 1,
+  "country": "DE",
+  "reviewed_on": "2026-10-02",
+  "official_roster_urls": [
+    "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien"
+  ],
+  "roster_complete": true,
+  "limitations": [],
+  "ministries": [
+    {
+      "canonical_id": "de_bka",
+      "name_zh": "德國聯邦總理府",
+      "name_local": "Bundeskanzleramt",
+      "name_en": "Federal Chancellery",
+      "kind": "government_head_office",
+      "language": "de",
+      "homepage": "https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt",
+      "news_url": "https://www.bundesregierung.de/breg-de/aktuelles/pressemitteilungen",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "Official press page returns static shell/print controls without dated listing cards; generic portal feed must not be assigned without publisher attribution. Recorded attempts: source-audit/ministry_expansion_de.json",
+      "evidence_urls": [
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien"
+      ]
+    },
+    {
+      "canonical_id": "de_bmf",
+      "name_zh": "德國財政部",
+      "name_local": "Bundesministerium der Finanzen",
+      "name_en": "Federal Ministry of Finance",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bundesfinanzministerium.de/Web/DE/Home/home.html",
+      "news_url": "https://www.bundesfinanzministerium.de/Web/DE/Home/Web/DE/Presse/Pressemitteilungen/pressemitteilungen.html",
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "Production robots/TLS checks prevented content verification: https://www.bundesfinanzministerium.de/Web/DE/Home/Web/DE/Presse/Pressemitteilungen/pressemitteilungen.html => RobotsUnavailableError: https://www.bundesfinanzministerium.de: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known; https://www.bundesfinanzministerium.de/Web/DE/Home/home.html => RobotsUnavailableError: https://www.bundesfinanzministerium.de: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known Recorded attempts: source-audit/ministry_expansion_de.json",
+      "evidence_urls": [
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesministerium-der-finanzen",
+        "https://www.bundesfinanzministerium.de/Web/DE/Home/home.html",
+        "https://www.bundesfinanzministerium.de/Web/DE/Home/Web/DE/Presse/Pressemitteilungen/pressemitteilungen.html"
+      ]
+    },
+    {
+      "canonical_id": "de_bmi",
+      "name_zh": "德國內政部",
+      "name_local": "Bundesministerium des Innern",
+      "name_en": "Federal Ministry of the Interior",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmi.bund.de/DE/startseite/startseite-node.html",
+      "news_url": "https://www.bmi.bund.de/DE/presse/presse-node.html",
+      "source_ids": [
+        "de_bmi"
+      ],
+      "status": "existing_source",
+      "reason": "Existing de_bmi module is the federal Interior Ministry itself; subordinate BSI/BBK and other agencies are not aliases.",
+      "evidence_urls": [
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesinnenministerium"
+      ]
+    },
+    {
+      "canonical_id": "de_aa",
+      "name_zh": "德國外交部",
+      "name_local": "Auswärtiges Amt",
+      "name_en": "Federal Foreign Office",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.auswaertiges-amt.de/de",
+      "news_url": "https://www.auswaertiges-amt.de/de/newsroom/news",
+      "source_ids": [
+        "de_aa"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 6 dated items. Evidence: tests/fixtures/ministry_de_aa.provenance.json",
+      "evidence_urls": [
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/auswaertiges-amt-aufgaben-kontakt",
+        "https://www.auswaertiges-amt.de/de/newsroom/news"
+      ]
+    },
+    {
+      "canonical_id": "de_bmvg",
+      "name_zh": "德國國防部",
+      "name_local": "Bundesministerium der Verteidigung",
+      "name_en": "Federal Ministry of Defence",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmvg.de/de",
+      "news_url": "https://www.bmvg.de/de/presse",
+      "source_ids": [
+        "de_bmvg"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 6 dated items. Evidence: tests/fixtures/ministry_de_bmvg.provenance.json",
+      "evidence_urls": [
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesverteidigungsministerium-aufgaben-kontakt",
+        "https://www.bmvg.de/de/presse"
+      ]
+    },
+    {
+      "canonical_id": "de_bmwe",
+      "name_zh": "德國經濟與能源部",
+      "name_local": "Bundesministerium für Wirtschaft und Energie",
+      "name_en": "Federal Ministry for Economic Affairs and Energy",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bundeswirtschaftsministerium.de/Navigation/DE/Home/home.html",
+      "news_url": null,
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "Official homepage/RSS service page captured; actual feed endpoint and dated production feed replay not yet validated. Recorded attempts: source-audit/ministry_expansion_de.json",
+      "evidence_urls": [
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesministerium-fuer-wirtschaft-und-energie"
+      ]
+    },
+    {
+      "canonical_id": "de_bmftr",
+      "name_zh": "德國研究、科技與太空部",
+      "name_local": "Bundesministerium für Forschung, Technologie und Raumfahrt",
+      "name_en": "Federal Ministry of Research, Technology and Space",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmftr.bund.de/DE/Home/home_node.html",
+      "news_url": "https://www.bmftr.bund.de/SiteGlobals/Forms/Suche/Expertensuche/Expertensuche_Formular.html?format_str=pressrelease",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "Homepage and news/detail alternatives captured after intermittent DNS/robots availability errors; dated general press-listing replay remains unvalidated. Recorded attempts: source-audit/ministry_expansion_de.json",
+      "evidence_urls": [
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesministerium-fuer-forschung-technologie-und-raumfahrt",
+        "https://www.bmftr.bund.de/DE/Home/home_node.html",
+        "https://www.bmftr.bund.de/SiteGlobals/Forms/Suche/Expertensuche/Expertensuche_Formular.html?format_str=pressrelease"
+      ]
+    },
+    {
+      "canonical_id": "de_bmjv",
+      "name_zh": "德國司法與消費者保護部",
+      "name_local": "Bundesministerium der Justiz und für Verbraucherschutz",
+      "name_en": "Federal Ministry of Justice and Consumer Protection",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmjv.de/DE/Startseite/Startseite_node.html",
+      "news_url": "https://www.bmjv.de/DE/presse/presse_node.html",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "Official press and RSS index pages accessible, but press search is robots-denied; newsfeed discovery did not produce a validated dated feed. Service/report-barrier links are not news. Recorded attempts: source-audit/ministry_expansion_de.json",
+      "evidence_urls": [
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesjustizministerium",
+        "https://www.bmjv.de/DE/Startseite/Startseite_node.html",
+        "https://www.bmjv.de/DE/presse/presse_node.html"
+      ]
+    },
+    {
+      "canonical_id": "de_bmbfsfj",
+      "name_zh": "德國教育、家庭、高齡、婦女與青年部",
+      "name_local": "Bundesministerium für Bildung, Familie, Senioren, Frauen und Jugend",
+      "name_en": "Federal Ministry for Education, Family Affairs, Senior Citizens, Women and Youth",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmbfsfj.bund.de/",
+      "news_url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen",
+      "source_ids": [
+        "de_bmbfsfj"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_de_bmbfsfj.provenance.json",
+      "evidence_urls": [
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesministerium-bildung-familie-senioren-frauen-und-jugend",
+        "https://www.bmbfsfj.bund.de/",
+        "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen"
+      ]
+    },
+    {
+      "canonical_id": "de_bmas",
+      "name_zh": "德國勞動與社會部",
+      "name_local": "Bundesministerium für Arbeit und Soziales",
+      "name_en": "Federal Ministry of Labour and Social Affairs",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmas.de/DE/Startseite/start.html",
+      "news_url": "https://www.bmas.de/SiteGlobals/Functions/RSSFeed/DE/RSSNewsfeed/RSSNewsfeed.xml",
+      "source_ids": [
+        "de_bmas"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_de_bmas.provenance.json",
+      "evidence_urls": [
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesarbeitsministerium-aufgaben-kontakt",
+        "https://www.bmas.de/DE/Startseite/start.html",
+        "https://www.bmas.de/SiteGlobals/Functions/RSSFeed/DE/RSSNewsfeed/RSSNewsfeed.xml"
+      ]
+    },
+    {
+      "canonical_id": "de_bmds",
+      "name_zh": "德國數位與國家現代化部",
+      "name_local": "Bundesministerium für Digitales und Staatsmodernisierung",
+      "name_en": "Federal Ministry for Digital Transformation and Government Modernisation",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://bmds.bund.de/",
+      "news_url": "https://bmds.bund.de/aktuelles/pressemitteilungen",
+      "source_ids": [
+        "de_bmds"
+      ],
+      "status": "manual_verified",
+      "reason": "Official ministry news endpoint passed robots-respecting HttpClient and production scrape_source live parse with source dates; genuine bounded fixture replay verified; manual queries only, schedule disabled.",
+      "evidence_urls": [
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesdigitalministerium",
+        "https://bmds.bund.de/",
+        "https://bmds.bund.de/aktuelles/pressemitteilungen"
+      ]
+    },
+    {
+      "canonical_id": "de_bmv",
+      "name_zh": "德國交通部",
+      "name_local": "Bundesministerium für Verkehr",
+      "name_en": "Federal Ministry of Transport",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmv.de/DE/Home/home.html",
+      "news_url": "https://www.bmv.de/DE/Home/DE/Meta/Presse/presse.html",
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "Production robots/TLS checks prevented content verification: https://www.bmv.de/DE/Home/DE/Meta/Presse/presse.html => RobotsUnavailableError: https://www.bmv.de: robots.txt unreachable: ConnectTimeout: ; https://www.bmv.de/DE/Home/home.html => RobotsUnavailableError: https://www.bmv.de: robots.txt unreachable: ConnectTimeout: ; https://bmv.de/ => RobotsUnavailableError: https://bmv.de: robots.txt unreachable: ConnectTimeout:  Recorded attempts: source-audit/ministry_expansion_de.json",
+      "evidence_urls": [
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesministerium-fuer-verkehr",
+        "https://www.bmv.de/DE/Home/home.html",
+        "https://www.bmv.de/DE/Home/DE/Meta/Presse/presse.html"
+      ]
+    },
+    {
+      "canonical_id": "de_bmukn",
+      "name_zh": "德國環境、氣候、自然保育與核能安全部",
+      "name_local": "Bundesministerium für Umwelt, Klimaschutz, Naturschutz und nukleare Sicherheit",
+      "name_en": "Federal Ministry for the Environment, Climate Action, Nature Conservation and Nuclear Safety",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bundesumweltministerium.de/",
+      "news_url": "https://www.bundesumweltministerium.de/umwelt.rss",
+      "source_ids": [
+        "de_bmukn"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_de_bmukn.provenance.json",
+      "evidence_urls": [
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesministerium-umwelt-klimaschutz-naturschutz",
+        "https://www.bundesumweltministerium.de/",
+        "https://www.bundesumweltministerium.de/umwelt.rss"
+      ]
+    },
+    {
+      "canonical_id": "de_bmg",
+      "name_zh": "德國衛生部",
+      "name_local": "Bundesministerium für Gesundheit",
+      "name_en": "Federal Ministry of Health",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bundesgesundheitsministerium.de/",
+      "news_url": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen",
+      "source_ids": [
+        "de_bmg"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_de_bmg.provenance.json",
+      "evidence_urls": [
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/gesundheitsministerium-aufgaben-kontakt",
+        "https://www.bundesgesundheitsministerium.de/",
+        "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen"
+      ]
+    },
+    {
+      "canonical_id": "de_bmleh",
+      "name_zh": "德國農業、糧食與家鄉部",
+      "name_local": "Bundesministerium für Landwirtschaft, Ernährung und Heimat",
+      "name_en": "Federal Ministry of Agriculture, Food and Regional Identity",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmleh.de/DE/Home/home_node.html",
+      "news_url": "https://www.bmleh.de/SiteGlobals/Functions/RSSFeed/RSSNewsfeed/RSSNewsfeed_Pressemitteilungen.xml",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "Initial presumed RSS URL redirects to homepage; dated animal-welfare topic cards exist, but general ministry RSS/listing is not validated. Recorded attempts: source-audit/ministry_expansion_de.json",
+      "evidence_urls": [
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundeslandwirtschaftsministerium-aufgaben-kontakt",
+        "https://www.bmleh.de/DE/Home/home_node.html",
+        "https://www.bmleh.de/SiteGlobals/Functions/RSSFeed/RSSNewsfeed/RSSNewsfeed_Pressemitteilungen.xml"
+      ]
+    },
+    {
+      "canonical_id": "de_bmz",
+      "name_zh": "德國經濟合作與發展部",
+      "name_local": "Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung",
+      "name_en": "Federal Ministry for Economic Cooperation and Development",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmz.de/de",
+      "news_url": "https://www.bmz.de/de/feed.rss",
+      "source_ids": [
+        "de_bmz"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_de_bmz.provenance.json",
+      "evidence_urls": [
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesministerium-fuer-wirtschaftliche-zusammenarbeit",
+        "https://www.bmz.de/de/feed.rss"
+      ]
+    },
+    {
+      "canonical_id": "de_bmwsb",
+      "name_zh": "德國住宅、都市發展與營建部",
+      "name_local": "Bundesministerium für Wohnen, Stadtentwicklung und Bauwesen",
+      "name_en": "Federal Ministry for Housing, Urban Development and Building",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmwsb.bund.de/DE/home/home_node.html",
+      "news_url": "https://www.bmwsb.bund.de/DE/tools-services/rssfeed/_functions/rssnewsfeed.xml",
+      "source_ids": [
+        "de_bmwsb"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_de_bmwsb.provenance.json",
+      "evidence_urls": [
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesbauministerium",
+        "https://www.bmwsb.bund.de/DE/home/home_node.html",
+        "https://www.bmwsb.bund.de/DE/tools-services/rssfeed/_functions/rssnewsfeed.xml"
+      ]
+    }
+  ]
+}

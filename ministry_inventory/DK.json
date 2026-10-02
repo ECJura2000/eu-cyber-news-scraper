@@ -1,0 +1,407 @@
+{
+  "schema_version": 1,
+  "country": "DK",
+  "reviewed_on": "2026-10-02",
+  "official_roster_urls": [
+    "https://stm.dk/statsministeriet/kontakt/emneoversigt/"
+  ],
+  "roster_complete": true,
+  "limitations": [],
+  "ministries": [
+    {
+      "canonical_id": "dk_stm",
+      "name_zh": "丹麥首相府",
+      "name_local": "Statsministeriet",
+      "name_en": "Prime Minister's Office",
+      "kind": "government_head_office",
+      "language": "da",
+      "homepage": "https://stm.dk/",
+      "news_url": "https://stm.dk/presse/",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "Press/year archive pages are dynamic shells; English homepage has two dated cards but no dedicated general press-news endpoint was validated. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://stm.dk/",
+        "https://stm.dk/presse/"
+      ]
+    },
+    {
+      "canonical_id": "dk_employment",
+      "name_zh": "丹麥就業與平等部",
+      "name_local": "Beskæftigelses- og Ligestillingsministeriet",
+      "name_en": "Ministry of Employment and Gender Equality",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://www.bm.dk/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "Production robots/TLS checks prevented content verification: https://www.bm.dk/ => RobotsUnavailableError: https://www.bm.dk: robots.txt unreachable: HTTP 503; https://www.bm.dk/nyheder => RobotsUnavailableError: https://www.bm.dk: robots.txt unreachable: HTTP 503 Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/"
+      ]
+    },
+    {
+      "canonical_id": "dk_transport",
+      "name_zh": "丹麥城市、鄉村與交通部",
+      "name_local": "By-, Land og Transportministeriet",
+      "name_en": "Ministry of Cities, Rural Districts and Transport",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://www.bltm.dk/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "Production robots/TLS checks prevented content verification: https://www.bltm.dk/ => RobotsUnavailableError: https://www.bltm.dk: robots.txt returned HTML/challenge content Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/"
+      ]
+    },
+    {
+      "canonical_id": "dk_children",
+      "name_zh": "丹麥兒童、高齡與住宅部",
+      "name_local": "Børne-, Ældre- og Boligministeriet",
+      "name_en": "Ministry of Children, Elderly and Housing",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://baebm.dk/",
+      "news_url": "https://baebm.dk/nyheder/nyhedsarkiv",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "Official archive/year page uses GoBasic/Blazor dynamic itemList and returns no dated news cards to existing production parser. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://baebm.dk/",
+        "https://baebm.dk/nyheder/nyhedsarkiv"
+      ]
+    },
+    {
+      "canonical_id": "dk_business",
+      "name_zh": "丹麥商業部",
+      "name_local": "Erhvervsministeriet",
+      "name_en": "Ministry of Industry, Business and Financial Affairs",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://www.em.dk/",
+      "news_url": "https://www.em.dk/aktuelt",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "Official news/month archives use GoBasic dynamic lists; press page embeds Ritzau. No dated first-party listing/feed replay established. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://www.em.dk/",
+        "https://www.em.dk/aktuelt"
+      ]
+    },
+    {
+      "canonical_id": "dk_finance",
+      "name_zh": "丹麥財政部",
+      "name_local": "Finansministeriet",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://fm.dk/",
+      "news_url": "https://fm.dk/nyheder/nyhedsarkiv/",
+      "source_ids": [
+        "dk_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "Official ministry news endpoint passed robots-respecting HttpClient and production scrape_source live parse with source dates; genuine bounded fixture replay verified; manual queries only, schedule disabled.",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://fm.dk/",
+        "https://fm.dk/nyheder/nyhedsarkiv/"
+      ]
+    },
+    {
+      "canonical_id": "dk_research",
+      "name_zh": "丹麥研究、教育與數位化部",
+      "name_local": "Forsknings-, Uddannelses- og Digitaliseringsministeriet",
+      "name_en": "Ministry of Research, Education and Digitalisation",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://ufm.dk/",
+      "news_url": "https://ufm.dk/aktuelt/pressemeddelelser/",
+      "source_ids": [
+        "dk_research"
+      ],
+      "status": "manual_verified",
+      "reason": "Official ministry news endpoint passed robots-respecting HttpClient and production scrape_source live parse with source dates; genuine bounded fixture replay verified; manual queries only, schedule disabled.",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://ufm.dk/",
+        "https://ufm.dk/aktuelt/pressemeddelelser/"
+      ]
+    },
+    {
+      "canonical_id": "dk_defence",
+      "name_zh": "丹麥國防部",
+      "name_local": "Forsvarsministeriet",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://www.fmn.dk/da/",
+      "news_url": "https://www.fmn.dk/da/nyheder/nyhedsarkiv/",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "Official annual news list is dynamic; /servicemappe/rss-feed/ is HTML rather than a valid XML feed. EU-topic cards are dated but general-news fixture is unvalidated. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://www.fmn.dk/da/",
+        "https://www.fmn.dk/da/nyheder/nyhedsarkiv/"
+      ]
+    },
+    {
+      "canonical_id": "dk_justice",
+      "name_zh": "丹麥司法部",
+      "name_local": "Justitsministeriet",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://www.justitsministeriet.dk/",
+      "news_url": "https://www.justitsministeriet.dk/pressemeddelelse/",
+      "source_ids": [
+        "dk_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_dk_justice.provenance.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://www.justitsministeriet.dk/",
+        "https://www.justitsministeriet.dk/pressemeddelelse/"
+      ]
+    },
+    {
+      "canonical_id": "dk_climate",
+      "name_zh": "丹麥氣候、能源與公用事業部",
+      "name_local": "Klima-, Energi- og Forsyningsministeriet",
+      "name_en": "Ministry of Climate, Energy and Utilities",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://www.kefm.dk/",
+      "news_url": "https://www.kefm.dk/aktuelt",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "Official current-news page is a GoBasic dynamic listing; captured HTML has no dated news cards. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://www.kefm.dk/",
+        "https://www.kefm.dk/aktuelt"
+      ]
+    },
+    {
+      "canonical_id": "dk_culture",
+      "name_zh": "丹麥文化部",
+      "name_local": "Kulturministeriet",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://kum.dk/",
+      "news_url": "https://kum.dk/aktuelt/nyheder",
+      "source_ids": [
+        "dk_culture"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_dk_culture.provenance.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://kum.dk/",
+        "https://kum.dk/aktuelt/nyheder"
+      ]
+    },
+    {
+      "canonical_id": "dk_environment",
+      "name_zh": "丹麥環境部",
+      "name_local": "Miljøministeriet",
+      "name_en": "Ministry of Environment",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://mim.dk/",
+      "news_url": "https://mim.dk/nyheder/pressemeddelelser",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "Official press/professional-news pages were captured but dynamic listing returned no dated cards to existing parser. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://mim.dk/",
+        "https://mim.dk/nyheder/pressemeddelelser"
+      ]
+    },
+    {
+      "canonical_id": "dk_nature",
+      "name_zh": "丹麥自然與動物福利部",
+      "name_local": "Ministeriet for Natur og Dyrevelfærd",
+      "name_en": "Ministry of Nature and Animal Welfare",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://mgtp.dk/",
+      "news_url": "https://mgtp.dk/nyheder-og-debat",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "Official news/year archive is a dynamic GoBasic list; captured responses contain no validated dated general-news cards. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://mgtp.dk/",
+        "https://mgtp.dk/nyheder-og-debat"
+      ]
+    },
+    {
+      "canonical_id": "dk_resilience",
+      "name_zh": "丹麥社會安全與應變部",
+      "name_local": "Ministeriet for Samfundssikkerhed og Beredskab",
+      "name_en": "Ministry of Societal Security and Resilience",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://mssb.dk/",
+      "news_url": "https://mssb.dk/nyheder/",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "Official news endpoint is a dynamic listing; no dated cards in captured HTML for existing parser. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://mssb.dk/",
+        "https://mssb.dk/nyheder/"
+      ]
+    },
+    {
+      "canonical_id": "dk_taxation",
+      "name_zh": "丹麥稅務與成長部",
+      "name_local": "Skatte- og Vækstministeriet",
+      "name_en": "Ministry of Taxation and Growth",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://svmn.dk/",
+      "news_url": "https://svmn.dk/aktuelt/presse-nyheder/pressemeddelelser",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "Official press releases page says Henter data and uses a Next.js client component; no supported feed/HTML replay with dated items established. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://svmn.dk/",
+        "https://svmn.dk/aktuelt/presse-nyheder/pressemeddelelser"
+      ]
+    },
+    {
+      "canonical_id": "dk_social",
+      "name_zh": "丹麥社會部",
+      "name_local": "Socialministeriet",
+      "name_en": "Ministry of Social Affairs",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://www.sm.dk/",
+      "news_url": "https://www.sm.dk/handlers/DynamicRss.ashx?id=d66aadb0-8d96-4027-9a8f-7a3176ad49f9",
+      "source_ids": [
+        "dk_social"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_dk_social.provenance.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://www.sm.dk/",
+        "https://www.sm.dk/nyheder",
+        "https://www.sm.dk/handlers/DynamicRss.ashx?id=d66aadb0-8d96-4027-9a8f-7a3176ad49f9"
+      ]
+    },
+    {
+      "canonical_id": "dk_health",
+      "name_zh": "丹麥衛生與教會部",
+      "name_local": "Sundheds- og Kirkeministeriet",
+      "name_en": "Ministry of Health and Ecclesiastical Affairs",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://www.ism.dk/",
+      "news_url": "https://www.ism.dk/handlers/DynamicRss.ashx?id=3276f6e0-8386-41d5-b08a-642563d6a4c9",
+      "source_ids": [
+        "dk_health"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_dk_health.provenance.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://www.ism.dk/",
+        "https://www.ism.dk/nyheder",
+        "https://www.ism.dk/handlers/DynamicRss.ashx?id=3276f6e0-8386-41d5-b08a-642563d6a4c9"
+      ]
+    },
+    {
+      "canonical_id": "dk_foreign_affairs",
+      "name_zh": "丹麥外交部",
+      "name_local": "Udenrigsministeriet",
+      "name_en": "Ministry of Foreign Affairs",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://um.dk/",
+      "news_url": "https://um.dk/nyheder/",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "Official news/English alternatives embed publisher-specific Ritzau pressrooms; no first-party dated general-news endpoint validated. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://um.dk/",
+        "https://um.dk/nyheder/"
+      ]
+    },
+    {
+      "canonical_id": "dk_immigration",
+      "name_zh": "丹麥移民與融合部",
+      "name_local": "Udlændinge- og Integrationsministeriet",
+      "name_en": "Ministry of Immigration and Integration",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://uim.dk/",
+      "news_url": "https://uim.dk/nyhedsarkiv/",
+      "source_ids": [
+        "dk_immigration"
+      ],
+      "status": "manual_verified",
+      "reason": "Official ministry news endpoint passed robots-respecting HttpClient and production scrape_source live parse with source dates; genuine bounded fixture replay verified; manual queries only, schedule disabled.",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://uim.dk/",
+        "https://uim.dk/nyhedsarkiv/"
+      ]
+    },
+    {
+      "canonical_id": "dk_education",
+      "name_zh": "丹麥教育部",
+      "name_local": "Undervisningsministeriet",
+      "name_en": "Ministry of Education",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://uvm.dk/",
+      "news_url": "https://uvm.dk/umbraco/api/DynamicRss/GetRss/?pageId=31390&moduleId=8d3d6977-899a-458e-99ef-b7c091047870",
+      "source_ids": [
+        "dk_education"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_dk_education.provenance.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://uvm.dk/",
+        "https://uvm.dk/aktuelt/",
+        "https://uvm.dk/umbraco/api/DynamicRss/GetRss/?pageId=31390&moduleId=8d3d6977-899a-458e-99ef-b7c091047870"
+      ]
+    },
+    {
+      "canonical_id": "dk_economy",
+      "name_zh": "丹麥經濟與內政部",
+      "name_local": "Økonomi- og Indenrigsministeriet",
+      "name_en": "Ministry of Economic Affairs and the Interior",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://oem.dk/",
+      "news_url": "https://oem.dk/nyheder/nyhedsarkiv/",
+      "source_ids": [
+        "dk_economy"
+      ],
+      "status": "manual_verified",
+      "reason": "Official ministry news endpoint passed robots-respecting HttpClient and production scrape_source live parse with source dates; genuine bounded fixture replay verified; manual queries only, schedule disabled.",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://oem.dk/",
+        "https://oem.dk/nyheder/nyhedsarkiv/"
+      ]
+    }
+  ]
+}

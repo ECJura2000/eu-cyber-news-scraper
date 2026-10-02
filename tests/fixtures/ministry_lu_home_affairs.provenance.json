@@ -1,0 +1,145 @@
+{
+  "source_id": "lu_home_affairs",
+  "url": "https://maint.gouvernement.lu/fr.html",
+  "final_url": "https://maint.gouvernement.lu/fr.html",
+  "observed_at": "2026-10-02T00:49:44.962759+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "79a8953bfd62752a25aea387fb19d9eb859c34c3eb52a8511a91a1ac5ede065a",
+  "response_bytes": 112794,
+  "fixture_sha256": "61e50e22e49bf8d836e0b06b156923d2d66d44b410f343c3c47bab3ac361cb5a",
+  "fixture_bytes": 7748,
+  "transform": "BeautifulSoup extraction of genuine dated news containers retaining original attributes/text; scripts/styles removed; original base retained if present; bounded to six or fewer containers",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "Test du système d'alerte et d'information à la population \"LU-Alert\"",
+      "url": "https://maint.gouvernement.lu/fr/actualites.gouvernement2024%2Bfr%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2026%2B10-octobre%2B01-test-lu-alert.html",
+      "published_date_local": "2026-10-01"
+    },
+    {
+      "title": "Léon Gloden a participé au Conseil \"Justice et affaires intérieures\" de l'UE à Luxembourg",
+      "url": "https://maint.gouvernement.lu/fr/actualites.gouvernement2024%2Bfr%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2026%2B10-octobre%2B01-gloden-conseil-justice-afffaires-interieures.html",
+      "published_date_local": "2026-10-01"
+    },
+    {
+      "title": "Point de presse de Luc Frieden, Yuriko Backes et Léon Gloden",
+      "url": "https://maint.gouvernement.lu/fr/actualites.gouvernement2024%2Bfr%2Bactualites%2Btoutes_actualites%2Bvideo-conference-presse%2B2026%2B09-septembre%2B24-point-presse-frieden-backes-gloden.html",
+      "published_date_local": "2026-09-24"
+    },
+    {
+      "title": "Évolution au niveau des procédures d'immigration: le Luxembourg s'aligne sur les standards européens à partir du 1er octobre 2026",
+      "url": "https://maint.gouvernement.lu/fr/actualites.gouvernement2024%2Bfr%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2026%2B09-septembre%2B23-procedures-immigration.html",
+      "published_date_local": "2026-09-23"
+    },
+    {
+      "title": "GRECO – Rapport du 6ème cycle d’évaluation sur le Luxembourg",
+      "url": "https://maint.gouvernement.lu/fr/actualites.gouv2024_mj%2Bfr%2Bactualites%2Barticles%2B2026%2Bgreco-rapport-2026.html",
+      "published_date_local": "2026-09-22"
+    },
+    {
+      "title": "Assermentation aux fonctions d'échevins de la Ville d'Esch-sur-Alzette et de la commune de Kayl",
+      "url": "https://maint.gouvernement.lu/fr/actualites.gouvernement2024%2Bfr%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2026%2B09-septembre%2B21-gloden-assermentation-esch-kayl.html",
+      "published_date_local": "2026-09-21"
+    }
+  ],
+  "live_status": {
+    "source_id": "lu_home_affairs",
+    "source_name": "盧森堡內政部",
+    "country": "LU",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 6,
+    "relevant_count": 6,
+    "duration_seconds": 1.748,
+    "newest_published_at": "2026-10-01T00:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 6,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 6,
+    "freshness_lag_days": 2.0,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 112796,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "lu_home_affairs",
+    "country": "LU",
+    "name_zh": "盧森堡內政部",
+    "name": "Ministère des Affaires intérieures",
+    "institution_type": "central ministry",
+    "language": "fr",
+    "homepage": "https://maint.gouvernement.lu/fr.html",
+    "listing_url": "https://maint.gouvernement.lu/fr.html",
+    "feed_urls": [],
+    "allow_domains": [
+      "maint.gouvernement.lu"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Luxembourg",
+    "card_selectors": [
+      "li.cmp-focus-list-item:has(time.article-published)"
+    ],
+    "link_selectors": [
+      "a.blocklink"
+    ],
+    "title_selectors": [
+      "h3.focus-page-title"
+    ],
+    "date_selectors": [
+      "time.article-published"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_lu_home_affairs.html",
+  "format": "html"
+}

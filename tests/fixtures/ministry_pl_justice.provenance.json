@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.pl/web/sprawiedliwosc/aktualnosci-wydarzenia",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:53:43.052958+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "ab2ef3b000ee34e6f935e02221b5ff984ce37d57bd1c61f3f1f5e968260a44f2",
+  "sha256": "dbdefc8a3926f64b8c9e165eab6893a822d83c8b1ec8909976b4a7bf04b8b70a",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "pl_justice",
+  "expected": [
+    {
+      "title": "Powstaną nowe Specjalistyczne Ośrodki Pomocy dla Dzieci na Śląsku i w Kujawsko-Pomorskiem. Fundusz Sprawiedliwości wspiera inwestycje w Sosnowcu i Toruniu",
+      "url": "https://www.gov.pl/web/sprawiedliwosc/powstana-nowe-specjalistyczne-osrodki-pomocy-dla-dzieci-na-slasku-i-w-kujawsko-pomorskiem-fundusz-sprawiedliwosci-wspiera-inwestycje-w-sosnowcu-i-toruniu",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Narada z prezesami sądów apelacyjnych i okręgowych w Popowie",
+      "url": "https://www.gov.pl/web/sprawiedliwosc/narada-z-prezesami-sadow-apelacyjnych-i-okregowych-w-popowie",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Cyfryzacja postępowań sądowych - kluczowe zmiany w sprawach karnych i gospodarczych",
+      "url": "https://www.gov.pl/web/sprawiedliwosc/cyfryzacja-postepowan-sadowych---kluczowe-zmiany-w-sprawach-karnych-i-gospodarczych",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Rozpoczął się konkurs ofert w ramach Funduszu Sprawiedliwości",
+      "url": "https://www.gov.pl/web/sprawiedliwosc/rozpoczal-sie-konkurs-ofert-w-ramach-funduszu-sprawiedliwosci",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    }
+  ]
+}

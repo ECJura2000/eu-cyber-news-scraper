@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=24",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:48:46.220373+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "eb48776103f202111f310a2e167dbdecdc81927296ef8f53c6b2cb7379488161",
+  "sha256": "72299c353e4aff4b897ec66a3cb7a7eef6c40a45f242a22b6cf9be344ce14069",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 100,
+  "dated_count": 100,
+  "fixture_count": 4,
+  "source_id": "si_finance",
+  "expected": [
+    {
+      "title": "Državni sekretar Peter Papež se je sestal s člani Finančne komisije AmCham Slovenija",
+      "url": "https://www.gov.si/novice/2026-09-30-drzavni-sekretar-peter-papez-se-je-sestal-s-clani-financne-komisije-amcham-slovenija/",
+      "published_date_local": "2026-09-30",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Minister za finance mag. Andrej Šircelj z veleposlanikom Indije o krepitvi sodelovanja",
+      "url": "https://www.gov.si/novice/2026-09-29-minister-za-finance-mag-andrej-sircelj-z-veleposlanikom-indije-o-krepitvi-sodelovanja/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "V javni obravnavi predlog novega Zakona o nematerializiranih vrednostnih papirjih",
+      "url": "https://www.gov.si/novice/2026-09-29-v-javni-obravnavi-predlog-novega-zakona-o-nematerializiranih-vrednostnih-papirjih/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Slovenija oddala še zadnji zahtevek za plačilo sredstev iz Mehanizma za okrevanje in odpornost",
+      "url": "https://www.gov.si/novice/2026-09-29-slovenija-oddala-se-zadnji-zahtevek-za-placilo-sredstev-iz-mehanizma-za-okrevanje-in-odpornost/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    }
+  ]
+}

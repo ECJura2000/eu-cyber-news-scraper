@@ -1,5 +1,6 @@
 import json
 from datetime import timezone
+from zoneinfo import ZoneInfo
 
 import pytest
 
@@ -49,6 +50,22 @@ def test_parse_rss_applies_domain_and_path_policy(fixture_dir):
 ])
 def test_new_country_local_dates(language, date_text):
     assert parse_datetime(date_text, (language,)).date().isoformat() == "2026-09-23"
+
+
+@pytest.mark.parametrize("raw,expected_utc", [
+    ("2026. 09. 29.", "2026-09-28T22:00:00+00:00"),
+    ("2026. 01. 09.", "2026-01-08T23:00:00+00:00"),
+    (" 2024.2.29. ", "2024-02-28T23:00:00+00:00"),
+])
+def test_hungarian_dotted_dates_preserve_local_midnight(raw, expected_utc):
+    parsed = parse_datetime(raw, ("hu",), "Europe/Budapest")
+    assert parsed is not None and parsed.isoformat() == expected_utc
+    assert parsed.astimezone(ZoneInfo("Europe/Budapest")).hour == 0
+
+
+@pytest.mark.parametrize("raw", ["2026. 02. 30.", "2026. 13. 01."])
+def test_invalid_hungarian_dotted_dates_are_not_inferred(raw):
+    assert parse_datetime(raw, ("hu",), "Europe/Budapest") is None
 
 
 @pytest.mark.parametrize("language,date_text,expected", [

@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.si/novice/rss/?categoryID%5B0%5D=1&orgID%5B0%5D=4450",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:48:54.407583+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "6cef4d132674480f3ae999124b7c3364f4ad363431fed973c40b5b7849be017a",
+  "sha256": "bef5e18d7c8b24aeee756e90222331a854ddab9544c0b73ee721667b040c20a3",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 78,
+  "dated_count": 78,
+  "fixture_count": 4,
+  "source_id": "si_infrastructure_energy",
+  "expected": [
+    {
+      "title": "Minister Vrtovec na Koroškem: Tretja razvojna os ostaja ena ključnih infrastrukturnih prioritet",
+      "url": "https://www.gov.si/novice/2026-09-30-minister-vrtovec-na-koroskem-tretja-razvojna-os-ostaja-ena-kljucnih-infrastrukturnih-prioritet/",
+      "published_date_local": "2026-09-30",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Opozorilo pred lažno spletno stranjo, ki ponuja neobstoječe energetske subvencije",
+      "url": "https://www.gov.si/novice/2026-09-29-opozorilo-pred-lazno-spletno-stranjo-ki-ponuja-neobstojece-energetske-subvencije/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Energetski prehod naj zagotovi dostopno energijo in energetsko varnost",
+      "url": "https://www.gov.si/novice/2026-09-29-energetski-prehod-naj-zagotovi-dostopno-energijo-in-energetsko-varnost/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Na Festivalu za tretje življenjsko obdobje od brezplačne vozovnice do nasvetov o energetski prenovi",
+      "url": "https://www.gov.si/novice/2026-09-29-na-festivalu-za-tretje-zivljenjsko-obdobje-od-brezplacne-vozovnice-do-nasvetov-o-energetski-prenovi/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    }
+  ]
+}

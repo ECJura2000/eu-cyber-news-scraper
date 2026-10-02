@@ -1,0 +1,41 @@
+{
+  "url": "https://www.mhsr.sk/feed",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:49:09.474043+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "cdfb1a2772199a515240c2fb9dbb5e5918fc257a1fbf58673f0b00d84c80e257",
+  "sha256": "c905d1b9898d81dff657fc94a398f4a2b38c6a16d3f00fc8623a249f4005f358",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 50,
+  "dated_count": 50,
+  "fixture_count": 4,
+  "source_id": "sk_economy",
+  "expected": [
+    {
+      "title": "Slovensko je na zimnú sezónu pripravené, SPP bude mať v zásobníkoch rekordný objem zemného plynu",
+      "url": "https://www.mhsr.sk/press/slovensko-je-na-zimnu-sezonu-pripravene-spp-bude-mat-v-zasobnikoch-rekordny-objem-zemneho-plynu",
+      "published_date_local": "2026-09-22",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Karpatský región má potenciál pre nové investície, energetické projekty aj pracovné miesta",
+      "url": "https://www.mhsr.sk/press/karpatsky-region-ma-potencial-pre-nove-investicie-energeticke-projekty-aj-pracovne-miesta",
+      "published_date_local": "2026-09-21",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Slovenský projekt AI Holopresence postúpil do finále prestížnej európskej súťaže REGIOSTARS 2026",
+      "url": "https://www.mhsr.sk/aktuality/slovensky-projekt-ai-holopresence-postupil-do-finale-prestiznej-europskej-sutaze-regiostars-2026",
+      "published_date_local": "2026-09-04",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Získajte výhodné financovanie pre svoju firmu. Príďte na regionálny seminár.",
+      "url": "https://www.mhsr.sk/aktuality/ziskajte-vyhodne-financovanie-pre-svoju-firmu-pridte-na-regionalny-seminar",
+      "published_date_local": "2026-08-31",
+      "date_source": "feed-published"
+    }
+  ]
+}

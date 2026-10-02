@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "country": "CY",
+  "reviewed_on": "2026-10-02",
+  "official_roster_urls": [
+    "https://www.gov.cy/en/government/",
+    "https://www.gov.cy/en/websites/"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "The official Cyprus government roster confirms 11 ministries. Gov.cy returned access-denied content during this review, so ministry homepages, news endpoints and parser fixtures are not asserted without a separately captured HTTPS response."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "cy_defence",
+      "name_zh": "塞浦路斯國防部",
+      "name_local": "Υπουργείο Άμυνας",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/mod/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/mod/; https://www.mod.gov.cy/ => RobotsUnavailableError: https://www.mod.gov.cy: robots.txt unreachable: ConnectError: ('「mod.gov.cy」憑證不受信任',) Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/"
+      ]
+    },
+    {
+      "canonical_id": "cy_agriculture",
+      "name_zh": "塞浦路斯農業、農村發展與環境部",
+      "name_local": "Υπουργείο Γεωργίας, Αγροτικής Ανάπτυξης και Περιβάλλοντος",
+      "name_en": "Ministry of Agriculture, Rural Development and Environment",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/moa/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/moa/; https://www.moa.gov.cy/ => RobotsDeniedError: robots.txt disallows: https://www.moa.gov.cy/ Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/"
+      ]
+    },
+    {
+      "canonical_id": "cy_justice",
+      "name_zh": "塞浦路斯司法與公共秩序部",
+      "name_local": "Υπουργείο Δικαιοσύνης και Δημοσίας Τάξεως",
+      "name_en": "Ministry of Justice and Public Order",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/mjpo/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/mjpo/; https://www.mjpo.gov.cy/ => RobotsUnavailableError: https://www.mjpo.gov.cy: robots.txt unreachable: ConnectTimeout:  Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/"
+      ]
+    },
+    {
+      "canonical_id": "cy_energy",
+      "name_zh": "塞浦路斯能源、商業與工業部",
+      "name_local": "Υπουργείο Ενέργειας, Εμπορίου και Βιομηχανίας",
+      "name_en": "Ministry of Energy, Commerce and Industry",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/meci/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/meci/; https://www.meci.gov.cy/ => RobotsDeniedError: robots.txt disallows: https://www.meci.gov.cy/ Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/"
+      ]
+    },
+    {
+      "canonical_id": "cy_foreign_affairs",
+      "name_zh": "塞浦路斯外交部",
+      "name_local": "Υπουργείο Εξωτερικών",
+      "name_en": "Ministry of Foreign Affairs",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/mfa/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/mfa/; https://www.mfa.gov.cy/ => RobotsDeniedError: robots.txt disallows: https://www.mfa.gov.cy/ Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/"
+      ]
+    },
+    {
+      "canonical_id": "cy_labour",
+      "name_zh": "塞浦路斯勞動與社會保險部",
+      "name_local": "Υπουργείο Εργασίας και Κοινωνικών Ασφαλίσεων",
+      "name_en": "Ministry of Labour and Social Insurance",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/mlsi/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/mlsi/; https://www.mlsi.gov.cy/ => RobotsDeniedError: robots.txt disallows: https://www.mlsi.gov.cy/ Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/"
+      ]
+    },
+    {
+      "canonical_id": "cy_interior",
+      "name_zh": "塞浦路斯內政部",
+      "name_local": "Υπουργείο Εσωτερικών",
+      "name_en": "Ministry of Interior",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/moi/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/moi/; https://www.moi.gov.cy/ => RobotsDeniedError: robots.txt disallows: https://www.moi.gov.cy/ Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/"
+      ]
+    },
+    {
+      "canonical_id": "cy_finance",
+      "name_zh": "塞浦路斯財政部",
+      "name_local": "Υπουργείο Οικονομικών",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/mof/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/mof/; https://www.mof.gov.cy/ => RobotsDeniedError: robots.txt disallows: https://www.mof.gov.cy/ Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/"
+      ]
+    },
+    {
+      "canonical_id": "cy_education",
+      "name_zh": "塞浦路斯教育、體育與青年部",
+      "name_local": "Υπουργείο Παιδείας, Αθλητισμού και Νεολαίας",
+      "name_en": "Ministry of Education, Sport and Youth",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "Legacy HTTPS education/minoffice pages are accessible but no dated ministry news fixture was established; gov.cy ministry portal is robots-denied. Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/"
+      ]
+    },
+    {
+      "canonical_id": "cy_transport",
+      "name_zh": "塞浦路斯運輸、通信與工程部",
+      "name_local": "Υπουργείο Μεταφορών, Επικοινωνιών και Έργων",
+      "name_en": "Ministry of Transport, Communications and Works",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/mtcw/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/mtcw/; https://www.mtcw.gov.cy/ => RobotsDeniedError: robots.txt disallows: https://www.mtcw.gov.cy/ Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/"
+      ]
+    },
+    {
+      "canonical_id": "cy_health",
+      "name_zh": "塞浦路斯衛生部",
+      "name_local": "Υπουργείο Υγείας",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/moh/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/moh/; https://www.moh.gov.cy/ => RobotsDeniedError: robots.txt disallows: https://www.moh.gov.cy/ Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/"
+      ]
+    }
+  ]
+}

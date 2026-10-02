@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.pl/web/finanse/wiadomosci",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:15.554313+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "8b0aedf24b7a0a8869e5f5ac686945f8c0d389ed7f5e02b19bef2d870d311287",
+  "sha256": "d8e437dce8576a577fbd16616531f98df84e1ffbcab024156b91c5dbc105aca9",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "pl_finance",
+  "expected": [
+    {
+      "title": "Rada Ministrów przyjęła projekt ustawy budżetowej na 2027 rok",
+      "url": "https://www.gov.pl/web/finanse/rada-ministrow-przyjela-projekt-ustawy-budzetowej-na--2027-rok",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Komunikat Ministerstwa Finansów",
+      "url": "https://www.gov.pl/web/finanse/komunikat-ministerstwa-finansow2",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Rada Ministrów przyjęła Strategię zarządzania długiem sektora finansów publicznych w latach 2027-2030",
+      "url": "https://www.gov.pl/web/finanse/rada-ministrow-przyjela-strategie-zarzadzania-dlugiem-sektora-finansow-publicznych-w-latach-2027-2030",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Rada Ministrów przyjęła pakiet zmian podatkowych: niższe podatki dla klasy średniej, wsparcie robotyzacji i uszczelnienie systemu",
+      "url": "https://www.gov.pl/web/finanse/rada-ministrow-przyjela-pakiet-zmian-podatkowych-nizsze-podatki-dla-klasy-sredniej-wsparcie-robotyzacji-i-uszczelnienie-systemu",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    }
+  ]
+}

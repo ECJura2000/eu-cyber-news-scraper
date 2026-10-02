@@ -1,0 +1,11 @@
+{
+  "url": "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:54:46.991117+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "c7a31a46706031401f9e30f44d3bddd748757a0e30e42c013d96401e4d757624",
+  "sha256": "fb2cc7b709da91c3f328af9f8456a052b26b6eb636c7b493a0c973f300bb3a1c",
+  "extraction": "Deduplicated original official department roster anchor elements"
+}

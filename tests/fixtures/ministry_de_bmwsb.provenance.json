@@ -1,0 +1,85 @@
+{
+  "source_id": "de_bmwsb",
+  "url": "https://www.bmwsb.bund.de/DE/tools-services/rssfeed/_functions/rssnewsfeed.xml",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:23.720079+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "7c5b465706de8c0a78c85a6ea96da50a81baebec71b1918d5a9a7642f3de1b07",
+  "response_sha256": "fede6359cb704fda57e58acab244eb232d46ba4bd82ae1ab576b4a18a614c905",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Bundesbauministerin Verena Hubertz in Hamburg",
+      "url": "https://www.bmwsb.bund.de/SharedDocs/kurzmeldungen/DE/2026/09/hamburg-morellenquartier.html",
+      "published_date_local": "2026-09-17",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Erster Spatenstich für das WarnowQuartier in Rostock",
+      "url": "https://www.bmwsb.bund.de/SharedDocs/kurzmeldungen/DE/2026/07/rostock.html",
+      "published_date_local": "2026-07-14",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Bundeskonferenz zur transnationalen Zusammenarbeit: Interreg stärkt Städte und Regionen in Europa",
+      "url": "https://www.bmwsb.bund.de/SharedDocs/kurzmeldungen/DE/2026/07/interreg.html",
+      "published_date_local": "2026-07-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Tag der offenen Tür im BMWSB:",
+      "url": "https://www.bmwsb.bund.de/SharedDocs/kurzmeldungen/DE/2026/06/tdot26-recap.html",
+      "published_date_local": "2026-06-22",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Deutsch-ukrainische Regierungskonsultationen",
+      "url": "https://www.bmwsb.bund.de/SharedDocs/kurzmeldungen/DE/2026/04/deu-ukr.html",
+      "published_date_local": "2026-04-15",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Qualitätssiegel Nachhaltiges Gebäude: 10.000. Wohneinheit ausgezeichnet. Nachhaltiges Bauen in Deutschland nimmt Fahrt auf.",
+      "url": "https://www.bmwsb.bund.de/SharedDocs/kurzmeldungen/DE/2026/03/qng.html",
+      "published_date_local": "2026-03-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "3. Jahreskongress des Nationalen Forums gegen Wohnungs­losigkeit",
+      "url": "https://www.bmwsb.bund.de/SharedDocs/kurzmeldungen/DE/2026/02/nap-jahreskongress-26.html",
+      "published_date_local": "2026-03-16",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Azubi-Wohnen - Zentrale Voraussetzung für eine erfolgreiche Ausbildung",
+      "url": "https://www.bmwsb.bund.de/SharedDocs/kurzmeldungen/DE/2026/02/azubi-wohnen.html",
+      "published_date_local": "2026-02-26",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 20,
+  "live_dated_count": 20,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "de_bmwsb",
+    "country": "DE",
+    "name_zh": "德國住宅、都市發展與營建部",
+    "name": "Bundesministerium für Wohnen, Stadtentwicklung und Bauwesen",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.bmwsb.bund.de/DE/home/home_node.html",
+    "listing_url": "https://www.bmwsb.bund.de/DE/tools-services/rssfeed/_functions/rssnewsfeed.xml",
+    "feed_urls": [
+      "https://www.bmwsb.bund.de/DE/tools-services/rssfeed/_functions/rssnewsfeed.xml"
+    ],
+    "allow_domains": [
+      "www.bmwsb.bund.de"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Berlin",
+    "schedule_enabled": false
+  }
+}

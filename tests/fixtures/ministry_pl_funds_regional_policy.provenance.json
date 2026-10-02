@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.pl/web/fundusze-regiony/aktualnosci1",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:14.457370+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "5ac3c3b8bcd69741b3e827c71255b75807b14cb615bb4c7c87c334e370138207",
+  "sha256": "6963b0b46320ab915abc3b62a016c4f370663ecb2db1dfd81b4a34e2f3807272",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "pl_funds_regional_policy",
+  "expected": [
+    {
+      "title": "Do Polski wpłynęło blisko 35 mld zł z KPO",
+      "url": "https://www.gov.pl/web/fundusze-regiony/do-polski-wplynelo-blisko-35-mld-zl-z-kpo",
+      "published_date_local": "2026-10-01",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "KPO. Fundusze. Ludzie. Efekty",
+      "url": "https://www.gov.pl/web/fundusze-regiony/kpo-fundusze-ludzie-efekty",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Postępy w realizacji programów na lata 2021-2027 - stan na 27 września 2026 roku",
+      "url": "https://www.gov.pl/web/fundusze-regiony/postepy-w-realizacji-programow-na-lata-2021-2027---stan-na-27-wrzesnia-2026-roku",
+      "published_date_local": "2026-09-28",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Nowe wsparcie: blisko 800 mln zł dla przedsiębiorców na cyfrową i zieloną transformację",
+      "url": "https://www.gov.pl/web/fundusze-regiony/nowe-wsparcie-blisko-800-mln-zl-dla-przedsiebiorcow-na-cyfrowa-i-zielona-transformacje",
+      "published_date_local": "2026-09-24",
+      "date_source": "source-selector"
+    }
+  ]
+}

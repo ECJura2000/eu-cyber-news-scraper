@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=4455",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:49:07.412549+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "d627d87a628a8419f59482c4e7977af1b11c9bbb7d4fa379a28e817d9dd4afbc",
+  "sha256": "87bb8a6fd65fc562815f56d79e318858e3a09ef1f363376b70eac97036fd7423",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 76,
+  "dated_count": 76,
+  "fixture_count": 4,
+  "source_id": "si_local_cohesion_regional",
+  "expected": [
+    {
+      "title": "Evropska sredstva za kanalizacijo v Slovenj Gradcu",
+      "url": "https://www.gov.si/novice/2026-10-01-evropska-sredstva-za-kanalizacijo-v-slovenj-gradcu/",
+      "published_date_local": "2026-10-01",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Evropska sredstva za kolesarsko povezavo Bakovci–Dokležovje",
+      "url": "https://www.gov.si/novice/2026-10-01-evropska-sredstva-za-kolesarsko-povezavo-bakovcidoklezovje/",
+      "published_date_local": "2026-10-01",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Vlada soglaša z izbrisom bremen na nepremičninah v občinah Kranjska Gora, Slovenj Gradec in Krško",
+      "url": "https://www.gov.si/novice/2026-09-30-vlada-soglasa-z-izbrisom-bremen-na-nepremicninah-v-obcinah-kranjska-gora-slovenj-gradec-in-krsko/",
+      "published_date_local": "2026-09-30",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Slovesno odprtje: Ministrstvo s sedežem v Mariboru je prvi korak k decentralizaciji države",
+      "url": "https://www.gov.si/novice/2026-09-28-slovesno-odprtje-ministrstvo-s-sedezem-v-mariboru-je-prvi-korak-k-decentralizaciji-drzave-214349/",
+      "published_date_local": "2026-09-28",
+      "date_source": "feed-published"
+    }
+  ]
+}

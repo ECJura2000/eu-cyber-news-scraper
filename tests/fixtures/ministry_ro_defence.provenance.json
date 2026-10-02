@@ -1,0 +1,35 @@
+{
+  "url": "https://www.mapn.ro/cpresa/index.php",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:56:56.446648+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "eabff1841f5532e39a3b1ea119b54c24e5643473584e8338c012478d53e8afd7",
+  "sha256": "f1be51f415c1dfe2c6189bbac33c302f60ee68ea04941943cb7010e97c8cd638",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 3,
+  "dated_count": 3,
+  "fixture_count": 3,
+  "source_id": "ro_defence",
+  "expected": [
+    {
+      "title": "Semnarea Scrisorii de intenție privind cooperarea dintre România și Polonia în cadrul SAFE                                                    , din 30.09.2026",
+      "url": "https://www.mapn.ro/cpresa/19426_Semnarea-Scrisorii-de-intenție-privind-cooperarea-dintre-România-și-Polonia-în-cadrul-SAFE",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Misiune umanitară a Forțelor Aeriene Române                                                    , din 30.09.2026",
+      "url": "https://www.mapn.ro/cpresa/19425_Misiune-umanitară-a-Forțelor-Aeriene-Române",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Ștafeta Veteranilor Invictus pornește la drum în cea de-a XIII-a ediție                                                    , din 30.09.2026",
+      "url": "https://www.mapn.ro/cpresa/19424_Ștafeta-Veteranilor-Invictus-pornește-la-drum-în-cea-de-a-XIII-a-ediție",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    }
+  ]
+}

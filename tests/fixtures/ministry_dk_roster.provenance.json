@@ -1,0 +1,11 @@
+{
+  "url": "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+  "final_url": "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+  "observed_at": "2026-10-01T11:42:45.959207+00:00",
+  "observed_on": "2026-10-01",
+  "http_status": 200,
+  "sha256": "8dcf16c0c9626bd6343e01b01aae9dff2989a10904e6edb955a4f717b9625f31",
+  "transform": "BeautifulSoup main/body extraction; remove script/style/nav/header/footer/form; first 32700 UTF-8 bytes",
+  "truncated": false,
+  "expected_ministry_count": 21
+}

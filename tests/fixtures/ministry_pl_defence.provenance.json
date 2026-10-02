@@ -1,0 +1,35 @@
+{
+  "url": "https://www.gov.pl/web/obrona-narodowa/aktualnosci5",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:53:43.016735+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "9235422d1c829d959066ec8e048201a5a95b253f5f7a2d6c8da88ab4cacd90d3",
+  "sha256": "66b4e6e8b78bc602722d58ad09a711eba80dba6c1e6405b5f0fb9ce54f74793c",
+  "extraction": "Bounded genuine HTML content-card excerpt normalized to LF; fixture_count records actual saved-byte parser replay",
+  "parsed_count": 14,
+  "dated_count": 14,
+  "fixture_count": 3,
+  "source_id": "pl_defence",
+  "expected": [
+    {
+      "title": "Generał bryg. dr Dariusz Czekaj rektorem-komendantem Akademii Wojsk Lądowych",
+      "url": "https://www.gov.pl/web/obrona-narodowa/general-bryg-dr-dariusz-czekaj-rektorem-komendantem-akademii-wojsk-ladowych",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Polsko-australijskie rozmowy o bezpieczeństwie i współpracy wojskowej",
+      "url": "https://www.gov.pl/web/obrona-narodowa/polsko-australijskie-rozmowy-o-bezpieczenstwie-i-wspolpracy-wojskowej",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Podpisanie umów offsetowych na rzecz rozwoju zdolności WAT i programu szkolenia załóg Apache",
+      "url": "https://www.gov.pl/web/obrona-narodowa/podpisanie-umow-offsetowych-na-rzecz-rozwoju-zdolnosci-wat-i-programu-szkolenia-zalog-apache",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    }
+  ]
+}

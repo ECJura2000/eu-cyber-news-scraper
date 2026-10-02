@@ -1,0 +1,91 @@
+{
+  "source_id": "at_bmwkms",
+  "url": "https://www.bmwkms.gv.at/themen/aktuell.html",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:11.208133+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "dd6e498e50f64a1a80480b8cc254c923af353f9a124882b38e6dea4c175f4f2e",
+  "response_sha256": "671a357907ba5ada5a1824b2f46a4cdf21340457eac3a4d51b61a99ec965d393",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "1. Oktober 2026 \n \n \n \t\t\tSportbericht 2025 veröffentlicht",
+      "url": "https://www.bmwkms.gv.at/themen/aktuell/sportbericht-2025.html",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "30. September 2026 \n \n \n \t\t\tBaukultur Zusammenarbeit – Bund und Land Salzburg unterzeichnen Übereinkunft",
+      "url": "https://www.bmwkms.gv.at/themen/aktuell/baukultur-salzburg-und-bund.html",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "29. September 2026 \n \n \n \t\t\tMuseumsQuartier Wien: Geschäftsführerin Bettina Leidl wiederbestellt",
+      "url": "https://www.bmwkms.gv.at/themen/aktuell/mq-bettina-leidl.html",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "25. September 2026 \n \n \n \t\t\tTag des Schulsports bringt zum 9. Mal mehr als 2.500 Kinder in Bewegung",
+      "url": "https://www.bmwkms.gv.at/themen/aktuell/tag-des-schulsports.html",
+      "published_date_local": "2026-09-25",
+      "date_confidence": "high"
+    },
+    {
+      "title": "24. September 2026 \n \n \n \t\t\tTag des Sports\n \n \n \n                                                                                    Am 26. September 2026 verwandelt sich der Wiener Heldenplatz von 10 bis 18 Uhr beim Tag des Sports zum bereits 25. Mal in den größten Sportplatz des Landes.",
+      "url": "https://www.bmwkms.gv.at/themen/aktuell/tag-des-sports-2026.html",
+      "published_date_local": "2026-09-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "23. September 2026 \n \n \n \t\t\tTag des Denkmals 2026",
+      "url": "https://www.bmwkms.gv.at/themen/aktuell/tag-des-denkmals-2026.html",
+      "published_date_local": "2026-09-23",
+      "date_confidence": "high"
+    },
+    {
+      "title": "23. September 2026 \n \n \n \t\t\tOutstanding Artist Awards 2026 – Die Preisträger:innen",
+      "url": "https://www.bmwkms.gv.at/themen/aktuell/oaa-2026.html",
+      "published_date_local": "2026-09-23",
+      "date_confidence": "high"
+    },
+    {
+      "title": "21. September 2026 \n \n \n \t\t\tBekanntgabe der Preisträger:innen des Österreichischen Kunstpreises 2026 und des Hans-Hollein-Kunstpreises für Architektur 2026",
+      "url": "https://www.bmwkms.gv.at/themen/aktuell/kunstpreis_und_hans-hollein-kunstpreis.html",
+      "published_date_local": "2026-09-21",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 10,
+  "live_dated_count": 10,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "at_bmwkms",
+    "country": "AT",
+    "name_zh": "奧地利住宅、藝術、文化、媒體與體育部",
+    "name": "Bundesministerium für Wohnen, Kunst, Kultur, Medien und Sport",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.bmwkms.gv.at",
+    "listing_url": "https://www.bmwkms.gv.at/themen/aktuell.html",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.bmwkms.gv.at"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Vienna",
+    "card_selectors": [
+      "a.card-link"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "source_id": "es_territorial",
+  "url": "https://mptmd.gob.es/portal/prensa/noticias",
+  "final_url": "https://mptmd.gob.es/portal/prensa/noticias",
+  "observed_at": "2026-10-02T00:41:27.822335+00:00",
+  "http_status": 200,
+  "content_type": "text/html;charset=utf-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "09d6714af583ee7ed0fe45d6f70560dd14772ea84aef8ee9908901689b402317",
+  "response_bytes": 856351,
+  "fixture_sha256": "68175cd60d5f7a56c301c02d394f2f79d8410a744e77c16a4009d7876858295a",
+  "fixture_bytes": 18829,
+  "transform": "BeautifulSoup extraction of genuine dated news containers retaining original attributes/text; scripts/styles removed; original base retained if present; bounded to six or fewer containers",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "Política Territorial alcanza 85 acuerdos con las comunidades autónomas en esta Legislatura que evitan recursos de inconstitucionalidad",
+      "url": "https://mptmd.gob.es/portal/prensa/noticias/2026/10/20261001",
+      "published_date_local": "2026-10-01"
+    },
+    {
+      "title": "Reunión de coordinación para la apertura de nuevos espacios en Ceuta",
+      "url": "https://mptmd.gob.es/portal/prensa/noticias/2026/09/20260912",
+      "published_date_local": "2026-09-12"
+    },
+    {
+      "title": "Ángel Víctor Torres se reúne con representantes de ACNUR en España",
+      "url": "https://mptmd.gob.es/portal/prensa/noticias/2026/09/20260911",
+      "published_date_local": "2026-09-11"
+    },
+    {
+      "title": "El Gobierno de España declara Lugar de Memoria Democrática el Pazo de Meirás, en la provincia gallega de A Coruña",
+      "url": "https://mptmd.gob.es/portal/prensa/noticias/2026/08/20260814",
+      "published_date_local": "2026-08-14"
+    },
+    {
+      "title": "Torres resalta la “valentía y honor” de los empleados públicos y cargos electos de los ayuntamientos de Las Palmas de Gran Canaria y San Lorenzo, represaliados tras el Golpe de 1936",
+      "url": "https://mptmd.gob.es/portal/prensa/noticias/2026/07/20260717",
+      "published_date_local": "2026-07-17"
+    },
+    {
+      "title": "El Estado y las comunidades autónomas han evitado más de 600 recursos de inconstitucionalidad desde el año 2000 gracias al artículo 33.2 de la LOTC",
+      "url": "https://mptmd.gob.es/portal/prensa/noticias/2026/07/20260708",
+      "published_date_local": "2026-07-08"
+    },
+    {
+      "title": "El Gobierno de España aumenta hasta los 23,1 millones de euros la compensación a Canarias por el impacto de la guerra en Oriente Medio",
+      "url": "https://mptmd.gob.es/portal/prensa/noticias/2026/07/20260702",
+      "published_date_local": "2026-07-02"
+    },
+    {
+      "title": "La CICAPE acuerda la creación de grupos de trabajo para abordar las singularidades de Baleares y Canarias, y de Ceuta y Melilla",
+      "url": "https://mptmd.gob.es/portal/prensa/noticias/2026/07/20260701",
+      "published_date_local": "2026-07-01"
+    },
+    {
+      "title": "Acuerdo para la retirada de cuatro nuevos vestigios franquistas que se incorporan al Catálogo de Memoria Democrática",
+      "url": "https://mptmd.gob.es/portal/prensa/noticias/2026/06/20260630",
+      "published_date_local": "2026-06-30"
+    },
+    {
+      "title": "El Gobierno supera los 9.600 millones de euros invertidos en la recuperación tras la DANA",
+      "url": "https://mptmd.gob.es/portal/prensa/noticias/2026/06/20260626",
+      "published_date_local": "2026-06-26"
+    }
+  ],
+  "live_status": {
+    "source_id": "es_territorial",
+    "source_name": "西班牙國土政策與民主記憶部",
+    "country": "ES",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 10,
+    "relevant_count": 10,
+    "duration_seconds": 0.657,
+    "newest_published_at": "2026-09-30T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 10,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 10,
+    "freshness_lag_days": 2.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 866430,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "es_territorial",
+    "country": "ES",
+    "name_zh": "西班牙國土政策與民主記憶部",
+    "name": "Ministerio de Política Territorial y Memoria Democrática",
+    "institution_type": "central ministry",
+    "language": "es",
+    "homepage": "https://mpt.gob.es/",
+    "listing_url": "https://mptmd.gob.es/portal/prensa/noticias",
+    "feed_urls": [],
+    "allow_domains": [
+      "mptmd.gob.es"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Madrid",
+    "card_selectors": [],
+    "link_selectors": [],
+    "title_selectors": [
+      "h2",
+      "h3",
+      "h4",
+      "h5",
+      "p.title",
+      "[class*=title]"
+    ],
+    "date_selectors": [],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_es_territorial.html",
+  "format": "html"
+}

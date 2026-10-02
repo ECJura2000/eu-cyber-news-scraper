@@ -97,6 +97,16 @@
           "term": "mesterséges intelligencia",
           "language": "hu",
           "concept": "topic-0-local"
+        },
+        {
+          "term": "umělá inteligence",
+          "language": "cs",
+          "concept": "topic-0-local"
+        },
+        {
+          "term": "umelá inteligencia",
+          "language": "sk",
+          "concept": "topic-0-local"
         }
       ]
     },
@@ -187,6 +197,16 @@
         {
           "term": "nyílt adatok",
           "language": "hu",
+          "concept": "topic-1-local"
+        },
+        {
+          "term": "sdílení dat",
+          "language": "cs",
+          "concept": "topic-1-local"
+        },
+        {
+          "term": "zdieľanie údajov",
+          "language": "sk",
           "concept": "topic-1-local"
         }
       ]
@@ -279,6 +299,16 @@
           "term": "személyes adatok védelme",
           "language": "hu",
           "concept": "topic-2-local"
+        },
+        {
+          "term": "ochrana osobních údajů",
+          "language": "cs",
+          "concept": "topic-2-local"
+        },
+        {
+          "term": "ochrana osobných údajov",
+          "language": "sk",
+          "concept": "topic-2-local"
         }
       ]
     },
@@ -370,6 +400,16 @@
           "term": "digitális identitás",
           "language": "hu",
           "concept": "topic-3-local"
+        },
+        {
+          "term": "digitální identita",
+          "language": "cs",
+          "concept": "topic-3-local"
+        },
+        {
+          "term": "digitálna identita",
+          "language": "sk",
+          "concept": "topic-3-local"
         }
       ]
     },
@@ -441,6 +481,16 @@
           "term": "tekijänoikeus",
           "language": "fi",
           "concept": "topic-4-local"
+        },
+        {
+          "term": "autorské právo",
+          "language": "cs",
+          "concept": "topic-4-local"
+        },
+        {
+          "term": "autorské právo",
+          "language": "sk",
+          "concept": "topic-4-local"
         }
       ]
     },
@@ -511,6 +561,16 @@
         {
           "term": "verkkoalustat",
           "language": "fi",
+          "concept": "topic-5-local"
+        },
+        {
+          "term": "digitální služby",
+          "language": "cs",
+          "concept": "topic-5-local"
+        },
+        {
+          "term": "digitálne služby",
+          "language": "sk",
           "concept": "topic-5-local"
         }
       ]
@@ -603,6 +663,16 @@
           "term": "dezinformáció",
           "language": "hu",
           "concept": "topic-6-local"
+        },
+        {
+          "term": "pluralita médií",
+          "language": "cs",
+          "concept": "topic-6-local"
+        },
+        {
+          "term": "pluralita médií",
+          "language": "sk",
+          "concept": "topic-6-local"
         }
       ]
     },
@@ -673,6 +743,16 @@
         {
           "term": "digitaaliset markkinat",
           "language": "fi",
+          "concept": "topic-7-local"
+        },
+        {
+          "term": "hospodářská soutěž",
+          "language": "cs",
+          "concept": "topic-7-local"
+        },
+        {
+          "term": "hospodárska súťaž",
+          "language": "sk",
           "concept": "topic-7-local"
         }
       ]
@@ -770,6 +850,16 @@
           "term": "direktiva NIS2",
           "language": "sl",
           "concept": "topic-8-local"
+        },
+        {
+          "term": "kybernetická bezpečnost",
+          "language": "cs",
+          "concept": "topic-8-local"
+        },
+        {
+          "term": "kybernetická bezpečnosť",
+          "language": "sk",
+          "concept": "topic-8-local"
         }
       ]
     },
@@ -845,6 +935,16 @@
         {
           "term": "Akt o kibernetski odpornosti",
           "language": "sl",
+          "concept": "topic-9-local"
+        },
+        {
+          "term": "kybernetická odolnost",
+          "language": "cs",
+          "concept": "topic-9-local"
+        },
+        {
+          "term": "kybernetická odolnosť",
+          "language": "sk",
           "concept": "topic-9-local"
         }
       ]
@@ -942,6 +1042,16 @@
           "term": "varnost dobavnih verig",
           "language": "sl",
           "concept": "topic-10-local"
+        },
+        {
+          "term": "bezpečnost dodavatelského řetězce",
+          "language": "cs",
+          "concept": "topic-10-local"
+        },
+        {
+          "term": "bezpečnosť dodávateľského reťazca",
+          "language": "sk",
+          "concept": "topic-10-local"
         }
       ]
     },
@@ -1018,6 +1128,16 @@
           "term": "kibernetsko certificiranje",
           "language": "sl",
           "concept": "topic-11-local"
+        },
+        {
+          "term": "certifikace kybernetické bezpečnosti",
+          "language": "cs",
+          "concept": "topic-11-local"
+        },
+        {
+          "term": "certifikácia kybernetickej bezpečnosti",
+          "language": "sk",
+          "concept": "topic-11-local"
         }
       ]
     },
@@ -1093,6 +1213,16 @@
         {
           "term": "kritična infrastruktura",
           "language": "sl",
+          "concept": "topic-12-local"
+        },
+        {
+          "term": "kritická infrastruktura",
+          "language": "cs",
+          "concept": "topic-12-local"
+        },
+        {
+          "term": "kritická infraštruktúra",
+          "language": "sk",
           "concept": "topic-12-local"
         }
       ]
@@ -1185,6 +1315,16 @@
           "term": "félvezetők",
           "language": "hu",
           "concept": "topic-13-local"
+        },
+        {
+          "term": "polovodiče",
+          "language": "cs",
+          "concept": "topic-13-local"
+        },
+        {
+          "term": "polovodiče",
+          "language": "sk",
+          "concept": "topic-13-local"
         }
       ]
     },
@@ -1275,6 +1415,16 @@
         {
           "term": "kvantumtechnológia",
           "language": "hu",
+          "concept": "topic-14-local"
+        },
+        {
+          "term": "kvantové technologie",
+          "language": "cs",
+          "concept": "topic-14-local"
+        },
+        {
+          "term": "kvantové technológie",
+          "language": "sk",
           "concept": "topic-14-local"
         }
       ]

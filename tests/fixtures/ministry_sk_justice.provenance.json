@@ -1,0 +1,29 @@
+{
+  "url": "https://www.justice.gov.sk/tlacovespravy/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:57:03.120834+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "8285597f6985d9ec2aaf12ccae7c00b0f65a9f1ff11c15dd6ca5183c86f8d6db",
+  "sha256": "ab451705401e3f4f19f2233a4bed3d736444a75881815984c6700e686f2f238b",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 5,
+  "dated_count": 5,
+  "fixture_count": 2,
+  "source_id": "sk_justice",
+  "expected": [
+    {
+      "title": "Intervenčné centrá v budúcom roku v rámci novej výzvy dostanú 2 milióny eur",
+      "url": "https://www.justice.gov.sk/tlacovespravy/intervencne-centra-v-buducom-roku-v-ramci-novej-vyzvy-dostanu-2-miliony-eur/",
+      "published_date_local": "2026-09-18",
+      "date_source": "visible-text"
+    },
+    {
+      "title": "Zverejňovanie dokumentov v obchodnom registri má  jasný zákonný základ",
+      "url": "https://www.justice.gov.sk/tlacovespravy/zverejnovanie-dokumentov-v-obchodnom-registri-ma-jasny-zakonny-zaklad/",
+      "published_date_local": "2026-08-19",
+      "date_source": "visible-text"
+    }
+  ]
+}

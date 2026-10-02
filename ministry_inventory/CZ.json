@@ -1,0 +1,311 @@
+{
+  "schema_version": 1,
+  "country": "CZ",
+  "reviewed_on": "2026-10-02",
+  "official_roster_urls": [
+    "https://vlada.gov.cz/cz/vlada/ministerstva/",
+    "https://csu.gov.cz/ministries_and_state_authorities"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "The government members list includes a minister for sport, prevention and health within the Government Office; the actual official ministry directory has 14 standalone ministries. That minister is not separately counted."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "cz_government",
+      "name_zh": "捷克政府辦公室",
+      "name_local": "Úřad vlády České republiky",
+      "name_en": "Office of the Government",
+      "kind": "government_head_office",
+      "language": "cs",
+      "homepage": "https://vlada.gov.cz/",
+      "news_url": "https://vlada.gov.cz/scripts/detail.php?pgid=1305",
+      "source_ids": [
+        "cz_government"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_cz_government.provenance.json",
+      "evidence_urls": [
+        "https://vlada.gov.cz/cz/vlada/ministerstva/",
+        "https://csu.gov.cz/ministries_and_state_authorities",
+        "https://vlada.gov.cz/",
+        "https://vlada.gov.cz/scripts/detail.php?pgid=1305"
+      ]
+    },
+    {
+      "canonical_id": "cz_interior",
+      "name_zh": "捷克內政部",
+      "name_local": "Ministerstvo vnitra",
+      "name_en": "Ministry of the Interior",
+      "kind": "ministry",
+      "language": "cs",
+      "homepage": "https://mv.gov.cz/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "Homepage is reachable with news, but the tested /aktuality route did not establish a dated general-news fixture; existing selectors need focused follow-up. Recorded attempts: source-audit/ministry_expansion_cz.json",
+      "evidence_urls": [
+        "https://vlada.gov.cz/cz/vlada/ministerstva/",
+        "https://csu.gov.cz/ministries_and_state_authorities"
+      ]
+    },
+    {
+      "canonical_id": "cz_labour",
+      "name_zh": "捷克勞動與社會事務部",
+      "name_local": "Ministerstvo práce a sociálních věcí",
+      "name_en": "Ministry of Labour and Social Affairs",
+      "kind": "ministry",
+      "language": "cs",
+      "homepage": "https://mpsv.gov.cz/",
+      "news_url": "https://mpsv.gov.cz/novinky",
+      "source_ids": [
+        "cz_labour"
+      ],
+      "status": "manual_verified",
+      "reason": "Official ministry news endpoint passed robots-respecting HttpClient and production scrape_source live parse with source dates; genuine bounded fixture replay verified; manual queries only, schedule disabled.",
+      "evidence_urls": [
+        "https://vlada.gov.cz/cz/vlada/ministerstva/",
+        "https://csu.gov.cz/ministries_and_state_authorities",
+        "https://mpsv.gov.cz/",
+        "https://mpsv.gov.cz/novinky"
+      ]
+    },
+    {
+      "canonical_id": "cz_regional_development",
+      "name_zh": "捷克區域發展部",
+      "name_local": "Ministerstvo pro místní rozvoj",
+      "name_en": "Ministry for Regional Development",
+      "kind": "ministry",
+      "language": "cs",
+      "homepage": "https://mmr.gov.cz/cs/uvod",
+      "news_url": "https://mmr.gov.cz/cs/ostatni/web/rss?rss=AllPageFefed",
+      "source_ids": [
+        "cz_regional_development"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_cz_regional_development.provenance.json",
+      "evidence_urls": [
+        "https://vlada.gov.cz/cz/vlada/ministerstva/",
+        "https://csu.gov.cz/ministries_and_state_authorities",
+        "https://mmr.gov.cz/cs/uvod",
+        "https://mmr.gov.cz/cs/ministerstvo/aktuality",
+        "https://mmr.gov.cz/cs/ostatni/web/rss?rss=AllPageFefed"
+      ]
+    },
+    {
+      "canonical_id": "cz_health",
+      "name_zh": "捷克衛生部",
+      "name_local": "Ministerstvo zdravotnictví",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "cs",
+      "homepage": "https://mzd.gov.cz/",
+      "news_url": "https://mzd.gov.cz/tiskove-centrum/tiskove-zpravy/",
+      "source_ids": [
+        "cz_health"
+      ],
+      "status": "manual_verified",
+      "reason": "Official ministry news endpoint passed robots-respecting HttpClient and production scrape_source live parse with source dates; genuine bounded fixture replay verified; manual queries only, schedule disabled.",
+      "evidence_urls": [
+        "https://vlada.gov.cz/cz/vlada/ministerstva/",
+        "https://csu.gov.cz/ministries_and_state_authorities",
+        "https://mzd.gov.cz/",
+        "https://mzd.gov.cz/feed/",
+        "https://mzd.gov.cz/tiskove-centrum/tiskove-zpravy/"
+      ]
+    },
+    {
+      "canonical_id": "cz_finance",
+      "name_zh": "捷克財政部",
+      "name_local": "Ministerstvo financí",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "cs",
+      "homepage": "https://mf.gov.cz/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "General press listing and RSS index pages were captured. Dated topical financial-innovation cards exist, but general ministry feed/selector enrollment remains unvalidated. Recorded attempts: source-audit/ministry_expansion_cz.json",
+      "evidence_urls": [
+        "https://vlada.gov.cz/cz/vlada/ministerstva/",
+        "https://csu.gov.cz/ministries_and_state_authorities"
+      ]
+    },
+    {
+      "canonical_id": "cz_defence",
+      "name_zh": "捷克國防部",
+      "name_local": "Ministerstvo obrany",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "cs",
+      "homepage": "https://www.mo.gov.cz/",
+      "news_url": "https://www.mo.gov.cz/scripts/detail.php?pgid=194",
+      "source_ids": [
+        "cz_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 5 dated items. Evidence: tests/fixtures/ministry_cz_defence.provenance.json",
+      "evidence_urls": [
+        "https://vlada.gov.cz/cz/vlada/ministerstva/",
+        "https://csu.gov.cz/ministries_and_state_authorities",
+        "https://www.mo.gov.cz/scripts/detail.php?pgid=194"
+      ]
+    },
+    {
+      "canonical_id": "cz_justice",
+      "name_zh": "捷克司法部",
+      "name_local": "Ministerstvo spravedlnosti",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "cs",
+      "homepage": "https://msp.gov.cz/",
+      "news_url": "https://msp.gov.cz/web/msp/tiskove-zpravy",
+      "source_ids": [
+        "cz_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "Official ministry news endpoint passed robots-respecting HttpClient and production scrape_source live parse with source dates; genuine bounded fixture replay verified; manual queries only, schedule disabled.",
+      "evidence_urls": [
+        "https://vlada.gov.cz/cz/vlada/ministerstva/",
+        "https://csu.gov.cz/ministries_and_state_authorities",
+        "https://msp.gov.cz/",
+        "https://msp.gov.cz/web/msp/tiskove-zpravy"
+      ]
+    },
+    {
+      "canonical_id": "cz_foreign_affairs",
+      "name_zh": "捷克外交部",
+      "name_local": "Ministerstvo zahraničních věcí",
+      "name_en": "Ministry of Foreign Affairs",
+      "kind": "ministry",
+      "language": "cs",
+      "homepage": "https://mzv.gov.cz/jnp/cz/index.html",
+      "news_url": null,
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "Homepage and dated travel-advisory/detail pages were captured; no dedicated general press-news listing/feed replay was established. Recorded attempts: source-audit/ministry_expansion_cz.json",
+      "evidence_urls": [
+        "https://vlada.gov.cz/cz/vlada/ministerstva/",
+        "https://csu.gov.cz/ministries_and_state_authorities"
+      ]
+    },
+    {
+      "canonical_id": "cz_industry",
+      "name_zh": "捷克工業與貿易部",
+      "name_local": "Ministerstvo průmyslu a obchodu",
+      "name_en": "Ministry of Industry and Trade",
+      "kind": "ministry",
+      "language": "cs",
+      "homepage": "https://mpo.gov.cz/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "Production robots/TLS checks prevented content verification: https://mpo.gov.cz/ => RobotsDeniedError: robots.txt disallows: https://mpo.gov.cz/; https://mpo.gov.cz/cz/rozcestnik/pro-media/tiskove-zpravy/ => RobotsDeniedError: robots.txt disallows: https://mpo.gov.cz/cz/rozcestnik/pro-media/tiskove-zpravy/ Recorded attempts: source-audit/ministry_expansion_cz.json",
+      "evidence_urls": [
+        "https://vlada.gov.cz/cz/vlada/ministerstva/",
+        "https://csu.gov.cz/ministries_and_state_authorities"
+      ]
+    },
+    {
+      "canonical_id": "cz_transport",
+      "name_zh": "捷克交通部",
+      "name_local": "Ministerstvo dopravy",
+      "name_en": "Ministry of Transport",
+      "kind": "ministry",
+      "language": "cs",
+      "homepage": "https://md.gov.cz/",
+      "news_url": "https://md.gov.cz/Media?Media-a-tiskove-zpravy=1",
+      "source_ids": [
+        "cz_transport"
+      ],
+      "status": "manual_verified",
+      "reason": "Official ministry news endpoint passed robots-respecting HttpClient and production scrape_source live parse with source dates; genuine bounded fixture replay verified; manual queries only, schedule disabled.",
+      "evidence_urls": [
+        "https://vlada.gov.cz/cz/vlada/ministerstva/",
+        "https://csu.gov.cz/ministries_and_state_authorities",
+        "https://md.gov.cz/",
+        "https://md.gov.cz/Media?Media-a-tiskove-zpravy=1"
+      ]
+    },
+    {
+      "canonical_id": "cz_education",
+      "name_zh": "捷克教育、青年與體育部",
+      "name_local": "Ministerstvo školství, mládeže a tělovýchovy",
+      "name_en": "Ministry of Education, Youth and Sports",
+      "kind": "ministry",
+      "language": "cs",
+      "homepage": "https://msmt.gov.cz/",
+      "news_url": "https://msmt.gov.cz/aktuality",
+      "source_ids": [
+        "cz_education"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_cz_education.provenance.json",
+      "evidence_urls": [
+        "https://vlada.gov.cz/cz/vlada/ministerstva/",
+        "https://csu.gov.cz/ministries_and_state_authorities",
+        "https://msmt.gov.cz/aktuality"
+      ]
+    },
+    {
+      "canonical_id": "cz_agriculture",
+      "name_zh": "捷克農業部",
+      "name_local": "Ministerstvo zemědělství",
+      "name_en": "Ministry of Agriculture",
+      "kind": "ministry",
+      "language": "cs",
+      "homepage": "https://mze.gov.cz/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "Production robots/TLS checks prevented content verification: https://mze.gov.cz/ => RobotsUnavailableError: https://mze.gov.cz: robots.txt unreachable: ConnectTimeout: ; https://mze.gov.cz/public/portal/ => RobotsUnavailableError: https://mze.gov.cz: robots.txt unreachable: ConnectTimeout:  Recorded attempts: source-audit/ministry_expansion_cz.json",
+      "evidence_urls": [
+        "https://vlada.gov.cz/cz/vlada/ministerstva/",
+        "https://csu.gov.cz/ministries_and_state_authorities"
+      ]
+    },
+    {
+      "canonical_id": "cz_environment",
+      "name_zh": "捷克環境部",
+      "name_local": "Ministerstvo životního prostředí",
+      "name_en": "Ministry of the Environment",
+      "kind": "ministry",
+      "language": "cs",
+      "homepage": "https://mzp.gov.cz/cz",
+      "news_url": "https://mzp.gov.cz/cz/pro-media-a-verejnost/aktuality",
+      "source_ids": [
+        "cz_environment"
+      ],
+      "status": "manual_verified",
+      "reason": "Official ministry news endpoint passed robots-respecting HttpClient and production scrape_source live parse with source dates; genuine bounded fixture replay verified; manual queries only, schedule disabled.",
+      "evidence_urls": [
+        "https://vlada.gov.cz/cz/vlada/ministerstva/",
+        "https://csu.gov.cz/ministries_and_state_authorities",
+        "https://mzp.gov.cz/cz",
+        "https://mzp.gov.cz/rss.xml",
+        "https://mzp.gov.cz/cz/pro-media-a-verejnost/aktuality"
+      ]
+    },
+    {
+      "canonical_id": "cz_culture",
+      "name_zh": "捷克文化部",
+      "name_local": "Ministerstvo kultury",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "cs",
+      "homepage": "https://www.mk.gov.cz/",
+      "news_url": "https://www.mk.gov.cz/novinky-a-media-cs-4",
+      "source_ids": [
+        "cz_culture"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_cz_culture.provenance.json",
+      "evidence_urls": [
+        "https://vlada.gov.cz/cz/vlada/ministerstva/",
+        "https://csu.gov.cz/ministries_and_state_authorities",
+        "https://www.mk.gov.cz/",
+        "https://www.mk.gov.cz/novinky-a-media-cs-4"
+      ]
+    }
+  ]
+}

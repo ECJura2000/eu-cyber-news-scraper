@@ -1,0 +1,85 @@
+{
+  "source_id": "be_mobility",
+  "url": "https://mobilit.belgium.be/nl/news",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:10.704745+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "05ab037b11106b1045e8f5f0ead9272d2cdcdd91ffaf4a92416e4b8139619d07",
+  "response_sha256": "90230848281257b6a1adb3eeb4633eb0b48ba8153b408b4fde3cd22f0a73a776",
+  "fixture_count": 7,
+  "expected": [
+    {
+      "title": "629.000 bedrijfswagens in België: na jaren van groei zet de stabilisatie zich door",
+      "url": "https://mobilit.belgium.be/nl/node/6854",
+      "published_date_local": "2026-09-28",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Inschrijving: uw gepersonaliseerde nummerplaat kan voortaan door de DIV worden geschrapt wanneer zij als aanstootgevend wordt beschouwd",
+      "url": "https://mobilit.belgium.be/nl/node/6830",
+      "published_date_local": "2026-09-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Onmiddellijke inningen: verhoging van de bedragen op 1 juli 2026",
+      "url": "https://mobilit.belgium.be/nl/news/onmiddellijke-inningen-verhoging-van-de-bedragen-op-1-juli-2026",
+      "published_date_local": "2026-06-19",
+      "date_confidence": "high"
+    },
+    {
+      "title": "PortAware wapent haven- en scheepspersoneel tegen criminele beïnvloeding",
+      "url": "https://mobilit.belgium.be/nl/news/portaware-wapent-haven-en-scheepspersoneel-tegen-criminele-beinvloeding",
+      "published_date_local": "2026-06-16",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Het platform BelDrive van de FOD Mobiliteit en Vervoer wint de Federal Innovation Award 2026 !",
+      "url": "https://mobilit.belgium.be/nl/news/het-platform-beldrive-van-de-fod-mobiliteit-en-vervoer-wint-de-federal-innovation-award-2026",
+      "published_date_local": "2026-06-12",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Verkeersregels: binnenkort treden verschillende wijzigingen in werking",
+      "url": "https://mobilit.belgium.be/nl/news/verkeersregels-binnenkort-treden-verschillende-wijzigingen-werking",
+      "published_date_local": "2026-06-09",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Slimme tachograaf: nieuwe regelgeving die op 1 juli 2026 van kracht wordt",
+      "url": "https://mobilit.belgium.be/nl/news/slimme-tachograaf-nieuwe-regelgeving-die-op-1-juli-2026-van-kracht-wordt",
+      "published_date_local": "2026-05-28",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 9,
+  "live_dated_count": 9,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "be_mobility",
+    "country": "BE",
+    "name_zh": "比利時交通運輸公共服務部",
+    "name": "Federale Overheidsdienst Mobiliteit en Vervoer",
+    "institution_type": "ministry",
+    "language": "nl",
+    "homepage": "https://mobilit.belgium.be/nl",
+    "listing_url": "https://mobilit.belgium.be/nl/news",
+    "feed_urls": [],
+    "allow_domains": [
+      "mobilit.belgium.be"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Brussels",
+    "card_selectors": [
+      "article"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

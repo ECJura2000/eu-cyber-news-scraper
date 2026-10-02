@@ -1,0 +1,91 @@
+{
+  "source_id": "at_bmfwf",
+  "url": "https://www.bmfwf.gv.at/ministerium/presse-kommunikation/presse.html",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:12.869857+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "a5baeaf3814e7b0e9aeb7db79ee8e1628ff43c9220d9c279b4106fbb68d8490d",
+  "response_sha256": "8d6fdf7a471b0b8e37034fc6502002c17ec98c88a8a3dbe2e023390f1ff3cc6a",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "29. September 2026 \n \n \n Brustkrebsmonat: Frauenministerium am Minoritenplatz leuchtet pink \n \n \n                                          Holzleitner ruft zur Früherkennung auf / 8,32 Millionen Euro für Forschung zu Gendermedizin",
+      "url": "https://www.bmfwf.gv.at/ministerium/presse-kommunikation/presse/20260929.html",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "22. September 2026 \n \n \n A⁴ – Austrian Art Alumni Award 2026 geht an sechs herausragende Kunst-Absolvent:innen \n \n \n                                          Neue Trophäe und neues Logo für gemeinsame Nachwuchsförderung:  BMFWF  und öffentliche Kunstuniversitäten unterstützen angehende Künstler:innen in Höhe von jeweils 24.000 Euro.",
+      "url": "https://www.bmfwf.gv.at/ministerium/presse-kommunikation/presse/20260922.html",
+      "published_date_local": "2026-09-22",
+      "date_confidence": "high"
+    },
+    {
+      "title": "14. September 2026 \n \n \n Frauen in Aufsichtsräten \n \n \n                                          Zentrale Ergebnisse der Studie „Frauen im Aufsichtsrat – Wege, Praktiken und Empfehlungen“",
+      "url": "https://www.bmfwf.gv.at/ministerium/presse-kommunikation/presse/20260914b.html",
+      "published_date_local": "2026-09-14",
+      "date_confidence": "high"
+    },
+    {
+      "title": "9. September 2026 \n \n \n FBM Holzleitner: „Rekord beim Ars Docendi zeigt hohen Stellenwert der Hochschullehre“ \n \n \n                                          So viele Einreichungen wie noch nie beim Staatspreis für exzellente Lehre!",
+      "url": "https://www.bmfwf.gv.at/ministerium/presse-kommunikation/presse/20260909.html",
+      "published_date_local": "2026-09-09",
+      "date_confidence": "high"
+    },
+    {
+      "title": "3. September 2026 \n \n \n Bundesministerin Holzleitner gratuliert Forschenden zu 18 ERC Starting Grants",
+      "url": "https://www.bmfwf.gv.at/ministerium/presse-kommunikation/presse/20260903.html",
+      "published_date_local": "2026-09-03",
+      "date_confidence": "high"
+    },
+    {
+      "title": "1. Juli 2026 \n \n \n Ausschreibungsstart zum Staatspreis für Erwachsenenbildung 2026 \n \n \n                                          FBM Holzleitner kündigt neuen Schwerpunkt „Raus aus der Einsamkeit“ an",
+      "url": "https://www.bmfwf.gv.at/ministerium/presse-kommunikation/presse/20260701.html",
+      "published_date_local": "2026-07-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "30. Juni 2026 \n \n \n BMFWF und LBG öffnen Call für Klinische Forschungsgruppe im Bereich Gendermedizin und Frauengesundheitsforschung \n \n \n                                          Für die neue Ausschreibung stehen 8,32 Millionen Euro für acht Jahre zur Verfügung. Der Call für Bewerbungen ist ab sofort und bis 6. November 2026 geöffnet.",
+      "url": "https://www.bmfwf.gv.at/ministerium/presse-kommunikation/presse/20260630.html",
+      "published_date_local": "2026-06-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "25. Juni 2026 \n \n \n Markus Aspelmeyer erhält den FWF-Wittgenstein-Preis 2026 \n \n \n                                          Österreichischer Wissenschaftsfonds FWF zeichnet 18 Forschende mit FWF-ASTRA-Preisen aus",
+      "url": "https://www.bmfwf.gv.at/ministerium/presse-kommunikation/presse/20260625.html",
+      "published_date_local": "2026-06-25",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 10,
+  "live_dated_count": 10,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "at_bmfwf",
+    "country": "AT",
+    "name_zh": "奧地利婦女、科學與研究部",
+    "name": "Bundesministerium für Frauen, Wissenschaft und Forschung",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.bmfwf.gv.at",
+    "listing_url": "https://www.bmfwf.gv.at/ministerium/presse-kommunikation/presse.html",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.bmfwf.gv.at"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Vienna",
+    "card_selectors": [
+      "a.card-link"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

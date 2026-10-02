@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "country": "NL",
+  "reviewed_on": "2026-10-01",
+  "official_roster_urls": [
+    "https://www.rijksoverheid.nl/ministeries"
+  ],
+  "roster_complete": true,
+  "limitations": [],
+  "ministries": [
+    {
+      "canonical_id": "nl_az",
+      "name_zh": "荷蘭總務部",
+      "name_local": "Ministerie van Algemene Zaken",
+      "name_en": "Ministry of General Affairs",
+      "kind": "government_head_office",
+      "language": "nl",
+      "homepage": "https://www.rijksoverheid.nl/ministeries/ministerie-van-algemene-zaken",
+      "news_url": "https://www.rijksoverheid.nl/actueel/nieuws?size=n_10_n&filters%5B0%5D%5Bfield%5D=ministry&filters%5B0%5D%5Bvalues%5D%5B0%5D=Ministerie%20van%20Algemene%20Zaken&filters%5B0%5D%5Btype%5D=all",
+      "source_ids": [
+        "nl_az"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots/TLS-aware live scraper and fixture replay passed: 3 parsed items, 3 with source dates. Automatic scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.rijksoverheid.nl/ministeries",
+        "https://www.rijksoverheid.nl/ministeries/ministerie-van-algemene-zaken"
+      ]
+    },
+    {
+      "canonical_id": "nl_bzk",
+      "name_zh": "荷蘭內政暨王國關係部",
+      "name_local": "Ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
+      "name_en": "Ministry of Interior and Kingdom Relations",
+      "kind": "ministry",
+      "language": "nl",
+      "homepage": "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
+      "news_url": "https://www.rijksoverheid.nl/actueel/nieuws?size=n_10_n&filters%5B0%5D%5Bfield%5D=ministry&filters%5B0%5D%5Bvalues%5D%5B0%5D=Ministerie%20van%20Binnenlandse%20Zaken%20en%20Koninkrijksrelaties&filters%5B0%5D%5Btype%5D=all",
+      "source_ids": [
+        "nl_bzk"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots/TLS-aware live scraper and fixture replay passed: 3 parsed items, 3 with source dates. Automatic scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.rijksoverheid.nl/ministeries",
+        "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties"
+      ]
+    },
+    {
+      "canonical_id": "nl_bz",
+      "name_zh": "荷蘭外交部",
+      "name_local": "Ministerie van Buitenlandse Zaken",
+      "name_en": "Ministry of Foreign Affairs",
+      "kind": "ministry",
+      "language": "nl",
+      "homepage": "https://www.rijksoverheid.nl/ministeries/ministerie-van-buitenlandse-zaken",
+      "news_url": "https://www.rijksoverheid.nl/actueel/nieuws?size=n_10_n&filters%5B0%5D%5Bfield%5D=ministry&filters%5B0%5D%5Bvalues%5D%5B0%5D=Ministerie%20van%20Buitenlandse%20Zaken&filters%5B0%5D%5Btype%5D=all",
+      "source_ids": [
+        "nl_bz"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots/TLS-aware live scraper and fixture replay passed: 3 parsed items, 3 with source dates. Automatic scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.rijksoverheid.nl/ministeries",
+        "https://www.rijksoverheid.nl/ministeries/ministerie-van-buitenlandse-zaken"
+      ]
+    },
+    {
+      "canonical_id": "nl_defence",
+      "name_zh": "荷蘭國防部",
+      "name_local": "Ministerie van Defensie",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "nl",
+      "homepage": "https://www.rijksoverheid.nl/ministeries/ministerie-van-defensie",
+      "news_url": "https://www.rijksoverheid.nl/actueel/nieuws?size=n_10_n&filters%5B0%5D%5Bfield%5D=ministry&filters%5B0%5D%5Bvalues%5D%5B0%5D=Ministerie%20van%20Defensie&filters%5B0%5D%5Btype%5D=all",
+      "source_ids": [
+        "nl_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots/TLS-aware live scraper and fixture replay passed: 3 parsed items, 3 with source dates. Automatic scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.rijksoverheid.nl/ministeries",
+        "https://www.rijksoverheid.nl/ministeries/ministerie-van-defensie"
+      ]
+    },
+    {
+      "canonical_id": "nl_ezk",
+      "name_zh": "荷蘭經濟暨氣候政策部",
+      "name_local": "Ministerie van Economische Zaken en Klimaat",
+      "name_en": "Ministry of Economic Affairs and Climate Policy",
+      "kind": "ministry",
+      "language": "nl",
+      "homepage": "https://www.rijksoverheid.nl/ministeries/ministerie-van-economische-zaken-en-klimaat",
+      "news_url": "https://www.rijksoverheid.nl/actueel/nieuws?size=n_10_n&filters%5B0%5D%5Bfield%5D=ministry&filters%5B0%5D%5Bvalues%5D%5B0%5D=Ministerie%20van%20Economische%20Zaken%20en%20Klimaat&filters%5B0%5D%5Btype%5D=all",
+      "source_ids": [
+        "nl_ezk"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots/TLS-aware live scraper and fixture replay passed: 3 parsed items, 3 with source dates. Automatic scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.rijksoverheid.nl/ministeries",
+        "https://www.rijksoverheid.nl/ministeries/ministerie-van-economische-zaken-en-klimaat"
+      ]
+    },
+    {
+      "canonical_id": "nl_finance",
+      "name_zh": "荷蘭財政部",
+      "name_local": "Ministerie van Financiën",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "nl",
+      "homepage": "https://www.rijksoverheid.nl/ministeries/ministerie-van-financien",
+      "news_url": "https://www.rijksoverheid.nl/actueel/nieuws?size=n_10_n&filters%5B0%5D%5Bfield%5D=ministry&filters%5B0%5D%5Bvalues%5D%5B0%5D=Ministerie%20van%20Financi%C3%ABn&filters%5B0%5D%5Btype%5D=all",
+      "source_ids": [
+        "nl_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots/TLS-aware live scraper and fixture replay passed: 3 parsed items, 3 with source dates. Automatic scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.rijksoverheid.nl/ministeries",
+        "https://www.rijksoverheid.nl/ministeries/ministerie-van-financien"
+      ]
+    },
+    {
+      "canonical_id": "nl_infrastructure",
+      "name_zh": "荷蘭基礎建設暨水管理部",
+      "name_local": "Ministerie van Infrastructuur en Waterstaat",
+      "name_en": "Ministry of Infrastructure and Water Management",
+      "kind": "ministry",
+      "language": "nl",
+      "homepage": "https://www.rijksoverheid.nl/ministeries/ministerie-van-infrastructuur-en-waterstaat",
+      "news_url": "https://www.rijksoverheid.nl/actueel/nieuws?size=n_10_n&filters%5B0%5D%5Bfield%5D=ministry&filters%5B0%5D%5Bvalues%5D%5B0%5D=Ministerie%20van%20Infrastructuur%20en%20Waterstaat&filters%5B0%5D%5Btype%5D=all",
+      "source_ids": [
+        "nl_infrastructure"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots/TLS-aware live scraper and fixture replay passed: 3 parsed items, 3 with source dates. Automatic scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.rijksoverheid.nl/ministeries",
+        "https://www.rijksoverheid.nl/ministeries/ministerie-van-infrastructuur-en-waterstaat"
+      ]
+    },
+    {
+      "canonical_id": "nl_justice",
+      "name_zh": "荷蘭司法暨安全部",
+      "name_local": "Ministerie van Justitie en Veiligheid",
+      "name_en": "Ministry of Justice and Security",
+      "kind": "ministry",
+      "language": "nl",
+      "homepage": "https://www.rijksoverheid.nl/ministeries/ministerie-van-justitie-en-veiligheid",
+      "news_url": "https://www.rijksoverheid.nl/actueel/nieuws?size=n_10_n&filters%5B0%5D%5Bfield%5D=ministry&filters%5B0%5D%5Bvalues%5D%5B0%5D=Ministerie%20van%20Justitie%20en%20Veiligheid&filters%5B0%5D%5Btype%5D=all",
+      "source_ids": [
+        "nl_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots/TLS-aware live scraper and fixture replay passed: 3 parsed items, 3 with source dates. Automatic scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.rijksoverheid.nl/ministeries",
+        "https://www.rijksoverheid.nl/ministeries/ministerie-van-justitie-en-veiligheid"
+      ]
+    },
+    {
+      "canonical_id": "nl_agriculture",
+      "name_zh": "荷蘭農業、漁業、糧食安全暨自然部",
+      "name_local": "Ministerie van Landbouw, Visserij, Voedselzekerheid en Natuur",
+      "name_en": "Ministry of Agriculture, Fisheries, Food Security and Nature",
+      "kind": "ministry",
+      "language": "nl",
+      "homepage": "https://www.rijksoverheid.nl/ministeries/ministerie-van-landbouw-visserij-voedselzekerheid-en-natuur",
+      "news_url": "https://www.rijksoverheid.nl/actueel/nieuws?size=n_10_n&filters%5B0%5D%5Bfield%5D=ministry&filters%5B0%5D%5Bvalues%5D%5B0%5D=Ministerie%20van%20Landbouw%2C%20Visserij%2C%20Voedselzekerheid%20en%20Natuur&filters%5B0%5D%5Btype%5D=all",
+      "source_ids": [
+        "nl_agriculture"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots/TLS-aware live scraper and fixture replay passed: 3 parsed items, 3 with source dates. Automatic scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.rijksoverheid.nl/ministeries",
+        "https://www.rijksoverheid.nl/ministeries/ministerie-van-landbouw-visserij-voedselzekerheid-en-natuur"
+      ]
+    },
+    {
+      "canonical_id": "nl_education",
+      "name_zh": "荷蘭教育、文化暨科學部",
+      "name_local": "Ministerie van Onderwijs, Cultuur en Wetenschap",
+      "name_en": "Ministry of Education, Culture and Science",
+      "kind": "ministry",
+      "language": "nl",
+      "homepage": "https://www.rijksoverheid.nl/ministeries/ministerie-van-onderwijs-cultuur-en-wetenschap",
+      "news_url": "https://www.rijksoverheid.nl/actueel/nieuws?size=n_10_n&filters%5B0%5D%5Bfield%5D=ministry&filters%5B0%5D%5Bvalues%5D%5B0%5D=Ministerie%20van%20Onderwijs%2C%20Cultuur%20en%20Wetenschap&filters%5B0%5D%5Btype%5D=all",
+      "source_ids": [
+        "nl_education"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots/TLS-aware live scraper and fixture replay passed: 3 parsed items, 3 with source dates. Automatic scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.rijksoverheid.nl/ministeries",
+        "https://www.rijksoverheid.nl/ministeries/ministerie-van-onderwijs-cultuur-en-wetenschap"
+      ]
+    },
+    {
+      "canonical_id": "nl_social_affairs",
+      "name_zh": "荷蘭社會事務暨就業部",
+      "name_local": "Ministerie van Sociale Zaken en Werkgelegenheid",
+      "name_en": "Ministry of Social Affairs and Employment",
+      "kind": "ministry",
+      "language": "nl",
+      "homepage": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
+      "news_url": "https://www.rijksoverheid.nl/actueel/nieuws?size=n_10_n&filters%5B0%5D%5Bfield%5D=ministry&filters%5B0%5D%5Bvalues%5D%5B0%5D=Ministerie%20van%20Sociale%20Zaken%20en%20Werkgelegenheid&filters%5B0%5D%5Btype%5D=all",
+      "source_ids": [
+        "nl_social_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots/TLS-aware live scraper and fixture replay passed: 3 parsed items, 3 with source dates. Automatic scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.rijksoverheid.nl/ministeries",
+        "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid"
+      ]
+    },
+    {
+      "canonical_id": "nl_health",
+      "name_zh": "荷蘭衛生、福利暨體育部",
+      "name_local": "Ministerie van Volksgezondheid, Welzijn en Sport",
+      "name_en": "Ministry of Health, Welfare and Sport",
+      "kind": "ministry",
+      "language": "nl",
+      "homepage": "https://www.rijksoverheid.nl/ministeries/ministerie-van-volksgezondheid-welzijn-en-sport",
+      "news_url": "https://www.rijksoverheid.nl/actueel/nieuws?size=n_10_n&filters%5B0%5D%5Bfield%5D=ministry&filters%5B0%5D%5Bvalues%5D%5B0%5D=Ministerie%20van%20Volksgezondheid%2C%20Welzijn%20en%20Sport&filters%5B0%5D%5Btype%5D=all",
+      "source_ids": [
+        "nl_health"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots/TLS-aware live scraper and fixture replay passed: 3 parsed items, 2 with source dates. Automatic scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.rijksoverheid.nl/ministeries",
+        "https://www.rijksoverheid.nl/ministeries/ministerie-van-volksgezondheid-welzijn-en-sport"
+      ]
+    }
+  ]
+}

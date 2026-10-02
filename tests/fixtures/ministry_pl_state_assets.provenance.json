@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.pl/web/aktywa-panstwowe/wiadomosci",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:14.392158+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "60a0188bc30577cacd1cb347362be6643dfd8cad6bd3fc419340149183eb4d31",
+  "sha256": "70891f3986f7779074d371aa926b547a8ce231590ad3579790ce92d0abd3ee7b",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "pl_state_assets",
+  "expected": [
+    {
+      "title": "Coraz więcej kobiet w organach spółek. O nowych regulacjach podczas konferencji Women on Boards",
+      "url": "https://www.gov.pl/web/aktywa-panstwowe/coraz-wiecej-kobiet-w-organach-spolek-o-nowych-regulacjach-podczas-konferencji-women-on-boards",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "GPW FutureBridge ponownie wesprze przyszłe liderki biznesu",
+      "url": "https://www.gov.pl/web/aktywa-panstwowe/gpw-futurebridge-ponownie-wesprze-przyszle-liderki-biznesu",
+      "published_date_local": "2026-09-25",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Bezpieczeństwo żywnościowe, lokalni producenci i cyfryzacja. Kolejna Konferencja Rynków Hurtowych w Gdańsku",
+      "url": "https://www.gov.pl/web/aktywa-panstwowe/bezpieczenstwo-zywnosciowe-lokalni-producenci-i-cyfryzacja-kolejna-konferencja-rynkow-hurtowych-w-gdansku",
+      "published_date_local": "2026-09-24",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Wiceminister Eliza Zeidler: budowa hubu elektromobilności na Śląsku wkracza w nową fazę realizacji",
+      "url": "https://www.gov.pl/web/aktywa-panstwowe/wiceminister-eliza-zeidler-budowa-hubu-elektromobilnosci-na-slasku-wkracza-w-nowa-faze-realizacji",
+      "published_date_local": "2026-09-24",
+      "date_source": "source-selector"
+    }
+  ]
+}

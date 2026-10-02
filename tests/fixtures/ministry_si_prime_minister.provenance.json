@@ -1,0 +1,115 @@
+{
+  "source_id": "si_prime_minister",
+  "url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=4457",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:45:05.311286+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "1c6a7f658d8b759e0ec04ff51e06803f283eb8a0bbf16e2f4b96b63eaa748400",
+  "fixture_count": 8,
+  "parsed_count": 14,
+  "dated_count": 14,
+  "expected": [
+    {
+      "title": "Državni sekretar dr. Vinko Gorenak sprejel predsednika FIHO",
+      "url": "https://www.gov.si/novice/2026-09-23-drzavni-sekretar-dr-vinko-gorenak-sprejel-predsednika-fiho/",
+      "published_date_local": "2026-09-23",
+      "date_source": "feed-published",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Državni sekretar Zdravko Počivalšek: Logistika je pomembna razvojna priložnost Slovenije",
+      "url": "https://www.gov.si/novice/2026-09-22-drzavni-sekretar-zdravko-pocivalsek-logistika-je-pomembna-razvojna-priloznost-slovenije/",
+      "published_date_local": "2026-09-22",
+      "date_source": "feed-published",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Državni sekretar Počivalšek: Slovenski turizem mora graditi na višji dodani vrednosti",
+      "url": "https://www.gov.si/novice/2026-09-18-drzavni-sekretar-pocivalsek-slovenski-turizem-mora-graditi-na-visji-dodani-vrednosti/",
+      "published_date_local": "2026-09-18",
+      "date_source": "feed-published",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Predsednik Čebelarske zveze Slovenije na obisku pri državnem sekretarju dr. Vinku Gorenaku",
+      "url": "https://www.gov.si/novice/2026-09-16-predsednik-cebelarske-zveze-slovenije-na-obisku-pri-drzavnem-sekretarju-dr-vinku-gorenaku/",
+      "published_date_local": "2026-09-16",
+      "date_source": "feed-published",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Srečanje dr. Vinka Gorenaka s predstavnikoma Zveze društev gluhih in naglušnih Slovenije",
+      "url": "https://www.gov.si/novice/2026-09-14-srecanje-dr-vinka-gorenaka-s-predstavnikoma-zveze-drustev-gluhih-in-naglusnih-slovenije/",
+      "published_date_local": "2026-09-14",
+      "date_source": "feed-published",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Državni sekretar Zdravko Počivalšek: »Gospodarstvo je motor razvoja države«",
+      "url": "https://www.gov.si/novice/2026-09-09-drzavni-sekretar-zdravko-pocivalsek-gospodarstvo-je-motor-razvoja-drzave/",
+      "published_date_local": "2026-09-09",
+      "date_source": "feed-published",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Srečanje z Britansko-slovensko gospodarsko zbornico",
+      "url": "https://www.gov.si/novice/2026-08-28-srecanje-z-britansko-slovensko-gospodarsko-zbornico/",
+      "published_date_local": "2026-08-28",
+      "date_source": "feed-published",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Srečanje državnega sekretarja Počivalška s Slovensko-nemško gospodarsko zbornico",
+      "url": "https://www.gov.si/novice/2026-08-25-srecanje-drzavnega-sekretarja-pocivalska-s-slovensko-nemsko-gospodarsko-zbornico/",
+      "published_date_local": "2026-08-25",
+      "date_source": "feed-published",
+      "date_confidence": "high"
+    }
+  ],
+  "transform": "XML parse/serialization retaining first 8 genuine entries; normalized LF",
+  "live_status": {
+    "source_id": "si_prime_minister",
+    "source_name": "斯洛維尼亞總理辦公室",
+    "country": "SI",
+    "critical": false,
+    "success": true,
+    "fetched_via": "configured-feed",
+    "raw_count": 14,
+    "relevant_count": 14,
+    "duration_seconds": 0.262,
+    "newest_published_at": "2026-09-23T13:28:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 0,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 14,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 14,
+    "freshness_lag_days": 8.44,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 12971,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  }
+}

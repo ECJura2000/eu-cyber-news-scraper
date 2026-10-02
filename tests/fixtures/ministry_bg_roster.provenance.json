@@ -1,0 +1,11 @@
+{
+  "url": "https://iisda.government.bg/ras/executive_power/ministries",
+  "final_url": "https://iisda.government.bg/ras/executive_power/ministries",
+  "observed_at": "2026-10-01T11:42:50.892726+00:00",
+  "observed_on": "2026-10-01",
+  "http_status": 200,
+  "sha256": "29e82d973a6b766bfdf8ea2a04c3d93da0f826a159f59707135c3c9c29172f1e",
+  "transform": "BeautifulSoup main/body extraction; remove script/style/nav/header/footer/form; first 32700 UTF-8 bytes",
+  "truncated": false,
+  "expected_ministry_count": 19
+}

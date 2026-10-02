@@ -1,0 +1,11 @@
+{
+  "url": "https://www.gov.si/drzavni-organi/ministrstva/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:54:47.014051+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "66ebf0a401aeec76188aa3e453f09c630757d2dc03b25e4d2a7d18ec10595b1e",
+  "sha256": "b7eae7cfd4f3b52317941ab81976a2f780aad1403ec2e5b16fb439ca6addab64",
+  "extraction": "Deduplicated original official department roster anchor elements"
+}

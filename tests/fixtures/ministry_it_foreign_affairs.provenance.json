@@ -1,0 +1,139 @@
+{
+  "source_id": "it_foreign_affairs",
+  "url": "https://www.esteri.it/it/feed/",
+  "final_url": "https://www.esteri.it/it/feed/",
+  "observed_at": "2026-10-02T00:41:38.623313+00:00",
+  "http_status": 200,
+  "content_type": "application/rss+xml; charset=UTF-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "da92442ebe07a2100d21a5a88bb3b8d550535447468a8845ae81a9f206be2f18",
+  "response_bytes": 31027,
+  "fixture_sha256": "352aafbe24f31d3833cdde2a65f118c313912cb9c792f77e5b407f32315c0931",
+  "fixture_bytes": 18093,
+  "transform": "XML parse and serialization retaining first six genuine feed entries; no title/link/date edits",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "Incontro Tajani – Wadephul: focus su Ucraina, Medio Oriente, Balcani occidentali. Visita congiunta della sala cyber della Farnesina",
+      "url": "https://www.esteri.it/it/sala_stampa/archivionotizie/comunicati/2026/10/incontro-tajani-wadephul-focus-su-ucraina-medio-oriente-balcani-occidentali-visita-congiunta-della-sala-cyber-della-farnesina/",
+      "published_date_local": "2026-10-01"
+    },
+    {
+      "title": "Sottosegretario Tripodi partecipa al G20 Commercio",
+      "url": "https://www.esteri.it/it/sala_stampa/archivionotizie/comunicati/2026/10/sottosegretario-tripodi-partecipa-al-g20-commercio/",
+      "published_date_local": "2026-10-01"
+    },
+    {
+      "title": "Italia e USA presiedono Coalizione anti-Daesh a Roma, Tajani: combattere terrorismo è priorità comune",
+      "url": "https://www.esteri.it/it/sala_stampa/archivionotizie/comunicati/2026/10/italia-e-usa-presiedono-coalizione-anti-daesh-a-roma-tajani-combattere-terrorismo-e-priorita-comune/",
+      "published_date_local": "2026-10-01"
+    },
+    {
+      "title": "Umanesimo Tecnologico. Le eccellenze italiane nell’Intelligenza Artificiale",
+      "url": "https://www.esteri.it/it/sala_stampa/archivionotizie/approfondimenti/2026/09/umanesimo-tecnologico-le-eccellenze-italiane-nellintelligenza-artificiale/",
+      "published_date_local": "2026-09-30"
+    },
+    {
+      "title": "Tajani incontra la Ministra degli Esteri della Repubblica Democratica del Congo. Istituzione di un Gruppo di lavoro bilaterale anche in vista di un accordo politico sui minerali critici e consultazione permanente all’ONU su temi africani",
+      "url": "https://www.esteri.it/it/sala_stampa/archivionotizie/comunicati/2026/09/tajani-incontra-la-ministra-degli-esteri-della-repubblica-democratica-del-congo-istituzione-di-un-gruppo-di-lavoro-bilaterale-anche-in-vista-di-un-accordo-politico-sui-minerali-critici-e-consultazion/",
+      "published_date_local": "2026-09-30"
+    },
+    {
+      "title": "Il Vice Ministro Cirielli all’inaugurazione del Polo campano di MBDA",
+      "url": "https://www.esteri.it/it/sala_stampa/archivionotizie/comunicati/2026/09/il-vice-ministro-cirielli-allinaugurazione-del-polo-campano-di-mbda/",
+      "published_date_local": "2026-09-30"
+    }
+  ],
+  "live_status": {
+    "source_id": "it_foreign_affairs",
+    "source_name": "義大利外交暨國際合作部",
+    "country": "IT",
+    "critical": false,
+    "success": true,
+    "fetched_via": "configured-feed",
+    "raw_count": 10,
+    "relevant_count": 10,
+    "duration_seconds": 1.32,
+    "newest_published_at": "2026-10-01T19:34:34+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 0,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 10,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 10,
+    "freshness_lag_days": 1.18,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 31027,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "it_foreign_affairs",
+    "country": "IT",
+    "name_zh": "義大利外交暨國際合作部",
+    "name": "Ministero degli Affari Esteri e della Cooperazione Internazionale",
+    "institution_type": "central ministry",
+    "language": "it",
+    "homepage": "https://www.esteri.it/",
+    "listing_url": "https://www.esteri.it/it/feed/",
+    "feed_urls": [
+      "https://www.esteri.it/it/feed/"
+    ],
+    "allow_domains": [
+      "www.esteri.it"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Rome",
+    "card_selectors": [],
+    "link_selectors": [],
+    "title_selectors": [],
+    "date_selectors": [],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_it_foreign_affairs.xml",
+  "format": "rss"
+}

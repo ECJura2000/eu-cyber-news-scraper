@@ -1,0 +1,413 @@
+{
+  "schema_version": 1,
+  "country": "MT",
+  "reviewed_on": "2026-10-02",
+  "official_roster_urls": [
+    "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "2026-10-02 ministry news audit: 0 manually verified and 0 existing-source ministries; 22 unresolved. Roster enumeration does not imply searchable completeness. Exact tried URLs and robots/transport/parser/attribution limitations are recorded per ministry; unresolved rows have no runnable source. New sources retain disabled scheduling/noncritical status, all 15 topics, empty responsibility, and genuine checksum-backed fixture replay."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "mt_opm",
+      "name_zh": "馬爾他總理府",
+      "name_local": "Office of the Prime Minister",
+      "name_en": "Office of the Prime Minister",
+      "kind": "government_head_office",
+      "language": "en",
+      "homepage": "https://opm.gov.mt/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://opm.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://opm.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/OPM.aspx",
+        "https://opm.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_health",
+      "name_zh": "馬爾他副總理府暨衛生部",
+      "name_local": "Office of the Deputy Prime Minister and Ministry for Health",
+      "name_en": "Office of the Deputy Prime Minister and Ministry for Health",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Health.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Health.aspx; https://health.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://health.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Health.aspx",
+        "https://health.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_accommodation",
+      "name_zh": "馬爾他住宅暨土地部",
+      "name_local": "Ministry for Accommodation and Lands",
+      "name_en": "Ministry for Accommodation and Lands",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Accommodation.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Accommodation.aspx; https://accommodation.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://accommodation.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Accommodation.aspx",
+        "https://accommodation.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_social_policy",
+      "name_zh": "馬爾他社會政策暨家庭部",
+      "name_local": "Ministry for Social Policy and the Family",
+      "name_en": "Ministry for Social Policy and the Family",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Family.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Family.aspx; https://socialpolicy.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://socialsecurity.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Family.aspx",
+        "https://socialpolicy.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_agriculture",
+      "name_zh": "馬爾他農業、漁業暨食品供應部",
+      "name_local": "Ministry for Agriculture, Fisheries and Food Supply",
+      "name_en": "Ministry for Agriculture, Fisheries and Food Supply",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Agriculture.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Agriculture.aspx; https://agriculture.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://agriculture.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Agriculture.aspx",
+        "https://agriculture.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_economy",
+      "name_zh": "馬爾他經濟、科技暨策略計畫部",
+      "name_local": "Ministry for the Economy, Technology and Strategic Projects",
+      "name_en": "Ministry for the Economy, Technology and Strategic Projects",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Economy.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Economy.aspx; https://economy.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://economy.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Economy.aspx",
+        "https://economy.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_inclusion",
+      "name_zh": "馬爾他融合暨志願部門部",
+      "name_local": "Ministry for Inclusion and the Voluntary Sector",
+      "name_en": "Ministry for Inclusion and the Voluntary Sector",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Inclusion.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Inclusion.aspx; https://inclusion.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://inclusion.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Inclusion.aspx",
+        "https://inclusion.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_gozo",
+      "name_zh": "馬爾他Gozo 部",
+      "name_local": "Ministry for Gozo",
+      "name_en": "Ministry for Gozo",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Gozo.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Gozo.aspx; https://gozo.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://gozo.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Gozo.aspx",
+        "https://gozo.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_education",
+      "name_zh": "馬爾他教育暨體育部",
+      "name_local": "Ministry for Education and Sport",
+      "name_en": "Ministry for Education and Sport",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Education.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Education.aspx; https://education.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://education.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Education.aspx",
+        "https://education.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_energy",
+      "name_zh": "馬爾他能源、環境暨大港再生部",
+      "name_local": "Ministry for Energy, the Environment and the Regeneration of the Grand Harbour",
+      "name_en": "Ministry for Energy, the Environment and the Regeneration of the Grand Harbour",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Energy.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Energy.aspx; https://energy.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://sustainability.gov.mt",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Energy.aspx",
+        "https://energy.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_finance",
+      "name_zh": "馬爾他財政部",
+      "name_local": "Ministry for Finance",
+      "name_en": "Ministry for Finance",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Finance.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Finance.aspx; https://finance.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://finance.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Finance.aspx",
+        "https://finance.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_justice",
+      "name_zh": "馬爾他司法、研究暨創新部",
+      "name_local": "Ministry for Justice, Research and Innovation",
+      "name_en": "Ministry for Justice, Research and Innovation",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Justice.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Justice.aspx; https://justice.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://justice.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Justice.aspx",
+        "https://justice.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_infrastructure",
+      "name_zh": "馬爾他基礎建設、規劃暨就業部",
+      "name_local": "Ministry for Infrastructure, Planning and Employment",
+      "name_en": "Ministry for Infrastructure, Planning and Employment",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/PLANNING.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/PLANNING.aspx; https://infrastructure.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://infrastructure.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/PLANNING.aspx",
+        "https://infrastructure.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_tourism",
+      "name_zh": "馬爾他旅遊部",
+      "name_local": "Ministry for Tourism",
+      "name_en": "Ministry for Tourism",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Tourism.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Tourism.aspx; https://tourism.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://tourism.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Tourism.aspx",
+        "https://tourism.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_sustainable_mobility",
+      "name_zh": "馬爾他永續交通部",
+      "name_local": "Ministry for Sustainable Mobility",
+      "name_en": "Ministry for Sustainable Mobility",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Sustainable_Mobility.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Sustainable_Mobility.aspx; https://sustainablemobility.gov.mt/ => RobotsUnavailableError: https://sustainablemobility.gov.mt: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Sustainable_Mobility.aspx",
+        "https://sustainablemobility.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_foreign_affairs",
+      "name_zh": "馬爾他外交暨歐洲事務部",
+      "name_local": "Ministry for Foreign and European Affairs",
+      "name_en": "Ministry for Foreign and European Affairs",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Foreign.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Foreign.aspx; https://foreign.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://foreign.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Foreign.aspx",
+        "https://foreign.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_local_government",
+      "name_zh": "馬爾他地方政府暨公共工程部",
+      "name_local": "Ministry for Local Government and Public Works",
+      "name_en": "Ministry for Local Government and Public Works",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Local_Government.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Local_Government.aspx; https://localgovernment.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://localgovernment.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Local_Government.aspx",
+        "https://localgovernment.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_european_funds",
+      "name_zh": "馬爾他歐洲基金、社會對話暨消費者保護部",
+      "name_local": "Ministry for European Funds, Social Dialogue and Consumer Protection",
+      "name_en": "Ministry for European Funds, Social Dialogue and Consumer Protection",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Eu_Funds.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Eu_Funds.aspx; https://eufunds.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://eufunds.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Eu_Funds.aspx",
+        "https://eufunds.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_home_affairs",
+      "name_zh": "馬爾他內政暨安全部",
+      "name_local": "Ministry for Home Affairs and Security",
+      "name_en": "Ministry for Home Affairs and Security",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Home_Affairs.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Home_Affairs.aspx; https://homeaffairs.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://homeaffairs.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Home_Affairs.aspx",
+        "https://homeaffairs.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_culture",
+      "name_zh": "馬爾他藝術、文化暨國家文化遺產部",
+      "name_local": "Ministry for Arts, Culture and National Heritage",
+      "name_en": "Ministry for Arts, Culture and National Heritage",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Culture.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Culture.aspx; https://culture.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://culture.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Culture.aspx",
+        "https://culture.gov.mt/"
+      ]
+    },
+    {
+      "canonical_id": "mt_youth",
+      "name_zh": "馬爾他青年、福祉暨選舉政見實施部",
+      "name_local": "Ministry for Youth, Wellbeing and the Implementation of the Electoral Programme",
+      "name_en": "Ministry for Youth, Wellbeing and the Implementation of the Electoral Programme",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. The accessible youth.gov.mt homepage and RSS identify Agenzija Zghazagh (a subordinate youth agency), not the roster ministry. Agency feed is not a parent ministry alias. The ministry directory is robots-denied; no attributable ministry news endpoint verified. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Youths.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Youths.aspx; https://youth.gov.mt/ => HTTP 200; 152989 bytes; production parser 6 items/6 dated; https://youth.gov.mt/feed/ => HTTP 200; 64158 bytes; production parser 10 items/10 dated; https://youth.gov.mt/comments/feed/ => HTTP 200; 749 bytes; production parser 0 items/0 dated; https://youth.gov.mt/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fyouth.gov.mt%2F&format=xml => HTTP 200; 2280 bytes; production parser 0 items/0 dated",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Youths.aspx",
+        "https://youth.gov.mt/",
+        "https://youth.gov.mt/feed/",
+        "https://youth.gov.mt/comments/feed/",
+        "https://youth.gov.mt/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fyouth.gov.mt%2F&format=xml"
+      ]
+    },
+    {
+      "canonical_id": "mt_equality",
+      "name_zh": "馬爾他平等暨公民權利部",
+      "name_local": "Ministry for Equality and Civil Rights",
+      "name_en": "Ministry for Equality and Civil Rights",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Official portfolio directory and independent candidate ministry domain tested; published robots denials/robots retrieval failures retained. Government-wide press releases were not assigned indiscriminately to ministry rows. Tested alternatives: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Equality.aspx => RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Equality.aspx; https://equality.gov.mt/ => RobotsDeniedError: robots.txt disallows: https://equality.gov.mt/",
+      "evidence_urls": [
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
+        "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Equality.aspx",
+        "https://equality.gov.mt/"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "url": "https://www.edu.ro/comunicate",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:46.802858+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "3b1eae4e1488fcc007545f3c12626f48ee601042f479bd1421521dceb3d71c19",
+  "sha256": "e842c7a1eb9d596137b9aeceaf1eeebe30fe583ef4467e90e5fe4e86f2f65d5a",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "ro_education_research",
+  "expected": [
+    {
+      "title": "Burse postdoctorale pentru noua generație de cercetători din România",
+      "url": "https://www.edu.ro/press_rel_68_26_lansare_bpd",
+      "published_date_local": "2026-09-30",
+      "date_source": "visible-text"
+    },
+    {
+      "title": "Informare privind structura testelor din cadrul Concursului pentru ocuparea funcțiilor de director și director adjunct din unitățile de învățământ preuniversitar de stat",
+      "url": "https://www.edu.ro/press_rel_67_26_informare_probe_concurs_directori",
+      "published_date_local": "2026-09-29",
+      "date_source": "visible-text"
+    },
+    {
+      "title": "Informare asupra stadiului licitației de manuale pentru clasa a IX-a, în contextul reformei curriculare",
+      "url": "https://www.edu.ro/press_rel_66_26_licitatie_manuale_IX",
+      "published_date_local": "2026-09-29",
+      "date_source": "visible-text"
+    },
+    {
+      "title": "Ministerul Educației și Cercetării lansează „PRIMII: Program pentru Reușita Învățământului Primar prin Măsuri Integrate de Intervenție”, un demers de prevenire a analfabetismului funcțional și a abandonului școlar pentru aproximativ 50.000 de copii",
+      "url": "https://www.edu.ro/press_rel_65_26_lansare_PRIMII",
+      "published_date_local": "2026-09-28",
+      "date_source": "visible-text"
+    }
+  ]
+}

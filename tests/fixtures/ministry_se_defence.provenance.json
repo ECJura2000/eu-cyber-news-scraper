@@ -1,0 +1,41 @@
+{
+  "url": "https://www.regeringen.se/sveriges-regering/forsvarsdepartementet/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:19.248145+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "ec200f08708ae6d9fe93aaea8cbe6ff0dc320b3a330f5af6dfac9c25b74cad12",
+  "sha256": "0064285b6e8997d160f5562cf419a642f80e31bd5350d7e4fd5b71cab3d8aed9",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 20,
+  "dated_count": 20,
+  "fixture_count": 4,
+  "source_id": "se_defence",
+  "expected": [
+    {
+      "title": "Regeringsärenden vecka 40, 2026",
+      "url": "https://www.regeringen.se/regeringsarenden/regeringsarenden-vecka-40-2026/",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Försvarsminister Pål Jonson deltar på JEF-möte i Reykjavik",
+      "url": "https://www.regeringen.se/pressmeddelanden/2026/09/forsvarsminister-pal-jonson-deltar-pa-jef-mote-i-reykjavik/",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Sverige bidrar med stridsflyg till Natoinsats i Polen",
+      "url": "https://www.regeringen.se/pressmeddelanden/2026/09/sverige-bidrar-med-stridsflyg-till-natoinsats-i-polen/",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Tilläggsuppdrag till Fö 2026:A Uppdrag att utreda ett nytt expropriationsändamål till skydd för  Sveriges säkerhet, Fö2026/01318",
+      "url": "https://www.regeringen.se/rattsliga-dokument/kommittedirektiv/2026/09/tillaggsuppdrag-till-fo-2026a-uppdrag-att-utreda-ett-nytt-expropriationsandamal-till-skydd-for-sveriges-sakerhet/",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    }
+  ]
+}

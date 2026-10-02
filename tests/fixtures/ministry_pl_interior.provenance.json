@@ -1,0 +1,23 @@
+{
+  "url": "https://www.gov.pl/web/mswia/aktualnosci",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:49:28.934814+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "bd4a8ab0b31fece41748606dd9df8de525ba35c92ddfae5248b681a7ef860bcf",
+  "sha256": "516ddc2207c1993e58564d4f7e0acec8a0be08aa34f0a57d364417c447f40687",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 1,
+  "source_id": "pl_interior",
+  "expected": [
+    {
+      "title": "MSWiA koordynuje polsko-litewskie ćwiczenia z zakresu obrony cywilnej i masowej ewakuacji",
+      "url": "https://www.gov.pl/web/mswia/mswia-koordynuje-polsko-litewskie-cwiczenia-z-zakresu-obrony-cywilnej-i-masowej-ewakuacji",
+      "published_date_local": "2026-10-01",
+      "date_source": "visible-text"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.pl/web/klimat/wiadomosci",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:16.234802+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "d64cb37f995e5bed72592469485cff14a4c61b71c7a6f0ac48421de4ff208a7d",
+  "sha256": "4f0b1b956dc64deaca65b43179ff2a1e17027c7412207073101f52233db16c42",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "pl_climate_environment",
+  "expected": [
+    {
+      "title": "5 mld opakowań w 12 miesięcy: System kaucyjny rozwija się w ekspresowym tempie",
+      "url": "https://www.gov.pl/web/klimat/5-mld-opakowan-w-12-miesiecy-system-kaucyjny-rozwija-sie-w-ekspresowym-tempie",
+      "published_date_local": "2026-10-01",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Ponad 105 mld zł na zieloną transformację. Ministerstwo Klimatu i Środowiska liderem KPO",
+      "url": "https://www.gov.pl/web/klimat/ponad-105-mld-zl-na-zielona-transformacje-ministerstwo-klimatu-i-srodowiska-liderem-kpo",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Program \"Zielona Transformacja” oficjalnie zainaugurowany. Ponad 807 mln zł na projekty dla klimatu, energii, przyrody i gospodarki o obiegu zamkniętym",
+      "url": "https://www.gov.pl/web/klimat/program-zielona-transformacja-oficjalnie-zainaugurowany-ponad-807-mln-zl-na-projekty-dla-klimatu-energii-przyrody-i-gospodarki-o-obiegu-zamknietym",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Ministra Paulina Hennig-Kloska we Francji na spotkaniu ministrów Trójkąta Weimarskiego",
+      "url": "https://www.gov.pl/web/klimat/ministra-paulina-hennig-kloska-we-francji-na-spotkaniu-ministrow-trojkata-weimarskiego",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    }
+  ]
+}

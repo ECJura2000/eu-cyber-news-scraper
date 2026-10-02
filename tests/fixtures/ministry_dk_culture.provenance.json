@@ -1,0 +1,92 @@
+{
+  "source_id": "dk_culture",
+  "url": "https://kum.dk/aktuelt/nyheder",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:34.993990+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "c3dd76538db898cd1a571662ff16048a20523a6c4a5d3de41aa12c2e788d2425",
+  "response_sha256": "5b226caffd71f1847213092704fa5c027b49bf7c5f3801daa9b6d16704ba6e1a",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Kulturministeren vil styrke dansk litteratur og læselyst",
+      "url": "https://kum.dk/aktuelt/nyheder/kulturministeren-vil-styrke-dansk-litteratur-og-laeselyst",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Flere skal kunne følge med i større sportsbegivenheder på tv",
+      "url": "https://kum.dk/aktuelt/nyheder/flere-skal-kunne-foelge-med-i-stoerre-sportsbegivenheder-paa-tv",
+      "published_date_local": "2026-09-09",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Minister vil ansvarliggøre debatten på sociale medier",
+      "url": "https://kum.dk/aktuelt/nyheder/minister-vil-ansvarliggoere-debatten-paa-sociale-medier",
+      "published_date_local": "2026-09-03",
+      "date_confidence": "high"
+    },
+    {
+      "title": "For få bruger kulturpasset: Nu tager kulturministeren konsekvensen",
+      "url": "https://kum.dk/aktuelt/nyheder/for-faa-bruger-kulturpasset-nu-tager-kulturministeren-konsekvensen",
+      "published_date_local": "2026-09-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Medierådet for Børn og Unges formand genudpeget",
+      "url": "https://kum.dk/aktuelt/nyheder/medieraadet-for-boern-og-unges-formand-genudpeget",
+      "published_date_local": "2026-08-31",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Fanø og højskolerne skal få Danmark på UNESCO’s liste over levende kulturarv",
+      "url": "https://kum.dk/aktuelt/nyheder/fanoe-og-hoejskolerne-skal-faa-danmark-paa-unescos-liste-over-levende-kulturarv",
+      "published_date_local": "2026-08-31",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Kulturminister vil beskytte det danske sprog",
+      "url": "https://kum.dk/aktuelt/nyheder/kulturminister-vil-beskytte-det-danske-sprog",
+      "published_date_local": "2026-08-20",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Særlig rådgiver for kulturministeren",
+      "url": "https://kum.dk/aktuelt/nyheder/saerlig-raadgiver-for-kulturministeren-3",
+      "published_date_local": "2026-08-19",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 10,
+  "live_dated_count": 10,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "dk_culture",
+    "country": "DK",
+    "name_zh": "丹麥文化部",
+    "name": "Kulturministeriet",
+    "institution_type": "ministry",
+    "language": "da",
+    "homepage": "https://kum.dk/",
+    "listing_url": "https://kum.dk/aktuelt/nyheder",
+    "feed_urls": [],
+    "allow_domains": [
+      "kum.dk"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Copenhagen",
+    "card_selectors": [
+      "tr"
+    ],
+    "title_selectors": [
+      "h2"
+    ],
+    "date_selectors": [
+      "td.tdright"
+    ],
+    "schedule_enabled": false
+  }
+}

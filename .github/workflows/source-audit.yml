@@ -63,7 +63,7 @@ jobs:
       - name: Inspect registered source URLs and parsers
         id: sources
         run: |
-          uv run python -m eu_cyber_news_scraper.source_audit --parse --days 30 --timeout 15 --workers 8 --output-dir source-audit --history-dir .source-inventory/history --allow-unhealthy
+          uv run python -m eu_cyber_news_scraper.source_audit --country EU --country NO --parse --days 30 --timeout 15 --workers 8 --output-dir source-audit --history-dir .source-inventory/history --allow-unhealthy
       - name: Inspect catalog URLs and collect directory candidates
         id: catalog
         if: always()

@@ -227,6 +227,26 @@ BMI 近期新聞使用[官方 RSS](https://www.bmi.bund.de/DE/service/rss-newsfe
 
 ## URL 稽核與候選機關目錄
 
+### EU27 中央部會名錄與新聞查詢
+
+新增的 [中央部會追蹤名錄](MINISTRIES.md) 按 27 個會員國列出所有中央部會、政府首長辦公室及制度相當機關。權威名單保存在 `ministry_inventory/` 的逐國 JSON，可維護部會名稱、官方名錄與查核日期、新聞入口、對應來源 ID 及缺口原因。
+
+```console
+python -m eu_cyber_news_scraper ministries --country AT
+python -m eu_cyber_news_scraper ministries --json --country FI
+python -m eu_cyber_news_scraper ministries --check
+python -m eu_cyber_news_scraper ministries --country PL --audit-urls
+```
+
+`existing_source` 是已登錄部會，並不重新宣稱其解析已合格；`manual_verified` 是本次已完成 live 解析及原文樣本驗證、可明確指定 `--source` 或 `--country` 查詢的新來源。其他狀態只保留在名錄，列出待解析、網站阻擋、缺少獨立新聞入口或待查證原因，不會自行加入抓取來源。沒有命中現有 15 個主題時，仍可用 `--all` 查閱指定來源在期間內的官方新聞。
+
+`--check` 只驗證 JSON、日期與來源參照，完整名錄不等於全部新聞都可抓取。JSON 摘要另外提供 `registered_ministries`（已登錄）、`unresolved_ministries`（未完成）及 `searchable_inventory_complete`（名錄內是否全部已登錄）；最後一項仍不是即時網站或正式排程品質保證。`--audit-urls` 才即時檢查未登錄部會的網址，使用既有 robots、TLS、公網 DNS、重新導向與間隔限制，不驗證解析器、不自動登錄。每次對相同 URL 只檢查一次，來源共用的入口不會推定其發布部會。
+
+既有 15 個主題與可替換 JSON 保留，補充捷克語、斯洛伐克語原文詞；各概念的不同語言譯名仍只計一次，來源責任機關未查證時顯示「未設定」。
+
+新增 `EU27 central ministry source audit` 在每週三臺北時間 09:15 分國檢測，最多四國同時執行，每國最多八來源併行。逐國 artifact 保存解析觀察與未登錄入口的 URL 診斷，保留 90 天；首次執行可復原舊的共同診斷 history，若不可復原則明示重新累積。原網址稽核改查 EU 層級及挪威，繼續智庫候選探索。工作完成只代表診斷完成，失敗入口、待解析與排程升級證據均需檢視 artifact；正式來源仍須三次連續合格觀察及完整翻譯／artifact／state 驗收。
+
+
 `audit-sources` 讀取目前 registry，分別檢查官方首頁、新聞列表與所有已設定 feed 的 HTTP 狀態、重新導向、內容型別及錯誤原因；可辨識 TLS／DNS／逾時、robots、challenge page、feed 回傳 HTML、無效 XML 與過小列表等問題。URL 僅接受公開 HTTPS、443 port 及來源設定允許的網域；每一跳、探索出的 feed 與文章內頁也檢查網域與公開 DNS。HTTP 200 本身不代表能正確解析新聞。
 
 ```bash

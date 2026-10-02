@@ -1,0 +1,115 @@
+{
+  "source_id": "sk_health",
+  "url": "https://www.health.gov.sk/Clanky?tlacove-spravy",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:39:30.447625+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "bca1ae5abf66f7406388f359a034fe4248ed9f4d44a6c2d5a97ac605b9e262cd",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "30. septembra 2026   Slovensko získalo vysoké hodnotenie v oblasti monitorovania drog",
+      "url": "https://www.health.gov.sk/Clanok?drogy-monitorovanie-ocenenie",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "18. septembra 2026   Psychiatrická starostlivosť v Banskej Bystrici opäť pod jednou strechou",
+      "url": "https://www.health.gov.sk/Clanok?psychiatricka-starostlivost-v-banskej-bystrici",
+      "published_date_local": "2026-09-18",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "7. septembra 2026   Liečba tamoxifénom je dostupná, pacientky pokračujú v rovnakej účinnej látke aj v rovnakom dávkovaní",
+      "url": "https://www.health.gov.sk/Clanok?liecba-pacientky-tamoxifen",
+      "published_date_local": "2026-09-07",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "4. septembra 2026   K. Šaško: Slovensko má potenciál prinášať zdravotnícke inovácie svetovej úrovne",
+      "url": "https://www.health.gov.sk/Clanok?minister-inovacie-kardiologia-odbornici",
+      "published_date_local": "2026-09-04",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "1. septembra 2026   Slovensko potrebuje nové sestry. Prvých 248 žiakov začína novú vzdelávaciu cestu.",
+      "url": "https://www.health.gov.sk/Clanok?mz-sestry-vzdelavanie-model-novy",
+      "published_date_local": "2026-09-01",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "31. augusta 2026   MZ SR podpísalo memorandum s mestom Banská Bystrica a FNsP F. D. Roosevelta",
+      "url": "https://www.health.gov.sk/Clanok?memorandum-mz-banska-bystrica-nemocnica",
+      "published_date_local": "2026-08-31",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "27. augusta 2026   Rooseveltova nemocnica v Banskej Bystrici sa začne transformovať na univerzitnú nemocnicu",
+      "url": "https://www.health.gov.sk/Clanok?mz-nemocnica-bystrica-univerzitna",
+      "published_date_local": "2026-08-27",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "19. augusta 2026   Falšovanie receptov má byť samostatným trestným činom",
+      "url": "https://www.health.gov.sk/Clanok?recepty-falsovanie-trestne-novela",
+      "published_date_local": "2026-08-19",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    }
+  ],
+  "parsed_count": 20,
+  "dated_count": 20,
+  "transform": "BeautifulSoup extraction of up to 8 genuine dated article containers (original attributes/text); scripts/styles/nav/header/footer removed; original base element retained where present; normalized LF",
+  "live_status": {
+    "source_id": "sk_health",
+    "source_name": "斯洛伐克衛生部",
+    "country": "SK",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 20,
+    "relevant_count": 20,
+    "duration_seconds": 0.748,
+    "newest_published_at": "2026-09-29T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 20,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 20,
+    "freshness_lag_days": 2.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 93756,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=30",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:49:01.317717+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "9fc6bd6d99d10c684d0a77a98568c530c98cdac3e5c33b9933eba0bc9e7d86db",
+  "sha256": "fb2a94049e304959b1d66fa4f8325071834cd3aff46890e99a8820c01f86c9a6",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 100,
+  "dated_count": 100,
+  "fixture_count": 4,
+  "source_id": "si_defence",
+  "expected": [
+    {
+      "title": "Minister Hajdinjak: V obrambo vlagamo zato, ker želimo ohraniti mir",
+      "url": "https://www.gov.si/novice/2026-09-30-minister-hajdinjak-v-obrambo-vlagamo-zato-ker-zelimo-ohraniti-mir/",
+      "published_date_local": "2026-09-30",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "40. kongres vojaških gornikov: »V središču gorskega bojevanja je človek – vojaški gornik«",
+      "url": "https://www.gov.si/novice/2026-09-30-40-kongres-vojaskih-gornikov-v-srediscu-gorskega-bojevanja-je-clovek-vojaski-gornik/",
+      "published_date_local": "2026-09-30",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Slovenska vojska z vojaškim izobraževanjem krepi znanje za strateško vodenje in izzive prihodnosti",
+      "url": "https://www.gov.si/novice/2026-09-29-slovenska-vojska-z-vojaskim-izobrazevanjem-krepi-znanje-za-stratesko-vodenje-in-izzive-prihodnosti/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Minister Hajdinjak v Bruslju: Za močnejšo in bolje pripravljeno evropsko obrambo",
+      "url": "https://www.gov.si/novice/2026-09-28-minister-hajdinjak-v-bruslju-za-mocnejso-in-bolje-pripravljeno-evropsko-obrambo/",
+      "published_date_local": "2026-09-28",
+      "date_source": "feed-published"
+    }
+  ]
+}

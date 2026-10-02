@@ -1,0 +1,41 @@
+{
+  "url": "https://www.ms.ro/ro/informatii-de-interes-public/noutati/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:45.857956+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "cd19f657156bc47628d61a30b74588e102fde2ce011f46b62c2833d1327f8720",
+  "sha256": "2848a02fb7ef1ca3562e58f359e5f10a1d46aaaa5fa79ac9f461341a29cd98d4",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 20,
+  "dated_count": 20,
+  "fixture_count": 4,
+  "source_id": "ro_health",
+  "expected": [
+    {
+      "title": "În  vederea evaluării şi selectării proiectelor pentru finanțare din sumele alocate Ministerului Sănătăţii prin Mecanismul naţional de susţinere a prevenirii criminalităţii.",
+      "url": "https://www.ms.ro/ro/informatii-de-interes-public/noutati/%C3%AEn-vederea-evalu%C4%83rii-%C5%9Fi-select%C4%83rii-proiectelor-pentru-finan%C8%9Bare-din-sumele-alocate-ministerului-s%C4%83n%C4%83t%C4%83%C5%A3ii-prin-mecanismul-na%C5%A3ional-de-sus%C5%A3inere-a-prevenirii-criminalit%C4%83%C5%A3ii/",
+      "published_date_local": "2026-09-14",
+      "date_source": "visible-text"
+    },
+    {
+      "title": "Centrul Regional de Patologie Vasculo-Cerebrală și Neurochirurgie din Cluj a fost finalizat și recepționat",
+      "url": "https://www.ms.ro/ro/informatii-de-interes-public/noutati/centrul-regional-de-patologie-vasculo-cerebral%C4%83-%C8%99i-neurochirurgie-din-cluj-a-fost-finalizat-%C8%99i-recep%C8%9Bionat/",
+      "published_date_local": "2026-08-29",
+      "date_source": "visible-text"
+    },
+    {
+      "title": "ÎN ATENȚIA DAPP/REPREZENTANȚI/SOCIETĂȚI ÎN CADRUL CĂRORA SUNT ORGANIZATE UNITĂȚI FARMACEUTICE",
+      "url": "https://www.ms.ro/ro/informatii-de-interes-public/noutati/%C3%AEn-aten%C8%9Bia-dappreprezentan%C8%9Bisociet%C4%83%C8%9Bi-%C3%AEn-cadrul-c%C4%83rora-sunt-organizate-unit%C4%83%C8%9Bi-farmaceutice18826/",
+      "published_date_local": "2026-08-18",
+      "date_source": "visible-text"
+    },
+    {
+      "title": "Mecanismul naţional de susţinere a prevenirii criminalităţii.",
+      "url": "https://www.ms.ro/ro/informatii-de-interes-public/noutati/mecanismul-na%C5%A3ional-de-sus%C5%A3inere-a-prevenirii-criminalit%C4%83%C5%A3ii/",
+      "published_date_local": "2026-07-20",
+      "date_source": "visible-text"
+    }
+  ]
+}

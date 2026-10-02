@@ -1,0 +1,145 @@
+{
+  "source_id": "hu_foreign_affairs",
+  "url": "https://kormany.hu/kormanyzat/kulugyminiszter",
+  "final_url": "https://kormany.hu/kormanyzat/kulugyminiszter",
+  "observed_at": "2026-10-02T01:18:41.673072+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "d93bd97de4d151dd776a7ad3e5d5fdc33289d392c996077dc3385e902ff654c3",
+  "response_bytes": 842885,
+  "fixture_sha256": "5e508d74cb8f461ba36c9027b4756955eb407b024e121e16c21eb00c5157b0a2",
+  "fixture_bytes": 9770,
+  "transform": "BeautifulSoup extraction of genuine dated news containers retaining original attributes/text; scripts/styles removed; original base retained if present; bounded to six or fewer containers",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "A V4-ek találkozója az indiai külügyminiszterrel",
+      "url": "https://kormany.hu/kormanyzat/kulugyminiszter/kulugyminiszterium/a-v4-ek-talalkozoja-az-indiai-kulugyminiszterrel",
+      "published_date_local": "2026-09-21"
+    },
+    {
+      "title": "Találkozó a Nyugat-Balkán Barátai csoport tagjaival",
+      "url": "https://kormany.hu/kormanyzat/kulugyminiszter/kulugyminiszterium/talalkozo-a-nyugat-balkan-baratai-csoport-tagjaival",
+      "published_date_local": "2026-09-21"
+    },
+    {
+      "title": "Orbán Anita és Johann Wadephul közös nyilatkozata",
+      "url": "https://kormany.hu/kormanyzat/kulugyminiszter/kulugyminiszterium/orban-anita-es-johann-wadephul-kozos-nyilatkozata",
+      "published_date_local": "2026-09-14"
+    },
+    {
+      "title": "Breuer Klára találkozója német képviselőkkel",
+      "url": "https://kormany.hu/kulugyminiszterium/breuer-klara-talalkozoja-egy-nemet-delegacioval",
+      "published_date_local": "2026-09-29"
+    },
+    {
+      "title": "Találkozó a Szuverén Máltai Lovagrend budapesti nagykövetével",
+      "url": "https://kormany.hu/kulugyminiszterium/talalkozo-a-szuveren-maltai-lovagrend-budapesti-nagykovetevel",
+      "published_date_local": "2026-09-25"
+    },
+    {
+      "title": "A V4-ek találkozója az indiai külügyminiszterrel",
+      "url": "https://kormany.hu/kulugyminiszterium/a-v4-ek-talalkozoja-az-indiai-kulugyminiszterrel",
+      "published_date_local": "2026-09-21"
+    }
+  ],
+  "live_status": {
+    "source_id": "hu_foreign_affairs",
+    "source_name": "匈牙利外交部",
+    "country": "HU",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 12,
+    "relevant_count": 12,
+    "duration_seconds": 5.738,
+    "newest_published_at": "2026-09-28T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 12,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 12,
+    "freshness_lag_days": 4.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 842885,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "hu_foreign_affairs",
+    "country": "HU",
+    "name_zh": "匈牙利外交部",
+    "name": "Külügyminisztérium",
+    "institution_type": "central ministry",
+    "language": "hu",
+    "homepage": "https://kormany.hu/kormanyzat/kulugyminiszter",
+    "listing_url": "https://kormany.hu/kormanyzat/kulugyminiszter",
+    "feed_urls": [],
+    "allow_domains": [
+      "kormany.hu"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Budapest",
+    "card_selectors": [
+      "article.article-card"
+    ],
+    "link_selectors": [
+      "a.article-card__link"
+    ],
+    "title_selectors": [
+      "h2.article-card__title"
+    ],
+    "date_selectors": [
+      ".article-card__date"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_hu_foreign_affairs.html",
+  "format": "html"
+}

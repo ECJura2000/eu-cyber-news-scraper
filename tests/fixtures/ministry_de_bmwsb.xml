@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+<channel>
+<title>Standardlösung RSS-Newsfeed</title>
+<link>https://www.bmwsb.bund.de</link>
+<description>Dies ist der RSS-Newsfeed des BMWSB</description>
+<language>de-de</language>
+<copyright>Copyright by BMWSB. All rights reserved.</copyright>
+<category>Newspapers</category>
+<generator>Government Site Builder</generator>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<ttl>60</ttl>
+<item>
+   <title>Bundesbauministerin Verena Hubertz in Hamburg</title>
+   <link>https://www.bmwsb.bund.de/SharedDocs/kurzmeldungen/DE/2026/09/hamburg-morellenquartier.html</link>
+   <pubDate>Thu, 17 Sep 2026 11:40:00 +0200</pubDate>
+   <description>Ministerin besucht verschiedene Projekte</description>
+</item>
+<item>
+   <title>Erster Spatenstich für das WarnowQuartier in Rostock</title>
+   <link>https://www.bmwsb.bund.de/SharedDocs/kurzmeldungen/DE/2026/07/rostock.html</link>
+   <pubDate>Tue, 14 Jul 2026 15:15:06 +0200</pubDate>
+   <description>Bund unterstützt nachhaltige Quartiersentwicklung</description>
+</item>
+<item>
+   <title>Bundeskonferenz zur transnationalen Zusammenarbeit: Interreg stärkt Städte und Regionen in Europa</title>
+   <link>https://www.bmwsb.bund.de/SharedDocs/kurzmeldungen/DE/2026/07/interreg.html</link>
+   <pubDate>Wed, 1 Jul 2026 16:05:54 +0200</pubDate>
+   <description>Zweitägige Konferenz unter dem Leitthema "Interreg im Wandel: Gemeinsam für starke Regionen"</description>
+</item>
+<item>
+   <title>Tag der offenen Tür im BMWSB:</title>
+   <link>https://www.bmwsb.bund.de/SharedDocs/kurzmeldungen/DE/2026/06/tdot26-recap.html</link>
+   <pubDate>Mon, 22 Jun 2026 11:40:42 +0200</pubDate>
+   <description>Einblicke, Austausch und Mitmachangebote für die ganze Familie</description>
+</item>
+<item>
+   <title>Deutsch-ukrainische Regierungskonsultationen</title>
+   <link>https://www.bmwsb.bund.de/SharedDocs/kurzmeldungen/DE/2026/04/deu-ukr.html</link>
+   <pubDate>Wed, 15 Apr 2026 17:27:35 +0200</pubDate>
+   <description>Erste Konsultationen nach über 20 Jahren</description>
+</item>
+<item>
+   <title>Qualitätssiegel Nachhaltiges Gebäude: 10.000. Wohneinheit ausgezeichnet. Nachhaltiges Bauen in Deutschland nimmt Fahrt auf.</title>
+   <link>https://www.bmwsb.bund.de/SharedDocs/kurzmeldungen/DE/2026/03/qng.html</link>
+   <pubDate>Mon, 30 Mar 2026 14:57:13 +0200</pubDate>
+   <description>Seit 2021 fördert das "Qualitätssiegel Nachhaltiges Gebäude" (QNG) des BMWSB die Verbreitung des nachhaltigen Bauens in Deutschland.</description>
+</item>
+<item>
+   <title>3. Jahreskongress des Nationalen Forums gegen Wohnungs­losigkeit</title>
+   <link>https://www.bmwsb.bund.de/SharedDocs/kurzmeldungen/DE/2026/02/nap-jahreskongress-26.html</link>
+   <pubDate>Mon, 16 Mar 2026 10:42:00 +0100</pubDate>
+   <description>Wohnungslosigkeit ist kein Randphänomen</description>
+</item>
+<item>
+   <title>Azubi-Wohnen - Zentrale Voraussetzung für eine erfolgreiche Ausbildung</title>
+   <link>https://www.bmwsb.bund.de/SharedDocs/kurzmeldungen/DE/2026/02/azubi-wohnen.html</link>
+   <pubDate>Thu, 26 Feb 2026 08:55:27 +0100</pubDate>
+   <description>Auftaktveranstaltung mit der Parlamentarischen Staatssekretärin Sabine Poschmann</description>
+</item>
+</channel>
+</rss>

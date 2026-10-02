@@ -1,0 +1,145 @@
+{
+  "source_id": "it_finance",
+  "url": "https://www.mef.gov.it/ufficio-stampa/notizie.html",
+  "final_url": "https://www.mef.gov.it/ufficio-stampa/notizie.html",
+  "observed_at": "2026-10-02T00:41:36.922590+00:00",
+  "http_status": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "a807b7b17ee6ce68aa15388c1977328088c66a8d386886da8920eae1e5160897",
+  "response_bytes": 188685,
+  "fixture_sha256": "e7ec64f24356e137d05826a00afb0f6dbc4bad82f997d34de2e2aa5abcea48f8",
+  "fixture_bytes": 2188,
+  "transform": "BeautifulSoup extraction of genuine dated news containers retaining original attributes/text; scripts/styles removed; original base retained if present; bounded to six or fewer containers",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "Ministro Giorgetti all’Ecofin informale di Dublino",
+      "url": "https://www.mef.gov.it/inevidenza/Ministro-Giorgetti-allEcofin-informale-di-Dublino/",
+      "published_date_local": "2026-09-19"
+    },
+    {
+      "title": "Ministro Giorgetti al G20 finanze di Asheville",
+      "url": "https://www.mef.gov.it/inevidenza/Ministro-Giorgetti-al-G20-finanze-di-Asheville/",
+      "published_date_local": "2026-09-03"
+    },
+    {
+      "title": "Sacrario Monte Grappa, Giorgetti: “Mi chiedo se da tutto questo l’umanità abbia mai imparato qualcosa”",
+      "url": "https://www.mef.gov.it/inevidenza/Sacrario-Monte-Grappa-Giorgetti-Mi-chiedo-se-da-tutto-questo-lumanita-abbia-mai-imparato-qualcosa/",
+      "published_date_local": "2026-08-04"
+    },
+    {
+      "title": "Esma: Giorgetti, auguri a Comporti, è riconoscimento anche per Italia e governo",
+      "url": "https://www.mef.gov.it/inevidenza/Esma-Giorgetti-auguri-a-Comporti-e-riconoscimento-anche-per-Italia-e-governo/",
+      "published_date_local": "2026-07-22"
+    },
+    {
+      "title": "ABI, Giorgetti: banche, risparmio e investimenti al servizio della crescita del Paese",
+      "url": "https://www.mef.gov.it/inevidenza/ABI-Giorgetti-banche-risparmio-e-investimenti-al-servizio-della-crescita-del-Paese/",
+      "published_date_local": "2026-07-15"
+    },
+    {
+      "title": "Intervento del ministro Giorgetti all’Assemblea annuale ABI",
+      "url": "https://www.mef.gov.it/ufficio-stampa/articoli/2022-Giancarlo_Giorgetti/Intervento-del-ministro-Giorgetti-allAssemblea-annuale-ABI-00001/",
+      "published_date_local": "2026-07-15"
+    }
+  ],
+  "live_status": {
+    "source_id": "it_finance",
+    "source_name": "義大利經濟暨財政部",
+    "country": "IT",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 10,
+    "relevant_count": 10,
+    "duration_seconds": 0.47,
+    "newest_published_at": "2026-09-18T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 10,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 10,
+    "freshness_lag_days": 14.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 188685,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "it_finance",
+    "country": "IT",
+    "name_zh": "義大利經濟暨財政部",
+    "name": "Ministero dell'Economia e delle Finanze",
+    "institution_type": "central ministry",
+    "language": "it",
+    "homepage": "https://www.mef.gov.it/",
+    "listing_url": "https://www.mef.gov.it/ufficio-stampa/notizie.html",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.mef.gov.it"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Rome",
+    "card_selectors": [
+      "div.card-body"
+    ],
+    "link_selectors": [
+      "p.card-text a"
+    ],
+    "title_selectors": [
+      "p.card-text a"
+    ],
+    "date_selectors": [
+      "p.card-title"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_it_finance.html",
+  "format": "html"
+}

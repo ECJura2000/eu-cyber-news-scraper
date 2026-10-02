@@ -1,0 +1,41 @@
+{
+  "url": "https://www.regeringen.se/sveriges-regering/justitiedepartementet/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:18.599610+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "c7b18e0b7dc19642583d04dec7a07582142add1b1338a3bd668379e3880c6d06",
+  "sha256": "c018f58fc01204ed143961196271b2564b5fe8955e818066946ccf5665a5ad44",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 20,
+  "dated_count": 20,
+  "fixture_count": 4,
+  "source_id": "se_justice",
+  "expected": [
+    {
+      "title": "Justitieministern och migrationsministern deltar vid RIF-möte i Luxemburg",
+      "url": "https://www.regeringen.se/pressmeddelanden/2026/10/justitieministern-och-migrationsministern-deltar-vid-rif-mote-i-luxemburg/",
+      "published_date_local": "2026-10-01",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Remiss av SOU 2026:54 Stärkt egendomsskydd i regeringsformen, Ju2026/01855",
+      "url": "https://www.regeringen.se/remisser/2026/09/remiss-av-sou-202654-starkt-egendomsskydd-i-regeringsformen/",
+      "published_date_local": "2026-09-09",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Remittering av Polismyndighetens hemställan om bemyndigande att meddela föreskrifter om tekniska mätinstrument, Ju2026/00235",
+      "url": "https://www.regeringen.se/remisser/2026/06/remiss-av-polismyndighetens-hemstallan-om-bemyndigande-att-meddela-foreskrifter-om-tekniska-matinstrument/",
+      "published_date_local": "2026-06-12",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Remiss av betänkandet Tillgång till passageraruppgifter i brottsbekämpningen, Ju2026/01011",
+      "url": "https://www.regeringen.se/remisser/2026/05/remiss-av-betankandet-tillgang-till-passageraruppgifter-i-brottsbekampningen/",
+      "published_date_local": "2026-05-18",
+      "date_source": "source-selector"
+    }
+  ]
+}

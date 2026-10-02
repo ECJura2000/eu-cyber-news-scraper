@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.pl/web/edukacja/wiadomosci",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:14.320562+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "d8bf2e41a377956bb844fab403a47cac4e5d09eb948e6eb05312fcdee843f376",
+  "sha256": "af5f917af10598682344cc31654e6a67a8111f4b84856a89fac91220b8456433",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "pl_education",
+  "expected": [
+    {
+      "title": "\"Lalka” w szkole - nowa platforma i materiały dla nauczycieli",
+      "url": "https://www.gov.pl/web/edukacja/lalka-w-szkole---nowa-platforma-i-materialy-dla-nauczycieli",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Rusza 6. edycja konkursu „Bez korzeni nie zakwitniesz”",
+      "url": "https://www.gov.pl/web/edukacja/rusza-6-edycja-konkursu-bez-korzeni-nie-zakwitniesz",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Kierownictwo MEN na uroczystej premierze nowej ekranizacji „Lalki” Bolesława Prusa",
+      "url": "https://www.gov.pl/web/edukacja/kierownictwo-men-na-uroczystej-premierze-nowej-ekranizacji-lalki-boleslawa-prusa",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Tydzień budowania relacji i przeciwdziałania przemocy rówieśniczej 2026",
+      "url": "https://www.gov.pl/web/edukacja/tydzien-budowania-relacji-i-przeciwdzialania-przemocy-rowiesniczej-2026",
+      "published_date_local": "2026-09-28",
+      "date_source": "source-selector"
+    }
+  ]
+}

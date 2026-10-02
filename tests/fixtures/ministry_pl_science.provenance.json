@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.pl/web/nauka/wiadomosci",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:16.199402+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "149c06db599a161922eb7e4c13e08f315f0f9340f8e4a9ae99854981656697b6",
+  "sha256": "f43d5eb21276592f18073c732247164339d7aa37938ec864df2d72adf9ec11ef",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "pl_science",
+  "expected": [
+    {
+      "title": "Inauguracja roku akademickiego 2026/2027 - list Ministra Nauki i Szkolnictwa Wyższego",
+      "url": "https://www.gov.pl/web/nauka/inauguracja-roku-akademickiego-20262027---list-ministra-nauki-i-szkolnictwa-wyzszego",
+      "published_date_local": "2026-10-01",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Komunikat ministra o zawieszeniu i wniosku o odwołanie prof. Piotra Borka",
+      "url": "https://www.gov.pl/web/nauka/komunikat-ministra-o-zawieszeniu-i-wniosku-o-odwolanie-prof-piotra-borka",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Polsko-wietnamskie rozmowy o współpracy i finansowaniu nauki",
+      "url": "https://www.gov.pl/web/nauka/polsko-wietnamskie-rozmowy-o-wspolpracy-i-finansowaniu-nauki",
+      "published_date_local": "2026-09-28",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Bezpieczna Uczelnia - przestrzeń wolna od mobbingu i dyskryminacji",
+      "url": "https://www.gov.pl/web/nauka/bezpieczna-uczelnia--przestrzen-wolna-od-mobbingu-i-dyskryminacji",
+      "published_date_local": "2026-09-26",
+      "date_source": "source-selector"
+    }
+  ]
+}

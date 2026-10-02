@@ -1,0 +1,91 @@
+{
+  "source_id": "be_foreign_affairs",
+  "url": "https://diplomatie.belgium.be/nl/nieuws",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:11.823581+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "eab39f7996efc7923c1371c1ab2020e011ee4ea9dd49784d9403d5c7c057858e",
+  "response_sha256": "b80106200ac37861784ab9f39308022ef70e23d6463fb7e1fe16764753b18a31",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "België voert tijdens UNGA81 actief campagne voor de vestiging van het BBNJ-secretariaat in Brussel",
+      "url": "https://diplomatie.belgium.be/nl/nieuws/belgie-voert-tijdens-unga81-actief-campagne-voor-de-vestiging-van-het-bbnj-secretariaat-brussel",
+      "published_date_local": "2026-09-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "België zet tijdens UNGA81 in op de vrijheid van navigatie, veilige zeeën, bescherming van de wereldhandel en respect voor het Zeerecht",
+      "url": "https://diplomatie.belgium.be/nl/nieuws/belgie-zet-tijdens-unga81-op-de-vrijheid-van-navigatie-veilige-zeeen-bescherming-van-de-wereldhandel-en-respect-voor-het-zeerecht",
+      "published_date_local": "2026-09-23",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Verklaring van België tijdens het algemeen debat van de 81ste zitting van de Algemene Vergadering van de Verenigde Naties",
+      "url": "https://diplomatie.belgium.be/nl/nieuws/verklaring-van-belgie-tijdens-het-algemeen-debat-van-de-81ste-zitting-van-de-algemene-vergadering-van-de-verenigde-naties",
+      "published_date_local": "2026-09-23",
+      "date_confidence": "high"
+    },
+    {
+      "title": "België en Rwanda herstellen diplomatieke relaties",
+      "url": "https://diplomatie.belgium.be/nl/nieuws/belgie-en-rwanda-herstellen-diplomatieke-relaties",
+      "published_date_local": "2026-09-22",
+      "date_confidence": "high"
+    },
+    {
+      "title": "UNGA81: in een meer gefragmenteerde wereld verdedigt België het multilateralisme",
+      "url": "https://diplomatie.belgium.be/nl/nieuws/unga81-een-meer-gefragmenteerde-wereld-verdedigt-belgie-het-multilateralisme",
+      "published_date_local": "2026-09-21",
+      "date_confidence": "high"
+    },
+    {
+      "title": "B-FAST-veldhospitaal officieel erkend door Wereldgezondheidsorganisatie",
+      "url": "https://diplomatie.belgium.be/nl/nieuws/b-fast-veldhospitaal-officieel-erkend-door-wereldgezondheidsorganisatie",
+      "published_date_local": "2026-09-18",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Primeur op Prinsjesdag: Maxime Prévot uitgenodigd voor opening Nederlands parlementair jaar",
+      "url": "https://diplomatie.belgium.be/nl/nieuws/primeur-op-prinsjesdag-maxime-prevot-uitgenodigd-voor-opening-nederlands-parlementair-jaar",
+      "published_date_local": "2026-09-15",
+      "date_confidence": "high"
+    },
+    {
+      "title": "India-Belgium Joint Statement on the visit of the Prime Minister of Belgium to India",
+      "url": "https://diplomatie.belgium.be/nl/nieuws/india-belgium-joint-statement-visit-prime-minister-belgium-india",
+      "published_date_local": "2026-09-04",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 8,
+  "live_dated_count": 8,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "be_foreign_affairs",
+    "country": "BE",
+    "name_zh": "比利時外交、外貿與發展合作公共服務部",
+    "name": "Federale Overheidsdienst Buitenlandse Zaken, Buitenlandse Handel en Ontwikkelingssamenwerking",
+    "institution_type": "ministry",
+    "language": "nl",
+    "homepage": "https://diplomatie.belgium.be/nl",
+    "listing_url": "https://diplomatie.belgium.be/nl/nieuws",
+    "feed_urls": [],
+    "allow_domains": [
+      "diplomatie.belgium.be"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Brussels",
+    "card_selectors": [
+      "article"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

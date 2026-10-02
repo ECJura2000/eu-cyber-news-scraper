@@ -1,0 +1,41 @@
+{
+  "url": "https://www.regeringen.se/sveriges-regering/utrikesdepartementet/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:20.626459+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "54b0df3812f7d58f6812c50daf9d6185b5c427c53a7d634daa99c3a59a9e9bf3",
+  "sha256": "984e524c86ab1440d4ec4acf9d08478b7a34a50422912ae426878af15758a369",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 20,
+  "dated_count": 20,
+  "fixture_count": 4,
+  "source_id": "se_foreign_affairs",
+  "expected": [
+    {
+      "title": "Regeringsärenden vecka 40, 2026",
+      "url": "https://www.regeringen.se/regeringsarenden/regeringsarenden-vecka-40-2026/",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Sverige bidrar med stridsflyg till Natoinsats i Polen",
+      "url": "https://www.regeringen.se/pressmeddelanden/2026/09/sverige-bidrar-med-stridsflyg-till-natoinsats-i-polen/",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Europadomstolens dom (2026-03-26) i målet D.M. mot Sverige",
+      "url": "https://www.regeringen.se/internationella-mr-granskningar-av-sverige/2026/09/europadomstolens-dom-2026-03-26-i-malet-d.m.-mot-sverige",
+      "published_date_local": "2026-09-24",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Ny kabinettssekreterare på Utrikesdepartementet",
+      "url": "https://www.regeringen.se/pressmeddelanden/2026/09/ny-kabinettssekreterare-pa-utrikesdepartementet/",
+      "published_date_local": "2026-09-24",
+      "date_source": "source-selector"
+    }
+  ]
+}

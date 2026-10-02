@@ -1,0 +1,95 @@
+{
+  "source_id": "bg_health",
+  "url": "https://mh.government.bg/bg/novini/aktualno",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:31:07.024132+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "d2d7a9af4cc81bcecac67339df379b931cec0e173ed42a9705cb1401886b92ae",
+  "response_sha256": "0494472488d9e088a4c36564c41f968112da52f3e79b528f3aaa597f5c0b9287",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Здравният контрол влиза в нов етап: по-бързи проверки, единни критерии и повече прозрачност",
+      "url": "https://mh.government.bg/bg/novini/aktualno/5001",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "На 5 октомври започват имунизациите срещу грип при деца с назална ваксина",
+      "url": "https://mh.government.bg/bg/novini/aktualno/4999",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Промяна в ръководството на Изпълнителна агенция „Медицински надзор“",
+      "url": "https://mh.government.bg/bg/novini/aktualno/4998",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Министерството на здравеопазването отнема разрешението на болница „Медикус Алфа“ в Пловдив",
+      "url": "https://mh.government.bg/bg/novini/aktualno/4997",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Още 15 места за млади медицински специалисти в области и специалности с недостиг",
+      "url": "https://mh.government.bg/bg/novini/aktualno/4996",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Министър Катя Ивкова: Здравето се изгражда всеки ден - крачка по крачка",
+      "url": "https://mh.government.bg/bg/novini/aktualno/4994",
+      "published_date_local": "2026-09-23",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Министър Катя Ивкова: За четири месеца свършихме работа по ПВУ, която е трябвало да бъде изпълнявана в продължение на години",
+      "url": "https://mh.government.bg/bg/novini/aktualno/4931",
+      "published_date_local": "2026-09-21",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Министър Ивкова към Елисавета Белобрадова: Решение за яслените групи има и може да бъде приложено",
+      "url": "https://mh.government.bg/bg/novini/aktualno/4887",
+      "published_date_local": "2026-09-18",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 20,
+  "live_dated_count": 20,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "bg_health",
+    "country": "BG",
+    "name_zh": "保加利亞衛生部",
+    "name": "Министерство на здравеопазването",
+    "institution_type": "ministry",
+    "language": "bg",
+    "homepage": "https://mh.government.bg/",
+    "listing_url": "https://mh.government.bg/bg/novini/aktualno",
+    "feed_urls": [],
+    "allow_domains": [
+      "mh.government.bg"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Sofia",
+    "card_selectors": [
+      "article"
+    ],
+    "title_selectors": [
+      "[class*=title]",
+      "[class*=heading]"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

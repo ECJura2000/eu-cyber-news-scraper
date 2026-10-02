@@ -1,0 +1,141 @@
+{
+  "url": "https://mpsv.gov.cz/novinky",
+  "final_url": "https://mpsv.gov.cz/novinky",
+  "observed_at": "2026-10-01T11:52:38.204757+00:00",
+  "observed_on": "2026-10-01",
+  "http_status": 200,
+  "sha256": "01adbe6804d836476f6e9586717cef509d372ecbe0c9c84764abfaf156b12d20",
+  "transform": "BeautifulSoup main/body extraction; remove scripts/styles/nav/header/footer/form; first 32000 UTF-8 bytes",
+  "fixture": "ministry_cz_labour.html",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "replay_count": 10,
+  "source": {
+    "id": "cz_labour",
+    "country": "CZ",
+    "name_zh": "捷克勞動與社會事務部",
+    "name": "Ministerstvo práce a sociálních věcí",
+    "institution_type": "ministry",
+    "language": "cs",
+    "homepage": "https://mpsv.gov.cz/",
+    "listing_url": "https://mpsv.gov.cz/novinky",
+    "feed_urls": [],
+    "allow_domains": [
+      "mpsv.gov.cz"
+    ],
+    "critical": false,
+    "schedule_enabled": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Prague"
+  },
+  "live_status": {
+    "source_id": "cz_labour",
+    "source_name": "捷克勞動與社會事務部",
+    "country": "CZ",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 10,
+    "relevant_count": 10,
+    "duration_seconds": 0.45,
+    "newest_published_at": "2026-09-23T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0,
+    "health_alerts": [],
+    "dated_count": 10,
+    "undated_ratio": 0,
+    "unique_title_ratio": 1,
+    "in_range_count": 10,
+    "freshness_lag_days": 8.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 1736396,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0,
+    "historical_median_bytes": 0,
+    "historical_median_duration": 0
+  },
+  "source_id": "cz_labour",
+  "fixture_count": 10,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "expected": [
+    {
+      "title": "Jak podpořit úspěšný návrat lidí po výkonu trestu do běžného života?",
+      "url": "https://mpsv.gov.cz/jak-podporit-uspesny-navrat-lidi-po-vykonu-trestu-do-bezneho-zivota-",
+      "published_date_local": "2026-09-24",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Vyhlášení fotografické soutěže na téma „Navzdory bariérám“",
+      "url": "https://mpsv.gov.cz/vyhlaseni-fotograficke-souteze-na-tema-navzdory-barieram-",
+      "published_date_local": "2026-09-15",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Sociální podnikání v Olomouckém kraji získalo zázemí od kraje, univerzity i ministerstva",
+      "url": "https://mpsv.gov.cz/socialni-podnikani-v-olomouckem-kraji-ziskalo-zazemi-od-kraje-univerzity-i-ministerstva",
+      "published_date_local": "2026-09-02",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Senát schválil přesun části pravomocí spojených s pomocí lidem ohroženým bytovou nouzí z obcí na Úřad práce ČR",
+      "url": "https://mpsv.gov.cz/senat-schvalil-presun-casti-pravomoci-spojenych-s-pomoci-lidem-ohrozenym-bytovou-nouzi-z-obci-na-urad-prace-cr",
+      "published_date_local": "2026-07-08",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Ministr Aleš Juchelka zastupoval Českou republiku na zasedání Rady EU pro zaměstnanost, sociální politiku, zdraví a ochranu spotřebitele",
+      "url": "https://mpsv.gov.cz/ministr-ales-juchelka-zastupoval-ceskou-republiku-na-zasedani-rady-eu-pro-zamestnanost-socialni-politiku-zdravi-a-ochranu-spotrebitele",
+      "published_date_local": "2026-06-29",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Prohlášení k OSPODům za MPSV",
+      "url": "https://mpsv.gov.cz/prohlaseni-k-ospodum-za-mpsv",
+      "published_date_local": "2026-06-18",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Ministerstvo práce a sociálních věcí ve spolupráci s Úřadem vlády ČR vás zve na první společnou akci věnovanou tématům práce, péče a rodiny ve Strakově akademii.",
+      "url": "https://mpsv.gov.cz/prace-pece-a-rodina-ve-strakovce",
+      "published_date_local": "2026-06-15",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Analýza pracovní migrace z Filipín do ČR",
+      "url": "https://mpsv.gov.cz/analyza-pracovni-migrace-z-filipin-do-cr",
+      "published_date_local": "2026-06-11",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "MPSV získalo Osvědčení o uznání dobré praxe od European Labour Authority (ELA)",
+      "url": "https://mpsv.gov.cz/mpsv-ziskalo-osvedceni-o-uznani-dobre-praxe-od-european-labour-authority-ela-",
+      "published_date_local": "2026-06-09",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "MPSV přijalo opatření po zjištění technické chyby v systému JMHZ",
+      "url": "https://mpsv.gov.cz/mpsv-prijalo-opatreni-po-zjisteni-technicke-chyby-v-systemu-jmhz",
+      "published_date_local": "2026-06-03",
+      "date_source": "source-selector"
+    }
+  ]
+}
+

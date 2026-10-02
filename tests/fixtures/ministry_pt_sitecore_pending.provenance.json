@@ -1,0 +1,11 @@
+{
+  "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/saude/noticias",
+  "observed_on": "2026-10-01",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "http_status": 200,
+  "response_sha256": "36239d93828ba29ecda0e914e16003482ef8c96a0c0ad9f6ec0477738457721d",
+  "sha256": "d4f8301b9a6d0ce21fc3cd5e639bff7cccdcdbc5697dd99fdaab03e004d1a6e4",
+  "extraction": "Bounded original news-page HTML content subtree; client-rendered news list is empty in server HTML",
+  "parse_count": 0
+}

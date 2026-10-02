@@ -1,0 +1,85 @@
+{
+  "source_id": "bg_foreign_affairs",
+  "url": "https://www.mfa.bg/bg/rss",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:34:55.567613+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "a037ab3bfe67fc2e108c9b8343c9c9264978a8576517044a8f75c25c461eaeca",
+  "response_sha256": "2cbbb79cae4bfdfb37069b82fd82d4b77ce2e33c2bdc4b064279e72cb7c6cb45",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Заместник-министър Иванка Ташева взе участие в Срещата на министрите на външните работи на страните от Берлинския процес",
+      "url": "https://www.mfa.bg/bg/news/49224",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Среща с председателя на Монголската академия на науките",
+      "url": "https://www.mfa.bg/bg/news/49223",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Откриване на ново българско съботно училище „Българче“ във Финикс, Аризона",
+      "url": "https://www.mfa.bg/bg/news/49218",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Европейски ден на езиците в Мадрид",
+      "url": "https://www.mfa.bg/bg/news/49217",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Четвърта викторина „България“",
+      "url": "https://www.mfa.bg/bg/news/49215",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Четвърти конкурс по ораторско майсторство на български език в Япония",
+      "url": "https://www.mfa.bg/bg/news/49213",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Българското неделно училище „Иван Вазов“ в Загреб участва в представянето на обучението по езиците на националните малцинства",
+      "url": "https://www.mfa.bg/bg/news/49212",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Участие на българското посолство в Тунис в инициативите „Ден на отворените врати“ и „Езиците обединяват“ по повод Европейският ден на езиците",
+      "url": "https://www.mfa.bg/bg/news/49211",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 20,
+  "live_dated_count": 20,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "bg_foreign_affairs",
+    "country": "BG",
+    "name_zh": "保加利亞外交部",
+    "name": "Министерство на външните работи",
+    "institution_type": "ministry",
+    "language": "bg",
+    "homepage": "https://www.mfa.bg/bg",
+    "listing_url": "https://www.mfa.bg/bg/rss",
+    "feed_urls": [
+      "https://www.mfa.bg/bg/rss"
+    ],
+    "allow_domains": [
+      "www.mfa.bg"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Sofia",
+    "schedule_enabled": false
+  }
+}

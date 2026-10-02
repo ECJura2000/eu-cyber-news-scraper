@@ -1,0 +1,41 @@
+{
+  "url": "https://www.culture.gov.sk/sk/aktuality",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:57:00.619995+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "3442091b8557aeef264f682845394754f6e518431f0c285f18c02cd8a74b2fb7",
+  "sha256": "4c99dbb76a62f37d123ae822e2abea6a4850c8b8b9ecf34daed5d11a1d80290b",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 7,
+  "dated_count": 7,
+  "fixture_count": 4,
+  "source_id": "sk_culture",
+  "expected": [
+    {
+      "title": "push_pin \n Vláda v Uhrovci podporila kultúrne dedičstvo regiónu, folklór a tradície",
+      "url": "https://www.culture.gov.sk/sk/aktualita/vlada-v-uhrovci-podporila-kulturne-dedicstvo-regionu-folklor-a-tradicie",
+      "published_date_local": "2026-09-30",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Riaditeľom Hudobného centra sa stal Roman Krško",
+      "url": "https://www.culture.gov.sk/sk/aktualita/riaditelom-hudobneho-centra-sa-stal-roman-krsko",
+      "published_date_local": "2026-10-01",
+      "date_source": "time-element"
+    },
+    {
+      "title": "September v znamení významných životných jubileí",
+      "url": "https://www.culture.gov.sk/sk/aktualita/september-v-znameni-vyznamnych-zivotnych-jubilei",
+      "published_date_local": "2026-09-30",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Pripomíname si 30. výročie úmrtia Jozefa Kostku",
+      "url": "https://www.culture.gov.sk/sk/aktualita/pripominame-si-30-vyrocie-umrtia-jozefa-kostku",
+      "published_date_local": "2026-09-30",
+      "date_source": "time-element"
+    }
+  ]
+}

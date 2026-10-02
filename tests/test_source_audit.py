@@ -264,6 +264,20 @@ def test_challenges_and_expected_content(source, body, kind, content_type, code)
     assert audit._content_error(response, kind, source) == code
 
 
+def test_official_feed_can_be_the_primary_listing_without_relaxing_xml_checks(source):
+    from dataclasses import replace
+    rss = replace(source, listing_url="https://agency.example/feed/", feed_urls=("https://agency.example/feed/",))
+    for body, content_type, expected in [
+        (b"<rss version='2.0'><channel><title>News</title></channel></rss>", "application/rss+xml", ""),
+        (HTML, "text/html", "feed_received_html"),
+        (b"<error>not RSS</error>", "application/xml", "invalid_feed"),
+        (b"<!DOCTYPE rss><rss/>", "application/xml", "invalid_feed"),
+    ]:
+        response = httpx.Response(200, content=body, headers={"content-type": content_type},
+                                  request=httpx.Request("GET", rss.listing_url))
+        assert audit._content_error(response, "listing", rss) == expected
+
+
 @pytest.mark.parametrize("error,code", [
     (httpx.ReadTimeout("timed out"), "timeout"),
     (ssl.SSLCertVerificationError("certificate verify failed"), "tls_failure"),

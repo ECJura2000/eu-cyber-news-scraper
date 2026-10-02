@@ -1,0 +1,96 @@
+{
+  "source_id": "be_economy",
+  "url": "https://economie.fgov.be/nl/nieuws",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:11.329772+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "89ba3849479848a0ca71999e58b2809e4041570c8a07826751b67e31360c1a78",
+  "response_sha256": "fd307744f002abe1832a2706e80b5d10cd1e4059d3733aab1af47c782b3e77d0",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "FOD Economie onderzoekt Clash of Clans",
+      "url": "https://news.economie.fgov.be/272607-fod-economie-onderzoekt-clash-of-clans/",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Overmatige schuldenlast ontstaat zelden van vandaag op morgen",
+      "url": "https://news.economie.fgov.be/270938-overmatige-schuldenlast-ontstaat-zelden-van-vandaag-op-morgen/",
+      "published_date_local": "2026-09-16",
+      "date_confidence": "high"
+    },
+    {
+      "title": "#PlayFair: kies voor legaal streamen",
+      "url": "https://news.economie.fgov.be/270876-playfair-kies-voor-legaal-streamen/",
+      "published_date_local": "2026-09-15",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Garantie: je hebt meer rechten dan je denkt",
+      "url": "https://news.economie.fgov.be/270545-garantie-je-hebt-meer-rechten-dan-je-denkt/",
+      "published_date_local": "2026-09-14",
+      "date_confidence": "high"
+    },
+    {
+      "title": "29.749,5 kt geproduceerde aardolieproducten in de Belgische raffinaderijen in 2025",
+      "url": "https://economie.fgov.be/nl/nieuws/297495-kt-geproduceerde",
+      "published_date_local": "2026-09-09",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Record kerosineverbruik in juli 2026",
+      "url": "https://economie.fgov.be/nl/nieuws/record-kerosineverbruik-juli",
+      "published_date_local": "2026-09-07",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Een impulsieve online aankoop? Er is een weg terug",
+      "url": "https://news.economie.fgov.be/270128-een-impulsieve-online-aankoop-er-is-een-weg-terug/",
+      "published_date_local": "2026-09-07",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Elektriciteitsverbruik: terug naar normale waarden?",
+      "url": "https://economie.fgov.be/nl/nieuws/elektriciteitsverbruik-terug",
+      "published_date_local": "2026-08-20",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 10,
+  "live_dated_count": 10,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "be_economy",
+    "country": "BE",
+    "name_zh": "比利時經濟、中小企業、中產與能源公共服務部",
+    "name": "Federale Overheidsdienst Economie, K.M.O., Middenstand en Energie",
+    "institution_type": "ministry",
+    "language": "nl",
+    "homepage": "https://economie.fgov.be/nl",
+    "listing_url": "https://economie.fgov.be/nl/nieuws",
+    "feed_urls": [],
+    "allow_domains": [
+      "economie.fgov.be"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Brussels",
+    "card_selectors": [
+      "li.media"
+    ],
+    "title_selectors": [
+      "h2",
+      "h3",
+      "h4"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

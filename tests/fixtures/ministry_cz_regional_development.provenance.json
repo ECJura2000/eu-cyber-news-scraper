@@ -1,0 +1,85 @@
+{
+  "source_id": "cz_regional_development",
+  "url": "https://mmr.gov.cz/cs/ostatni/web/rss?rss=AllPageFefed",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:16.836461+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "4c6493bdeb305cadccd58faa60fa5715ed253f2143f642fbda5b8e94c1a56eaf",
+  "response_sha256": "87a622ecd7f307eca87bbb816361e80af220e551ccbe613696223c862fe76e19",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Nabídka konzultací Kompetenčního centra VZ",
+      "url": "https://mmr.gov.cz/cs/microsites/nsvz/clanky/nabidka-konzultaci-kompetencniho-centra-vz?feed=AllPageFefed",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Deset let zákona o zadávání veřejných zakázek: od elektronizace k datům a umělé inteligenci",
+      "url": "https://mmr.gov.cz/cs/ostatni/web/novinky/deset-let-zakona-o-zadavani-verejnych-zakazek-od-e?feed=AllPageFefed",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Upřesnění vybraných výroků ze senátní rozpravy k novele stavebního zákona (6. část)",
+      "url": "https://mmr.gov.cz/cs/ministerstvo/stavebni-pravo/stavebni-zakon-2026/aktuality/upresneni-vybranych-vyroku-ze-senatni-rozpravy-(5)?feed=AllPageFefed",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Evidence územního plánování",
+      "url": "https://mmr.gov.cz/cs/ministerstvo/stavebni-pravo/stanoviska-a-metodiky/uzemni-planovani/9-zakon-c-283-2021-sb/9-ostatni-stanoviska-a-metodiky/evidence-uzemniho-planovani?feed=AllPageFefed",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Osmý díl podcastu Stavíme na faktech: Jak si vybrat dovolenou a nenaletět podvodníkům?",
+      "url": "https://mmr.gov.cz/cs/ostatni/web/novinky/osmy-dil-podcastu-stavime-na-faktech-jak-si-vybrat?feed=AllPageFefed",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "MMR spouští intenzivní sérii školení k novele stavebního zákona. Úředníkům pomohou s její aplikací v",
+      "url": "https://mmr.gov.cz/cs/ostatni/web/novinky/mmr-spousti-intenzivni-serii-skoleni-k-novele-stav?feed=AllPageFefed",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Chytřejší cestování, silnější regiony. AI otevírá nové možnosti pro český cestovní ruch",
+      "url": "https://mmr.gov.cz/cs/ostatni/web/novinky/chytrejsi-cestovani,-silnejsi-regiony-ai-otevira-n?feed=AllPageFefed",
+      "published_date_local": "2026-09-25",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Evropská komise zveřejnila 9. září návrh nového Public Procurement Actu",
+      "url": "https://mmr.gov.cz/cs/microsites/nsvz/clanky/evropska-komise-zverejnila-navrh-noveho-public-pro?feed=AllPageFefed",
+      "published_date_local": "2026-09-22",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 30,
+  "live_dated_count": 30,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "cz_regional_development",
+    "country": "CZ",
+    "name_zh": "捷克區域發展部",
+    "name": "Ministerstvo pro místní rozvoj",
+    "institution_type": "ministry",
+    "language": "cs",
+    "homepage": "https://mmr.gov.cz/cs/uvod",
+    "listing_url": "https://mmr.gov.cz/cs/ostatni/web/rss?rss=AllPageFefed",
+    "feed_urls": [
+      "https://mmr.gov.cz/cs/ostatni/web/rss?rss=AllPageFefed"
+    ],
+    "allow_domains": [
+      "mmr.gov.cz"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Prague",
+    "schedule_enabled": false
+  }
+}

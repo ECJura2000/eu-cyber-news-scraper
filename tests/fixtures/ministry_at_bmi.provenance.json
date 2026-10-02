@@ -1,0 +1,85 @@
+{
+  "source_id": "at_bmi",
+  "url": "https://www.bmi.gv.at/rss/bmi_presse.xml",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:34:31.139756+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "a139205d82ce54bcba501c58155ea1e9c1448b07d4c9580a0517e23986dc95af",
+  "response_sha256": "d055412b521710a78f8bb6065240aab0de7fbc16699c861b0040662ed09294b4",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Markus Kasinger zum Direktor des Bundesamts für Cybersicherheit bestellt",
+      "url": "https://www.bmi.gv.at/news.aspx?id=766F584A777255376D66513D",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "KZ-Gedenkstätte Mauthausen: Wiederbestellung der Geschäftsführung",
+      "url": "https://www.bmi.gv.at/news.aspx?id=4455503439422B524E2F6F3D",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Weitere rechtliche Möglichkeiten für robuste Zurückweisungen aus Europa werden diskutiert",
+      "url": "https://www.bmi.gv.at/news.aspx?id=794F554F70674B716874413D",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Kein automatischer Schutzstatus mehr für ukrainische Wehrpflichtige",
+      "url": "https://www.bmi.gv.at/news.aspx?id=2B2B5069366874715551633D",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Sparen bei Asyl und investieren in die Sicherheit",
+      "url": "https://www.bmi.gv.at/news.aspx?id=6A655053577347625339493D",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "\"LANGE NACHT DER MUSEEN 2026\" im Innenministerium",
+      "url": "https://www.bmi.gv.at/news.aspx?id=4E684F526E70706D536F6F3D",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Expertenaustausch beim Tag der kritischen Infrastruktur – Widerstandsfähigkeit muss gestärkt werden",
+      "url": "https://www.bmi.gv.at/news.aspx?id=67516445552B30313977383D",
+      "published_date_local": "2026-09-28",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Zivilschutz-Probealarm mittels AT-Alert und Sirene",
+      "url": "https://www.bmi.gv.at/news.aspx?id=7059624556674A4A304B6F3D",
+      "published_date_local": "2026-09-28",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 17,
+  "live_dated_count": 17,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "at_bmi",
+    "country": "AT",
+    "name_zh": "奧地利內政部",
+    "name": "Bundesministerium für Inneres",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.bmi.gv.at/",
+    "listing_url": "https://www.bmi.gv.at/rss/bmi_presse.xml",
+    "feed_urls": [
+      "https://www.bmi.gv.at/rss/bmi_presse.xml"
+    ],
+    "allow_domains": [
+      "www.bmi.gv.at"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Vienna",
+    "schedule_enabled": false
+  }
+}

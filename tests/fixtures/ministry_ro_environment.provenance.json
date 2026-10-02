@@ -1,0 +1,41 @@
+{
+  "url": "https://mmediu.ro/comunicare/comunicate-de-presa/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:50.100013+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "036850dcd7e3bc4b15e46a6b6fdc3a1629722c270f6ca6bcdbaf1a1ed15935da",
+  "sha256": "e8b60e04aa8f619b054e6cfbf510166f743b8468cde660330a34669d5ebce381",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 6,
+  "dated_count": 6,
+  "fixture_count": 4,
+  "source_id": "ro_environment",
+  "expected": [
+    {
+      "title": "Concurs național de desen pentru elevi: #DesenămPentruMediu",
+      "url": "https://mmediu.ro/comunicare/comunicate-de-presa/concurs-national-de-desen-pentru-elevi-desenampentrumediu/",
+      "published_date_local": "2026-09-29",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Diana Buzoianu: MMAP solicită declanșarea de urgență a procedurilor pentru instituirea stării de alertă în zona Sintești",
+      "url": "https://mmediu.ro/comunicare/comunicate-de-presa/diana-buzoianu-mmap-solicita-declansarea-de-urgenta-a-procedurilor-pentru-instituirea-starii-de-alerta-in-zona-sintesti/",
+      "published_date_local": "2026-09-24",
+      "date_source": "time-element"
+    },
+    {
+      "title": "MMAP continuă investițiile în apă și canalizare prin AFM: ghidul de finanțare, cu sprijin de până la 30 de milioane de lei pe proiect, în consultare publică",
+      "url": "https://mmediu.ro/comunicare/comunicate-de-presa/mmap-continua-investitiile-in-apa-si-canalizare-prin-afm-ghidul-de-finantare-cu-sprijin-de-pana-la-30-de-milioane-de-lei-pe-proiect-in-consultare-publica/",
+      "published_date_local": "2026-09-21",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Ministerul Mediului a emis acordul de mediu pentru finalizarea amenajării hidroenergetice Cornetu-Avrig",
+      "url": "https://mmediu.ro/comunicare/comunicate-de-presa/ministerul-mediului-a-emis-acordul-de-mediu-pentru-finalizarea-amenajarii-hidroenergetice-cornetu-avrig/",
+      "published_date_local": "2026-09-21",
+      "date_source": "time-element"
+    }
+  ]
+}

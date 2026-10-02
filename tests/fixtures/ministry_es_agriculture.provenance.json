@@ -1,0 +1,139 @@
+{
+  "source_id": "es_agriculture",
+  "url": "https://www.mapa.gob.es/es/prensa/noticiasrss",
+  "final_url": "https://www.mapa.gob.es/es/prensa/noticiasrss",
+  "observed_at": "2026-10-02T00:49:44.923377+00:00",
+  "http_status": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "76ba524fd181c66f476d99a5f0d537e60f171dd31b3c11943046c1b886bee63f",
+  "response_bytes": 2354304,
+  "fixture_sha256": "92dee3b2b4c5465f8b7176c6f2371d9bb6b559f350cde9dded43b8487e5534fb",
+  "fixture_bytes": 8396,
+  "transform": "XML parse and serialization retaining first six genuine feed entries; no title/link/date edits",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "Begoña García Bernal: “La próxima PAC blindará dinero para la juventud y obligará a todos los países a apoyar su incorporación al campo”",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/bego-a-garc-a-bernal---la-pr-xima-pac-blindar--dinero-para-la-juventud-y-obligar--a-todos-los-pa-ses-a-apoyar-su-incorporaci-n-al-campo-/eb323c69-3f51-46b1-a0fb-5ce2a02ee42d",
+      "published_date_local": "2026-09-30"
+    },
+    {
+      "title": "El Ministerio de Agricultura, Pesca y Alimentación completa la asignación de días de pesca y aumenta los límites de captura de gamba roja para la flota de arrastre del Mediterráneo",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-ministerio-de-agricultura--pesca-y-alimentaci-n-completa-la-asignaci-n-de-d-as-de-pesca-y-aumenta-los-l-mites-de-captura-de-gamba-roja-para-la-flota-de-arrastre-del-mediterr-neo/3d620806-b350-4e1f-bcf0-0f8e79a03680",
+      "published_date_local": "2026-09-30"
+    },
+    {
+      "title": "España defiende una pesca rentable y con posibilidades de futuro",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/espa-a-defiende-una-pesca-rentable-y-con-posibilidades-de-futuro/c5de3f4e-1901-42f3-8568-c8a1d7b03ffe",
+      "published_date_local": "2026-09-29"
+    },
+    {
+      "title": "Luis Planas destaca la importancia del multilateralimo en la XII Conferencia Iberoamericana de Ministros de Agricultura y Pesca que se celebra en Córdoba",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/luis-planas-destaca-la-importancia-del-multilateralimo-en-la-xii-conferencia-iberoamericana-de-ministros-de-agricultura-y-pesca-que-se-celebra-en-c-rdoba/100f1368-397e-41e8-b02a-2b5d44c3d2b4",
+      "published_date_local": "2026-09-24"
+    },
+    {
+      "title": "El Ministerio de Agricultura, Pesca y Alimentación reconoce tres nuevos viñedos singulares de la Denominación de Origen Calificada Rioja",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/el-ministerio-de-agricultura--pesca-y-alimentaci-n-reconoce-tres-nuevos-vi-edos-singulares-de-la-denominaci-n-de-origen-calificada-rioja/1b544609-fa7f-485c-8017-40931557fef7",
+      "published_date_local": "2026-09-24"
+    },
+    {
+      "title": "Luis Planas se reúne con el ministro de Medio Ambiente, Agricultura y Ganadería de Andorra",
+      "url": "https://www.mapa.gob.es/es/prensa/ultimas-noticias/detalle_noticias/luis-planas-se-re-ne-con-el-ministro-de-medio-ambiente--agricultura-y-ganader-a-de-andorra/54c54017-a6df-4e9c-a80a-4b91cf261448",
+      "published_date_local": "2026-09-24"
+    }
+  ],
+  "live_status": {
+    "source_id": "es_agriculture",
+    "source_name": "西班牙農業、漁業與食品部",
+    "country": "ES",
+    "critical": false,
+    "success": true,
+    "fetched_via": "configured-feed",
+    "raw_count": 1718,
+    "relevant_count": 1288,
+    "duration_seconds": 5.054,
+    "newest_published_at": "2026-09-29T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 0,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 1718,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 0.9965,
+    "in_range_count": 1288,
+    "freshness_lag_days": 3.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 2354304,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "es_agriculture",
+    "country": "ES",
+    "name_zh": "西班牙農業、漁業與食品部",
+    "name": "Ministerio de Agricultura, Pesca y Alimentación",
+    "institution_type": "central ministry",
+    "language": "es",
+    "homepage": "https://www.mapa.gob.es/",
+    "listing_url": "https://www.mapa.gob.es/es/prensa/noticiasrss",
+    "feed_urls": [
+      "https://www.mapa.gob.es/es/prensa/noticiasrss"
+    ],
+    "allow_domains": [
+      "www.mapa.gob.es"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Madrid",
+    "card_selectors": [],
+    "link_selectors": [],
+    "title_selectors": [],
+    "date_selectors": [],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_es_agriculture.xml",
+  "format": "rss"
+}

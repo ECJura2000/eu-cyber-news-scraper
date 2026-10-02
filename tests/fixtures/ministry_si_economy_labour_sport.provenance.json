@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.si/novice/rss/?categoryID%5B0%5D=1&orgID%5B0%5D=4452",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:48:56.057695+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "a466313c586710e2b0dd9bfe5ea1524d4cad130806a27d84f4c405126d234a31",
+  "sha256": "a831eca00c25de976d898c7428233039c365deee336c744ec2213a0cd4a1d6c7",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 89,
+  "dated_count": 89,
+  "fixture_count": 4,
+  "source_id": "si_economy_labour_sport",
+  "expected": [
+    {
+      "title": "Evropska komisija zbira odzive podjetij glede uvoza izdelkov iz jekla v Evropsko unijo",
+      "url": "https://www.gov.si/novice/2026-10-01-evropska-komisija-zbira-odzive-podjetij-glede-uvoza-izdelkov-iz-jekla-v-evropsko-unijo/",
+      "published_date_local": "2026-10-01",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Številne priložnosti za mlade v lesni industriji",
+      "url": "https://www.gov.si/novice/2026-09-30-stevilne-priloznosti-za-mlade-v-lesni-industriji/",
+      "published_date_local": "2026-09-30",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Državni zbor ratificiral Celoviti gospodarski in trgovinski sporazum (CETA) med Kanado in EU",
+      "url": "https://www.gov.si/novice/2026-09-29-drzavni-zbor-ratificiral-celoviti-gospodarski-in-trgovinski-sporazum-ceta-med-kanado-in-eu/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Evropska vesoljska agencija, gospodarsko ministrstvo in ELES povezali vesoljski in energetski sektor",
+      "url": "https://www.gov.si/novice/2026-09-29-evropska-vesoljska-agencija-gospodarsko-ministrstvo-in-eles-povezali-vesoljski-in-energetski-sektor/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    }
+  ]
+}

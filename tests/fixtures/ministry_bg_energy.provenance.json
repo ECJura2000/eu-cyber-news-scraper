@@ -1,0 +1,79 @@
+{
+  "source_id": "bg_energy",
+  "url": "https://www.me.government.bg/bg/news/",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:48.018769+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "51ba2a84a1471cd88accfa6b6e33c10d334b6b35d6f2a74debc7e9b3f4ae1bc7",
+  "response_sha256": "adacecf6164ba66a2c1e37680120641373814a5621ed10eedffb7892abce40d6",
+  "fixture_count": 6,
+  "expected": [
+    {
+      "title": "Министър Ива Петрова: Ядрената енергетика е стратегически избор за енергийна сигурност, икономическа конкурентоспособност и бъдещето на страната",
+      "url": "https://www.me.government.bg/bg/news/ministar-iva-petrova-yadrenata-energetika-e-strategicheski-izbor-za-energiina-sigurnost-ikonomicheska-konkurentosposobnost-i-badeshteto-na-stranata-3928.html",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Заместник-министър Темелков: България и Република Корея задълбочават партньорството си в ядрената енергетика и индустриалното развитие",
+      "url": "https://www.me.government.bg/bg/news/zamestnik-ministar-temelkov-balgariya-i-republika-koreya-zadalbochavat-partnyorstvoto-si-v-yadrenata-energetika-i-industrialnoto-razvitie-3927.html",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Заместник-министър Темелков: Енергетиката на бъдещето ще се постига в сътрудничество с университетите",
+      "url": "https://www.me.government.bg/bg/news/zamestnik-ministar-temelkov-energetikata-na-badeshteto-shte-se-postiga-v-satrudnichestvo-s-universitetite-3926.html",
+      "published_date_local": "2026-09-21",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Заместник-министър Ганчева: Ядрената енергетика е основа за стабилен икономически растеж",
+      "url": "https://www.me.government.bg/bg/news/zamestnik-ministar-gancheva-yadrenata-energetika-e-osnova-za-stabilen-ikonomicheski-rastej-3925.html",
+      "published_date_local": "2026-09-21",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Заместник-министър Ганчева: Ядрената енергетика е основа за стабилен икономически растеж",
+      "url": "https://www.me.government.bg/bg/news/zamestnik-ministar-gancheva-yadrenata-energetika-e-osnova-za-stabilen-ikonomicheski-rastej-3924.html",
+      "published_date_local": "2026-09-21",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Заместник-министър Любомира Ганчева представи българския опит в диверсификацията на ядреното гориво на международен форум в Париж",
+      "url": "https://www.me.government.bg/bg/news/zamestnik-ministar-lyubomira-gancheva-predstavi-balgarskiya-opit-v-diversifikaciyata-na-yadrenoto-gorivo-na-mejdunaroden-forum-v-parij-3923.html",
+      "published_date_local": "2026-09-18",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 6,
+  "live_dated_count": 6,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "bg_energy",
+    "country": "BG",
+    "name_zh": "保加利亞能源部",
+    "name": "Министерство на енергетиката",
+    "institution_type": "ministry",
+    "language": "bg",
+    "homepage": "https://www.me.government.bg/bg/news/",
+    "listing_url": "https://www.me.government.bg/bg/news/",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.me.government.bg"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Sofia",
+    "card_selectors": [
+      "article"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

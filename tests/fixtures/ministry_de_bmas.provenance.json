@@ -1,0 +1,85 @@
+{
+  "source_id": "de_bmas",
+  "url": "https://www.bmas.de/SiteGlobals/Functions/RSSFeed/DE/RSSNewsfeed/RSSNewsfeed.xml",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:17.906770+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "59b1cb84effe726fb4d6f896a7cdf1fdb2f170a6bb27897906b6e99fd771227e",
+  "response_sha256": "3c53ed208b82adad4996db11382b7bb5290f10ef41b1cbb272180b79e8dfa01e",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Preisträger des 16. Deutschen Gefahrstoffschutzpreises ausgezeichnet",
+      "url": "https://www.bmas.de/DE/Service/Presse/Meldungen/2026/16-deutscher-gefahrstoffschutzpreis-gewinner-bekanntgegeben.html",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Kleine Herbstbelebung am Arbeitsmarkt",
+      "url": "https://www.bmas.de/DE/Service/Presse/Pressemitteilungen/2026/arbeitsmarktzahlen-september-2026.html",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Sozialstaat schützen und Missbrauch verhindern",
+      "url": "https://www.bmas.de/DE/Service/Presse/Pressemitteilungen/2026/sozialstaat-schuetzen-und-missbrauch-verhindern.html",
+      "published_date_local": "2026-09-23",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Referentenentwurf zur Sozialversicherungsrechengrößen-Verordnung 2027",
+      "url": "https://www.bmas.de/DE/Service/Presse/Meldungen/2026/referentenentwurf-zur-sozialversicherungsrechengroessen-verordnung-2027.html",
+      "published_date_local": "2026-09-21",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Gefahrstoffschutzpreis 2026 – Preisträger",
+      "url": "https://www.bmas.de/SharedDocs/Videos/DE/Artikel/Arbeitsschutz/2026-09-30-gefahrstoffschutzpreis-preistraeger.html",
+      "published_date_local": "2026-09-18",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Gefahrstoffschutzpreis 2026 – Belobigung",
+      "url": "https://www.bmas.de/SharedDocs/Videos/DE/Artikel/Arbeitsschutz/2026-09-30-gefahrstoffschutzpreis-belobigung.html",
+      "published_date_local": "2026-09-18",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Prüfstelle Bundestariftreue geht mit Website an den Start",
+      "url": "https://www.bmas.de/DE/Service/Presse/Meldungen/2026/pruefstelle-bundestariftreue-geht-mit-website-an-den-start.html",
+      "published_date_local": "2026-09-17",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Gemeinsam für verantwortungsvolle Arbeitsgestaltung in der Gebäudereinigung",
+      "url": "https://www.bmas.de/DE/Service/Presse/Meldungen/2026/gemeinsam-fuer-verantwortungsvolle-arbeitsgestaltung-gebaeudereinigung.html",
+      "published_date_local": "2026-09-17",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 30,
+  "live_dated_count": 30,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "de_bmas",
+    "country": "DE",
+    "name_zh": "德國勞動與社會部",
+    "name": "Bundesministerium für Arbeit und Soziales",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.bmas.de/DE/Startseite/start.html",
+    "listing_url": "https://www.bmas.de/SiteGlobals/Functions/RSSFeed/DE/RSSNewsfeed/RSSNewsfeed.xml",
+    "feed_urls": [
+      "https://www.bmas.de/SiteGlobals/Functions/RSSFeed/DE/RSSNewsfeed/RSSNewsfeed.xml"
+    ],
+    "allow_domains": [
+      "www.bmas.de"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Berlin",
+    "schedule_enabled": false
+  }
+}

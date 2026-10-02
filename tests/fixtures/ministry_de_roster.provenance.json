@@ -1,0 +1,11 @@
+{
+  "url": "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+  "final_url": "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+  "observed_at": "2026-10-01T11:42:47.237292+00:00",
+  "observed_on": "2026-10-01",
+  "http_status": 200,
+  "sha256": "efa10dee92502b08d2da21bf29146a8379625991276a38df6b98d0a96bef4c90",
+  "transform": "BeautifulSoup main/body extraction; remove script/style/nav/header/footer/form; first 32700 UTF-8 bytes",
+  "truncated": false,
+  "expected_ministry_count": 17
+}

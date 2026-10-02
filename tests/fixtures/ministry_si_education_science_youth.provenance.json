@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.si/novice/rss/?categoryID%5B0%5D=1&orgID%5B0%5D=4451",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:48:55.381822+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "a13a48c9a4996d2b7d20dc8c8d8d49574ba793fdfa44aca544e335ea68c3f26b",
+  "sha256": "31fc61df858077fcc9673127f86600754e5b79459bfa5c3c71ff32d74710b2b9",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 68,
+  "dated_count": 68,
+  "fixture_count": 4,
+  "source_id": "si_education_science_youth",
+  "expected": [
+    {
+      "title": "Ustanovljen Strokovni svet za reformo vzgoje in izobraževanja",
+      "url": "https://www.gov.si/novice/2026-09-30-ustanovljen-strokovni-svet-za-reformo-vzgoje-in-izobrazevanja/",
+      "published_date_local": "2026-09-30",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Predlogi sprememb na področju visokega šolstva in znanosti",
+      "url": "https://www.gov.si/novice/2026-09-30-predlogi-sprememb-na-podrocju-visokega-solstva-in-znanosti/",
+      "published_date_local": "2026-09-30",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Poslanica ministra dr. Boruta Rončevića ob začetku študijskega leta 2026/2027",
+      "url": "https://www.gov.si/novice/2026-09-29-poslanica-ministra-dr-boruta-roncevica-ob-zacetku-studijskega-leta-20262027/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Študijsko leto 2026/2027 v številkah",
+      "url": "https://www.gov.si/novice/2026-09-29-studijsko-leto-20262027-v-stevilkah/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "url": "https://www.gov.pl/web/dyplomacja/aktualnosci",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:49:28.977786+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "c3a2ea4f3ed9cc010ae01db9d05a213dc96952afb6b72571938048977037751a",
+  "sha256": "7df66f8fcb81b45523f107e2b75bd335b59921d33c1bb1e780ac3cd8149873fa",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 1,
+  "source_id": "pl_foreign_affairs",
+  "expected": [
+    {
+      "title": "Ogłoszenie konkursu na stanowisko Dyrektora Polskiego Instytutu Spraw Międzynarodowych",
+      "url": "https://www.gov.pl/web/dyplomacja/ogloszenie-konkursu-na-stanowisko-dyrektora-polskiego-instytutu-spraw-miedzynarodowych",
+      "published_date_local": "2026-09-30",
+      "date_source": "visible-text"
+    }
+  ]
+}

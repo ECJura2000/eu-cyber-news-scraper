@@ -1,0 +1,348 @@
+{
+  "schema_version": 1,
+  "country": "SI",
+  "reviewed_on": "2026-10-01",
+  "official_roster_urls": [
+    "https://www.gov.si/drzavni-organi/ministrstva/",
+    "https://www.gov.si/drzavni-organi/vladne-sluzbe/",
+    "https://www.gov.si/en/state-authorities/government/about-the-government/"
+  ],
+  "roster_complete": true,
+  "limitations": [],
+  "ministries": [
+    {
+      "canonical_id": "si_demography_family_social",
+      "name_zh": "斯洛維尼亞人口家庭與社會事務部",
+      "name_local": "Ministrstvo za demografijo, družino in socialne zadeve",
+      "name_en": "Ministry of Demography, Family and Social Affairs",
+      "kind": "ministry",
+      "language": "sl",
+      "homepage": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-demografijo-druzino-in-socialne-zadeve/",
+      "news_url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=4454",
+      "source_ids": [
+        "si_demography_family_social"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-aware HttpClient live feed parse returned 13 items, all dated; bounded genuine fixture replays 4 items with production parser. Scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.gov.si/drzavni-organi/ministrstva/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-demografijo-druzino-in-socialne-zadeve/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-demografijo-druzino-in-socialne-zadeve/novice/",
+        "https://www.gov.si/novice/rss/?orgID%5B0%5D=4454"
+      ]
+    },
+    {
+      "canonical_id": "si_finance",
+      "name_zh": "斯洛維尼亞財政部",
+      "name_local": "Ministrstvo za finance",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "sl",
+      "homepage": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-finance/",
+      "news_url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=24",
+      "source_ids": [
+        "si_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-aware HttpClient live feed parse returned 100 items, all dated; bounded genuine fixture replays 4 items with production parser. Scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.gov.si/drzavni-organi/ministrstva/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-finance/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-finance/novice/",
+        "https://www.gov.si/novice/rss/?orgID%5B0%5D=24"
+      ]
+    },
+    {
+      "canonical_id": "si_economy_labour_sport",
+      "name_zh": "斯洛維尼亞經濟勞動與體育部",
+      "name_local": "Ministrstvo za gospodarstvo, delo in šport",
+      "name_en": "Ministry of the Economy, Labour and Sport",
+      "kind": "ministry",
+      "language": "sl",
+      "homepage": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-gospodarstvo-delo-in-sport/",
+      "news_url": "https://www.gov.si/novice/rss/?categoryID%5B0%5D=1&orgID%5B0%5D=4452",
+      "source_ids": [
+        "si_economy_labour_sport"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-aware HttpClient live feed parse returned 89 items, all dated; bounded genuine fixture replays 4 items with production parser. Scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.gov.si/drzavni-organi/ministrstva/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-gospodarstvo-delo-in-sport/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-gospodarstvo-delo-in-sport/novice/",
+        "https://www.gov.si/novice/rss/?categoryID%5B0%5D=1&orgID%5B0%5D=4452"
+      ]
+    },
+    {
+      "canonical_id": "si_infrastructure_energy",
+      "name_zh": "斯洛維尼亞基礎建設與能源部",
+      "name_local": "Ministrstvo za infrastrukturo in energetiko",
+      "name_en": "Ministry of Infrastructure and Energy",
+      "kind": "ministry",
+      "language": "sl",
+      "homepage": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-infrastrukturo-in-energetiko/",
+      "news_url": "https://www.gov.si/novice/rss/?categoryID%5B0%5D=1&orgID%5B0%5D=4450",
+      "source_ids": [
+        "si_infrastructure_energy"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-aware HttpClient live feed parse returned 78 items, all dated; bounded genuine fixture replays 4 items with production parser. Scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.gov.si/drzavni-organi/ministrstva/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-infrastrukturo-in-energetiko/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-infrastrukturo-in-energetiko/novice/",
+        "https://www.gov.si/novice/rss/?categoryID%5B0%5D=1&orgID%5B0%5D=4450"
+      ]
+    },
+    {
+      "canonical_id": "si_education_science_youth",
+      "name_zh": "斯洛維尼亞教育科學與青年部",
+      "name_local": "Ministrstvo za izobraževanje, znanost in mladino",
+      "name_en": "Ministry of Education, Science and Youth",
+      "kind": "ministry",
+      "language": "sl",
+      "homepage": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-izobrazevanje-znanost-in-mladino/",
+      "news_url": "https://www.gov.si/novice/rss/?categoryID%5B0%5D=1&orgID%5B0%5D=4451",
+      "source_ids": [
+        "si_education_science_youth"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-aware HttpClient live feed parse returned 68 items, all dated; bounded genuine fixture replays 4 items with production parser. Scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.gov.si/drzavni-organi/ministrstva/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-izobrazevanje-znanost-in-mladino/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-izobrazevanje-znanost-in-mladino/novice/",
+        "https://www.gov.si/novice/rss/?categoryID%5B0%5D=1&orgID%5B0%5D=4451"
+      ]
+    },
+    {
+      "canonical_id": "si_agriculture",
+      "name_zh": "斯洛維尼亞農業部",
+      "name_local": "Ministrstvo za kmetijstvo",
+      "name_en": "Ministry of Agriculture",
+      "kind": "ministry",
+      "language": "sl",
+      "homepage": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-kmetijstvo/",
+      "news_url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=4453",
+      "source_ids": [
+        "si_agriculture"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-aware HttpClient live feed parse returned 88 items, all dated; bounded genuine fixture replays 4 items with production parser. Scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.gov.si/drzavni-organi/ministrstva/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-kmetijstvo/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-kmetijstvo/novice/",
+        "https://www.gov.si/novice/rss/?orgID%5B0%5D=4453"
+      ]
+    },
+    {
+      "canonical_id": "si_culture",
+      "name_zh": "斯洛維尼亞文化部",
+      "name_local": "Ministrstvo za kulturo",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "sl",
+      "homepage": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-kulturo/",
+      "news_url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=28",
+      "source_ids": [
+        "si_culture"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-aware HttpClient live feed parse returned 100 items, all dated; bounded genuine fixture replays 4 items with production parser. Scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.gov.si/drzavni-organi/ministrstva/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-kulturo/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-kulturo/novice/",
+        "https://www.gov.si/novice/rss/?orgID%5B0%5D=28"
+      ]
+    },
+    {
+      "canonical_id": "si_local_cohesion_regional",
+      "name_zh": "斯洛維尼亞地方自治凝聚與區域發展部",
+      "name_local": "Ministrstvo za lokalno samoupravo, kohezijo in regionalni razvoj",
+      "name_en": "Ministry of Local Self-Government, Cohesion and Regional Development",
+      "kind": "ministry",
+      "language": "sl",
+      "homepage": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-lokalno-samoupravo-kohezijo-in-regionalni-razvoj/",
+      "news_url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=4455",
+      "source_ids": [
+        "si_local_cohesion_regional"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-aware HttpClient live feed parse returned 76 items, all dated; bounded genuine fixture replays 4 items with production parser. Scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.gov.si/drzavni-organi/ministrstva/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-lokalno-samoupravo-kohezijo-in-regionalni-razvoj/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-lokalno-samoupravo-kohezijo-in-regionalni-razvoj/novice-ministrstva-za-kohezijo-in-regionalni-razvoj/",
+        "https://www.gov.si/novice/rss/?orgID%5B0%5D=4455"
+      ]
+    },
+    {
+      "canonical_id": "si_interior_public_admin",
+      "name_zh": "斯洛維尼亞內政與公共行政部",
+      "name_local": "Ministrstvo za notranje zadeve in javno upravo",
+      "name_en": "Ministry of the Interior and Public Administration",
+      "kind": "ministry",
+      "language": "sl",
+      "homepage": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-notranje-zadeve-in-javno-upravo/",
+      "news_url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=4447",
+      "source_ids": [
+        "si_interior_public_admin"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-aware HttpClient live feed parse returned 88 items, all dated; bounded genuine fixture replays 4 items with production parser. Scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.gov.si/drzavni-organi/ministrstva/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-notranje-zadeve-in-javno-upravo/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-notranje-zadeve-in-javno-upravo/novice/",
+        "https://www.gov.si/novice/rss/?orgID%5B0%5D=4447"
+      ]
+    },
+    {
+      "canonical_id": "si_defence",
+      "name_zh": "斯洛維尼亞國防部",
+      "name_local": "Ministrstvo za obrambo",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "sl",
+      "homepage": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-obrambo/",
+      "news_url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=30",
+      "source_ids": [
+        "si_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-aware HttpClient live feed parse returned 100 items, all dated; bounded genuine fixture replays 4 items with production parser. Scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.gov.si/drzavni-organi/ministrstva/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-obrambo/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-obrambo/novice/",
+        "https://www.gov.si/novice/rss/?orgID%5B0%5D=30"
+      ]
+    },
+    {
+      "canonical_id": "si_environment_spatial",
+      "name_zh": "斯洛維尼亞環境與空間規劃部",
+      "name_local": "Ministrstvo za okolje in prostor",
+      "name_en": "Ministry of the Environment and Spatial Planning",
+      "kind": "ministry",
+      "language": "sl",
+      "homepage": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-okolje-in-prostor/",
+      "news_url": "https://www.gov.si/novice/rss/?categoryID%5B0%5D=1&orgID%5B0%5D=31",
+      "source_ids": [
+        "si_environment_spatial"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-aware HttpClient live feed parse returned 100 items, all dated; bounded genuine fixture replays 4 items with production parser. Scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.gov.si/drzavni-organi/ministrstva/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-okolje-in-prostor/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-okolje-in-prostor/novice/",
+        "https://www.gov.si/novice/rss/?categoryID%5B0%5D=1&orgID%5B0%5D=31"
+      ]
+    },
+    {
+      "canonical_id": "si_justice",
+      "name_zh": "斯洛維尼亞司法部",
+      "name_local": "Ministrstvo za pravosodje",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "sl",
+      "homepage": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-pravosodje/",
+      "news_url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=32",
+      "source_ids": [
+        "si_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-aware HttpClient live feed parse returned 100 items, all dated; bounded genuine fixture replays 4 items with production parser. Scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.gov.si/drzavni-organi/ministrstva/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-pravosodje/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-pravosodje/novice/",
+        "https://www.gov.si/novice/rss/?orgID%5B0%5D=32"
+      ]
+    },
+    {
+      "canonical_id": "si_health",
+      "name_zh": "斯洛維尼亞衛生部",
+      "name_local": "Ministrstvo za zdravje",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "sl",
+      "homepage": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-zdravje/",
+      "news_url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=33",
+      "source_ids": [
+        "si_health"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware feed production parse: 100 dated items; genuine bounded fixture replay: 1 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.si/drzavni-organi/ministrstva/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-zdravje/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-zdravje/novice/",
+        "https://www.gov.si/novice/rss/?orgID%5B0%5D=33"
+      ]
+    },
+    {
+      "canonical_id": "si_foreign_affairs",
+      "name_zh": "斯洛維尼亞外交與歐洲事務部",
+      "name_local": "Ministrstvo za zunanje in evropske zadeve",
+      "name_en": "Ministry of Foreign and European Affairs",
+      "kind": "ministry",
+      "language": "sl",
+      "homepage": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-zunanje-in-evropske-zadeve/",
+      "news_url": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-zunanje-in-evropske-zadeve/novice-ministrstva-za-zunanje-in-evropske-zadeve/",
+      "source_ids": [
+        "si_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 robots/TLS-aware production scrape: 10 dated items; genuine fixture replay 10 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.si/drzavni-organi/ministrstva/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-zunanje-in-evropske-zadeve/",
+        "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-zunanje-in-evropske-zadeve/novice-ministrstva-za-zunanje-in-evropske-zadeve/"
+      ]
+    },
+    {
+      "canonical_id": "si_prime_minister",
+      "name_zh": "斯洛維尼亞總理辦公室",
+      "name_local": "Kabinet predsednika Vlade Republike Slovenije",
+      "name_en": "Office of the Prime Minister",
+      "kind": "government_head_office",
+      "language": "sl",
+      "homepage": "https://www.gov.si/drzavni-organi/vladne-sluzbe/kabinet-predsednika-vlade/",
+      "news_url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=4457",
+      "source_ids": [
+        "si_prime_minister"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 official homepage links orgID=4457 feed; robots/TLS-aware production scrape: 14 dated items; genuine feed fixture replay: 8 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.si/drzavni-organi/vladne-sluzbe/",
+        "https://www.gov.si/drzavni-organi/vladne-sluzbe/kabinet-predsednika-vlade/",
+        "https://www.gov.si/novice/rss/?orgID%5B0%5D=4457"
+      ]
+    },
+    {
+      "canonical_id": "si_slovenians_abroad",
+      "name_zh": "斯洛維尼亞境外斯洛維尼亞人事務辦公室",
+      "name_local": "Urad Vlade Republike Slovenije za Slovence v zamejstvu in po svetu",
+      "name_en": "Government Office for Slovenians Abroad",
+      "kind": "ministry_equivalent",
+      "language": "sl",
+      "homepage": "https://www.gov.si/drzavni-organi/vladne-sluzbe/urad-vlade-za-slovence-v-zamejstvu-in-po-svetu/",
+      "news_url": "https://www.gov.si/novice/rss/?categoryID%5B0%5D=1&orgID%5B0%5D=1962",
+      "source_ids": [
+        "si_slovenians_abroad"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware feed production parse: 100 dated items; genuine bounded fixture replay: 1 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.si/drzavni-organi/vladne-sluzbe/",
+        "https://www.gov.si/en/state-authorities/government/about-the-government/",
+        "https://www.gov.si/drzavni-organi/vladne-sluzbe/urad-vlade-za-slovence-v-zamejstvu-in-po-svetu/novice/",
+        "https://www.gov.si/novice/rss/?categoryID%5B0%5D=1&orgID%5B0%5D=1962"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-10-02.1",
+  "canonical_id": "bg_government",
+  "names": {
+    "zh": "保加利亞部長會議及總理辦公室",
+    "en": "Council of Ministers and Prime Minister's Office",
+    "short": "bg_government",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "bg_government",
+      "country": "BG",
+      "name_zh": "保加利亞部長會議及總理辦公室",
+      "name": "Министерски съвет",
+      "institution_type": "ministry",
+      "language": "en",
+      "homepage": "https://www.gov.bg/bg",
+      "listing_url": "https://www.gov.bg/en/Press-center/News",
+      "feed_urls": [],
+      "allow_domains": [
+        "www.gov.bg"
+      ],
+      "critical": false,
+      "detail_pages": 0,
+      "timezone": "Europe/Sofia",
+      "card_selectors": [
+        "div.col-lg-7"
+      ],
+      "date_selectors": [
+        "time",
+        "[class*=date i]",
+        "[class*=datum i]"
+      ],
+      "schedule_enabled": false
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "數位身份",
+      "著作權",
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱",
+      "競爭規範面向（平台責任的市場結構面）",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-10-02",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-10-02",
+    "evidence_urls": [
+      "https://iisda.government.bg/ras/executive_power/ministries",
+      "https://iisda.government.bg/ras/executive_power/administration_council_of_ministers",
+      "https://www.gov.bg/bg",
+      "https://www.gov.bg/bg/prestsentar/novini",
+      "https://www.gov.bg/en/Press-center/News"
+    ],
+    "fixture_path": "tests/fixtures/ministry_bg_government.html",
+    "provenance_path": "tests/fixtures/ministry_bg_government.provenance.json",
+    "last_smoke": {
+      "tested_on": "2026-10-02",
+      "source_id": "bg_government",
+      "success": true,
+      "raw_count": 12,
+      "dated_count": 12,
+      "http_statuses": [
+        "200"
+      ],
+      "robots_enforced": true,
+      "tls_verified": true
+    },
+    "schedule_batch": "eu27_central_ministries"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "url": "https://www.minedu.sk/rss/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:56:59.873815+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "542616a8e7a7ebd03e02cf6163f26ac67f0f6ff2d143528b4f5bafba879b2b86",
+  "sha256": "b8b15e0c8a6c4581b5313896fcdde792c54f1b1d5220e347409a8c739c250b6d",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 50,
+  "dated_count": 50,
+  "fixture_count": 1,
+  "source_id": "sk_education_research",
+  "expected": [
+    {
+      "title": "Odporúčania pre citlivé mediálne pokrytie násilných udalostí",
+      "url": "https://www.minedu.sk/47190-sk/odporucania-pre-citlive-medialne-pokrytie-nasilnych-udalosti/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    }
+  ]
+}

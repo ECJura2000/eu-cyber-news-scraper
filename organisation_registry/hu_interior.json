@@ -1,0 +1,96 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-10-02.1",
+  "canonical_id": "hu_interior",
+  "names": {
+    "zh": "匈牙利內政部",
+    "en": "Ministry of the Interior",
+    "short": "hu_interior",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "hu_interior",
+      "country": "HU",
+      "name_zh": "匈牙利內政部",
+      "name": "Belügyminisztérium",
+      "institution_type": "central ministry",
+      "language": "hu",
+      "homepage": "https://kormany.hu/kormanyzat/belugyminiszterium",
+      "listing_url": "https://kormany.hu/kormanyzat/belugyminiszterium",
+      "allow_domains": [
+        "kormany.hu"
+      ],
+      "critical": false,
+      "detail_pages": 0,
+      "timezone": "Europe/Budapest",
+      "card_selectors": [
+        "article.article-card"
+      ],
+      "link_selectors": [
+        "a.article-card__link"
+      ],
+      "title_selectors": [
+        "h2.article-card__title"
+      ],
+      "date_selectors": [
+        ".article-card__date"
+      ],
+      "date_policy": "required",
+      "schedule_enabled": false
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "數位身份",
+      "著作權",
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱",
+      "競爭規範面向（平台責任的市場結構面）",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-10-02",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-10-02",
+    "evidence_urls": [
+      "https://kormany.hu/kormanyzat",
+      "https://kormany.hu/kormanyzat/belugyminiszterium",
+      "https://kormany.hu/hirek",
+      "https://kormany.hu/hirlevel",
+      "https://kormany.hu/kormanyzat/belugyminiszterium/a-belugyminiszterium-hirei/az-amerikai-egyesult-allamok-budapesti-ugyvivojet-fogadta-a-belugyminiszter",
+      "https://kormany.hu/kormanyzat/belugyminiszterium/a-belugyminiszterium-hirei/magyarlengyel-belugyminiszteri-talalkozo-varsoban",
+      "https://kormany.hu/kormanyzat/belugyminiszterium/a-belugyminiszterium-hirei/palyazati-felhivas-a-nemzeti-sportugynokseg-nonprofit-zrt-elnok-vezerigazgatoi-tisztsegere",
+      "https://kormany.hu/kormanyzat/belugyminiszterium/a-belugyminiszterium-hirei",
+      "https://kormany.hu/a-belugyminiszterium-hirei/az-amerikai-egyesult-allamok-budapesti-ugyvivojet-fogadta-a-belugyminiszter",
+      "https://kormany.hu/a-belugyminiszterium-hirei/magyarlengyel-belugyminiszteri-talalkozo-varsoban",
+      "https://kormany.hu/a-belugyminiszterium-hirei/palyazati-felhivas-a-nemzeti-sportugynokseg-nonprofit-zrt-elnok-vezerigazgatoi-tisztsegere"
+    ],
+    "evidence_fixture": "tests/fixtures/ministry_hu_interior.html",
+    "evidence_provenance": "tests/fixtures/ministry_hu_interior.provenance.json",
+    "scope": "Source-scoped central ministry news; robots-enforced TLS-verified dated production replay and bounded genuine fixture; schedule disabled"
+  }
+}

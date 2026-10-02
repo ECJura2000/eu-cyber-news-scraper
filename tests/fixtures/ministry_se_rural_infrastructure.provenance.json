@@ -1,0 +1,41 @@
+{
+  "url": "https://www.regeringen.se/sveriges-regering/landsbygds--och-infrastrukturdepartementet/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:20.686400+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "4d7e8369eb2f43d222e909429a1eeba01d0f30bb3540343c7a0bf4e2f6472154",
+  "sha256": "77defc44d2982439655ef65efaade2f46725c0fb21e1603e4bb838c07e2596ca",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 20,
+  "dated_count": 20,
+  "fixture_count": 4,
+  "source_id": "se_rural_infrastructure",
+  "expected": [
+    {
+      "title": "Remiss av Boverkets rapport Uppdrag att föreslå ändringar i trafikbullerförordningen, LI2026/00657",
+      "url": "https://www.regeringen.se/remisser/2026/05/remiss-av-boverkets-rapport-uppdrag-att-foresla-andringar-i-trafikbullerforordningen/",
+      "published_date_local": "2026-05-11",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Regeringsärenden vecka 40, 2026",
+      "url": "https://www.regeringen.se/regeringsarenden/regeringsarenden-vecka-40-2026/",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Sveriges flygplatser i en förändrad omvärld, SOU 2026:60",
+      "url": "https://www.regeringen.se/rattsliga-dokument/statens-offentliga-utredningar/2026/09/sou-202660/",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Förordning om fiskemöjligheter i Östersjön 2027, 2025/26:FPM116",
+      "url": "https://www.regeringen.se/faktapromemoria/2026/09/202526fpm116/",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    }
+  ]
+}

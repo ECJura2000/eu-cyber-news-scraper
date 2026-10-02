@@ -1,0 +1,91 @@
+{
+  "source_id": "be_employment",
+  "url": "https://werk.belgie.be/nl/nieuws",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:35:56.123087+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "18b45de987d67760e89070100d2b18873d1aff3c66b2099ac3ed996f268d638b",
+  "response_sha256": "fa2f10403507a245418a71a5c1becf03d9ae999a9d65923f746ee2911c1d1727",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Stand van zaken op de arbeidsmarkt in België en in de gewesten van de Hoge Raad voor de Werkgelegenheid",
+      "url": "https://werk.belgie.be/nl/news/stand-van-zaken-op-de-arbeidsmarkt-belgie-en-de-gewesten-van-de-hoge-raad-voor-de",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Bliksemactie Arbeidsinspectie op bouwplaatsen: valgevaar blijft belangrijkste risico",
+      "url": "https://werk.belgie.be/nl/news/bliksemactie-arbeidsinspectie-op-bouwplaatsen-valgevaar-blijft-belangrijkste-risico",
+      "published_date_local": "2026-09-03",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Wijzigingen aan het Sociaal Strafwetboek vanaf 1 september 2026",
+      "url": "https://werk.belgie.be/nl/news/wijzigingen-aan-het-sociaal-strafwetboek-vanaf-1-september-2026",
+      "published_date_local": "2026-09-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Hoge temperaturen op het werk",
+      "url": "https://werk.belgie.be/nl/news/hoge-temperaturen-op-het-werk-9",
+      "published_date_local": "2026-08-12",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Coördinatiestructuur voor bouwplaatsen – geïndexeerd bedrag – aanpassing sinds 1 juli 2026",
+      "url": "https://werk.belgie.be/nl/news/coordinatiestructuur-voor-bouwplaatsen-geindexeerd-bedrag-aanpassing-sinds-1-juli-2026",
+      "published_date_local": "2026-08-10",
+      "date_confidence": "high"
+    },
+    {
+      "title": "De FOD Werkgelegenheid steunt de campagne Blue Heart in 2026: Gevangen achter de oplichting",
+      "url": "https://werk.belgie.be/nl/news/de-fod-werkgelegenheid-steunt-de-campagne-blue-heart-2026-gevangen-achter-de-oplichting-0",
+      "published_date_local": "2026-07-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Statistieken over herstructureringen voor de periode januari tot juni 2026",
+      "url": "https://werk.belgie.be/nl/news/statistieken-over-herstructureringen-voor-de-periode-januari-tot-juni-2026",
+      "published_date_local": "2026-07-17",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Verlenging en flexibilisering van het mantelzorgverlof vanaf 1 juli 2026 – Publicatie van het koninklijk besluit met praktische regels (UPDATE)",
+      "url": "https://werk.belgie.be/nl/news/verlenging-en-flexibilisering-van-het-mantelzorgverlof-vanaf-1-juli-2026-publicatie-van-het",
+      "published_date_local": "2026-07-17",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 10,
+  "live_dated_count": 10,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "be_employment",
+    "country": "BE",
+    "name_zh": "比利時就業、勞動與社會協商公共服務部",
+    "name": "Federale Overheidsdienst Werkgelegenheid, Arbeid en Sociaal Overleg",
+    "institution_type": "ministry",
+    "language": "nl",
+    "homepage": "https://www.werk.belgie.be",
+    "listing_url": "https://werk.belgie.be/nl/nieuws",
+    "feed_urls": [],
+    "allow_domains": [
+      "werk.belgie.be"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Brussels",
+    "card_selectors": [
+      "article"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

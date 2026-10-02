@@ -1,0 +1,41 @@
+{
+  "url": "https://www.regeringen.se/sveriges-regering/statsradsberedningen/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:18.789117+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "73a25698d317267e26ea454dbf782bb188c5984395baf6db5e8983325f50dbc0",
+  "sha256": "13026822413ac3f95163f0f34e4af1aec689003842e03bac92f3d408bf59ecaa",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 20,
+  "dated_count": 20,
+  "fixture_count": 4,
+  "source_id": "se_prime_minister",
+  "expected": [
+    {
+      "title": "Konkurrenskraft i fokus när EU-minister Jessica Rosencrantz träffar nordiska samarbetsministrar i Köpenhamn",
+      "url": "https://www.regeringen.se/pressmeddelanden/2026/10/konkurrenskraft-i-fokus-nar-eu-minister-jessica-rosencrantz-traffar-nordiska-samarbetsministrar-i-kopenhamn/",
+      "published_date_local": "2026-10-01",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Sverige bidrar med stridsflyg till Natoinsats i Polen",
+      "url": "https://www.regeringen.se/pressmeddelanden/2026/09/sverige-bidrar-med-stridsflyg-till-natoinsats-i-polen/",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Regeringsärenden vecka 39, 2026",
+      "url": "https://www.regeringen.se/regeringsarenden/regeringsarenden-vecka-39-2026/",
+      "published_date_local": "2026-09-23",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "EU-minister Jessica Rosencrantz deltar i ministerrådsmöte i Bryssel",
+      "url": "https://www.regeringen.se/pressmeddelanden/2026/09/eu-minister-jessica-rosencrantz-deltar-i-ministerradsmote-i-bryssel/",
+      "published_date_local": "2026-09-22",
+      "date_source": "source-selector"
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "schema_version": 1,
+  "country": "HU",
+  "reviewed_on": "2026-10-02",
+  "official_roster_urls": [
+    "https://kormany.hu/kormanyzat"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "2026-10-02 bounded HU-only follow-up: 14/16 ministries manually verified from their own ministry homepage/news cards after fully dated production scrape and genuine bounded fixture replay; 2 remain unresolved. Government-wide news is not assigned to ministry rows. Scheduling disabled, noncritical, all 15 topics, empty responsibility."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "hu_agriculture",
+      "name_zh": "匈牙利農業與糧食經濟部",
+      "name_local": "Agrár- és Élelmiszergazdaságért felelős Minisztérium",
+      "name_en": "Ministry of Agriculture and Food Economy",
+      "kind": "ministry",
+      "language": "hu",
+      "homepage": "https://kormany.hu/kormanyzat/agrar-es-elelmiszergazdasagi-miniszterium",
+      "news_url": "https://kormany.hu/kormanyzat/agrar-es-elelmiszergazdasagi-miniszterium",
+      "source_ids": [
+        "hu_agriculture"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (12 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_hu_agriculture.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://kormany.hu/kormanyzat",
+        "https://kormany.hu/kormanyzat/agrar-es-elelmiszergazdasagi-miniszterium",
+        "https://kormany.hu/kormanyzat/agrar-es-elelmiszergazdasagi-miniszterium/hirek",
+        "https://kormany.hu/hirek",
+        "https://kormany.hu/hirlevel",
+        "https://kormany.hu/hirek/altalanos-aszaly-vis-maior-mentesseget-vezet-be-a-kormany-minden-terulet-es-allatalapu-agrartamogatasra",
+        "https://kormany.hu/hirek/az-agrarium-jovoje-a-felkeszult-szakemberekkel-kezdodik",
+        "https://kormany.hu/hirek/tenyek-a-brit-kiralyi-udvarnal-levo-ket-magyar-lipicai-lo-ugyeben",
+        "https://kormany.hu/hirek/megtortent-az-orszagos-aszalyhelyzet-kihirdetese",
+        "https://kormany.hu/hirek/ujabb-segitseget-kapnak-a-nehez-helyzetben-levo-sertestartok",
+        "https://kormany.hu/hirek/ujabb-segitseg-a-juh-es-kecskeagazat-szamara-emelkedik-a-tenyeszkos-es-tenyeszbak-tamogatas-keretosszege"
+      ]
+    },
+    {
+      "canonical_id": "hu_interior",
+      "name_zh": "匈牙利內政部",
+      "name_local": "Belügyminisztérium",
+      "name_en": "Ministry of the Interior",
+      "kind": "ministry",
+      "language": "hu",
+      "homepage": "https://kormany.hu/kormanyzat/belugyminiszterium",
+      "news_url": "https://kormany.hu/kormanyzat/belugyminiszterium",
+      "source_ids": [
+        "hu_interior"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (14 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_hu_interior.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://kormany.hu/kormanyzat",
+        "https://kormany.hu/kormanyzat/belugyminiszterium",
+        "https://kormany.hu/hirek",
+        "https://kormany.hu/hirlevel",
+        "https://kormany.hu/kormanyzat/belugyminiszterium/a-belugyminiszterium-hirei/az-amerikai-egyesult-allamok-budapesti-ugyvivojet-fogadta-a-belugyminiszter",
+        "https://kormany.hu/kormanyzat/belugyminiszterium/a-belugyminiszterium-hirei/magyarlengyel-belugyminiszteri-talalkozo-varsoban",
+        "https://kormany.hu/kormanyzat/belugyminiszterium/a-belugyminiszterium-hirei/palyazati-felhivas-a-nemzeti-sportugynokseg-nonprofit-zrt-elnok-vezerigazgatoi-tisztsegere",
+        "https://kormany.hu/kormanyzat/belugyminiszterium/a-belugyminiszterium-hirei",
+        "https://kormany.hu/a-belugyminiszterium-hirei/az-amerikai-egyesult-allamok-budapesti-ugyvivojet-fogadta-a-belugyminiszter",
+        "https://kormany.hu/a-belugyminiszterium-hirei/magyarlengyel-belugyminiszteri-talalkozo-varsoban",
+        "https://kormany.hu/a-belugyminiszterium-hirei/palyazati-felhivas-a-nemzeti-sportugynokseg-nonprofit-zrt-elnok-vezerigazgatoi-tisztsegere"
+      ]
+    },
+    {
+      "canonical_id": "hu_health",
+      "name_zh": "匈牙利衛生部",
+      "name_local": "Egészségügyi Minisztérium",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "hu",
+      "homepage": "https://kormany.hu/kormanyzat/egeszsegugyi-miniszterium",
+      "news_url": "https://kormany.hu/kormanyzat/egeszsegugyi-miniszterium",
+      "source_ids": [
+        "hu_health"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (2 dated items); genuine bounded fixture replays 2 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_hu_health.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://kormany.hu/kormanyzat",
+        "https://kormany.hu/kormanyzat/egeszsegugyi-miniszterium",
+        "https://kormany.hu/kormanyzat/egeszsegugyi-miniszterium/hirek",
+        "https://kormany.hu/hirek",
+        "https://kormany.hu/hirlevel",
+        "https://kormany.hu/hirek/uj-vezeto-a-mentoszolgalat-elen",
+        "https://kormany.hu/hirek/eletkezdeti-etikai-dontesek-elindult-az-egyeztetes"
+      ]
+    },
+    {
+      "canonical_id": "hu_environment",
+      "name_zh": "匈牙利環境部",
+      "name_local": "Élő Környezetért felelős Minisztérium",
+      "name_en": "Ministry for the Living Environment",
+      "kind": "ministry",
+      "language": "hu",
+      "homepage": "https://kormany.hu/kormanyzat/elo-kornyezet-miniszterium",
+      "news_url": "https://kormany.hu/kormanyzat/elo-kornyezet-miniszterium",
+      "source_ids": [
+        "hu_environment"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (7 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_hu_environment.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://kormany.hu/kormanyzat",
+        "https://kormany.hu/kormanyzat/elo-kornyezet-miniszterium",
+        "https://kormany.hu/kormanyzat/elo-kornyezet-miniszterium/hirek",
+        "https://kormany.hu/hirek",
+        "https://kormany.hu/hirlevel",
+        "https://kormany.hu/hirek/vasarnap-ejfelig-meg-lehet-regisztralni-a-teszedd-akciora",
+        "https://kormany.hu/hirek/szeptember-22-ig-lehet-regisztralni-az-idei-teszedd-hulladekgyujto-akciora",
+        "https://kormany.hu/hirek/a-klimavaltozassal-jaro-sebezhetoseg-merseklese-globalis-szinten-osszehangolt-fellepest-surget",
+        "https://kormany.hu/hirek/nemzeti-kommunikacios-akcioterv",
+        "https://kormany.hu/hirek/gajdos-laszlo-a-byd-tol-nemcsak-igereteket-hanem-jogkoveto-mukodest-varunk",
+        "https://kormany.hu/hirek/magyarorszag-csatlakozott-az-erdok-vedelmet-celzo-europai-kezdemenyezeshez"
+      ]
+    },
+    {
+      "canonical_id": "hu_economy_energy",
+      "name_zh": "匈牙利經濟與能源部",
+      "name_local": "Gazdasági és Energetikai Minisztérium",
+      "name_en": "Ministry of Economy and Energy",
+      "kind": "ministry",
+      "language": "hu",
+      "homepage": "https://kormany.hu/kormanyzat/gazdasagi-es-energetikai-miniszterium",
+      "news_url": "https://kormany.hu/kormanyzat/gazdasagi-es-energetikai-miniszterium",
+      "source_ids": [
+        "hu_economy_energy"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (3 dated items); genuine bounded fixture replays 3 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_hu_economy_energy.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://kormany.hu/kormanyzat",
+        "https://kormany.hu/kormanyzat/gazdasagi-es-energetikai-miniszterium",
+        "https://kormany.hu/kormanyzat/gazdasagi-es-energetikai-miniszterium/hirek",
+        "https://kormany.hu/hirek",
+        "https://kormany.hu/hirlevel",
+        "https://kormany.hu/hirek/ujabb-harom-teruleten-kutathatnak-gaz-es-olaj-utan",
+        "https://kormany.hu/hirek/modosulnak-a-szechenyi-kartya-program-likviditasi-hiteltermekei",
+        "https://kormany.hu/hirek/bejelentes-nagy-lepest-teszunk-magyarorszag-biztonsagosabb-energiaellatasaert"
+      ]
+    },
+    {
+      "canonical_id": "hu_education_children",
+      "name_zh": "匈牙利教育與兒童事務部",
+      "name_local": "Oktatási és Gyermekügyi Minisztérium",
+      "name_en": "Ministry of Education and Children",
+      "kind": "ministry",
+      "language": "hu",
+      "homepage": "https://kormany.hu/kormanyzat/oktatasi-es-gyermekugyi-miniszterium",
+      "news_url": "https://kormany.hu/kormanyzat/oktatasi-es-gyermekugyi-miniszterium",
+      "source_ids": [
+        "hu_education_children"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (15 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_hu_education_children.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://kormany.hu/kormanyzat",
+        "https://kormany.hu/kormanyzat/oktatasi-es-gyermekugyi-miniszterium",
+        "https://kormany.hu/kormanyzat/oktatasi-es-gyermekugyi-miniszterium/hirek",
+        "https://kormany.hu/hirek",
+        "https://kormany.hu/hirlevel",
+        "https://kormany.hu/kormanyzat/oktatasi-es-gyermekugyi-miniszterium/hirek/jo-gyakorlatok-es-szakmai-inspiracio-a-gyermekek-es-diakok-hangja-projektnaphoz",
+        "https://kormany.hu/kormanyzat/oktatasi-es-gyermekugyi-miniszterium/hirek/nyilt-regisztracio-az-oktatasi-es-gyermekugyi-miniszterium-tarsadalmi-egyeztetesi-folyamataiban-valo-reszvetelre",
+        "https://kormany.hu/kormanyzat/oktatasi-es-gyermekugyi-miniszterium/hirek/uj-fejezet-kezdodik-a-klebelsberg-kozpont-eleteben-a-mai-nappal-sinka-editet-neveztem-ki-a-klebelsberg-kozpont-elere",
+        "https://kormany.hu/hirek/identol-a-szakkepzesben-tanulok-is-reszt-vehetnek-az-orszagos-diakparlament-ulesein",
+        "https://kormany.hu/hirek/folytatodik-a-szakkepzesi-centrumok-vezetesi-modelljenek-megujulasa-elerhetoek-az-elozetes-foigazgatoi-palyazati-eljaras-reszletei",
+        "https://kormany.hu/hirek/megkezdodott-az-ingyenes-tanszercsomagok-kiosztasa-a-raszorulo-gyermekek-szamara-a-klebelsberg-kozpont-efop-plusz-projektjenek-kereteben"
+      ]
+    },
+    {
+      "canonical_id": "hu_defence",
+      "name_zh": "匈牙利國防部",
+      "name_local": "Honvédelmi Minisztérium",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "hu",
+      "homepage": "https://kormany.hu/kormanyzat/honvedelmi-miniszterium",
+      "news_url": "https://kormany.hu/hirek",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "2026-10-02 HU-only follow-up after production Hungarian date-parser update. Verified HTTP 200 ministry homepage has zero article.article-card news containers; no dated ministry-scoped news payload found in the bounded official alternatives. Tested homepage: https://kormany.hu/kormanyzat/honvedelmi-miniszterium. Previously tested government-wide /hirek remains unscoped and is not enrolled. Prior captured alternatives/errors remain in the audit evidence.",
+      "evidence_urls": [
+        "https://kormany.hu/kormanyzat",
+        "https://kormany.hu/kormanyzat/honvedelmi-miniszterium",
+        "https://kormany.hu/hirek",
+        "https://kormany.hu/hirlevel"
+      ]
+    },
+    {
+      "canonical_id": "hu_justice",
+      "name_zh": "匈牙利司法部",
+      "name_local": "Igazságügyi Minisztérium",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "hu",
+      "homepage": "https://kormany.hu/kormanyzat/igazsagugyi-miniszterium",
+      "news_url": "https://kormany.hu/kormanyzat/igazsagugyi-miniszterium/igazsagugyi-hirek",
+      "source_ids": [
+        "hu_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (12 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_hu_justice.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://kormany.hu/kormanyzat",
+        "https://kormany.hu/kormanyzat/igazsagugyi-miniszterium",
+        "https://kormany.hu/kormanyzat/igazsagugyi-miniszterium/igazsagugyi-hirek",
+        "https://kormany.hu/hirek",
+        "https://kormany.hu/hirlevel",
+        "https://kormany.hu/kormanyzat/igazsagugyi-miniszterium/igazsagugyi-hirek/szemelyesen-egyeztetett-az-europai-fougyesz-magyarorszag-eppo-tagsaganak-reszleteirol-az-igazsagugyi-miniszteriumban",
+        "https://kormany.hu/kormanyzat/igazsagugyi-miniszterium/igazsagugyi-hirek/hol-tart-a-folyamat-magyarorszag-europia-ugyeszseghez-torteno-csatlakozasi-folyamataban",
+        "https://kormany.hu/kormanyzat/igazsagugyi-miniszterium/igazsagugyi-hirek/igazsagugyi-miniszter-a-szellemi-tulajdon-nemzeti-hivatalanak-elnokevel-egyeztetett",
+        "https://kormany.hu/kormanyzat/igazsagugyi-miniszterium/igazsagugyi-hirek/a-torvenyszekek-elnokei-az-igazsagugyi-miniszteriumban",
+        "https://kormany.hu/kormanyzat/igazsagugyi-miniszterium/igazsagugyi-hirek/az-itelotablak-elnokeivel-folytattunk-kozos-szakmai-egyeztetest-az-igazsagugyi-miniszteriumban",
+        "https://kormany.hu/kormanyzat/igazsagugyi-miniszterium/igazsagugyi-hirek/a-japan-kepviselohaz-tagjai-az-igazsagugyi-miniszteriumban",
+        "https://kormany.hu/kormanyzat/igazsagugyi-miniszterium/igazsagugyi-hirek/egyuttmukodesrol-egyeztetett-az-igazsagugyi-miniszterium-es-a-magyar-iparjogvedelmi-es-szerzoi-jogi-egyesulet"
+      ]
+    },
+    {
+      "canonical_id": "hu_transport_investment",
+      "name_zh": "匈牙利交通與投資部",
+      "name_local": "Közlekedési és Beruházási Minisztérium",
+      "name_en": "Ministry of Transport and Investment",
+      "kind": "ministry",
+      "language": "hu",
+      "homepage": "https://kormany.hu/kormanyzat/kozlekedesi-es-beruhazasi-miniszterium",
+      "news_url": "https://kormany.hu/kormanyzat/kozlekedesi-es-beruhazasi-miniszterium",
+      "source_ids": [
+        "hu_transport_investment"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (8 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_hu_transport_investment.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://kormany.hu/kormanyzat",
+        "https://kormany.hu/kormanyzat/kozlekedesi-es-beruhazasi-miniszterium",
+        "https://kormany.hu/kormanyzat/kozlekedesi-es-beruhazasi-miniszterium/hirek",
+        "https://kormany.hu/hirek",
+        "https://kormany.hu/hirlevel",
+        "https://kormany.hu/hirek/palyazati-kiiras",
+        "https://kormany.hu/hirek/termeszetkozeli-tervek-alapjan-ujulhat-meg-a-ferto-to-partja",
+        "https://kormany.hu/hirek/tarkanyi-zsolt-uj-lenduletet-kapott-a-vasut",
+        "https://kormany.hu/hirek/elindult-a-jeloles-az-id-rubik-erno-dijra-magyarorszag-kiemelkedo-mernokeit-keresik",
+        "https://kormany.hu/hirek/a-miniszterium-reszlegesen-feloldja-a-hetvegi-kamionstopot",
+        "https://kormany.hu/hirek/a-kozlekedesi-es-beruhazasi-miniszterium-a-harmadfoku-hosegriasztas-miatt-reszlegesen-feloldja-a-hetvegi-kamionstopot"
+      ]
+    },
+    {
+      "canonical_id": "hu_foreign_affairs",
+      "name_zh": "匈牙利外交部",
+      "name_local": "Külügyminisztérium",
+      "name_en": "Ministry of Foreign Affairs",
+      "kind": "ministry",
+      "language": "hu",
+      "homepage": "https://kormany.hu/kormanyzat/kulugyminiszter",
+      "news_url": "https://kormany.hu/kormanyzat/kulugyminiszter",
+      "source_ids": [
+        "hu_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (12 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_hu_foreign_affairs.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://kormany.hu/kormanyzat",
+        "https://kormany.hu/kormanyzat/kulugyminiszter",
+        "https://kormany.hu/hirek",
+        "https://kormany.hu/hirlevel"
+      ]
+    },
+    {
+      "canonical_id": "hu_prime_minister",
+      "name_zh": "匈牙利總理府",
+      "name_local": "Miniszterelnökség",
+      "name_en": "Prime Minister's Office",
+      "kind": "government_head_office",
+      "language": "hu",
+      "homepage": "https://kormany.hu/kormanyzat/miniszterelnokseg",
+      "news_url": "https://kormany.hu/hirek",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "2026-10-02 HU-only follow-up after production Hungarian date-parser update. Verified HTTP 200 ministry homepage has zero article.article-card news containers. The displayed deadline-date fields belong to document consultation closing dates, not news publication dates; these are not accepted as publication evidence. Tested homepage: https://kormany.hu/kormanyzat/miniszterelnokseg. Previously tested government-wide /hirek remains unscoped and is not enrolled. Prior captured alternatives/errors remain in the audit evidence.",
+      "evidence_urls": [
+        "https://kormany.hu/kormanyzat",
+        "https://kormany.hu/kormanyzat/miniszterelnokseg",
+        "https://kormany.hu/hirek",
+        "https://kormany.hu/hirlevel"
+      ]
+    },
+    {
+      "canonical_id": "hu_finance",
+      "name_zh": "匈牙利財政部",
+      "name_local": "Pénzügyminisztérium",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "hu",
+      "homepage": "https://kormany.hu/kormanyzat/penzugyminiszterium",
+      "news_url": "https://kormany.hu/kormanyzat/penzugyminiszterium",
+      "source_ids": [
+        "hu_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (12 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_hu_finance.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://kormany.hu/kormanyzat",
+        "https://kormany.hu/kormanyzat/penzugyminiszterium",
+        "https://kormany.hu/kormanyzat/penzugyminiszterium/hirek",
+        "https://kormany.hu/hirek",
+        "https://kormany.hu/hirlevel"
+      ]
+    },
+    {
+      "canonical_id": "hu_social_family",
+      "name_zh": "匈牙利社會與家庭事務部",
+      "name_local": "Szociális és Családügyi Minisztérium",
+      "name_en": "Ministry of Social and Family Affairs",
+      "kind": "ministry",
+      "language": "hu",
+      "homepage": "https://kormany.hu/kormanyzat/szocialis-es-csaladugyi-miniszterium",
+      "news_url": "https://kormany.hu/kormanyzat/szocialis-es-csaladugyi-miniszterium",
+      "source_ids": [
+        "hu_social_family"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (12 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_hu_social_family.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://kormany.hu/kormanyzat",
+        "https://kormany.hu/kormanyzat/szocialis-es-csaladugyi-miniszterium",
+        "https://kormany.hu/kormanyzat/szocialis-es-csaladugyi-miniszterium/hirek",
+        "https://kormany.hu/hirek",
+        "https://kormany.hu/hirlevel"
+      ]
+    },
+    {
+      "canonical_id": "hu_society_culture",
+      "name_zh": "匈牙利社會關係與文化部",
+      "name_local": "Társadalmi kapcsolatokért és Kultúráért felelős Minisztérium",
+      "name_en": "Ministry for Social Relations and Culture",
+      "kind": "ministry",
+      "language": "hu",
+      "homepage": "https://kormany.hu/kormanyzat/tarsadalmi-kapcsolatokert-es-kulturaert-felelos-miniszterium",
+      "news_url": "https://kormany.hu/kormanyzat/tarsadalmi-kapcsolatokert-es-kulturaert-felelos-miniszterium",
+      "source_ids": [
+        "hu_society_culture"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (11 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_hu_society_culture.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://kormany.hu/kormanyzat",
+        "https://kormany.hu/kormanyzat/tarsadalmi-kapcsolatokert-es-kulturaert-felelos-miniszterium",
+        "https://kormany.hu/hirek",
+        "https://kormany.hu/hirlevel"
+      ]
+    },
+    {
+      "canonical_id": "hu_rural_development",
+      "name_zh": "匈牙利鄉村與地方發展部",
+      "name_local": "Vidék- és Településfejlesztési Minisztérium",
+      "name_en": "Ministry of Rural and Municipal Development",
+      "kind": "ministry",
+      "language": "hu",
+      "homepage": "https://kormany.hu/kormanyzat/videk-es-telepulesfejlesztesi-miniszterium",
+      "news_url": "https://kormany.hu/kormanyzat/videk-es-telepulesfejlesztesi-miniszterium",
+      "source_ids": [
+        "hu_rural_development"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (7 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_hu_rural_development.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://kormany.hu/kormanyzat",
+        "https://kormany.hu/kormanyzat/videk-es-telepulesfejlesztesi-miniszterium",
+        "https://kormany.hu/hirek"
+      ]
+    },
+    {
+      "canonical_id": "hu_science_technology",
+      "name_zh": "匈牙利科學與科技部",
+      "name_local": "Tudományos és Technológiai Minisztérium",
+      "name_en": "Ministry of Science and Technology",
+      "kind": "ministry",
+      "language": "hu",
+      "homepage": "https://kormany.hu/kormanyzat/tudomanyos-es-technologiai-miniszterium",
+      "news_url": "https://kormany.hu/kormanyzat/tudomanyos-es-technologiai-miniszterium",
+      "source_ids": [
+        "hu_science_technology"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (12 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_hu_science_technology.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://kormany.hu/kormanyzat",
+        "https://kormany.hu/kormanyzat/tudomanyos-es-technologiai-miniszterium",
+        "https://kormany.hu/hirek"
+      ]
+    }
+  ]
+}

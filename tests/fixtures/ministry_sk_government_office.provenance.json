@@ -1,0 +1,41 @@
+{
+  "url": "https://www.vlada.gov.sk/rss/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:50.519388+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "ee9b8db762f47f2db5609502e84d11ac7328c92a921c5d0329f20611e1be6462",
+  "sha256": "8acf9e1db28d914dac9995724c977e806d595b703cf12457d2bf75ada767c73f",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "sk_government_office",
+  "expected": [
+    {
+      "title": "Robert Fico k Vízii Slovensko 2040: Budúce generácie nás budú hodnotiť podľa toho, či sme Slovensko pripravili na zmeny",
+      "url": "https://www.vlada.gov.sk/tlacove-spravy/robert-fico-k-vizii-slovensko-2040-buduce-generacie-nas-budu-hodnotit-podla-toho-ci-sme-slovensko-pripravili-na-zmeny/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Výjazdové rokovanie vlády v Uhrovci prinieslo do regiónu viac ako 3 milióny eur na rozvoj infraštruktúry, zdravotníctva, školstva a cestovného ruchu",
+      "url": "https://www.vlada.gov.sk/tlacove-spravy/vyjazdove-rokovanie-vlady-v-uhrovci-prinieslo-do-regionu-viac-ako-3-miliony-eur-na-rozvoj-infrastruktury-zdravotnictva-skolstva/",
+      "published_date_local": "2026-09-30",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Predseda vlády SR Robert Fico ocenil dokončenú modernizáciu Nemocnice Poprad a vyzval na realistické hodnotenie slovenského zdravotníctva",
+      "url": "https://www.vlada.gov.sk/tlacove-spravy/predseda-vlady-sr-robert-fico-ocenil-dokoncenu-modernizaciu-nemocnice-poprad-a-vyzval-na-realisticke-hodnotenie-slovenskeho/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Obnova NKP kaštieľa v Rusovciach pokračuje, rekonštrukcia odhaľuje aj výnimočné rímske dedičstvo",
+      "url": "https://www.vlada.gov.sk/tlacove-spravy/obnova-nkp-kastiela-v-rusovciach-pokracuje-rekonstrukcia-odhaluje-aj-vynimocne-rimske-dedicstvo/",
+      "published_date_local": "2026-09-26",
+      "date_source": "feed-published"
+    }
+  ]
+}

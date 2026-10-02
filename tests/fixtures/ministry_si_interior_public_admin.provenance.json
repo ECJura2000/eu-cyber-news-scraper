@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=4447",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:49:07.730363+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "ccc1c1e50b9d5315dff2be873a47a7d2e466f385835ce3f584e53f1d859f7d4f",
+  "sha256": "aff613d0112e6f5bc0666c5e9c0991009e4c5e93b56ce6e18b174db9a42fcc4a",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 88,
+  "dated_count": 88,
+  "fixture_count": 4,
+  "source_id": "si_interior_public_admin",
+  "expected": [
+    {
+      "title": "Varnost se začne v lokalni skupnosti",
+      "url": "https://www.gov.si/novice/2026-09-29-varnost-se-zacne-v-lokalni-skupnosti/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Petki za javno naročanje: tokrat o statističnem poročilu o javnih naročilih, oddanih v letu 2025",
+      "url": "https://www.gov.si/novice/2026-09-25-petki-za-javno-narocanje-tokrat-o-statisticnem-porocilu-o-javnih-narocilih-oddanih-v-letu-2025/",
+      "published_date_local": "2026-09-25",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Smo ponosni zmagovalci natečaja Premik naprej 2026 za najboljšo izboljšavo v javni upravi",
+      "url": "https://www.gov.si/novice/2026-09-24-smo-ponosni-zmagovalci-natecaja-premik-naprej-2026-za-najboljso-izboljsavo-v-javni-upravi/",
+      "published_date_local": "2026-09-24",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Minister Matoz se je seznanil z ukrepi po policijskem postopku na Čopovi ulici decembra 2024",
+      "url": "https://www.gov.si/novice/2026-09-24-minister-matoz-se-je-seznanil-z-ukrepi-po-policijskem-postopku-na-copovi-ulici-decembra-2024/",
+      "published_date_local": "2026-09-24",
+      "date_source": "feed-published"
+    }
+  ]
+}

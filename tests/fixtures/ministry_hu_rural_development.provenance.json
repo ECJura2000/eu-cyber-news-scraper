@@ -1,0 +1,145 @@
+{
+  "source_id": "hu_rural_development",
+  "url": "https://kormany.hu/kormanyzat/videk-es-telepulesfejlesztesi-miniszterium",
+  "final_url": "https://kormany.hu/kormanyzat/videk-es-telepulesfejlesztesi-miniszterium",
+  "observed_at": "2026-10-02T01:18:42.761581+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "91ea95af9318d154b18d71812d47ce474dc57b8de9eeaa2afaa36241f4fdf8ff",
+  "response_bytes": 810190,
+  "fixture_sha256": "e1999b95ac4213c78e6310b9d9333a7c412e487985a618a35b09ae01d2d04cd6",
+  "fixture_bytes": 7113,
+  "transform": "BeautifulSoup extraction of genuine dated news containers retaining original attributes/text; scripts/styles removed; original base retained if present; bounded to six or fewer containers",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "Feljelentést tett Lőrincz Viktória vidék- és településfejlesztési miniszter költségvetési csalás, hűtlen kezelés és hivatali visszaélés gyanúja miatt",
+      "url": "https://kormany.hu/hirek/feljelentest-tett-lorincz-viktoria-videk-es-telepulesfejlesztesi-miniszter-koltsegvetesi-csalas-hutlen-kezeles-es-hivatali-visszaeles-gyanuja-miatt",
+      "published_date_local": "2026-09-29"
+    },
+    {
+      "title": "Lőrincz Viktória: Az a célunk, hogy az emberek helyben élhessenek, dolgozhassanak és építhessék jövőjüket",
+      "url": "https://kormany.hu/hirek/lorincz-viktoria-az-a-celunk-hogy-az-emberek-helyben-elhessenek-dolgozhassanak-es-epithessek-jovojuket",
+      "published_date_local": "2026-09-29"
+    },
+    {
+      "title": "Kiírták a pályázatot – indul a Szent István Vidékfejlesztési Program",
+      "url": "https://kormany.hu/hirek/kiirtak-a-palyazatot-indul-a-szent-istvan-videkfejlesztesi-program",
+      "published_date_local": "2026-09-23"
+    },
+    {
+      "title": "Nyílt pályázaton keresik a fővárosi és kilenc megyei kormányhivatal vezetőjét",
+      "url": "https://kormany.hu/hirek/nyilt-palyazaton-keresik-a-fovarosi-es-kilenc-megyei-kormanyhivatal-vezetojet",
+      "published_date_local": "2026-09-17"
+    },
+    {
+      "title": "Új korszak a vidékfejlesztésben: indul a Szent István Program",
+      "url": "https://kormany.hu/hirek/uj-korszak-a-videkfejlesztesben-indul-a-szent-istvan-programm",
+      "published_date_local": "2026-09-09"
+    },
+    {
+      "title": "Dupla összegű, 10 milliárd forintos keretösszeggel jön a Szociális Tüzelőanyag Program",
+      "url": "https://kormany.hu/hirek/dupla-osszegu-10-milliard-forintos-keretosszeggel-jon-a-szocialis-tuzeloanyag-program",
+      "published_date_local": "2026-09-02"
+    }
+  ],
+  "live_status": {
+    "source_id": "hu_rural_development",
+    "source_name": "匈牙利鄉村與地方發展部",
+    "country": "HU",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 7,
+    "relevant_count": 7,
+    "duration_seconds": 5.361,
+    "newest_published_at": "2026-09-28T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 7,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 7,
+    "freshness_lag_days": 4.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 810190,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "hu_rural_development",
+    "country": "HU",
+    "name_zh": "匈牙利鄉村與地方發展部",
+    "name": "Vidék- és Településfejlesztési Minisztérium",
+    "institution_type": "central ministry",
+    "language": "hu",
+    "homepage": "https://kormany.hu/kormanyzat/videk-es-telepulesfejlesztesi-miniszterium",
+    "listing_url": "https://kormany.hu/kormanyzat/videk-es-telepulesfejlesztesi-miniszterium",
+    "feed_urls": [],
+    "allow_domains": [
+      "kormany.hu"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Budapest",
+    "card_selectors": [
+      "article.article-card"
+    ],
+    "link_selectors": [
+      "a.article-card__link"
+    ],
+    "title_selectors": [
+      "h2.article-card__title"
+    ],
+    "date_selectors": [
+      ".article-card__date"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_hu_rural_development.html",
+  "format": "html"
+}

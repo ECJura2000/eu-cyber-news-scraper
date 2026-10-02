@@ -1,0 +1,91 @@
+{
+  "source_id": "dk_justice",
+  "url": "https://www.justitsministeriet.dk/pressemeddelelse/",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:30.690234+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "f4cfae336a973c93138356c60e93d58275dd3b0856609aa94369c2b6f26369a7",
+  "response_sha256": "12598e7ea66fd657847b5710b2bacaf43b3769a4417dd923dfac510d02791f63",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Ny evaluering af groomingbestemmelsen oversendt til Folketinget",
+      "url": "https://www.justitsministeriet.dk/pressemeddelelse/ny-evaluering-af-groomingbestemmelsen-oversendt-til-folketinget/",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Justitsminister Nicolai Wammen åbner for pulje til tryghedskameraer i kommunerne",
+      "url": "https://www.justitsministeriet.dk/pressemeddelelse/justitsminister-nicolai-wammen-aabner-for-pulje-til-tryghedskameraer-i-kommunerne/",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Flere kontroller og hårdere konsekvenser: Regeringen styrker kontrollen af dyrevelfærd markant",
+      "url": "https://www.justitsministeriet.dk/pressemeddelelse/flere-kontroller-og-haardere-konsekvenser-regeringen-styrker-kontrollen-af-dyrevelfaerd-markant/",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Pressemøde i Justitsministeriet om ny akutplan for dyrevelfærdskontrollen",
+      "url": "https://www.justitsministeriet.dk/pressemeddelelse/pressemoede-i-justitsministeriet-om-ny-akutplan-for-dyrevelfaerdskontrollen/",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Regeringen vil sikre kæmpe saltvandsindsprøjtning i PET og politiet",
+      "url": "https://www.justitsministeriet.dk/pressemeddelelse/regeringen-vil-sikre-kaempe-saltvandsindsproejtning-i-pet-og-politiet/",
+      "published_date_local": "2026-09-25",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Justitsminister Nicolai Wammen hædrer politibetjente, der er kommet til skade i tjenesten",
+      "url": "https://www.justitsministeriet.dk/pressemeddelelse/justitsminister-nicolai-wammen-haedrer-politibetjente-der-er-kommet-til-skade-i-tjenesten/",
+      "published_date_local": "2026-09-20",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Børneattester udstedes igen",
+      "url": "https://www.justitsministeriet.dk/pressemeddelelse/boerneattester-udstedes-igen/",
+      "published_date_local": "2026-09-18",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Med nyt værktøj kan politiet afsløre snyd med parkeringskort til mennesker med handicap",
+      "url": "https://www.justitsministeriet.dk/pressemeddelelse/med-nyt-vaerktoej-kan-politiet-afsloere-snyd-med-parkeringskort-til-mennesker-med-handicap/",
+      "published_date_local": "2026-09-16",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 10,
+  "live_dated_count": 10,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "dk_justice",
+    "country": "DK",
+    "name_zh": "丹麥司法部",
+    "name": "Justitsministeriet",
+    "institution_type": "ministry",
+    "language": "da",
+    "homepage": "https://www.justitsministeriet.dk/",
+    "listing_url": "https://www.justitsministeriet.dk/pressemeddelelse/",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.justitsministeriet.dk"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Copenhagen",
+    "card_selectors": [
+      "article"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

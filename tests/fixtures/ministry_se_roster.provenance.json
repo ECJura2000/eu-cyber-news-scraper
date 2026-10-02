@@ -1,0 +1,11 @@
+{
+  "url": "https://www.regeringen.se/sveriges-regering/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:54:46.667859+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "80ce0024fd01a47b31d0f36ec6bd2bb0b55479046bece3ddf67b7ae5df19e2bb",
+  "sha256": "aaa44a85816d7f65ca7f6bcdfdc7c14b771a0038aef1fa81903678f4a776963d",
+  "extraction": "Deduplicated original official department roster anchor elements"
+}

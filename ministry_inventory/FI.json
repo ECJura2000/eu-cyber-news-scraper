@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "country": "FI",
+  "reviewed_on": "2026-10-02",
+  "official_roster_urls": [
+    "https://valtioneuvosto.fi/ministeriot",
+    "https://valtioneuvosto.fi/en/ministries"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "2026-10-02 ministry news audit: 0 manually verified and 0 existing-source ministries; 12 unresolved. Roster enumeration does not imply searchable completeness. Exact tried URLs and robots/transport/parser/attribution limitations are recorded per ministry; unresolved rows have no runnable source. New sources retain disabled scheduling/noncritical status, all 15 topics, empty responsibility, and genuine checksum-backed fixture replay."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "fi_prime_minister",
+      "name_zh": "芬蘭總理府",
+      "name_local": "Valtioneuvoston kanslia",
+      "name_en": "Prime Minister's Office",
+      "kind": "government_head_office",
+      "language": "fi",
+      "homepage": "https://valtioneuvosto.fi/en/prime-ministers-office",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://valtioneuvosto.fi/en/prime-ministers-office => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/prime-ministers-office; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://valtioneuvosto.fi/en/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/en/current-issues/press-releases; https://valtioneuvosto.fi/en/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/rss",
+      "evidence_urls": [
+        "https://valtioneuvosto.fi/ministeriot",
+        "https://valtioneuvosto.fi/en/ministries",
+        "https://valtioneuvosto.fi/en/prime-ministers-office",
+        "https://valtioneuvosto.fi/en/about-the-site",
+        "https://valtioneuvosto.fi/en/staattiset-feedit-en",
+        "https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss",
+        "https://valtioneuvosto.fi/en/en/current-issues/press-releases",
+        "https://valtioneuvosto.fi/en/rss"
+      ]
+    },
+    {
+      "canonical_id": "fi_foreign_affairs",
+      "name_zh": "芬蘭外交部",
+      "name_local": "Ulkoministeriö",
+      "name_en": "Ministry for Foreign Affairs",
+      "kind": "ministry",
+      "language": "fi",
+      "homepage": "https://um.fi",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://um.fi => HTTPStatusError: Client error '403 Forbidden' for url 'https://um.fi'; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://um.fi/en/current-issues/press-releases => HTTPStatusError: Client error '403 Forbidden' for url 'https://um.fi/en/current-issues/press-releases'; https://um.fi/rss => HTTPStatusError: Client error '403 Forbidden' for url 'https://um.fi/rss'",
+      "evidence_urls": [
+        "https://valtioneuvosto.fi/ministeriot",
+        "https://valtioneuvosto.fi/en/ministries",
+        "https://um.fi",
+        "https://valtioneuvosto.fi/en/about-the-site",
+        "https://valtioneuvosto.fi/en/staattiset-feedit-en",
+        "https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss",
+        "https://um.fi/en/current-issues/press-releases",
+        "https://um.fi/rss"
+      ]
+    },
+    {
+      "canonical_id": "fi_justice",
+      "name_zh": "芬蘭司法部",
+      "name_local": "Oikeusministeriö",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "fi",
+      "homepage": "https://oikeusministerio.fi",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://oikeusministerio.fi => RobotsDeniedError: robots.txt disallows: https://oikeusministerio.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://oikeusministerio.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://oikeusministerio.fi/en/current-issues/press-releases; https://oikeusministerio.fi/rss => RobotsDeniedError: robots.txt disallows: https://oikeusministerio.fi/rss",
+      "evidence_urls": [
+        "https://valtioneuvosto.fi/ministeriot",
+        "https://valtioneuvosto.fi/en/ministries",
+        "https://oikeusministerio.fi",
+        "https://valtioneuvosto.fi/en/about-the-site",
+        "https://valtioneuvosto.fi/en/staattiset-feedit-en",
+        "https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss",
+        "https://oikeusministerio.fi/en/current-issues/press-releases",
+        "https://oikeusministerio.fi/rss"
+      ]
+    },
+    {
+      "canonical_id": "fi_interior",
+      "name_zh": "芬蘭內政部",
+      "name_local": "Sisäministeriö",
+      "name_en": "Ministry of the Interior",
+      "kind": "ministry",
+      "language": "fi",
+      "homepage": "https://intermin.fi",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://intermin.fi => RobotsDeniedError: robots.txt disallows: https://intermin.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://intermin.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://intermin.fi/en/current-issues/press-releases; https://intermin.fi/rss => RobotsDeniedError: robots.txt disallows: https://intermin.fi/rss",
+      "evidence_urls": [
+        "https://valtioneuvosto.fi/ministeriot",
+        "https://valtioneuvosto.fi/en/ministries",
+        "https://intermin.fi",
+        "https://valtioneuvosto.fi/en/about-the-site",
+        "https://valtioneuvosto.fi/en/staattiset-feedit-en",
+        "https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss",
+        "https://intermin.fi/en/current-issues/press-releases",
+        "https://intermin.fi/rss"
+      ]
+    },
+    {
+      "canonical_id": "fi_defence",
+      "name_zh": "芬蘭國防部",
+      "name_local": "Puolustusministeriö",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "fi",
+      "homepage": "https://www.defmin.fi",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://www.defmin.fi => RobotsDeniedError: robots.txt disallows: https://www.defmin.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://www.defmin.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://www.defmin.fi/en/current-issues/press-releases; https://www.defmin.fi/rss => RobotsDeniedError: robots.txt disallows: https://www.defmin.fi/rss",
+      "evidence_urls": [
+        "https://valtioneuvosto.fi/ministeriot",
+        "https://valtioneuvosto.fi/en/ministries",
+        "https://www.defmin.fi",
+        "https://valtioneuvosto.fi/en/about-the-site",
+        "https://valtioneuvosto.fi/en/staattiset-feedit-en",
+        "https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss",
+        "https://www.defmin.fi/en/current-issues/press-releases",
+        "https://www.defmin.fi/rss"
+      ]
+    },
+    {
+      "canonical_id": "fi_finance",
+      "name_zh": "芬蘭財政部",
+      "name_local": "Valtiovarainministeriö",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "fi",
+      "homepage": "https://vm.fi",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://vm.fi => RobotsDeniedError: robots.txt disallows: https://vm.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://vm.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://vm.fi/en/current-issues/press-releases; https://vm.fi/rss => RobotsDeniedError: robots.txt disallows: https://vm.fi/rss",
+      "evidence_urls": [
+        "https://valtioneuvosto.fi/ministeriot",
+        "https://valtioneuvosto.fi/en/ministries",
+        "https://vm.fi",
+        "https://valtioneuvosto.fi/en/about-the-site",
+        "https://valtioneuvosto.fi/en/staattiset-feedit-en",
+        "https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss",
+        "https://vm.fi/en/current-issues/press-releases",
+        "https://vm.fi/rss"
+      ]
+    },
+    {
+      "canonical_id": "fi_education_culture",
+      "name_zh": "芬蘭教育與文化部",
+      "name_local": "Opetus- ja kulttuuriministeriö",
+      "name_en": "Ministry of Education and Culture",
+      "kind": "ministry",
+      "language": "fi",
+      "homepage": "https://okm.fi",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://okm.fi => RobotsDeniedError: robots.txt disallows: https://okm.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://okm.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://okm.fi/en/current-issues/press-releases; https://okm.fi/rss => RobotsDeniedError: robots.txt disallows: https://okm.fi/rss",
+      "evidence_urls": [
+        "https://valtioneuvosto.fi/ministeriot",
+        "https://valtioneuvosto.fi/en/ministries",
+        "https://okm.fi",
+        "https://valtioneuvosto.fi/en/about-the-site",
+        "https://valtioneuvosto.fi/en/staattiset-feedit-en",
+        "https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss",
+        "https://okm.fi/en/current-issues/press-releases",
+        "https://okm.fi/rss"
+      ]
+    },
+    {
+      "canonical_id": "fi_agriculture_forestry",
+      "name_zh": "芬蘭農林部",
+      "name_local": "Maa- ja metsätalousministeriö",
+      "name_en": "Ministry of Agriculture and Forestry",
+      "kind": "ministry",
+      "language": "fi",
+      "homepage": "https://mmm.fi",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://mmm.fi => RobotsDeniedError: robots.txt disallows: https://mmm.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://mmm.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://mmm.fi/en/current-issues/press-releases; https://mmm.fi/rss => RobotsDeniedError: robots.txt disallows: https://mmm.fi/rss",
+      "evidence_urls": [
+        "https://valtioneuvosto.fi/ministeriot",
+        "https://valtioneuvosto.fi/en/ministries",
+        "https://mmm.fi",
+        "https://valtioneuvosto.fi/en/about-the-site",
+        "https://valtioneuvosto.fi/en/staattiset-feedit-en",
+        "https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss",
+        "https://mmm.fi/en/current-issues/press-releases",
+        "https://mmm.fi/rss"
+      ]
+    },
+    {
+      "canonical_id": "fi_transport_communications",
+      "name_zh": "芬蘭交通與通訊部",
+      "name_local": "Liikenne- ja viestintäministeriö",
+      "name_en": "Ministry of Transport and Communications",
+      "kind": "ministry",
+      "language": "fi",
+      "homepage": "https://lvm.fi",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://lvm.fi => RobotsDeniedError: robots.txt disallows: https://lvm.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://lvm.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://lvm.fi/en/current-issues/press-releases; https://lvm.fi/rss => RobotsDeniedError: robots.txt disallows: https://lvm.fi/rss",
+      "evidence_urls": [
+        "https://valtioneuvosto.fi/ministeriot",
+        "https://valtioneuvosto.fi/en/ministries",
+        "https://lvm.fi",
+        "https://valtioneuvosto.fi/en/about-the-site",
+        "https://valtioneuvosto.fi/en/staattiset-feedit-en",
+        "https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss",
+        "https://lvm.fi/en/current-issues/press-releases",
+        "https://lvm.fi/rss"
+      ]
+    },
+    {
+      "canonical_id": "fi_economy_employment",
+      "name_zh": "芬蘭經濟事務與就業部",
+      "name_local": "Työ- ja elinkeinoministeriö",
+      "name_en": "Ministry of Economic Affairs and Employment",
+      "kind": "ministry",
+      "language": "fi",
+      "homepage": "https://tem.fi",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://tem.fi => RobotsDeniedError: robots.txt disallows: https://tem.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://tem.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://tem.fi/en/current-issues/press-releases; https://tem.fi/rss => RobotsDeniedError: robots.txt disallows: https://tem.fi/rss",
+      "evidence_urls": [
+        "https://valtioneuvosto.fi/ministeriot",
+        "https://valtioneuvosto.fi/en/ministries",
+        "https://tem.fi",
+        "https://valtioneuvosto.fi/en/about-the-site",
+        "https://valtioneuvosto.fi/en/staattiset-feedit-en",
+        "https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss",
+        "https://tem.fi/en/current-issues/press-releases",
+        "https://tem.fi/rss"
+      ]
+    },
+    {
+      "canonical_id": "fi_social_health",
+      "name_zh": "芬蘭社會事務與衛生部",
+      "name_local": "Sosiaali- ja terveysministeriö",
+      "name_en": "Ministry of Social Affairs and Health",
+      "kind": "ministry",
+      "language": "fi",
+      "homepage": "https://stm.fi",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://stm.fi => RobotsDeniedError: robots.txt disallows: https://stm.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://stm.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://stm.fi/en/current-issues/press-releases; https://stm.fi/rss => RobotsDeniedError: robots.txt disallows: https://stm.fi/rss",
+      "evidence_urls": [
+        "https://valtioneuvosto.fi/ministeriot",
+        "https://valtioneuvosto.fi/en/ministries",
+        "https://stm.fi",
+        "https://valtioneuvosto.fi/en/about-the-site",
+        "https://valtioneuvosto.fi/en/staattiset-feedit-en",
+        "https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss",
+        "https://stm.fi/en/current-issues/press-releases",
+        "https://stm.fi/rss"
+      ]
+    },
+    {
+      "canonical_id": "fi_environment",
+      "name_zh": "芬蘭環境部",
+      "name_local": "Ympäristöministeriö",
+      "name_en": "Ministry of the Environment",
+      "kind": "ministry",
+      "language": "fi",
+      "homepage": "https://ym.fi",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://ym.fi => RobotsDeniedError: robots.txt disallows: https://ym.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://ym.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://ym.fi/en/current-issues/press-releases; https://ym.fi/rss => RobotsDeniedError: robots.txt disallows: https://ym.fi/rss",
+      "evidence_urls": [
+        "https://valtioneuvosto.fi/ministeriot",
+        "https://valtioneuvosto.fi/en/ministries",
+        "https://ym.fi",
+        "https://valtioneuvosto.fi/en/about-the-site",
+        "https://valtioneuvosto.fi/en/staattiset-feedit-en",
+        "https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss",
+        "https://ym.fi/en/current-issues/press-releases",
+        "https://ym.fi/rss"
+      ]
+    }
+  ]
+}

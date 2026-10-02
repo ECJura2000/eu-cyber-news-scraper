@@ -59,7 +59,17 @@ def parse_datetime(
 ) -> datetime | None:
     if not value:
         return None
+    languages = tuple(languages)
     normalized = value.strip()
+    hungarian = re.fullmatch(r"(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\.", normalized)
+    if "hu" in languages and hungarian:
+        try:
+            year, month, day = (int(part) for part in hungarian.groups())
+            return datetime(
+                year, month, day, tzinfo=ZoneInfo(timezone_name),
+            ).astimezone(timezone.utc)
+        except ValueError:
+            return None
     latvian = re.match(r"^(\d{4})\.\s*gada\s+(\d{1,2})\.\s*(.+)$", normalized, flags=re.IGNORECASE)
     if latvian:
         normalized = f"{latvian.group(2)}. {latvian.group(3)} {latvian.group(1)}"

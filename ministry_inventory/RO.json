@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "country": "RO",
+  "reviewed_on": "2026-10-01",
+  "official_roster_urls": [
+    "https://gov.ro/ro/guvernul/organizare/ministere",
+    "https://gov.ro/ro/guvernul/organizare",
+    "https://gov.ro/ro/guvernul/organizare/aparatul-de-lucru-al-guvernului"
+  ],
+  "roster_complete": true,
+  "limitations": [],
+  "ministries": [
+    {
+      "canonical_id": "ro_transport",
+      "name_zh": "羅馬尼亞交通與基礎建設部",
+      "name_local": "Ministerul Transporturilor și Infrastructurii",
+      "name_en": "Ministry of Transport and Infrastructure",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://www.mt.ro",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://www.mt.ro: robots.txt unreachable: HTTP 503; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://www.mt.ro"
+      ]
+    },
+    {
+      "canonical_id": "ro_finance",
+      "name_zh": "羅馬尼亞財政部",
+      "name_local": "Ministerul Finanțelor",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://mfinante.gov.ro/ro/web/site",
+      "news_url": "https://mfinante.gov.ro/ro/presa-comunicate-de-presa",
+      "source_ids": [
+        "ro_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 30 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://mfinante.gov.ro/ro/presa-comunicate-de-presa"
+      ]
+    },
+    {
+      "canonical_id": "ro_interior",
+      "name_zh": "羅馬尼亞內政部",
+      "name_local": "Ministerul Afacerilor Interne",
+      "name_en": "Ministry of Internal Affairs",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://www.mai.gov.ro/",
+      "news_url": "https://www.mai.gov.ro/feed/",
+      "source_ids": [
+        "ro_interior"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware feed production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://www.mai.gov.ro/category/comunicate-de-presa/",
+        "https://www.mai.gov.ro/feed/"
+      ]
+    },
+    {
+      "canonical_id": "ro_foreign_affairs",
+      "name_zh": "羅馬尼亞外交部",
+      "name_local": "Ministerul Afacerilor Externe",
+      "name_en": "Ministry of Foreign Affairs",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://www.mae.gov.ro: robots.txt unreachable: ConnectError: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028); retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere"
+      ]
+    },
+    {
+      "canonical_id": "ro_justice",
+      "name_zh": "羅馬尼亞司法部",
+      "name_local": "Ministerul Justiției",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://www.just.ro/",
+      "news_url": "https://www.just.ro/feed/",
+      "source_ids": [
+        "ro_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware feed production parse: 10 dated items; genuine bounded fixture replay: 1 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://www.just.ro/",
+        "https://www.just.ro/media/comunicate-de-presa/",
+        "https://www.just.ro/feed/"
+      ]
+    },
+    {
+      "canonical_id": "ro_defence",
+      "name_zh": "羅馬尼亞國防部",
+      "name_local": "Ministerul Apărării Naționale",
+      "name_en": "Ministry of National Defence",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://www.mapn.ro/",
+      "news_url": "https://www.mapn.ro/cpresa/index.php",
+      "source_ids": [
+        "ro_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 3 dated items; genuine bounded fixture replay: 3 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://www.mapn.ro/cpresa/index.php"
+      ]
+    },
+    {
+      "canonical_id": "ro_economy_digital",
+      "name_zh": "羅馬尼亞經濟數位化創業與觀光部",
+      "name_local": "Ministerul Economiei, Digitalizării, Antreprenoriatului și Turismului",
+      "name_en": "Ministry of Economy, Digitalisation, Entrepreneurship and Tourism",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://economie.gov.ro/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://economie.gov.ro: robots.txt unreachable: HTTP 503; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://economie.gov.ro/"
+      ]
+    },
+    {
+      "canonical_id": "ro_energy",
+      "name_zh": "羅馬尼亞能源部",
+      "name_local": "Ministerul Energiei",
+      "name_en": "Ministry of Energy",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://energie.gov.ro: robots.txt unreachable: HTTP 503; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere"
+      ]
+    },
+    {
+      "canonical_id": "ro_agriculture",
+      "name_zh": "羅馬尼亞農業與農村發展部",
+      "name_local": "Ministerul Agriculturii și Dezvoltării Rurale",
+      "name_en": "Ministry of Agriculture and Rural Development",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://www.madr.ro: robots.txt unreachable: HTTP 503; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere"
+      ]
+    },
+    {
+      "canonical_id": "ro_environment",
+      "name_zh": "羅馬尼亞環境水利與森林部",
+      "name_local": "Ministerul Mediului, Apelor și Pădurilor",
+      "name_en": "Ministry of Environment, Waters and Forests",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://mmediu.ro/",
+      "news_url": "https://mmediu.ro/comunicare/comunicate-de-presa/",
+      "source_ids": [
+        "ro_environment"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 6 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://mmediu.ro/comunicare/comunicate-de-presa/"
+      ]
+    },
+    {
+      "canonical_id": "ro_development",
+      "name_zh": "羅馬尼亞發展公共工程與行政部",
+      "name_local": "Ministerul Dezvoltării, Lucrărilor Publice și Administrației",
+      "name_en": "Ministry of Development, Public Works and Administration",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://www.mdlpa.ro/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://www.mdlpa.ro: robots.txt unreachable: ConnectTimeout: ; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://www.mdlpa.ro/"
+      ]
+    },
+    {
+      "canonical_id": "ro_european_investment",
+      "name_zh": "羅馬尼亞投資與歐洲計畫部",
+      "name_local": "Ministerul Investițiilor și Proiectelor Europene",
+      "name_en": "Ministry of Investments and European Projects",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://mfe.gov.ro: robots.txt unreachable: HTTP 503; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere"
+      ]
+    },
+    {
+      "canonical_id": "ro_labour_family_youth",
+      "name_zh": "羅馬尼亞勞動家庭青年與社會團結部",
+      "name_local": "Ministerul Muncii, Familiei, Tineretului și Solidarității Sociale",
+      "name_en": "Ministry of Labour, Family, Youth and Social Solidarity",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://mmuncii.gov.ro/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://mmuncii.gov.ro: robots.txt unreachable: HTTP 503; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://mmuncii.gov.ro/"
+      ]
+    },
+    {
+      "canonical_id": "ro_health",
+      "name_zh": "羅馬尼亞衛生部",
+      "name_local": "Ministerul Sănătății",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://www.ms.ro/ro/",
+      "news_url": "https://www.ms.ro/informatii-de-interes-public/noutati/",
+      "source_ids": [
+        "ro_health"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://www.ms.ro/ro/",
+        "https://www.ms.ro/informatii-de-interes-public/noutati/"
+      ]
+    },
+    {
+      "canonical_id": "ro_education_research",
+      "name_zh": "羅馬尼亞教育與研究部",
+      "name_local": "Ministerul Educației și Cercetării",
+      "name_en": "Ministry of Education and Research",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://www.edu.ro/",
+      "news_url": "https://www.edu.ro/comunicate",
+      "source_ids": [
+        "ro_education_research"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://www.edu.ro/",
+        "https://www.edu.ro/comunicate"
+      ]
+    },
+    {
+      "canonical_id": "ro_culture",
+      "name_zh": "羅馬尼亞文化部",
+      "name_local": "Ministerul Culturii",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://www.cultura.ro",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://www.cultura.ro: robots.txt unreachable: HTTP 503; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://www.cultura.ro"
+      ]
+    },
+    {
+      "canonical_id": "ro_prime_minister",
+      "name_zh": "羅馬尼亞總理辦公廳",
+      "name_local": "Cancelaria Prim-ministrului",
+      "name_en": "Chancellery of the Prime Minister",
+      "kind": "government_head_office",
+      "language": "ro",
+      "homepage": "https://cancelarie.gov.ro/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://cancelarie.gov.ro: robots.txt unreachable: HTTP 503; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare",
+        "https://gov.ro/ro/guvernul/organizare/aparatul-de-lucru-al-guvernului",
+        "https://cancelarie.gov.ro/"
+      ]
+    },
+    {
+      "canonical_id": "ro_government_secretariat",
+      "name_zh": "羅馬尼亞政府秘書處",
+      "name_local": "Secretariatul General al Guvernului",
+      "name_en": "General Secretariat of the Government",
+      "kind": "ministry_equivalent",
+      "language": "ro",
+      "homepage": "https://sgg.gov.ro",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://sgg.gov.ro: robots.txt unreachable: HTTP 503; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare",
+        "https://gov.ro/ro/guvernul/organizare/aparatul-de-lucru-al-guvernului",
+        "https://sgg.gov.ro"
+      ]
+    }
+  ]
+}

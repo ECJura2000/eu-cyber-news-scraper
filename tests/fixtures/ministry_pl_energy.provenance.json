@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.pl/web/energia/wiadomosci",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:14.425848+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "a1c2101c8feaa6e169913187ec6f2bdc3b44d5e4af9053bb09acf9d915f39f21",
+  "sha256": "3a09f45878fe3fed6eeece2ffc8cb3a15d1e3dd7f34dc27401196a633ca3c1bd",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "pl_energy",
+  "expected": [
+    {
+      "title": "Dwie elektrownie jądrowe i silny krajowy przemysł. Rząd przyjął aktualizację PPEJ",
+      "url": "https://www.gov.pl/web/energia/dwie-elektrownie-jadrowe-i-silny-krajowy-przemysl-rzad-przyjal-aktualizacje-ppej",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "DK69 połączy S6 z pierwszą elektrownią jądrową",
+      "url": "https://www.gov.pl/web/energia/dk69-polaczy-s6-z-pierwsza-elektrownia-jadrowa",
+      "published_date_local": "2026-09-25",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "PGE buduje w Krakowie nowe źródło ciepła z udziałem polskich firm",
+      "url": "https://www.gov.pl/web/energia/pge-buduje-w-krakowie-nowe-zrodlo-ciepla-z-udzialem-polskich-firm",
+      "published_date_local": "2026-09-24",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Polska o przyszłości energetyki jądrowej. Ważne rozmowy w Paryżu",
+      "url": "https://www.gov.pl/web/energia/polska-o-przyszlosci-energetyki-jadrowej-wazne-rozmowy-w-paryzu",
+      "published_date_local": "2026-09-24",
+      "date_source": "source-selector"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.gov.pl/web/gov/ministerstwa",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:54:48.531929+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "dfa8f9591c3f0b2e43de534aaaa29aa61f231327c8e7d6d2a11079f10e556eea",
+  "sha256": "3613141742ecf1582e82f6dcb95dc385c484ddecf112e99ad8492a9e3305db20",
+  "extraction": "Deduplicated original official department roster anchor elements"
+}

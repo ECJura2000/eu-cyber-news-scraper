@@ -227,7 +227,7 @@ def _content_error(response: httpx.Response, kind: str, source: Source) -> str:
         return "challenge_page"
     if not body.strip():
         return "empty_response"
-    if kind == "feed":
+    if kind == "feed" or (kind == "listing" and source.listing_url in source.feed_urls):
         if "html" in content_type or re.search(r"<(?:!doctype\s+html|html)\b", sample, re.I):
             return "feed_received_html"
         # ElementTree never fetches external entities; reject all DTDs explicitly.

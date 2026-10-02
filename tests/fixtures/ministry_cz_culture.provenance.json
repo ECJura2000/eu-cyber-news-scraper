@@ -1,0 +1,93 @@
+{
+  "source_id": "cz_culture",
+  "url": "https://www.mk.gov.cz/novinky-a-media-cs-4",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:16.399688+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "e263df164325dbae486d2b7a1d18901f93387a79c23e412f6fcadf9cf20ea79a",
+  "response_sha256": "35c9dfd2d212eac7c5f9fc64e6c65f71274f0ca5642e4b925f585f9281ffd528",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Ministr kultury Oto Klempíř předal cenu Knihovna roku 2026\n         \n \n 01.10.2026 16:22 ministerstvo \n \n \n Knihovnou roku 2026 se stala Obecní knihovna Oldřichov v Hájích. Ocenění za významný počin v oblasti poskytování veřejných knihovnických a informačních služeb získala Knihovna Severočeského muzea v Liberci. Obě vítězné knihovny převzaly svá ocenění z rukou ministra kultury Oty Klempíře na slavnostním ceremoniálu v Zrcadlové kapli Klementina.",
+      "url": "https://www.mk.gov.cz/novinky-a-media-cs-4/6599cs-ministr-kultury-oto-klempir-predal-cenu-knihovna-roku-2026",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Tradice nejsou jen vzpomínkou na minulost. Konference ukáže, jak živé dědictví rozvíjí obce a posiluje otevřenou společnost\n         \n \n 30.09.2026 14:08 příspěvkové organizace \n \n \n                Jak může živé kulturní dědictví přispívat k rozvoji obcí a regionů, místní ekonomiky nebo udržitelného cestovního ruchu? A jakou roli může hrát v současné společnosti?",
+      "url": "https://www.mk.gov.cz/novinky-a-media-cs-4/6598cs-tradice-nejsou-jen-vzpominkou-na-minulost-konference-ukaze-jak-zive-dedictvi-rozviji-obce-a-posiluje-otevrenou-spolecnost",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Boris Kráľ. Bonsoir, Audrey!\n         \n \n 21.09.2026 16:57 příspěvkové organizace \n \n \n Modely mladého a respektovaného módního tvůrce doplní v prostoru Fashion 2000+ Uměleckoprůmyslového muzea Moravské galerie v Brně instalace backstage fotografií oceňované autorky Leny Knappové.",
+      "url": "https://www.mk.gov.cz/novinky-a-media-cs-4/6597cs-boris-kral-bonsoir-audrey",
+      "published_date_local": "2026-09-21",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Broučci, podzimní práce a fujara ve Valašském muzeu v přírodě\n         \n \n 21.09.2026 14:54 příspěvkové organizace \n \n \n Poslední zářijové dny budou ve Valašském muzeu v přírodě ve znamení podzimních tradic \na hudby.",
+      "url": "https://www.mk.gov.cz/novinky-a-media-cs-4/6596cs-broucci-podzimni-prace-a-fujara-ve-valasskem-muzeu-v-prirode",
+      "published_date_local": "2026-09-21",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Přehlídka českého knižního umění ze sbírek UPM v Německu\n         \n \n 16.09.2026 10:10 příspěvkové organizace \n \n \n Reprezentativní výstavu českého knižního umění připravilo UPM společně s Klingspor Museum v Offenbachu nad Mohanem, německým muzeem specializovaným na oblast krásné knihy a typografie, u příležitosti Frankfurtského knižního veletrhu 2026, kde je Česká republika čestným hostem.",
+      "url": "https://www.mk.gov.cz/novinky-a-media-cs-4/6595cs-prehlidka-ceskeho-knizniho-umeni-ze-sbirek-upm-v-nemecku",
+      "published_date_local": "2026-09-16",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Podzim na hanáckém gruntu ukáže, jak se úroda připravovala na zimu\n         \n \n 09.09.2026 09:06 příspěvkové organizace \n \n \n                Příkazy – Jak si uchovat úrodu na zimu v době, kdy nebyly lednice ani supermarkety? Odpověď nabídne v sobotu 12. září Hanácké muzeum v přírodě v Příkazích na Olomoucku při akci Podzim na hanáckém gruntu.",
+      "url": "https://www.mk.gov.cz/novinky-a-media-cs-4/6594cs-podzim-na-hanackem-gruntu-ukaze-jak-se-uroda-pripravovala-na-zimu",
+      "published_date_local": "2026-09-09",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Přehlídka a košt ciderů v Muzeu v přírodě Zubrnice\n         \n \n 09.09.2026 00:00 příspěvkové organizace \n \n \n V sobotu 12. září 2026 se uskuteční v Muzeu v přírodě Zubrnice Ciderfest. V nabídce bude přehlídka a košt ciderů i dalších nápojů od regionálních výrobců a ciderových nadšenců z jiných koutů Čech.",
+      "url": "https://www.mk.gov.cz/novinky-a-media-cs-4/6592cs-prehlidka-a-kost-cideru-v-muzeu-v-prirode-zubrnice",
+      "published_date_local": "2026-09-09",
+      "date_confidence": "high"
+    },
+    {
+      "title": "První neděle v měsíci zdarma. Státní muzea a galerie se otevírají úplně všem.\n         \n \n 04.09.2026 14:37 ministerstvo \n \n \n Ministerstvo kultury České republiky od září otevírá stálé expozice zapojených státních muzeí a galerií každou první neděli v měsíci zdarma. Poprvé se návštěvníkům zdarma otevřou v neděli 6. září 2026.",
+      "url": "https://www.mk.gov.cz/novinky-a-media-cs-4/6585cs-prvni-nedele-v-mesici-zdarma-statni-muzea-a-galerie-se-oteviraji-uplne-vsem",
+      "published_date_local": "2026-09-04",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 15,
+  "live_dated_count": 15,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "cz_culture",
+    "country": "CZ",
+    "name_zh": "捷克文化部",
+    "name": "Ministerstvo kultury",
+    "institution_type": "ministry",
+    "language": "cs",
+    "homepage": "https://www.mk.gov.cz/",
+    "listing_url": "https://www.mk.gov.cz/novinky-a-media-cs-4",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.mk.gov.cz"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Prague",
+    "card_selectors": [
+      "a.malaNovinka"
+    ],
+    "title_selectors": [
+      "h2",
+      "h3"
+    ],
+    "date_selectors": [
+      ".novinkaDatum"
+    ],
+    "schedule_enabled": false
+  }
+}

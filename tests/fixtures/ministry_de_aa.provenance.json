@@ -1,0 +1,79 @@
+{
+  "source_id": "de_aa",
+  "url": "https://www.auswaertiges-amt.de/de/newsroom/news",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:31:36.982708+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "fd082dc853b21f1d21d638f8d5a3b1317b000344afdb0c554013441d68db2167",
+  "response_sha256": "623db3a7f0d5be2329645aea87733956333657e468e1a76382dccb0af15eb00e",
+  "fixture_count": 6,
+  "expected": [
+    {
+      "title": "30.09.2026  \n  Pressemitteilung\n \n \n \n \n \nAußenminister Wadephul vor seiner Abreise nach Podgorica, Rom und Ljubljana",
+      "url": "https://www.auswaertiges-amt.de/de/newsroom/2804318-2804318",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "29.09.2026  \n  Rede\n \n \n \n \n \nRede von Außenminister Wadephul  vor der Parlamentarischen Versammlung des Europarats in Straßburg",
+      "url": "https://www.auswaertiges-amt.de/de/newsroom/2804276-2804276",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "29.09.2026  \n  Pressemitteilung\n \n \n \n \n \n Gemeinsame Erklärung des Ministers für Auswärtige und Europäische Angelegenheiten der Slowakischen Republik und des Bundesministers des Auswärtigen der Bundesrepublik Deutschland über die Fortsetzung des vertieften Dialogs",
+      "url": "https://www.auswaertiges-amt.de/de/newsroom/2804178-2804178",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "28.09.2026  \n  Pressemitteilung\n \n \n \n \n \nAußenminister Wadephul vor seiner Abreise nach Den Haag, Bratislava und Straßburg",
+      "url": "https://www.auswaertiges-amt.de/de/newsroom/2804128-2804128",
+      "published_date_local": "2026-09-28",
+      "date_confidence": "high"
+    },
+    {
+      "title": "26.09.2026  \n  Pressemitteilung\n \n \n \n \n \n Rede von Außenminister Wadephul vor der Generalversammlung der Vereinten Nationen",
+      "url": "https://www.auswaertiges-amt.de/de/newsroom/2804086-2804086",
+      "published_date_local": "2026-09-26",
+      "date_confidence": "high"
+    },
+    {
+      "title": "26.09.2026  \n  Rede\n \n \n \n \n \nRede von Außenminister Wadephul vor der Generalversammlung der Vereinten Nationen",
+      "url": "https://www.auswaertiges-amt.de/de/newsroom/2804144-2804144",
+      "published_date_local": "2026-09-26",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 6,
+  "live_dated_count": 6,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "de_aa",
+    "country": "DE",
+    "name_zh": "德國外交部",
+    "name": "Auswärtiges Amt",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.auswaertiges-amt.de/de",
+    "listing_url": "https://www.auswaertiges-amt.de/de/newsroom/news",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.auswaertiges-amt.de"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Berlin",
+    "card_selectors": [
+      "div.c-teaser--timeline"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

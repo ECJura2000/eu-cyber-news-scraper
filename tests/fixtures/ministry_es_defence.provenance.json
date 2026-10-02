@@ -1,0 +1,149 @@
+{
+  "source_id": "es_defence",
+  "url": "https://www.defensa.gob.es/gabinete/notasPrensa/",
+  "final_url": "https://www.defensa.gob.es/gabinete/notasPrensa/",
+  "observed_at": "2026-10-02T00:41:23.673889+00:00",
+  "http_status": 200,
+  "content_type": "text/html",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "2b2f265a1b1e007132106dd3d154c08154de9903f6e5daac7d05a0655d8afe23",
+  "response_bytes": 135744,
+  "fixture_sha256": "39b4d01c41ce86d553d25db2a7f5646bdc01a3d08a230ee15fa0f2b65be3bc47",
+  "fixture_bytes": 6708,
+  "transform": "BeautifulSoup extraction of genuine dated news containers retaining original attributes/text; scripts/styles removed; original base retained if present; bounded to six or fewer containers",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "La Armada pone a prueba su capacidad de rescate submarino con el ejercicio ‘CARTAGO 26’",
+      "url": "https://www.defensa.gob.es/gabinete/notasPrensa/2026/09/DGC-260930-ejercicio-cartago.html",
+      "published_date_local": "2026-09-30"
+    },
+    {
+      "title": "Margarita Robles destaca el papel del Ejército en Eslovaquia, desplegado en una misión esencial para nuestros aliados",
+      "url": "https://www.defensa.gob.es/gabinete/notasPrensa/2026/09/DGC-260929-vtc-eslovaquia.html",
+      "published_date_local": "2026-09-29"
+    },
+    {
+      "title": "Ucrania, Oriente Medio y la amenaza híbrida rusa, en el centro de la agenda de Defensa de la Unión Europea",
+      "url": "https://www.defensa.gob.es/gabinete/notasPrensa/2026/09/DGC-260928-cae-bruselas.html",
+      "published_date_local": "2026-09-28"
+    },
+    {
+      "title": "La ministra de Defensa agradece al Tercio Norte su labor como garante de la seguridad",
+      "url": "https://www.defensa.gob.es/gabinete/notasPrensa/2026/09/DGC-260925-visita-ternor.html",
+      "published_date_local": "2026-09-25"
+    },
+    {
+      "title": "Defensa apuesta por una Inteligencia Artificial responsable que aporte ventaja operativa a nuestras Fuerzas Armadas",
+      "url": "https://www.defensa.gob.es/gabinete/notasPrensa/2026/09/DGC-260923-jornada-ia-soria.html",
+      "published_date_local": "2026-09-23"
+    },
+    {
+      "title": "Defensa impulsa el control humano y la soberanía tecnológica en la II Jornada de Inteligencia Artificial Responsable",
+      "url": "https://www.defensa.gob.es/gabinete/notasPrensa/2026/09/DGC-260922-jornadas-ia-soria.html",
+      "published_date_local": "2026-09-22"
+    }
+  ],
+  "live_status": {
+    "source_id": "es_defence",
+    "source_name": "西班牙國防部",
+    "country": "ES",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 40,
+    "relevant_count": 40,
+    "duration_seconds": 0.687,
+    "newest_published_at": "2026-09-29T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 40,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 40,
+    "freshness_lag_days": 3.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 135744,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "es_defence",
+    "country": "ES",
+    "name_zh": "西班牙國防部",
+    "name": "Ministerio de Defensa",
+    "institution_type": "central ministry",
+    "language": "es",
+    "homepage": "https://www.defensa.gob.es/",
+    "listing_url": "https://www.defensa.gob.es/gabinete/notasPrensa/",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.defensa.gob.es"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Madrid",
+    "card_selectors": [
+      "li.listados1.list-group-item.noticias"
+    ],
+    "link_selectors": [],
+    "title_selectors": [
+      "h2",
+      "h3",
+      "h4",
+      "[class*=title]"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]",
+      "[class*=fecha i]"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_es_defence.html",
+  "format": "html"
+}

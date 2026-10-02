@@ -1,0 +1,467 @@
+{
+  "schema_version": 1,
+  "country": "FR",
+  "reviewed_on": "2026-10-02",
+  "official_roster_urls": [
+    "https://www.info.gouv.fr/composition-du-gouvernement",
+    "https://lannuaire.service-public.gouv.fr/gouvernement"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "2026-10-02 ministry news audit: 4 manually verified and 1 existing-source ministries; 15 unresolved. Roster enumeration does not imply searchable completeness. Exact tried URLs and robots/transport/parser/attribution limitations are recorded per ministry; unresolved rows have no runnable source. New sources retain disabled scheduling/noncritical status, all 15 topics, empty responsibility, and genuine checksum-backed fixture replay."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "fr_prime_minister",
+      "name_zh": "法國總理府",
+      "name_local": "Premier ministre",
+      "name_en": "Prime Minister",
+      "kind": "government_head_office",
+      "language": "fr",
+      "homepage": "https://www.info.gouv.fr",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.info.gouv.fr => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.info.gouv.fr'; https://www.info.gouv.fr/rss.xml => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.info.gouv.fr/rss.xml'; https://www.info.gouv.fr/presse/communiques-de-presse => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.info.gouv.fr/presse/communiques-de-presse'",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/a515667c-6dc0-4544-a1a8-2cf13d7da23b",
+        "https://www.info.gouv.fr",
+        "https://www.info.gouv.fr/rss.xml",
+        "https://www.info.gouv.fr/presse/communiques-de-presse"
+      ]
+    },
+    {
+      "canonical_id": "fr_public_accounts",
+      "name_zh": "法國公共行政與公共帳務部",
+      "name_local": "Ministère de l'Action et des Comptes publics",
+      "name_en": "Ministry of Public Action and Public Accounts",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://www.economie.gouv.fr/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.economie.gouv.fr/ => RobotsDeniedError: robots.txt disallows: https://www.economie.gouv.fr/; https://www.economie.gouv.fr/rss.xml => RobotsDeniedError: robots.txt disallows: https://www.economie.gouv.fr/rss.xml; https://www.economie.gouv.fr/presse/communiques-de-presse => RobotsDeniedError: robots.txt disallows: https://www.economie.gouv.fr/presse/communiques-de-presse",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/9f101ac7-9a0e-4d62-8b27-8109876dff94",
+        "https://www.economie.gouv.fr/",
+        "https://www.economie.gouv.fr/rss.xml",
+        "https://www.economie.gouv.fr/presse/communiques-de-presse"
+      ]
+    },
+    {
+      "canonical_id": "fr_agriculture",
+      "name_zh": "法國農業、農產食品與糧食主權部",
+      "name_local": "Ministère de l’Agriculture, de l'Agro-alimentaire et de la Souveraineté alimentaire",
+      "name_en": "Ministry of Agriculture, Agri-food and Food Sovereignty",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://agriculture.gouv.fr",
+      "news_url": "https://agriculture.gouv.fr/rss.xml",
+      "source_ids": [
+        "fr_agriculture"
+      ],
+      "status": "manual_verified",
+      "reason": "Official RSS discovered in ministry navigation; robots-aware live scrape succeeded with 29 dated articles. Genuine XML/checksum fixture regression recorded; scheduled collection disabled.",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/45e488a2-c977-487f-b62f-19b4d6504d9c",
+        "https://agriculture.gouv.fr",
+        "https://agriculture.gouv.fr/rss.xml"
+      ]
+    },
+    {
+      "canonical_id": "fr_territorial_decentralisation",
+      "name_zh": "法國國土規劃與地方分權部",
+      "name_local": "Ministère de l’Aménagement du Territoire et de la Décentralisation",
+      "name_en": "Ministry of Territorial Planning and Decentralisation",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://www.ecologie.gouv.fr/",
+      "news_url": "https://www.ecologie.gouv.fr/actualites",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. The ecology portal has accessible dated listing/RSS content, but it publishes several distinct ministerial portfolios. The captured routes do not establish reliable ministry-level attribution/filtering for this row. No blanket enrollment of a shared portal feed as each ministry; a genuine ministry-scoped endpoint or supported publisher/category filter remains required. Tested alternatives: https://www.ecologie.gouv.fr/ => HTTP 200; 103391 bytes; production parser 17 items/9 dated; https://www.ecologie.gouv.fr/presse => HTTP 200; 83174 bytes; production parser 15 items/15 dated; https://www.ecologie.gouv.fr/actualites => HTTP 200; 106043 bytes; production parser 15 items/15 dated; https://www.ecologie.gouv.fr/actualites/6-idees-recues-tri-biodechets => HTTP 200; 58276 bytes; production parser 2 items/0 dated; https://www.ecologie.gouv.fr/presse/carburants-extension-dispositifs-soutien-letat-aux-professionnels-aux-francais-cout-450meur => HTTP 200; 62563 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/actualites/catastrophes-naturelles-simplification-elargissement-dotation-aux-collectivites-locales => HTTP 200; 56596 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/presse/promulgation-loi-montagne-vivante-souveraine => HTTP 200; 55533 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/actualites/electrifions-france-energie-moins-chere-plus-souveraine-plus-durable => HTTP 200; 68724 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/flux-rss => HTTP 200; 47852 bytes; production parser 0 items/0 dated; https://www.ecologie.gouv.fr/rss.xml => HTTPStatusError: Client error '404 Not Found' for url 'https://www.ecologie.gouv.fr/rss.xml'; https://www.ecologie.gouv.fr/presse/communiques-de-presse => HTTPStatusError: Client error '404 Not Found' for url 'https://www.ecologie.gouv.fr/presse/communiques-de-presse'",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/7b9ab6ab-c8e4-4cfd-a63b-02416d0d5551",
+        "https://www.ecologie.gouv.fr/",
+        "https://www.ecologie.gouv.fr/presse",
+        "https://www.ecologie.gouv.fr/actualites",
+        "https://www.ecologie.gouv.fr/actualites/6-idees-recues-tri-biodechets",
+        "https://www.ecologie.gouv.fr/presse/carburants-extension-dispositifs-soutien-letat-aux-professionnels-aux-francais-cout-450meur",
+        "https://www.ecologie.gouv.fr/actualites/catastrophes-naturelles-simplification-elargissement-dotation-aux-collectivites-locales",
+        "https://www.ecologie.gouv.fr/presse/promulgation-loi-montagne-vivante-souveraine",
+        "https://www.ecologie.gouv.fr/actualites/electrifions-france-energie-moins-chere-plus-souveraine-plus-durable",
+        "https://www.ecologie.gouv.fr/flux-rss",
+        "https://www.ecologie.gouv.fr/rss.xml",
+        "https://www.ecologie.gouv.fr/presse/communiques-de-presse"
+      ]
+    },
+    {
+      "canonical_id": "fr_armed_forces",
+      "name_zh": "法國國防與退伍軍人部",
+      "name_local": "Ministère des Armées et des Anciens combattants",
+      "name_en": "Ministry of the Armed Forces and Veterans",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://www.defense.gouv.fr/",
+      "news_url": "https://www.defense.gouv.fr/actualites",
+      "source_ids": [
+        "fr_armed_forces"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (13 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_fr_armed_forces.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/d24d1af2-c506-4b10-82e8-ab92b8e959d2",
+        "https://www.defense.gouv.fr/",
+        "https://www.defense.gouv.fr/actualites"
+      ]
+    },
+    {
+      "canonical_id": "fr_culture",
+      "name_zh": "法國文化部",
+      "name_local": "Ministère de la Culture",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://www.culture.gouv.fr/",
+      "news_url": "https://www.culture.gouv.fr/presse/communiques-de-presse",
+      "source_ids": [
+        "fr_culture"
+      ],
+      "status": "existing_source",
+      "reason": "Existing fr_culture module represents the Ministry of Culture itself. Subordinate DGE, DINUM, ANSSI and other agency sources are not parent ministry aliases.",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/da1d6275-6710-485d-a249-282cac69dfe7"
+      ]
+    },
+    {
+      "canonical_id": "fr_economy_finance",
+      "name_zh": "法國經濟、財政與產業、能源及數位主權部",
+      "name_local": "Ministère de l’Économie, des Finances et de la Souveraineté industrielle, énergétique et numérique",
+      "name_en": "Ministry of Economy, Finance and Industrial, Energy and Digital Sovereignty",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://www.economie.gouv.fr",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.economie.gouv.fr => RobotsDeniedError: robots.txt disallows: https://www.economie.gouv.fr; https://www.economie.gouv.fr/rss.xml => RobotsDeniedError: robots.txt disallows: https://www.economie.gouv.fr/rss.xml; https://www.economie.gouv.fr/presse/communiques-de-presse => RobotsDeniedError: robots.txt disallows: https://www.economie.gouv.fr/presse/communiques-de-presse",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/c4195774-f535-4d82-b03f-d5f0c6b08635",
+        "https://www.economie.gouv.fr",
+        "https://www.economie.gouv.fr/rss.xml",
+        "https://www.economie.gouv.fr/presse/communiques-de-presse"
+      ]
+    },
+    {
+      "canonical_id": "fr_education",
+      "name_zh": "法國國民教育部",
+      "name_local": "Ministère de l'Éducation nationale",
+      "name_en": "Ministry of National Education",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://www.education.gouv.fr/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.education.gouv.fr/ => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.education.gouv.fr/'; https://www.education.gouv.fr/rss.xml => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.education.gouv.fr/rss.xml'; https://www.education.gouv.fr/presse/communiques-de-presse => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.education.gouv.fr/presse/communiques-de-presse'",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/3ed2f725-e077-4973-a531-498e13fc7861",
+        "https://www.education.gouv.fr/",
+        "https://www.education.gouv.fr/rss.xml",
+        "https://www.education.gouv.fr/presse/communiques-de-presse"
+      ]
+    },
+    {
+      "canonical_id": "fr_higher_education_research",
+      "name_zh": "法國高等教育、研究與太空部",
+      "name_local": "Ministère de l’Enseignement supérieur, de la Recherche et de l'Espace",
+      "name_en": "Ministry of Higher Education, Research and Space",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://www.enseignementsup-recherche.gouv.fr/fr",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.enseignementsup-recherche.gouv.fr/fr => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.enseignementsup-recherche.gouv.fr/fr'; https://www.enseignementsup-recherche.gouv.fr/rss.xml => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.enseignementsup-recherche.gouv.fr/rss.xml'; https://www.enseignementsup-recherche.gouv.fr/presse/communiques-de-presse => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.enseignementsup-recherche.gouv.fr/presse/communiques-de-presse'",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/4ca60afd-3886-434c-80bb-f6bc55581323",
+        "https://www.enseignementsup-recherche.gouv.fr/fr",
+        "https://www.enseignementsup-recherche.gouv.fr/rss.xml",
+        "https://www.enseignementsup-recherche.gouv.fr/presse/communiques-de-presse"
+      ]
+    },
+    {
+      "canonical_id": "fr_foreign_affairs",
+      "name_zh": "法國歐洲與外交部",
+      "name_local": "Ministère de l'Europe et des Affaires étrangères",
+      "name_en": "Ministry for Europe and Foreign Affairs",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://www.diplomatie.gouv.fr/fr/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.diplomatie.gouv.fr/fr/ => InvalidURL: HTTPS redirect downgrade: http://www.diplomatie.gouv.fr/fr; https://www.diplomatie.gouv.fr/fr/rss.xml => HTTPStatusError: Client error '404 Not Found' for url 'https://www.diplomatie.gouv.fr/fr/rss.xml'; https://www.diplomatie.gouv.fr/fr/presse/communiques-de-presse => HTTPStatusError: Client error '404 Not Found' for url 'https://www.diplomatie.gouv.fr/fr/presse/communiques-de-presse'",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/ac1a7fdb-50f4-4599-b306-ec06b7250965",
+        "https://www.diplomatie.gouv.fr/fr/",
+        "https://www.diplomatie.gouv.fr/fr/rss.xml",
+        "https://www.diplomatie.gouv.fr/fr/presse/communiques-de-presse"
+      ]
+    },
+    {
+      "canonical_id": "fr_interior",
+      "name_zh": "法國內政部",
+      "name_local": "Ministère de l'Intérieur",
+      "name_en": "Ministry of the Interior",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://www.interieur.gouv.fr",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.interieur.gouv.fr => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.interieur.gouv.fr'; https://www.interieur.gouv.fr/rss.xml => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.interieur.gouv.fr/rss.xml'; https://www.interieur.gouv.fr/presse/communiques-de-presse => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.interieur.gouv.fr/presse/communiques-de-presse'",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/fa33b07a-3f71-46d4-b682-569c9faf211e",
+        "https://www.interieur.gouv.fr",
+        "https://www.interieur.gouv.fr/rss.xml",
+        "https://www.interieur.gouv.fr/presse/communiques-de-presse"
+      ]
+    },
+    {
+      "canonical_id": "fr_justice",
+      "name_zh": "法國司法部",
+      "name_local": "Ministère de la Justice",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://www.justice.gouv.fr/",
+      "news_url": "https://www.justice.gouv.fr/rss.xml",
+      "source_ids": [
+        "fr_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped feed passed robots-enforced, TLS-verified production scrape (10 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_fr_justice.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/7bc12104-b232-46a6-a6d7-85bcf2dfccf1",
+        "https://www.justice.gouv.fr/",
+        "https://www.justice.gouv.fr/rss.xml"
+      ]
+    },
+    {
+      "canonical_id": "fr_overseas",
+      "name_zh": "法國海外領土部",
+      "name_local": "Ministère des Outre-mer",
+      "name_en": "Ministry of Overseas Territories",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://www.outre-mer.gouv.fr/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.outre-mer.gouv.fr/ => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.outre-mer.gouv.fr/'; https://www.outre-mer.gouv.fr/rss.xml => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.outre-mer.gouv.fr/rss.xml'; https://www.outre-mer.gouv.fr/presse/communiques-de-presse => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.outre-mer.gouv.fr/presse/communiques-de-presse'",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/0dd547d8-44fb-4af8-8768-dc8a95614f0d",
+        "https://www.outre-mer.gouv.fr/",
+        "https://www.outre-mer.gouv.fr/rss.xml",
+        "https://www.outre-mer.gouv.fr/presse/communiques-de-presse"
+      ]
+    },
+    {
+      "canonical_id": "fr_sme_commerce_tourism",
+      "name_zh": "法國中小企業、商業、工藝、觀光與購買力部",
+      "name_local": "Ministère des petites et moyennes Entreprises, du Commerce, de l'Artisanat, du Tourisme et du Pouvoir d'achat",
+      "name_en": "Ministry of SMEs, Commerce, Crafts, Tourism and Purchasing Power",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://www.economie.gouv.fr/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.economie.gouv.fr/ => RobotsDeniedError: robots.txt disallows: https://www.economie.gouv.fr/; https://www.economie.gouv.fr/rss.xml => RobotsDeniedError: robots.txt disallows: https://www.economie.gouv.fr/rss.xml; https://www.economie.gouv.fr/presse/communiques-de-presse => RobotsDeniedError: robots.txt disallows: https://www.economie.gouv.fr/presse/communiques-de-presse",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/d2d5b079-abd0-441a-8abc-cea5a569c15c",
+        "https://www.economie.gouv.fr/",
+        "https://www.economie.gouv.fr/rss.xml",
+        "https://www.economie.gouv.fr/presse/communiques-de-presse"
+      ]
+    },
+    {
+      "canonical_id": "fr_health_family",
+      "name_zh": "法國衛生、家庭、自主生活與身心障礙事務部",
+      "name_local": "Ministère de la Santé, des Familles, de l’Autonomie et des Personnes handicapées",
+      "name_en": "Ministry of Health, Families, Autonomy and Persons with Disabilities",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://sante.gouv.fr/ministere/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://sante.gouv.fr/ministere/ => RobotsUnavailableError: https://sante.gouv.fr: robots.txt returned HTML/challenge content; https://sante.gouv.fr/ministere/rss.xml => RobotsUnavailableError: https://sante.gouv.fr: robots.txt returned HTML/challenge content; https://sante.gouv.fr/ministere/presse/communiques-de-presse => RobotsUnavailableError: https://sante.gouv.fr: robots.txt returned HTML/challenge content",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/d46810a3-6ed7-4a94-b950-1be135e43ad3",
+        "https://sante.gouv.fr/ministere/",
+        "https://sante.gouv.fr/ministere/rss.xml",
+        "https://sante.gouv.fr/ministere/presse/communiques-de-presse"
+      ]
+    },
+    {
+      "canonical_id": "fr_sports_youth",
+      "name_zh": "法國體育、青年與社團生活部",
+      "name_local": "Ministère des Sports, de la Jeunesse et de la Vie associative",
+      "name_en": "Ministry of Sports, Youth and Community Life",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://www.sports.gouv.fr/",
+      "news_url": "https://www.sports.gouv.fr/actualites-et-evenements",
+      "source_ids": [
+        "fr_sports_youth"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (12 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_fr_sports_youth.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/2fd089d2-669f-4a91-80b2-b345db391349",
+        "https://www.sports.gouv.fr/",
+        "https://www.sports.gouv.fr/actualites-et-evenements"
+      ]
+    },
+    {
+      "canonical_id": "fr_ecological_transition",
+      "name_zh": "法國生態轉型、生物多樣性與氣候及自然國際談判部",
+      "name_local": "Ministère de la Transition écologique, de la Biodiversité et des Négociations internationales sur le Climat et la Nature",
+      "name_en": "Ministry of Ecological Transition, Biodiversity and International Climate and Nature Negotiations",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://www.ecologie.gouv.fr/",
+      "news_url": "https://www.ecologie.gouv.fr/actualites",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. The ecology portal has accessible dated listing/RSS content, but it publishes several distinct ministerial portfolios. The captured routes do not establish reliable ministry-level attribution/filtering for this row. No blanket enrollment of a shared portal feed as each ministry; a genuine ministry-scoped endpoint or supported publisher/category filter remains required. Tested alternatives: https://www.ecologie.gouv.fr/ => HTTP 200; 103391 bytes; production parser 17 items/9 dated; https://www.ecologie.gouv.fr/presse => HTTP 200; 83174 bytes; production parser 15 items/15 dated; https://www.ecologie.gouv.fr/actualites => HTTP 200; 106043 bytes; production parser 15 items/15 dated; https://www.ecologie.gouv.fr/actualites/6-idees-recues-tri-biodechets => HTTP 200; 58276 bytes; production parser 2 items/0 dated; https://www.ecologie.gouv.fr/presse/carburants-extension-dispositifs-soutien-letat-aux-professionnels-aux-francais-cout-450meur => HTTP 200; 62563 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/actualites/catastrophes-naturelles-simplification-elargissement-dotation-aux-collectivites-locales => HTTP 200; 56596 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/presse/promulgation-loi-montagne-vivante-souveraine => HTTP 200; 55533 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/actualites/electrifions-france-energie-moins-chere-plus-souveraine-plus-durable => HTTP 200; 68724 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/flux-rss => HTTP 200; 47852 bytes; production parser 0 items/0 dated; https://www.ecologie.gouv.fr/rss.xml => HTTPStatusError: Client error '404 Not Found' for url 'https://www.ecologie.gouv.fr/rss.xml'; https://www.ecologie.gouv.fr/presse/communiques-de-presse => HTTPStatusError: Client error '404 Not Found' for url 'https://www.ecologie.gouv.fr/presse/communiques-de-presse'; https://ecologie.gouv.fr/rss-actualites.xml => HTTP 200; 9944 bytes; captured public resource, no dated replay established; https://ecologie.gouv.fr/rss-presse.xml => HTTP 200; 10143 bytes; captured public resource, no dated replay established",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/05f90b6a-e3d9-4a41-a919-2e2f2d77e517",
+        "https://www.ecologie.gouv.fr/",
+        "https://www.ecologie.gouv.fr/presse",
+        "https://www.ecologie.gouv.fr/actualites",
+        "https://www.ecologie.gouv.fr/actualites/6-idees-recues-tri-biodechets",
+        "https://www.ecologie.gouv.fr/presse/carburants-extension-dispositifs-soutien-letat-aux-professionnels-aux-francais-cout-450meur",
+        "https://www.ecologie.gouv.fr/actualites/catastrophes-naturelles-simplification-elargissement-dotation-aux-collectivites-locales",
+        "https://www.ecologie.gouv.fr/presse/promulgation-loi-montagne-vivante-souveraine",
+        "https://www.ecologie.gouv.fr/actualites/electrifions-france-energie-moins-chere-plus-souveraine-plus-durable",
+        "https://www.ecologie.gouv.fr/flux-rss",
+        "https://www.ecologie.gouv.fr/rss.xml",
+        "https://www.ecologie.gouv.fr/presse/communiques-de-presse",
+        "https://ecologie.gouv.fr/rss-actualites.xml",
+        "https://ecologie.gouv.fr/rss-presse.xml"
+      ]
+    },
+    {
+      "canonical_id": "fr_transport",
+      "name_zh": "法國交通部",
+      "name_local": "Ministère des Transports",
+      "name_en": "Ministry of Transport",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://www.ecologie.gouv.fr/",
+      "news_url": "https://www.ecologie.gouv.fr/actualites",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. The ecology portal has accessible dated listing/RSS content, but it publishes several distinct ministerial portfolios. The captured routes do not establish reliable ministry-level attribution/filtering for this row. No blanket enrollment of a shared portal feed as each ministry; a genuine ministry-scoped endpoint or supported publisher/category filter remains required. Tested alternatives: https://www.ecologie.gouv.fr/ => HTTP 200; 103391 bytes; production parser 17 items/9 dated; https://www.ecologie.gouv.fr/presse => HTTP 200; 83174 bytes; production parser 15 items/15 dated; https://www.ecologie.gouv.fr/actualites => HTTP 200; 106043 bytes; production parser 15 items/15 dated; https://www.ecologie.gouv.fr/actualites/6-idees-recues-tri-biodechets => HTTP 200; 58276 bytes; production parser 2 items/0 dated; https://www.ecologie.gouv.fr/presse/carburants-extension-dispositifs-soutien-letat-aux-professionnels-aux-francais-cout-450meur => HTTP 200; 62563 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/actualites/catastrophes-naturelles-simplification-elargissement-dotation-aux-collectivites-locales => HTTP 200; 56596 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/presse/promulgation-loi-montagne-vivante-souveraine => HTTP 200; 55533 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/actualites/electrifions-france-energie-moins-chere-plus-souveraine-plus-durable => HTTP 200; 68724 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/flux-rss => HTTP 200; 47852 bytes; production parser 0 items/0 dated; https://www.ecologie.gouv.fr/rss.xml => HTTPStatusError: Client error '404 Not Found' for url 'https://www.ecologie.gouv.fr/rss.xml'; https://www.ecologie.gouv.fr/presse/communiques-de-presse => HTTPStatusError: Client error '404 Not Found' for url 'https://www.ecologie.gouv.fr/presse/communiques-de-presse'",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/0c78ef90-614a-4fcb-b7af-449f6c66f6b6",
+        "https://www.ecologie.gouv.fr/",
+        "https://www.ecologie.gouv.fr/presse",
+        "https://www.ecologie.gouv.fr/actualites",
+        "https://www.ecologie.gouv.fr/actualites/6-idees-recues-tri-biodechets",
+        "https://www.ecologie.gouv.fr/presse/carburants-extension-dispositifs-soutien-letat-aux-professionnels-aux-francais-cout-450meur",
+        "https://www.ecologie.gouv.fr/actualites/catastrophes-naturelles-simplification-elargissement-dotation-aux-collectivites-locales",
+        "https://www.ecologie.gouv.fr/presse/promulgation-loi-montagne-vivante-souveraine",
+        "https://www.ecologie.gouv.fr/actualites/electrifions-france-energie-moins-chere-plus-souveraine-plus-durable",
+        "https://www.ecologie.gouv.fr/flux-rss",
+        "https://www.ecologie.gouv.fr/rss.xml",
+        "https://www.ecologie.gouv.fr/presse/communiques-de-presse"
+      ]
+    },
+    {
+      "canonical_id": "fr_labour_solidarity",
+      "name_zh": "法國勞動與團結部",
+      "name_local": "Ministère du Travail et des Solidarités",
+      "name_en": "Ministry of Labour and Solidarity",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://travail-emploi.gouv.fr",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://travail-emploi.gouv.fr => RobotsUnavailableError: https://travail-emploi.gouv.fr: robots.txt returned HTML/challenge content; https://travail-emploi.gouv.fr/rss.xml => RobotsUnavailableError: https://travail-emploi.gouv.fr: robots.txt returned HTML/challenge content; https://travail-emploi.gouv.fr/presse/communiques-de-presse => RobotsUnavailableError: https://travail-emploi.gouv.fr: robots.txt returned HTML/challenge content",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/f130ad96-4a81-4eb4-a40c-0539edad5fff",
+        "https://travail-emploi.gouv.fr",
+        "https://travail-emploi.gouv.fr/rss.xml",
+        "https://travail-emploi.gouv.fr/presse/communiques-de-presse"
+      ]
+    },
+    {
+      "canonical_id": "fr_city_housing",
+      "name_zh": "法國城市與住宅部",
+      "name_local": "Ministère de la Ville et du Logement",
+      "name_en": "Ministry of Cities and Housing",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://www.cohesion-territoires.gouv.fr/le-ministere",
+      "news_url": "https://www.ecologie.gouv.fr/actualites",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. The ecology portal has accessible dated listing/RSS content, but it publishes several distinct ministerial portfolios. The captured routes do not establish reliable ministry-level attribution/filtering for this row. No blanket enrollment of a shared portal feed as each ministry; a genuine ministry-scoped endpoint or supported publisher/category filter remains required. Tested alternatives: https://www.cohesion-territoires.gouv.fr/le-ministere => HTTP 200; 56344 bytes; production parser 2 items/0 dated; https://www.ecologie.gouv.fr/presse => HTTP 200; 83174 bytes; production parser 15 items/15 dated; https://www.ecologie.gouv.fr/actualites => HTTP 200; 106043 bytes; production parser 15 items/15 dated; https://www.ecologie.gouv.fr/flux-rss => HTTP 200; 47852 bytes; production parser 0 items/0 dated; https://www.cohesion-territoires.gouv.fr/rss.xml => HTTPStatusError: Client error '404 Not Found' for url 'https://www.ecologie.gouv.fr/rss.xml'; https://www.cohesion-territoires.gouv.fr/presse/communiques-de-presse => HTTPStatusError: Client error '404 Not Found' for url 'https://www.ecologie.gouv.fr/presse/communiques-de-presse'",
+      "evidence_urls": [
+        "https://www.info.gouv.fr/composition-du-gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement",
+        "https://lannuaire.service-public.gouv.fr/gouvernement/051be6c4-2693-45e0-9644-b84049e57f02",
+        "https://www.cohesion-territoires.gouv.fr/le-ministere",
+        "https://www.ecologie.gouv.fr/presse",
+        "https://www.ecologie.gouv.fr/actualites",
+        "https://www.ecologie.gouv.fr/flux-rss",
+        "https://www.cohesion-territoires.gouv.fr/rss.xml",
+        "https://www.cohesion-territoires.gouv.fr/presse/communiques-de-presse"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "url": "https://www.regeringen.se/sveriges-regering/kulturdepartementet/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:20.496948+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "5d286d9c2ddb775a2e05b98893e860ae7742542b9aaf9219e1c4a7ca4f25c192",
+  "sha256": "d36fa0b2200667754e40fc86ee3605373d733ce5099c21364a7318ee1bbe1f07",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 20,
+  "dated_count": 20,
+  "fixture_count": 4,
+  "source_id": "se_culture",
+  "expected": [
+    {
+      "title": "Sanningskommissionen för det samiska folket överlämnar sin slutrapport",
+      "url": "https://www.regeringen.se/pressmeddelanden/2026/09/sanningskommissionen-for-det-samiska-folket-overlamnar-sin-slutrapport/",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Markerna berättar och minns, SOU 2026:58",
+      "url": "https://www.regeringen.se/rattsliga-dokument/statens-offentliga-utredningar/2026/09/sou-202658/",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Remiss av promemorian Förslag på extra medelstilldelning till Sveriges Radio AB och Sveriges Television AB för ökade kostnader för marknätet",
+      "url": "https://www.regeringen.se/remisser/2026/06/remiss-av-promemorian-forslag-pa-extra-medelstilldelning-till-sveriges-radio-ab-och-sveriges-television-ab-for-okade-kostnader-for-marknatet/",
+      "published_date_local": "2026-06-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Regeringens arbete för att stärka judiskt liv och motverka antisemitism",
+      "url": "https://www.regeringen.se/artiklar/2026/09/regeringens-arbete-for-att-starka-judiskt-liv-och-motverka-antisemitism/",
+      "published_date_local": "2026-09-11",
+      "date_source": "source-selector"
+    }
+  ]
+}

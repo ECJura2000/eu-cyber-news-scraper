@@ -1,0 +1,403 @@
+{
+  "schema_version": 1,
+  "country": "GR",
+  "reviewed_on": "2026-10-02",
+  "official_roster_urls": [
+    "https://www.government.gov.gr/kivernisi/",
+    "https://www.gov.gr/upourgeia"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "2026-10-02 ministry news audit: 4 manually verified and 0 existing-source ministries; 17 unresolved. Roster enumeration does not imply searchable completeness. Exact tried URLs and robots/transport/parser/attribution limitations are recorded per ministry; unresolved rows have no runnable source. New sources retain disabled scheduling/noncritical status, all 15 topics, empty responsibility, and genuine checksum-backed fixture replay."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "gr_government_presidency",
+      "name_zh": "希臘政府主席辦公室",
+      "name_local": "Προεδρία της Κυβέρνησης",
+      "name_en": "Presidency of the Government",
+      "kind": "government_head_office",
+      "language": "el",
+      "homepage": "https://www.government.gov.gr/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.government.gov.gr/ => RobotsDeniedError: robots.txt disallows: https://www.government.gov.gr/",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://www.government.gov.gr/"
+      ]
+    },
+    {
+      "canonical_id": "gr_finance",
+      "name_zh": "希臘國民經濟與財政部",
+      "name_local": "Υπουργείο Εθνικής Οικονομίας και Οικονομικών",
+      "name_en": "Ministry of National Economy and Finance",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://minfin.gov.gr/ => RobotsDeniedError: robots.txt disallows: https://minfin.gov.gr/",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://minfin.gov.gr/"
+      ]
+    },
+    {
+      "canonical_id": "gr_foreign_affairs",
+      "name_zh": "希臘外交部",
+      "name_local": "Υπουργείο Εξωτερικών",
+      "name_en": "Ministry of Foreign Affairs",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://www.mfa.gr/ => RobotsDeniedError: robots.txt disallows: https://www.mfa.gr/",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://www.mfa.gr/"
+      ]
+    },
+    {
+      "canonical_id": "gr_defence",
+      "name_zh": "希臘國防部",
+      "name_local": "Υπουργείο Εθνικής Άμυνας",
+      "name_en": "Ministry of National Defence",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://www.mod.mil.gr/ => RobotsDeniedError: robots.txt disallows: https://www.mod.mil.gr/",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://www.mod.mil.gr/"
+      ]
+    },
+    {
+      "canonical_id": "gr_interior",
+      "name_zh": "希臘內政部",
+      "name_local": "Υπουργείο Εσωτερικών",
+      "name_en": "Ministry of the Interior",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://www.ypes.gr/ => RobotsDeniedError: robots.txt disallows: https://www.ypes.gr/",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://www.ypes.gr/"
+      ]
+    },
+    {
+      "canonical_id": "gr_education",
+      "name_zh": "希臘教育、宗教與體育部",
+      "name_local": "Υπουργείο Παιδείας, Θρησκευμάτων και Αθλητισμού",
+      "name_en": "Ministry of Education, Religious Affairs and Sports",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": "https://www.minedu.gov.gr/?format=feed&type=rss",
+      "news_url": "https://www.minedu.gov.gr/?format=feed&type=rss",
+      "source_ids": [
+        "gr_education"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped feed passed robots-enforced, TLS-verified production scrape (4 dated items); genuine bounded fixture replays 4 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_gr_education.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://www.minedu.gov.gr/?format=feed&type=rss"
+      ]
+    },
+    {
+      "canonical_id": "gr_health",
+      "name_zh": "希臘衛生部",
+      "name_local": "Υπουργείο Υγείας",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": "https://www.moh.gov.gr/",
+      "news_url": "https://www.moh.gov.gr/",
+      "source_ids": [
+        "gr_health"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (16 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_gr_health.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://www.moh.gov.gr/"
+      ]
+    },
+    {
+      "canonical_id": "gr_infrastructure_transport",
+      "name_zh": "希臘基礎建設與交通部",
+      "name_local": "Υπουργείο Υποδομών και Μεταφορών",
+      "name_en": "Ministry of Infrastructure and Transport",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://www.yme.gr/ => RobotsDeniedError: robots.txt disallows: https://www.yme.gr/",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://www.yme.gr/"
+      ]
+    },
+    {
+      "canonical_id": "gr_environment_energy",
+      "name_zh": "希臘環境與能源部",
+      "name_local": "Υπουργείο Περιβάλλοντος και Ενέργειας",
+      "name_en": "Ministry of Environment and Energy",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://ypen.gov.gr/ => RobotsDeniedError: robots.txt disallows: https://ypen.gov.gr/",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://ypen.gov.gr/"
+      ]
+    },
+    {
+      "canonical_id": "gr_development",
+      "name_zh": "希臘發展部",
+      "name_local": "Υπουργείο Ανάπτυξης",
+      "name_en": "Ministry of Development",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": "https://www.mindev.gov.gr/",
+      "news_url": "https://www.mindev.gov.gr/feed/",
+      "source_ids": [
+        "gr_development"
+      ],
+      "status": "manual_verified",
+      "reason": "Official RSS discovered in ministry navigation; robots-aware live scrape succeeded with 10 dated articles. Genuine XML/checksum fixture regression recorded; scheduled collection disabled.",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://www.mindev.gov.gr/",
+        "https://www.mindev.gov.gr/feed/"
+      ]
+    },
+    {
+      "canonical_id": "gr_labour",
+      "name_zh": "希臘勞動與社會安全部",
+      "name_local": "Υπουργείο Εργασίας και Κοινωνικής Ασφάλισης",
+      "name_en": "Ministry of Labour and Social Security",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://ypergasias.gov.gr/ => RobotsDeniedError: robots.txt disallows: https://ypergasias.gov.gr/",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://ypergasias.gov.gr/"
+      ]
+    },
+    {
+      "canonical_id": "gr_citizen_protection",
+      "name_zh": "希臘公民保護部",
+      "name_local": "Υπουργείο Προστασίας του Πολίτη",
+      "name_en": "Ministry of Citizen Protection",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://www.minocp.gov.gr/ => RobotsDeniedError: robots.txt disallows: https://www.minocp.gov.gr/",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://www.minocp.gov.gr/"
+      ]
+    },
+    {
+      "canonical_id": "gr_justice",
+      "name_zh": "希臘司法部",
+      "name_local": "Υπουργείο Δικαιοσύνης",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://ministryofjustice.gr/ => RobotsDeniedError: robots.txt disallows: https://ministryofjustice.gr/",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://ministryofjustice.gr/"
+      ]
+    },
+    {
+      "canonical_id": "gr_culture",
+      "name_zh": "希臘文化部",
+      "name_local": "Υπουργείο Πολιτισμού",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://www.culture.gov.gr/ => RobotsDeniedError: robots.txt disallows: https://www.culture.gov.gr/",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://www.culture.gov.gr/"
+      ]
+    },
+    {
+      "canonical_id": "gr_migration",
+      "name_zh": "希臘移民與庇護部",
+      "name_local": "Υπουργείο Μετανάστευσης και Ασύλου",
+      "name_en": "Ministry of Migration and Asylum",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": "https://migration.gov.gr/",
+      "news_url": "https://migration.gov.gr/feed/",
+      "source_ids": [
+        "gr_migration"
+      ],
+      "status": "manual_verified",
+      "reason": "Official RSS discovered in ministry navigation; robots-aware live scrape succeeded with 10 dated articles. Genuine XML/checksum fixture regression recorded; scheduled collection disabled.",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://migration.gov.gr/",
+        "https://migration.gov.gr/feed/"
+      ]
+    },
+    {
+      "canonical_id": "gr_social_family",
+      "name_zh": "希臘社會凝聚與家庭部",
+      "name_local": "Υπουργείο Κοινωνικής Συνοχής και Οικογένειας",
+      "name_en": "Ministry of Social Cohesion and Family",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://minscfa.gov.gr/ => RobotsDeniedError: robots.txt disallows: https://minscfa.gov.gr/",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://minscfa.gov.gr/"
+      ]
+    },
+    {
+      "canonical_id": "gr_agriculture",
+      "name_zh": "希臘農業發展與食品部",
+      "name_local": "Υπουργείο Αγροτικής Ανάπτυξης και Τροφίμων",
+      "name_en": "Ministry of Rural Development and Food",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://www.minagric.gov.gr/ => RobotsDeniedError: robots.txt disallows: https://www.minagric.gov.gr/",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://www.minagric.gov.gr/"
+      ]
+    },
+    {
+      "canonical_id": "gr_maritime",
+      "name_zh": "希臘航運與島嶼政策部",
+      "name_local": "Υπουργείο Ναυτιλίας και Νησιωτικής Πολιτικής",
+      "name_en": "Ministry of Maritime Affairs and Insular Policy",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://www.ynanp.gr/ => RobotsDeniedError: robots.txt disallows: https://www.ynanp.gr/",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://www.ynanp.gr/"
+      ]
+    },
+    {
+      "canonical_id": "gr_tourism",
+      "name_zh": "希臘觀光部",
+      "name_local": "Υπουργείο Τουρισμού",
+      "name_en": "Ministry of Tourism",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://mintour.gov.gr/ => HTTPStatusError: Client error '403 Forbidden' for url 'https://mintour.gov.gr/'",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://mintour.gov.gr/"
+      ]
+    },
+    {
+      "canonical_id": "gr_digital",
+      "name_zh": "希臘數位治理部",
+      "name_local": "Υπουργείο Ψηφιακής Διακυβέρνησης",
+      "name_en": "Ministry of Digital Governance",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://mindigital.gr/ => RobotsDeniedError: robots.txt disallows: https://mindigital.gr/",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://mindigital.gr/"
+      ]
+    },
+    {
+      "canonical_id": "gr_climate_civil_protection",
+      "name_zh": "希臘氣候危機與民防部",
+      "name_local": "Υπουργείο Κλιματικής Κρίσης και Πολιτικής Προστασίας",
+      "name_en": "Ministry of Climate Crisis and Civil Protection",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://civilprotection.gov.gr/ => RobotsDeniedError: robots.txt disallows: https://civilprotection.gov.gr/",
+      "evidence_urls": [
+        "https://www.government.gov.gr/kivernisi/",
+        "https://www.gov.gr/upourgeia",
+        "https://civilprotection.gov.gr/"
+      ]
+    }
+  ]
+}

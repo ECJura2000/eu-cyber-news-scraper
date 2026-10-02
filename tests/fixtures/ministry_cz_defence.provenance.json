@@ -1,0 +1,73 @@
+{
+  "source_id": "cz_defence",
+  "url": "https://www.mo.gov.cz/scripts/detail.php?pgid=194",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:35:35.429995+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "12ba44b2bf0a3583da124795bc9bd7985e482e5bc8f13617a3427a0f8f0b02a7",
+  "response_sha256": "42a7c06da20ddebbfe5d0ad3f0e381ead6ae41895de716d439c53ea91d11f2ae",
+  "fixture_count": 5,
+  "expected": [
+    {
+      "title": "South Korea: Partner for the Czech Republic, Europe and NATO",
+      "url": "https://www.mo.gov.cz/en/ministry-of-defence/newsroom/news/south-korea:-partner-for-the-czech-republic--europe-and-nato-265830/",
+      "published_date_local": "2026-09-09",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Minister Zůna met with Moldovan Defence Minister in Prague",
+      "url": "https://www.mo.gov.cz/en/ministry-of-defence/newsroom/news/minister-zuna-met-with-moldovan-defence-minister-in-prague-265678/",
+      "published_date_local": "2026-07-31",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Minister Zůna attended meeting in NATO HQ, discussed European contribution to collective defence",
+      "url": "https://www.mo.gov.cz/en/ministry-of-defence/newsroom/news/minister-zuna-attended-meeting-in-nato-hq--discussed-european-contribution-to-collective-defence-264831/",
+      "published_date_local": "2026-06-23",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Eyes on the Ground: Joint Terminal Attack Controllers Guiding Air Power from the Front Lines",
+      "url": "https://www.mo.gov.cz/en/ministry-of-defence/newsroom/news/eyes-on-the-ground:-joint-terminal-attack-controllers-guiding-air-power-from-the-front-lines-264171/",
+      "published_date_local": "2026-05-21",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Minister Zůna’s visit to Moldova: Defence Cooperation to Intensify",
+      "url": "https://www.mo.gov.cz/en/ministry-of-defence/newsroom/news/minister-zuna_s-visit-to-moldova:-defence-cooperation-to-intensify-264159/",
+      "published_date_local": "2026-05-21",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 5,
+  "live_dated_count": 5,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "cz_defence",
+    "country": "CZ",
+    "name_zh": "捷克國防部",
+    "name": "Ministerstvo obrany",
+    "institution_type": "ministry",
+    "language": "cs",
+    "homepage": "https://www.mo.gov.cz/",
+    "listing_url": "https://www.mo.gov.cz/scripts/detail.php?pgid=194",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.mo.gov.cz"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Prague",
+    "card_selectors": [
+      "div.news-list__item__text"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

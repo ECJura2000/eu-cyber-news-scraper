@@ -1,0 +1,131 @@
+{
+  "url": "https://mzd.gov.cz/feed/",
+  "final_url": "https://mzd.gov.cz/feed/",
+  "observed_at": "2026-10-01T11:52:38.206003+00:00",
+  "observed_on": "2026-10-01",
+  "http_status": 200,
+  "sha256": "d5d5264587896aeffdb85005c1535341f13bc4a5a4a2c817693367f9eb637f22",
+  "transform": "XML parse/serialization retaining first 8 genuine entries",
+  "fixture": "ministry_cz_health.xml",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "replay_count": 8,
+  "source": {
+    "id": "cz_health",
+    "country": "CZ",
+    "name_zh": "捷克衛生部",
+    "name": "Ministerstvo zdravotnictví",
+    "institution_type": "ministry",
+    "language": "cs",
+    "homepage": "https://mzd.gov.cz/",
+    "listing_url": "https://mzd.gov.cz/tiskove-centrum/tiskove-zpravy/",
+    "feed_urls": [
+      "https://mzd.gov.cz/feed/"
+    ],
+    "allow_domains": [
+      "mzd.gov.cz"
+    ],
+    "critical": false,
+    "schedule_enabled": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Prague"
+  },
+  "live_status": {
+    "source_id": "cz_health",
+    "source_name": "捷克衛生部",
+    "country": "CZ",
+    "critical": false,
+    "success": true,
+    "fetched_via": "configured-feed",
+    "raw_count": 10,
+    "relevant_count": 10,
+    "duration_seconds": 0.5,
+    "newest_published_at": "2026-09-30T11:04:31+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 0,
+    "historical_median_count": 0,
+    "health_alerts": [],
+    "dated_count": 10,
+    "undated_ratio": 0,
+    "unique_title_ratio": 1,
+    "in_range_count": 10,
+    "freshness_lag_days": 1.54,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 13725,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0,
+    "historical_median_bytes": 0,
+    "historical_median_duration": 0
+  },
+  "source_id": "cz_health",
+  "fixture_count": 8,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "expected": [
+    {
+      "title": "Činnost RASFF 2025",
+      "url": "https://mzd.gov.cz/cinnost-rasff-2025/",
+      "published_date_local": "2026-09-25",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Výzva k podání žádostí o neinvestiční dotaci v rámci dotačního titulu „Program protidrogové politiky“ rozpočtové kapitoly Ministerstva zdravotnictví na rok 2027",
+      "url": "https://mzd.gov.cz/vyzva-program-protidrogove-politiky-2027/",
+      "published_date_local": "2026-09-30",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Vedení Odboru politiky závislostí jednalo se zástupci Unie výrobců a dovozců lihovin",
+      "url": "https://mzd.gov.cz/vedeni-odboru-politiky-zavislosti-jednalo-se-zastupci-unie-vyrobcu-a-dovozcu-lihovin/",
+      "published_date_local": "2026-09-30",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Vedení Odboru politiky závislostí jednalo se zástupci Institutu pro regulaci hazardních her",
+      "url": "https://mzd.gov.cz/vedeni-odboru-politiky-zavislosti-jednalo-se-zastupci-institutu-pro-regulaci-hazardnich-her/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Žádost o informace ze dne 20.8.2026",
+      "url": "https://mzd.gov.cz/zadost-o-informace-ze-dne-20-8-2026-5/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Žádost o informace ze dne 15.9.2026",
+      "url": "https://mzd.gov.cz/zadost-o-informace-ze-dne-15-9-2026/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Žádost o informace ze dne 10.9.2026",
+      "url": "https://mzd.gov.cz/zadost-o-informace-ze-dne-10-9-2026/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Žádost o informace ze dne 4.9.2026",
+      "url": "https://mzd.gov.cz/zadost-o-informace-ze-dne-4-9-2026/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    }
+  ]
+}
+

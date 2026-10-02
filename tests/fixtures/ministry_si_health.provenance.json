@@ -1,0 +1,23 @@
+{
+  "url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=33",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:57:06.684110+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "8a2a6d41ccdf0fcf3b9772ad24bccf1912d0e7f7b15f11511aacc0513524d61e",
+  "sha256": "a087713aa37dc6b377ca66b11e25c55c633cebede00f6a6506c713089ded6558",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 100,
+  "dated_count": 100,
+  "fixture_count": 1,
+  "source_id": "si_health",
+  "expected": [
+    {
+      "title": "Otrokom z redkimi boleznimi jasnejša in hitrejša pot do naprednega zdravljenja",
+      "url": "https://www.gov.si/novice/2026-09-30-otrokom-z-redkimi-boleznimi-jasnejsa-in-hitrejsa-pot-do-naprednega-zdravljenja/",
+      "published_date_local": "2026-09-30",
+      "date_source": "feed-published"
+    }
+  ]
+}

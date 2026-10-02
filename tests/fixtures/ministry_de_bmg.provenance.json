@@ -1,0 +1,91 @@
+{
+  "source_id": "de_bmg",
+  "url": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:21.862096+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "07db9620adfb677297482fa3c875faa28fc1293f249cc308319e4c336d021d72",
+  "response_sha256": "d6d683c2c25c6db0ac3f0551834f174129d16ad1b7a0a3c2a9127f26f9d7d8d9",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Kabinett beschließt Pflegeneuordnungsgesetz",
+      "url": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/kabinett-beschliesst-pflegeneuordnungsgesetz",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Finanzentwicklung der GKV im 1. Halbjahr 2026",
+      "url": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/finanzentwicklung-der-gkv-im-1-halbjahr-2026",
+      "published_date_local": "2026-09-04",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Präventionsoffensive startet: Gesundheit fördern, bevor Krankheit entsteht",
+      "url": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/praeventionsoffensive-startet-gesundheit-pm-16-07-2026",
+      "published_date_local": "2026-07-16",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Kabinett beschließt Gesetz für Daten und digitale Innovation im Gesundheitswesen (GeDIG)",
+      "url": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/kabinett-beschliesst-gedig-pm-15-07-2026",
+      "published_date_local": "2026-07-15",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Bundestag beschließt GKV-Beitragssatzstabilisierungsgesetz",
+      "url": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/bundestag-beschliesst-gkv-beitragssatzstabilisierunggesetz-pm-10-07-2026",
+      "published_date_local": "2026-07-10",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Spitzengespräch zum Bürokratieabbau im BMG",
+      "url": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/spitzengespraech-buerokratieabbau-pm-07-07-26",
+      "published_date_local": "2026-07-07",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Fachkommission übergibt Rahmenlehrplan und Rahmenausbildungsplan für die bundeseinheitliche Pflegefachassistenzausbildung an BMBFSFJ und BMG",
+      "url": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/uebergabe-rahmenplaene-fachkommission-nach-pflegeberufegesetz-30-06-26",
+      "published_date_local": "2026-06-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Finanzentwicklung der GKV im 1. Quartal 2026",
+      "url": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/finanzentwicklung-der-gkv-im-1-quartal-2026-pm-19-06-2026-1",
+      "published_date_local": "2026-06-19",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 10,
+  "live_dated_count": 10,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "de_bmg",
+    "country": "DE",
+    "name_zh": "德國衛生部",
+    "name": "Bundesministerium für Gesundheit",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.bundesgesundheitsministerium.de/",
+    "listing_url": "https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.bundesgesundheitsministerium.de"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Berlin",
+    "card_selectors": [
+      "div.c-teaser--no-image"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

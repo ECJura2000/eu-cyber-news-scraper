@@ -1,0 +1,135 @@
+{
+  "source_id": "lu_agriculture",
+  "url": "https://ma.gouvernement.lu/fr.html",
+  "final_url": "https://ma.gouvernement.lu/fr.html",
+  "observed_at": "2026-10-02T00:41:38.977634+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "487324c23634c2956742c05ec2bbb7250cd8431b3a3ce564bd030f144a09ae38",
+  "response_bytes": 117890,
+  "fixture_sha256": "46423deb00ebc7a3f946b9b2cd9859891c211e2ca2ea221129c830f49b279f50",
+  "fixture_bytes": 6388,
+  "transform": "BeautifulSoup extraction of genuine dated news containers retaining original attributes/text; scripts/styles removed; original base retained if present; bounded to six or fewer containers",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "Martine Hansen au Conseil \"Agri-Pêche\" à Bruxelles: La PAC post-2027, le plan d'action sur les engrais et la situation des marchés agricoles au cœur du débat",
+      "url": "https://ma.gouvernement.lu/fr/actualites.gouvernement2024%2Bfr%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2026%2B09-septembre%2B28-hansen-conseil-agri-peche.html",
+      "published_date_local": "2026-09-28"
+    },
+    {
+      "title": "Opération de contrôle conjointe dans le secteur de la livraison de repas à Luxembourg-Ville",
+      "url": "https://ma.gouvernement.lu/fr/actualites.gouvernement2024%2Bfr%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2026%2B09-septembre%2B25-controle-livraison-repas.html",
+      "published_date_local": "2026-09-25"
+    },
+    {
+      "title": "Martine Hansen à la Réunion informelle \"Agri-Pêche\" à Dublin: La stratégie de l'élevage et le plan protéines sont des outils clé pour le secteur agricole!",
+      "url": "https://ma.gouvernement.lu/fr/actualites.gouvernement2024%2Bfr%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2026%2B09-septembre%2B08-hansen-agri-peche-dublin.html",
+      "published_date_local": "2026-09-08"
+    },
+    {
+      "title": "Vendanges historiquement précoces à la Moselle luxembourgeoise - un millésime d'une excellente qualité",
+      "url": "https://ma.gouvernement.lu/fr/actualites.gouvernement2024%2Bfr%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2026%2B09-septembre%2B04-hansen-moselle.html",
+      "published_date_local": "2026-09-04"
+    }
+  ],
+  "live_status": {
+    "source_id": "lu_agriculture",
+    "source_name": "盧森堡農業、食品暨葡萄栽培部",
+    "country": "LU",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 4,
+    "relevant_count": 4,
+    "duration_seconds": 0.465,
+    "newest_published_at": "2026-09-28T00:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 4,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 4,
+    "freshness_lag_days": 5.0,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 117891,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "lu_agriculture",
+    "country": "LU",
+    "name_zh": "盧森堡農業、食品暨葡萄栽培部",
+    "name": "Ministère de l'Agriculture, de l'Alimentation et de la Viticulture",
+    "institution_type": "central ministry",
+    "language": "fr",
+    "homepage": "https://ma.gouvernement.lu/fr.html",
+    "listing_url": "https://ma.gouvernement.lu/fr.html",
+    "feed_urls": [],
+    "allow_domains": [
+      "ma.gouvernement.lu"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Luxembourg",
+    "card_selectors": [
+      "li.cmp-focus-list-item:has(time.article-published)"
+    ],
+    "link_selectors": [
+      "a.blocklink"
+    ],
+    "title_selectors": [
+      "h3.focus-page-title"
+    ],
+    "date_selectors": [
+      "time.article-published"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_lu_agriculture.html",
+  "format": "html"
+}

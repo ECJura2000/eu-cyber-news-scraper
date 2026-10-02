@@ -1,0 +1,91 @@
+{
+  "source_id": "bg_agriculture",
+  "url": "https://www.mzh.government.bg/bg/press-center/novini/?category=1",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:55.053169+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "a55ba859fd88fc5e6d1620596ac787c6e861402f2243ad5ce56190ca62d3d6e3",
+  "response_sha256": "643e0ff788dc741ec277161845b8e0dc95c6b42c8f5fec215a17efc18ef31668",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Отпускат се 20,7 млн. евро по преходните помощи за говеда, овце-майки и кози-майки за Кампания 2026",
+      "url": "https://www.mzh.government.bg/bg/press-center/novini/otpuskat-se-207-mln-evro-po-prehodnite-pomoshi-za/",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Министър Абровски: Българското земеделие има нужда от възпитаниците на Аграрен университет- Пловдив",
+      "url": "https://www.mzh.government.bg/bg/press-center/novini/ministr-abrovski-blgarskoto-zemedelie-ima-nuzhda-o/",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Министър Абровски: Производството на розов цвят  у нас се увеличава с 31%, спрямо предходната година",
+      "url": "https://www.mzh.government.bg/bg/press-center/novini/ministr-abrovski-proizvodstvoto-na-rozov-cvyat-u-n/",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Зам.-министър Палигоров: Черно море е стратегически регион с ключово значение за продоволствената сигурност",
+      "url": "https://www.mzh.government.bg/bg/press-center/novini/zam-ministr-paligorov-cherno-more-e-strategicheski/",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Зам.-министър Неделков: Предвиждаме гъвкави правила за кланичните пунктове към фермите",
+      "url": "https://www.mzh.government.bg/bg/press-center/novini/zam-ministr-nedelkov-predvizhdame-gvkavi-pravila-z/",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Стопаните, заявили подпомагане по Еко-ПЗП за Кампания 2025, ще получат допълнително плащане",
+      "url": "https://www.mzh.government.bg/bg/press-center/novini/stopanite-zayavili-podpomagane-po-eko-pzp-za-kampa/",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Зам.-министър проф. Иван Палигоров: Обединяването на фермерите е ключово за конкурентоспособността им на пазарите",
+      "url": "https://www.mzh.government.bg/bg/press-center/novini/zam-ministr-prof-ivan-paligorov-obedinyavaneto-na/",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "МЗХ стартира кампания за обсъждане създаването на общински консултативни съвети на територията на страната",
+      "url": "https://www.mzh.government.bg/bg/press-center/novini/mzh-startira-kampaniya-za-obszhdane-szdavaneto-na/",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 10,
+  "live_dated_count": 10,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "bg_agriculture",
+    "country": "BG",
+    "name_zh": "保加利亞農業與糧食部",
+    "name": "Министерство на земеделието и храните",
+    "institution_type": "ministry",
+    "language": "bg",
+    "homepage": "https://www.mzh.government.bg/bg/press-center/novini/?category=1",
+    "listing_url": "https://www.mzh.government.bg/bg/press-center/novini/?category=1",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.mzh.government.bg"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Sofia",
+    "card_selectors": [
+      "li.news"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "source_id": "es_digital",
+  "url": "https://digital.gob.es/comunicacion",
+  "final_url": "https://digital.gob.es/comunicacion",
+  "observed_at": "2026-10-02T00:41:21.302976+00:00",
+  "http_status": 200,
+  "content_type": "text/html;charset=utf-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "007fa4c2cd3d32b98855cbd1038e7730dcc235effd0d8ad0f1c84b967cf955a3",
+  "response_bytes": 554925,
+  "fixture_sha256": "2d2767f2a93482454ad091a0b255b2bd94fd248e72197d0d36a6459c9a73e41b",
+  "fixture_bytes": 24820,
+  "transform": "BeautifulSoup extraction of genuine dated news containers retaining original attributes/text; scripts/styles removed; original base retained if present; bounded to six or fewer containers",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "España apuesta por una alianza iberoamericana para hacer de la IA una oportunidad económica y social que mejore la vida de las personas",
+      "url": "https://digital.gob.es/comunicacion/notas-prensa/secretaria-digitalizacion-e-inteligencia-artificial/2026/10/espana-apuesta-por-una-alianza-iberoamericana-para-hacer-de-la-i",
+      "published_date_local": "2026-10-01"
+    },
+    {
+      "title": "España y Francia refuerzan su compromiso con el futuro del sector audiovisual europeo",
+      "url": "https://digital.gob.es/comunicacion/notas-prensa/mtdfp/2026/09/espana-y-francia-refuerzan-su-compromiso-con-el-futuro-del-secto",
+      "published_date_local": "2026-09-30"
+    },
+    {
+      "title": "El ministro Óscar López se reúne con la presidenta de la Comunidad Foral de Navarra, María Chivite",
+      "url": "https://digital.gob.es/comunicacion/notas-prensa/mtdfp/2026/09/el-ministro-oscar-lopez-se-reune-con-la-presidenta-de-la-comunid",
+      "published_date_local": "2026-09-23"
+    },
+    {
+      "title": "Óscar López anuncia que el Gobierno destinará 1,1 millones de euros en ayudas para tres proyectos de Inteligencia Artificial en Navarra",
+      "url": "https://digital.gob.es/comunicacion/notas-prensa/mtdfp/2026/09/oscar-lopez-anuncia-que-el-gobierno-destinara-1-1-millones-de-eu",
+      "published_date_local": "2026-09-22"
+    },
+    {
+      "title": "El Gobierno dará continuidad al Hub Audiovisual a través del fondo soberano España Crece",
+      "url": "https://digital.gob.es/comunicacion/notas-prensa/mtdfp/2026/09/el-gobierno-dara-continuidad-al-hub-audiovisual-a-traves-del-fon",
+      "published_date_local": "2026-09-20"
+    },
+    {
+      "title": "Óscar López visita la empresa Deneb Medical y su tecnología avanzada para cirugía de precisión láser, en la que el Gobierno ha invertido 7,2 millones",
+      "url": "https://digital.gob.es/comunicacion/notas-prensa/mtdfp/2026/09/oscar-lopez-visita-la-empresa-deneb-medical-y-su-tecnologia-avan",
+      "published_date_local": "2026-09-19"
+    },
+    {
+      "title": "Óscar López anuncia que las obras del Centro de Semiconductores en Málaga comenzarán en el primer trimestre de 2027",
+      "url": "https://digital.gob.es/comunicacion/notas-prensa/mtdfp/2026/09/oscar-lopez-anuncia-que-las-obras-del-centro-de-semiconductores-",
+      "published_date_local": "2026-09-17"
+    },
+    {
+      "title": "La SETT invierte 680.000 euros en Nearby Computing para reforzar la infraestructura digital de España",
+      "url": "https://digital.gob.es/comunicacion/notas-prensa/mtdfp/2026/09/la-sett-invierte-680-000-euros-en-nearby-computing-para-reforzar",
+      "published_date_local": "2026-09-17"
+    },
+    {
+      "title": "El Gobierno impulsa 52 nuevos proyectos de ciudades inteligentes en España con RedCyTI, que movilizará 126 millones de euros",
+      "url": "https://digital.gob.es/comunicacion/notas-prensa/secretaria-digitalizacion-e-inteligencia-artificial/2026/09/el-gobierno-impulsa-52-nuevos-proyectos-de-ciudades-inteligentes",
+      "published_date_local": "2026-09-15"
+    },
+    {
+      "title": "Oscar López urge a adoptar una regulación europea para proteger a los menores en el mundo digital: “Ha llegado el momento de actuar”",
+      "url": "https://digital.gob.es/comunicacion/notas-prensa/mtdfp/2026/09/oscar-lopez-urge-a-adoptar-una-regulacion-europea-para-proteger-",
+      "published_date_local": "2026-09-11"
+    },
+    {
+      "title": "El Gobierno movilizará 40 millones de euros para impulsar el desarrollo de modelos de inteligencia artificial para startups y pymes",
+      "url": "https://digital.gob.es/comunicacion/notas-prensa/secretaria-digitalizacion-e-inteligencia-artificial/2026/09/el-gobierno-movilizara-40-millones-de-euros-para-impulsar-el-des",
+      "published_date_local": "2026-09-09"
+    },
+    {
+      "title": "El Ministerio para la Transformación Digital y de la Función Pública, patrocinador único de la sección de industria del Festival de San Sebastián",
+      "url": "https://digital.gob.es/comunicacion/notas-prensa/mtdfp/2026/09/el-ministerio-para-la-transformacion-digital-y-de-la-funcion-pub",
+      "published_date_local": "2026-09-08"
+    }
+  ],
+  "live_status": {
+    "source_id": "es_digital",
+    "source_name": "西班牙數位轉型與公務部",
+    "country": "ES",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 12,
+    "relevant_count": 12,
+    "duration_seconds": 0.619,
+    "newest_published_at": "2026-09-30T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 12,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 12,
+    "freshness_lag_days": 2.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 554925,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "es_digital",
+    "country": "ES",
+    "name_zh": "西班牙數位轉型與公務部",
+    "name": "Ministerio para la Transformación Digital y de la Función Pública",
+    "institution_type": "central ministry",
+    "language": "es",
+    "homepage": "https://digital.gob.es/",
+    "listing_url": "https://digital.gob.es/comunicacion",
+    "feed_urls": [],
+    "allow_domains": [
+      "digital.gob.es"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Madrid",
+    "card_selectors": [],
+    "link_selectors": [],
+    "title_selectors": [
+      "h2",
+      "h3",
+      "h4",
+      "h5",
+      "p.title",
+      "[class*=title]"
+    ],
+    "date_selectors": [],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_es_digital.html",
+  "format": "html"
+}

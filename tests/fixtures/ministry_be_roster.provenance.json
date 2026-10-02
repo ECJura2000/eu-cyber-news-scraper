@@ -1,0 +1,11 @@
+{
+  "url": "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+  "final_url": "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+  "observed_at": "2026-10-01T11:42:47.827568+00:00",
+  "observed_on": "2026-10-01",
+  "http_status": 200,
+  "sha256": "8df00dce43e9b4ad1a4672e9dea60b2c64a2d588d5123f409e2e94d8c64b3143",
+  "transform": "BeautifulSoup main/body extraction; remove script/style/nav/header/footer/form; first 32700 UTF-8 bytes",
+  "truncated": false,
+  "expected_ministry_count": 14
+}

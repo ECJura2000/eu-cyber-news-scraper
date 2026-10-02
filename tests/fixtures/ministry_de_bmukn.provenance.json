@@ -1,0 +1,85 @@
+{
+  "source_id": "de_bmukn",
+  "url": "https://www.bundesumweltministerium.de/umwelt.rss",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:19.979248+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "d17cf0d33248d9d65e9e983415f4e824a23faebe34fce6adf2e8bf1e8efe1680",
+  "response_sha256": "4cf7b536f7fe6524e465433ace107baf9effe8f821166103d512c981f31c4ba2",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Bundesumweltministerium startet erste gemeinsame SPRIND-Challenge für Biotech-Durchbruch in der Kreislaufwirtschaft",
+      "url": "https://www.bundesumweltministerium.de/pressemitteilung/bundesumweltministerium-startet-erste-gemeinsame-sprind-challenge-fuer-biotech-durchbruch-in-der-kreislaufwirtschaft",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Common Press Statement of the Green Weimar Triangle meeting",
+      "url": "https://www.bundesumweltministerium.de/pressemitteilung/common-press-statement-of-the-green-weimar-triangle-meeting",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Deutschland und Jemen stärken Zusammenarbeit für Sokotra und den Umweltschutz",
+      "url": "https://www.bundesumweltministerium.de/pressemitteilung/deutschland-und-jemen-staerken-zusammenarbeit-fuer-sokotra-und-den-umweltschutz",
+      "published_date_local": "2026-09-25",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Neue Regeln gegen Greenwashing: Blauer Engel bietet verlässliche Orientierung",
+      "url": "https://www.bundesumweltministerium.de/pressemitteilung/neue-regeln-gegen-greenwashing-blauer-engel-bietet-verlaessliche-orientierung",
+      "published_date_local": "2026-09-25",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Deutschland legt Fahrplan für schrittweise Abkehr von fossilen Energien vor",
+      "url": "https://www.bundesumweltministerium.de/pressemitteilung/deutschland-legt-fahrplan-fuer-schrittweise-abkehr-von-fossilen-energien-vor",
+      "published_date_local": "2026-09-23",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Besserer Schutz für das größte Ökosystem der Welt: Deutschland tritt UN-Hochseeschutzabkommen bei",
+      "url": "https://www.bundesumweltministerium.de/pressemitteilung/besserer-schutz-fuer-das-groesste-oekosystem-der-welt-deutschland-tritt-un-hochseeschutzabkommen-bei",
+      "published_date_local": "2026-09-22",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Lokale Reparaturinitiativen und Selbsthilfewerkstätten erhalten neue Förderung",
+      "url": "https://www.bundesumweltministerium.de/pressemitteilung/lokale-reparaturinitiativen-und-selbsthilfewerkstaetten-erhalten-neue-foerderung",
+      "published_date_local": "2026-09-22",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Stadtnatur schafft neue Lebensräume und macht Städte klimaresilient",
+      "url": "https://www.bundesumweltministerium.de/pressemitteilung/stadtnatur-schafft-neue-lebensraeume-und-macht-staedte-klimaresilient",
+      "published_date_local": "2026-09-21",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 20,
+  "live_dated_count": 20,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "de_bmukn",
+    "country": "DE",
+    "name_zh": "德國環境、氣候、自然保育與核能安全部",
+    "name": "Bundesministerium für Umwelt, Klimaschutz, Naturschutz und nukleare Sicherheit",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.bundesumweltministerium.de/",
+    "listing_url": "https://www.bundesumweltministerium.de/umwelt.rss",
+    "feed_urls": [
+      "https://www.bundesumweltministerium.de/umwelt.rss"
+    ],
+    "allow_domains": [
+      "www.bundesumweltministerium.de"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Berlin",
+    "schedule_enabled": false
+  }
+}

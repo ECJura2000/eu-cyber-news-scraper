@@ -1,0 +1,153 @@
+{
+  "url": "https://md.gov.cz/Media?Media-a-tiskove-zpravy=1",
+  "final_url": "https://md.gov.cz/Media?Media-a-tiskove-zpravy=1",
+  "observed_at": "2026-10-01T11:52:38.206977+00:00",
+  "observed_on": "2026-10-01",
+  "http_status": 200,
+  "sha256": "d65f3e1ea4f9b715967cd9f05c81955598ef12ed53aa16c3b658c4aecabc6c9a",
+  "transform": "BeautifulSoup main/body extraction; remove scripts/styles/nav/header/footer/form; first 32000 UTF-8 bytes",
+  "fixture": "ministry_cz_transport.html",
+  "parsed_count": 12,
+  "dated_count": 12,
+  "replay_count": 12,
+  "source": {
+    "id": "cz_transport",
+    "country": "CZ",
+    "name_zh": "捷克交通部",
+    "name": "Ministerstvo dopravy",
+    "institution_type": "ministry",
+    "language": "cs",
+    "homepage": "https://md.gov.cz/",
+    "listing_url": "https://md.gov.cz/Media?Media-a-tiskove-zpravy=1",
+    "feed_urls": [],
+    "allow_domains": [
+      "md.gov.cz"
+    ],
+    "critical": false,
+    "schedule_enabled": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Prague"
+  },
+  "live_status": {
+    "source_id": "cz_transport",
+    "source_name": "捷克交通部",
+    "country": "CZ",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 12,
+    "relevant_count": 12,
+    "duration_seconds": 1.139,
+    "newest_published_at": "2026-09-30T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0,
+    "health_alerts": [],
+    "dated_count": 12,
+    "undated_ratio": 0,
+    "unique_title_ratio": 1,
+    "in_range_count": 12,
+    "freshness_lag_days": 1.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 67399,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0,
+    "historical_median_bytes": 0,
+    "historical_median_duration": 0
+  },
+  "source_id": "cz_transport",
+  "fixture_count": 12,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "expected": [
+    {
+      "title": "Mezinárodní den seniorů: Moderní služby usnadňují řidičům život bez ohledu na věk, bezpečnost zůstává prioritou \n  01. 10. 2026",
+      "url": "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Mezinarodni-den-senioru-Moderni-sluzby-usnadnu-(1)",
+      "published_date_local": "2026-10-01",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Výroční zpráva o bezpečnosti za rok 2025: Bezpečnost české železnice se zlepšuje, výzvou zůstávají přejezdy a projetá návěstidla \n  01. 10. 2026",
+      "url": "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Vyrocni-zprava-o-bezpecnosti-za-rok-2025-Bezpecno",
+      "published_date_local": "2026-10-01",
+      "date_source": "time-element"
+    },
+    {
+      "title": "ŽESNAD.CZ otevřel na ministerstvu dopravy debatu o bezpečnosti železnice: funkční systém se nepozná podle počtu dokumentů \n  30. 09. 2026",
+      "url": "https://md.gov.cz/Media/Media-a-tiskove-zpravy/ZESNAD-CZ-otevrel-na-ministerstvu-dopravy-debatu-o",
+      "published_date_local": "2026-09-30",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Ředitelství silnic a dálnic začalo stavět nový úsek D48 u Nového Jičína \n  30. 09. 2026",
+      "url": "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Reditelstvi-silnic-a-dalnic-zacalo-stavet-novy-(1)",
+      "published_date_local": "2026-09-30",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Cestujícím v Hradci Králové a Jaroměři poradí při omezeních koordinátoři \n  30. 09. 2026",
+      "url": "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Cestujicim-v-Hradci-Kralove-a-Jaromeri-poradi-pri",
+      "published_date_local": "2026-09-30",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Nejen moderní nástupiště. V Nýřanech vyroste nová nádražní budova \n  29. 09. 2026",
+      "url": "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Nejen-moderni-nastupiste-V-Nyranech-vyroste-nova",
+      "published_date_local": "2026-09-29",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Vláda schválila rozpočet SFDI na rok 2027: Ředitelství vodních cest ČR získá na investice do vodních cest 1,4 miliardy korun \n  25. 09. 2026",
+      "url": "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Vlada-schvalila-rozpocet-SFDI-na-rok-2027-Reditel",
+      "published_date_local": "2026-09-25",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Ministerstvo dopravy připravilo dotační program pro podporu obnovy historických plavidel \n  25. 09. 2026",
+      "url": "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Ministerstvo-dopravy-pripravilo-dotacni-program-pr",
+      "published_date_local": "2026-09-25",
+      "date_source": "time-element"
+    },
+    {
+      "title": "ŘSD je připravené začít letos a příští rok stavět až 154 kilometrů nových dálnic a silnic \n  24. 09. 2026",
+      "url": "https://md.gov.cz/Media/Media-a-tiskove-zpravy/RSD-je-pripravene-zacit-letos-a-pristi-rok-stavet",
+      "published_date_local": "2026-09-24",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Poslanecká sněmovna schválila zmrazení cen dálničních známek a zavedení 24hodinové známky \n  23. 09. 2026",
+      "url": "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Poslanecka-snemovna-schvalila-zmrazeni-cen-dalnicn",
+      "published_date_local": "2026-09-23",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Návrh rozpočtu pro rok 2027 umožní rozjet nové stavby a držet tempo rozpracovaných projektů na železnici \n  22. 09. 2026",
+      "url": "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Navrh-rozpoctu-pro-rok-2027-umozni-rozjet-nove-sta",
+      "published_date_local": "2026-09-22",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Ministr Bednárik v Berlíně podpořil český železniční průmysl a jednal o lepším propojení Evropy \n  22. 09. 2026",
+      "url": "https://md.gov.cz/Media/Media-a-tiskove-zpravy/Ministr-Bednarik-v-Berline-podporil-cesky-zeleznic",
+      "published_date_local": "2026-09-22",
+      "date_source": "time-element"
+    }
+  ]
+}
+

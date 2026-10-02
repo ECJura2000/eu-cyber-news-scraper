@@ -1,0 +1,91 @@
+{
+  "source_id": "be_social_integration",
+  "url": "https://www.mi-is.be/nl/actueel",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:16.761318+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "c7da2f2699a631a753c48bf562658309aae45a48c235ad9bc5f54801c1f1bbae",
+  "response_sha256": "96bab0ad7d03c9cfbecd7e7c61d904439d8b2e9f777e3e619b58499ac06d376a",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Colloquium 'Samen schulden voorkomen en bestrijden - een nieuw perspectief voor een doeltreffende aanpak van schulden'",
+      "url": "https://www.mi-is.be/nl/actueel/colloquium-samen-schulden-voorkomen-en-bestrijden-een-nieuw-perspectief-voor-een",
+      "published_date_local": "2026-09-28",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Jouw mening telt! Neem deel aan de tevredenheidsenquête van de POD Maatschappelijke Integratie",
+      "url": "https://www.mi-is.be/nl/actueel/jouw-mening-telt-neem-deel-aan-de-tevredenheidsenquete-van-de-pod-maatschappelijke",
+      "published_date_local": "2026-09-21",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Ken jij onze barometer voor maatschappelijke integratie al?",
+      "url": "https://www.mi-is.be/nl/actueel/ken-jij-onze-barometer-voor-maatschappelijke-integratie-al",
+      "published_date_local": "2026-09-17",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Hervorming van de werkloosheid: uitspraak van het Grondwettelijk Hof en nieuwe regel inzake het verhoogde vergoedingspercentage",
+      "url": "https://www.mi-is.be/nl/actueel/hervorming-van-de-werkloosheid-uitspraak-van-het-grondwettelijk-hof-en-nieuwe-regel-inzake",
+      "published_date_local": "2026-09-14",
+      "date_confidence": "high"
+    },
+    {
+      "title": "FrontOffice gesloten",
+      "url": "https://www.mi-is.be/nl/actueel/frontoffice-gesloten",
+      "published_date_local": "2026-09-14",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Omzendbrief inzake de aanpassing van de bedragen die tot de federale wetgeving met betrekking tot het maatschappelijk welzijn behoren, op 1 september 2026",
+      "url": "https://www.mi-is.be/nl/actueel/omzendbrief-inzake-de-aanpassing-van-de-bedragen-die-tot-de-federale-wetgeving-met",
+      "published_date_local": "2026-08-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Herinnering aan de verplichting van het OCMW om personen die daarvoor in aanmerking komen aan te sluiten bij een ziekenfondsen en bijwerking van de brochure",
+      "url": "https://www.mi-is.be/nl/actueel/herinnering-aan-de-verplichting-van-het-ocmw-om-personen-die-daarvoor-aanmerking-komen-aan",
+      "published_date_local": "2026-08-11",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Bedragen van het gas- en elektriciteitsfonds voor 2026",
+      "url": "https://www.mi-is.be/nl/actueel/bedragen-van-het-gas-en-elektriciteitsfonds-voor-2026",
+      "published_date_local": "2026-07-13",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 10,
+  "live_dated_count": 10,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "be_social_integration",
+    "country": "BE",
+    "name_zh": "比利時社會融合規劃公共服務部",
+    "name": "Programmatorische Federale Overheidsdienst Maatschappelijke Integratie",
+    "institution_type": "ministry",
+    "language": "nl",
+    "homepage": "https://www.mi-is.be/nl",
+    "listing_url": "https://www.mi-is.be/nl/actueel",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.mi-is.be"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Brussels",
+    "card_selectors": [
+      "article"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

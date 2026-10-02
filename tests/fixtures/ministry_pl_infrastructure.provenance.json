@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.pl/web/infrastruktura/aktualnosci",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:14.359369+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "461df8dd99fdc24c5eb269d0ef19559f99229d1c46baef59c87acfe049038a00",
+  "sha256": "a86dd9adc81c969931eb4417856637140cb204a32783b63804127df0508f86ef",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "pl_infrastructure",
+  "expected": [
+    {
+      "title": "Prawie 26 mld zł z KPO na transport w Polsce - podsumowanie inwestycji z Krajowego Planu Odbudowy",
+      "url": "https://www.gov.pl/web/infrastruktura/prawie-26-mld-zl-z-kpo-na-transport-w-polsce--podsumowanie-inwestycji-z-krajowego-planu-odbudowy",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Na drogi lokalne trafią dodatkowe środki",
+      "url": "https://www.gov.pl/web/infrastruktura/na-drogi-lokalne-trafia-dodatkowe-srodki",
+      "published_date_local": "2026-09-28",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "DK69 połączy S6 z elektrownią jądrową",
+      "url": "https://www.gov.pl/web/infrastruktura/dk69-polaczy-s6-z-elektrownia-jadrowa",
+      "published_date_local": "2026-09-25",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "80-lecie Urzędu Morskiego w Szczecinie",
+      "url": "https://www.gov.pl/web/infrastruktura/80-lecie-urzedu-morskiego-w-szczecinie",
+      "published_date_local": "2026-09-25",
+      "date_source": "source-selector"
+    }
+  ]
+}

@@ -1,0 +1,605 @@
+{
+  "schema_version": 1,
+  "country": "IT",
+  "reviewed_on": "2026-10-02",
+  "official_roster_urls": [
+    "https://www.governo.it/it/i-ministeri-0",
+    "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+    "https://presidenza.governo.it/ufficio_cerimoniale/cerimoniale/precedenze_ministri.html"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "2026-10-02 ministry news audit: 14 manually verified and 1 existing-source ministries; 14 unresolved. Roster enumeration does not imply searchable completeness. Exact tried URLs and robots/transport/parser/attribution limitations are recorded per ministry; unresolved rows have no runnable source. New sources retain disabled scheduling/noncritical status, all 15 topics, empty responsibility, and genuine checksum-backed fixture replay."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "it_presidency",
+      "name_zh": "義大利總理府",
+      "name_local": "Presidenza del Consiglio dei Ministri",
+      "name_en": "Presidency of the Council of Ministers",
+      "kind": "government_head_office",
+      "language": "it",
+      "homepage": "https://www.governo.it/it",
+      "news_url": "https://www.governo.it/feed/rss",
+      "source_ids": [
+        "it_presidency"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped feed passed robots-enforced, TLS-verified production scrape (10 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_presidency.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.governo.it/it",
+        "https://www.governo.it/feed/rss"
+      ]
+    },
+    {
+      "canonical_id": "it_foreign_affairs",
+      "name_zh": "義大利外交暨國際合作部",
+      "name_local": "Ministero degli Affari Esteri e della Cooperazione Internazionale",
+      "name_en": "Ministry of Foreign Affairs and International Cooperation",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.esteri.it/",
+      "news_url": "https://www.esteri.it/it/feed/",
+      "source_ids": [
+        "it_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped feed passed robots-enforced, TLS-verified production scrape (10 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_foreign_affairs.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.esteri.it/",
+        "https://www.esteri.it/it/feed/"
+      ]
+    },
+    {
+      "canonical_id": "it_interior",
+      "name_zh": "義大利內政部",
+      "name_local": "Ministero dell'Interno",
+      "name_en": "Ministry of the Interior",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.interno.gov.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.interno.gov.it/ => RobotsDeniedError: robots.txt disallows: https://www.interno.gov.it/",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.interno.gov.it/"
+      ]
+    },
+    {
+      "canonical_id": "it_justice",
+      "name_zh": "義大利司法部",
+      "name_local": "Ministero della Giustizia",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.giustizia.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.giustizia.it/ => RobotsUnavailableError: https://www.giustizia.it: robots.txt unreachable: RemoteProtocolError: Server disconnected without sending a response.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.giustizia.it/"
+      ]
+    },
+    {
+      "canonical_id": "it_defence",
+      "name_zh": "義大利國防部",
+      "name_local": "Ministero della Difesa",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.difesa.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Official homepage links to /primopiano/elenco/index.html. Both pages load an empty client-rendered news area; linked public archive scripts were inspected, but no bounded public dated feed/API replay was established. Guessed legacy HTML routes returned 404. A concrete public news payload and supported adapter are required before enrollment. Tested alternatives: https://www.difesa.it/ => HTTP 200; 106223 bytes; production parser 0 items/0 dated; https://www.difesa.it/primopiano.html => HTTPStatusError: Client error '404 Not Found' for url 'https://www.difesa.it/primopiano.html'; https://www.difesa.it/il-ministro/comunicati-stampa.html => HTTPStatusError: Client error '404 Not Found' for url 'https://www.difesa.it/il-ministro/comunicati-stampa.html'; https://www.difesa.it/primopiano/elenco/index.html => HTTP 200; 47903 bytes; captured public resource, no dated replay established; https://www.difesa.it/assets/js/elenco/elenco.v2.js => HTTP 200; 11808 bytes; captured public resource, no dated replay established; https://www.difesa.it/assets/js/index.js => HTTP 200; 1175 bytes; captured public resource, no dated replay established",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.difesa.it/",
+        "https://www.difesa.it/primopiano.html",
+        "https://www.difesa.it/il-ministro/comunicati-stampa.html",
+        "https://www.difesa.it/primopiano/elenco/index.html",
+        "https://www.difesa.it/assets/js/elenco/elenco.v2.js",
+        "https://www.difesa.it/assets/js/index.js"
+      ]
+    },
+    {
+      "canonical_id": "it_finance",
+      "name_zh": "義大利經濟暨財政部",
+      "name_local": "Ministero dell'Economia e delle Finanze",
+      "name_en": "Ministry of Economy and Finance",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.mef.gov.it/",
+      "news_url": "https://www.mef.gov.it/ufficio-stampa/notizie.html",
+      "source_ids": [
+        "it_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (10 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_finance.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.mef.gov.it/",
+        "https://www.mef.gov.it/ufficio-stampa/notizie.html"
+      ]
+    },
+    {
+      "canonical_id": "it_enterprises",
+      "name_zh": "義大利企業暨義大利製造部",
+      "name_local": "Ministero delle Imprese e del Made in Italy",
+      "name_en": "Ministry of Enterprises and Made in Italy",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.mise.gov.it/it/",
+      "news_url": "https://www.mimit.gov.it/index.php/it/notizie-stampa?format=feed&type=rss",
+      "source_ids": [
+        "it_enterprises"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped feed passed robots-enforced, TLS-verified production scrape (10 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_enterprises.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.mise.gov.it/it/",
+        "https://www.mimit.gov.it/index.php/it/notizie-stampa?format=feed&type=rss"
+      ]
+    },
+    {
+      "canonical_id": "it_agriculture",
+      "name_zh": "義大利農業、糧食主權暨林業部",
+      "name_local": "Ministero dell'Agricoltura, della Sovranità Alimentare e delle Foreste",
+      "name_en": "Ministry of Agriculture, Food Sovereignty and Forestry",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.politicheagricole.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.politicheagricole.it/ => RobotsUnavailableError: https://www.politicheagricole.it: robots.txt returned HTML/challenge content; https://www.masaf.gov.it/ => RobotsUnavailableError: https://www.masaf.gov.it: robots.txt returned HTML/challenge content",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.politicheagricole.it/",
+        "https://www.masaf.gov.it/"
+      ]
+    },
+    {
+      "canonical_id": "it_environment",
+      "name_zh": "義大利環境暨能源安全部",
+      "name_local": "Ministero dell'Ambiente e della Sicurezza Energetica",
+      "name_en": "Ministry of Environment and Energy Security",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.mite.gov.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.mite.gov.it/ => RobotsDeniedError: robots.txt disallows: https://www.mite.gov.it/; https://www.mase.gov.it/ => RobotsDeniedError: robots.txt disallows: https://www.mase.gov.it/",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.mite.gov.it/",
+        "https://www.mase.gov.it/"
+      ]
+    },
+    {
+      "canonical_id": "it_infrastructure",
+      "name_zh": "義大利基礎建設暨交通部",
+      "name_local": "Ministero delle Infrastrutture e dei Trasporti",
+      "name_en": "Ministry of Infrastructure and Transport",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.mit.gov.it/",
+      "news_url": "https://www.mit.gov.it/comunicazione/archivio/news",
+      "source_ids": [
+        "it_infrastructure"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (10 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_infrastructure.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.mit.gov.it/",
+        "https://www.mit.gov.it/comunicazione/archivio/news"
+      ]
+    },
+    {
+      "canonical_id": "it_labour",
+      "name_zh": "義大利勞動暨社會政策部",
+      "name_local": "Ministero del Lavoro e delle Politiche Sociali",
+      "name_en": "Ministry of Labour and Social Policies",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.lavoro.gov.it/",
+      "news_url": "https://www.lavoro.gov.it/_layouts/15/Lavoro.Web/AppPages/RSS",
+      "source_ids": [
+        "it_labour"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped feed passed robots-enforced, TLS-verified production scrape (50 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_labour.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.lavoro.gov.it/",
+        "https://www.lavoro.gov.it/_layouts/15/Lavoro.Web/AppPages/RSS"
+      ]
+    },
+    {
+      "canonical_id": "it_education",
+      "name_zh": "義大利教育暨功績部",
+      "name_local": "Ministero dell'Istruzione e del Merito",
+      "name_en": "Ministry of Education and Merit",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.miur.gov.it/",
+      "news_url": "https://www.mim.gov.it/web/guest/comunicati",
+      "source_ids": [
+        "it_education"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (100 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_education.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.miur.gov.it/",
+        "https://www.mim.gov.it/web/guest/comunicati"
+      ]
+    },
+    {
+      "canonical_id": "it_mur",
+      "name_zh": "義大利大學暨研究部",
+      "name_local": "Ministero dell'Università e della Ricerca",
+      "name_en": "Ministry of Universities and Research",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.mur.gov.it/it",
+      "news_url": "https://www.mur.gov.it/it/news",
+      "source_ids": [
+        "it_mur"
+      ],
+      "status": "existing_source",
+      "reason": "Existing it_mur is the actual universities/research ministry; previous module verification status is retained.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.mur.gov.it/it"
+      ]
+    },
+    {
+      "canonical_id": "it_culture",
+      "name_zh": "義大利文化部",
+      "name_local": "Ministero della Cultura",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.beniculturali.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.beniculturali.it/ => RobotsUnavailableError: https://www.beniculturali.it: robots.txt unreachable: ConnectTimeout: ; https://cultura.gov.it/ => RobotsUnavailableError: https://cultura.gov.it: robots.txt unreachable: ConnectTimeout: ",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.beniculturali.it/",
+        "https://cultura.gov.it/"
+      ]
+    },
+    {
+      "canonical_id": "it_health",
+      "name_zh": "義大利衛生部",
+      "name_local": "Ministero della Salute",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.salute.gov.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.salute.gov.it/ => RobotsUnavailableError: https://www.salute.gov.it: robots.txt returned HTML/challenge content",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.salute.gov.it/"
+      ]
+    },
+    {
+      "canonical_id": "it_tourism",
+      "name_zh": "義大利旅遊部",
+      "name_local": "Ministero del Turismo",
+      "name_en": "Ministry of Tourism",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.ministeroturismo.gov.it/",
+      "news_url": "https://www.ministeroturismo.gov.it/feed/",
+      "source_ids": [
+        "it_tourism"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped feed passed robots-enforced, TLS-verified production scrape (10 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_tourism.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.ministeroturismo.gov.it/",
+        "https://www.ministeroturismo.gov.it/feed/"
+      ]
+    },
+    {
+      "canonical_id": "it_parliament_relations",
+      "name_zh": "義大利國會關係部門",
+      "name_local": "Dipartimento per i rapporti con il Parlamento",
+      "name_en": "Department for Relations with Parliament",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.rapportiparlamento.gov.it/",
+      "news_url": "https://www.rapportiparlamento.gov.it/it/",
+      "source_ids": [
+        "it_parliament_relations"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (3 dated items); genuine bounded fixture replays 3 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_parliament_relations.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.rapportiparlamento.gov.it/",
+        "https://www.rapportiparlamento.gov.it/it/"
+      ]
+    },
+    {
+      "canonical_id": "it_public_administration",
+      "name_zh": "義大利公共行政部門",
+      "name_local": "Dipartimento della funzione pubblica",
+      "name_en": "Department of Public Administration",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.funzionepubblica.gov.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.funzionepubblica.gov.it/ => RobotsUnavailableError: https://www.funzionepubblica.gov.it: robots.txt unreachable: ConnectTimeout: ; https://www.funzionepubblica.gov.it/it/ => RobotsUnavailableError: https://www.funzionepubblica.gov.it: robots.txt unreachable: ConnectTimeout: ",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.funzionepubblica.gov.it/",
+        "https://www.funzionepubblica.gov.it/it/"
+      ]
+    },
+    {
+      "canonical_id": "it_regional_affairs",
+      "name_zh": "義大利區域事務暨自治部門",
+      "name_local": "Dipartimento per gli affari regionali e le autonomie",
+      "name_en": "Department for Regional Affairs and Autonomies",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.affariregionali.it/",
+      "news_url": "https://www.affariregionali.it/it/comunicazione/notizie/",
+      "source_ids": [
+        "it_regional_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (9 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_regional_affairs.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.affariregionali.it/",
+        "https://www.affariregionali.it/it/comunicazione/notizie/"
+      ]
+    },
+    {
+      "canonical_id": "it_civil_protection",
+      "name_zh": "義大利民防部門",
+      "name_local": "Dipartimento della protezione civile",
+      "name_en": "Civil Protection Department",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.protezionecivile.gov.it/",
+      "news_url": "https://www.protezionecivile.gov.it/it/rss/",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Portal HTML returns a 174-byte Loading shell. Official RSS page publishes api.protezionecivile.it/default/dpcPortalGenerateRss?categoria=notizia and categoria=comunicato_stampa, but production cannot retrieve the API robots policy; feed content was not fetched past the robots gate. No shared adapter proposed until a permitted genuine payload can be captured. Tested alternatives: https://www.protezionecivile.gov.it/ => HTTP 200; 174 bytes; production parser 0 items/0 dated; https://www.protezionecivile.gov.it/it/rss/ => HTTP 200; 969631 bytes; production parser 0 items/0 dated; https://api.protezionecivile.it/default/dpcPortalGenerateRss?categoria=notizia => RobotsUnavailableError: https://api.protezionecivile.it: robots.txt unreachable: HTTP 503; https://api.protezionecivile.it/default/dpcPortalGenerateRss?categoria=comunicato_stampa => RobotsUnavailableError: https://api.protezionecivile.it: robots.txt unreachable: HTTP 503",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.protezionecivile.gov.it/",
+        "https://www.protezionecivile.gov.it/it/rss/",
+        "https://api.protezionecivile.it/default/dpcPortalGenerateRss?categoria=notizia",
+        "https://api.protezionecivile.it/default/dpcPortalGenerateRss?categoria=comunicato_stampa"
+      ]
+    },
+    {
+      "canonical_id": "it_maritime_policies",
+      "name_zh": "義大利海洋政策部門",
+      "name_local": "Dipartimento per le politiche del mare",
+      "name_en": "Department for Maritime Policies",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://presidenza.governo.it/AmministrazioneTrasparente/Organizzazione/ArticolazioneUffici/Dipartimenti/Dip_pol_del_mare.html => RobotsUnavailableError: https://presidenza.governo.it: robots.txt unreachable: ConnectTimeout: ; https://www.politichedelmare.gov.it/ => RobotsUnavailableError: https://www.politichedelmare.gov.it: robots.txt unreachable: ConnectError: All connection attempts failed",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://presidenza.governo.it/AmministrazioneTrasparente/Organizzazione/ArticolazioneUffici/Dipartimenti/Dip_pol_del_mare.html",
+        "https://www.politichedelmare.gov.it/"
+      ]
+    },
+    {
+      "canonical_id": "it_european_affairs",
+      "name_zh": "義大利歐洲事務部門",
+      "name_local": "Dipartimento per gli affari europei",
+      "name_en": "Department for European Affairs",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.affarieuropei.gov.it/it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.affarieuropei.gov.it/it/ => RobotsUnavailableError: https://www.affarieuropei.gov.it: robots.txt unreachable: ConnectTimeout: ",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.affarieuropei.gov.it/it/"
+      ]
+    },
+    {
+      "canonical_id": "it_cohesion",
+      "name_zh": "義大利凝聚政策部門",
+      "name_local": "Dipartimento per le politiche di coesione",
+      "name_en": "Department for Cohesion Policies",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://politichecoesione.governo.it/it/",
+      "news_url": "https://politichecoesione.governo.it/it/ministro/comunicazione-ministro/notizie-dal-ministro/",
+      "source_ids": [
+        "it_cohesion"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (9 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_cohesion.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://politichecoesione.governo.it/it/",
+        "https://politichecoesione.governo.it/it/ministro/comunicazione-ministro/notizie-dal-ministro/"
+      ]
+    },
+    {
+      "canonical_id": "it_sport",
+      "name_zh": "義大利體育部門",
+      "name_local": "Dipartimento per lo sport",
+      "name_en": "Department for Sport",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.sportgoverno.it/",
+      "news_url": "https://www.sport.governo.it/it/notizie/",
+      "source_ids": [
+        "it_sport"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (9 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_sport.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.sportgoverno.it/",
+        "https://www.sport.governo.it/it/notizie/"
+      ]
+    },
+    {
+      "canonical_id": "it_youth",
+      "name_zh": "義大利青年政策暨全民公民服務部門",
+      "name_local": "Dipartimento per le politiche giovanili e il servizio civile universale",
+      "name_en": "Department for Youth Policies and Universal Civil Service",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.politichegiovanili.gov.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.politichegiovanili.gov.it/ => RobotsUnavailableError: https://www.politichegiovanili.gov.it: robots.txt unreachable: ConnectTimeout: ",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.politichegiovanili.gov.it/"
+      ]
+    },
+    {
+      "canonical_id": "it_family",
+      "name_zh": "義大利家庭政策部門",
+      "name_local": "Dipartimento per le politiche della famiglia",
+      "name_en": "Department for Family Policies",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.famiglia.governo.it/",
+      "news_url": "https://www.famiglia.governo.it/it/politiche-e-attivita/comunicazione/notizie/",
+      "source_ids": [
+        "it_family"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (9 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_family.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.famiglia.governo.it/",
+        "https://www.famiglia.governo.it/it/politiche-e-attivita/comunicazione/notizie/"
+      ]
+    },
+    {
+      "canonical_id": "it_equal_opportunities",
+      "name_zh": "義大利平等機會部門",
+      "name_local": "Dipartimento per le pari opportunità",
+      "name_en": "Department for Equal Opportunities",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.pariopportunita.gov.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "blocked",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.pariopportunita.gov.it/ => RobotsUnavailableError: https://www.pariopportunita.gov.it: robots.txt unreachable: ConnectTimeout: ",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.pariopportunita.gov.it/"
+      ]
+    },
+    {
+      "canonical_id": "it_disability",
+      "name_zh": "義大利身心障礙政策部門",
+      "name_local": "Dipartimento per le politiche in favore delle persone con disabilità",
+      "name_en": "Department for Policies in Favour of Persons with Disabilities",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.disabilita.governo.it/",
+      "news_url": "https://www.disabilita.governo.it/it/notizie/",
+      "source_ids": [
+        "it_disability"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (9 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_disability.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.disabilita.governo.it/",
+        "https://www.disabilita.governo.it/it/notizie/"
+      ]
+    },
+    {
+      "canonical_id": "it_institutional_reforms",
+      "name_zh": "義大利制度改革部門",
+      "name_local": "Dipartimento per le riforme istituzionali",
+      "name_en": "Department for Institutional Reforms",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.riformeistituzionali.gov.it/",
+      "news_url": "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/?tab=58f3f542-0aec-4999-b90c-9a8ce78b1258",
+      "source_ids": [],
+      "status": "parser_pending",
+      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Original news listing has genuine titles and article links but no publication-date fields on most cards. Only 2/9 generic parses obtained dates, drawn from body/event text; those are not accepted as publication evidence. Sample news detail exposes only og:updated_time, not published_time. No invented publication dates or enrollment. Tested alternatives: https://www.riformeistituzionali.gov.it/ => HTTP 200; 89808 bytes; production parser 18 items/7 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/?tab=58f3f542-0aec-4999-b90c-9a8ce78b1258 => HTTP 200; 126179 bytes; production parser 9 items/2 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/verso-il-nuovo-codice-dell-amministrazione-digitale-cad/ => HTTP 200; 56361 bytes; production parser 2 items/0 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/pubblicato-il-report-finale-della-consultazione-pubblica-sulla-semplificazione/ => HTTP 200; 55821 bytes; production parser 3 items/0 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/disegno-di-legge-costituzionale-su-roma-capitale/ => HTTP 200; 62159 bytes; production parser 2 items/0 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/pubblicata-la-legge-in-materia-di-semplificazione-normativa/ => HTTP 200; 60432 bytes; production parser 2 items/0 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/partecipa/ => HTTP 200; 52908 bytes; production parser 2 items/0 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/il-ministro-casellati-al-forum-pa-2026/ => HTTP 200; 54742 bytes; production parser 2 items/0 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/semplificazione-il-ministro-casellati-a-bruxelles/ => HTTP 200; 55054 bytes; production parser 2 items/0 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/firmato-con-la-regione-lombadia-il-protocollo-di-intenti-per-la-semplificazione/ => HTTP 200; 55795 bytes; production parser 4 items/1 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/ => HTTP 200; 126179 bytes; production parser 9 items/2 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/pubblicata-la-legge-in-materia-di-semplificazione-normativa/ => HTTP 200; 60432 bytes; captured public resource, no dated replay established",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.riformeistituzionali.gov.it/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/?tab=58f3f542-0aec-4999-b90c-9a8ce78b1258",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/verso-il-nuovo-codice-dell-amministrazione-digitale-cad/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/pubblicato-il-report-finale-della-consultazione-pubblica-sulla-semplificazione/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/disegno-di-legge-costituzionale-su-roma-capitale/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/pubblicata-la-legge-in-materia-di-semplificazione-normativa/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/partecipa/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/il-ministro-casellati-al-forum-pa-2026/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/semplificazione-il-ministro-casellati-a-bruxelles/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/firmato-con-la-regione-lombadia-il-protocollo-di-intenti-per-la-semplificazione/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/"
+      ]
+    }
+  ]
+}
