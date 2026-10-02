@@ -169,8 +169,8 @@ class HttpClient:
             response: httpx.Response | None = None
             try:
                 async with host_limiter:
-                    await self._pace(host)
                     async with self._global_limiter:
+                        await self._pace(host)
                         metrics.request_count += 1
                         response = await self._read_response(
                             url,
@@ -228,8 +228,9 @@ class HttpClient:
                 raise RetryDeferredError(f"{host}: origin is cooling down for {cooldown:.1f}s")
             ready = max(self._host_clocks.get(host, 0.0), self._host_cooldowns.get(host, 0.0))
             remaining = ready - time.monotonic()
-            if remaining > 0:
+            while remaining > 0:
                 await asyncio.sleep(remaining)
+                remaining = ready - time.monotonic()
             self._host_clocks[host] = time.monotonic() + max(self.min_interval, self._host_delays.get(host, 0.0))
 
     async def _ensure_robots(self, url: str, stats: HttpStats, bundle: str, user_agent: str,

@@ -286,8 +286,8 @@ async def _post_public_listing(client: HttpClient, source: Source, url: str, pay
     if source.user_agent:
         headers["User-Agent"] = source.user_agent
     async with limiter:
-        await client._pace(host)
         async with client._global_limiter:
+            await client._pace(host)
             stats.request_count += 1
             async with client._client_for_bundle(source.tls_intermediate_bundle).stream(
                 "POST", url, content=json.dumps(payload), headers=headers, follow_redirects=False,
