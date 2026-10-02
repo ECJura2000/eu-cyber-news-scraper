@@ -1,0 +1,5 @@
+# Captured ministry evidence is checksum-addressed. Preserve its bytes on Windows too.
+# Original HTML/XML whitespace is evidence, not generated application source.
+tests/fixtures/ministry_*.html -text -whitespace
+tests/fixtures/ministry_*.xml -text -whitespace
+tests/fixtures/ministry_*.json -text
