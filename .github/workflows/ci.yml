@@ -39,6 +39,7 @@ jobs:
           uv run python -m eu_cyber_news_scraper.source_catalog --check
           uv run python -m eu_cyber_news_scraper ministries --check >/dev/null
           uv run python scripts/render_ministry_inventory.py --check
+          uv run python scripts/render_ministry_recheck.py --check
       - run: uv run pytest --cov=eu_cyber_news_scraper --cov-report=term-missing --cov-fail-under=92
       - run: uv pip install --upgrade pip
       - run: uv run pip-audit

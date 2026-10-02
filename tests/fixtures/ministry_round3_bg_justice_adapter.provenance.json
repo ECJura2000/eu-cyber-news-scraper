@@ -1,0 +1,45 @@
+{
+  "source_id": "bg_justice",
+  "url": "https://justice.government.bg/api/content/GetNewsSQData?count=3&blockId=5&lang=bg",
+  "final_url": "https://justice.government.bg/api/content/GetNewsSQData?count=3&blockId=5&lang=bg",
+  "observed_at": "2026-10-02T08:36:21.028175+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "39a3589aceefc04f13e6bb1572790c0850d7d789937ea6b82318e8b5e954b68a",
+  "response_bytes": 19271,
+  "fixture_sha256": "d6b91b337d7901a023ed3fc35c42c6a6d821aae3bb7210413f83d3bd6426463b",
+  "fixture_bytes": 1098,
+  "fixture_path": "tests/fixtures/ministry_round3_bg_justice_adapter.json",
+  "transform": "JSON first-entry field projection: exact original title/url/date fields; body/image/other fields omitted; no synthetic titles, links or dates",
+  "verification_status": "adapter_proposal_not_a_verified_source",
+  "production_parsed_count": 0,
+  "production_dated_count": 0,
+  "expected_after_adapter": [
+    {
+      "title": "Министерството на правосъдието координира подготовката за президентските избори в местата за лишаване от свобода",
+      "url": "https://justice.government.bg/home/index/ad84a3b2-e60d-4adc-9072-3332d98191ad",
+      "raw_date": "2026-10-01 05:23",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "medium",
+      "date_basis": "Frontend date has no timezone suffix; verify Europe/Sofia semantics in source-specific adapter"
+    },
+    {
+      "title": "Нов ред в Търговския регистър ускорява важните вписвания за бизнеса",
+      "url": "https://justice.government.bg/home/index/4e651dfd-6314-43d9-93af-fd7026243e94",
+      "raw_date": "2026-10-01 04:59",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "medium",
+      "date_basis": "Frontend date has no timezone suffix; verify Europe/Sofia semantics in source-specific adapter"
+    },
+    {
+      "title": "Зам.-министърът на правосъдието Ирена Борисова: „Важно е изборът на нов състав на ВСС да се проведе при гарантирана свобода на професионалния вот“",
+      "url": "https://justice.government.bg/home/index/20022115-e9b4-4220-a6e6-a7e7644cbf6a",
+      "raw_date": "2026-10-01 03:09",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "medium",
+      "date_basis": "Frontend date has no timezone suffix; verify Europe/Sofia semantics in source-specific adapter"
+    }
+  ],
+  "next_action": "Public frontend-published GetNewsSQData returns genuine ministry news as jsonContent title.bg plus date and url. Add a source-specific JSON adapter, using /home/index/<url>; production currently parses zero."
+}

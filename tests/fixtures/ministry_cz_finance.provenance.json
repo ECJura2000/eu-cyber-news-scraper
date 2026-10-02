@@ -1,0 +1,163 @@
+{
+  "source_id": "cz_finance",
+  "url": "https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026",
+  "final_url": "https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026",
+  "observed_at": "2026-10-02T08:34:22.023343+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "2741fc193071fcbef08224501e785907b3725e955cb09ea45a08668fc64664db",
+  "response_bytes": 235980,
+  "fixture_sha256": "9053f8b2f9a448f04942e4601f35f74fa59e2cfd48b0bd8729abdf0179127706",
+  "fixture_bytes": 2768,
+  "transform": "BeautifulSoup extraction of up to six genuine source-scoped news containers; original attributes/text retained, script/style removed; original base element retained; no title/link/date edits",
+  "expected": [
+    {
+      "title": "Plnění státního rozpočtu ČR za leden až září 2026",
+      "url": "https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026/pokladni-plneni-sr-65344",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high",
+      "date_source": "source-selector",
+      "date_conflict": false
+    },
+    {
+      "title": "Státní pokladna nabídne obcím a krajům výhodné spoření s okamžitým přístupem k penězům",
+      "url": "https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026/statni-pokladna-nabidne-obcim-a-krajum-vyhodne-spo-65339",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high",
+      "date_source": "source-selector",
+      "date_conflict": false
+    },
+    {
+      "title": "Vláda se dohodla na podobě rozpočtu, MF nyní připraví finální dokumentaci",
+      "url": "https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026/vlada-se-dohodla-na-podobe-rozpoctu-mf-nyni-pripra-65253",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high",
+      "date_source": "source-selector",
+      "date_conflict": false
+    },
+    {
+      "title": "Ratingová agentura S&P zlepšuje výhled České republiky na pozitivní a potvrdila špičkové hodnocení AA- / AA",
+      "url": "https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026/ratingova-agentura-s-and-p-zlepsuje-vyhled-ceske-r-65306",
+      "published_date_local": "2026-09-25",
+      "date_confidence": "high",
+      "date_source": "source-selector",
+      "date_conflict": false
+    },
+    {
+      "title": "Flexi Bond 002 lze objednávat už jen do 4. 10.",
+      "url": "https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026/flexi-bond-002-lze-objednavat-uz-jen-do-4-10-65311",
+      "published_date_local": "2026-09-25",
+      "date_confidence": "high",
+      "date_source": "source-selector",
+      "date_conflict": false
+    },
+    {
+      "title": "Ministerstvo financí chce posílit ochranu OSVČ při problémech se splácením podnikatelských úvěrů a zabránit pádu do dluhové spirály",
+      "url": "https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026/ministerstvo-financi-chce-posilit-ochranu-osvc-pri-65303",
+      "published_date_local": "2026-09-25",
+      "date_confidence": "high",
+      "date_source": "source-selector",
+      "date_conflict": false
+    }
+  ],
+  "live_status": {
+    "source_id": "cz_finance",
+    "source_name": "捷克財政部",
+    "country": "CZ",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 104,
+    "relevant_count": 104,
+    "duration_seconds": 0.645,
+    "newest_published_at": "2026-09-30T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 104,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 104,
+    "freshness_lag_days": 2.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 235980,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "cz_finance",
+    "country": "CZ",
+    "name_zh": "捷克財政部",
+    "name": "Ministerstvo financí",
+    "institution_type": "ministry",
+    "language": "cs",
+    "homepage": "https://mf.gov.cz/",
+    "listing_url": "https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026",
+    "feed_urls": [],
+    "allow_domains": [
+      "mf.gov.cz"
+    ],
+    "include_patterns": [
+      "/cs/ministerstvo/media/tiskove-zpravy/20\\d\\d/"
+    ],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Prague",
+    "card_selectors": [
+      "article.b-article.link-mask.u-mb-sm"
+    ],
+    "link_selectors": [
+      "a.b-article__link"
+    ],
+    "title_selectors": [
+      ".b-article__title"
+    ],
+    "date_selectors": [
+      ".b-article__date"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_cz_finance.html",
+  "response_sha256_verified_against_saved_bytes": true
+}

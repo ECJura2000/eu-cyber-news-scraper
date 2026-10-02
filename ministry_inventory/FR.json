@@ -22,7 +22,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.info.gouv.fr => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.info.gouv.fr'; https://www.info.gouv.fr/rss.xml => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.info.gouv.fr/rss.xml'; https://www.info.gouv.fr/presse/communiques-de-presse => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.info.gouv.fr/presse/communiques-de-presse'",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -43,7 +43,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.economie.gouv.fr/ => RobotsDeniedError: robots.txt disallows: https://www.economie.gouv.fr/; https://www.economie.gouv.fr/rss.xml => RobotsDeniedError: robots.txt disallows: https://www.economie.gouv.fr/rss.xml; https://www.economie.gouv.fr/presse/communiques-de-presse => RobotsDeniedError: robots.txt disallows: https://www.economie.gouv.fr/presse/communiques-de-presse",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -85,8 +85,8 @@
       "homepage": "https://www.ecologie.gouv.fr/",
       "news_url": "https://www.ecologie.gouv.fr/actualites",
       "source_ids": [],
-      "status": "parser_pending",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. The ecology portal has accessible dated listing/RSS content, but it publishes several distinct ministerial portfolios. The captured routes do not establish reliable ministry-level attribution/filtering for this row. No blanket enrollment of a shared portal feed as each ministry; a genuine ministry-scoped endpoint or supported publisher/category filter remains required. Tested alternatives: https://www.ecologie.gouv.fr/ => HTTP 200; 103391 bytes; production parser 17 items/9 dated; https://www.ecologie.gouv.fr/presse => HTTP 200; 83174 bytes; production parser 15 items/15 dated; https://www.ecologie.gouv.fr/actualites => HTTP 200; 106043 bytes; production parser 15 items/15 dated; https://www.ecologie.gouv.fr/actualites/6-idees-recues-tri-biodechets => HTTP 200; 58276 bytes; production parser 2 items/0 dated; https://www.ecologie.gouv.fr/presse/carburants-extension-dispositifs-soutien-letat-aux-professionnels-aux-francais-cout-450meur => HTTP 200; 62563 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/actualites/catastrophes-naturelles-simplification-elargissement-dotation-aux-collectivites-locales => HTTP 200; 56596 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/presse/promulgation-loi-montagne-vivante-souveraine => HTTP 200; 55533 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/actualites/electrifions-france-energie-moins-chere-plus-souveraine-plus-durable => HTTP 200; 68724 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/flux-rss => HTTP 200; 47852 bytes; production parser 0 items/0 dated; https://www.ecologie.gouv.fr/rss.xml => HTTPStatusError: Client error '404 Not Found' for url 'https://www.ecologie.gouv.fr/rss.xml'; https://www.ecologie.gouv.fr/presse/communiques-de-presse => HTTPStatusError: Client error '404 Not Found' for url 'https://www.ecologie.gouv.fr/presse/communiques-de-presse'",
+      "status": "needs_review",
+      "reason": "Ecology news/RSS/press portal publishes multiple ministries; sitewide dated items do not establish this ministry as publisher. Next action: Main: implement and verify publisher-specific filtering from first-party article attribution or an officially published ministry-scoped feed before enrolling any shared ecologie.gouv.fr source. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -157,7 +157,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.economie.gouv.fr => RobotsDeniedError: robots.txt disallows: https://www.economie.gouv.fr; https://www.economie.gouv.fr/rss.xml => RobotsDeniedError: robots.txt disallows: https://www.economie.gouv.fr/rss.xml; https://www.economie.gouv.fr/presse/communiques-de-presse => RobotsDeniedError: robots.txt disallows: https://www.economie.gouv.fr/presse/communiques-de-presse",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -178,7 +178,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.education.gouv.fr/ => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.education.gouv.fr/'; https://www.education.gouv.fr/rss.xml => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.education.gouv.fr/rss.xml'; https://www.education.gouv.fr/presse/communiques-de-presse => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.education.gouv.fr/presse/communiques-de-presse'",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -199,7 +199,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.enseignementsup-recherche.gouv.fr/fr => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.enseignementsup-recherche.gouv.fr/fr'; https://www.enseignementsup-recherche.gouv.fr/rss.xml => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.enseignementsup-recherche.gouv.fr/rss.xml'; https://www.enseignementsup-recherche.gouv.fr/presse/communiques-de-presse => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.enseignementsup-recherche.gouv.fr/presse/communiques-de-presse'",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -220,7 +220,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.diplomatie.gouv.fr/fr/ => InvalidURL: HTTPS redirect downgrade: http://www.diplomatie.gouv.fr/fr; https://www.diplomatie.gouv.fr/fr/rss.xml => HTTPStatusError: Client error '404 Not Found' for url 'https://www.diplomatie.gouv.fr/fr/rss.xml'; https://www.diplomatie.gouv.fr/fr/presse/communiques-de-presse => HTTPStatusError: Client error '404 Not Found' for url 'https://www.diplomatie.gouv.fr/fr/presse/communiques-de-presse'",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -241,7 +241,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.interieur.gouv.fr => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.interieur.gouv.fr'; https://www.interieur.gouv.fr/rss.xml => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.interieur.gouv.fr/rss.xml'; https://www.interieur.gouv.fr/presse/communiques-de-presse => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.interieur.gouv.fr/presse/communiques-de-presse'",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -284,7 +284,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.outre-mer.gouv.fr/ => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.outre-mer.gouv.fr/'; https://www.outre-mer.gouv.fr/rss.xml => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.outre-mer.gouv.fr/rss.xml'; https://www.outre-mer.gouv.fr/presse/communiques-de-presse => HTTPStatusError: Client error '403 Forbidden' for url 'https://www.outre-mer.gouv.fr/presse/communiques-de-presse'",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -305,7 +305,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.economie.gouv.fr/ => RobotsDeniedError: robots.txt disallows: https://www.economie.gouv.fr/; https://www.economie.gouv.fr/rss.xml => RobotsDeniedError: robots.txt disallows: https://www.economie.gouv.fr/rss.xml; https://www.economie.gouv.fr/presse/communiques-de-presse => RobotsDeniedError: robots.txt disallows: https://www.economie.gouv.fr/presse/communiques-de-presse",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -326,7 +326,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://sante.gouv.fr/ministere/ => RobotsUnavailableError: https://sante.gouv.fr: robots.txt returned HTML/challenge content; https://sante.gouv.fr/ministere/rss.xml => RobotsUnavailableError: https://sante.gouv.fr: robots.txt returned HTML/challenge content; https://sante.gouv.fr/ministere/presse/communiques-de-presse => RobotsUnavailableError: https://sante.gouv.fr: robots.txt returned HTML/challenge content",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -368,8 +368,8 @@
       "homepage": "https://www.ecologie.gouv.fr/",
       "news_url": "https://www.ecologie.gouv.fr/actualites",
       "source_ids": [],
-      "status": "parser_pending",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. The ecology portal has accessible dated listing/RSS content, but it publishes several distinct ministerial portfolios. The captured routes do not establish reliable ministry-level attribution/filtering for this row. No blanket enrollment of a shared portal feed as each ministry; a genuine ministry-scoped endpoint or supported publisher/category filter remains required. Tested alternatives: https://www.ecologie.gouv.fr/ => HTTP 200; 103391 bytes; production parser 17 items/9 dated; https://www.ecologie.gouv.fr/presse => HTTP 200; 83174 bytes; production parser 15 items/15 dated; https://www.ecologie.gouv.fr/actualites => HTTP 200; 106043 bytes; production parser 15 items/15 dated; https://www.ecologie.gouv.fr/actualites/6-idees-recues-tri-biodechets => HTTP 200; 58276 bytes; production parser 2 items/0 dated; https://www.ecologie.gouv.fr/presse/carburants-extension-dispositifs-soutien-letat-aux-professionnels-aux-francais-cout-450meur => HTTP 200; 62563 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/actualites/catastrophes-naturelles-simplification-elargissement-dotation-aux-collectivites-locales => HTTP 200; 56596 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/presse/promulgation-loi-montagne-vivante-souveraine => HTTP 200; 55533 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/actualites/electrifions-france-energie-moins-chere-plus-souveraine-plus-durable => HTTP 200; 68724 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/flux-rss => HTTP 200; 47852 bytes; production parser 0 items/0 dated; https://www.ecologie.gouv.fr/rss.xml => HTTPStatusError: Client error '404 Not Found' for url 'https://www.ecologie.gouv.fr/rss.xml'; https://www.ecologie.gouv.fr/presse/communiques-de-presse => HTTPStatusError: Client error '404 Not Found' for url 'https://www.ecologie.gouv.fr/presse/communiques-de-presse'; https://ecologie.gouv.fr/rss-actualites.xml => HTTP 200; 9944 bytes; captured public resource, no dated replay established; https://ecologie.gouv.fr/rss-presse.xml => HTTP 200; 10143 bytes; captured public resource, no dated replay established",
+      "status": "needs_review",
+      "reason": "Ecology news/RSS/press portal publishes multiple ministries; sitewide dated items do not establish this ministry as publisher. Next action: Main: implement and verify publisher-specific filtering from first-party article attribution or an officially published ministry-scoped feed before enrolling any shared ecologie.gouv.fr source. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -399,8 +399,8 @@
       "homepage": "https://www.ecologie.gouv.fr/",
       "news_url": "https://www.ecologie.gouv.fr/actualites",
       "source_ids": [],
-      "status": "parser_pending",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. The ecology portal has accessible dated listing/RSS content, but it publishes several distinct ministerial portfolios. The captured routes do not establish reliable ministry-level attribution/filtering for this row. No blanket enrollment of a shared portal feed as each ministry; a genuine ministry-scoped endpoint or supported publisher/category filter remains required. Tested alternatives: https://www.ecologie.gouv.fr/ => HTTP 200; 103391 bytes; production parser 17 items/9 dated; https://www.ecologie.gouv.fr/presse => HTTP 200; 83174 bytes; production parser 15 items/15 dated; https://www.ecologie.gouv.fr/actualites => HTTP 200; 106043 bytes; production parser 15 items/15 dated; https://www.ecologie.gouv.fr/actualites/6-idees-recues-tri-biodechets => HTTP 200; 58276 bytes; production parser 2 items/0 dated; https://www.ecologie.gouv.fr/presse/carburants-extension-dispositifs-soutien-letat-aux-professionnels-aux-francais-cout-450meur => HTTP 200; 62563 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/actualites/catastrophes-naturelles-simplification-elargissement-dotation-aux-collectivites-locales => HTTP 200; 56596 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/presse/promulgation-loi-montagne-vivante-souveraine => HTTP 200; 55533 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/actualites/electrifions-france-energie-moins-chere-plus-souveraine-plus-durable => HTTP 200; 68724 bytes; production parser 1 items/0 dated; https://www.ecologie.gouv.fr/flux-rss => HTTP 200; 47852 bytes; production parser 0 items/0 dated; https://www.ecologie.gouv.fr/rss.xml => HTTPStatusError: Client error '404 Not Found' for url 'https://www.ecologie.gouv.fr/rss.xml'; https://www.ecologie.gouv.fr/presse/communiques-de-presse => HTTPStatusError: Client error '404 Not Found' for url 'https://www.ecologie.gouv.fr/presse/communiques-de-presse'",
+      "status": "needs_review",
+      "reason": "Ecology news/RSS/press portal publishes multiple ministries; sitewide dated items do not establish this ministry as publisher. Next action: Main: implement and verify publisher-specific filtering from first-party article attribution or an officially published ministry-scoped feed before enrolling any shared ecologie.gouv.fr source. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -429,7 +429,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://travail-emploi.gouv.fr => RobotsUnavailableError: https://travail-emploi.gouv.fr: robots.txt returned HTML/challenge content; https://travail-emploi.gouv.fr/rss.xml => RobotsUnavailableError: https://travail-emploi.gouv.fr: robots.txt returned HTML/challenge content; https://travail-emploi.gouv.fr/presse/communiques-de-presse => RobotsUnavailableError: https://travail-emploi.gouv.fr: robots.txt returned HTML/challenge content",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -449,8 +449,8 @@
       "homepage": "https://www.cohesion-territoires.gouv.fr/le-ministere",
       "news_url": "https://www.ecologie.gouv.fr/actualites",
       "source_ids": [],
-      "status": "parser_pending",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. The ecology portal has accessible dated listing/RSS content, but it publishes several distinct ministerial portfolios. The captured routes do not establish reliable ministry-level attribution/filtering for this row. No blanket enrollment of a shared portal feed as each ministry; a genuine ministry-scoped endpoint or supported publisher/category filter remains required. Tested alternatives: https://www.cohesion-territoires.gouv.fr/le-ministere => HTTP 200; 56344 bytes; production parser 2 items/0 dated; https://www.ecologie.gouv.fr/presse => HTTP 200; 83174 bytes; production parser 15 items/15 dated; https://www.ecologie.gouv.fr/actualites => HTTP 200; 106043 bytes; production parser 15 items/15 dated; https://www.ecologie.gouv.fr/flux-rss => HTTP 200; 47852 bytes; production parser 0 items/0 dated; https://www.cohesion-territoires.gouv.fr/rss.xml => HTTPStatusError: Client error '404 Not Found' for url 'https://www.ecologie.gouv.fr/rss.xml'; https://www.cohesion-territoires.gouv.fr/presse/communiques-de-presse => HTTPStatusError: Client error '404 Not Found' for url 'https://www.ecologie.gouv.fr/presse/communiques-de-presse'",
+      "status": "needs_review",
+      "reason": "Ecology news/RSS/press portal publishes multiple ministries; sitewide dated items do not establish this ministry as publisher. Next action: Main: implement and verify publisher-specific filtering from first-party article attribution or an officially published ministry-scoped feed before enrolling any shared ecologie.gouv.fr source. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",

@@ -1,0 +1,124 @@
+{
+  "source_id": "pt_agriculture_sea",
+  "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/agricultura-e-mar/noticias",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T08:48:05.393820+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "4b927c55f786d67f1dd5b656b0c0af721cca914034ab7a7be52a72676e369eac",
+  "listing_response_sha256": "4ebb64788d4111360712f3d8c9e010bce33214bbdf02d7ab5a7dd22b0a33bf8d",
+  "response_sha256": [
+    "898016ec471fcb401d23d9f864c91a24bcc1a74ab7e3656e245dfbeb02d70356",
+    "9fe86469daaae7bf53bb765465304e1ada0a4baae2a401067920c717b8f7f338"
+  ],
+  "fixture_count": 8,
+  "parsed_count": 79,
+  "dated_count": 79,
+  "expected": [
+    {
+      "title": "Mau tempo: trovoadas, granizo e rajadas de vento até 80 km/h",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/mau-tempo-trovoadas-granizo-e-rajadas-de-vento-ate-80-kmh",
+      "published_date_local": "2026-09-29",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "2026 regista o maior volume de pagamentos aos agricultores",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/2026-regista-maior-volume-de-pagamentos-aos-agricultores",
+      "published_date_local": "2026-09-29",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Governo reforça apoios ao setor agrícola perante aumento dos custos de produção",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-reforca-apoios-ao-setor-agricola-perante-aumento-dos-custos-de-producao",
+      "published_date_local": "2026-09-23",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Sistema nacional de prescrição veterinária recebe distinção internacional",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/sistema-nacional-de-prescricao-veterinaria-recebe-distincao-internacional",
+      "published_date_local": "2026-09-23",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Governo apoia viticultores com nova linha de tesouraria",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-apoia-viticultores-com-nova-linha-de-tesouraria",
+      "published_date_local": "2026-09-22",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Autarquias recebem novos tratores para prevenção de incêndios",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/autarquias-recebem-novos-tratores-para-prevencao-de-incendios",
+      "published_date_local": "2026-09-17",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Governo abre período excecional de candidaturas para reestruturação de vinhas",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-abre-periodo-excecional-de-candidaturas-para-reestruturacao-de-vinhas",
+      "published_date_local": "2026-09-11",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Novo apoio para diminuir o custo dos combustíveis na pesca",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/novo-apoio-para-diminuir-o-custo-dos-combustiveis-na-pesca",
+      "published_date_local": "2026-09-09",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    }
+  ],
+  "live_status": {
+    "source_id": "pt_agriculture_sea",
+    "source_name": "葡萄牙農業與海洋部",
+    "country": "PT",
+    "critical": false,
+    "success": true,
+    "fetched_via": "public-sitecore",
+    "raw_count": 79,
+    "relevant_count": 79,
+    "duration_seconds": 1.078,
+    "newest_published_at": "2026-09-29T17:20:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 79,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 79,
+    "freshness_lag_days": 3.28,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 3,
+    "bytes_downloaded": 1210722,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200",
+      "200",
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "public_endpoint": "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1",
+  "transform": "Exact projection of official anonymous query title/path/CardDate/news-template/area IDs; biography fields omitted; first 8 genuine items; transient public routing value never saved",
+  "access": "No Authorization/API-key headers or authenticated fallback; public frontend routing identifier discovered afresh"
+}

@@ -2,6 +2,25 @@
 # Regenerate with: python scripts/generate_organisation_registry.py --export-sources
 
 [[sources]]
+"id" = "at_bka"
+"allow_domains" = ["www.bundeskanzleramt.gv.at"]
+"card_selectors" = ["a.card-link"]
+"country" = "AT"
+"critical" = false
+"date_selectors" = ["small.card-date"]
+"detail_pages" = 0
+"homepage" = "https://www.bundeskanzleramt.gv.at/"
+"include_patterns" = ["/nachrichten-der-bundesregierung/2026/"]
+"institution_type" = "government_head_office"
+"language" = "de"
+"listing_url" = "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026.html"
+"name" = "Bundeskanzleramt"
+"name_zh" = "奧地利聯邦總理府"
+"schedule_enabled" = false
+"timezone" = "Europe/Vienna"
+"title_selectors" = [".card-title", "h3", "h2"]
+
+[[sources]]
 "id" = "at_bmb"
 "allow_domains" = ["www.bmb.gv.at"]
 "card_selectors" = ["a.card-link"]
@@ -458,6 +477,24 @@
 "timezone" = "Europe/Sofia"
 
 [[sources]]
+"id" = "bg_defence"
+"allow_domains" = ["www.mod.bg"]
+"country" = "BG"
+"critical" = false
+"date_policy" = "required"
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://www.mod.bg/"
+"institution_type" = "ministry"
+"language" = "bg"
+"listing_url" = "https://www.mod.bg/news"
+"name" = "Министерство на отбраната"
+"name_zh" = "保加利亞國防部"
+"parser_adapter" = "bg_defence_onclick"
+"schedule_enabled" = false
+"timezone" = "Europe/Sofia"
+
+[[sources]]
 "id" = "bg_economy"
 "allow_domains" = ["www.mi.government.bg"]
 "card_selectors" = ["a.card-link"]
@@ -492,6 +529,26 @@
 "name_zh" = "保加利亞能源部"
 "schedule_enabled" = false
 "timezone" = "Europe/Sofia"
+
+[[sources]]
+"id" = "bg_environment"
+"allow_domains" = ["www.moew.government.bg"]
+"card_selectors" = ["ul.news-list-internal > li"]
+"country" = "BG"
+"critical" = false
+"date_policy" = "required"
+"date_selectors" = ["span.date"]
+"detail_pages" = 0
+"homepage" = "https://www.moew.government.bg/"
+"institution_type" = "ministry"
+"language" = "bg"
+"link_selectors" = ["a:has(h3)"]
+"listing_url" = "https://www.moew.government.bg/bg/prescentur/nacionalni-novini/"
+"name" = "Министерство на околната среда и водите"
+"name_zh" = "保加利亞環境與水資源部"
+"schedule_enabled" = false
+"timezone" = "Europe/Sofia"
+"title_selectors" = ["h3"]
 
 [[sources]]
 "id" = "bg_foreign_affairs"
@@ -584,6 +641,42 @@
 "schedule_enabled" = false
 "timezone" = "Europe/Sofia"
 "title_selectors" = [".card__title"]
+
+[[sources]]
+"id" = "bg_justice"
+"allow_domains" = ["justice.government.bg"]
+"country" = "BG"
+"critical" = false
+"date_policy" = "required"
+"detail_pages" = 0
+"feed_urls" = ["https://justice.government.bg/api/content/GetNewsSQData?count=3&blockId=5&lang=bg"]
+"homepage" = "https://justice.government.bg/home/"
+"institution_type" = "ministry"
+"language" = "bg"
+"listing_url" = "https://justice.government.bg/api/content/GetNewsSQData?count=3&blockId=5&lang=bg"
+"name" = "Министерство на правосъдието"
+"name_zh" = "保加利亞司法部"
+"parser_adapter" = "bg_justice_json"
+"schedule_enabled" = false
+"timezone" = "Europe/Sofia"
+
+[[sources]]
+"id" = "bg_labour"
+"allow_domains" = ["www.mlsp.government.bg"]
+"country" = "BG"
+"critical" = false
+"date_policy" = "required"
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://www.mlsp.government.bg/"
+"institution_type" = "ministry"
+"language" = "bg"
+"listing_url" = "https://www.mlsp.government.bg/novini"
+"name" = "Министерство на труда и социалната политика"
+"name_zh" = "保加利亞勞動與社會政策部"
+"parser_adapter" = "bg_labour_english_dates"
+"schedule_enabled" = false
+"timezone" = "Europe/Sofia"
 
 [[sources]]
 "id" = "bg_tourism"
@@ -722,6 +815,46 @@
 "name_zh" = "捷克環境部"
 "schedule_enabled" = false
 "timezone" = "Europe/Prague"
+
+[[sources]]
+"id" = "cz_finance"
+"allow_domains" = ["mf.gov.cz"]
+"card_selectors" = ["article.b-article.link-mask.u-mb-sm"]
+"country" = "CZ"
+"critical" = false
+"date_selectors" = [".b-article__date"]
+"detail_pages" = 0
+"homepage" = "https://mf.gov.cz/"
+"include_patterns" = ["/cs/ministerstvo/media/tiskove-zpravy/20\\d\\d/"]
+"institution_type" = "ministry"
+"language" = "cs"
+"link_selectors" = ["a.b-article__link"]
+"listing_url" = "https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026"
+"name" = "Ministerstvo financí"
+"name_zh" = "捷克財政部"
+"schedule_enabled" = false
+"timezone" = "Europe/Prague"
+"title_selectors" = [".b-article__title"]
+
+[[sources]]
+"id" = "cz_foreign_affairs"
+"allow_domains" = ["mzv.gov.cz"]
+"card_selectors" = ["div.article_content"]
+"country" = "CZ"
+"critical" = false
+"date_selectors" = ["p.articleDate"]
+"detail_pages" = 0
+"homepage" = "https://mzv.gov.cz/jnp/cz/index.html"
+"include_patterns" = ["/jnp/cz/udalosti_a_media/tiskove_zpravy/"]
+"institution_type" = "ministry"
+"language" = "cs"
+"link_selectors" = ["h2.article_title a"]
+"listing_url" = "https://mzv.gov.cz/jnp/cz/index.html"
+"name" = "Ministerstvo zahraničních věcí"
+"name_zh" = "捷克外交部"
+"schedule_enabled" = false
+"timezone" = "Europe/Prague"
+"title_selectors" = ["h2.article_title"]
 
 [[sources]]
 "id" = "cz_government"
@@ -974,6 +1107,25 @@
 "title_selectors" = [".results-topic"]
 
 [[sources]]
+"id" = "de_bmftr"
+"allow_domains" = ["www.bmftr.bund.de"]
+"card_selectors" = ["div.c-teaser__text-wrapper.c-teaser__News"]
+"country" = "DE"
+"critical" = false
+"date_selectors" = [".c-topline__element:last-child"]
+"detail_pages" = 0
+"homepage" = "https://www.bmftr.bund.de/DE/Home/home_node.html"
+"include_patterns" = ["/SharedDocs/(Kurzmeldungen|Pressemitteilungen)/DE/"]
+"institution_type" = "ministry"
+"language" = "de"
+"listing_url" = "https://www.bmftr.bund.de/DE/Home/home_node.html"
+"name" = "Bundesministerium für Forschung, Technologie und Raumfahrt"
+"name_zh" = "德國研究、科技與太空部"
+"schedule_enabled" = false
+"timezone" = "Europe/Berlin"
+"title_selectors" = ["h2", "h3"]
+
+[[sources]]
 "id" = "de_bmg"
 "allow_domains" = ["www.bundesgesundheitsministerium.de"]
 "card_selectors" = ["div.c-teaser--no-image"]
@@ -1007,6 +1159,45 @@
 "listing_url" = "https://www.bmi.bund.de/DE/presse/presse-node.html"
 "name" = "Bundesministerium des Innern"
 "name_zh" = "德國聯邦內政部"
+
+[[sources]]
+"id" = "de_bmjv"
+"allow_domains" = ["www.bmjv.de"]
+"card_selectors" = ["div.c-teaser__text-wrapper"]
+"country" = "DE"
+"critical" = false
+"date_selectors" = [".c-teaser__date", "time"]
+"detail_pages" = 0
+"homepage" = "https://www.bmjv.de/DE/Startseite/Startseite_node.html"
+"include_patterns" = ["/SharedDocs/(Meldungen|Pressemitteilungen|Artikel)/DE/"]
+"institution_type" = "ministry"
+"language" = "de"
+"listing_url" = "https://www.bmjv.de/DE/Startseite/Startseite_node.html"
+"name" = "Bundesministerium der Justiz und für Verbraucherschutz"
+"name_zh" = "德國司法與消費者保護部"
+"schedule_enabled" = false
+"timezone" = "Europe/Berlin"
+"title_selectors" = ["h2", "h3"]
+
+[[sources]]
+"id" = "de_bmleh"
+"allow_domains" = ["www.bmleh.de"]
+"card_selectors" = ["div.c-teaser.c-teaser--PressRelease"]
+"country" = "DE"
+"critical" = false
+"date_selectors" = ["time"]
+"detail_pages" = 0
+"homepage" = "https://www.bmleh.de/DE/Home/home_node.html"
+"include_patterns" = ["/SharedDocs/Pressemitteilungen/DE/"]
+"institution_type" = "ministry"
+"language" = "de"
+"link_selectors" = ["h3 a"]
+"listing_url" = "https://www.bmleh.de/DE/Home/home_node.html"
+"name" = "Bundesministerium für Landwirtschaft, Ernährung und Heimat"
+"name_zh" = "德國農業、糧食與家鄉部"
+"schedule_enabled" = false
+"timezone" = "Europe/Berlin"
+"title_selectors" = ["h3 a"]
 
 [[sources]]
 "id" = "de_bmukn"
@@ -1233,6 +1424,38 @@
 "title_selectors" = ["h3"]
 
 [[sources]]
+"id" = "dk_business"
+"allow_domains" = ["em.dk", "www.em.dk"]
+"country" = "DK"
+"critical" = false
+"detail_pages" = 0
+"homepage" = "https://www.em.dk/"
+"institution_type" = "ministry"
+"language" = "da"
+"listing_url" = "https://www.em.dk/"
+"name" = "Erhvervsministeriet"
+"name_zh" = "丹麥商業部"
+"parser_adapter" = "north_gobasic"
+"schedule_enabled" = false
+"timezone" = "Europe/Copenhagen"
+
+[[sources]]
+"id" = "dk_climate"
+"allow_domains" = ["kefm.dk", "www.kefm.dk"]
+"country" = "DK"
+"critical" = false
+"detail_pages" = 0
+"homepage" = "https://www.kefm.dk/"
+"institution_type" = "ministry"
+"language" = "da"
+"listing_url" = "https://www.kefm.dk/aktuelt"
+"name" = "Klima-, Energi- og Forsyningsministeriet"
+"name_zh" = "丹麥氣候、能源與公用事業部"
+"parser_adapter" = "north_gobasic"
+"schedule_enabled" = false
+"timezone" = "Europe/Copenhagen"
+
+[[sources]]
 "id" = "dk_culture"
 "allow_domains" = ["kum.dk"]
 "card_selectors" = ["tr"]
@@ -1265,6 +1488,25 @@
 "name" = "Datatilsynet"
 "name_zh" = "丹麥資料保護局"
 "schedule_enabled" = false
+
+[[sources]]
+"id" = "dk_defence"
+"allow_domains" = ["www.fmn.dk"]
+"card_selectors" = ["div.item.itemFeed"]
+"country" = "DK"
+"critical" = false
+"date_selectors" = ["time", "[class*=date i]", "[class*=datum i]", "[class*=published i]"]
+"detail_pages" = 0
+"homepage" = "https://www.fmn.dk/da/"
+"include_patterns" = ["/da/nyheder/20\\d\\d/"]
+"institution_type" = "ministry"
+"language" = "da"
+"listing_url" = "https://www.fmn.dk/da/"
+"name" = "Forsvarsministeriet"
+"name_zh" = "丹麥國防部"
+"schedule_enabled" = false
+"timezone" = "Europe/Copenhagen"
+"title_selectors" = ["h2", "h3", "h4", "[class*=title i]"]
 
 [[sources]]
 "id" = "dk_digst"
@@ -1323,6 +1565,22 @@
 "listing_url" = "https://uvm.dk/umbraco/api/DynamicRss/GetRss/?pageId=31390&moduleId=8d3d6977-899a-458e-99ef-b7c091047870"
 "name" = "Undervisningsministeriet"
 "name_zh" = "丹麥教育部"
+"schedule_enabled" = false
+"timezone" = "Europe/Copenhagen"
+
+[[sources]]
+"id" = "dk_employment"
+"allow_domains" = ["bm.dk", "www.bm.dk"]
+"country" = "DK"
+"critical" = false
+"detail_pages" = 0
+"homepage" = "https://www.bm.dk/"
+"institution_type" = "ministry"
+"language" = "da"
+"listing_url" = "https://www.bm.dk/nyheder"
+"name" = "Beskæftigelses- og Ligestillingsministeriet"
+"name_zh" = "丹麥就業與平等部"
+"parser_adapter" = "north_ankiro"
 "schedule_enabled" = false
 "timezone" = "Europe/Copenhagen"
 
@@ -1407,6 +1665,22 @@
 "timezone" = "Europe/Copenhagen"
 
 [[sources]]
+"id" = "dk_nature"
+"allow_domains" = ["mgtp.dk", "www.mgtp.dk"]
+"country" = "DK"
+"critical" = false
+"detail_pages" = 0
+"homepage" = "https://mgtp.dk/"
+"institution_type" = "ministry"
+"language" = "da"
+"listing_url" = "https://mgtp.dk/nyheder-og-debat"
+"name" = "Ministeriet for Natur og Dyrevelfærd"
+"name_zh" = "丹麥自然與動物福利部"
+"parser_adapter" = "north_gobasic"
+"schedule_enabled" = false
+"timezone" = "Europe/Copenhagen"
+
+[[sources]]
 "id" = "dk_research"
 "allow_domains" = ["ufm.dk"]
 "country" = "DK"
@@ -1449,6 +1723,38 @@
 "listing_url" = "https://www.sm.dk/handlers/DynamicRss.ashx?id=d66aadb0-8d96-4027-9a8f-7a3176ad49f9"
 "name" = "Socialministeriet"
 "name_zh" = "丹麥社會部"
+"schedule_enabled" = false
+"timezone" = "Europe/Copenhagen"
+
+[[sources]]
+"id" = "dk_stm"
+"allow_domains" = ["stm.dk"]
+"country" = "DK"
+"critical" = false
+"detail_pages" = 0
+"homepage" = "https://stm.dk/"
+"include_patterns" = ["/presse/(pressemeddelelser|nyheder)/20\\d\\d/"]
+"institution_type" = "government_head_office"
+"language" = "da"
+"listing_url" = "https://stm.dk/"
+"name" = "Statsministeriet"
+"name_zh" = "丹麥首相府"
+"schedule_enabled" = false
+"timezone" = "Europe/Copenhagen"
+
+[[sources]]
+"id" = "dk_taxation"
+"allow_domains" = ["svmn.dk", "www.svmn.dk"]
+"country" = "DK"
+"critical" = false
+"detail_pages" = 0
+"homepage" = "https://svmn.dk/"
+"institution_type" = "ministry"
+"language" = "da"
+"listing_url" = "https://svmn.dk/aktuelt/presse-nyheder/pressemeddelelser"
+"name" = "Skatte- og Vækstministeriet"
+"name_zh" = "丹麥稅務與成長部"
+"parser_adapter" = "north_nextjs"
 "schedule_enabled" = false
 "timezone" = "Europe/Copenhagen"
 
@@ -1924,6 +2230,26 @@
 "listing_url" = "https://www.hacienda.gob.es/es-ES/Prensa/Paginas/NotasPrensaHome.aspx"
 "name" = "Ministerio de Hacienda"
 "name_zh" = "西班牙財政部"
+"schedule_enabled" = false
+"timezone" = "Europe/Madrid"
+"title_selectors" = ["h2", "h3", "h4", "[class*=title]"]
+
+[[sources]]
+"id" = "es_foreign_affairs"
+"allow_domains" = ["www.exteriores.gob.es"]
+"card_selectors" = ["div.cardType1__top"]
+"country" = "ES"
+"critical" = false
+"date_policy" = "required"
+"date_selectors" = ["[class*=date i]", "[class*=fecha i]"]
+"detail_pages" = 0
+"homepage" = "https://www.exteriores.gob.es/"
+"institution_type" = "ministry"
+"language" = "es"
+"link_selectors" = ["a[href*=\"/Noticias/Paginas/Noticias/\"]"]
+"listing_url" = "https://www.exteriores.gob.es/es/Comunicacion/Noticias/Paginas/index.aspx"
+"name" = "Ministerio de Asuntos Exteriores, Unión Europea y Cooperación"
+"name_zh" = "西班牙外交、歐盟與合作部"
 "schedule_enabled" = false
 "timezone" = "Europe/Madrid"
 "title_selectors" = ["h2", "h3", "h4", "[class*=title]"]
@@ -3771,6 +4097,24 @@
 "schedule_enabled" = false
 "timezone" = "Europe/Rome"
 "title_selectors" = ["h2", "h3", "h4", "h5", "p.title", "[class*=title]"]
+
+[[sources]]
+"id" = "it_defence"
+"allow_domains" = ["www.difesa.it"]
+"country" = "IT"
+"critical" = false
+"date_policy" = "required"
+"detail_pages" = 0
+"feed_urls" = ["https://www.difesa.it/data/primopiano/elenco.json"]
+"homepage" = "https://www.difesa.it/"
+"institution_type" = "ministry"
+"language" = "it"
+"listing_url" = "https://www.difesa.it/data/primopiano/elenco.json"
+"name" = "Ministero della Difesa"
+"name_zh" = "義大利國防部"
+"parser_adapter" = "it_defence_json"
+"schedule_enabled" = false
+"timezone" = "Europe/Rome"
 
 [[sources]]
 "id" = "it_disability"
@@ -6826,6 +7170,24 @@
 "schedule_enabled" = false
 
 [[sources]]
+"id" = "pt_agriculture_sea"
+"allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
+"country" = "PT"
+"critical" = false
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/agricultura-e-mar/ministro"
+"institution_type" = "ministry"
+"language" = "pt"
+"listing_url" = "https://portugal.gov.pt/pt/gc25/area-de-governo/agricultura-e-mar/noticias"
+"max_pages" = 5
+"name" = "Ministério da Agricultura e Mar"
+"name_zh" = "葡萄牙農業與海洋部"
+"parser_adapter" = "sitecore_public"
+"schedule_enabled" = false
+"timezone" = "Europe/Lisbon"
+
+[[sources]]
 "id" = "pt_anacom"
 "allow_domains" = ["www.anacom.pt"]
 "country" = "PT"
@@ -6882,6 +7244,114 @@
 "schedule_enabled" = false
 
 [[sources]]
+"id" = "pt_council_presidency"
+"allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
+"country" = "PT"
+"critical" = false
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://portugal.gov.pt/pt/gc25"
+"institution_type" = "ministry"
+"language" = "pt"
+"listing_url" = "https://portugal.gov.pt/pt/gc25/primeiro-ministro/noticias"
+"max_pages" = 30
+"name" = "Presidência do Conselho de Ministros"
+"name_zh" = "葡萄牙部長會議主席府（含總理辦公室）"
+"parser_adapter" = "sitecore_public"
+"schedule_enabled" = false
+"timezone" = "Europe/Lisbon"
+
+[[sources]]
+"id" = "pt_culture_youth_sport"
+"allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
+"country" = "PT"
+"critical" = false
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/cultura-juventude-e-desporto/ministro"
+"institution_type" = "ministry"
+"language" = "pt"
+"listing_url" = "https://portugal.gov.pt/pt/gc25/area-de-governo/cultura-juventude-e-desporto/noticias"
+"max_pages" = 5
+"name" = "Ministério da Cultura, Juventude e Desporto"
+"name_zh" = "葡萄牙文化青年與體育部"
+"parser_adapter" = "sitecore_public"
+"schedule_enabled" = false
+"timezone" = "Europe/Lisbon"
+
+[[sources]]
+"id" = "pt_defence"
+"allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
+"country" = "PT"
+"critical" = false
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/defesa-nacional/ministro"
+"institution_type" = "ministry"
+"language" = "pt"
+"listing_url" = "https://portugal.gov.pt/pt/gc25/area-de-governo/defesa-nacional/noticias"
+"max_pages" = 5
+"name" = "Ministério da Defesa Nacional"
+"name_zh" = "葡萄牙國防部"
+"parser_adapter" = "sitecore_public"
+"schedule_enabled" = false
+"timezone" = "Europe/Lisbon"
+
+[[sources]]
+"id" = "pt_economy_cohesion"
+"allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
+"country" = "PT"
+"critical" = false
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/economia-e-coesao-territorial/ministro"
+"institution_type" = "ministry"
+"language" = "pt"
+"listing_url" = "https://portugal.gov.pt/pt/gc25/area-de-governo/economia-e-coesao-territorial/noticias"
+"max_pages" = 5
+"name" = "Ministério da Economia e da Coesão Territorial"
+"name_zh" = "葡萄牙經濟與領土凝聚部"
+"parser_adapter" = "sitecore_public"
+"schedule_enabled" = false
+"timezone" = "Europe/Lisbon"
+
+[[sources]]
+"id" = "pt_education_science"
+"allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
+"country" = "PT"
+"critical" = false
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/educacao-ciencia-e-inovacao/ministro"
+"institution_type" = "ministry"
+"language" = "pt"
+"listing_url" = "https://portugal.gov.pt/pt/gc25/area-de-governo/educacao-ciencia-e-inovacao/noticias"
+"max_pages" = 5
+"name" = "Ministério da Educação, Ciência e Inovação"
+"name_zh" = "葡萄牙教育科學與創新部"
+"parser_adapter" = "sitecore_public"
+"schedule_enabled" = false
+"timezone" = "Europe/Lisbon"
+
+[[sources]]
+"id" = "pt_environment_energy"
+"allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
+"country" = "PT"
+"critical" = false
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia/ministro"
+"institution_type" = "ministry"
+"language" = "pt"
+"listing_url" = "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia/noticias"
+"max_pages" = 5
+"name" = "Ministério do Ambiente e Energia"
+"name_zh" = "葡萄牙環境與能源部"
+"parser_adapter" = "sitecore_public"
+"schedule_enabled" = false
+"timezone" = "Europe/Lisbon"
+
+[[sources]]
 "id" = "pt_fct"
 "allow_domains" = ["www.fct.pt"]
 "country" = "PT"
@@ -6894,6 +7364,24 @@
 "name" = "Fundação para a Ciência e a Tecnologia"
 "name_zh" = "葡萄牙科學與技術基金會"
 "schedule_enabled" = false
+
+[[sources]]
+"id" = "pt_finance"
+"allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
+"country" = "PT"
+"critical" = false
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/financas/ministro"
+"institution_type" = "ministry"
+"language" = "pt"
+"listing_url" = "https://portugal.gov.pt/pt/gc25/area-de-governo/financas/noticias"
+"max_pages" = 5
+"name" = "Ministério das Finanças"
+"name_zh" = "葡萄牙財政部"
+"parser_adapter" = "sitecore_public"
+"schedule_enabled" = false
+"timezone" = "Europe/Lisbon"
 
 [[sources]]
 "id" = "pt_foreign_affairs"
@@ -6913,6 +7401,24 @@
 "schedule_enabled" = false
 "timezone" = "Europe/Lisbon"
 "title_selectors" = ["h2"]
+
+[[sources]]
+"id" = "pt_health"
+"allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
+"country" = "PT"
+"critical" = false
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/saude/ministro"
+"institution_type" = "ministry"
+"language" = "pt"
+"listing_url" = "https://portugal.gov.pt/pt/gc25/area-de-governo/saude/noticias"
+"max_pages" = 5
+"name" = "Ministério da Saúde"
+"name_zh" = "葡萄牙衛生部"
+"parser_adapter" = "sitecore_public"
+"schedule_enabled" = false
+"timezone" = "Europe/Lisbon"
 
 [[sources]]
 "id" = "pt_inesc_id"
@@ -6943,6 +7449,42 @@
 "schedule_enabled" = false
 
 [[sources]]
+"id" = "pt_infrastructure_housing"
+"allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
+"country" = "PT"
+"critical" = false
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/infraestruturas-e-habitacao/ministro"
+"institution_type" = "ministry"
+"language" = "pt"
+"listing_url" = "https://portugal.gov.pt/pt/gc25/area-de-governo/infraestruturas-e-habitacao/noticias"
+"max_pages" = 5
+"name" = "Ministério das Infraestruturas e Habitação"
+"name_zh" = "葡萄牙基礎建設與住宅部"
+"parser_adapter" = "sitecore_public"
+"schedule_enabled" = false
+"timezone" = "Europe/Lisbon"
+
+[[sources]]
+"id" = "pt_interior"
+"allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
+"country" = "PT"
+"critical" = false
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/administracao-interna/ministro"
+"institution_type" = "ministry"
+"language" = "pt"
+"listing_url" = "https://portugal.gov.pt/pt/gc25/area-de-governo/administracao-interna/noticias"
+"max_pages" = 5
+"name" = "Ministério da Administração Interna"
+"name_zh" = "葡萄牙內政部"
+"parser_adapter" = "sitecore_public"
+"schedule_enabled" = false
+"timezone" = "Europe/Lisbon"
+
+[[sources]]
 "id" = "pt_ist"
 "allow_domains" = ["tecnico.ulisboa.pt"]
 "country" = "PT"
@@ -6969,6 +7511,24 @@
 "listing_url" = "https://justica.gov.pt/API/JusticaGovPt.News/PublishingNews/Feed?myPortalId=0&myTabId=380&myModuleId=1649&organismo="
 "name" = "Ministério da Justiça"
 "name_zh" = "葡萄牙司法部"
+"schedule_enabled" = false
+"timezone" = "Europe/Lisbon"
+
+[[sources]]
+"id" = "pt_labour_social"
+"allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
+"country" = "PT"
+"critical" = false
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/trabalho-solidariedade-e-seguranca-social/ministro"
+"institution_type" = "ministry"
+"language" = "pt"
+"listing_url" = "https://portugal.gov.pt/pt/gc25/area-de-governo/trabalho-solidariedade-e-seguranca-social/noticias"
+"max_pages" = 5
+"name" = "Ministério do Trabalho, Solidariedade e Segurança Social"
+"name_zh" = "葡萄牙勞動團結與社會保障部"
+"parser_adapter" = "sitecore_public"
 "schedule_enabled" = false
 "timezone" = "Europe/Lisbon"
 

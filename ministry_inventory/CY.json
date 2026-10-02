@@ -22,7 +22,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/mod/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/mod/; https://www.mod.gov.cy/ => RobotsUnavailableError: https://www.mod.gov.cy: robots.txt unreachable: ConnectError: ('「mod.gov.cy」憑證不受信任',) Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.gov.cy/en/government/"
       ]
@@ -38,7 +38,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/moa/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/moa/; https://www.moa.gov.cy/ => RobotsDeniedError: robots.txt disallows: https://www.moa.gov.cy/ Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.gov.cy/en/government/"
       ]
@@ -54,7 +54,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/mjpo/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/mjpo/; https://www.mjpo.gov.cy/ => RobotsUnavailableError: https://www.mjpo.gov.cy: robots.txt unreachable: ConnectTimeout:  Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.gov.cy/en/government/"
       ]
@@ -70,7 +70,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/meci/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/meci/; https://www.meci.gov.cy/ => RobotsDeniedError: robots.txt disallows: https://www.meci.gov.cy/ Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.gov.cy/en/government/"
       ]
@@ -86,7 +86,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/mfa/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/mfa/; https://www.mfa.gov.cy/ => RobotsDeniedError: robots.txt disallows: https://www.mfa.gov.cy/ Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.gov.cy/en/government/"
       ]
@@ -102,7 +102,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/mlsi/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/mlsi/; https://www.mlsi.gov.cy/ => RobotsDeniedError: robots.txt disallows: https://www.mlsi.gov.cy/ Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.gov.cy/en/government/"
       ]
@@ -118,7 +118,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/moi/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/moi/; https://www.moi.gov.cy/ => RobotsDeniedError: robots.txt disallows: https://www.moi.gov.cy/ Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.gov.cy/en/government/"
       ]
@@ -134,7 +134,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/mof/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/mof/; https://www.mof.gov.cy/ => RobotsDeniedError: robots.txt disallows: https://www.mof.gov.cy/ Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.gov.cy/en/government/"
       ]
@@ -150,7 +150,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "parser_pending",
-      "reason": "Legacy HTTPS education/minoffice pages are accessible but no dated ministry news fixture was established; gov.cy ministry portal is robots-denied. Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "reason": "No source promoted: reachable official content did not yet pass a source-scoped dated fixture and production scrape. Next action: Main: inspect official moec.gov.cy ministry-office publications and original charset/Greek dates; exclude school/department support announcements and validate a central ministry news adapter. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.gov.cy/en/government/"
       ]
@@ -166,7 +166,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/mtcw/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/mtcw/; https://www.mtcw.gov.cy/ => RobotsDeniedError: robots.txt disallows: https://www.mtcw.gov.cy/ Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.gov.cy/en/government/"
       ]
@@ -182,7 +182,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.gov.cy/moh/ => RobotsDeniedError: robots.txt disallows: https://www.gov.cy/moh/; https://www.moh.gov.cy/ => RobotsDeniedError: robots.txt disallows: https://www.moh.gov.cy/ Recorded attempts: source-audit/ministry_expansion_cy.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.gov.cy/en/government/"
       ]

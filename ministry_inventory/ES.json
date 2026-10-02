@@ -8,7 +8,7 @@
   ],
   "roster_complete": true,
   "limitations": [
-    "2026-10-02 ministry news audit: 15 manually verified and 0 existing-source ministries; 8 unresolved. Roster enumeration does not imply searchable completeness. Exact tried URLs and robots/transport/parser/attribution limitations are recorded per ministry; unresolved rows have no runnable source. New sources retain disabled scheduling/noncritical status, all 15 topics, empty responsibility, and genuine checksum-backed fixture replay."
+    "2026-10-02 round3 south: 16 manually verified, 0 existing-source ministries, 7 unresolved. Exact current failures and parser/attribution limitations are recorded per initial unresolved ID in tests/fixtures/ministry_round3_south.json. Endpoint failures are not obsolete designations. New sources are manual-only, schedule_enabled=false, critical=false, all 15 OBSERVATION_TOPICS, empty responsibility_by_topic."
   ],
   "ministries": [
     {
@@ -22,7 +22,7 @@
       "news_url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/paginas/index.aspx",
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/paginas/index.aspx => RobotsUnavailableError: https://www.lamoncloa.gob.es: robots.txt unreachable: ConnectTimeout: ; https://www.lamoncloa.gob.es/ => RobotsUnavailableError: https://www.lamoncloa.gob.es: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (es_presidency).",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
@@ -63,9 +63,11 @@
       "language": "es",
       "homepage": "https://www.exteriores.gob.es/",
       "news_url": "https://www.exteriores.gob.es/es/Comunicacion/Noticias/Paginas/index.aspx",
-      "source_ids": [],
-      "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.exteriores.gob.es/es/Comunicacion/Noticias/Paginas/index.aspx => RobotsDeniedError: robots.txt disallows: https://www.exteriores.gob.es/es/Comunicacion/Noticias/Paginas/index.aspx; https://www.exteriores.gob.es/ => RobotsDeniedError: robots.txt disallows: https://www.exteriores.gob.es/",
+      "source_ids": [
+        "es_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 round3 south: Keep manual-only source disabled from scheduling; replay provenance fixture before any later activation. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (es_foreign_affairs).",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
@@ -172,7 +174,7 @@
       "news_url": "https://portal.mineco.gob.es/es-es/comunicacion/Paginas/default.aspx?P3BhZ2U9MQ==",
       "source_ids": [],
       "status": "parser_pending",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Official communications listing and RSS-information page return HTTP 200 but only a navigation item with no publication date; the current rendered RSS-information page contains no subscribed feed link. No nonempty dated source-scoped production replay established. Tested alternatives: https://portal.mineco.gob.es/es-es/comunicacion/Paginas/default.aspx?P3BhZ2U9MQ== => HTTP 200; 84032 bytes; production parser 1 items/0 dated; https://portal.mineco.gob.es/ => HTTP 200; 113734 bytes; production parser 1 items/0 dated; https://portal.mineco.gob.es/es-es/ministerio/Paginas/Info_RSS.aspx => HTTP 200; 90893 bytes; production parser 1 items/0 dated; https://portal.mineco.gob.es/en-us/ministerio/Pages/Info_RSS.aspx => HTTP 200; 88228 bytes; production parser 1 items/0 dated; https://portal.mineco.gob.es/es-es/comunicacion/Paginas/default.aspx => HTTP 200; 83988 bytes; production parser 1 items/0 dated; https://portal.mineco.gob.es/es-es/ministerio/Paginas/Info_RSS.aspx => HTTP 200; 90894 bytes; production parser 1 items/0 dated; https://portal.mineco.gob.es/ca-es/ministerio/Pagines/Info_RSS.aspx => HTTP 200; 89347 bytes; production parser 1 items/0 dated; https://portal.mineco.gob.es/gl-es/ministerio/Paxinas/Info_RSS.aspx => HTTP 200; 89021 bytes; production parser 1 items/0 dated; https://portal.mineco.gob.es/eu-es/ministerio/Orriak/Info_RSS.aspx => HTTP 200; 88739 bytes; production parser 2 items/0 dated",
+      "reason": "2026-10-02 round3 south: SharePoint news/RSS pages load their content using client-side webparts; language variants and official news alternatives expose navigation rather than a dated feed. Implement public published SharePoint data extraction only after verifying title/link/publication fields, with no authentication. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (es_economy).",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
@@ -184,7 +186,12 @@
         "https://portal.mineco.gob.es/es-es/comunicacion/Paginas/default.aspx",
         "https://portal.mineco.gob.es/ca-es/ministerio/Pagines/Info_RSS.aspx",
         "https://portal.mineco.gob.es/gl-es/ministerio/Paxinas/Info_RSS.aspx",
-        "https://portal.mineco.gob.es/eu-es/ministerio/Orriak/Info_RSS.aspx"
+        "https://portal.mineco.gob.es/eu-es/ministerio/Orriak/Info_RSS.aspx",
+        "https://portal.mineco.gob.es/es-es/ministerio/igualdadgenero/noticias",
+        "https://portal.mineco.gob.es/es-es/economiayempresa/noticias",
+        "https://portal.mineco.gob.es/es-es/comercio/Paginas/noticias.aspx",
+        "https://portal.mineco.gob.es/en-us/ministerio/igualdadgenero/noticias",
+        "https://portal.mineco.gob.es/en-us/economiayempresa/noticias"
       ]
     },
     {
@@ -266,7 +273,7 @@
       "news_url": "https://www.inclusion.gob.es/web/guest/comunicacion/noticias",
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.inclusion.gob.es/web/guest/comunicacion/noticias => RobotsDeniedError: robots.txt disallows: https://www.inclusion.gob.es/web/guest/comunicacion/noticias; https://www.inclusion.gob.es/ => RobotsDeniedError: robots.txt disallows: https://www.inclusion.gob.es/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (es_inclusion).",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
@@ -286,7 +293,7 @@
       "news_url": "https://www.mincotur.gob.es/es-es/GabinetePrensa/NotasPrensa/Paginas/listadoNotasPrensa.aspx",
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.mincotur.gob.es/es-es/GabinetePrensa/NotasPrensa/Paginas/listadoNotasPrensa.aspx => TimeoutError:  (no further diagnostic supplied); https://www.mincotur.gob.es/ => TimeoutError:  (no further diagnostic supplied); https://www.mintur.gob.es/ => TimeoutError:  (no further diagnostic supplied)",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (es_industry_tourism).",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
@@ -329,7 +336,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm => TimeoutError:  (no further diagnostic supplied); https://www.mpr.gob.es/ => RobotsUnavailableError: https://www.mpr.gob.es: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (es_presidency_justice).",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
@@ -393,7 +400,7 @@
       "news_url": "https://prensa.mites.gob.es/webPrensa/listado-noticia",
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://prensa.mites.gob.es/webPrensa/listado-noticia => RobotsUnavailableError: https://prensa.mites.gob.es: robots.txt returned HTML/challenge content; https://prensa.mites.gob.es/ => RobotsUnavailableError: https://prensa.mites.gob.es: robots.txt returned HTML/challenge content",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (es_labour).",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
@@ -458,7 +465,7 @@
       "news_url": "https://www.interior.gob.es/opencms/es/prensa/noticias/",
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.interior.gob.es/opencms/es/prensa/noticias/ => RobotsDeniedError: robots.txt disallows: https://www.interior.gob.es/opencms/es/prensa/noticias/; https://www.interior.gob.es/ => RobotsDeniedError: robots.txt disallows: https://www.interior.gob.es/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (es_interior).",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",

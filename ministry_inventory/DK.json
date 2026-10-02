@@ -16,10 +16,12 @@
       "kind": "government_head_office",
       "language": "da",
       "homepage": "https://stm.dk/",
-      "news_url": "https://stm.dk/presse/",
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Press/year archive pages are dynamic shells; English homepage has two dated cards but no dedicated general press-news endpoint was validated. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "news_url": "https://stm.dk/",
+      "source_ids": [
+        "dk_stm"
+      ],
+      "status": "manual_verified",
+      "reason": "Source-scoped ministry news passed production scrape_source with 3 dated items; bounded genuine fixture reproduces 3 exact titles, URLs, local dates and confidence values. Next action: Manual collection only. Review freshness and publisher ownership during later observations before any separate scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
         "https://stm.dk/",
@@ -34,12 +36,15 @@
       "kind": "ministry",
       "language": "da",
       "homepage": "https://www.bm.dk/",
-      "news_url": null,
-      "source_ids": [],
-      "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.bm.dk/ => RobotsUnavailableError: https://www.bm.dk: robots.txt unreachable: HTTP 503; https://www.bm.dk/nyheder => RobotsUnavailableError: https://www.bm.dk: robots.txt unreachable: HTTP 503 Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "news_url": "https://www.bm.dk/nyheder",
+      "source_ids": [
+        "dk_employment"
+      ],
+      "status": "manual_verified",
+      "reason": "Publisher-scoped north_ankiro passed production scrape_source with 10 parsed and dated articles; bounded genuine fixture preserves exact titles, URLs and local publication dates. Next action: Manual collection only; retain bounded-list truncation warning and verify archive completeness before any separately authorized scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
-        "https://stm.dk/statsministeriet/kontakt/emneoversigt/"
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://www.bm.dk/nyheder"
       ]
     },
     {
@@ -53,7 +58,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.bltm.dk/ => RobotsUnavailableError: https://www.bltm.dk: robots.txt returned HTML/challenge content Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://stm.dk/statsministeriet/kontakt/emneoversigt/"
       ]
@@ -68,8 +73,8 @@
       "homepage": "https://baebm.dk/",
       "news_url": "https://baebm.dk/nyheder/nyhedsarkiv",
       "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Official archive/year page uses GoBasic/Blazor dynamic itemList and returns no dated news cards to existing production parser. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "status": "blocked",
+      "reason": "Published anonymous GoBasic archive query returned HTTP 400, including bounded retry with the publicly specified current-page header. No credentials, form tokens or authenticated fallback used. Next action: Review upstream anonymous getPage request contract after public frontend changes; do not acquire verification/authentication tokens or bypass access policy.",
       "evidence_urls": [
         "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
         "https://baebm.dk/",
@@ -84,14 +89,17 @@
       "kind": "ministry",
       "language": "da",
       "homepage": "https://www.em.dk/",
-      "news_url": "https://www.em.dk/aktuelt",
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Official news/month archives use GoBasic dynamic lists; press page embeds Ritzau. No dated first-party listing/feed replay established. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "news_url": "https://www.em.dk/",
+      "source_ids": [
+        "dk_business"
+      ],
+      "status": "manual_verified",
+      "reason": "Publisher-scoped north_gobasic passed production scrape_source with 3 parsed and dated articles; bounded genuine fixture preserves exact titles, URLs and local publication dates. Next action: Manual collection only; retain bounded-list truncation warning and verify archive completeness before any separately authorized scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
         "https://www.em.dk/",
-        "https://www.em.dk/aktuelt"
+        "https://www.em.dk/aktuelt",
+        "https://www.em.dk/proxy.gba"
       ]
     },
     {
@@ -142,10 +150,12 @@
       "kind": "ministry",
       "language": "da",
       "homepage": "https://www.fmn.dk/da/",
-      "news_url": "https://www.fmn.dk/da/nyheder/nyhedsarkiv/",
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Official annual news list is dynamic; /servicemappe/rss-feed/ is HTML rather than a valid XML feed. EU-topic cards are dated but general-news fixture is unvalidated. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "news_url": "https://www.fmn.dk/da/",
+      "source_ids": [
+        "dk_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "Source-scoped ministry news passed production scrape_source with 4 dated items; bounded genuine fixture reproduces 4 exact titles, URLs, local dates and confidence values. Next action: Manual collection only. Review freshness and publisher ownership during later observations before any separate scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
         "https://www.fmn.dk/da/",
@@ -181,13 +191,16 @@
       "language": "da",
       "homepage": "https://www.kefm.dk/",
       "news_url": "https://www.kefm.dk/aktuelt",
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Official current-news page is a GoBasic dynamic listing; captured HTML has no dated news cards. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "source_ids": [
+        "dk_climate"
+      ],
+      "status": "manual_verified",
+      "reason": "Publisher-scoped north_gobasic passed production scrape_source with 8 parsed and dated articles; bounded genuine fixture preserves exact titles, URLs and local publication dates. Next action: Manual collection only; retain bounded-list truncation warning and verify archive completeness before any separately authorized scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
         "https://www.kefm.dk/",
-        "https://www.kefm.dk/aktuelt"
+        "https://www.kefm.dk/aktuelt",
+        "https://www.kefm.dk/aktuelt/proxy.gba"
       ]
     },
     {
@@ -221,7 +234,7 @@
       "news_url": "https://mim.dk/nyheder/pressemeddelelser",
       "source_ids": [],
       "status": "parser_pending",
-      "reason": "Official press/professional-news pages were captured but dynamic listing returned no dated cards to existing parser. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "reason": "No source promoted: reachable official content did not yet pass a source-scoped dated fixture and production scrape. Next action: Main: inspect the published unauthenticated frontend listing data and add a bounded ministry-specific adapter; validate publication dates and titles with genuine fixtures before enrollment. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
         "https://mim.dk/",
@@ -237,13 +250,16 @@
       "language": "da",
       "homepage": "https://mgtp.dk/",
       "news_url": "https://mgtp.dk/nyheder-og-debat",
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Official news/year archive is a dynamic GoBasic list; captured responses contain no validated dated general-news cards. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "source_ids": [
+        "dk_nature"
+      ],
+      "status": "manual_verified",
+      "reason": "Publisher-scoped north_gobasic passed production scrape_source with 5 parsed and dated articles; bounded genuine fixture preserves exact titles, URLs and local publication dates. Next action: Manual collection only; retain bounded-list truncation warning and verify archive completeness before any separately authorized scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
         "https://mgtp.dk/",
-        "https://mgtp.dk/nyheder-og-debat"
+        "https://mgtp.dk/nyheder-og-debat",
+        "https://mgtp.dk/nyheder-og-debat/proxy.gba"
       ]
     },
     {
@@ -257,7 +273,7 @@
       "news_url": "https://mssb.dk/nyheder/",
       "source_ids": [],
       "status": "parser_pending",
-      "reason": "Official news endpoint is a dynamic listing; no dated cards in captured HTML for existing parser. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "reason": "No source promoted: reachable official content did not yet pass a source-scoped dated fixture and production scrape. Next action: Main: inspect the published unauthenticated frontend listing data and add a bounded ministry-specific adapter; validate publication dates and titles with genuine fixtures before enrollment. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
         "https://mssb.dk/",
@@ -273,13 +289,16 @@
       "language": "da",
       "homepage": "https://svmn.dk/",
       "news_url": "https://svmn.dk/aktuelt/presse-nyheder/pressemeddelelser",
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Official press releases page says Henter data and uses a Next.js client component; no supported feed/HTML replay with dated items established. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "source_ids": [
+        "dk_taxation"
+      ],
+      "status": "manual_verified",
+      "reason": "Publisher-scoped north_nextjs passed production scrape_source with 25 parsed and dated articles; bounded genuine fixture preserves exact titles, URLs and local publication dates. Next action: Manual collection only; retain bounded-list truncation warning and verify archive completeness before any separately authorized scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
         "https://svmn.dk/",
-        "https://svmn.dk/aktuelt/presse-nyheder/pressemeddelelser"
+        "https://svmn.dk/aktuelt/presse-nyheder/pressemeddelelser",
+        "https://svmn.dk/api/indexSearch"
       ]
     },
     {
@@ -335,7 +354,7 @@
       "news_url": "https://um.dk/nyheder/",
       "source_ids": [],
       "status": "parser_pending",
-      "reason": "Official news/English alternatives embed publisher-specific Ritzau pressrooms; no first-party dated general-news endpoint validated. Recorded attempts: source-audit/ministry_expansion_dk.json",
+      "reason": "No source promoted: reachable official content did not yet pass a source-scoped dated fixture and production scrape. Next action: Main: inspect the published unauthenticated frontend listing data and add a bounded ministry-specific adapter; validate publication dates and titles with genuine fixtures before enrollment. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
         "https://um.dk/",

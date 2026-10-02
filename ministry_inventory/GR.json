@@ -8,7 +8,7 @@
   ],
   "roster_complete": true,
   "limitations": [
-    "2026-10-02 ministry news audit: 4 manually verified and 0 existing-source ministries; 17 unresolved. Roster enumeration does not imply searchable completeness. Exact tried URLs and robots/transport/parser/attribution limitations are recorded per ministry; unresolved rows have no runnable source. New sources retain disabled scheduling/noncritical status, all 15 topics, empty responsibility, and genuine checksum-backed fixture replay."
+    "2026-10-02 round3 south: 4 manually verified, 0 existing-source ministries, 17 unresolved. Exact current failures and parser/attribution limitations are recorded per initial unresolved ID in tests/fixtures/ministry_round3_south.json. Endpoint failures are not obsolete designations. New sources are manual-only, schedule_enabled=false, critical=false, all 15 OBSERVATION_TOPICS, empty responsibility_by_topic."
   ],
   "ministries": [
     {
@@ -22,7 +22,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.government.gov.gr/ => RobotsDeniedError: robots.txt disallows: https://www.government.gov.gr/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (gr_government_presidency).",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
@@ -40,7 +40,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://minfin.gov.gr/ => RobotsDeniedError: robots.txt disallows: https://minfin.gov.gr/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (gr_finance).",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
@@ -58,7 +58,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://www.mfa.gr/ => RobotsDeniedError: robots.txt disallows: https://www.mfa.gr/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (gr_foreign_affairs).",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
@@ -76,7 +76,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://www.mod.mil.gr/ => RobotsDeniedError: robots.txt disallows: https://www.mod.mil.gr/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (gr_defence).",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
@@ -94,7 +94,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://www.ypes.gr/ => RobotsDeniedError: robots.txt disallows: https://www.ypes.gr/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (gr_interior).",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
@@ -152,7 +152,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://www.yme.gr/ => RobotsDeniedError: robots.txt disallows: https://www.yme.gr/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (gr_infrastructure_transport).",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
@@ -170,7 +170,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://ypen.gov.gr/ => RobotsDeniedError: robots.txt disallows: https://ypen.gov.gr/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (gr_environment_energy).",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
@@ -209,7 +209,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://ypergasias.gov.gr/ => RobotsDeniedError: robots.txt disallows: https://ypergasias.gov.gr/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (gr_labour).",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
@@ -227,7 +227,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://www.minocp.gov.gr/ => RobotsDeniedError: robots.txt disallows: https://www.minocp.gov.gr/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (gr_citizen_protection).",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
@@ -245,7 +245,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://ministryofjustice.gr/ => RobotsDeniedError: robots.txt disallows: https://ministryofjustice.gr/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (gr_justice).",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
@@ -263,7 +263,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://www.culture.gov.gr/ => RobotsDeniedError: robots.txt disallows: https://www.culture.gov.gr/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (gr_culture).",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
@@ -302,7 +302,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://minscfa.gov.gr/ => RobotsDeniedError: robots.txt disallows: https://minscfa.gov.gr/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (gr_social_family).",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
@@ -320,7 +320,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://www.minagric.gov.gr/ => RobotsDeniedError: robots.txt disallows: https://www.minagric.gov.gr/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (gr_agriculture).",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
@@ -338,7 +338,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://www.ynanp.gr/ => RobotsDeniedError: robots.txt disallows: https://www.ynanp.gr/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (gr_maritime).",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
@@ -356,7 +356,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://mintour.gov.gr/ => HTTPStatusError: Client error '403 Forbidden' for url 'https://mintour.gov.gr/'",
+      "reason": "2026-10-02 round3 south: Official endpoint returns 403. Recheck only an independently published permitted endpoint or a future access-policy change; do not bypass access control or label the ministry obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (gr_tourism).",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
@@ -374,7 +374,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://mindigital.gr/ => RobotsDeniedError: robots.txt disallows: https://mindigital.gr/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (gr_digital).",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
@@ -392,7 +392,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.gov.gr/upourgeia => RobotsDeniedError: robots.txt disallows: https://www.gov.gr/upourgeia; https://civilprotection.gov.gr/ => RobotsDeniedError: robots.txt disallows: https://civilprotection.gov.gr/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (gr_climate_civil_protection).",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",

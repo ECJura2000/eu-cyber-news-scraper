@@ -1,0 +1,122 @@
+{
+  "source_id": "pt_defence",
+  "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/defesa-nacional/noticias",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T08:47:34.388293+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "f5ac5734f90a8d607205364996001f8832eb0af82d95f906d36a5e5984245021",
+  "listing_response_sha256": "12d610052203968db05239f27748d6821102543f2bc870d3781ef41a27183de7",
+  "response_sha256": [
+    "f1b0e5a4e07fc553244958456c87ea5668be9e4c694daea39edf150c66882493"
+  ],
+  "fixture_count": 8,
+  "parsed_count": 34,
+  "dated_count": 34,
+  "expected": [
+    {
+      "title": "Portugal e Bélgica assinam acordo para produzir munições de pequeno calibre",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/portugal-e-belgica-assinam-acordo-para-produzir-municoes-de-pequeno-calibre",
+      "published_date_local": "2026-09-30",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Ministro da Defesa Nacional visita militares portugueses destacados na Estónia",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/ministro-da-defesa-nacional-visita-militares-portugueses-destacados-na-estonia",
+      "published_date_local": "2026-07-31",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Portugal encomenda três fragatas de nova geração a Itália",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/portugal-encomenda-tres-fragatas-de-nova-geracao-a-italia",
+      "published_date_local": "2026-07-21",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Situação de alerta prolongada em dez distritos até quinta-feira",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/situacao-de-alerta-prolongada-em-dez-distritos-ate-quinta-feira",
+      "published_date_local": "2026-07-07",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "25 de Novembro: militares dos Comandos vão ser distinguidos",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/25-de-novembro-militares-dos-comandos-vao-ser-distinguidos",
+      "published_date_local": "2026-06-29",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Governo reforça efetivo das Forças Armadas nos próximos três anos",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-reforca-efetivo-das-forcas-armadas-nos-proximos-tres-anos",
+      "published_date_local": "2026-06-19",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Incêndios: Governo reforça vigilância e ativa Centro de Operações Permanente na Base Aérea de Monte Real",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/incendios-governo-reforca-vigilancia-e-ativa-centro-de-operacoes-permanente-na-base-aerea-de-monte-real",
+      "published_date_local": "2026-06-19",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Governo presente nas comemorações do 10 de Junho em quatro continentes",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-presente-nas-comemoracoes-do-10-de-junho-em-quatro-continentes",
+      "published_date_local": "2026-06-12",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    }
+  ],
+  "live_status": {
+    "source_id": "pt_defence",
+    "source_name": "葡萄牙國防部",
+    "country": "PT",
+    "critical": false,
+    "success": true,
+    "fetched_via": "public-sitecore",
+    "raw_count": 34,
+    "relevant_count": 34,
+    "duration_seconds": 0.585,
+    "newest_published_at": "2026-09-30T15:07:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 34,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 34,
+    "freshness_lag_days": 2.37,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 2,
+    "bytes_downloaded": 717333,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200",
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "public_endpoint": "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1",
+  "transform": "Exact projection of official anonymous query title/path/CardDate/news-template/area IDs; biography fields omitted; first 8 genuine items; transient public routing value never saved",
+  "access": "No Authorization/API-key headers or authenticated fallback; public frontend routing identifier discovered afresh"
+}

@@ -22,7 +22,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://kanselarij.belgium.be/nl => RobotsDeniedError: robots.txt disallows: https://kanselarij.belgium.be/nl Recorded attempts: source-audit/ministry_expansion_be.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
         "https://www.vlaanderen.be/Organisation/OVO024763"
@@ -81,7 +81,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.ibz.be/nl => RobotsUnavailableError: https://www.ibz.be: robots.txt unreachable: ReadError: ; https://ibz.be/nl => RobotsUnavailableError: https://ibz.be: robots.txt unreachable: ReadError:  Recorded attempts: source-audit/ministry_expansion_be.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
         "https://www.vlaanderen.be/Organisation/OVO008237"
@@ -98,7 +98,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "HTTP 200 homepage is a JavaScript/support-ID challenge, not ministry news; no access-control workaround attempted. Recorded attempts: source-audit/ministry_expansion_be.json",
+      "reason": "HTTP 200 response parsed zero items and did not establish official ministry news; existing challenge/access concern remains unresolved. Next action: Wait for normal unauthenticated ministry news access or an independently published official feed; HTTP 200 shell is not verified news, and no access workaround is authorized. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
         "https://www.vlaanderen.be/Organisation/OVO005190"
@@ -177,7 +177,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.health.belgium.be/nl => RobotsUnavailableError: https://www.health.belgium.be: robots.txt unreachable: RemoteProtocolError: Server disconnected without sending a response.; https://www.health.belgium.be/en => RobotsUnavailableError: https://www.health.belgium.be: robots.txt unreachable: RemoteProtocolError: Server disconnected without sending a response. Recorded attempts: source-audit/ministry_expansion_be.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
         "https://www.vlaanderen.be/Organisation/OVO008238"
@@ -194,7 +194,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "HTTP 200 homepage is a JavaScript/support-ID challenge, not ministry news; no access-control workaround attempted. Recorded attempts: source-audit/ministry_expansion_be.json",
+      "reason": "HTTP 200 response parsed zero items and did not establish official ministry news; existing challenge/access concern remains unresolved. Next action: Wait for normal unauthenticated ministry news access or an independently published official feed; HTTP 200 shell is not verified news, and no access workaround is authorized. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
         "https://www.vlaanderen.be/Organisation/OVO003988"
@@ -252,8 +252,8 @@
       "homepage": "https://www.belspo.be",
       "news_url": null,
       "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Official language landing pages and Dutch page were captured; no bounded dated general-news parser replay established. Recorded attempts: source-audit/ministry_expansion_be.json",
+      "status": "needs_review",
+      "reason": "Official BELSPO press list mixes its own policy releases with institutes, museums and funded-company releases; general enrollment would include subagency/support news. Next action: Main: validate per-release BELSPO publisher ownership and clean h1 title/date extraction; limit to central BELSPO policy releases, excluding institute/support/third-party releases. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
         "https://www.vlaanderen.be/Organisation/OVO027346"

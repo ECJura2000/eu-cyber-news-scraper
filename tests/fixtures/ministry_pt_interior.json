@@ -1,0 +1,103 @@
+{
+  "source_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/administracao-interna/noticias",
+  "scope": [
+    "42283AE4FE1B45429C09A7151B79105F"
+  ],
+  "articles": [
+    {
+      "id": "6A77C6DA10E54CFBB9CF6E6BEF010A5C",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/protecao-civil-alerta-para-agravamento-do-perigo-de-incendio-rural",
+      "title": "Proteção Civil alerta para agravamento do perigo de incêndio rural",
+      "date": "20260918T180900Z",
+      "summary": "A subida das temperaturas, o vento e os baixos níveis de humidade deverão elevar o perigo de incêndio rural a muito elevado ou máximo em várias regiões do país.",
+      "areas": [
+        "42283AE4FE1B45429C09A7151B79105F"
+      ]
+    },
+    {
+      "id": "E74219A1FD8F44B5A3025F6BE35D761D",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/controlo-de-fronteiras-governo-retoma-negociacoes-com-representantes-das-forcas-de-seguranca",
+      "title": "Controlo de fronteiras: Governo retoma negociações com representantes das forças de segurança",
+      "date": "20260918T094700Z",
+      "summary": "Medidas de valorização profissional em discussão",
+      "areas": [
+        "42283AE4FE1B45429C09A7151B79105F"
+      ]
+    },
+    {
+      "id": "9AF07439445149E2BFA8D2ADAE6973A2",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/psp-madeira-celebra-148-anos-de-servico-",
+      "title": "PSP Madeira celebra 148 anos de serviço ",
+      "date": "20260903T193300Z",
+      "summary": "Aniversário marca compromisso com a Região Autónoma",
+      "areas": [
+        "42283AE4FE1B45429C09A7151B79105F"
+      ]
+    },
+    {
+      "id": "849EABB2D6714D778E1A2018A1C99FC8",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/onze-distritos-sob-aviso-amarelo-devido-a-subida-das-temperaturas",
+      "title": "Quatorze distritos sob aviso amarelo devido à subida das temperaturas",
+      "date": "20260902T210500Z",
+      "summary": "Perigo de incêndio rural estará muito elevado em grande parte do território\n",
+      "areas": [
+        "42283AE4FE1B45429C09A7151B79105F"
+      ]
+    },
+    {
+      "id": "A22EEAC68CFD4FA1A62F3369D14DFF96",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/eclipse-solar-governo-recomenda-cuidados-de-saude-e-seguranca-na-observacao",
+      "title": "Eclipse solar: Governo recomenda cuidados de saúde e segurança na observação",
+      "date": "20260811T181300Z",
+      "summary": "Fenómeno será visível em todo o território nacional, com a totalidade observável no nordeste transmontano",
+      "areas": [
+        "42283AE4FE1B45429C09A7151B79105F",
+        "00722D5A5350472D9E8640FD8B76FD7E"
+      ]
+    },
+    {
+      "id": "4A787C8A099B42D090E18C38A39E8406",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/formacao-do-siresp-em-leiria-reforca-capacidade-de-resposta-a-emergencias",
+      "title": "Formação do SIRESP em Leiria reforça capacidade de resposta a emergências",
+      "date": "20260806T161500Z",
+      "summary": "Mais de 100 profissionais participam numa ação de formação de quatro dias sobre a operação e a gestão da rede de comunicações de emergência",
+      "areas": [
+        "42283AE4FE1B45429C09A7151B79105F"
+      ]
+    },
+    {
+      "id": "EFA27F0E520C42C7AF3ACBB0A5B8E372",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/portugal-defende-resposta-europeia-firme-a-crise-em-ceuta",
+      "title": "Portugal defende resposta europeia firme à crise em Ceuta",
+      "date": "20260804T181200Z",
+      "summary": "Governo reforça a importância da implementação do Pacto sobre Asilo e Migração",
+      "areas": [
+        "42283AE4FE1B45429C09A7151B79105F"
+      ]
+    },
+    {
+      "id": "D0BF6844F63B472AA88D9F36FB4A01EC",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/portugal-envia-forca-operacional-conjunta-para-espanha",
+      "title": "Portugal envia Força Operacional Conjunta para Espanha",
+      "date": "20260725T195400Z",
+      "summary": "Força com 128 operacionais apoiará as autoridades espanholas no combate ao incêndio de grandes dimensões na região de Madrid",
+      "areas": [
+        "42283AE4FE1B45429C09A7151B79105F"
+      ]
+    }
+  ],
+  "truncated": false,
+  "response_sha256": [
+    "2bc18e11349086a2b336ade0ad956db0accc15df27e992f51dec270d523df16c",
+    "d6473549ffed5515c6bb613c8b3644682501fc6fe7104e7bef036ad4609bd2ae"
+  ],
+  "public_endpoint": "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+}

@@ -1,14 +1,16 @@
 {
   "schema_version": 1,
   "country": "RO",
-  "reviewed_on": "2026-10-01",
+  "reviewed_on": "2026-10-02",
   "official_roster_urls": [
     "https://gov.ro/ro/guvernul/organizare/ministere",
     "https://gov.ro/ro/guvernul/organizare",
     "https://gov.ro/ro/guvernul/organizare/aparatul-de-lucru-al-guvernului"
   ],
   "roster_complete": true,
-  "limitations": [],
+  "limitations": [
+    "2026-10-02 round3 south: 7 manually verified, 0 existing-source ministries, 11 unresolved. Exact current failures and parser/attribution limitations are recorded per initial unresolved ID in tests/fixtures/ministry_round3_south.json. Endpoint failures are not obsolete designations. New sources are manual-only, schedule_enabled=false, critical=false, all 15 OBSERVATION_TOPICS, empty responsibility_by_topic."
+  ],
   "ministries": [
     {
       "canonical_id": "ro_transport",
@@ -21,7 +23,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://www.mt.ro: robots.txt unreachable: HTTP 503; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_transport).",
       "evidence_urls": [
         "https://gov.ro/ro/guvernul/organizare/ministere",
         "https://www.mt.ro"
@@ -77,9 +79,14 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://www.mae.gov.ro: robots.txt unreachable: ConnectError: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028); retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "reason": "2026-10-02 round3 south: Verified TLS/robots retrieval fails on the canonical ministry endpoint. Recheck after server certificate/transport repair; do not disable TLS, use credentials, or classify the ministry obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_foreign_affairs).",
       "evidence_urls": [
-        "https://gov.ro/ro/guvernul/organizare/ministere"
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://gov.ro/ro/guvernul/sedinte-guvern",
+        "https://gov.ro/ro/media/comunicate",
+        "https://gov.ro/ro/media/comunicate/guvernul-raspunde-cetatenilor&page=1",
+        "https://gov.ro/ro/rss",
+        "https://www.mae.gov.ro/"
       ]
     },
     {
@@ -133,7 +140,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://economie.gov.ro: robots.txt unreachable: HTTP 503; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_economy_digital).",
       "evidence_urls": [
         "https://gov.ro/ro/guvernul/organizare/ministere",
         "https://economie.gov.ro/"
@@ -150,9 +157,14 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://energie.gov.ro: robots.txt unreachable: HTTP 503; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_energy).",
       "evidence_urls": [
-        "https://gov.ro/ro/guvernul/organizare/ministere"
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://gov.ro/ro/guvernul/sedinte-guvern",
+        "https://gov.ro/ro/media/comunicate",
+        "https://gov.ro/ro/media/comunicate/guvernul-raspunde-cetatenilor&page=1",
+        "https://gov.ro/ro/rss",
+        "https://energie.gov.ro/"
       ]
     },
     {
@@ -166,9 +178,14 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://www.madr.ro: robots.txt unreachable: HTTP 503; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_agriculture).",
       "evidence_urls": [
-        "https://gov.ro/ro/guvernul/organizare/ministere"
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://gov.ro/ro/guvernul/sedinte-guvern",
+        "https://gov.ro/ro/media/comunicate",
+        "https://gov.ro/ro/media/comunicate/guvernul-raspunde-cetatenilor&page=1",
+        "https://gov.ro/ro/rss",
+        "https://www.madr.ro/"
       ]
     },
     {
@@ -201,7 +218,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://www.mdlpa.ro: robots.txt unreachable: ConnectTimeout: ; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_development).",
       "evidence_urls": [
         "https://gov.ro/ro/guvernul/organizare/ministere",
         "https://www.mdlpa.ro/"
@@ -218,9 +235,14 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://mfe.gov.ro: robots.txt unreachable: HTTP 503; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_european_investment).",
       "evidence_urls": [
-        "https://gov.ro/ro/guvernul/organizare/ministere"
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://gov.ro/ro/guvernul/sedinte-guvern",
+        "https://gov.ro/ro/media/comunicate",
+        "https://gov.ro/ro/media/comunicate/guvernul-raspunde-cetatenilor&page=1",
+        "https://gov.ro/ro/rss",
+        "https://mfe.gov.ro/"
       ]
     },
     {
@@ -234,7 +256,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://mmuncii.gov.ro: robots.txt unreachable: HTTP 503; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_labour_family_youth).",
       "evidence_urls": [
         "https://gov.ro/ro/guvernul/organizare/ministere",
         "https://mmuncii.gov.ro/"
@@ -291,7 +313,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://www.cultura.ro: robots.txt unreachable: HTTP 503; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_culture).",
       "evidence_urls": [
         "https://gov.ro/ro/guvernul/organizare/ministere",
         "https://www.cultura.ro"
@@ -308,7 +330,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://cancelarie.gov.ro: robots.txt unreachable: HTTP 503; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_prime_minister).",
       "evidence_urls": [
         "https://gov.ro/ro/guvernul/organizare",
         "https://gov.ro/ro/guvernul/organizare/aparatul-de-lucru-al-guvernului",
@@ -326,7 +348,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 live recheck with robots enforcement and TLS verification: RobotsUnavailableError: https://sgg.gov.ro: robots.txt unreachable: HTTP 503; retained as blocked, not enrolled. Evidence: tests/fixtures/ministry_ro_blocked_recheck.provenance.json",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_government_secretariat).",
       "evidence_urls": [
         "https://gov.ro/ro/guvernul/organizare",
         "https://gov.ro/ro/guvernul/organizare/aparatul-de-lucru-al-guvernului",

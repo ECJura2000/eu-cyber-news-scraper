@@ -18,8 +18,8 @@
       "homepage": "https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt",
       "news_url": "https://www.bundesregierung.de/breg-de/aktuelles/pressemitteilungen",
       "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Official press page returns static shell/print controls without dated listing cards; generic portal feed must not be assigned without publisher attribution. Recorded attempts: source-audit/ministry_expansion_de.json",
+      "status": "needs_review",
+      "reason": "Bundesregierung/Bundespresseamt portal links and shells do not establish Bundeskanzleramt-specific ministry news ownership. Next action: Find a first-party Chancellery publisher-scoped listing/feed; do not enroll the sitewide Bundesregierung portal as a Chancellery alias. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien"
       ]
@@ -35,7 +35,7 @@
       "news_url": "https://www.bundesfinanzministerium.de/Web/DE/Home/Web/DE/Presse/Pressemitteilungen/pressemitteilungen.html",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.bundesfinanzministerium.de/Web/DE/Home/Web/DE/Presse/Pressemitteilungen/pressemitteilungen.html => RobotsUnavailableError: https://www.bundesfinanzministerium.de: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known; https://www.bundesfinanzministerium.de/Web/DE/Home/home.html => RobotsUnavailableError: https://www.bundesfinanzministerium.de: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known Recorded attempts: source-audit/ministry_expansion_de.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
         "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesministerium-der-finanzen",
@@ -112,8 +112,8 @@
       "homepage": "https://www.bundeswirtschaftsministerium.de/Navigation/DE/Home/home.html",
       "news_url": null,
       "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Official homepage/RSS service page captured; actual feed endpoint and dated production feed replay not yet validated. Recorded attempts: source-audit/ministry_expansion_de.json",
+      "status": "blocked",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
         "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesministerium-fuer-wirtschaft-und-energie"
@@ -127,10 +127,12 @@
       "kind": "ministry",
       "language": "de",
       "homepage": "https://www.bmftr.bund.de/DE/Home/home_node.html",
-      "news_url": "https://www.bmftr.bund.de/SiteGlobals/Forms/Suche/Expertensuche/Expertensuche_Formular.html?format_str=pressrelease",
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Homepage and news/detail alternatives captured after intermittent DNS/robots availability errors; dated general press-listing replay remains unvalidated. Recorded attempts: source-audit/ministry_expansion_de.json",
+      "news_url": "https://www.bmftr.bund.de/DE/Home/home_node.html",
+      "source_ids": [
+        "de_bmftr"
+      ],
+      "status": "manual_verified",
+      "reason": "Source-scoped ministry news passed production scrape_source with 13 dated items; bounded genuine fixture reproduces 6 exact titles, URLs, local dates and confidence values. Next action: Manual collection only. Review freshness and publisher ownership during later observations before any separate scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
         "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesministerium-fuer-forschung-technologie-und-raumfahrt",
@@ -146,10 +148,12 @@
       "kind": "ministry",
       "language": "de",
       "homepage": "https://www.bmjv.de/DE/Startseite/Startseite_node.html",
-      "news_url": "https://www.bmjv.de/DE/presse/presse_node.html",
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Official press and RSS index pages accessible, but press search is robots-denied; newsfeed discovery did not produce a validated dated feed. Service/report-barrier links are not news. Recorded attempts: source-audit/ministry_expansion_de.json",
+      "news_url": "https://www.bmjv.de/DE/Startseite/Startseite_node.html",
+      "source_ids": [
+        "de_bmjv"
+      ],
+      "status": "manual_verified",
+      "reason": "Source-scoped ministry news passed production scrape_source with 3 dated items; bounded genuine fixture reproduces 3 exact titles, URLs, local dates and confidence values. Next action: Manual collection only. Review freshness and publisher ownership during later observations before any separate scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
         "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesjustizministerium",
@@ -231,7 +235,7 @@
       "news_url": "https://www.bmv.de/DE/Home/DE/Meta/Presse/presse.html",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.bmv.de/DE/Home/DE/Meta/Presse/presse.html => RobotsUnavailableError: https://www.bmv.de: robots.txt unreachable: ConnectTimeout: ; https://www.bmv.de/DE/Home/home.html => RobotsUnavailableError: https://www.bmv.de: robots.txt unreachable: ConnectTimeout: ; https://bmv.de/ => RobotsUnavailableError: https://bmv.de: robots.txt unreachable: ConnectTimeout:  Recorded attempts: source-audit/ministry_expansion_de.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
         "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesministerium-fuer-verkehr",
@@ -289,10 +293,12 @@
       "kind": "ministry",
       "language": "de",
       "homepage": "https://www.bmleh.de/DE/Home/home_node.html",
-      "news_url": "https://www.bmleh.de/SiteGlobals/Functions/RSSFeed/RSSNewsfeed/RSSNewsfeed_Pressemitteilungen.xml",
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Initial presumed RSS URL redirects to homepage; dated animal-welfare topic cards exist, but general ministry RSS/listing is not validated. Recorded attempts: source-audit/ministry_expansion_de.json",
+      "news_url": "https://www.bmleh.de/DE/Home/home_node.html",
+      "source_ids": [
+        "de_bmleh"
+      ],
+      "status": "manual_verified",
+      "reason": "Source-scoped ministry news passed production scrape_source with 2 dated items; bounded genuine fixture reproduces 2 exact titles, URLs, local dates and confidence values. Next action: Manual collection only. Review freshness and publisher ownership during later observations before any separate scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
         "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundeslandwirtschaftsministerium-aufgaben-kontakt",

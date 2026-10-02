@@ -43,7 +43,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "parser_pending",
-      "reason": "Homepage is reachable with news, but the tested /aktuality route did not establish a dated general-news fixture; existing selectors need focused follow-up. Recorded attempts: source-audit/ministry_expansion_cz.json",
+      "reason": "No source promoted: reachable official content did not yet pass a source-scoped dated fixture and production scrape. Next action: Main: production homepage news cards have a Publikováno label but no date value; inspect published public frontend data or official detail dates. Do not substitute author, event or calendar dates. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://vlada.gov.cz/cz/vlada/ministerstva/",
         "https://csu.gov.cz/ministries_and_state_authorities"
@@ -122,13 +122,17 @@
       "kind": "ministry",
       "language": "cs",
       "homepage": "https://mf.gov.cz/",
-      "news_url": null,
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "General press listing and RSS index pages were captured. Dated topical financial-innovation cards exist, but general ministry feed/selector enrollment remains unvalidated. Recorded attempts: source-audit/ministry_expansion_cz.json",
+      "news_url": "https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026",
+      "source_ids": [
+        "cz_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "Source-scoped ministry news passed production scrape_source with 104 dated items; bounded genuine fixture reproduces 6 exact titles, URLs, local dates and confidence values. Next action: Manual collection only. Review freshness and publisher ownership during later observations before any separate scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://vlada.gov.cz/cz/vlada/ministerstva/",
-        "https://csu.gov.cz/ministries_and_state_authorities"
+        "https://csu.gov.cz/ministries_and_state_authorities",
+        "https://mf.gov.cz/",
+        "https://mf.gov.cz/cs/ministerstvo/media/tiskove-zpravy/2026"
       ]
     },
     {
@@ -180,13 +184,16 @@
       "kind": "ministry",
       "language": "cs",
       "homepage": "https://mzv.gov.cz/jnp/cz/index.html",
-      "news_url": null,
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Homepage and dated travel-advisory/detail pages were captured; no dedicated general press-news listing/feed replay was established. Recorded attempts: source-audit/ministry_expansion_cz.json",
+      "news_url": "https://mzv.gov.cz/jnp/cz/index.html",
+      "source_ids": [
+        "cz_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "Source-scoped ministry news passed production scrape_source with 9 dated items; bounded genuine fixture reproduces 6 exact titles, URLs, local dates and confidence values. Next action: Manual collection only. Review freshness and publisher ownership during later observations before any separate scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://vlada.gov.cz/cz/vlada/ministerstva/",
-        "https://csu.gov.cz/ministries_and_state_authorities"
+        "https://csu.gov.cz/ministries_and_state_authorities",
+        "https://mzv.gov.cz/jnp/cz/index.html"
       ]
     },
     {
@@ -200,7 +207,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://mpo.gov.cz/ => RobotsDeniedError: robots.txt disallows: https://mpo.gov.cz/; https://mpo.gov.cz/cz/rozcestnik/pro-media/tiskove-zpravy/ => RobotsDeniedError: robots.txt disallows: https://mpo.gov.cz/cz/rozcestnik/pro-media/tiskove-zpravy/ Recorded attempts: source-audit/ministry_expansion_cz.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://vlada.gov.cz/cz/vlada/ministerstva/",
         "https://csu.gov.cz/ministries_and_state_authorities"
@@ -258,7 +265,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://mze.gov.cz/ => RobotsUnavailableError: https://mze.gov.cz: robots.txt unreachable: ConnectTimeout: ; https://mze.gov.cz/public/portal/ => RobotsUnavailableError: https://mze.gov.cz: robots.txt unreachable: ConnectTimeout:  Recorded attempts: source-audit/ministry_expansion_cz.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://vlada.gov.cz/cz/vlada/ministerstva/",
         "https://csu.gov.cz/ministries_and_state_authorities"

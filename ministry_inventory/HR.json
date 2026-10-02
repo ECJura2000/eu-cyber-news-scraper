@@ -8,7 +8,7 @@
   ],
   "roster_complete": true,
   "limitations": [
-    "2026-10-02 ministry news audit: 0 manually verified and 0 existing-source ministries; 19 unresolved. Roster enumeration does not imply searchable completeness. Exact tried URLs and robots/transport/parser/attribution limitations are recorded per ministry; unresolved rows have no runnable source. New sources retain disabled scheduling/noncritical status, all 15 topics, empty responsibility, and genuine checksum-backed fixture replay."
+    "2026-10-02 round3 south: 0 manually verified, 0 existing-source ministries, 19 unresolved. Exact current failures and parser/attribution limitations are recorded per initial unresolved ID in tests/fixtures/ministry_round3_south.json. Endpoint failures are not obsolete designations. New sources are manual-only, schedule_enabled=false, critical=false, all 15 OBSERVATION_TOPICS, empty responsibility_by_topic."
   ],
   "ministries": [
     {
@@ -22,7 +22,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://vlada.gov.hr/ => RobotsUnavailableError: https://vlada.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.vlada.gov.hr/ => RobotsUnavailableError: https://www.vlada.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://vlada.gov.hr/rss => RobotsUnavailableError: https://vlada.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_prime_minister).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",
@@ -42,7 +42,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://branitelji.gov.hr/ => RobotsUnavailableError: https://branitelji.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.branitelji.gov.hr/ => RobotsUnavailableError: https://www.branitelji.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://branitelji.gov.hr/rss => RobotsUnavailableError: https://branitelji.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_veterans).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",
@@ -62,7 +62,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://mup.gov.hr/ => RobotsUnavailableError: https://mup.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.mup.gov.hr/ => RobotsUnavailableError: https://www.mup.gov.hr: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known; https://mup.gov.hr/rss => RobotsUnavailableError: https://mup.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_interior).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",
@@ -82,7 +82,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://mmpi.gov.hr/ => RobotsUnavailableError: https://mmpi.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.mmpi.gov.hr/ => RobotsUnavailableError: https://www.mmpi.gov.hr: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known; https://mmpi.gov.hr/rss => RobotsUnavailableError: https://mmpi.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_sea_transport).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",
@@ -102,7 +102,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://morh.gov.hr/ => RobotsUnavailableError: https://morh.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.morh.gov.hr/ => RobotsUnavailableError: https://www.morh.gov.hr: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known; https://morh.gov.hr/rss => RobotsUnavailableError: https://morh.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_defence).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",
@@ -122,7 +122,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://mpgi.gov.hr/ => RobotsUnavailableError: https://mpgi.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.mpgi.gov.hr/ => RobotsUnavailableError: https://www.mpgi.gov.hr: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known; https://mpgi.gov.hr/rss => RobotsUnavailableError: https://mpgi.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_spatial_construction).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",
@@ -142,7 +142,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://vlada.gov.hr/uredi-vlade/31999 => RobotsUnavailableError: https://vlada.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://poljoprivreda.gov.hr/ => RobotsUnavailableError: https://poljoprivreda.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.poljoprivreda.gov.hr/ => RobotsUnavailableError: https://www.poljoprivreda.gov.hr: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known; https://poljoprivreda.gov.hr/rss => RobotsUnavailableError: https://poljoprivreda.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_agriculture).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",
@@ -162,7 +162,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://vlada.gov.hr/uredi-vlade/31999 => RobotsUnavailableError: https://vlada.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://mfin.gov.hr/ => RobotsUnavailableError: https://mfin.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.mfin.gov.hr/ => RobotsUnavailableError: https://www.mfin.gov.hr: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known; https://mfin.gov.hr/rss => RobotsUnavailableError: https://mfin.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_finance).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",
@@ -182,7 +182,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://vlada.gov.hr/uredi-vlade/31999 => RobotsUnavailableError: https://vlada.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://mvep.gov.hr/ => RobotsUnavailableError: https://mvep.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.mvep.gov.hr/ => RobotsUnavailableError: https://www.mvep.gov.hr: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known; https://mvep.gov.hr/rss => RobotsUnavailableError: https://mvep.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_foreign_affairs).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",
@@ -202,7 +202,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://vlada.gov.hr/uredi-vlade/31999 => RobotsUnavailableError: https://vlada.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://mingo.gov.hr/ => RobotsUnavailableError: https://mingo.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.mingo.gov.hr/ => RobotsUnavailableError: https://www.mingo.gov.hr: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known; https://mingo.gov.hr/rss => RobotsUnavailableError: https://mingo.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_economy).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",
@@ -222,7 +222,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://vlada.gov.hr/uredi-vlade/31999 => RobotsUnavailableError: https://vlada.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://mzozt.gov.hr/ => RobotsUnavailableError: https://mzozt.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.mzozt.gov.hr/ => RobotsUnavailableError: https://www.mzozt.gov.hr: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known; https://mzozt.gov.hr/rss => RobotsUnavailableError: https://mzozt.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_environment).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",
@@ -242,7 +242,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://mpudt.gov.hr/ => RobotsUnavailableError: https://mpudt.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.mpudt.gov.hr/ => RobotsUnavailableError: https://www.mpudt.gov.hr: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known; https://mpudt.gov.hr/rss => RobotsUnavailableError: https://mpudt.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_justice_digital).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",
@@ -262,7 +262,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://vlada.gov.hr/uredi-vlade/31999 => RobotsUnavailableError: https://vlada.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://mzom.gov.hr/ => RobotsUnavailableError: https://mzom.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.mzom.gov.hr/ => RobotsUnavailableError: https://www.mzom.gov.hr: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known; https://mzom.gov.hr/rss => RobotsUnavailableError: https://mzom.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_education_science).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",
@@ -282,7 +282,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://mdu.gov.hr/ => RobotsUnavailableError: https://mdu.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.mdu.gov.hr/ => RobotsUnavailableError: https://www.mdu.gov.hr: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known; https://mdu.gov.hr/rss => RobotsUnavailableError: https://mdu.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_demography).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",
@@ -302,7 +302,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://vlada.gov.hr/uredi-vlade/31999 => RobotsUnavailableError: https://vlada.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://min-kulture.gov.hr/ => RobotsUnavailableError: https://min-kulture.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.min-kulture.gov.hr/ => RobotsUnavailableError: https://www.min-kulture.gov.hr: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known; https://min-kulture.gov.hr/rss => RobotsUnavailableError: https://min-kulture.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_culture).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",
@@ -322,7 +322,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://vlada.gov.hr/uredi-vlade/31999 => RobotsUnavailableError: https://vlada.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://mint.gov.hr/ => RobotsUnavailableError: https://mint.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.mint.gov.hr/ => RobotsUnavailableError: https://www.mint.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://mint.gov.hr/rss => RobotsUnavailableError: https://mint.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_tourism_sport).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",
@@ -342,7 +342,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://vlada.gov.hr/uredi-vlade/31999 => RobotsUnavailableError: https://vlada.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://razvoj.gov.hr/ => RobotsUnavailableError: https://razvoj.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.razvoj.gov.hr/ => RobotsUnavailableError: https://www.razvoj.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://razvoj.gov.hr/rss => RobotsUnavailableError: https://razvoj.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_regional_eu).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",
@@ -362,7 +362,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://vlada.gov.hr/uredi-vlade/31999 => RobotsUnavailableError: https://vlada.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://mrosp.gov.hr/ => RobotsUnavailableError: https://mrosp.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.mrosp.gov.hr/ => RobotsUnavailableError: https://www.mrosp.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://mrosp.gov.hr/rss => RobotsUnavailableError: https://mrosp.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_labour_social).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",
@@ -382,7 +382,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Bare-host and www-host ministry alternatives plus RSS routes failed to retrieve robots.txt with verified TLS from this public-network environment. Government-host curl checks also timed out at 15 seconds. This is a current environment/transport limitation, not proof that the website has no news or is obsolete. Tested alternatives: https://vlada.gov.hr/uredi-vlade/31999 => RobotsUnavailableError: https://vlada.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://zdravstvo.gov.hr/ => RobotsUnavailableError: https://zdravstvo.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://www.zdravstvo.gov.hr/ => RobotsUnavailableError: https://www.zdravstvo.gov.hr: robots.txt unreachable: ConnectTimeout: ; https://zdravstvo.gov.hr/rss => RobotsUnavailableError: https://zdravstvo.gov.hr: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hr_health).",
       "evidence_urls": [
         "https://vlada.gov.hr/clanovi-vlade/128",
         "https://vlada.gov.hr/uredi-vlade/31999",

@@ -15,5 +15,6 @@ fi
 .venv/bin/python -m eu_cyber_news_scraper.source_catalog --check
 .venv/bin/python -m eu_cyber_news_scraper ministries --check >/dev/null
 .venv/bin/python scripts/render_ministry_inventory.py --check
+.venv/bin/python scripts/render_ministry_recheck.py --check
 .venv/bin/pytest --cov=eu_cyber_news_scraper --cov-report=term-missing --cov-fail-under=92
 .venv/bin/pip-audit

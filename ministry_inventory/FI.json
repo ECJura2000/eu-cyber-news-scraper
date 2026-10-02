@@ -22,7 +22,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://valtioneuvosto.fi/en/prime-ministers-office => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/prime-ministers-office; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://valtioneuvosto.fi/en/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/en/current-issues/press-releases; https://valtioneuvosto.fi/en/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/rss",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -45,7 +45,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://um.fi => HTTPStatusError: Client error '403 Forbidden' for url 'https://um.fi'; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://um.fi/en/current-issues/press-releases => HTTPStatusError: Client error '403 Forbidden' for url 'https://um.fi/en/current-issues/press-releases'; https://um.fi/rss => HTTPStatusError: Client error '403 Forbidden' for url 'https://um.fi/rss'",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -68,7 +68,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://oikeusministerio.fi => RobotsDeniedError: robots.txt disallows: https://oikeusministerio.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://oikeusministerio.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://oikeusministerio.fi/en/current-issues/press-releases; https://oikeusministerio.fi/rss => RobotsDeniedError: robots.txt disallows: https://oikeusministerio.fi/rss",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -91,7 +91,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://intermin.fi => RobotsDeniedError: robots.txt disallows: https://intermin.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://intermin.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://intermin.fi/en/current-issues/press-releases; https://intermin.fi/rss => RobotsDeniedError: robots.txt disallows: https://intermin.fi/rss",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -114,7 +114,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://www.defmin.fi => RobotsDeniedError: robots.txt disallows: https://www.defmin.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://www.defmin.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://www.defmin.fi/en/current-issues/press-releases; https://www.defmin.fi/rss => RobotsDeniedError: robots.txt disallows: https://www.defmin.fi/rss",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -137,7 +137,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://vm.fi => RobotsDeniedError: robots.txt disallows: https://vm.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://vm.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://vm.fi/en/current-issues/press-releases; https://vm.fi/rss => RobotsDeniedError: robots.txt disallows: https://vm.fi/rss",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -160,7 +160,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://okm.fi => RobotsDeniedError: robots.txt disallows: https://okm.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://okm.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://okm.fi/en/current-issues/press-releases; https://okm.fi/rss => RobotsDeniedError: robots.txt disallows: https://okm.fi/rss",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -183,7 +183,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://mmm.fi => RobotsDeniedError: robots.txt disallows: https://mmm.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://mmm.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://mmm.fi/en/current-issues/press-releases; https://mmm.fi/rss => RobotsDeniedError: robots.txt disallows: https://mmm.fi/rss",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -206,7 +206,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://lvm.fi => RobotsDeniedError: robots.txt disallows: https://lvm.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://lvm.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://lvm.fi/en/current-issues/press-releases; https://lvm.fi/rss => RobotsDeniedError: robots.txt disallows: https://lvm.fi/rss",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -229,7 +229,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://tem.fi => RobotsDeniedError: robots.txt disallows: https://tem.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://tem.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://tem.fi/en/current-issues/press-releases; https://tem.fi/rss => RobotsDeniedError: robots.txt disallows: https://tem.fi/rss",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -252,7 +252,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://stm.fi => RobotsDeniedError: robots.txt disallows: https://stm.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://stm.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://stm.fi/en/current-issues/press-releases; https://stm.fi/rss => RobotsDeniedError: robots.txt disallows: https://stm.fi/rss",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -275,7 +275,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Ministry HTML and published-government-feed alternatives were checked; production robots enforcement denied the tested paths (Foreign Affairs also returned HTTP 403). No robots bypass, alternative User-Agent or insecure TLS used. Tested alternatives: https://ym.fi => RobotsDeniedError: robots.txt disallows: https://ym.fi; https://valtioneuvosto.fi/en/about-the-site => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/about-the-site; https://valtioneuvosto.fi/en/staattiset-feedit-en => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/en/staattiset-feedit-en; https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss => RobotsDeniedError: robots.txt disallows: https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss; https://ym.fi/en/current-issues/press-releases => RobotsDeniedError: robots.txt disallows: https://ym.fi/en/current-issues/press-releases; https://ym.fi/rss => RobotsDeniedError: robots.txt disallows: https://ym.fi/rss",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",

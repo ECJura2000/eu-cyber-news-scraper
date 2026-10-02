@@ -1,0 +1,126 @@
+{
+  "source_id": "pt_environment_energy",
+  "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia/noticias",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T08:47:56.429487+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "7bfac3daf5d9fa97deb0a3e4ec2c155b7e5594bd83e4e866e4a69194fe4d0123",
+  "listing_response_sha256": "50a6874ffcf7cedc4bf48912747b22dc48e7fbaf3f10a1e6aeb31170c9dec402",
+  "response_sha256": [
+    "717a7f6c04e11973c8fdf8a968210ccc55a821df0c9d59a9e3f39b622e9fc6f7",
+    "9b9892f3bf7ce1644df65cff564da2b2ffaaf81ecf1a10abb843a13f6d4a13af",
+    "f33a83a3a532bf9c89bc11adcb4be17ccd58dc4c8e95dc2e8f0d4ba85a0632f0"
+  ],
+  "fixture_count": 8,
+  "parsed_count": 128,
+  "dated_count": 128,
+  "expected": [
+    {
+      "title": "Governo reforça apoios às famílias e aos transportes face ao aumento dos combustíveis",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-reforca-apoios-as-familias-e-aos-transportes-face-ao-aumento-dos-combustiveis-",
+      "published_date_local": "2026-09-24",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Combustíveis: esclarecimento do Governo sobre as reservas estratégicas nacionais",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/combustiveis-esclarecimento-do-governo-sobre-as-reservas-estrategicas-nacionais",
+      "published_date_local": "2026-09-24",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Terra+: Governo quer reduzir resíduos enviados para aterros",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/terra-governo-quer-reduzir-residuos-enviados-para-aterros",
+      "published_date_local": "2026-09-23",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Governo vai rever o ordenamento das praias entre Espichel e Odeceixe",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-vai-rever-o-ordenamento-das-praias-entre-espichel-e-odeceixe",
+      "published_date_local": "2026-09-21",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Governo prolonga medidas para proteger famílias e empresas face à subida dos combustíveis",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-prolonga-medidas-para-proteger-familias-e-empresas-face-a-subida-dos-combustiveis",
+      "published_date_local": "2026-09-07",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "PRR: 1,8 mil milhões executados em áreas estruturantes do ambiente e energia",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/prr-18-mil-milhoes-executados-em-areas-estruturantes-do-ambiente-e-energia",
+      "published_date_local": "2026-09-07",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Portugal vai duplicar capacidade de armazenamento de energia elétrica até 2030",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/portugal-vai-duplicar-capacidade-de-armazenamento-de-energia-eletrica-ate-2030",
+      "published_date_local": "2026-08-31",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Governo mobiliza financiamento para a recuperação de territórios afetados pelas intempéries",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-mobiliza-financiamento-para-a-recuperacao-de-territorios-afetados-pelas-intemperies",
+      "published_date_local": "2026-08-12",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    }
+  ],
+  "live_status": {
+    "source_id": "pt_environment_energy",
+    "source_name": "葡萄牙環境與能源部",
+    "country": "PT",
+    "critical": false,
+    "success": true,
+    "fetched_via": "public-sitecore",
+    "raw_count": 128,
+    "relevant_count": 128,
+    "duration_seconds": 1.58,
+    "newest_published_at": "2026-09-24T19:41:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 128,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 0.9922,
+    "in_range_count": 128,
+    "freshness_lag_days": 8.18,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 4,
+    "bytes_downloaded": 1582959,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200",
+      "200",
+      "200",
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "public_endpoint": "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1",
+  "transform": "Exact projection of official anonymous query title/path/CardDate/news-template/area IDs; biography fields omitted; first 8 genuine items; transient public routing value never saved",
+  "access": "No Authorization/API-key headers or authenticated fallback; public frontend routing identifier discovered afresh"
+}

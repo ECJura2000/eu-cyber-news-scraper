@@ -6,7 +6,9 @@
     "https://iisda.government.bg/ras/executive_power/ministries"
   ],
   "roster_complete": true,
-  "limitations": [],
+  "limitations": [
+    "2026-10-02 round3 south: 15 manually verified, 0 existing-source ministries, 4 unresolved. Scoped adapters have full fresh payload/local-date and bounded fixture replay; production dispatch and scrape_source verification passed. Verified sources remain manual-only, schedule_enabled=false, critical=false, all 15 topics, empty responsibility. Exact attempts are in tests/fixtures/ministry_round3_south.json; failures are not obsolete designations."
+  ],
   "ministries": [
     {
       "canonical_id": "bg_government",
@@ -204,11 +206,13 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.mpes.government.bg/ => RobotsDeniedError: robots.txt disallows: https://www.mpes.government.bg/; https://mpes.government.bg/ => RobotsDeniedError: robots.txt disallows: https://mpes.government.bg/ Recorded attempts: source-audit/ministry_expansion_bg.json",
+      "status": "needs_review",
+      "reason": "2026-10-02 round3 south: The official administrative roster has no runnable news endpoint; nism.bg is a youth-information portal that accepts submitted news, not a verified ministry news stream. Establish canonical ministry portal/attribution before promotion. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (bg_youth_sport).",
       "evidence_urls": [
         "https://iisda.government.bg/ras/executive_power/ministries",
-        "https://iisda.government.bg/ras/executive_power/ministry_organigram/1202"
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/1202",
+        "https://strategy.bg/",
+        "https://www.nism.bg/bg/"
       ]
     },
     {
@@ -222,7 +226,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.mon.bg/novini/ => RobotsDeniedError: robots.txt disallows: https://www.mon.bg/novini/; https://www.mon.bg/ => RobotsDeniedError: robots.txt disallows: https://www.mon.bg/ Recorded attempts: source-audit/ministry_expansion_bg.json",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (bg_education).",
       "evidence_urls": [
         "https://iisda.government.bg/ras/executive_power/ministries",
         "https://iisda.government.bg/ras/executive_power/ministry_organigram/81",
@@ -237,14 +241,17 @@
       "kind": "ministry",
       "language": "bg",
       "homepage": "https://www.moew.government.bg/",
-      "news_url": null,
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Official homepage and water-policy news pages were captured; general ministry news selectors were not validated. Do not enroll the water-only candidate as comprehensive coverage. Recorded attempts: source-audit/ministry_expansion_bg.json",
+      "news_url": "https://www.moew.government.bg/bg/prescentur/nacionalni-novini/",
+      "source_ids": [
+        "bg_environment"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 round3 south: Keep manual-only source disabled from scheduling; replay provenance fixture before any later activation. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (bg_environment).",
       "evidence_urls": [
         "https://iisda.government.bg/ras/executive_power/ministries",
         "https://iisda.government.bg/ras/executive_power/ministry_organigram/82",
-        "https://www.moew.government.bg/"
+        "https://www.moew.government.bg/",
+        "https://www.moew.government.bg/bg/prescentur/nacionalni-novini/"
       ]
     },
     {
@@ -254,15 +261,22 @@
       "name_en": "Ministry of Defence",
       "kind": "ministry",
       "language": "bg",
-      "homepage": "https://www.mod.bg/news",
-      "news_url": null,
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Official /news page is reachable, but multiple relative navigation routes resolve to 404; no complete dated listing fixture was validated. Recorded attempts: source-audit/ministry_expansion_bg.json",
+      "homepage": "https://www.mod.bg/",
+      "news_url": "https://www.mod.bg/news",
+      "source_ids": [
+        "bg_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: bg_defence_onclick implemented and production-verified: 8 parsed, 8 dated in the full fresh official response; scrape_source succeeded with 8 dated items. Exact source values, local dates, confidence, bounded fixture SHA256 and separate full-response SHA256 in tests/fixtures/ministry_bg_defence.provenance.json. Manual-only schedule_enabled=false, critical=false, all 15 topics, empty responsibility.",
       "evidence_urls": [
         "https://iisda.government.bg/ras/executive_power/ministries",
         "https://iisda.government.bg/ras/executive_power/ministry_organigram/89",
-        "https://www.mod.bg/news"
+        "https://www.mod.bg/news",
+        "https://www.mod.bg/upcoming_news",
+        "https://www.mod.bg/presscenter",
+        "https://www.mod.bg/news_arhiv",
+        "https://www.mod.bg/news/2/1,2,3",
+        "https://www.mod.bg/"
       ]
     },
     {
@@ -273,14 +287,20 @@
       "kind": "ministry",
       "language": "bg",
       "homepage": "https://justice.government.bg/home/",
-      "news_url": null,
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Official /home/index/news?top=1 response contains client-rendered/localization placeholders; existing HTML parser finds no dated news. Recorded attempts: source-audit/ministry_expansion_bg.json",
+      "news_url": "https://justice.government.bg/api/content/GetNewsSQData?count=3&blockId=5&lang=bg",
+      "source_ids": [
+        "bg_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: bg_justice_json implemented and production-verified: 3 parsed, 3 dated in the full fresh official response; scrape_source succeeded with 3 dated items. Exact source values, local dates, confidence, bounded fixture SHA256 and separate full-response SHA256 in tests/fixtures/ministry_bg_justice.provenance.json. Manual-only schedule_enabled=false, critical=false, all 15 topics, empty responsibility.",
       "evidence_urls": [
         "https://iisda.government.bg/ras/executive_power/ministries",
         "https://iisda.government.bg/ras/executive_power/ministry_organigram/61",
-        "https://justice.government.bg/home/"
+        "https://justice.government.bg/home/",
+        "https://justice.government.bg/home/index/news?top=1",
+        "https://justice.government.bg/js/custom.js",
+        "https://justice.government.bg/js/mjprocess.js",
+        "https://justice.government.bg/api/content/GetNewsSQData?count=3&blockId=5&lang=bg"
       ]
     },
     {
@@ -294,7 +314,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.mrrb.bg/ => RobotsUnavailableError: https://www.mrrb.bg: robots.txt unreachable: ConnectTimeout:  Recorded attempts: source-audit/ministry_expansion_bg.json",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (bg_regional_development).",
       "evidence_urls": [
         "https://iisda.government.bg/ras/executive_power/ministries",
         "https://iisda.government.bg/ras/executive_power/ministry_organigram/85",
@@ -329,15 +349,19 @@
       "name_en": "Ministry of Labour and Social Policy",
       "kind": "ministry",
       "language": "bg",
-      "homepage": "https://www.mlsp.government.bg/novini-1",
-      "news_url": null,
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "General /novini cards expose English month dates under Bulgarian language configuration; an English route was also captured, but no consistent full-listing/saved-fixture replay was completed. Recorded attempts: source-audit/ministry_expansion_bg.json",
+      "homepage": "https://www.mlsp.government.bg/",
+      "news_url": "https://www.mlsp.government.bg/novini",
+      "source_ids": [
+        "bg_labour"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: bg_labour_english_dates implemented and production-verified: 12 parsed, 12 dated in the full fresh official response; scrape_source succeeded with 12 dated items. Exact source values, local dates, confidence, bounded fixture SHA256 and separate full-response SHA256 in tests/fixtures/ministry_bg_labour.provenance.json. Manual-only schedule_enabled=false, critical=false, all 15 topics, empty responsibility.",
       "evidence_urls": [
         "https://iisda.government.bg/ras/executive_power/ministries",
         "https://iisda.government.bg/ras/executive_power/ministry_organigram/87",
-        "https://www.mlsp.government.bg/novini-1"
+        "https://www.mlsp.government.bg/novini-1",
+        "https://www.mlsp.government.bg/novini",
+        "https://www.mlsp.government.bg/"
       ]
     },
     {
@@ -371,10 +395,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.minfin.bg/ => RobotsDeniedError: robots.txt disallows: https://www.minfin.bg/; https://minfin.bg/ => RobotsDeniedError: robots.txt disallows: https://minfin.bg/ Recorded attempts: source-audit/ministry_expansion_bg.json",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (bg_finance).",
       "evidence_urls": [
         "https://iisda.government.bg/ras/executive_power/ministries",
-        "https://iisda.government.bg/ras/executive_power/ministry_organigram/88"
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/88",
+        "https://strategy.bg/",
+        "https://www.minfin.bg/bg/news/2026-6"
       ]
     }
   ]

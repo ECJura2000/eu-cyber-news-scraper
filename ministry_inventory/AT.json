@@ -16,12 +16,16 @@
       "kind": "government_head_office",
       "language": "de",
       "homepage": "https://www.bundeskanzleramt.gv.at/",
-      "news_url": null,
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Europa-aktuell has dated ministry cards, but this review did not validate a general Chancellery news endpoint; keep the topical candidate for follow-up. Recorded attempts: source-audit/ministry_expansion_at.json",
+      "news_url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026.html",
+      "source_ids": [
+        "at_bka"
+      ],
+      "status": "manual_verified",
+      "reason": "Source-scoped ministry news passed production scrape_source with 50 dated items; bounded genuine fixture reproduces 6 exact titles, URLs, local dates and confidence values. Next action: Manual collection only. Review freshness and publisher ownership during later observations before any separate scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
-        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm"
+        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
+        "https://www.bundeskanzleramt.gv.at/",
+        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026.html"
       ]
     },
     {
@@ -75,7 +79,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production robots/TLS checks prevented content verification: https://www.bmeia.gv.at/ => RobotsDeniedError: robots.txt disallows: https://www.bmeia.gv.at/ Recorded attempts: source-audit/ministry_expansion_at.json",
+      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm"
       ]
@@ -194,8 +198,8 @@
       "homepage": "https://www.bmlv.gv.at/",
       "news_url": "https://www.bmlv.gv.at/misc/rss.php",
       "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Official RDF feed links use HTTP www.bundesheer.at rather than the fetched HTTPS www.bmlv.gv.at allowlist; production feed replay returned no admitted items. Listing card title/date selectors remain unvalidated. Recorded attempts: source-audit/ministry_expansion_at.json",
+      "status": "needs_review",
+      "reason": "Official RDF explicitly names BMLV/Presseabteilung as publisher, but nine of ten items are academy/subagency paths. A scoped CMS trial admits one item; feed dc:date 2026-09-30 differs from visible release date 29.09.2026. Next action: Main: resolve original publication versus update date with an official article detail adapter, admit only attributable central ministry releases, exclude /organisation/beitraege/ and preserve the original HTTP links without synthetic rewrites. Evidence: tests/fixtures/ministry_round3_north.json",
       "evidence_urls": [
         "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
         "https://www.bmlv.gv.at/",

@@ -9,7 +9,7 @@
   ],
   "roster_complete": true,
   "limitations": [
-    "2026-10-02 ministry news audit: 14 manually verified and 1 existing-source ministries; 14 unresolved. Roster enumeration does not imply searchable completeness. Exact tried URLs and robots/transport/parser/attribution limitations are recorded per ministry; unresolved rows have no runnable source. New sources retain disabled scheduling/noncritical status, all 15 topics, empty responsibility, and genuine checksum-backed fixture replay."
+    "2026-10-02 round3 south: 15 manually verified, 1 existing-source ministries, 13 unresolved. Scoped adapters have full fresh payload/local-date and bounded fixture replay; production dispatch and scrape_source verification passed. Verified sources remain manual-only, schedule_enabled=false, critical=false, all 15 topics, empty responsibility. Exact attempts are in tests/fixtures/ministry_round3_south.json; failures are not obsolete designations."
   ],
   "ministries": [
     {
@@ -65,7 +65,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.interno.gov.it/ => RobotsDeniedError: robots.txt disallows: https://www.interno.gov.it/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_interior).",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -83,7 +83,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.giustizia.it/ => RobotsUnavailableError: https://www.giustizia.it: robots.txt unreachable: RemoteProtocolError: Server disconnected without sending a response.",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_justice).",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -98,10 +98,12 @@
       "kind": "ministry",
       "language": "it",
       "homepage": "https://www.difesa.it/",
-      "news_url": null,
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Official homepage links to /primopiano/elenco/index.html. Both pages load an empty client-rendered news area; linked public archive scripts were inspected, but no bounded public dated feed/API replay was established. Guessed legacy HTML routes returned 404. A concrete public news payload and supported adapter are required before enrollment. Tested alternatives: https://www.difesa.it/ => HTTP 200; 106223 bytes; production parser 0 items/0 dated; https://www.difesa.it/primopiano.html => HTTPStatusError: Client error '404 Not Found' for url 'https://www.difesa.it/primopiano.html'; https://www.difesa.it/il-ministro/comunicati-stampa.html => HTTPStatusError: Client error '404 Not Found' for url 'https://www.difesa.it/il-ministro/comunicati-stampa.html'; https://www.difesa.it/primopiano/elenco/index.html => HTTP 200; 47903 bytes; captured public resource, no dated replay established; https://www.difesa.it/assets/js/elenco/elenco.v2.js => HTTP 200; 11808 bytes; captured public resource, no dated replay established; https://www.difesa.it/assets/js/index.js => HTTP 200; 1175 bytes; captured public resource, no dated replay established",
+      "news_url": "https://www.difesa.it/data/primopiano/elenco.json",
+      "source_ids": [
+        "it_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: it_defence_json implemented and production-verified: 3699 parsed, 3699 dated in the full fresh official response; scrape_source succeeded with 3684 dated items. Exact source values, local dates, confidence, bounded fixture SHA256 and separate full-response SHA256 in tests/fixtures/ministry_it_defence.provenance.json. Manual-only schedule_enabled=false, critical=false, all 15 topics, empty responsibility.",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -110,7 +112,10 @@
         "https://www.difesa.it/il-ministro/comunicati-stampa.html",
         "https://www.difesa.it/primopiano/elenco/index.html",
         "https://www.difesa.it/assets/js/elenco/elenco.v2.js",
-        "https://www.difesa.it/assets/js/index.js"
+        "https://www.difesa.it/assets/js/index.js",
+        "https://www.difesa.it/newsletter/index.html",
+        "https://www.difesa.it/assets/js/elenco/paginazione.v3.js",
+        "https://www.difesa.it/data/primopiano/elenco.json"
       ]
     },
     {
@@ -166,7 +171,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.politicheagricole.it/ => RobotsUnavailableError: https://www.politicheagricole.it: robots.txt returned HTML/challenge content; https://www.masaf.gov.it/ => RobotsUnavailableError: https://www.masaf.gov.it: robots.txt returned HTML/challenge content",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_agriculture).",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -185,7 +190,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.mite.gov.it/ => RobotsDeniedError: robots.txt disallows: https://www.mite.gov.it/; https://www.mase.gov.it/ => RobotsDeniedError: robots.txt disallows: https://www.mase.gov.it/",
+      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_environment).",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -287,7 +292,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.beniculturali.it/ => RobotsUnavailableError: https://www.beniculturali.it: robots.txt unreachable: ConnectTimeout: ; https://cultura.gov.it/ => RobotsUnavailableError: https://cultura.gov.it: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_culture).",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -306,7 +311,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.salute.gov.it/ => RobotsUnavailableError: https://www.salute.gov.it: robots.txt returned HTML/challenge content",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_health).",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -366,7 +371,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.funzionepubblica.gov.it/ => RobotsUnavailableError: https://www.funzionepubblica.gov.it: robots.txt unreachable: ConnectTimeout: ; https://www.funzionepubblica.gov.it/it/ => RobotsUnavailableError: https://www.funzionepubblica.gov.it: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_public_administration).",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -406,7 +411,7 @@
       "news_url": "https://www.protezionecivile.gov.it/it/rss/",
       "source_ids": [],
       "status": "parser_pending",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Portal HTML returns a 174-byte Loading shell. Official RSS page publishes api.protezionecivile.it/default/dpcPortalGenerateRss?categoria=notizia and categoria=comunicato_stampa, but production cannot retrieve the API robots policy; feed content was not fetched past the robots gate. No shared adapter proposed until a permitted genuine payload can be captured. Tested alternatives: https://www.protezionecivile.gov.it/ => HTTP 200; 174 bytes; production parser 0 items/0 dated; https://www.protezionecivile.gov.it/it/rss/ => HTTP 200; 969631 bytes; production parser 0 items/0 dated; https://api.protezionecivile.it/default/dpcPortalGenerateRss?categoria=notizia => RobotsUnavailableError: https://api.protezionecivile.it: robots.txt unreachable: HTTP 503; https://api.protezionecivile.it/default/dpcPortalGenerateRss?categoria=comunicato_stampa => RobotsUnavailableError: https://api.protezionecivile.it: robots.txt unreachable: HTTP 503",
+      "reason": "2026-10-02 round3 south: Official RSS page publishes api.protezionecivile.it endpoints but production robots retrieval on API host is unavailable. Retry only when verified TLS/robots succeed; frontend listing remains a JavaScript shell. Do not disable robots or promote zero items. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_civil_protection).",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -427,7 +432,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://presidenza.governo.it/AmministrazioneTrasparente/Organizzazione/ArticolazioneUffici/Dipartimenti/Dip_pol_del_mare.html => RobotsUnavailableError: https://presidenza.governo.it: robots.txt unreachable: ConnectTimeout: ; https://www.politichedelmare.gov.it/ => RobotsUnavailableError: https://www.politichedelmare.gov.it: robots.txt unreachable: ConnectError: All connection attempts failed",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_maritime_policies).",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -446,7 +451,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.affarieuropei.gov.it/it/ => RobotsUnavailableError: https://www.affarieuropei.gov.it: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_european_affairs).",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -506,7 +511,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.politichegiovanili.gov.it/ => RobotsUnavailableError: https://www.politichegiovanili.gov.it: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_youth).",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -545,7 +550,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. No runnable registry source enrolled: no fully dated, attributable ministry news endpoint passed both production scrape and bounded genuine fixture replay. Tested alternatives: https://www.pariopportunita.gov.it/ => RobotsUnavailableError: https://www.pariopportunita.gov.it: robots.txt unreachable: ConnectTimeout: ",
+      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_equal_opportunities).",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -584,7 +589,7 @@
       "news_url": "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/?tab=58f3f542-0aec-4999-b90c-9a8ce78b1258",
       "source_ids": [],
       "status": "parser_pending",
-      "reason": "2026-10-02 public-network, robots/TLS-enforced bounded audit. Original news listing has genuine titles and article links but no publication-date fields on most cards. Only 2/9 generic parses obtained dates, drawn from body/event text; those are not accepted as publication evidence. Sample news detail exposes only og:updated_time, not published_time. No invented publication dates or enrollment. Tested alternatives: https://www.riformeistituzionali.gov.it/ => HTTP 200; 89808 bytes; production parser 18 items/7 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/?tab=58f3f542-0aec-4999-b90c-9a8ce78b1258 => HTTP 200; 126179 bytes; production parser 9 items/2 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/verso-il-nuovo-codice-dell-amministrazione-digitale-cad/ => HTTP 200; 56361 bytes; production parser 2 items/0 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/pubblicato-il-report-finale-della-consultazione-pubblica-sulla-semplificazione/ => HTTP 200; 55821 bytes; production parser 3 items/0 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/disegno-di-legge-costituzionale-su-roma-capitale/ => HTTP 200; 62159 bytes; production parser 2 items/0 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/pubblicata-la-legge-in-materia-di-semplificazione-normativa/ => HTTP 200; 60432 bytes; production parser 2 items/0 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/partecipa/ => HTTP 200; 52908 bytes; production parser 2 items/0 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/il-ministro-casellati-al-forum-pa-2026/ => HTTP 200; 54742 bytes; production parser 2 items/0 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/semplificazione-il-ministro-casellati-a-bruxelles/ => HTTP 200; 55054 bytes; production parser 2 items/0 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/firmato-con-la-regione-lombadia-il-protocollo-di-intenti-per-la-semplificazione/ => HTTP 200; 55795 bytes; production parser 4 items/1 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/ => HTTP 200; 126179 bytes; production parser 9 items/2 dated; https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/pubblicata-la-legge-in-materia-di-semplificazione-normativa/ => HTTP 200; 60432 bytes; captured public resource, no dated replay established",
+      "reason": "2026-10-02 round3 south: Official news/cards and four article detail alternatives do not expose credible publication dates; dates parsed from consultation text are not publication dates, and og:updated_time is modification time. Find an explicit first-party publication field before promotion. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_institutional_reforms).",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -598,7 +603,11 @@
         "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/il-ministro-casellati-al-forum-pa-2026/",
         "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/semplificazione-il-ministro-casellati-a-bruxelles/",
         "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/firmato-con-la-regione-lombadia-il-protocollo-di-intenti-per-la-semplificazione/",
-        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/"
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/comunicati-stampa/?tab=c87f4f27-d1e4-43e8-92a4-5af22ce99422",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/?tab=58f3f542-0aec-4999-b90c-9a8ce78b1258",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/?tab=c87f4f27-d1e4-43e8-92a4-5af22ce99422",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/al-via-la-consultazione-pubblica-sul-codice-dell-amministrazione-digitale-cad/"
       ]
     }
   ]

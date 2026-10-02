@@ -13,7 +13,14 @@ import feedparser
 from bs4 import BeautifulSoup
 from bs4.element import Tag
 
+from .ministry_adapters import (
+    MINISTRY_FEED_ADAPTERS,
+    MINISTRY_LISTING_ADAPTERS,
+    parse_ministry_feed,
+    parse_ministry_listing,
+)
 from .models import Article, DateCandidate, Source, has_credible_date_conflict
+from .north_adapters import NORTH_ADAPTERS, parse_north_feed, parse_north_listing
 
 DATE_SETTINGS = {
     "RETURN_AS_TIMEZONE_AWARE": True,
@@ -61,6 +68,11 @@ def parse_datetime(
         return None
     languages = tuple(languages)
     normalized = value.strip()
+    if re.fullmatch(r"\d{8}T\d{6}Z", normalized):
+        try:
+            return datetime.strptime(normalized, "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc)
+        except ValueError:
+            return None
     hungarian = re.fullmatch(r"(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\.", normalized)
     if "hu" in languages and hungarian:
         try:
@@ -168,6 +180,10 @@ def discover_feeds(html: str, base_url: str) -> list[str]:
 
 
 def parse_feed(payload: bytes | str, source: Source, fetched_from: str) -> list[Article]:
+    if source.parser_adapter in NORTH_ADAPTERS:
+        return parse_north_feed(payload, source, fetched_from)
+    if source.parser_adapter in MINISTRY_FEED_ADAPTERS:
+        return parse_ministry_feed(payload, source, fetched_from)
     if _looks_like_json(payload):
         if source.parser_adapter == "wordpress_rest":
             return _parse_wordpress_json(payload, source, fetched_from)
@@ -207,7 +223,45 @@ def parse_feed(payload: bytes | str, source: Source, fetched_from: str) -> list[
     return articles
 
 
+def _parse_sitecore_public(payload: str, source: Source) -> list[Article]:
+    from .sitecore_public import NEWS_TEMPLATE, guid
+
+    data = json.loads(payload)
+    if data.get("source_url") != source.listing_url or not data.get("scope"):
+        raise ValueError("Public content lacks this ministry's listing scope")
+    scope = {guid(value) for value in data["scope"]}
+    articles = []
+    for row in data["articles"]:
+        if guid(row.get("template") or "00000000-0000-0000-0000-000000000000") != NEWS_TEMPLATE:
+            continue
+        if not scope.intersection(guid(value) for value in row.get("areas", [])):
+            continue
+        url = urljoin(source.listing_url, row["path"])
+        if urlsplit(url).hostname != urlsplit(source.listing_url).hostname or not allowed_article_url(source, url):
+            continue
+        title = plain_text(row.get("title"))
+        if not title:
+            continue
+        article = Article(source_id=source.id, country=source.country, source_name=source.name_zh,
+                          title=title, url=url, language=source.language,
+                          institution_type=source.institution_type, published_timezone=source.timezone,
+                          summary=plain_text(row.get("summary")), fetched_via=f"public-sitecore:{source.listing_url}")
+        if str(row.get("date") or "").startswith("00010101"):
+            raise ValueError("Official public news item has no valid publication date")
+        if not apply_publication_date(article, row.get("date"), timezone_name=source.timezone,
+                                      languages=(source.language,), source="json-api", confidence="high"):
+            raise ValueError("Official public news item has no valid publication date")
+        articles.append(article)
+    return articles
+
+
 def parse_listing(html: str, source: Source, base_url: str) -> list[Article]:
+    if source.parser_adapter in NORTH_ADAPTERS:
+        return parse_north_listing(html, source, base_url)
+    if source.parser_adapter in MINISTRY_LISTING_ADAPTERS:
+        return parse_ministry_listing(html, source, base_url)
+    if source.parser_adapter == "sitecore_public":
+        return _parse_sitecore_public(html, source)
     soup = BeautifulSoup(html, "lxml")
     base_node = soup.select_one("base[href]")
     document_base = urljoin(base_url, _attribute(base_node, "href")) if base_node else base_url

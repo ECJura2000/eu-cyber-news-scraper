@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-10-02.2",
+  "canonical_id": "pt_environment_energy",
+  "names": {
+    "zh": "葡萄牙環境與能源部",
+    "en": "Ministry of Environment and Energy",
+    "local": "Ministério do Ambiente e Energia",
+    "short": "pt_environment_energy",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "pt_environment_energy",
+      "country": "PT",
+      "name_zh": "葡萄牙環境與能源部",
+      "name": "Ministério do Ambiente e Energia",
+      "institution_type": "ministry",
+      "language": "pt",
+      "homepage": "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia/ministro",
+      "listing_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia/noticias",
+      "feed_urls": [],
+      "allow_domains": [
+        "portugal.gov.pt",
+        "www.portugal.gov.pt",
+        "edge-platform.sitecorecloud.io"
+      ],
+      "schedule_enabled": false,
+      "critical": false,
+      "detail_pages": 0,
+      "max_pages": 5,
+      "timezone": "Europe/Lisbon",
+      "parser_adapter": "sitecore_public"
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "數位身份",
+      "著作權",
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱",
+      "競爭規範面向（平台責任的市場結構面）",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-10-02",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-10-02",
+    "schedule_batch": "eu27_central_ministries",
+    "fixture_path": "tests/fixtures/ministry_pt_environment_energy.json",
+    "provenance_path": "tests/fixtures/ministry_pt_environment_energy.provenance.json",
+    "evidence_urls": [
+      "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia",
+      "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2025-926588602",
+      "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia/noticias",
+      "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+    ],
+    "last_smoke": {
+      "source_id": "pt_environment_energy",
+      "source_name": "葡萄牙環境與能源部",
+      "country": "PT",
+      "critical": false,
+      "success": true,
+      "fetched_via": "public-sitecore",
+      "raw_count": 128,
+      "relevant_count": 128,
+      "duration_seconds": 1.58,
+      "newest_published_at": "2026-09-24T19:41:00+00:00",
+      "warning": "",
+      "error": "",
+      "pages_fetched": 1,
+      "historical_median_count": 0.0,
+      "health_alerts": [],
+      "dated_count": 128,
+      "undated_ratio": 0.0,
+      "unique_title_ratio": 0.9922,
+      "in_range_count": 128,
+      "freshness_lag_days": 8.18,
+      "content_warning": "",
+      "fetch_status": "ok",
+      "health_status": "healthy",
+      "invalid_date_count": 0,
+      "unexplained_future_date_count": 0,
+      "timeout_count": 0,
+      "parse_status": "healthy",
+      "freshness_status": "fresh",
+      "content_status": "hits",
+      "request_count": 4,
+      "bytes_downloaded": 1582959,
+      "retry_count": 0,
+      "cache_hits": 0,
+      "budget_exhausted": false,
+      "http_statuses": [
+        "200",
+        "200",
+        "200",
+        "200"
+      ],
+      "error_code": "",
+      "historical_median_requests": 0.0,
+      "historical_median_bytes": 0.0,
+      "historical_median_duration": 0.0
+    }
+  }
+}

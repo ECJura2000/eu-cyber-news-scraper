@@ -1,0 +1,168 @@
+{
+  "source_id": "bg_environment",
+  "url": "https://www.moew.government.bg/bg/prescentur/nacionalni-novini/",
+  "final_url": "https://www.moew.government.bg/bg/prescentur/nacionalni-novini/",
+  "observed_at": "2026-10-02T08:34:57.929150+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "121ebbc2ec6f6fe04ef477a85df6f44afe78ca08e1dd8db07a0b0175b385ad3d",
+  "response_bytes": 134926,
+  "fixture_sha256": "cf90a40b959247191b4d7742308e49439a39a488155b5cbf51e72b4c12d2e843",
+  "fixture_bytes": 13169,
+  "transform": "BeautifulSoup serialization retaining first six real dated news containers and required selector ancestry; original attributes, titles, URLs and dates unchanged",
+  "expected": [
+    {
+      "title": "НИМХ възстанови излъчването от 27 синоптични станции в международен обмен",
+      "url": "https://www.moew.government.bg/bg/nimh-vuzstanovi-izluchvaneto-ot-27-sinoptichni-stancii-v-mejdunaroden-obmen/",
+      "published_date_local": "2026-10-01",
+      "published_at": "2026-09-30T21:00:00+00:00",
+      "date_source": "source-selector",
+      "date_confidence": "high",
+      "date_conflict": false
+    },
+    {
+      "title": "Европейската седмица на мобилността привлече хиляди към идеята за устойчив транспорт в градовете",
+      "url": "https://www.moew.government.bg/bg/evropejskata-sedmica-na-mobilnostta-privleche-hilyadi-kum-ideyata-za-ustojchiv-transport-v-gradovete/",
+      "published_date_local": "2026-10-01",
+      "published_at": "2026-09-30T21:00:00+00:00",
+      "date_source": "source-selector",
+      "date_confidence": "high",
+      "date_conflict": false
+    },
+    {
+      "title": "Министър Росица Карамфилова и посланик Мари Дюмулен откроиха общите приоритети на България и Франция в екологичните политики",
+      "url": "https://www.moew.government.bg/bg/ministur-rosica-karamfilova-i-poslanik-mari-dyumulen-otkroiha-obstite-prioriteti-na-bulgariya-i-franciya-v-ekologichnite-politiki/",
+      "published_date_local": "2026-09-30",
+      "published_at": "2026-09-29T21:00:00+00:00",
+      "date_source": "source-selector",
+      "date_confidence": "high",
+      "date_conflict": false
+    },
+    {
+      "title": "От 2027 г. влизат в сила нови изисквания за търговията със защитени животни, отглеждани в плен",
+      "url": "https://www.moew.government.bg/bg/ot-2027-g-vlizat-v-sila-novi-iziskvaniya-za-turgoviyata-sus-zastiteni-jivotni-otglejdani-v-plen/",
+      "published_date_local": "2026-09-28",
+      "published_at": "2026-09-27T21:00:00+00:00",
+      "date_source": "source-selector",
+      "date_confidence": "high",
+      "date_conflict": false
+    },
+    {
+      "title": "Язовирите за питейно-битово водоснабдяване са пълни над 80%",
+      "url": "https://www.moew.government.bg/bg/yazovirite-za-pitejno-bitovo-vodosnabdyavane-sa-pulni-nad-80/",
+      "published_date_local": "2026-09-28",
+      "published_at": "2026-09-27T21:00:00+00:00",
+      "date_source": "source-selector",
+      "date_confidence": "high",
+      "date_conflict": false
+    },
+    {
+      "title": "Басейнова дирекция – Благоевград налага най-високата наказателна мярка след проверка по сигнал за мъртва риба в река Бела река",
+      "url": "https://www.moew.government.bg/bg/basejnova-direkciya-blagoevgrad-nalaga-naj-visokata-nakazatelna-myarka-sled-proverka-po-signal-za-murtva-riba-v-reka-bela-reka/",
+      "published_date_local": "2026-09-25",
+      "published_at": "2026-09-24T21:00:00+00:00",
+      "date_source": "source-selector",
+      "date_confidence": "high",
+      "date_conflict": false
+    }
+  ],
+  "source_config": {
+    "id": "bg_environment",
+    "country": "BG",
+    "name_zh": "保加利亞環境與水資源部",
+    "name": "Министерство на околната среда и водите",
+    "institution_type": "ministry",
+    "language": "bg",
+    "homepage": "https://www.moew.government.bg/",
+    "listing_url": "https://www.moew.government.bg/bg/prescentur/nacionalni-novini/",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.moew.government.bg"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Sofia",
+    "card_selectors": [
+      "ul.news-list-internal > li"
+    ],
+    "link_selectors": [
+      "a:has(h3)"
+    ],
+    "title_selectors": [
+      "h3"
+    ],
+    "date_selectors": [
+      "span.date"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "live_status": {
+    "source_id": "bg_environment",
+    "source_name": "保加利亞環境與水資源部",
+    "country": "BG",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 12,
+    "relevant_count": 12,
+    "duration_seconds": 2.755,
+    "newest_published_at": "2026-09-30T21:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 12,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 12,
+    "freshness_lag_days": 2.12,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 134926,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "fixture_path": "tests/fixtures/ministry_bg_environment.html",
+  "format": "html"
+}

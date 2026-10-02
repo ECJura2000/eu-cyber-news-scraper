@@ -231,6 +231,8 @@ BMI 近期新聞使用[官方 RSS](https://www.bmi.bund.de/DE/service/rss-newsfe
 
 新增的 [中央部會追蹤名錄](MINISTRIES.md) 按 27 個會員國列出所有中央部會、政府首長辦公室及制度相當機關。權威名單保存在 `ministry_inventory/` 的逐國 JSON，可維護部會名稱、官方名錄與查核日期、新聞入口、對應來源 ID 及缺口原因。
 
+[剩餘入口逐項複查](REMAINING_MINISTRIES.md) 公開本批起始 201 個未完成入口的檢查結果與後續處理；CI 要求每個起始 ID 恰有一份檢查紀錄，不因成功新增其他來源就漏掉未完成項目。
+
 ```console
 python -m eu_cyber_news_scraper ministries --country AT
 python -m eu_cyber_news_scraper ministries --json --country FI
@@ -243,6 +245,10 @@ python -m eu_cyber_news_scraper ministries --country PL --audit-urls
 `--check` 只驗證 JSON、日期與來源參照，完整名錄不等於全部新聞都可抓取。JSON 摘要另外提供 `registered_ministries`（已登錄）、`unresolved_ministries`（未完成）及 `searchable_inventory_complete`（名錄內是否全部已登錄）；最後一項仍不是即時網站或正式排程品質保證。`--audit-urls` 才即時檢查未登錄部會的網址，使用既有 robots、TLS、公網 DNS、重新導向與間隔限制，不驗證解析器、不自動登錄。每次對相同 URL 只檢查一次，來源共用的入口不會推定其發布部會。
 
 既有 15 個主題與可替換 JSON 保留，補充捷克語、斯洛伐克語原文詞；各概念的不同語言譯名仍只計一次，來源責任機關未查證時顯示「未設定」。
+
+葡萄牙動態新聞列表採官網公開前端同一個匿名內容查詢，不使用 API 金鑰、認證標頭或受保護後台。每次先讀官方列表的當屆新聞根節點與部會篩選，再獨立檢查回傳文章的新聞模板及部會標記；不以全站新聞代替單一部會。公開前端路由值僅在記憶體內使用，不寫入 JSON、HTTP 快取或診斷。共用前端程式每次執行只下載一次；仍遵循 robots、TLS 與每站間隔。查詢超過設定分頁上限會明示期間可能不完整，不沿用失效設定或改用認證查詢。
+
+特殊格式使用來源限定解析器：保加利亞國防部只讀取新聞卡片中的文字與固定文章路徑，不執行 onclick；勞動部保留保加利亞語文章與官網原始英文月份日期。保加利亞司法部與義大利國防部只解析已確認的公開新聞 JSON，保留發布時間原文並排除非該機關文章網址。網站回傳成功或具有日期，仍不能單獨證明可搜尋；每個登錄來源另有原文 fixture、獨立 SHA-256 與實際執行證據。
 
 新增 `EU27 central ministry source audit` 在每週三臺北時間 09:15 分國檢測，最多四國同時執行，每國最多八來源併行。逐國 artifact 保存解析觀察與未登錄入口的 URL 診斷，保留 90 天；首次執行可復原舊的共同診斷 history，若不可復原則明示重新累積。原網址稽核改查 EU 層級及挪威，繼續智庫候選探索。工作完成只代表診斷完成，失敗入口、待解析與排程升級證據均需檢視 artifact；正式來源仍須三次連續合格觀察及完整翻譯／artifact／state 驗收。
 

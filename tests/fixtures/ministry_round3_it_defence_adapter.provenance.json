@@ -1,0 +1,69 @@
+{
+  "source_id": "it_defence",
+  "url": "https://www.difesa.it/data/primopiano/elenco.json",
+  "final_url": "https://www.difesa.it/data/primopiano/elenco.json",
+  "observed_at": "2026-10-02T08:32:59.674212+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "4e46aed3a95e4ba047c25c7541b178791d6a71523503cf6f9d338d879a284830",
+  "response_bytes": 2797712,
+  "fixture_sha256": "85f46ad32a7b4aed27746b53c968f654d0405d3a33d38aaf7d65236729bd0b20",
+  "fixture_bytes": 1890,
+  "fixture_path": "tests/fixtures/ministry_round3_it_defence_adapter.json",
+  "transform": "JSON first-entry field projection: exact original title/url/date fields; body/image/other fields omitted; no synthetic titles, links or dates",
+  "verification_status": "adapter_proposal_not_a_verified_source",
+  "production_parsed_count": 0,
+  "production_dated_count": 0,
+  "expected_after_adapter": [
+    {
+      "title": "Cultura della Difesa: cos’è un gruppo tattico?",
+      "url": "https://www.difesa.it/primopiano/cultura-della-difesa-cose-un-gruppo-tattico/112496.html",
+      "raw_date": "2026-10-02T00:00:00",
+      "published_date_local": "2026-10-02",
+      "date_confidence": "medium",
+      "date_basis": "Frontend contentitemdata is date-only midnight without zone; interpret in Europe/Rome and corroborate with visible sdata; adapter unimplemented"
+    },
+    {
+      "title": "Concorso per Volontari in ferma iniziale nella Marina Militare",
+      "url": "https://www.difesa.it/primopiano/concorso-per-volontari-in-ferma-iniziale-nella-marina-militare/113252.html",
+      "raw_date": "2026-10-01T00:00:00",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "medium",
+      "date_basis": "Frontend contentitemdata is date-only midnight without zone; interpret in Europe/Rome and corroborate with visible sdata; adapter unimplemented"
+    },
+    {
+      "title": "Disegno di legge sul rafforzamento e l’adeguamento della capacità di difesa nazionale: audizione del Ministro Crosetto",
+      "url": "https://www.difesa.it/primopiano/audizione-del-ministro-crosetto-al-senato-della-repubblica/113612.html",
+      "raw_date": "2026-10-01T00:00:00",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "medium",
+      "date_basis": "Frontend contentitemdata is date-only midnight without zone; interpret in Europe/Rome and corroborate with visible sdata; adapter unimplemented"
+    },
+    {
+      "title": "Vicinanza del Ministro Crosetto alle Forze Armate Libanesi ",
+      "url": "https://www.difesa.it/primopiano/vicinanza-del-ministro-crosetto-alle-forze-armate-libanesi/113652.html",
+      "raw_date": "2026-10-01T00:00:00",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "medium",
+      "date_basis": "Frontend contentitemdata is date-only midnight without zone; interpret in Europe/Rome and corroborate with visible sdata; adapter unimplemented"
+    },
+    {
+      "title": "Carabinieri salvano un uomo da un appartamento in fiamme a Vimodrone",
+      "url": "https://www.difesa.it/primopiano/carabinieri-salvano-un-uomo-da-un-appartamento-in-fiamme-a-vimodrone/113537.html",
+      "raw_date": "2026-09-30T00:00:00",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "medium",
+      "date_basis": "Frontend contentitemdata is date-only midnight without zone; interpret in Europe/Rome and corroborate with visible sdata; adapter unimplemented"
+    },
+    {
+      "title": "Cultura della Difesa: scopri come gli Allievi dell'Accademia Militare si preparano ad affrontare le sfide del futuro",
+      "url": "https://www.difesa.it/primopiano/cultura-della-difesa-scopri-come-gli-allievi-dell-accademia-militare-si-preparano-ad-affrontare-le-sfide-del-futuro/112513.html",
+      "raw_date": "2026-09-30T00:00:00",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "medium",
+      "date_basis": "Frontend contentitemdata is date-only midnight without zone; interpret in Europe/Rome and corroborate with visible sdata; adapter unimplemented"
+    }
+  ],
+  "next_action": "Public /data/primopiano/elenco.json is explicitly loaded by the official news frontend and contains titolo, url, contentitemdata and sdata. Add a country/source-specific JSON adapter; production currently parses zero. The real bounded JSON and exact expected rows are provided."
+}

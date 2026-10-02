@@ -1,0 +1,134 @@
+{
+  "source_id": "pt_council_presidency",
+  "url": "https://portugal.gov.pt/pt/gc25/primeiro-ministro/noticias",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T08:55:45.820167+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "8dd87537f4d0b86a4a1f48464f1e14f0316724fb380741ae11932e1b041704da",
+  "listing_response_sha256": "0730fbfadbb5835758c3917fcf8dc955ed1dad3eac5fec7528c85cf029da0a63",
+  "response_sha256": [
+    "c275f842355d7b867c8eec0aff404362e1f5e4ba9e28ddfa4265ecb1aa01748e",
+    "bb0437870b90f7cdb49dc2abc6c0156315675274b4fd634d6909b78b9671f062",
+    "20d65c4b231e9468635ca545f63d34b2537f89e19345546ec93c622a602f0c45",
+    "6f5278707fffbf65918d4c6fadf2ec990d7bd22a4bad8a4d3af666e42b187069",
+    "b06f3872aab85dc9ce64f6422f07c1c49d3df6dd20e15cc944fea92e9ff94331",
+    "7023c38e568910ecaf733c1360c0de5e1ba98dc97873c50abd3ddd8de69f8221",
+    "880f1c1f70d3a84d6fb53164c82fadd95c7dfed96d66ac62e09e72e10b980817"
+  ],
+  "fixture_count": 8,
+  "parsed_count": 322,
+  "dated_count": 322,
+  "expected": [
+    {
+      "title": "Complemento Solidário para Idosos aumenta 50 euros a partir de janeiro",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/complemento-solidario-para-idosos-aumenta-50-euros-a-partir-de-janeiro",
+      "published_date_local": "2026-10-01",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "PRR – verbas do Orçamento de Estado asseguram conclusão de projetos previstos",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/prr-verbas-do-orcamento-de-estado-asseguram-conclusao-de-projetos-previstos",
+      "published_date_local": "2026-10-01",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Execução bem-sucedida do PRR lança as bases para novo ciclo de crescimento",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/execucao-bem-sucedida-do-prr-lanca-as-bases-para-novo-ciclo-de-crescimento",
+      "published_date_local": "2026-10-01",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Primeiro-Ministro destaca contributo das pessoas idosas para o futuro do país",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/primeiro-ministro-destaca-contributo-das-pessoas-idosas-para-o-futuro-do-pais",
+      "published_date_local": "2026-10-01",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Primeiro-Ministro: “A minha ambição é ver Portugal como contribuinte líquido da União Europeia”",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/primeiro-ministro-a-minha-ambicao-e-ver-portugal-como-contribuinte-liquido-da-uniao-europeia-",
+      "published_date_local": "2026-10-01",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Primeiro-Ministro reafirma a prioridade de aumentar a oferta de habitação em Portugal",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/primeiro-ministro-reafirma-a-prioridade-de-aumentar-a-oferta-de-habitacao-em-portugal",
+      "published_date_local": "2026-09-30",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Portugal, Espanha e França defendem financiamento específico para regiões ultraperiféricas",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/portugal-espanha-e-franca-defendem-financiamento-especifico-para-regioes-ultraperifericas",
+      "published_date_local": "2026-09-29",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Antiga sede do Governo vai acolher habitação acessível",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/antiga-sede-do-governo-vai-acolher-habitacao-acessivel",
+      "published_date_local": "2026-09-29",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    }
+  ],
+  "live_status": {
+    "source_id": "pt_council_presidency",
+    "source_name": "葡萄牙部長會議主席府（含總理辦公室）",
+    "country": "PT",
+    "critical": false,
+    "success": true,
+    "fetched_via": "public-sitecore",
+    "raw_count": 322,
+    "relevant_count": 322,
+    "duration_seconds": 3.752,
+    "newest_published_at": "2026-10-01T17:38:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 322,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 322,
+    "freshness_lag_days": 1.27,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 8,
+    "bytes_downloaded": 6529475,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200",
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "public_endpoint": "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1",
+  "transform": "Exact projection of official anonymous query title/path/CardDate/news-template/area IDs; biography fields omitted; first 8 genuine items; transient public routing value never saved",
+  "access": "No Authorization/API-key headers or authenticated fallback; public frontend routing identifier discovered afresh"
+}

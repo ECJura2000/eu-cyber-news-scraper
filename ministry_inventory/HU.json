@@ -7,7 +7,8 @@
   ],
   "roster_complete": true,
   "limitations": [
-    "2026-10-02 bounded HU-only follow-up: 14/16 ministries manually verified from their own ministry homepage/news cards after fully dated production scrape and genuine bounded fixture replay; 2 remain unresolved. Government-wide news is not assigned to ministry rows. Scheduling disabled, noncritical, all 15 topics, empty responsibility."
+    "2026-10-02 bounded HU-only follow-up: 14/16 ministries manually verified from their own ministry homepage/news cards after fully dated production scrape and genuine bounded fixture replay; 2 remain unresolved. Government-wide news is not assigned to ministry rows. Scheduling disabled, noncritical, all 15 topics, empty responsibility.",
+    "2026-10-02 round3 south: 14 manually verified, 0 existing-source ministries, 2 unresolved. Exact current failures and parser/attribution limitations are recorded per initial unresolved ID in tests/fixtures/ministry_round3_south.json. Endpoint failures are not obsolete designations. New sources are manual-only, schedule_enabled=false, critical=false, all 15 OBSERVATION_TOPICS, empty responsibility_by_topic."
   ],
   "ministries": [
     {
@@ -181,13 +182,14 @@
       "homepage": "https://kormany.hu/kormanyzat/honvedelmi-miniszterium",
       "news_url": "https://kormany.hu/hirek",
       "source_ids": [],
-      "status": "parser_pending",
-      "reason": "2026-10-02 HU-only follow-up after production Hungarian date-parser update. Verified HTTP 200 ministry homepage has zero article.article-card news containers; no dated ministry-scoped news payload found in the bounded official alternatives. Tested homepage: https://kormany.hu/kormanyzat/honvedelmi-miniszterium. Previously tested government-wide /hirek remains unscoped and is not enrolled. Prior captured alternatives/errors remain in the audit evidence.",
+      "status": "needs_review",
+      "reason": "2026-10-02 round3 south: Current ministry page has biography/navigation only; global /hirek does not establish ministry attribution. Review official ministry-specific news or an attributable independent portal; never promote the sitewide alias. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hu_defence).",
       "evidence_urls": [
         "https://kormany.hu/kormanyzat",
         "https://kormany.hu/kormanyzat/honvedelmi-miniszterium",
         "https://kormany.hu/hirek",
-        "https://kormany.hu/hirlevel"
+        "https://kormany.hu/hirlevel",
+        "https://kormany.hu/impresszum-kiado"
       ]
     },
     {
@@ -278,13 +280,14 @@
       "homepage": "https://kormany.hu/kormanyzat/miniszterelnokseg",
       "news_url": "https://kormany.hu/hirek",
       "source_ids": [],
-      "status": "parser_pending",
-      "reason": "2026-10-02 HU-only follow-up after production Hungarian date-parser update. Verified HTTP 200 ministry homepage has zero article.article-card news containers. The displayed deadline-date fields belong to document consultation closing dates, not news publication dates; these are not accepted as publication evidence. Tested homepage: https://kormany.hu/kormanyzat/miniszterelnokseg. Previously tested government-wide /hirek remains unscoped and is not enrolled. Prior captured alternatives/errors remain in the audit evidence.",
+      "status": "needs_review",
+      "reason": "2026-10-02 round3 south: Current ministry page displays Jogszabalytervezetek law-draft consultations with publication/deadline fields rather than ministry news. Find a ministry-attributable news stream; do not treat consultation deadlines or global /hirek as ministry news. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hu_prime_minister).",
       "evidence_urls": [
         "https://kormany.hu/kormanyzat",
         "https://kormany.hu/kormanyzat/miniszterelnokseg",
         "https://kormany.hu/hirek",
-        "https://kormany.hu/hirlevel"
+        "https://kormany.hu/hirlevel",
+        "https://kormany.hu/impresszum-kiado"
       ]
     },
     {
