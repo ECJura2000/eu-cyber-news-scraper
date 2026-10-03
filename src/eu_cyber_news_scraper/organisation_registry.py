@@ -192,8 +192,12 @@ def _validate_payload(payload: Any) -> None:
             raise ValueError(f"source missing fields: {sorted(missing)}")
         if row["country"] not in {"EU", "FR", "DE", "IE", "ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT", "NL", "RO", "FI", "AT", "BE", "BG", "CY", "CZ", "GR", "HR", "HU", "LU", "MT", "SK", "SI"}:
             raise ValueError(f"unsupported source country: {row['country']}")
-        if "schedule_enabled" in row and not isinstance(row["schedule_enabled"], bool):
-            raise ValueError("schedule_enabled must be boolean")
+        for flag in ("schedule_enabled", "feed_archive_fallback"):
+            if flag in row and not isinstance(row[flag], bool):
+                raise ValueError(f"{flag} must be boolean")
+        minimum_budget = row.get("minimum_budget_seconds", 0)
+        if type(minimum_budget) is not int or not 0 <= minimum_budget <= 900:
+            raise ValueError("minimum_budget_seconds must be an integer between 0 and 900")
         if not str(row["homepage"]).startswith("https://") or not str(row["listing_url"]).startswith("https://"):
             raise ValueError("source URLs must use https")
     topics = payload["filter"].get("topics") if isinstance(payload["filter"], dict) else None

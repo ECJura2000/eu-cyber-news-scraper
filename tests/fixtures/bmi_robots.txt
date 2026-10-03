@@ -1,0 +1,15 @@
+# source_url: https://www.bmi.bund.de/robots.txt
+# captured_at: 2026-09-30
+User-agent: Amazonbot
+Disallow: /
+User-agent: *
+Disallow: /SiteGlobals/
+Disallow: /DE/Service/
+Disallow: /EN/Service/
+Disallow: /DE/startseite/_configuration/
+Disallow: /SharedDocs/termine/DE/veranstaltungen/Bund_Laender_Arbeitsgruppe_Vereinsrecht/
+Allow: /SiteGlobals/Modules/
+Allow: /SiteGlobals/StyleBundles/
+Allow: /SiteGlobals/Frontend/
+Crawl-delay: 10
+Sitemap: https://www.bmi.bund.de/Sitemap_Index.xml

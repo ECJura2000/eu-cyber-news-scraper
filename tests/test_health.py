@@ -1,10 +1,19 @@
 import json
+from dataclasses import replace
 from datetime import datetime, timezone
 
-from eu_cyber_news_scraper.health import _prune_profiles, assess_and_record_health, health_profile_fingerprint
+import pytest
+
+from eu_cyber_news_scraper.health import (
+    _prune_profiles,
+    assess_and_record_health,
+    health_profile_fingerprint,
+    source_config_fingerprint,
+)
 from eu_cyber_news_scraper.models import Source, SourceStatus
 
 PROFILE = {"period_mode": "rolling", "fetch_details": True}
+LEGACY_FR_ANSSI_FINGERPRINT = "dce6d40a1b698ef5"
 
 
 def write_v2(path, rows):
@@ -193,6 +202,90 @@ def test_source_config_change_resets_only_that_source_baseline(tmp_path):
         profile=PROFILE, observation_key="two", write=False,
     )[0]
     assert current.historical_median_count == 0
+
+
+@pytest.fixture
+def legacy_fr_anssi_baseline(tmp_path):
+    # Freeze the source settings and fingerprint from before the optional fields.
+    source = Source(
+        id="fr_anssi",
+        country="FR",
+        name_zh="法國國家資訊系統安全局",
+        name="Agence nationale de la sécurité des systèmes d'information",
+        institution_type="國家主管機關",
+        language="fr",
+        homepage="https://cyber.gouv.fr/",
+        listing_url="https://cyber.gouv.fr/actualites/",
+        feed_urls=("https://cyber.gouv.fr/actualites/rss/", "https://cyber.gouv.fr/actualites/atom/"),
+        allow_domains=("cyber.gouv.fr",),
+        include_patterns=("/actualites/.+",),
+        exclude_patterns=("/actualites/(rss|atom)/?$", r"^/actualites/\?(tag|page)="),
+        critical=True,
+        detail_pages=16,
+        pagination_url="https://cyber.gouv.fr/actualites/?page={page}",
+        max_pages=10,
+        freshness_days=45,
+        timezone="Europe/Paris",
+        card_selectors=("div.fr-card__content",),
+        link_selectors=("h3.fr-card__title a[href]",),
+        date_selectors=("p.fr-card__desc",),
+    )
+    path = tmp_path / ".source-health.json"
+    path.write_text(
+        json.dumps({
+            "schema_version": 2,
+            "profiles": {
+                health_profile_fingerprint(PROFILE): {
+                    "profile": PROFILE,
+                    "sources": {
+                        source.id: [
+                            {
+                                "source_fingerprint": LEGACY_FR_ANSSI_FINGERPRINT,
+                                "observation_key": f"legacy-{index}",
+                                "success": True,
+                                "raw_count": 20,
+                                "baseline_failure": False,
+                            }
+                            for index in range(3)
+                        ],
+                    },
+                },
+            },
+        }),
+        encoding="utf-8",
+    )
+    status = SourceStatus(source.id, source.name_zh, source.country, True, True, "feed", 1, 0, 1.0)
+    return source, status, path
+
+
+def test_default_fetch_policies_preserve_legacy_fr_anssi_baseline(legacy_fr_anssi_baseline):
+    source, status, path = legacy_fr_anssi_baseline
+    assert source.feed_archive_fallback is False
+    assert source.minimum_budget_seconds == 0
+    assert source_config_fingerprint(source) == LEGACY_FR_ANSSI_FINGERPRINT
+
+    result = assess(status, source, path, write=False)
+
+    assert result.historical_median_count == 20
+    assert result.health_status == "attention"
+    assert any("原始筆數 1 低於歷史中位數 20" in alert for alert in result.health_alerts)
+
+
+@pytest.mark.parametrize("changes", [
+    {"feed_archive_fallback": True},
+    {"minimum_budget_seconds": 600},
+    {"feed_archive_fallback": True, "minimum_budget_seconds": 600},
+])
+def test_nondefault_fetch_policies_reset_legacy_fr_anssi_baseline(legacy_fr_anssi_baseline, changes):
+    source, status, path = legacy_fr_anssi_baseline
+    changed = replace(source, **changes)
+    assert source_config_fingerprint(changed) != LEGACY_FR_ANSSI_FINGERPRINT
+
+    result = assess(status, changed, path, write=False)
+
+    assert result.historical_median_count == 0
+    assert result.health_status == "healthy"
+    assert not result.health_alerts
 
 
 def test_health_reports_parse_duplicate_and_overdue_date_exception_alerts(tmp_path):

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "module_version": "2026-09-15.2",
+  "module_version": "2026-09-30.1",
   "canonical_id": "de_bundeskartellamt",
   "names": {
     "zh": "德國聯邦卡特爾局",
@@ -38,7 +38,8 @@
       "date_selectors": [
         ".c-topline__item:last-child"
       ],
-      "detail_pages": 12
+      "detail_pages": 12,
+      "minimum_budget_seconds": 600
     }
   ],
   "filter": {

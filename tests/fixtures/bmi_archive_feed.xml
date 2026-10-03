@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- source_url: https://www.bmi.bund.de/DE/service/rss-newsfeed/function/rssnewsfeed-pressemitteilungen.xml -->
+<!-- captured_at: 2026-09-30; bounded projection of two retained June items; descriptions omitted -->
+<rss version="2.0"><channel>
+  <title>BMI - RSS-Newsfeed für Pressemitteilungen</title>
+  <link>https://www.bmi.bund.de/DE/presse/presse-node.html</link>
+  <description>Public BMI press releases</description>
+  <item>
+    <title>Gemeinsames Zentrum zur Abwehr hybrider Bedrohungen</title>
+    <link>https://www.bmi.bund.de/SharedDocs/pressemitteilungen/DE/2026/06/gazh-eroeffnung.html</link>
+    <pubDate>Tue, 16 Jun 2026 08:51:08 +0200</pubDate>
+  </item>
+  <item>
+    <title>Start des Asyl-Pakts: Mehr Kontrolle, klare Zuständigkeiten und gemeinsame Verantwortung in Europa</title>
+    <link>https://www.bmi.bund.de/SharedDocs/pressemitteilungen/DE/2026/06/geas.html</link>
+    <pubDate>Fri, 12 Jun 2026 11:30:00 +0200</pubDate>
+  </item>
+</channel></rss>

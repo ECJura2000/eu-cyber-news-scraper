@@ -6,23 +6,23 @@ verified_on = "2026-07-11"
 [[topics]]
 name = "AI法、模型評估、演算法問責、自動化決策、AI與著作權"
 EU = { authorities = "歐盟執委會 AI Office／DG CONNECT、JRC、EDPB、EUIPO；EuroHPC 公私協力生態系", source_ids = ["eu_dg_connect", "eu_jrc_news", "eu_edpb", "eu_presscorner", "eu_eurohpc"], evidence_urls = ["https://digital-strategy.ec.europa.eu/en/policies/ai-act-governance-and-enforcement"] }
-FR = { authorities = "DGCCRF／DGE、CNIL、INESIA（ANSSI、Inria、LNE、PEReN）、文化部／CSPLA；CEA-List、Institut Montaigne", source_ids = ["fr_dge", "fr_cnil", "fr_anssi", "fr_inria", "fr_culture", "fr_cea_list", "fr_institut_montaigne"], evidence_urls = ["https://www.cnil.fr/fr/entree-en-vigueur-du-reglement-europeen-sur-lia-les-premieres-questions-reponses-de-la-cnil"] }
+FR = { authorities = "DGCCRF／DGE、CNIL、INESIA（ANSSI、Inria、LNE、PEReN）、文化部／CSPLA；CEA-List", source_ids = ["fr_dge", "fr_cnil", "fr_anssi", "fr_inria", "fr_culture", "fr_cea_list"], evidence_urls = ["https://www.cnil.fr/fr/entree-en-vigueur-du-reglement-europeen-sur-lia-les-premieres-questions-reponses-de-la-cnil"] }
 DE = { authorities = "聯邦網路局（AI協調中心）、BfDI、BMJV／DPMA；ATHENE、Interface", source_ids = ["de_bnetza", "de_bfdi", "de_dpma", "de_athene", "de_interface"], evidence_urls = ["https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/1_Ziel/start_ziel.html"] }
-IE = { authorities = "企業部；2026 年法案擬設 Oifig IS na hÉireann（AI Office of Ireland）為中央協調機關，另由 DPC 與產業監理機關分工；CeADAR、Insight", source_ids = ["ie_dete", "ie_dpc", "ie_cnam", "ie_comreg", "ie_ceadar", "ie_insight"], evidence_urls = ["https://enterprise.gov.ie/en/news-and-events/department-news/2026/june/20260617.html"] }
+IE = { authorities = "企業部；2026 年法案擬設 Oifig IS na hÉireann（AI Office of Ireland）為中央協調機關，另由 DPC 與產業監理機關分工；CeADAR", source_ids = ["ie_dete", "ie_dpc", "ie_cnam", "ie_comreg", "ie_ceadar"], evidence_urls = ["https://enterprise.gov.ie/en/news-and-events/department-news/2026/june/20260617.html"] }
 
 [[topics]]
 name = "跨境資料流通、資料主權、資料開放與再利用"
 EU = { authorities = "DG CONNECT、EDPB、EuroHPC", source_ids = ["eu_dg_connect", "eu_edpb", "eu_eurohpc"] }
 FR = { authorities = "CNIL、DINUM／data.gouv.fr", source_ids = ["fr_cnil", "fr_dinum"] }
 DE = { authorities = "聯邦網路局（Data Act）、BfDI；Interface", source_ids = ["de_bnetza", "de_bfdi", "de_interface"], evidence_urls = ["https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20260530_DA.html"] }
-IE = { authorities = "DPC、公共支出及數位化部／OGCIO；Insight、ESRI", source_ids = ["ie_dpc", "ie_dete", "ie_insight", "ie_esri"] }
+IE = { authorities = "DPC、公共支出及數位化部／OGCIO；ESRI", source_ids = ["ie_dpc", "ie_dete", "ie_esri"] }
 
 [[topics]]
 name = "隱私框架（含個人資料保護）"
 EU = { authorities = "EDPB、歐盟執委會司法總署", source_ids = ["eu_edpb", "eu_presscorner"] }
 FR = { authorities = "CNIL", source_ids = ["fr_cnil"] }
 DE = { authorities = "BfDI、各邦資料保護機關；Interface", source_ids = ["de_bfdi", "de_interface"] }
-IE = { authorities = "DPC；Insight", source_ids = ["ie_dpc", "ie_insight"] }
+IE = { authorities = "DPC", source_ids = ["ie_dpc"] }
 
 [[topics]]
 name = "數位身份"
@@ -34,23 +34,23 @@ IE = { authorities = "公共支出及數位化部／OGCIO", source_ids = ["ie_de
 [[topics]]
 name = "著作權"
 EU = { authorities = "歐盟執委會 DG CONNECT、EUIPO Observatory", source_ids = ["eu_dg_connect", "eu_presscorner"] }
-FR = { authorities = "文化部／CSPLA、Arcom；Institut Montaigne", source_ids = ["fr_culture", "fr_arcom", "fr_institut_montaigne"] }
+FR = { authorities = "文化部／CSPLA、Arcom", source_ids = ["fr_culture", "fr_arcom"] }
 DE = { authorities = "BMJV、DPMA；Interface", source_ids = ["de_dpma", "de_interface"] }
 IE = { authorities = "企業部 Intellectual Property Unit", source_ids = ["ie_dete"] }
 
 [[topics]]
 name = "平台責任、內容審查、推薦演算法"
 EU = { authorities = "歐盟執委會 DG CONNECT（DSA）、EDPB", source_ids = ["eu_dg_connect", "eu_edpb"], evidence_urls = ["https://digital-strategy.ec.europa.eu/en/policies/dsa-dscs"] }
-FR = { authorities = "Arcom（DSC）、CNIL；Institut Montaigne", source_ids = ["fr_arcom", "fr_cnil", "fr_institut_montaigne"], evidence_urls = ["https://www.arcom.fr/procedure-dagrement-des-chercheurs-pour-lacces-aux-donnees-des-plateformes"] }
+FR = { authorities = "Arcom（DSC）、CNIL", source_ids = ["fr_arcom", "fr_cnil"], evidence_urls = ["https://www.arcom.fr/procedure-dagrement-des-chercheurs-pour-lacces-aux-donnees-des-plateformes"] }
 DE = { authorities = "聯邦網路局（DSC）、邦媒體主管機關；Interface", source_ids = ["de_bnetza", "de_interface"], evidence_urls = ["https://www.dsc.bund.de/DSC/DE/2DSA/start.html"] }
-IE = { authorities = "Coimisiún na Meán（DSC）、DPC；Insight", source_ids = ["ie_cnam", "ie_dpc", "ie_insight"] }
+IE = { authorities = "Coimisiún na Meán（DSC）、DPC", source_ids = ["ie_cnam", "ie_dpc"] }
 
 [[topics]]
 name = "媒體多元與資訊操縱"
 EU = { authorities = "DG CONNECT（EMFA）、EEAS（FIMI）；SNS JU研究生態系", source_ids = ["eu_dg_connect", "eu_eeas", "eu_sns_ju"] }
 FR = { authorities = "Arcom、VIGINUM", source_ids = ["fr_arcom", "fr_viginum"] }
 DE = { authorities = "邦媒體主管機關、BMI／聯邦政府；Interface、SWP、ATHENE", source_ids = ["de_bmi", "de_bnetza", "de_interface", "de_swp", "de_athene"] }
-IE = { authorities = "Coimisiún na Meán、選舉委員會；Insight", source_ids = ["ie_cnam", "ie_electoral_commission", "ie_insight"] }
+IE = { authorities = "Coimisiún na Meán、選舉委員會", source_ids = ["ie_cnam", "ie_electoral_commission"] }
 
 [[topics]]
 name = "競爭規範面向（平台責任的市場結構面）"
@@ -75,7 +75,7 @@ IE = { authorities = "NCSC、CCPC／相關市場監理機關；Cyber Ireland、T
 
 [[topics]]
 name = "供應鏈安全"
-EU = { authorities = "DG CONNECT、ENISA、CERT-EU；Chips JU、SNS JU", source_ids = ["eu_dg_connect", "eu_enisa_publications", "eu_cert_threat", "eu_chips_ju", "eu_sns_ju"] }
+EU = { authorities = "DG CONNECT、ENISA、CERT-EU；Chips JU、SNS JU", source_ids = ["eu_dg_connect", "eu_cert_threat", "eu_chips_ju", "eu_sns_ju"] }
 FR = { authorities = "ANSSI、DGE；Campus Cyber、CEA-List", source_ids = ["fr_anssi", "fr_dge", "fr_campus_cyber", "fr_cea_list"] }
 DE = { authorities = "BSI、BMI；ATHENE、SWP", source_ids = ["de_bsi_news", "de_bmi", "de_athene", "de_swp"] }
 IE = { authorities = "NCSC、企業部；Cyber Ireland、Tyndall", source_ids = ["ie_ncsc", "ie_dete", "ie_cyber_ireland", "ie_tyndall"] }

@@ -18,12 +18,27 @@ def test_builtin_registry_covers_all_configured_sources():
     sources = load_sources()
     registry = load_organisation_registry()
     assert {source.id for source in sources} == set(registry.source_ids)
-    assert len(registry.modules) == 148
+    assert len(registry.modules) == 145
     assert not registry.errors
     assert len(registry.registry_hash) == 64
     assert all(module.topics for module in registry.modules)
-    assert len(registry.source_rows) == 148
+    assert len(registry.source_rows) == 145
     assert registry.module_for_source("missing") is None
+
+
+@pytest.mark.parametrize("source_id", ["eu_enisa_publications", "fr_institut_montaigne", "ie_insight"])
+def test_retired_sources_are_not_registered(source_id):
+    registry = load_organisation_registry()
+    assert source_id not in registry.source_ids
+    assert source_id not in {module.canonical_id for module in registry.modules}
+    assert registry.module_for_source(source_id) is None
+
+
+def test_retiring_enisa_publications_preserves_news_and_certification():
+    registry = load_organisation_registry()
+    for source_id in ("eu_enisa_news", "eu_enisa_certification"):
+        assert registry.module_for_source(source_id) is not None
+        assert next(source for source in load_sources() if source.id == source_id).schedule_enabled
 
 
 def test_external_override_wins_and_invalid_new_module_is_reported(tmp_path):
@@ -105,6 +120,10 @@ def test_invalid_builtin_registry_is_fatal(tmp_path):
         (lambda payload: payload.update(sources=[]), "non-empty list"),
         (lambda payload: payload["sources"][0].pop("name"), "source missing fields"),
         (lambda payload: payload["sources"][0].update(country="UK"), "unsupported source country"),
+        (lambda payload: payload["sources"][0].update(feed_archive_fallback="true"), "must be boolean"),
+        (lambda payload: payload["sources"][0].update(minimum_budget_seconds=True), "integer between"),
+        (lambda payload: payload["sources"][0].update(minimum_budget_seconds=-1), "integer between"),
+        (lambda payload: payload["sources"][0].update(minimum_budget_seconds=901), "integer between"),
         (lambda payload: payload["sources"][0].update(homepage="http://example.eu"), "must use https"),
         (lambda payload: payload.update(filter={"topics": []}), "non-empty list"),
         (lambda payload: payload.update(filter={"topics": ["unknown"]}), "unknown topics"),

@@ -49,7 +49,9 @@ def test_exporter_creates_required_sheets_and_summary(tmp_path):
     assert workbook["議題主管機關覆蓋"].max_row == 436
     assert workbook["CRA_CSA_NIS2_CER"].max_row == 2
     assert workbook["全部命中新聞"]["Q2"].value == "《網路韌性法》指引"
-    assert workbook["全部命中新聞"]["A2"].fill.fgColor.rgb == "00FFC000"
+    assert workbook["全部命中新聞"]["P2"].fill.fgColor.rgb == "00FFD966"
+    assert workbook["CRA_CSA_NIS2_CER"]["P2"].fill.fgColor.rgb == "00FFD966"
+    assert workbook["全部命中新聞"]["A2"].fill.fill_type is None
     assert workbook["CRA_CSA_NIS2_CER"]["A2"].fill.fill_type is None
     assert len(workbook["全部命中新聞"]["R2"].value) == EXCEL_SUMMARY_LIMIT
     assert workbook["全部命中新聞"]["AE2"].value == "https://mirror.example.eu/news/cra"

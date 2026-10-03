@@ -1,0 +1,434 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EU27 institution discovery catalog v1",
+  "description": "Replace or append institutions using this schema. --check validates recorded first-party evidence, URLs and deduplication offline; it does not re-fetch evidence or validate a parser. Catalog topic/country gaps describe this partial inventory only. No responsibility owner or registry consistency claims are made. New parsers must be independently validated before a separate registry enrollment workflow; this catalog deliberately rejects promotion.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "catalog_version",
+    "scope",
+    "metadata",
+    "institutions",
+    "discovery"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "catalog_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "const": "EU27"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verified_on",
+        "description",
+        "limitations"
+      ],
+      "properties": {
+        "verified_on": {
+          "type": "string",
+          "format": "date"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "limitations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "institutions": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 500,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "canonical_id",
+          "country",
+          "full_names",
+          "language",
+          "institution_type",
+          "official_domains",
+          "homepage",
+          "news_url",
+          "listing_kind",
+          "mandate_evidence_url",
+          "topics",
+          "status",
+          "searchable",
+          "verification"
+        ],
+        "properties": {
+          "canonical_id": {
+            "type": "string",
+            "pattern": "^[a-z]{2}_[a-z0-9_]+$"
+          },
+          "country": {
+            "enum": [
+              "AT",
+              "BE",
+              "BG",
+              "HR",
+              "CY",
+              "CZ",
+              "DK",
+              "EE",
+              "FI",
+              "FR",
+              "DE",
+              "GR",
+              "HU",
+              "IE",
+              "IT",
+              "LV",
+              "LT",
+              "LU",
+              "MT",
+              "NL",
+              "PL",
+              "PT",
+              "RO",
+              "SK",
+              "SI",
+              "ES",
+              "SE"
+            ]
+          },
+          "full_names": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "en",
+              "local"
+            ],
+            "properties": {
+              "en": {
+                "type": "string",
+                "minLength": 1
+              },
+              "local": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "language": {
+            "type": "string",
+            "pattern": "^[a-z]{2}(?:-[A-Z]{2})?$"
+          },
+          "institution_type": {
+            "enum": [
+              "think_tank",
+              "public_research_body",
+              "public_private_research_body",
+              "public_research_foundation",
+              "university_policy_center"
+            ]
+          },
+          "official_domains": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 25,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z]{2,}$"
+            }
+          },
+          "homepage": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "news_url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "listing_kind": {
+            "enum": [
+              "news",
+              "blog",
+              "publications",
+              "homepage_news"
+            ]
+          },
+          "mandate_evidence_url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "topics": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+                "跨境資料流通、資料主權、資料開放與再利用",
+                "隱私框架（含個人資料保護）",
+                "數位身份",
+                "著作權",
+                "平台責任、內容審查、推薦演算法",
+                "媒體多元與資訊操縱",
+                "競爭規範面向（平台責任的市場結構面）",
+                "NIS2、關鍵基礎設施保護",
+                "產品資安、漏洞揭露義務、SBOM",
+                "供應鏈安全",
+                "資安產品認證",
+                "關鍵基礎設施的實體與數位融合保護",
+                "半導體",
+                "量子技術"
+              ]
+            }
+          },
+          "status": {
+            "const": "directory_only"
+          },
+          "searchable": {
+            "const": false
+          },
+          "verification": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "status",
+              "verified_on",
+              "method",
+              "note",
+              "urls"
+            ],
+            "properties": {
+              "status": {
+                "const": "first_party_pages_reviewed"
+              },
+              "verified_on": {
+                "type": "string",
+                "format": "date"
+              },
+              "method": {
+                "const": "web_browsing"
+              },
+              "note": {
+                "type": "string",
+                "minLength": 20,
+                "maxLength": 1800
+              },
+              "urls": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 12,
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "format": "uri",
+                  "pattern": "^https://"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "discovery": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "max_seed_pages",
+        "max_links_per_page",
+        "max_candidates",
+        "directory_seeds"
+      ],
+      "properties": {
+        "max_seed_pages": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8
+        },
+        "max_links_per_page": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 500
+        },
+        "max_candidates": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100
+        },
+        "directory_seeds": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 8,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "url",
+              "official_domains",
+              "country",
+              "candidate_domains",
+              "verification"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9_]+$"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "pattern": "^https://"
+              },
+              "official_domains": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 25,
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "pattern": "^(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z]{2,}$"
+                }
+              },
+              "country": {
+                "enum": [
+                  "AT",
+                  "BE",
+                  "BG",
+                  "HR",
+                  "CY",
+                  "CZ",
+                  "DK",
+                  "EE",
+                  "FI",
+                  "FR",
+                  "DE",
+                  "GR",
+                  "HU",
+                  "IE",
+                  "IT",
+                  "LV",
+                  "LT",
+                  "LU",
+                  "MT",
+                  "NL",
+                  "PL",
+                  "PT",
+                  "RO",
+                  "SK",
+                  "SI",
+                  "ES",
+                  "SE"
+                ]
+              },
+              "candidate_domains": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 50,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "domain",
+                    "country"
+                  ],
+                  "properties": {
+                    "domain": {
+                      "type": "string",
+                      "pattern": "^(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z]{2,}$"
+                    },
+                    "country": {
+                      "enum": [
+                        "AT",
+                        "BE",
+                        "BG",
+                        "HR",
+                        "CY",
+                        "CZ",
+                        "DK",
+                        "EE",
+                        "FI",
+                        "FR",
+                        "DE",
+                        "GR",
+                        "HU",
+                        "IE",
+                        "IT",
+                        "LV",
+                        "LT",
+                        "LU",
+                        "MT",
+                        "NL",
+                        "PL",
+                        "PT",
+                        "RO",
+                        "SK",
+                        "SI",
+                        "ES",
+                        "SE"
+                      ]
+                    }
+                  }
+                }
+              },
+              "verification": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "status",
+                  "verified_on",
+                  "method",
+                  "note",
+                  "urls"
+                ],
+                "properties": {
+                  "status": {
+                    "const": "first_party_pages_reviewed"
+                  },
+                  "verified_on": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "method": {
+                    "const": "web_browsing"
+                  },
+                  "note": {
+                    "type": "string",
+                    "minLength": 20,
+                    "maxLength": 1800
+                  },
+                  "urls": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 12,
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "format": "uri",
+                      "pattern": "^https://"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

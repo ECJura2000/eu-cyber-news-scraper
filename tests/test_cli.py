@@ -11,6 +11,7 @@ from eu_cyber_news_scraper.cli import (
     _select_sources,
     _state_write_eligible,
     build_parser,
+    main,
 )
 from eu_cyber_news_scraper.config import load_sources
 from eu_cyber_news_scraper.models import Article, Source
@@ -46,8 +47,8 @@ def test_select_sources_combines_country_and_source_filters():
 
 def test_new_sources_are_manual_only_until_promoted():
     sources = load_sources()
-    assert len(_select_sources(sources, None, None, scheduled=True)) == 53
-    assert len(_select_sources(sources, None, None)) == 53
+    assert len(_select_sources(sources, None, None, scheduled=True)) == 50
+    assert len(_select_sources(sources, None, None)) == 50
     assert {source.id for source in _select_sources(sources, ["ES"], None)} == {
         "es_aepd", "es_cnmc", "es_congreso", "es_incibe", "es_aesia", "es_bsc"
     }
@@ -57,6 +58,28 @@ def test_new_sources_are_manual_only_until_promoted():
 def test_select_sources_rejects_unknown_ids():
     with pytest.raises(SystemExit, match="未知來源代碼"):
         _select_sources(load_sources(), None, ["missing-source"])
+
+
+@pytest.mark.parametrize(
+    "country, source_id",
+    [("EU", "eu_enisa_publications"), ("FR", "fr_institut_montaigne"), ("IE", "ie_insight")],
+)
+def test_retired_sources_are_not_selectable(country, source_id, monkeypatch):
+    sources = load_sources()
+    assert source_id not in {source.id for source in sources}
+    assert source_id not in {source.id for source in _select_sources(sources, [country], None)}
+    assert source_id not in {
+        source.id for source in _select_sources(sources, [country], None, scheduled=True)
+    }
+    for countries in (None, [country]):
+        with pytest.raises(SystemExit) as error:
+            _select_sources(sources, countries, [source_id])
+        assert str(error.value) == f"[error] 未知來源代碼：{source_id}"
+
+    monkeypatch.setattr(sys, "argv", ["eu-cyber-news", "--country", country, "--source", source_id])
+    with pytest.raises(SystemExit) as error:
+        main()
+    assert str(error.value) == f"[error] 未知來源代碼：{source_id}"
 
 
 def test_select_sources_skips_paused_sources_unless_explicitly_requested():
@@ -275,7 +298,7 @@ def test_organisation_status_prints_hash_and_modules(capsys):
 def test_cli_reports_package_version(capsys):
     with pytest.raises(SystemExit, match="0"):
         build_parser().parse_args(["--version"])
-    assert capsys.readouterr().out.endswith(" 1.6.0\n")
+    assert capsys.readouterr().out.endswith(" 1.7.0\n")
 
 
 def test_main_reports_period_and_lock_errors(monkeypatch, tmp_path):

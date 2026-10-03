@@ -10,7 +10,7 @@ from eu_cyber_news_scraper.topic_profile import load_profile
 
 
 class FakeHttpClient:
-    def __init__(self, timeout: int):
+    def __init__(self, timeout: int, **_kwargs):
         self.payload = b""
 
     async def __aenter__(self):
@@ -68,7 +68,7 @@ def test_offline_pipeline_writes_atomic_artifacts_and_quality_metadata(monkeypat
     assert summary["period"]["since_calendar"] == "roc"
     assert summary["organisation_audit_status"] == "complete"
     assert len(summary["organisation_registry_hash"]) == 64
-    assert len(summary["organisation_modules"]) == 148
+    assert len(summary["organisation_modules"]) == 145
     assert (tmp_path / ".state" / ".source-health.json").exists()
     assert output.with_suffix(".jsonl").exists()
     assert output.with_suffix(".corpus.jsonl").exists()

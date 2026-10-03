@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "eu-cyber-news-scraper"
-version = "1.6.0"
+version = "1.7.0"
 description = "Official European cybersecurity and technology news scraper"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -49,6 +49,7 @@ eu_cyber_news_scraper = ["sources.toml", "topic_profile.json", "authority_covera
 
 [tool.setuptools.data-files]
 organisation_registry = ["organisation_registry/*.json"]
+source_catalog = ["source_catalog/*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

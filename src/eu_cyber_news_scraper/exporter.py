@@ -64,10 +64,27 @@ ARTICLE_HEADERS = (
 
 FORMULA_PREFIXES = ("=", "+", "-", "@")
 ILLEGAL_XML_CHARACTERS = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f]")
-HIGH_CONFIDENCE_FILL = PatternFill("solid", fgColor="FFC000")
-MEDIUM_CONFIDENCE_FILL = PatternFill("solid", fgColor="FFF2CC")
-LOW_CONFIDENCE_FILL = PatternFill("solid", fgColor="FFFCE6")
+RELEVANCE_FILLS = {
+    "高": PatternFill("solid", fgColor="FFD966"),
+    "中": PatternFill("solid", fgColor="FFE699"),
+    "低": PatternFill("solid", fgColor="FFF2CC"),
+}
+RELEVANCE_HEADERS = (
+    "新聞標題", "繁體中文標題", "摘要", "觀測主題", "命中關鍵字", "關聯分數",
+    "Boolean 分數", "BM25 分數", "BM25 主題分數", "命中同義詞", "可信度",
+)
+RELEVANCE_COLUMNS = tuple(ARTICLE_HEADERS.index(header) + 1 for header in RELEVANCE_HEADERS)
 EXCEL_SUMMARY_LIMIT = 500
+
+
+def relevance_fill(article: Article) -> PatternFill | None:
+    """Return the existing EU relevance grade's yellow fill for actual topic hits.
+
+    Weekly and offline query views share this mapping; date confidence is unrelated.
+    """
+    if not article.matched_topics or not (article.matched_keywords or article.matched_synonyms):
+        return None
+    return RELEVANCE_FILLS.get(article.confidence_level)
 
 
 def safe_excel_text(value: str) -> str:
@@ -95,7 +112,7 @@ def export_workbook(
     wb = Workbook()
     ws_all = wb.active
     ws_all.title = "全部命中新聞"
-    _write_articles(ws_all, articles, highlight_matches=True)
+    _write_articles(ws_all, articles)
 
     ws_law = wb.create_sheet("CRA_CSA_NIS2_CER")
     legal_topics = {
@@ -195,7 +212,7 @@ def write_jsonl(articles: list[Article], output_path: str | Path, *, run_id: str
     return path
 
 
-def _write_articles(ws: Any, articles: list[Article], *, highlight_matches: bool = False) -> None:
+def _write_articles(ws: Any, articles: list[Article]) -> None:
     ws.append(ARTICLE_HEADERS)
     for index, article in enumerate(articles, 1):
         ws.append(
@@ -238,14 +255,10 @@ def _write_articles(ws: Any, articles: list[Article], *, highlight_matches: bool
         url_column = ARTICLE_HEADERS.index("官方原文") + 1
         ws.cell(ws.max_row, url_column).hyperlink = article.url
         ws.cell(ws.max_row, url_column).style = "Hyperlink"
-        if highlight_matches and article.matched_keywords:
-            fill = {
-                "高": HIGH_CONFIDENCE_FILL,
-                "中": MEDIUM_CONFIDENCE_FILL,
-                "低": LOW_CONFIDENCE_FILL,
-            }.get(article.confidence_level, LOW_CONFIDENCE_FILL)
-            for cell in ws[ws.max_row]:
-                cell.fill = fill
+        fill = relevance_fill(article)
+        if fill is not None:
+            for column in RELEVANCE_COLUMNS:
+                ws.cell(ws.max_row, column).fill = fill
     _style_table(
         ws,
         widths=(8, 12, 28, 18, 18, 18, 18, 30, 20, 18, 14, 20, 14, 12, 12, 56, 56, 72, 36, 44, 12, 12, 12, 12, 52, 44, 32, 44, 12, 64, 64, 28, 32),
@@ -265,6 +278,11 @@ def _write_filter_settings(ws: Any, registry: OrganisationRegistry | None) -> No
         ("organisation_registry_hash", registry.registry_hash if registry else ""),
         ("organisation_module_count", len(registry.modules) if registry else 0),
         ("organisation_audit_status", registry.audit_payload()["organisation_audit_status"] if registry else "unknown"),
+        ("relevance_shading_basis", "沿用可信度（confidence_level）的關聯等級；須命中觀測主題及關鍵字或同義詞；與日期信心無關"),
+        ("relevance_shading_high", "高：FFD966"),
+        ("relevance_shading_medium", "中：FFE699"),
+        ("relevance_shading_low", "低：FFF2CC"),
+        ("relevance_shading_columns", "；".join(RELEVANCE_HEADERS)),
     )
     for row in rows:
         ws.append(row)

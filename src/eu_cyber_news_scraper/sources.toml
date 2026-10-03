@@ -44,20 +44,6 @@ date_selectors = ["time[datetime]"]
 summary_selectors = [".content", "p"]
 
 [[sources]]
-id = "eu_enisa_publications"
-country = "EU"
-name_zh = "歐盟資安局（研究出版品）"
-name = "European Union Agency for Cybersecurity - Publications"
-institution_type = "歐盟行政機關／官方研究"
-language = "en"
-homepage = "https://www.enisa.europa.eu/"
-listing_url = "https://www.enisa.europa.eu/publications"
-allow_domains = ["enisa.europa.eu", "www.enisa.europa.eu"]
-include_patterns = ['/publications/', '/sites/default/files/']
-exclude_patterns = ['^/publications/?$']
-detail_pages = 12
-
-[[sources]]
 id = "eu_cert_threat"
 date_policy = "best_effort"
 date_exception_reason = "Threat reports do not expose a consistent machine-readable publication date on every listing card."
@@ -100,6 +86,8 @@ language = "en"
 homepage = "https://dsa.cy/EN"
 listing_url = "https://dsa.cy/EN"
 allow_domains = ["dsa.cy", "www.dsa.cy"]
+include_patterns = []
+exclude_patterns = []
 critical = false
 schedule_enabled = false
 detail_pages = 8
@@ -315,6 +303,8 @@ language = "en"
 homepage = "https://nukib.gov.cz/en/"
 listing_url = "https://nukib.gov.cz/en/infoservis-en/news/"
 allow_domains = ["nukib.gov.cz"]
+include_patterns = []
+exclude_patterns = []
 critical = false
 schedule_enabled = false
 detail_pages = 12
@@ -329,6 +319,8 @@ language = "hu"
 homepage = "https://en.nki.gov.hu/"
 listing_url = "https://nki.gov.hu/figyelmeztetesek/tajekoztatas/"
 allow_domains = ["nki.gov.hu", "en.nki.gov.hu"]
+include_patterns = []
+exclude_patterns = []
 critical = false
 schedule_enabled = false
 detail_pages = 8
@@ -343,6 +335,8 @@ language = "en"
 homepage = "https://ncc-mita.gov.mt/about-us/"
 listing_url = "https://ncc-mita.gov.mt/category/news/"
 allow_domains = ["ncc-mita.gov.mt", "mita.gov.mt"]
+include_patterns = []
+exclude_patterns = []
 critical = false
 schedule_enabled = false
 detail_pages = 8
@@ -357,6 +351,8 @@ language = "en"
 homepage = "https://cra.nbu.gov.sk/en/"
 listing_url = "https://cra.nbu.gov.sk/en/guidance-and-updates/news-and-events/"
 allow_domains = ["cra.nbu.gov.sk", "nbu.gov.sk"]
+include_patterns = []
+exclude_patterns = []
 critical = false
 schedule_enabled = false
 detail_pages = 8
@@ -371,6 +367,8 @@ language = "en"
 homepage = "https://www.cert.si/"
 listing_url = "https://www.cert.si/en/category/news/"
 allow_domains = ["cert.si", "www.cert.si"]
+include_patterns = []
+exclude_patterns = []
 critical = false
 schedule_enabled = false
 detail_pages = 8
@@ -385,6 +383,8 @@ language = "sl"
 homepage = "https://www.gov.si/en/state-authorities/government-offices/government-information-security-office/"
 listing_url = "https://www.gov.si/drzavni-organi/vladne-sluzbe/urad-vlade-za-informacijsko-varnost/novice-urada-za-informacijsko-varnost/"
 allow_domains = ["gov.si"]
+include_patterns = []
+exclude_patterns = []
 critical = false
 schedule_enabled = false
 detail_pages = 8
@@ -804,36 +804,39 @@ link_selectors = ["a[href]"]
 date_selectors = ["td:first-child"]
 
 [[sources]]
-id = "de_bmi"
-country = "DE"
-name_zh = "德國聯邦內政部"
-name = "Bundesministerium des Innern"
-institution_type = "聯邦行政機關"
-language = "de"
-homepage = "https://www.bmi.bund.de/"
-listing_url = "https://www.bmi.bund.de/SiteGlobals/Forms/suche/expertensuche-formular.html?nn=9388812&gts=9398922_list%253DunifiedDate_dt%2Bdesc&documentType_=pbjournal"
-allow_domains = ["bmi.bund.de", "www.bmi.bund.de"]
-include_patterns = ['/SharedDocs/pressemitteilungen/DE/.+\.html$']
-exclude_patterns = ['/pressemitteilungen\.html$']
-detail_pages = 10
+"id" = "de_bmi"
+"allow_domains" = ["bmi.bund.de", "www.bmi.bund.de"]
+"country" = "DE"
+"date_selectors" = [".c-content-teaser__small"]
+"detail_pages" = 10
+"exclude_patterns" = ["/pressemitteilungen\\.html$"]
+"feed_archive_fallback" = true
+"feed_urls" = ["https://www.bmi.bund.de/DE/service/rss-newsfeed/function/rssnewsfeed-pressemitteilungen.xml"]
+"homepage" = "https://www.bmi.bund.de/"
+"include_patterns" = ["/SharedDocs/pressemitteilungen/DE/.+\\.html$"]
+"institution_type" = "聯邦行政機關"
+"language" = "de"
+"listing_url" = "https://www.bmi.bund.de/DE/presse/presse-node.html"
+"name" = "Bundesministerium des Innern"
+"name_zh" = "德國聯邦內政部"
 
 [[sources]]
-id = "de_bnetza"
-date_policy = "required"
-country = "DE"
-name_zh = "德國聯邦網路管理局"
-name = "Bundesnetzagentur"
-institution_type = "聯邦監理機關"
-language = "de"
-homepage = "https://www.bundesnetzagentur.de/"
-listing_url = "https://www.bundesnetzagentur.de/DE/Allgemeines/Presse/Pressemitteilungen/start.html"
-allow_domains = ["bundesnetzagentur.de", "www.bundesnetzagentur.de"]
-include_patterns = ['/SharedDocs/Pressemitteilungen/DE/.+\.html(?:\?.*)?$']
-exclude_patterns = ['/Presse/Pressemitteilungen/start\.html$']
-card_selectors = ["table.textualData tbody tr"]
-link_selectors = ["a.titleLink"]
-date_selectors = ["td:first-child"]
-detail_pages = 10
+"id" = "de_bnetza"
+"allow_domains" = ["bundesnetzagentur.de", "www.bundesnetzagentur.de"]
+"card_selectors" = ["table.textualData tbody tr"]
+"country" = "DE"
+"date_policy" = "required"
+"date_selectors" = ["td:first-child"]
+"detail_pages" = 10
+"exclude_patterns" = ["/Presse/Pressemitteilungen/start\\.html$"]
+"homepage" = "https://www.bundesnetzagentur.de/DE/Home/home_node.html"
+"include_patterns" = ["/SharedDocs/Pressemitteilungen/DE/.+\\.html(?:\\?.*)?$"]
+"institution_type" = "聯邦監理機關"
+"language" = "de"
+"link_selectors" = ["a.titleLink"]
+"listing_url" = "https://www.bundesnetzagentur.de/DE/Allgemeines/Presse/Pressemitteilungen/start.html"
+"name" = "Bundesnetzagentur"
+"name_zh" = "德國聯邦網路管理局"
 
 [[sources]]
 id = "de_fraunhofer_aisec"
@@ -899,22 +902,23 @@ date_selectors = ["td:first-child"]
 detail_pages = 0
 
 [[sources]]
-id = "de_bundeskartellamt"
-date_policy = "required"
-country = "DE"
-name_zh = "德國聯邦卡特爾局"
-name = "Bundeskartellamt"
-institution_type = "聯邦競爭監理機關"
-language = "de"
-homepage = "https://www.bundeskartellamt.de/"
-listing_url = "https://www.bundeskartellamt.de/DE/Home/home_node.html"
-allow_domains = ["bundeskartellamt.de", "www.bundeskartellamt.de"]
-include_patterns = ['/SharedDocs/Meldung/DE/Pressemitteilungen/.+\.html(?:\?.*)?$']
-card_selectors = ["div.c-teaser"]
-link_selectors = [".c-teaser__link-wrapper a"]
-title_selectors = [".c-teaser__headline"]
-date_selectors = [".c-topline__item:last-child"]
-detail_pages = 12
+"id" = "de_bundeskartellamt"
+"allow_domains" = ["bundeskartellamt.de", "www.bundeskartellamt.de"]
+"card_selectors" = ["div.c-teaser"]
+"country" = "DE"
+"date_policy" = "required"
+"date_selectors" = [".c-topline__item:last-child"]
+"detail_pages" = 12
+"homepage" = "https://www.bundeskartellamt.de/"
+"include_patterns" = ["/SharedDocs/Meldung/DE/Pressemitteilungen/.+\\.html(?:\\?.*)?$"]
+"institution_type" = "聯邦競爭監理機關"
+"language" = "de"
+"link_selectors" = [".c-teaser__link-wrapper a"]
+"listing_url" = "https://www.bundeskartellamt.de/DE/Home/home_node.html"
+"minimum_budget_seconds" = 600
+"name" = "Bundeskartellamt"
+"name_zh" = "德國聯邦卡特爾局"
+"title_selectors" = [".c-teaser__headline"]
 
 [[sources]]
 id = "de_dpma"
@@ -1267,20 +1271,6 @@ exclude_patterns = ['^/(evenements|formations|innovations|mentions-legales|polit
 detail_pages = 10
 
 [[sources]]
-id = "fr_institut_montaigne"
-country = "FR"
-name_zh = "法國蒙田研究所"
-name = "Institut Montaigne"
-institution_type = "私人非營利政策智庫"
-language = "fr"
-homepage = "https://www.institutmontaigne.org/"
-listing_url = "https://www.institutmontaigne.org/expressions"
-allow_domains = ["institutmontaigne.org", "www.institutmontaigne.org"]
-include_patterns = ['^/expressions/.+', '^/publications/.+']
-exclude_patterns = ['^/(expressions|publications)/?$']
-detail_pages = 10
-
-[[sources]]
 id = "de_athene"
 country = "DE"
 name_zh = "德國 ATHENE 國家應用資安研究中心"
@@ -1354,24 +1344,6 @@ allow_domains = ["ceadar.ie"]
 include_patterns = ['^/news/.+']
 exclude_patterns = ['^/latest-news/?$']
 detail_pages = 10
-
-[[sources]]
-id = "ie_insight"
-country = "IE"
-name_zh = "愛爾蘭 Insight 資料分析研究中心"
-name = "Insight SFI Research Centre for Data Analytics"
-institution_type = "國家資助跨校產學研究中心"
-language = "en"
-homepage = "https://www.insight-centre.org/"
-listing_url = "https://www.insight-centre.org/news/"
-allow_domains = ["insight-centre.org", "www.insight-centre.org"]
-include_patterns = ['^/[a-z0-9][a-z0-9-]{12,}/$']
-exclude_patterns = ['^/(about-us|governance|people|projects|industry|ecosystem|privacy-statement|copyright-statement|data-protection-notice)/?$']
-detail_pages = 10
-card_selectors = [".news-list .news-item"]
-link_selectors = [".news-title a[href]"]
-title_selectors = [".news-title"]
-date_selectors = [".news-date"]
 
 [[sources]]
 id = "ie_esri"

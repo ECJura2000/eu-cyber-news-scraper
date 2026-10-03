@@ -94,7 +94,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--source-budget",
         type=int,
         default=DEFAULT_SOURCE_BUDGET,
-        help=f"每個來源的總抓取時間預算，預設 {DEFAULT_SOURCE_BUDGET} 秒。",
+        help=f"來源基本抓取預算，預設 {DEFAULT_SOURCE_BUDGET} 秒；有效預算不低於來源 JSON 的 minimum_budget_seconds。",
     )
     parser.add_argument("--state-dir", help="來源健康紀錄與翻譯快取目錄。")
     parser.add_argument(
@@ -125,6 +125,12 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main() -> None:
+    if len(sys.argv) > 1 and sys.argv[1] == "audit-sources":
+        from .source_audit import main as audit_main
+        raise SystemExit(audit_main(sys.argv[2:]))
+    if len(sys.argv) > 1 and sys.argv[1] == "catalog":
+        from .source_catalog import main as catalog_main
+        raise SystemExit(catalog_main(sys.argv[2:]))
     if len(sys.argv) > 1 and sys.argv[1] == "search":
         from .offline_search import main as search_main
         search_main(sys.argv[2:])
@@ -264,7 +270,8 @@ async def _run_pipeline_async(
         emit_event("source_paused", run_id=run_id, **paused)
     source_limiter = asyncio.Semaphore(worker_count)
 
-    async with HttpClient(timeout=max(1, args.timeout)) as client:
+    async with HttpClient(timeout=max(1, args.timeout), obey_robots=True, min_interval=0.5,
+                          cache_dir=state_dir / ".http-cache") as client:
         async def run_one(source: Source) -> tuple[Source, SourceResult]:
             async with source_limiter:
                 try:
@@ -368,6 +375,8 @@ async def _run_pipeline_async(
                 "id": source.id,
                 "listing_url": source.listing_url,
                 "feed_urls": list(source.feed_urls),
+                "feed_archive_fallback": source.feed_archive_fallback,
+                "minimum_budget_seconds": source.minimum_budget_seconds,
                 "detail_pages": source.detail_pages,
                 "timezone": source.timezone,
                 "date_policy": source.date_policy,
