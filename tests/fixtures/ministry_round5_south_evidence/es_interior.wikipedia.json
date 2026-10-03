@@ -1,0 +1,25 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of the Interior Spain"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Spain)",
+      "title": "Ministry of the Interior (Spain) - Wikipedia",
+      "observed_at": "2026-10-03T08:32:51.644551+00:00",
+      "extracted_sha256": "9bac10f6db4f7bc43e2fb208bc11879e5d8ac9fcbafcc3013ddc55aa821e7fae",
+      "excerpt": "The**Ministry of the Interior**(**MIR**) is a[department](https://en.wikipedia.org/wiki/Spanish_government_departments)of the[Government of Spain](https://en.wikipedia.org/wiki/Government_of_Spain)responsible for[public security](https://en.wikipedia.org/wiki/Public_security), the protection of the[constitutional rights](https://en.wikipedia.org/wiki/Constitutional_right), the command of the[law enforcement agencies](https://en.wikipedia.org/wiki/Law_enforcement_in_Spain),[national security](https://en.wikipedia.org/wiki/National_security),[immigration affairs](https://en.wikipedia.org/wiki/Immigration_to_Spain),[prisons](https://en.wikipedia.org/wiki/List_of_prisons_in_Spain),[civil defense](https://en.wikipedia.org/wiki/Civil_defense)and[road traffic safety](https://en.wikipedia.org/wiki/Road_traffic_safety). Through the Undersecretariat of the Interior and its superior body, the Directorate-General for Internal Policy, the Ministry is responsible for all actions related to ensuring["
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "http://www.interior.gob.es",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Spain)",
+      "link_text": "www.interior.gob.es",
+      "relationship_excerpt": "l_Guard_(Spain))\n- [CITCO](https://en.wikipedia.org/wiki/CITCO)Website[www.interior.gob.es](http://www.interior.gob.es)\n\nThe**Ministry of the Interior**(**MIR**) is a[department](https://en"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/es_interior.wikipedia.json"
+}

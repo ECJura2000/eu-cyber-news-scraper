@@ -65,11 +65,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
-        "https://www.interno.gov.it/"
+        "https://www.interno.gov.it/",
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Italy)"
       ]
     },
     {
@@ -83,11 +84,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
-        "https://www.giustizia.it/"
+        "https://www.giustizia.it/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Justice_(Italy)"
       ]
     },
     {
@@ -171,12 +173,13 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable, unexpected_domain。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable; unexpected_domain 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://www.politicheagricole.it/",
-        "https://www.masaf.gov.it/"
+        "https://www.masaf.gov.it/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Agriculture,_Food_Sovereignty_and_Forests"
       ]
     },
     {
@@ -190,12 +193,13 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://www.mite.gov.it/",
-        "https://www.mase.gov.it/"
+        "https://www.mase.gov.it/",
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Environment_(Italy)"
       ]
     },
     {
@@ -292,12 +296,14 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://www.beniculturali.it/",
-        "https://cultura.gov.it/"
+        "https://cultura.gov.it/",
+        "https://www.cultura.gov.it/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Culture_(Italy)"
       ]
     },
     {
@@ -311,11 +317,13 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
-        "https://www.salute.gov.it/"
+        "https://www.salute.gov.it/",
+        "https://www.salute.gov.it",
+        "https://en.wikipedia.org/wiki/Ministry_of_Health_(Italy)"
       ]
     },
     {
@@ -371,12 +379,14 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://www.funzionepubblica.gov.it/",
-        "https://www.funzionepubblica.gov.it/it/"
+        "https://www.funzionepubblica.gov.it/it/",
+        "https://www.funzionepubblica.gov.it",
+        "https://en.wikipedia.org/wiki/Minister_for_Public_Administration_(Italy)"
       ]
     },
     {
@@ -437,13 +447,15 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "status": "needs_review",
+      "reason": "第五輪維基百科線索與官網查核：needs_review。已記錄錯誤：robots_unavailable。後續：Verify the maritime department-specific publisher and dated news once its official endpoints are accessible; never alias civil-protection news to this department. 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://presidenza.governo.it/AmministrazioneTrasparente/Organizzazione/ArticolazioneUffici/Dipartimenti/Dip_pol_del_mare.html",
-        "https://www.politichedelmare.gov.it/"
+        "https://www.politichedelmare.gov.it/",
+        "https://www.protezionecivile.gov.it",
+        "https://en.wikipedia.org/wiki/Minister_for_Civil_Protection_and_Maritime_Policies"
       ]
     },
     {
@@ -457,11 +469,13 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable, timeout。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable; timeout 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
-        "https://www.affarieuropei.gov.it/it/"
+        "https://www.affarieuropei.gov.it/it/",
+        "https://www.politicheeuropee.gov.it",
+        "https://en.wikipedia.org/wiki/Minister_for_European_Affairs_(Italy)"
       ]
     },
     {
@@ -517,11 +531,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
-        "https://www.politichegiovanili.gov.it/"
+        "https://www.politichegiovanili.gov.it/",
+        "https://it.wikipedia.org/wiki/Dipartimento_per_le_politiche_giovanili_e_il_servizio_civile_universale"
       ]
     },
     {
@@ -556,11 +571,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
-        "https://www.pariopportunita.gov.it/"
+        "https://www.pariopportunita.gov.it/",
+        "https://en.wikipedia.org/wiki/Minister_for_Equal_Opportunities"
       ]
     },
     {
@@ -595,7 +611,7 @@
       "news_url": "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/?tab=58f3f542-0aec-4999-b90c-9a8ce78b1258",
       "source_ids": [],
       "status": "parser_pending",
-      "reason": "Fresh fourth-round verification: parser_pending. Next action: Wait for explicit first-party publication metadata or a dated ministry publication feed; retain captured negative regression test. Evidence: tests/fixtures/ministry_round4_south.json",
+      "reason": "第五輪維基百科線索與官網查核：parser_pending。後續：Require actual publication metadata or a published per-department feed; the generic list extracts SCOPRI TUTTO as titles and incorrectly treats consultation end dates as publication dates. A new parser cannot manufacture missing publication dates. 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -613,7 +629,9 @@
         "https://www.riformeistituzionali.gov.it/it/comunicazione/comunicati-stampa/?tab=c87f4f27-d1e4-43e8-92a4-5af22ce99422",
         "https://www.riformeistituzionali.gov.it/it/comunicazione/?tab=58f3f542-0aec-4999-b90c-9a8ce78b1258",
         "https://www.riformeistituzionali.gov.it/it/comunicazione/?tab=c87f4f27-d1e4-43e8-92a4-5af22ce99422",
-        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/al-via-la-consultazione-pubblica-sul-codice-dell-amministrazione-digitale-cad/"
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/al-via-la-consultazione-pubblica-sul-codice-dell-amministrazione-digitale-cad/",
+        "https://www.riformeistituzionali.gov.it",
+        "https://en.wikipedia.org/wiki/Minister_for_Institutional_Reforms"
       ]
     }
   ]

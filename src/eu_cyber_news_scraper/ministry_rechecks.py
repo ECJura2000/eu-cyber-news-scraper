@@ -9,6 +9,7 @@ from typing import Any
 from zoneinfo import ZoneInfo
 
 from .source_catalog import https_url
+from .wikipedia_review import validate_news_url_cleanup, validate_wikipedia_review
 
 REGISTERED = frozenset({'existing_source', 'manual_verified'})
 RESULTS = REGISTERED | {'blocked', 'parser_pending', 'needs_review', 'no_news_endpoint'}
@@ -67,6 +68,15 @@ def load_rechecks(directory: Path) -> list[dict[str, Any]]:
                         raise ValueError('Recheck observation has no timezone or is stale')
                     if not attempt.get('http_status') and not attempt.get('error'):
                         raise ValueError('Recheck observation has no response or failure evidence')
+                if number == 5 or baseline.get('discovery_method') == 'wikipedia':
+                    minimum = date.fromisoformat(baseline['observed_on'])
+                    validate_wikipedia_review(check, minimum)
+                    validate_news_url_cleanup(check, minimum)
+                    original_url = initial[identifier].get('initial_news_url')
+                    patch = check.get('inventory_patch', {})
+                    if original_url and 'news_url' in patch and patch['news_url'] is None:
+                        if original_url not in {item['url'] for item in check.get('removed_news_urls', [])}:
+                            raise ValueError('Clearing a declared news URL requires matching first-party removal evidence')
                 checks[identifier] = check
         if set(checks) != set(initial):
             raise ValueError('Recheck reports do not cover every unresolved ministry')

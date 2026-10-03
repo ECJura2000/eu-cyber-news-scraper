@@ -1,0 +1,18 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Agriculture, Food Sovereignty and Forestry Italy"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Agriculture,_Food_Sovereignty_and_Forests",
+      "title": "Ministry of Agriculture, Food Sovereignty and Forests - Wikipedia",
+      "observed_at": "2026-10-03T08:37:27.603696+00:00",
+      "extracted_sha256": "1fe14b8d98a8857f6826b330b0e6332ed7ffd3fbe574eaf3fec2521baaf1ac0c",
+      "excerpt": "The**Ministry of Agriculture, Food Sovereignty and Forests**(Italian: Ministero dell'agricoltura, della sovranità alimentare e delle foreste), or**MASAF**, is an[Italian government](https://en.wikipedia.org/wiki/Italian_government)department.\n\nIt was formed in 1946[[1]](https://en.wikipedia.org/wiki/Ministry_of_Agriculture,_Food_Sovereignty_and_Forests#cite_note-:0-1)as the**Ministero dell'Agricoltura e delle Foreste**(\"Ministry of Agriculture and Forests\")[[2]](https://en.wikipedia.org/wiki/Ministry_of_Agriculture,_Food_Sovereignty_and_Forests#cite_note-:1-2), and following the[referendum](https://en.wikipedia.org/wiki/Italian_referendum,_1993)of 1993 became the**Ministero per il Coordinamento delle Politiche Agricole**(\"Ministry for Co-ordination of Agricultural Policies\"). It was reconstituted in the same year as the**Ministero delle Risorse Agricole, Alimentari e Forestali**(\"Ministry of Agricultural, Food and Forestry Resources\") in 2006[[2]](https://en.wikipedia.org/wiki/Ministry"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/it_agriculture.wikipedia.json"
+}

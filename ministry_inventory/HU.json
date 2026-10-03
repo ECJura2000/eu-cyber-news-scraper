@@ -182,8 +182,8 @@
       "homepage": "https://kormany.hu/kormanyzat/honvedelmi-miniszterium",
       "news_url": "https://kormany.hu/hirek",
       "source_ids": [],
-      "status": "needs_review",
-      "reason": "Fresh fourth-round verification: needs_review. Next action: Require explicit ministry publisher metadata or an attributable dedicated current ministry news endpoint before promotion. Evidence: tests/fixtures/ministry_round4_south.json",
+      "status": "parser_pending",
+      "reason": "第五輪維基百科線索與官網查核：parser_pending。已記錄錯誤：來源可連線，但未解析出新聞；請檢查版型或發布頻率。。後續：Official ministry identity is confirmed on its current ministry page, but actual production scrape_source returns PARSE_EMPTY. Identify an attributable ministry-specific news payload with genuine publication dates before adding an adapter/source. The existing /hirek shared government page remains recorded; it is a real news page and does not justify deletion. 證據：tests/fixtures/ministry_round5_east.json",
       "evidence_urls": [
         "https://kormany.hu/kormanyzat",
         "https://kormany.hu/kormanyzat/honvedelmi-miniszterium",
@@ -202,7 +202,8 @@
         "https://kormany.hu/chunk-Q33YZMAE.js",
         "https://kormany.hu/chunk-VAO64FKA.js",
         "https://kormany.hu/chunk-PBU2EYI5.js",
-        "https://kormany.hu/chunk-QYDKMGUG.js"
+        "https://kormany.hu/chunk-QYDKMGUG.js",
+        "https://en.wikipedia.org/wiki/Minister_of_Defence_(Hungary)"
       ]
     },
     {
@@ -293,14 +294,15 @@
       "homepage": "https://kormany.hu/kormanyzat/miniszterelnokseg",
       "news_url": "https://kormany.hu/hirek",
       "source_ids": [],
-      "status": "needs_review",
-      "reason": "Fresh fourth-round verification: needs_review. Next action: Require explicit ministry publisher metadata or an attributable dedicated current ministry news endpoint before promotion. Evidence: tests/fixtures/ministry_round4_south.json",
+      "status": "parser_pending",
+      "reason": "第五輪維基百科線索與官網查核：parser_pending。已記錄錯誤：來源可連線，但未解析出新聞；請檢查版型或發布頻率。。後續：Official ministry identity is confirmed on its current ministry page, but actual production scrape_source returns PARSE_EMPTY. Identify an attributable ministry-specific news payload with genuine publication dates before adding an adapter/source. The existing /hirek shared government page remains recorded; it is a real news page and does not justify deletion. 證據：tests/fixtures/ministry_round5_east.json",
       "evidence_urls": [
         "https://kormany.hu/kormanyzat",
         "https://kormany.hu/kormanyzat/miniszterelnokseg",
         "https://kormany.hu/hirek",
         "https://kormany.hu/hirlevel",
-        "https://kormany.hu/impresszum-kiado"
+        "https://kormany.hu/impresszum-kiado",
+        "https://hu.wikipedia.org/wiki/Minisztereln%C3%B6ks%C3%A9g"
       ]
     },
     {

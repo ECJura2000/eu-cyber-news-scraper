@@ -1,0 +1,963 @@
+{
+  "schema_version": 1,
+  "discovery_method": "wikipedia",
+  "observed_on": "2026-10-03",
+  "initial_registered": 301,
+  "remaining_count": 159,
+  "ministries": [
+    {
+      "canonical_id": "at_bmeia",
+      "country": "AT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "at_bmlv",
+      "country": "AT",
+      "initial_status": "needs_review",
+      "initial_news_url": "https://www.bmlv.gv.at/misc/rss.php"
+    },
+    {
+      "canonical_id": "be_chancellery",
+      "country": "BE",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "be_interior",
+      "country": "BE",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "be_health",
+      "country": "BE",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "bg_youth_sport",
+      "country": "BG",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "bg_education",
+      "country": "BG",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "bg_regional_development",
+      "country": "BG",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "bg_finance",
+      "country": "BG",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "cy_defence",
+      "country": "CY",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "cy_agriculture",
+      "country": "CY",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "cy_justice",
+      "country": "CY",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "cy_energy",
+      "country": "CY",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "cy_foreign_affairs",
+      "country": "CY",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "cy_labour",
+      "country": "CY",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "cy_interior",
+      "country": "CY",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "cy_finance",
+      "country": "CY",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "cy_transport",
+      "country": "CY",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "cy_health",
+      "country": "CY",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "cz_industry",
+      "country": "CZ",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "cz_agriculture",
+      "country": "CZ",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "de_bka",
+      "country": "DE",
+      "initial_status": "needs_review",
+      "initial_news_url": "https://www.bundesregierung.de/breg-de/aktuelles/pressemitteilungen"
+    },
+    {
+      "canonical_id": "de_bmf",
+      "country": "DE",
+      "initial_status": "parser_pending",
+      "initial_news_url": "https://www.bundesfinanzministerium.de/Web/DE/Home/Web/DE/Presse/Pressemitteilungen/pressemitteilungen.html"
+    },
+    {
+      "canonical_id": "de_bmwe",
+      "country": "DE",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "de_bmv",
+      "country": "DE",
+      "initial_status": "blocked",
+      "initial_news_url": "https://www.bmv.de/DE/Home/DE/Meta/Presse/presse.html"
+    },
+    {
+      "canonical_id": "dk_transport",
+      "country": "DK",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "dk_children",
+      "country": "DK",
+      "initial_status": "parser_pending",
+      "initial_news_url": "https://baebm.dk/nyheder/nyhedsarkiv"
+    },
+    {
+      "canonical_id": "es_presidency",
+      "country": "ES",
+      "initial_status": "blocked",
+      "initial_news_url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/paginas/index.aspx"
+    },
+    {
+      "canonical_id": "es_inclusion",
+      "country": "ES",
+      "initial_status": "blocked",
+      "initial_news_url": "https://www.inclusion.gob.es/web/guest/comunicacion/noticias"
+    },
+    {
+      "canonical_id": "es_industry_tourism",
+      "country": "ES",
+      "initial_status": "parser_pending",
+      "initial_news_url": "https://www.mincotur.gob.es/es-es/GabinetePrensa/NotasPrensa/Paginas/listadoNotasPrensa.aspx"
+    },
+    {
+      "canonical_id": "es_presidency_justice",
+      "country": "ES",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "es_labour",
+      "country": "ES",
+      "initial_status": "blocked",
+      "initial_news_url": "https://prensa.mites.gob.es/webPrensa/listado-noticia"
+    },
+    {
+      "canonical_id": "es_interior",
+      "country": "ES",
+      "initial_status": "blocked",
+      "initial_news_url": "https://www.interior.gob.es/opencms/es/prensa/noticias/"
+    },
+    {
+      "canonical_id": "fi_prime_minister",
+      "country": "FI",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fi_justice",
+      "country": "FI",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fi_interior",
+      "country": "FI",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fi_defence",
+      "country": "FI",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fi_finance",
+      "country": "FI",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fi_education_culture",
+      "country": "FI",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fi_agriculture_forestry",
+      "country": "FI",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fi_transport_communications",
+      "country": "FI",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fi_economy_employment",
+      "country": "FI",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fi_social_health",
+      "country": "FI",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fi_environment",
+      "country": "FI",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fr_prime_minister",
+      "country": "FR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fr_public_accounts",
+      "country": "FR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fr_territorial_decentralisation",
+      "country": "FR",
+      "initial_status": "needs_review",
+      "initial_news_url": "https://www.ecologie.gouv.fr/actualites"
+    },
+    {
+      "canonical_id": "fr_economy_finance",
+      "country": "FR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fr_education",
+      "country": "FR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fr_higher_education_research",
+      "country": "FR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fr_foreign_affairs",
+      "country": "FR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fr_interior",
+      "country": "FR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fr_overseas",
+      "country": "FR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fr_sme_commerce_tourism",
+      "country": "FR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fr_health_family",
+      "country": "FR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fr_ecological_transition",
+      "country": "FR",
+      "initial_status": "needs_review",
+      "initial_news_url": "https://www.ecologie.gouv.fr/actualites"
+    },
+    {
+      "canonical_id": "fr_transport",
+      "country": "FR",
+      "initial_status": "needs_review",
+      "initial_news_url": "https://www.ecologie.gouv.fr/actualites"
+    },
+    {
+      "canonical_id": "fr_labour_solidarity",
+      "country": "FR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "fr_city_housing",
+      "country": "FR",
+      "initial_status": "needs_review",
+      "initial_news_url": "https://www.ecologie.gouv.fr/actualites"
+    },
+    {
+      "canonical_id": "gr_government_presidency",
+      "country": "GR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "gr_finance",
+      "country": "GR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "gr_foreign_affairs",
+      "country": "GR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "gr_defence",
+      "country": "GR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "gr_interior",
+      "country": "GR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "gr_infrastructure_transport",
+      "country": "GR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "gr_environment_energy",
+      "country": "GR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "gr_labour",
+      "country": "GR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "gr_citizen_protection",
+      "country": "GR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "gr_justice",
+      "country": "GR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "gr_culture",
+      "country": "GR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "gr_social_family",
+      "country": "GR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "gr_agriculture",
+      "country": "GR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "gr_maritime",
+      "country": "GR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "gr_tourism",
+      "country": "GR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "gr_digital",
+      "country": "GR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "gr_climate_civil_protection",
+      "country": "GR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_prime_minister",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_veterans",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_interior",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_sea_transport",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_defence",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_spatial_construction",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_agriculture",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_finance",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_foreign_affairs",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_economy",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_environment",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_justice_digital",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_education_science",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_demography",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_culture",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_tourism_sport",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_regional_eu",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_labour_social",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hr_health",
+      "country": "HR",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "hu_defence",
+      "country": "HU",
+      "initial_status": "needs_review",
+      "initial_news_url": "https://kormany.hu/hirek"
+    },
+    {
+      "canonical_id": "hu_prime_minister",
+      "country": "HU",
+      "initial_status": "needs_review",
+      "initial_news_url": "https://kormany.hu/hirek"
+    },
+    {
+      "canonical_id": "it_interior",
+      "country": "IT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "it_justice",
+      "country": "IT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "it_agriculture",
+      "country": "IT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "it_environment",
+      "country": "IT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "it_culture",
+      "country": "IT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "it_health",
+      "country": "IT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "it_public_administration",
+      "country": "IT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "it_maritime_policies",
+      "country": "IT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "it_european_affairs",
+      "country": "IT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "it_youth",
+      "country": "IT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "it_equal_opportunities",
+      "country": "IT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "it_institutional_reforms",
+      "country": "IT",
+      "initial_status": "parser_pending",
+      "initial_news_url": "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/?tab=58f3f542-0aec-4999-b90c-9a8ce78b1258"
+    },
+    {
+      "canonical_id": "lt_environment",
+      "country": "LT",
+      "initial_status": "blocked",
+      "initial_news_url": "https://am.lrv.lt/lt/naujienos/"
+    },
+    {
+      "canonical_id": "lt_economy",
+      "country": "LT",
+      "initial_status": "blocked",
+      "initial_news_url": "https://eimin.lrv.lt/lt/ziniasklaidai/naujienos/"
+    },
+    {
+      "canonical_id": "lt_energy",
+      "country": "LT",
+      "initial_status": "blocked",
+      "initial_news_url": "https://enmin.lrv.lt/lt/naujienos/"
+    },
+    {
+      "canonical_id": "lt_finance",
+      "country": "LT",
+      "initial_status": "blocked",
+      "initial_news_url": "https://finmin.lrv.lt/lt/naujienos/"
+    },
+    {
+      "canonical_id": "lt_defence",
+      "country": "LT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "lt_culture",
+      "country": "LT",
+      "initial_status": "blocked",
+      "initial_news_url": "https://lrkm.lrv.lt/lt/naujienos/"
+    },
+    {
+      "canonical_id": "lt_social_security",
+      "country": "LT",
+      "initial_status": "blocked",
+      "initial_news_url": "https://socmin.lrv.lt/lt/naujienos/"
+    },
+    {
+      "canonical_id": "lt_transport",
+      "country": "LT",
+      "initial_status": "blocked",
+      "initial_news_url": "https://sumin.lrv.lt/lt/naujienos/"
+    },
+    {
+      "canonical_id": "lt_health",
+      "country": "LT",
+      "initial_status": "blocked",
+      "initial_news_url": "https://sam.lrv.lt/lt/news/"
+    },
+    {
+      "canonical_id": "lt_education",
+      "country": "LT",
+      "initial_status": "blocked",
+      "initial_news_url": "https://smsm.lrv.lt/lt/naujienos-1/pranesimai-ziniasklaidai-1/"
+    },
+    {
+      "canonical_id": "lt_justice",
+      "country": "LT",
+      "initial_status": "blocked",
+      "initial_news_url": "https://tm.lrv.lt/lt/naujienos-2/"
+    },
+    {
+      "canonical_id": "lt_foreign_affairs",
+      "country": "LT",
+      "initial_status": "blocked",
+      "initial_news_url": "https://www.urm.lt/naujienos/141"
+    },
+    {
+      "canonical_id": "lt_interior",
+      "country": "LT",
+      "initial_status": "blocked",
+      "initial_news_url": "https://vrm.lrv.lt/lt/naujienos/"
+    },
+    {
+      "canonical_id": "lt_agriculture",
+      "country": "LT",
+      "initial_status": "blocked",
+      "initial_news_url": "https://zum.lrv.lt/lt/naujienos/"
+    },
+    {
+      "canonical_id": "lt_government_office",
+      "country": "LT",
+      "initial_status": "blocked",
+      "initial_news_url": "https://lrv.lt/lt/naujienos/"
+    },
+    {
+      "canonical_id": "mt_opm",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_health",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_accommodation",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_social_policy",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_agriculture",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_economy",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_inclusion",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_gozo",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_education",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_energy",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_finance",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_justice",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_infrastructure",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_tourism",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_sustainable_mobility",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_foreign_affairs",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_local_government",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_european_funds",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_home_affairs",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_culture",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_youth",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "mt_equality",
+      "country": "MT",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "ro_transport",
+      "country": "RO",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "ro_foreign_affairs",
+      "country": "RO",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "ro_economy_digital",
+      "country": "RO",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "ro_energy",
+      "country": "RO",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "ro_agriculture",
+      "country": "RO",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "ro_development",
+      "country": "RO",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "ro_european_investment",
+      "country": "RO",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "ro_labour_family_youth",
+      "country": "RO",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "ro_culture",
+      "country": "RO",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "ro_prime_minister",
+      "country": "RO",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "ro_government_secretariat",
+      "country": "RO",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "sk_agriculture",
+      "country": "SK",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    },
+    {
+      "canonical_id": "sk_foreign_affairs",
+      "country": "SK",
+      "initial_status": "blocked",
+      "initial_news_url": null
+    }
+  ]
+}

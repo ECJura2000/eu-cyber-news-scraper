@@ -1,0 +1,25 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry for Gozo Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_for_Gozo",
+      "title": "Ministry for Gozo - Wikipedia",
+      "observed_at": "2026-10-03T08:37:37.050430+00:00",
+      "extracted_sha256": "9ec69c97dc71e423b9d03b1fca3df32ca72600a4982d1486b1dee699ad114469",
+      "excerpt": "The**Ministry for Gozo**([Maltese](https://en.wikipedia.org/wiki/Maltese_language):Ministeru għal Għawdex) formerly**Ministry for Gozo and Planning**is the ministry of the[Government of Malta](https://en.wikipedia.org/wiki/Government_of_Malta)with responsibility for the island of[Gozo](https://en.wikipedia.org/wiki/Gozo). It was established in 1987.[[1]](https://en.wikipedia.org/wiki/Ministry_for_Gozo#cite_note-1)[[2]](https://en.wikipedia.org/wiki/Ministry_for_Gozo#cite_note-2)\n\nOn 4 June 2026,[during the reshuffle of the cabinet](https://en.wikipedia.org/wiki/Maltese_Government_2026%E2%80%932030?action=edit&redlink=1#June_20246_%E2%80%93_present), the ministry was renamed to the**Ministry for Gozo**.[[3]](https://en.wikipedia.org/wiki/Ministry_for_Gozo#cite_note-3)\n\n## List of Ministers[[edit](https://en.wikipedia.org/w/index.php?title=Ministry_for_Gozo&action=edit&section=1)]\n\nMinisters have been:[[4]](https://en.wikipedia.org/wiki/Ministry_for_Gozo#cite_note-world-4)\n- [Anton Tabon"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "http://gozo.gov.mt/",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_for_Gozo",
+      "link_text": "gozo.gov.mt",
+      "relationship_excerpt": "tps://en.wikipedia.org/wiki/Clint_Camilleri), Minister for GozoWebsite[gozo.gov.mt](http://gozo.gov.mt/)\n\nThe**Ministry for Gozo**([Maltese](https://en.wikipedia.org/wiki/Mal"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_gozo.wikipedia.json"
+}

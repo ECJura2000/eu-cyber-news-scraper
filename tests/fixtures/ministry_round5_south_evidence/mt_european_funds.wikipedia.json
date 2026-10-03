@@ -1,0 +1,18 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Ministry for European Funds, Social Dialogue and Consumer Protection Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Chris_Fearne",
+      "title": "Chris Fearne - Wikipedia",
+      "observed_at": "2026-10-03T08:37:42.847643+00:00",
+      "extracted_sha256": "da6d579f41c4c89f1e3a43e2e38db1ac8b2d581876cc1f8404bc1c716a97e2ab",
+      "excerpt": "[Jump to content](https://en.wikipedia.org/wiki/Chris_Fearne#bodyContent)\n\nFrom Wikipedia, the free encyclopedia\n\nMaltese physician and politician (born 1963)\n\n[The Honourable](https://en.wikipedia.org/wiki/The_Honourable)\n\nChristopher Fearne\n\nMP[](https://en.wikipedia.org/wiki/File:Informal_meeting_of_health_ministers_(iEPSCO)._Arrivals_Chris_Fearne_(35653640850)_(cropped).jpg)\n\nFearne in 2017[Minister for Foreign and European Affairs](https://en.wikipedia.org/wiki/List_of_ministers_for_foreign_affairs_of_Malta)\n\n**[Incumbent](https://en.wikipedia.org/wiki/Incumbent)****Assumed office**\n4 June 2026Prime Minister[Robert Abela](https://en.wikipedia.org/wiki/Robert_Abela)Preceded by[Ian Borg](https://en.wikipedia.org/wiki/Ian_Borg)[Deputy Prime Minister of Malta](https://en.wikipedia.org/wiki/Deputy_Prime_Minister_of_Malta)**In office**\n17 July 2017–10 May 2024President[Marie Louise Coleiro Preca](https://en.wikipedia.org/wiki/Marie_Louise_Coleiro_Preca)\n[George Vella](https://en.wikiped"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_european_funds.wikipedia.json"
+}

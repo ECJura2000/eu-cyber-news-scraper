@@ -1,0 +1,31 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Culture Greece"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Culture_(Greece)",
+      "title": "Ministry of Culture (Greece) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:22.526227+00:00",
+      "extracted_sha256": "f2102fe3e0221f8edb440c382582134177882a5fa2a0f37e69ebaacb2726db84",
+      "excerpt": "The**Ministry of Culture**([Greek](https://en.wikipedia.org/wiki/Greek_language):Υπουργείο Πολιτισμού) is the[government department](https://en.wikipedia.org/wiki/Ministry_(government_department))of[Greece](https://en.wikipedia.org/wiki/Greece)entrusted with preserving the country's[cultural heritage](https://en.wikipedia.org/wiki/Culture_of_Greece)and promoting[the arts](https://en.wikipedia.org/wiki/The_arts). The incumbent minister is[Lina Mendoni](https://en.wikipedia.org/wiki/Lina_Mendoni), and the deputy minister is[Iason Fotilas](https://en.wikipedia.org/wiki/Iason_Fotilas?action=edit&redlink=1)[[el](https://el.wikipedia.org/wiki/%CE%99%CE%AC%CF%83%CF%89%CE%BD%20%CE%A6%CF%89%CF%84%CE%AE%CE%BB%CE%B1%CF%82)].\n\n## History[[edit](https://en.wikipedia.org/w/index.php?title=Ministry_of_Culture_(Greece)&action=edit&section=1)]\n\nThis ministry was established on 26 August 1971 as the**Ministry of Culture and Sciences**(Ὑπουργεῖον Πολιτισμοῦ καὶ Ἐπιστημῶν), and was renamed the**Ministry o"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "https://culture.gov.gr/en/SitePages/default.aspx",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_Culture_(Greece)",
+      "link_text": "https://culture.gov.gr/en/SitePages/default.aspx",
+      "relationship_excerpt": "org/wiki/Natural_History_Museum_of_the_Lesvos_Petrified_Forest)Website[https://culture.gov.gr/en/SitePages/default.aspx](https://culture.gov.gr/en/SitePages/default.aspx)This article is part of[a series](https://en.wikipedia.org/wiki/Catego"
+    },
+    {
+      "url": "https://culture.gov.gr/el/SitePages/default.aspx",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_Culture_(Greece)",
+      "link_text": "Official website",
+      "relationship_excerpt": "dex.php?title=Ministry_of_Culture_(Greece)&action=edit&section=12)]\n- [Official website](https://culture.gov.gr/el/SitePages/default.aspx)[](https://www.wikidata.org/wiki/Q16331895#P856)(in Greek and English)"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/gr_culture.wikipedia.json"
+}

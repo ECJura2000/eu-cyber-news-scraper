@@ -22,11 +22,13 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：RobotsDeniedError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
       "evidence_urls": [
         "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
         "https://www.vlaanderen.be/Organisation/OVO024763",
-        "https://kanselarij.belgium.be/nl"
+        "https://kanselarij.belgium.be/nl",
+        "https://chancellery.belgium.be/en",
+        "https://en.wikipedia.org/wiki/Federal_Public_Service_Chancellery_of_the_Prime_Minister"
       ]
     },
     {
@@ -82,12 +84,14 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：RobotsUnavailableError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
       "evidence_urls": [
         "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
         "https://www.vlaanderen.be/Organisation/OVO008237",
         "https://www.ibz.be/nl",
-        "https://ibz.be/nl"
+        "https://ibz.be/nl",
+        "https://www.ibz.be/",
+        "https://en.wikipedia.org/wiki/Federal_Public_Service_Interior"
       ]
     },
     {
@@ -184,12 +188,14 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：RobotsUnavailableError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
       "evidence_urls": [
         "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
         "https://www.vlaanderen.be/Organisation/OVO008238",
         "https://www.health.belgium.be/nl",
-        "https://www.health.belgium.be/en"
+        "https://www.health.belgium.be/en",
+        "https://www.health.fgov.be/",
+        "https://en.wikipedia.org/wiki/Federal_Public_Service_Health"
       ]
     },
     {

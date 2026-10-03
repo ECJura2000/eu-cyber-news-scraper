@@ -1,0 +1,18 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Ministry for Sustainable Mobility Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Chris_Bonett",
+      "title": "Chris Bonett - Wikipedia",
+      "observed_at": "2026-10-03T08:37:47.769523+00:00",
+      "extracted_sha256": "912c24bd0b6f917e041356b5460e182a5fb181fb90032fd4afd037ae355249f8",
+      "excerpt": "[Jump to content](https://en.wikipedia.org/wiki/Chris_Bonett#bodyContent)\n\nFrom Wikipedia, the free encyclopedia\n\nMaltese politician\n\n[Honorable](https://en.wikipedia.org/wiki/Honorable)\n\nChris Bonett\n\n[MP](https://en.wikipedia.org/wiki/Parliament_of_Malta)Minister for Sustainable mobility\n\n**[Incumbent](https://en.wikipedia.org/wiki/Incumbent)****Assumed office**\n4 June 2026Prime Minister[Robert Abela](https://en.wikipedia.org/wiki/Robert_Abela)Preceded byOffice EstablishedMinister for Transport, Infrastructure and Public Works**In office**\n6 January 2024–4 June 2026Prime Minister[Robert Abela](https://en.wikipedia.org/wiki/Robert_Abela)Preceded by[Aaron Farrugia](https://en.wikipedia.org/wiki/Aaron_Farrugia)Succeeded by[Chris Bonett](https://en.wikipedia.org/wiki/Chris_Bonett)(With a rebranding of the Ministry)[Member of Parliament](https://en.wikipedia.org/wiki/Parliament_of_Malta)\n\n**[Incumbent](https://en.wikipedia.org/wiki/Incumbent)****Assumed office**\n26 March 2022Constituency["
+    }
+  ],
+  "website_candidates": [],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_sustainable_mobility.wikipedia.json"
+}

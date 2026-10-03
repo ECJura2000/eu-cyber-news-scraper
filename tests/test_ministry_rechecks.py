@@ -108,3 +108,39 @@ def test_invalid_baseline_filename_is_reported(tmp_path):
     (tmp_path/'ministry_roundinvalid_baseline.json').write_text('{}')
     with pytest.raises(ValueError, match='filename'):
         load_rechecks(tmp_path)
+
+
+def test_fifth_round_cannot_omit_requested_wikipedia_lookup(tmp_path):
+    write_round(tmp_path, 5)
+    with pytest.raises(ValueError, match='Wikipedia review'):
+        load_rechecks(tmp_path)
+
+
+def test_fifth_round_records_failed_wikipedia_lookup_without_deleting_ministry(tmp_path):
+    _, report = write_round(tmp_path, 5)
+    report['checks'][0]['wikipedia'] = {'status': 'blocked', 'queries': ['Ministry Wikipedia lookup'],
+                                      'pages': [], 'website_candidates': []}
+    (tmp_path/'ministry_round5_test.json').write_text(json.dumps(report))
+    rounds = load_rechecks(tmp_path)
+    assert rounds[0]['checks']['de_test']['result'] == 'blocked'
+    assert 'removed_news_urls' not in rounds[0]['checks']['de_test']
+
+
+@pytest.mark.parametrize('has_proof', [False, True])
+def test_fifth_round_cannot_silently_clear_original_news_url(tmp_path, has_proof):
+    baseline, report = write_round(tmp_path, 5)
+    original = 'https://official.example/old-news'
+    baseline['ministries'][0]['initial_news_url'] = original
+    item = report['checks'][0]
+    item['wikipedia'] = {'status': 'blocked', 'queries': ['Ministry lookup'], 'pages': [], 'website_candidates': []}
+    item['inventory_patch'] = {'news_url': None}
+    if has_proof:
+        item['removed_news_urls'] = [{'url': original, 'http_status': 404, 'reason': 'Official route no longer exists.',
+                                     'observed_at': '2026-10-03T01:00:00+00:00'}]
+    (tmp_path/'ministry_round5_baseline.json').write_text(json.dumps(baseline))
+    (tmp_path/'ministry_round5_test.json').write_text(json.dumps(report))
+    if has_proof:
+        assert load_rechecks(tmp_path)[0]['checks']['de_test']['inventory_patch']['news_url'] is None
+    else:
+        with pytest.raises(ValueError, match='matching first-party'):
+            load_rechecks(tmp_path)

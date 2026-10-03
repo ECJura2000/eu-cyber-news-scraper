@@ -1,0 +1,26 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Presidency of the Government Greece",
+    "site:wikipedia.org \"Προεδρία της Κυβέρνησης\""
+  ],
+  "pages": [
+    {
+      "url": "https://el.wikipedia.org/wiki/%CE%A0%CF%81%CE%BF%CE%B5%CE%B4%CF%81%CE%AF%CE%B1_%CF%84%CE%B7%CF%82_%CE%9A%CF%85%CE%B2%CE%AD%CF%81%CE%BD%CE%B7%CF%83%CE%B7%CF%82",
+      "title": "Προεδρία της Κυβέρνησης - Βικιπαίδεια",
+      "observed_at": "2026-10-03T08:41:51.823283+00:00",
+      "extracted_sha256": "2e4d1f584aeab58de44bbe3aeeb835970a81c4afca58a947fdedb66b35f7247f",
+      "excerpt": "[Μετάβαση στο περιεχόμενο](https://el.wikipedia.org/wiki/%CE%A0%CF%81%CE%BF%CE%B5%CE%B4%CF%81%CE%AF%CE%B1_%CF%84%CE%B7%CF%82_%CE%9A%CF%85%CE%B2%CE%AD%CF%81%CE%BD%CE%B7%CF%83%CE%B7%CF%82#bodyContent)\n\nΑπό τη Βικιπαίδεια, την ελεύθερη εγκυκλοπαίδεια\n\nΑυτό το λήμμα αφορά την αυτοτελή υπηρεσία.Για παλαιότερο υπουργείο, δείτε:[Υπουργείο Προεδρίας Κυβερνήσεως](https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%A0%CF%81%CE%BF%CE%B5%CE%B4%CF%81%CE%AF%CE%B1%CF%82_%CE%9A%CF%85%CE%B2%CE%B5%CF%81%CE%BD%CE%AE%CF%83%CE%B5%CF%89%CF%82).Προεδρία της Κυβέρνησης[](https://el.wikipedia.org/wiki/%CE%91%CF%81%CF%87%CE%B5%CE%AF%CE%BF:Presidency_of_the_Government_%28Greece%29_logo.png)Γενικές πληροφορίεςΣύσταση[7 Αυγούστου](https://el.wikipedia.org/wiki/7_%CE%91%CF%85%CE%B3%CE%BF%CF%8D%CF%83%CF%84%CE%BF%CF%85)[2019](https://el.wikipedia.org/wiki/2019)υπό την παρούσα μορφήΠρώην φορέας[Υπουργείο Προεδρίας Κυβερνήσεως](https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "https://govpresidency.gov.gr/",
+      "wikipedia_url": "https://el.wikipedia.org/wiki/%CE%A0%CF%81%CE%BF%CE%B5%CE%B4%CF%81%CE%AF%CE%B1_%CF%84%CE%B7%CF%82_%CE%9A%CF%85%CE%B2%CE%AD%CF%81%CE%BD%CE%B7%CF%83%CE%B7%CF%82",
+      "link_text": "Επίσημη Ιστοσελίδα",
+      "relationship_excerpt": "CF%84%CE%B7%CF%82_%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1%CF%82)Ιστότοπος[Επίσημη Ιστοσελίδα](https://govpresidency.gov.gr/)\n[primeminister.gr](https://www.primeminister.gr/primeminister/proedri"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/gr_government_presidency.wikipedia.json"
+}

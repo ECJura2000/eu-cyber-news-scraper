@@ -1,0 +1,31 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of National Economy and Finance Greece"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_National_Economy_and_Finance_(Greece)",
+      "title": "Ministry of National Economy and Finance (Greece) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:16.040840+00:00",
+      "extracted_sha256": "ab5f4dfab517b3523d6869a09eb9139507cffa7278ac586c6135eee63405838e",
+      "excerpt": "The**Ministry of National Economy and Finance**([Greek](https://en.wikipedia.org/wiki/Greek_language):Υπουργείο Εθνικής Οικονομίας και Οικονομικών) is the[government department](https://en.wikipedia.org/wiki/Ministry_(government_department))responsible for overseeing Greece's[public finances](https://en.wikipedia.org/wiki/Public_finance). The current minister is[Kyriakos Pierrakakis](https://en.wikipedia.org/wiki/Kyriakos_Pierrakakis), a member of the[Hellenic Parliament](https://en.wikipedia.org/wiki/Hellenic_Parliament)representing the[Athens A](https://en.wikipedia.org/wiki/Athens_A)constituency for the[New Democracy party](https://en.wikipedia.org/wiki/New_Democracy_(Greece)).\n\nThe ministry was established in August 2023 through a renaming and reorganization of the former**Ministry of Finance**under the[Mitsotakis government](https://en.wikipedia.org/wiki/Second_Cabinet_of_Kyriakos_Mitsotakis). The restructured ministry now incorporates entities previously managed by the[Ministry o"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "https://minfin.gov.gr",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_National_Economy_and_Finance_(Greece)",
+      "link_text": "minfin.gov.gr",
+      "relationship_excerpt": "neral Secretariat of Public Property\n- Administrative SecretaryWebsite[minfin.gov.gr](https://minfin.gov.gr)[](https://www.wikidata.org/wiki/Q2605674#P856)This article is part of"
+    },
+    {
+      "url": "https://minfin.gov.gr",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_National_Economy_and_Finance_(Greece)",
+      "link_text": "Official website",
+      "relationship_excerpt": "y_of_National_Economy_and_Finance_(Greece)&action=edit&section=10)]\n- [Official website](https://minfin.gov.gr)[](https://www.wikidata.org/wiki/Q2605674#P856)(in Greek and English)\n"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/gr_finance.wikipedia.json"
+}

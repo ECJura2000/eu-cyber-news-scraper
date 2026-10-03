@@ -1,0 +1,18 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Ministry for the Economy, Technology and Strategic Projects Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Silvio_Schembri",
+      "title": "Silvio Schembri - Wikipedia",
+      "observed_at": "2026-10-03T08:37:36.415331+00:00",
+      "extracted_sha256": "2ea1ce08479c841584a461d149b0e1a4af27becc8807db47ba2718192b0f250e",
+      "excerpt": "[Jump to content](https://en.wikipedia.org/wiki/Silvio_Schembri#bodyContent)\n\nFrom Wikipedia, the free encyclopedia\n\nMaltese politician (born 1985)\n\nThis[biography of a living person](https://en.wikipedia.org/wiki/Wikipedia:Biographies_of_living_persons)**needs additional[citations](https://en.wikipedia.org/wiki/Wikipedia:Citing_sources)for[verification](https://en.wikipedia.org/wiki/Wikipedia:Verifiability)**.Please help by adding[reliable sources](https://en.wikipedia.org/wiki/Wikipedia:Reliable_sources). Contentious material about living persons that is unsourced or poorly sourced**must be removed immediately**, especially if potentially[libelous](https://en.wikipedia.org/wiki/Wikipedia:Libel)or harmful.\n*Find sources:*[\"Silvio Schembri\"](https://www.google.com/search?as_eq=wikipedia&q=%22Silvio+Schembri%22)–[news](https://www.google.com/search?tbm=nws&q=%22Silvio+Schembri%22+-wikipedia&tbs=ar:1)**·**[newspapers](https://www.google.com/search?&q=%22Silvio+Schembri%22&tbs=bkt:s&tbm=b"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_economy.wikipedia.json"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Infrastructure and Transport Greece"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Infrastructure_and_Transport_(Greece)",
+      "title": "Ministry of Infrastructure and Transport (Greece) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:18.830926+00:00",
+      "extracted_sha256": "6476f7221df234ab63290dedbda0ae0baed47580447fbe071a3158b7845f9dbe",
+      "excerpt": "The**Ministry of Infrastructure and Transport**([Greek](https://en.wikipedia.org/wiki/Greek_language):Υπουργείο Υποδομών και Μεταφορών) is a[government department](https://en.wikipedia.org/wiki/Ministry_(government_department))of[Greece](https://en.wikipedia.org/wiki/Greece)headquartered in[Cholargos](https://en.wikipedia.org/wiki/Cholargos),[Athens](https://en.wikipedia.org/wiki/Athens).[[4]](https://en.wikipedia.org/wiki/Ministry_of_Infrastructure_and_Transport_(Greece)#cite_note-4)\n\nThe ministry is currently headed by Christos Dimas.\n\n## History[[edit](https://en.wikipedia.org/w/index.php?title=Ministry_of_Infrastructure_and_Transport_(Greece)&action=edit&section=1)]\n\nThe ministry is the successor of the old**Ministry of Transport and Communications**(Υπουργείο Μεταφορών και Επικοινωνιών), with which the[public works](https://en.wikipedia.org/wiki/Public_works)portfolio of the[Ministry for the Environment, Physical Planning and Public Works](https://en.wikipedia.org/wiki/Ministry_fo"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/gr_infrastructure_transport.wikipedia.json"
+}

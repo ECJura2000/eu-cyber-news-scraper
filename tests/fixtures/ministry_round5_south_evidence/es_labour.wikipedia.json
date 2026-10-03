@@ -1,0 +1,25 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Labour and Social Economy Spain"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Labour_(Spain)",
+      "title": "Ministry of Labour (Spain) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:16.775700+00:00",
+      "extracted_sha256": "b494fd665392cb3824f05b98c8ec157e4299d0e1db3d39caa53472a9efbb4de5",
+      "excerpt": "The**Ministry of Labour and Social Economy**(**MITES**) is the[department](https://en.wikipedia.org/wiki/Spanish_government_departments)of the[Government of Spain](https://en.wikipedia.org/wiki/Government_of_Spain)responsible for designing and implementing the government policy on[labour](https://en.wikipedia.org/wiki/Work_(human_activity))and[labour relations](https://en.wikipedia.org/wiki/Labor_relations),[employment](https://en.wikipedia.org/wiki/Employment),[unemployment benefits](https://en.wikipedia.org/wiki/Unemployment_benefits)and[self-employment](https://en.wikipedia.org/wiki/Self-employment),[social economy](https://en.wikipedia.org/wiki/Social_economy)and[corporate social responsibility](https://en.wikipedia.org/wiki/Corporate_social_responsibility).[[2]](https://en.wikipedia.org/wiki/Ministry_of_Labour_(Spain)#cite_note-:0-2)\n\nThe Labour Department was created by prime minister[Eduardo Dato](https://en.wikipedia.org/wiki/Eduardo_Dato)in 1920, and has existed ever since. In"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "http://www.mites.gob.es/",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_Labour_(Spain)",
+      "link_text": "www.mites.gob.es",
+      "relationship_excerpt": "ate for Social Economy\n- Gemma del Rey Almansa, Under-SecretaryWebsite[www.mites.gob.es](http://www.mites.gob.es/)\n\nThe**Ministry of Labour and Social Economy**(**MITES**) is the[depar"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/es_labour.wikipedia.json"
+}

@@ -22,14 +22,15 @@
       "news_url": "https://am.lrv.lt/lt/naujienos/",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
       "evidence_urls": [
         "https://lrv.lt/lt/ministerijos-ir-istaigos/",
         "https://am.lrv.lt/",
         "https://am.lrv.lt/lt/naujienos/",
         "https://am.lrv.lt/rss/",
         "https://am.lrv.lt/lt/rss/",
-        "https://am.lrv.lt/lt/naujienos/?format=rss"
+        "https://am.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Environment_(Lithuania)"
       ]
     },
     {
@@ -43,14 +44,15 @@
       "news_url": "https://eimin.lrv.lt/lt/ziniasklaidai/naujienos/",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
       "evidence_urls": [
         "https://lrv.lt/lt/ministerijos-ir-istaigos/",
         "https://eimin.lrv.lt/",
         "https://eimin.lrv.lt/lt/ziniasklaidai/naujienos/",
         "https://eimin.lrv.lt/rss/",
         "https://eimin.lrv.lt/lt/rss/",
-        "https://eimin.lrv.lt/lt/naujienos/?format=rss"
+        "https://eimin.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Economy_and_Innovation_(Lithuania)"
       ]
     },
     {
@@ -64,14 +66,15 @@
       "news_url": "https://enmin.lrv.lt/lt/naujienos/",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
       "evidence_urls": [
         "https://lrv.lt/lt/ministerijos-ir-istaigos/",
         "https://enmin.lrv.lt/",
         "https://enmin.lrv.lt/lt/naujienos/",
         "https://enmin.lrv.lt/rss/",
         "https://enmin.lrv.lt/lt/rss/",
-        "https://enmin.lrv.lt/lt/naujienos/?format=rss"
+        "https://enmin.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Energy_(Lithuania)"
       ]
     },
     {
@@ -85,14 +88,15 @@
       "news_url": "https://finmin.lrv.lt/lt/naujienos/",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
       "evidence_urls": [
         "https://lrv.lt/lt/ministerijos-ir-istaigos/",
         "https://finmin.lrv.lt/",
         "https://finmin.lrv.lt/lt/naujienos/",
         "https://finmin.lrv.lt/rss/",
         "https://finmin.lrv.lt/lt/rss/",
-        "https://finmin.lrv.lt/lt/naujienos/?format=rss"
+        "https://finmin.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Finance_(Lithuania)"
       ]
     },
     {
@@ -106,13 +110,14 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
       "evidence_urls": [
         "https://lrv.lt/lt/ministerijos-ir-istaigos/",
         "https://kam.lt/",
         "https://kam.lt/rss/",
         "https://kam.lt/lt/rss/",
-        "https://kam.lt/lt/naujienos/?format=rss"
+        "https://kam.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_National_Defence_(Lithuania)"
       ]
     },
     {
@@ -126,14 +131,15 @@
       "news_url": "https://lrkm.lrv.lt/lt/naujienos/",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
       "evidence_urls": [
         "https://lrv.lt/lt/ministerijos-ir-istaigos/",
         "https://lrkm.lrv.lt/",
         "https://lrkm.lrv.lt/lt/naujienos/",
         "https://lrkm.lrv.lt/rss/",
         "https://lrkm.lrv.lt/lt/rss/",
-        "https://lrkm.lrv.lt/lt/naujienos/?format=rss"
+        "https://lrkm.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Culture_(Lithuania)"
       ]
     },
     {
@@ -147,14 +153,15 @@
       "news_url": "https://socmin.lrv.lt/lt/naujienos/",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
       "evidence_urls": [
         "https://lrv.lt/lt/ministerijos-ir-istaigos/",
         "https://socmin.lrv.lt/",
         "https://socmin.lrv.lt/lt/naujienos/",
         "https://socmin.lrv.lt/rss/",
         "https://socmin.lrv.lt/lt/rss/",
-        "https://socmin.lrv.lt/lt/naujienos/?format=rss"
+        "https://socmin.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Social_Security_and_Labour_(Lithuania)"
       ]
     },
     {
@@ -168,14 +175,15 @@
       "news_url": "https://sumin.lrv.lt/lt/naujienos/",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
       "evidence_urls": [
         "https://lrv.lt/lt/ministerijos-ir-istaigos/",
         "https://sumin.lrv.lt/",
         "https://sumin.lrv.lt/lt/naujienos/",
         "https://sumin.lrv.lt/rss/",
         "https://sumin.lrv.lt/lt/rss/",
-        "https://sumin.lrv.lt/lt/naujienos/?format=rss"
+        "https://sumin.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Transport_and_Communications_(Lithuania)"
       ]
     },
     {
@@ -189,14 +197,15 @@
       "news_url": "https://sam.lrv.lt/lt/news/",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
       "evidence_urls": [
         "https://lrv.lt/lt/ministerijos-ir-istaigos/",
         "https://sam.lrv.lt/",
         "https://sam.lrv.lt/lt/news/",
         "https://sam.lrv.lt/rss/",
         "https://sam.lrv.lt/lt/rss/",
-        "https://sam.lrv.lt/lt/naujienos/?format=rss"
+        "https://sam.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Health_(Lithuania)"
       ]
     },
     {
@@ -210,14 +219,15 @@
       "news_url": "https://smsm.lrv.lt/lt/naujienos-1/pranesimai-ziniasklaidai-1/",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
       "evidence_urls": [
         "https://lrv.lt/lt/ministerijos-ir-istaigos/",
         "https://smsm.lrv.lt/",
         "https://smsm.lrv.lt/lt/naujienos-1/pranesimai-ziniasklaidai-1/",
         "https://smsm.lrv.lt/rss/",
         "https://smsm.lrv.lt/lt/rss/",
-        "https://smsm.lrv.lt/lt/naujienos/?format=rss"
+        "https://smsm.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Education_and_Science_(Lithuania)"
       ]
     },
     {
@@ -231,14 +241,15 @@
       "news_url": "https://tm.lrv.lt/lt/naujienos-2/",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
       "evidence_urls": [
         "https://lrv.lt/lt/ministerijos-ir-istaigos/",
         "https://tm.lrv.lt/",
         "https://tm.lrv.lt/lt/naujienos-2/",
         "https://tm.lrv.lt/rss/",
         "https://tm.lrv.lt/lt/rss/",
-        "https://tm.lrv.lt/lt/naujienos/?format=rss"
+        "https://tm.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Justice_(Lithuania)"
       ]
     },
     {
@@ -252,14 +263,15 @@
       "news_url": "https://www.urm.lt/naujienos/141",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
       "evidence_urls": [
         "https://lrv.lt/lt/ministerijos-ir-istaigos/",
         "https://www.urm.lt/",
         "https://www.urm.lt/naujienos/141",
         "https://www.urm.lt/rss/",
         "https://www.urm.lt/lt/rss/",
-        "https://www.urm.lt/lt/naujienos/?format=rss"
+        "https://www.urm.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_(Lithuania)"
       ]
     },
     {
@@ -273,14 +285,15 @@
       "news_url": "https://vrm.lrv.lt/lt/naujienos/",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
       "evidence_urls": [
         "https://lrv.lt/lt/ministerijos-ir-istaigos/",
         "https://vrm.lrv.lt/",
         "https://vrm.lrv.lt/lt/naujienos/",
         "https://vrm.lrv.lt/rss/",
         "https://vrm.lrv.lt/lt/rss/",
-        "https://vrm.lrv.lt/lt/naujienos/?format=rss"
+        "https://vrm.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Lithuania)"
       ]
     },
     {
@@ -294,14 +307,15 @@
       "news_url": "https://zum.lrv.lt/lt/naujienos/",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
       "evidence_urls": [
         "https://lrv.lt/lt/ministerijos-ir-istaigos/",
         "https://zum.lrv.lt/",
         "https://zum.lrv.lt/lt/naujienos/",
         "https://zum.lrv.lt/rss/",
         "https://zum.lrv.lt/lt/rss/",
-        "https://zum.lrv.lt/lt/naujienos/?format=rss"
+        "https://zum.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Agriculture_(Lithuania)"
       ]
     },
     {
@@ -315,14 +329,15 @@
       "news_url": "https://lrv.lt/lt/naujienos/",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
       "evidence_urls": [
         "https://lrv.lt/lt/ministerijos-ir-istaigos/",
         "https://lrv.lt/",
         "https://lrv.lt/lt/naujienos/",
         "https://lrv.lt/rss/",
         "https://lrv.lt/lt/rss/",
-        "https://lrv.lt/lt/naujienos/?format=rss"
+        "https://lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Government_of_Lithuania"
       ]
     }
   ]

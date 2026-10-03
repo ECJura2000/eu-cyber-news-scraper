@@ -1,0 +1,18 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Ministry for Local Government and Public Works Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Maltese_Government_2022%E2%80%932026",
+      "title": "Maltese Government 2022–2026 - Wikipedia",
+      "observed_at": "2026-10-03T08:37:43.368930+00:00",
+      "extracted_sha256": "5c67c6fded05be3072aba84edbd3d7bdc95980136c9d861506179661fecef9a0",
+      "excerpt": "The**Maltese Government 2022–2026**was the[Government of Malta](https://en.wikipedia.org/wiki/Government_of_Malta)([Maltese](https://en.wikipedia.org/wiki/Maltese_language):*Il-Gvern ta' Malta*) from 30 March 2022 until 2026. It is the second ministry of[Prime Minister](https://en.wikipedia.org/wiki/Prime_Minister_of_Malta)[Robert Abela](https://en.wikipedia.org/wiki/Robert_Abela). The Maltese government is elected through a General Election for a five-year term. The[Labour Party](https://en.wikipedia.org/wiki/Labour_Party_(Malta))(*Partit Laburista*) won a majority following a[general election which was held on 26 March 2022](https://en.wikipedia.org/wiki/2022_Maltese_general_election).[[1]](https://en.wikipedia.org/wiki/Maltese_Government_2022%E2%80%932026#cite_note-1)The cabinet and parliamentary secretaries for this legislature were initially sworn in on 30 March 2022.[[2]](https://en.wikipedia.org/wiki/Maltese_Government_2022%E2%80%932026#cite_note-2)Abela has reshuffled his cabin"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_local_government.wikipedia.json"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of the Presidency, Justice and Relations with Parliament Spain"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_the_Presidency,_Justice_and_Relations_with_the_Cortes",
+      "title": "Ministry of the Presidency, Justice and Relations with the Cortes - Wikipedia",
+      "observed_at": "2026-10-03T08:32:52.261919+00:00",
+      "extracted_sha256": "f0c0e228145830b338939ef6e9ede987add2c339c26cd3c6917de389db8040b6",
+      "excerpt": "The**Ministry of the Presidency, Justice and Relations with the Cortes**is a[department](https://en.wikipedia.org/wiki/Spanish_government_departments)in the[Government of Spain](https://en.wikipedia.org/wiki/Government_of_Spain)responsible for providing political and administrative support to the[Prime Minister](https://en.wikipedia.org/wiki/Prime_Minister_of_Spain)and his[staff](https://en.wikipedia.org/wiki/Office_of_the_Prime_Minister_(Spain)), to the[Royal Household](https://en.wikipedia.org/wiki/Royal_Household_of_Spain), as well as managing the relations between the[Government](https://en.wikipedia.org/wiki/Government_of_Spain)and the[Cortes Generales](https://en.wikipedia.org/wiki/Cortes_Generales)(Parliament). Likewise, it is also responsible for coordinating constitutional affairs and for designing, implementing and monitoring the government's legislative program.[[1]](https://en.wikipedia.org/wiki/Ministry_of_the_Presidency,_Justice_and_Relations_with_the_Cortes#cite_note-:0-"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "https://www.mpr.gob.es/Paginas/index.aspx",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_the_Presidency,_Justice_and_Relations_with_the_Cortes",
+      "link_text": "https://www.mpr.gob.es/Paginas/index.aspx",
+      "relationship_excerpt": "ster](https://en.wikipedia.org/wiki/Minister_of_the_Presidency)Website[https://www.mpr.gob.es/Paginas/index.aspx](https://www.mpr.gob.es/Paginas/index.aspx)\n\nThe**Ministry of the Presidency, Justice and Relations with the Cort"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/es_presidency_justice.wikipedia.json"
+}

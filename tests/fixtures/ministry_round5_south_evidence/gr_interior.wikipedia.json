@@ -1,0 +1,18 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of the Interior Greece"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Greece)",
+      "title": "Ministry of the Interior (Greece) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:23.538531+00:00",
+      "extracted_sha256": "85b41b8f59a71069f8ab67ca3990eb5b99095258e1dbc1180fc231dd921f100f",
+      "excerpt": "The**Ministry of the Interior**([Greek](https://en.wikipedia.org/wiki/Greek_language):Υπουργείο Εσωτερικών) is a[government department](https://en.wikipedia.org/wiki/Ministry_(government_department))of[Greece](https://en.wikipedia.org/wiki/Greece). On 15 September 1995, it was merged with the Ministry of the Prime Minister's Office (Υπουργείο Προεδρίας της Κυβέρνησης) to form the**Ministry of the Interior, Public Administration and Decentralization**(Υπουργείο Εσωτερικών, Δημόσιας Διοίκησης και Αποκέντρωσης). On 19 September 2007, it was merged with the[Ministry of Public Order](https://en.wikipedia.org/wiki/Ministry_of_Citizen_Protection_(Greece))and reverted to its original name. The merger was reversed on 7 October 2009, when the**Ministry of the Interior, Decentralization and Electronic Governance**(Υπουργείο Εσωτερικών, Αποκέντρωσης και Ηλεκτρονικής Διακυβέρνησης) was formed. On 27 June 2011, a separate[Ministry of Administrative Reform and Electronic Governance](https://en.wikipe"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/gr_interior.wikipedia.json"
+}

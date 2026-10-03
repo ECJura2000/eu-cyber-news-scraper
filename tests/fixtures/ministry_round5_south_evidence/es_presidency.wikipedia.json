@@ -1,0 +1,25 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Office of the Prime Minister Spain"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Office_of_the_Prime_Minister_(Spain)",
+      "title": "Office of the Prime Minister (Spain) - Wikipedia",
+      "observed_at": "2026-10-03T08:32:51.377670+00:00",
+      "extracted_sha256": "1a60eb030458e91403fedc160431d449b0cfbfcdbdaef51a12e747a08d360d93",
+      "excerpt": "The**Office of the Prime Minister**, officially**Presidency of the Government**([Spanish](https://en.wikipedia.org/wiki/Spanish_language):*Presidencia del Gobierno*) is the[Spanish government](https://en.wikipedia.org/wiki/Spanish_government)structure that groups all the departments and officials that are at the service of the[prime minister](https://en.wikipedia.org/wiki/Prime_Minister_of_Spain)to fulfil its constitutional duties.[[4]](https://en.wikipedia.org/wiki/Office_of_the_Prime_Minister_(Spain)#cite_note-4)It is staffed by a mix of career[civil servants](https://en.wikipedia.org/wiki/Civil_servants)and[advisers](https://en.wikipedia.org/wiki/Adviser). The highest-ranking official within the Office is the[Chief of Staff](https://en.wikipedia.org/wiki/Moncloa_Chief_of_Staff), which is a political appointment on which the rest of the Office officials depend.\n\nThe Office of the Prime Minister, although in the past it was a[ministerial department](https://en.wikipedia.org/wiki/Spani"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "https://www.lamoncloa.gob.es/lang/en/Paginas/index.aspx",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Office_of_the_Prime_Minister_(Spain)",
+      "link_text": "Official website",
+      "relationship_excerpt": "io Nacional](https://en.wikipedia.org/wiki/Patrimonio_Nacional)Website[Official website](https://www.lamoncloa.gob.es/lang/en/Paginas/index.aspx)\n\nThe**Office of the Prime Minister**, officially**Presidency of the G"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/es_presidency.wikipedia.json"
+}

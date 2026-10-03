@@ -22,13 +22,15 @@
       "news_url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/paginas/index.aspx",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
         "https://administracion.gob.es/informacion/actualidad-por-ministerios",
         "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/paginas/index.aspx",
-        "https://www.lamoncloa.gob.es/"
+        "https://www.lamoncloa.gob.es/",
+        "https://www.lamoncloa.gob.es/lang/en/Paginas/index.aspx",
+        "https://en.wikipedia.org/wiki/Office_of_the_Prime_Minister_(Spain)"
       ]
     },
     {
@@ -282,13 +284,15 @@
       "news_url": "https://www.inclusion.gob.es/web/guest/comunicacion/noticias",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied, timeout。後續：Wait for ministry robots restrictions to change; do not register the shared central-government directory or generic news feed as this ministry. 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
         "https://administracion.gob.es/informacion/actualidad-por-ministerios",
         "https://www.inclusion.gob.es/web/guest/comunicacion/noticias",
-        "https://www.inclusion.gob.es/"
+        "https://www.inclusion.gob.es/",
+        "https://administracion.gob.es/informacion/noticias",
+        "https://en.wikipedia.org/wiki/Ministry_of_Inclusion,_Social_Security_and_Migration"
       ]
     },
     {
@@ -298,11 +302,13 @@
       "name_en": "Ministry of Industry and Tourism",
       "kind": "ministry",
       "language": "es",
-      "homepage": "https://www.mincotur.gob.es/",
-      "news_url": "https://www.mincotur.gob.es/es-es/GabinetePrensa/NotasPrensa/Paginas/listadoNotasPrensa.aspx",
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "Fresh fourth-round verification: parser_pending. Recorded failures: ReadTimeout, budget_exceeded. Next action: Resolve the recorded production API HTTP 400 or network timeout through a published, robots-permitted dated endpoint; do not bypass access policy. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "homepage": "https://www.mintur.gob.es/",
+      "news_url": "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/Paginas/listadoNotasPrensa.aspx",
+      "source_ids": [
+        "es_industry_tourism"
+      ],
+      "status": "manual_verified",
+      "reason": "第五輪維基百科線索與官網查核：manual_verified。已記錄錯誤：Article detail bounded fetch timed out; actual official listing supplies publication dates., timeout, unexpected_domain。後續：Integrate the verified generic-source module and this inventory patch; keep manual-only scheduling. 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
@@ -310,7 +316,12 @@
         "https://www.mincotur.gob.es/es-es/GabinetePrensa/NotasPrensa/Paginas/listadoNotasPrensa.aspx",
         "https://www.mincotur.gob.es/",
         "https://www.mintur.gob.es/",
-        "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/Paginas/listadoNotasPrensa.aspx"
+        "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/Paginas/listadoNotasPrensa.aspx",
+        "https://www.mintur.gob.es/es-es/Paginas/index.aspx",
+        "https://www.mintur.gob.es/es-es/gabineteprensa",
+        "https://www.mintur.gob.es/es-es/gabineteprensa/notasprensa",
+        "https://en.wikipedia.org/wiki/Ministry_of_Industry_(Spain)",
+        "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/2026/Paginas/Frontur-Egatur-gasto-turistas-agosto-2026.aspx"
       ]
     },
     {
@@ -346,11 +357,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
-        "https://www.mpr.gob.es/"
+        "https://www.mpr.gob.es/",
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Presidency,_Justice_and_Relations_with_the_Cortes"
       ]
     },
     {
@@ -410,13 +422,15 @@
       "news_url": "https://prensa.mites.gob.es/webPrensa/listado-noticia",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable。後續：Recheck the exact officially linked press listing when robots.txt is accessible; do not alias inspectorate news to the ministry. 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
         "https://administracion.gob.es/informacion/actualidad-por-ministerios",
         "https://prensa.mites.gob.es/webPrensa/listado-noticia",
-        "https://prensa.mites.gob.es/"
+        "https://prensa.mites.gob.es/",
+        "https://www.mites.gob.es/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Labour_(Spain)"
       ]
     },
     {
@@ -475,13 +489,16 @@
       "news_url": "https://www.interior.gob.es/opencms/es/prensa/noticias/",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：challenge_page; no parsing or bypass, https, timeout。後續：Retain current candidate URL and recheck upstream robots/challenge changes; no access bypass. 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
         "https://administracion.gob.es/informacion/actualidad-por-ministerios",
         "https://www.interior.gob.es/opencms/es/prensa/noticias/",
-        "https://www.interior.gob.es/"
+        "https://www.interior.gob.es/",
+        "https://www.interior.gob.es/opencms/es/prensa/",
+        "https://www.interior.gob.es/opencms/es/prensa/balances-e-informes/lucha-contra-el-terrorismo/index.html",
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Spain)"
       ]
     },
     {

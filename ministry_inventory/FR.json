@@ -22,14 +22,15 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: http_error. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：HTTPStatusError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement/a515667c-6dc0-4544-a1a8-2cf13d7da23b",
         "https://www.info.gouv.fr",
         "https://www.info.gouv.fr/rss.xml",
-        "https://www.info.gouv.fr/presse/communiques-de-presse"
+        "https://www.info.gouv.fr/presse/communiques-de-presse",
+        "https://en.wikipedia.org/wiki/Prime_Minister_of_France"
       ]
     },
     {
@@ -43,14 +44,16 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：HTTPStatusError, RobotsDeniedError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement/9f101ac7-9a0e-4d62-8b27-8109876dff94",
         "https://www.economie.gouv.fr/",
         "https://www.economie.gouv.fr/rss.xml",
-        "https://www.economie.gouv.fr/presse/communiques-de-presse"
+        "https://www.economie.gouv.fr/presse/communiques-de-presse",
+        "https://www.info.gouv.fr/ministere/ministere-de-l-action-et-des-comptes-publics",
+        "https://en.wikipedia.org/wiki/Ministry_of_Public_Action_and_Accounts"
       ]
     },
     {
@@ -86,7 +89,7 @@
       "news_url": "https://www.ecologie.gouv.fr/actualites",
       "source_ids": [],
       "status": "needs_review",
-      "reason": "Fresh fourth-round verification: needs_review. Next action: Fresh shared press details contain original Publié le dates but no per-release publisher field; minister/body mentions and shared footer are insufficient attribution. Require an official ministry publisher identifier or ministry-specific feed before enrollment. Evidence: tests/fixtures/ministry_round4_north.json",
+      "reason": "第五輪維基百科線索與官網查核：needs_review。後續：Official news page is accessible but covers a shared government/multi-ministry publisher. Require ministry-specific publisher attribution before enrollment; retain valid shared listing as an unresolved candidate. 證據：tests/fixtures/ministry_round5_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -104,7 +107,9 @@
         "https://www.ecologie.gouv.fr/presse/communiques-de-presse",
         "https://www.ecologie.gouv.fr/presse/30-territoires-laureats-lappel-manifestation-dinteret-destinations-france-velo",
         "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
-        "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites"
+        "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites",
+        "https://www.ecologie.gouv.fr/contact",
+        "https://en.wikipedia.org/wiki/Minister_of_Territorial_Development_(France)"
       ]
     },
     {
@@ -160,14 +165,16 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：RobotsDeniedError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement/c4195774-f535-4d82-b03f-d5f0c6b08635",
         "https://www.economie.gouv.fr",
         "https://www.economie.gouv.fr/rss.xml",
-        "https://www.economie.gouv.fr/presse/communiques-de-presse"
+        "https://www.economie.gouv.fr/presse/communiques-de-presse",
+        "https://www.economie.gouv.fr/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Economics_and_Finance_(France)"
       ]
     },
     {
@@ -181,14 +188,15 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: http_error. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：HTTPStatusError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement/3ed2f725-e077-4973-a531-498e13fc7861",
         "https://www.education.gouv.fr/",
         "https://www.education.gouv.fr/rss.xml",
-        "https://www.education.gouv.fr/presse/communiques-de-presse"
+        "https://www.education.gouv.fr/presse/communiques-de-presse",
+        "https://en.wikipedia.org/wiki/Ministry_of_National_Education_(France)"
       ]
     },
     {
@@ -202,14 +210,16 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: http_error. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：HTTPStatusError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement/4ca60afd-3886-434c-80bb-f6bc55581323",
         "https://www.enseignementsup-recherche.gouv.fr/fr",
         "https://www.enseignementsup-recherche.gouv.fr/rss.xml",
-        "https://www.enseignementsup-recherche.gouv.fr/presse/communiques-de-presse"
+        "https://www.enseignementsup-recherche.gouv.fr/presse/communiques-de-presse",
+        "https://www.enseignementsup-recherche.gouv.fr/fr/philippe-baptiste-ministre-de-l-enseignement-superieur-de-la-recherche-et-de-l-espace-100138",
+        "https://en.wikipedia.org/wiki/Ministry_of_Higher_Education_and_Research_(France)"
       ]
     },
     {
@@ -223,14 +233,15 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: http_error, https_required. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：HTTPStatusError, InvalidURL。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement/ac1a7fdb-50f4-4599-b306-ec06b7250965",
         "https://www.diplomatie.gouv.fr/fr/",
         "https://www.diplomatie.gouv.fr/fr/rss.xml",
-        "https://www.diplomatie.gouv.fr/fr/presse/communiques-de-presse"
+        "https://www.diplomatie.gouv.fr/fr/presse/communiques-de-presse",
+        "https://en.wikipedia.org/wiki/Ministry_for_Europe_and_Foreign_Affairs_(France)"
       ]
     },
     {
@@ -244,14 +255,15 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: http_error. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：HTTPStatusError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement/fa33b07a-3f71-46d4-b682-569c9faf211e",
         "https://www.interieur.gouv.fr",
         "https://www.interieur.gouv.fr/rss.xml",
-        "https://www.interieur.gouv.fr/presse/communiques-de-presse"
+        "https://www.interieur.gouv.fr/presse/communiques-de-presse",
+        "https://en.wikipedia.org/wiki/Minister_of_the_Interior_(France)"
       ]
     },
     {
@@ -287,14 +299,15 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: http_error. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：HTTPStatusError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement/0dd547d8-44fb-4af8-8768-dc8a95614f0d",
         "https://www.outre-mer.gouv.fr/",
         "https://www.outre-mer.gouv.fr/rss.xml",
-        "https://www.outre-mer.gouv.fr/presse/communiques-de-presse"
+        "https://www.outre-mer.gouv.fr/presse/communiques-de-presse",
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Overseas_(France)"
       ]
     },
     {
@@ -308,14 +321,16 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：RobotsDeniedError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement/d2d5b079-abd0-441a-8abc-cea5a569c15c",
         "https://www.economie.gouv.fr/",
         "https://www.economie.gouv.fr/rss.xml",
-        "https://www.economie.gouv.fr/presse/communiques-de-presse"
+        "https://www.economie.gouv.fr/presse/communiques-de-presse",
+        "https://www.economie.gouv.fr/entreprises",
+        "https://en.wikipedia.org/wiki/Minister_of_Commerce_(France)"
       ]
     },
     {
@@ -329,14 +344,15 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：RobotsUnavailableError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement/d46810a3-6ed7-4a94-b950-1be135e43ad3",
         "https://sante.gouv.fr/ministere/",
         "https://sante.gouv.fr/ministere/rss.xml",
-        "https://sante.gouv.fr/ministere/presse/communiques-de-presse"
+        "https://sante.gouv.fr/ministere/presse/communiques-de-presse",
+        "https://en.wikipedia.org/wiki/Minister_of_Health_(France)"
       ]
     },
     {
@@ -372,7 +388,7 @@
       "news_url": "https://www.ecologie.gouv.fr/actualites",
       "source_ids": [],
       "status": "needs_review",
-      "reason": "Fresh fourth-round verification: needs_review. Next action: Fresh shared press details contain original Publié le dates but no per-release publisher field; minister/body mentions and shared footer are insufficient attribution. Require an official ministry publisher identifier or ministry-specific feed before enrollment. Evidence: tests/fixtures/ministry_round4_north.json",
+      "reason": "第五輪維基百科線索與官網查核：needs_review。後續：Official news page is accessible but covers a shared government/multi-ministry publisher. Require ministry-specific publisher attribution before enrollment; retain valid shared listing as an unresolved candidate. 證據：tests/fixtures/ministry_round5_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -392,7 +408,9 @@
         "https://ecologie.gouv.fr/rss-presse.xml",
         "https://www.ecologie.gouv.fr/presse/30-territoires-laureats-lappel-manifestation-dinteret-destinations-france-velo",
         "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
-        "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites"
+        "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites",
+        "https://www.ecologie.gouv.fr/contact",
+        "https://en.wikipedia.org/wiki/Ministry_of_Ecological_Transition_(France)"
       ]
     },
     {
@@ -406,7 +424,7 @@
       "news_url": "https://www.ecologie.gouv.fr/actualites",
       "source_ids": [],
       "status": "needs_review",
-      "reason": "Fresh fourth-round verification: needs_review. Next action: Fresh shared press details contain original Publié le dates but no per-release publisher field; minister/body mentions and shared footer are insufficient attribution. Require an official ministry publisher identifier or ministry-specific feed before enrollment. Evidence: tests/fixtures/ministry_round4_north.json",
+      "reason": "第五輪維基百科線索與官網查核：needs_review。已記錄錯誤：HTTPStatusError。後續：Official news page is accessible but covers a shared government/multi-ministry publisher. Require ministry-specific publisher attribution before enrollment; retain valid shared listing as an unresolved candidate. 證據：tests/fixtures/ministry_round5_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -424,7 +442,9 @@
         "https://www.ecologie.gouv.fr/presse/communiques-de-presse",
         "https://www.ecologie.gouv.fr/presse/30-territoires-laureats-lappel-manifestation-dinteret-destinations-france-velo",
         "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
-        "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites"
+        "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites",
+        "https://www.ecologie.gouv.fr/francois-durovray",
+        "https://en.wikipedia.org/wiki/Minister_of_Transport_(France)"
       ]
     },
     {
@@ -438,14 +458,15 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：RobotsUnavailableError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement/f130ad96-4a81-4eb4-a40c-0539edad5fff",
         "https://travail-emploi.gouv.fr",
         "https://travail-emploi.gouv.fr/rss.xml",
-        "https://travail-emploi.gouv.fr/presse/communiques-de-presse"
+        "https://travail-emploi.gouv.fr/presse/communiques-de-presse",
+        "https://en.wikipedia.org/wiki/Minister_of_Labour,_Employment_and_Economic_Inclusion_(France)"
       ]
     },
     {
@@ -459,7 +480,7 @@
       "news_url": "https://www.ecologie.gouv.fr/actualites",
       "source_ids": [],
       "status": "needs_review",
-      "reason": "Fresh fourth-round verification: needs_review. Next action: Fresh shared press details contain original Publié le dates but no per-release publisher field; minister/body mentions and shared footer are insufficient attribution. Require an official ministry publisher identifier or ministry-specific feed before enrollment. Evidence: tests/fixtures/ministry_round4_north.json",
+      "reason": "第五輪維基百科線索與官網查核：needs_review。後續：Official news page is accessible but covers a shared government/multi-ministry publisher. Require ministry-specific publisher attribution before enrollment; retain valid shared listing as an unresolved candidate. 證據：tests/fixtures/ministry_round5_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -472,7 +493,9 @@
         "https://www.cohesion-territoires.gouv.fr/presse/communiques-de-presse",
         "https://www.ecologie.gouv.fr/presse/30-territoires-laureats-lappel-manifestation-dinteret-destinations-france-velo",
         "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
-        "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites"
+        "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites",
+        "https://www.cohesion-territoires.gouv.fr",
+        "https://en.wikipedia.org/wiki/Minister_of_Housing_and_Urban_Renovation"
       ]
     }
   ]

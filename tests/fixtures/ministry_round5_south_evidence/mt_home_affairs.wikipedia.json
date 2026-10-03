@@ -1,0 +1,18 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Ministry for Home Affairs and Security Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/List_of_ministers_for_home_affairs_of_Malta",
+      "title": "List of ministers for home affairs of Malta - Wikipedia",
+      "observed_at": "2026-10-03T08:37:44.132380+00:00",
+      "extracted_sha256": "cb160870562ecef0c6f3517faf222a61cd99d813fd25ca58c25b3e98833237f0",
+      "excerpt": "[Jump to content](https://en.wikipedia.org/wiki/List_of_ministers_for_home_affairs_of_Malta#bodyContent)\n\nFrom Wikipedia, the free encyclopedia\n\nFifteen people have served as**Minister for Home Affairs of Malta**since the office was established in 1976.*Political parties*\n\n[Labour Party](https://en.wikipedia.org/wiki/Labour_Party_(Malta))[Nationalist Party](https://en.wikipedia.org/wiki/Nationalist_Party_(Malta))Minister for Home AffairsTerm of officePolitical partyNo.PortraitName\n(Birth–Death)No.Took officeLeft office1[](https://en.wikipedia.org/wiki/File:Dom_Mintoff_(1974).jpg)[Dom Mintoff](https://en.wikipedia.org/wiki/Dom_Mintoff)\n(1916–2012)1st25 September 197620 December 1981[Labour Party](https://en.wikipedia.org/wiki/Labour_Party_(Malta))2[](https://en.wikipedia.org/wiki/File:Lorry_Sant_public_monument.jpg)[Lorry Sant](https://en.wikipedia.org/wiki/Lorry_Sant)\n(1937–1995)20 December 19813 September 1983[Labour Party](https://en.wikipedia.org/wiki/Labour_Party_(Malta))(1)[](http"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_home_affairs.wikipedia.json"
+}

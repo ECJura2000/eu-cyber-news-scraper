@@ -1,0 +1,25 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Citizen Protection Greece"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Citizen_Protection_(Greece)",
+      "title": "Ministry of Citizen Protection (Greece) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:20.373509+00:00",
+      "extracted_sha256": "efa530de5010a3b5a1f565835c2d3d5308411b3118682702be83535d87c31318",
+      "excerpt": "The**Ministry of Citizen Protection**([Greek](https://en.wikipedia.org/wiki/Greek_language):Υπουργείο Προστασίας του Πολίτη,[romanized](https://en.wikipedia.org/wiki/Romanization_of_Greek):*Ypourgeío Prostasías tou Polítī*) is the[government department](https://en.wikipedia.org/wiki/Ministry_(government_department))responsible for[Greece](https://en.wikipedia.org/wiki/Greece)'s[public security](https://en.wikipedia.org/wiki/Public_security)services.\n\nThe ministry existed until 2007 as the**Ministry of Public Order**([Greek](https://en.wikipedia.org/wiki/Greek_language):Υπουργείο Δημόσιας Τάξης,[romanized](https://en.wikipedia.org/wiki/Romanization_of_Greek):*Ypourgeío Dīmósias Táxīs*). On 19 September 2007, it was merged with the Ministry of the Interior, Public Administration and Decentralization and reduced to a General Secretariat within the[Ministry of the Interior](https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Greece)). On 7 October 2009, it was revived as the**Ministry "
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "https://www.minocp.gov.gr/en/",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_Citizen_Protection_(Greece)",
+      "link_text": "https://www.minocp.gov.gr/en/",
+      "relationship_excerpt": " Guarding](https://en.wikipedia.org/wiki/Border_Guards)ServicesWebsite[https://www.minocp.gov.gr/en/](https://www.minocp.gov.gr/en/)This article is part of[a series](https://en.wikipedia.org/wiki/Catego"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/gr_citizen_protection.wikipedia.json"
+}

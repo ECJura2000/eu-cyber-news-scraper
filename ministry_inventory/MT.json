@@ -21,13 +21,14 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/OPM.aspx",
         "https://opm.gov.mt/",
         "https://primeminister.gov.mt/cabinet/",
-        "https://primeminister.gov.mt/latest-news/"
+        "https://primeminister.gov.mt/latest-news/",
+        "https://en.wikipedia.org/wiki/Prime_Minister_of_Malta"
       ]
     },
     {
@@ -41,11 +42,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Health.aspx",
-        "https://health.gov.mt/"
+        "https://health.gov.mt/",
+        "https://en.wikipedia.org/wiki/Ian_Borg"
       ]
     },
     {
@@ -59,11 +61,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Accommodation.aspx",
-        "https://accommodation.gov.mt/"
+        "https://accommodation.gov.mt/",
+        "https://en.wikipedia.org/wiki/Owen_Bonnici"
       ]
     },
     {
@@ -77,11 +80,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: unexpected_domain. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：unexpected_domain。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: unexpected_domain 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Family.aspx",
-        "https://socialpolicy.gov.mt/"
+        "https://socialpolicy.gov.mt/",
+        "https://en.wikipedia.org/wiki/Michael_Falzon_(politician,_born_1961)"
       ]
     },
     {
@@ -95,11 +99,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Agriculture.aspx",
-        "https://agriculture.gov.mt/"
+        "https://agriculture.gov.mt/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Agriculture,_Fisheries_and_Food_(United_Kingdom)"
       ]
     },
     {
@@ -113,11 +118,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Economy.aspx",
-        "https://economy.gov.mt/"
+        "https://economy.gov.mt/",
+        "https://en.wikipedia.org/wiki/Silvio_Schembri"
       ]
     },
     {
@@ -131,11 +137,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Inclusion.aspx",
-        "https://inclusion.gov.mt/"
+        "https://inclusion.gov.mt/",
+        "https://en.wikipedia.org/wiki/Julia_Farrugia_Portelli"
       ]
     },
     {
@@ -149,11 +156,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Gozo.aspx",
-        "https://gozo.gov.mt/"
+        "https://gozo.gov.mt/",
+        "https://en.wikipedia.org/wiki/Ministry_for_Gozo"
       ]
     },
     {
@@ -167,11 +175,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Education.aspx",
-        "https://education.gov.mt/"
+        "https://education.gov.mt/",
+        "https://en.wikipedia.org/wiki/List_of_education_ministries"
       ]
     },
     {
@@ -185,11 +194,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: unexpected_domain. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：unexpected_domain。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: unexpected_domain 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Energy.aspx",
-        "https://energy.gov.mt/"
+        "https://energy.gov.mt/",
+        "https://en.wikipedia.org/wiki/Miriam_Dalli"
       ]
     },
     {
@@ -203,11 +213,13 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Finance.aspx",
-        "https://finance.gov.mt/"
+        "https://finance.gov.mt/",
+        "https://finance.gov.mt",
+        "https://en.wikipedia.org/wiki/Finance_Minister_of_Malta"
       ]
     },
     {
@@ -221,11 +233,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Justice.aspx",
-        "https://justice.gov.mt/"
+        "https://justice.gov.mt/",
+        "https://en.wikipedia.org/wiki/Ministry_of_justice"
       ]
     },
     {
@@ -239,11 +252,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/PLANNING.aspx",
-        "https://infrastructure.gov.mt/"
+        "https://infrastructure.gov.mt/",
+        "https://en.wikipedia.org/wiki/Jonathan_Attard"
       ]
     },
     {
@@ -257,11 +271,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Tourism.aspx",
-        "https://tourism.gov.mt/"
+        "https://tourism.gov.mt/",
+        "https://en.wikipedia.org/wiki/Clayton_Bartolo"
       ]
     },
     {
@@ -275,11 +290,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: dns_failure. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：dns_failure。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: dns_failure 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Sustainable_Mobility.aspx",
-        "https://sustainablemobility.gov.mt/"
+        "https://sustainablemobility.gov.mt/",
+        "https://en.wikipedia.org/wiki/Chris_Bonett"
       ]
     },
     {
@@ -293,11 +309,13 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：https_required, robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: https_required; robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Foreign.aspx",
-        "https://foreign.gov.mt/"
+        "https://foreign.gov.mt/",
+        "https://foreignandeu.gov.mt",
+        "https://en.wikipedia.org/wiki/Ministry_for_Foreign_and_European_Affairs_(Malta)"
       ]
     },
     {
@@ -311,11 +329,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Local_Government.aspx",
-        "https://localgovernment.gov.mt/"
+        "https://localgovernment.gov.mt/",
+        "https://en.wikipedia.org/wiki/Maltese_Government_2022%E2%80%932026"
       ]
     },
     {
@@ -329,11 +348,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Eu_Funds.aspx",
-        "https://eufunds.gov.mt/"
+        "https://eufunds.gov.mt/",
+        "https://en.wikipedia.org/wiki/Chris_Fearne"
       ]
     },
     {
@@ -347,11 +367,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Home_Affairs.aspx",
-        "https://homeaffairs.gov.mt/"
+        "https://homeaffairs.gov.mt/",
+        "https://en.wikipedia.org/wiki/List_of_ministers_for_home_affairs_of_Malta"
       ]
     },
     {
@@ -365,11 +386,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Culture.aspx",
-        "https://culture.gov.mt/"
+        "https://culture.gov.mt/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Culture_and_National_Heritage"
       ]
     },
     {
@@ -382,8 +404,8 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: RobotsDeniedError. Next action: Locate an allowed official DOI news endpoint with explicit youth-ministry attribution, or wait for robots policy change. Evidence: tests/fixtures/ministry_round4_south.json",
+      "status": "needs_review",
+      "reason": "第五輪維基百科線索與官網查核：needs_review。後續：Find a first-party current ministry publisher/roster relationship; do not register the agency feed as the ministry. 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Youths.aspx",
@@ -393,7 +415,8 @@
         "https://youth.gov.mt/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fyouth.gov.mt%2F&format=xml",
         "https://youth.gov.mt/call/",
         "https://govcms.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
-        "https://www.gov.mt/en/Government/DOI/Press%20Releases/Pages/2026/07/15/PR261189en.aspx"
+        "https://www.gov.mt/en/Government/DOI/Press%20Releases/Pages/2026/07/15/PR261189en.aspx",
+        "https://en.wikipedia.org/wiki/Omar_Farrugia"
       ]
     },
     {
@@ -407,12 +430,13 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied, robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied, robots_unavailable。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied; robots_unavailable 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Equality.aspx",
         "https://equality.gov.mt/",
-        "https://govcms.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Equality.aspx"
+        "https://govcms.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Equality.aspx",
+        "https://en.wikipedia.org/wiki/Rosianne_Cutajar"
       ]
     }
   ]

@@ -1,0 +1,18 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Ministry for Infrastructure, Planning and Employment Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Jonathan_Attard",
+      "title": "Jonathan Attard - Wikipedia",
+      "observed_at": "2026-10-03T08:37:41.694699+00:00",
+      "extracted_sha256": "af2823af547f67e230a590da4624eb4a1e7cf9716ba99c57bc2c35fbaffdf4f4",
+      "excerpt": "[Jump to content](https://en.wikipedia.org/wiki/Jonathan_Attard#bodyContent)\n\nFrom Wikipedia, the free encyclopedia\n\nMinister for Planning, Infrastructure and Employment\n\n[The Honourable](https://en.wikipedia.org/wiki/The_Honourable)\n\nJonathan Attard\n\n[MP](https://en.wikipedia.org/wiki/Parliament_of_Malta)[](https://en.wikipedia.org/wiki/File:Jonathan_Attard.jpg)\n\nOfficial portrait, 2023Minister for Planning, Infrastructure and Employment\n\n**[Incumbent](https://en.wikipedia.org/wiki/Incumbent)****Assumed office**\n4 June 2026Prime Minister[Robert Abela](https://en.wikipedia.org/wiki/Robert_Abela)Minister for Justice**In office**\n30 March 2022–4 June 2026Prime MinisterRobert Abela[Member of Parliament](https://en.wikipedia.org/wiki/Parliament_of_Malta)\n\n**[Incumbent](https://en.wikipedia.org/wiki/Incumbent)****Assumed office**\n14 July 2021Personal detailsBorn(1984-05-07)7 May 1984(age42)[*[citation needed](https://en.wikipedia.org/wiki/Wikipedia:Citation_needed)*]\n\n[Tarxien](https://en.w"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_infrastructure.wikipedia.json"
+}

@@ -21,12 +21,17 @@
       "homepage": "https://www.government.gov.gr/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "status": "parser_pending",
+      "reason": "第五輪維基百科線索與官網查核：parser_pending。已記錄錯誤：robots_denied。後續：Review the own announcements page and first-party publisher attribution; own RSS is genuinely empty. Do not alias separately linked media/coordination/Prime Minister feeds automatically. 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
-        "https://www.government.gov.gr/"
+        "https://www.government.gov.gr/",
+        "https://en.wikipedia.org/wiki/President_of_Greece",
+        "https://govpresidency.gov.gr/",
+        "https://govpresidency.gov.gr/%ce%bd%ce%ad%ce%b1-%ce%b1%ce%bd%ce%b1%ce%ba%ce%bf%ce%b9%ce%bd%cf%8e%cf%83%ce%b5%ce%b9%cf%82/",
+        "https://govpresidency.gov.gr/feed/",
+        "https://el.wikipedia.org/wiki/%CE%A0%CF%81%CE%BF%CE%B5%CE%B4%CF%81%CE%AF%CE%B1_%CF%84%CE%B7%CF%82_%CE%9A%CF%85%CE%B2%CE%AD%CF%81%CE%BD%CE%B7%CF%83%CE%B7%CF%82"
       ]
     },
     {
@@ -40,11 +45,13 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
-        "https://minfin.gov.gr/"
+        "https://minfin.gov.gr/",
+        "https://minfin.gov.gr",
+        "https://en.wikipedia.org/wiki/Ministry_of_National_Economy_and_Finance_(Greece)"
       ]
     },
     {
@@ -58,11 +65,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
-        "https://www.mfa.gr/"
+        "https://www.mfa.gr/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_(Greece)"
       ]
     },
     {
@@ -76,11 +84,14 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
-        "https://www.mod.mil.gr/"
+        "https://www.mod.mil.gr/",
+        "https://www.mod.mil.gr/en/",
+        "https://www.mod.mil.gr",
+        "https://en.wikipedia.org/wiki/Ministry_of_National_Defence_(Greece)"
       ]
     },
     {
@@ -94,11 +105,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
-        "https://www.ypes.gr/"
+        "https://www.ypes.gr/",
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Greece)"
       ]
     },
     {
@@ -152,11 +164,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
-        "https://www.yme.gr/"
+        "https://www.yme.gr/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Infrastructure_and_Transport_(Greece)"
       ]
     },
     {
@@ -170,11 +183,13 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
-        "https://ypen.gov.gr/"
+        "https://ypen.gov.gr/",
+        "https://ypen.gov.gr",
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Environment_and_Energy_(Greece)"
       ]
     },
     {
@@ -209,11 +224,13 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
-        "https://ypergasias.gov.gr/"
+        "https://ypergasias.gov.gr/",
+        "https://ypergasias.gov.gr",
+        "https://en.wikipedia.org/wiki/Ministry_of_Labour_and_Social_Security_(Greece)"
       ]
     },
     {
@@ -227,11 +244,13 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
-        "https://www.minocp.gov.gr/"
+        "https://www.minocp.gov.gr/",
+        "https://www.minocp.gov.gr/en/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Citizen_Protection_(Greece)"
       ]
     },
     {
@@ -245,11 +264,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
-        "https://ministryofjustice.gr/"
+        "https://ministryofjustice.gr/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Justice_(Greece)"
       ]
     },
     {
@@ -263,11 +283,14 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
-        "https://www.culture.gov.gr/"
+        "https://www.culture.gov.gr/",
+        "https://culture.gov.gr/en/SitePages/default.aspx",
+        "https://culture.gov.gr/el/SitePages/default.aspx",
+        "https://en.wikipedia.org/wiki/Ministry_of_Culture_(Greece)"
       ]
     },
     {
@@ -302,11 +325,13 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
-        "https://minscfa.gov.gr/"
+        "https://minscfa.gov.gr/",
+        "https://en.wikipedia.org/wiki/Domna_Michailidou",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9A%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AE%CF%82_%CE%A3%CF%85%CE%BD%CE%BF%CF%87%CE%AE%CF%82_%CE%BA%CE%B1%CE%B9_%CE%9F%CE%B9%CE%BA%CE%BF%CE%B3%CE%AD%CE%BD%CE%B5%CE%B9%CE%B1%CF%82"
       ]
     },
     {
@@ -320,11 +345,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
-        "https://www.minagric.gov.gr/"
+        "https://www.minagric.gov.gr/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Rural_Development_and_Food_(Greece)"
       ]
     },
     {
@@ -338,11 +364,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
-        "https://www.ynanp.gr/"
+        "https://www.ynanp.gr/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Maritime_Affairs_and_Insular_Policy_(Greece)"
       ]
     },
     {
@@ -356,11 +383,13 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: http_error. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：http_error。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: http_error 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
-        "https://mintour.gov.gr/"
+        "https://mintour.gov.gr/",
+        "https://mintour.gov.gr",
+        "https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Greece)"
       ]
     },
     {
@@ -374,11 +403,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
-        "https://mindigital.gr/"
+        "https://mindigital.gr/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Administrative_Reform_and_e-Governance_(Greece)"
       ]
     },
     {
@@ -392,11 +422,14 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
-        "https://civilprotection.gov.gr/"
+        "https://civilprotection.gov.gr/",
+        "https://www.minocp.gov.gr/en/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Citizen_Protection_(Greece)",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9A%CE%BB%CE%B9%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%9A%CF%81%CE%AF%CF%83%CE%B7%CF%82_%CE%BA%CE%B1%CE%B9_%CE%A0%CE%BF%CE%BB%CE%B9%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%A0%CF%81%CE%BF%CF%83%CF%84%CE%B1%CF%83%CE%AF%CE%B1%CF%82"
       ]
     }
   ]

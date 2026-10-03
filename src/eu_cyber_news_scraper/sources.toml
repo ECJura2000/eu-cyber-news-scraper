@@ -815,6 +815,48 @@
 "timezone" = "Europe/Sofia"
 
 [[sources]]
+"id" = "bg_youth_sport"
+"allow_domains" = ["www.nism.bg"]
+"card_selectors" = ["article.item:has(.newsberg-article-introtext > p:first-child:-soup-contains(\"Министерството на младежта и спорта\"))"]
+"country" = "BG"
+"critical" = false
+"date_evidence_url" = ""
+"date_exception_reason" = ""
+"date_policy" = "required"
+"date_review_due" = ""
+"date_reviewed_on" = ""
+"date_selectors" = ["time"]
+"detail_pages" = 0
+"exclude_patterns" = []
+"feed_archive_fallback" = false
+"feed_urls" = []
+"freshness_days" = 45
+"homepage" = "https://www.nism.bg/bg/za-nas"
+"include_patterns" = ["^/bg/novini-i-sabitia/novini/[^/]+"]
+"institution_type" = "ministry"
+"language" = "bg"
+"link_selectors" = []
+"listing_url" = "https://www.nism.bg/bg/novini-i-sabitia/novini"
+"max_pages" = 1
+"min_listing_bytes" = 0
+"minimum_budget_seconds" = 0
+"name" = "Министерство на младежта и спорта"
+"name_zh" = "保加利亞青年與體育部"
+"observation_runs" = 3
+"pagination_url" = ""
+"parser_adapter" = ""
+"pause_evidence_url" = ""
+"pause_reason" = ""
+"paused_until" = ""
+"schedule_enabled" = false
+"summary_selectors" = [".newsberg-article-introtext > p:first-child"]
+"timezone" = "Europe/Sofia"
+"title_selectors" = [".article-header"]
+"tls_intermediate_bundle" = ""
+"user_agent" = ""
+"yearly_listing_url" = ""
+
+[[sources]]
 "id" = "cert_hr"
 "allow_domains" = ["cert.hr", "www.cert.hr"]
 "country" = "HR"
@@ -1241,6 +1283,48 @@
 "schedule_enabled" = false
 "timezone" = "Europe/Berlin"
 "title_selectors" = [".results-topic"]
+
+[[sources]]
+"id" = "de_bmf"
+"allow_domains" = ["www.bundesfinanzministerium.de"]
+"card_selectors" = ["li.bmf-list-entry"]
+"country" = "DE"
+"critical" = false
+"date_evidence_url" = ""
+"date_exception_reason" = ""
+"date_policy" = "required"
+"date_review_due" = ""
+"date_reviewed_on" = ""
+"date_selectors" = ["time"]
+"detail_pages" = 0
+"exclude_patterns" = []
+"feed_archive_fallback" = false
+"feed_urls" = []
+"freshness_days" = 45
+"homepage" = "https://www.bundesfinanzministerium.de/Web/DE/Home/home.html"
+"include_patterns" = []
+"institution_type" = "ministry"
+"language" = "de"
+"link_selectors" = ["a.bmf-resultlist-teaser-link"]
+"listing_url" = "https://www.bundesfinanzministerium.de/Web/DE/Presse/Pressemitteilungen/pressemitteilungen.html"
+"max_pages" = 1
+"min_listing_bytes" = 0
+"minimum_budget_seconds" = 0
+"name" = "Bundesministerium der Finanzen"
+"name_zh" = "德國財政部"
+"observation_runs" = 3
+"pagination_url" = ""
+"parser_adapter" = ""
+"pause_evidence_url" = ""
+"pause_reason" = ""
+"paused_until" = ""
+"schedule_enabled" = false
+"summary_selectors" = []
+"timezone" = "Europe/Berlin"
+"title_selectors" = []
+"tls_intermediate_bundle" = ""
+"user_agent" = ""
+"yearly_listing_url" = ""
 
 [[sources]]
 "id" = "de_bmftr"
@@ -2509,6 +2593,48 @@
 "name" = "Instituto Nacional de Ciberseguridad de España"
 "name_zh" = "西班牙國家網路安全研究所"
 "schedule_enabled" = false
+
+[[sources]]
+"id" = "es_industry_tourism"
+"allow_domains" = ["www.mintur.gob.es", "www.mincotur.gob.es"]
+"card_selectors" = ["li:has(h2.titulo a[href*=\"/GabinetePrensa/NotasPrensa/\"])"]
+"country" = "ES"
+"critical" = false
+"date_evidence_url" = ""
+"date_exception_reason" = ""
+"date_policy" = "required"
+"date_review_due" = ""
+"date_reviewed_on" = ""
+"date_selectors" = ["span.fecha"]
+"detail_pages" = 0
+"exclude_patterns" = []
+"feed_archive_fallback" = false
+"feed_urls" = []
+"freshness_days" = 45
+"homepage" = "https://www.mintur.gob.es/"
+"include_patterns" = ["/GabinetePrensa/NotasPrensa/\\d{4}/Paginas/"]
+"institution_type" = "central ministry"
+"language" = "es"
+"link_selectors" = ["h2.titulo a[href]"]
+"listing_url" = "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/Paginas/listadoNotasPrensa.aspx"
+"max_pages" = 1
+"min_listing_bytes" = 0
+"minimum_budget_seconds" = 0
+"name" = "Ministerio de Industria y Turismo"
+"name_zh" = "西班牙產業與觀光部"
+"observation_runs" = 3
+"pagination_url" = ""
+"parser_adapter" = ""
+"pause_evidence_url" = ""
+"pause_reason" = ""
+"paused_until" = ""
+"schedule_enabled" = false
+"summary_selectors" = []
+"timezone" = "Europe/Madrid"
+"title_selectors" = ["h2.titulo"]
+"tls_intermediate_bundle" = ""
+"user_agent" = ""
+"yearly_listing_url" = ""
 
 [[sources]]
 "id" = "es_science"

@@ -1,0 +1,18 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Ministry for Arts, Culture and National Heritage Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Culture_and_National_Heritage",
+      "title": "Ministry of Culture and National Heritage - Wikipedia",
+      "observed_at": "2026-10-03T08:37:44.900730+00:00",
+      "extracted_sha256": "cfa49c5b3acc51c1c91267b8aa369096792f85ef2cc216828601d53fb1d5ebda",
+      "excerpt": "The**Ministry of Culture and National Heritage**([Polish](https://en.wikipedia.org/wiki/Polish_language):*Ministerstwo Kultury i Dziedzictwa Narodowego*) is a[ministry within Polish government](https://en.wikipedia.org/wiki/Ministries_of_Poland). It is responsible for national heritage preservation and[Polish culture](https://en.wikipedia.org/wiki/Culture_of_Poland)promotion. Ministry oversees state or partially state[cultural institutions](https://en.wikipedia.org/wiki/Cultural_institution)and implements the[law regarding art](https://en.wikipedia.org/wiki/Art_and_culture_law)and[cultural property](https://en.wikipedia.org/wiki/Cultural_property_law). The ministry headquarters is located at[Potocki Palace](https://en.wikipedia.org/wiki/Potocki_Palace,_Warsaw), 15[Krakowskie Przedmieście Street](https://en.wikipedia.org/wiki/Krakowskie_Przedmie%C5%9Bcie)in[Warsaw](https://en.wikipedia.org/wiki/Warsaw).[[3]](https://en.wikipedia.org/wiki/Ministry_of_Culture_and_National_Heritage#cite_no"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_culture.wikipedia.json"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Department of Public Administration Italy"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Minister_for_Public_Administration_(Italy)",
+      "title": "Minister for Public Administration (Italy) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:30.680378+00:00",
+      "extracted_sha256": "638be5b91f1f658d29091f62cdd998bb2c348dce166ed09e7669888f918c4c7e",
+      "excerpt": "The**minister of[public administration](https://en.wikipedia.org/wiki/Public_administration)**(Italian:*ministro per la pubblica amministrazione*) in[Italy](https://en.wikipedia.org/wiki/Italy)is one of the positions[[1]](https://en.wikipedia.org/wiki/Minister_for_Public_Administration_(Italy)#cite_note-1)in the[Italian government](https://en.wikipedia.org/wiki/Cabinet_of_Italy).\n\nThe current minister for public administration is[Paolo Zangrillo](https://en.wikipedia.org/wiki/Paolo_Zangrillo), of[Forza Italia](https://en.wikipedia.org/wiki/Forza_Italia_(2013)), who held the office since 22 October 2022 in the government of[Giorgia Meloni](https://en.wikipedia.org/wiki/Giorgia_Meloni).\n\n## List of ministers[[edit](https://en.wikipedia.org/w/index.php?title=Minister_for_Public_Administration_(Italy)&action=edit&section=1)]\n\n**Parties:**\n- **1946–1994:**\n- [Christian Democracy](https://en.wikipedia.org/wiki/Christian_Democracy_(Italy))\n- [Italian Democratic Socialist Party](https://en.wik"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "http://www.funzionepubblica.gov.it",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minister_for_Public_Administration_(Italy)",
+      "link_text": "www.funzionepubblica.gov.it",
+      "relationship_excerpt": ", 1950;76 years ago(1950-01-27)FirstholderRaffaele Pio PetrilliWebsite[www.funzionepubblica.gov.it](http://www.funzionepubblica.gov.it)\n\nThe**minister of[public administration](https://en.wikipedia.org/wik"
+    }
+  ],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/it_public_administration.wikipedia.json"
+}

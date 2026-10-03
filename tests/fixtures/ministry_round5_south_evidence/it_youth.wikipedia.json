@@ -1,0 +1,26 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Department for Youth Policies and Universal Civil Service Italy",
+    "site:wikipedia.org \"Dipartimento per le politiche giovanili\""
+  ],
+  "pages": [
+    {
+      "url": "https://it.wikipedia.org/wiki/Dipartimento_per_le_politiche_giovanili_e_il_servizio_civile_universale",
+      "title": "Dipartimento per le politiche giovanili e il servizio civile universale - Wikipedia",
+      "observed_at": "2026-10-03T08:41:51.626751+00:00",
+      "extracted_sha256": "b809be401a1f989dbe76c0c84e9ed892ae4f649d8270acce6dbeeb77ff84b867",
+      "excerpt": "[Vai al contenuto](https://it.wikipedia.org/wiki/Dipartimento_per_le_politiche_giovanili_e_il_servizio_civile_universale#bodyContent)\n\nDa Wikipedia, l'enciclopedia libera.\n\nDipartimento per le politiche giovanili e il servizio civile universale[](https://it.wikipedia.org/wiki/File:Uffici_PCM_-_sport.jpg)Sede del dipartimentoStato[](https://it.wikipedia.org/wiki/File:Flag_of_Italy.svg)[Italia](https://it.wikipedia.org/wiki/Italia)TipoDipartimento della[Presidenza del Consiglio dei ministri](https://it.wikipedia.org/wiki/Presidenza_del_Consiglio_dei_ministri)Istituito[2012](https://it.wikipedia.org/wiki/2012)Predecessore[Dipartimento per la gioventù](https://it.wikipedia.org/wiki/Dipartimento_per_le_politiche_giovanili_e_le_attivit%C3%A0_sportive)[Ministro](https://it.wikipedia.org/wiki/Ministro_senza_portafoglio_della_Repubblica_Italiana)[Andrea Abodi](https://it.wikipedia.org/wiki/Andrea_Abodi)Sede[Roma](https://it.wikipedia.org/wiki/Roma)IndirizzoVia della Ferratella in Laterano, 51 -"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "https://www.politichegiovanili.gov.it",
+      "wikipedia_url": "https://it.wikipedia.org/wiki/Dipartimento_per_le_politiche_giovanili_e_il_servizio_civile_universale",
+      "link_text": "www.politichegiovanili.gov.it",
+      "relationship_excerpt": "oma)IndirizzoVia della Ferratella in Laterano, 51 -\n00184 RomaSito web[www.politichegiovanili.gov.it](https://www.politichegiovanili.gov.it)[Modifica dati su Wikidata](https://www.wikidata.org/wiki/Q3708654)**·"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/it_youth.wikipedia.json"
+}

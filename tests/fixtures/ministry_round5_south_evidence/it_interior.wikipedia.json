@@ -1,0 +1,25 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of the Interior Italy"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Italy)",
+      "title": "Ministry of the Interior (Italy) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:26.516954+00:00",
+      "extracted_sha256": "137a19ed1f414b97b3067fc2988500104019f5a1bdfb9a35fd69517d17d9ddce",
+      "excerpt": "The**Ministry of the Interior**([Italian](https://en.wikipedia.org/wiki/Italian_language):*Ministero dell'Interno*) is a government agency of[Italy](https://en.wikipedia.org/wiki/Italy), headquartered in[Rome](https://en.wikipedia.org/wiki/Rome).[[1]](https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Italy)#cite_note-1)It is a[cabinet-level ministry](https://en.wikipedia.org/wiki/Government_of_Italy)of the Italian Republic. Since October 2022, the minister has been[Matteo Piantedosi](https://en.wikipedia.org/wiki/Matteo_Piantedosi), former Prefect of Rome.\n\n## Responsibilities[[edit](https://en.wikipedia.org/w/index.php?title=Ministry_of_the_Interior_(Italy)&action=edit&section=1)]\n\nThe ministry is responsible for internal security and the protection of the constitutional order, for civil protection against disasters and terrorism, for displaced persons and for administrative questions. It is host to the Standing Committee of Interior Ministers and also drafts all passport, ident"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "https://www.interno.gov.it/",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Italy)",
+      "link_text": "interno.gov.it",
+      "relationship_excerpt": "wikipedia.org/wiki/Matteo_Piantedosi), Minister of the InteriorWebsite[interno.gov.it](https://www.interno.gov.it/)\n\nThe**Ministry of the Interior**([Italian](https://en.wikipedia.org/w"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/it_interior.wikipedia.json"
+}

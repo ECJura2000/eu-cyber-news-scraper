@@ -1,0 +1,18 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Justice Italy"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Justice_(Italy)",
+      "title": "Ministry of Justice (Italy) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:27.294654+00:00",
+      "extracted_sha256": "3c95123a4871879ccbd5f23371849b064b0af715662d838cf21ffdcc9390ffac",
+      "excerpt": "The**Ministry of Justice of Italy**([Italian](https://en.wikipedia.org/wiki/Italian_language):*Ministero della Giustizia*) is a department of the[government of Italy](https://en.wikipedia.org/wiki/Politics_of_Italy). Headquartered in[Rome](https://en.wikipedia.org/wiki/Rome),[[1]](https://en.wikipedia.org/wiki/Ministry_of_Justice_(Italy)#cite_note-1)headed by the political official who serves as[Minister of Justice](https://en.wikipedia.org/wiki/Italian_Minister_of_Justice).\n\n## Background[[edit](https://en.wikipedia.org/w/index.php?title=Ministry_of_Justice_(Italy)&action=edit&section=1)]\n\nIn Italy, there is no strict equivalent of an[Attorney General](https://en.wikipedia.org/wiki/Attorney_General), and all comparisons risk being misleading, due to the differences in the constitutional and legal systems. As a result, the very approximate equivalent of a U.S. Attorney General would be the**Ministro della Giustizia**, who is a member of the government and head of the Italian Department"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/it_justice.wikipedia.json"
+}

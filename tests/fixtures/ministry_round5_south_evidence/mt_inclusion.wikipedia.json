@@ -1,0 +1,18 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Ministry for Inclusion and the Voluntary Sector Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Julia_Farrugia_Portelli",
+      "title": "Julia Farrugia Portelli - Wikipedia",
+      "observed_at": "2026-10-03T08:37:37.932890+00:00",
+      "extracted_sha256": "920ee4e3b3dfcf66cae61b11c39fd8b0f568e857dd5c1d81ddefeada0417e9e5",
+      "excerpt": "[Jump to content](https://en.wikipedia.org/wiki/Julia_Farrugia_Portelli#bodyContent)\n\nFrom Wikipedia, the free encyclopedia\n\nMaltese politician\n\n[Honourable](https://en.wikipedia.org/wiki/Honourable)\n\nJulia Farrugia Portelli\n\n[MP](https://en.wikipedia.org/wiki/Parliament_of_Malta)[](https://en.wikipedia.org/wiki/File:Informal_meeting_of_Competitiveness_Ministers_24-7-2023.jpg)\n\nFarrugia Portelli on the Left hand side wearing a red suite during a Competitiveness Ministers meetingMinister for Inclusion and the Voluntary Sector\n\n**[Incumbent](https://en.wikipedia.org/wiki/Incumbent)****Assumed office**\n6 January 2024Prime Minister[Robert Abela](https://en.wikipedia.org/wiki/Robert_Abela)Preceded byHerself (as Minister for Inclusion, Voluntary Organisations and Consumer Rights)Minister for Inclusion, Voluntary Organisations and Consumer Rights**In office**\n30 March 2022–6 January 2024Prime Minister[Robert Abela](https://en.wikipedia.org/wiki/Robert_Abela)Preceded byOffice establishedSuccee"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_inclusion.wikipedia.json"
+}

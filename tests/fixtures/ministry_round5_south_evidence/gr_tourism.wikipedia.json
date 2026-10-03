@@ -1,0 +1,31 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Tourism Greece"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Greece)",
+      "title": "Ministry of Tourism (Greece) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:23.636942+00:00",
+      "extracted_sha256": "954029019bda2943ba303ee98cb04ba327ebeb50333b9be6a3fa840f8861d554",
+      "excerpt": "The**Ministry of Tourism**([Greek](https://en.wikipedia.org/wiki/Greek_language):Υπουργείo Τουρισμού) is the[government department](https://en.wikipedia.org/wiki/Ministry_(government_department))in charge of[tourism](https://en.wikipedia.org/wiki/Tourism_in_Greece)in[Greece](https://en.wikipedia.org/wiki/Greece). Established in 1989 and known between 2004 and 2009 as the**Ministry of Touristic Development**(Υπουργείο Τουριστικής Ανάπτυξης), it was merged with the[Ministry of Culture](https://en.wikipedia.org/wiki/Ministry_of_Culture_and_Sports_(Greece))in October 2009 but re-established as a separate department in June 2012. It was subsequently subsumed under the[Ministry of the Economy, Infrastructure, Shipping and Tourism](https://en.wikipedia.org/wiki/Ministry_of_Development_and_Investment_(Greece))between January and September 2015 and the restructured Ministry of the Economy, Development and Tourism in September 2015, before being restored as a distinct ministry on 5 November 2016"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "https://mintour.gov.gr",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Greece)",
+      "link_text": "mintour.gov.gr",
+      "relationship_excerpt": "nister_of_Greece)InauguralholderKostas MarkopoulosFormation2004Website[mintour.gov.gr](https://mintour.gov.gr)[](https://www.wikidata.org/wiki/Q6867588#P856)This article is part of"
+    },
+    {
+      "url": "https://mintour.gov.gr",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Greece)",
+      "link_text": "Official website",
+      "relationship_excerpt": "ndex.php?title=Ministry_of_Tourism_(Greece)&action=edit&section=7)]\n- [Official website](https://mintour.gov.gr)[](https://www.wikidata.org/wiki/Q6867588#P856)(in Greek and English)\n"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/gr_tourism.wikipedia.json"
+}

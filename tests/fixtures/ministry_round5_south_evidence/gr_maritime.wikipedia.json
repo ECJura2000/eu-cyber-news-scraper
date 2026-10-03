@@ -1,0 +1,18 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Maritime Affairs and Insular Policy Greece"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Maritime_Affairs_and_Insular_Policy_(Greece)",
+      "title": "Ministry of Maritime Affairs and Insular Policy (Greece) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:24.334835+00:00",
+      "extracted_sha256": "6c50f3d93bb67f4d9b88a4cac1a2418fde4b8e15b1f75c4dfcc1327daac0db22",
+      "excerpt": "The**Ministry of Maritime Affairs and Insular Policy**([Greek](https://en.wikipedia.org/wiki/Greek_language):Υπουργείο Ναυτιλίας και Νησιωτικής Πολιτικής) is a[government department](https://en.wikipedia.org/wiki/Ministry_(government_department))of[Greece](https://en.wikipedia.org/wiki/Greece)responsible for managing the nation's maritime and shipping sectors, as well as developing policies concerning the country's numerous islands. This ministry also oversees the enforcement of maritime laws and regulations, and the safety of Greek waters and coasts.[](https://en.wikipedia.org/wiki/File:YEN1.JPG)The headquarters of the Ministry of Shipping at the[Port of Piraeus](https://en.wikipedia.org/wiki/Port_of_Piraeus).\n\n## History[[edit](https://en.wikipedia.org/w/index.php?title=Ministry_of_Maritime_Affairs_and_Insular_Policy_(Greece)&action=edit&section=1)]\n\nIt was founded as the**Mercantile Marine Ministry**(Υπουργείο Εμπορικής Ναυτιλίας) in 1936. On 19 September 2007, it was merged with th"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/gr_maritime.wikipedia.json"
+}

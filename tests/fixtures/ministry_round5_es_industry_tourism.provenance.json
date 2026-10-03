@@ -1,0 +1,156 @@
+{
+  "source_id": "es_industry_tourism",
+  "url": "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/Paginas/listadoNotasPrensa.aspx",
+  "final_url": "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/Paginas/listadoNotasPrensa.aspx",
+  "observed_at": "2026-10-03T08:44:07.663681+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "008d0c29a0ccea44b1d3013b52e0ec754370c93ac3f705385f5f1397dd8b6353",
+  "response_bytes": 1031932,
+  "fixture_sha256": "18d3b4bc08a370c3f85c5e7a3aa03b48c14c11d8368cd7afe276636ed89ff28d",
+  "fixture_bytes": 6495,
+  "transform": "Retain first six actual li news cards; remove non-parsed image/script/form nodes; wrap in main/ul. Titles, URLs and visible span.fecha publication dates are unchanged.",
+  "expected": [
+    {
+      "title": "El gasto de los turistas internacionales supera los 17.800 M€ en el mes de agosto, un 9,2% más que en el mismo mes de 2025",
+      "url": "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/2026/Paginas/Frontur-Egatur-gasto-turistas-agosto-2026.aspx",
+      "published_date_local": "2026-10-02",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Industria abre la ventanilla de la segunda línea del Auto+ dirigida a autónomos y empresas para impulsar la electrificación del parque automovilístico con 50 M€",
+      "url": "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/2026/Paginas/Industria-abre-la-ventanilla-de-la-segunda-linea-del-Aut-+-autonomos-empresas-electrificacion.aspx",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Los asientos previstos en vuelos internacionales para octubre alcanzan los 12,8 M, un 6,4% más que hace un año",
+      "url": "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/2026/Paginas/Informe-capacidades-aereas-turespana-octubre-2026.aspx",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "El Ministerio de Industria y Turismo entrega los diplomas a 16 nuevas Fiestas de Interés Turístico Nacional e Internacional",
+      "url": "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/2026/Paginas/ministerio-industria-turismo-entrega-16-diplomas-fiestas-interes-nacional-internacional.aspx",
+      "published_date_local": "2026-09-25",
+      "date_confidence": "high"
+    },
+    {
+      "title": "España defiende reforzar la capacidad industrial y tecnológica de la UE para ganar competitividad y reducir dependencias",
+      "url": "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/2026/Paginas/consejo-competitividad-bruselas.aspx",
+      "published_date_local": "2026-09-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "El ministro Hereu y el vicepresidente de la Comisión, Stéphane Séjourné, abordan los retos de competitividad de la industria europea",
+      "url": "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/2026/Paginas/El-ministro-Hereu-y-el-vicepresidente-de-la-Comisión,-Stéphane-Séjourné,-abordan-los-retos-de-competitividad-industrial.aspx",
+      "published_date_local": "2026-09-23",
+      "date_confidence": "high"
+    }
+  ],
+  "source_config": {
+    "id": "es_industry_tourism",
+    "country": "ES",
+    "name_zh": "西班牙產業與觀光部",
+    "name": "Ministerio de Industria y Turismo",
+    "institution_type": "central ministry",
+    "language": "es",
+    "homepage": "https://www.mintur.gob.es/",
+    "listing_url": "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/Paginas/listadoNotasPrensa.aspx",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.mintur.gob.es",
+      "www.mincotur.gob.es"
+    ],
+    "include_patterns": [
+      "/GabinetePrensa/NotasPrensa/\\d{4}/Paginas/"
+    ],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Madrid",
+    "card_selectors": [
+      "li:has(h2.titulo a[href*=\"/GabinetePrensa/NotasPrensa/\"])"
+    ],
+    "link_selectors": [
+      "h2.titulo a[href]"
+    ],
+    "title_selectors": [
+      "h2.titulo"
+    ],
+    "date_selectors": [
+      "span.fecha"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "live_status": {
+    "source_id": "es_industry_tourism",
+    "source_name": "西班牙產業與觀光部",
+    "country": "ES",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 985,
+    "relevant_count": 985,
+    "duration_seconds": 3.51,
+    "newest_published_at": "2026-10-01T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 985,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 985,
+    "freshness_lag_days": 2.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 2,
+    "bytes_downloaded": 1035916,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200",
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "publication_date_evidence": "Official Notas de Prensa listing; each article card has its own span.fecha next to its category and h2.titulo. No event deadline, dateModified, URL-derived or inferred date is used.",
+  "detail_verification_limitation": {
+    "error": "TimeoutError: "
+  },
+  "production_observed_at": "2026-10-03T08:44:07.663681+00:00"
+}
