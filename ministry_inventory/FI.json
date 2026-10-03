@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "country": "FI",
-  "reviewed_on": "2026-10-02",
+  "reviewed_on": "2026-10-03",
   "official_roster_urls": [
     "https://valtioneuvosto.fi/ministeriot",
     "https://valtioneuvosto.fi/en/ministries"
@@ -22,7 +22,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -42,10 +42,12 @@
       "kind": "ministry",
       "language": "fi",
       "homepage": "https://um.fi",
-      "news_url": null,
-      "source_ids": [],
-      "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "news_url": "https://um.fi/etusivu",
+      "source_ids": [
+        "fi_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "Fresh fourth-round verification: manual_verified. Recorded failures: http_error, robots_denied. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -54,7 +56,8 @@
         "https://valtioneuvosto.fi/en/staattiset-feedit-en",
         "https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss",
         "https://um.fi/en/current-issues/press-releases",
-        "https://um.fi/rss"
+        "https://um.fi/rss",
+        "https://um.fi/etusivu"
       ]
     },
     {
@@ -68,7 +71,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -91,7 +94,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -114,7 +117,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -137,7 +140,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -160,7 +163,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -183,7 +186,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -206,7 +209,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -229,7 +232,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -252,7 +255,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",
@@ -275,7 +278,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://valtioneuvosto.fi/ministeriot",
         "https://valtioneuvosto.fi/en/ministries",

@@ -1,0 +1,120 @@
+{
+  "url": "https://mv.gov.cz/",
+  "observed_at": "2026-10-03T02:40:33.358810+00:00",
+  "http_status": 200,
+  "final_url": "https://mv.gov.cz/",
+  "content_type": "text/html; charset=utf-8",
+  "http_statuses": [
+    "200",
+    "200"
+  ],
+  "response_sha256": "6ddd18d8df9e086ffe4e4e9476d3208c99c5510074dc0a9c152571d9c9f048a9",
+  "response_bytes": 126783,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "source_id": "cz_interior",
+  "source_config": {
+    "id": "cz_interior",
+    "country": "CZ",
+    "name_zh": "捷克內政部",
+    "name": "Ministerstvo vnitra",
+    "institution_type": "ministry",
+    "language": "cs",
+    "homepage": "https://mv.gov.cz/",
+    "listing_url": "https://mv.gov.cz/",
+    "allow_domains": [
+      "mv.gov.cz"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Prague",
+    "schedule_enabled": false,
+    "parser_adapter": "cz_public_flight",
+    "feed_urls": []
+  },
+  "fixture_path": "tests/fixtures/ministry_round4_cz_interior.html",
+  "fixture_sha256": "5230ff2f028761eb8395e1f0070e9cf9518b47c4ff27b069ec49ea7f583ae647",
+  "fixture_bytes": 38616,
+  "transform": "Bounded literal original publication containers/JSON fields; no invented article URLs or dates.",
+  "expected": [
+    {
+      "title": "Lubomír Metnar uvedl Miroslava Tomana do funkce ředitele ÚZSI",
+      "url": "https://mv.gov.cz/lubomir-metnar-uvedl-miroslava-tomana-do-funkce-reditele-uzsi",
+      "published_date_local": "2026-10-01",
+      "published_at": "2026-10-01T09:47:17.252286+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Prague"
+    },
+    {
+      "title": "Novým generálním ředitelem HZS ČR se stal Martin Legner",
+      "url": "https://mv.gov.cz/novym-generalnim-reditelem-hzs-cr-se-stal-martin-legner",
+      "published_date_local": "2026-09-30",
+      "published_at": "2026-09-30T18:11:05.090745+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Prague"
+    },
+    {
+      "title": "Ministr Metnar představil bezpečnostním sborům a odborům plán růstu platů i priority rozpočtu",
+      "url": "https://mv.gov.cz/ministr-metnar-predstavil-bezpecnostnim-sborum-a-odborum-plan-rustu-platu-i-priority-rozpoctu",
+      "published_date_local": "2026-09-29",
+      "published_at": "2026-09-29T12:28:33.014000+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Prague"
+    },
+    {
+      "title": "Ministr vnitra Lubomír Metnar se zúčastní Dnů NATO",
+      "url": "https://mv.gov.cz/ministr-vnitra-lubomir-metnar-se-zucastni-dnu-nato",
+      "published_date_local": "2026-09-18",
+      "published_at": "2026-09-18T14:00:43.598273+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Prague"
+    }
+  ],
+  "live_status": {
+    "source_id": "cz_interior",
+    "source_name": "捷克內政部",
+    "country": "CZ",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 4,
+    "relevant_count": 4,
+    "duration_seconds": 2.701,
+    "newest_published_at": "2026-10-01T09:47:17.252286+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0,
+    "health_alerts": [],
+    "dated_count": 4,
+    "undated_ratio": 0,
+    "unique_title_ratio": 1,
+    "in_range_count": 4,
+    "freshness_lag_days": 1.72,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 2,
+    "bytes_downloaded": 126807,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200",
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0,
+    "historical_median_bytes": 0,
+    "historical_median_duration": 0
+  },
+  "dispatch_overlay": false,
+  "truncated": true,
+  "date_timezone_contract": "Naive Danish ISO times interpreted in Europe/Copenhagen; explicit offsets preserved."
+}

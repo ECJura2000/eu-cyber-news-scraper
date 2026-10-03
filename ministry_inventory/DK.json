@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "country": "DK",
-  "reviewed_on": "2026-10-02",
+  "reviewed_on": "2026-10-03",
   "official_roster_urls": [
     "https://stm.dk/statsministeriet/kontakt/emneoversigt/"
   ],
@@ -58,9 +58,10 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
-        "https://stm.dk/statsministeriet/kontakt/emneoversigt/"
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://www.bltm.dk/"
       ]
     },
     {
@@ -73,12 +74,18 @@
       "homepage": "https://baebm.dk/",
       "news_url": "https://baebm.dk/nyheder/nyhedsarkiv",
       "source_ids": [],
-      "status": "blocked",
-      "reason": "Published anonymous GoBasic archive query returned HTTP 400, including bounded retry with the publicly specified current-page header. No credentials, form tokens or authenticated fallback used. Next action: Review upstream anonymous getPage request contract after public frontend changes; do not acquire verification/authentication tokens or bypass access policy.",
+      "status": "parser_pending",
+      "reason": "Fresh fourth-round verification: parser_pending. Recorded failures: HTTPStatusError, expected_html, http_error. Next action: Resolve the recorded production API HTTP 400 or network timeout through a published, robots-permitted dated endpoint; do not bypass access policy. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
         "https://baebm.dk/",
-        "https://baebm.dk/nyheder/nyhedsarkiv"
+        "https://baebm.dk/nyheder/nyhedsarkiv",
+        "https://baebm.dk/nyheder/presse",
+        "https://baebm.dk/nyheder",
+        "https://baebm.dk/arbejdsomraader/aeldreomraadet/raadet-for-et-aldersvenligt-danmark",
+        "https://cdn.baebm.dk/Assets/GoBasic/Applications/Release/application.min.js",
+        "https://cdn.baebm.dk/Assets/GoBasic/Applications/Release/downloadRestrictions.min.js",
+        "https://baebm.dk/gbapi/search/getPage"
       ]
     },
     {
@@ -232,13 +239,16 @@
       "language": "da",
       "homepage": "https://mim.dk/",
       "news_url": "https://mim.dk/nyheder/pressemeddelelser",
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "No source promoted: reachable official content did not yet pass a source-scoped dated fixture and production scrape. Next action: Main: inspect the published unauthenticated frontend listing data and add a bounded ministry-specific adapter; validate publication dates and titles with genuine fixtures before enrollment. Evidence: tests/fixtures/ministry_round3_north.json",
+      "source_ids": [
+        "dk_environment"
+      ],
+      "status": "manual_verified",
+      "reason": "Fresh fourth-round verification: manual_verified. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_north.json",
       "evidence_urls": [
         "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
         "https://mim.dk/",
-        "https://mim.dk/nyheder/pressemeddelelser"
+        "https://mim.dk/nyheder/pressemeddelelser",
+        "https://search.mst.dk/api/News/Search"
       ]
     },
     {
@@ -271,13 +281,16 @@
       "language": "da",
       "homepage": "https://mssb.dk/",
       "news_url": "https://mssb.dk/nyheder/",
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "No source promoted: reachable official content did not yet pass a source-scoped dated fixture and production scrape. Next action: Main: inspect the published unauthenticated frontend listing data and add a bounded ministry-specific adapter; validate publication dates and titles with genuine fixtures before enrollment. Evidence: tests/fixtures/ministry_round3_north.json",
+      "source_ids": [
+        "dk_resilience"
+      ],
+      "status": "manual_verified",
+      "reason": "Fresh fourth-round verification: manual_verified. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_north.json",
       "evidence_urls": [
         "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
         "https://mssb.dk/",
-        "https://mssb.dk/nyheder/"
+        "https://mssb.dk/nyheder/",
+        "https://mssb.dk/umbraco/api/DynamicListSearchApi/search"
       ]
     },
     {
@@ -352,13 +365,19 @@
       "language": "da",
       "homepage": "https://um.dk/",
       "news_url": "https://um.dk/nyheder/",
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "No source promoted: reachable official content did not yet pass a source-scoped dated fixture and production scrape. Next action: Main: inspect the published unauthenticated frontend listing data and add a bounded ministry-specific adapter; validate publication dates and titles with genuine fixtures before enrollment. Evidence: tests/fixtures/ministry_round3_north.json",
+      "source_ids": [
+        "dk_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "Fresh fourth-round verification: manual_verified. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_north.json",
       "evidence_urls": [
         "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
         "https://um.dk/",
-        "https://um.dk/nyheder/"
+        "https://um.dk/nyheder/",
+        "https://via.ritzau.dk/public-website-api/pressroom/2012662/releases/20/0",
+        "https://um.dk/robots.txt",
+        "https://via.ritzau.dk/robots.txt",
+        "https://via.ritzau.dk/public-website-api/pressroom/2012662"
       ]
     },
     {

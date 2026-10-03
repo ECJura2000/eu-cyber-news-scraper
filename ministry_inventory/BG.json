@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "country": "BG",
-  "reviewed_on": "2026-10-02",
+  "reviewed_on": "2026-10-03",
   "official_roster_urls": [
     "https://iisda.government.bg/ras/executive_power/ministries"
   ],
@@ -206,13 +206,15 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "needs_review",
-      "reason": "2026-10-02 round3 south: The official administrative roster has no runnable news endpoint; nism.bg is a youth-information portal that accepts submitted news, not a verified ministry news stream. Establish canonical ministry portal/attribution before promotion. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (bg_youth_sport).",
+      "status": "blocked",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: HTTPStatusError, RobotsDeniedError. Next action: Recheck the canonical portal only after robots policy permits retrieval or locate a separately published attributable ministry feed. Evidence: tests/fixtures/ministry_round4_south.json",
       "evidence_urls": [
         "https://iisda.government.bg/ras/executive_power/ministries",
         "https://iisda.government.bg/ras/executive_power/ministry_organigram/1202",
         "https://strategy.bg/",
-        "https://www.nism.bg/bg/"
+        "https://www.nism.bg/bg/",
+        "https://mpes.government.bg/",
+        "https://iisda.government.bg/ras/executive_power/ministry/1202"
       ]
     },
     {
@@ -226,7 +228,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (bg_education).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://iisda.government.bg/ras/executive_power/ministries",
         "https://iisda.government.bg/ras/executive_power/ministry_organigram/81",
@@ -314,7 +316,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (bg_regional_development).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: timeout. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://iisda.government.bg/ras/executive_power/ministries",
         "https://iisda.government.bg/ras/executive_power/ministry_organigram/85",
@@ -395,7 +397,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (bg_finance).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: The accessible government directory/shared portal does not establish ministry-specific news ownership. Recheck the recorded ministry access restriction; do not alias shared government content. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://iisda.government.bg/ras/executive_power/ministries",
         "https://iisda.government.bg/ras/executive_power/ministry_organigram/88",

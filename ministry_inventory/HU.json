@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "country": "HU",
-  "reviewed_on": "2026-10-02",
+  "reviewed_on": "2026-10-03",
   "official_roster_urls": [
     "https://kormany.hu/kormanyzat"
   ],
@@ -183,13 +183,26 @@
       "news_url": "https://kormany.hu/hirek",
       "source_ids": [],
       "status": "needs_review",
-      "reason": "2026-10-02 round3 south: Current ministry page has biography/navigation only; global /hirek does not establish ministry attribution. Review official ministry-specific news or an attributable independent portal; never promote the sitewide alias. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hu_defence).",
+      "reason": "Fresh fourth-round verification: needs_review. Next action: Require explicit ministry publisher metadata or an attributable dedicated current ministry news endpoint before promotion. Evidence: tests/fixtures/ministry_round4_south.json",
       "evidence_urls": [
         "https://kormany.hu/kormanyzat",
         "https://kormany.hu/kormanyzat/honvedelmi-miniszterium",
         "https://kormany.hu/hirek",
         "https://kormany.hu/hirlevel",
-        "https://kormany.hu/impresszum-kiado"
+        "https://kormany.hu/impresszum-kiado",
+        "https://kormany.hu/main-AHJHQNVV.js",
+        "https://kormany.hu/chunk-XI74BYPY.js",
+        "https://kormany.hu/chunk-OTL46OUP.js",
+        "https://kormany.hu/chunk-SH25L4XP.js",
+        "https://kormany.hu/chunk-JW3DITKK.js",
+        "https://kormany.hu/chunk-TVOAUNUX.js",
+        "https://kormany.hu/chunk-RIGYERJF.js",
+        "https://kormany.hu/chunk-WMVGJ52N.js",
+        "https://kormany.hu/chunk-S4PO4YIB.js",
+        "https://kormany.hu/chunk-Q33YZMAE.js",
+        "https://kormany.hu/chunk-VAO64FKA.js",
+        "https://kormany.hu/chunk-PBU2EYI5.js",
+        "https://kormany.hu/chunk-QYDKMGUG.js"
       ]
     },
     {
@@ -281,7 +294,7 @@
       "news_url": "https://kormany.hu/hirek",
       "source_ids": [],
       "status": "needs_review",
-      "reason": "2026-10-02 round3 south: Current ministry page displays Jogszabalytervezetek law-draft consultations with publication/deadline fields rather than ministry news. Find a ministry-attributable news stream; do not treat consultation deadlines or global /hirek as ministry news. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (hu_prime_minister).",
+      "reason": "Fresh fourth-round verification: needs_review. Next action: Require explicit ministry publisher metadata or an attributable dedicated current ministry news endpoint before promotion. Evidence: tests/fixtures/ministry_round4_south.json",
       "evidence_urls": [
         "https://kormany.hu/kormanyzat",
         "https://kormany.hu/kormanyzat/miniszterelnokseg",

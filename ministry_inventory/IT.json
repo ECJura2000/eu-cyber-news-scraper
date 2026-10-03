@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "country": "IT",
-  "reviewed_on": "2026-10-02",
+  "reviewed_on": "2026-10-03",
   "official_roster_urls": [
     "https://www.governo.it/it/i-ministeri-0",
     "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -65,7 +65,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_interior).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -83,7 +83,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_justice).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -171,7 +171,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_agriculture).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -190,7 +190,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_environment).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -292,7 +292,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_culture).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -311,7 +311,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_health).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -371,7 +371,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_public_administration).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -408,17 +408,23 @@
       "kind": "ministry_equivalent",
       "language": "it",
       "homepage": "https://www.protezionecivile.gov.it/",
-      "news_url": "https://www.protezionecivile.gov.it/it/rss/",
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "2026-10-02 round3 south: Official RSS page publishes api.protezionecivile.it endpoints but production robots retrieval on API host is unavailable. Retry only when verified TLS/robots succeed; frontend listing remains a JavaScript shell. Do not disable robots or promote zero items. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_civil_protection).",
+      "news_url": "https://www.protezionecivile.gov.it/page-data/it/page-data.json",
+      "source_ids": [
+        "it_civil_protection"
+      ],
+      "status": "manual_verified",
+      "reason": "Fresh fourth-round verification: manual_verified. Recorded failures: RobotsUnavailableError. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://www.protezionecivile.gov.it/",
         "https://www.protezionecivile.gov.it/it/rss/",
         "https://api.protezionecivile.it/default/dpcPortalGenerateRss?categoria=notizia",
-        "https://api.protezionecivile.it/default/dpcPortalGenerateRss?categoria=comunicato_stampa"
+        "https://api.protezionecivile.it/default/dpcPortalGenerateRss?categoria=comunicato_stampa",
+        "https://www.protezionecivile.gov.it/it/",
+        "https://www.protezionecivile.gov.it/page-data/it/page-data.json",
+        "https://www.protezionecivile.gov.it/it/notizia/campi-scuola-anchio-sono-la-protezione-civile-si-conclude-ledizione-2026/",
+        "https://www.protezionecivile.gov.it/it/comunicato-stampa/rinnovo-del-protocollo-dintesa-con-unione-energie-la-mobilita/"
       ]
     },
     {
@@ -432,7 +438,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_maritime_policies).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -451,7 +457,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_european_affairs).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -511,7 +517,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_youth).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -550,7 +556,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_equal_opportunities).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -589,7 +595,7 @@
       "news_url": "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/?tab=58f3f542-0aec-4999-b90c-9a8ce78b1258",
       "source_ids": [],
       "status": "parser_pending",
-      "reason": "2026-10-02 round3 south: Official news/cards and four article detail alternatives do not expose credible publication dates; dates parsed from consultation text are not publication dates, and og:updated_time is modification time. Find an explicit first-party publication field before promotion. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (it_institutional_reforms).",
+      "reason": "Fresh fourth-round verification: parser_pending. Next action: Wait for explicit first-party publication metadata or a dated ministry publication feed; retain captured negative regression test. Evidence: tests/fixtures/ministry_round4_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",

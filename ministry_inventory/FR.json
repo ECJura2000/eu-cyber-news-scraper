@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "country": "FR",
-  "reviewed_on": "2026-10-02",
+  "reviewed_on": "2026-10-03",
   "official_roster_urls": [
     "https://www.info.gouv.fr/composition-du-gouvernement",
     "https://lannuaire.service-public.gouv.fr/gouvernement"
@@ -22,7 +22,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: http_error. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -43,7 +43,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -86,7 +86,7 @@
       "news_url": "https://www.ecologie.gouv.fr/actualites",
       "source_ids": [],
       "status": "needs_review",
-      "reason": "Ecology news/RSS/press portal publishes multiple ministries; sitewide dated items do not establish this ministry as publisher. Next action: Main: implement and verify publisher-specific filtering from first-party article attribution or an officially published ministry-scoped feed before enrolling any shared ecologie.gouv.fr source. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: needs_review. Next action: Fresh shared press details contain original Publié le dates but no per-release publisher field; minister/body mentions and shared footer are insufficient attribution. Require an official ministry publisher identifier or ministry-specific feed before enrollment. Evidence: tests/fixtures/ministry_round4_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -101,7 +101,10 @@
         "https://www.ecologie.gouv.fr/actualites/electrifions-france-energie-moins-chere-plus-souveraine-plus-durable",
         "https://www.ecologie.gouv.fr/flux-rss",
         "https://www.ecologie.gouv.fr/rss.xml",
-        "https://www.ecologie.gouv.fr/presse/communiques-de-presse"
+        "https://www.ecologie.gouv.fr/presse/communiques-de-presse",
+        "https://www.ecologie.gouv.fr/presse/30-territoires-laureats-lappel-manifestation-dinteret-destinations-france-velo",
+        "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
+        "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites"
       ]
     },
     {
@@ -157,7 +160,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -178,7 +181,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: http_error. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -199,7 +202,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: http_error. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -220,7 +223,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: http_error, https_required. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -241,7 +244,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: http_error. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -284,7 +287,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: http_error. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -305,7 +308,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -326,7 +329,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -369,7 +372,7 @@
       "news_url": "https://www.ecologie.gouv.fr/actualites",
       "source_ids": [],
       "status": "needs_review",
-      "reason": "Ecology news/RSS/press portal publishes multiple ministries; sitewide dated items do not establish this ministry as publisher. Next action: Main: implement and verify publisher-specific filtering from first-party article attribution or an officially published ministry-scoped feed before enrolling any shared ecologie.gouv.fr source. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: needs_review. Next action: Fresh shared press details contain original Publié le dates but no per-release publisher field; minister/body mentions and shared footer are insufficient attribution. Require an official ministry publisher identifier or ministry-specific feed before enrollment. Evidence: tests/fixtures/ministry_round4_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -386,7 +389,10 @@
         "https://www.ecologie.gouv.fr/rss.xml",
         "https://www.ecologie.gouv.fr/presse/communiques-de-presse",
         "https://ecologie.gouv.fr/rss-actualites.xml",
-        "https://ecologie.gouv.fr/rss-presse.xml"
+        "https://ecologie.gouv.fr/rss-presse.xml",
+        "https://www.ecologie.gouv.fr/presse/30-territoires-laureats-lappel-manifestation-dinteret-destinations-france-velo",
+        "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
+        "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites"
       ]
     },
     {
@@ -400,7 +406,7 @@
       "news_url": "https://www.ecologie.gouv.fr/actualites",
       "source_ids": [],
       "status": "needs_review",
-      "reason": "Ecology news/RSS/press portal publishes multiple ministries; sitewide dated items do not establish this ministry as publisher. Next action: Main: implement and verify publisher-specific filtering from first-party article attribution or an officially published ministry-scoped feed before enrolling any shared ecologie.gouv.fr source. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: needs_review. Next action: Fresh shared press details contain original Publié le dates but no per-release publisher field; minister/body mentions and shared footer are insufficient attribution. Require an official ministry publisher identifier or ministry-specific feed before enrollment. Evidence: tests/fixtures/ministry_round4_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -415,7 +421,10 @@
         "https://www.ecologie.gouv.fr/actualites/electrifions-france-energie-moins-chere-plus-souveraine-plus-durable",
         "https://www.ecologie.gouv.fr/flux-rss",
         "https://www.ecologie.gouv.fr/rss.xml",
-        "https://www.ecologie.gouv.fr/presse/communiques-de-presse"
+        "https://www.ecologie.gouv.fr/presse/communiques-de-presse",
+        "https://www.ecologie.gouv.fr/presse/30-territoires-laureats-lappel-manifestation-dinteret-destinations-france-velo",
+        "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
+        "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites"
       ]
     },
     {
@@ -429,7 +438,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -450,7 +459,7 @@
       "news_url": "https://www.ecologie.gouv.fr/actualites",
       "source_ids": [],
       "status": "needs_review",
-      "reason": "Ecology news/RSS/press portal publishes multiple ministries; sitewide dated items do not establish this ministry as publisher. Next action: Main: implement and verify publisher-specific filtering from first-party article attribution or an officially published ministry-scoped feed before enrolling any shared ecologie.gouv.fr source. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: needs_review. Next action: Fresh shared press details contain original Publié le dates but no per-release publisher field; minister/body mentions and shared footer are insufficient attribution. Require an official ministry publisher identifier or ministry-specific feed before enrollment. Evidence: tests/fixtures/ministry_round4_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -460,7 +469,10 @@
         "https://www.ecologie.gouv.fr/actualites",
         "https://www.ecologie.gouv.fr/flux-rss",
         "https://www.cohesion-territoires.gouv.fr/rss.xml",
-        "https://www.cohesion-territoires.gouv.fr/presse/communiques-de-presse"
+        "https://www.cohesion-territoires.gouv.fr/presse/communiques-de-presse",
+        "https://www.ecologie.gouv.fr/presse/30-territoires-laureats-lappel-manifestation-dinteret-destinations-france-velo",
+        "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
+        "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites"
       ]
     }
   ]

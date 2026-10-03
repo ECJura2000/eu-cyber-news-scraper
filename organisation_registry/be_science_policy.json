@@ -1,0 +1,97 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-10-03.1",
+  "canonical_id": "be_science_policy",
+  "names": {
+    "zh": "比利時科學政策規劃公共服務部",
+    "en": "Programmatorische Federale Overheidsdienst Wetenschapsbeleid",
+    "short": "be_science_policy",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "be_science_policy",
+      "country": "BE",
+      "name_zh": "比利時科學政策規劃公共服務部",
+      "name": "Programmatorische Federale Overheidsdienst Wetenschapsbeleid",
+      "institution_type": "ministry_equivalent",
+      "language": "fr",
+      "homepage": "https://www.belspo.be",
+      "listing_url": "https://www.belspo.be/belspo/organisation/press_fr.stm",
+      "allow_domains": [
+        "www.belspo.be"
+      ],
+      "critical": false,
+      "detail_pages": 0,
+      "timezone": "Europe/Brussels",
+      "schedule_enabled": false,
+      "parser_adapter": "belspo_central_press",
+      "feed_urls": [],
+      "minimum_budget_seconds": 120
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "數位身份",
+      "著作權",
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱",
+      "競爭規範面向（平台責任的市場結構面）",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-10-03",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-10-03",
+    "evidence_urls": [
+      "https://www.belspo.be",
+      "https://www.belspo.be/belspo/organisation/press_fr.stm"
+    ],
+    "fixture_path": "tests/fixtures/ministry_round4_be_science_policy.json",
+    "provenance_path": "tests/fixtures/ministry_round4_be_science_policy.provenance.json",
+    "schedule_batch": "eu27_central_ministries",
+    "last_smoke": {
+      "tested_on": "2026-10-03",
+      "source_id": "be_science_policy",
+      "success": true,
+      "raw_count": 3,
+      "dated_count": 3,
+      "robots_enforced": true,
+      "tls_verified": true,
+      "observed_at": "2026-10-03T03:07:27.615918+00:00",
+      "http_statuses": [
+        "200",
+        "200",
+        "200",
+        "200",
+        "200"
+      ],
+      "warning": "官方新聞內頁僅進行有界樣本抓取；此期間搜尋可能不完整。",
+      "truncated": true,
+      "dispatch_overlay": false
+    }
+  }
+}

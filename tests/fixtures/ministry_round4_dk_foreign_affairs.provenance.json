@@ -1,0 +1,571 @@
+{
+  "url": "https://um.dk/nyheder/",
+  "observed_at": "2026-10-03T02:54:24.152337+00:00",
+  "http_status": 200,
+  "final_url": "https://um.dk/nyheder/",
+  "content_type": "application/json",
+  "http_statuses": [
+    "200"
+  ],
+  "response_sha256": "4a2f706182b3c58fedfc4d6f96ea84000a1d13c6d35d5665781bc78a73f8d0df",
+  "response_bytes": 12591,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "source_id": "dk_foreign_affairs",
+  "source_config": {
+    "id": "dk_foreign_affairs",
+    "country": "DK",
+    "name_zh": "丹麥外交部",
+    "name": "Udenrigsministeriet",
+    "institution_type": "ministry",
+    "language": "da",
+    "homepage": "https://um.dk/",
+    "listing_url": "https://um.dk/nyheder/",
+    "allow_domains": [
+      "um.dk",
+      "via.ritzau.dk"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Copenhagen",
+    "schedule_enabled": false,
+    "parser_adapter": "dk_foreign_ritzau",
+    "feed_urls": []
+  },
+  "fixture_path": "tests/fixtures/ministry_round4_dk_foreign_affairs.json",
+  "fixture_sha256": "2ad12eab19b3df80b205aade6d82565a3c6ab7f40bfbed1eb82a7abc5e3649d3",
+  "fixture_bytes": 17078,
+  "transform": "Bounded literal original publication containers/JSON fields; no invented article URLs or dates.",
+  "expected": [
+    {
+      "title": "Børnenes U-landskalender er i handlen: I år hjælper den børn i Rwanda",
+      "url": "https://via.ritzau.dk/release/15198231/bornenes-u-landskalender-er-i-handlen-i-ar-hjaelper-den-born-i-rwanda?publisherId=2012662&lang=da",
+      "published_date_local": "2026-10-01",
+      "published_at": "2026-10-01T07:21:34.266000+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Udenrigsministeren: Kasakhstan og Usbekistan åbner nye muligheder for Danmark",
+      "url": "https://via.ritzau.dk/release/15194749/udenrigsministeren-kasakhstan-og-usbekistan-abner-nye-muligheder-for-danmark?publisherId=2012662&lang=da",
+      "published_date_local": "2026-09-30",
+      "published_at": "2026-09-30T13:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Udviklingssamarbejdet styrkes med nye Strategiske Partnerskaber",
+      "url": "https://via.ritzau.dk/release/15189484/udviklingssamarbejdet-styrkes-med-nye-strategiske-partnerskaber?publisherId=2012662&lang=da",
+      "published_date_local": "2026-09-29",
+      "published_at": "2026-09-29T06:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Regeringen vil afsætte 850 millioner kroner til virksomheder, der investerer i udviklingslande",
+      "url": "https://via.ritzau.dk/release/15186698/regeringen-vil-afsaette-850-millioner-kroner-til-virksomheder-der-investerer-i-udviklingslande?publisherId=2012662&lang=da",
+      "published_date_local": "2026-09-28",
+      "published_at": "2026-09-28T06:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Danmark vil støtte global uddannelsesfond med op til 1 mia. kr. frem mod 2030",
+      "url": "https://via.ritzau.dk/release/15180344/danmark-vil-stotte-global-uddannelsesfond-med-op-til-1-mia-kr-frem-mod-2030?publisherId=2012662&lang=da",
+      "published_date_local": "2026-09-23",
+      "published_at": "2026-09-23T18:44:41.384000+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Danmark og Brasilien indgår strategisk partnerskab",
+      "url": "https://via.ritzau.dk/release/15178207/danmark-og-brasilien-indgar-strategisk-partnerskab?publisherId=2012662&lang=da",
+      "published_date_local": "2026-09-23",
+      "published_at": "2026-09-23T13:56:37.975000+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Udenrigsministeren rejser til New York til åbningen af FN's 81. Generalforsamling",
+      "url": "https://via.ritzau.dk/release/15172687/udenrigsministeren-rejser-til-new-york-til-abningen-af-fns-81-generalforsamling?publisherId=2012662&lang=da",
+      "published_date_local": "2026-09-20",
+      "published_at": "2026-09-20T16:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Møde i Det Udenrigspolitiske Nævn",
+      "url": "https://via.ritzau.dk/release/15170089/mode-i-det-udenrigspolitiske-naevn?publisherId=2012662&lang=da",
+      "published_date_local": "2026-09-18",
+      "published_at": "2026-09-18T08:06:38.616000+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Møde i Det Udenrigspolitiske Nævn",
+      "url": "https://via.ritzau.dk/release/15152534/mode-i-det-udenrigspolitiske-naevn?publisherId=2012662&lang=da",
+      "published_date_local": "2026-09-11",
+      "published_at": "2026-09-11T07:30:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Danmark tilbyder hjælp til adopterede til Danmark fra Sydkorea, Indien, Vietnam og Libanon",
+      "url": "https://via.ritzau.dk/release/15141440/danmark-tilbyder-hjaelp-til-adopterede-til-danmark-fra-sydkorea-indien-vietnam-og-libanon?publisherId=2012662&lang=da",
+      "published_date_local": "2026-09-04",
+      "published_at": "2026-09-04T13:06:00.686000+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Lars Løkke Rasmussen genåbner Danmarks ambassade i Syrien",
+      "url": "https://via.ritzau.dk/release/15125994/lars-lokke-rasmussen-genabner-danmarks-ambassade-i-syrien?publisherId=2012662&lang=da",
+      "published_date_local": "2026-08-31",
+      "published_at": "2026-08-31T16:15:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Danmark styrker den humanitære indsats i Sudan med 100 millioner kroner",
+      "url": "https://via.ritzau.dk/release/15109142/danmark-styrker-den-humanitaere-indsats-i-sudan-med-100-millioner-kroner?publisherId=2012662&lang=da",
+      "published_date_local": "2026-08-24",
+      "published_at": "2026-08-24T16:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Udenrigsministeren leder FN's Sikkerhedsråd med fokus på Ukraine, Sudan og konflikt og sult",
+      "url": "https://via.ritzau.dk/release/15109127/udenrigsministeren-leder-fns-sikkerhedsrad-med-fokus-pa-ukraine-sudan-og-konflikt-og-sult?publisherId=2012662&lang=da",
+      "published_date_local": "2026-08-24",
+      "published_at": "2026-08-24T07:14:29.177000+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Udenrigsministeriet ansætter særlig rådgiver",
+      "url": "https://via.ritzau.dk/release/15057264/udenrigsministeriet-ansaetter-saerlig-radgiver?publisherId=2012662&lang=da",
+      "published_date_local": "2026-08-01",
+      "published_at": "2026-08-01T07:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Danmark giver 85 millioner kroner i ny humanitær støtte til Palæstina og Libanon",
+      "url": "https://via.ritzau.dk/release/15046082/danmark-giver-85-millioner-kroner-i-ny-humanitaer-stotte-til-palaestina-og-libanon?publisherId=2012662&lang=da",
+      "published_date_local": "2026-07-13",
+      "published_at": "2026-07-13T06:24:50.872000+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Udenrigsministeren besøger Montenegro for at støtte landets EU-kandidatur",
+      "url": "https://via.ritzau.dk/release/15039775/udenrigsministeren-besoger-montenegro-for-at-stotte-landets-eu-kandidatur?publisherId=2012662&lang=da",
+      "published_date_local": "2026-07-08",
+      "published_at": "2026-07-08T12:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Møde i Det Udenrigspolitiske Nævn",
+      "url": "https://via.ritzau.dk/release/15021467/mode-i-det-udenrigspolitiske-naevn?publisherId=2012662&lang=da",
+      "published_date_local": "2026-06-30",
+      "published_at": "2026-06-30T07:30:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Danmark og Nefco støtter nye kommunale projekter i Mykolaiv-regionen i Ukraine",
+      "url": "https://via.ritzau.dk/release/15015371/danmark-og-nefco-stotter-nye-kommunale-projekter-i-mykolaiv-regionen-i-ukraine?publisherId=2012662&lang=da",
+      "published_date_local": "2026-06-26",
+      "published_at": "2026-06-26T07:20:57.385000+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Ny evaluering: Særlig type bistand kan styrke det multilaterale system og fremme nordiske værdier",
+      "url": "https://via.ritzau.dk/release/15008464/ny-evaluering-saerlig-type-bistand-kan-styrke-det-multilaterale-system-og-fremme-nordiske-vaerdier?publisherId=2012662&lang=da",
+      "published_date_local": "2026-06-23",
+      "published_at": "2026-06-23T11:30:45.105000+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Møde i Det Udenrigspolitiske Nævn",
+      "url": "https://via.ritzau.dk/release/15007292/mode-i-det-udenrigspolitiske-naevn?publisherId=2012662&lang=da",
+      "published_date_local": "2026-06-23",
+      "published_at": "2026-06-23T08:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    }
+  ],
+  "live_status": {
+    "source_id": "dk_foreign_affairs",
+    "source_name": "丹麥外交部",
+    "country": "DK",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 20,
+    "relevant_count": 20,
+    "duration_seconds": 5.018,
+    "newest_published_at": "2026-10-01T07:21:34.266000+00:00",
+    "warning": "官方公開查詢尚有下一頁，已達設定頁數上限；此期間搜尋可能不完整。",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0,
+    "health_alerts": [],
+    "dated_count": 20,
+    "undated_ratio": 0,
+    "unique_title_ratio": 0.85,
+    "in_range_count": 20,
+    "freshness_lag_days": 1.82,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 5,
+    "bytes_downloaded": 93316,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200",
+      "200",
+      "200",
+      "200",
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0,
+    "historical_median_bytes": 0,
+    "historical_median_duration": 0
+  },
+  "dispatch_overlay": false,
+  "truncated": true,
+  "date_timezone_contract": "Naive Danish ISO times interpreted in Europe/Copenhagen; explicit offsets preserved.",
+  "publisher_response": {
+    "url": "https://via.ritzau.dk/public-website-api/pressroom/2012662",
+    "observed_at": "2026-10-03T02:54:24.149916+00:00",
+    "http_status": 200,
+    "final_url": "https://via.ritzau.dk/public-website-api/pressroom/2012662",
+    "content_type": "application/json",
+    "http_statuses": [
+      "200",
+      "200"
+    ],
+    "response_sha256": "0a565875901e1304b137b816d91f788d5ef28290e9e842311a24ebd219213def",
+    "response_bytes": 2452,
+    "robots_enforced": true,
+    "tls_verified": true
+  },
+  "raw_response": {
+    "url": "https://via.ritzau.dk/public-website-api/pressroom/2012662/releases/20/0",
+    "final_url": "https://via.ritzau.dk/public-website-api/pressroom/2012662/releases/20/0",
+    "observed_at": "2026-10-03T02:54:24.152337+00:00",
+    "http_status": 200,
+    "response_sha256": "4a2f706182b3c58fedfc4d6f96ea84000a1d13c6d35d5665781bc78a73f8d0df",
+    "response_bytes": 12591
+  },
+  "public_api_url": "https://via.ritzau.dk/public-website-api/pressroom/2012662/releases/20/0",
+  "response_kind": "Public ministry-scoped API payload captured from raw_response.url; fixture dispatched against canonical source listing.",
+  "prior_production_rechecks": [
+    {
+      "live_status": {
+        "source_id": "dk_foreign_affairs",
+        "source_name": "丹麥外交部",
+        "country": "DK",
+        "critical": false,
+        "success": false,
+        "fetched_via": "html-listing",
+        "raw_count": 0,
+        "relevant_count": 0,
+        "duration_seconds": 2.358,
+        "newest_published_at": "",
+        "warning": "來源可連線，但未解析出新聞；請檢查版型或發布頻率。",
+        "error": "",
+        "pages_fetched": 1,
+        "historical_median_count": 0,
+        "health_alerts": [],
+        "dated_count": 0,
+        "undated_ratio": 0,
+        "unique_title_ratio": 1,
+        "in_range_count": 0,
+        "freshness_lag_days": 0,
+        "content_warning": "",
+        "fetch_status": "ok",
+        "health_status": "healthy",
+        "invalid_date_count": 0,
+        "unexplained_future_date_count": 0,
+        "timeout_count": 0,
+        "parse_status": "empty",
+        "freshness_status": "unknown",
+        "content_status": "unknown",
+        "request_count": 2,
+        "bytes_downloaded": 78171,
+        "retry_count": 0,
+        "cache_hits": 0,
+        "budget_exhausted": false,
+        "http_statuses": [
+          "200",
+          "200"
+        ],
+        "error_code": "PARSE_EMPTY",
+        "historical_median_requests": 0,
+        "historical_median_bytes": 0,
+        "historical_median_duration": 0
+      },
+      "dispatch_overlay": false
+    }
+  ],
+  "latest_production_recheck": {
+    "canonical_id": "dk_foreign_affairs",
+    "source_config": {
+      "id": "dk_foreign_affairs",
+      "country": "DK",
+      "name_zh": "丹麥外交部",
+      "name": "Udenrigsministeriet",
+      "institution_type": "ministry",
+      "language": "da",
+      "homepage": "https://um.dk/",
+      "listing_url": "https://um.dk/nyheder/",
+      "allow_domains": [
+        "um.dk",
+        "via.ritzau.dk"
+      ],
+      "critical": false,
+      "detail_pages": 0,
+      "timezone": "Europe/Copenhagen",
+      "schedule_enabled": false,
+      "parser_adapter": "dk_foreign_ritzau",
+      "feed_urls": []
+    },
+    "observed_at": "2026-10-03T03:06:36.010388+00:00",
+    "live_status": {
+      "source_id": "dk_foreign_affairs",
+      "source_name": "丹麥外交部",
+      "country": "DK",
+      "critical": false,
+      "success": true,
+      "fetched_via": "html-listing",
+      "raw_count": 20,
+      "relevant_count": 20,
+      "duration_seconds": 5.018,
+      "newest_published_at": "2026-10-01T07:21:34.266000+00:00",
+      "warning": "官方公開查詢尚有下一頁，已達設定頁數上限；此期間搜尋可能不完整。",
+      "error": "",
+      "pages_fetched": 1,
+      "historical_median_count": 0,
+      "health_alerts": [],
+      "dated_count": 20,
+      "undated_ratio": 0,
+      "unique_title_ratio": 0.85,
+      "in_range_count": 20,
+      "freshness_lag_days": 1.82,
+      "content_warning": "",
+      "fetch_status": "ok",
+      "health_status": "healthy",
+      "invalid_date_count": 0,
+      "unexplained_future_date_count": 0,
+      "timeout_count": 0,
+      "parse_status": "healthy",
+      "freshness_status": "fresh",
+      "content_status": "hits",
+      "request_count": 5,
+      "bytes_downloaded": 93316,
+      "retry_count": 0,
+      "cache_hits": 0,
+      "budget_exhausted": false,
+      "http_statuses": [
+        "200",
+        "200",
+        "200",
+        "200",
+        "200"
+      ],
+      "error_code": "",
+      "historical_median_requests": 0,
+      "historical_median_bytes": 0,
+      "historical_median_duration": 0
+    },
+    "dispatch_overlay": false,
+    "attempts": [
+      {
+        "url": "https://um.dk/robots.txt",
+        "observed_at": "2026-10-03T03:06:36.048750+00:00",
+        "final_url": "https://um.dk/robots.txt",
+        "http_status": 200,
+        "response_sha256": "f3cc90fbcdb1c9695f740bf9465b20fbf4deb53b9f29f39535c4a0163a3bb054",
+        "response_bytes": 357,
+        "robots_enforced": true,
+        "tls_verified": true
+      },
+      {
+        "url": "https://um.dk/nyheder/",
+        "observed_at": "2026-10-03T03:06:36.048726+00:00",
+        "final_url": "https://um.dk/nyheder/",
+        "http_status": 200,
+        "response_sha256": "488c04294b1e588d223eb4f2b6c999000ad1d3a8377220743936d5267f208c12",
+        "response_bytes": 77814,
+        "robots_enforced": true,
+        "tls_verified": true
+      },
+      {
+        "url": "https://via.ritzau.dk/robots.txt",
+        "observed_at": "2026-10-03T03:06:37.514083+00:00",
+        "final_url": "https://via.ritzau.dk/robots.txt",
+        "http_status": 200,
+        "response_sha256": "9e88ac5ccf3dd47b115b98bb2f520dd73b6b8e69529a537f092cec6ee12948e4",
+        "response_bytes": 102,
+        "robots_enforced": true,
+        "tls_verified": true
+      },
+      {
+        "url": "https://via.ritzau.dk/public-website-api/pressroom/2012662",
+        "observed_at": "2026-10-03T03:06:37.514018+00:00",
+        "final_url": "https://via.ritzau.dk/public-website-api/pressroom/2012662",
+        "http_status": 200,
+        "response_sha256": "0a565875901e1304b137b816d91f788d5ef28290e9e842311a24ebd219213def",
+        "response_bytes": 2452,
+        "robots_enforced": true,
+        "tls_verified": true
+      },
+      {
+        "url": "https://via.ritzau.dk/public-website-api/pressroom/2012662/releases/20/0",
+        "observed_at": "2026-10-03T03:06:39.815594+00:00",
+        "final_url": "https://via.ritzau.dk/public-website-api/pressroom/2012662/releases/20/0",
+        "http_status": 200,
+        "response_sha256": "4a2f706182b3c58fedfc4d6f96ea84000a1d13c6d35d5665781bc78a73f8d0df",
+        "response_bytes": 12591,
+        "robots_enforced": true,
+        "tls_verified": true
+      }
+    ],
+    "expected": [
+      {
+        "title": "Børnenes U-landskalender er i handlen: I år hjælper den børn i Rwanda",
+        "url": "https://via.ritzau.dk/release/15198231/bornenes-u-landskalender-er-i-handlen-i-ar-hjaelper-den-born-i-rwanda?publisherId=2012662&lang=da",
+        "published_date_local": "2026-10-01",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Udenrigsministeren: Kasakhstan og Usbekistan åbner nye muligheder for Danmark",
+        "url": "https://via.ritzau.dk/release/15194749/udenrigsministeren-kasakhstan-og-usbekistan-abner-nye-muligheder-for-danmark?publisherId=2012662&lang=da",
+        "published_date_local": "2026-09-30",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Udviklingssamarbejdet styrkes med nye Strategiske Partnerskaber",
+        "url": "https://via.ritzau.dk/release/15189484/udviklingssamarbejdet-styrkes-med-nye-strategiske-partnerskaber?publisherId=2012662&lang=da",
+        "published_date_local": "2026-09-29",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Regeringen vil afsætte 850 millioner kroner til virksomheder, der investerer i udviklingslande",
+        "url": "https://via.ritzau.dk/release/15186698/regeringen-vil-afsaette-850-millioner-kroner-til-virksomheder-der-investerer-i-udviklingslande?publisherId=2012662&lang=da",
+        "published_date_local": "2026-09-28",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Danmark vil støtte global uddannelsesfond med op til 1 mia. kr. frem mod 2030",
+        "url": "https://via.ritzau.dk/release/15180344/danmark-vil-stotte-global-uddannelsesfond-med-op-til-1-mia-kr-frem-mod-2030?publisherId=2012662&lang=da",
+        "published_date_local": "2026-09-23",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Danmark og Brasilien indgår strategisk partnerskab",
+        "url": "https://via.ritzau.dk/release/15178207/danmark-og-brasilien-indgar-strategisk-partnerskab?publisherId=2012662&lang=da",
+        "published_date_local": "2026-09-23",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Udenrigsministeren rejser til New York til åbningen af FN's 81. Generalforsamling",
+        "url": "https://via.ritzau.dk/release/15172687/udenrigsministeren-rejser-til-new-york-til-abningen-af-fns-81-generalforsamling?publisherId=2012662&lang=da",
+        "published_date_local": "2026-09-20",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Møde i Det Udenrigspolitiske Nævn",
+        "url": "https://via.ritzau.dk/release/15170089/mode-i-det-udenrigspolitiske-naevn?publisherId=2012662&lang=da",
+        "published_date_local": "2026-09-18",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Møde i Det Udenrigspolitiske Nævn",
+        "url": "https://via.ritzau.dk/release/15152534/mode-i-det-udenrigspolitiske-naevn?publisherId=2012662&lang=da",
+        "published_date_local": "2026-09-11",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Danmark tilbyder hjælp til adopterede til Danmark fra Sydkorea, Indien, Vietnam og Libanon",
+        "url": "https://via.ritzau.dk/release/15141440/danmark-tilbyder-hjaelp-til-adopterede-til-danmark-fra-sydkorea-indien-vietnam-og-libanon?publisherId=2012662&lang=da",
+        "published_date_local": "2026-09-04",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Lars Løkke Rasmussen genåbner Danmarks ambassade i Syrien",
+        "url": "https://via.ritzau.dk/release/15125994/lars-lokke-rasmussen-genabner-danmarks-ambassade-i-syrien?publisherId=2012662&lang=da",
+        "published_date_local": "2026-08-31",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Danmark styrker den humanitære indsats i Sudan med 100 millioner kroner",
+        "url": "https://via.ritzau.dk/release/15109142/danmark-styrker-den-humanitaere-indsats-i-sudan-med-100-millioner-kroner?publisherId=2012662&lang=da",
+        "published_date_local": "2026-08-24",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Udenrigsministeren leder FN's Sikkerhedsråd med fokus på Ukraine, Sudan og konflikt og sult",
+        "url": "https://via.ritzau.dk/release/15109127/udenrigsministeren-leder-fns-sikkerhedsrad-med-fokus-pa-ukraine-sudan-og-konflikt-og-sult?publisherId=2012662&lang=da",
+        "published_date_local": "2026-08-24",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Udenrigsministeriet ansætter særlig rådgiver",
+        "url": "https://via.ritzau.dk/release/15057264/udenrigsministeriet-ansaetter-saerlig-radgiver?publisherId=2012662&lang=da",
+        "published_date_local": "2026-08-01",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Danmark giver 85 millioner kroner i ny humanitær støtte til Palæstina og Libanon",
+        "url": "https://via.ritzau.dk/release/15046082/danmark-giver-85-millioner-kroner-i-ny-humanitaer-stotte-til-palaestina-og-libanon?publisherId=2012662&lang=da",
+        "published_date_local": "2026-07-13",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Udenrigsministeren besøger Montenegro for at støtte landets EU-kandidatur",
+        "url": "https://via.ritzau.dk/release/15039775/udenrigsministeren-besoger-montenegro-for-at-stotte-landets-eu-kandidatur?publisherId=2012662&lang=da",
+        "published_date_local": "2026-07-08",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Møde i Det Udenrigspolitiske Nævn",
+        "url": "https://via.ritzau.dk/release/15021467/mode-i-det-udenrigspolitiske-naevn?publisherId=2012662&lang=da",
+        "published_date_local": "2026-06-30",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Danmark og Nefco støtter nye kommunale projekter i Mykolaiv-regionen i Ukraine",
+        "url": "https://via.ritzau.dk/release/15015371/danmark-og-nefco-stotter-nye-kommunale-projekter-i-mykolaiv-regionen-i-ukraine?publisherId=2012662&lang=da",
+        "published_date_local": "2026-06-26",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Ny evaluering: Særlig type bistand kan styrke det multilaterale system og fremme nordiske værdier",
+        "url": "https://via.ritzau.dk/release/15008464/ny-evaluering-saerlig-type-bistand-kan-styrke-det-multilaterale-system-og-fremme-nordiske-vaerdier?publisherId=2012662&lang=da",
+        "published_date_local": "2026-06-23",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Møde i Det Udenrigspolitiske Nævn",
+        "url": "https://via.ritzau.dk/release/15007292/mode-i-det-udenrigspolitiske-naevn?publisherId=2012662&lang=da",
+        "published_date_local": "2026-06-23",
+        "date_confidence": "high"
+      }
+    ]
+  }
+}

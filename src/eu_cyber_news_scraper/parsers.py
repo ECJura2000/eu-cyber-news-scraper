@@ -21,6 +21,8 @@ from .ministry_adapters import (
 )
 from .models import Article, DateCandidate, Source, has_credible_date_conflict
 from .north_adapters import NORTH_ADAPTERS, parse_north_feed, parse_north_listing
+from .round4_north_adapters import ROUND4_NORTH_ADAPTERS, parse_round4_listing
+from .round4_south_adapters import ROUND4_SOUTH_FEED_ADAPTERS, parse_round4_south_feed
 
 DATE_SETTINGS = {
     "RETURN_AS_TIMEZONE_AWARE": True,
@@ -180,6 +182,8 @@ def discover_feeds(html: str, base_url: str) -> list[str]:
 
 
 def parse_feed(payload: bytes | str, source: Source, fetched_from: str) -> list[Article]:
+    if source.parser_adapter in ROUND4_SOUTH_FEED_ADAPTERS:
+        return parse_round4_south_feed(payload, source, fetched_from)
     if source.parser_adapter in NORTH_ADAPTERS:
         return parse_north_feed(payload, source, fetched_from)
     if source.parser_adapter in MINISTRY_FEED_ADAPTERS:
@@ -256,6 +260,8 @@ def _parse_sitecore_public(payload: str, source: Source) -> list[Article]:
 
 
 def parse_listing(html: str, source: Source, base_url: str) -> list[Article]:
+    if source.parser_adapter in ROUND4_NORTH_ADAPTERS:
+        return parse_round4_listing(html, source, base_url)
     if source.parser_adapter in NORTH_ADAPTERS:
         return parse_north_listing(html, source, base_url)
     if source.parser_adapter in MINISTRY_LISTING_ADAPTERS:

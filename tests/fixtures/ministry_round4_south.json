@@ -1,0 +1,843 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-10-03",
+  "changed_paths": [
+    "src/eu_cyber_news_scraper/round4_south_adapters.py",
+    "tests/test_round4_south_adapters.py",
+    "organisation_registry/es_economy.json",
+    "organisation_registry/it_civil_protection.json",
+    "tests/fixtures/ministry_round4_south.json",
+    "tests/fixtures/ministry_round4_bg_youth_sport_evidence.json",
+    "tests/fixtures/ministry_round4_mt_youth_evidence.json",
+    "tests/fixtures/ministry_round4_es_economy.xml",
+    "tests/fixtures/ministry_round4_it_civil_protection_publication.html",
+    "tests/fixtures/ministry_round4_es_economy_bootstrap.json",
+    "tests/fixtures/ministry_round4_it_civil_protection.json",
+    "tests/fixtures/ministry_round4_hu_prime_minister_evidence.json",
+    "tests/fixtures/ministry_round4_it_institutional_reforms_undated.html",
+    "tests/fixtures/ministry_round4_hu_defence_evidence.json",
+    "tests/fixtures/ministry_round4_es_economy.provenance.json",
+    "tests/fixtures/ministry_round4_it_civil_protection.provenance.json"
+  ],
+  "validation": {
+    "pytest": "46 passed: tests/test_round4_south_adapters.py",
+    "ruff": "Passed for own adapter and tests",
+    "mypy": "Passed for own adapter; lxml untyped boundary locally annotated; no global gate changed",
+    "production_smoke": "Both sources healthy via existing configured-feed path; 18/18 and 2/2 dated items, no invalid dates, warnings or errors",
+    "commits_or_pushes": false
+  },
+  "group": "south",
+  "scope": "Assigned seven-ID round4 subset; main owns all-country baseline170/inventory integration.",
+  "countries": [
+    "ES",
+    "IT",
+    "BG",
+    "HU",
+    "MT"
+  ],
+  "baseline_unresolved_count": 7,
+  "promotions_count": 2,
+  "promoted_ids": [
+    "es_economy",
+    "it_civil_protection"
+  ],
+  "remaining_count": 5,
+  "failed_sources": [
+    "it_institutional_reforms",
+    "bg_youth_sport",
+    "hu_defence",
+    "hu_prime_minister",
+    "mt_youth"
+  ],
+  "failed_endpoint_attempts": [
+    {
+      "canonical_id": "es_economy",
+      "url": "https://appportal.mineco.gob.es/ClientSideAssets/494f4ea4-000c-4091-b2d2-a5428ba244ca/listado-noticias-web-part_d6b1daaf7400ac8ccb714bd791d3c2c2.js",
+      "observed_at": "2026-10-03T02:43:34.881345+00:00",
+      "error": "RobotsUnavailableError: https://appportal.mineco.gob.es: robots.txt unreachable: ReadError: ",
+      "robots_enforced": true,
+      "tls_verified": true,
+      "network_context": "approved_public_network"
+    },
+    {
+      "canonical_id": "it_civil_protection",
+      "url": "https://api.protezionecivile.it/default/dpcPortalGenerateRss?categoria=notizia",
+      "observed_at": "2026-10-03T02:42:08.711433+00:00",
+      "error": "RobotsUnavailableError: https://api.protezionecivile.it: robots.txt unreachable: HTTP 503",
+      "robots_enforced": true,
+      "tls_verified": true,
+      "network_context": "approved_public_network"
+    },
+    {
+      "canonical_id": "bg_youth_sport",
+      "url": "https://mpes.government.bg/",
+      "observed_at": "2026-10-03T02:42:08.714361+00:00",
+      "error": "RobotsDeniedError: robots.txt disallows: https://mpes.government.bg/",
+      "robots_enforced": true,
+      "tls_verified": true,
+      "network_context": "approved_public_network"
+    },
+    {
+      "canonical_id": "bg_youth_sport",
+      "url": "https://iisda.government.bg/ras/executive_power/ministry/1202",
+      "observed_at": "2026-10-03T02:51:40.586404+00:00",
+      "error": "HTTPStatusError: Client error '404 Not Found' for url 'https://iisda.government.bg/ras/executive_power/ministry/1202'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+      "robots_enforced": true,
+      "tls_verified": true,
+      "network_context": "approved_public_network"
+    },
+    {
+      "canonical_id": "mt_youth",
+      "url": "https://www.gov.mt/en/Government/DOI/Press%20Releases/Pages/2026/07/15/PR261189en.aspx",
+      "observed_at": "2026-10-03T02:42:08.714528+00:00",
+      "error": "RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/DOI/Press%20Releases/Pages/2026/07/15/PR261189en.aspx",
+      "robots_enforced": true,
+      "tls_verified": true,
+      "network_context": "approved_public_network"
+    }
+  ],
+  "network_policy": "Production HttpClient obey_robots=true, TLS verified, max response 5 MiB, positive per-host pacing, bounded Retry-After and same-origin redirect guard on adapter live verification. No authentication, editing-host access, robots, TLS or challenge bypass.",
+  "checks": [
+    {
+      "canonical_id": "es_economy",
+      "country": "ES",
+      "initial_status": "parser_pending",
+      "result": "manual_verified",
+      "attempts": [
+        {
+          "url": "https://portal.mineco.gob.es/es-es/comunicacion/Paginas/default.aspx",
+          "observed_at": "2026-10-03T02:41:08.948031+00:00",
+          "http_status": 200,
+          "final_url": "https://portal.mineco.gob.es/es-es/comunicacion/Paginas/default.aspx",
+          "raw_sha256": "be3f0f57657fed3cabc546071e3d3653c3bbc156e168e268afa7689dc6b75b34",
+          "raw_bytes": 83972,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://portal.mineco.gob.es/SiteAssets/js/ministerio.js",
+          "observed_at": "2026-10-03T02:42:08.713970+00:00",
+          "http_status": 200,
+          "final_url": "https://portal.mineco.gob.es/SiteAssets/js/ministerio.js",
+          "raw_sha256": "f080a8ffae8db2dfe132052fb76ca6e5f2edd1f5c18640189b6e725e322310f0",
+          "raw_bytes": 7174,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://portal.mineco.gob.es/es-es/ministerio/Paginas/Info_RSS.aspx",
+          "observed_at": "2026-10-03T02:42:08.714160+00:00",
+          "http_status": 200,
+          "final_url": "https://portal.mineco.gob.es/es-es/ministerio/Paginas/Info_RSS.aspx",
+          "raw_sha256": "c1445b206deee87fefcb5a470bdee48e26452cfc40e09b4521f3dc038dd070b3",
+          "raw_bytes": 90877,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://portal.mineco.gob.es/es-es/comunicacion/Paginas/default.aspx",
+          "observed_at": "2026-10-03T02:42:53.219541+00:00",
+          "http_status": 200,
+          "raw_sha256": "47a296000c617705d8e8f42d50468976f48e08b8d79442491e7a6d85c76788b0",
+          "raw_bytes": 83988,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://appportal.mineco.gob.es/ClientSideAssets/494f4ea4-000c-4091-b2d2-a5428ba244ca/listado-noticias-web-part_d6b1daaf7400ac8ccb714bd791d3c2c2.js",
+          "observed_at": "2026-10-03T02:43:34.881345+00:00",
+          "error": "RobotsUnavailableError: https://appportal.mineco.gob.es: robots.txt unreachable: ReadError: ",
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$top=5",
+          "observed_at": "2026-10-03T02:44:34.497222+00:00",
+          "http_status": 200,
+          "raw_sha256": "c1c539e585e2ad7e4a834850af35de1fa72065a9a772e630ca2e367606a47826",
+          "raw_bytes": 66973,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$orderby=FechaPublicacionSP%20desc&$top=3",
+          "observed_at": "2026-10-03T02:45:39.164886+00:00",
+          "http_status": 200,
+          "raw_sha256": "55c19bfc8c67485d6375956cd482d904d54a6adf81e6423e89c68ce59cd13431",
+          "raw_bytes": 43368,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$select=TituloSP,FechaPublicacionSP,FileRef&$orderby=FechaPublicacionSP%20desc&$top=9",
+          "observed_at": "2026-10-03T02:45:39.166887+00:00",
+          "http_status": 200,
+          "raw_sha256": "2755824b61a55961e2469a59fe60ce38ffa9f7e1d16794c9f2cd03f2d43a2617",
+          "raw_bytes": 7587,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$select=TituloSP,FechaPublicacionSP,FechaPublicacionCalculadaSP,FileRef,PublishingPageLayout,CanalesSP&$orderby=FechaPublicacionSP%20desc&$top=30",
+          "observed_at": "2026-10-03T02:46:22.162387+00:00",
+          "http_status": 200,
+          "raw_sha256": "02cfbdc9ed254bcf85888a00132e45c332c593696e06286312bcb1f35aa66429",
+          "raw_bytes": 44624,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://portal.mineco.gob.es/es-es/comunicacion/Paginas/septimo-desembolso-plan-de-recuperacion.aspx",
+          "observed_at": "2026-10-03T02:51:40.585820+00:00",
+          "http_status": 200,
+          "raw_sha256": "a878f5e7d5aa80ed05c66ce09fd385859bb34e95789504c659f560624aaf48f7",
+          "raw_bytes": 52584,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$select=TituloSP,FechaPublicacionSP,FechaPublicacionCalculadaSP,FileRef,PublishingPageLayout,CanalesSP&$orderby=FechaPublicacionSP%20desc&$top=30",
+          "observed_at": "2026-10-03T02:50:07.759935+00:00",
+          "http_status": 200,
+          "raw_sha256": "2d471fdd568e3db1f08f027c8e6e3f24f1bed3a8d7edecf235d55ec595a127fe",
+          "raw_bytes": 44624,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$select=TituloSP,FechaPublicacionSP,FechaPublicacionCalculadaSP,FileRef,PublishingPageLayout,CanalesSP&$orderby=FechaPublicacionSP%20desc&$top=30",
+          "observed_at": "2026-10-03T02:58:17.612453+00:00",
+          "http_status": 200,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network",
+          "parse_scope": "production scrape_source -> configured-feed -> parse_feed -> round4_south adapter",
+          "parsed_count": 18,
+          "dated_count": 18
+        }
+      ],
+      "notes": "Official public SharePoint list GUID de1040a8-90d1-4f24-9455-423894813206 and communication channel 205 are published in the frontend webpart. Parse only Noticias (Comunicación) taxonomy term 4a14a97d-6a0d-4fd8-8375-7b54e951899d, Noticia.aspx layout, actual FileRef and FechaPublicacionSP cross-checked against FechaPublicacionCalculadaSP. No editing host or authentication used. 18/18 dated live items.",
+      "next_action": "已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。",
+      "live_status": {
+        "source_id": "es_economy",
+        "source_name": "西班牙經濟、商業與企業部",
+        "country": "ES",
+        "critical": false,
+        "success": true,
+        "fetched_via": "configured-feed",
+        "raw_count": 18,
+        "relevant_count": 14,
+        "duration_seconds": 2.423,
+        "newest_published_at": "2026-09-30T22:00:00+00:00",
+        "warning": "",
+        "error": "",
+        "pages_fetched": 0,
+        "historical_median_count": 0,
+        "health_alerts": [],
+        "dated_count": 18,
+        "undated_ratio": 0,
+        "unique_title_ratio": 1,
+        "in_range_count": 14,
+        "freshness_lag_days": 2.21,
+        "content_warning": "",
+        "fetch_status": "ok",
+        "health_status": "healthy",
+        "invalid_date_count": 0,
+        "unexplained_future_date_count": 0,
+        "timeout_count": 0,
+        "parse_status": "healthy",
+        "freshness_status": "fresh",
+        "content_status": "hits",
+        "request_count": 2,
+        "bytes_downloaded": 44766,
+        "retry_count": 0,
+        "cache_hits": 0,
+        "budget_exhausted": false,
+        "http_statuses": [
+          "200",
+          "200"
+        ],
+        "error_code": "",
+        "historical_median_requests": 0,
+        "historical_median_bytes": 0,
+        "historical_median_duration": 0
+      },
+      "fixture_path": "tests/fixtures/ministry_round4_es_economy.xml",
+      "fixture_sha256": "2bb86958c4aa4bc5bc5a990faa0a6b19675f5731b86a05853707893710bce398",
+      "inventory_patch": {
+        "status": "manual_verified",
+        "news_url": "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$select=TituloSP,FechaPublicacionSP,FechaPublicacionCalculadaSP,FileRef,PublishingPageLayout,CanalesSP&$orderby=FechaPublicacionSP%20desc&$top=30",
+        "source_ids": [
+          "es_economy"
+        ],
+        "notes": "Official public SharePoint list GUID de1040a8-90d1-4f24-9455-423894813206 and communication channel 205 are published in the frontend webpart. Parse only Noticias (Comunicación) taxonomy term 4a14a97d-6a0d-4fd8-8375-7b54e951899d, Noticia.aspx layout, actual FileRef and FechaPublicacionSP cross-checked against FechaPublicacionCalculadaSP. No editing host or authentication used. 18/18 dated live items.",
+        "reason": "2026-10-03 round4 south: Official public SharePoint list GUID de1040a8-90d1-4f24-9455-423894813206 and communication channel 205 are published in the frontend webpart. Parse only Noticias (Comunicación) taxonomy term 4a14a97d-6a0d-4fd8-8375-7b54e951899d, Noticia.aspx layout, actual FileRef and FechaPublicacionSP cross-checked against FechaPublicacionCalculadaSP. No editing host or authentication used. 18/18 dated live items.",
+        "evidence_urls": [
+          "https://portal.mineco.gob.es/",
+          "https://portal.mineco.gob.es/SiteAssets/js/ministerio.js",
+          "https://portal.mineco.gob.es/es-es/ministerio/Paginas/Info_RSS.aspx",
+          "https://portal.mineco.gob.es/es-es/comunicacion/Paginas/default.aspx",
+          "https://appportal.mineco.gob.es/ClientSideAssets/494f4ea4-000c-4091-b2d2-a5428ba244ca/listado-noticias-web-part_d6b1daaf7400ac8ccb714bd791d3c2c2.js",
+          "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$top=5",
+          "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$orderby=FechaPublicacionSP%20desc&$top=3",
+          "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$select=TituloSP,FechaPublicacionSP,FileRef&$orderby=FechaPublicacionSP%20desc&$top=9",
+          "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$select=TituloSP,FechaPublicacionSP,FechaPublicacionCalculadaSP,FileRef,PublishingPageLayout,CanalesSP&$orderby=FechaPublicacionSP%20desc&$top=30",
+          "https://portal.mineco.gob.es/es-es/comunicacion/Paginas/septimo-desembolso-plan-de-recuperacion.aspx"
+        ]
+      },
+      "production_smoke": {
+        "observed_at": "2026-10-03T02:58:17.612453+00:00",
+        "since": "2026-09-01T00:00:00+00:00",
+        "until": "2026-10-03T02:58:17.612453+00:00",
+        "include_unmatched": true,
+        "fetch_details": false
+      }
+    },
+    {
+      "canonical_id": "it_civil_protection",
+      "country": "IT",
+      "initial_status": "parser_pending",
+      "result": "manual_verified",
+      "attempts": [
+        {
+          "url": "https://www.protezionecivile.gov.it/it/rss/",
+          "observed_at": "2026-10-03T02:41:08.950517+00:00",
+          "http_status": 200,
+          "final_url": "https://www.protezionecivile.gov.it/it/rss/",
+          "raw_sha256": "84891d77adaedf3c82b8e56d8e0964b455c5a10ab838c0655620956ba17aa426",
+          "raw_bytes": 969631,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://api.protezionecivile.it/default/dpcPortalGenerateRss?categoria=notizia",
+          "observed_at": "2026-10-03T02:42:08.711433+00:00",
+          "error": "RobotsUnavailableError: https://api.protezionecivile.it: robots.txt unreachable: HTTP 503",
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://www.protezionecivile.gov.it/it/",
+          "observed_at": "2026-10-03T02:42:08.713711+00:00",
+          "http_status": 200,
+          "final_url": "https://www.protezionecivile.gov.it/it/",
+          "raw_sha256": "63fefdb08a492f5b9106f8c7646ecfb40c4fd4a544961b550aa539befb15a836",
+          "raw_bytes": 988878,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://www.protezionecivile.gov.it/it/",
+          "observed_at": "2026-10-03T02:42:53.222404+00:00",
+          "http_status": 200,
+          "raw_sha256": "63fefdb08a492f5b9106f8c7646ecfb40c4fd4a544961b550aa539befb15a836",
+          "raw_bytes": 988878,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://www.protezionecivile.gov.it/page-data/it/page-data.json",
+          "observed_at": "2026-10-03T02:43:34.879393+00:00",
+          "http_status": 200,
+          "raw_sha256": "c21edb5383bad434b5aa93dc0e9e87519cd09d94f90be7e8f1ec66ae2a81e3b2",
+          "raw_bytes": 105597,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://www.protezionecivile.gov.it/page-data/it/page-data.json",
+          "observed_at": "2026-10-03T02:44:34.494345+00:00",
+          "http_status": 200,
+          "raw_sha256": "c21edb5383bad434b5aa93dc0e9e87519cd09d94f90be7e8f1ec66ae2a81e3b2",
+          "raw_bytes": 105597,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://www.protezionecivile.gov.it/it/notizia/campi-scuola-anchio-sono-la-protezione-civile-si-conclude-ledizione-2026/",
+          "observed_at": "2026-10-03T02:44:34.496967+00:00",
+          "http_status": 200,
+          "raw_sha256": "fe2784b6ea03c12d9ec3516a1a74b2f90cfa044d5192a3451d7a452991cba2a9",
+          "raw_bytes": 970431,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://www.protezionecivile.gov.it/page-data/it/page-data.json",
+          "observed_at": "2026-10-03T02:46:22.164974+00:00",
+          "http_status": 200,
+          "raw_sha256": "c21edb5383bad434b5aa93dc0e9e87519cd09d94f90be7e8f1ec66ae2a81e3b2",
+          "raw_bytes": 105597,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://www.protezionecivile.gov.it/it/comunicato-stampa/rinnovo-del-protocollo-dintesa-con-unione-energie-la-mobilita/",
+          "observed_at": "2026-10-03T02:51:40.586045+00:00",
+          "http_status": 200,
+          "raw_sha256": "234400c0d2f71ee4bacc41ae127b8d67a2e0aa8c5179b58dee92892b0ce8266c",
+          "raw_bytes": 970240,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://www.protezionecivile.gov.it/page-data/it/page-data.json",
+          "observed_at": "2026-10-03T02:50:07.762063+00:00",
+          "http_status": 200,
+          "raw_sha256": "c21edb5383bad434b5aa93dc0e9e87519cd09d94f90be7e8f1ec66ae2a81e3b2",
+          "raw_bytes": 105597,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://www.protezionecivile.gov.it/page-data/it/page-data.json",
+          "observed_at": "2026-10-03T02:58:17.615338+00:00",
+          "http_status": 200,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network",
+          "parse_scope": "production scrape_source -> configured-feed -> parse_feed -> round4_south adapter",
+          "parsed_count": 2,
+          "dated_count": 2
+        }
+      ],
+      "notes": "Official homepage explicitly preloads /page-data/it/page-data.json. Parse only its visible first-party Portale news/press release objects and field_data publication values. Exclude maps/weather/events and other subdomains. Both actual article pages independently confirm displayed dates (15 and 30 September); the 29 September signature/event date is rejected. 2/2 dated live items.",
+      "next_action": "已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。",
+      "live_status": {
+        "source_id": "it_civil_protection",
+        "source_name": "義大利民防部門",
+        "country": "IT",
+        "critical": false,
+        "success": true,
+        "fetched_via": "configured-feed",
+        "raw_count": 2,
+        "relevant_count": 2,
+        "duration_seconds": 1.731,
+        "newest_published_at": "2026-09-30T08:14:04+00:00",
+        "warning": "",
+        "error": "",
+        "pages_fetched": 0,
+        "historical_median_count": 0,
+        "health_alerts": [],
+        "dated_count": 2,
+        "undated_ratio": 0,
+        "unique_title_ratio": 1,
+        "in_range_count": 2,
+        "freshness_lag_days": 2.78,
+        "content_warning": "",
+        "fetch_status": "ok",
+        "health_status": "healthy",
+        "invalid_date_count": 0,
+        "unexplained_future_date_count": 0,
+        "timeout_count": 0,
+        "parse_status": "healthy",
+        "freshness_status": "fresh",
+        "content_status": "hits",
+        "request_count": 2,
+        "bytes_downloaded": 105719,
+        "retry_count": 0,
+        "cache_hits": 0,
+        "budget_exhausted": false,
+        "http_statuses": [
+          "200",
+          "200"
+        ],
+        "error_code": "",
+        "historical_median_requests": 0,
+        "historical_median_bytes": 0,
+        "historical_median_duration": 0
+      },
+      "fixture_path": "tests/fixtures/ministry_round4_it_civil_protection.json",
+      "fixture_sha256": "d75f70b29ad67b71a6d7a4b8c0a4dbe9ef03163781ea7d2915dc94fee157dbf5",
+      "inventory_patch": {
+        "status": "manual_verified",
+        "news_url": "https://www.protezionecivile.gov.it/page-data/it/page-data.json",
+        "source_ids": [
+          "it_civil_protection"
+        ],
+        "notes": "Official homepage explicitly preloads /page-data/it/page-data.json. Parse only its visible first-party Portale news/press release objects and field_data publication values. Exclude maps/weather/events and other subdomains. Both actual article pages independently confirm displayed dates (15 and 30 September); the 29 September signature/event date is rejected. 2/2 dated live items.",
+        "reason": "2026-10-03 round4 south: Official homepage explicitly preloads /page-data/it/page-data.json. Parse only its visible first-party Portale news/press release objects and field_data publication values. Exclude maps/weather/events and other subdomains. Both actual article pages independently confirm displayed dates (15 and 30 September); the 29 September signature/event date is rejected. 2/2 dated live items.",
+        "evidence_urls": [
+          "https://www.protezionecivile.gov.it/",
+          "https://api.protezionecivile.it/default/dpcPortalGenerateRss?categoria=notizia",
+          "https://www.protezionecivile.gov.it/it/",
+          "https://www.protezionecivile.gov.it/page-data/it/page-data.json",
+          "https://www.protezionecivile.gov.it/it/notizia/campi-scuola-anchio-sono-la-protezione-civile-si-conclude-ledizione-2026/",
+          "https://www.protezionecivile.gov.it/it/comunicato-stampa/rinnovo-del-protocollo-dintesa-con-unione-energie-la-mobilita/"
+        ]
+      },
+      "production_smoke": {
+        "observed_at": "2026-10-03T02:58:17.615338+00:00",
+        "since": "2026-09-01T00:00:00+00:00",
+        "until": "2026-10-03T02:58:17.615338+00:00",
+        "include_unmatched": true,
+        "fetch_details": false
+      }
+    },
+    {
+      "canonical_id": "it_institutional_reforms",
+      "country": "IT",
+      "initial_status": "parser_pending",
+      "result": "parser_pending",
+      "attempts": [
+        {
+          "url": "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/",
+          "observed_at": "2026-10-03T02:41:08.950761+00:00",
+          "http_status": 200,
+          "final_url": "https://www.riformeistituzionali.gov.it/it/comunicazione/?tab=58f3f542-0aec-4999-b90c-9a8ce78b1258",
+          "raw_sha256": "f48a1d450362a72ccb6e23bb278607b0bc4cc7097f4e821df43eca8aa8d85b96",
+          "raw_bytes": 126179,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/il-ministro-casellati-al-forum-pa-2026/",
+          "observed_at": "2026-10-03T02:42:08.714691+00:00",
+          "http_status": 200,
+          "final_url": "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/il-ministro-casellati-al-forum-pa-2026/",
+          "raw_sha256": "82b96c3f1dd175a93a3e2718de30d93ff498d8b6ad31075fab76aa3709e727ea",
+          "raw_bytes": 54742,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/il-ministro-casellati-al-forum-pa-2026/",
+          "observed_at": "2026-10-03T02:51:40.583886+00:00",
+          "http_status": 200,
+          "raw_sha256": "82b96c3f1dd175a93a3e2718de30d93ff498d8b6ad31075fab76aa3709e727ea",
+          "raw_bytes": 54742,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        }
+      ],
+      "notes": "Fresh official article fixture contains og:updated_time=2026-06-16T06:56:38.823Z and body event date 10 June 2026, but no explicit publication timestamp. New source-bound detail parser returns zero instead of inferring publication; no registry module added.",
+      "next_action": "Wait for explicit first-party publication metadata or a dated ministry publication feed; retain captured negative regression test.",
+      "fixture_path": "tests/fixtures/ministry_round4_it_institutional_reforms_undated.html",
+      "fixture_sha256": "cf5e9e8cc3deac480a54c8df12df3895873ebf6db840e13ffffbf956185bd068"
+    },
+    {
+      "canonical_id": "bg_youth_sport",
+      "country": "BG",
+      "initial_status": "needs_review",
+      "result": "blocked",
+      "attempts": [
+        {
+          "url": "https://iisda.government.bg/ras/executive_power/ministry_organigram/1202",
+          "observed_at": "2026-10-03T02:41:08.950945+00:00",
+          "http_status": 200,
+          "final_url": "https://iisda.government.bg/ras/executive_power/ministry_organigram/1202",
+          "raw_sha256": "e42d7f4936ae952f4ba43e9f8f2b20dcc52993c7b13a2911322c58d108bb0c72",
+          "raw_bytes": 50138,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://mpes.government.bg/",
+          "observed_at": "2026-10-03T02:42:08.714361+00:00",
+          "error": "RobotsDeniedError: robots.txt disallows: https://mpes.government.bg/",
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://iisda.government.bg/ras/executive_power/ministry/1202",
+          "observed_at": "2026-10-03T02:51:40.586404+00:00",
+          "error": "HTTPStatusError: Client error '404 Not Found' for url 'https://iisda.government.bg/ras/executive_power/ministry/1202'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        }
+      ],
+      "notes": "Fresh administrative roster identifies the ministry but exposes no news. Newly checked canonical portal candidate mpes.government.bg is robots-denied. nism.bg remains an unattributed submission portal from round3. Preserve ministry as unresolved; no substitution or bypass.",
+      "next_action": "Recheck the canonical portal only after robots policy permits retrieval or locate a separately published attributable ministry feed.",
+      "fixture_path": "tests/fixtures/ministry_round4_bg_youth_sport_evidence.json",
+      "fixture_sha256": "31bca26de586a49e2d6f95fd343691b3a0ab714f89cff8caeb58baaacc838d9a"
+    },
+    {
+      "canonical_id": "hu_defence",
+      "country": "HU",
+      "initial_status": "needs_review",
+      "result": "needs_review",
+      "attempts": [
+        {
+          "url": "https://kormany.hu/kormanyzat/honvedelmi-miniszterium",
+          "observed_at": "2026-10-03T02:41:08.951114+00:00",
+          "http_status": 200,
+          "final_url": "https://kormany.hu/kormanyzat/honvedelmi-miniszterium",
+          "raw_sha256": "a080e1d663bf342879c614ac35398906d897566542e9db75923234ed575c5c40",
+          "raw_bytes": 745471,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://kormany.hu/main-AHJHQNVV.js",
+          "observed_at": "2026-10-03T02:42:08.714177+00:00",
+          "http_status": 200,
+          "final_url": "https://kormany.hu/main-AHJHQNVV.js",
+          "raw_sha256": "ac514711c15cdf977fa13bd5f076c85091c0f7bac9ee83f9b32dd509f7042bae",
+          "raw_bytes": 574004,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://kormany.hu/hirek",
+          "observed_at": "2026-10-03T02:42:53.222668+00:00",
+          "http_status": 200,
+          "raw_sha256": "e8b2d9d4c28a43a8fef9f1f8b7771061db1a1bc2ff869f1ee4d4f1bd6a5a3ced",
+          "raw_bytes": 763762,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://kormany.hu/main-AHJHQNVV.js",
+          "observed_at": "2026-10-03T02:42:53.222853+00:00",
+          "http_status": 200,
+          "raw_sha256": "ac514711c15cdf977fa13bd5f076c85091c0f7bac9ee83f9b32dd509f7042bae",
+          "raw_bytes": 574004,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://kormany.hu/chunk-XI74BYPY.js",
+          "observed_at": "2026-10-03T02:43:34.881561+00:00",
+          "http_status": 200,
+          "raw_sha256": "a6751c0f42cd6c29a6134d77e3f239d244d4a4cf020e64ef435329cc4c3e12b6",
+          "raw_bytes": 744,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://kormany.hu/chunk-OTL46OUP.js",
+          "observed_at": "2026-10-03T02:43:34.881736+00:00",
+          "http_status": 200,
+          "raw_sha256": "4edf2ccf2592e552a8b83dedcb7f9b33251816c9ce84299b9a1cd3401c5e1ef1",
+          "raw_bytes": 900,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://kormany.hu/chunk-SH25L4XP.js",
+          "observed_at": "2026-10-03T02:43:34.881746+00:00",
+          "http_status": 200,
+          "raw_sha256": "d9108220efe3254d99008d2c396b7607f49b743076063896b124768073961bd3",
+          "raw_bytes": 8225,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://kormany.hu/chunk-JW3DITKK.js",
+          "observed_at": "2026-10-03T02:43:34.881754+00:00",
+          "http_status": 200,
+          "raw_sha256": "72490ba29f2eba0faa1e6161a19e144ef84e2d9e264528d8866a24493da2cb6e",
+          "raw_bytes": 2150,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://kormany.hu/chunk-TVOAUNUX.js",
+          "observed_at": "2026-10-03T02:43:34.881758+00:00",
+          "http_status": 200,
+          "raw_sha256": "819153dbcacf08384e143972789d3e4eceae0f011082da7d7fad1ffae2627167",
+          "raw_bytes": 14318,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://kormany.hu/chunk-RIGYERJF.js",
+          "observed_at": "2026-10-03T02:43:34.881763+00:00",
+          "http_status": 200,
+          "raw_sha256": "21a4884f668c62d0709af47fc348451659a97cd0bcde75964509c3d7ed307976",
+          "raw_bytes": 61995,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://kormany.hu/chunk-WMVGJ52N.js",
+          "observed_at": "2026-10-03T02:43:34.881767+00:00",
+          "http_status": 200,
+          "raw_sha256": "88e495f9c44da0ffe9675ff37daa6cc93517c21447a19c4dba6fbe2345d749aa",
+          "raw_bytes": 94037,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://kormany.hu/chunk-S4PO4YIB.js",
+          "observed_at": "2026-10-03T02:43:34.881771+00:00",
+          "http_status": 200,
+          "raw_sha256": "305a0a5ee0726dbed2a712b098ce5000486e6711ce0fc7a86694c6632dee3860",
+          "raw_bytes": 37792,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://kormany.hu/chunk-Q33YZMAE.js",
+          "observed_at": "2026-10-03T02:43:34.881775+00:00",
+          "http_status": 200,
+          "raw_sha256": "cce91454336bde587a3aa5eeacbf3fbe6d6769ee368ab61d29b8e32d43bb0ac1",
+          "raw_bytes": 205080,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://kormany.hu/main-AHJHQNVV.js",
+          "observed_at": "2026-10-03T02:44:34.496991+00:00",
+          "http_status": 200,
+          "raw_sha256": "ac514711c15cdf977fa13bd5f076c85091c0f7bac9ee83f9b32dd509f7042bae",
+          "raw_bytes": 574004,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://kormany.hu/chunk-VAO64FKA.js",
+          "observed_at": "2026-10-03T02:45:39.166903+00:00",
+          "http_status": 200,
+          "raw_sha256": "a912de30f7ccb6393f4652b99bf16e30d9c89b0738b24d6d80af8136f3ac1fdd",
+          "raw_bytes": 67670,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://kormany.hu/chunk-PBU2EYI5.js",
+          "observed_at": "2026-10-03T02:45:39.167114+00:00",
+          "http_status": 200,
+          "raw_sha256": "1906c9a88b62a793c4c265fb939eebd4adf5c5bf56d02fb7d2556e5352f799be",
+          "raw_bytes": 122,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://kormany.hu/chunk-QYDKMGUG.js",
+          "observed_at": "2026-10-03T02:46:22.165195+00:00",
+          "http_status": 200,
+          "raw_sha256": "73f94e52122e7a575b5766928c45aa69fdb1987cd7f4a08a16fa0950360b8e6d",
+          "raw_bytes": 907,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://kormany.hu/hirek",
+          "observed_at": "2026-10-03T02:51:40.586232+00:00",
+          "http_status": 200,
+          "raw_sha256": "9afe6a3fb8d143bddb70ce86745e68cf3c515fe6eb6be908125f66ec7903ec5c",
+          "raw_bytes": 763752,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        }
+      ],
+      "notes": "Fresh current ministry page is a minister biography. Public /hirek transfer state contains twelve dated items, all with ministry=null and column=null; neither the current ministry nor global frontend metadata establishes an attributable defence news stream. No global alias assigned.",
+      "next_action": "Require explicit ministry publisher metadata or an attributable dedicated current ministry news endpoint before promotion.",
+      "fixture_path": "tests/fixtures/ministry_round4_hu_defence_evidence.json",
+      "fixture_sha256": "e5edcb98b630193c65b7e5572a5f48362b7d6e1e54170477d01aba265ed4e562"
+    },
+    {
+      "canonical_id": "hu_prime_minister",
+      "country": "HU",
+      "initial_status": "needs_review",
+      "result": "needs_review",
+      "attempts": [
+        {
+          "url": "https://kormany.hu/kormanyzat/miniszterelnokseg",
+          "observed_at": "2026-10-03T02:41:08.951280+00:00",
+          "http_status": 200,
+          "final_url": "https://kormany.hu/kormanyzat/miniszterelnokseg",
+          "raw_sha256": "10e669d43118e1f55ca0e7a710ae5b3baa06712565d83e4d836ba2fcd2571799",
+          "raw_bytes": 890246,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://kormany.hu/hirek",
+          "observed_at": "2026-10-03T02:42:08.714352+00:00",
+          "http_status": 200,
+          "final_url": "https://kormany.hu/hirek",
+          "raw_sha256": "14d76744bdab32d736cec1b7b79b2c309f47ea582a38b56f6fd0d49bc3956b81",
+          "raw_bytes": 763762,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        }
+      ],
+      "notes": "Fresh ministry page publishes law-draft consultations and their deadlines. The new /hirek frontend inspection finds twelve dated items with ministry=null and column=null, including items mentioning ministries in their titles; titles do not establish publisher attribution. Do not convert consultations or global news into ministry news.",
+      "next_action": "Require explicit ministry publisher metadata or an attributable dedicated current ministry news endpoint before promotion.",
+      "fixture_path": "tests/fixtures/ministry_round4_hu_prime_minister_evidence.json",
+      "fixture_sha256": "375bdfb7a71150e4fa439edf4bb8c2ae850acc377f1266a0365590206efd5f08"
+    },
+    {
+      "canonical_id": "mt_youth",
+      "country": "MT",
+      "initial_status": "needs_review",
+      "result": "blocked",
+      "attempts": [
+        {
+          "url": "https://youth.gov.mt/",
+          "observed_at": "2026-10-03T02:41:08.951291+00:00",
+          "http_status": 200,
+          "final_url": "https://youth.gov.mt/",
+          "raw_sha256": "f078c35e6c86af8f83cfdfdcbeb9362b6d4a59d22fe03901a1776c275660053c",
+          "raw_bytes": 152989,
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        },
+        {
+          "url": "https://www.gov.mt/en/Government/DOI/Press%20Releases/Pages/2026/07/15/PR261189en.aspx",
+          "observed_at": "2026-10-03T02:42:08.714528+00:00",
+          "error": "RobotsDeniedError: robots.txt disallows: https://www.gov.mt/en/Government/DOI/Press%20Releases/Pages/2026/07/15/PR261189en.aspx",
+          "robots_enforced": true,
+          "tls_verified": true,
+          "network_context": "approved_public_network"
+        }
+      ],
+      "notes": "Fresh youth.gov.mt clearly identifies Agenzija Zghazagh, an agency. New official DOI discovery locates PR261189en (15 July 2026), explicitly issued by Ministry for Youth, Wellbeing and the Implementation of the Electoral Programme. Production retrieval of the article is robots-denied. Agency news and indexed snippets are not runnable ministry sources.",
+      "next_action": "Locate an allowed official DOI news endpoint with explicit youth-ministry attribution, or wait for robots policy change.",
+      "fixture_path": "tests/fixtures/ministry_round4_mt_youth_evidence.json",
+      "fixture_sha256": "a13b9109149178d0f88f0d4397f4ffcb65f64b90cb41b1f197a3f3320b9b7211"
+    }
+  ],
+  "runtime_wiring": "Main parse_feed dispatch is wired and production scrape_source configured-feed smoke is verified for both adapters. Source.feed_urls contains only its exact published listing API; production default Accept returns ES OData Atom XML. fetch_round4_south_feed remains optional diagnostic helper.",
+  "historical_round3_reports_untouched": true
+}

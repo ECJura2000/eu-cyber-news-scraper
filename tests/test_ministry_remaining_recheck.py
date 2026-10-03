@@ -4,6 +4,7 @@ from datetime import datetime
 from pathlib import Path
 
 from eu_cyber_news_scraper.ministry_inventory import inventory_directory, load_inventory
+from eu_cyber_news_scraper.ministry_rechecks import latest_checks, load_rechecks
 from eu_cyber_news_scraper.organisation_registry import load_organisation_registry
 from eu_cyber_news_scraper.source_catalog import https_url
 
@@ -30,7 +31,6 @@ def test_all_201_remaining_ministries_have_one_evidence_backed_recheck():
             checked.add(identifier)
             assert check["country"] == initial[identifier]["country"]
             assert check["country"] in report["countries"]
-            assert check["result"] == current[identifier]["status"]
             assert check["next_action"].strip()
             assert check["attempts"], "No live check must not be described as completed"
             for attempt in check["attempts"]:
@@ -40,3 +40,7 @@ def test_all_201_remaining_ministries_have_one_evidence_backed_recheck():
                 assert observed.date().isoformat() >= baseline["observed_on"]
                 assert attempt.get("http_status") or attempt.get("error")
     assert checked == set(initial), "Missing ministries cannot disappear from the remaining audit"
+    latest = latest_checks(load_rechecks(FIXTURES))
+    assert set(latest) == set(initial)
+    for identifier, check in latest.items():
+        assert check['result'] == current[identifier]['status']

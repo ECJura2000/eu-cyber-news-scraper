@@ -1,0 +1,1627 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-10-03",
+  "assigned_ids": [
+    "cy_education",
+    "cz_interior",
+    "dk_environment",
+    "dk_resilience",
+    "dk_foreign_affairs",
+    "at_bmlv",
+    "be_science_policy",
+    "de_bka",
+    "fr_territorial_decentralisation",
+    "fr_ecological_transition",
+    "fr_transport",
+    "fr_city_housing"
+  ],
+  "checks": [
+    {
+      "canonical_id": "cy_education",
+      "country": "CY",
+      "baseline_status": "parser_pending",
+      "attempts": [
+        {
+          "url": "https://enimerosi.moec.gov.cy/",
+          "observed_at": "2026-10-03T02:43:03.186738+00:00",
+          "http_status": 200,
+          "final_url": "https://enimerosi.moec.gov.cy/",
+          "content_type": "text/html; charset=utf-8",
+          "http_statuses": [
+            "404",
+            "200"
+          ],
+          "response_sha256": "cf77b27048a341240c49527ebffda81a4a9649fd5352bdb01cbe58caae7da642",
+          "response_bytes": 288381,
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "negative_endpoint_failure_is_not_obsolete": true,
+      "result": "manual_verified",
+      "next_action": "已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。",
+      "live_status": {
+        "source_id": "cy_education",
+        "source_name": "塞浦路斯教育、體育與青年部",
+        "country": "CY",
+        "critical": false,
+        "success": true,
+        "fetched_via": "html-listing",
+        "raw_count": 4,
+        "relevant_count": 4,
+        "duration_seconds": 3.486,
+        "newest_published_at": "2026-10-01T21:00:00+00:00",
+        "warning": "",
+        "error": "",
+        "pages_fetched": 1,
+        "historical_median_count": 0,
+        "health_alerts": [],
+        "dated_count": 4,
+        "undated_ratio": 0,
+        "unique_title_ratio": 1,
+        "in_range_count": 4,
+        "freshness_lag_days": 1.25,
+        "content_warning": "",
+        "fetch_status": "ok",
+        "health_status": "healthy",
+        "invalid_date_count": 0,
+        "unexplained_future_date_count": 0,
+        "timeout_count": 0,
+        "parse_status": "healthy",
+        "freshness_status": "fresh",
+        "content_status": "hits",
+        "request_count": 2,
+        "bytes_downloaded": 289624,
+        "retry_count": 0,
+        "cache_hits": 0,
+        "budget_exhausted": false,
+        "http_statuses": [
+          "404",
+          "200"
+        ],
+        "error_code": "",
+        "historical_median_requests": 0,
+        "historical_median_bytes": 0,
+        "historical_median_duration": 0
+      },
+      "inventory_patch": {
+        "status": "manual_verified",
+        "homepage": "https://www.moec.gov.cy/",
+        "news_url": "https://enimerosi.moec.gov.cy/",
+        "source_ids": [
+          "cy_education"
+        ],
+        "notes": "Fresh publisher-scoped title/URL/publication-date fixture and actual production scrape_source passed without a dispatch overlay; manual only.",
+        "evidence_urls": [
+          "https://enimerosi.moec.gov.cy/"
+        ]
+      }
+    },
+    {
+      "canonical_id": "cz_interior",
+      "country": "CZ",
+      "baseline_status": "parser_pending",
+      "attempts": [
+        {
+          "url": "https://mv.gov.cz/",
+          "observed_at": "2026-10-03T02:40:33.358810+00:00",
+          "http_status": 200,
+          "final_url": "https://mv.gov.cz/",
+          "content_type": "text/html; charset=utf-8",
+          "http_statuses": [
+            "200",
+            "200"
+          ],
+          "response_sha256": "6ddd18d8df9e086ffe4e4e9476d3208c99c5510074dc0a9c152571d9c9f048a9",
+          "response_bytes": 126783,
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "negative_endpoint_failure_is_not_obsolete": true,
+      "result": "manual_verified",
+      "next_action": "已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。",
+      "live_status": {
+        "source_id": "cz_interior",
+        "source_name": "捷克內政部",
+        "country": "CZ",
+        "critical": false,
+        "success": true,
+        "fetched_via": "html-listing",
+        "raw_count": 4,
+        "relevant_count": 4,
+        "duration_seconds": 2.701,
+        "newest_published_at": "2026-10-01T09:47:17.252286+00:00",
+        "warning": "",
+        "error": "",
+        "pages_fetched": 1,
+        "historical_median_count": 0,
+        "health_alerts": [],
+        "dated_count": 4,
+        "undated_ratio": 0,
+        "unique_title_ratio": 1,
+        "in_range_count": 4,
+        "freshness_lag_days": 1.72,
+        "content_warning": "",
+        "fetch_status": "ok",
+        "health_status": "healthy",
+        "invalid_date_count": 0,
+        "unexplained_future_date_count": 0,
+        "timeout_count": 0,
+        "parse_status": "healthy",
+        "freshness_status": "fresh",
+        "content_status": "hits",
+        "request_count": 2,
+        "bytes_downloaded": 126807,
+        "retry_count": 0,
+        "cache_hits": 0,
+        "budget_exhausted": false,
+        "http_statuses": [
+          "200",
+          "200"
+        ],
+        "error_code": "",
+        "historical_median_requests": 0,
+        "historical_median_bytes": 0,
+        "historical_median_duration": 0
+      },
+      "inventory_patch": {
+        "status": "manual_verified",
+        "homepage": "https://mv.gov.cz/",
+        "news_url": "https://mv.gov.cz/",
+        "source_ids": [
+          "cz_interior"
+        ],
+        "notes": "Fresh publisher-scoped title/URL/publication-date fixture and actual production scrape_source passed without a dispatch overlay; manual only.",
+        "evidence_urls": [
+          "https://mv.gov.cz/"
+        ]
+      }
+    },
+    {
+      "canonical_id": "dk_environment",
+      "country": "DK",
+      "baseline_status": "parser_pending",
+      "attempts": [
+        {
+          "url": "https://mim.dk/nyheder/pressemeddelelser",
+          "observed_at": "2026-10-03T02:40:33.356288+00:00",
+          "http_status": 200,
+          "final_url": "https://mim.dk/nyheder/pressemeddelelser",
+          "content_type": "text/html; charset=utf-8",
+          "http_statuses": [
+            "200",
+            "200"
+          ],
+          "response_sha256": "2ee683e5b851e65b2a8cf6d87563b8d0a71afd30874096e2e27bcfc9289894a9",
+          "response_bytes": 87979,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "canonical_id": "dk_environment",
+          "url": "https://search.mst.dk/api/News/Search",
+          "observed_at": "2026-10-03T02:48:00.906499+00:00",
+          "http_status": 200,
+          "raw_sha256": "88b48f370c71457497a7ce089c4b837d8982eacc1b2d761b921d7306aa01430a",
+          "stats": {
+            "request_count": 2,
+            "bytes_downloaded": 6763,
+            "retry_count": 0,
+            "timeout_count": 0,
+            "cache_hits": 0,
+            "statuses": [
+              "404",
+              "200"
+            ]
+          },
+          "response_sha256": "88b48f370c71457497a7ce089c4b837d8982eacc1b2d761b921d7306aa01430a",
+          "response_bytes": 6763,
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "negative_endpoint_failure_is_not_obsolete": true,
+      "result": "manual_verified",
+      "next_action": "已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。",
+      "live_status": {
+        "source_id": "dk_environment",
+        "source_name": "丹麥環境部",
+        "country": "DK",
+        "critical": false,
+        "success": true,
+        "fetched_via": "html-listing",
+        "raw_count": 10,
+        "relevant_count": 10,
+        "duration_seconds": 11.051,
+        "newest_published_at": "2026-09-29T09:41:43+00:00",
+        "warning": "官方公開查詢尚有下一頁，已達設定頁數上限；此期間搜尋可能不完整。",
+        "error": "",
+        "pages_fetched": 1,
+        "historical_median_count": 0,
+        "health_alerts": [],
+        "dated_count": 10,
+        "undated_ratio": 0,
+        "unique_title_ratio": 1,
+        "in_range_count": 10,
+        "freshness_lag_days": 3.72,
+        "content_warning": "",
+        "fetch_status": "ok",
+        "health_status": "healthy",
+        "invalid_date_count": 0,
+        "unexplained_future_date_count": 0,
+        "timeout_count": 0,
+        "parse_status": "healthy",
+        "freshness_status": "fresh",
+        "content_status": "hits",
+        "request_count": 4,
+        "bytes_downloaded": 94765,
+        "retry_count": 0,
+        "cache_hits": 0,
+        "budget_exhausted": false,
+        "http_statuses": [
+          "200",
+          "200",
+          "404",
+          "200"
+        ],
+        "error_code": "",
+        "historical_median_requests": 0,
+        "historical_median_bytes": 0,
+        "historical_median_duration": 0
+      },
+      "inventory_patch": {
+        "status": "manual_verified",
+        "homepage": "https://mim.dk/",
+        "news_url": "https://mim.dk/nyheder/pressemeddelelser",
+        "source_ids": [
+          "dk_environment"
+        ],
+        "notes": "Fresh publisher-scoped title/URL/publication-date fixture and actual production scrape_source passed without a dispatch overlay; manual only.",
+        "evidence_urls": [
+          "https://mim.dk/nyheder/pressemeddelelser",
+          "https://search.mst.dk/api/News/Search"
+        ]
+      }
+    },
+    {
+      "canonical_id": "dk_resilience",
+      "country": "DK",
+      "baseline_status": "parser_pending",
+      "attempts": [
+        {
+          "url": "https://mssb.dk/nyheder/",
+          "observed_at": "2026-10-03T02:40:33.358476+00:00",
+          "http_status": 200,
+          "final_url": "https://mssb.dk/nyheder/",
+          "content_type": "text/html; charset=utf-8",
+          "http_statuses": [
+            "200",
+            "200"
+          ],
+          "response_sha256": "beb7a7a91bef50092fd74d427c9b675f1cb28031a98f41c7797762541e489283",
+          "response_bytes": 34648,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "canonical_id": "dk_resilience",
+          "url": "https://mssb.dk/umbraco/api/DynamicListSearchApi/search",
+          "observed_at": "2026-10-03T02:47:58.976047+00:00",
+          "http_status": 200,
+          "raw_sha256": "736efb54eaed953934b0edef2db38f36d74594e965951842b97e29a3d6aa953e",
+          "stats": {
+            "request_count": 2,
+            "bytes_downloaded": 10372,
+            "retry_count": 0,
+            "timeout_count": 0,
+            "cache_hits": 0,
+            "statuses": [
+              "200",
+              "200"
+            ]
+          },
+          "response_sha256": "736efb54eaed953934b0edef2db38f36d74594e965951842b97e29a3d6aa953e",
+          "response_bytes": 10015,
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "negative_endpoint_failure_is_not_obsolete": true,
+      "result": "manual_verified",
+      "next_action": "已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。",
+      "live_status": {
+        "source_id": "dk_resilience",
+        "source_name": "丹麥社會安全與應變部",
+        "country": "DK",
+        "critical": false,
+        "success": true,
+        "fetched_via": "html-listing",
+        "raw_count": 5,
+        "relevant_count": 5,
+        "duration_seconds": 5.562,
+        "newest_published_at": "2026-09-28T00:00:00+00:00",
+        "warning": "官方公開查詢尚有下一頁，已達設定頁數上限；此期間搜尋可能不完整。",
+        "error": "",
+        "pages_fetched": 1,
+        "historical_median_count": 0,
+        "health_alerts": [],
+        "dated_count": 5,
+        "undated_ratio": 0,
+        "unique_title_ratio": 1,
+        "in_range_count": 5,
+        "freshness_lag_days": 5.12,
+        "content_warning": "",
+        "fetch_status": "ok",
+        "health_status": "healthy",
+        "invalid_date_count": 0,
+        "unexplained_future_date_count": 0,
+        "timeout_count": 0,
+        "parse_status": "healthy",
+        "freshness_status": "fresh",
+        "content_status": "hits",
+        "request_count": 3,
+        "bytes_downloaded": 45020,
+        "retry_count": 0,
+        "cache_hits": 0,
+        "budget_exhausted": false,
+        "http_statuses": [
+          "200",
+          "200",
+          "200"
+        ],
+        "error_code": "",
+        "historical_median_requests": 0,
+        "historical_median_bytes": 0,
+        "historical_median_duration": 0
+      },
+      "inventory_patch": {
+        "status": "manual_verified",
+        "homepage": "https://mssb.dk/",
+        "news_url": "https://mssb.dk/nyheder/",
+        "source_ids": [
+          "dk_resilience"
+        ],
+        "notes": "Fresh publisher-scoped title/URL/publication-date fixture and actual production scrape_source passed without a dispatch overlay; manual only.",
+        "evidence_urls": [
+          "https://mssb.dk/nyheder/",
+          "https://mssb.dk/umbraco/api/DynamicListSearchApi/search"
+        ]
+      }
+    },
+    {
+      "canonical_id": "dk_foreign_affairs",
+      "country": "DK",
+      "baseline_status": "parser_pending",
+      "attempts": [
+        {
+          "url": "https://um.dk/nyheder/",
+          "observed_at": "2026-10-03T02:40:33.358664+00:00",
+          "http_status": 200,
+          "final_url": "https://um.dk/nyheder/",
+          "content_type": "text/html; charset=utf-8",
+          "http_statuses": [
+            "200",
+            "200"
+          ],
+          "response_sha256": "488c04294b1e588d223eb4f2b6c999000ad1d3a8377220743936d5267f208c12",
+          "response_bytes": 77814,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://via.ritzau.dk/public-website-api/pressroom/2012662/releases/20/0",
+          "observed_at": "2026-10-03T02:54:24.152337+00:00",
+          "http_status": 200,
+          "final_url": "https://via.ritzau.dk/public-website-api/pressroom/2012662/releases/20/0",
+          "content_type": "application/json",
+          "http_statuses": [
+            "200"
+          ],
+          "response_sha256": "4a2f706182b3c58fedfc4d6f96ea84000a1d13c6d35d5665781bc78a73f8d0df",
+          "response_bytes": 12591,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://um.dk/robots.txt",
+          "observed_at": "2026-10-03T03:06:36.048750+00:00",
+          "final_url": "https://um.dk/robots.txt",
+          "http_status": 200,
+          "response_sha256": "f3cc90fbcdb1c9695f740bf9465b20fbf4deb53b9f29f39535c4a0163a3bb054",
+          "response_bytes": 357,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://um.dk/nyheder/",
+          "observed_at": "2026-10-03T03:06:36.048726+00:00",
+          "final_url": "https://um.dk/nyheder/",
+          "http_status": 200,
+          "response_sha256": "488c04294b1e588d223eb4f2b6c999000ad1d3a8377220743936d5267f208c12",
+          "response_bytes": 77814,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://via.ritzau.dk/robots.txt",
+          "observed_at": "2026-10-03T03:06:37.514083+00:00",
+          "final_url": "https://via.ritzau.dk/robots.txt",
+          "http_status": 200,
+          "response_sha256": "9e88ac5ccf3dd47b115b98bb2f520dd73b6b8e69529a537f092cec6ee12948e4",
+          "response_bytes": 102,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://via.ritzau.dk/public-website-api/pressroom/2012662",
+          "observed_at": "2026-10-03T03:06:37.514018+00:00",
+          "final_url": "https://via.ritzau.dk/public-website-api/pressroom/2012662",
+          "http_status": 200,
+          "response_sha256": "0a565875901e1304b137b816d91f788d5ef28290e9e842311a24ebd219213def",
+          "response_bytes": 2452,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://via.ritzau.dk/public-website-api/pressroom/2012662/releases/20/0",
+          "observed_at": "2026-10-03T03:06:39.815594+00:00",
+          "final_url": "https://via.ritzau.dk/public-website-api/pressroom/2012662/releases/20/0",
+          "http_status": 200,
+          "response_sha256": "4a2f706182b3c58fedfc4d6f96ea84000a1d13c6d35d5665781bc78a73f8d0df",
+          "response_bytes": 12591,
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "negative_endpoint_failure_is_not_obsolete": true,
+      "result": "manual_verified",
+      "next_action": "已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。",
+      "live_status": {
+        "source_id": "dk_foreign_affairs",
+        "source_name": "丹麥外交部",
+        "country": "DK",
+        "critical": false,
+        "success": true,
+        "fetched_via": "html-listing",
+        "raw_count": 20,
+        "relevant_count": 20,
+        "duration_seconds": 5.018,
+        "newest_published_at": "2026-10-01T07:21:34.266000+00:00",
+        "warning": "官方公開查詢尚有下一頁，已達設定頁數上限；此期間搜尋可能不完整。",
+        "error": "",
+        "pages_fetched": 1,
+        "historical_median_count": 0,
+        "health_alerts": [],
+        "dated_count": 20,
+        "undated_ratio": 0,
+        "unique_title_ratio": 0.85,
+        "in_range_count": 20,
+        "freshness_lag_days": 1.82,
+        "content_warning": "",
+        "fetch_status": "ok",
+        "health_status": "healthy",
+        "invalid_date_count": 0,
+        "unexplained_future_date_count": 0,
+        "timeout_count": 0,
+        "parse_status": "healthy",
+        "freshness_status": "fresh",
+        "content_status": "hits",
+        "request_count": 5,
+        "bytes_downloaded": 93316,
+        "retry_count": 0,
+        "cache_hits": 0,
+        "budget_exhausted": false,
+        "http_statuses": [
+          "200",
+          "200",
+          "200",
+          "200",
+          "200"
+        ],
+        "error_code": "",
+        "historical_median_requests": 0,
+        "historical_median_bytes": 0,
+        "historical_median_duration": 0
+      },
+      "parser_proof": {
+        "accepted": 20,
+        "dated": 20,
+        "fixture": "tests/fixtures/ministry_round4_dk_foreign_affairs.json"
+      },
+      "prior_production_rechecks": [
+        {
+          "live_status": {
+            "source_id": "dk_foreign_affairs",
+            "source_name": "丹麥外交部",
+            "country": "DK",
+            "critical": false,
+            "success": false,
+            "fetched_via": "html-listing",
+            "raw_count": 0,
+            "relevant_count": 0,
+            "duration_seconds": 2.358,
+            "newest_published_at": "",
+            "warning": "來源可連線，但未解析出新聞；請檢查版型或發布頻率。",
+            "error": "",
+            "pages_fetched": 1,
+            "historical_median_count": 0,
+            "health_alerts": [],
+            "dated_count": 0,
+            "undated_ratio": 0,
+            "unique_title_ratio": 1,
+            "in_range_count": 0,
+            "freshness_lag_days": 0,
+            "content_warning": "",
+            "fetch_status": "ok",
+            "health_status": "healthy",
+            "invalid_date_count": 0,
+            "unexplained_future_date_count": 0,
+            "timeout_count": 0,
+            "parse_status": "empty",
+            "freshness_status": "unknown",
+            "content_status": "unknown",
+            "request_count": 2,
+            "bytes_downloaded": 78171,
+            "retry_count": 0,
+            "cache_hits": 0,
+            "budget_exhausted": false,
+            "http_statuses": [
+              "200",
+              "200"
+            ],
+            "error_code": "PARSE_EMPTY",
+            "historical_median_requests": 0,
+            "historical_median_bytes": 0,
+            "historical_median_duration": 0
+          }
+        }
+      ],
+      "latest_production_recheck": {
+        "canonical_id": "dk_foreign_affairs",
+        "source_config": {
+          "id": "dk_foreign_affairs",
+          "country": "DK",
+          "name_zh": "丹麥外交部",
+          "name": "Udenrigsministeriet",
+          "institution_type": "ministry",
+          "language": "da",
+          "homepage": "https://um.dk/",
+          "listing_url": "https://um.dk/nyheder/",
+          "allow_domains": [
+            "um.dk",
+            "via.ritzau.dk"
+          ],
+          "critical": false,
+          "detail_pages": 0,
+          "timezone": "Europe/Copenhagen",
+          "schedule_enabled": false,
+          "parser_adapter": "dk_foreign_ritzau",
+          "feed_urls": []
+        },
+        "observed_at": "2026-10-03T03:06:36.010388+00:00",
+        "live_status": {
+          "source_id": "dk_foreign_affairs",
+          "source_name": "丹麥外交部",
+          "country": "DK",
+          "critical": false,
+          "success": true,
+          "fetched_via": "html-listing",
+          "raw_count": 20,
+          "relevant_count": 20,
+          "duration_seconds": 5.018,
+          "newest_published_at": "2026-10-01T07:21:34.266000+00:00",
+          "warning": "官方公開查詢尚有下一頁，已達設定頁數上限；此期間搜尋可能不完整。",
+          "error": "",
+          "pages_fetched": 1,
+          "historical_median_count": 0,
+          "health_alerts": [],
+          "dated_count": 20,
+          "undated_ratio": 0,
+          "unique_title_ratio": 0.85,
+          "in_range_count": 20,
+          "freshness_lag_days": 1.82,
+          "content_warning": "",
+          "fetch_status": "ok",
+          "health_status": "healthy",
+          "invalid_date_count": 0,
+          "unexplained_future_date_count": 0,
+          "timeout_count": 0,
+          "parse_status": "healthy",
+          "freshness_status": "fresh",
+          "content_status": "hits",
+          "request_count": 5,
+          "bytes_downloaded": 93316,
+          "retry_count": 0,
+          "cache_hits": 0,
+          "budget_exhausted": false,
+          "http_statuses": [
+            "200",
+            "200",
+            "200",
+            "200",
+            "200"
+          ],
+          "error_code": "",
+          "historical_median_requests": 0,
+          "historical_median_bytes": 0,
+          "historical_median_duration": 0
+        },
+        "dispatch_overlay": false,
+        "attempts": [
+          {
+            "url": "https://um.dk/robots.txt",
+            "observed_at": "2026-10-03T03:06:36.048750+00:00",
+            "final_url": "https://um.dk/robots.txt",
+            "http_status": 200,
+            "response_sha256": "f3cc90fbcdb1c9695f740bf9465b20fbf4deb53b9f29f39535c4a0163a3bb054",
+            "response_bytes": 357,
+            "robots_enforced": true,
+            "tls_verified": true
+          },
+          {
+            "url": "https://um.dk/nyheder/",
+            "observed_at": "2026-10-03T03:06:36.048726+00:00",
+            "final_url": "https://um.dk/nyheder/",
+            "http_status": 200,
+            "response_sha256": "488c04294b1e588d223eb4f2b6c999000ad1d3a8377220743936d5267f208c12",
+            "response_bytes": 77814,
+            "robots_enforced": true,
+            "tls_verified": true
+          },
+          {
+            "url": "https://via.ritzau.dk/robots.txt",
+            "observed_at": "2026-10-03T03:06:37.514083+00:00",
+            "final_url": "https://via.ritzau.dk/robots.txt",
+            "http_status": 200,
+            "response_sha256": "9e88ac5ccf3dd47b115b98bb2f520dd73b6b8e69529a537f092cec6ee12948e4",
+            "response_bytes": 102,
+            "robots_enforced": true,
+            "tls_verified": true
+          },
+          {
+            "url": "https://via.ritzau.dk/public-website-api/pressroom/2012662",
+            "observed_at": "2026-10-03T03:06:37.514018+00:00",
+            "final_url": "https://via.ritzau.dk/public-website-api/pressroom/2012662",
+            "http_status": 200,
+            "response_sha256": "0a565875901e1304b137b816d91f788d5ef28290e9e842311a24ebd219213def",
+            "response_bytes": 2452,
+            "robots_enforced": true,
+            "tls_verified": true
+          },
+          {
+            "url": "https://via.ritzau.dk/public-website-api/pressroom/2012662/releases/20/0",
+            "observed_at": "2026-10-03T03:06:39.815594+00:00",
+            "final_url": "https://via.ritzau.dk/public-website-api/pressroom/2012662/releases/20/0",
+            "http_status": 200,
+            "response_sha256": "4a2f706182b3c58fedfc4d6f96ea84000a1d13c6d35d5665781bc78a73f8d0df",
+            "response_bytes": 12591,
+            "robots_enforced": true,
+            "tls_verified": true
+          }
+        ],
+        "expected": [
+          {
+            "title": "Børnenes U-landskalender er i handlen: I år hjælper den børn i Rwanda",
+            "url": "https://via.ritzau.dk/release/15198231/bornenes-u-landskalender-er-i-handlen-i-ar-hjaelper-den-born-i-rwanda?publisherId=2012662&lang=da",
+            "published_date_local": "2026-10-01",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Udenrigsministeren: Kasakhstan og Usbekistan åbner nye muligheder for Danmark",
+            "url": "https://via.ritzau.dk/release/15194749/udenrigsministeren-kasakhstan-og-usbekistan-abner-nye-muligheder-for-danmark?publisherId=2012662&lang=da",
+            "published_date_local": "2026-09-30",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Udviklingssamarbejdet styrkes med nye Strategiske Partnerskaber",
+            "url": "https://via.ritzau.dk/release/15189484/udviklingssamarbejdet-styrkes-med-nye-strategiske-partnerskaber?publisherId=2012662&lang=da",
+            "published_date_local": "2026-09-29",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Regeringen vil afsætte 850 millioner kroner til virksomheder, der investerer i udviklingslande",
+            "url": "https://via.ritzau.dk/release/15186698/regeringen-vil-afsaette-850-millioner-kroner-til-virksomheder-der-investerer-i-udviklingslande?publisherId=2012662&lang=da",
+            "published_date_local": "2026-09-28",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Danmark vil støtte global uddannelsesfond med op til 1 mia. kr. frem mod 2030",
+            "url": "https://via.ritzau.dk/release/15180344/danmark-vil-stotte-global-uddannelsesfond-med-op-til-1-mia-kr-frem-mod-2030?publisherId=2012662&lang=da",
+            "published_date_local": "2026-09-23",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Danmark og Brasilien indgår strategisk partnerskab",
+            "url": "https://via.ritzau.dk/release/15178207/danmark-og-brasilien-indgar-strategisk-partnerskab?publisherId=2012662&lang=da",
+            "published_date_local": "2026-09-23",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Udenrigsministeren rejser til New York til åbningen af FN's 81. Generalforsamling",
+            "url": "https://via.ritzau.dk/release/15172687/udenrigsministeren-rejser-til-new-york-til-abningen-af-fns-81-generalforsamling?publisherId=2012662&lang=da",
+            "published_date_local": "2026-09-20",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Møde i Det Udenrigspolitiske Nævn",
+            "url": "https://via.ritzau.dk/release/15170089/mode-i-det-udenrigspolitiske-naevn?publisherId=2012662&lang=da",
+            "published_date_local": "2026-09-18",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Møde i Det Udenrigspolitiske Nævn",
+            "url": "https://via.ritzau.dk/release/15152534/mode-i-det-udenrigspolitiske-naevn?publisherId=2012662&lang=da",
+            "published_date_local": "2026-09-11",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Danmark tilbyder hjælp til adopterede til Danmark fra Sydkorea, Indien, Vietnam og Libanon",
+            "url": "https://via.ritzau.dk/release/15141440/danmark-tilbyder-hjaelp-til-adopterede-til-danmark-fra-sydkorea-indien-vietnam-og-libanon?publisherId=2012662&lang=da",
+            "published_date_local": "2026-09-04",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Lars Løkke Rasmussen genåbner Danmarks ambassade i Syrien",
+            "url": "https://via.ritzau.dk/release/15125994/lars-lokke-rasmussen-genabner-danmarks-ambassade-i-syrien?publisherId=2012662&lang=da",
+            "published_date_local": "2026-08-31",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Danmark styrker den humanitære indsats i Sudan med 100 millioner kroner",
+            "url": "https://via.ritzau.dk/release/15109142/danmark-styrker-den-humanitaere-indsats-i-sudan-med-100-millioner-kroner?publisherId=2012662&lang=da",
+            "published_date_local": "2026-08-24",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Udenrigsministeren leder FN's Sikkerhedsråd med fokus på Ukraine, Sudan og konflikt og sult",
+            "url": "https://via.ritzau.dk/release/15109127/udenrigsministeren-leder-fns-sikkerhedsrad-med-fokus-pa-ukraine-sudan-og-konflikt-og-sult?publisherId=2012662&lang=da",
+            "published_date_local": "2026-08-24",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Udenrigsministeriet ansætter særlig rådgiver",
+            "url": "https://via.ritzau.dk/release/15057264/udenrigsministeriet-ansaetter-saerlig-radgiver?publisherId=2012662&lang=da",
+            "published_date_local": "2026-08-01",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Danmark giver 85 millioner kroner i ny humanitær støtte til Palæstina og Libanon",
+            "url": "https://via.ritzau.dk/release/15046082/danmark-giver-85-millioner-kroner-i-ny-humanitaer-stotte-til-palaestina-og-libanon?publisherId=2012662&lang=da",
+            "published_date_local": "2026-07-13",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Udenrigsministeren besøger Montenegro for at støtte landets EU-kandidatur",
+            "url": "https://via.ritzau.dk/release/15039775/udenrigsministeren-besoger-montenegro-for-at-stotte-landets-eu-kandidatur?publisherId=2012662&lang=da",
+            "published_date_local": "2026-07-08",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Møde i Det Udenrigspolitiske Nævn",
+            "url": "https://via.ritzau.dk/release/15021467/mode-i-det-udenrigspolitiske-naevn?publisherId=2012662&lang=da",
+            "published_date_local": "2026-06-30",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Danmark og Nefco støtter nye kommunale projekter i Mykolaiv-regionen i Ukraine",
+            "url": "https://via.ritzau.dk/release/15015371/danmark-og-nefco-stotter-nye-kommunale-projekter-i-mykolaiv-regionen-i-ukraine?publisherId=2012662&lang=da",
+            "published_date_local": "2026-06-26",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Ny evaluering: Særlig type bistand kan styrke det multilaterale system og fremme nordiske værdier",
+            "url": "https://via.ritzau.dk/release/15008464/ny-evaluering-saerlig-type-bistand-kan-styrke-det-multilaterale-system-og-fremme-nordiske-vaerdier?publisherId=2012662&lang=da",
+            "published_date_local": "2026-06-23",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Møde i Det Udenrigspolitiske Nævn",
+            "url": "https://via.ritzau.dk/release/15007292/mode-i-det-udenrigspolitiske-naevn?publisherId=2012662&lang=da",
+            "published_date_local": "2026-06-23",
+            "date_confidence": "high"
+          }
+        ]
+      },
+      "inventory_patch": {
+        "status": "manual_verified",
+        "homepage": "https://um.dk/",
+        "news_url": "https://um.dk/nyheder/",
+        "source_ids": [
+          "dk_foreign_affairs"
+        ],
+        "notes": "Actual wired production scrape_source succeeded with 20 publisher-scoped dated articles; robots and TLS verified. Manual-only, bounded first page; search may be incomplete.",
+        "evidence_urls": [
+          "https://um.dk/nyheder/",
+          "https://via.ritzau.dk/public-website-api/pressroom/2012662/releases/20/0"
+        ]
+      }
+    },
+    {
+      "canonical_id": "at_bmlv",
+      "country": "AT",
+      "baseline_status": "parser_pending",
+      "attempts": [
+        {
+          "url": "https://www.bmlv.gv.at/aktuell/index.shtml",
+          "observed_at": "2026-10-03T02:40:33.359065+00:00",
+          "http_status": 200,
+          "final_url": "https://www.bmlv.gv.at/aktuell/index.shtml",
+          "content_type": "text/html",
+          "http_statuses": [
+            "200",
+            "200"
+          ],
+          "response_sha256": "5519e9ea44455f484029a5667d5407973c1887df67f70e8fb6fe13d538bd6675",
+          "response_bytes": 37203,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.bmlv.gv.at/cms/artikel.php?ID=12221",
+          "observed_at": "2026-10-03T02:42:06.666932+00:00",
+          "http_status": 200,
+          "final_url": "https://www.bmlv.gv.at/cms/artikel.php?ID=12221",
+          "content_type": "text/html; charset=UTF-8",
+          "http_statuses": [
+            "200",
+            "200"
+          ],
+          "response_sha256": "8ad9bb20e4b842f62f26e9cfcccc3f103470765495e6cb03b027e92a5fee9023",
+          "response_bytes": 25659,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.bmlv.gv.at/cms/artikel.php?ID=12218",
+          "observed_at": "2026-10-03T02:42:06.667066+00:00",
+          "http_status": 200,
+          "final_url": "https://www.bmlv.gv.at/cms/artikel.php?ID=12218",
+          "content_type": "text/html; charset=UTF-8",
+          "http_statuses": [
+            "200"
+          ],
+          "response_sha256": "4cdcbe83f883855c3db6352b63a4d56f82d15d460f9f80f04f52b62770943fe3",
+          "response_bytes": 28148,
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "negative_endpoint_failure_is_not_obsolete": true,
+      "result": "needs_review",
+      "next_action": "Official detail has article:modified_time only; feed dc:date matches modification while visible supplement is a location/event dateline. Require an explicit original publication field; do not promote or rewrite HTTP feed article URLs.",
+      "parser_proof": {
+        "accepted": 0,
+        "rejected_modified_only_details": 2
+      }
+    },
+    {
+      "canonical_id": "be_science_policy",
+      "country": "BE",
+      "baseline_status": "parser_pending",
+      "attempts": [
+        {
+          "url": "https://www.belspo.be/belspo/organisation/press_fr.stm",
+          "observed_at": "2026-10-03T02:40:33.359193+00:00",
+          "http_status": 200,
+          "final_url": "https://www.belspo.be/belspo/organisation/press_fr.stm",
+          "content_type": "text/html",
+          "http_statuses": [
+            "200",
+            "200"
+          ],
+          "response_sha256": "ceea40f437b2ead6b5acacacf7ae51236fa529781647b6406a12e9ce3ef00292",
+          "response_bytes": 45591,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.belspo.be/belspo/organisation/press/20260915_FLEX-Sentinel-3C_fr.stm",
+          "observed_at": "2026-10-03T02:50:13.895698+00:00",
+          "http_status": 200,
+          "final_url": "https://www.belspo.be/belspo/organisation/press/20260915_FLEX-Sentinel-3C_fr.stm",
+          "content_type": "text/html",
+          "http_statuses": [
+            "200",
+            "200"
+          ],
+          "response_sha256": "289bdf803379433880b0fbd928cffc1f2e21d4940b4f6f88c9f161f30d980132",
+          "response_bytes": 14169,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.belspo.be/belspo/organisation/press/20260827_MTG-12_fr.stm",
+          "observed_at": "2026-10-03T02:50:13.897752+00:00",
+          "http_status": 200,
+          "final_url": "https://www.belspo.be/belspo/organisation/press/20260827_MTG-12_fr.stm",
+          "content_type": "text/html",
+          "http_statuses": [
+            "200"
+          ],
+          "response_sha256": "4eabf17aaa100f9e40fdd678f0b50849c3aa0188e74a74349317621f3309fb36",
+          "response_bytes": 12029,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.belspo.be/belspo/organisation/press/20260825_ISS-Brain-DTI_fr.stm",
+          "observed_at": "2026-10-03T02:50:13.897772+00:00",
+          "http_status": 200,
+          "final_url": "https://www.belspo.be/belspo/organisation/press/20260825_ISS-Brain-DTI_fr.stm",
+          "content_type": "text/html",
+          "http_statuses": [
+            "200"
+          ],
+          "response_sha256": "e59fc2bfaec966039412d4c97fd4d71b2fe4a51a7b884bb3ee0f09d7bf8de0b1",
+          "response_bytes": 12144,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.belspo.be/robots.txt",
+          "observed_at": "2026-10-03T03:07:27.651098+00:00",
+          "final_url": "https://www.belspo.be/robots.txt",
+          "http_status": 200,
+          "response_sha256": "ad6c1a9018162c385cfa25ac69c90cf248cbbb1d9ffaa7009403402c9b4d11c1",
+          "response_bytes": 4702,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.belspo.be/belspo/organisation/press_fr.stm",
+          "observed_at": "2026-10-03T03:07:27.651074+00:00",
+          "final_url": "https://www.belspo.be/belspo/organisation/press_fr.stm",
+          "http_status": 200,
+          "response_sha256": "ceea40f437b2ead6b5acacacf7ae51236fa529781647b6406a12e9ce3ef00292",
+          "response_bytes": 45591,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.belspo.be/belspo/organisation/press/20260915_FLEX-Sentinel-3C_fr.stm",
+          "observed_at": "2026-10-03T03:07:29.525972+00:00",
+          "final_url": "https://www.belspo.be/belspo/organisation/press/20260915_FLEX-Sentinel-3C_fr.stm",
+          "http_status": 200,
+          "response_sha256": "289bdf803379433880b0fbd928cffc1f2e21d4940b4f6f88c9f161f30d980132",
+          "response_bytes": 14169,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.belspo.be/belspo/organisation/press/20260827_MTG-12_fr.stm",
+          "observed_at": "2026-10-03T03:07:44.864650+00:00",
+          "final_url": "https://www.belspo.be/belspo/organisation/press/20260827_MTG-12_fr.stm",
+          "http_status": 200,
+          "response_sha256": "4eabf17aaa100f9e40fdd678f0b50849c3aa0188e74a74349317621f3309fb36",
+          "response_bytes": 12029,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.belspo.be/belspo/organisation/press/20260825_ISS-Brain-DTI_fr.stm",
+          "observed_at": "2026-10-03T03:07:59.804917+00:00",
+          "final_url": "https://www.belspo.be/belspo/organisation/press/20260825_ISS-Brain-DTI_fr.stm",
+          "http_status": 200,
+          "response_sha256": "e59fc2bfaec966039412d4c97fd4d71b2fe4a51a7b884bb3ee0f09d7bf8de0b1",
+          "response_bytes": 12144,
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "negative_endpoint_failure_is_not_obsolete": true,
+      "result": "manual_verified",
+      "next_action": "已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。",
+      "live_status": {
+        "source_id": "be_science_policy",
+        "source_name": "比利時科學政策規劃公共服務部",
+        "country": "BE",
+        "critical": false,
+        "success": true,
+        "fetched_via": "html-listing",
+        "raw_count": 3,
+        "relevant_count": 3,
+        "duration_seconds": 47.172,
+        "newest_published_at": "2026-09-13T22:00:00+00:00",
+        "warning": "官方新聞內頁僅進行有界樣本抓取；此期間搜尋可能不完整。",
+        "error": "",
+        "pages_fetched": 1,
+        "historical_median_count": 0,
+        "health_alerts": [],
+        "dated_count": 3,
+        "undated_ratio": 0,
+        "unique_title_ratio": 1,
+        "in_range_count": 3,
+        "freshness_lag_days": 19.21,
+        "content_warning": "",
+        "fetch_status": "ok",
+        "health_status": "healthy",
+        "invalid_date_count": 0,
+        "unexplained_future_date_count": 0,
+        "timeout_count": 0,
+        "parse_status": "healthy",
+        "freshness_status": "fresh",
+        "content_status": "hits",
+        "request_count": 5,
+        "bytes_downloaded": 88635,
+        "retry_count": 0,
+        "cache_hits": 0,
+        "budget_exhausted": false,
+        "http_statuses": [
+          "200",
+          "200",
+          "200",
+          "200",
+          "200"
+        ],
+        "error_code": "",
+        "historical_median_requests": 0,
+        "historical_median_bytes": 0,
+        "historical_median_duration": 0
+      },
+      "inventory_patch": {
+        "status": "manual_verified",
+        "homepage": "https://www.belspo.be",
+        "news_url": "https://www.belspo.be/belspo/organisation/press_fr.stm",
+        "source_ids": [
+          "be_science_policy"
+        ],
+        "notes": "Fresh publisher-scoped title/URL/publication-date fixture and actual production scrape_source passed without a dispatch overlay; manual only.",
+        "evidence_urls": [
+          "https://www.belspo.be/belspo/organisation/press_fr.stm",
+          "https://www.belspo.be/belspo/organisation/press/20260915_FLEX-Sentinel-3C_fr.stm",
+          "https://www.belspo.be/belspo/organisation/press/20260827_MTG-12_fr.stm",
+          "https://www.belspo.be/belspo/organisation/press/20260825_ISS-Brain-DTI_fr.stm"
+        ]
+      },
+      "prior_production_rechecks": [
+        {
+          "live_status": {
+            "source_id": "be_science_policy",
+            "source_name": "比利時科學政策規劃公共服務部",
+            "country": "BE",
+            "critical": false,
+            "success": true,
+            "fetched_via": "html-listing",
+            "raw_count": 3,
+            "relevant_count": 3,
+            "duration_seconds": 47.154,
+            "newest_published_at": "2026-09-13T22:00:00+00:00",
+            "warning": "",
+            "error": "",
+            "pages_fetched": 1,
+            "historical_median_count": 0,
+            "health_alerts": [],
+            "dated_count": 3,
+            "undated_ratio": 0,
+            "unique_title_ratio": 1,
+            "in_range_count": 3,
+            "freshness_lag_days": 19.21,
+            "content_warning": "",
+            "fetch_status": "ok",
+            "health_status": "healthy",
+            "invalid_date_count": 0,
+            "unexplained_future_date_count": 0,
+            "timeout_count": 0,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "content_status": "hits",
+            "request_count": 5,
+            "bytes_downloaded": 88635,
+            "retry_count": 0,
+            "cache_hits": 0,
+            "budget_exhausted": false,
+            "http_statuses": [
+              "200",
+              "200",
+              "200",
+              "200",
+              "200"
+            ],
+            "error_code": "",
+            "historical_median_requests": 0,
+            "historical_median_bytes": 0,
+            "historical_median_duration": 0
+          }
+        }
+      ],
+      "latest_production_recheck": {
+        "canonical_id": "be_science_policy",
+        "source_config": {
+          "id": "be_science_policy",
+          "country": "BE",
+          "name_zh": "比利時科學政策規劃公共服務部",
+          "name": "Programmatorische Federale Overheidsdienst Wetenschapsbeleid",
+          "institution_type": "ministry_equivalent",
+          "language": "fr",
+          "homepage": "https://www.belspo.be",
+          "listing_url": "https://www.belspo.be/belspo/organisation/press_fr.stm",
+          "allow_domains": [
+            "www.belspo.be"
+          ],
+          "critical": false,
+          "detail_pages": 0,
+          "timezone": "Europe/Brussels",
+          "schedule_enabled": false,
+          "parser_adapter": "belspo_central_press",
+          "feed_urls": [],
+          "minimum_budget_seconds": 120
+        },
+        "observed_at": "2026-10-03T03:07:27.615918+00:00",
+        "live_status": {
+          "source_id": "be_science_policy",
+          "source_name": "比利時科學政策規劃公共服務部",
+          "country": "BE",
+          "critical": false,
+          "success": true,
+          "fetched_via": "html-listing",
+          "raw_count": 3,
+          "relevant_count": 3,
+          "duration_seconds": 47.172,
+          "newest_published_at": "2026-09-13T22:00:00+00:00",
+          "warning": "官方新聞內頁僅進行有界樣本抓取；此期間搜尋可能不完整。",
+          "error": "",
+          "pages_fetched": 1,
+          "historical_median_count": 0,
+          "health_alerts": [],
+          "dated_count": 3,
+          "undated_ratio": 0,
+          "unique_title_ratio": 1,
+          "in_range_count": 3,
+          "freshness_lag_days": 19.21,
+          "content_warning": "",
+          "fetch_status": "ok",
+          "health_status": "healthy",
+          "invalid_date_count": 0,
+          "unexplained_future_date_count": 0,
+          "timeout_count": 0,
+          "parse_status": "healthy",
+          "freshness_status": "fresh",
+          "content_status": "hits",
+          "request_count": 5,
+          "bytes_downloaded": 88635,
+          "retry_count": 0,
+          "cache_hits": 0,
+          "budget_exhausted": false,
+          "http_statuses": [
+            "200",
+            "200",
+            "200",
+            "200",
+            "200"
+          ],
+          "error_code": "",
+          "historical_median_requests": 0,
+          "historical_median_bytes": 0,
+          "historical_median_duration": 0
+        },
+        "dispatch_overlay": false,
+        "attempts": [
+          {
+            "url": "https://www.belspo.be/robots.txt",
+            "observed_at": "2026-10-03T03:07:27.651098+00:00",
+            "final_url": "https://www.belspo.be/robots.txt",
+            "http_status": 200,
+            "response_sha256": "ad6c1a9018162c385cfa25ac69c90cf248cbbb1d9ffaa7009403402c9b4d11c1",
+            "response_bytes": 4702,
+            "robots_enforced": true,
+            "tls_verified": true
+          },
+          {
+            "url": "https://www.belspo.be/belspo/organisation/press_fr.stm",
+            "observed_at": "2026-10-03T03:07:27.651074+00:00",
+            "final_url": "https://www.belspo.be/belspo/organisation/press_fr.stm",
+            "http_status": 200,
+            "response_sha256": "ceea40f437b2ead6b5acacacf7ae51236fa529781647b6406a12e9ce3ef00292",
+            "response_bytes": 45591,
+            "robots_enforced": true,
+            "tls_verified": true
+          },
+          {
+            "url": "https://www.belspo.be/belspo/organisation/press/20260915_FLEX-Sentinel-3C_fr.stm",
+            "observed_at": "2026-10-03T03:07:29.525972+00:00",
+            "final_url": "https://www.belspo.be/belspo/organisation/press/20260915_FLEX-Sentinel-3C_fr.stm",
+            "http_status": 200,
+            "response_sha256": "289bdf803379433880b0fbd928cffc1f2e21d4940b4f6f88c9f161f30d980132",
+            "response_bytes": 14169,
+            "robots_enforced": true,
+            "tls_verified": true
+          },
+          {
+            "url": "https://www.belspo.be/belspo/organisation/press/20260827_MTG-12_fr.stm",
+            "observed_at": "2026-10-03T03:07:44.864650+00:00",
+            "final_url": "https://www.belspo.be/belspo/organisation/press/20260827_MTG-12_fr.stm",
+            "http_status": 200,
+            "response_sha256": "4eabf17aaa100f9e40fdd678f0b50849c3aa0188e74a74349317621f3309fb36",
+            "response_bytes": 12029,
+            "robots_enforced": true,
+            "tls_verified": true
+          },
+          {
+            "url": "https://www.belspo.be/belspo/organisation/press/20260825_ISS-Brain-DTI_fr.stm",
+            "observed_at": "2026-10-03T03:07:59.804917+00:00",
+            "final_url": "https://www.belspo.be/belspo/organisation/press/20260825_ISS-Brain-DTI_fr.stm",
+            "http_status": 200,
+            "response_sha256": "e59fc2bfaec966039412d4c97fd4d71b2fe4a51a7b884bb3ee0f09d7bf8de0b1",
+            "response_bytes": 12144,
+            "robots_enforced": true,
+            "tls_verified": true
+          }
+        ],
+        "expected": [
+          {
+            "title": "Deux nouveaux satellites pour observer la santé de notre planète",
+            "url": "https://www.belspo.be/belspo/organisation/press/20260915_FLEX-Sentinel-3C_fr.stm",
+            "published_date_local": "2026-09-14",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Un nouveau satellite pour mieux prévoir la météo et détecter plus vite les orages violents",
+            "url": "https://www.belspo.be/belspo/organisation/press/20260827_MTG-12_fr.stm",
+            "published_date_local": "2026-08-27",
+            "date_confidence": "high"
+          },
+          {
+            "title": "Une recherche inédite à bord de la Station spatiale internationale",
+            "url": "https://www.belspo.be/belspo/organisation/press/20260825_ISS-Brain-DTI_fr.stm",
+            "published_date_local": "2026-08-25",
+            "date_confidence": "high"
+          }
+        ]
+      }
+    },
+    {
+      "canonical_id": "de_bka",
+      "country": "DE",
+      "baseline_status": "parser_pending",
+      "attempts": [
+        {
+          "url": "https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt",
+          "observed_at": "2026-10-03T02:40:33.359350+00:00",
+          "http_status": 200,
+          "final_url": "https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt",
+          "content_type": "text/html;charset=UTF-8",
+          "http_statuses": [
+            "200",
+            "200"
+          ],
+          "response_sha256": "97c5a4ba501ff53449d40683634cd6e8d519f0139961d854640920b4c593eff5",
+          "response_bytes": 140978,
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "negative_endpoint_failure_is_not_obsolete": true,
+      "result": "needs_review",
+      "next_action": "Fresh Chancellery organizational page provides office biographies and documents, without a ministry-specific dated news listing. Bundesregierung/Bundespresseamt news ownership remains insufficient; preserve review status."
+    },
+    {
+      "canonical_id": "fr_territorial_decentralisation",
+      "country": "FR",
+      "baseline_status": "parser_pending",
+      "attempts": [
+        {
+          "url": "https://www.ecologie.gouv.fr/presse",
+          "observed_at": "2026-10-03T02:40:33.359474+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ecologie.gouv.fr/presse",
+          "content_type": "text/html; charset=UTF-8",
+          "http_statuses": [
+            "200",
+            "200"
+          ],
+          "response_sha256": "5eafd13eaee9e74e6afc71c7844a1873e5ac7ef1dfe520a73733379dfc2136d4",
+          "response_bytes": 83307,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.ecologie.gouv.fr/presse/30-territoires-laureats-lappel-manifestation-dinteret-destinations-france-velo",
+          "observed_at": "2026-10-03T02:42:06.667241+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ecologie.gouv.fr/presse/30-territoires-laureats-lappel-manifestation-dinteret-destinations-france-velo",
+          "content_type": "text/html; charset=UTF-8",
+          "http_statuses": [
+            "200",
+            "200"
+          ],
+          "response_sha256": "2cef414e8eccb94ab3aa861241cdc49d0767c494b6bc86432cb1e0b307adee81",
+          "response_bytes": 59311,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
+          "observed_at": "2026-10-03T02:42:06.667380+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
+          "content_type": "text/html; charset=UTF-8",
+          "http_statuses": [
+            "200"
+          ],
+          "response_sha256": "0d5996a46043a0db20fbed05c8757a75725bc6cb0ee588a170a230271de76589",
+          "response_bytes": 67750,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites",
+          "observed_at": "2026-10-03T02:42:06.667370+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites",
+          "content_type": "text/html; charset=UTF-8",
+          "http_statuses": [
+            "200"
+          ],
+          "response_sha256": "8c19456d25bd385ddd500415b84cdc3b331ec19320189e80949428321cf9f07c",
+          "response_bytes": 58551,
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "negative_endpoint_failure_is_not_obsolete": true,
+      "result": "needs_review",
+      "next_action": "Fresh shared press details contain original Publié le dates but no per-release publisher field; minister/body mentions and shared footer are insufficient attribution. Require an official ministry publisher identifier or ministry-specific feed before enrollment.",
+      "parser_proof": {
+        "date_present": true,
+        "publisher_attribution_present": false,
+        "sample_count": 3
+      }
+    },
+    {
+      "canonical_id": "fr_ecological_transition",
+      "country": "FR",
+      "baseline_status": "parser_pending",
+      "attempts": [
+        {
+          "url": "https://www.ecologie.gouv.fr/presse",
+          "observed_at": "2026-10-03T02:40:33.359474+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ecologie.gouv.fr/presse",
+          "content_type": "text/html; charset=UTF-8",
+          "http_statuses": [
+            "200",
+            "200"
+          ],
+          "response_sha256": "5eafd13eaee9e74e6afc71c7844a1873e5ac7ef1dfe520a73733379dfc2136d4",
+          "response_bytes": 83307,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.ecologie.gouv.fr/presse/30-territoires-laureats-lappel-manifestation-dinteret-destinations-france-velo",
+          "observed_at": "2026-10-03T02:42:06.667241+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ecologie.gouv.fr/presse/30-territoires-laureats-lappel-manifestation-dinteret-destinations-france-velo",
+          "content_type": "text/html; charset=UTF-8",
+          "http_statuses": [
+            "200",
+            "200"
+          ],
+          "response_sha256": "2cef414e8eccb94ab3aa861241cdc49d0767c494b6bc86432cb1e0b307adee81",
+          "response_bytes": 59311,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
+          "observed_at": "2026-10-03T02:42:06.667380+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
+          "content_type": "text/html; charset=UTF-8",
+          "http_statuses": [
+            "200"
+          ],
+          "response_sha256": "0d5996a46043a0db20fbed05c8757a75725bc6cb0ee588a170a230271de76589",
+          "response_bytes": 67750,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites",
+          "observed_at": "2026-10-03T02:42:06.667370+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites",
+          "content_type": "text/html; charset=UTF-8",
+          "http_statuses": [
+            "200"
+          ],
+          "response_sha256": "8c19456d25bd385ddd500415b84cdc3b331ec19320189e80949428321cf9f07c",
+          "response_bytes": 58551,
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "negative_endpoint_failure_is_not_obsolete": true,
+      "result": "needs_review",
+      "next_action": "Fresh shared press details contain original Publié le dates but no per-release publisher field; minister/body mentions and shared footer are insufficient attribution. Require an official ministry publisher identifier or ministry-specific feed before enrollment.",
+      "parser_proof": {
+        "date_present": true,
+        "publisher_attribution_present": false,
+        "sample_count": 3
+      }
+    },
+    {
+      "canonical_id": "fr_transport",
+      "country": "FR",
+      "baseline_status": "parser_pending",
+      "attempts": [
+        {
+          "url": "https://www.ecologie.gouv.fr/presse",
+          "observed_at": "2026-10-03T02:40:33.359474+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ecologie.gouv.fr/presse",
+          "content_type": "text/html; charset=UTF-8",
+          "http_statuses": [
+            "200",
+            "200"
+          ],
+          "response_sha256": "5eafd13eaee9e74e6afc71c7844a1873e5ac7ef1dfe520a73733379dfc2136d4",
+          "response_bytes": 83307,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.ecologie.gouv.fr/presse/30-territoires-laureats-lappel-manifestation-dinteret-destinations-france-velo",
+          "observed_at": "2026-10-03T02:42:06.667241+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ecologie.gouv.fr/presse/30-territoires-laureats-lappel-manifestation-dinteret-destinations-france-velo",
+          "content_type": "text/html; charset=UTF-8",
+          "http_statuses": [
+            "200",
+            "200"
+          ],
+          "response_sha256": "2cef414e8eccb94ab3aa861241cdc49d0767c494b6bc86432cb1e0b307adee81",
+          "response_bytes": 59311,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
+          "observed_at": "2026-10-03T02:42:06.667380+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
+          "content_type": "text/html; charset=UTF-8",
+          "http_statuses": [
+            "200"
+          ],
+          "response_sha256": "0d5996a46043a0db20fbed05c8757a75725bc6cb0ee588a170a230271de76589",
+          "response_bytes": 67750,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites",
+          "observed_at": "2026-10-03T02:42:06.667370+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites",
+          "content_type": "text/html; charset=UTF-8",
+          "http_statuses": [
+            "200"
+          ],
+          "response_sha256": "8c19456d25bd385ddd500415b84cdc3b331ec19320189e80949428321cf9f07c",
+          "response_bytes": 58551,
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "negative_endpoint_failure_is_not_obsolete": true,
+      "result": "needs_review",
+      "next_action": "Fresh shared press details contain original Publié le dates but no per-release publisher field; minister/body mentions and shared footer are insufficient attribution. Require an official ministry publisher identifier or ministry-specific feed before enrollment.",
+      "parser_proof": {
+        "date_present": true,
+        "publisher_attribution_present": false,
+        "sample_count": 3
+      }
+    },
+    {
+      "canonical_id": "fr_city_housing",
+      "country": "FR",
+      "baseline_status": "parser_pending",
+      "attempts": [
+        {
+          "url": "https://www.ecologie.gouv.fr/presse",
+          "observed_at": "2026-10-03T02:40:33.359474+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ecologie.gouv.fr/presse",
+          "content_type": "text/html; charset=UTF-8",
+          "http_statuses": [
+            "200",
+            "200"
+          ],
+          "response_sha256": "5eafd13eaee9e74e6afc71c7844a1873e5ac7ef1dfe520a73733379dfc2136d4",
+          "response_bytes": 83307,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.ecologie.gouv.fr/presse/30-territoires-laureats-lappel-manifestation-dinteret-destinations-france-velo",
+          "observed_at": "2026-10-03T02:42:06.667241+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ecologie.gouv.fr/presse/30-territoires-laureats-lappel-manifestation-dinteret-destinations-france-velo",
+          "content_type": "text/html; charset=UTF-8",
+          "http_statuses": [
+            "200",
+            "200"
+          ],
+          "response_sha256": "2cef414e8eccb94ab3aa861241cdc49d0767c494b6bc86432cb1e0b307adee81",
+          "response_bytes": 59311,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
+          "observed_at": "2026-10-03T02:42:06.667380+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
+          "content_type": "text/html; charset=UTF-8",
+          "http_statuses": [
+            "200"
+          ],
+          "response_sha256": "0d5996a46043a0db20fbed05c8757a75725bc6cb0ee588a170a230271de76589",
+          "response_bytes": 67750,
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites",
+          "observed_at": "2026-10-03T02:42:06.667370+00:00",
+          "http_status": 200,
+          "final_url": "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites",
+          "content_type": "text/html; charset=UTF-8",
+          "http_statuses": [
+            "200"
+          ],
+          "response_sha256": "8c19456d25bd385ddd500415b84cdc3b331ec19320189e80949428321cf9f07c",
+          "response_bytes": 58551,
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "negative_endpoint_failure_is_not_obsolete": true,
+      "result": "needs_review",
+      "next_action": "Fresh shared press details contain original Publié le dates but no per-release publisher field; minister/body mentions and shared footer are insufficient attribution. Require an official ministry publisher identifier or ministry-specific feed before enrollment.",
+      "parser_proof": {
+        "date_present": true,
+        "publisher_attribution_present": false,
+        "sample_count": 3
+      }
+    }
+  ],
+  "runtime_interface": {
+    "listing": "parse_round4_listing(html, source, base_url)",
+    "api_fetch": "fetch_round4_listing(html, source, client, stats) -> {payload, fetched_from, truncated}",
+    "feed": "parse_round4_feed(payload, source, fetched_from)",
+    "details": "fetch_round4_details(html, source, client, stats) -> list[Article]",
+    "detail_bundle": "{source_url: canonical listing, details: [{url, html}]}",
+    "new_adapter_module": "src/eu_cyber_news_scraper/round4_north_adapters.py"
+  },
+  "preserved_state": "No country inventories, existing round3 reports, shared parser/scraper/http, sources.toml, EP/CEA pauses or scheduled source configuration edited.",
+  "counts": {
+    "manual_verified": 6,
+    "parser_pending": 0,
+    "needs_review": 6
+  },
+  "preserved_failure_history": [
+    "tests/fixtures/ministry_round3_north.json",
+    "tests/fixtures/ministry_round3_south.json"
+  ],
+  "live_verification": {
+    "dispatch_overlay": false,
+    "tested_on": "2026-10-03",
+    "production_function": "scrape_source",
+    "robots_enforced": true,
+    "tls_verified": true,
+    "scheduled_sources_changed": false
+  },
+  "group": "north",
+  "countries": [
+    "AT",
+    "BE",
+    "CY",
+    "CZ",
+    "DE",
+    "DK",
+    "FR"
+  ]
+}

@@ -371,6 +371,48 @@
 "timezone" = "Europe/Brussels"
 
 [[sources]]
+"id" = "be_finance"
+"allow_domains" = ["fin.belgium.be"]
+"card_selectors" = ["article.node--type-news"]
+"country" = "BE"
+"critical" = false
+"date_evidence_url" = ""
+"date_exception_reason" = ""
+"date_policy" = "required"
+"date_review_due" = ""
+"date_reviewed_on" = ""
+"date_selectors" = ["time"]
+"detail_pages" = 0
+"exclude_patterns" = []
+"feed_archive_fallback" = false
+"feed_urls" = []
+"freshness_days" = 45
+"homepage" = "https://fin.belgium.be"
+"include_patterns" = ["^/nl/(?:news|nieuws)/"]
+"institution_type" = "ministry_equivalent"
+"language" = "nl"
+"link_selectors" = []
+"listing_url" = "https://fin.belgium.be/nl/news"
+"max_pages" = 1
+"min_listing_bytes" = 0
+"minimum_budget_seconds" = 0
+"name" = "Federale Overheidsdienst Financiën"
+"name_zh" = "比利時財政公共服務部"
+"observation_runs" = 3
+"pagination_url" = ""
+"parser_adapter" = ""
+"pause_evidence_url" = ""
+"pause_reason" = ""
+"paused_until" = ""
+"schedule_enabled" = false
+"summary_selectors" = []
+"timezone" = "Europe/Brussels"
+"title_selectors" = ["h2", "h3"]
+"tls_intermediate_bundle" = ""
+"user_agent" = ""
+"yearly_listing_url" = ""
+
+[[sources]]
 "id" = "be_foreign_affairs"
 "allow_domains" = ["diplomatie.belgium.be"]
 "card_selectors" = ["article"]
@@ -389,6 +431,48 @@
 "timezone" = "Europe/Brussels"
 
 [[sources]]
+"id" = "be_justice"
+"allow_domains" = ["justitie.belgium.be"]
+"card_selectors" = ["li.view__row"]
+"country" = "BE"
+"critical" = false
+"date_evidence_url" = ""
+"date_exception_reason" = ""
+"date_policy" = "required"
+"date_review_due" = ""
+"date_reviewed_on" = ""
+"date_selectors" = ["time.datetime"]
+"detail_pages" = 0
+"exclude_patterns" = []
+"feed_archive_fallback" = false
+"feed_urls" = []
+"freshness_days" = 45
+"homepage" = "https://justitie.belgium.be"
+"include_patterns" = ["^/nl/nieuws/(?:persberichten|andere_berichten)/"]
+"institution_type" = "ministry_equivalent"
+"language" = "nl"
+"link_selectors" = []
+"listing_url" = "https://justitie.belgium.be/nl/nieuws"
+"max_pages" = 1
+"min_listing_bytes" = 0
+"minimum_budget_seconds" = 0
+"name" = "Federale Overheidsdienst Justitie"
+"name_zh" = "比利時司法公共服務部"
+"observation_runs" = 3
+"pagination_url" = ""
+"parser_adapter" = ""
+"pause_evidence_url" = ""
+"pause_reason" = ""
+"paused_until" = ""
+"schedule_enabled" = false
+"summary_selectors" = []
+"timezone" = "Europe/Brussels"
+"title_selectors" = [".views-field-title a"]
+"tls_intermediate_bundle" = ""
+"user_agent" = ""
+"yearly_listing_url" = ""
+
+[[sources]]
 "id" = "be_mobility"
 "allow_domains" = ["mobilit.belgium.be"]
 "card_selectors" = ["article"]
@@ -403,6 +487,24 @@
 "listing_url" = "https://mobilit.belgium.be/nl/news"
 "name" = "Federale Overheidsdienst Mobiliteit en Vervoer"
 "name_zh" = "比利時交通運輸公共服務部"
+"schedule_enabled" = false
+"timezone" = "Europe/Brussels"
+
+[[sources]]
+"id" = "be_science_policy"
+"allow_domains" = ["www.belspo.be"]
+"country" = "BE"
+"critical" = false
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://www.belspo.be"
+"institution_type" = "ministry_equivalent"
+"language" = "fr"
+"listing_url" = "https://www.belspo.be/belspo/organisation/press_fr.stm"
+"minimum_budget_seconds" = 120
+"name" = "Programmatorische Federale Overheidsdienst Wetenschapsbeleid"
+"name_zh" = "比利時科學政策規劃公共服務部"
+"parser_adapter" = "belspo_central_press"
 "schedule_enabled" = false
 "timezone" = "Europe/Brussels"
 
@@ -745,6 +847,23 @@
 "schedule_enabled" = false
 
 [[sources]]
+"id" = "cy_education"
+"allow_domains" = ["enimerosi.moec.gov.cy"]
+"country" = "CY"
+"critical" = false
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://www.moec.gov.cy/"
+"institution_type" = "ministry"
+"language" = "el"
+"listing_url" = "https://enimerosi.moec.gov.cy/"
+"name" = "Υπουργείο Παιδείας, Αθλητισμού και Νεολαίας"
+"name_zh" = "塞浦路斯教育、體育與青年部"
+"parser_adapter" = "cy_minister_table"
+"schedule_enabled" = false
+"timezone" = "Europe/Nicosia"
+
+[[sources]]
 "id" = "cz_culture"
 "allow_domains" = ["www.mk.gov.cz"]
 "card_selectors" = ["a.malaNovinka"]
@@ -887,6 +1006,23 @@
 "listing_url" = "https://mzd.gov.cz/tiskove-centrum/tiskove-zpravy/"
 "name" = "Ministerstvo zdravotnictví"
 "name_zh" = "捷克衛生部"
+"schedule_enabled" = false
+"timezone" = "Europe/Prague"
+
+[[sources]]
+"id" = "cz_interior"
+"allow_domains" = ["mv.gov.cz"]
+"country" = "CZ"
+"critical" = false
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://mv.gov.cz/"
+"institution_type" = "ministry"
+"language" = "cs"
+"listing_url" = "https://mv.gov.cz/"
+"name" = "Ministerstvo vnitra"
+"name_zh" = "捷克內政部"
+"parser_adapter" = "cz_public_flight"
 "schedule_enabled" = false
 "timezone" = "Europe/Prague"
 
@@ -1585,6 +1721,23 @@
 "timezone" = "Europe/Copenhagen"
 
 [[sources]]
+"id" = "dk_environment"
+"allow_domains" = ["mim.dk"]
+"country" = "DK"
+"critical" = false
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://mim.dk/"
+"institution_type" = "ministry"
+"language" = "da"
+"listing_url" = "https://mim.dk/nyheder/pressemeddelelser"
+"name" = "Miljøministeriet"
+"name_zh" = "丹麥環境部"
+"parser_adapter" = "dk_environment_json"
+"schedule_enabled" = false
+"timezone" = "Europe/Copenhagen"
+
+[[sources]]
 "id" = "dk_finance"
 "allow_domains" = ["fm.dk"]
 "country" = "DK"
@@ -1613,6 +1766,23 @@
 "name" = "Folketinget"
 "name_zh" = "丹麥國會"
 "schedule_enabled" = false
+
+[[sources]]
+"id" = "dk_foreign_affairs"
+"allow_domains" = ["um.dk", "via.ritzau.dk"]
+"country" = "DK"
+"critical" = false
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://um.dk/"
+"institution_type" = "ministry"
+"language" = "da"
+"listing_url" = "https://um.dk/nyheder/"
+"name" = "Udenrigsministeriet"
+"name_zh" = "丹麥外交部"
+"parser_adapter" = "dk_foreign_ritzau"
+"schedule_enabled" = false
+"timezone" = "Europe/Copenhagen"
 
 [[sources]]
 "id" = "dk_health"
@@ -1693,6 +1863,23 @@
 "listing_url" = "https://ufm.dk/aktuelt/pressemeddelelser/"
 "name" = "Forsknings-, Uddannelses- og Digitaliseringsministeriet"
 "name_zh" = "丹麥研究、教育與數位化部"
+"schedule_enabled" = false
+"timezone" = "Europe/Copenhagen"
+
+[[sources]]
+"id" = "dk_resilience"
+"allow_domains" = ["mssb.dk"]
+"country" = "DK"
+"critical" = false
+"detail_pages" = 0
+"feed_urls" = []
+"homepage" = "https://mssb.dk/"
+"institution_type" = "ministry"
+"language" = "da"
+"listing_url" = "https://mssb.dk/nyheder/"
+"name" = "Ministeriet for Samfundssikkerhed og Beredskab"
+"name_zh" = "丹麥社會安全與應變部"
+"parser_adapter" = "dk_resilience_json"
 "schedule_enabled" = false
 "timezone" = "Europe/Copenhagen"
 
@@ -2180,6 +2367,24 @@
 "timezone" = "Europe/Madrid"
 
 [[sources]]
+"id" = "es_economy"
+"allow_domains" = ["portal.mineco.gob.es"]
+"country" = "ES"
+"critical" = false
+"date_policy" = "required"
+"detail_pages" = 0
+"feed_urls" = ["https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$select=TituloSP,FechaPublicacionSP,FechaPublicacionCalculadaSP,FileRef,PublishingPageLayout,CanalesSP&$orderby=FechaPublicacionSP%20desc&$top=30"]
+"homepage" = "https://portal.mineco.gob.es/"
+"institution_type" = "central ministry"
+"language" = "es"
+"listing_url" = "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$select=TituloSP,FechaPublicacionSP,FechaPublicacionCalculadaSP,FileRef,PublishingPageLayout,CanalesSP&$orderby=FechaPublicacionSP%20desc&$top=30"
+"name" = "Ministerio de Economía, Comercio y Empresa"
+"name_zh" = "西班牙經濟、商業與企業部"
+"parser_adapter" = "round4_es_sharepoint"
+"schedule_enabled" = false
+"timezone" = "Europe/Madrid"
+
+[[sources]]
 "id" = "es_education"
 "allow_domains" = ["www.educacionfpydeportes.gob.es"]
 "card_selectors" = ["div.enlace"]
@@ -2658,6 +2863,48 @@
 "name" = "CSC – IT Center for Science"
 "name_zh" = "芬蘭 CSC 科學資訊中心"
 "schedule_enabled" = false
+
+[[sources]]
+"id" = "fi_foreign_affairs"
+"allow_domains" = ["um.fi"]
+"card_selectors" = [".frontpage__mainlift .highlight-lift", ".feed-list--simple li.item"]
+"country" = "FI"
+"critical" = false
+"date_evidence_url" = ""
+"date_exception_reason" = ""
+"date_policy" = "required"
+"date_review_due" = ""
+"date_reviewed_on" = ""
+"date_selectors" = [".date"]
+"detail_pages" = 0
+"exclude_patterns" = []
+"feed_archive_fallback" = false
+"feed_urls" = []
+"freshness_days" = 45
+"homepage" = "https://um.fi"
+"include_patterns" = ["^/ajankohtaista/-/asset_publisher/[^/]+/content/"]
+"institution_type" = "ministry"
+"language" = "fi"
+"link_selectors" = []
+"listing_url" = "https://um.fi/etusivu"
+"max_pages" = 1
+"min_listing_bytes" = 0
+"minimum_budget_seconds" = 0
+"name" = "Ulkoministeriö"
+"name_zh" = "芬蘭外交部"
+"observation_runs" = 3
+"pagination_url" = ""
+"parser_adapter" = ""
+"pause_evidence_url" = ""
+"pause_reason" = ""
+"paused_until" = ""
+"schedule_enabled" = false
+"summary_selectors" = []
+"timezone" = "Europe/Helsinki"
+"title_selectors" = [".title"]
+"tls_intermediate_bundle" = ""
+"user_agent" = ""
+"yearly_listing_url" = ""
 
 [[sources]]
 "id" = "fi_haic"
@@ -4066,6 +4313,24 @@
 "name" = "Camera dei deputati"
 "name_zh" = "義大利眾議院"
 "schedule_enabled" = false
+
+[[sources]]
+"id" = "it_civil_protection"
+"allow_domains" = ["www.protezionecivile.gov.it"]
+"country" = "IT"
+"critical" = false
+"date_policy" = "required"
+"detail_pages" = 0
+"feed_urls" = ["https://www.protezionecivile.gov.it/page-data/it/page-data.json"]
+"homepage" = "https://www.protezionecivile.gov.it/"
+"institution_type" = "central ministry"
+"language" = "it"
+"listing_url" = "https://www.protezionecivile.gov.it/page-data/it/page-data.json"
+"name" = "Dipartimento della protezione civile"
+"name_zh" = "義大利民防部門"
+"parser_adapter" = "round4_it_dpc_gatsby"
+"schedule_enabled" = false
+"timezone" = "Europe/Rome"
 
 [[sources]]
 "id" = "it_cnr"

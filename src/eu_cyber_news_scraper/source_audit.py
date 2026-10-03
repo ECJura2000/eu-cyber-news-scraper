@@ -38,7 +38,7 @@ _SENSITIVE = re.compile(r"token|secret|password|passwd|api[-_]?key|authorization
 _CHALLENGE = re.compile(
     r"cf-chl-|/cdn-cgi/challenge-platform/|challenge-form|anubis_challenge|"
     r"<title[^>]*>\s*(?:just a moment|access denied|checking your browser|attention required|"
-    r"verify you are human|captcha)", re.I,
+    r"verify you are human|captcha)|<title[^>]*>\s*radware page\s*</title>", re.I,
 )
 
 

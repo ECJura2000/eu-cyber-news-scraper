@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "country": "AT",
-  "reviewed_on": "2026-10-02",
+  "reviewed_on": "2026-10-03",
   "official_roster_urls": [
     "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm"
   ],
@@ -79,9 +79,10 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
-        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm"
+        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
+        "https://www.bmeia.gv.at/"
       ]
     },
     {
@@ -199,11 +200,14 @@
       "news_url": "https://www.bmlv.gv.at/misc/rss.php",
       "source_ids": [],
       "status": "needs_review",
-      "reason": "Official RDF explicitly names BMLV/Presseabteilung as publisher, but nine of ten items are academy/subagency paths. A scoped CMS trial admits one item; feed dc:date 2026-09-30 differs from visible release date 29.09.2026. Next action: Main: resolve original publication versus update date with an official article detail adapter, admit only attributable central ministry releases, exclude /organisation/beitraege/ and preserve the original HTTP links without synthetic rewrites. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: needs_review. Next action: Official detail has article:modified_time only; feed dc:date matches modification while visible supplement is a location/event dateline. Require an explicit original publication field; do not promote or rewrite HTTP feed article URLs. Evidence: tests/fixtures/ministry_round4_north.json",
       "evidence_urls": [
         "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
         "https://www.bmlv.gv.at/",
-        "https://www.bmlv.gv.at/misc/rss.php"
+        "https://www.bmlv.gv.at/misc/rss.php",
+        "https://www.bmlv.gv.at/aktuell/index.shtml",
+        "https://www.bmlv.gv.at/cms/artikel.php?ID=12221",
+        "https://www.bmlv.gv.at/cms/artikel.php?ID=12218"
       ]
     },
     {

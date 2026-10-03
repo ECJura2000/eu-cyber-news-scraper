@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "country": "RO",
-  "reviewed_on": "2026-10-02",
+  "reviewed_on": "2026-10-03",
   "official_roster_urls": [
     "https://gov.ro/ro/guvernul/organizare/ministere",
     "https://gov.ro/ro/guvernul/organizare",
@@ -23,7 +23,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_transport).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://gov.ro/ro/guvernul/organizare/ministere",
         "https://www.mt.ro"
@@ -79,7 +79,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Verified TLS/robots retrieval fails on the canonical ministry endpoint. Recheck after server certificate/transport repair; do not disable TLS, use credentials, or classify the ministry obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_foreign_affairs).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: expected_html, robots_unavailable. Next action: The accessible government directory/shared portal does not establish ministry-specific news ownership. Recheck the recorded ministry access restriction; do not alias shared government content. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://gov.ro/ro/guvernul/organizare/ministere",
         "https://gov.ro/ro/guvernul/sedinte-guvern",
@@ -140,7 +140,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_economy_digital).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://gov.ro/ro/guvernul/organizare/ministere",
         "https://economie.gov.ro/"
@@ -157,7 +157,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_energy).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: expected_html, robots_unavailable. Next action: The accessible government directory/shared portal does not establish ministry-specific news ownership. Recheck the recorded ministry access restriction; do not alias shared government content. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://gov.ro/ro/guvernul/organizare/ministere",
         "https://gov.ro/ro/guvernul/sedinte-guvern",
@@ -178,7 +178,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_agriculture).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: expected_html, robots_unavailable. Next action: The accessible government directory/shared portal does not establish ministry-specific news ownership. Recheck the recorded ministry access restriction; do not alias shared government content. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://gov.ro/ro/guvernul/organizare/ministere",
         "https://gov.ro/ro/guvernul/sedinte-guvern",
@@ -218,7 +218,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_development).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://gov.ro/ro/guvernul/organizare/ministere",
         "https://www.mdlpa.ro/"
@@ -235,7 +235,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_european_investment).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: expected_html, robots_unavailable. Next action: The accessible government directory/shared portal does not establish ministry-specific news ownership. Recheck the recorded ministry access restriction; do not alias shared government content. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://gov.ro/ro/guvernul/organizare/ministere",
         "https://gov.ro/ro/guvernul/sedinte-guvern",
@@ -256,7 +256,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_labour_family_youth).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://gov.ro/ro/guvernul/organizare/ministere",
         "https://mmuncii.gov.ro/"
@@ -313,7 +313,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_culture).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://gov.ro/ro/guvernul/organizare/ministere",
         "https://www.cultura.ro"
@@ -330,7 +330,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_prime_minister).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://gov.ro/ro/guvernul/organizare",
         "https://gov.ro/ro/guvernul/organizare/aparatul-de-lucru-al-guvernului",
@@ -348,7 +348,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Canonical official endpoints remain unavailable after sandbox DNS and escalated public-network checks (bounded retries/first-party alternatives). Recheck after robots/HTTP/DNS/transport recovery; do not classify this ministry as obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (ro_government_secretariat).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://gov.ro/ro/guvernul/organizare",
         "https://gov.ro/ro/guvernul/organizare/aparatul-de-lucru-al-guvernului",

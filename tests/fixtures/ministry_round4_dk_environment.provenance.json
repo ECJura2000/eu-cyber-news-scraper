@@ -1,0 +1,187 @@
+{
+  "canonical_id": "dk_environment",
+  "url": "https://mim.dk/nyheder/pressemeddelelser",
+  "observed_at": "2026-10-03T02:48:00.906499+00:00",
+  "http_status": 200,
+  "raw_sha256": "88b48f370c71457497a7ce089c4b837d8982eacc1b2d761b921d7306aa01430a",
+  "stats": {
+    "request_count": 2,
+    "bytes_downloaded": 6763,
+    "retry_count": 0,
+    "timeout_count": 0,
+    "cache_hits": 0,
+    "statuses": [
+      "404",
+      "200"
+    ]
+  },
+  "response_sha256": "88b48f370c71457497a7ce089c4b837d8982eacc1b2d761b921d7306aa01430a",
+  "response_bytes": 6763,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "source_id": "dk_environment",
+  "source_config": {
+    "id": "dk_environment",
+    "country": "DK",
+    "name_zh": "丹麥環境部",
+    "name": "Miljøministeriet",
+    "institution_type": "ministry",
+    "language": "da",
+    "homepage": "https://mim.dk/",
+    "listing_url": "https://mim.dk/nyheder/pressemeddelelser",
+    "allow_domains": [
+      "mim.dk"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Copenhagen",
+    "schedule_enabled": false,
+    "parser_adapter": "dk_environment_json",
+    "feed_urls": []
+  },
+  "fixture_path": "tests/fixtures/ministry_round4_dk_environment.json",
+  "fixture_sha256": "762bd87bd61ed2d6d2642969e5036344ea77eb2d701f52b26a83b58f8223b36c",
+  "fixture_bytes": 5951,
+  "transform": "Bounded literal original publication containers/JSON fields; no invented article URLs or dates.",
+  "expected": [
+    {
+      "title": "Danmark og Tyskland enige: Slut med bundslæbende fiskeri i Flensborg Fjord",
+      "url": "https://mim.dk/nyheder/pressemeddelelser/2026/september/danmark-og-tyskland-enige-slut-med-bundslaebende-fiskeri-i-flensborg-fjord",
+      "published_date_local": "2026-09-29",
+      "published_at": "2026-09-29T09:41:43+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Efter flere års kamp: Miljøministeren lander aftale om beskyttelse af sårbare rev i Nordsøen",
+      "url": "https://mim.dk/nyheder/pressemeddelelser/2026/september/efter-flere-aars-kamp-miljoeministeren-lander-aftale-om-beskyttelse-af-saarbare-rev-i-nordsoeen",
+      "published_date_local": "2026-09-25",
+      "published_at": "2026-09-25T14:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Beredskab og robusthed i vandsektoren styrkes",
+      "url": "https://mim.dk/nyheder/pressemeddelelser/2026/september/beredskab-og-robusthed-i-vandsektoren-styrkes",
+      "published_date_local": "2026-09-24",
+      "published_at": "2026-09-24T09:24:02+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Landbruget skal forebygge mere og sprøjte mindre",
+      "url": "https://mim.dk/nyheder/pressemeddelelser/2026/september/landbruget-skal-forebygge-mere-og-sproejte-mindre",
+      "published_date_local": "2026-09-23",
+      "published_at": "2026-09-23T08:49:41+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Muslingefiskeriet slipper for fuld sortering af fangster: EU godkender stikprøveplan",
+      "url": "https://mim.dk/nyheder/pressemeddelelser/2026/september/muslingefiskeriet-slipper-for-fuld-sortering-af-fangster-eu-godkender-stikproeveplan",
+      "published_date_local": "2026-09-23",
+      "published_at": "2026-09-23T06:52:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Nu åbner Naturnationalpark Gribskov",
+      "url": "https://mim.dk/nyheder/pressemeddelelser/2026/september/nu-aabner-naturnationalpark-gribskov",
+      "published_date_local": "2026-09-13",
+      "published_at": "2026-09-13T04:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Miljøministeren er klar med lovforslag om sprøjteforbud",
+      "url": "https://mim.dk/nyheder/pressemeddelelser/2026/september/miljoeministeren-er-klar-med-lovforslag-om-sproejteforbud",
+      "published_date_local": "2026-09-09",
+      "published_at": "2026-09-09T09:03:53+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Miljøministeren reagerer på Rigsrevisionens kritik: Ny pesticidstrategi skal styrke kontrollen",
+      "url": "https://mim.dk/nyheder/pressemeddelelser/2026/september/miljoeministeren-reagerer-paa-rigsrevisionens-kritik-ny-pesticidstrategi-skal-styrke-kontrollen",
+      "published_date_local": "2026-09-07",
+      "published_at": "2026-09-07T11:00:56+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Miljøminister: Vi skal stramme reglerne for havbrug",
+      "url": "https://mim.dk/nyheder/pressemeddelelser/2026/september/miljoeminister-vi-skal-stramme-reglerne-for-havbrug",
+      "published_date_local": "2026-09-07",
+      "published_at": "2026-09-07T10:50:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Nu åbner puljer på samlet 130 mio. kr. til beskyttelse af drikkevand",
+      "url": "https://mim.dk/nyheder/pressemeddelelser/2026/september/nu-aabner-puljer-paa-samlet-130-mio-kr-til-beskyttelse-af-drikkevand",
+      "published_date_local": "2026-09-04",
+      "published_at": "2026-09-04T09:08:59+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    }
+  ],
+  "live_status": {
+    "source_id": "dk_environment",
+    "source_name": "丹麥環境部",
+    "country": "DK",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 10,
+    "relevant_count": 10,
+    "duration_seconds": 11.051,
+    "newest_published_at": "2026-09-29T09:41:43+00:00",
+    "warning": "官方公開查詢尚有下一頁，已達設定頁數上限；此期間搜尋可能不完整。",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0,
+    "health_alerts": [],
+    "dated_count": 10,
+    "undated_ratio": 0,
+    "unique_title_ratio": 1,
+    "in_range_count": 10,
+    "freshness_lag_days": 3.72,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 4,
+    "bytes_downloaded": 94765,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200",
+      "200",
+      "404",
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0,
+    "historical_median_bytes": 0,
+    "historical_median_duration": 0
+  },
+  "dispatch_overlay": false,
+  "truncated": true,
+  "date_timezone_contract": "Naive Danish ISO times interpreted in Europe/Copenhagen; explicit offsets preserved.",
+  "raw_response": {
+    "url": "https://search.mst.dk/api/News/Search",
+    "observed_at": "2026-10-03T02:48:00.906499+00:00",
+    "http_status": 200,
+    "response_sha256": "88b48f370c71457497a7ce089c4b837d8982eacc1b2d761b921d7306aa01430a",
+    "response_bytes": 6763
+  },
+  "public_api_url": "https://search.mst.dk/api/News/Search",
+  "final_url": "https://mim.dk/nyheder/pressemeddelelser",
+  "response_kind": "Public ministry-scoped API payload captured from raw_response.url; fixture dispatched against canonical source listing."
+}

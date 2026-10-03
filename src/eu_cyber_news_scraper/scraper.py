@@ -16,6 +16,12 @@ from .http import HttpClient, HttpStats
 from .models import Article, Source, SourceResult, SourceStatus
 from .north_adapters import NORTH_ADAPTERS, fetch_north_listing
 from .parsers import discover_feeds, enrich_from_detail, parse_feed, parse_listing
+from .round4_north_adapters import (
+    ROUND4_NORTH_ADAPTERS,
+    fetch_round4_details,
+    fetch_round4_listing,
+    parse_round4_feed,
+)
 from .sitecore_public import fetch_listing as fetch_sitecore_listing
 from .topics import classify_article, is_relevant
 
@@ -141,6 +147,16 @@ async def _scrape_source_impl(
                 transport_succeeded = True
                 pages_fetched += 1
                 listing_html = response.text
+                round4_parsed: list[Article] | None = None
+                if source.parser_adapter in {"dk_environment_json", "dk_resilience_json", "dk_foreign_ritzau"}:
+                    result = await fetch_round4_listing(listing_html, source, client, stats)
+                    listing_truncated = result["truncated"]
+                    round4_parsed = parse_round4_feed(result["payload"], source, result["fetched_from"])
+                elif source.parser_adapter in {"belspo_central_press", "bmlv_publication"}:
+                    round4_parsed = await fetch_round4_details(listing_html, source, client, stats)
+                    # This adapter deliberately follows only three publication
+                    # links; never represent that bounded sample as full history.
+                    listing_truncated = True
                 if source.parser_adapter in {"north_gobasic", "north_nextjs"}:
                     import json
 
@@ -156,7 +172,7 @@ async def _scrape_source_impl(
                     listing_truncated = public_listing["truncated"]
                     listing_html = json.dumps(public_listing)
                 if (pages_fetched == 1 and not articles and not source.card_selectors
-                        and source.parser_adapter not in NORTH_ADAPTERS | {"sitecore_public"}):
+                        and source.parser_adapter not in NORTH_ADAPTERS | ROUND4_NORTH_ADAPTERS | {"sitecore_public"}):
                     discovered = [
                         url
                         for url in discover_feeds(listing_html, listing_url)
@@ -176,7 +192,7 @@ async def _scrape_source_impl(
                                 break
                         except Exception as exc:
                             errors.append(f"{feed_url}: {type(exc).__name__}: {exc}")
-                parsed = parse_listing(listing_html, source, listing_url)
+                parsed = round4_parsed if round4_parsed is not None else parse_listing(listing_html, source, listing_url)
                 articles.extend(parsed)
                 fetched_via = "public-sitecore" if source.parser_adapter == "sitecore_public" else (
                     "feed+html-listing" if "feed" in fetched_via else "html-listing"
@@ -225,6 +241,8 @@ async def _scrape_source_impl(
     warning = ""
     if listing_truncated:
         warning = "官方公開查詢尚有下一頁，已達設定頁數上限；此期間搜尋可能不完整。"
+        if source.parser_adapter in {"belspo_central_press", "bmlv_publication"}:
+            warning = "官方新聞內頁僅進行有界樣本抓取；此期間搜尋可能不完整。"
     if not articles and not errors:
         warning = "來源可連線，但未解析出新聞；請檢查版型或發布頻率。"
     if invalid_date_count:
@@ -357,7 +375,8 @@ def _validate_source_response(response: httpx.Response, source: Source, url: str
         )
     )
     too_small = source.min_listing_bytes and len(response.content) < source.min_listing_bytes
-    if any(marker in body for marker in challenge_markers) or challenge_title or too_small:
+    radware_loader = bool(title_match and title_match.group(1).strip() == "radware page")
+    if any(marker in body for marker in challenge_markers) or challenge_title or radware_loader or too_small:
         raise ChallengePageError(
             f"unexpected challenge or undersized listing ({len(response.content)} bytes): {url}"
         )

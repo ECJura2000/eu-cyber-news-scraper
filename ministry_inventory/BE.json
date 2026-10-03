@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "country": "BE",
-  "reviewed_on": "2026-10-02",
+  "reviewed_on": "2026-10-03",
   "official_roster_urls": [
     "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
     "https://www.belgium.be/en/about_belgium/government/federal_authorities/federal_and_planning_public_services"
@@ -22,10 +22,11 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
-        "https://www.vlaanderen.be/Organisation/OVO024763"
+        "https://www.vlaanderen.be/Organisation/OVO024763",
+        "https://kanselarij.belgium.be/nl"
       ]
     },
     {
@@ -81,10 +82,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
-        "https://www.vlaanderen.be/Organisation/OVO008237"
+        "https://www.vlaanderen.be/Organisation/OVO008237",
+        "https://www.ibz.be/nl",
+        "https://ibz.be/nl"
       ]
     },
     {
@@ -95,13 +98,17 @@
       "kind": "ministry_equivalent",
       "language": "nl",
       "homepage": "https://fin.belgium.be",
-      "news_url": null,
-      "source_ids": [],
-      "status": "blocked",
-      "reason": "HTTP 200 response parsed zero items and did not establish official ministry news; existing challenge/access concern remains unresolved. Next action: Wait for normal unauthenticated ministry news access or an independently published official feed; HTTP 200 shell is not verified news, and no access workaround is authorized. Evidence: tests/fixtures/ministry_round3_north.json",
+      "news_url": "https://fin.belgium.be/nl/news",
+      "source_ids": [
+        "be_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "Fresh fourth-round verification: manual_verified. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
-        "https://www.vlaanderen.be/Organisation/OVO005190"
+        "https://www.vlaanderen.be/Organisation/OVO005190",
+        "https://fin.belgium.be",
+        "https://fin.belgium.be/nl/news"
       ]
     },
     {
@@ -177,10 +184,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
-        "https://www.vlaanderen.be/Organisation/OVO008238"
+        "https://www.vlaanderen.be/Organisation/OVO008238",
+        "https://www.health.belgium.be/nl",
+        "https://www.health.belgium.be/en"
       ]
     },
     {
@@ -191,13 +200,17 @@
       "kind": "ministry_equivalent",
       "language": "nl",
       "homepage": "https://justitie.belgium.be",
-      "news_url": null,
-      "source_ids": [],
-      "status": "blocked",
-      "reason": "HTTP 200 response parsed zero items and did not establish official ministry news; existing challenge/access concern remains unresolved. Next action: Wait for normal unauthenticated ministry news access or an independently published official feed; HTTP 200 shell is not verified news, and no access workaround is authorized. Evidence: tests/fixtures/ministry_round3_north.json",
+      "news_url": "https://justitie.belgium.be/nl/nieuws",
+      "source_ids": [
+        "be_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "Fresh fourth-round verification: manual_verified. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
-        "https://www.vlaanderen.be/Organisation/OVO003988"
+        "https://www.vlaanderen.be/Organisation/OVO003988",
+        "https://justitie.belgium.be",
+        "https://justitie.belgium.be/nl/nieuws"
       ]
     },
     {
@@ -250,13 +263,20 @@
       "kind": "ministry_equivalent",
       "language": "nl",
       "homepage": "https://www.belspo.be",
-      "news_url": null,
-      "source_ids": [],
-      "status": "needs_review",
-      "reason": "Official BELSPO press list mixes its own policy releases with institutes, museums and funded-company releases; general enrollment would include subagency/support news. Next action: Main: validate per-release BELSPO publisher ownership and clean h1 title/date extraction; limit to central BELSPO policy releases, excluding institute/support/third-party releases. Evidence: tests/fixtures/ministry_round3_north.json",
+      "news_url": "https://www.belspo.be/belspo/organisation/press_fr.stm",
+      "source_ids": [
+        "be_science_policy"
+      ],
+      "status": "manual_verified",
+      "reason": "Fresh fourth-round verification: manual_verified. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_north.json",
       "evidence_urls": [
         "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
-        "https://www.vlaanderen.be/Organisation/OVO027346"
+        "https://www.vlaanderen.be/Organisation/OVO027346",
+        "https://www.belspo.be/belspo/organisation/press_fr.stm",
+        "https://www.belspo.be/belspo/organisation/press/20260915_FLEX-Sentinel-3C_fr.stm",
+        "https://www.belspo.be/belspo/organisation/press/20260827_MTG-12_fr.stm",
+        "https://www.belspo.be/belspo/organisation/press/20260825_ISS-Brain-DTI_fr.stm",
+        "https://www.belspo.be/robots.txt"
       ]
     },
     {

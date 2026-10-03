@@ -1,0 +1,338 @@
+{
+  "pressroom": {
+    "url": "/nyhedsrum/2012662/udenrigsministeriet",
+    "slug": "udenrigsministeriet",
+    "publisher": {
+      "id": 2012662,
+      "name": "Udenrigsministeriet",
+      "address": "Asiatisk Plads 2",
+      "city": "København K",
+      "zipcode": "1448",
+      "phone": "33 92 00 00",
+      "website": "http://um.dk/",
+      "boilerplate": "<p>Du kan abonnere på Udenrigsministeriets nyheder og pressemeddelser. Som abonnent modtager du nyheder og opdateringer pr.  e-mail.</p>\n<p>Vælg hvilke nyhedskategorier du vil abonnere på nedenfor </p>",
+      "logopath": "/data/images/00559/75816f6a-b3b3-4c0b-ad1f-e89524294d04.png",
+      "headerimage": null,
+      "localizationParams": {},
+      "social": {
+        "instagram": null,
+        "facebook": null,
+        "linkedin": null,
+        "twitter": null
+      },
+      "isIrPublisher": false,
+      "masterPressroomInUse": false,
+      "enableEmbeddedUrlHash": true,
+      "masterPressroomCustomName": null,
+      "masterPressroomBrands": null
+    }
+  },
+  "release_listing": {
+    "paging": {
+      "count": 2321,
+      "itemsPerPage": 20,
+      "page": 0
+    },
+    "releases": [
+      {
+        "id": 15198231,
+        "date": "2026-10-01T07:21:34.266Z",
+        "versions": {
+          "da": {
+            "title": "Børnenes U-landskalender er i handlen: I år hjælper den børn i Rwanda",
+            "type": "Nyhed",
+            "metadescription": "Børnenes U-landskalender 2026 er nu i handlen. I år går overskuddet til UNICEFs arbejde med at give børn og familier i Rwanda bedre adgang til rent vand, vacciner og sundhedsydelser.",
+            "url": "/release/15198231/bornenes-u-landskalender-er-i-handlen-i-ar-hjaelper-den-born-i-rwanda?publisherId=2012662&lang=da",
+            "image": {
+              "path": "/data/images/public/2012662/15198231/f8a4cf17-5616-439d-be1c-904f118deb98.jpg",
+              "caption": null,
+              "focus": "center"
+            },
+            "logoUrl": "/data/images/public/2012662/15198231/723fbd38-d923-4119-8687-f310907e2662.png"
+          }
+        }
+      },
+      {
+        "id": 15194749,
+        "date": "2026-09-30T13:00:00.000Z",
+        "versions": {
+          "da": {
+            "title": "Udenrigsministeren: Kasakhstan og Usbekistan åbner nye muligheder for Danmark",
+            "type": "Pressemeddelelse",
+            "metadescription": "Besøget i Usbekistan og Kasakhstan skal styrke Danmarks relationer til to af regionens vigtigste lande, åbne nye muligheder for dansk erhvervsliv og bidrage til et stærkere europæisk aftryk i Centralasien. Derfor rejser udenrigsministeren fra den 30. september til den 3. oktober til Almaty og Astana i Kasakhstan og Tasjkent i Usbekistan.",
+            "url": "/release/15194749/udenrigsministeren-kasakhstan-og-usbekistan-abner-nye-muligheder-for-danmark?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15194749/6ce10b02-ee6d-456f-aad9-ce1e8cc1d1df.png"
+          }
+        }
+      },
+      {
+        "id": 15189484,
+        "date": "2026-09-29T06:00:00.000Z",
+        "versions": {
+          "da": {
+            "title": "Udviklingssamarbejdet styrkes med nye Strategiske Partnerskaber",
+            "type": "Pressemeddelelse",
+            "metadescription": "Regeringen indgår 19 Strategiske Partnerskaber, der skal styrke dansk engagement i udviklingslande og skabe resultater i tæt samspil med lokale partnere. Der lægges op til en samlet årlig ramme på 1,5 mia. kr. i perioden 2027-2031.",
+            "url": "/release/15189484/udviklingssamarbejdet-styrkes-med-nye-strategiske-partnerskaber?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15189484/6ce10b02-ee6d-456f-aad9-ce1e8cc1d1df.png"
+          }
+        }
+      },
+      {
+        "id": 15186698,
+        "date": "2026-09-28T06:00:00.000Z",
+        "versions": {
+          "da": {
+            "title": "Regeringen vil afsætte 850 millioner kroner til virksomheder, der investerer i udviklingslande",
+            "type": "Pressemeddelelse",
+            "metadescription": "Danske virksomheder får nu bedre adgang til at investere i udviklingslande, når en række erhvervsinstrumenter lanceres i dag.",
+            "url": "/release/15186698/regeringen-vil-afsaette-850-millioner-kroner-til-virksomheder-der-investerer-i-udviklingslande?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15186698/6ce10b02-ee6d-456f-aad9-ce1e8cc1d1df.png"
+          }
+        }
+      },
+      {
+        "id": 15180344,
+        "date": "2026-09-23T18:44:41.384Z",
+        "versions": {
+          "da": {
+            "title": "Danmark vil støtte global uddannelsesfond med op til 1 mia. kr. frem mod 2030",
+            "type": "Pressemeddelelse",
+            "metadescription": "Regeringen vil støtte uddannelsesfonden Global Partnership for Education (GPE) med 250 mio. kr. i 2027 og samlet op til 1 mia. kr. for perioden 2027-2030.",
+            "url": "/release/15180344/danmark-vil-stotte-global-uddannelsesfond-med-op-til-1-mia-kr-frem-mod-2030?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15180344/6ce10b02-ee6d-456f-aad9-ce1e8cc1d1df.png"
+          }
+        }
+      },
+      {
+        "id": 15178207,
+        "date": "2026-09-23T13:56:37.975Z",
+        "versions": {
+          "da": {
+            "title": "Danmark og Brasilien indgår strategisk partnerskab",
+            "type": "Pressemeddelelse",
+            "metadescription": "Udenrigsminister Lars Løkke Rasmussen har underskrevet et strategisk partnerskab mellem Danmark og Brasilien. Aftalen styrker samarbejdet om klima, energi, bæredygtig udvikling, sundhed, digitalisering og handel – og afspejler Danmarks ambitioner om at styrke relationerne til Latinamerika.",
+            "url": "/release/15178207/danmark-og-brasilien-indgar-strategisk-partnerskab?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15178207/6ce10b02-ee6d-456f-aad9-ce1e8cc1d1df.png"
+          }
+        }
+      },
+      {
+        "id": 15172687,
+        "date": "2026-09-20T16:00:00.000Z",
+        "versions": {
+          "da": {
+            "title": "Udenrigsministeren rejser til New York til åbningen af FN's 81. Generalforsamling",
+            "type": "Pressemeddelelse",
+            "metadescription": "Ukraine, stabilitet i Mellemøsten, partnerskaber i Afrika og udviklingen af AI. Det er nogle af emnerne, når udenrigsministeren fra den 20. til den 23. september deltager i højniveauugen i New York, der markerer åbningen af FN's Generalforsamling.",
+            "url": "/release/15172687/udenrigsministeren-rejser-til-new-york-til-abningen-af-fns-81-generalforsamling?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15172687/6ce10b02-ee6d-456f-aad9-ce1e8cc1d1df.png"
+          }
+        }
+      },
+      {
+        "id": 15170089,
+        "date": "2026-09-18T08:06:38.616Z",
+        "versions": {
+          "da": {
+            "title": "Møde i Det Udenrigspolitiske Nævn",
+            "type": "Pressemeddelelse",
+            "metadescription": "Det Udenrigspolitiske Nævn holder møde fredag den 18. september kl. 11.30.",
+            "url": "/release/15170089/mode-i-det-udenrigspolitiske-naevn?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15170089/6ce10b02-ee6d-456f-aad9-ce1e8cc1d1df.png"
+          }
+        }
+      },
+      {
+        "id": 15152534,
+        "date": "2026-09-11T07:30:00.000Z",
+        "versions": {
+          "da": {
+            "title": "Møde i Det Udenrigspolitiske Nævn",
+            "type": "Pressemeddelelse",
+            "metadescription": "Det Udenrigspolitiske Nævn holder møde fredag den 11. september kl. 11.00. Fra regeringen deltager udenrigsministeren og forsvarsministeren.",
+            "url": "/release/15152534/mode-i-det-udenrigspolitiske-naevn?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15152534/6ce10b02-ee6d-456f-aad9-ce1e8cc1d1df.png"
+          }
+        }
+      },
+      {
+        "id": 15141440,
+        "date": "2026-09-04T13:06:00.686Z",
+        "versions": {
+          "da": {
+            "title": "Danmark tilbyder hjælp til adopterede til Danmark fra Sydkorea, Indien, Vietnam og Libanon",
+            "type": "Nyhed",
+            "metadescription": "Nu kan internationalt adopterede fra Sydkorea, Indien, Vietnam og Libanon få hjælp i deres søgen efter egen historie og oprindelig slægt. Adopterede kan få konkret og individuel hjælp med processen med at få indsigt i deres adoptionssag i landene. Læs mere her.",
+            "url": "/release/15141440/danmark-tilbyder-hjaelp-til-adopterede-til-danmark-fra-sydkorea-indien-vietnam-og-libanon?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15141440/723fbd38-d923-4119-8687-f310907e2662.png"
+          }
+        }
+      },
+      {
+        "id": 15125994,
+        "date": "2026-08-31T16:15:00.000Z",
+        "versions": {
+          "da": {
+            "title": "Lars Løkke Rasmussen genåbner Danmarks ambassade i Syrien",
+            "type": "Pressemeddelelse",
+            "metadescription": "Udenrigsminister Lars Løkke Rasmussen har i dag genåbnet den danske ambassade i Syrien. Ambassadeåbningen understreger Danmarks ambition om aktivt at bidrage til genopbygningen af Syrien.",
+            "url": "/release/15125994/lars-lokke-rasmussen-genabner-danmarks-ambassade-i-syrien?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15125994/6ce10b02-ee6d-456f-aad9-ce1e8cc1d1df.png"
+          }
+        }
+      },
+      {
+        "id": 15109142,
+        "date": "2026-08-24T16:00:00.000Z",
+        "versions": {
+          "da": {
+            "title": "Danmark styrker den humanitære indsats i Sudan med 100 millioner kroner",
+            "type": "Pressemeddelelse",
+            "metadescription": "Udenrigsminister Lars Løkke Rasmussen annoncerer et nyt bidrag på 100 millioner kroner til Sudan, hvor verdens største humanitære krise udspiller sig på fjerde år.",
+            "url": "/release/15109142/danmark-styrker-den-humanitaere-indsats-i-sudan-med-100-millioner-kroner?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15109142/6ce10b02-ee6d-456f-aad9-ce1e8cc1d1df.png"
+          }
+        }
+      },
+      {
+        "id": 15109127,
+        "date": "2026-08-24T07:14:29.177Z",
+        "versions": {
+          "da": {
+            "title": "Udenrigsministeren leder FN's Sikkerhedsråd med fokus på Ukraine, Sudan og konflikt og sult",
+            "type": "Pressemeddelelse",
+            "metadescription": "Den 24. og 25. august besøger udenrigsminister, Lars Løkke Rasmussen, New York, hvor Danmark i august har formandskabet for FN’s Sikkerhedsråd.",
+            "url": "/release/15109127/udenrigsministeren-leder-fns-sikkerhedsrad-med-fokus-pa-ukraine-sudan-og-konflikt-og-sult?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15109127/6ce10b02-ee6d-456f-aad9-ce1e8cc1d1df.png"
+          }
+        }
+      },
+      {
+        "id": 15057264,
+        "date": "2026-08-01T07:00:00.000Z",
+        "versions": {
+          "da": {
+            "title": "Udenrigsministeriet ansætter særlig rådgiver",
+            "type": "Pressemeddelelse",
+            "metadescription": "Udenrigsministeriet ansætter Jonas Juul Bisserup Bechfeldt som særlig rådgiver for udenrigsminister Lars Løkke Rasmussen",
+            "url": "/release/15057264/udenrigsministeriet-ansaetter-saerlig-radgiver?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15057264/6ce10b02-ee6d-456f-aad9-ce1e8cc1d1df.png"
+          }
+        }
+      },
+      {
+        "id": 15046082,
+        "date": "2026-07-13T06:24:50.872Z",
+        "versions": {
+          "da": {
+            "title": "Danmark giver 85 millioner kroner i ny humanitær støtte til Palæstina og Libanon",
+            "type": "Pressemeddelelse",
+            "metadescription": "Den humanitære situation i Gaza og på Vestbredden er fortsat kritisk, mens de seneste måneders eskalering af konflikten i Libanon har forværret en allerede alvorlig humanitær krise.",
+            "url": "/release/15046082/danmark-giver-85-millioner-kroner-i-ny-humanitaer-stotte-til-palaestina-og-libanon?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15046082/6ce10b02-ee6d-456f-aad9-ce1e8cc1d1df.png"
+          }
+        }
+      },
+      {
+        "id": 15039775,
+        "date": "2026-07-08T12:00:00.000Z",
+        "versions": {
+          "da": {
+            "title": "Udenrigsministeren besøger Montenegro for at støtte landets EU-kandidatur",
+            "type": "Pressemeddelelse",
+            "metadescription": "I forlængelse af NATO-topmødet i Ankara rejser udenrigsminister Lars Løkke Rasmussen til Montenegro.",
+            "url": "/release/15039775/udenrigsministeren-besoger-montenegro-for-at-stotte-landets-eu-kandidatur?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15039775/6ce10b02-ee6d-456f-aad9-ce1e8cc1d1df.png"
+          }
+        }
+      },
+      {
+        "id": 15021467,
+        "date": "2026-06-30T07:30:00.000Z",
+        "versions": {
+          "da": {
+            "title": "Møde i Det Udenrigspolitiske Nævn",
+            "type": "Pressemeddelelse",
+            "metadescription": "Det Udenrigspolitiske Nævn holder møde tirsdag den 30. juni kl. 14.00.",
+            "url": "/release/15021467/mode-i-det-udenrigspolitiske-naevn?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15021467/6ce10b02-ee6d-456f-aad9-ce1e8cc1d1df.png"
+          }
+        }
+      },
+      {
+        "id": 15015371,
+        "date": "2026-06-26T07:20:57.385Z",
+        "versions": {
+          "da": {
+            "title": "Danmark og Nefco støtter nye kommunale projekter i Mykolaiv-regionen i Ukraine",
+            "type": "Pressemeddelelse",
+            "metadescription": "En ny række investeringer støttet af Danmark skal genoprette kritisk infrastruktur og forbedre kommunale ydelser i lokalsamfund i Mykolaiv-regionen i det sydlige Ukraine. Initiativerne bidrager også til en grøn og robust genopbygning af Ukraine.",
+            "url": "/release/15015371/danmark-og-nefco-stotter-nye-kommunale-projekter-i-mykolaiv-regionen-i-ukraine?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15015371/6ce10b02-ee6d-456f-aad9-ce1e8cc1d1df.png"
+          }
+        }
+      },
+      {
+        "id": 15008464,
+        "date": "2026-06-23T11:30:45.105Z",
+        "versions": {
+          "da": {
+            "title": "Ny evaluering: Særlig type bistand kan styrke det multilaterale system og fremme nordiske værdier",
+            "type": "Nyhed",
+            "metadescription": "I en tid, hvor verden er i opbrud, og det multilaterale system og udviklingssamarbejdet er under pres, er bistand til trustfonde et godt værktøj, konkluderer ny fællesnordisk evaluering, der dog anbefaler, at bistanden til de mange trustfonde prioriteres og koordineres bedre.",
+            "url": "/release/15008464/ny-evaluering-saerlig-type-bistand-kan-styrke-det-multilaterale-system-og-fremme-nordiske-vaerdier?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15008464/723fbd38-d923-4119-8687-f310907e2662.png"
+          }
+        }
+      },
+      {
+        "id": 15007292,
+        "date": "2026-06-23T08:00:00.000Z",
+        "versions": {
+          "da": {
+            "title": "Møde i Det Udenrigspolitiske Nævn",
+            "type": "Pressemeddelelse",
+            "metadescription": "Det Udenrigspolitiske Nævn holder møde tirsdag den 23. juni kl. 15.00.",
+            "url": "/release/15007292/mode-i-det-udenrigspolitiske-naevn?publisherId=2012662&lang=da",
+            "image": null,
+            "logoUrl": "/data/images/public/2012662/15007292/6ce10b02-ee6d-456f-aad9-ce1e8cc1d1df.png"
+          }
+        }
+      }
+    ],
+    "categories": [
+      {
+        "id": 4416258,
+        "localizedLabel": "en__label__News__lang__da__label__Nyhed"
+      },
+      {
+        "id": 10469506,
+        "localizedLabel": "en__label__Press invitation__lang__da__label__Presseinvitation"
+      },
+      {
+        "id": 19,
+        "localizedLabel": "en__label__Press release__lang__da__label__Pressemeddelelse__lang__kl__label__Tusagassiutinut nalunaarut__lang__fo__label__Tíðindaskriv"
+      }
+    ],
+    "brands": []
+  }
+}

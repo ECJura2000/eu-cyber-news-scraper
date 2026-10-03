@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "country": "CZ",
-  "reviewed_on": "2026-10-02",
+  "reviewed_on": "2026-10-03",
   "official_roster_urls": [
     "https://vlada.gov.cz/cz/vlada/ministerstva/",
     "https://csu.gov.cz/ministries_and_state_authorities"
@@ -40,13 +40,16 @@
       "kind": "ministry",
       "language": "cs",
       "homepage": "https://mv.gov.cz/",
-      "news_url": null,
-      "source_ids": [],
-      "status": "parser_pending",
-      "reason": "No source promoted: reachable official content did not yet pass a source-scoped dated fixture and production scrape. Next action: Main: production homepage news cards have a Publikováno label but no date value; inspect published public frontend data or official detail dates. Do not substitute author, event or calendar dates. Evidence: tests/fixtures/ministry_round3_north.json",
+      "news_url": "https://mv.gov.cz/",
+      "source_ids": [
+        "cz_interior"
+      ],
+      "status": "manual_verified",
+      "reason": "Fresh fourth-round verification: manual_verified. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_north.json",
       "evidence_urls": [
         "https://vlada.gov.cz/cz/vlada/ministerstva/",
-        "https://csu.gov.cz/ministries_and_state_authorities"
+        "https://csu.gov.cz/ministries_and_state_authorities",
+        "https://mv.gov.cz/"
       ]
     },
     {
@@ -207,10 +210,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://vlada.gov.cz/cz/vlada/ministerstva/",
-        "https://csu.gov.cz/ministries_and_state_authorities"
+        "https://csu.gov.cz/ministries_and_state_authorities",
+        "https://mpo.gov.cz/",
+        "https://mpo.gov.cz/cz/rozcestnik/pro-media/tiskove-zpravy/"
       ]
     },
     {
@@ -265,10 +270,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://vlada.gov.cz/cz/vlada/ministerstva/",
-        "https://csu.gov.cz/ministries_and_state_authorities"
+        "https://csu.gov.cz/ministries_and_state_authorities",
+        "https://mze.gov.cz/",
+        "https://mze.gov.cz/public/portal/"
       ]
     },
     {

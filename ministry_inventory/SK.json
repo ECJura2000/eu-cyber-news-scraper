@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "country": "SK",
-  "reviewed_on": "2026-10-02",
+  "reviewed_on": "2026-10-03",
   "official_roster_urls": [
     "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/"
   ],
@@ -145,7 +145,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Official ministry retrieval is blocked by robots policy. Wait for an allowed official endpoint/policy change or independently attributable public ministry publication; do not bypass robots. This failure is not evidence of obsolescence. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (sk_agriculture).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_denied. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
         "https://www.mpsr.sk/"
@@ -223,7 +223,7 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "2026-10-02 round3 south: Official endpoint returns 403. Recheck only an independently published permitted endpoint or a future access-policy change; do not bypass access control or label the ministry obsolete. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (sk_foreign_affairs).",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: http_error. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
         "https://www.mzv.sk/"

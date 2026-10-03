@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "country": "DE",
-  "reviewed_on": "2026-10-02",
+  "reviewed_on": "2026-10-03",
   "official_roster_urls": [
     "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien"
   ],
@@ -19,9 +19,10 @@
       "news_url": "https://www.bundesregierung.de/breg-de/aktuelles/pressemitteilungen",
       "source_ids": [],
       "status": "needs_review",
-      "reason": "Bundesregierung/Bundespresseamt portal links and shells do not establish Bundeskanzleramt-specific ministry news ownership. Next action: Find a first-party Chancellery publisher-scoped listing/feed; do not enroll the sitewide Bundesregierung portal as a Chancellery alias. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: needs_review. Next action: Fresh Chancellery organizational page provides office biographies and documents, without a ministry-specific dated news listing. Bundesregierung/Bundespresseamt news ownership remains insufficient; preserve review status. Evidence: tests/fixtures/ministry_round4_north.json",
       "evidence_urls": [
-        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien"
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt"
       ]
     },
     {
@@ -34,13 +35,14 @@
       "homepage": "https://www.bundesfinanzministerium.de/Web/DE/Home/home.html",
       "news_url": "https://www.bundesfinanzministerium.de/Web/DE/Home/Web/DE/Presse/Pressemitteilungen/pressemitteilungen.html",
       "source_ids": [],
-      "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "status": "parser_pending",
+      "reason": "Fresh fourth-round verification: parser_pending. Recorded failures: SOURCE_BUDGET_EXCEEDED, budget_exceeded. Next action: Original listing yields 10 dated articles, but two production attempts exceeded 60-second source budget. Investigate transport before enrollment; do not raise quality thresholds or declare success. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
         "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesministerium-der-finanzen",
         "https://www.bundesfinanzministerium.de/Web/DE/Home/home.html",
-        "https://www.bundesfinanzministerium.de/Web/DE/Home/Web/DE/Presse/Pressemitteilungen/pressemitteilungen.html"
+        "https://www.bundesfinanzministerium.de/Web/DE/Home/Web/DE/Presse/Pressemitteilungen/pressemitteilungen.html",
+        "https://www.bundesfinanzministerium.de/Web/DE/Presse/Pressemitteilungen/pressemitteilungen.html"
       ]
     },
     {
@@ -113,10 +115,12 @@
       "news_url": null,
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: challenge_page. Next action: Wait for upstream challenge policy to change; HTTP 200 is not successful content access. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
-        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesministerium-fuer-wirtschaft-und-energie"
+        "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesministerium-fuer-wirtschaft-und-energie",
+        "https://www.bundeswirtschaftsministerium.de/Navigation/DE/Home/home.html",
+        "https://www.bundeswirtschaftsministerium.de/Navigation/DE/Service/RSS-Newsfeed/rss-newsfeed.html"
       ]
     },
     {
@@ -235,12 +239,13 @@
       "news_url": "https://www.bmv.de/DE/Home/DE/Meta/Presse/presse.html",
       "source_ids": [],
       "status": "blocked",
-      "reason": "Production access policy, verified TLS, HTTP error or bounded timeout prevented usable content verification. Endpoint failure does not mean obsolete. Next action: Recheck the recorded robots/TLS/HTTP failure after the upstream policy or availability changes; use only independently published attributable official portals. Do not bypass restrictions or mark the ministry obsolete. Evidence: tests/fixtures/ministry_round3_north.json",
+      "reason": "Fresh fourth-round verification: blocked. Recorded failures: robots_unavailable. Next action: Wait for the recorded upstream access/TLS/robots restriction to change; no bypass or automatic removal. Evidence: tests/fixtures/ministry_round4_blocked.json",
       "evidence_urls": [
         "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
         "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesministerium-fuer-verkehr",
         "https://www.bmv.de/DE/Home/home.html",
-        "https://www.bmv.de/DE/Home/DE/Meta/Presse/presse.html"
+        "https://www.bmv.de/DE/Home/DE/Meta/Presse/presse.html",
+        "https://bmv.de/"
       ]
     },
     {
