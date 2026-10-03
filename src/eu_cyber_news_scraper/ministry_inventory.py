@@ -20,6 +20,7 @@ from .organisation_registry import OrganisationRegistry, load_organisation_regis
 from .schema_validation import validate_schema_payload
 from .source_audit import AuditHttpClient, check_endpoint
 from .source_catalog import EU27, MAX_CATALOG_BYTES, https_url, load_catalog
+from .wikipedia_review import validate_user_exclusion
 
 
 def inventory_directory() -> Path:
@@ -60,12 +61,19 @@ def validate_country(
         status = row["status"]
         if status in {"existing_source", "manual_verified"} and not row["source_ids"]:
             raise ValueError(f"{ministry_id}: registered status requires source_ids")
-        if status in {"blocked", "no_news_endpoint", "parser_pending", "needs_review"} and row["source_ids"]:
+        if status in {"blocked", "no_news_endpoint", "parser_pending", "needs_review", "user_excluded"} and row["source_ids"]:
             raise ValueError(f"{ministry_id}: unresolved endpoint must not claim registered sources")
         if status == "manual_verified" and (not row["homepage"] or not row["news_url"]):
             raise ValueError(f"{ministry_id}: verified endpoint requires homepage and news URL")
         if status == "no_news_endpoint" and row["news_url"] is not None:
             raise ValueError(f"{ministry_id}: no_news_endpoint cannot declare a news URL")
+        if status == 'user_excluded':
+            exclusion = row.get('user_exclusion', {})
+            validate_user_exclusion(dict(row, inventory_patch={'news_url': row['news_url']}),
+                                    date.fromisoformat(payload['reviewed_on']), authorized=True,
+                                    original_url=exclusion.get('candidate_news_url'))
+        elif 'user_exclusion' in row:
+            raise ValueError(f'{ministry_id}: exclusion metadata requires user_excluded status')
         for source_id in row["source_ids"]:
             source = source_rows.get(source_id)
             if source is None or source["country"] != country:
@@ -114,6 +122,8 @@ def inventory_report(records: list[dict[str, Any]]) -> dict[str, Any]:
         "status_counts": dict(sorted(statuses.items())),
         "registered_ministries": registered,
         "unresolved_ministries": unresolved,
+        "user_excluded_ministries": statuses['user_excluded'],
+        "pending_ministries": unresolved - statuses['user_excluded'],
         "searchable_inventory_complete": not missing and not incomplete and unresolved == 0,
         "new_manual_verified_ministries": statuses["manual_verified"],
         "automatic_schedule_changes": False, "countries": records,
@@ -126,10 +136,14 @@ async def audit_inventory_urls(
     """Inspect unresolved ministry URLs without registering them or running parsers."""
     requests: dict[str, tuple[Source, str, list[str]]] = {}
     missing: list[str] = []
+    excluded: list[str] = []
     for record in records:
         for row in record["ministries"]:
             if row["status"] in {"existing_source", "manual_verified"}:
                 continue  # Registered endpoints are checked by the full source audit.
+            if row['status'] == 'user_excluded':
+                excluded.append(row['canonical_id'])
+                continue  # User exclusions are not silently re-requested or reopened.
             if not row["homepage"] or not row["news_url"]:
                 missing.append(row["canonical_id"])
             urls = [url for url in (row["homepage"], row["news_url"]) if url]
@@ -161,9 +175,10 @@ async def audit_inventory_urls(
     result = {
         "schema_version": 1, "report_kind": "ministry_url_audit",
         "observed_at": datetime.now(ZoneInfo("UTC")).isoformat(),
-        "status": "complete" if not missing and all(row["healthy"] for row in endpoints) else "attention",
+        "status": "complete" if not missing and not excluded and all(row["healthy"] for row in endpoints) else "attention",
         "parser_validation_performed": False, "automatic_schedule_changes": False,
         "unresolved_endpoint_ministries": sorted(missing), "endpoints": endpoints,
+        "user_excluded_ministries": sorted(excluded),
     }
     output_dir.mkdir(parents=True, exist_ok=True)
     report_path = output_dir / "ministry-urls.json"
@@ -208,7 +223,8 @@ def main(argv: list[str] | None = None) -> int:
         for record in report["countries"]:
             print(f"{record['country']}：{len(record['ministries'])} 個部會；查核 {record['reviewed_on']}")
             for row in record["ministries"]:
-                print(f"  {row['canonical_id']} | {row['name_zh']} | {row['status']} | {row['news_url'] or '未找到新聞入口'}")
+                absent = '已依使用者指示排除候選入口' if row['status'] == 'user_excluded' else '未確認新聞入口'
+                print(f"  {row['canonical_id']} | {row['name_zh']} | {row['status']} | {row['news_url'] or absent}")
                 print(f"    {row['reason']}")
         print(f"名錄完整性：{report['status']}；登錄與解析驗證請分別檢視，不代表全部可抓取。")
     return 0 if report["status"] == "complete" else 1

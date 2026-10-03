@@ -13,16 +13,21 @@ import feedparser
 from bs4 import BeautifulSoup
 from bs4.element import Tag
 
-from .ministry_adapters import (
-    MINISTRY_FEED_ADAPTERS,
-    MINISTRY_LISTING_ADAPTERS,
-    parse_ministry_feed,
-    parse_ministry_listing,
-)
+from .adapter_registry import PARSER_ADAPTERS
+
+# Retain the existing module-level imports for callers of this module.
+from .ministry_adapters import MINISTRY_FEED_ADAPTERS as MINISTRY_FEED_ADAPTERS
+from .ministry_adapters import MINISTRY_LISTING_ADAPTERS as MINISTRY_LISTING_ADAPTERS
+from .ministry_adapters import parse_ministry_feed as parse_ministry_feed
+from .ministry_adapters import parse_ministry_listing as parse_ministry_listing
 from .models import Article, DateCandidate, Source, has_credible_date_conflict
-from .north_adapters import NORTH_ADAPTERS, parse_north_feed, parse_north_listing
-from .round4_north_adapters import ROUND4_NORTH_ADAPTERS, parse_round4_listing
-from .round4_south_adapters import ROUND4_SOUTH_FEED_ADAPTERS, parse_round4_south_feed
+from .north_adapters import NORTH_ADAPTERS as NORTH_ADAPTERS
+from .north_adapters import parse_north_feed as parse_north_feed
+from .north_adapters import parse_north_listing as parse_north_listing
+from .round4_north_adapters import ROUND4_NORTH_ADAPTERS as ROUND4_NORTH_ADAPTERS
+from .round4_north_adapters import parse_round4_listing as parse_round4_listing
+from .round4_south_adapters import ROUND4_SOUTH_FEED_ADAPTERS as ROUND4_SOUTH_FEED_ADAPTERS
+from .round4_south_adapters import parse_round4_south_feed as parse_round4_south_feed
 
 DATE_SETTINGS = {
     "RETURN_AS_TIMEZONE_AWARE": True,
@@ -182,12 +187,9 @@ def discover_feeds(html: str, base_url: str) -> list[str]:
 
 
 def parse_feed(payload: bytes | str, source: Source, fetched_from: str) -> list[Article]:
-    if source.parser_adapter in ROUND4_SOUTH_FEED_ADAPTERS:
-        return parse_round4_south_feed(payload, source, fetched_from)
-    if source.parser_adapter in NORTH_ADAPTERS:
-        return parse_north_feed(payload, source, fetched_from)
-    if source.parser_adapter in MINISTRY_FEED_ADAPTERS:
-        return parse_ministry_feed(payload, source, fetched_from)
+    adapter = PARSER_ADAPTERS.feed(source.parser_adapter)
+    if adapter is not None:
+        return adapter(payload, source, fetched_from)
     if _looks_like_json(payload):
         if source.parser_adapter == "wordpress_rest":
             return _parse_wordpress_json(payload, source, fetched_from)
@@ -260,14 +262,9 @@ def _parse_sitecore_public(payload: str, source: Source) -> list[Article]:
 
 
 def parse_listing(html: str, source: Source, base_url: str) -> list[Article]:
-    if source.parser_adapter in ROUND4_NORTH_ADAPTERS:
-        return parse_round4_listing(html, source, base_url)
-    if source.parser_adapter in NORTH_ADAPTERS:
-        return parse_north_listing(html, source, base_url)
-    if source.parser_adapter in MINISTRY_LISTING_ADAPTERS:
-        return parse_ministry_listing(html, source, base_url)
-    if source.parser_adapter == "sitecore_public":
-        return _parse_sitecore_public(html, source)
+    adapter = PARSER_ADAPTERS.listing(source.parser_adapter)
+    if adapter is not None:
+        return adapter(html, source, base_url)
     soup = BeautifulSoup(html, "lxml")
     base_node = soup.select_one("base[href]")
     document_base = urljoin(base_url, _attribute(base_node, "href")) if base_node else base_url

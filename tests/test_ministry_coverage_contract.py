@@ -20,7 +20,11 @@ def test_all_27_rosters_and_only_verified_new_runnable_sources():
     additions = registry.source_ids - baseline
     declared = {source_id for record in records for row in record["ministries"]
                 if row["status"] == "manual_verified" for source_id in row["source_ids"]}
-    assert additions == declared
+    # These separately verified institutions are not replacement ministry IDs.
+    # Keep an exact allowlist so an undeclared source cannot slip into enrollment.
+    independent = {"fi_education_agency", "fi_judicial_administration_portal"}
+    assert not independent & declared
+    assert additions == declared | independent
     for source_id in additions:
         module = registry.module_for_source(source_id)
         assert module is not None

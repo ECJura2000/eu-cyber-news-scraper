@@ -146,6 +146,15 @@
 
 上述研究與公私協力來源的文章不等於法定主管機關意見。每個來源的職掌與範圍、原文語言、主題、查證日期及連結均記於同名 `organisation_registry/*.json`；職掌未查證為正式責任機關時 `responsibility_by_topic` 維持空值。
 
+## v1.8.0 允許入口補充
+
+| 代碼 | 機關／入口 | 抓取方式與歸屬 | 排程 |
+| --- | --- | --- | --- |
+| `fi_education_agency` | [芬蘭教育署 Opetushallitus](https://www.oph.fi/fi/tiedotteet) | 芬蘭語新聞主列表、原文發布日期；獨立行政機關，不歸為教育文化部 | 僅手動 |
+| `fi_judicial_administration_portal` | [芬蘭司法入口 Oikeus.fi](https://www.oikeus.fi/feed/rss-feed?post_type=ajankohtaiset) | 多司法機關新聞 RSS，保留實際發布機關與 pubDate；不全部歸為司法部 | 僅手動 |
+
+兩個來源使用獨立 JSON 與專用解析 adapter；原部會名錄與排除歷史不變。抓取方法與 robots 例外見 [CRAWLER_METHODS.md](CRAWLER_METHODS.md)。
+
 ## 維護原則
 
 - 優先官方 RSS／Atom，其次是官方 HTML；預設不採商業媒體摘要。

@@ -64,14 +64,21 @@
       "homepage": "https://www.interno.gov.it/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://www.interno.gov.it/",
-        "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Italy)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Italy)",
+        "https://it.wikipedia.org/wiki/Ministero_dell%27interno"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T09:46:41.209454+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "it_justice",
@@ -83,14 +90,21 @@
       "homepage": "https://www.giustizia.it/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://www.giustizia.it/",
-        "https://en.wikipedia.org/wiki/Ministry_of_Justice_(Italy)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Justice_(Italy)",
+        "https://it.wikipedia.org/wiki/Ministero_della_giustizia"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:46:42.070945+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "it_defence",
@@ -172,15 +186,22 @@
       "homepage": "https://www.politicheagricole.it/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable, unexpected_domain。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable; unexpected_domain 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；unexpected_domain。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://www.politicheagricole.it/",
         "https://www.masaf.gov.it/",
-        "https://en.wikipedia.org/wiki/Ministry_of_Agriculture,_Food_Sovereignty_and_Forests"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Agriculture,_Food_Sovereignty_and_Forests",
+        "https://it.wikipedia.org/wiki/Ministero_dell%27agricoltura,_della_sovranit%C3%A0_alimentare_e_delle_foreste"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "unexpected_domain",
+        "observed_at": "2026-10-03T09:46:42.711071+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "it_environment",
@@ -192,15 +213,22 @@
       "homepage": "https://www.mite.gov.it/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://www.mite.gov.it/",
         "https://www.mase.gov.it/",
-        "https://en.wikipedia.org/wiki/Ministry_of_the_Environment_(Italy)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Environment_(Italy)",
+        "https://it.wikipedia.org/wiki/Ministero_dell%27ambiente_e_della_sicurezza_energetica"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T09:46:45.153293+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "it_infrastructure",
@@ -295,16 +323,23 @@
       "homepage": "https://www.beniculturali.it/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://www.beniculturali.it/",
         "https://cultura.gov.it/",
         "https://www.cultura.gov.it/",
-        "https://en.wikipedia.org/wiki/Ministry_of_Culture_(Italy)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Culture_(Italy)",
+        "https://it.wikipedia.org/wiki/Ministero_della_cultura"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:47:17.286422+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "it_health",
@@ -316,15 +351,22 @@
       "homepage": "https://www.salute.gov.it/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://www.salute.gov.it/",
         "https://www.salute.gov.it",
-        "https://en.wikipedia.org/wiki/Ministry_of_Health_(Italy)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Health_(Italy)",
+        "https://it.wikipedia.org/wiki/Ministero_della_salute"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:46:42.993317+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "it_tourism",
@@ -378,16 +420,23 @@
       "homepage": "https://www.funzionepubblica.gov.it/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://www.funzionepubblica.gov.it/",
         "https://www.funzionepubblica.gov.it/it/",
         "https://www.funzionepubblica.gov.it",
-        "https://en.wikipedia.org/wiki/Minister_for_Public_Administration_(Italy)"
-      ]
+        "https://en.wikipedia.org/wiki/Minister_for_Public_Administration_(Italy)",
+        "https://it.wikipedia.org/wiki/Dipartimento_della_funzione_pubblica"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:47:01.017284+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "it_regional_affairs",
@@ -447,16 +496,24 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "needs_review",
-      "reason": "第五輪維基百科線索與官網查核：needs_review。已記錄錯誤：robots_unavailable。後續：Verify the maritime department-specific publisher and dated news once its official endpoints are accessible; never alias civil-protection news to this department. 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://presidenza.governo.it/AmministrazioneTrasparente/Organizzazione/ArticolazioneUffici/Dipartimenti/Dip_pol_del_mare.html",
         "https://www.politichedelmare.gov.it/",
         "https://www.protezionecivile.gov.it",
-        "https://en.wikipedia.org/wiki/Minister_for_Civil_Protection_and_Maritime_Policies"
-      ]
+        "https://en.wikipedia.org/wiki/Minister_for_Civil_Protection_and_Maritime_Policies",
+        "https://www.dipartimentopolitichemare.gov.it/it/",
+        "https://it.wikipedia.org/wiki/Dipartimento_per_le_politiche_del_mare"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:47:06.103805+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "it_european_affairs",
@@ -468,15 +525,23 @@
       "homepage": "https://www.affarieuropei.gov.it/it/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable, timeout。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable; timeout 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://www.affarieuropei.gov.it/it/",
         "https://www.politicheeuropee.gov.it",
-        "https://en.wikipedia.org/wiki/Minister_for_European_Affairs_(Italy)"
-      ]
+        "https://en.wikipedia.org/wiki/Minister_for_European_Affairs_(Italy)",
+        "https://www.politicheeuropee.gov.it/it/",
+        "https://it.wikipedia.org/wiki/Dipartimento_per_gli_affari_europei"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:47:21.015615+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "it_cohesion",
@@ -530,14 +595,21 @@
       "homepage": "https://www.politichegiovanili.gov.it/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://www.politichegiovanili.gov.it/",
-        "https://it.wikipedia.org/wiki/Dipartimento_per_le_politiche_giovanili_e_il_servizio_civile_universale"
-      ]
+        "https://it.wikipedia.org/wiki/Dipartimento_per_le_politiche_giovanili_e_il_servizio_civile_universale",
+        "https://it.wikipedia.org/wiki/Servizio_civile_universale"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:47:23.404750+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "it_family",
@@ -570,14 +642,21 @@
       "homepage": "https://www.pariopportunita.gov.it/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://www.pariopportunita.gov.it/",
-        "https://en.wikipedia.org/wiki/Minister_for_Equal_Opportunities"
-      ]
+        "https://en.wikipedia.org/wiki/Minister_for_Equal_Opportunities",
+        "https://it.wikipedia.org/wiki/Dipartimento_per_le_pari_opportunit%C3%A0"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:47:08.706647+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "it_disability",
@@ -608,10 +687,10 @@
       "kind": "ministry_equivalent",
       "language": "it",
       "homepage": "https://www.riformeistituzionali.gov.it/",
-      "news_url": "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/?tab=58f3f542-0aec-4999-b90c-9a8ce78b1258",
+      "news_url": null,
       "source_ids": [],
-      "status": "parser_pending",
-      "reason": "第五輪維基百科線索與官網查核：parser_pending。後續：Require actual publication metadata or a published per-department feed; the generic list extracts SCOPRI TUTTO as titles and incorrectly treats consultation end dates as publication dates. A new parser cannot manufacture missing publication dates. 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：parser_pending；Official cards omit publication dates; one consultation description contains a deadline (29 May 2026), and the inspected FORUM PA article contains an event date (10 June 2026) and only og:updated_time. These are not original publication dates. Production scrape_source cannot turn them into a verified dated ministry news source.。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
@@ -631,8 +710,16 @@
         "https://www.riformeistituzionali.gov.it/it/comunicazione/?tab=c87f4f27-d1e4-43e8-92a4-5af22ce99422",
         "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/al-via-la-consultazione-pubblica-sul-codice-dell-amministrazione-digitale-cad/",
         "https://www.riformeistituzionali.gov.it",
-        "https://en.wikipedia.org/wiki/Minister_for_Institutional_Reforms"
-      ]
+        "https://en.wikipedia.org/wiki/Minister_for_Institutional_Reforms",
+        "https://www.riformeistituzionali.gov.it/robots.txt",
+        "https://it.wikipedia.org/wiki/Dipartimento_per_le_riforme_istituzionali"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Official cards omit publication dates; one consultation description contains a deadline (29 May 2026), and the inspected FORUM PA article contains an event date (10 June 2026) and only og:updated_time. These are not original publication dates. Production scrape_source cannot turn them into a verified dated ministry news source.",
+        "observed_at": "2026-10-03T09:47:08.472345+00:00",
+        "candidate_news_url": "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/?tab=58f3f542-0aec-4999-b90c-9a8ce78b1258"
+      }
     }
   ]
 }

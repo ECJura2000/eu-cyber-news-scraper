@@ -1,0 +1,177 @@
+{
+  "source_id": "mt_foreign_affairs",
+  "url": "https://foreign.gov.mt/feed/",
+  "final_url": "https://foreign.gov.mt/feed/",
+  "observed_at": "2026-10-03T13:15:28.730798+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "dfd06a4454b317fc7525c4a4b9e5e065b3a560539e038afb226102fb515888de",
+  "response_bytes": 83379,
+  "fixture_sha256": "4579fc56503752ad275e1d53e925d85c362e43de6139bdb5ae5691e18523b756",
+  "fixture_bytes": 4532,
+  "transform": "Keep actual RSS channel metadata and first three complete title/link/pubDate/guid/description/category values. Omit content:encoded, author and namespace extensions, which are not used for these parsed fields. No title, URL, summary or publication date is invented.",
+  "expected": [
+    {
+      "title": "Call for Bids – Cooperation with the Ministry for Foreign and European Affairs on humanitarian assistance in Gaza",
+      "url": "https://foreign.gov.mt/calls/call-for-bids-cooperation-with-the-ministry-for-foreign-and-european-affairs-on-humanitarian-assistance-in-gaza/",
+      "published_date_local": "2026-07-24",
+      "date_confidence": "high",
+      "date_source": "feed-published",
+      "summary": "The deadline to submit bid is Friday, 28 August at 13:00 hrs As part of Malta’s commitment to provide humanitarian assistance to the population of Gaza, the Office of the Ministry for Foreign and European Affairs intends to procure Water, Sanitation and Hygiene (WASH) kits to be provided to women, children and other vulnerable groups ... Read more » The post Call for Bids – Cooperation with the Ministry for Foreign and European Affairs on humanitarian assistance in Gaza appeared first on foreign ."
+    },
+    {
+      "title": "Advanced Course on Children and Armed Conflict",
+      "url": "https://foreign.gov.mt/calls/advanced-course-on-children-and-armed-conflict/",
+      "published_date_local": "2026-07-06",
+      "date_confidence": "high",
+      "date_source": "feed-published",
+      "summary": "The deadline to apply for this course is 13 July 2026 at 11:59 CEST Thanks to the financial support of the  Ministry for Foreign and European Affairs (MFEA) of Malta and the Federal Ministry for European and International Affairs of the Republic of Austria, the Office of the Special Representative of the UN Secretary-General for Children and Armed ... Read more » The post Advanced Course on Children and Armed Conflict appeared first on foreign ."
+    },
+    {
+      "title": "Women Peace & Security – Malta’s Second National Action Plan (2025-2030)",
+      "url": "https://foreign.gov.mt/publications/women-peace-security-maltas-second-national-action-plan-2025-2030/",
+      "published_date_local": "2026-05-08",
+      "date_confidence": "high",
+      "date_source": "feed-published",
+      "summary": "Following the successful implementation of Malta’s first National Action Plan (NAP) on Women, Peace and Security (WPS) for the period 2020–2024, Malta launched its second NAP in December 2025. The new plan was developed through extensive consultations with a wide range of stakeholders, including Government ministries and entities, disciplined forces, academia, and civil society. Covering ... Read more » The post Women Peace & Security – Malta’s Second National Action Plan (2025-2030) appeared first on foreign ."
+    }
+  ],
+  "source_config": {
+    "id": "mt_foreign_affairs",
+    "country": "MT",
+    "name_zh": "馬爾他外交暨歐洲事務部",
+    "name": "Ministry for Foreign and European Affairs",
+    "institution_type": "central ministry",
+    "language": "en",
+    "homepage": "https://foreign.gov.mt/",
+    "listing_url": "https://foreign.gov.mt/press-releases-media/",
+    "feed_urls": [
+      "https://foreign.gov.mt/feed/"
+    ],
+    "allow_domains": [
+      "foreign.gov.mt"
+    ],
+    "include_patterns": [
+      "/(?:calls|other-updates|publications|previous-publications)/"
+    ],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 90,
+    "timezone": "Europe/Malta",
+    "card_selectors": [],
+    "link_selectors": [],
+    "title_selectors": [],
+    "date_selectors": [],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "live_status": {
+    "source_id": "mt_foreign_affairs",
+    "source_name": "馬爾他外交暨歐洲事務部",
+    "country": "MT",
+    "critical": false,
+    "success": true,
+    "fetched_via": "configured-feed",
+    "raw_count": 20,
+    "relevant_count": 20,
+    "duration_seconds": 1.863,
+    "newest_published_at": "2026-07-24T11:32:23+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 0,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 20,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 20,
+    "freshness_lag_days": 71.07,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 2,
+    "bytes_downloaded": 83551,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200",
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "publisher_identity": {
+    "url": "https://foreign.gov.mt/",
+    "observed_at": "2026-10-03T13:12:22.761135+00:00",
+    "robots_enforced": true,
+    "tls_verified": true,
+    "http_status": 200,
+    "final_url": "https://foreign.gov.mt/",
+    "response_sha256": "bc2c314c0c5a6478f5671dfc9d560da152455359a443b00ccb60a10b5fc1ae5c",
+    "response_bytes": 148895,
+    "page_title": "Home - foreign",
+    "first_party_content_excerpt": "Home - foreign Skip to content A Font size decrease A Default font size A Font size increase Home About Ministry Minister Permanent Secretary Representations Public Bodies Services Resources Contact Home About Ministry Minister Permanent Secretary Representations Public Bodies Services Resources Contact Home About Ministry Minister Permanent Secretary Representations Public Bodies Services Resources Contact public consultations press releases & media rate the public service MINISTRY FOR FOREIGN AND EUROPEAN AFFAIRS The Ministry for Foreign and European Affairs (MFEA) is responsible for the formulation and implementation of Malta’s foreign policy, ensuring coherence across the Government. The Ministry is also responsible for relations with the European Union and international organisations and institutions, representing Malta’s interests on a range of issues such as economic, political and security matters. About the Ministry public consultations press releases & media rate the public s",
+    "publication_discovery_links": [
+      {
+        "url": "https://foreign.gov.mt/press-releases-media/",
+        "text": "press releases & media"
+      },
+      {
+        "url": "https://wordpress.org/plugins/gdpr-cookie-compliance/",
+        "text": "Powered by GDPR Cookie Compliance"
+      }
+    ],
+    "discovered_feeds": [
+      "https://foreign.gov.mt/feed/",
+      "https://foreign.gov.mt/comments/feed/",
+      "https://foreign.gov.mt/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fforeign.gov.mt%2F&format=xml"
+    ],
+    "discovery_basis": "Historical candidate or a link freshly discovered on an official page; fresh access evidence only."
+  },
+  "publication_date_evidence": {
+    "verification_url": "https://foreign.gov.mt/feed/",
+    "observed_at": "2026-10-03T13:15:28.730798+00:00",
+    "response_sha256": "dfd06a4454b317fc7525c4a4b9e5e065b3a560539e038afb226102fb515888de",
+    "specific_evidence": "Original RSS item pubDate=Fri, 24 Jul 2026 11:32:23 +0000 for the ministry Gaza humanitarian-assistance call. Feed pubDate is publication metadata, not the body deadline Friday, 28 August at 13:00 hrs.",
+    "article_url": "https://foreign.gov.mt/calls/call-for-bids-cooperation-with-the-ministry-for-foreign-and-european-affairs-on-humanitarian-assistance-in-gaza/",
+    "detail_limitation": "The separately fetched article and press-releases-media page returned access challenges. No challenge content was parsed, no bypass was used, and date acceptance uses the accessible first-party RSS pubDate."
+  },
+  "coverage_warning": "Latest observed RSS publication is 2026-07-24, about 71 days before the 2026-10-03 smoke. The 90-day freshness criterion applies only to this unscheduled manual source. This verifies ministry publisher/date/parser behavior, not recent weekly coverage or formal release acceptance; no weekly or formal production gate is weakened.",
+  "coverage": {
+    "latest_published_at": "2026-07-24T11:32:23+00:00",
+    "manual_freshness_days": 90,
+    "recent_weekly_coverage_verified": false,
+    "formal_release_acceptance_verified": false,
+    "formal_gates_changed": false
+  },
+  "scope": "The ministry-owned RSS contains its own calls, publications and other-updates; it is not the government-wide DOI press feed. Newest item is dated 24 July 2026; manual only with explicit 90-day freshness policy. The separately fetched article and HTML press listing are challenge blocked; acceptance uses the directly retrieved ministry RSS and homepage identity, not those challenge responses."
+}

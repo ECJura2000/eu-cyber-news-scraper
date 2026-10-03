@@ -9,10 +9,15 @@ from typing import Any
 from zoneinfo import ZoneInfo
 
 from .source_catalog import https_url
-from .wikipedia_review import validate_news_url_cleanup, validate_wikipedia_review
+from .wikipedia_review import (
+    validate_local_wikipedia_review,
+    validate_news_url_cleanup,
+    validate_user_exclusion,
+    validate_wikipedia_review,
+)
 
 REGISTERED = frozenset({'existing_source', 'manual_verified'})
-RESULTS = REGISTERED | {'blocked', 'parser_pending', 'needs_review', 'no_news_endpoint'}
+RESULTS = REGISTERED | {'blocked', 'parser_pending', 'needs_review', 'no_news_endpoint', 'user_excluded'}
 
 
 def _round_number(path: Path) -> int:
@@ -33,7 +38,7 @@ def load_rechecks(directory: Path) -> list[dict[str, Any]]:
         if len(initial) != len(baseline['ministries']) or len(initial) != baseline['remaining_count']:
             raise ValueError('Invalid or duplicate recheck baseline')
         if rounds and set(initial) != {identifier for identifier, check in previous.items()
-                                     if check['result'] not in REGISTERED}:
+                                     if check['result'] not in REGISTERED | {'user_excluded'}}:
             raise ValueError('Recheck baseline omits unresolved ministries or reopens registered sources')
         if rounds and any(row['country'] != previous[identifier]['country']
                           for identifier, row in initial.items()):
@@ -74,9 +79,21 @@ def load_rechecks(directory: Path) -> list[dict[str, Any]]:
                     validate_news_url_cleanup(check, minimum)
                     original_url = initial[identifier].get('initial_news_url')
                     patch = check.get('inventory_patch', {})
-                    if original_url and 'news_url' in patch and patch['news_url'] is None:
+                    if baseline.get('local_language_required'):
+                        validate_local_wikipedia_review(check, minimum)
+                    if check['result'] == 'user_excluded':
+                        if baseline.get('local_language_required') is not True:
+                            raise ValueError('User exclusion requires a local-language Wikipedia recheck')
+                        validate_user_exclusion(check, minimum,
+                                                authorized=baseline.get('user_exclusion_authorized') is True,
+                                                original_url=original_url)
+                        if check.get('failure_category') not in {'blocked', 'needs_review', 'parser_pending', 'no_news_endpoint'} or not check.get('failure_reason', '').strip():
+                            raise ValueError('User exclusion must preserve the actual failure category and reason')
+                    elif original_url and 'news_url' in patch and patch['news_url'] is None:
                         if original_url not in {item['url'] for item in check.get('removed_news_urls', [])}:
                             raise ValueError('Clearing a declared news URL requires matching first-party removal evidence')
+                elif check['result'] == 'user_excluded':
+                    raise ValueError('Candidate exclusion requires an authorized Wikipedia recheck round')
                 checks[identifier] = check
         if set(checks) != set(initial):
             raise ValueError('Recheck reports do not cover every unresolved ministry')

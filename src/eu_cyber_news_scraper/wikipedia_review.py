@@ -9,6 +9,14 @@ from zoneinfo import ZoneInfo
 
 from .source_catalog import https_url
 
+LOCAL_WIKIPEDIA_LANGUAGES = {
+    'AT': {'de'}, 'BE': {'nl', 'fr', 'de'}, 'BG': {'bg'}, 'CY': {'el', 'tr'},
+    'CZ': {'cs'}, 'DE': {'de'}, 'DK': {'da'}, 'FI': {'fi', 'sv'}, 'FR': {'fr'},
+    'GR': {'el'}, 'HR': {'hr'}, 'HU': {'hu'}, 'IT': {'it'}, 'LT': {'lt'},
+    'MT': {'mt'}, 'RO': {'ro'}, 'SK': {'sk'}, 'ES': {'es'},
+}
+USER_EXCLUSION_POLICY = 'exclude_unverified_after_local_wikipedia_recheck'
+
 
 def _observed(value: str, minimum: date) -> None:
     observed = datetime.fromisoformat(value)
@@ -68,3 +76,48 @@ def validate_news_url_cleanup(check: dict[str, Any], minimum: date) -> None:
         patch = check.get('inventory_patch', {})
         if 'news_url' not in patch or patch['news_url'] == removal['url']:
             raise ValueError('Removed news URL must not remain the declared endpoint')
+
+
+def validate_local_wikipedia_review(check: dict[str, Any], minimum: date) -> None:
+    """An English lookup cannot stand in for the requested local encyclopedia."""
+    validate_wikipedia_review(check, minimum)
+    review = check['wikipedia']
+    language = review.get('local_language')
+    if language not in LOCAL_WIKIPEDIA_LANGUAGES.get(check['country'], set()):
+        raise ValueError('Wikipedia review requires a local country language')
+    host = f'{language}.wikipedia.org'
+    if not any(re.search(r'(?<!\S)site:' + re.escape(host) + r'(?:/|(?=\s|$))', query)
+               for query in review['queries']):
+        raise ValueError('Wikipedia queries must target the local encyclopedia')
+    if any(urlsplit(page['url']).hostname != host for page in review.get('pages', [])):
+        raise ValueError('Wikipedia article evidence must use the declared local language')
+    evidence = review.get('search_evidence', [])
+    if not isinstance(evidence, list) or {item['query'] for item in evidence} != set(review['queries']):
+        raise ValueError('Local Wikipedia lookup requires actual search observations')
+    for item in evidence:
+        _observed(item['observed_at'], minimum)
+        digest = item.get('response_sha256')
+        if not item.get('error') and (not isinstance(digest, str) or not re.fullmatch('[a-f0-9]{64}', digest)):
+            raise ValueError('Local Wikipedia search requires a checksum or recorded failure')
+
+
+def validate_user_exclusion(
+    check: dict[str, Any], minimum: date, *, authorized: bool, original_url: str | None,
+) -> None:
+    """A user decision removes a candidate, never proves the website obsolete."""
+    exclusion = check.get('user_exclusion')
+    if not authorized or not isinstance(exclusion, dict):
+        raise ValueError('Candidate exclusion requires explicit user authorization')
+    reason = exclusion.get('reason')
+    if exclusion.get('policy') != USER_EXCLUSION_POLICY or not isinstance(reason, str) or not reason.strip():
+        raise ValueError('Candidate exclusion requires policy and reason')
+    _observed(exclusion['observed_at'], minimum)
+    if exclusion.get('candidate_news_url') != original_url:
+        raise ValueError('Candidate exclusion must identify the original declared URL')
+    if original_url is not None:
+        https_url(original_url)
+    patch = check.get('inventory_patch', {})
+    if 'news_url' not in patch or patch['news_url'] is not None:
+        raise ValueError('Excluded candidate must not remain a runnable news URL')
+    if check.get('source_ids'):
+        raise ValueError('Excluded candidate must not reference runnable sources')

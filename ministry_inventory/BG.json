@@ -234,15 +234,28 @@
       "homepage": "https://www.mon.bg/novini/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (6), timeout (1). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
       "evidence_urls": [
         "https://iisda.government.bg/ras/executive_power/ministries",
         "https://iisda.government.bg/ras/executive_power/ministry_organigram/81",
         "https://www.mon.bg/novini/",
         "https://www.mon.bg",
-        "https://en.wikipedia.org/wiki/Ministry_of_Education_and_Science_(Bulgaria)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Education_and_Science_(Bulgaria)",
+        "https://mon.bg",
+        "https://www.mon.bg/",
+        "https://web.archive.org/web/20210813195822/https://mon.bg/",
+        "https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=233694",
+        "https://www.archives.government.bg/guides/12_P_K1.pdf",
+        "https://azbuki.bg/",
+        "https://bg.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%BE_%D0%BD%D0%B0_%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%D1%82%D0%BE_%D0%B8_%D0%BD%D0%B0%D1%83%D0%BA%D0%B0%D1%82%D0%B0_%D0%BD%D0%B0_%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (6), timeout (1). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.",
+        "observed_at": "2026-10-03T17:46:30.014233+08:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "bg_environment",
@@ -324,8 +337,8 @@
       "homepage": "https://www.mrrb.bg/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：timeout。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: timeout (2).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
       "evidence_urls": [
         "https://iisda.government.bg/ras/executive_power/ministries",
         "https://iisda.government.bg/ras/executive_power/ministry_organigram/85",
@@ -335,7 +348,13 @@
         "https://www.gov.bg/en/Press-center/News/-Prime-Minister-Rumen-Radev-outlines-cabinet%E2%80%99s-tasks-and-orders-to-examine-ministries%E2%80%99-overall-performance",
         "https://www.gov.bg/en/Press-center/News/Rumen-Radev-Bulgaria-and-France-open-door-to-deep-and-fruitful-cooperation-in-high-tech-and-space",
         "https://bg.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%BE_%D0%BD%D0%B0_%D1%80%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%BD%D0%BE%D1%82%D0%BE_%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5_%D0%B8_%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE%D1%82%D0%BE_%D0%BD%D0%B0_%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: timeout (2).",
+        "observed_at": "2026-10-03T17:46:43.455295+08:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "bg_transport",
@@ -410,16 +429,30 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (5), timeout (1). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
       "evidence_urls": [
         "https://iisda.government.bg/ras/executive_power/ministries",
         "https://iisda.government.bg/ras/executive_power/ministry_organigram/88",
         "https://strategy.bg/",
         "https://www.minfin.bg/bg/news/2026-6",
         "https://minfin.bg/en/",
-        "https://en.wikipedia.org/wiki/Ministry_of_Finance_(Bulgaria)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Finance_(Bulgaria)",
+        "https://minfin.bg",
+        "https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=233694",
+        "https://www.minfin.bg/en/page/36",
+        "https://www.archives.government.bg/guides/12_P_K1.pdf",
+        "https://www.minfin.bg/",
+        "https://web.archive.org/web/20130216002938/http://www.minfin.bg/",
+        "https://web.archive.org/web/20130216002938/http://www.minfin.bg/bg/rss",
+        "https://bg.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%BE_%D0%BD%D0%B0_%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%D0%B8%D1%82%D0%B5_%D0%BD%D0%B0_%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (5), timeout (1). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.",
+        "observed_at": "2026-10-03T17:46:30.314280+08:00",
+        "candidate_news_url": null
+      }
     }
   ]
 }

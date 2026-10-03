@@ -144,8 +144,8 @@
       "homepage": "https://www.mpsr.sk/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (1).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
       "evidence_urls": [
         "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
         "https://www.mpsr.sk/",
@@ -153,7 +153,13 @@
         "https://www.vlada.gov.sk/urad/vyrocne-spravy-uv-sr/",
         "https://www.vlada.gov.sk/tlacove-spravy/",
         "https://sk.wikipedia.org/wiki/Ministerstvo_p%C3%B4dohospod%C3%A1rstva_a_rozvoja_vidieka_Slovenskej_republiky"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (1).",
+        "observed_at": "2026-10-03T17:49:40.761112+08:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "sk_investment_regional_digital",
@@ -226,16 +232,24 @@
       "homepage": "https://www.mzv.sk/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：http_error。後續：Retain the ministry roster and homepage. Resolve the recorded upstream robots/TLS/DNS/HTTP restriction, then recheck a ministry-owned dated news listing. Shared government feeds are not ministry source aliases. 證據：tests/fixtures/ministry_round5_east.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: http_error (2).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
       "evidence_urls": [
         "https://www.vlada.gov.sk/vlada-sr/clenovia-vlady/",
         "https://www.mzv.sk/",
         "https://mzv.sk",
         "https://www.vlada.gov.sk/rss/",
         "https://www.vlada.gov.sk/urad/vyrocne-spravy-uv-sr/",
-        "https://en.wikipedia.org/wiki/Ministry_of_Foreign_and_European_Affairs_(Slovakia)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Foreign_and_European_Affairs_(Slovakia)",
+        "https://www.foreign.gov.sk",
+        "https://sk.wikipedia.org/wiki/Ministerstvo_zahrani%C4%8Dn%C3%BDch_vec%C3%AD_a_eur%C3%B3pskych_z%C3%A1le%C5%BEitost%C3%AD_Slovenskej_republiky"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: http_error (2).",
+        "observed_at": "2026-10-03T17:49:44.748621+08:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "sk_labour_social_family",

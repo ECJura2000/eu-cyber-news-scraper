@@ -20,16 +20,23 @@
       "homepage": "https://opm.gov.mt/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/OPM.aspx",
         "https://opm.gov.mt/",
         "https://primeminister.gov.mt/cabinet/",
         "https://primeminister.gov.mt/latest-news/",
-        "https://en.wikipedia.org/wiki/Prime_Minister_of_Malta"
-      ]
+        "https://en.wikipedia.org/wiki/Prime_Minister_of_Malta",
+        "https://mt.wikipedia.org/wiki/Prim_Ministru_ta%27_Malta"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:19.246367+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_health",
@@ -41,14 +48,20 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Health.aspx",
         "https://health.gov.mt/",
         "https://en.wikipedia.org/wiki/Ian_Borg"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:17.870949+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_accommodation",
@@ -60,14 +73,20 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Accommodation.aspx",
         "https://accommodation.gov.mt/",
         "https://en.wikipedia.org/wiki/Owen_Bonnici"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:17.888526+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_social_policy",
@@ -79,14 +98,20 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：unexpected_domain。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: unexpected_domain 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied; unexpected_domain。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Family.aspx",
         "https://socialpolicy.gov.mt/",
         "https://en.wikipedia.org/wiki/Michael_Falzon_(politician,_born_1961)"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied; unexpected_domain",
+        "observed_at": "2026-10-03T13:12:19.208253+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_agriculture",
@@ -98,14 +123,20 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Agriculture.aspx",
         "https://agriculture.gov.mt/",
         "https://en.wikipedia.org/wiki/Ministry_of_Agriculture,_Fisheries_and_Food_(United_Kingdom)"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:18.073243+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_economy",
@@ -117,14 +148,21 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；challenge_page; robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Economy.aspx",
         "https://economy.gov.mt/",
-        "https://en.wikipedia.org/wiki/Silvio_Schembri"
-      ]
+        "https://en.wikipedia.org/wiki/Silvio_Schembri",
+        "https://mt.wikipedia.org/wiki/Malta"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "challenge_page; robots_denied",
+        "observed_at": "2026-10-03T13:12:21.379383+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_inclusion",
@@ -136,14 +174,20 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Inclusion.aspx",
         "https://inclusion.gov.mt/",
         "https://en.wikipedia.org/wiki/Julia_Farrugia_Portelli"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:19.026548+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_gozo",
@@ -155,14 +199,20 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；challenge_page; robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Gozo.aspx",
         "https://gozo.gov.mt/",
         "https://en.wikipedia.org/wiki/Ministry_for_Gozo"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "challenge_page; robots_denied",
+        "observed_at": "2026-10-03T13:12:19.997435+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_education",
@@ -174,14 +224,20 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Education.aspx",
         "https://education.gov.mt/",
         "https://en.wikipedia.org/wiki/List_of_education_ministries"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:19.235692+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_energy",
@@ -193,14 +249,20 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：unexpected_domain。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: unexpected_domain 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied; unexpected_domain。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Energy.aspx",
         "https://energy.gov.mt/",
         "https://en.wikipedia.org/wiki/Miriam_Dalli"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied; unexpected_domain",
+        "observed_at": "2026-10-03T13:12:21.609506+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_finance",
@@ -212,15 +274,21 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Finance.aspx",
         "https://finance.gov.mt/",
         "https://finance.gov.mt",
         "https://en.wikipedia.org/wiki/Finance_Minister_of_Malta"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:20.183871+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_justice",
@@ -232,14 +300,21 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Justice.aspx",
         "https://justice.gov.mt/",
-        "https://en.wikipedia.org/wiki/Ministry_of_justice"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_justice",
+        "https://mt.wikipedia.org/wiki/Renju_Unit"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:20.938870+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_infrastructure",
@@ -251,14 +326,21 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/PLANNING.aspx",
         "https://infrastructure.gov.mt/",
-        "https://en.wikipedia.org/wiki/Jonathan_Attard"
-      ]
+        "https://en.wikipedia.org/wiki/Jonathan_Attard",
+        "https://mt.wikipedia.org/wiki/Finlandja"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:20.197652+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_tourism",
@@ -270,14 +352,21 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Tourism.aspx",
         "https://tourism.gov.mt/",
-        "https://en.wikipedia.org/wiki/Clayton_Bartolo"
-      ]
+        "https://en.wikipedia.org/wiki/Clayton_Bartolo",
+        "https://mt.wikipedia.org/wiki/Ian_Borg"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:20.386856+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_sustainable_mobility",
@@ -289,14 +378,20 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：dns_failure。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: dns_failure 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；dns_failure; robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Sustainable_Mobility.aspx",
         "https://sustainablemobility.gov.mt/",
         "https://en.wikipedia.org/wiki/Chris_Bonett"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "dns_failure; robots_denied",
+        "observed_at": "2026-10-03T13:12:21.765103+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_foreign_affairs",
@@ -305,17 +400,26 @@
       "name_en": "Ministry for Foreign and European Affairs",
       "kind": "ministry",
       "language": "en",
-      "homepage": null,
-      "news_url": null,
-      "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：https_required, robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: https_required; robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "homepage": "https://foreign.gov.mt/",
+      "news_url": "https://foreign.gov.mt/feed/",
+      "source_ids": [
+        "mt_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "第六輪當地語言維基百科與官網新聞解析驗證通過；僅供手動查詢。 後續：Manual verification complete for the ministry-owned dated RSS; remain unscheduled and non-critical. The latest feed item is 24 July 2026, within the explicit 90-day freshness window, and the general DOI feed is not assigned to this ministry. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Foreign.aspx",
         "https://foreign.gov.mt/",
         "https://foreignandeu.gov.mt",
-        "https://en.wikipedia.org/wiki/Ministry_for_Foreign_and_European_Affairs_(Malta)"
+        "https://en.wikipedia.org/wiki/Ministry_for_Foreign_and_European_Affairs_(Malta)",
+        "https://foreign.gov.mt/feed/",
+        "https://foreign.gov.mt/comments/feed/",
+        "https://foreign.gov.mt/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fforeign.gov.mt%2F&format=xml",
+        "https://foreign.gov.mt/robots.txt",
+        "https://foreign.gov.mt/press-releases-media/",
+        "https://foreign.gov.mt/calls/call-for-bids-cooperation-with-the-ministry-for-foreign-and-european-affairs-on-humanitarian-assistance-in-gaza/",
+        "https://mt.wikipedia.org/wiki/Ian_Borg"
       ]
     },
     {
@@ -328,14 +432,20 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Local_Government.aspx",
         "https://localgovernment.gov.mt/",
         "https://en.wikipedia.org/wiki/Maltese_Government_2022%E2%80%932026"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:21.115259+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_european_funds",
@@ -347,14 +457,20 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Eu_Funds.aspx",
         "https://eufunds.gov.mt/",
         "https://en.wikipedia.org/wiki/Chris_Fearne"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:22.428186+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_home_affairs",
@@ -366,14 +482,20 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Home_Affairs.aspx",
         "https://homeaffairs.gov.mt/",
         "https://en.wikipedia.org/wiki/List_of_ministers_for_home_affairs_of_Malta"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:21.581589+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_culture",
@@ -385,14 +507,20 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；challenge_page; robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Culture.aspx",
         "https://culture.gov.mt/",
         "https://en.wikipedia.org/wiki/Ministry_of_Culture_and_National_Heritage"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "challenge_page; robots_denied",
+        "observed_at": "2026-10-03T13:12:25.032252+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_youth",
@@ -404,8 +532,8 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "needs_review",
-      "reason": "第五輪維基百科線索與官網查核：needs_review。後續：Find a first-party current ministry publisher/roster relationship; do not register the agency feed as the ministry. 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：needs_review；The accessible youth.gov.mt homepage and dated RSS identify Agenzija Zghazagh / The National Youth Agency of Malta, not the assigned Ministry for Youth, Wellbeing and the Implementation of the Electoral Programme. Publisher mismatch prevents ministry promotion; the ministry directory was robots denied.。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Youths.aspx",
@@ -416,8 +544,15 @@
         "https://youth.gov.mt/call/",
         "https://govcms.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/DOI/Press%20Releases/Pages/2026/07/15/PR261189en.aspx",
-        "https://en.wikipedia.org/wiki/Omar_Farrugia"
-      ]
+        "https://en.wikipedia.org/wiki/Omar_Farrugia",
+        "https://mt.wikipedia.org/wiki/Vene%C5%BCwela"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "The accessible youth.gov.mt homepage and dated RSS identify Agenzija Zghazagh / The National Youth Agency of Malta, not the assigned Ministry for Youth, Wellbeing and the Implementation of the Electoral Programme. Publisher mismatch prevents ministry promotion; the ministry directory was robots denied.",
+        "observed_at": "2026-10-03T13:12:25.151259+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "mt_equality",
@@ -429,15 +564,21 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied, robots_unavailable。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied; robots_unavailable 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied; robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Equality.aspx",
         "https://equality.gov.mt/",
         "https://govcms.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Equality.aspx",
         "https://en.wikipedia.org/wiki/Rosianne_Cutajar"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied; robots_unavailable",
+        "observed_at": "2026-10-03T13:12:38.772880+00:00",
+        "candidate_news_url": null
+      }
     }
   ]
 }

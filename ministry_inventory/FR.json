@@ -21,8 +21,8 @@
       "homepage": "https://www.info.gouv.fr",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：HTTPStatusError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh official ministry checks failed (http_error). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -30,8 +30,16 @@
         "https://www.info.gouv.fr",
         "https://www.info.gouv.fr/rss.xml",
         "https://www.info.gouv.fr/presse/communiques-de-presse",
-        "https://en.wikipedia.org/wiki/Prime_Minister_of_France"
-      ]
+        "https://en.wikipedia.org/wiki/Prime_Minister_of_France",
+        "https://www.info.gouv.fr/",
+        "https://fr.wikipedia.org/wiki/Premier_ministre_fran%C3%A7ais"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh official ministry checks failed (http_error). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.",
+        "observed_at": "2026-10-03T13:16:09.412733+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "fr_public_accounts",
@@ -43,8 +51,8 @@
       "homepage": "https://www.economie.gouv.fr/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：HTTPStatusError, RobotsDeniedError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh official ministry checks failed (robots_denied). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -53,8 +61,15 @@
         "https://www.economie.gouv.fr/rss.xml",
         "https://www.economie.gouv.fr/presse/communiques-de-presse",
         "https://www.info.gouv.fr/ministere/ministere-de-l-action-et-des-comptes-publics",
-        "https://en.wikipedia.org/wiki/Ministry_of_Public_Action_and_Accounts"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Public_Action_and_Accounts",
+        "https://fr.wikipedia.org/wiki/Ministre_charg%C3%A9_du_Budget"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh official ministry checks failed (robots_denied). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.",
+        "observed_at": "2026-10-03T13:16:09.414559+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "fr_agriculture",
@@ -86,10 +101,10 @@
       "kind": "ministry",
       "language": "fr",
       "homepage": "https://www.ecologie.gouv.fr/",
-      "news_url": "https://www.ecologie.gouv.fr/actualites",
+      "news_url": null,
       "source_ids": [],
-      "status": "needs_review",
-      "reason": "第五輪維基百科線索與官網查核：needs_review。後續：Official news page is accessible but covers a shared government/multi-ministry publisher. Require ministry-specific publisher attribution before enrollment; retain valid shared listing as an unresolved candidate. 證據：tests/fixtures/ministry_round5_north.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；The shared official press portal is accessible and advertises this exact ministry through its GET filter field_ministries_tref[272]=272. Fresh access to that ministry-scoped URL is denied by robots.txt. The unfiltered shared portal/RSS cannot be assigned as a runnable ministry-specific source. Original publication and production replay remain unverified.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -109,8 +124,17 @@
         "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
         "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites",
         "https://www.ecologie.gouv.fr/contact",
-        "https://en.wikipedia.org/wiki/Minister_of_Territorial_Development_(France)"
-      ]
+        "https://en.wikipedia.org/wiki/Minister_of_Territorial_Development_(France)",
+        "https://www.ecologie.gouv.fr/en/latest-news",
+        "https://www.ecologie.gouv.fr/presse?field_ministries_tref%5B272%5D=272",
+        "https://fr.wikipedia.org/wiki/Ministre_charg%C3%A9_de_l%27Am%C3%A9nagement_du_territoire"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "The shared official press portal is accessible and advertises this exact ministry through its GET filter field_ministries_tref[272]=272. Fresh access to that ministry-scoped URL is denied by robots.txt. The unfiltered shared portal/RSS cannot be assigned as a runnable ministry-specific source. Original publication and production replay remain unverified.",
+        "observed_at": "2026-10-03T13:16:09.416268+00:00",
+        "candidate_news_url": "https://www.ecologie.gouv.fr/actualites"
+      }
     },
     {
       "canonical_id": "fr_armed_forces",
@@ -164,8 +188,8 @@
       "homepage": "https://www.economie.gouv.fr",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：RobotsDeniedError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh official ministry checks failed (robots_denied). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -174,8 +198,16 @@
         "https://www.economie.gouv.fr/rss.xml",
         "https://www.economie.gouv.fr/presse/communiques-de-presse",
         "https://www.economie.gouv.fr/",
-        "https://en.wikipedia.org/wiki/Ministry_of_Economics_and_Finance_(France)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Economics_and_Finance_(France)",
+        "https://data.economie.gouv.fr/",
+        "https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_l%27%C3%89conomie_et_des_Finances_(France)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh official ministry checks failed (robots_denied). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.",
+        "observed_at": "2026-10-03T13:16:09.417500+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "fr_education",
@@ -187,8 +219,8 @@
       "homepage": "https://www.education.gouv.fr/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：HTTPStatusError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh official ministry checks failed (http_error). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -196,8 +228,15 @@
         "https://www.education.gouv.fr/",
         "https://www.education.gouv.fr/rss.xml",
         "https://www.education.gouv.fr/presse/communiques-de-presse",
-        "https://en.wikipedia.org/wiki/Ministry_of_National_Education_(France)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_National_Education_(France)",
+        "https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_l%27%C3%89ducation_nationale_(France)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh official ministry checks failed (http_error). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.",
+        "observed_at": "2026-10-03T13:16:09.418689+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "fr_higher_education_research",
@@ -209,8 +248,8 @@
       "homepage": "https://www.enseignementsup-recherche.gouv.fr/fr",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：HTTPStatusError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh official ministry checks failed (http_error). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -219,8 +258,16 @@
         "https://www.enseignementsup-recherche.gouv.fr/rss.xml",
         "https://www.enseignementsup-recherche.gouv.fr/presse/communiques-de-presse",
         "https://www.enseignementsup-recherche.gouv.fr/fr/philippe-baptiste-ministre-de-l-enseignement-superieur-de-la-recherche-et-de-l-espace-100138",
-        "https://en.wikipedia.org/wiki/Ministry_of_Higher_Education_and_Research_(France)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Higher_Education_and_Research_(France)",
+        "https://www.enseignementsup-recherche.gouv.fr/",
+        "https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_l%27Enseignement_sup%C3%A9rieur_(France)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh official ministry checks failed (http_error). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.",
+        "observed_at": "2026-10-03T13:16:09.419897+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "fr_foreign_affairs",
@@ -232,8 +279,8 @@
       "homepage": "https://www.diplomatie.gouv.fr/fr/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：HTTPStatusError, InvalidURL。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh official ministry checks failed (https_required). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -241,8 +288,16 @@
         "https://www.diplomatie.gouv.fr/fr/",
         "https://www.diplomatie.gouv.fr/fr/rss.xml",
         "https://www.diplomatie.gouv.fr/fr/presse/communiques-de-presse",
-        "https://en.wikipedia.org/wiki/Ministry_for_Europe_and_Foreign_Affairs_(France)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_for_Europe_and_Foreign_Affairs_(France)",
+        "https://www.diplomatie.gouv.fr",
+        "https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_l%27Europe_et_des_Affaires_%C3%A9trang%C3%A8res"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh official ministry checks failed (https_required). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.",
+        "observed_at": "2026-10-03T13:16:09.420915+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "fr_interior",
@@ -254,8 +309,8 @@
       "homepage": "https://www.interieur.gouv.fr",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：HTTPStatusError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh official ministry checks failed (http_error). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -263,8 +318,17 @@
         "https://www.interieur.gouv.fr",
         "https://www.interieur.gouv.fr/rss.xml",
         "https://www.interieur.gouv.fr/presse/communiques-de-presse",
-        "https://en.wikipedia.org/wiki/Minister_of_the_Interior_(France)"
-      ]
+        "https://en.wikipedia.org/wiki/Minister_of_the_Interior_(France)",
+        "https://www.interieur.gouv.fr/",
+        "https://fr.wikipedia.org/wiki/Aide:Homonymie",
+        "https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_l%27Int%C3%A9rieur_(France)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh official ministry checks failed (http_error). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.",
+        "observed_at": "2026-10-03T13:16:09.422975+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "fr_justice",
@@ -298,8 +362,8 @@
       "homepage": "https://www.outre-mer.gouv.fr/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：HTTPStatusError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh official ministry checks failed (http_error). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -307,8 +371,15 @@
         "https://www.outre-mer.gouv.fr/",
         "https://www.outre-mer.gouv.fr/rss.xml",
         "https://www.outre-mer.gouv.fr/presse/communiques-de-presse",
-        "https://en.wikipedia.org/wiki/Ministry_of_the_Overseas_(France)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Overseas_(France)",
+        "https://fr.wikipedia.org/wiki/Minist%C3%A8re_des_Outre-mer"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh official ministry checks failed (http_error). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.",
+        "observed_at": "2026-10-03T13:16:09.424424+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "fr_sme_commerce_tourism",
@@ -320,8 +391,8 @@
       "homepage": "https://www.economie.gouv.fr/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：RobotsDeniedError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh official ministry checks failed (robots_denied). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -330,8 +401,15 @@
         "https://www.economie.gouv.fr/rss.xml",
         "https://www.economie.gouv.fr/presse/communiques-de-presse",
         "https://www.economie.gouv.fr/entreprises",
-        "https://en.wikipedia.org/wiki/Minister_of_Commerce_(France)"
-      ]
+        "https://en.wikipedia.org/wiki/Minister_of_Commerce_(France)",
+        "https://fr.wikipedia.org/wiki/Minist%C3%A8re_du_Commerce_(France)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh official ministry checks failed (robots_denied). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.",
+        "observed_at": "2026-10-03T13:16:09.425247+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "fr_health_family",
@@ -343,8 +421,8 @@
       "homepage": "https://sante.gouv.fr/ministere/",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：RobotsUnavailableError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh official ministry checks failed (robots_unavailable). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -352,8 +430,15 @@
         "https://sante.gouv.fr/ministere/",
         "https://sante.gouv.fr/ministere/rss.xml",
         "https://sante.gouv.fr/ministere/presse/communiques-de-presse",
-        "https://en.wikipedia.org/wiki/Minister_of_Health_(France)"
-      ]
+        "https://en.wikipedia.org/wiki/Minister_of_Health_(France)",
+        "https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_la_Sant%C3%A9_(France)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh official ministry checks failed (robots_unavailable). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.",
+        "observed_at": "2026-10-03T13:16:09.426724+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "fr_sports_youth",
@@ -385,10 +470,10 @@
       "kind": "ministry",
       "language": "fr",
       "homepage": "https://www.ecologie.gouv.fr/",
-      "news_url": "https://www.ecologie.gouv.fr/actualites",
+      "news_url": null,
       "source_ids": [],
-      "status": "needs_review",
-      "reason": "第五輪維基百科線索與官網查核：needs_review。後續：Official news page is accessible but covers a shared government/multi-ministry publisher. Require ministry-specific publisher attribution before enrollment; retain valid shared listing as an unresolved candidate. 證據：tests/fixtures/ministry_round5_north.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；The shared official press portal is accessible and advertises this exact ministry through its GET filter field_ministries_tref[273]=273. Fresh access to that ministry-scoped URL is denied by robots.txt. The unfiltered shared portal/RSS cannot be assigned as a runnable ministry-specific source. Original publication and production replay remain unverified.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -410,8 +495,17 @@
         "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
         "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites",
         "https://www.ecologie.gouv.fr/contact",
-        "https://en.wikipedia.org/wiki/Ministry_of_Ecological_Transition_(France)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Ecological_Transition_(France)",
+        "https://www.ecologie.gouv.fr/en/latest-news",
+        "https://www.ecologie.gouv.fr/presse?field_ministries_tref%5B273%5D=273",
+        "https://fr.wikipedia.org/wiki/Minist%C3%A8re_de_l%27%C3%89cologie_(France)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "The shared official press portal is accessible and advertises this exact ministry through its GET filter field_ministries_tref[273]=273. Fresh access to that ministry-scoped URL is denied by robots.txt. The unfiltered shared portal/RSS cannot be assigned as a runnable ministry-specific source. Original publication and production replay remain unverified.",
+        "observed_at": "2026-10-03T13:16:09.427723+00:00",
+        "candidate_news_url": "https://www.ecologie.gouv.fr/actualites"
+      }
     },
     {
       "canonical_id": "fr_transport",
@@ -421,10 +515,10 @@
       "kind": "ministry",
       "language": "fr",
       "homepage": "https://www.ecologie.gouv.fr/",
-      "news_url": "https://www.ecologie.gouv.fr/actualites",
+      "news_url": null,
       "source_ids": [],
-      "status": "needs_review",
-      "reason": "第五輪維基百科線索與官網查核：needs_review。已記錄錯誤：HTTPStatusError。後續：Official news page is accessible but covers a shared government/multi-ministry publisher. Require ministry-specific publisher attribution before enrollment; retain valid shared listing as an unresolved candidate. 證據：tests/fixtures/ministry_round5_north.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；The shared official press portal is accessible and advertises this exact ministry through its GET filter field_ministries_tref[282]=282. Fresh access to that ministry-scoped URL is denied by robots.txt. The unfiltered shared portal/RSS cannot be assigned as a runnable ministry-specific source. Original publication and production replay remain unverified.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -444,8 +538,18 @@
         "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
         "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites",
         "https://www.ecologie.gouv.fr/francois-durovray",
-        "https://en.wikipedia.org/wiki/Minister_of_Transport_(France)"
-      ]
+        "https://en.wikipedia.org/wiki/Minister_of_Transport_(France)",
+        "https://www.ecologie.gouv.fr/en/latest-news",
+        "https://www.ecologie.gouv.fr/presse?field_ministries_tref%5B282%5D=282",
+        "https://fr.wikipedia.org/wiki/Minist%C3%A8re_des_Transports",
+        "https://fr.wikipedia.org/wiki/Liste_des_ministres_fran%C3%A7ais_des_Transports"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "The shared official press portal is accessible and advertises this exact ministry through its GET filter field_ministries_tref[282]=282. Fresh access to that ministry-scoped URL is denied by robots.txt. The unfiltered shared portal/RSS cannot be assigned as a runnable ministry-specific source. Original publication and production replay remain unverified.",
+        "observed_at": "2026-10-03T13:16:09.429832+00:00",
+        "candidate_news_url": "https://www.ecologie.gouv.fr/actualites"
+      }
     },
     {
       "canonical_id": "fr_labour_solidarity",
@@ -457,8 +561,8 @@
       "homepage": "https://travail-emploi.gouv.fr",
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：RobotsUnavailableError。後續：Retain ministry roster/homepage and historical evidence. First-party content access is blocked by recorded robots, TLS, network, challenge or HTTP failures; retry only after upstream conditions change. 證據：tests/fixtures/ministry_round5_north.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh official ministry checks failed (robots_unavailable). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -466,8 +570,16 @@
         "https://travail-emploi.gouv.fr",
         "https://travail-emploi.gouv.fr/rss.xml",
         "https://travail-emploi.gouv.fr/presse/communiques-de-presse",
-        "https://en.wikipedia.org/wiki/Minister_of_Labour,_Employment_and_Economic_Inclusion_(France)"
-      ]
+        "https://en.wikipedia.org/wiki/Minister_of_Labour,_Employment_and_Economic_Inclusion_(France)",
+        "https://travail-emploi.gouv.fr/",
+        "https://fr.wikipedia.org/wiki/Minist%C3%A8re_du_Travail_(France)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh official ministry checks failed (robots_unavailable). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.",
+        "observed_at": "2026-10-03T13:16:09.431230+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "fr_city_housing",
@@ -477,10 +589,10 @@
       "kind": "ministry",
       "language": "fr",
       "homepage": "https://www.cohesion-territoires.gouv.fr/le-ministere",
-      "news_url": "https://www.ecologie.gouv.fr/actualites",
+      "news_url": null,
       "source_ids": [],
-      "status": "needs_review",
-      "reason": "第五輪維基百科線索與官網查核：needs_review。後續：Official news page is accessible but covers a shared government/multi-ministry publisher. Require ministry-specific publisher attribution before enrollment; retain valid shared listing as an unresolved candidate. 證據：tests/fixtures/ministry_round5_north.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；The shared official press portal is accessible and advertises this exact ministry through its GET filter field_ministries_tref[289]=289. Fresh access to that ministry-scoped URL is denied by robots.txt. The unfiltered shared portal/RSS cannot be assigned as a runnable ministry-specific source. Original publication and production replay remain unverified.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
       "evidence_urls": [
         "https://www.info.gouv.fr/composition-du-gouvernement",
         "https://lannuaire.service-public.gouv.fr/gouvernement",
@@ -495,8 +607,18 @@
         "https://www.ecologie.gouv.fr/presse/green-weimar-triangle-meeting-chambord-28-29th-september",
         "https://www.ecologie.gouv.fr/presse/projet-loi-finances-2027-gouvernement-preserve-laugmentation-ressources-collectivites",
         "https://www.cohesion-territoires.gouv.fr",
-        "https://en.wikipedia.org/wiki/Minister_of_Housing_and_Urban_Renovation"
-      ]
+        "https://en.wikipedia.org/wiki/Minister_of_Housing_and_Urban_Renovation",
+        "https://www.ecologie.gouv.fr/en/latest-news",
+        "https://www.ecologie.gouv.fr/it/notizie",
+        "https://www.ecologie.gouv.fr/presse?field_ministries_tref%5B289%5D=289",
+        "https://fr.wikipedia.org/wiki/Ministre_du_Logement"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "The shared official press portal is accessible and advertises this exact ministry through its GET filter field_ministries_tref[289]=289. Fresh access to that ministry-scoped URL is denied by robots.txt. The unfiltered shared portal/RSS cannot be assigned as a runnable ministry-specific source. Original publication and production replay remain unverified.",
+        "observed_at": "2026-10-03T13:16:09.432802+00:00",
+        "candidate_news_url": "https://www.ecologie.gouv.fr/actualites"
+      }
     }
   ]
 }

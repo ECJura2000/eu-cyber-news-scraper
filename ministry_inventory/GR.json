@@ -21,8 +21,8 @@
       "homepage": "https://www.government.gov.gr/",
       "news_url": null,
       "source_ids": [],
-      "status": "parser_pending",
-      "reason": "第五輪維基百科線索與官網查核：parser_pending。已記錄錯誤：robots_denied。後續：Review the own announcements page and first-party publisher attribution; own RSS is genuinely empty. Do not alias separately linked media/coordination/Prime Minister feeds automatically. 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
@@ -31,8 +31,15 @@
         "https://govpresidency.gov.gr/",
         "https://govpresidency.gov.gr/%ce%bd%ce%ad%ce%b1-%ce%b1%ce%bd%ce%b1%ce%ba%ce%bf%ce%b9%ce%bd%cf%8e%cf%83%ce%b5%ce%b9%cf%82/",
         "https://govpresidency.gov.gr/feed/",
-        "https://el.wikipedia.org/wiki/%CE%A0%CF%81%CE%BF%CE%B5%CE%B4%CF%81%CE%AF%CE%B1_%CF%84%CE%B7%CF%82_%CE%9A%CF%85%CE%B2%CE%AD%CF%81%CE%BD%CE%B7%CF%83%CE%B7%CF%82"
-      ]
+        "https://el.wikipedia.org/wiki/%CE%A0%CF%81%CE%BF%CE%B5%CE%B4%CF%81%CE%AF%CE%B1_%CF%84%CE%B7%CF%82_%CE%9A%CF%85%CE%B2%CE%AD%CF%81%CE%BD%CE%B7%CF%83%CE%B7%CF%82",
+        "https://el.wikipedia.org/wiki/%CE%9A%CE%B1%CF%84%CE%AC%CE%BB%CE%BF%CE%B3%CE%BF%CF%82_%CF%80%CF%81%CF%89%CE%B8%CF%85%CF%80%CE%BF%CF%85%CF%81%CE%B3%CF%8E%CE%BD_%CF%84%CE%B7%CF%82_%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1%CF%82"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T09:46:34.756236+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "gr_finance",
@@ -44,15 +51,22 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
         "https://minfin.gov.gr/",
         "https://minfin.gov.gr",
-        "https://en.wikipedia.org/wiki/Ministry_of_National_Economy_and_Finance_(Greece)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_National_Economy_and_Finance_(Greece)",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%95%CE%B8%CE%BD%CE%B9%CE%BA%CE%AE%CF%82_%CE%9F%CE%B9%CE%BA%CE%BF%CE%BD%CE%BF%CE%BC%CE%AF%CE%B1%CF%82_%CE%BA%CE%B1%CE%B9_%CE%9F%CE%B9%CE%BA%CE%BF%CE%BD%CE%BF%CE%BC%CE%B9%CE%BA%CF%8E%CE%BD"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T09:46:36.132873+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "gr_foreign_affairs",
@@ -64,14 +78,22 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
         "https://www.mfa.gr/",
-        "https://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_(Greece)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_(Greece)",
+        "https://www.mfa.gr",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%95%CE%BE%CF%89%CF%84%CE%B5%CF%81%CE%B9%CE%BA%CF%8E%CE%BD_(%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:15.228372+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "gr_defence",
@@ -83,16 +105,24 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
         "https://www.mod.mil.gr/",
         "https://www.mod.mil.gr/en/",
         "https://www.mod.mil.gr",
-        "https://en.wikipedia.org/wiki/Ministry_of_National_Defence_(Greece)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_National_Defence_(Greece)",
+        "https://geetha.mil.gr",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%95%CE%B8%CE%BD%CE%B9%CE%BA%CE%AE%CF%82_%CE%86%CE%BC%CF%85%CE%BD%CE%B1%CF%82_(%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T09:46:41.289381+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "gr_interior",
@@ -104,14 +134,22 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
         "https://www.ypes.gr/",
-        "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Greece)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Greece)",
+        "https://www.ypes.gr",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%95%CF%83%CF%89%CF%84%CE%B5%CF%81%CE%B9%CE%BA%CF%8E%CE%BD_(%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:15.300424+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "gr_education",
@@ -163,14 +201,22 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
         "https://www.yme.gr/",
-        "https://en.wikipedia.org/wiki/Ministry_of_Infrastructure_and_Transport_(Greece)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Infrastructure_and_Transport_(Greece)",
+        "https://www.yme.gr",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%A5%CF%80%CE%BF%CE%B4%CE%BF%CE%BC%CF%8E%CE%BD_%CE%BA%CE%B1%CE%B9_%CE%9C%CE%B5%CF%84%CE%B1%CF%86%CE%BF%CF%81%CF%8E%CE%BD"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:18.083244+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "gr_environment_energy",
@@ -182,15 +228,22 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
         "https://ypen.gov.gr/",
         "https://ypen.gov.gr",
-        "https://en.wikipedia.org/wiki/Ministry_of_the_Environment_and_Energy_(Greece)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Environment_and_Energy_(Greece)",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%A0%CE%B5%CF%81%CE%B9%CE%B2%CE%AC%CE%BB%CE%BB%CE%BF%CE%BD%CF%84%CE%BF%CF%82_%CE%BA%CE%B1%CE%B9_%CE%95%CE%BD%CE%AD%CF%81%CE%B3%CE%B5%CE%B9%CE%B1%CF%82"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T09:46:36.949924+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "gr_development",
@@ -223,15 +276,22 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
         "https://ypergasias.gov.gr/",
         "https://ypergasias.gov.gr",
-        "https://en.wikipedia.org/wiki/Ministry_of_Labour_and_Social_Security_(Greece)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Labour_and_Social_Security_(Greece)",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%95%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82_%CE%BA%CE%B1%CE%B9_%CE%9A%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AE%CF%82_%CE%91%CF%83%CF%86%CE%AC%CE%BB%CE%B9%CF%83%CE%B7%CF%82"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T09:46:38.744099+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "gr_citizen_protection",
@@ -243,15 +303,23 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
         "https://www.minocp.gov.gr/",
         "https://www.minocp.gov.gr/en/",
-        "https://en.wikipedia.org/wiki/Ministry_of_Citizen_Protection_(Greece)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Citizen_Protection_(Greece)",
+        "https://www.minocp.gov.gr",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%A0%CF%81%CE%BF%CF%83%CF%84%CE%B1%CF%83%CE%AF%CE%B1%CF%82_%CF%84%CE%BF%CF%85_%CE%A0%CE%BF%CE%BB%CE%AF%CF%84%CE%B7"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T09:46:40.986246+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "gr_justice",
@@ -263,14 +331,22 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
         "https://ministryofjustice.gr/",
-        "https://en.wikipedia.org/wiki/Ministry_of_Justice_(Greece)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Justice_(Greece)",
+        "https://ministryofjustice.gr",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%94%CE%B9%CE%BA%CE%B1%CE%B9%CE%BF%CF%83%CF%8D%CE%BD%CE%B7%CF%82_(%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:16.965008+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "gr_culture",
@@ -282,16 +358,23 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
         "https://www.culture.gov.gr/",
         "https://culture.gov.gr/en/SitePages/default.aspx",
         "https://culture.gov.gr/el/SitePages/default.aspx",
-        "https://en.wikipedia.org/wiki/Ministry_of_Culture_(Greece)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Culture_(Greece)",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%A0%CE%BF%CE%BB%CE%B9%CF%84%CE%B9%CF%83%CE%BC%CE%BF%CF%8D"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T09:46:39.557903+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "gr_migration",
@@ -324,15 +407,22 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
         "https://minscfa.gov.gr/",
         "https://en.wikipedia.org/wiki/Domna_Michailidou",
-        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9A%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AE%CF%82_%CE%A3%CF%85%CE%BD%CE%BF%CF%87%CE%AE%CF%82_%CE%BA%CE%B1%CE%B9_%CE%9F%CE%B9%CE%BA%CE%BF%CE%B3%CE%AD%CE%BD%CE%B5%CE%B9%CE%B1%CF%82"
-      ]
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9A%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AE%CF%82_%CE%A3%CF%85%CE%BD%CE%BF%CF%87%CE%AE%CF%82_%CE%BA%CE%B1%CE%B9_%CE%9F%CE%B9%CE%BA%CE%BF%CE%B3%CE%AD%CE%BD%CE%B5%CE%B9%CE%B1%CF%82",
+        "https://minscfa.gov.gr"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T09:46:38.339566+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "gr_agriculture",
@@ -344,14 +434,22 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
         "https://www.minagric.gov.gr/",
-        "https://en.wikipedia.org/wiki/Ministry_of_Rural_Development_and_Food_(Greece)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Rural_Development_and_Food_(Greece)",
+        "https://minagric.gr",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%91%CE%B3%CF%81%CE%BF%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%91%CE%BD%CE%AC%CF%80%CF%84%CF%85%CE%BE%CE%B7%CF%82_%CE%BA%CE%B1%CE%B9_%CE%A4%CF%81%CE%BF%CF%86%CE%AF%CE%BC%CF%89%CE%BD"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:16.898914+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "gr_maritime",
@@ -363,14 +461,22 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
         "https://www.ynanp.gr/",
-        "https://en.wikipedia.org/wiki/Ministry_of_Maritime_Affairs_and_Insular_Policy_(Greece)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Maritime_Affairs_and_Insular_Policy_(Greece)",
+        "https://www.ynanp.gr",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9D%CE%B1%CF%85%CF%84%CE%B9%CE%BB%CE%AF%CE%B1%CF%82_%CE%BA%CE%B1%CE%B9_%CE%9D%CE%B7%CF%83%CE%B9%CF%89%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%A0%CE%BF%CE%BB%CE%B9%CF%84%CE%B9%CE%BA%CE%AE%CF%82"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:15.995744+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "gr_tourism",
@@ -382,15 +488,22 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：http_error。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: http_error 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；http_error。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
         "https://mintour.gov.gr/",
         "https://mintour.gov.gr",
-        "https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Greece)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Tourism_(Greece)",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%A4%CE%BF%CF%85%CF%81%CE%B9%CF%83%CE%BC%CE%BF%CF%8D_(%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "http_error",
+        "observed_at": "2026-10-03T09:46:40.755053+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "gr_digital",
@@ -402,14 +515,22 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
         "https://mindigital.gr/",
-        "https://en.wikipedia.org/wiki/Ministry_of_Administrative_Reform_and_e-Governance_(Greece)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Administrative_Reform_and_e-Governance_(Greece)",
+        "https://mindigital.gr",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%A8%CE%B7%CF%86%CE%B9%CE%B1%CE%BA%CE%AE%CF%82_%CE%94%CE%B9%CE%B1%CE%BA%CF%85%CE%B2%CE%AD%CF%81%CE%BD%CE%B7%CF%83%CE%B7%CF%82_%CE%BA%CE%B1%CE%B9_%CE%A4%CE%B5%CF%87%CE%BD%CE%B7%CF%84%CE%AE%CF%82_%CE%9D%CE%BF%CE%B7%CE%BC%CE%BF%CF%83%CF%8D%CE%BD%CE%B7%CF%82"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T13:12:17.533406+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "gr_climate_civil_protection",
@@ -421,16 +542,23 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_denied 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.government.gov.gr/kivernisi/",
         "https://www.gov.gr/upourgeia",
         "https://civilprotection.gov.gr/",
         "https://www.minocp.gov.gr/en/",
         "https://en.wikipedia.org/wiki/Ministry_of_Citizen_Protection_(Greece)",
-        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9A%CE%BB%CE%B9%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%9A%CF%81%CE%AF%CF%83%CE%B7%CF%82_%CE%BA%CE%B1%CE%B9_%CE%A0%CE%BF%CE%BB%CE%B9%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%A0%CF%81%CE%BF%CF%83%CF%84%CE%B1%CF%83%CE%AF%CE%B1%CF%82"
-      ]
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9A%CE%BB%CE%B9%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%9A%CF%81%CE%AF%CF%83%CE%B7%CF%82_%CE%BA%CE%B1%CE%B9_%CE%A0%CE%BF%CE%BB%CE%B9%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%A0%CF%81%CE%BF%CF%83%CF%84%CE%B1%CF%83%CE%AF%CE%B1%CF%82",
+        "https://civilprotection.gov.gr"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T09:46:39.778996+00:00",
+        "candidate_news_url": null
+      }
     }
   ]
 }

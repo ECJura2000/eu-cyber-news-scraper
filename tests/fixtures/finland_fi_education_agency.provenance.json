@@ -1,0 +1,137 @@
+{
+  "url": "https://www.oph.fi/fi/tiedotteet",
+  "status": 200,
+  "original_body_sha256": "429a66a7bedf93cd1792ee5fb52ed28951fb80cdfacfb1f1a83084420a6a4af6",
+  "observed_at": "2026-10-03T14:19:16.259430+00:00",
+  "timestamp_basis": "Saved evidence file modification time; original response request timestamp was not recorded.",
+  "saved_evidence_path": "/private/tmp/eu-robots-review-20261003/fi_education_culture.news-body.txt",
+  "fixture_path": "tests/fixtures/finland_fi_education_agency.html",
+  "fixture_sha256": "938d1f904ad1d6e622049f7a1dca81a951ddcd424a9aade901b1d0d76e8b0de9",
+  "extraction": "Only the 20 main listing news card subtrees, serialized by BeautifulSoup; titles, links, dates and summaries retained.",
+  "expected_count": 20,
+  "expected": [
+    {
+      "title": "Syksyn yhteishaussa korkeakoulupaikkaa tavoittelee 32 900 hakijaa",
+      "url": "https://www.oph.fi/fi/uutiset/2026/syksyn-yhteishaussa-korkeakoulupaikkaa-tavoittelee-32-900-hakijaa",
+      "raw_date": "11.9.2026"
+    },
+    {
+      "title": "PISA-tulokset vahvistavat suunnan: perustaitoihin, lukutaitoon ja hyvinvointiin panostettava",
+      "url": "https://www.oph.fi/fi/uutiset/2026/pisa-tulokset-vahvistavat-suunnan-perustaitoihin-lukutaitoon-ja-hyvinvointiin",
+      "raw_date": "10.9.2026"
+    },
+    {
+      "title": "Opetushallituksen uusi pääjohtaja Kurt Torsell: Yhteistyöllä kohti osaavaa ja sivistynyttä Suomea",
+      "url": "https://www.oph.fi/fi/uutiset/2026/opetushallituksen-uusi-paajohtaja-kurt-torsell-yhteistyolla-kohti-osaavaa-ja",
+      "raw_date": "4.9.2026"
+    },
+    {
+      "title": "Maksuttomia harrastuksia opiskelupäivän yhteyteen: peruskouluista tuttua Harrastamisen Suomen mallia testataan toisen asteen oppilaitoksissa",
+      "url": "https://www.oph.fi/fi/uutiset/2026/maksuttomia-harrastuksia-opiskelupaivan-yhteyteen-peruskouluista-tuttua-harrastamisen",
+      "raw_date": "4.9.2026"
+    },
+    {
+      "title": "Laki kieltää älylasit oppitunneilla – Opetushallitus suosittelee kieltoa myös muun koulupäivän ajaksi",
+      "url": "https://www.oph.fi/fi/uutiset/2026/laki-kieltaa-alylasit-oppitunneilla-opetushallitus-suosittelee-kieltoa-myos-muun",
+      "raw_date": "3.9.2026"
+    },
+    {
+      "title": "Korkeakoulujen syksyn yhteishaussa on tarjolla yli 12 100 opiskelupaikkaa",
+      "url": "https://www.oph.fi/fi/uutiset/2026/korkeakoulujen-syksyn-yhteishaussa-tarjolla-yli-12-100-opiskelupaikkaa",
+      "raw_date": "27.8.2026"
+    },
+    {
+      "title": "Koulurauhan teema muistuttaa: yhteishenki syntyy teoista",
+      "url": "https://www.oph.fi/fi/uutiset/2026/koulurauhan-teema-muistuttaa-yhteishenki-syntyy-teoista",
+      "raw_date": "13.8.2026"
+    },
+    {
+      "title": "Uusi lukuvuosi alkaa: Oppimisen tuki uudistui, seuraavaksi vuorossa arviointi",
+      "url": "https://www.oph.fi/fi/uutiset/2026/uusi-lukuvuosi-alkaa-oppimisen-tuki-uudistui-seuraavaksi-vuorossa-arviointi",
+      "raw_date": "6.8.2026"
+    },
+    {
+      "title": "Vajaat 50 000 ekaluokkalaista aloittaa elokuussa koulutiensä",
+      "url": "https://www.oph.fi/fi/uutiset/2026/vajaat-50-000-ekaluokkalaista-aloittaa-elokuussa-koulutiensa",
+      "raw_date": "28.7.2026"
+    },
+    {
+      "title": "Korkeakoulujen kevään toisessa yhteishaussa opiskelupaikka 58 900 hakijalle",
+      "url": "https://www.oph.fi/fi/uutiset/2026/korkeakoulujen-kevaan-toisessa-yhteishaussa-opiskelupaikka-58-900-hakijalle",
+      "raw_date": "2.7.2026"
+    },
+    {
+      "title": "73 800 sai opiskelupaikan perusopetuksen jälkeisen koulutuksen yhteishaussa",
+      "url": "https://www.oph.fi/fi/uutiset/2026/73-800-sai-opiskelupaikan-perusopetuksen-jalkeisen-koulutuksen-yhteishaussa",
+      "raw_date": "11.6.2026"
+    },
+    {
+      "title": "8 100 hakijaa sai opiskelupaikan korkeakoulujen vieraskielisistä koulutuksista, Taideyliopistosta sekä Tampereen yliopiston teatteritaiteen koulutuksesta",
+      "url": "https://www.oph.fi/fi/uutiset/2026/8-100-hakijaa-sai-opiskelupaikan-korkeakoulujen-vieraskielisista-koulutuksista",
+      "raw_date": "28.5.2026"
+    },
+    {
+      "title": "Noin 64 000 nuorta päättää tänä keväänä perusopetuksen",
+      "url": "https://www.oph.fi/fi/uutiset/2026/noin-64-000-nuorta-paattaa-tana-kevaana-perusopetuksen",
+      "raw_date": "27.5.2026"
+    },
+    {
+      "title": "Koulutuksen asiantuntijat ovat yksimielisiä tärkeimmistä taidoista, joita tulevaisuudessa tarvitaan",
+      "url": "https://www.oph.fi/fi/uutiset/2026/koulutuksen-asiantuntijat-ovat-yksimielisia-tarkeimmista-taidoista-joita",
+      "raw_date": "19.5.2026"
+    },
+    {
+      "title": "Koulujen hyvinvointityö on toipunut pandemian vaikutuksista, mutta kehittämistarpeita on yhä",
+      "url": "https://www.oph.fi/fi/uutiset/2026/koulujen-hyvinvointityo-toipunut-pandemian-vaikutuksista-mutta-kehittamistarpeita-yha",
+      "raw_date": "12.5.2026"
+    },
+    {
+      "title": "Nuorten vapaa-ajan digisuositusten työstäminen alkaa yhdessä nuorten ja asiantuntijoiden kanssa",
+      "url": "https://www.oph.fi/fi/uutiset/2026/nuorten-vapaa-ajan-digisuositusten-tyostaminen-alkaa-yhdessa-nuorten-ja",
+      "raw_date": "14.4.2026"
+    },
+    {
+      "title": "Ilmaiset junamatkakortit tarjoavat 18-vuotiaille seikkailun Euroopassa",
+      "url": "https://www.oph.fi/fi/uutiset/2026/ilmaiset-junamatkakortit-tarjoavat-18-vuotiaille-seikkailun-euroopassa",
+      "raw_date": "8.4.2026"
+    },
+    {
+      "title": "Kevään toisessa yhteishaussa korkeakoulupaikkaa tavoittelee 149 000 hakijaa",
+      "url": "https://www.oph.fi/fi/uutiset/2026/kevaan-toisessa-yhteishaussa-korkeakoulupaikkaa-tavoittelee-149-000-hakijaa",
+      "raw_date": "25.3.2026"
+    },
+    {
+      "title": "Opetushallituksen tilinpäätös 2025: suuria säästöjä ja virastojen yhdistyminen",
+      "url": "https://www.oph.fi/fi/uutiset/2026/opetushallituksen-tilinpaatos-2025-suuria-saastoja-ja-virastojen-yhdistyminen",
+      "raw_date": "24.3.2026"
+    },
+    {
+      "title": "Perusopetuksen jälkeisen koulutuksen yhteishaussa 84 250 hakijaa",
+      "url": "https://www.oph.fi/fi/uutiset/2026/perusopetuksen-jalkeisen-koulutuksen-yhteishaussa-84-250-hakijaa",
+      "raw_date": "18.3.2026"
+    }
+  ],
+  "robots": {
+    "url": "https://www.oph.fi/robots.txt",
+    "status": 200,
+    "body_sha256": "8e8cb58d810473a52cce903be5ffb73d948eef981bbd101cffbf8dc2c02fcf4e",
+    "fixture_path": "tests/fixtures/finland_fi_education_agency.robots.txt",
+    "observed_at": "2026-10-03T14:16:40.688280+00:00"
+  },
+  "identity_provenance_path": "tests/fixtures/finland_official_identity.provenance.json",
+  "scope": "Manual only, page one. Finnish National Agency for Education, not education ministry.",
+  "detail": {
+    "url": "https://www.oph.fi/fi/uutiset/2026/syksyn-yhteishaussa-korkeakoulupaikkaa-tavoittelee-32-900-hakijaa",
+    "status": 200,
+    "sha256": "567f03131eb6d8bb49d2527e1cb24cf0a9cd6c9476368dc9cf240ad2c50d0077",
+    "title": "Syksyn yhteishaussa korkeakoulupaikkaa tavoittelee 32 900 hakijaa | Opetushallitus",
+    "visible_text_chars": 9613,
+    "date_element_count": 0,
+    "news_link_count": 16,
+    "fixture_path": "tests/fixtures/finland_fi_education_agency_detail.html",
+    "fixture_sha256": "da58fa291b46550ae27eb8b1c2ece2db8c5b6fae5edcf24cb5b954bc1e6e62c4",
+    "observed_at": "2026-10-03T14:19:19.145234+00:00",
+    "publication_selector": ".node-post-date",
+    "published_raw": "11.9.2026"
+  }
+}

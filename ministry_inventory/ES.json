@@ -19,10 +19,10 @@
       "kind": "government_head_office",
       "language": "es",
       "homepage": "https://www.lamoncloa.gob.es/",
-      "news_url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/paginas/index.aspx",
+      "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
@@ -30,8 +30,17 @@
         "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/paginas/index.aspx",
         "https://www.lamoncloa.gob.es/",
         "https://www.lamoncloa.gob.es/lang/en/Paginas/index.aspx",
-        "https://en.wikipedia.org/wiki/Office_of_the_Prime_Minister_(Spain)"
-      ]
+        "https://en.wikipedia.org/wiki/Office_of_the_Prime_Minister_(Spain)",
+        "https://www.lamoncloa.gob.es",
+        "https://es.wikipedia.org/wiki/Presidente_del_Gobierno_de_Espa%C3%B1a",
+        "https://es.wikipedia.org/wiki/Presidencia_del_Gobierno_(Espa%C3%B1a)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:46:48.666579+00:00",
+        "candidate_news_url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/paginas/index.aspx"
+      }
     },
     {
       "canonical_id": "es_agriculture",
@@ -281,10 +290,10 @@
       "kind": "ministry",
       "language": "es",
       "homepage": "https://www.inclusion.gob.es/",
-      "news_url": "https://www.inclusion.gob.es/web/guest/comunicacion/noticias",
+      "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_denied, timeout。後續：Wait for ministry robots restrictions to change; do not register the shared central-government directory or generic news feed as this ministry. 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
@@ -292,8 +301,16 @@
         "https://www.inclusion.gob.es/web/guest/comunicacion/noticias",
         "https://www.inclusion.gob.es/",
         "https://administracion.gob.es/informacion/noticias",
-        "https://en.wikipedia.org/wiki/Ministry_of_Inclusion,_Social_Security_and_Migration"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Inclusion,_Social_Security_and_Migration",
+        "https://www.inclusion.gob.es",
+        "https://es.wikipedia.org/wiki/Ministerio_de_Inclusi%C3%B3n,_Seguridad_Social_y_Migraciones"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T09:46:32.550579+00:00",
+        "candidate_news_url": "https://www.inclusion.gob.es/web/guest/comunicacion/noticias"
+      }
     },
     {
       "canonical_id": "es_industry_tourism",
@@ -356,14 +373,22 @@
       "homepage": null,
       "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable。後續：Retain roster, homepage and historical evidence; recheck only after these recorded access restrictions change: robots_unavailable 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
         "https://www.mpr.gob.es/",
-        "https://en.wikipedia.org/wiki/Ministry_of_the_Presidency,_Justice_and_Relations_with_the_Cortes"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Presidency,_Justice_and_Relations_with_the_Cortes",
+        "https://www.mpr.gob.es/Paginas/index.aspx",
+        "https://es.wikipedia.org/wiki/Ministerio_de_la_Presidencia,_Justicia_y_Relaciones_con_las_Cortes"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:46:50.643109+00:00",
+        "candidate_news_url": null
+      }
     },
     {
       "canonical_id": "es_territorial",
@@ -419,10 +444,10 @@
       "kind": "ministry",
       "language": "es",
       "homepage": "https://prensa.mites.gob.es/",
-      "news_url": "https://prensa.mites.gob.es/webPrensa/listado-noticia",
+      "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：robots_unavailable。後續：Recheck the exact officially linked press listing when robots.txt is accessible; do not alias inspectorate news to the ministry. 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；The ministry homepage is accessible and explicitly links Noticias to prensa.mites.gob.es/webPrensa/listado-noticia. That ministry press origin failed robots availability checks; the other Noticias link belongs to the labour inspectorate (www.oeitss.gob.es), not this ministry publisher. The inspectorate feed is not registered as the ministry.。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
@@ -430,8 +455,16 @@
         "https://prensa.mites.gob.es/webPrensa/listado-noticia",
         "https://prensa.mites.gob.es/",
         "https://www.mites.gob.es/",
-        "https://en.wikipedia.org/wiki/Ministry_of_Labour_(Spain)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_Labour_(Spain)",
+        "https://www.mites.gob.es",
+        "https://es.wikipedia.org/wiki/Ministerio_de_Trabajo_(Espa%C3%B1a)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "The ministry homepage is accessible and explicitly links Noticias to prensa.mites.gob.es/webPrensa/listado-noticia. That ministry press origin failed robots availability checks; the other Noticias link belongs to the labour inspectorate (www.oeitss.gob.es), not this ministry publisher. The inspectorate feed is not registered as the ministry.",
+        "observed_at": "2026-10-03T09:46:36.787026+00:00",
+        "candidate_news_url": "https://prensa.mites.gob.es/webPrensa/listado-noticia"
+      }
     },
     {
       "canonical_id": "es_transport",
@@ -486,10 +519,10 @@
       "kind": "ministry",
       "language": "es",
       "homepage": "https://www.interior.gob.es/",
-      "news_url": "https://www.interior.gob.es/opencms/es/prensa/noticias/",
+      "news_url": null,
       "source_ids": [],
-      "status": "blocked",
-      "reason": "第五輪維基百科線索與官網查核：blocked。已記錄錯誤：challenge_page; no parsing or bypass, https, timeout。後續：Retain current candidate URL and recheck upstream robots/challenge changes; no access bypass. 證據：tests/fixtures/ministry_round5_south.json",
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
       "evidence_urls": [
         "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
         "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
@@ -498,8 +531,16 @@
         "https://www.interior.gob.es/",
         "https://www.interior.gob.es/opencms/es/prensa/",
         "https://www.interior.gob.es/opencms/es/prensa/balances-e-informes/lucha-contra-el-terrorismo/index.html",
-        "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Spain)"
-      ]
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Spain)",
+        "https://www.interior.gob.es",
+        "https://es.wikipedia.org/wiki/Ministerio_del_Interior_(Espa%C3%B1a)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T09:46:33.890841+00:00",
+        "candidate_news_url": "https://www.interior.gob.es/opencms/es/prensa/noticias/"
+      }
     },
     {
       "canonical_id": "es_digital",

@@ -2991,6 +2991,48 @@
 "schedule_enabled" = false
 
 [[sources]]
+"id" = "fi_education_agency"
+"allow_domains" = ["oph.fi"]
+"card_selectors" = ["main .listing-item.node--type-news"]
+"country" = "FI"
+"critical" = false
+"date_evidence_url" = ""
+"date_exception_reason" = ""
+"date_policy" = "required"
+"date_review_due" = ""
+"date_reviewed_on" = ""
+"date_selectors" = [".listing-item-footer .node-post-date"]
+"detail_pages" = 0
+"exclude_patterns" = []
+"feed_archive_fallback" = false
+"feed_urls" = []
+"freshness_days" = 45
+"homepage" = "https://www.oph.fi/"
+"include_patterns" = ["/fi/uutiset/20\\d{2}/[^/]+$"]
+"institution_type" = "national education agency"
+"language" = "fi"
+"link_selectors" = ["h3.listing-title a.listing-title__link[href]"]
+"listing_url" = "https://www.oph.fi/fi/tiedotteet"
+"max_pages" = 1
+"min_listing_bytes" = 0
+"minimum_budget_seconds" = 0
+"name" = "Finnish National Agency for Education (Opetushallitus)"
+"name_zh" = "芬蘭國家教育署"
+"observation_runs" = 3
+"pagination_url" = ""
+"parser_adapter" = "fi_oph_listing"
+"pause_evidence_url" = ""
+"pause_reason" = ""
+"paused_until" = ""
+"schedule_enabled" = false
+"summary_selectors" = []
+"timezone" = "Europe/Helsinki"
+"title_selectors" = []
+"tls_intermediate_bundle" = ""
+"user_agent" = ""
+"yearly_listing_url" = ""
+
+[[sources]]
 "id" = "fi_foreign_affairs"
 "allow_domains" = ["um.fi"]
 "card_selectors" = [".frontpage__mainlift .highlight-lift", ".feed-list--simple li.item"]
@@ -3045,6 +3087,48 @@
 "name" = "Helsinki-Aalto Institute for Cybersecurity"
 "name_zh" = "赫爾辛基－阿爾托大學資安研究所"
 "schedule_enabled" = false
+
+[[sources]]
+"id" = "fi_judicial_administration_portal"
+"allow_domains" = ["oikeus.fi", "ulosottolaitos.fi", "tuomioistuimet.fi", "korkeinoikeus.fi", "oikeusrekisterikeskus.fi", "oikeuspalveluvirasto.fi", "kho.fi", "vakuutusoikeus.fi"]
+"card_selectors" = []
+"country" = "FI"
+"critical" = false
+"date_evidence_url" = ""
+"date_exception_reason" = ""
+"date_policy" = "required"
+"date_review_due" = ""
+"date_reviewed_on" = ""
+"date_selectors" = []
+"detail_pages" = 0
+"exclude_patterns" = []
+"feed_archive_fallback" = false
+"feed_urls" = ["https://www.oikeus.fi/feed/rss-feed?post_type=ajankohtaiset"]
+"freshness_days" = 45
+"homepage" = "https://www.oikeus.fi/"
+"include_patterns" = ["/ajankohtaiset/[^/]+/?$"]
+"institution_type" = "judicial administration aggregate"
+"language" = "fi"
+"link_selectors" = []
+"listing_url" = "https://www.oikeus.fi/feed/rss-feed?post_type=ajankohtaiset"
+"max_pages" = 1
+"min_listing_bytes" = 0
+"minimum_budget_seconds" = 0
+"name" = "Oikeus.fi judicial administration portal (multi-institution aggregate)"
+"name_zh" = "芬蘭司法行政入口網站（多機關聚合）"
+"observation_runs" = 3
+"pagination_url" = ""
+"parser_adapter" = "fi_oikeus_aggregate_rss"
+"pause_evidence_url" = ""
+"pause_reason" = ""
+"paused_until" = ""
+"schedule_enabled" = false
+"summary_selectors" = []
+"timezone" = "Europe/Helsinki"
+"title_selectors" = []
+"tls_intermediate_bundle" = ""
+"user_agent" = ""
+"yearly_listing_url" = ""
 
 [[sources]]
 "id" = "fi_ncsc"
@@ -3546,6 +3630,48 @@
 "schedule_enabled" = false
 "timezone" = "Europe/Budapest"
 "title_selectors" = ["h2.article-card__title"]
+
+[[sources]]
+"id" = "hu_defence"
+"allow_domains" = ["honvedelem.hu"]
+"card_selectors" = [".articleList #list .card:has(.card-lead:-soup-contains(\"Honvédelmi Minisztérium\"))"]
+"country" = "HU"
+"critical" = false
+"date_evidence_url" = ""
+"date_exception_reason" = ""
+"date_policy" = "required"
+"date_review_due" = ""
+"date_reviewed_on" = ""
+"date_selectors" = [".card-date"]
+"detail_pages" = 0
+"exclude_patterns" = []
+"feed_archive_fallback" = false
+"feed_urls" = []
+"freshness_days" = 45
+"homepage" = "https://honvedelem.hu/impresszum.html"
+"include_patterns" = ["^/hirek/[^/]+\\.html$"]
+"institution_type" = "ministry"
+"language" = "hu"
+"link_selectors" = []
+"listing_url" = "https://honvedelem.hu/hirek/tartalekos-rendszer.html"
+"max_pages" = 1
+"min_listing_bytes" = 0
+"minimum_budget_seconds" = 0
+"name" = "Honvédelmi Minisztérium"
+"name_zh" = "匈牙利國防部"
+"observation_runs" = 3
+"pagination_url" = ""
+"parser_adapter" = ""
+"pause_evidence_url" = ""
+"pause_reason" = ""
+"paused_until" = ""
+"schedule_enabled" = false
+"summary_selectors" = [".card-lead"]
+"timezone" = "Europe/Budapest"
+"title_selectors" = [".card-title"]
+"tls_intermediate_bundle" = ""
+"user_agent" = ""
+"yearly_listing_url" = ""
 
 [[sources]]
 "id" = "hu_economy_energy"
@@ -5978,6 +6104,48 @@
 "summary_selectors" = [".text"]
 "timezone" = "Europe/Riga"
 "title_selectors" = [".title h2", "h2"]
+"tls_intermediate_bundle" = ""
+"user_agent" = ""
+"yearly_listing_url" = ""
+
+[[sources]]
+"id" = "mt_foreign_affairs"
+"allow_domains" = ["foreign.gov.mt"]
+"card_selectors" = []
+"country" = "MT"
+"critical" = false
+"date_evidence_url" = ""
+"date_exception_reason" = ""
+"date_policy" = "required"
+"date_review_due" = ""
+"date_reviewed_on" = ""
+"date_selectors" = []
+"detail_pages" = 0
+"exclude_patterns" = []
+"feed_archive_fallback" = false
+"feed_urls" = ["https://foreign.gov.mt/feed/"]
+"freshness_days" = 90
+"homepage" = "https://foreign.gov.mt/"
+"include_patterns" = ["/(?:calls|other-updates|publications|previous-publications)/"]
+"institution_type" = "central ministry"
+"language" = "en"
+"link_selectors" = []
+"listing_url" = "https://foreign.gov.mt/press-releases-media/"
+"max_pages" = 1
+"min_listing_bytes" = 0
+"minimum_budget_seconds" = 0
+"name" = "Ministry for Foreign and European Affairs"
+"name_zh" = "馬爾他外交暨歐洲事務部"
+"observation_runs" = 3
+"pagination_url" = ""
+"parser_adapter" = ""
+"pause_evidence_url" = ""
+"pause_reason" = ""
+"paused_until" = ""
+"schedule_enabled" = false
+"summary_selectors" = []
+"timezone" = "Europe/Malta"
+"title_selectors" = []
 "tls_intermediate_bundle" = ""
 "user_agent" = ""
 "yearly_listing_url" = ""
