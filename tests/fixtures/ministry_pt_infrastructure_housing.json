@@ -1,0 +1,105 @@
+{
+  "source_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/infraestruturas-e-habitacao/noticias",
+  "scope": [
+    "1A7CCD51EC644EE5AF22B927A03AC91D"
+  ],
+  "articles": [
+    {
+      "id": "A5222716E1B04C26AA601ED8AABF16A3",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/transportes-publicos-avancam-para-pagamento-generalizado-com-cartao-bancario",
+      "title": "Transportes públicos avançam para pagamento generalizado com cartão bancário",
+      "date": "20260930T160700Z",
+      "summary": "Oito entidades assinaram um protocolo para permitir o pagamento direto dos transportes públicos com cartão bancário contactless",
+      "areas": [
+        "1A7CCD51EC644EE5AF22B927A03AC91D"
+      ]
+    },
+    {
+      "id": "4CDB0D0C8FE1422BB5C6CAC10B2BAC0B",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/passe-ferroviario-verde-alargado-aos-servicos-urbanos-da-cp-de-lisboa-e-do-porto-a-partir-de-27-de-setembro",
+      "title": "Passe Ferroviário Verde alargado aos serviços urbanos da CP de Lisboa e do Porto a partir de 27 de setembro",
+      "date": "20260926T144500Z",
+      "summary": "Por 20 euros mensais, o passe facilita as deslocações de comboio, reduz custos para as famílias e incentiva o transporte público",
+      "areas": [
+        "1A7CCD51EC644EE5AF22B927A03AC91D"
+      ]
+    },
+    {
+      "id": "E5FD5E7FA01E4EDFBB14154E395614BB",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/prr-reforca-oferta-da-carris-e-descarbonizacao-do-transporte-publico",
+      "title": "PRR reforça oferta da Carris e descarbonização do transporte público",
+      "date": "20260908T112800Z",
+      "summary": "Carris recebeu 29 novos autocarros 100% elétricos, reforçando a capacidade de transporte público em Lisboa e avançando na renovação e descarbonização da frota",
+      "areas": [
+        "1A7CCD51EC644EE5AF22B927A03AC91D"
+      ]
+    },
+    {
+      "id": "5773FAF4BF974AD89BD3EF0C7F873BB1",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/nova-linha-de-credito-de-15-mil-milhoes-de-euros-para-50-000-habitacoes",
+      "title": "Nova linha de crédito de 1,5 mil milhões de euros para 50 000 habitações",
+      "date": "20260907T190200Z",
+      "summary": "O financiamento destina-se à construção e renovação de habitações para as famílias mais vulneráveis",
+      "areas": [
+        "847EE87D80774A00A5F802E885A86D16",
+        "1A7CCD51EC644EE5AF22B927A03AC91D"
+      ]
+    },
+    {
+      "id": "85A6E42F7A97433398F1D25115AC385E",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/passe-ferroviario-verde-nos-comboios-urbanos-de-lisboa-e-porto",
+      "title": "Passe Ferroviário Verde nos comboios urbanos de Lisboa e Porto",
+      "date": "20260821T180200Z",
+      "summary": "Maior abrangência geográfica permite poupanças que podem atingir os 480 euros anuais por utilizador",
+      "areas": [
+        "1A7CCD51EC644EE5AF22B927A03AC91D"
+      ]
+    },
+    {
+      "id": "C7DC01451E414BA6B4B58A7E1DF503D2",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/prr-permite-disponibilizar-mais-de-28-mil-casas-ate-final-de-agosto",
+      "title": "PRR permite disponibilizar mais de 28 mil casas até final de agosto",
+      "date": "20260817T110700Z",
+      "summary": "Meta habitacional é ultrapassada, com resultados que abrangem todo o território nacional e previsão de 40 mil casas concluídas até dezembro",
+      "areas": [
+        "6F295533DFFD48C88F14F102A37EDD38",
+        "1A7CCD51EC644EE5AF22B927A03AC91D"
+      ]
+    },
+    {
+      "id": "1B55E4D10F684610A4CCAC14FE4A26B1",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/transportes-urbanos-e-logistica-modernizados-com-novas-regras-de-seguranca-e-eficiencia",
+      "title": "Transportes urbanos e logística modernizados com novas regras de segurança e eficiência",
+      "date": "20260807T083500Z",
+      "summary": "Novos diplomas reforçam a segurança ferroviária e tornam o transporte de mercadorias mais eficiente",
+      "areas": [
+        "1D5141F0B5D3434E8ADA5A042485336D",
+        "1A7CCD51EC644EE5AF22B927A03AC91D"
+      ]
+    },
+    {
+      "id": "DFC1462DF2C64EF7912684D0E9FE5205",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/governo-lanca-apoios-a-logistica-urbana-mobilidade-escolar-e-descarbonizacao-dos-taxis",
+      "title": "Governo lança apoios à logística urbana, mobilidade escolar e descarbonização dos táxis",
+      "date": "20260803T110000Z",
+      "summary": "Primeiros avisos do Fundo para a Mobilidade e Transportes disponibilizam mais de 2 milhões de euros",
+      "areas": [
+        "1A7CCD51EC644EE5AF22B927A03AC91D"
+      ]
+    }
+  ],
+  "truncated": false,
+  "response_sha256": [
+    "69bc77afc8ecf061862e887329fe948669ac2123f28dc44ab26fd59ebd6e6dda",
+    "b7e5bce56aaa67af332b2e67c58af4b6f1be129061ddbbd4724ddc13c3e8af4b"
+  ],
+  "public_endpoint": "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+}

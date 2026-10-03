@@ -1,0 +1,41 @@
+{
+  "url": "https://www.regeringen.se/sveriges-regering/arbetsmarknadsdepartementet/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:19.057804+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "e0be954750a781f1eb08f44c357aa808dd9332552c2e688fb304ecbe5dd01528",
+  "sha256": "2d62e88aa869d8c7c02a5659f6146c7b228199840a2234253befeae7dc3d2160",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 20,
+  "dated_count": 20,
+  "fixture_count": 4,
+  "source_id": "se_employment",
+  "expected": [
+    {
+      "title": "Remiss av SOU 2026:53 Parallella samhällsstrukturer – ett kunskapsunderlag för förbättrad integration och minskat utanförskap, A2026/00799",
+      "url": "https://www.regeringen.se/remisser/2026/09/remiss-av-sou-202653-parallella-samhallsstrukturer--ett-kunskapsunderlag-for-forbattrad-integration-och-minskat-utanforskap/",
+      "published_date_local": "2026-09-04",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Remiss av SOU 2026:41 Jämställdhet i en föränderlig tid – nuläge och vägar framåt, A2026/00661",
+      "url": "https://www.regeringen.se/remisser/2026/09/remiss-av-sou-202641-jamstalldhet-i-en-foranderlig-tid--nulage-och-vagar-framat/",
+      "published_date_local": "2026-09-03",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Sveriges återkommande rapportering om efterlevnaden av CCPR",
+      "url": "https://www.regeringen.se/internationella-mr-granskningar-av-sverige/2015/04/sveriges-aterkommande-rapportering-om-efterlevnaden-av-ccpr/",
+      "published_date_local": "2015-04-28",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Remiss av SOU 2026:23 Tolkavgift och förbud mot barntolkning, A2026/00510",
+      "url": "https://www.regeringen.se/remisser/2026/05/remiss-av-sou-202623-tolkavgift-och-forbud-mot-barntolkning/",
+      "published_date_local": "2026-05-22",
+      "date_source": "source-selector"
+    }
+  ]
+}

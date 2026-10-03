@@ -1,0 +1,295 @@
+{
+  "schema_version": 1,
+  "country": "AT",
+  "reviewed_on": "2026-10-03",
+  "official_roster_urls": [
+    "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm"
+  ],
+  "roster_complete": true,
+  "limitations": [],
+  "ministries": [
+    {
+      "canonical_id": "at_bka",
+      "name_zh": "奧地利聯邦總理府",
+      "name_local": "Bundeskanzleramt",
+      "name_en": "Federal Chancellery",
+      "kind": "government_head_office",
+      "language": "de",
+      "homepage": "https://www.bundeskanzleramt.gv.at/",
+      "news_url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026.html",
+      "source_ids": [
+        "at_bka"
+      ],
+      "status": "manual_verified",
+      "reason": "Source-scoped ministry news passed production scrape_source with 50 dated items; bounded genuine fixture reproduces 6 exact titles, URLs, local dates and confidence values. Next action: Manual collection only. Review freshness and publisher ownership during later observations before any separate scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
+      "evidence_urls": [
+        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
+        "https://www.bundeskanzleramt.gv.at/",
+        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026.html"
+      ]
+    },
+    {
+      "canonical_id": "at_sozialministerium",
+      "name_zh": "奧地利勞動、社會、衛生、照護與消費者保護部",
+      "name_local": "Bundesministerium für Arbeit, Soziales, Gesundheit, Pflege und Konsumentenschutz",
+      "name_en": "Federal Ministry of Labour, Social Affairs, Health, Care and Consumer Protection",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.sozialministerium.gv.at",
+      "news_url": "https://www.sozialministerium.gv.at/Services/Aktuelles.html",
+      "source_ids": [
+        "at_sozialministerium"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_at_sozialministerium.provenance.json",
+      "evidence_urls": [
+        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
+        "https://www.sozialministerium.gv.at",
+        "https://www.sozialministerium.gv.at/Services/Aktuelles.html"
+      ]
+    },
+    {
+      "canonical_id": "at_bmb",
+      "name_zh": "奧地利教育部",
+      "name_local": "Bundesministerium für Bildung",
+      "name_en": "Federal Ministry of Education",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmb.gv.at",
+      "news_url": "https://www.bmb.gv.at/Ministerium/presse.html",
+      "source_ids": [
+        "at_bmb"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_at_bmb.provenance.json",
+      "evidence_urls": [
+        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
+        "https://www.bmb.gv.at",
+        "https://www.bmb.gv.at/Ministerium/presse.html"
+      ]
+    },
+    {
+      "canonical_id": "at_bmeia",
+      "name_zh": "奧地利歐洲與國際事務部",
+      "name_local": "Bundesministerium für europäische und internationale Angelegenheiten",
+      "name_en": "Federal Ministry for European and International Affairs",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmeia.gv.at/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh official ministry checks failed (robots_denied). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
+      "evidence_urls": [
+        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
+        "https://www.bmeia.gv.at/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_(Austria)",
+        "https://www.bmeia.gv.at",
+        "https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_europ%C3%A4ische_und_internationale_Angelegenheiten",
+        "https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_ausw%C3%A4rtige_Angelegenheiten"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh official ministry checks failed (robots_denied). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.",
+        "observed_at": "2026-10-03T13:16:09.384857+00:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "at_bmfwf",
+      "name_zh": "奧地利婦女、科學與研究部",
+      "name_local": "Bundesministerium für Frauen, Wissenschaft und Forschung",
+      "name_en": "Federal Ministry for Women, Science and Research",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmfwf.gv.at",
+      "news_url": "https://www.bmfwf.gv.at/ministerium/presse-kommunikation/presse.html",
+      "source_ids": [
+        "at_bmfwf"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_at_bmfwf.provenance.json",
+      "evidence_urls": [
+        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
+        "https://www.bmfwf.gv.at",
+        "https://www.bmfwf.gv.at/ministerium/presse-kommunikation.html",
+        "https://www.bmfwf.gv.at/ministerium/presse-kommunikation/presse.html"
+      ]
+    },
+    {
+      "canonical_id": "at_bmf",
+      "name_zh": "奧地利財政部",
+      "name_local": "Bundesministerium für Finanzen",
+      "name_en": "Federal Ministry of Finance",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmf.gv.at/",
+      "news_url": "https://www.bmf.gv.at/presse/pressemeldungen.html",
+      "source_ids": [
+        "at_bmf"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_at_bmf.provenance.json",
+      "evidence_urls": [
+        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
+        "https://www.bmf.gv.at/",
+        "https://www.bmf.gv.at/presse/pressemeldungen.html"
+      ]
+    },
+    {
+      "canonical_id": "at_bmi",
+      "name_zh": "奧地利內政部",
+      "name_local": "Bundesministerium für Inneres",
+      "name_en": "Federal Ministry of the Interior",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmi.gv.at/",
+      "news_url": "https://www.bmi.gv.at/rss/bmi_presse.xml",
+      "source_ids": [
+        "at_bmi"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_at_bmi.provenance.json",
+      "evidence_urls": [
+        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
+        "https://www.bmi.gv.at/",
+        "https://www.bmi.gv.at/presse/start.html",
+        "https://www.bmi.gv.at/rss/bmi_presse.xml"
+      ]
+    },
+    {
+      "canonical_id": "at_bmimi",
+      "name_zh": "奧地利創新、交通與基礎建設部",
+      "name_local": "Bundesministerium für Innovation, Mobilität und Infrastruktur",
+      "name_en": "Federal Ministry for Innovation, Mobility and Infrastructure",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmimi.gv.at",
+      "news_url": "https://www.bmimi.gv.at/service/presse/hanke.html",
+      "source_ids": [
+        "at_bmimi"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_at_bmimi.provenance.json",
+      "evidence_urls": [
+        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
+        "https://www.bmimi.gv.at",
+        "https://www.bmimi.gv.at/service/presse.html",
+        "https://www.bmimi.gv.at/service/presse/hanke.html"
+      ]
+    },
+    {
+      "canonical_id": "at_bmj",
+      "name_zh": "奧地利司法部",
+      "name_local": "Bundesministerium für Justiz",
+      "name_en": "Federal Ministry of Justice",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmj.gv.at/public.html",
+      "news_url": "https://www.bmj.gv.at/ministerium/presse/Pressemitteilungen-2026.html",
+      "source_ids": [
+        "at_bmj"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_at_bmj.provenance.json",
+      "evidence_urls": [
+        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
+        "https://www.bmj.gv.at/public.html",
+        "https://www.bmj.gv.at/ministerium/aktuelle-meldungen.html",
+        "https://www.bmj.gv.at/ministerium/presse/Pressemitteilungen-2026.html"
+      ]
+    },
+    {
+      "canonical_id": "at_bmlv",
+      "name_zh": "奧地利國防部",
+      "name_local": "Bundesministerium für Landesverteidigung",
+      "name_en": "Federal Ministry of Defence",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmlv.gv.at/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：needs_review；Official ministry homepage/RSS/listing are accessible, but the production scrape returns 10 raw entries and only 1 dated item, a navigation title with low-confidence visible text. RSS dc:date does not establish original publication and the army/ministry publisher scope remains unresolved. No dated ministry-specific production article satisfies the promotion contract.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
+      "evidence_urls": [
+        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
+        "https://www.bmlv.gv.at/",
+        "https://www.bmlv.gv.at/misc/rss.php",
+        "https://www.bmlv.gv.at/aktuell/index.shtml",
+        "https://www.bmlv.gv.at/cms/artikel.php?ID=12221",
+        "https://www.bmlv.gv.at/cms/artikel.php?ID=12218",
+        "https://www.bundesheer.at",
+        "https://en.wikipedia.org/wiki/Ministry_of_Defence_(Austria)",
+        "https://www.bmlv.gv.at/misc/impressum.shtml",
+        "https://www.bmlv.gv.at/aktuell/veroeffentlichungen.shtml",
+        "https://de.wikipedia.org/wiki/Bundesministerium_f%C3%BCr_Landesverteidigung"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Official ministry homepage/RSS/listing are accessible, but the production scrape returns 10 raw entries and only 1 dated item, a navigation title with low-confidence visible text. RSS dc:date does not establish original publication and the army/ministry publisher scope remains unresolved. No dated ministry-specific production article satisfies the promotion contract.",
+        "observed_at": "2026-10-03T13:16:09.385921+00:00",
+        "candidate_news_url": "https://www.bmlv.gv.at/misc/rss.php"
+      }
+    },
+    {
+      "canonical_id": "at_bmluk",
+      "name_zh": "奧地利農林、氣候、環境、區域與水管理部",
+      "name_local": "Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft",
+      "name_en": "Federal Ministry for Agriculture and Forestry, Climate and Environmental Protection, Regions and Water Management",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmluk.gv.at",
+      "news_url": "https://www.bmluk.gv.at/service/presse.html",
+      "source_ids": [
+        "at_bmluk"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_at_bmluk.provenance.json",
+      "evidence_urls": [
+        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
+        "https://www.bmluk.gv.at",
+        "https://www.bmluk.gv.at/service/presse.html"
+      ]
+    },
+    {
+      "canonical_id": "at_bmwet",
+      "name_zh": "奧地利經濟、能源與觀光部",
+      "name_local": "Bundesministerium für Wirtschaft, Energie und Tourismus",
+      "name_en": "Federal Ministry for Economy, Energy and Tourism",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmwet.gv.at",
+      "news_url": "https://www.bmwet.gv.at/Presse/AktuellePressemeldungen.html",
+      "source_ids": [
+        "at_bmwet"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_at_bmwet.provenance.json",
+      "evidence_urls": [
+        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
+        "https://www.bmwet.gv.at",
+        "https://www.bmwet.gv.at/Presse/AktuellePressemeldungen.html"
+      ]
+    },
+    {
+      "canonical_id": "at_bmwkms",
+      "name_zh": "奧地利住宅、藝術、文化、媒體與體育部",
+      "name_local": "Bundesministerium für Wohnen, Kunst, Kultur, Medien und Sport",
+      "name_en": "Federal Ministry for Housing, Arts, Culture, Media and Sport",
+      "kind": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmwkms.gv.at",
+      "news_url": "https://www.bmwkms.gv.at/themen/aktuell.html",
+      "source_ids": [
+        "at_bmwkms"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_at_bmwkms.provenance.json",
+      "evidence_urls": [
+        "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
+        "https://www.bmwkms.gv.at",
+        "https://www.bmwkms.gv.at/themen/aktuell.html"
+      ]
+    }
+  ]
+}

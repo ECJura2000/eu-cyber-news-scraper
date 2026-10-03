@@ -1,0 +1,412 @@
+{
+  "schema_version": 1,
+  "country": "PL",
+  "reviewed_on": "2026-10-01",
+  "official_roster_urls": [
+    "https://www.gov.pl/web/gov/ministerstwa"
+  ],
+  "roster_complete": true,
+  "limitations": [],
+  "ministries": [
+    {
+      "canonical_id": "pl_state_assets",
+      "name_zh": "波蘭國家資產部",
+      "name_local": "Ministerstwo Aktywów Państwowych",
+      "name_en": "Ministry of State Assets",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/aktywa-panstwowe",
+      "news_url": "https://www.gov.pl/web/aktywa-panstwowe/wiadomosci",
+      "source_ids": [
+        "pl_state_assets"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/aktywa-panstwowe",
+        "https://www.gov.pl/web/aktywa-panstwowe/wiadomosci"
+      ]
+    },
+    {
+      "canonical_id": "pl_cyfryzacja",
+      "name_zh": "波蘭數位事務部",
+      "name_local": "Ministerstwo Cyfryzacji",
+      "name_en": "Ministry of Digital Affairs",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/cyfryzacja",
+      "news_url": "https://www.gov.pl/web/cyfryzacja/wiadomosci",
+      "source_ids": [
+        "pl_cyfryzacja"
+      ],
+      "status": "existing_source",
+      "reason": "Existing module identifies Ministerstwo Cyfryzacji itself; existing verification is smoke_attention and is not upgraded.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/cyfryzacja",
+        "https://www.gov.pl/web/cyfryzacja/wiadomosci"
+      ]
+    },
+    {
+      "canonical_id": "pl_education",
+      "name_zh": "波蘭國民教育部",
+      "name_local": "Ministerstwo Edukacji Narodowej",
+      "name_en": "Ministry of National Education",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/edukacja",
+      "news_url": "https://www.gov.pl/web/edukacja/wiadomosci",
+      "source_ids": [
+        "pl_education"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/edukacja",
+        "https://www.gov.pl/web/edukacja/wiadomosci"
+      ]
+    },
+    {
+      "canonical_id": "pl_energy",
+      "name_zh": "波蘭能源部",
+      "name_local": "Ministerstwo Energii",
+      "name_en": "Ministry of Energy",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/energia",
+      "news_url": "https://www.gov.pl/web/energia/wiadomosci",
+      "source_ids": [
+        "pl_energy"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/energia",
+        "https://www.gov.pl/web/energia/wiadomosci"
+      ]
+    },
+    {
+      "canonical_id": "pl_finance",
+      "name_zh": "波蘭財政部",
+      "name_local": "Ministerstwo Finansów",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/finanse",
+      "news_url": "https://www.gov.pl/web/finanse/wiadomosci",
+      "source_ids": [
+        "pl_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/finanse",
+        "https://www.gov.pl/web/finanse/wiadomosci"
+      ]
+    },
+    {
+      "canonical_id": "pl_funds_regional_policy",
+      "name_zh": "波蘭基金與區域政策部",
+      "name_local": "Ministerstwo Funduszy i Polityki Regionalnej",
+      "name_en": "Ministry of Development Funds and Regional Policy",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/fundusze-regiony",
+      "news_url": "https://www.gov.pl/web/fundusze-regiony/aktualnosci1",
+      "source_ids": [
+        "pl_funds_regional_policy"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/fundusze-regiony",
+        "https://www.gov.pl/web/fundusze-regiony/aktualnosci1"
+      ]
+    },
+    {
+      "canonical_id": "pl_infrastructure",
+      "name_zh": "波蘭基礎建設部",
+      "name_local": "Ministerstwo Infrastruktury",
+      "name_en": "Ministry of Infrastructure",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/infrastruktura",
+      "news_url": "https://www.gov.pl/web/infrastruktura/aktualnosci",
+      "source_ids": [
+        "pl_infrastructure"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/infrastruktura",
+        "https://www.gov.pl/web/infrastruktura/aktualnosci"
+      ]
+    },
+    {
+      "canonical_id": "pl_climate_environment",
+      "name_zh": "波蘭氣候與環境部",
+      "name_local": "Ministerstwo Klimatu i Środowiska",
+      "name_en": "Ministry of Climate and Environment",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/klimat",
+      "news_url": "https://www.gov.pl/web/klimat/wiadomosci",
+      "source_ids": [
+        "pl_climate_environment"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/klimat",
+        "https://www.gov.pl/web/klimat/wiadomosci"
+      ]
+    },
+    {
+      "canonical_id": "pl_culture",
+      "name_zh": "波蘭文化與國家遺產部",
+      "name_local": "Ministerstwo Kultury i Dziedzictwa Narodowego",
+      "name_en": "Ministry of Culture and National Heritage",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/kultura",
+      "news_url": "https://www.gov.pl/web/kultura/aktualnosci",
+      "source_ids": [
+        "pl_culture"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/kultura",
+        "https://www.gov.pl/web/kultura/aktualnosci"
+      ]
+    },
+    {
+      "canonical_id": "pl_science",
+      "name_zh": "波蘭科學與高等教育部",
+      "name_local": "Ministerstwo Nauki i Szkolnictwa Wyższego",
+      "name_en": "Ministry of Science and Higher Education",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/nauka",
+      "news_url": "https://www.gov.pl/web/nauka/wiadomosci",
+      "source_ids": [
+        "pl_science"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/nauka",
+        "https://www.gov.pl/web/nauka/wiadomosci"
+      ]
+    },
+    {
+      "canonical_id": "pl_defence",
+      "name_zh": "波蘭國防部",
+      "name_local": "Ministerstwo Obrony Narodowej",
+      "name_en": "Ministry of National Defence",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/obrona-narodowa",
+      "news_url": "https://www.gov.pl/web/obrona-narodowa/aktualnosci5",
+      "source_ids": [
+        "pl_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 14 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/obrona-narodowa",
+        "https://www.gov.pl/web/obrona-narodowa/aktualnosci5"
+      ]
+    },
+    {
+      "canonical_id": "pl_family_labour",
+      "name_zh": "波蘭家庭勞動與社會政策部",
+      "name_local": "Ministerstwo Rodziny, Pracy i Polityki Społecznej",
+      "name_en": "Ministry of Family, Labour and Social Policy",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/rodzina",
+      "news_url": "https://www.gov.pl/web/rodzina/aktualnosci-wiadomosci",
+      "source_ids": [
+        "pl_family_labour"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/rodzina",
+        "https://www.gov.pl/web/rodzina/aktualnosci-wiadomosci"
+      ]
+    },
+    {
+      "canonical_id": "pl_agriculture",
+      "name_zh": "波蘭農業與農村發展部",
+      "name_local": "Ministerstwo Rolnictwa i Rozwoju Wsi",
+      "name_en": "Ministry of Agriculture and Rural Development",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/rolnictwo",
+      "news_url": "https://www.gov.pl/web/rolnictwo/wiadomosci",
+      "source_ids": [
+        "pl_agriculture"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/rolnictwo",
+        "https://www.gov.pl/web/rolnictwo/wiadomosci"
+      ]
+    },
+    {
+      "canonical_id": "pl_development_technology",
+      "name_zh": "波蘭發展與科技部",
+      "name_local": "Ministerstwo Rozwoju i Technologii",
+      "name_en": "Ministry of Development and Technology",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/rozwoj-technologia",
+      "news_url": "https://www.gov.pl/web/rozwoj-technologia/wiadomosci",
+      "source_ids": [
+        "pl_development_technology"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/rozwoj-technologia",
+        "https://www.gov.pl/web/rozwoj-technologia/wiadomosci"
+      ]
+    },
+    {
+      "canonical_id": "pl_sport_tourism",
+      "name_zh": "波蘭體育與觀光部",
+      "name_local": "Ministerstwo Sportu i Turystyki",
+      "name_en": "Ministry of Sport and Tourism",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/sport",
+      "news_url": "https://www.gov.pl/web/sport/wiadomosci",
+      "source_ids": [
+        "pl_sport_tourism"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/sport",
+        "https://www.gov.pl/web/sport/wiadomosci"
+      ]
+    },
+    {
+      "canonical_id": "pl_justice",
+      "name_zh": "波蘭司法部",
+      "name_local": "Ministerstwo Sprawiedliwości",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/sprawiedliwosc",
+      "news_url": "https://www.gov.pl/web/sprawiedliwosc/aktualnosci",
+      "source_ids": [
+        "pl_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/sprawiedliwosc",
+        "https://www.gov.pl/web/sprawiedliwosc/aktualnosci"
+      ]
+    },
+    {
+      "canonical_id": "pl_interior",
+      "name_zh": "波蘭內政與行政部",
+      "name_local": "Ministerstwo Spraw Wewnętrznych i Administracji",
+      "name_en": "Ministry of the Interior and Administration",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/mswia",
+      "news_url": "https://www.gov.pl/web/mswia/aktualnosci",
+      "source_ids": [
+        "pl_interior"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-aware HttpClient live html parse returned 10 items, all dated; bounded genuine fixture replays 1 items with production parser. Scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/mswia",
+        "https://www.gov.pl/web/mswia/aktualnosci"
+      ]
+    },
+    {
+      "canonical_id": "pl_foreign_affairs",
+      "name_zh": "波蘭外交部",
+      "name_local": "Ministerstwo Spraw Zagranicznych",
+      "name_en": "Ministry of Foreign Affairs",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/dyplomacja",
+      "news_url": "https://www.gov.pl/web/dyplomacja/aktualnosci",
+      "source_ids": [
+        "pl_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-aware HttpClient live html parse returned 10 items, all dated; bounded genuine fixture replays 1 items with production parser. Scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/dyplomacja",
+        "https://www.gov.pl/web/dyplomacja/aktualnosci"
+      ]
+    },
+    {
+      "canonical_id": "pl_health",
+      "name_zh": "波蘭衛生部",
+      "name_local": "Ministerstwo Zdrowia",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/zdrowie",
+      "news_url": "https://www.gov.pl/web/zdrowie/wiadomosci",
+      "source_ids": [
+        "pl_health"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/zdrowie",
+        "https://www.gov.pl/web/zdrowie/wiadomosci"
+      ]
+    },
+    {
+      "canonical_id": "pl_prime_minister",
+      "name_zh": "波蘭總理辦公室",
+      "name_local": "Kancelaria Prezesa Rady Ministrów",
+      "name_en": "Chancellery of the Prime Minister",
+      "kind": "government_head_office",
+      "language": "pl",
+      "homepage": "https://www.gov.pl/web/premier",
+      "news_url": "https://www.gov.pl/web/premier/aktualnosci",
+      "source_ids": [
+        "pl_prime_minister"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.gov.pl/web/premier",
+        "https://www.gov.pl/web/gov/ministerstwa",
+        "https://www.gov.pl/web/premier/aktualnosci"
+      ]
+    }
+  ]
+}

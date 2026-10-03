@@ -1,0 +1,139 @@
+{
+  "source_id": "es_equality",
+  "url": "https://www.igualdad.gob.es/feed/",
+  "final_url": "https://www.igualdad.gob.es/feed/",
+  "observed_at": "2026-10-02T00:41:28.465795+00:00",
+  "http_status": 200,
+  "content_type": "application/rss+xml; charset=UTF-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "6f082c607220f35ad73e10c4f7126d43635f02899da731f69d384682b4a8ca44",
+  "response_bytes": 19864,
+  "fixture_sha256": "7fc06b925613599f497ffd3e3beb92e3e0731e933595783f76d77110354d9722",
+  "fixture_bytes": 12870,
+  "transform": "XML parse and serialization retaining first six genuine feed entries; no title/link/date edits",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "Recomendación CM/Rec(2026)1 del Comité de Ministros a los Estados miembros sobre la igualdad y la inteligencia artificial.",
+      "url": "https://www.igualdad.gob.es/recomendacion-cm-rec20261-del-comite-de-ministros-a-los-estados-miembros-sobre-la-igualdad-y-la-inteligencia-artificial/",
+      "published_date_local": "2026-08-03"
+    },
+    {
+      "title": "Estrategia estatal para la igualdad de trato y no discriminación de las personas LGTBI 2025-2028",
+      "url": "https://www.igualdad.gob.es/estrategia-estatal-para-la-igualdad-de-trato-y-no-discriminacion-de-las-personas-lgtbi-2025-2028/",
+      "published_date_local": "2026-02-06"
+    },
+    {
+      "title": "Nosaltres no tenim por, nosaltres som",
+      "url": "https://www.igualdad.gob.es/nosaltres-no-tenim-por-nosaltres-som/",
+      "published_date_local": "2026-01-26"
+    },
+    {
+      "title": "Pasaje Begoña",
+      "url": "https://www.igualdad.gob.es/pasaje-begona/",
+      "published_date_local": "2026-01-26"
+    },
+    {
+      "title": "Orgullosamente Libres",
+      "url": "https://www.igualdad.gob.es/orgullosamente-libres/",
+      "published_date_local": "2026-01-16"
+    },
+    {
+      "title": "Sexilio en España",
+      "url": "https://www.igualdad.gob.es/sexilio-en-espana/",
+      "published_date_local": "2025-12-19"
+    }
+  ],
+  "live_status": {
+    "source_id": "es_equality",
+    "source_name": "西班牙平等部",
+    "country": "ES",
+    "critical": false,
+    "success": true,
+    "fetched_via": "configured-feed",
+    "raw_count": 10,
+    "relevant_count": 10,
+    "duration_seconds": 2.991,
+    "newest_published_at": "2026-08-03T10:19:57+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 0,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 10,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 10,
+    "freshness_lag_days": 60.57,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "stale",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 19864,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "es_equality",
+    "country": "ES",
+    "name_zh": "西班牙平等部",
+    "name": "Ministerio de Igualdad",
+    "institution_type": "central ministry",
+    "language": "es",
+    "homepage": "https://www.igualdad.gob.es/",
+    "listing_url": "https://www.igualdad.gob.es/feed/",
+    "feed_urls": [
+      "https://www.igualdad.gob.es/feed/"
+    ],
+    "allow_domains": [
+      "www.igualdad.gob.es"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Madrid",
+    "card_selectors": [],
+    "link_selectors": [],
+    "title_selectors": [],
+    "date_selectors": [],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_es_equality.xml",
+  "format": "rss"
+}

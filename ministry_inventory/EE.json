@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "country": "EE",
+  "reviewed_on": "2026-10-01",
+  "official_roster_urls": [
+    "https://www.valitsus.ee/"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "Official roster fully enumerated; news endpoint discovery and robots-aware parser verification are still in progress. Unverified endpoints have no runnable source."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "ee_government_office",
+      "name_zh": "愛沙尼亞政府辦公室",
+      "name_local": "Riigikantselei",
+      "name_en": "Government Office",
+      "kind": "government_head_office",
+      "language": "et",
+      "homepage": "https://www.riigikantselei.ee",
+      "news_url": "https://www.riigikantselei.ee/rss-feeds/rss.xml",
+      "source_ids": [
+        "ee_government_office"
+      ],
+      "status": "manual_verified",
+      "reason": "Official RSS discovered in ministry navigation; robots-aware live scrape succeeded with 94 dated articles. Genuine XML/checksum fixture regression recorded; scheduled collection disabled.",
+      "evidence_urls": [
+        "https://www.valitsus.ee/",
+        "https://www.riigikantselei.ee",
+        "https://www.riigikantselei.ee/rss-feeds/rss.xml"
+      ]
+    },
+    {
+      "canonical_id": "ee_education_research",
+      "name_zh": "愛沙尼亞教育與研究部",
+      "name_local": "Haridus- ja Teadusministeerium",
+      "name_en": "Ministry of Education and Research",
+      "kind": "ministry",
+      "language": "et",
+      "homepage": "https://www.hm.ee/et",
+      "news_url": "https://www.hm.ee/rss-feeds/rss.xml",
+      "source_ids": [
+        "ee_education_research"
+      ],
+      "status": "manual_verified",
+      "reason": "Official RSS discovered in ministry navigation; robots-aware live scrape succeeded with 100 dated articles. Genuine XML/checksum fixture regression recorded; scheduled collection disabled.",
+      "evidence_urls": [
+        "https://www.valitsus.ee/",
+        "https://www.hm.ee/et",
+        "https://www.hm.ee/rss-feeds/rss.xml"
+      ]
+    },
+    {
+      "canonical_id": "ee_justice_digital",
+      "name_zh": "愛沙尼亞司法與數位事務部",
+      "name_local": "Justiits- ja Digiministeerium",
+      "name_en": "Ministry of Justice and Digital Affairs",
+      "kind": "ministry",
+      "language": "et",
+      "homepage": "https://www.justdigi.ee/",
+      "news_url": "https://www.justdigi.ee/rss-feeds/rss.xml",
+      "source_ids": [
+        "ee_justice_digital"
+      ],
+      "status": "manual_verified",
+      "reason": "Official RSS discovered in ministry navigation; robots-aware live scrape succeeded with 100 dated articles. Genuine XML/checksum fixture regression recorded; scheduled collection disabled.",
+      "evidence_urls": [
+        "https://www.valitsus.ee/",
+        "https://www.justdigi.ee/",
+        "https://www.justdigi.ee/rss-feeds/rss.xml"
+      ]
+    },
+    {
+      "canonical_id": "ee_defence",
+      "name_zh": "愛沙尼亞國防部",
+      "name_local": "Kaitseministeerium",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "et",
+      "homepage": "https://www.kaitseministeerium.ee/",
+      "news_url": "https://www.kaitseministeerium.ee/rss-feeds/rss.xml",
+      "source_ids": [
+        "ee_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "Official RSS discovered in ministry navigation; robots-aware live scrape succeeded with 99 dated articles. Genuine XML/checksum fixture regression recorded; scheduled collection disabled.",
+      "evidence_urls": [
+        "https://www.valitsus.ee/",
+        "https://www.kaitseministeerium.ee/",
+        "https://www.kaitseministeerium.ee/rss-feeds/rss.xml"
+      ]
+    },
+    {
+      "canonical_id": "ee_climate",
+      "name_zh": "愛沙尼亞氣候部",
+      "name_local": "Kliimaministeerium",
+      "name_en": "Ministry of Climate",
+      "kind": "ministry",
+      "language": "et",
+      "homepage": "https://kliimaministeerium.ee/",
+      "news_url": "https://kliimaministeerium.ee/rss-feeds/rss.xml",
+      "source_ids": [
+        "ee_climate"
+      ],
+      "status": "manual_verified",
+      "reason": "Official RSS discovered in ministry navigation; robots-aware live scrape succeeded with 100 dated articles. Genuine XML/checksum fixture regression recorded; scheduled collection disabled.",
+      "evidence_urls": [
+        "https://www.valitsus.ee/",
+        "https://kliimaministeerium.ee/",
+        "https://kliimaministeerium.ee/rss-feeds/rss.xml"
+      ]
+    },
+    {
+      "canonical_id": "ee_culture",
+      "name_zh": "愛沙尼亞文化部",
+      "name_local": "Kultuuriministeerium",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "et",
+      "homepage": "https://www.kul.ee",
+      "news_url": "https://www.kul.ee/rss-feeds/rss.xml",
+      "source_ids": [
+        "ee_culture"
+      ],
+      "status": "manual_verified",
+      "reason": "Official RSS discovered in ministry navigation; robots-aware live scrape succeeded with 100 dated articles. Genuine XML/checksum fixture regression recorded; scheduled collection disabled.",
+      "evidence_urls": [
+        "https://www.valitsus.ee/",
+        "https://www.kul.ee",
+        "https://www.kul.ee/rss-feeds/rss.xml"
+      ]
+    },
+    {
+      "canonical_id": "ee_economy_communications",
+      "name_zh": "愛沙尼亞經濟與通訊部",
+      "name_local": "Majandus- ja Kommunikatsiooniministeerium",
+      "name_en": "Ministry of Economic Affairs and Communications",
+      "kind": "ministry",
+      "language": "et",
+      "homepage": "https://www.mkm.ee",
+      "news_url": "https://www.mkm.ee/rss-feeds/rss.xml",
+      "source_ids": [
+        "ee_economy_communications"
+      ],
+      "status": "manual_verified",
+      "reason": "Official RSS discovered in ministry navigation; robots-aware live scrape succeeded with 100 dated articles. Genuine XML/checksum fixture regression recorded; scheduled collection disabled.",
+      "evidence_urls": [
+        "https://www.valitsus.ee/",
+        "https://www.mkm.ee",
+        "https://www.mkm.ee/rss-feeds/rss.xml"
+      ]
+    },
+    {
+      "canonical_id": "ee_finance",
+      "name_zh": "愛沙尼亞財政部",
+      "name_local": "Rahandusministeerium",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "et",
+      "homepage": "https://fin.ee/",
+      "news_url": "https://fin.ee/rss-feeds/rss.xml",
+      "source_ids": [
+        "ee_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "Official RSS discovered in ministry navigation; robots-aware live scrape succeeded with 100 dated articles. Genuine XML/checksum fixture regression recorded; scheduled collection disabled.",
+      "evidence_urls": [
+        "https://www.valitsus.ee/",
+        "https://fin.ee/",
+        "https://fin.ee/rss-feeds/rss.xml"
+      ]
+    },
+    {
+      "canonical_id": "ee_regional_agriculture",
+      "name_zh": "愛沙尼亞區域事務與農業部",
+      "name_local": "Regionaal- ja Põllumajandusministeerium",
+      "name_en": "Ministry of Regional Affairs and Agriculture",
+      "kind": "ministry",
+      "language": "et",
+      "homepage": "https://www.agri.ee/",
+      "news_url": "https://www.agri.ee/rss-feeds/rss.xml",
+      "source_ids": [
+        "ee_regional_agriculture"
+      ],
+      "status": "manual_verified",
+      "reason": "Official RSS discovered in ministry navigation; robots-aware live scrape succeeded with 100 dated articles. Genuine XML/checksum fixture regression recorded; scheduled collection disabled.",
+      "evidence_urls": [
+        "https://www.valitsus.ee/",
+        "https://www.agri.ee/",
+        "https://www.agri.ee/rss-feeds/rss.xml"
+      ]
+    },
+    {
+      "canonical_id": "ee_interior",
+      "name_zh": "愛沙尼亞內政部",
+      "name_local": "Siseministeerium",
+      "name_en": "Ministry of the Interior",
+      "kind": "ministry",
+      "language": "et",
+      "homepage": "https://www.siseministeerium.ee",
+      "news_url": "https://www.siseministeerium.ee/rss-feeds/rss.xml",
+      "source_ids": [
+        "ee_interior"
+      ],
+      "status": "manual_verified",
+      "reason": "Official RSS discovered in ministry navigation; robots-aware live scrape succeeded with 100 dated articles. Genuine XML/checksum fixture regression recorded; scheduled collection disabled.",
+      "evidence_urls": [
+        "https://www.valitsus.ee/",
+        "https://www.siseministeerium.ee",
+        "https://www.siseministeerium.ee/rss-feeds/rss.xml"
+      ]
+    },
+    {
+      "canonical_id": "ee_social_affairs",
+      "name_zh": "愛沙尼亞社會事務部",
+      "name_local": "Sotsiaalministeerium",
+      "name_en": "Ministry of Social Affairs",
+      "kind": "ministry",
+      "language": "et",
+      "homepage": "https://www.sm.ee/",
+      "news_url": "https://www.sm.ee/rss-feeds/rss.xml",
+      "source_ids": [
+        "ee_social_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "Official RSS discovered in ministry navigation; robots-aware live scrape succeeded with 92 dated articles. Genuine XML/checksum fixture regression recorded; scheduled collection disabled.",
+      "evidence_urls": [
+        "https://www.valitsus.ee/",
+        "https://www.sm.ee/",
+        "https://www.sm.ee/rss-feeds/rss.xml"
+      ]
+    },
+    {
+      "canonical_id": "ee_foreign_affairs",
+      "name_zh": "愛沙尼亞外交部",
+      "name_local": "Välisministeerium",
+      "name_en": "Ministry of Foreign Affairs",
+      "kind": "ministry",
+      "language": "et",
+      "homepage": "https://vm.ee",
+      "news_url": "https://vm.ee/rss-feeds/rss.xml",
+      "source_ids": [
+        "ee_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "Official RSS discovered in ministry navigation; robots-aware live scrape succeeded with 100 dated articles. Genuine XML/checksum fixture regression recorded; scheduled collection disabled.",
+      "evidence_urls": [
+        "https://www.valitsus.ee/",
+        "https://vm.ee",
+        "https://vm.ee/rss-feeds/rss.xml"
+      ]
+    }
+  ]
+}

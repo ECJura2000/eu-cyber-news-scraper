@@ -1,0 +1,104 @@
+{
+  "source_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia/noticias",
+  "scope": [
+    "EB99FBDDCE7B4E99A063D29F0F222797"
+  ],
+  "articles": [
+    {
+      "id": "40DB18B441344FDBA0D40DB006E7C2D2",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/governo-reforca-apoios-as-familias-e-aos-transportes-face-ao-aumento-dos-combustiveis-",
+      "title": "Governo reforça apoios às famílias e aos transportes face ao aumento dos combustíveis ",
+      "date": "20260924T194100Z",
+      "summary": "Conselho de Ministros mantém o apoio de 25 euros por botija de gás até ao final de 2026 e aprova apoio ao transporte rodoviário de passageiros e mercadorias\n",
+      "areas": [
+        "1D5141F0B5D3434E8ADA5A042485336D",
+        "EB99FBDDCE7B4E99A063D29F0F222797"
+      ]
+    },
+    {
+      "id": "A73429E321D0429E92C4B7F5CEA7A002",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/combustiveis-esclarecimento-do-governo-sobre-as-reservas-estrategicas-nacionais",
+      "title": "Combustíveis: esclarecimento do Governo sobre as reservas estratégicas nacionais",
+      "date": "20260924T190200Z",
+      "summary": "",
+      "areas": [
+        "EB99FBDDCE7B4E99A063D29F0F222797"
+      ]
+    },
+    {
+      "id": "EFEFFB8BC7C647239AC4E62FF8A9D926",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/terra-governo-quer-reduzir-residuos-enviados-para-aterros",
+      "title": "Terra+: Governo quer reduzir resíduos enviados para aterros",
+      "date": "20260923T111900Z",
+      "summary": "Investimento de 2 300 milhões de euros para tornar os resíduos em recursos e aliviar aterros",
+      "areas": [
+        "EB99FBDDCE7B4E99A063D29F0F222797"
+      ]
+    },
+    {
+      "id": "7BC0F5CE25DE460198C00E7F65F932AC",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/governo-vai-rever-o-ordenamento-das-praias-entre-espichel-e-odeceixe",
+      "title": "Governo vai rever o ordenamento das praias entre Espichel e Odeceixe",
+      "date": "20260921T135500Z",
+      "summary": "As alterações visam garantir o livre acesso às praias, ordenar os acessos e estacionamentos públicos e reforçar a proteção dos sistemas ecológicos desta zona costeira.",
+      "areas": [
+        "EB99FBDDCE7B4E99A063D29F0F222797"
+      ]
+    },
+    {
+      "id": "1CCB73D0FD854CE5B131F8F61CEA0007",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/governo-prolonga-medidas-para-proteger-familias-e-empresas-face-a-subida-dos-combustiveis",
+      "title": "Governo prolonga medidas para proteger famílias e empresas face à subida dos combustíveis",
+      "date": "20260907T222400Z",
+      "summary": "Apoios superiores a 700 milhões de euros e novas medidas de transparência e fiscalização respondem à atual crise energética\n",
+      "areas": [
+        "EB99FBDDCE7B4E99A063D29F0F222797"
+      ]
+    },
+    {
+      "id": "C9050C6AEB9E472D8612F5B4EA166E1F",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/prr-18-mil-milhoes-executados-em-areas-estruturantes-do-ambiente-e-energia",
+      "title": "PRR: 1,8 mil milhões executados em áreas estruturantes do ambiente e energia",
+      "date": "20260907T145100Z",
+      "summary": "204 quilómetros de intervenções em redes de água e 952 autocarros de emissões zero, são alguns dos investimentos feitos",
+      "areas": [
+        "EB99FBDDCE7B4E99A063D29F0F222797"
+      ]
+    },
+    {
+      "id": "3517ABA4DB9C47D281AB7785ED6BCB44",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/portugal-vai-duplicar-capacidade-de-armazenamento-de-energia-eletrica-ate-2030",
+      "title": "Portugal vai duplicar capacidade de armazenamento de energia elétrica até 2030",
+      "date": "20260831T164400Z",
+      "summary": "Armazenamento melhora aproveitamento da produção de eletricidade de origem renovável, reforça segurança de abastecimento e reduz importações",
+      "areas": [
+        "EB99FBDDCE7B4E99A063D29F0F222797"
+      ]
+    },
+    {
+      "id": "5F0EB19CFD244A3EA294327ECF3D3B05",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/governo-mobiliza-financiamento-para-a-recuperacao-de-territorios-afetados-pelas-intemperies",
+      "title": "Governo mobiliza financiamento para a recuperação de territórios afetados pelas intempéries",
+      "date": "20260812T160300Z",
+      "summary": "Apoios abrangem 23 municípios e incluem dragagens na foz do rio Mondego",
+      "areas": [
+        "EB99FBDDCE7B4E99A063D29F0F222797"
+      ]
+    }
+  ],
+  "truncated": false,
+  "response_sha256": [
+    "717a7f6c04e11973c8fdf8a968210ccc55a821df0c9d59a9e3f39b622e9fc6f7",
+    "9b9892f3bf7ce1644df65cff564da2b2ffaaf81ecf1a10abb843a13f6d4a13af",
+    "f33a83a3a532bf9c89bc11adcb4be17ccd58dc4c8e95dc2e8f0d4ba85a0632f0"
+  ],
+  "public_endpoint": "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+}

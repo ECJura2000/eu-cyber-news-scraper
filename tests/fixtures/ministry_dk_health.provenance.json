@@ -1,0 +1,85 @@
+{
+  "source_id": "dk_health",
+  "url": "https://www.ism.dk/handlers/DynamicRss.ashx?id=3276f6e0-8386-41d5-b08a-642563d6a4c9",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:41.527621+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "0bcb3b4ef061dff74364a0ee3f9bd56d772ddaa776df6d55434d6ceddac325b6",
+  "response_sha256": "e110004fd007b09c01d1c2c1b32454baf41d6034e73d3f02155c3efd621753c3",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Ny højniveaurepræsentant får nøglerolle i kampen mod antimikrobiel resistens (AMR)",
+      "url": "https://www.ism.dk/nyheder/2026/september/ny-hoejniveaurepraesentant-faar-noeglerolle-i-kampen-mod-antimikrobiel-resistens-amr",
+      "published_date_local": "2026-09-26",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Styrelsen for Patientsikkerhed har færdiggjort tillæg til eftersyn af fertilitetsområdet",
+      "url": "https://www.ism.dk/nyheder/2026/september/skabelon-til-nyheder-pm",
+      "published_date_local": "2026-09-25",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Mødemateriale",
+      "url": "https://www.ism.dk/temaer/taskforce-for-most-favoured-nation/moedemateriale-fra-taskforce-for-most-favoured-nation",
+      "published_date_local": "2026-09-25",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Akutplan for børne- og ungdomspsykiatrien på plads",
+      "url": "https://www.ism.dk/nyheder/2026/september/aftale-for-boerne-og-ungdomspsykiatrien-paa-plads",
+      "published_date_local": "2026-09-25",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Nu bliver det nemmere at få den rette hjælp til senfølger efter kræft",
+      "url": "https://www.ism.dk/nyheder/2026/september/nu-bliver-det-nemmere-at-faa-den-rette-hjaelp-til-senfoelger-efter-kraeft",
+      "published_date_local": "2026-09-23",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Lovforslag om gratis tandpleje sendes i høring",
+      "url": "https://www.ism.dk/nyheder/2026/september/lovforslag-om-gratis-tandpleje-sendes-i-hoering",
+      "published_date_local": "2026-09-22",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Styrelsen for Patientsikkerhed har færdiggjort eftersyn af sædbanker",
+      "url": "https://www.ism.dk/nyheder/2026/september/styrelsen-for-patientsikkerhed-har-faerdiggjort-eftersyn-af-saedbanker-",
+      "published_date_local": "2026-09-16",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Taskforce for Most Favoured Nation",
+      "url": "https://www.ism.dk/temaer/taskforce-for-most-favoured-nation",
+      "published_date_local": "2026-09-16",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 50,
+  "live_dated_count": 50,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "dk_health",
+    "country": "DK",
+    "name_zh": "丹麥衛生與教會部",
+    "name": "Sundheds- og Kirkeministeriet",
+    "institution_type": "ministry",
+    "language": "da",
+    "homepage": "https://www.ism.dk/",
+    "listing_url": "https://www.ism.dk/handlers/DynamicRss.ashx?id=3276f6e0-8386-41d5-b08a-642563d6a4c9",
+    "feed_urls": [
+      "https://www.ism.dk/handlers/DynamicRss.ashx?id=3276f6e0-8386-41d5-b08a-642563d6a4c9"
+    ],
+    "allow_domains": [
+      "www.ism.dk"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Copenhagen",
+    "schedule_enabled": false
+  }
+}

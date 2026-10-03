@@ -1,0 +1,23 @@
+{
+  "url": "https://www.gov.si/novice/rss/?categoryID%5B0%5D=1&orgID%5B0%5D=1962",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:57:06.109427+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "32ee7de57bc8fef8c49421455a4be641d269d877c2bb4178c32622c9ab9133f4",
+  "sha256": "1dff1898d56b06f41991a9b732fa7a4048d95533505431e0acb9d461af336cb7",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 100,
+  "dated_count": 100,
+  "fixture_count": 1,
+  "source_id": "si_slovenians_abroad",
+  "expected": [
+    {
+      "title": "Ministrica Suzana Lep Šimenko pri Slovencih na avstrijskem Koroškem",
+      "url": "https://www.gov.si/novice/2026-09-30-ministrica-suzana-lep-simenko-pri-slovencih-na-avstrijskem-koroskem/",
+      "published_date_local": "2026-09-30",
+      "date_source": "feed-published"
+    }
+  ]
+}

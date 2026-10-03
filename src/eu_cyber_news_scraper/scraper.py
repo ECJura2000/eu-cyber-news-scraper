@@ -3,7 +3,9 @@ from __future__ import annotations
 import asyncio
 import re
 import time
+from collections.abc import Callable
 from datetime import datetime, timedelta, timezone
+from typing import TypedDict
 from urllib.parse import urlsplit
 
 import httpx
@@ -12,12 +14,24 @@ from .authority import annotate_authority
 from .dedupe import dedupe_articles
 from .http import HttpClient, HttpStats
 from .models import Article, Source, SourceResult, SourceStatus
+from .north_adapters import NORTH_ADAPTERS, fetch_north_listing
 from .parsers import discover_feeds, enrich_from_detail, parse_feed, parse_listing
+from .round4_north_adapters import (
+    ROUND4_NORTH_ADAPTERS,
+    fetch_round4_details,
+    fetch_round4_listing,
+    parse_round4_feed,
+)
+from .sitecore_public import fetch_listing as fetch_sitecore_listing
 from .topics import classify_article, is_relevant
 
 
 class RedirectDomainError(RuntimeError):
     pass
+
+
+class _RedirectOptions(TypedDict, total=False):
+    redirect_guard: Callable[[str], bool]
 
 
 class ChallengePageError(RuntimeError):
@@ -103,6 +117,7 @@ async def _scrape_source_impl(
     fetched_via = ""
     pages_fetched = 0
     transport_succeeded = False
+    listing_truncated = False
 
     for feed_url in source.feed_urls:
         try:
@@ -132,7 +147,32 @@ async def _scrape_source_impl(
                 transport_succeeded = True
                 pages_fetched += 1
                 listing_html = response.text
-                if pages_fetched == 1 and not articles and not source.card_selectors:
+                round4_parsed: list[Article] | None = None
+                if source.parser_adapter in {"dk_environment_json", "dk_resilience_json", "dk_foreign_ritzau"}:
+                    result = await fetch_round4_listing(listing_html, source, client, stats)
+                    listing_truncated = result["truncated"]
+                    round4_parsed = parse_round4_feed(result["payload"], source, result["fetched_from"])
+                elif source.parser_adapter in {"belspo_central_press", "bmlv_publication"}:
+                    round4_parsed = await fetch_round4_details(listing_html, source, client, stats)
+                    # This adapter deliberately follows only three publication
+                    # links; never represent that bounded sample as full history.
+                    listing_truncated = True
+                if source.parser_adapter in {"north_gobasic", "north_nextjs"}:
+                    import json
+
+                    north_listing = await fetch_north_listing(listing_html, source, client, stats)
+                    listing_truncated = north_listing["truncated"]
+                    listing_html = json.dumps(north_listing)
+                if source.parser_adapter == "sitecore_public":
+                    import json
+
+                    public_listing = await fetch_sitecore_listing(
+                        listing_html, source, lambda url: _get_source_response(client, url, source, stats), client,
+                    )
+                    listing_truncated = public_listing["truncated"]
+                    listing_html = json.dumps(public_listing)
+                if (pages_fetched == 1 and not articles and not source.card_selectors
+                        and source.parser_adapter not in NORTH_ADAPTERS | ROUND4_NORTH_ADAPTERS | {"sitecore_public"}):
                     discovered = [
                         url
                         for url in discover_feeds(listing_html, listing_url)
@@ -152,9 +192,11 @@ async def _scrape_source_impl(
                                 break
                         except Exception as exc:
                             errors.append(f"{feed_url}: {type(exc).__name__}: {exc}")
-                parsed = parse_listing(listing_html, source, listing_url)
+                parsed = round4_parsed if round4_parsed is not None else parse_listing(listing_html, source, listing_url)
                 articles.extend(parsed)
-                fetched_via = "feed+html-listing" if "feed" in fetched_via else "html-listing"
+                fetched_via = "public-sitecore" if source.parser_adapter == "sitecore_public" else (
+                    "feed+html-listing" if "feed" in fetched_via else "html-listing"
+                )
                 parsed_dates = [item.published_at for item in parsed if item.published_at]
                 if parsed_dates and max(parsed_dates) < since:
                     break
@@ -197,6 +239,10 @@ async def _scrape_source_impl(
     dated_count = sum(item.published_at is not None for item in articles)
     undated_ratio = (len(articles) - dated_count) / len(articles) if articles else 0.0
     warning = ""
+    if listing_truncated:
+        warning = "官方公開查詢尚有下一頁，已達設定頁數上限；此期間搜尋可能不完整。"
+        if source.parser_adapter in {"belspo_central_press", "bmlv_publication"}:
+            warning = "官方新聞內頁僅進行有界樣本抓取；此期間搜尋可能不完整。"
     if not articles and not errors:
         warning = "來源可連線，但未解析出新聞；請檢查版型或發布頻率。"
     if invalid_date_count:
@@ -329,7 +375,8 @@ def _validate_source_response(response: httpx.Response, source: Source, url: str
         )
     )
     too_small = source.min_listing_bytes and len(response.content) < source.min_listing_bytes
-    if any(marker in body for marker in challenge_markers) or challenge_title or too_small:
+    radware_loader = bool(title_match and title_match.group(1).strip() == "radware page")
+    if any(marker in body for marker in challenge_markers) or challenge_title or radware_loader or too_small:
         raise ChallengePageError(
             f"unexpected challenge or undersized listing ({len(response.content)} bytes): {url}"
         )
@@ -361,15 +408,31 @@ async def _get_source_response(
     source: Source,
     stats: HttpStats,
 ) -> httpx.Response:
+    guarded: _RedirectOptions = {}
+    if isinstance(client, HttpClient):
+        origin = urlsplit(url)
+
+        def redirect_guard(target: str) -> bool:
+            parts = urlsplit(target)
+            if not _same_allowed_host(target, source) or parts.username or parts.password:
+                return False
+            if source.parser_adapter == "sitecore_public" and (
+                origin.hostname == "edge-platform.sitecorecloud.io" or "/_next/" in origin.path
+            ):
+                return parts.scheme == "https" and parts.hostname == origin.hostname and parts.port in (None, 443)
+            return True
+
+        guarded["redirect_guard"] = redirect_guard
     if source.tls_intermediate_bundle or source.user_agent:
         response = await client.get(
             url,
             stats=stats,
             ssl_bundle=source.tls_intermediate_bundle,
             user_agent=source.user_agent,
+            **guarded,
         )
     else:
-        response = await client.get(url, stats=stats)
+        response = await client.get(url, stats=stats, **guarded)
     final_url = str(response.url)
     if not _same_allowed_host(final_url, source):
         raise RedirectDomainError(f"redirect target is outside source allow_domains: {final_url}")

@@ -1,0 +1,91 @@
+{
+  "source_id": "at_sozialministerium",
+  "url": "https://www.sozialministerium.gv.at/Services/Aktuelles.html",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:09.271467+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "c0f713360f0f80f07a31b20ba1f285175633dc116bfb189bec96f4a9aab934ae",
+  "response_sha256": "7162bee0164581248c9ddd5b0b86eb9d6fe87a530cbb054bab42b1482f9c671c",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "30. September 2026 \n \n \n \t\t\tBoys’ Day 2026: Österreichweiter Aktionstag am 12. November\n \n \n \n                                                                                    Berufe im Sozial-, Pädagogik- und Pflegebereich erleben und Perspektiven für Burschen und junge Männer schaffen",
+      "url": "https://www.sozialministerium.gv.at/Services/Aktuelles/archiv-2026/boysday-info-2026.html",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "28. September 2026 \n \n \n \t\t\t\"Red's dir nicht schön. Red mit uns.\" Neue fit2work-Kampagne setzt auf frühzeitige Unterstützung \n \n \n \n                                                                                    Die Informationskampagne macht auf gesundheitliche Warnsignale im Job aufmerksam",
+      "url": "https://www.sozialministerium.gv.at/Services/Aktuelles/archiv-2026/fit2work.html",
+      "published_date_local": "2026-09-28",
+      "date_confidence": "high"
+    },
+    {
+      "title": "24. September 2026 \n \n \n \t\t\t\"StoP – Stadtteile ohne Partnergewalt\" wird fortgeführt\n \n \n \n                                                                                    Gewaltpräventionsprojekt wird für weitere zwei Jahre finanziert – Wirkungsevaluation bestätigt Wirksamkeit",
+      "url": "https://www.sozialministerium.gv.at/Services/Aktuelles/archiv-2026/stop.html",
+      "published_date_local": "2026-09-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "24. September 2026 \n \n \n \t\t\tAktivpension startet 2027\n \n \n \n                                                                                    Neue steuerliche und sozialversicherungsrechtliche Begünstigungen für längeres Arbeiten",
+      "url": "https://www.sozialministerium.gv.at/Services/Aktuelles/archiv-2026/aktivpension.html",
+      "published_date_local": "2026-09-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "24. September 2026 \n \n \n \t\t\tBundestierschutzpreis 2026 würdigt besonderes Engagement für den Tierschutz\n \n \n \n                                                                                    Nach acht Jahren wieder vergeben – heuer auch Schulklassen ausgezeichnet",
+      "url": "https://www.sozialministerium.gv.at/Services/Aktuelles/archiv-2026/verleihung-bundestierschutzpreis-2026.html",
+      "published_date_local": "2026-09-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "18. September 2026 \n \n \n \t\t\t10 Jahre \"Ausbildung bis 18\": Unterstützung für Jugendliche auf ihrem Weg in die Zukunft\n \n \n \n                                                                                    Zehn Jahre Beratung, Begleitung und neue Perspektiven für junge Menschen",
+      "url": "https://www.sozialministerium.gv.at/Services/Aktuelles/archiv-2026/ab18.html",
+      "published_date_local": "2026-09-18",
+      "date_confidence": "high"
+    },
+    {
+      "title": "17. September 2026 \n \n \n \t\t\tArbeitsinspektion präsentiert neuen Webauftritt\n \n \n \n                                                                                    Neues Design und übersichtliche Struktur erleichtern Zugang zu Informationen und Services rund um Sicherheit und Gesundheitsschutz am Arbeitsplatz",
+      "url": "https://www.sozialministerium.gv.at/Services/Aktuelles/archiv-2026/website-arbeitsinspektion.html",
+      "published_date_local": "2026-09-17",
+      "date_confidence": "high"
+    },
+    {
+      "title": "13. September 2026 \n \n \n \t\t\t8. Nationaler Aktionstag für pflegende Angehörige\n \n \n \n                                                                                    Rund eine Million Menschen pflegen Angehörige zuhause",
+      "url": "https://www.sozialministerium.gv.at/Services/Aktuelles/archiv-2026/aktionstag-pflegende-angehoerige-2026.html",
+      "published_date_local": "2026-09-13",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 50,
+  "live_dated_count": 50,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "at_sozialministerium",
+    "country": "AT",
+    "name_zh": "奧地利勞動、社會、衛生、照護與消費者保護部",
+    "name": "Bundesministerium für Arbeit, Soziales, Gesundheit, Pflege und Konsumentenschutz",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.sozialministerium.gv.at",
+    "listing_url": "https://www.sozialministerium.gv.at/Services/Aktuelles.html",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.sozialministerium.gv.at"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Vienna",
+    "card_selectors": [
+      "a.card-link"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

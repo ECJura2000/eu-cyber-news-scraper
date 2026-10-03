@@ -1,0 +1,95 @@
+{
+  "url": "https://kormany.hu/kormanyzat/honvedelmi-miniszterium",
+  "observed_at": "2026-10-03T02:41:08.951114+00:00",
+  "http_status": 200,
+  "raw_sha256": "a080e1d663bf342879c614ac35398906d897566542e9db75923234ed575c5c40",
+  "raw_bytes": 745471,
+  "title": "Honvédelmi Minisztérium | Magyarország Kormánya",
+  "visible_text": "Honvédelmi Minisztérium | Magyarország Kormánya Kiemelt tartalmak Gyermekvédelmi jelentés Átlátható kormányzás Kormányzati tájékoztató Eredmények Fő navigáció Hírek Kormányzat Dokumentumtár Hírlevél EN Kormányzat ... Honvédelmi Minisztérium Honvédelmi Minisztérium Ruszin-Szendi Romulusz Honvédelmi miniszter Életrajz Ruszin-Szendi Romulusz Honvédelmi miniszter Életrajz Dr. Ruszin-Szendi Romulusz – honvédelmi miniszter,\n\nAltábornagy, a hadtudományok doktora, a Magyar Honvédség korábbi parancsnoka. Nemzetközi katonai tapasztalatot szerzett Irakban és Afganisztánban, valamint vezetői feladatokat látott el NATO-missziókban. Az Egyesült Államokban szerzett stratégiai tudományok mestere diplomát. Teljes életrajz Elérhetőségek Impresszum Adatkezelési tájékoztató Közérdekű adatok Nemzeti Jogszabálytár Nyilvántartások Archív kormany.hu (2020-2025) Közadatkereső BÉTA © Magyarország Kormánya, 2026",
+  "links": [
+    [
+      "Hírek",
+      "/hirek"
+    ]
+  ],
+  "extraction": "Decoded visible text and link extraction from freshly fetched public HTML; not a raw response replacement.",
+  "latest_global_news": [
+    {
+      "url": "http://kormany.hu/application/pages?filter=%7B%22type%22:%22article%22,%22orderBy%22:%7B%22publicationDate%22:%22desc%22%7D%7D&pagination=%7B%22page%22:1,%22itemsPerPage%22:12%7D",
+      "data": [
+        {
+          "title": "Több mint 700 ezer ember nyugdíja emelkedik januártól",
+          "date": "2026-10-02",
+          "ministry": null,
+          "column": null
+        },
+        {
+          "title": "Verseny nélkül adott ki 46 milliót a Szuverenitásvédelmi Hivatal",
+          "date": "2026-10-02",
+          "ministry": null,
+          "column": null
+        },
+        {
+          "title": "Havi 1,5 milliós fizetés, önmagukat megbízó vezetők az Alapjogokért Központnál",
+          "date": "2026-10-02",
+          "ministry": null,
+          "column": null
+        },
+        {
+          "title": "Konkrét lépések a főváros működésének kiszámítható finanszírozásáért",
+          "date": "2026-10-01",
+          "ministry": null,
+          "column": null
+        },
+        {
+          "title": "Megmutatjuk, kinek ítéltek az elmúlt években NKA-támogatásokat",
+          "date": "2026-10-01",
+          "ministry": null,
+          "column": null
+        },
+        {
+          "title": "Elindult a jelentkezés a Magyar Közigazgatási Ösztöndíjprogramba",
+          "date": "2026-10-01",
+          "ministry": null,
+          "column": null
+        },
+        {
+          "title": "Feljelentések a Beloiannisz hajó és a fonyódi sportszálló felújítása ügyében",
+          "date": "2026-09-30",
+          "ministry": null,
+          "column": null
+        },
+        {
+          "title": "Nyilvánosságra hozzuk az Orbán-kormányok üléseinek összefoglalóit",
+          "date": "2026-09-30",
+          "ministry": null,
+          "column": null
+        },
+        {
+          "title": "Kevesebb egyajánlatos közbeszerzés, gondosabb gazdálkodás a közpénzzel",
+          "date": "2026-09-29",
+          "ministry": null,
+          "column": null
+        },
+        {
+          "title": "Nyilvános a 2010 és 2026 közötti nem publikált kormányhatározatok listája",
+          "date": "2026-09-29",
+          "ministry": null,
+          "column": null
+        },
+        {
+          "title": "Mintegy 455 millió forintnyi kifogásolt p2m-megrendelés miatt tett feljelentést a Miniszterelnökség",
+          "date": "2026-09-29",
+          "ministry": null,
+          "column": null
+        },
+        {
+          "title": "Constantinovits Miklós: Olyan mentőszolgálatot építünk, ahol első a beteg",
+          "date": "2026-09-29",
+          "ministry": null,
+          "column": null
+        }
+      ]
+    }
+  ]
+}

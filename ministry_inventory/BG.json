@@ -1,0 +1,458 @@
+{
+  "schema_version": 1,
+  "country": "BG",
+  "reviewed_on": "2026-10-03",
+  "official_roster_urls": [
+    "https://iisda.government.bg/ras/executive_power/ministries"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "2026-10-02 round3 south: 15 manually verified, 0 existing-source ministries, 4 unresolved. Scoped adapters have full fresh payload/local-date and bounded fixture replay; production dispatch and scrape_source verification passed. Verified sources remain manual-only, schedule_enabled=false, critical=false, all 15 topics, empty responsibility. Exact attempts are in tests/fixtures/ministry_round3_south.json; failures are not obsolete designations."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "bg_government",
+      "name_zh": "保加利亞部長會議及總理辦公室",
+      "name_local": "Министерски съвет",
+      "name_en": "Council of Ministers and Prime Minister's Office",
+      "kind": "government_head_office",
+      "language": "bg",
+      "homepage": "https://www.gov.bg/bg",
+      "news_url": "https://www.gov.bg/en/Press-center/News",
+      "source_ids": [
+        "bg_government"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_bg_government.provenance.json",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/administration_council_of_ministers",
+        "https://www.gov.bg/bg",
+        "https://www.gov.bg/bg/prestsentar/novini",
+        "https://www.gov.bg/en/Press-center/News"
+      ]
+    },
+    {
+      "canonical_id": "bg_foreign_affairs",
+      "name_zh": "保加利亞外交部",
+      "name_local": "Министерство на външните работи",
+      "name_en": "Ministry of Foreign Affairs",
+      "kind": "ministry",
+      "language": "bg",
+      "homepage": "https://www.mfa.bg/bg",
+      "news_url": "https://www.mfa.bg/bg/rss",
+      "source_ids": [
+        "bg_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_bg_foreign_affairs.provenance.json",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/90",
+        "https://www.mfa.bg/bg",
+        "https://www.mfa.bg/bg/rss"
+      ]
+    },
+    {
+      "canonical_id": "bg_interior",
+      "name_zh": "保加利亞內政部",
+      "name_local": "Министерство на вътрешните работи",
+      "name_en": "Ministry of Interior",
+      "kind": "ministry",
+      "language": "bg",
+      "homepage": "https://mvr.bg/",
+      "news_url": "https://mvr.bg/press/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%BE/%2A",
+      "source_ids": [
+        "bg_interior"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_bg_interior.provenance.json",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/78",
+        "https://mvr.bg/",
+        "https://mvr.bg/press/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%BE/%2A"
+      ]
+    },
+    {
+      "canonical_id": "bg_energy",
+      "name_zh": "保加利亞能源部",
+      "name_local": "Министерство на енергетиката",
+      "name_en": "Ministry of Energy",
+      "kind": "ministry",
+      "language": "bg",
+      "homepage": "https://www.me.government.bg/bg/news/",
+      "news_url": "https://www.me.government.bg/bg/news/",
+      "source_ids": [
+        "bg_energy"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 6 dated items. Evidence: tests/fixtures/ministry_bg_energy.provenance.json",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/1467",
+        "https://www.me.government.bg/bg/news/"
+      ]
+    },
+    {
+      "canonical_id": "bg_health",
+      "name_zh": "保加利亞衛生部",
+      "name_local": "Министерство на здравеопазването",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "bg",
+      "homepage": "https://mh.government.bg/",
+      "news_url": "https://mh.government.bg/bg/novini/aktualno",
+      "source_ids": [
+        "bg_health"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_bg_health.provenance.json",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/79",
+        "https://mh.government.bg/",
+        "https://mh.government.bg/bg/novini/aktualno"
+      ]
+    },
+    {
+      "canonical_id": "bg_agriculture",
+      "name_zh": "保加利亞農業與糧食部",
+      "name_local": "Министерство на земеделието и храните",
+      "name_en": "Ministry of Agriculture and Food",
+      "kind": "ministry",
+      "language": "bg",
+      "homepage": "https://www.mzh.government.bg/bg/press-center/novini/?category=1",
+      "news_url": "https://www.mzh.government.bg/bg/press-center/novini/?category=1",
+      "source_ids": [
+        "bg_agriculture"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_bg_agriculture.provenance.json",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/84",
+        "https://www.mzh.government.bg/bg/press-center/novini/?category=1"
+      ]
+    },
+    {
+      "canonical_id": "bg_economy",
+      "name_zh": "保加利亞經濟、投資與工業部",
+      "name_local": "Министерство на икономиката, инвестициите и индустрията",
+      "name_en": "Ministry of Economy, Investments and Industry",
+      "kind": "ministry",
+      "language": "bg",
+      "homepage": "https://www.mi.government.bg/novini/novini/",
+      "news_url": "https://www.mi.government.bg/novini/novini/",
+      "source_ids": [
+        "bg_economy"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_bg_economy.provenance.json",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/1091",
+        "https://www.mi.government.bg/novini/novini/"
+      ]
+    },
+    {
+      "canonical_id": "bg_innovation",
+      "name_zh": "保加利亞創新與數位轉型部",
+      "name_local": "Министерство на иновациите и дигиталната трансформация",
+      "name_en": "Ministry of Innovation and Digital Transformation",
+      "kind": "ministry",
+      "language": "bg",
+      "homepage": "https://midt.gov.bg/bg/news",
+      "news_url": "https://midt.gov.bg/bg/news",
+      "source_ids": [
+        "bg_innovation"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_bg_innovation.provenance.json",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/3454",
+        "https://midt.gov.bg/bg/news"
+      ]
+    },
+    {
+      "canonical_id": "bg_culture",
+      "name_zh": "保加利亞文化部",
+      "name_local": "Министерство на културата",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "bg",
+      "homepage": "https://mc.government.bg/",
+      "news_url": "https://mc.government.bg/%D0%B2%D0%B8%D0%B4-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B0/%d0%bd%d0%be%d0%b2%d0%b8%d0%bd%d0%b8/feed/",
+      "source_ids": [
+        "bg_culture"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_bg_culture.provenance.json",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/80",
+        "https://mc.government.bg/",
+        "https://mc.government.bg/%D0%B2%D0%B8%D0%B4-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B0/%d0%bd%d0%be%d0%b2%d0%b8%d0%bd%d0%b8/feed/"
+      ]
+    },
+    {
+      "canonical_id": "bg_youth_sport",
+      "name_zh": "保加利亞青年與體育部",
+      "name_local": "Министерство на младежта и спорта",
+      "name_en": "Ministry of Youth and Sports",
+      "kind": "ministry",
+      "language": "bg",
+      "homepage": "https://www.nism.bg/bg/za-nas",
+      "news_url": "https://www.nism.bg/bg/novini-i-sabitia/novini",
+      "source_ids": [
+        "bg_youth_sport"
+      ],
+      "status": "manual_verified",
+      "reason": "第五輪維基百科線索與官網查核：manual_verified。已記錄錯誤：http_error, robots_denied, 來源可連線，但未解析出新聞；請檢查版型或發布頻率。。後續：Integrate this owned registry and ministry inventory patch. Source selects only Ministry-issued youth-policy notices on its official directorate portal; community/partner news is excluded. Manual only; bounded current page does not establish complete archive or schedule acceptance. 證據：tests/fixtures/ministry_round5_east.json",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/1202",
+        "https://strategy.bg/",
+        "https://www.nism.bg/bg/",
+        "https://mpes.government.bg/",
+        "https://iisda.government.bg/ras/executive_power/ministry/1202",
+        "https://www.gov.bg/en",
+        "https://www.nism.bg//templates/newsberg/css/swiper.min.css",
+        "https://www.nism.bg/bg/za-nas",
+        "https://www.nism.bg/bg/novini-i-sabitia/novini",
+        "https://bg.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%BE_%D0%BD%D0%B0_%D0%BC%D0%BB%D0%B0%D0%B4%D0%B5%D0%B6%D1%82%D0%B0_%D0%B8_%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0_%D0%BD%D0%B0_%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F"
+      ]
+    },
+    {
+      "canonical_id": "bg_education",
+      "name_zh": "保加利亞教育與科學部",
+      "name_local": "Министерство на образованието и науката",
+      "name_en": "Ministry of Education and Science",
+      "kind": "ministry",
+      "language": "bg",
+      "homepage": "https://www.mon.bg/novini/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (6), timeout (1). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/81",
+        "https://www.mon.bg/novini/",
+        "https://www.mon.bg",
+        "https://en.wikipedia.org/wiki/Ministry_of_Education_and_Science_(Bulgaria)",
+        "https://mon.bg",
+        "https://www.mon.bg/",
+        "https://web.archive.org/web/20210813195822/https://mon.bg/",
+        "https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=233694",
+        "https://www.archives.government.bg/guides/12_P_K1.pdf",
+        "https://azbuki.bg/",
+        "https://bg.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%BE_%D0%BD%D0%B0_%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%D1%82%D0%BE_%D0%B8_%D0%BD%D0%B0%D1%83%D0%BA%D0%B0%D1%82%D0%B0_%D0%BD%D0%B0_%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (6), timeout (1). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.",
+        "observed_at": "2026-10-03T17:46:30.014233+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "bg_environment",
+      "name_zh": "保加利亞環境與水資源部",
+      "name_local": "Министерство на околната среда и водите",
+      "name_en": "Ministry of Environment and Water",
+      "kind": "ministry",
+      "language": "bg",
+      "homepage": "https://www.moew.government.bg/",
+      "news_url": "https://www.moew.government.bg/bg/prescentur/nacionalni-novini/",
+      "source_ids": [
+        "bg_environment"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 round3 south: Keep manual-only source disabled from scheduling; replay provenance fixture before any later activation. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (bg_environment).",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/82",
+        "https://www.moew.government.bg/",
+        "https://www.moew.government.bg/bg/prescentur/nacionalni-novini/"
+      ]
+    },
+    {
+      "canonical_id": "bg_defence",
+      "name_zh": "保加利亞國防部",
+      "name_local": "Министерство на отбраната",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "bg",
+      "homepage": "https://www.mod.bg/",
+      "news_url": "https://www.mod.bg/news",
+      "source_ids": [
+        "bg_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: bg_defence_onclick implemented and production-verified: 8 parsed, 8 dated in the full fresh official response; scrape_source succeeded with 8 dated items. Exact source values, local dates, confidence, bounded fixture SHA256 and separate full-response SHA256 in tests/fixtures/ministry_bg_defence.provenance.json. Manual-only schedule_enabled=false, critical=false, all 15 topics, empty responsibility.",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/89",
+        "https://www.mod.bg/news",
+        "https://www.mod.bg/upcoming_news",
+        "https://www.mod.bg/presscenter",
+        "https://www.mod.bg/news_arhiv",
+        "https://www.mod.bg/news/2/1,2,3",
+        "https://www.mod.bg/"
+      ]
+    },
+    {
+      "canonical_id": "bg_justice",
+      "name_zh": "保加利亞司法部",
+      "name_local": "Министерство на правосъдието",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "bg",
+      "homepage": "https://justice.government.bg/home/",
+      "news_url": "https://justice.government.bg/api/content/GetNewsSQData?count=3&blockId=5&lang=bg",
+      "source_ids": [
+        "bg_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: bg_justice_json implemented and production-verified: 3 parsed, 3 dated in the full fresh official response; scrape_source succeeded with 3 dated items. Exact source values, local dates, confidence, bounded fixture SHA256 and separate full-response SHA256 in tests/fixtures/ministry_bg_justice.provenance.json. Manual-only schedule_enabled=false, critical=false, all 15 topics, empty responsibility.",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/61",
+        "https://justice.government.bg/home/",
+        "https://justice.government.bg/home/index/news?top=1",
+        "https://justice.government.bg/js/custom.js",
+        "https://justice.government.bg/js/mjprocess.js",
+        "https://justice.government.bg/api/content/GetNewsSQData?count=3&blockId=5&lang=bg"
+      ]
+    },
+    {
+      "canonical_id": "bg_regional_development",
+      "name_zh": "保加利亞區域發展與公共工程部",
+      "name_local": "Министерство на регионалното развитие и благоустройството",
+      "name_en": "Ministry of Regional Development and Public Works",
+      "kind": "ministry",
+      "language": "bg",
+      "homepage": "https://www.mrrb.bg/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: timeout (2).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/85",
+        "https://www.mrrb.bg/",
+        "https://www.gov.bg/en",
+        "https://www.gov.bg/en/Press-center/News",
+        "https://www.gov.bg/en/Press-center/News/-Prime-Minister-Rumen-Radev-outlines-cabinet%E2%80%99s-tasks-and-orders-to-examine-ministries%E2%80%99-overall-performance",
+        "https://www.gov.bg/en/Press-center/News/Rumen-Radev-Bulgaria-and-France-open-door-to-deep-and-fruitful-cooperation-in-high-tech-and-space",
+        "https://bg.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%BE_%D0%BD%D0%B0_%D1%80%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%BD%D0%BE%D1%82%D0%BE_%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5_%D0%B8_%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE%D1%82%D0%BE_%D0%BD%D0%B0_%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: timeout (2).",
+        "observed_at": "2026-10-03T17:46:43.455295+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "bg_transport",
+      "name_zh": "保加利亞交通與通訊部",
+      "name_local": "Министерство на транспорта и съобщенията",
+      "name_en": "Ministry of Transport and Communications",
+      "kind": "ministry",
+      "language": "bg",
+      "homepage": "https://www.mtc.government.bg/bg/category/1?page=0",
+      "news_url": "https://www.mtc.government.bg/bg/taxonomy/term/1/feed",
+      "source_ids": [
+        "bg_transport"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_bg_transport.provenance.json",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/86",
+        "https://www.mtc.government.bg/bg/category/1?page=0",
+        "https://www.mtc.government.bg/bg/taxonomy/term/1/feed"
+      ]
+    },
+    {
+      "canonical_id": "bg_labour",
+      "name_zh": "保加利亞勞動與社會政策部",
+      "name_local": "Министерство на труда и социалната политика",
+      "name_en": "Ministry of Labour and Social Policy",
+      "kind": "ministry",
+      "language": "bg",
+      "homepage": "https://www.mlsp.government.bg/",
+      "news_url": "https://www.mlsp.government.bg/novini",
+      "source_ids": [
+        "bg_labour"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: bg_labour_english_dates implemented and production-verified: 12 parsed, 12 dated in the full fresh official response; scrape_source succeeded with 12 dated items. Exact source values, local dates, confidence, bounded fixture SHA256 and separate full-response SHA256 in tests/fixtures/ministry_bg_labour.provenance.json. Manual-only schedule_enabled=false, critical=false, all 15 topics, empty responsibility.",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/87",
+        "https://www.mlsp.government.bg/novini-1",
+        "https://www.mlsp.government.bg/novini",
+        "https://www.mlsp.government.bg/"
+      ]
+    },
+    {
+      "canonical_id": "bg_tourism",
+      "name_zh": "保加利亞觀光部",
+      "name_local": "Министерство на туризма",
+      "name_en": "Ministry of Tourism",
+      "kind": "ministry",
+      "language": "bg",
+      "homepage": "https://www.tourism.government.bg/bg/kategorii/novini?page=1",
+      "news_url": "https://www.tourism.government.bg/bg/kategorii/novini?page=1",
+      "source_ids": [
+        "bg_tourism"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_bg_tourism.provenance.json",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/1468",
+        "https://www.tourism.government.bg/bg/kategorii/novini?page=1"
+      ]
+    },
+    {
+      "canonical_id": "bg_finance",
+      "name_zh": "保加利亞財政部",
+      "name_local": "Министерство на финансите",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "bg",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (5), timeout (1). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://iisda.government.bg/ras/executive_power/ministries",
+        "https://iisda.government.bg/ras/executive_power/ministry_organigram/88",
+        "https://strategy.bg/",
+        "https://www.minfin.bg/bg/news/2026-6",
+        "https://minfin.bg/en/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Finance_(Bulgaria)",
+        "https://minfin.bg",
+        "https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=233694",
+        "https://www.minfin.bg/en/page/36",
+        "https://www.archives.government.bg/guides/12_P_K1.pdf",
+        "https://www.minfin.bg/",
+        "https://web.archive.org/web/20130216002938/http://www.minfin.bg/",
+        "https://web.archive.org/web/20130216002938/http://www.minfin.bg/bg/rss",
+        "https://bg.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%BE_%D0%BD%D0%B0_%D1%84%D0%B8%D0%BD%D0%B0%D0%BD%D1%81%D0%B8%D1%82%D0%B5_%D0%BD%D0%B0_%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (5), timeout (1). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.",
+        "observed_at": "2026-10-03T17:46:30.314280+08:00",
+        "candidate_news_url": null
+      }
+    }
+  ]
+}

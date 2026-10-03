@@ -1,0 +1,91 @@
+{
+  "source_id": "at_bmwet",
+  "url": "https://www.bmwet.gv.at/Presse/AktuellePressemeldungen.html",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:10.498171+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "4c16fc7ef466b4e239e352728baa0159d0eaf74bfb3e858315a4194ba4012ba4",
+  "response_sha256": "c49a40e2ea88590c3a3a7b2fc43ed28eb4ed4099c65b7d5b0d4225eeee63b5f9",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "1. Oktober 2026 \n \n \n \t\t\tHattmannsdorfer / KMU-Paket: „Unsere Betriebe sollen Aufträge abarbeiten, keine Papierberge“",
+      "url": "https://www.bmwet.gv.at/Presse/AktuellePressemeldungen/kmu-paket.html",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "30. September 2026 \n \n \n \t\t\tHattmannsdorfer/Zehetner: 50 Millionen Euro zusätzlich für Investitionen am Standort Österreich",
+      "url": "https://www.bmwet.gv.at/Presse/AktuellePressemeldungen/investitionen-standort.html",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "30. September 2026 \n \n \n \t\t\tÖsterreichs Einsatz zeigt Wirkung: Zehetner begrüßt Kurswechsel der Kommission bei Methanverordnung",
+      "url": "https://www.bmwet.gv.at/Presse/AktuellePressemeldungen/methan-vo.html",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "30. September 2026 \n \n \n \t\t\tHattmannsdorfer/Zehetner zum EAG-Monitoringbericht: „Erneuerbaren-Zubau liegt ein Viertel über dem Zielpfad – jetzt Speicher stärken“",
+      "url": "https://www.bmwet.gv.at/Presse/AktuellePressemeldungen/eag-monitoringbericht.html",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "30. September 2026 \n \n \n \t\t\tHattmannsdorfer: Österreich beteiligt sich mit bis zu 200 Millionen Euro an Europäischer Wasserstoffbank",
+      "url": "https://www.bmwet.gv.at/Presse/AktuellePressemeldungen/eu-wasserstoffbank.html",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "29. September 2026 \n \n \n \t\t\tHattmannsdorfer: In geopolitisch härteren Zeiten Beziehungen mit Nordafrika stärken",
+      "url": "https://www.bmwet.gv.at/Presse/AktuellePressemeldungen/nordafrika.html",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "27. September 2026 \n \n \n \t\t\tZehetner zu WorldSkills: „Wer etwas kann, anpackt und besser werden will, macht unser Land stark“",
+      "url": "https://www.bmwet.gv.at/Presse/AktuellePressemeldungen/zehetner-worldskills.html",
+      "published_date_local": "2026-09-27",
+      "date_confidence": "high"
+    },
+    {
+      "title": "27. September 2026 \n \n \n \t\t\tMedaillen-Regen bei WorldSkills: „Ihr seid großartige Vorbilder und Botschafter für Österreich“",
+      "url": "https://www.bmwet.gv.at/Presse/AktuellePressemeldungen/worldskills-hattmansdorfer.html",
+      "published_date_local": "2026-09-27",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 10,
+  "live_dated_count": 10,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "at_bmwet",
+    "country": "AT",
+    "name_zh": "奧地利經濟、能源與觀光部",
+    "name": "Bundesministerium für Wirtschaft, Energie und Tourismus",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.bmwet.gv.at",
+    "listing_url": "https://www.bmwet.gv.at/Presse/AktuellePressemeldungen.html",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.bmwet.gv.at"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Vienna",
+    "card_selectors": [
+      "a.card-link"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

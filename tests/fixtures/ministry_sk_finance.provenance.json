@@ -1,0 +1,199 @@
+{
+  "source_id": "sk_finance",
+  "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:34:27.934429+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "f5963b66f9839e1e67c592c0f08077787c728943686110b2b66814ec11ac7ab7",
+  "fixture_count": 20,
+  "expected": [
+    {
+      "title": "Bilancia štátneho rozpočtu k 30.9.2026",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/bilancia-statneho-rozpoctu-k-30-9-2026.html",
+      "published_date_local": "2026-10-01",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Ekonomická prognóza na budúci rok sa zlepšuje. HDP bude rásť o niečo rýchlejšie, zvýši sa súkromná spotreba a export a zrýchli sa aj rast reálnych miezd",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/ekonomicka-prognoza-buduci-rok-zlepsuje-hdp-bude-rast-nieco-rychlejsie-zvysi-sukromna-spotreba-export-zrychli.html",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Vláda schválila opatrenia v súvislosti s cenami pohonných látok",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/vlada-schvalila-opatrenia-suvislosti-cenami-pohonnych-latok.html",
+      "published_date_local": "2026-09-23",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Ministerstvo financií SR vybralo dodávateľa pre podporu a rozvoj dokumentačného systému rezortu",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/ministerstvo-financii-sr-vybralo-dodavatela-podporu-rozvoj-dokumentacneho-systemu-rezortu.html",
+      "published_date_local": "2026-09-23",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Reakcia MF SR na zavádzajúce a klamlivé informácie",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/reakcia-mf-sr-zavadzajuce-klamlive-informacie.html",
+      "published_date_local": "2026-09-14",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Slovensko obhájilo rating na úrovni A (nízky) so stabilným výhľadom",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/slovensko-obhajilo-rating-urovni-nizky-so-stabilnym-vyhladom.html",
+      "published_date_local": "2026-09-11",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Čerpanie ŠF a KF k 31.8.2026",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/cerpanie-sf-kf-k-31-8-2026.html",
+      "published_date_local": "2026-09-11",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Reakcia MF SR na nepravdivé a klamlivé informácie",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/reakcia-mf-sr-nepravdive-klamlive-informacie.html",
+      "published_date_local": "2026-09-04",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Bilancia štátneho rozpočtu k 31.08.2026",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/bilancia-statneho-rozpoctu-k-31-08-2026.html",
+      "published_date_local": "2026-09-02",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "MF SR ukončilo verejné obstarávanie na podporu a rozvoj redakčného systému pre webové sídla ministerstva",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/mf-sr-ukoncilo-verejne-obstaravanie-podporu-rozvoj-redakcneho-systemu-webove-sidla-ministerstva.html",
+      "published_date_local": "2026-08-17",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "MF SR: Pri riešení situácie v Bukóze musí byť prioritou transparentný výber investora, pracovné miesta pre ľudí a ochrana záujmov štátu",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/mf-sr-pri-rieseni-situacie-bukoze-musi-byt-prioritou-transparentny-vyber-investora-pracovne-miesta-ludi-ochrana-zaujm.html",
+      "published_date_local": "2026-08-14",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Čerpanie ŠF a KF k 31.07.2026",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/cerpanie-sf-kf-k-31-07-2026.html",
+      "published_date_local": "2026-08-06",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Oznam o plánovanej technickej údržbe",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/oznam-planovanej-technickej-udrzbe.html",
+      "published_date_local": "2026-08-06",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Bilancia štátneho rozpočtu k 31.7.2026",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/bilancia-statneho-rozpoctu-k-31-7-2026.html",
+      "published_date_local": "2026-08-04",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Ministerstvo financií SR využitím eurofondom spúšťa projekt na lepšie využívanie údajov. Vysúťaženú cenu dokázalo znížiť o 186 tisíc eur",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/ministerstvo-financii-sr-vyuzitim-eurofondom-spusta-projekt-lepsie-vyuzivanie-udajov-vysutazenu-cenu-dokazalo-znizit-186.html",
+      "published_date_local": "2026-07-14",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Čerpanie ŠF a KF k 30.06.2026",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/cerpanie-sf-kf-k-30-06-2026.html",
+      "published_date_local": "2026-07-08",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Bilancia štátneho rozpočtu k 30.6.2026",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/bilancia-statneho-rozpoctu-k-30-6-2026.html",
+      "published_date_local": "2026-07-01",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Druhá fáza reformy CES",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/druha-faza-reformy-ces.html",
+      "published_date_local": "2026-06-29",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Slovenskú ekonomiku ťahá dole negatívny vývoj v Európe. Budúci rok bude ale HDP rásť rýchlejšie ako priemer EÚ. Priaznivejší výhľad prináša aj najnovšia prognóza v oblasti daní. Štát efektívnejšie vyberá DPH",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/slovensku-ekonomiku-taha-dole-negativny-vyvoj-europe-buduci-rok-bude-hdp-rast-rychlejsie-ako-priemer-eu-priaznivejsi-vy.html",
+      "published_date_local": "2026-06-29",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Moderné obstarávanie energií prinesie vyššiu konkurenciu a hospodárnejšie využívanie verejných zdrojov",
+      "url": "https://www.mfsr.sk/sk/media/tlacove-spravy/mode-moderne-obstaravanie-energii-prinesie-vyssiu-konkurenciu-hospodarnejsie-vyuzivanie-verejnych-zdrojov-rne-obstaravanie.html",
+      "published_date_local": "2026-06-24",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    }
+  ],
+  "parsed_count": 20,
+  "dated_count": 20,
+  "transform": "BeautifulSoup extraction of up to 8 genuine dated article containers (original attributes/text); scripts/styles/nav/header/footer removed; original base element retained where present",
+  "live_status": {
+    "source_id": "sk_finance",
+    "source_name": "斯洛伐克財政部",
+    "country": "SK",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 20,
+    "relevant_count": 20,
+    "duration_seconds": 3.246,
+    "newest_published_at": "2026-09-30T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 20,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 20,
+    "freshness_lag_days": 1.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 403974,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  }
+}

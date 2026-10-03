@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.pl/web/rozwoj-technologia/wiadomosci",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:53:42.979022+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "74ecb99fd181f9b4d63dd271db277ea125d46a13bafa680cd7a0044b12012779",
+  "sha256": "29757f0c76b554d625313e9b3f4a0e68f2782e7a1603a1891afa80d7d323d329",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "pl_development_technology",
+  "expected": [
+    {
+      "title": "Dostęp do Biznes.gov.pl - zwiększamy przepustowość systemu",
+      "url": "https://www.gov.pl/web/rozwoj-technologia/dostep-do-biznesgovpl--zwiekszamy-przepustowosc-systemu",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Zmiany w działaniu Polskiej Strefy Inwestycji",
+      "url": "https://www.gov.pl/web/rozwoj-technologia/zmiany-w-dzialaniu-polskiej-strefy-inwestycji",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Czasowe utrudnienia w usługach Biznes.gov.pl - e-Doręczenia i CEIDG",
+      "url": "https://www.gov.pl/web/rozwoj-technologia/czasowe-utrudnienia-w-uslugach-biznesgovpl--e-doreczenia-i-ceidg",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Nawet 70% dopłaty do energii dla przemysłu energochłonnego. Rada Ministrów przyjęła projekt ustawy z nowymi rozwiązaniami",
+      "url": "https://www.gov.pl/web/rozwoj-technologia/nawet-70-proc.-doplaty-do-energii-dla-przemyslu-energochlonnego-rada-ministrow-przyjela-projekt-ustawy-z-nowymi-rozwiazaniami",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    }
+  ]
+}

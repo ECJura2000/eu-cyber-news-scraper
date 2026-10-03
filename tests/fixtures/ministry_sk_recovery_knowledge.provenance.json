@@ -1,0 +1,23 @@
+{
+  "url": "https://www.vicepremier.gov.sk/feed/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:57:56.234264+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "7b0313cdf46508b18d95bd0dd447d53722aa27b02fd4f9774043f0c566f51b3c",
+  "sha256": "dfd43e40de21c55980b09ced11dd0879a864ce588157c7732a59b6670d63d35a",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 1,
+  "source_id": "sk_recovery_knowledge",
+  "expected": [
+    {
+      "title": "Na ceste do Tallinnu: Štátna tajomníčka Sabelová prijala estónskeho veľvyslanca",
+      "url": "https://www.vicepremier.gov.sk/na-ceste-do-tallinnu-statna-tajomnicka-sabelova-prijala-estonskeho-velvyslanca/",
+      "published_date_local": "2026-09-28",
+      "date_source": "feed-published"
+    }
+  ]
+}

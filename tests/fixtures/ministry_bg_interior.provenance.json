@@ -1,0 +1,95 @@
+{
+  "source_id": "bg_interior",
+  "url": "https://mvr.bg/press/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%BE/%2A",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:48.108636+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "dca96c5dd7e3e53aa7f09c650c90673c57e1f6437a9d47bbdeda162d2d7ff31f",
+  "response_sha256": "6320f43194645e2f16ed22763fda2a3ebab58c6f745eecf580789ae34f616b5d",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Междинни резултати от специализираната полицейска операция за спазване Закона за движение по пътищата",
+      "url": "https://mvr.bg/press/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%BE/93256",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Трафикът на българските гранични контролно-пропускателни пунктове на 1 октомври 2026 г.",
+      "url": "https://mvr.bg/press/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%BE/93223",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Междинни резултати от специализираната полицейска операция за спазване Закона за движение по пътищата",
+      "url": "https://mvr.bg/press/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%BE/93211",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Трафикът на българските гранични контролно-пропускателни пунктове на 30 септември 2026 г.",
+      "url": "https://mvr.bg/press/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%BE/93193",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Междинни резултати от специализираната полицейска операция за спазване Закона за движение по пътищата",
+      "url": "https://mvr.bg/press/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%BE/93188",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Информация от ГДГП за трафика на българските гранични контролно-пропускателни пунктове",
+      "url": "https://mvr.bg/press/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%BE/93172",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Междинни резултати от специализираната полицейска операция за спазване Закона за движение по пътищата",
+      "url": "https://mvr.bg/press/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%BE/93156",
+      "published_date_local": "2026-09-28",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Трафикът на българските гранични контролно-пропускателни пунктове към 06.00 часа на 28.09.2026 г.",
+      "url": "https://mvr.bg/press/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%BE/93133",
+      "published_date_local": "2026-09-28",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 9,
+  "live_dated_count": 9,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "bg_interior",
+    "country": "BG",
+    "name_zh": "保加利亞內政部",
+    "name": "Министерство на вътрешните работи",
+    "institution_type": "ministry",
+    "language": "bg",
+    "homepage": "https://mvr.bg/",
+    "listing_url": "https://mvr.bg/press/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%BE/%2A",
+    "feed_urls": [],
+    "allow_domains": [
+      "mvr.bg"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Sofia",
+    "card_selectors": [
+      ".card"
+    ],
+    "link_selectors": [
+      "a.card__title"
+    ],
+    "title_selectors": [
+      ".card__title"
+    ],
+    "date_selectors": [
+      ".card__meta"
+    ],
+    "schedule_enabled": false
+  }
+}

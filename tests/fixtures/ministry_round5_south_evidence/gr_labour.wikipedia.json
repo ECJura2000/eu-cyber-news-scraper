@@ -1,0 +1,31 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Labour and Social Security Greece"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Labour_and_Social_Security_(Greece)",
+      "title": "Ministry of Labour and Social Security (Greece) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:20.584441+00:00",
+      "extracted_sha256": "8f783cc972e0bb76d56d0d54570a5f89cddd63f75cae3d9324fdaf9d853ffe41",
+      "excerpt": "The**Ministry of Labour and Social Security**([Greek](https://en.wikipedia.org/wiki/Greek_language):Υπουργείο Εργασίας και Κοινωνικής Ασφάλισης) is a[government department](https://en.wikipedia.org/wiki/Ministry_(government_department))of[Greece](https://en.wikipedia.org/wiki/Greece). The Ministry is responsible for the[labour market](https://en.wikipedia.org/wiki/Labour_market),[employment](https://en.wikipedia.org/wiki/Employment), and[social security](https://en.wikipedia.org/wiki/Social_security).\n\nIts current name was given in June 2023 when the[second government of Kyriakos Mitsotakis](https://en.wikipedia.org/wiki/Second_cabinet_of_Kyriakos_Mitsotakis)renamed the \"Ministry of Labour and Social Affairs\" to the \"Ministry of Labour and Social Security\".\n\nThe incumbent minister is[Niki Kerameus](https://en.wikipedia.org/wiki/Niki_Kerameus).\n\n## History[[edit](https://en.wikipedia.org/w/index.php?title=Ministry_of_Labour_and_Social_Security_(Greece)&action=edit&section=1)]\n\nThe Minis"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "https://ypergasias.gov.gr/",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_Labour_and_Social_Security_(Greece)",
+      "link_text": "https://ypergasias.gov.gr/",
+      "relationship_excerpt": "riat of labour relations\nGeneral Secretariat of social securityWebsite[https://ypergasias.gov.gr/](https://ypergasias.gov.gr/)This article is part of[a series](https://en.wikipedia.org/wiki/Catego"
+    },
+    {
+      "url": "https://ypergasias.gov.gr",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_Labour_and_Social_Security_(Greece)",
+      "link_text": "Official website",
+      "relationship_excerpt": "try_of_Labour_and_Social_Security_(Greece)&action=edit&section=13)]\n- [Official website](https://ypergasias.gov.gr)[](https://www.wikidata.org/wiki/Q65273449#P856)(in Greek, English, an"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/gr_labour.wikipedia.json"
+}

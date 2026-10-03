@@ -1,0 +1,102 @@
+{
+  "source_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/agricultura-e-mar/noticias",
+  "scope": [
+    "F34849FEC5D64E6AB4E06D0E6D864B26"
+  ],
+  "articles": [
+    {
+      "id": "4CAC31E323654C7A9A9F59EF7D90958A",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/mau-tempo-trovoadas-granizo-e-rajadas-de-vento-ate-80-kmh",
+      "title": "Mau tempo: trovoadas, granizo e rajadas de vento até 80 km/h",
+      "date": "20260929T172000Z",
+      "summary": "IPMA coloca distritos de Portugal continental sob aviso amarelo até 1 de outubro",
+      "areas": [
+        "F34849FEC5D64E6AB4E06D0E6D864B26"
+      ]
+    },
+    {
+      "id": "494592AAD5A04F5F9CAA8E44E4146D66",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/2026-regista-maior-volume-de-pagamentos-aos-agricultores",
+      "title": "2026 regista o maior volume de pagamentos aos agricultores",
+      "date": "20260929T080500Z",
+      "summary": "Apoios procuram dar mais previsibilidade e capacidade de resposta, num ano marcado por dificuldades",
+      "areas": [
+        "F34849FEC5D64E6AB4E06D0E6D864B26"
+      ]
+    },
+    {
+      "id": "2CB99779A29044CDA84FF3B775FC46F8",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/governo-reforca-apoios-ao-setor-agricola-perante-aumento-dos-custos-de-producao",
+      "title": "Governo reforça apoios ao setor agrícola perante aumento dos custos de produção",
+      "date": "20260923T181100Z",
+      "summary": "Novo pacote de 40 milhões de euros destina-se a compensar o impacto da subida dos preços dos fertilizantes e da energia",
+      "areas": [
+        "F34849FEC5D64E6AB4E06D0E6D864B26"
+      ]
+    },
+    {
+      "id": "ED5BDC25B1974CA7A839585CA6600B40",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/sistema-nacional-de-prescricao-veterinaria-recebe-distincao-internacional",
+      "title": "Sistema nacional de prescrição veterinária recebe distinção internacional",
+      "date": "20260923T144000Z",
+      "summary": "Reconhecimento valoriza boa prática na saúde animal e no combate à resistência aos antimicrobianos",
+      "areas": [
+        "F34849FEC5D64E6AB4E06D0E6D864B26"
+      ]
+    },
+    {
+      "id": "05A081C8600548209AFD66CB6FE27B73",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/governo-apoia-viticultores-com-nova-linha-de-tesouraria",
+      "title": "Governo apoia viticultores com nova linha de tesouraria",
+      "date": "20260922T080400Z",
+      "summary": "Mecanismo garante liquidez para o pagamento da uva das campanhas de 2025 e 2026 e reestruturação de créditos",
+      "areas": [
+        "F34849FEC5D64E6AB4E06D0E6D864B26"
+      ]
+    },
+    {
+      "id": "9A215A12A7F04217AD4C87444AB04F72",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/autarquias-recebem-novos-tratores-para-prevencao-de-incendios",
+      "title": "Autarquias recebem novos tratores para prevenção de incêndios",
+      "date": "20260917T080200Z",
+      "summary": "Distribuição de equipamentos pelo território começou em 2025 ",
+      "areas": [
+        "F34849FEC5D64E6AB4E06D0E6D864B26"
+      ]
+    },
+    {
+      "id": "0F6A8213CD1A445CB43E9F09563775AB",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/governo-abre-periodo-excecional-de-candidaturas-para-reestruturacao-de-vinhas",
+      "title": "Governo abre período excecional de candidaturas para reestruturação de vinhas",
+      "date": "20260911T120200Z",
+      "summary": "Estão criadas condições de acesso aos apoios VITIS",
+      "areas": [
+        "F34849FEC5D64E6AB4E06D0E6D864B26"
+      ]
+    },
+    {
+      "id": "2E51A78A657246D0B5A886B30BCBBC9F",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/novo-apoio-para-diminuir-o-custo-dos-combustiveis-na-pesca",
+      "title": "Novo apoio para diminuir o custo dos combustíveis na pesca",
+      "date": "20260909T113700Z",
+      "summary": "O setor da pesca dispõe de 13 milhões de euros para diminuir o custo dos combustíveis, através do Programa MAR2030.",
+      "areas": [
+        "F34849FEC5D64E6AB4E06D0E6D864B26"
+      ]
+    }
+  ],
+  "truncated": false,
+  "response_sha256": [
+    "898016ec471fcb401d23d9f864c91a24bcc1a74ab7e3656e245dfbeb02d70356",
+    "9fe86469daaae7bf53bb765465304e1ada0a4baae2a401067920c717b8f7f338"
+  ],
+  "public_endpoint": "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+}

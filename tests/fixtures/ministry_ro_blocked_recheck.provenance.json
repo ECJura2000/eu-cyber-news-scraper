@@ -1,0 +1,63 @@
+{
+  "observed_on": "2026-10-02",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "purpose": "Read-only recheck of blocked official ministry endpoints; no production promotion",
+  "observations": [
+    {
+      "source_id": "ro_transport",
+      "url": "https://www.mt.ro",
+      "error": "RobotsUnavailableError: https://www.mt.ro: robots.txt unreachable: HTTP 503"
+    },
+    {
+      "source_id": "ro_foreign_affairs",
+      "url": "https://www.mae.gov.ro",
+      "error": "RobotsUnavailableError: https://www.mae.gov.ro: robots.txt unreachable: ConnectError: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028)"
+    },
+    {
+      "source_id": "ro_economy_digital",
+      "url": "https://economie.gov.ro/",
+      "error": "RobotsUnavailableError: https://economie.gov.ro: robots.txt unreachable: HTTP 503"
+    },
+    {
+      "source_id": "ro_energy",
+      "url": "https://energie.gov.ro",
+      "error": "RobotsUnavailableError: https://energie.gov.ro: robots.txt unreachable: HTTP 503"
+    },
+    {
+      "source_id": "ro_agriculture",
+      "url": "https://www.madr.ro",
+      "error": "RobotsUnavailableError: https://www.madr.ro: robots.txt unreachable: HTTP 503"
+    },
+    {
+      "source_id": "ro_development",
+      "url": "https://www.mdlpa.ro/",
+      "error": "RobotsUnavailableError: https://www.mdlpa.ro: robots.txt unreachable: ConnectTimeout: "
+    },
+    {
+      "source_id": "ro_european_investment",
+      "url": "https://mfe.gov.ro",
+      "error": "RobotsUnavailableError: https://mfe.gov.ro: robots.txt unreachable: HTTP 503"
+    },
+    {
+      "source_id": "ro_labour_family_youth",
+      "url": "https://mmuncii.gov.ro/",
+      "error": "RobotsUnavailableError: https://mmuncii.gov.ro: robots.txt unreachable: HTTP 503"
+    },
+    {
+      "source_id": "ro_culture",
+      "url": "https://www.cultura.ro",
+      "error": "RobotsUnavailableError: https://www.cultura.ro: robots.txt unreachable: HTTP 503"
+    },
+    {
+      "source_id": "ro_prime_minister",
+      "url": "https://cancelarie.gov.ro/",
+      "error": "RobotsUnavailableError: https://cancelarie.gov.ro: robots.txt unreachable: HTTP 503"
+    },
+    {
+      "source_id": "ro_government_secretariat",
+      "url": "https://sgg.gov.ro",
+      "error": "RobotsUnavailableError: https://sgg.gov.ro: robots.txt unreachable: HTTP 503"
+    }
+  ]
+}

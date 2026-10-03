@@ -1,0 +1,92 @@
+{
+  "source_id": "bg_innovation",
+  "url": "https://midt.gov.bg/bg/news",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:51.677613+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "8ddfb3bc01ec3841412c81b924a9370d1b81b74d3f1ab37b225f147ea5478af0",
+  "response_sha256": "e4a6fa84a3073355a121e14e649d15ff01448e07360a8b9855a32a8bd6fd3cbe",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "ЕК закри процедурата срещу България по Директивата за киберсигурност МИС 2, страната успешно изпълни изискванията",
+      "url": "https://midt.gov.bg/bg/news/1561",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "МС прие Решение за изграждане на Европейски портфейл за цифрова самоличност в България",
+      "url": "https://midt.gov.bg/bg/news/1558",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Министър Василев: От днес българският талант има свой нов дом - Националният STEM център в София тех парк",
+      "url": "https://midt.gov.bg/bg/news/1557",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "ИА ЕФК стартира инфо кампания за представяне на процедурата за внедряване на зелени технологии в МСП",
+      "url": "https://midt.gov.bg/bg/news/1556",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "До 180 млн. евро ще бъдат инвестирани в иновативни български компании",
+      "url": "https://midt.gov.bg/bg/news/1530",
+      "published_date_local": "2026-09-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Министър Василев проведе среща с френския посланик",
+      "url": "https://midt.gov.bg/bg/news/1529",
+      "published_date_local": "2026-09-23",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Зам.-министър Йосифова към студенти от ТУ-София: МИДТ е ваш партньор в амбицията да превърнете знанията си в реални иновации",
+      "url": "https://midt.gov.bg/bg/news/1528",
+      "published_date_local": "2026-09-23",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Зам.-министър Йосифова представи напредъка на България в космическия сектор пред ЕКА",
+      "url": "https://midt.gov.bg/bg/news/1526",
+      "published_date_local": "2026-09-21",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 9,
+  "live_dated_count": 9,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "bg_innovation",
+    "country": "BG",
+    "name_zh": "保加利亞創新與數位轉型部",
+    "name": "Министерство на иновациите и дигиталната трансформация",
+    "institution_type": "ministry",
+    "language": "bg",
+    "homepage": "https://midt.gov.bg/bg/news",
+    "listing_url": "https://midt.gov.bg/bg/news",
+    "feed_urls": [],
+    "allow_domains": [
+      "midt.gov.bg"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Sofia",
+    "card_selectors": [
+      "a.card--news"
+    ],
+    "title_selectors": [
+      ".card-title"
+    ],
+    "date_selectors": [
+      ".card-meta"
+    ],
+    "schedule_enabled": false
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=32",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:49:09.455634+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "07c038c351afb1524643607c6d97c6a5082e103ca4abd4c85969952b0e96c293",
+  "sha256": "83b7e7943aab904aeda1737d00b43800c734813f9ecd0635376abbf398518b44",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 100,
+  "dated_count": 100,
+  "fixture_count": 4,
+  "source_id": "si_justice",
+  "expected": [
+    {
+      "title": "Zaprisega državnih tožilk in sodnega izvedenca",
+      "url": "https://www.gov.si/novice/2026-09-28-zaprisega-drzavnih-tozilk-in-sodnega-izvedenca/",
+      "published_date_local": "2026-09-28",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Državni zbor sprejel zakon o specializiranih organih za pregon korupcije in organiziranega kriminala",
+      "url": "https://www.gov.si/novice/2026-09-25-drzavni-zbor-sprejel-zakon-o-specializiranih-organih-za-pregon-korupcije-in-organiziranega-kriminala/",
+      "published_date_local": "2026-09-25",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Minister Zupančič na strokovnem posvetu o prihodnosti kazenskega postopka v Sloveniji",
+      "url": "https://www.gov.si/novice/2026-09-23-minister-zupancic-na-strokovnem-posvetu-o-prihodnosti-kazenskega-postopka-v-sloveniji/",
+      "published_date_local": "2026-09-23",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Delegacija Visokega sodnega sveta Republike Albanije obiskala Ministrstvo za pravosodje",
+      "url": "https://www.gov.si/novice/2026-09-22-delegacija-visokega-sodnega-sveta-republike-albanije-obiskala-ministrstvo-za-pravosodje/",
+      "published_date_local": "2026-09-22",
+      "date_source": "feed-published"
+    }
+  ]
+}

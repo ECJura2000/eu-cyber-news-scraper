@@ -1,0 +1,145 @@
+{
+  "source_id": "hu_finance",
+  "url": "https://kormany.hu/kormanyzat/penzugyminiszterium",
+  "final_url": "https://kormany.hu/kormanyzat/penzugyminiszterium",
+  "observed_at": "2026-10-02T01:18:41.294668+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "83724e44a4ea72a400cd197fdf4aa17193f3fbd9977e15c5a37a5dac333263e9",
+  "response_bytes": 833539,
+  "fixture_sha256": "35fc2e373c63ca1115f61d21d90c05306517eb64ed2dbbebd66571ab593c2460",
+  "fixture_bytes": 10119,
+  "transform": "BeautifulSoup extraction of genuine dated news containers retaining original attributes/text; scripts/styles removed; original base retained if present; bounded to six or fewer containers",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "Átláthatóság és kiszámíthatóság",
+      "url": "https://kormany.hu/hirek/atlathatosag-es-kiszamithatosag",
+      "published_date_local": "2026-08-29"
+    },
+    {
+      "title": "A valóság költségvetése - A kormány módosítja a 2026. évi költségvetést",
+      "url": "https://kormany.hu/hirek/a-valosag-koltsegvetese-a-kormany-modositja-a-2026-evi-koltsegvetest",
+      "published_date_local": "2026-08-24"
+    },
+    {
+      "title": "A május-júliusi államháztartási többlet összege: 991,9 milliárd forint",
+      "url": "https://kormany.hu/hirek/a-majus-juliusi-allamhaztartasi-tobblet-osszege-9919-milliard-forint",
+      "published_date_local": "2026-08-10"
+    },
+    {
+      "title": "Megszavazta a parlament az EU-s forrásokhoz felszabadításához szükséges adórendszert érintő javaslatokat!",
+      "url": "https://kormany.hu/hirek-1/megszavazta-a-parlament-az-eu-s-forrasokhoz-felszabaditasahoz-szukseges-adorendszert-erinto-javaslatokat",
+      "published_date_local": "2026-07-28"
+    },
+    {
+      "title": "Eltörli a kormány a vényköteles gyógyszerek áfáját",
+      "url": "https://kormany.hu/hirek/eltorli-a-kormany-a-venykoteles-gyogyszerek-afajat",
+      "published_date_local": "2026-07-23"
+    },
+    {
+      "title": "Megszavazta az iskolakezdési támogatást a parlament",
+      "url": "https://kormany.hu/hirek-1/megszavazta-az-iskolakezdesi-tamogatast-a-parlament",
+      "published_date_local": "2026-07-21"
+    }
+  ],
+  "live_status": {
+    "source_id": "hu_finance",
+    "source_name": "匈牙利財政部",
+    "country": "HU",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 12,
+    "relevant_count": 12,
+    "duration_seconds": 6.604,
+    "newest_published_at": "2026-08-28T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 12,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 12,
+    "freshness_lag_days": 35.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 833539,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "hu_finance",
+    "country": "HU",
+    "name_zh": "匈牙利財政部",
+    "name": "Pénzügyminisztérium",
+    "institution_type": "central ministry",
+    "language": "hu",
+    "homepage": "https://kormany.hu/kormanyzat/penzugyminiszterium",
+    "listing_url": "https://kormany.hu/kormanyzat/penzugyminiszterium",
+    "feed_urls": [],
+    "allow_domains": [
+      "kormany.hu"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Budapest",
+    "card_selectors": [
+      "article.article-card"
+    ],
+    "link_selectors": [
+      "a.article-card__link"
+    ],
+    "title_selectors": [
+      "h2.article-card__title"
+    ],
+    "date_selectors": [
+      ".article-card__date"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_hu_finance.html",
+  "format": "html"
+}

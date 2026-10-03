@@ -1,0 +1,124 @@
+{
+  "source_id": "pt_interior",
+  "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/administracao-interna/noticias",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T08:47:41.295442+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "39ad89a9bdb587765f7d17427ad86690f16ad9ff6ae837762df1b01f16566103",
+  "listing_response_sha256": "6080de313c99b6619a287eae78856f2e2ab1c5b483b3fe3599ab3ebb48362c65",
+  "response_sha256": [
+    "2bc18e11349086a2b336ade0ad956db0accc15df27e992f51dec270d523df16c",
+    "d6473549ffed5515c6bb613c8b3644682501fc6fe7104e7bef036ad4609bd2ae"
+  ],
+  "fixture_count": 8,
+  "parsed_count": 64,
+  "dated_count": 64,
+  "expected": [
+    {
+      "title": "Proteção Civil alerta para agravamento do perigo de incêndio rural",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/protecao-civil-alerta-para-agravamento-do-perigo-de-incendio-rural",
+      "published_date_local": "2026-09-18",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Controlo de fronteiras: Governo retoma negociações com representantes das forças de segurança",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/controlo-de-fronteiras-governo-retoma-negociacoes-com-representantes-das-forcas-de-seguranca",
+      "published_date_local": "2026-09-18",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "PSP Madeira celebra 148 anos de serviço",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/psp-madeira-celebra-148-anos-de-servico-",
+      "published_date_local": "2026-09-03",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Quatorze distritos sob aviso amarelo devido à subida das temperaturas",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/onze-distritos-sob-aviso-amarelo-devido-a-subida-das-temperaturas",
+      "published_date_local": "2026-09-02",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Eclipse solar: Governo recomenda cuidados de saúde e segurança na observação",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/eclipse-solar-governo-recomenda-cuidados-de-saude-e-seguranca-na-observacao",
+      "published_date_local": "2026-08-11",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Formação do SIRESP em Leiria reforça capacidade de resposta a emergências",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/formacao-do-siresp-em-leiria-reforca-capacidade-de-resposta-a-emergencias",
+      "published_date_local": "2026-08-06",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Portugal defende resposta europeia firme à crise em Ceuta",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/portugal-defende-resposta-europeia-firme-a-crise-em-ceuta",
+      "published_date_local": "2026-08-04",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Portugal envia Força Operacional Conjunta para Espanha",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/portugal-envia-forca-operacional-conjunta-para-espanha",
+      "published_date_local": "2026-07-25",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    }
+  ],
+  "live_status": {
+    "source_id": "pt_interior",
+    "source_name": "葡萄牙內政部",
+    "country": "PT",
+    "critical": false,
+    "success": true,
+    "fetched_via": "public-sitecore",
+    "raw_count": 64,
+    "relevant_count": 64,
+    "duration_seconds": 1.173,
+    "newest_published_at": "2026-09-18T18:09:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 64,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 64,
+    "freshness_lag_days": 14.24,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 3,
+    "bytes_downloaded": 1069730,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200",
+      "200",
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "public_endpoint": "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1",
+  "transform": "Exact projection of official anonymous query title/path/CardDate/news-template/area IDs; biography fields omitted; first 8 genuine items; transient public routing value never saved",
+  "access": "No Authorization/API-key headers or authenticated fallback; public frontend routing identifier discovered afresh"
+}

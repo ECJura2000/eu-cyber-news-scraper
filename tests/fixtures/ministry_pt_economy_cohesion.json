@@ -1,0 +1,106 @@
+{
+  "source_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/economia-e-coesao-territorial/noticias",
+  "scope": [
+    "6F295533DFFD48C88F14F102A37EDD38"
+  ],
+  "articles": [
+    {
+      "id": "DE8F3A01F8154D8F9460FCFF55AF2F82",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/prr-verbas-do-orcamento-de-estado-asseguram-conclusao-de-projetos-previstos",
+      "title": "PRR – verbas do Orçamento de Estado asseguram conclusão de projetos previstos",
+      "date": "20261001T164800Z",
+      "summary": "Conselho de Ministros define regras para concluir investimentos e autoriza compras de energia em conjunto para 2027",
+      "areas": [
+        "25802E46EA5E46F1A95916C4396959FF",
+        "847EE87D80774A00A5F802E885A86D16",
+        "1D5141F0B5D3434E8ADA5A042485336D",
+        "6F295533DFFD48C88F14F102A37EDD38"
+      ]
+    },
+    {
+      "id": "D999AE3D6E614137A6FE8A07465A1728",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/reforco-das-exportacoes-internacionalizacao-e-investimento-estrangeiro",
+      "title": "Reforço das exportações, internacionalização e investimento estrangeiro",
+      "date": "20261001T081300Z",
+      "summary": "Prioridade do Governo é ajudar as empresas portuguesas a crescer nos mercados externos e continuar a atrair investimento que crie mais valor em Portugal",
+      "areas": [
+        "6F295533DFFD48C88F14F102A37EDD38"
+      ]
+    },
+    {
+      "id": "7FF422EF94A14CD68252B777F5EEC0B6",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/portugal-cumpre-integralmente-metas-do-prr-e-submete-ultimo-pedido-de-pagamento",
+      "title": "Portugal cumpre integralmente metas do PRR e submete último pedido de pagamento",
+      "date": "20260929T181800Z",
+      "summary": "O décimo e último pedido de pagamento foi submetido à Comissão Europeia e corresponde a 4 672 milhões de euros, completando os compromissos previstos no Plano de Recuperação e Resiliência.",
+      "areas": [
+        "6F295533DFFD48C88F14F102A37EDD38"
+      ]
+    },
+    {
+      "id": "022FE3700023494AABA097B3B353C198",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/governo-quer-reforcar-competitividade-de-portugal-no-turismo",
+      "title": "Governo quer reforçar competitividade de Portugal no turismo",
+      "date": "20260928T173400Z",
+      "summary": "O objetivo é colocar Portugal entre os dez países mais competitivos do mundo no turismo, valorizando o setor, as empresas e os territórios",
+      "areas": [
+        "6F295533DFFD48C88F14F102A37EDD38"
+      ]
+    },
+    {
+      "id": "007F57A4A2E74C7D83E12985FAF026FF",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/pt2030-85-novos-concursos-lancados-ate-dezembro",
+      "title": "PT2030: 85 novos concursos lançados até dezembro",
+      "date": "20260915T120000Z",
+      "summary": "Estão incluídos projetos nas áreas da habitação acessível, descarbonização e inovação produtiva",
+      "areas": [
+        "6F295533DFFD48C88F14F102A37EDD38"
+      ]
+    },
+    {
+      "id": "73AAF7F36F954E519E5F9DEB15731342",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/governo-nomeia-nova-presidente-da-aicep",
+      "title": "Governo nomeia nova presidente da AICEP",
+      "date": "20260910T114000Z",
+      "summary": "A transição de funções ocorrerá dia 01 de outubro",
+      "areas": [
+        "6F295533DFFD48C88F14F102A37EDD38"
+      ]
+    },
+    {
+      "id": "78724DD3DDFA4B22AC9CCD9158C2BBC1",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/asae-reforca-fiscalizacao-com-entrada-de-novos-inspetores",
+      "title": "ASAE reforça fiscalização com entrada de novos inspetores",
+      "date": "20260907T180100Z",
+      "summary": "A Autoridade de Segurança Alimentar e Económica passa a contar com 235 inspetores, após a integração de 21 novos elementos",
+      "areas": [
+        "6F295533DFFD48C88F14F102A37EDD38"
+      ]
+    },
+    {
+      "id": "55C4432BE3FB48959E6C3806C77250E4",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/ministro-da-economia-e-coesao-territorial-prr-esta-totalmente-executado",
+      "title": "Ministro da Economia e Coesão territorial: “PRR está totalmente executado”",
+      "date": "20260828T115300Z",
+      "summary": "Plano investiu 22 mil milhões de euros na saúde, inovação, ciência, digitalização, competitividade empresarial e eficiência energética",
+      "areas": [
+        "6F295533DFFD48C88F14F102A37EDD38"
+      ]
+    }
+  ],
+  "truncated": false,
+  "response_sha256": [
+    "3a70f8feb4e636c6764c3ce56aac665cedfafc3d0f8c504ac946d8b8e4a0bc36",
+    "2933c46ce101a72f0bdcbe41086b98fb4d7808f813a03421fb5c7a8e01e4de9c",
+    "b51833cca0895cbfad118fe358ba5a8c4f002b6042d006e1216c9e20ca5ac685"
+  ],
+  "public_endpoint": "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+}

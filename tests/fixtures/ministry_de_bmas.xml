@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>RSS-Newsfeed des BMAS</title>
+    <link>http://www.bmas.de</link>
+    <description>RSS-Newsfeed vom Portal des Bundesministeriums für Arbeit und Soziales (BMAS)</description>
+    <language>de-de</language>
+    <copyright>Copyright by BMAS. Alle Rechte vorbehalten</copyright>
+    <managingEditor>info@bmas.bund.de (Bundesministerium für Arbeit und Soziales)</managingEditor>
+    <webMaster>info@bmas.bund.de (Bundesministerium für Arbeit und Soziales)</webMaster>
+    <category>Aktuelles</category>
+    <generator>Government Site Builder</generator>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <ttl>60</ttl>
+   <image>    
+      <title>RSS-Newsfeed des BMAS</title>
+      <link>http://www.bmas.de</link>
+            <url>https://www.bmas.de/SiteGlobals/StyleBundles/Bilder/favicon.png?__blob=thumbnail&amp;v=1</url>
+      <description>RSS-Newsfeed des BMAS</description>    
+    </image>
+    <atom:link href="https://www.bmas.de/SiteGlobals/Functions/RSSFeed/DE/RSSNewsfeed/RSSNewsfeed.xml" rel="self" type="application/rss+xml"/>
+<item>
+   <title>Preisträger des 16. Deutschen Gefahrstoffschutzpreises ausgezeichnet</title>
+   <link>https://www.bmas.de/DE/Service/Presse/Meldungen/2026/16-deutscher-gefahrstoffschutzpreis-gewinner-bekanntgegeben.html</link>
+   <description>
+       &lt;p&gt;
+                  &lt;a href="https://www.bmas.de/DE/Service/Presse/Meldungen/2026/16-deutscher-gefahrstoffschutzpreis-gewinner-bekanntgegeben.html" &gt;
+           &lt;img align="left" src="https://www.bmas.de/SharedDocs/Bilder/DE/Logos/rss-default.jpg?__blob=normal&amp;v=4" title="" alt="" /&gt;
+           &lt;/a&gt;
+              Am 30. September 2026 hat das Bundesministerium für Arbeit und Soziales (BMAS) auf dem 19. Arbeitsschutzforum der GDA in Sachsen die Preisträger des 16. Deutschen Gefahrstoffschutzpreises (GSP) bekannt gegeben. Die Mirka Abrasives Germany GmbH erhielt den mit 10.000 EUR dotierten Preis für ihren Beitrag "Substitution von Naphthalin durch Fumarsäure in der Schleifkörperproduktion".
+       &lt;/p&gt;
+       &lt;br clear="all"/&gt;
+   </description>
+          <enclosure url="https://www.bmas.de/SharedDocs/Bilder/DE/Logos/rss-default.jpg?__blob=normal&amp;v=4" length="0" type="image/jpeg"/>
+      <pubDate>Thu, 1 Oct 2026 11:43:00 +0200</pubDate>
+   <guid isPermaLink="false">https://www.bmas.de/DE/Service/Presse/Meldungen/2026/16-deutscher-gefahrstoffschutzpreis-gewinner-bekanntgegeben.html#dbf946e2-20b6-4290-9d5c-71bdc5490dbe</guid>
+</item>
+
+<item>
+   <title>Kleine Herbstbelebung am Arbeitsmarkt</title>
+   <link>https://www.bmas.de/DE/Service/Presse/Pressemitteilungen/2026/arbeitsmarktzahlen-september-2026.html</link>
+   <description>
+       &lt;p&gt;
+                  &lt;a href="https://www.bmas.de/DE/Service/Presse/Pressemitteilungen/2026/arbeitsmarktzahlen-september-2026.html" &gt;
+           &lt;img align="left" src="https://www.bmas.de/SharedDocs/Bilder/DE/Logos/rss-default.jpg?__blob=normal&amp;v=4" title="" alt="" /&gt;
+           &lt;/a&gt;
+              Die Zahl der Arbeitslosen ist im September leicht gefallen. Die Herbstbelebung fällt in diesem Jahr allerdings relativ schwach aus. Die Arbeitslosenquote lag im September bei 6,4 Prozent – 0,1 Prozentpunkte weniger als im August 2026.
+       &lt;/p&gt;
+       &lt;br clear="all"/&gt;
+   </description>
+          <enclosure url="https://www.bmas.de/SharedDocs/Bilder/DE/Logos/rss-default.jpg?__blob=normal&amp;v=4" length="0" type="image/jpeg"/>
+      <pubDate>Wed, 30 Sep 2026 12:03:00 +0200</pubDate>
+   <guid isPermaLink="false">https://www.bmas.de/DE/Service/Presse/Pressemitteilungen/2026/arbeitsmarktzahlen-september-2026.html#2aaee1f0-2464-46f3-b23c-924c4ecfd34e</guid>
+</item>
+
+<item>
+   <title>Sozialstaat schützen und Missbrauch verhindern</title>
+   <link>https://www.bmas.de/DE/Service/Presse/Pressemitteilungen/2026/sozialstaat-schuetzen-und-missbrauch-verhindern.html</link>
+   <description>
+       &lt;p&gt;
+                  &lt;a href="https://www.bmas.de/DE/Service/Presse/Pressemitteilungen/2026/sozialstaat-schuetzen-und-missbrauch-verhindern.html" &gt;
+           &lt;img align="left" src="https://www.bmas.de/SharedDocs/Bilder/DE/Logos/rss-default.jpg?__blob=normal&amp;v=4" title="" alt="" /&gt;
+           &lt;/a&gt;
+              Die Bundesregierung hat heute im Kabinett den Aktionsplan gegen Sozialleistungsmissbrauch und Ausbeutung, insbesondere im Zusammenhang mit EU-Zuwanderung, beschlossen.
+       &lt;/p&gt;
+       &lt;br clear="all"/&gt;
+   </description>
+          <enclosure url="https://www.bmas.de/SharedDocs/Bilder/DE/Logos/rss-default.jpg?__blob=normal&amp;v=4" length="0" type="image/jpeg"/>
+      <pubDate>Wed, 23 Sep 2026 11:07:00 +0200</pubDate>
+   <guid isPermaLink="false">https://www.bmas.de/DE/Service/Presse/Pressemitteilungen/2026/sozialstaat-schuetzen-und-missbrauch-verhindern.html#9f8421db-6e60-4145-9caf-a97214619822</guid>
+</item>
+
+<item>
+   <title>Referentenentwurf zur Sozialversicherungsrechengrößen-Verordnung 2027</title>
+   <link>https://www.bmas.de/DE/Service/Presse/Meldungen/2026/referentenentwurf-zur-sozialversicherungsrechengroessen-verordnung-2027.html</link>
+   <description>
+       &lt;p&gt;
+                  &lt;a href="https://www.bmas.de/DE/Service/Presse/Meldungen/2026/referentenentwurf-zur-sozialversicherungsrechengroessen-verordnung-2027.html" &gt;
+           &lt;img align="left" src="https://www.bmas.de/SharedDocs/Bilder/DE/Logos/rss-default.jpg?__blob=normal&amp;v=4" title="" alt="" /&gt;
+           &lt;/a&gt;
+              Mit der Verordnung werden die maßgeblichen Rechengrößen der Sozialversicherung für das Jahr 2027 nach gesetzlichen Regelungen neu bestimmt.
+       &lt;/p&gt;
+       &lt;br clear="all"/&gt;
+   </description>
+          <enclosure url="https://www.bmas.de/SharedDocs/Bilder/DE/Logos/rss-default.jpg?__blob=normal&amp;v=4" length="0" type="image/jpeg"/>
+      <pubDate>Mon, 21 Sep 2026 14:02:00 +0200</pubDate>
+   <guid isPermaLink="false">https://www.bmas.de/DE/Service/Presse/Meldungen/2026/referentenentwurf-zur-sozialversicherungsrechengroessen-verordnung-2027.html#cf2c7943-0ef3-4f3a-878e-7bffe31e8832</guid>
+</item>
+
+<item>
+   <title>Gefahrstoffschutzpreis 2026 – Preisträger</title>
+   <link>https://www.bmas.de/SharedDocs/Videos/DE/Artikel/Arbeitsschutz/2026-09-30-gefahrstoffschutzpreis-preistraeger.html</link>
+   <description>
+       &lt;p&gt;
+                  &lt;a href="https://www.bmas.de/SharedDocs/Videos/DE/Artikel/Arbeitsschutz/2026-09-30-gefahrstoffschutzpreis-preistraeger.html" &gt;
+           &lt;img align="left" src="https://www.bmas.de/SharedDocs/Bilder/DE/Videos/Video-Standbilder/standbild-2026-gefahrstoffschutzpreis-preistraeger.png?__blob=poster&amp;v=1" title="" alt="" /&gt;
+           &lt;/a&gt;
+              Die Mirka Abrasives Germany GmbH erhielt die Auszeichnung für die vollständige Eliminierung eines Gefahrstoffs aus seiner Produktion.
+       &lt;/p&gt;
+       &lt;br clear="all"/&gt;
+   </description>
+          <enclosure url="https://www.bmas.de/SharedDocs/Bilder/DE/Videos/Video-Standbilder/standbild-2026-gefahrstoffschutzpreis-preistraeger.png?__blob=poster&amp;v=1" length="0" type="image/jpeg"/>
+      <pubDate>Fri, 18 Sep 2026 12:22:01 +0200</pubDate>
+   <guid isPermaLink="false">https://www.bmas.de/SharedDocs/Videos/DE/Artikel/Arbeitsschutz/2026-09-30-gefahrstoffschutzpreis-preistraeger.html#b89098fa-744e-45d2-9313-ba64c9ddaf3a</guid>
+</item>
+
+<item>
+   <title>Gefahrstoffschutzpreis 2026 – Belobigung</title>
+   <link>https://www.bmas.de/SharedDocs/Videos/DE/Artikel/Arbeitsschutz/2026-09-30-gefahrstoffschutzpreis-belobigung.html</link>
+   <description>
+       &lt;p&gt;
+                  &lt;a href="https://www.bmas.de/SharedDocs/Videos/DE/Artikel/Arbeitsschutz/2026-09-30-gefahrstoffschutzpreis-belobigung.html" &gt;
+           &lt;img align="left" src="https://www.bmas.de/SharedDocs/Bilder/DE/Videos/Video-Standbilder/standbild-2026-gefahrstoffschutzpreis-belobigung.png?__blob=poster&amp;v=1" title="" alt="" /&gt;
+           &lt;/a&gt;
+              Die Amplifon Deutschland GmbH erhielt eine offizielle Belobigung für Ihren Beitrag zur Verminderung von Frässtaubemissionen in der Hörakustik.
+       &lt;/p&gt;
+       &lt;br clear="all"/&gt;
+   </description>
+          <enclosure url="https://www.bmas.de/SharedDocs/Bilder/DE/Videos/Video-Standbilder/standbild-2026-gefahrstoffschutzpreis-belobigung.png?__blob=poster&amp;v=1" length="0" type="image/jpeg"/>
+      <pubDate>Fri, 18 Sep 2026 12:19:10 +0200</pubDate>
+   <guid isPermaLink="false">https://www.bmas.de/SharedDocs/Videos/DE/Artikel/Arbeitsschutz/2026-09-30-gefahrstoffschutzpreis-belobigung.html#8f9cc467-33ac-49cc-b11b-790b45e54585</guid>
+</item>
+
+<item>
+   <title>Prüfstelle Bundestariftreue geht mit Website an den Start</title>
+   <link>https://www.bmas.de/DE/Service/Presse/Meldungen/2026/pruefstelle-bundestariftreue-geht-mit-website-an-den-start.html</link>
+   <description>
+       &lt;p&gt;
+                  &lt;a href="https://www.bmas.de/DE/Service/Presse/Meldungen/2026/pruefstelle-bundestariftreue-geht-mit-website-an-den-start.html" &gt;
+           &lt;img align="left" src="https://www.bmas.de/SharedDocs/Bilder/DE/Logos/rss-default.jpg?__blob=normal&amp;v=4" title="" alt="" /&gt;
+           &lt;/a&gt;
+              Das neue Angebot informiert zum Bundestariftreuegesetz und wird weiter ausgebaut.
+       &lt;/p&gt;
+       &lt;br clear="all"/&gt;
+   </description>
+          <enclosure url="https://www.bmas.de/SharedDocs/Bilder/DE/Logos/rss-default.jpg?__blob=normal&amp;v=4" length="0" type="image/jpeg"/>
+      <pubDate>Thu, 17 Sep 2026 13:25:27 +0200</pubDate>
+   <guid isPermaLink="false">https://www.bmas.de/DE/Service/Presse/Meldungen/2026/pruefstelle-bundestariftreue-geht-mit-website-an-den-start.html#b5f42da2-0a8b-489c-a3ff-ce2b8a1bf8e4</guid>
+</item>
+
+<item>
+   <title>Gemeinsam für verantwortungsvolle Arbeitsgestaltung in der Gebäudereinigung</title>
+   <link>https://www.bmas.de/DE/Service/Presse/Meldungen/2026/gemeinsam-fuer-verantwortungsvolle-arbeitsgestaltung-gebaeudereinigung.html</link>
+   <description>
+       &lt;p&gt;
+                  &lt;a href="https://www.bmas.de/DE/Service/Presse/Meldungen/2026/gemeinsam-fuer-verantwortungsvolle-arbeitsgestaltung-gebaeudereinigung.html" &gt;
+           &lt;img align="left" src="https://www.bmas.de/SharedDocs/Bilder/DE/Logos/rss-default.jpg?__blob=normal&amp;v=4" title="" alt="" /&gt;
+           &lt;/a&gt;
+              Lilian Tschan, Staatssekretärin im Bundesministerium für Arbeit und Soziales, hat die Charta für attraktive und zukunftsfähige Arbeit in der Gebäudereinigungsbranche unterzeichnet.
+       &lt;/p&gt;
+       &lt;br clear="all"/&gt;
+   </description>
+          <enclosure url="https://www.bmas.de/SharedDocs/Bilder/DE/Logos/rss-default.jpg?__blob=normal&amp;v=4" length="0" type="image/jpeg"/>
+      <pubDate>Thu, 17 Sep 2026 12:16:00 +0200</pubDate>
+   <guid isPermaLink="false">https://www.bmas.de/DE/Service/Presse/Meldungen/2026/gemeinsam-fuer-verantwortungsvolle-arbeitsgestaltung-gebaeudereinigung.html#56580baf-ef09-463f-ad9b-ebbe65f4cefd</guid>
+</item>
+
+</channel>
+</rss>

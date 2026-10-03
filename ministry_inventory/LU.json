@@ -1,0 +1,403 @@
+{
+  "schema_version": 1,
+  "country": "LU",
+  "reviewed_on": "2026-10-02",
+  "official_roster_urls": [
+    "https://gouvernement.lu/fr/ministeres.html"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "2026-10-02 ministry news audit: 20 manually verified and 0 existing-source ministries; 0 unresolved. Roster enumeration does not imply searchable completeness. Exact tried URLs and robots/transport/parser/attribution limitations are recorded per ministry; unresolved rows have no runnable source. New sources retain disabled scheduling/noncritical status, all 15 topics, empty responsibility, and genuine checksum-backed fixture replay."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "lu_state",
+      "name_zh": "盧森堡國務部",
+      "name_local": "Ministère d'État",
+      "name_en": "Ministry of State",
+      "kind": "government_head_office",
+      "language": "fr",
+      "homepage": "https://me.gouvernement.lu/fr.html",
+      "news_url": "https://me.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_state"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (4 dated items); genuine bounded fixture replays 4 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_state.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://me.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_foreign_affairs",
+      "name_zh": "盧森堡外交、歐洲事務、國防、發展合作暨對外貿易部",
+      "name_local": "Ministère des Affaires étrangères et européennes, de la Défense, de la Coopération et du Commerce extérieur",
+      "name_en": "Ministry of Foreign and European Affairs, Defence, Development Cooperation and Foreign Trade",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://mae.gouvernement.lu/fr.html",
+      "news_url": "https://mae.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (4 dated items); genuine bounded fixture replays 4 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_foreign_affairs.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://maee.gouvernement.lu/fr.html",
+        "https://mae.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_home_affairs",
+      "name_zh": "盧森堡內政部",
+      "name_local": "Ministère des Affaires intérieures",
+      "name_en": "Ministry of Home Affairs",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://maint.gouvernement.lu/fr.html",
+      "news_url": "https://maint.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_home_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (6 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_home_affairs.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://mint.gouvernement.lu/fr.html",
+        "https://maint.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_agriculture",
+      "name_zh": "盧森堡農業、食品暨葡萄栽培部",
+      "name_local": "Ministère de l'Agriculture, de l'Alimentation et de la Viticulture",
+      "name_en": "Ministry of Agriculture, Food and Viticulture",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://ma.gouvernement.lu/fr.html",
+      "news_url": "https://ma.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_agriculture"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (4 dated items); genuine bounded fixture replays 4 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_agriculture.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://ma.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_culture",
+      "name_zh": "盧森堡文化部",
+      "name_local": "Ministère de la Culture",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://mcult.gouvernement.lu/fr.html",
+      "news_url": "https://mcult.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_culture"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (4 dated items); genuine bounded fixture replays 4 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_culture.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://mc.gouvernement.lu/fr.html",
+        "https://mcult.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_digitalisation",
+      "name_zh": "盧森堡數位化部",
+      "name_local": "Ministère de la Digitalisation",
+      "name_en": "Ministry for Digitalisation",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://mindigital.gouvernement.lu/fr.html",
+      "news_url": "https://mindigital.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_digitalisation"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (4 dated items); genuine bounded fixture replays 4 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_digitalisation.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://digital.gouvernement.lu/fr.html",
+        "https://mindigital.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_economy",
+      "name_zh": "盧森堡經濟部",
+      "name_local": "Ministère de l'Économie",
+      "name_en": "Ministry of the Economy",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://meco.gouvernement.lu/fr.html",
+      "news_url": "https://meco.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_economy"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (6 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_economy.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://meco.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_education",
+      "name_zh": "盧森堡國民教育、兒童暨青年部",
+      "name_local": "Ministère de l'Éducation nationale, de l'Enfance et de la Jeunesse",
+      "name_en": "Ministry of Education, Children and Youth",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://menej.gouvernement.lu/fr.html",
+      "news_url": "https://menej.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_education"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (4 dated items); genuine bounded fixture replays 4 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_education.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://menej.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_equality",
+      "name_zh": "盧森堡性別平等暨多元部",
+      "name_local": "Ministère de l'Égalité des genres et de la Diversité",
+      "name_en": "Ministry for Gender Equality and Diversity",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://mega.gouvernement.lu/fr.html",
+      "news_url": "https://mega.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_equality"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (4 dated items); genuine bounded fixture replays 4 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_equality.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://mega.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_environment",
+      "name_zh": "盧森堡環境、氣候暨生物多樣性部",
+      "name_local": "Ministère de l'Environnement, du Climat et de la Biodiversité",
+      "name_en": "Ministry of the Environment, Climate and Biodiversity",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://mecdd.gouvernement.lu/fr.html",
+      "news_url": "https://mecb.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_environment"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (4 dated items); genuine bounded fixture replays 4 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_environment.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://mecdd.gouvernement.lu/fr.html",
+        "https://mecb.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_family",
+      "name_zh": "盧森堡家庭、團結、共同生活暨接待部",
+      "name_local": "Ministère de la Famille, des Solidarités, du Vivre ensemble et de l’Accueil",
+      "name_en": "Ministry of Family Affairs, Solidarity, Living Together and Reception of Refugees",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://mfsva.gouvernement.lu/fr.html",
+      "news_url": "https://mfsva.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_family"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (8 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_family.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://mfamigr.gouvernement.lu/fr.html",
+        "https://mfsva.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_finance",
+      "name_zh": "盧森堡財政部",
+      "name_local": "Ministère des Finances",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://mfin.gouvernement.lu/fr.html",
+      "news_url": "https://mfin.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (4 dated items); genuine bounded fixture replays 4 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_finance.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://mfin.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_civil_service",
+      "name_zh": "盧森堡公務部",
+      "name_local": "Ministère de la Fonction publique",
+      "name_en": "Ministry of the Civil Service",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://mfp.gouvernement.lu/fr.html",
+      "news_url": "https://mfp.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_civil_service"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (4 dated items); genuine bounded fixture replays 4 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_civil_service.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://mfp.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_justice",
+      "name_zh": "盧森堡司法部",
+      "name_local": "Ministère de la Justice",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://mjust.gouvernement.lu/fr.html",
+      "news_url": "https://mj.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (4 dated items); genuine bounded fixture replays 4 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_justice.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://mjust.gouvernement.lu/fr.html",
+        "https://mj.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_housing",
+      "name_zh": "盧森堡住宅暨國土規劃部",
+      "name_local": "Ministère du Logement et de l'Aménagement du territoire",
+      "name_en": "Ministry of Housing and Spatial Planning",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://mlogat.gouvernement.lu/fr.html",
+      "news_url": "https://mlogat.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_housing"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (4 dated items); genuine bounded fixture replays 4 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_housing.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://mlog.gouvernement.lu/fr.html",
+        "https://mlogat.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_mobility",
+      "name_zh": "盧森堡交通暨公共工程部",
+      "name_local": "Ministère de la Mobilité et des Travaux publics",
+      "name_en": "Ministry of Mobility and Public Works",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://mmtp.gouvernement.lu/fr.html",
+      "news_url": "https://mmtp.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_mobility"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (3 dated items); genuine bounded fixture replays 3 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_mobility.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://mmtp.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_research",
+      "name_zh": "盧森堡研究暨高等教育部",
+      "name_local": "Ministère de la Recherche et de l'Enseignement supérieur",
+      "name_en": "Ministry of Research and Higher Education",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://mesr.gouvernement.lu/fr.html",
+      "news_url": "https://mesr.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_research"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (6 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_research.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://mesr.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_health",
+      "name_zh": "盧森堡衛生暨社會保障部",
+      "name_local": "Ministère de la Santé et de la Sécurité sociale",
+      "name_en": "Ministry of Health and Social Security",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://m3s.gouvernement.lu/fr.html",
+      "news_url": "https://m3s.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_health"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (4 dated items); genuine bounded fixture replays 4 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_health.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://m3s.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_sport",
+      "name_zh": "盧森堡體育部",
+      "name_local": "Ministère des Sports",
+      "name_en": "Ministry of Sport",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://msp.gouvernement.lu/fr.html",
+      "news_url": "https://msp.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_sport"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (4 dated items); genuine bounded fixture replays 4 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_sport.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://msp.gouvernement.lu/fr.html"
+      ]
+    },
+    {
+      "canonical_id": "lu_labour",
+      "name_zh": "盧森堡勞動部",
+      "name_local": "Ministère du Travail",
+      "name_en": "Ministry of Labour",
+      "kind": "ministry",
+      "language": "fr",
+      "homepage": "https://mteess.gouvernement.lu/fr.html",
+      "news_url": "https://mt.gouvernement.lu/fr.html",
+      "source_ids": [
+        "lu_labour"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (4 dated items); genuine bounded fixture replays 4 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_lu_labour.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://gouvernement.lu/fr/ministeres.html",
+        "https://mteess.gouvernement.lu/fr.html",
+        "https://mt.gouvernement.lu/fr.html"
+      ]
+    }
+  ]
+}

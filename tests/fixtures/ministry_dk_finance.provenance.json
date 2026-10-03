@@ -1,0 +1,140 @@
+{
+  "url": "https://fm.dk/nyheder/nyhedsarkiv/",
+  "final_url": "https://fm.dk/nyheder/nyhedsarkiv/",
+  "observed_at": "2026-10-01T11:52:39.106217+00:00",
+  "observed_on": "2026-10-01",
+  "http_status": 200,
+  "sha256": "c64fa065cfa9b0b8ff0a26a35f520f649bf6f15b018bdf6dbdbd2f52849fb5bc",
+  "transform": "BeautifulSoup main/body extraction; remove scripts/styles/nav/header/footer/form; first 32000 UTF-8 bytes",
+  "fixture": "ministry_dk_finance.html",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "replay_count": 10,
+  "source": {
+    "id": "dk_finance",
+    "country": "DK",
+    "name_zh": "丹麥財政部",
+    "name": "Finansministeriet",
+    "institution_type": "ministry",
+    "language": "da",
+    "homepage": "https://fm.dk/",
+    "listing_url": "https://fm.dk/nyheder/nyhedsarkiv/",
+    "feed_urls": [],
+    "allow_domains": [
+      "fm.dk"
+    ],
+    "critical": false,
+    "schedule_enabled": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Copenhagen"
+  },
+  "live_status": {
+    "source_id": "dk_finance",
+    "source_name": "丹麥財政部",
+    "country": "DK",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 10,
+    "relevant_count": 10,
+    "duration_seconds": 1.058,
+    "newest_published_at": "2026-09-15T00:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0,
+    "health_alerts": [],
+    "dated_count": 10,
+    "undated_ratio": 0,
+    "unique_title_ratio": 1,
+    "in_range_count": 10,
+    "freshness_lag_days": 17,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 95625,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0,
+    "historical_median_bytes": 0,
+    "historical_median_duration": 0
+  },
+  "source_id": "dk_finance",
+  "fixture_count": 10,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "expected": [
+    {
+      "title": "Naalakkersuisut og regeringen er enige om nye initiativer og investeringer i Grønland",
+      "url": "https://fm.dk/nyheder/nyhedsarkiv/2026/september/naalakkersuisut-og-regeringen-er-enige-om-nye-initiativer-og-investeringer-i-groenland/",
+      "published_date_local": "2026-09-15",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Invitation: Peter Hummelgaard flytter Finansministeriet til Nakskov og rundt i landet",
+      "url": "https://fm.dk/nyheder/nyhedsarkiv/2026/september/invitation-peter-hummelgaard-flytter-finansministeriet-til-nakskov-og-rundt-i-landet/",
+      "published_date_local": "2026-09-09",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Regeringen fremsætter teknisk finanslovforslag og kan præsentere opjustering af det finanspolitiske råderum",
+      "url": "https://fm.dk/nyheder/nyhedsarkiv/2026/august/regeringen-fremsaetter-teknisk-finanslovforslag-og-kan-praesentere-opjustering-af-det-finanspolitiske-raaderum/",
+      "published_date_local": "2026-08-28",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Statens finansieringsbehov i 2026 og 2027",
+      "url": "https://fm.dk/nyheder/nyhedsarkiv/2026/august/statens-finansieringsbehov-i-2026-og-2027/",
+      "published_date_local": "2026-08-26",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Politisk forlig om bekræftelse af indekseringsmekanismen i velfærdsforliget",
+      "url": "https://fm.dk/nyheder/nyhedsarkiv/2026/august/politisk-forlig-om-bekraeftelse-af-indekseringsmekanismen-i-velfaerdsforliget/",
+      "published_date_local": "2026-08-24",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Arbejdet i Ekspertgruppen for en omlægning af bilafgifterne er genoptaget med et tillægskommissorium",
+      "url": "https://fm.dk/nyheder/nyhedsarkiv/2026/juli/arbejdet-i-ekspertgruppen-for-en-omlaegning-af-bilafgifterne-er-genoptaget-med-et-tillaegskommissorium/",
+      "published_date_local": "2026-07-10",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Danmark gennemfører genopretningsplan som første land i EU",
+      "url": "https://fm.dk/nyheder/nyhedsarkiv/2026/juni/danmark-gennemfoerer-genopretningsplan-som-foerste-land-i-eu/",
+      "published_date_local": "2026-06-30",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Ændret proces for finanslovforslaget for 2027",
+      "url": "https://fm.dk/nyheder/nyhedsarkiv/2026/juni/aendret-proces-for-finanslovforslaget-for-2027/",
+      "published_date_local": "2026-06-25",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Finansministeriet ansætter to særlige rådgivere",
+      "url": "https://fm.dk/nyheder/nyhedsarkiv/2026/juni/finansministeriet-ansaetter-to-saerlige-raadgivere/",
+      "published_date_local": "2026-06-18",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Peter Hummelgaard bliver ny finansminister",
+      "url": "https://fm.dk/nyheder/nyhedsarkiv/2026/juni/peter-hummelgaard-bliver-ny-finansminister/",
+      "published_date_local": "2026-06-03",
+      "date_source": "time-element"
+    }
+  ]
+}

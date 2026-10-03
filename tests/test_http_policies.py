@@ -1,6 +1,7 @@
 import asyncio
 from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime
+from types import SimpleNamespace
 
 import httpx
 import pytest
@@ -294,16 +295,50 @@ def test_https_downgrade_and_redirect_loop_are_rejected(destination, error):
         asyncio.run(run())
 
 
-def test_same_host_request_starts_are_spaced():
+def test_same_host_request_starts_are_spaced(monkeypatch):
+    from eu_cyber_news_scraper import http as http_module
+
+    clock = [0.0]
+    original_sleep = asyncio.sleep
+
+    async def advance(delay):
+        clock[0] += delay
+        await original_sleep(0)
+
+    monkeypatch.setattr(http_module, "time", SimpleNamespace(monotonic=lambda: clock[0]))
+    monkeypatch.setattr(http_module.asyncio, "sleep", advance)
     times = []
     async def handler(request):
-        times.append(asyncio.get_running_loop().time())
+        times.append(clock[0])
         return httpx.Response(200, request=request)
     async def run():
         async with HttpClient(min_interval=.02, transport=httpx.MockTransport(handler)) as client:
             await asyncio.gather(*(client.get(f"https://example.eu/{i}") for i in range(3)))
     asyncio.run(run())
-    assert all(right - left >= .018 for left, right in zip(times, times[1:]))
+    assert len(times) == 3
+    assert all(right - left >= .02 - 1e-12 for left, right in zip(times, times[1:]))
+
+
+def test_pacing_rechecks_deadline_after_early_timer_wakeup(monkeypatch):
+    from eu_cyber_news_scraper import http as http_module
+
+    clock = [0.0]
+    delays = []
+
+    async def advance(delay):
+        delays.append(delay)
+        clock[0] += delay / 2 if len(delays) == 1 else delay
+
+    monkeypatch.setattr(http_module, "time", SimpleNamespace(monotonic=lambda: clock[0]))
+    monkeypatch.setattr(http_module.asyncio, "sleep", advance)
+
+    async def run():
+        async with HttpClient(min_interval=1) as client:
+            await client._pace('example.eu')
+            await client._pace('example.eu')
+
+    asyncio.run(run())
+    assert delays == [1.0, .5] and clock[0] == 1.0
 
 
 def test_cache_prunes_and_rejects_corruption_and_unstoreable_responses(tmp_path):

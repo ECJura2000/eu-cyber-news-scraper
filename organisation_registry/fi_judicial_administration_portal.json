@@ -1,0 +1,173 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-10-03.fi.1",
+  "canonical_id": "fi_judicial_administration_portal",
+  "names": {
+    "zh": "芬蘭司法行政入口網站（多機關聚合）",
+    "en": "Oikeus.fi judicial administration portal (multi-institution aggregate)",
+    "short": "fi_judicial_administration_portal",
+    "publisher_aliases": [
+      "Oikeus.fi"
+    ]
+  },
+  "sources": [
+    {
+      "id": "fi_judicial_administration_portal",
+      "country": "FI",
+      "name_zh": "芬蘭司法行政入口網站（多機關聚合）",
+      "name": "Oikeus.fi judicial administration portal (multi-institution aggregate)",
+      "institution_type": "judicial administration aggregate",
+      "language": "fi",
+      "homepage": "https://www.oikeus.fi/",
+      "listing_url": "https://www.oikeus.fi/feed/rss-feed?post_type=ajankohtaiset",
+      "feed_urls": [
+        "https://www.oikeus.fi/feed/rss-feed?post_type=ajankohtaiset"
+      ],
+      "allow_domains": [
+        "oikeus.fi",
+        "ulosottolaitos.fi",
+        "tuomioistuimet.fi",
+        "korkeinoikeus.fi",
+        "oikeusrekisterikeskus.fi",
+        "oikeuspalveluvirasto.fi",
+        "kho.fi",
+        "vakuutusoikeus.fi"
+      ],
+      "include_patterns": [
+        "/ajankohtaiset/[^/]+/?$"
+      ],
+      "exclude_patterns": [],
+      "critical": false,
+      "detail_pages": 0,
+      "yearly_listing_url": "",
+      "pagination_url": "",
+      "max_pages": 1,
+      "observation_runs": 3,
+      "freshness_days": 45,
+      "timezone": "Europe/Helsinki",
+      "card_selectors": [],
+      "link_selectors": [],
+      "title_selectors": [],
+      "date_selectors": [],
+      "summary_selectors": [],
+      "parser_adapter": "fi_oikeus_aggregate_rss",
+      "date_policy": "required",
+      "date_exception_reason": "",
+      "date_evidence_url": "",
+      "date_reviewed_on": "",
+      "date_review_due": "",
+      "tls_intermediate_bundle": "",
+      "paused_until": "",
+      "pause_reason": "",
+      "pause_evidence_url": "",
+      "min_listing_bytes": 0,
+      "user_agent": "",
+      "schedule_enabled": false,
+      "feed_archive_fallback": false,
+      "minimum_budget_seconds": 0
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "數位身份",
+      "著作權",
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱",
+      "競爭規範面向（平台責任的市場結構面）",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 45
+  },
+  "history": {
+    "effective_from": "2026-10-03",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-10-03",
+    "evidence_urls": [
+      "https://www.oikeus.fi/",
+      "https://www.oikeus.fi/feed/rss-feed?post_type=ajankohtaiset",
+      "https://www.oikeus.fi/robots.txt"
+    ],
+    "fixture_path": "tests/fixtures/finland_fi_judicial_administration_portal.xml",
+    "provenance_path": "tests/fixtures/finland_fi_judicial_administration_portal.provenance.json",
+    "identity_provenance_path": "tests/fixtures/finland_official_identity.provenance.json",
+    "parser_replay": {
+      "raw_count": 30,
+      "dated_count": 30,
+      "publisher_count": 7,
+      "success": true
+    },
+    "scope": "Manual-only production translated CLI and artifact smoke passed on 2026-10-03. Original publication dates and publisher identity verified using official endpoints, saved fixture replay and live source collection. This is not a formal weekly run, scheduled-run acceptance or durable-state advancement; inventory exclusions, pauses and quality gates remain unchanged.",
+    "coverage_limitations": "Thirty RSS items across seven validated official publisher hosts. publisher_organisation names the destination institution or explicitly the multi-court Tuomioistuimet.fi publisher portal. Source is an aggregate, never fi_justice or the justice ministry. Only original item pubDate is used. No article detail fetches or publisher-host feed assignments.",
+    "publisher_host_mapping": {
+      "www.ulosottolaitos.fi": "Ulosottolaitos (National Enforcement Authority Finland)",
+      "www.tuomioistuimet.fi": "Tuomioistuimet.fi (Finnish Courts; multi-court publisher portal)",
+      "www.korkeinoikeus.fi": "Korkein oikeus (Supreme Court of Finland)",
+      "www.oikeusrekisterikeskus.fi": "Oikeusrekisterikeskus (Legal Register Centre)",
+      "www.oikeuspalveluvirasto.fi": "Oikeuspalveluvirasto (National Legal Services Authority)",
+      "www.kho.fi": "Korkein hallinto-oikeus (Supreme Administrative Court of Finland)",
+      "www.vakuutusoikeus.fi": "Vakuutusoikeus (Insurance Court of Finland)"
+    },
+    "collection_mode": "manual_only",
+    "production_smoke_observed_at": "2026-10-03T14:52:27.653225+00:00",
+    "last_smoke": {
+      "source_id": "fi_judicial_administration_portal",
+      "source_name": "芬蘭司法行政入口網站（多機關聚合）",
+      "country": "FI",
+      "critical": false,
+      "success": true,
+      "fetched_via": "configured-feed",
+      "raw_count": 30,
+      "relevant_count": 26,
+      "dated_count": 30,
+      "in_range_count": 26,
+      "newest_published_at": "2026-10-01T14:25:56+00:00",
+      "duration_seconds": 4.625,
+      "fetch_status": "ok",
+      "health_status": "healthy",
+      "parse_status": "healthy",
+      "freshness_status": "fresh",
+      "invalid_date_count": 0,
+      "unexplained_future_date_count": 0,
+      "http_statuses": [
+        "200",
+        "200"
+      ],
+      "run_id": "b4e18cbf3e144eff85ed0e0bd098e13b"
+    },
+    "run_quality": {
+      "run_id": "b4e18cbf3e144eff85ed0e0bd098e13b",
+      "quality_gate_passed": true,
+      "healthy_sources": 2,
+      "selected_articles": 35,
+      "translations_total": 35,
+      "translations_succeeded": 35,
+      "high_date_confidence_rate": 1.0,
+      "date_conflicts": 0,
+      "unexplained_future_dates": 0,
+      "artifact_bundle_complete": true,
+      "formal_weekly_verified": false,
+      "state_advancement_verified": false
+    }
+  }
+}

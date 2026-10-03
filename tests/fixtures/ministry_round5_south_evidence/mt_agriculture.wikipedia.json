@@ -1,0 +1,18 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Ministry for Agriculture, Fisheries and Food Supply Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Agriculture,_Fisheries_and_Food_(United_Kingdom)",
+      "title": "Ministry of Agriculture, Fisheries and Food (United Kingdom) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:36.219440+00:00",
+      "extracted_sha256": "7820ab1f7399b776208fd448f893abb1955c376a38c5dc7cd8dd619191f28185",
+      "excerpt": "The**Ministry of Agriculture, Fisheries and Food**(**MAFF**) was a[United Kingdom government department](https://en.wikipedia.org/wiki/Departments_of_the_United_Kingdom_Government)created by the[Board of Agriculture Act 1889](https://en.wikipedia.org/wiki/Board_of_Agriculture_Act_1889)([52 & 53 Vict.](https://en.wikipedia.org/wiki/52_&_53_Vict.)c. 30) and at that time called the**Board of Agriculture**, and then from 1903 the**Board of Agriculture and Fisheries**, and from 1919 the**Ministry of Agriculture and Fisheries**. It attained its final name in 1955 with the addition of responsibilities for the British[food industry](https://en.wikipedia.org/wiki/Food_industry)to the existing responsibilities for[agriculture](https://en.wikipedia.org/wiki/Agriculture)and the[fishing industry](https://en.wikipedia.org/wiki/Fishing_industry), a name that lasted until the Ministry was dissolved in 2002, at which point its responsibilities had been merged into the[Department for Environment, Food a"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_agriculture.wikipedia.json"
+}

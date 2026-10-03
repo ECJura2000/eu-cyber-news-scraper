@@ -1,0 +1,145 @@
+{
+  "source_id": "hu_transport_investment",
+  "url": "https://kormany.hu/kormanyzat/kozlekedesi-es-beruhazasi-miniszterium",
+  "final_url": "https://kormany.hu/kormanyzat/kozlekedesi-es-beruhazasi-miniszterium",
+  "observed_at": "2026-10-02T01:17:18.428481+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "2746378aa60dd09dcdef85a0062f274da7d368f7a0de7f101bb518febb9ec7d3",
+  "response_bytes": 804076,
+  "fixture_sha256": "9b4a08cb0337ba9b827ed2e84d78352df7bcb12ab558ebc68dc8cff17bb062f7",
+  "fixture_bytes": 6011,
+  "transform": "BeautifulSoup extraction of genuine dated news containers retaining original attributes/text; scripts/styles removed; original base retained if present; bounded to six or fewer containers",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "PÁLYÁZATI KIÍRÁS",
+      "url": "https://kormany.hu/hirek/palyazati-kiiras",
+      "published_date_local": "2026-09-30"
+    },
+    {
+      "title": "Természetközeli tervek alapján újulhat meg a Fertő-tó partja",
+      "url": "https://kormany.hu/hirek/termeszetkozeli-tervek-alapjan-ujulhat-meg-a-ferto-to-partja",
+      "published_date_local": "2026-09-25"
+    },
+    {
+      "title": "Tárkányi Zsolt: új lendületet kapott a vasút",
+      "url": "https://kormany.hu/hirek/tarkanyi-zsolt-uj-lenduletet-kapott-a-vasut",
+      "published_date_local": "2026-09-17"
+    },
+    {
+      "title": "2026-ban is díjazzuk a közlekedési szakmai legjobbjait",
+      "url": "https://kormany.hu/hirek/2026-ban-is-dijazzuk-a-kozlekedesi-szakmai-legjobbjait",
+      "published_date_local": "2026-09-16"
+    },
+    {
+      "title": "Elindult a jelölés az id. Rubik Ernő-díjra - Magyarország kiemelkedő mérnökeit keresik",
+      "url": "https://kormany.hu/hirek/elindult-a-jeloles-az-id-rubik-erno-dijra-magyarorszag-kiemelkedo-mernokeit-keresik",
+      "published_date_local": "2026-08-13"
+    },
+    {
+      "title": "A KÖZLEKEDÉSI ÉS BERUHÁZÁSI MINISZTÉRIUM A HARMADFOKÚ HŐSÉGRIASZTÁS MIATT RÉSZLEGESEN FELOLDJA A HÉTVÉGI KAMIONSTOPOT",
+      "url": "https://kormany.hu/hirek/a-miniszterium-reszlegesen-feloldja-a-hetvegi-kamionstopot",
+      "published_date_local": "2026-07-30"
+    }
+  ],
+  "live_status": {
+    "source_id": "hu_transport_investment",
+    "source_name": "匈牙利交通與投資部",
+    "country": "HU",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 8,
+    "relevant_count": 8,
+    "duration_seconds": 0.301,
+    "newest_published_at": "2026-09-29T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 8,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 0.875,
+    "in_range_count": 8,
+    "freshness_lag_days": 3.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 804076,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "hu_transport_investment",
+    "country": "HU",
+    "name_zh": "匈牙利交通與投資部",
+    "name": "Közlekedési és Beruházási Minisztérium",
+    "institution_type": "central ministry",
+    "language": "hu",
+    "homepage": "https://kormany.hu/kormanyzat/kozlekedesi-es-beruhazasi-miniszterium",
+    "listing_url": "https://kormany.hu/kormanyzat/kozlekedesi-es-beruhazasi-miniszterium",
+    "feed_urls": [],
+    "allow_domains": [
+      "kormany.hu"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Budapest",
+    "card_selectors": [
+      "article.article-card"
+    ],
+    "link_selectors": [
+      "a.article-card__link"
+    ],
+    "title_selectors": [
+      "h2.article-card__title"
+    ],
+    "date_selectors": [
+      ".article-card__date"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_hu_transport_investment.html",
+  "format": "html"
+}

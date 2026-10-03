@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.pl/web/sport/wiadomosci",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:53:42.890873+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "b83080c23a09b6d51b7eeeddc053d10babf37ebc7433f2de0253465c5f3adbd8",
+  "sha256": "5fdd3403ca1e29ab86421604c95a990528c17e5736b6b02c72ff298cb2181cc3",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "pl_sport_tourism",
+  "expected": [
+    {
+      "title": "Infrastrukturalne przyspieszenie na Podkarpaciu. Ponad 19 mln zł wsparcia na rozwój bazy sportowej",
+      "url": "https://www.gov.pl/web/sport/infrastrukturalne-przyspieszenie-na-podkarpaciu-ponad-19-mln-zl-wsparcia-na-rozwoj-bazy-sportowej",
+      "published_date_local": "2026-10-01",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Ponad 1,3 mln zł dla 17 projektów. Wyniki konkursu „Innowacje sportowe KLUB PRO 2026”",
+      "url": "https://www.gov.pl/web/sport/ponad-13-mln-zl-dla-17-projektow-wyniki-konkursu-innowacje-sportowe-klub-pro-2026",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Infrastrukturalne przyspieszenie. 736. zrewitalizowany Orlik otwarty",
+      "url": "https://www.gov.pl/web/sport/infrastrukturalne-przyspieszenie-736-zrewitalizowany-orlik-otwarty",
+      "published_date_local": "2026-09-28",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Nowoczesny stadion w Płońsku otwarty",
+      "url": "https://www.gov.pl/web/sport/nowoczesny-stadion-w-plonsku-otwarty",
+      "published_date_local": "2026-09-25",
+      "date_source": "source-selector"
+    }
+  ]
+}

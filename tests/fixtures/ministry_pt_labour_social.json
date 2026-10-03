@@ -1,0 +1,102 @@
+{
+  "source_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/trabalho-solidariedade-e-seguranca-social/noticias",
+  "scope": [
+    "608666FC5C0F4D2A8066697D270D5064"
+  ],
+  "articles": [
+    {
+      "id": "285D0F1110FA458A84C556DBD5D14CCF",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/transformacao-digital-da-seguranca-social-reduz-atendimento-presencial-e-reforca-servicos-digitais",
+      "title": "Transformação digital da Segurança Social reduz atendimento presencial e reforça serviços digitais",
+      "date": "20260908T114600Z",
+      "summary": "Cerca de 4 milhões de atendimentos da Segurança Social passaram a ser resolvidos através de canais digitais desde janeiro de 2025, contribuindo para reduzir a procura de atendimento presencial.",
+      "areas": [
+        "608666FC5C0F4D2A8066697D270D5064"
+      ]
+    },
+    {
+      "id": "78432D341B104BC7BB1FAE7B90EC20FF",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/investimentos-do-prr-reforcaram-respostas-sociais-acessibilidade-formacao-profissional-e-servicos-digitais-da-seguranca-social-",
+      "title": "Investimentos do PRR reforçaram respostas sociais, acessibilidade, formação profissional e serviços digitais da Segurança Social ",
+      "date": "20260903T110400Z",
+      "summary": "Governo cumpre metas do PRR no Trabalho, Solidariedade e Segurança Social com investimentos de 1,4 mil milhões de euros",
+      "areas": [
+        "608666FC5C0F4D2A8066697D270D5064"
+      ]
+    },
+    {
+      "id": "A4EA740D895B4EAE87A465B86C4CAA04",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/combate-a-fraude-na-seguranca-social-poupa-765-milhoes-de-euros",
+      "title": "Combate à fraude na Segurança Social poupa 76,5 milhões de euros",
+      "date": "20260827T163800Z",
+      "summary": "Aplicação do plano de combate à fraude na Segurança Social resultou numa poupança de 76,5 milhões de euros nos primeiros 8 meses deste ano. ",
+      "areas": [
+        "608666FC5C0F4D2A8066697D270D5064"
+      ]
+    },
+    {
+      "id": "6BD89CE2C5AD4EAE96C9850607ABA94B",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/prestacao-social-unica-aumenta-ou-mantem-apoio-para-94-dos-futuros-beneficiarios",
+      "title": "Prestação Social Única aumenta ou mantém apoio para 94% dos futuros beneficiários",
+      "date": "20260807T143600Z",
+      "summary": "Em 64% dos casos, o valor do apoio será superior ao previsto no regime atual",
+      "areas": [
+        "608666FC5C0F4D2A8066697D270D5064"
+      ]
+    },
+    {
+      "id": "5EEB1665C5A3446E958362088963CD90",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/taxa-de-desemprego-desce-para-53-no-segundo-trimestre",
+      "title": "Taxa de desemprego desce para 5,3% no segundo trimestre",
+      "date": "20260805T181200Z",
+      "summary": "População empregada atingiu o valor mais elevado desde 2011",
+      "areas": [
+        "608666FC5C0F4D2A8066697D270D5064"
+      ]
+    },
+    {
+      "id": "4FC62299EBB445CFB48EDEBCCED84928",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/complemento-solidario-para-idosos-passa-a-abranger-mais-105-mil-pessoas-em-pouco-mais-de-dois-anos",
+      "title": "Complemento Solidário para Idosos passa a abranger mais 105 mil pessoas em pouco mais de dois anos",
+      "date": "20260803T140900Z",
+      "summary": "Número de beneficiários aumentou 75% e atingiu 245,5 mil em junho de 2026",
+      "areas": [
+        "608666FC5C0F4D2A8066697D270D5064"
+      ]
+    },
+    {
+      "id": "A96A847FF892489A85D56819A25CCC14",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/prestacao-social-unica-aumenta-valor-de-referencia-e-reune-13-apoios-sociais",
+      "title": "Prestação Social Única aumenta valor de referência e reúne 13 apoios sociais",
+      "date": "20260731T124700Z",
+      "summary": "Novo regime reforça a proteção social, simplifica apoios e incentiva o trabalho.",
+      "areas": [
+        "608666FC5C0F4D2A8066697D270D5064"
+      ]
+    },
+    {
+      "id": "E81534C358374BBD9169A96AF12CE51C",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/apoios-ao-emprego-nos-concelhos-afetados-pela-tempestade-kristin-ultrapassam-287-milhoes-de-euros",
+      "title": "Apoios ao emprego nos concelhos afetados pela tempestade Kristin ultrapassam 287 milhões de euros",
+      "date": "20260729T123900Z",
+      "summary": "Mais de 23 000 trabalhadores foram abrangidos pelo incentivo extraordinário e apenas 3,5% das candidaturas permanecem em tramitação",
+      "areas": [
+        "608666FC5C0F4D2A8066697D270D5064"
+      ]
+    }
+  ],
+  "truncated": false,
+  "response_sha256": [
+    "9a282e32c3ad443a38168ef9a4a534009ddc9846a0af29c7dda7bd1c98811438",
+    "dafefd2fe4de15a0e468e52ec74a8626003ff4284a395c842a86bb6c5c594cdd"
+  ],
+  "public_endpoint": "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+}

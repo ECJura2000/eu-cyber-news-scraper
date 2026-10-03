@@ -1,0 +1,611 @@
+{
+  "schema_version": 1,
+  "country": "HR",
+  "reviewed_on": "2026-10-03",
+  "official_roster_urls": [
+    "https://vlada.gov.hr/clanovi-vlade/128",
+    "https://vlada.gov.hr/uredi-vlade/31999"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "2026-10-02 round3 south: 0 manually verified, 0 existing-source ministries, 19 unresolved. Exact current failures and parser/attribution limitations are recorded per initial unresolved ID in tests/fixtures/ministry_round3_south.json. Endpoint failures are not obsolete designations. New sources are manual-only, schedule_enabled=false, critical=false, all 15 OBSERVATION_TOPICS, empty responsibility_by_topic."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "hr_prime_minister",
+      "name_zh": "克羅埃西亞總理辦公室",
+      "name_local": "Ured predsjednika Vlade",
+      "name_en": "Office of the Prime Minister",
+      "kind": "government_head_office",
+      "language": "hr",
+      "homepage": "https://vlada.gov.hr/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (2). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://vlada.gov.hr/",
+        "https://www.vlada.gov.hr/",
+        "https://vlada.gov.hr/rss",
+        "https://en.wikipedia.org/wiki/Prime_Minister_of_Croatia",
+        "https://predsjednik.hr",
+        "https://www.jutarnji.hr/naslovnica/lagana-guzva-ispred-milanovicevog-stana-cijeli-dan-ali-od-novog-predsjednika-ni-traga-na-vrata-mu-je-pozvonio-tek-jedan-covjek-stigla-i-policija-9824914",
+        "https://web.archive.org/web/20200717192948/https://www.jutarnji.hr/naslovnica/lagana-guzva-ispred-milanovicevog-stana-cijeli-dan-ali-od-novog-predsjednika-ni-traga-na-vrata-mu-je-pozvonio-tek-jedan-covjek-stigla-i-policija-9824914",
+        "https://www.jutarnji.hr/vijesti/hrvatska/zoran-milanovic-daje-izjave-ispred-svoje-zgrade-9826726",
+        "https://web.archive.org/web/20200717181532/https://www.jutarnji.hr/vijesti/hrvatska/zoran-milanovic-daje-izjave-ispred-svoje-zgrade-9826726",
+        "https://web.archive.org/web/20120120091625/http://savjest.com/kolumna.php?s_vjest_id=277&title=kolumne:kolumna:izobicajenje-predsjednicke-lente",
+        "https://www.predsjednik.hr/",
+        "https://www.predsjednik.hr/press/",
+        "https://www.predsjednik.hr/vijesti/predsjednik-milanovic-pozivam-hrvate-u-bosni-i-hercegovini-da-u-sto-vecem-broju-izadu-na-izbore-i-izaberu-svoje-istinske-predstavnike/",
+        "https://www.predsjednik.hr/vijesti/predsjednik-milanovic-primio-izaslanstvo-koncertne-dvorane-vatroslava-lisinskog-povodom-izlaska-monografije-lisinski-1973-2023/",
+        "https://www.predsjednik.hr/en/press-en/",
+        "https://www.predsjednik.hr/vijesti/",
+        "https://hr.wikipedia.org/wiki/Predsjednik_Republike_Hrvatske"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (2). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.",
+        "observed_at": "2026-10-03T17:47:11.143685+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "hr_veterans",
+      "name_zh": "克羅埃西亞退伍軍人部",
+      "name_local": "Ministarstvo hrvatskih branitelja",
+      "name_en": "Ministry of Croatian Veterans",
+      "kind": "ministry",
+      "language": "hr",
+      "homepage": "https://branitelji.gov.hr/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: http_error (1), robots_denied (1), robots_unavailable (3). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://branitelji.gov.hr/",
+        "https://www.branitelji.gov.hr/",
+        "https://branitelji.gov.hr/rss",
+        "https://branitelji.gov.hr",
+        "https://www.branitelji.hr",
+        "https://en.wikipedia.org/wiki/Ministry_of_Croatian_Veterans",
+        "https://www.zakon.hr/z/325/Zakon-o-pravima-hrvatskih-branitelja-iz-Domovinskog-rata-i-%C4%8Dlanova-njihovih-obitelji",
+        "https://www.propisi.hr/print.php?id=5981",
+        "https://web.archive.org/web/20210219042118/http://www.propisi.hr/print.php?id=5981",
+        "https://www.hkv.hr/izdvojeno/vai-prilozi/s/slaviek-mario-maks/9044-povlatene-mirovine-2011-qantifaistiq-i-dalje-brojniji-od-branitelja.html",
+        "https://www.zagreb.hr/UserDocsImages/arhiva/branitelji/PUBLIKACIJA%20Samoubojstva%20hrvatskih%20branitelja%20u%20Zagrebu%20i%20Hrvatskoj.pdf",
+        "https://www.bib.irb.hr/976360",
+        "https://hr.wikipedia.org/wiki/Hrvatski_branitelji"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: http_error (1), robots_denied (1), robots_unavailable (3). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.",
+        "observed_at": "2026-10-03T17:47:07.021251+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "hr_interior",
+      "name_zh": "克羅埃西亞內政部",
+      "name_local": "Ministarstvo unutarnjih poslova",
+      "name_en": "Ministry of the Interior",
+      "kind": "ministry",
+      "language": "hr",
+      "homepage": "https://mup.gov.hr/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (6).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://mup.gov.hr/",
+        "https://www.mup.gov.hr/",
+        "https://mup.gov.hr/rss",
+        "https://mup.gov.hr",
+        "https://www.mup.hr",
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Croatia)",
+        "https://www.mup.hr/",
+        "https://viaf.org/viaf/159115170",
+        "https://kriminalistika.gov.hr/",
+        "https://hr.wikipedia.org/wiki/Ministarstvo_unutarnjih_poslova_Republike_Hrvatske"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (6).",
+        "observed_at": "2026-10-03T17:47:24.916514+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "hr_sea_transport",
+      "name_zh": "克羅埃西亞海洋、交通與基礎建設部",
+      "name_local": "Ministarstvo mora, prometa i infrastrukture",
+      "name_en": "Ministry of the Sea, Transport and Infrastructure",
+      "kind": "ministry",
+      "language": "hr",
+      "homepage": "https://mmpi.gov.hr/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: dns_failure (1), robots_unavailable (4). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://mmpi.gov.hr/",
+        "https://www.mmpi.gov.hr/",
+        "https://mmpi.gov.hr/rss",
+        "https://mmpi.gov.hr",
+        "https://en.wikipedia.org/wiki/Ministry_of_Maritime_Affairs,_Transport_and_Infrastructure",
+        "https://www.mppi.hr/",
+        "https://viaf.org/viaf/305775853",
+        "https://web.archive.org/web/20111230164500/http://www.vlada.hr/hr/adresar_i_linkovi/ministarstva/ministarstvo_pomorstva_prometa_i_infrastrukture",
+        "https://www.vlada.hr/hr/adresar_i_linkovi/ministarstva/ministarstvo_pomorstva_prometa_i_infrastrukture",
+        "https://web.archive.org/web/20111230164500/http://www.vlada.hr/rss/feed/vlada_rh",
+        "https://web.archive.org/web/20111230164500/http://www.vlada.hr/hr/user/register?mode=journalist",
+        "https://hr.wikipedia.org/wiki/Ministarstvo_mora,_prometa_i_infrastrukture_Republike_Hrvatske"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: dns_failure (1), robots_unavailable (4). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.",
+        "observed_at": "2026-10-03T17:47:12.125980+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "hr_defence",
+      "name_zh": "克羅埃西亞國防部",
+      "name_local": "Ministarstvo obrane",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "hr",
+      "homepage": "https://morh.gov.hr/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (5). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://morh.gov.hr/",
+        "https://www.morh.gov.hr/",
+        "https://morh.gov.hr/rss",
+        "https://morh.hr",
+        "https://en.wikipedia.org/wiki/Ministry_of_Defense_(Croatia)",
+        "https://www.morh.hr",
+        "https://viaf.org/viaf/138012965",
+        "https://www.morh.hr/ivan-anusic-preuzeo-duznost-ministra-obrane-republike-hrvatske/",
+        "https://web.archive.org/web/20101208063145/http://www.morh.hr/",
+        "https://web.archive.org/web/20101208063145/http://www.morh.hr/component/option,com_bca-rss-syndicator/feed_id,2/lang,hr/",
+        "https://web.archive.org/web/20101208063145/http://www.morh.hr/hr/feed/rss.html",
+        "https://hr.wikipedia.org/wiki/Ministarstvo_obrane_Republike_Hrvatske"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (5). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.",
+        "observed_at": "2026-10-03T17:47:26.769143+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "hr_spatial_construction",
+      "name_zh": "克羅埃西亞空間規劃、建設與國有資產部",
+      "name_local": "Ministarstvo prostornoga uređenja, graditeljstva i državne imovine",
+      "name_en": "Ministry of Spatial Planning, Construction and State Property",
+      "kind": "ministry",
+      "language": "hr",
+      "homepage": "https://mpgi.gov.hr/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (1).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://mpgi.gov.hr/",
+        "https://www.mpgi.gov.hr/",
+        "https://mpgi.gov.hr/rss",
+        "https://mgipu.gov.hr",
+        "https://en.wikipedia.org/wiki/Ministry_of_Construction,_Spatial_Planning_and_State_Property",
+        "https://hr.wikipedia.org/wiki/Ministarstvo_prostornog_ure%C4%91enja,_graditeljstva_i_dr%C5%BEavne_imovine_Republike_Hrvatske"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (1).",
+        "observed_at": "2026-10-03T17:47:33.373909+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "hr_agriculture",
+      "name_zh": "克羅埃西亞農業、林業與漁業部",
+      "name_local": "Ministarstvo poljoprivrede, šumarstva i ribarstva",
+      "name_en": "Ministry of Agriculture, Forestry and Fisheries",
+      "kind": "ministry",
+      "language": "hr",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: dns_failure (1), robots_unavailable (1).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://poljoprivreda.gov.hr/",
+        "https://www.poljoprivreda.gov.hr/",
+        "https://poljoprivreda.gov.hr/rss",
+        "https://poljoprivreda.gov.hr",
+        "https://www.mps.hr/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Agriculture,_Forestry_and_Fisheries_(Croatia)",
+        "https://hr.wikipedia.org/wiki/Ministarstvo_poljoprivrede,_%C5%A1umarstva_i_ribarstva_Republike_Hrvatske"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: dns_failure (1), robots_unavailable (1).",
+        "observed_at": "2026-10-03T17:47:30.149112+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "hr_finance",
+      "name_zh": "克羅埃西亞財政部",
+      "name_local": "Ministarstvo financija",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "hr",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: dns_failure (1), robots_unavailable (1).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://mfin.gov.hr/",
+        "https://www.mfin.gov.hr/",
+        "https://mfin.gov.hr/rss",
+        "https://mfin.gov.hr",
+        "https://en.wikipedia.org/wiki/Ministry_of_Finance_(Croatia)",
+        "https://hr.wikipedia.org/wiki/Ministarstvo_financija_Republike_Hrvatske"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: dns_failure (1), robots_unavailable (1).",
+        "observed_at": "2026-10-03T17:47:44.459247+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "hr_foreign_affairs",
+      "name_zh": "克羅埃西亞外交與歐洲事務部",
+      "name_local": "Ministarstvo vanjskih i europskih poslova",
+      "name_en": "Ministry of Foreign and European Affairs",
+      "kind": "ministry",
+      "language": "hr",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: dns_failure (1), robots_unavailable (1).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://mvep.gov.hr/",
+        "https://www.mvep.gov.hr/",
+        "https://mvep.gov.hr/rss",
+        "https://mvep.gov.hr",
+        "https://www.mvpei.hr/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Foreign_and_European_Affairs_(Croatia)",
+        "https://hr.wikipedia.org/wiki/Ministarstvo_vanjskih_i_europskih_poslova_Republike_Hrvatske"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: dns_failure (1), robots_unavailable (1).",
+        "observed_at": "2026-10-03T17:47:44.798955+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "hr_economy",
+      "name_zh": "克羅埃西亞經濟部",
+      "name_local": "Ministarstvo gospodarstva",
+      "name_en": "Ministry of Economy",
+      "kind": "ministry",
+      "language": "hr",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: dns_failure (1), robots_unavailable (1).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://mingo.gov.hr/",
+        "https://www.mingo.gov.hr/",
+        "https://mingo.gov.hr/rss",
+        "https://mingo.gov.hr",
+        "https://en.wikipedia.org/wiki/Ministry_of_Economy_(Republic_of_Croatia)",
+        "https://hr.wikipedia.org/wiki/Ministarstvo_gospodarstva_Republike_Hrvatske"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: dns_failure (1), robots_unavailable (1).",
+        "observed_at": "2026-10-03T17:47:51.404341+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "hr_environment",
+      "name_zh": "克羅埃西亞環境保護與綠色轉型部",
+      "name_local": "Ministarstvo zaštite okoliša i zelene tranzicije",
+      "name_en": "Ministry of Environmental Protection and Green Transition",
+      "kind": "ministry",
+      "language": "hr",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (1). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://mzozt.gov.hr/",
+        "https://www.mzozt.gov.hr/",
+        "https://mzozt.gov.hr/rss",
+        "https://mzozt.gov.hr",
+        "https://en.wikipedia.org/wiki/Ministry_of_Environmental_Protection_and_Green_Transition_(Croatia)",
+        "https://www.haop.hr/hr",
+        "https://www.haop.hr/hr/aktualnosti/prijedlog-podrucja-i-mjera-obnove-za-nacrt-nacionalnog-plana-obnove-prirode-npop",
+        "https://www.haop.hr/hr/aktualnosti/strucni-standard-za-istrazivanja-osjetljivih-vrsta-ptica-prilikom-sagledavanja-utjecaja",
+        "https://www.haop.hr/hr/aktualnosti/uredba-o-obnovi-prirode-i-nacionalni-plan-obnove-prirode-republike-hrvatske",
+        "https://hr.wikipedia.org/wiki/Ministarstvo_za%C5%A1tite_okoli%C5%A1a_i_zelene_tranzicije_Republike_Hrvatske"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (1). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.",
+        "observed_at": "2026-10-03T17:47:43.592554+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "hr_justice_digital",
+      "name_zh": "克羅埃西亞司法、行政與數位轉型部",
+      "name_local": "Ministarstvo pravosuđa, uprave i digitalne transformacije",
+      "name_en": "Ministry of Justice, Public Administration and Digital Transformation",
+      "kind": "ministry",
+      "language": "hr",
+      "homepage": "https://mpudt.gov.hr/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (1).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://mpudt.gov.hr/",
+        "https://www.mpudt.gov.hr/",
+        "https://mpudt.gov.hr/rss",
+        "https://mpudt.gov.hr",
+        "https://en.wikipedia.org/wiki/Ministry_of_Justice,_Public_Administration_and_Digital_Transformation_(Croatia)",
+        "https://hr.wikipedia.org/wiki/Ministarstvo_pravosu%C4%91a,_uprave_i_digitalne_transformacije_Republike_Hrvatske"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (1).",
+        "observed_at": "2026-10-03T17:48:02.515859+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "hr_education_science",
+      "name_zh": "克羅埃西亞科學、教育與青年部",
+      "name_local": "Ministarstvo znanosti, obrazovanja i mladih",
+      "name_en": "Ministry of Science, Education and Youth",
+      "kind": "ministry",
+      "language": "hr",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: dns_failure (1), robots_unavailable (1).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://mzom.gov.hr/",
+        "https://www.mzom.gov.hr/",
+        "https://mzom.gov.hr/rss",
+        "https://mzom.gov.hr",
+        "https://en.wikipedia.org/wiki/Ministry_of_Science,_Education_and_Youth_(Croatia)",
+        "https://hr.wikipedia.org/wiki/Ministarstvo_znanosti,_obrazovanja_i_mladih_Republike_Hrvatske"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: dns_failure (1), robots_unavailable (1).",
+        "observed_at": "2026-10-03T17:48:04.472476+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "hr_demography",
+      "name_zh": "克羅埃西亞人口與移入事務部",
+      "name_local": "Ministarstvo demografije i useljeništva",
+      "name_en": "Ministry of Demography and Immigration",
+      "kind": "ministry",
+      "language": "hr",
+      "homepage": "https://mdu.gov.hr/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (1).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://mdu.gov.hr/",
+        "https://www.mdu.gov.hr/",
+        "https://mdu.gov.hr/rss",
+        "https://mdu.gov.hr",
+        "https://en.wikipedia.org/wiki/Ministry_of_Demographics_and_Immigration",
+        "https://hr.wikipedia.org/wiki/Ministarstvo_demografije_i_useljeni%C5%A1tva_Republike_Hrvatske"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (1).",
+        "observed_at": "2026-10-03T17:48:04.620684+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "hr_culture",
+      "name_zh": "克羅埃西亞文化與媒體部",
+      "name_local": "Ministarstvo kulture i medija",
+      "name_en": "Ministry of Culture and Media",
+      "kind": "ministry",
+      "language": "hr",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: dns_failure (1), robots_unavailable (2).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://min-kulture.gov.hr/",
+        "https://www.min-kulture.gov.hr/",
+        "https://min-kulture.gov.hr/rss",
+        "https://min-kulture.gov.hr",
+        "https://www.min-kulture.hr/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Culture_and_Media_(Croatia)",
+        "https://hr.wikipedia.org/wiki/Ministarstvo_kulture_i_medija_Republike_Hrvatske"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: dns_failure (1), robots_unavailable (2).",
+        "observed_at": "2026-10-03T17:48:11.787042+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "hr_tourism_sport",
+      "name_zh": "克羅埃西亞觀光與體育部",
+      "name_local": "Ministarstvo turizma i sporta",
+      "name_en": "Ministry of Tourism and Sport",
+      "kind": "ministry",
+      "language": "hr",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (2).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://mint.gov.hr/",
+        "https://www.mint.gov.hr/",
+        "https://mint.gov.hr/rss",
+        "https://mint.gov.hr",
+        "https://www.mint.hr/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Tourism_and_Sports_(Croatia)",
+        "https://hr.wikipedia.org/wiki/Ministarstvo_turizma_i_sporta_Republike_Hrvatske"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (2).",
+        "observed_at": "2026-10-03T17:48:39.774483+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "hr_regional_eu",
+      "name_zh": "克羅埃西亞區域發展與歐盟基金部",
+      "name_local": "Ministarstvo regionalnoga razvoja i fondova Europske unije",
+      "name_en": "Ministry of Regional Development and European Union Funds",
+      "kind": "ministry",
+      "language": "hr",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (2).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://razvoj.gov.hr/",
+        "https://www.razvoj.gov.hr/",
+        "https://razvoj.gov.hr/rss",
+        "https://razvoj.gov.hr",
+        "https://mrrfeu.hr",
+        "https://en.wikipedia.org/wiki/Ministry_of_Regional_Development_and_EU_Funds_(Croatia)",
+        "https://hr.wikipedia.org/wiki/Ministarstvo_regionalnog_razvoja_i_fondova_Europske_unije_Republike_Hrvatske"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (2).",
+        "observed_at": "2026-10-03T17:48:47.275413+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "hr_labour_social",
+      "name_zh": "克羅埃西亞勞動、退休金制度、家庭與社會政策部",
+      "name_local": "Ministarstvo rada, mirovinskoga sustava, obitelji i socijalne politike",
+      "name_en": "Ministry of Labour, Pension System, Family and Social Policy",
+      "kind": "ministry",
+      "language": "hr",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (2).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://mrosp.gov.hr/",
+        "https://www.mrosp.gov.hr/",
+        "https://mrosp.gov.hr/rss",
+        "https://mrosp.gov.hr",
+        "https://mrms.hr",
+        "https://en.wikipedia.org/wiki/Ministry_of_Labour,_Pension_System,_Family_and_Social_Policy",
+        "https://hr.wikipedia.org/wiki/Ministarstvo_rada,_mirovinskog_sustava,_obitelji_i_socijalne_politike_Republike_Hrvatske"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (2).",
+        "observed_at": "2026-10-03T17:48:41.432267+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "hr_health",
+      "name_zh": "克羅埃西亞衛生部",
+      "name_local": "Ministarstvo zdravstva",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "hr",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (3).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://vlada.gov.hr/clanovi-vlade/128",
+        "https://vlada.gov.hr/uredi-vlade/31999",
+        "https://zdravstvo.gov.hr/",
+        "https://www.zdravstvo.gov.hr/",
+        "https://zdravstvo.gov.hr/rss",
+        "https://zdravlje.gov.hr",
+        "https://www.mzss.hr/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Health_(Croatia)",
+        "https://hr.wikipedia.org/wiki/Ministarstvo_zdravstva_Republike_Hrvatske"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (3).",
+        "observed_at": "2026-10-03T17:48:48.305592+08:00",
+        "candidate_news_url": null
+      }
+    }
+  ]
+}

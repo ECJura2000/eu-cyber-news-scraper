@@ -1,0 +1,41 @@
+{
+  "url": "https://mfinante.gov.ro/ro/presa-comunicate-de-presa",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:56:57.735881+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "9bdaa25cc4ca79953d345cc04206191044e42b2c3ba1b491f17f79aa1e491ac2",
+  "sha256": "d5cb49010e7c30975d2488e87c9bc02f8f8b32a61c2cf62b1740d6b98c968e54",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 30,
+  "dated_count": 30,
+  "fixture_count": 4,
+  "source_id": "ro_finance",
+  "expected": [
+    {
+      "title": "Dobânzi de până la 7,75% la ediția FIDELIS din luna octombrie",
+      "url": "https://mfinante.gov.ro/ro/presa-comunicate-de-presa/-/asset_publisher/vMeOfqIFpa30/content/dob-c3-a2nzi-de-p-c3-a2n-c4-83-la-7-75-la-edi-c8-9bia-fidelis-din-luna-octombrie?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30_assetEntryId=20396934&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30_redirect=https%3A%2F%2Fmfinante.gov.ro%2Fro%2Fpresa-comunicate-de-presa%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30_cur%3D0%26p_r_p_resetCur%3Dfalse%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30_assetEntryId%3D20396934",
+      "published_date_local": "2026-10-01",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Acciza la motorină rămâne redusă cu 25% și în perioada 1–15 octombrie 2026",
+      "url": "https://mfinante.gov.ro/ro/presa-comunicate-de-presa/-/asset_publisher/vMeOfqIFpa30/content/acciza-la-motorin-c4-83-r-c4-83m-c3-a2ne-redus-c4-83-cu-25-c8-99i-c3-aen-perioada-1-15-octombrie-2026?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30_assetEntryId=20385913&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30_redirect=https%3A%2F%2Fmfinante.gov.ro%2Fro%2Fpresa-comunicate-de-presa%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30_cur%3D0%26p_r_p_resetCur%3Dfalse%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30_assetEntryId%3D20385913",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Ministerul Finanțelor propune un proiect de Hotărâre de Guvern prin care asigură continuarea finanțărilor BEI de 923 milioane de euro pentru spitalele regionale din Iași, Cluj și Craiova",
+      "url": "https://mfinante.gov.ro/ro/presa-comunicate-de-presa/-/asset_publisher/vMeOfqIFpa30/content/ministerul-finan-c8-9belor-propune-un-proiect-de-hot-c4-83r-c3-a2re-de-guvern-prin-care-asigur-c4-83-continuarea-finan-c8-9b-c4-83rilor-bei-de-923-milioane-de-euro-pentru-spitalele-regionale-din-ia-c8-99i-cluj-c8-99i-craiova?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30_assetEntryId=20376662&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30_redirect=https%3A%2F%2Fmfinante.gov.ro%2Fro%2Fpresa-comunicate-de-presa%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30_cur%3D0%26p_r_p_resetCur%3Dfalse%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30_assetEntryId%3D20376662",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Execuția bugetară la 8 luni: deficitul scade cu aproape 27 miliarde de lei față de 2025 și coboară la 2,89% din PIB",
+      "url": "https://mfinante.gov.ro/ro/presa-comunicate-de-presa/-/asset_publisher/vMeOfqIFpa30/content/execu-c8-9bia-bugetar-c4-83-la-8-luni-deficitul-scade-cu-aproape-27-miliarde-de-lei-fa-c8-9b-c4-83-de-2025-c8-99i-coboar-c4-83-la-2-89-din-pib?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30_assetEntryId=20320506&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30_redirect=https%3A%2F%2Fmfinante.gov.ro%2Fro%2Fpresa-comunicate-de-presa%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30_cur%3D0%26p_r_p_resetCur%3Dfalse%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_vMeOfqIFpa30_assetEntryId%3D20320506",
+      "published_date_local": "2026-09-26",
+      "date_source": "source-selector"
+    }
+  ]
+}

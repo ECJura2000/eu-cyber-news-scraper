@@ -1,0 +1,41 @@
+{
+  "url": "https://www.mai.gov.ro/feed/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:46.964475+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "ac063f02ea84468952952c90e7cee84e162866212b6979417dba7b7894ccdb19",
+  "sha256": "ae364d45563f3d9a64c41a1fce277bd826996821c5b614852a493871a9df9f90",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "ro_interior",
+  "expected": [
+    {
+      "title": "“ Asigurarea condițiilor optime, la nivelul DGCTI, de gestionare eficientă a proiectelor cofinanțate din fonduri europene dedicate afacerilor interne”, Cod proiect AT2024_06",
+      "url": "https://www.mai.gov.ro/asigurarea-conditiilor-optime-la-nivelul-dgcti-de-gestionare-eficienta-a-proiectelor-cofinantate-din-fonduri-europene-dedicate-afacerilor-interne-cod-proiect-at2024_06-2/",
+      "published_date_local": "2026-09-30",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Bogdan Despescu: Prevenirea, evaluarea riscului și intervenția / Combaterea traficului de droguri, acțiunile MAI / Violența împotriva femeilor, noile reglementări  (Romania Tv)",
+      "url": "https://www.mai.gov.ro/bogdan-despescu-prevenirea-evaluarea-riscului-si-interventia-combaterea-traficului-de-droguri-actiunile-mai-violenta-impotriva-femeilor-noile-reglementari-romania-tv/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Cum circulăm rapid și în siguranță în zona șantierelor (Antena 1)",
+      "url": "https://www.mai.gov.ro/cum-circulam-rapid-si-in-siguranta-in-zona-santierelor-antena-1/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Material de informare privind riscurile asociate ofertelor de transport și de muncă în Republica Croația",
+      "url": "https://www.mai.gov.ro/material-de-informare-privind-riscurile-asociate-ofertelor-de-transport-si-de-munca-in-republica-croatia/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    }
+  ]
+}

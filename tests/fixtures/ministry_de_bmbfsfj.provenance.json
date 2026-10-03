@@ -1,0 +1,91 @@
+{
+  "source_id": "de_bmbfsfj",
+  "url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:21.404052+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "17ee80aa8c51842fa31f26c389ceaa20d5813533c6d4f0c1233a3b2bcb5c07e5",
+  "response_sha256": "d6f6db4f5bb91bbccdb5c920589d4b5c1bce03125c04185c3ed4bc56e7402c4f",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "„Bildung auf einen Blick 2026“: Neue OECD- Studie zu Bildungsindikatoren veröffentlicht",
+      "url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen/-bildung-auf-einen-blick-2026-neue-oecd-studie-zu-bildungsindikatoren-veroeffentlicht-294632",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "UNESCO-Weltbildungsbericht: Bildungsgerechtigkeit bleibt zentrale Herausforderung",
+      "url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen/unesco-weltbildungsbericht-bildungsgerechtigkeit-bleibt-zentrale-herausforderung-294196",
+      "published_date_local": "2026-09-22",
+      "date_confidence": "high"
+    },
+    {
+      "title": "15 Jahre Bundesfreiwilligendienst",
+      "url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen/15-jahre-bundesfreiwilligendienst-294268",
+      "published_date_local": "2026-09-17",
+      "date_confidence": "high"
+    },
+    {
+      "title": "56 Empfehlungen für einen zeitgemäßen Kinder- und Jugendschutz in der digitalen Welt",
+      "url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen/56-empfehlungen-fuer-einen-zeitgemaessen-kinder-und-jugendschutz-in-der-digitalen-welt-294124",
+      "published_date_local": "2026-09-11",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Unternehmenstag „Erfolgsfaktor Familie“: Deutschlands familienfreundlichste Betriebe gewürdigt",
+      "url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen/-unternehmenstag-erfolgsfaktor-familie-deutschlands-familienfreundlichste-betriebe-gewuerdigt-294110",
+      "published_date_local": "2026-09-11",
+      "date_confidence": "high"
+    },
+    {
+      "title": "PISA 2025 zeigt deutlich: Basiskompetenzen stärken, Bildungschancen verbessern",
+      "url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen/pisa-2025-zeigt-deutlich-basiskompetenzen-staerken-bildungschancen-verbessern-293974",
+      "published_date_local": "2026-09-08",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Schützen, befähigen, beteiligen: Was Kinder und Jugendliche von der digitalen Welt erwarten",
+      "url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen/schuetzen-befaehigen-beteiligen-was-kinder-und-jugendliche-von-der-digitalen-welt-erwarten-293958",
+      "published_date_local": "2026-09-07",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Frühe Förderung stärken, Kitas gezielt unterstützen, Qualität verbessern - Kabinett verabschiedet Entwurf für Startchancen- und Qualitätsentwicklungsgesetz",
+      "url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen/fruehe-foerderung-staerken-kitas-gezielt-unterstuetzen-qualitaet-verbessern-kabinett-verabschiedet-entwurf-fuer-startchancen-und-qualitaetsentwicklungsgesetz-293796",
+      "published_date_local": "2026-09-02",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 10,
+  "live_dated_count": 10,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "de_bmbfsfj",
+    "country": "DE",
+    "name_zh": "德國教育、家庭、高齡、婦女與青年部",
+    "name": "Bundesministerium für Bildung, Familie, Senioren, Frauen und Jugend",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.bmbfsfj.bund.de/",
+    "listing_url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.bmbfsfj.bund.de"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Berlin",
+    "card_selectors": [
+      ".teaser"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

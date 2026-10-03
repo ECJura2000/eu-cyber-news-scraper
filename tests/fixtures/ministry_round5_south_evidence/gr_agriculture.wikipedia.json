@@ -1,0 +1,18 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Rural Development and Food Greece"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Rural_Development_and_Food_(Greece)",
+      "title": "Ministry of Rural Development and Food (Greece) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:22.937775+00:00",
+      "extracted_sha256": "e2f8124abc6582c0f17f66280a4f0bacea1fb25684a03b7dc1224e13d1c505cf",
+      "excerpt": "The**Ministry of Rural Development and Food**([Greek](https://en.wikipedia.org/wiki/Greek_language):Υπουργείο Αγροτικής Ανάπτυξης και Τροφίμων) is a ministry of the[Greek Government](https://en.wikipedia.org/wiki/Government_of_Greece)tasked with modernizing and developing the agricultural sector in Greece. Specifically, among other objectives, the ministry promotes the export orientation of the country's agricultural and fishery products while improving their quality, using the resources of the[Common Agricultural Policy](https://en.wikipedia.org/wiki/Common_Agricultural_Policy)and the[Common Fisheries Policy](https://en.wikipedia.org/wiki/Common_Fisheries_Policy), and protecting the environment through the[sustainable management](https://en.wikipedia.org/wiki/Sustainable_management)of[natural resources](https://en.wikipedia.org/wiki/Natural_resource_management).[[4]](https://en.wikipedia.org/wiki/Ministry_of_Rural_Development_and_Food_(Greece)#cite_note-4)\n\nThe incumbent minister is[M"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/gr_agriculture.wikipedia.json"
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-10-01.1",
+  "canonical_id": "lv_chancellery",
+  "names": {
+    "zh": "拉脫維亞國家總理府",
+    "en": "State Chancellery",
+    "short": "lv_chancellery",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "lv_chancellery",
+      "country": "LV",
+      "name_zh": "拉脫維亞國家總理府",
+      "name": "Valsts kanceleja",
+      "institution_type": "中央部會",
+      "language": "lv",
+      "homepage": "https://www.mk.gov.lv/lv",
+      "listing_url": "https://www.mk.gov.lv/lv/jaunumi",
+      "feed_urls": [],
+      "allow_domains": [
+        "www.mk.gov.lv"
+      ],
+      "include_patterns": [
+        "^/lv/(?:jaunums|zinas)/[^/?]+/?$"
+      ],
+      "exclude_patterns": [],
+      "critical": false,
+      "detail_pages": 0,
+      "yearly_listing_url": "",
+      "pagination_url": "",
+      "max_pages": 1,
+      "observation_runs": 3,
+      "freshness_days": 45,
+      "timezone": "Europe/Riga",
+      "card_selectors": [
+        ".views-row"
+      ],
+      "link_selectors": [
+        ".title a[href]",
+        "h2 a[href]"
+      ],
+      "title_selectors": [
+        ".title h2",
+        "h2"
+      ],
+      "date_selectors": [
+        "time"
+      ],
+      "summary_selectors": [
+        ".text"
+      ],
+      "parser_adapter": "",
+      "date_policy": "required",
+      "date_exception_reason": "",
+      "date_evidence_url": "",
+      "date_reviewed_on": "",
+      "date_review_due": "",
+      "tls_intermediate_bundle": "",
+      "paused_until": "",
+      "pause_reason": "",
+      "pause_evidence_url": "",
+      "min_listing_bytes": 0,
+      "user_agent": "",
+      "schedule_enabled": false,
+      "feed_archive_fallback": false,
+      "minimum_budget_seconds": 0
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "數位身份",
+      "著作權",
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱",
+      "競爭規範面向（平台責任的市場結構面）",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-10-01",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-10-01",
+    "evidence_urls": [
+      "https://www.mk.gov.lv/en/cabinet-composition",
+      "https://www.mk.gov.lv/lv"
+    ],
+    "fixture": "tests/fixtures/ministry_lv_chancellery.html",
+    "provenance": "tests/fixtures/ministry_lv_chancellery.provenance.json",
+    "live_check": {
+      "observed_at": "2026-10-01T12:03:40.422770+00:00",
+      "obey_robots": true,
+      "fetch_details": false,
+      "parsed_count": 10,
+      "dated_count": 10,
+      "raw_count": 10
+    },
+    "scope_note": "Official ministry-specific news listing; publisher attribution remains unknown without explicit article evidence."
+  }
+}

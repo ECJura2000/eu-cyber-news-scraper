@@ -1,0 +1,103 @@
+{
+  "source_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/cultura-juventude-e-desporto/noticias",
+  "scope": [
+    "74474540249E4856B7E5F823E563C8DA"
+  ],
+  "articles": [
+    {
+      "id": "F94B286849ED4711A2C555353732F2B3",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/promuseus-mais-de-um-milhao-de-euros-para-apoiar-40-projetos-de-museus",
+      "title": "ProMuseus: mais de um milhão de euros para apoiar 40 projetos de museus",
+      "date": "20261001T121700Z",
+      "summary": "Projetos reforçam a inclusão, a mediação cultural e a capacitação das equipas da Rede Portuguesa de Museus",
+      "areas": [
+        "74474540249E4856B7E5F823E563C8DA"
+      ]
+    },
+    {
+      "id": "ADFE311BED084B6B81FA3AF1479DFD1F",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/cultura-governo-promove-sessoes-de-esclarecimento-sobre-investimento-e-mecenato",
+      "title": "Cultura: Governo promove sessões de esclarecimento sobre investimento e mecenato",
+      "date": "20260929T181800Z",
+      "summary": "Iniciativa do Ministério da Cultura, Juventude e Desporto mobiliza agentes culturais e mecenas em Lisboa e Porto",
+      "areas": [
+        "74474540249E4856B7E5F823E563C8DA"
+      ]
+    },
+    {
+      "id": "341110D6823246628C8AD5BB06F0A19B",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/candidaturas-ao-premio-para-promover-a-cultura-portuguesa-no-estrangeiro-abrem-a-1-de-outubro",
+      "title": "Candidaturas ao prémio para promover a cultura portuguesa no estrangeiro abrem a 1 de outubro",
+      "date": "20260928T131800Z",
+      "summary": "Distinção anual destina-se a agentes e organizações culturais que projetem o património e a criação artística contemporânea portuguesa a nível internacional",
+      "areas": [
+        "D7E57175854B44A89EBD08B08C47D02A",
+        "74474540249E4856B7E5F823E563C8DA"
+      ]
+    },
+    {
+      "id": "17FE95370D164CB6BC4342D60F9D5AD1",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/governo-cria-rede-portuguesa-saber-fazer-como-politica-publica-permanente",
+      "title": "Governo cria Rede Portuguesa Saber Fazer como política pública permanente",
+      "date": "20260921T171400Z",
+      "summary": "Rede promove a cooperação entre artesãos, entidades e territórios e a adesão será necessária para aceder aos novos apoios às artes e ofícios tradicionais",
+      "areas": [
+        "74474540249E4856B7E5F823E563C8DA"
+      ]
+    },
+    {
+      "id": "E8C881F06850402BAECD7E27BE9B3B7A",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/candidaturas-abertas-a-capital-nacional-da-juventude-2027",
+      "title": "Candidaturas abertas à Capital Nacional da Juventude 2027",
+      "date": "20260921T102800Z",
+      "summary": "Municípios podem candidatar-se até 21 de outubro e o vencedor recebe 50 mil euros para concretizar iniciativas dirigidas aos jovens",
+      "areas": [
+        "74474540249E4856B7E5F823E563C8DA"
+      ]
+    },
+    {
+      "id": "43CC06247B4E4B77B63E2653AF5BB01D",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/comemoracoes-dos-900-anos-da-fundacao-de-portugal-ja-tem-comissao-executiva-",
+      "title": "Comemorações dos 900 anos da Fundação de Portugal já têm comissão executiva  ",
+      "date": "20260918T103000Z",
+      "summary": "Comissão Executiva reúne quatro personalidades com experiência nas áreas da cultura, gestão e políticas públicas para preparar o programa das comemorações",
+      "areas": [
+        "74474540249E4856B7E5F823E563C8DA"
+      ]
+    },
+    {
+      "id": "5C867705146B446CB5DAA00AE891EE35",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/prr-para-a-cultura-supera-metas-com-mais-de-500-infraestruturas-modernizadas",
+      "title": "PRR para a Cultura supera metas com mais de 500 infraestruturas modernizadas",
+      "date": "20260907T110000Z",
+      "summary": "Investimento reforça património, equipamentos culturais, digitalização e acesso à Cultura em todo o país",
+      "areas": [
+        "74474540249E4856B7E5F823E563C8DA"
+      ]
+    },
+    {
+      "id": "2391F316406A4059BDF5878416182B74",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/programa-cheque-livro-ultrapassa-a-emissao-de-52-mil-vouchers",
+      "title": "Programa Cheque-livro ultrapassa a emissão de 52 mil vouchers",
+      "date": "20260902T175400Z",
+      "summary": "Foram utilizados mais de 45 mil vouchers de 30 euros por jovens residentes em Portugal",
+      "areas": [
+        "74474540249E4856B7E5F823E563C8DA"
+      ]
+    }
+  ],
+  "truncated": false,
+  "response_sha256": [
+    "6376df66e60ad91fa2b332a3d25b2e0746ae1b3c50cadf2700b6d1f1ac4036ed",
+    "ca8c5b57622dd541445ec596ffa0e4b81ad7a705d4d8a207e718663fd5da622b"
+  ],
+  "public_endpoint": "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+}

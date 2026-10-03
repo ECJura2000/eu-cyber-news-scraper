@@ -5,6 +5,7 @@ from openpyxl import load_workbook
 
 from eu_cyber_news_scraper.cli import _run_pipeline
 from eu_cyber_news_scraper.models import Source
+from eu_cyber_news_scraper.organisation_registry import load_organisation_registry
 from eu_cyber_news_scraper.periods import resolve_period
 from eu_cyber_news_scraper.topic_profile import load_profile
 
@@ -68,7 +69,7 @@ def test_offline_pipeline_writes_atomic_artifacts_and_quality_metadata(monkeypat
     assert summary["period"]["since_calendar"] == "roc"
     assert summary["organisation_audit_status"] == "complete"
     assert len(summary["organisation_registry_hash"]) == 64
-    assert len(summary["organisation_modules"]) == 145
+    assert len(summary["organisation_modules"]) == len(load_organisation_registry().modules)
     assert (tmp_path / ".state" / ".source-health.json").exists()
     assert output.with_suffix(".jsonl").exists()
     assert output.with_suffix(".corpus.jsonl").exists()

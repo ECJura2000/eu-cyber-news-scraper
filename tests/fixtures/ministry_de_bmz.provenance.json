@@ -1,0 +1,85 @@
+{
+  "source_id": "de_bmz",
+  "url": "https://www.bmz.de/de/feed.rss",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:31:37.604871+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "f5cdd9e09b60622552cd7aa9309bdac61d02238290a0df85b1b63b6249436294",
+  "response_sha256": "26efdc11337b943d4859d043f59f6e97831db57f968344cdd73cb3a72d5f4a6b",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "UNESCO-Weltbildungsbericht: Bildungsgerechtigkeit bleibt zentrale Herausforderung – Deutsche Kurzfassung des Weltbildungsberichts in Berlin vorgestellt",
+      "url": "https://www.bmz.de/de/aktuelles/aktuelle-meldungen/328148-328148",
+      "published_date_local": "2026-09-22",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Alabali Radovan reist zur UN-Generalversammlung nach New York",
+      "url": "https://www.bmz.de/de/aktuelles/aktuelle-meldungen/pressemitteilung-alabali-radovan-reist-zur-un-generalversammlung-328136",
+      "published_date_local": "2026-09-22",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Deutschlands Wirtschaft braucht die Welt: Appell von Unternehmen und Verbänden für internationale Zusammenarbeit",
+      "url": "https://www.bmz.de/de/aktuelles/aktuelle-meldungen/wirtschaft-zusammenarbeit-327846",
+      "published_date_local": "2026-09-17",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Alabali Radovan verleiht BMZ-Engagementpreis",
+      "url": "https://www.bmz.de/de/aktuelles/aktuelle-meldungen/bmz-engagementpreis-324158",
+      "published_date_local": "2026-09-05",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Entwicklungsministerin Alabali Radovan zu dem vom israelischen Sicherheitsminister Itamar Ben-Gvir vorgestellten Plan zur Umsiedlung der Palästinenser aus dem Gazastreifen",
+      "url": "https://www.bmz.de/de/aktuelles/aktuelle-meldungen/umsiedlung-der-palaestinenser-324160",
+      "published_date_local": "2026-09-04",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Syrien stark wieder aufbauen – gemeinsam mit der deutschen Wirtschaft",
+      "url": "https://www.bmz.de/de/aktuelles/aktuelle-meldungen/pressemitteilung-syrien-stark-wieder-aufbauen-324056",
+      "published_date_local": "2026-09-02",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Entwicklungsministerin Reem Alabali Radovan zur neuen Studie der Universität Göttingen zum Zusammenhang von Entwicklungszusammenarbeit und Exporten",
+      "url": "https://www.bmz.de/de/aktuelles/aktuelle-meldungen/studie-universitaet-goettingen-entwicklungszusammenarbeit-323558",
+      "published_date_local": "2026-08-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Hilfen für den Boden in Zeiten von Dürre und Hitze: Deutschland bei der UN-Wüstenkonferenz 2026 in der Mongolei",
+      "url": "https://www.bmz.de/de/aktuelles/aktuelle-meldungen/un-wuestenkonferenz-mongolei-323550",
+      "published_date_local": "2026-08-24",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 10,
+  "live_dated_count": 10,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "de_bmz",
+    "country": "DE",
+    "name_zh": "德國經濟合作與發展部",
+    "name": "Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.bmz.de/de",
+    "listing_url": "https://www.bmz.de/de/feed.rss",
+    "feed_urls": [
+      "https://www.bmz.de/de/feed.rss"
+    ],
+    "allow_domains": [
+      "www.bmz.de"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Berlin",
+    "schedule_enabled": false
+  }
+}

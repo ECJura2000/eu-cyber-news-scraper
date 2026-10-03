@@ -1,0 +1,41 @@
+{
+  "url": "https://www.regeringen.se/sveriges-regering/finansdepartementet/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:18.989978+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "48a5bc650c3faf8356f912e7ccf1965ebd6b7ff44aae40f633fe9e39cb34a5c6",
+  "sha256": "263eae491b04e5fedc3a2d53d6bb3083d3bb647fe67165b42d484eea14e2bf1e",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 20,
+  "dated_count": 20,
+  "fixture_count": 4,
+  "source_id": "se_finance",
+  "expected": [
+    {
+      "title": "Remiss av promemorian EU:s penningtvättspaket, Fi2026/01654",
+      "url": "https://www.regeringen.se/remisser/2026/07/remiss-av-promemorian-eus-penningtvattspaket/",
+      "published_date_local": "2026-07-06",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Regeringsärenden vecka 40, 2026",
+      "url": "https://www.regeringen.se/regeringsarenden/regeringsarenden-vecka-40-2026/",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Kommenterad dagordning, rådet för ekonomiska och finansiella frågor, den 9 oktober 2026",
+      "url": "https://www.regeringen.se/kommenterade-dagordningar/2026/09/kommenterad-dagordning-radet-for-ekonomiska-och-finansiella-fragor-den-9-oktober-2026/",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Remiss av promemorian Tillgång till uppgifter om elektronisk kommunikation vid tillhandahållande av sjö- och flygräddningstjänst, Fi2026/01722",
+      "url": "https://www.regeringen.se/remisser/2026/08/remiss-av-promemorian-tillgang-till-uppgifter-om-elektronisk-kommunikation-vid-tillhandahallande-av-sjo--och-flygraddningstjanst/",
+      "published_date_local": "2026-08-13",
+      "date_source": "source-selector"
+    }
+  ]
+}

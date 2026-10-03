@@ -1,0 +1,18 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Office of the Deputy Prime Minister and Ministry for Health Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ian_Borg",
+      "title": "Ian Borg - Wikipedia",
+      "observed_at": "2026-10-03T08:37:33.461292+00:00",
+      "extracted_sha256": "3b9e00074dff58c44d610d7fc0d96b972a7df84f2f3a96a62dbd794e556e4cd1",
+      "excerpt": "[Jump to content](https://en.wikipedia.org/wiki/Ian_Borg#bodyContent)\n\nFrom Wikipedia, the free encyclopedia\n\nMaltese politician (born 1986)\n\n[The Honourable](https://en.wikipedia.org/wiki/The_Honourable)\n\nIan Borg\n\n[MP](https://en.wikipedia.org/wiki/Parliament_of_Malta)[](https://en.wikipedia.org/wiki/File:Ian_Borg_in_Vienna_on_19_October_2023_(cropped).jpg)\n\nBorg in 2023[Deputy Prime Minister of Malta](https://en.wikipedia.org/wiki/Deputy_Prime_Minister_of_Malta)\n\n**[Incumbent](https://en.wikipedia.org/wiki/Incumbent)****Assumed office**\n17 September 2024President[Myriam Spiteri Debono](https://en.wikipedia.org/wiki/Myriam_Spiteri_Debono)Prime Minister[Robert Abela](https://en.wikipedia.org/wiki/Robert_Abela)Preceded by[Chris Fearne](https://en.wikipedia.org/wiki/Chris_Fearne)[Minister for Health](https://en.wikipedia.org/wiki/Cabinet_of_Malta)\n\n**[Incumbent](https://en.wikipedia.org/wiki/Incumbent)****Assumed office**\n4 June 2026Prime MinisterRobert AbelaPreceded by[Jo Etienne Abela"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_health.wikipedia.json"
+}

@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "country": "LV",
+  "reviewed_on": "2026-10-01",
+  "official_roster_urls": [
+    "https://www.mk.gov.lv/en/cabinet-composition",
+    "https://www.mk.gov.lv/en/state-chancellery"
+  ],
+  "roster_complete": true,
+  "limitations": [],
+  "ministries": [
+    {
+      "canonical_id": "lv_foreign_affairs",
+      "name_zh": "拉脫維亞外交部",
+      "name_local": "Ārlietu ministrija",
+      "name_en": "Ministry of Foreign Affairs",
+      "kind": "ministry",
+      "language": "lv",
+      "homepage": "https://www.mfa.gov.lv/lv",
+      "news_url": "https://www.mfa.gov.lv/lv/jaunumi",
+      "source_ids": [
+        "lv_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-respecting live listing and production scraper succeeded; genuine fixture replays a dated article.",
+      "evidence_urls": [
+        "https://www.mk.gov.lv/en/cabinet-composition",
+        "https://www.mfa.gov.lv/lv"
+      ]
+    },
+    {
+      "canonical_id": "lv_defence",
+      "name_zh": "拉脫維亞國防部",
+      "name_local": "Aizsardzības ministrija",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "lv",
+      "homepage": "https://www.mod.gov.lv/lv",
+      "news_url": "https://www.mod.gov.lv/lv/zinas",
+      "source_ids": [
+        "lv_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots/TLS-aware live scraper and fixture replay passed: 10 parsed items, 10 with source dates. Automatic scheduling remains disabled.",
+      "evidence_urls": [
+        "https://www.mk.gov.lv/en/cabinet-composition",
+        "https://www.mod.gov.lv/lv"
+      ]
+    },
+    {
+      "canonical_id": "lv_economy",
+      "name_zh": "拉脫維亞經濟部",
+      "name_local": "Ekonomikas ministrija",
+      "name_en": "Ministry of Economics",
+      "kind": "ministry",
+      "language": "lv",
+      "homepage": "https://www.em.gov.lv/lv",
+      "news_url": "https://www.em.gov.lv/lv/jaunumi",
+      "source_ids": [
+        "lv_economy"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-respecting live listing and production scraper succeeded; genuine fixture replays a dated article.",
+      "evidence_urls": [
+        "https://www.mk.gov.lv/en/cabinet-composition",
+        "https://www.em.gov.lv/lv"
+      ]
+    },
+    {
+      "canonical_id": "lv_transport",
+      "name_zh": "拉脫維亞交通部",
+      "name_local": "Satiksmes ministrija",
+      "name_en": "Ministry of Transport",
+      "kind": "ministry",
+      "language": "lv",
+      "homepage": "https://www.sam.gov.lv/lv",
+      "news_url": "https://www.sam.gov.lv/lv/jaunumi",
+      "source_ids": [
+        "lv_transport"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-respecting live listing and production scraper succeeded; genuine fixture replays a dated article.",
+      "evidence_urls": [
+        "https://www.mk.gov.lv/en/cabinet-composition",
+        "https://www.sam.gov.lv/lv"
+      ]
+    },
+    {
+      "canonical_id": "lv_welfare",
+      "name_zh": "拉脫維亞福利部",
+      "name_local": "Labklājības ministrija",
+      "name_en": "Ministry of Welfare",
+      "kind": "ministry",
+      "language": "lv",
+      "homepage": "https://www.lm.gov.lv/lv",
+      "news_url": "https://www.lm.gov.lv/lv/jaunumi",
+      "source_ids": [
+        "lv_welfare"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-respecting live listing and production scraper succeeded; genuine fixture replays a dated article.",
+      "evidence_urls": [
+        "https://www.mk.gov.lv/en/cabinet-composition",
+        "https://www.lm.gov.lv/lv"
+      ]
+    },
+    {
+      "canonical_id": "lv_health",
+      "name_zh": "拉脫維亞衛生部",
+      "name_local": "Veselības ministrija",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "lv",
+      "homepage": "https://www.vm.gov.lv/lv",
+      "news_url": "https://www.vm.gov.lv/lv/jaunumi",
+      "source_ids": [
+        "lv_health"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-respecting live listing and production scraper succeeded; genuine fixture replays a dated article.",
+      "evidence_urls": [
+        "https://www.mk.gov.lv/en/cabinet-composition",
+        "https://www.vm.gov.lv/lv"
+      ]
+    },
+    {
+      "canonical_id": "lv_finance",
+      "name_zh": "拉脫維亞財政部",
+      "name_local": "Finanšu ministrija",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "lv",
+      "homepage": "https://www.fm.gov.lv/lv",
+      "news_url": "https://www.fm.gov.lv/lv/jaunumi",
+      "source_ids": [
+        "lv_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-respecting live listing and production scraper succeeded; genuine fixture replays a dated article.",
+      "evidence_urls": [
+        "https://www.mk.gov.lv/en/cabinet-composition",
+        "https://www.fm.gov.lv/lv"
+      ]
+    },
+    {
+      "canonical_id": "lv_interior",
+      "name_zh": "拉脫維亞內政部",
+      "name_local": "Iekšlietu ministrija",
+      "name_en": "Ministry of Interior",
+      "kind": "ministry",
+      "language": "lv",
+      "homepage": "https://www.iem.gov.lv/lv",
+      "news_url": "https://www.iem.gov.lv/lv/jaunumi",
+      "source_ids": [
+        "lv_interior"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-respecting live listing and production scraper succeeded; genuine fixture replays a dated article.",
+      "evidence_urls": [
+        "https://www.mk.gov.lv/en/cabinet-composition",
+        "https://www.iem.gov.lv/lv"
+      ]
+    },
+    {
+      "canonical_id": "lv_education",
+      "name_zh": "拉脫維亞教育暨科學部",
+      "name_local": "Izglītības un zinātnes ministrija",
+      "name_en": "Ministry of Education and Science",
+      "kind": "ministry",
+      "language": "lv",
+      "homepage": "https://www.izm.gov.lv/lv",
+      "news_url": "https://www.izm.gov.lv/lv/jaunumi",
+      "source_ids": [
+        "lv_education"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-respecting live listing and production scraper succeeded; genuine fixture replays a dated article.",
+      "evidence_urls": [
+        "https://www.mk.gov.lv/en/cabinet-composition",
+        "https://www.izm.gov.lv/lv"
+      ]
+    },
+    {
+      "canonical_id": "lv_climate",
+      "name_zh": "拉脫維亞氣候暨能源部",
+      "name_local": "Klimata un enerģētikas ministrija",
+      "name_en": "Ministry of Climate and Energy",
+      "kind": "ministry",
+      "language": "lv",
+      "homepage": "https://www.kem.gov.lv/lv",
+      "news_url": "https://www.kem.gov.lv/lv/jaunumi",
+      "source_ids": [
+        "lv_climate"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-respecting live listing and production scraper succeeded; genuine fixture replays a dated article.",
+      "evidence_urls": [
+        "https://www.mk.gov.lv/en/cabinet-composition",
+        "https://www.kem.gov.lv/lv"
+      ]
+    },
+    {
+      "canonical_id": "lv_culture",
+      "name_zh": "拉脫維亞文化部",
+      "name_local": "Kultūras ministrija",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "lv",
+      "homepage": "https://www.km.gov.lv/lv",
+      "news_url": "https://www.km.gov.lv/lv/jaunumi",
+      "source_ids": [
+        "lv_culture"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-respecting live listing and production scraper succeeded; genuine fixture replays a dated article.",
+      "evidence_urls": [
+        "https://www.mk.gov.lv/en/cabinet-composition",
+        "https://www.km.gov.lv/lv"
+      ]
+    },
+    {
+      "canonical_id": "lv_justice",
+      "name_zh": "拉脫維亞司法部",
+      "name_local": "Tieslietu ministrija",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "lv",
+      "homepage": "https://www.tm.gov.lv/lv",
+      "news_url": "https://www.tm.gov.lv/lv/jaunumi",
+      "source_ids": [
+        "lv_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-respecting live listing and production scraper succeeded; genuine fixture replays a dated article.",
+      "evidence_urls": [
+        "https://www.mk.gov.lv/en/cabinet-composition",
+        "https://www.tm.gov.lv/lv"
+      ]
+    },
+    {
+      "canonical_id": "lv_smart_administration",
+      "name_zh": "拉脫維亞智慧行政暨區域發展部",
+      "name_local": "Viedās administrācijas un reģionālās attīstības ministrija",
+      "name_en": "Ministry of Smart Administration and Regional Development",
+      "kind": "ministry",
+      "language": "lv",
+      "homepage": "https://www.varam.gov.lv/lv",
+      "news_url": "https://www.varam.gov.lv/lv/jaunumi",
+      "source_ids": [
+        "lv_smart_administration"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-respecting live listing and production scraper succeeded; genuine fixture replays a dated article.",
+      "evidence_urls": [
+        "https://www.mk.gov.lv/en/cabinet-composition",
+        "https://www.varam.gov.lv/lv"
+      ]
+    },
+    {
+      "canonical_id": "lv_agriculture",
+      "name_zh": "拉脫維亞農業部",
+      "name_local": "Zemkopības ministrija",
+      "name_en": "Ministry of Agriculture",
+      "kind": "ministry",
+      "language": "lv",
+      "homepage": "https://www.zm.gov.lv/lv",
+      "news_url": "https://www.zm.gov.lv/lv/jaunumi",
+      "source_ids": [
+        "lv_agriculture"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-respecting live listing and production scraper succeeded; genuine fixture replays a dated article.",
+      "evidence_urls": [
+        "https://www.mk.gov.lv/en/cabinet-composition",
+        "https://www.zm.gov.lv/lv"
+      ]
+    },
+    {
+      "canonical_id": "lv_chancellery",
+      "name_zh": "拉脫維亞國家總理府",
+      "name_local": "Valsts kanceleja",
+      "name_en": "State Chancellery",
+      "kind": "government_head_office",
+      "language": "lv",
+      "homepage": "https://www.mk.gov.lv/lv",
+      "news_url": "https://www.mk.gov.lv/lv/jaunumi",
+      "source_ids": [
+        "lv_chancellery"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-respecting live listing and production scraper succeeded; genuine fixture replays a dated article.",
+      "evidence_urls": [
+        "https://www.mk.gov.lv/en/cabinet-composition",
+        "https://www.mk.gov.lv/lv"
+      ]
+    }
+  ]
+}

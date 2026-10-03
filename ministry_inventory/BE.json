@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "country": "BE",
+  "reviewed_on": "2026-10-03",
+  "official_roster_urls": [
+    "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+    "https://www.belgium.be/en/about_belgium/government/federal_authorities/federal_and_planning_public_services"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "Federal Belgium.be roster returns a CAPTCHA to direct requests. The official Flemish government directory enumerates all 11 FPS and 2 PPS; Defence is additionally identified in the indexed first-party federal roster."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "be_chancellery",
+      "name_zh": "比利時首相府",
+      "name_local": "Federale Overheidsdienst Kanselarij van de Eerste Minister",
+      "name_en": "FPS Chancellery of the Prime Minister",
+      "kind": "government_head_office",
+      "language": "nl",
+      "homepage": "https://kanselarij.belgium.be/nl",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh official ministry checks failed (robots_denied). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
+      "evidence_urls": [
+        "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+        "https://www.vlaanderen.be/Organisation/OVO024763",
+        "https://kanselarij.belgium.be/nl",
+        "https://chancellery.belgium.be/en",
+        "https://en.wikipedia.org/wiki/Federal_Public_Service_Chancellery_of_the_Prime_Minister",
+        "https://kanselarij.belgium.be/nl/",
+        "https://www.belgium.be/nl",
+        "https://news.belgium.be/nl",
+        "https://www.belgium.be/modules/custom/openfed_rss/css/openfed_rss_feed.css?tmaxl4",
+        "https://nl.wikipedia.org/wiki/Federale_Overheidsdienst_Kanselarij_van_de_Eerste_Minister"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh official ministry checks failed (robots_denied). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.",
+        "observed_at": "2026-10-03T13:16:09.386424+00:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "be_bosa",
+      "name_zh": "比利時聯邦政策與支援公共服務部",
+      "name_local": "Federale Overheidsdienst Beleid en Ondersteuning",
+      "name_en": "FPS Policy and Support",
+      "kind": "ministry_equivalent",
+      "language": "nl",
+      "homepage": "https://bosa.belgium.be/nl",
+      "news_url": "https://bosa.belgium.be/nl/news",
+      "source_ids": [
+        "be_bosa"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_be_bosa.provenance.json",
+      "evidence_urls": [
+        "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+        "https://www.vlaanderen.be/Organisation/OVO025178",
+        "https://bosa.belgium.be/nl",
+        "https://bosa.belgium.be/nl/news"
+      ]
+    },
+    {
+      "canonical_id": "be_foreign_affairs",
+      "name_zh": "比利時外交、外貿與發展合作公共服務部",
+      "name_local": "Federale Overheidsdienst Buitenlandse Zaken, Buitenlandse Handel en Ontwikkelingssamenwerking",
+      "name_en": "FPS Foreign Affairs, Foreign Trade and Development Cooperation",
+      "kind": "ministry_equivalent",
+      "language": "nl",
+      "homepage": "https://diplomatie.belgium.be/nl",
+      "news_url": "https://diplomatie.belgium.be/nl/nieuws",
+      "source_ids": [
+        "be_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_be_foreign_affairs.provenance.json",
+      "evidence_urls": [
+        "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+        "https://www.vlaanderen.be/Organisation/OVO024762",
+        "https://diplomatie.belgium.be/nl",
+        "https://diplomatie.belgium.be/nl/nieuws"
+      ]
+    },
+    {
+      "canonical_id": "be_interior",
+      "name_zh": "比利時內政公共服務部",
+      "name_local": "Federale Overheidsdienst Binnenlandse Zaken",
+      "name_en": "FPS Interior",
+      "kind": "ministry_equivalent",
+      "language": "nl",
+      "homepage": "https://www.ibz.be/nl",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh official ministry checks failed (robots_unavailable). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
+      "evidence_urls": [
+        "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+        "https://www.vlaanderen.be/Organisation/OVO008237",
+        "https://www.ibz.be/nl",
+        "https://ibz.be/nl",
+        "https://www.ibz.be/",
+        "https://en.wikipedia.org/wiki/Federal_Public_Service_Interior",
+        "https://ibz.be/nl/",
+        "https://nl.wikipedia.org/wiki/Federale_Overheidsdienst_Binnenlandse_Zaken"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh official ministry checks failed (robots_unavailable). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.",
+        "observed_at": "2026-10-03T13:16:09.386853+00:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "be_finance",
+      "name_zh": "比利時財政公共服務部",
+      "name_local": "Federale Overheidsdienst Financiën",
+      "name_en": "FPS Finance",
+      "kind": "ministry_equivalent",
+      "language": "nl",
+      "homepage": "https://fin.belgium.be",
+      "news_url": "https://fin.belgium.be/nl/news",
+      "source_ids": [
+        "be_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "Fresh fourth-round verification: manual_verified. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "evidence_urls": [
+        "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+        "https://www.vlaanderen.be/Organisation/OVO005190",
+        "https://fin.belgium.be",
+        "https://fin.belgium.be/nl/news"
+      ]
+    },
+    {
+      "canonical_id": "be_mobility",
+      "name_zh": "比利時交通運輸公共服務部",
+      "name_local": "Federale Overheidsdienst Mobiliteit en Vervoer",
+      "name_en": "FPS Mobility and Transport",
+      "kind": "ministry_equivalent",
+      "language": "nl",
+      "homepage": "https://mobilit.belgium.be/nl",
+      "news_url": "https://mobilit.belgium.be/nl/news",
+      "source_ids": [
+        "be_mobility"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 7 dated items. Evidence: tests/fixtures/ministry_be_mobility.provenance.json",
+      "evidence_urls": [
+        "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+        "https://www.vlaanderen.be/Organisation/OVO004067",
+        "https://mobilit.belgium.be/nl",
+        "https://mobilit.belgium.be/nl/news"
+      ]
+    },
+    {
+      "canonical_id": "be_employment",
+      "name_zh": "比利時就業、勞動與社會協商公共服務部",
+      "name_local": "Federale Overheidsdienst Werkgelegenheid, Arbeid en Sociaal Overleg",
+      "name_en": "FPS Employment, Labour and Social Dialogue",
+      "kind": "ministry_equivalent",
+      "language": "nl",
+      "homepage": "https://www.werk.belgie.be",
+      "news_url": "https://werk.belgie.be/nl/nieuws",
+      "source_ids": [
+        "be_employment"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_be_employment.provenance.json",
+      "evidence_urls": [
+        "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+        "https://www.vlaanderen.be/Organisation/OVO004018",
+        "https://werk.belgie.be/nl/nieuws"
+      ]
+    },
+    {
+      "canonical_id": "be_social_security",
+      "name_zh": "比利時社會保障公共服務部",
+      "name_local": "Federale Overheidsdienst Sociale Zekerheid",
+      "name_en": "FPS Social Security",
+      "kind": "ministry_equivalent",
+      "language": "nl",
+      "homepage": "https://socialsecurity.belgium.be/nl",
+      "news_url": "https://socialsecurity.belgium.be/nl/nieuws",
+      "source_ids": [
+        "be_social_security"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 5 dated items. Evidence: tests/fixtures/ministry_be_social_security.provenance.json",
+      "evidence_urls": [
+        "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+        "https://www.vlaanderen.be/Organisation/OVO008217",
+        "https://socialsecurity.belgium.be/nl",
+        "https://socialsecurity.belgium.be/nl/nieuws"
+      ]
+    },
+    {
+      "canonical_id": "be_health",
+      "name_zh": "比利時衛生、食品鏈安全與環境公共服務部",
+      "name_local": "Federale Overheidsdienst Volksgezondheid, Veiligheid van de Voedselketen en Leefmilieu",
+      "name_en": "FPS Health, Food Chain Safety and Environment",
+      "kind": "ministry_equivalent",
+      "language": "nl",
+      "homepage": "https://www.health.belgium.be/nl",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh official ministry checks failed (robots_unavailable). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
+      "evidence_urls": [
+        "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+        "https://www.vlaanderen.be/Organisation/OVO008238",
+        "https://www.health.belgium.be/nl",
+        "https://www.health.belgium.be/en",
+        "https://www.health.fgov.be/",
+        "https://en.wikipedia.org/wiki/Federal_Public_Service_Health",
+        "https://www.health.belgium.be/nl/",
+        "https://www.health.belgium.be/",
+        "https://nl.wikipedia.org/wiki/Federale_Overheidsdienst_Volksgezondheid,_Veiligheid_van_de_Voedselketen_en_Leefmilieu"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh official ministry checks failed (robots_unavailable). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.",
+        "observed_at": "2026-10-03T13:16:09.387338+00:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "be_justice",
+      "name_zh": "比利時司法公共服務部",
+      "name_local": "Federale Overheidsdienst Justitie",
+      "name_en": "FPS Justice",
+      "kind": "ministry_equivalent",
+      "language": "nl",
+      "homepage": "https://justitie.belgium.be",
+      "news_url": "https://justitie.belgium.be/nl/nieuws",
+      "source_ids": [
+        "be_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "Fresh fourth-round verification: manual_verified. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_blocked.json",
+      "evidence_urls": [
+        "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+        "https://www.vlaanderen.be/Organisation/OVO003988",
+        "https://justitie.belgium.be",
+        "https://justitie.belgium.be/nl/nieuws"
+      ]
+    },
+    {
+      "canonical_id": "be_economy",
+      "name_zh": "比利時經濟、中小企業、中產與能源公共服務部",
+      "name_local": "Federale Overheidsdienst Economie, K.M.O., Middenstand en Energie",
+      "name_en": "FPS Economy, SMEs, Self-Employed and Energy",
+      "kind": "ministry_equivalent",
+      "language": "nl",
+      "homepage": "https://economie.fgov.be/nl",
+      "news_url": "https://economie.fgov.be/nl/nieuws",
+      "source_ids": [
+        "be_economy"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_be_economy.provenance.json",
+      "evidence_urls": [
+        "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+        "https://www.vlaanderen.be/Organisation/OVO004539",
+        "https://economie.fgov.be/nl",
+        "https://economie.fgov.be/nl/nieuws"
+      ]
+    },
+    {
+      "canonical_id": "be_social_integration",
+      "name_zh": "比利時社會融合規劃公共服務部",
+      "name_local": "Programmatorische Federale Overheidsdienst Maatschappelijke Integratie",
+      "name_en": "PPS Social Integration",
+      "kind": "ministry_equivalent",
+      "language": "nl",
+      "homepage": "https://www.mi-is.be/nl",
+      "news_url": "https://www.mi-is.be/nl/actueel",
+      "source_ids": [
+        "be_social_integration"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_be_social_integration.provenance.json",
+      "evidence_urls": [
+        "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+        "https://www.vlaanderen.be/Organisation/OVO027345",
+        "https://www.mi-is.be/nl",
+        "https://www.mi-is.be/nl/actueel"
+      ]
+    },
+    {
+      "canonical_id": "be_science_policy",
+      "name_zh": "比利時科學政策規劃公共服務部",
+      "name_local": "Programmatorische Federale Overheidsdienst Wetenschapsbeleid",
+      "name_en": "PPS Science Policy",
+      "kind": "ministry_equivalent",
+      "language": "nl",
+      "homepage": "https://www.belspo.be",
+      "news_url": "https://www.belspo.be/belspo/organisation/press_fr.stm",
+      "source_ids": [
+        "be_science_policy"
+      ],
+      "status": "manual_verified",
+      "reason": "Fresh fourth-round verification: manual_verified. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_north.json",
+      "evidence_urls": [
+        "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+        "https://www.vlaanderen.be/Organisation/OVO027346",
+        "https://www.belspo.be/belspo/organisation/press_fr.stm",
+        "https://www.belspo.be/belspo/organisation/press/20260915_FLEX-Sentinel-3C_fr.stm",
+        "https://www.belspo.be/belspo/organisation/press/20260827_MTG-12_fr.stm",
+        "https://www.belspo.be/belspo/organisation/press/20260825_ISS-Brain-DTI_fr.stm",
+        "https://www.belspo.be/robots.txt"
+      ]
+    },
+    {
+      "canonical_id": "be_defence",
+      "name_zh": "比利時國防部",
+      "name_local": "Ministerie van Defensie",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "nl",
+      "homepage": "https://www.mil.be/nl/news/rss",
+      "news_url": "https://www.mil.be/nl/news/rss",
+      "source_ids": [
+        "be_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_be_defence.provenance.json",
+      "evidence_urls": [
+        "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+        "https://www.belgium.be/en/about_belgium/government/federal_authorities/federal_and_planning_public_services",
+        "https://www.mil.be/nl/news/rss"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "url": "https://uim.dk/nyhedsarkiv/",
+  "final_url": "https://uim.dk/nyhedsarkiv/",
+  "observed_at": "2026-10-01T11:52:42.017121+00:00",
+  "observed_on": "2026-10-01",
+  "http_status": 200,
+  "sha256": "3add62dbd7128778022db25ae3e6e4af22ae15d8e599c6aabced30eb0e6943b4",
+  "transform": "BeautifulSoup main/body extraction; remove scripts/styles/nav/header/footer/form; first 32000 UTF-8 bytes",
+  "fixture": "ministry_dk_immigration.html",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "replay_count": 10,
+  "source": {
+    "id": "dk_immigration",
+    "country": "DK",
+    "name_zh": "丹麥移民與融合部",
+    "name": "Udlændinge- og Integrationsministeriet",
+    "institution_type": "ministry",
+    "language": "da",
+    "homepage": "https://uim.dk/",
+    "listing_url": "https://uim.dk/nyhedsarkiv/",
+    "feed_urls": [],
+    "allow_domains": [
+      "uim.dk"
+    ],
+    "critical": false,
+    "schedule_enabled": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Copenhagen"
+  },
+  "live_status": {
+    "source_id": "dk_immigration",
+    "source_name": "丹麥移民與融合部",
+    "country": "DK",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 10,
+    "relevant_count": 10,
+    "duration_seconds": 0.703,
+    "newest_published_at": "2026-10-01T00:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0,
+    "health_alerts": [],
+    "dated_count": 10,
+    "undated_ratio": 0,
+    "unique_title_ratio": 1,
+    "in_range_count": 10,
+    "freshness_lag_days": 1,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 58423,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0,
+    "historical_median_bytes": 0,
+    "historical_median_duration": 0
+  },
+  "source_id": "dk_immigration",
+  "fixture_count": 10,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "expected": [
+    {
+      "title": "Bødskov efter migrantstrømmen i Ceuta: EU skal overvåge sociale medier",
+      "url": "https://uim.dk/nyhedsarkiv/2026/oktober/boedskov-efter-migrantstroemmen-i-ceuta-eu-skal-overvaage-sociale-medier/",
+      "published_date_local": "2026-10-01",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Femlandegruppen mødes igen i München",
+      "url": "https://uim.dk/nyhedsarkiv/2026/september/femlandegruppen-moedes-igen-i-muenchen/",
+      "published_date_local": "2026-09-26",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Bødskov: EU har lyttet til Danmark efter migrantstrøm men i Ceuta",
+      "url": "https://uim.dk/nyhedsarkiv/2026/september/boedskov-eu-har-lyttet-til-danmark-efter-migrantstroem-men-i-ceuta/",
+      "published_date_local": "2026-09-25",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Bødskov: Ekstrem islamisme og æresrelateret vold og trusler er ødelæggende for vores boligområder",
+      "url": "https://uim.dk/nyhedsarkiv/2026/september/boedskov-ekstrem-islamisme-og-aeresrelateret-vold-og-trusler-er-oedelaeggende-for-vores-boligomraader/",
+      "published_date_local": "2026-09-14",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Mulighed for genoptagelse af visse sager om dansk statsborgerskab på baggrund af Højesterets domme om berettigede forventninger",
+      "url": "https://uim.dk/nyhedsarkiv/2026/september/mulighed-for-genoptagelse-af-visse-sager-om-dansk-statsborgerskab-paa-baggrund-af-hoejesterets-domme-om-berettigede-forventninger/",
+      "published_date_local": "2026-09-11",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Berostillelse af visse sager som følge af fejl i Kriminalregisteret",
+      "url": "https://uim.dk/nyhedsarkiv/2026/september/berostillelse-af-visse-sager-som-foelge-af-fejl-i-kriminalregisteret/",
+      "published_date_local": "2026-09-07",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Efter afgørende møde: Fem lande intensiverer nu dialogen med partnerlande om udrejsecentre",
+      "url": "https://uim.dk/nyhedsarkiv/2026/september/efter-afgoerende-moede-fem-lande-intensiverer-nu-dialogen-med-partnerlande-om-udrejsecentre/",
+      "published_date_local": "2026-09-04",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Danmark forventes at være klar til at sende udlændinge uden lovligt ophold til udrejsecenter i 2027",
+      "url": "https://uim.dk/nyhedsarkiv/2026/september/danmark-forventes-at-vaere-klar-til-at-sende-udlaendinge-uden-lovligt-ophold-til-udrejsecenter-i-2027/",
+      "published_date_local": "2026-09-04",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Udvisningsreformen er vedtaget: Nu bliver det lettere at udvise kriminelle udlændinge",
+      "url": "https://uim.dk/nyhedsarkiv/2026/september/udvisningsreformen-er-vedtaget-nu-bliver-det-lettere-at-udvise-kriminelle-udlaendinge/",
+      "published_date_local": "2026-09-03",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Regeringen ændrer fordelingen af fordrevne fra  Ukraine",
+      "url": "https://uim.dk/nyhedsarkiv/2026/september/regeringen-aendrer-fordelingen-af-fordrevne-fra-ukraine/",
+      "published_date_local": "2026-09-02",
+      "date_source": "time-element"
+    }
+  ]
+}

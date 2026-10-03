@@ -1,0 +1,141 @@
+{
+  "source_id": "de_bmf",
+  "url": "https://www.bundesfinanzministerium.de/Web/DE/Presse/Pressemitteilungen/pressemitteilungen.html",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "observed_on": "2026-10-03",
+  "observed_at": "2026-10-03T08:33:43.808833+00:00",
+  "fixture_path": "tests/fixtures/ministry_round5_de_bmf.html",
+  "fixture_sha256": "9e54e49051a543eee252b1cba0a0a5a14a9f2e8eb48b86e67dda77f940d4ceb2",
+  "response_sha256": "d07947187323f31beb14d9bb9a3c9d98f06b3b3d8d0853af7f3096f85fd57b10",
+  "response_bytes": 211028,
+  "expected": [
+    {
+      "title": "Digitale Belege und digitale Kassen: Bundesregierung baut Bürokratie ab und bekämpft Steuerhinterziehung",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Pressemitteilungen/Finanzpolitik/2026/09/2026-09-23-digitale-belege-und-digitale-kassen.html",
+      "published_date_local": "2026-09-23",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Bund und Berlin unterzeichnen neuen Hauptstadtfinanzierungsvertrag",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Pressemitteilungen/Finanzpolitik/2026/09/2026-09-15-neuer-hauptstadtfinanzierungsvertrag.html",
+      "published_date_local": "2026-09-15",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Bundesregierung stärkt Transparenz: Bundeshaushalt wird mit Nachhaltigkeitszielen verknüpft",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Pressemitteilungen/Finanzpolitik/2026/09/2026-09-04-nachhaltigkeitsziele.html",
+      "published_date_local": "2026-09-04",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Bundesregierung bringt Einkommensteuerreform auf den Weg",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Pressemitteilungen/Finanzpolitik/2026/09/2026-09-02-einkommensteuerreform.html",
+      "published_date_local": "2026-09-02",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Vorstellung der Sonderbriefmarke „Alexandria Blue Boy“ aus der Serie „Tag der Briefmarke“",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Pressemitteilungen/Briefmarken/2026/2026-09-01-sonderbriefmarke-alexandria-blue-boy.html",
+      "published_date_local": "2026-09-01",
+      "date_confidence": "high"
+    }
+  ],
+  "source_config": {
+    "id": "de_bmf",
+    "country": "DE",
+    "name_zh": "德國財政部",
+    "name": "Bundesministerium der Finanzen",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.bundesfinanzministerium.de/Web/DE/Home/home.html",
+    "listing_url": "https://www.bundesfinanzministerium.de/Web/DE/Presse/Pressemitteilungen/pressemitteilungen.html",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.bundesfinanzministerium.de"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Berlin",
+    "card_selectors": [
+      "li.bmf-list-entry"
+    ],
+    "link_selectors": [
+      "a.bmf-resultlist-teaser-link"
+    ],
+    "title_selectors": [],
+    "date_selectors": [
+      "time"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "live_status": {
+    "source_id": "de_bmf",
+    "source_name": "德國財政部",
+    "country": "DE",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 10,
+    "relevant_count": 10,
+    "duration_seconds": 1.702,
+    "newest_published_at": "2026-09-23T11:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 10,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 10,
+    "freshness_lag_days": 9.9,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 2,
+    "bytes_downloaded": 213254,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200",
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "transform": "First five complete original li.bmf-list-entry nodes plus original base node; no field values synthesized.",
+  "fresh_client_no_prior_host_get": true
+}

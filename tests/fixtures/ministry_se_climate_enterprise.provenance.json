@@ -1,0 +1,41 @@
+{
+  "url": "https://www.regeringen.se/sveriges-regering/klimat--och-naringslivsdepartementet/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:18.894041+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "32dee810e6129e7c0873299b4716816b89680946c67cc2a23c46829346b2e607",
+  "sha256": "658d8c41a4ded265a7e3b32fbeeea6a97e60b4cd37fa1725b529e2b698b82dc9",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 20,
+  "dated_count": 20,
+  "fixture_count": 4,
+  "source_id": "se_climate_enterprise",
+  "expected": [
+    {
+      "title": "Remiss av promemorian Förbättrat genomförande av industriutsläppsdirektivet, KN2026/01497",
+      "url": "https://www.regeringen.se/remisser/2026/07/remiss-av-promemorian-forbattrat-genomforande-av-industriutslappsdirektivet/",
+      "published_date_local": "2026-07-09",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Regeringsärenden vecka 40, 2026",
+      "url": "https://www.regeringen.se/regeringsarenden/regeringsarenden-vecka-40-2026/",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Remiss av betänkandet Vägen mot utfasning (SOU 2026:33), KN2026/01175",
+      "url": "https://www.regeringen.se/remisser/2026/06/remiss-av-betankandet-vagen-mot-utfasning-sou-202633/",
+      "published_date_local": "2026-06-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Remiss av promemorian Certifikat och intyg enligt EU-förordningen om fluorerade växthusgaser, KN2026/01459",
+      "url": "https://www.regeringen.se/remisser/2026/06/remiss-av-promemorian-certifikat-och-intyg-enligt-eu-forordningen-om-fluorerade-vaxthusgaser/",
+      "published_date_local": "2026-06-26",
+      "date_source": "source-selector"
+    }
+  ]
+}

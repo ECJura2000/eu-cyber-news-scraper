@@ -1,0 +1,25 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Office of the Prime Minister Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Prime_Minister_of_Malta",
+      "title": "Prime Minister of Malta - Wikipedia",
+      "observed_at": "2026-10-03T08:37:33.162961+00:00",
+      "extracted_sha256": "b87579cf5629617f0b190ae43af5bdf779a039b4548f772c02f13f1f429bd63c",
+      "excerpt": "The**prime minister of Malta**([Maltese](https://en.wikipedia.org/wiki/Maltese_language):*Prim Ministru ta' Malta*) is the[head of government](https://en.wikipedia.org/wiki/Head_of_Government), which is the highest official of[Malta](https://en.wikipedia.org/wiki/Malta). The prime minister chairs[Cabinet](https://en.wikipedia.org/wiki/Cabinet_of_Malta)meetings, and selects its ministers to serve in their respective portfolios. The prime minister holds office by their ability to command the confidence of the[Parliament](https://en.wikipedia.org/wiki/Parliament_of_Malta), as such they sit as[members of Parliament](https://en.wikipedia.org/wiki/Parliament_of_Malta).\n\nThe prime minister is appointed by the president, in doing so, the president believes that the appointed individual is the most able to command the majority of the[House of Representatives](https://en.wikipedia.org/wiki/Parliament_of_Malta); typically, this individual is the leader of a political party or[coalition](https://e"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "http://opm.gov.mt/",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Prime_Minister_of_Malta",
+      "link_text": "http://opm.gov.mt/",
+      "relationship_excerpt": "ps://en.wikipedia.org/wiki/Prime_Minister_of_Malta#cite_note-1)Website[http://opm.gov.mt/](http://opm.gov.mt/)\n\n[Politics of Malta](https://en.wikipedia.org/wiki/Politics_of_Malta)"
+    }
+  ],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_opm.wikipedia.json"
+}

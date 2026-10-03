@@ -1,0 +1,725 @@
+{
+  "schema_version": 1,
+  "country": "IT",
+  "reviewed_on": "2026-10-03",
+  "official_roster_urls": [
+    "https://www.governo.it/it/i-ministeri-0",
+    "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+    "https://presidenza.governo.it/ufficio_cerimoniale/cerimoniale/precedenze_ministri.html"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "2026-10-02 round3 south: 15 manually verified, 1 existing-source ministries, 13 unresolved. Scoped adapters have full fresh payload/local-date and bounded fixture replay; production dispatch and scrape_source verification passed. Verified sources remain manual-only, schedule_enabled=false, critical=false, all 15 topics, empty responsibility. Exact attempts are in tests/fixtures/ministry_round3_south.json; failures are not obsolete designations."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "it_presidency",
+      "name_zh": "義大利總理府",
+      "name_local": "Presidenza del Consiglio dei Ministri",
+      "name_en": "Presidency of the Council of Ministers",
+      "kind": "government_head_office",
+      "language": "it",
+      "homepage": "https://www.governo.it/it",
+      "news_url": "https://www.governo.it/feed/rss",
+      "source_ids": [
+        "it_presidency"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped feed passed robots-enforced, TLS-verified production scrape (10 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_presidency.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.governo.it/it",
+        "https://www.governo.it/feed/rss"
+      ]
+    },
+    {
+      "canonical_id": "it_foreign_affairs",
+      "name_zh": "義大利外交暨國際合作部",
+      "name_local": "Ministero degli Affari Esteri e della Cooperazione Internazionale",
+      "name_en": "Ministry of Foreign Affairs and International Cooperation",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.esteri.it/",
+      "news_url": "https://www.esteri.it/it/feed/",
+      "source_ids": [
+        "it_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped feed passed robots-enforced, TLS-verified production scrape (10 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_foreign_affairs.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.esteri.it/",
+        "https://www.esteri.it/it/feed/"
+      ]
+    },
+    {
+      "canonical_id": "it_interior",
+      "name_zh": "義大利內政部",
+      "name_local": "Ministero dell'Interno",
+      "name_en": "Ministry of the Interior",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.interno.gov.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.interno.gov.it/",
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Italy)",
+        "https://it.wikipedia.org/wiki/Ministero_dell%27interno"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T09:46:41.209454+00:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "it_justice",
+      "name_zh": "義大利司法部",
+      "name_local": "Ministero della Giustizia",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.giustizia.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.giustizia.it/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Justice_(Italy)",
+        "https://it.wikipedia.org/wiki/Ministero_della_giustizia"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:46:42.070945+00:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "it_defence",
+      "name_zh": "義大利國防部",
+      "name_local": "Ministero della Difesa",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.difesa.it/",
+      "news_url": "https://www.difesa.it/data/primopiano/elenco.json",
+      "source_ids": [
+        "it_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: it_defence_json implemented and production-verified: 3699 parsed, 3699 dated in the full fresh official response; scrape_source succeeded with 3684 dated items. Exact source values, local dates, confidence, bounded fixture SHA256 and separate full-response SHA256 in tests/fixtures/ministry_it_defence.provenance.json. Manual-only schedule_enabled=false, critical=false, all 15 topics, empty responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.difesa.it/",
+        "https://www.difesa.it/primopiano.html",
+        "https://www.difesa.it/il-ministro/comunicati-stampa.html",
+        "https://www.difesa.it/primopiano/elenco/index.html",
+        "https://www.difesa.it/assets/js/elenco/elenco.v2.js",
+        "https://www.difesa.it/assets/js/index.js",
+        "https://www.difesa.it/newsletter/index.html",
+        "https://www.difesa.it/assets/js/elenco/paginazione.v3.js",
+        "https://www.difesa.it/data/primopiano/elenco.json"
+      ]
+    },
+    {
+      "canonical_id": "it_finance",
+      "name_zh": "義大利經濟暨財政部",
+      "name_local": "Ministero dell'Economia e delle Finanze",
+      "name_en": "Ministry of Economy and Finance",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.mef.gov.it/",
+      "news_url": "https://www.mef.gov.it/ufficio-stampa/notizie.html",
+      "source_ids": [
+        "it_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (10 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_finance.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.mef.gov.it/",
+        "https://www.mef.gov.it/ufficio-stampa/notizie.html"
+      ]
+    },
+    {
+      "canonical_id": "it_enterprises",
+      "name_zh": "義大利企業暨義大利製造部",
+      "name_local": "Ministero delle Imprese e del Made in Italy",
+      "name_en": "Ministry of Enterprises and Made in Italy",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.mise.gov.it/it/",
+      "news_url": "https://www.mimit.gov.it/index.php/it/notizie-stampa?format=feed&type=rss",
+      "source_ids": [
+        "it_enterprises"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped feed passed robots-enforced, TLS-verified production scrape (10 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_enterprises.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.mise.gov.it/it/",
+        "https://www.mimit.gov.it/index.php/it/notizie-stampa?format=feed&type=rss"
+      ]
+    },
+    {
+      "canonical_id": "it_agriculture",
+      "name_zh": "義大利農業、糧食主權暨林業部",
+      "name_local": "Ministero dell'Agricoltura, della Sovranità Alimentare e delle Foreste",
+      "name_en": "Ministry of Agriculture, Food Sovereignty and Forestry",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.politicheagricole.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；unexpected_domain。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.politicheagricole.it/",
+        "https://www.masaf.gov.it/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Agriculture,_Food_Sovereignty_and_Forests",
+        "https://it.wikipedia.org/wiki/Ministero_dell%27agricoltura,_della_sovranit%C3%A0_alimentare_e_delle_foreste"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "unexpected_domain",
+        "observed_at": "2026-10-03T09:46:42.711071+00:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "it_environment",
+      "name_zh": "義大利環境暨能源安全部",
+      "name_local": "Ministero dell'Ambiente e della Sicurezza Energetica",
+      "name_en": "Ministry of Environment and Energy Security",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.mite.gov.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.mite.gov.it/",
+        "https://www.mase.gov.it/",
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Environment_(Italy)",
+        "https://it.wikipedia.org/wiki/Ministero_dell%27ambiente_e_della_sicurezza_energetica"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T09:46:45.153293+00:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "it_infrastructure",
+      "name_zh": "義大利基礎建設暨交通部",
+      "name_local": "Ministero delle Infrastrutture e dei Trasporti",
+      "name_en": "Ministry of Infrastructure and Transport",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.mit.gov.it/",
+      "news_url": "https://www.mit.gov.it/comunicazione/archivio/news",
+      "source_ids": [
+        "it_infrastructure"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (10 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_infrastructure.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.mit.gov.it/",
+        "https://www.mit.gov.it/comunicazione/archivio/news"
+      ]
+    },
+    {
+      "canonical_id": "it_labour",
+      "name_zh": "義大利勞動暨社會政策部",
+      "name_local": "Ministero del Lavoro e delle Politiche Sociali",
+      "name_en": "Ministry of Labour and Social Policies",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.lavoro.gov.it/",
+      "news_url": "https://www.lavoro.gov.it/_layouts/15/Lavoro.Web/AppPages/RSS",
+      "source_ids": [
+        "it_labour"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped feed passed robots-enforced, TLS-verified production scrape (50 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_labour.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.lavoro.gov.it/",
+        "https://www.lavoro.gov.it/_layouts/15/Lavoro.Web/AppPages/RSS"
+      ]
+    },
+    {
+      "canonical_id": "it_education",
+      "name_zh": "義大利教育暨功績部",
+      "name_local": "Ministero dell'Istruzione e del Merito",
+      "name_en": "Ministry of Education and Merit",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.miur.gov.it/",
+      "news_url": "https://www.mim.gov.it/web/guest/comunicati",
+      "source_ids": [
+        "it_education"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (100 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_education.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.miur.gov.it/",
+        "https://www.mim.gov.it/web/guest/comunicati"
+      ]
+    },
+    {
+      "canonical_id": "it_mur",
+      "name_zh": "義大利大學暨研究部",
+      "name_local": "Ministero dell'Università e della Ricerca",
+      "name_en": "Ministry of Universities and Research",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.mur.gov.it/it",
+      "news_url": "https://www.mur.gov.it/it/news",
+      "source_ids": [
+        "it_mur"
+      ],
+      "status": "existing_source",
+      "reason": "Existing it_mur is the actual universities/research ministry; previous module verification status is retained.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.mur.gov.it/it"
+      ]
+    },
+    {
+      "canonical_id": "it_culture",
+      "name_zh": "義大利文化部",
+      "name_local": "Ministero della Cultura",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.beniculturali.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.beniculturali.it/",
+        "https://cultura.gov.it/",
+        "https://www.cultura.gov.it/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Culture_(Italy)",
+        "https://it.wikipedia.org/wiki/Ministero_della_cultura"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:47:17.286422+00:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "it_health",
+      "name_zh": "義大利衛生部",
+      "name_local": "Ministero della Salute",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.salute.gov.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.salute.gov.it/",
+        "https://www.salute.gov.it",
+        "https://en.wikipedia.org/wiki/Ministry_of_Health_(Italy)",
+        "https://it.wikipedia.org/wiki/Ministero_della_salute"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:46:42.993317+00:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "it_tourism",
+      "name_zh": "義大利旅遊部",
+      "name_local": "Ministero del Turismo",
+      "name_en": "Ministry of Tourism",
+      "kind": "ministry",
+      "language": "it",
+      "homepage": "https://www.ministeroturismo.gov.it/",
+      "news_url": "https://www.ministeroturismo.gov.it/feed/",
+      "source_ids": [
+        "it_tourism"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped feed passed robots-enforced, TLS-verified production scrape (10 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_tourism.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.ministeroturismo.gov.it/",
+        "https://www.ministeroturismo.gov.it/feed/"
+      ]
+    },
+    {
+      "canonical_id": "it_parliament_relations",
+      "name_zh": "義大利國會關係部門",
+      "name_local": "Dipartimento per i rapporti con il Parlamento",
+      "name_en": "Department for Relations with Parliament",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.rapportiparlamento.gov.it/",
+      "news_url": "https://www.rapportiparlamento.gov.it/it/",
+      "source_ids": [
+        "it_parliament_relations"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (3 dated items); genuine bounded fixture replays 3 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_parliament_relations.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.rapportiparlamento.gov.it/",
+        "https://www.rapportiparlamento.gov.it/it/"
+      ]
+    },
+    {
+      "canonical_id": "it_public_administration",
+      "name_zh": "義大利公共行政部門",
+      "name_local": "Dipartimento della funzione pubblica",
+      "name_en": "Department of Public Administration",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.funzionepubblica.gov.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.funzionepubblica.gov.it/",
+        "https://www.funzionepubblica.gov.it/it/",
+        "https://www.funzionepubblica.gov.it",
+        "https://en.wikipedia.org/wiki/Minister_for_Public_Administration_(Italy)",
+        "https://it.wikipedia.org/wiki/Dipartimento_della_funzione_pubblica"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:47:01.017284+00:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "it_regional_affairs",
+      "name_zh": "義大利區域事務暨自治部門",
+      "name_local": "Dipartimento per gli affari regionali e le autonomie",
+      "name_en": "Department for Regional Affairs and Autonomies",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.affariregionali.it/",
+      "news_url": "https://www.affariregionali.it/it/comunicazione/notizie/",
+      "source_ids": [
+        "it_regional_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (9 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_regional_affairs.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.affariregionali.it/",
+        "https://www.affariregionali.it/it/comunicazione/notizie/"
+      ]
+    },
+    {
+      "canonical_id": "it_civil_protection",
+      "name_zh": "義大利民防部門",
+      "name_local": "Dipartimento della protezione civile",
+      "name_en": "Civil Protection Department",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.protezionecivile.gov.it/",
+      "news_url": "https://www.protezionecivile.gov.it/page-data/it/page-data.json",
+      "source_ids": [
+        "it_civil_protection"
+      ],
+      "status": "manual_verified",
+      "reason": "Fresh fourth-round verification: manual_verified. Recorded failures: RobotsUnavailableError. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_south.json",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.protezionecivile.gov.it/",
+        "https://www.protezionecivile.gov.it/it/rss/",
+        "https://api.protezionecivile.it/default/dpcPortalGenerateRss?categoria=notizia",
+        "https://api.protezionecivile.it/default/dpcPortalGenerateRss?categoria=comunicato_stampa",
+        "https://www.protezionecivile.gov.it/it/",
+        "https://www.protezionecivile.gov.it/page-data/it/page-data.json",
+        "https://www.protezionecivile.gov.it/it/notizia/campi-scuola-anchio-sono-la-protezione-civile-si-conclude-ledizione-2026/",
+        "https://www.protezionecivile.gov.it/it/comunicato-stampa/rinnovo-del-protocollo-dintesa-con-unione-energie-la-mobilita/"
+      ]
+    },
+    {
+      "canonical_id": "it_maritime_policies",
+      "name_zh": "義大利海洋政策部門",
+      "name_local": "Dipartimento per le politiche del mare",
+      "name_en": "Department for Maritime Policies",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://presidenza.governo.it/AmministrazioneTrasparente/Organizzazione/ArticolazioneUffici/Dipartimenti/Dip_pol_del_mare.html",
+        "https://www.politichedelmare.gov.it/",
+        "https://www.protezionecivile.gov.it",
+        "https://en.wikipedia.org/wiki/Minister_for_Civil_Protection_and_Maritime_Policies",
+        "https://www.dipartimentopolitichemare.gov.it/it/",
+        "https://it.wikipedia.org/wiki/Dipartimento_per_le_politiche_del_mare"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:47:06.103805+00:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "it_european_affairs",
+      "name_zh": "義大利歐洲事務部門",
+      "name_local": "Dipartimento per gli affari europei",
+      "name_en": "Department for European Affairs",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.affarieuropei.gov.it/it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.affarieuropei.gov.it/it/",
+        "https://www.politicheeuropee.gov.it",
+        "https://en.wikipedia.org/wiki/Minister_for_European_Affairs_(Italy)",
+        "https://www.politicheeuropee.gov.it/it/",
+        "https://it.wikipedia.org/wiki/Dipartimento_per_gli_affari_europei"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:47:21.015615+00:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "it_cohesion",
+      "name_zh": "義大利凝聚政策部門",
+      "name_local": "Dipartimento per le politiche di coesione",
+      "name_en": "Department for Cohesion Policies",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://politichecoesione.governo.it/it/",
+      "news_url": "https://politichecoesione.governo.it/it/ministro/comunicazione-ministro/notizie-dal-ministro/",
+      "source_ids": [
+        "it_cohesion"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (9 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_cohesion.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://politichecoesione.governo.it/it/",
+        "https://politichecoesione.governo.it/it/ministro/comunicazione-ministro/notizie-dal-ministro/"
+      ]
+    },
+    {
+      "canonical_id": "it_sport",
+      "name_zh": "義大利體育部門",
+      "name_local": "Dipartimento per lo sport",
+      "name_en": "Department for Sport",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.sportgoverno.it/",
+      "news_url": "https://www.sport.governo.it/it/notizie/",
+      "source_ids": [
+        "it_sport"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (9 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_sport.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.sportgoverno.it/",
+        "https://www.sport.governo.it/it/notizie/"
+      ]
+    },
+    {
+      "canonical_id": "it_youth",
+      "name_zh": "義大利青年政策暨全民公民服務部門",
+      "name_local": "Dipartimento per le politiche giovanili e il servizio civile universale",
+      "name_en": "Department for Youth Policies and Universal Civil Service",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.politichegiovanili.gov.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.politichegiovanili.gov.it/",
+        "https://it.wikipedia.org/wiki/Dipartimento_per_le_politiche_giovanili_e_il_servizio_civile_universale",
+        "https://it.wikipedia.org/wiki/Servizio_civile_universale"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:47:23.404750+00:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "it_family",
+      "name_zh": "義大利家庭政策部門",
+      "name_local": "Dipartimento per le politiche della famiglia",
+      "name_en": "Department for Family Policies",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.famiglia.governo.it/",
+      "news_url": "https://www.famiglia.governo.it/it/politiche-e-attivita/comunicazione/notizie/",
+      "source_ids": [
+        "it_family"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (9 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_family.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.famiglia.governo.it/",
+        "https://www.famiglia.governo.it/it/politiche-e-attivita/comunicazione/notizie/"
+      ]
+    },
+    {
+      "canonical_id": "it_equal_opportunities",
+      "name_zh": "義大利平等機會部門",
+      "name_local": "Dipartimento per le pari opportunità",
+      "name_en": "Department for Equal Opportunities",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.pariopportunita.gov.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.pariopportunita.gov.it/",
+        "https://en.wikipedia.org/wiki/Minister_for_Equal_Opportunities",
+        "https://it.wikipedia.org/wiki/Dipartimento_per_le_pari_opportunit%C3%A0"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:47:08.706647+00:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "it_disability",
+      "name_zh": "義大利身心障礙政策部門",
+      "name_local": "Dipartimento per le politiche in favore delle persone con disabilità",
+      "name_en": "Department for Policies in Favour of Persons with Disabilities",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.disabilita.governo.it/",
+      "news_url": "https://www.disabilita.governo.it/it/notizie/",
+      "source_ids": [
+        "it_disability"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (9 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_disability.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.disabilita.governo.it/",
+        "https://www.disabilita.governo.it/it/notizie/"
+      ]
+    },
+    {
+      "canonical_id": "it_institutional_reforms",
+      "name_zh": "義大利制度改革部門",
+      "name_local": "Dipartimento per le riforme istituzionali",
+      "name_en": "Department for Institutional Reforms",
+      "kind": "ministry_equivalent",
+      "language": "it",
+      "homepage": "https://www.riformeistituzionali.gov.it/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：parser_pending；Official cards omit publication dates; one consultation description contains a deadline (29 May 2026), and the inspected FORUM PA article contains an event date (10 June 2026) and only og:updated_time. These are not original publication dates. Production scrape_source cannot turn them into a verified dated ministry news source.。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
+      "evidence_urls": [
+        "https://www.governo.it/it/i-ministeri-0",
+        "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
+        "https://www.riformeistituzionali.gov.it/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/?tab=58f3f542-0aec-4999-b90c-9a8ce78b1258",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/verso-il-nuovo-codice-dell-amministrazione-digitale-cad/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/pubblicato-il-report-finale-della-consultazione-pubblica-sulla-semplificazione/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/disegno-di-legge-costituzionale-su-roma-capitale/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/pubblicata-la-legge-in-materia-di-semplificazione-normativa/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/partecipa/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/il-ministro-casellati-al-forum-pa-2026/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/semplificazione-il-ministro-casellati-a-bruxelles/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/firmato-con-la-regione-lombadia-il-protocollo-di-intenti-per-la-semplificazione/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/comunicati-stampa/?tab=c87f4f27-d1e4-43e8-92a4-5af22ce99422",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/?tab=58f3f542-0aec-4999-b90c-9a8ce78b1258",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/?tab=c87f4f27-d1e4-43e8-92a4-5af22ce99422",
+        "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/al-via-la-consultazione-pubblica-sul-codice-dell-amministrazione-digitale-cad/",
+        "https://www.riformeistituzionali.gov.it",
+        "https://en.wikipedia.org/wiki/Minister_for_Institutional_Reforms",
+        "https://www.riformeistituzionali.gov.it/robots.txt",
+        "https://it.wikipedia.org/wiki/Dipartimento_per_le_riforme_istituzionali"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Official cards omit publication dates; one consultation description contains a deadline (29 May 2026), and the inspected FORUM PA article contains an event date (10 June 2026) and only og:updated_time. These are not original publication dates. Production scrape_source cannot turn them into a verified dated ministry news source.",
+        "observed_at": "2026-10-03T09:47:08.472345+00:00",
+        "candidate_news_url": "https://www.riformeistituzionali.gov.it/it/comunicazione/notizie/?tab=58f3f542-0aec-4999-b90c-9a8ce78b1258"
+      }
+    }
+  ]
+}

@@ -1,0 +1,591 @@
+{
+  "schema_version": 1,
+  "country": "ES",
+  "reviewed_on": "2026-10-03",
+  "official_roster_urls": [
+    "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+    "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "2026-10-02 round3 south: 16 manually verified, 0 existing-source ministries, 7 unresolved. Exact current failures and parser/attribution limitations are recorded per initial unresolved ID in tests/fixtures/ministry_round3_south.json. Endpoint failures are not obsolete designations. New sources are manual-only, schedule_enabled=false, critical=false, all 15 OBSERVATION_TOPICS, empty responsibility_by_topic."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "es_presidency",
+      "name_zh": "西班牙政府首長辦公室",
+      "name_local": "Presidencia del Gobierno",
+      "name_en": "Office of the Prime Minister",
+      "kind": "government_head_office",
+      "language": "es",
+      "homepage": "https://www.lamoncloa.gob.es/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/paginas/index.aspx",
+        "https://www.lamoncloa.gob.es/",
+        "https://www.lamoncloa.gob.es/lang/en/Paginas/index.aspx",
+        "https://en.wikipedia.org/wiki/Office_of_the_Prime_Minister_(Spain)",
+        "https://www.lamoncloa.gob.es",
+        "https://es.wikipedia.org/wiki/Presidente_del_Gobierno_de_Espa%C3%B1a",
+        "https://es.wikipedia.org/wiki/Presidencia_del_Gobierno_(Espa%C3%B1a)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:46:48.666579+00:00",
+        "candidate_news_url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/paginas/index.aspx"
+      }
+    },
+    {
+      "canonical_id": "es_agriculture",
+      "name_zh": "西班牙農業、漁業與食品部",
+      "name_local": "Ministerio de Agricultura, Pesca y Alimentación",
+      "name_en": "Ministry of Agriculture, Fisheries and Food",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://www.mapa.gob.es/",
+      "news_url": "https://www.mapa.gob.es/es/prensa/noticiasrss",
+      "source_ids": [
+        "es_agriculture"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped feed passed robots-enforced, TLS-verified production scrape (1718 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_es_agriculture.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://www.mapa.gob.es/es/prensa/ultimas-noticias/",
+        "https://www.mapa.gob.es/",
+        "https://www.mapa.gob.es/es/prensa/noticiasrss"
+      ]
+    },
+    {
+      "canonical_id": "es_foreign_affairs",
+      "name_zh": "西班牙外交、歐盟與合作部",
+      "name_local": "Ministerio de Asuntos Exteriores, Unión Europea y Cooperación",
+      "name_en": "Ministry of Foreign Affairs, European Union and Cooperation",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://www.exteriores.gob.es/",
+      "news_url": "https://www.exteriores.gob.es/es/Comunicacion/Noticias/Paginas/index.aspx",
+      "source_ids": [
+        "es_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 round3 south: Keep manual-only source disabled from scheduling; replay provenance fixture before any later activation. Exact attempts, UTC observation times and production parser counts are in tests/fixtures/ministry_round3_south.json (es_foreign_affairs).",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://www.exteriores.gob.es/es/Comunicacion/Noticias/Paginas/index.aspx",
+        "https://www.exteriores.gob.es/"
+      ]
+    },
+    {
+      "canonical_id": "es_science",
+      "name_zh": "西班牙科學、創新與大學部",
+      "name_local": "Ministerio de Ciencia, Innovación y Universidades",
+      "name_en": "Ministry of Science, Innovation and Universities",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://www.ciencia.gob.es/",
+      "news_url": "https://www.ciencia.gob.es/Actualidad.html",
+      "source_ids": [
+        "es_science"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (9 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_es_science.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://www.ciencia.gob.es/site-web/Actualidad.html",
+        "https://www.ciencia.gob.es/",
+        "https://www.ciencia.gob.es/Actualidad.html"
+      ]
+    },
+    {
+      "canonical_id": "es_culture",
+      "name_zh": "西班牙文化部",
+      "name_local": "Ministerio de Cultura",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://www.cultura.gob.es/",
+      "news_url": "https://www.cultura.gob.es/actualidad.html",
+      "source_ids": [
+        "es_culture"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (15 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_es_culture.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://www.cultura.gob.es/actualidad.html",
+        "https://www.cultura.gob.es/"
+      ]
+    },
+    {
+      "canonical_id": "es_defence",
+      "name_zh": "西班牙國防部",
+      "name_local": "Ministerio de Defensa",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://www.defensa.gob.es/",
+      "news_url": "https://www.defensa.gob.es/gabinete/notasPrensa/",
+      "source_ids": [
+        "es_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (40 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_es_defence.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://www.defensa.gob.es/gabinete/notasPrensa/",
+        "https://www.defensa.gob.es/"
+      ]
+    },
+    {
+      "canonical_id": "es_social_rights",
+      "name_zh": "西班牙社會權利、消費與 2030 議程部",
+      "name_local": "Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+      "name_en": "Ministry of Social Rights, Consumer Affairs and the 2030 Agenda",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://www.dsca.gob.es/es",
+      "news_url": "https://www.dsca.gob.es/es",
+      "source_ids": [
+        "es_social_rights"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (4 dated items); genuine bounded fixture replays 4 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_es_social_rights.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://www.dsca.gob.es/es"
+      ]
+    },
+    {
+      "canonical_id": "es_economy",
+      "name_zh": "西班牙經濟、商業與企業部",
+      "name_local": "Ministerio de Economía, Comercio y Empresa",
+      "name_en": "Ministry of Economy, Trade and Business",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://portal.mineco.gob.es/",
+      "news_url": "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$select=TituloSP,FechaPublicacionSP,FechaPublicacionCalculadaSP,FileRef,PublishingPageLayout,CanalesSP&$orderby=FechaPublicacionSP%20desc&$top=30",
+      "source_ids": [
+        "es_economy"
+      ],
+      "status": "manual_verified",
+      "reason": "Fresh fourth-round verification: manual_verified. Recorded failures: RobotsUnavailableError. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_south.json",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://portal.mineco.gob.es/es-es/comunicacion/Paginas/default.aspx?P3BhZ2U9MQ==",
+        "https://portal.mineco.gob.es/",
+        "https://portal.mineco.gob.es/es-es/ministerio/Paginas/Info_RSS.aspx",
+        "https://portal.mineco.gob.es/en-us/ministerio/Pages/Info_RSS.aspx",
+        "https://portal.mineco.gob.es/es-es/comunicacion/Paginas/default.aspx",
+        "https://portal.mineco.gob.es/ca-es/ministerio/Pagines/Info_RSS.aspx",
+        "https://portal.mineco.gob.es/gl-es/ministerio/Paxinas/Info_RSS.aspx",
+        "https://portal.mineco.gob.es/eu-es/ministerio/Orriak/Info_RSS.aspx",
+        "https://portal.mineco.gob.es/es-es/ministerio/igualdadgenero/noticias",
+        "https://portal.mineco.gob.es/es-es/economiayempresa/noticias",
+        "https://portal.mineco.gob.es/es-es/comercio/Paginas/noticias.aspx",
+        "https://portal.mineco.gob.es/en-us/ministerio/igualdadgenero/noticias",
+        "https://portal.mineco.gob.es/en-us/economiayempresa/noticias",
+        "https://portal.mineco.gob.es/SiteAssets/js/ministerio.js",
+        "https://appportal.mineco.gob.es/ClientSideAssets/494f4ea4-000c-4091-b2d2-a5428ba244ca/listado-noticias-web-part_d6b1daaf7400ac8ccb714bd791d3c2c2.js",
+        "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$top=5",
+        "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$orderby=FechaPublicacionSP%20desc&$top=3",
+        "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$select=TituloSP,FechaPublicacionSP,FileRef&$orderby=FechaPublicacionSP%20desc&$top=9",
+        "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$select=TituloSP,FechaPublicacionSP,FechaPublicacionCalculadaSP,FileRef,PublishingPageLayout,CanalesSP&$orderby=FechaPublicacionSP%20desc&$top=30",
+        "https://portal.mineco.gob.es/es-es/comunicacion/Paginas/septimo-desembolso-plan-de-recuperacion.aspx"
+      ]
+    },
+    {
+      "canonical_id": "es_education",
+      "name_zh": "西班牙教育、職業訓練與體育部",
+      "name_local": "Ministerio de Educación, Formación Profesional y Deportes",
+      "name_en": "Ministry of Education, Vocational Training and Sports",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://www.educacionyfp.gob.es/",
+      "news_url": "https://www.educacionfpydeportes.gob.es/prensa/actualidad.html",
+      "source_ids": [
+        "es_education"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (15 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_es_education.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://www.educacionyfp.gob.es/prensa/actualidad.html",
+        "https://www.educacionyfp.gob.es/",
+        "https://www.educacionfpydeportes.gob.es/prensa/actualidad.html"
+      ]
+    },
+    {
+      "canonical_id": "es_finance",
+      "name_zh": "西班牙財政部",
+      "name_local": "Ministerio de Hacienda",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://www.hacienda.gob.es/",
+      "news_url": "https://www.hacienda.gob.es/es-ES/Prensa/Paginas/NotasPrensaHome.aspx",
+      "source_ids": [
+        "es_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (8 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_es_finance.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://www.hacienda.gob.es/es-ES/Prensa/Paginas/NotasPrensaHome.aspx",
+        "https://www.hacienda.gob.es/"
+      ]
+    },
+    {
+      "canonical_id": "es_equality",
+      "name_zh": "西班牙平等部",
+      "name_local": "Ministerio de Igualdad",
+      "name_en": "Ministry of Equality",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://www.igualdad.gob.es/",
+      "news_url": "https://www.igualdad.gob.es/feed/",
+      "source_ids": [
+        "es_equality"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped feed passed robots-enforced, TLS-verified production scrape (10 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_es_equality.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://www.igualdad.gob.es/comunicacion/sala-de-prensa/",
+        "https://www.igualdad.gob.es/",
+        "https://www.igualdad.gob.es/feed/"
+      ]
+    },
+    {
+      "canonical_id": "es_inclusion",
+      "name_zh": "西班牙社會包容、社會安全與移民部",
+      "name_local": "Ministerio de Inclusión, Seguridad Social y Migraciones",
+      "name_en": "Ministry of Inclusion, Social Security and Migration",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://www.inclusion.gob.es/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://www.inclusion.gob.es/web/guest/comunicacion/noticias",
+        "https://www.inclusion.gob.es/",
+        "https://administracion.gob.es/informacion/noticias",
+        "https://en.wikipedia.org/wiki/Ministry_of_Inclusion,_Social_Security_and_Migration",
+        "https://www.inclusion.gob.es",
+        "https://es.wikipedia.org/wiki/Ministerio_de_Inclusi%C3%B3n,_Seguridad_Social_y_Migraciones"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T09:46:32.550579+00:00",
+        "candidate_news_url": "https://www.inclusion.gob.es/web/guest/comunicacion/noticias"
+      }
+    },
+    {
+      "canonical_id": "es_industry_tourism",
+      "name_zh": "西班牙產業與觀光部",
+      "name_local": "Ministerio de Industria y Turismo",
+      "name_en": "Ministry of Industry and Tourism",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://www.mintur.gob.es/",
+      "news_url": "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/Paginas/listadoNotasPrensa.aspx",
+      "source_ids": [
+        "es_industry_tourism"
+      ],
+      "status": "manual_verified",
+      "reason": "第五輪維基百科線索與官網查核：manual_verified。已記錄錯誤：Article detail bounded fetch timed out; actual official listing supplies publication dates., timeout, unexpected_domain。後續：Integrate the verified generic-source module and this inventory patch; keep manual-only scheduling. 證據：tests/fixtures/ministry_round5_south.json",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://www.mincotur.gob.es/es-es/GabinetePrensa/NotasPrensa/Paginas/listadoNotasPrensa.aspx",
+        "https://www.mincotur.gob.es/",
+        "https://www.mintur.gob.es/",
+        "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/Paginas/listadoNotasPrensa.aspx",
+        "https://www.mintur.gob.es/es-es/Paginas/index.aspx",
+        "https://www.mintur.gob.es/es-es/gabineteprensa",
+        "https://www.mintur.gob.es/es-es/gabineteprensa/notasprensa",
+        "https://en.wikipedia.org/wiki/Ministry_of_Industry_(Spain)",
+        "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/2026/Paginas/Frontur-Egatur-gasto-turistas-agosto-2026.aspx"
+      ]
+    },
+    {
+      "canonical_id": "es_youth_children",
+      "name_zh": "西班牙青年與兒童部",
+      "name_local": "Ministerio de Juventud e Infancia",
+      "name_en": "Ministry of Youth and Children",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://www.juventudeinfancia.gob.es/",
+      "news_url": "https://www.juventudeinfancia.gob.es/es/comunicacion/notas-prensa",
+      "source_ids": [
+        "es_youth_children"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (5 dated items); genuine bounded fixture replays 5 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_es_youth_children.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://www.juventudeinfancia.gob.es/es/comunicacion/notas-prensa",
+        "https://www.juventudeinfancia.gob.es/"
+      ]
+    },
+    {
+      "canonical_id": "es_presidency_justice",
+      "name_zh": "西班牙政府主席事務、司法與國會關係部",
+      "name_local": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+      "name_en": "Ministry of the Presidency, Justice and Relations with Parliament",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_unavailable。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://www.mpr.gob.es/",
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Presidency,_Justice_and_Relations_with_the_Cortes",
+        "https://www.mpr.gob.es/Paginas/index.aspx",
+        "https://es.wikipedia.org/wiki/Ministerio_de_la_Presidencia,_Justicia_y_Relaciones_con_las_Cortes"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_unavailable",
+        "observed_at": "2026-10-03T09:46:50.643109+00:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "es_territorial",
+      "name_zh": "西班牙國土政策與民主記憶部",
+      "name_local": "Ministerio de Política Territorial y Memoria Democrática",
+      "name_en": "Ministry of Territorial Policy and Democratic Memory",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://mpt.gob.es/",
+      "news_url": "https://mptmd.gob.es/portal/prensa/noticias",
+      "source_ids": [
+        "es_territorial"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (10 dated items); genuine bounded fixture replays 10 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_es_territorial.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://mpt.gob.es/prensa/actualidad.html",
+        "https://mpt.gob.es/",
+        "https://mptmd.gob.es/portal/prensa/noticias"
+      ]
+    },
+    {
+      "canonical_id": "es_health",
+      "name_zh": "西班牙衛生部",
+      "name_local": "Ministerio de Sanidad",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://www.sanidad.gob.es/",
+      "news_url": "https://www.sanidad.gob.es/gabinete/notap_rss.do",
+      "source_ids": [
+        "es_health"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped feed passed robots-enforced, TLS-verified production scrape (30 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_es_health.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://www.sanidad.gob.es/gabinete/notasPrensa.do",
+        "https://www.sanidad.gob.es/",
+        "https://www.sanidad.gob.es/gabinete/notap_rss.do"
+      ]
+    },
+    {
+      "canonical_id": "es_labour",
+      "name_zh": "西班牙勞動與社會經濟部",
+      "name_local": "Ministerio de Trabajo y Economía Social",
+      "name_en": "Ministry of Labour and Social Economy",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://prensa.mites.gob.es/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；The ministry homepage is accessible and explicitly links Noticias to prensa.mites.gob.es/webPrensa/listado-noticia. That ministry press origin failed robots availability checks; the other Noticias link belongs to the labour inspectorate (www.oeitss.gob.es), not this ministry publisher. The inspectorate feed is not registered as the ministry.。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://prensa.mites.gob.es/webPrensa/listado-noticia",
+        "https://prensa.mites.gob.es/",
+        "https://www.mites.gob.es/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Labour_(Spain)",
+        "https://www.mites.gob.es",
+        "https://es.wikipedia.org/wiki/Ministerio_de_Trabajo_(Espa%C3%B1a)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "The ministry homepage is accessible and explicitly links Noticias to prensa.mites.gob.es/webPrensa/listado-noticia. That ministry press origin failed robots availability checks; the other Noticias link belongs to the labour inspectorate (www.oeitss.gob.es), not this ministry publisher. The inspectorate feed is not registered as the ministry.",
+        "observed_at": "2026-10-03T09:46:36.787026+00:00",
+        "candidate_news_url": "https://prensa.mites.gob.es/webPrensa/listado-noticia"
+      }
+    },
+    {
+      "canonical_id": "es_transport",
+      "name_zh": "西班牙交通與永續運輸部",
+      "name_local": "Ministerio de Transportes y Movilidad Sostenible",
+      "name_en": "Ministry of Transport and Sustainable Mobility",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://www.mitma.gob.es/",
+      "news_url": "https://www.transportes.gob.es/ministerio/comunicacion/sala-prensa",
+      "source_ids": [
+        "es_transport"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (10 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_es_transport.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://www.mitma.gob.es/el-ministerio/sala-de-prensa",
+        "https://www.mitma.gob.es/",
+        "https://www.transportes.gob.es/ministerio/comunicacion/sala-prensa"
+      ]
+    },
+    {
+      "canonical_id": "es_housing",
+      "name_zh": "西班牙住宅與都市議程部",
+      "name_local": "Ministerio de Vivienda y Agenda Urbana",
+      "name_en": "Ministry of Housing and Urban Agenda",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://www.mivau.gob.es/",
+      "news_url": "https://www.mivau.gob.es/el-ministerio/sala-de-prensa",
+      "source_ids": [
+        "es_housing"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (10 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_es_housing.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://www.mivau.gob.es/el-ministerio/sala-de-prensa",
+        "https://www.mivau.gob.es/"
+      ]
+    },
+    {
+      "canonical_id": "es_interior",
+      "name_zh": "西班牙內政部",
+      "name_local": "Ministerio del Interior",
+      "name_en": "Ministry of the Interior",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://www.interior.gob.es/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；robots_denied。 後續：Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. 證據：tests/fixtures/ministry_round6_south.json",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://www.interior.gob.es/opencms/es/prensa/noticias/",
+        "https://www.interior.gob.es/",
+        "https://www.interior.gob.es/opencms/es/prensa/",
+        "https://www.interior.gob.es/opencms/es/prensa/balances-e-informes/lucha-contra-el-terrorismo/index.html",
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Spain)",
+        "https://www.interior.gob.es",
+        "https://es.wikipedia.org/wiki/Ministerio_del_Interior_(Espa%C3%B1a)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "robots_denied",
+        "observed_at": "2026-10-03T09:46:33.890841+00:00",
+        "candidate_news_url": "https://www.interior.gob.es/opencms/es/prensa/noticias/"
+      }
+    },
+    {
+      "canonical_id": "es_digital",
+      "name_zh": "西班牙數位轉型與公務部",
+      "name_local": "Ministerio para la Transformación Digital y de la Función Pública",
+      "name_en": "Ministry for Digital Transformation and the Civil Service",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://digital.gob.es/",
+      "news_url": "https://digital.gob.es/comunicacion",
+      "source_ids": [
+        "es_digital"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (12 dated items); genuine bounded fixture replays 12 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_es_digital.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://digital.gob.es/comunicacion",
+        "https://digital.gob.es/"
+      ]
+    },
+    {
+      "canonical_id": "es_ecological_transition",
+      "name_zh": "西班牙生態轉型與人口挑戰部",
+      "name_local": "Ministerio para la Transición Ecológica y el Reto Demográfico",
+      "name_en": "Ministry for Ecological Transition and the Demographic Challenge",
+      "kind": "ministry",
+      "language": "es",
+      "homepage": "https://www.miteco.gob.es/",
+      "news_url": "https://www.miteco.gob.es/es/prensa/ultimas-noticias.newsfeed.rss.xml",
+      "source_ids": [
+        "es_ecological_transition"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped feed passed robots-enforced, TLS-verified production scrape (100 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_es_ecological_transition.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.lamoncloa.gob.es/gobierno/composiciondelgobierno/Paginas/index.aspx",
+        "https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/gobiernoEstado/gobiernoEstadoOrganismos.htm",
+        "https://administracion.gob.es/informacion/actualidad-por-ministerios",
+        "https://www.miteco.gob.es/es/prensa/ultimas-noticias.html?search=true",
+        "https://www.miteco.gob.es/",
+        "https://www.miteco.gob.es/es/prensa/ultimas-noticias.newsfeed.rss.xml"
+      ]
+    }
+  ]
+}

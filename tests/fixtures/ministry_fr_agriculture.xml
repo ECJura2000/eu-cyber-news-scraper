@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://agriculture.gouv.fr/">
+  <channel>
+    <title>Ministère de l'Agriculture, de la Souveraineté alimentaire et de la Forêt</title>
+    <link>https://agriculture.gouv.fr/</link>
+    <description/>
+    <language>fr</language>
+    
+    <item>
+  <title>Déclaration commune France-Espagne sur la coopération agricole</title>
+  <link>https://agriculture.gouv.fr/declaration-commune-france-espagne-sur-la-cooperation-agricole</link>
+  <description>Déclaration commune France-Espagne sur la coopération agricole</description>
+  <pubDate>Thu, 01 Oct 2026 11:46:52 +0200</pubDate>
+    <dc:creator>Ministère de l'Agriculture et de la Souveraineté alimentaire</dc:creator>
+    <guid isPermaLink="true">https://agriculture.gouv.fr/declaration-commune-france-espagne-sur-la-cooperation-agricole</guid>
+    </item>

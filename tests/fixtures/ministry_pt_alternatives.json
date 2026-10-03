@@ -1,0 +1,2019 @@
+{
+  "country": "PT",
+  "observed_on": "2026-10-02",
+  "client": "production HttpClient(obey_robots=True), default verified TLS; no custom auth or bypass",
+  "added_sources": [
+    "pt_foreign_affairs",
+    "pt_justice"
+  ],
+  "ministries": [
+    {
+      "source_id": "pt_foreign_affairs",
+      "status": "manual_verified",
+      "reason": "Production HttpClient returned HTTP 200 with enforced robots/verified TLS; full response and LF-normalized saved fixture replay agree on 6 dated items. Homepage metadata explicitly identifies the official Ministry of Foreign Affairs website. Provenance: tests/fixtures/ministry_pt_foreign_affairs.provenance.json",
+      "attempts": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/negocios-estrangeiros/noticias",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/negocios-estrangeiros/noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:49:50.438960+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/negocios-estrangeiros/ministro",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/negocios-estrangeiros/ministro",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:49:54.840990+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/",
+          "final_url": "https://portaldiplomatico.mne.gov.pt/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:01.839826+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias",
+          "final_url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:02.246036+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa",
+          "final_url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:02.634125+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/contactos-para-a-imprensa",
+          "final_url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/contactos-para-a-imprensa",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:03.571101+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias/mensagem-de-boas-vindas-aos-portugueses-e-lusodescendentes-que-regressam-de-ferias-a-portugal",
+          "final_url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias/mensagem-de-boas-vindas-aos-portugueses-e-lusodescendentes-que-regressam-de-ferias-a-portugal",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:03.959736+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias/hoje-celebra-se-o-dia-internacional-das-mulheres-na-diplomacia",
+          "final_url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias/hoje-celebra-se-o-dia-internacional-das-mulheres-na-diplomacia",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:04.348320+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa/nota-de-pesar-6",
+          "final_url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa/nota-de-pesar-6",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:05.072242+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa/declaracao-dos-ministros-dos-negocios-estrangeiros-de-franca-do-reino-unido-do-canada-da-dinamarca-de-espanha-da-finlandia-da-irlanda-da-islandia-da-noruega-da-polonia-de-portugal-e-da-suecia-sobre-a-solucao-de-dois-estados",
+          "final_url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa/declaracao-dos-ministros-dos-negocios-estrangeiros-de-franca-do-reino-unido-do-canada-da-dinamarca-de-espanha-da-finlandia-da-irlanda-da-islandia-da-noruega-da-polonia-de-portugal-e-da-suecia-sobre-a-solucao-de-dois-estados",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:05.433545+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias/conferencia-direitos-humanos-e-desinformacao-a-educacao-como-resposta-a-manipulacao",
+          "final_url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias/conferencia-direitos-humanos-e-desinformacao-a-educacao-como-resposta-a-manipulacao",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:06.149358+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias/diretora-geral-de-politica-externa-recebeu-o-embaixador-da-liberia",
+          "final_url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias/diretora-geral-de-politica-externa-recebeu-o-embaixador-da-liberia",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:06.885641+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias?start=4",
+          "final_url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias?start=4",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:07.876806+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias?start=8",
+          "final_url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias?start=8",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:08.834045+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/sobre-nos/quem-somos/o-que-faz-o-mne",
+          "final_url": "https://portaldiplomatico.mne.gov.pt/sobre-nos/quem-somos/o-que-faz-o-mne",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:54:17.120315+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/negocios-estrangeiros/noticias",
+          "observed_at": "2026-10-02T00:49:50.438960+00:00",
+          "http_status": 200,
+          "response_sha256": "7650105be134d67799b4de5f1df2927fe0c0280cb5a8916029b4657dfd45f743",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/negocios-estrangeiros/ministro",
+          "observed_at": "2026-10-02T00:49:54.840990+00:00",
+          "http_status": 200,
+          "response_sha256": "d91f98af4536772e6c40534189347f2fd9f11c1562696197cd75218a23118547",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/",
+          "observed_at": "2026-10-02T00:50:01.839826+00:00",
+          "http_status": 200,
+          "response_sha256": "137b07eeaf8648e5de79510564948051d87cea48be5d96732e48e3b825fb9ee7",
+          "raw_parser_count": 4,
+          "raw_dated_count": 4
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias",
+          "observed_at": "2026-10-02T00:50:02.246036+00:00",
+          "http_status": 200,
+          "response_sha256": "0d266b439e2120861420968884bd23ade1c5af1962a8e9b86c8e6fd3bcb23ece",
+          "raw_parser_count": 7,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa",
+          "observed_at": "2026-10-02T00:50:02.634125+00:00",
+          "http_status": 200,
+          "response_sha256": "11b6c8f6d1ef1dcc207a38cd6ee3bf5f9de4b5fedced913d0fad75eb84ef2b1c",
+          "raw_parser_count": 7,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/contactos-para-a-imprensa",
+          "observed_at": "2026-10-02T00:50:03.571101+00:00",
+          "http_status": 200,
+          "response_sha256": "ad043aabc0dc03f8ff4970645d1b8ab4af2ba5f78139ed82058c5a3b0b09c715",
+          "raw_parser_count": 7,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias/mensagem-de-boas-vindas-aos-portugueses-e-lusodescendentes-que-regressam-de-ferias-a-portugal",
+          "observed_at": "2026-10-02T00:50:03.959736+00:00",
+          "http_status": 200,
+          "response_sha256": "6c7df9f138883e3f60919d6a89c101be36589d0900b3a1be67bd499b9955a53a",
+          "raw_parser_count": 7,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias/hoje-celebra-se-o-dia-internacional-das-mulheres-na-diplomacia",
+          "observed_at": "2026-10-02T00:50:04.348320+00:00",
+          "http_status": 200,
+          "response_sha256": "f33ed6c0210d8e7df82c1c88124ec74e84f82206ad80b517061a918696c748af",
+          "raw_parser_count": 7,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa/nota-de-pesar-6",
+          "observed_at": "2026-10-02T00:50:05.072242+00:00",
+          "http_status": 200,
+          "response_sha256": "4992702763610c178975a2b13b46946492432935dbb796710e74476805b5e525",
+          "raw_parser_count": 7,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa/declaracao-dos-ministros-dos-negocios-estrangeiros-de-franca-do-reino-unido-do-canada-da-dinamarca-de-espanha-da-finlandia-da-irlanda-da-islandia-da-noruega-da-polonia-de-portugal-e-da-suecia-sobre-a-solucao-de-dois-estados",
+          "observed_at": "2026-10-02T00:50:05.433545+00:00",
+          "http_status": 200,
+          "response_sha256": "eedc287f76d64e0828c41501a200f393bc3b604475f15cbb16ec7473227f8fb7",
+          "raw_parser_count": 7,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias/conferencia-direitos-humanos-e-desinformacao-a-educacao-como-resposta-a-manipulacao",
+          "observed_at": "2026-10-02T00:50:06.149358+00:00",
+          "http_status": 200,
+          "response_sha256": "1a16d62f9b211f6481056f0f292d483e5f32cd87b06fb67e202799cf27e09457",
+          "raw_parser_count": 7,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias/diretora-geral-de-politica-externa-recebeu-o-embaixador-da-liberia",
+          "observed_at": "2026-10-02T00:50:06.885641+00:00",
+          "http_status": 200,
+          "response_sha256": "b26511bb27f95852111a4ec8545ebb5a47838f6dc35571ae2c0f4b5a167f26dd",
+          "raw_parser_count": 7,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias?start=4",
+          "observed_at": "2026-10-02T00:50:07.876806+00:00",
+          "http_status": 200,
+          "response_sha256": "e7cd6b8591082c91752af38e1c4d28ce8b0f65c91ed4386f1f9db5bdac8b51cc",
+          "raw_parser_count": 7,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/noticias?start=8",
+          "observed_at": "2026-10-02T00:50:08.834045+00:00",
+          "http_status": 200,
+          "response_sha256": "012b5f083d0f65b799ac373fb8d14c9e6c9533ac6cb27a226b5de3382ba2930d",
+          "raw_parser_count": 7,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portaldiplomatico.mne.gov.pt/sobre-nos/quem-somos/o-que-faz-o-mne",
+          "observed_at": "2026-10-02T00:54:17.120315+00:00",
+          "http_status": 200,
+          "response_sha256": "f01389cde9ca30a99d8d58bec4b46865b4269e3a758c8ffc40b660b759e5d147",
+          "raw_parser_count": 7,
+          "raw_dated_count": 0
+        }
+      ],
+      "ownership_links": []
+    },
+    {
+      "source_id": "pt_finance",
+      "status": "parser_pending",
+      "reason": "Shared ministry Sitecore list returns HTTP 200 but no dated parser items. SGMF HTTPS alternatives could not establish a robots-compliant connection; captured official government announcement confirms SGMF extinction by merger from 2025-04-01. No archived secretariat feed assigned to the current ministry. Recorded alternatives: tests/fixtures/ministry_pt_alternatives.json",
+      "attempts": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/financas/noticias",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/financas/noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:49:50.860080+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/financas/ministro",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/financas/ministro",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:49:55.933717+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sgmf.gov.pt/",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://www.sgmf.gov.pt: robots.txt unreachable: ConnectTimeout: ",
+          "observed_at": "2026-10-02T00:50:12.598085+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://sgmf.gov.pt/",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://sgmf.gov.pt: robots.txt unreachable: ConnectTimeout: ",
+          "observed_at": "2026-10-02T00:54:23.809195+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc24/comunicacao/noticias/secretaria-geral-das-financas-extinta-por-fusao",
+          "final_url": "https://portugal.gov.pt/pt/gc24/comunicacao/noticias/secretaria-geral-das-financas-extinta-por-fusao",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:54:24.697176+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/financas/noticias",
+          "observed_at": "2026-10-02T00:49:50.860080+00:00",
+          "http_status": 200,
+          "response_sha256": "f6703671de233ad0b4290b478dd1b6bcf39c48a368ebb8fd91cb9c770c4f5938",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/financas/ministro",
+          "observed_at": "2026-10-02T00:49:55.933717+00:00",
+          "http_status": 200,
+          "response_sha256": "dc7ba2467a1bd584806937337c080b0c4817d8987eeefdd41affcccec2da0a19",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc24/comunicacao/noticias/secretaria-geral-das-financas-extinta-por-fusao",
+          "observed_at": "2026-10-02T00:54:24.697176+00:00",
+          "http_status": 200,
+          "response_sha256": "2e7e355ff18d4098ddc4014521ec6a797bbc653e4f5e587d34e89785960bdf3d",
+          "raw_parser_count": 1,
+          "raw_dated_count": 1
+        }
+      ],
+      "ownership_links": []
+    },
+    {
+      "source_id": "pt_economy_cohesion",
+      "status": "parser_pending",
+      "reason": "sgeconomia.gov.pt returns an explicit site-disabled/Arquivo.pt memorial notice, not current ministry news. Shared ministry Sitecore news route has no dated server-rendered items. Recorded alternatives: tests/fixtures/ministry_pt_alternatives.json",
+      "attempts": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/economia-e-coesao-territorial/noticias",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/economia-e-coesao-territorial/noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:49:51.554527+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/economia-e-coesao-territorial/ministro",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/economia-e-coesao-territorial/ministro",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:49:57.050779+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sgeconomia.gov.pt/",
+          "final_url": "https://www.sgeconomia.gov.pt/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:49:59.766644+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/economia-e-coesao-territorial/noticias",
+          "observed_at": "2026-10-02T00:49:51.554527+00:00",
+          "http_status": 200,
+          "response_sha256": "2825d3edce4742fed61332df9e8ba8b65baedb9f2e4262c90e5e363ea9285b08",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/economia-e-coesao-territorial/ministro",
+          "observed_at": "2026-10-02T00:49:57.050779+00:00",
+          "http_status": 200,
+          "response_sha256": "6f437816e975c6ff4d26b4240979ab8b42252d6a14bcf0ced4fbb1bec9e374c1",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sgeconomia.gov.pt/",
+          "observed_at": "2026-10-02T00:49:59.766644+00:00",
+          "http_status": 200,
+          "response_sha256": "16b1893a015a81b1aaa67a4751e00b148c30c45465cf25bdf4738586d9e973e6",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        }
+      ],
+      "ownership_links": []
+    },
+    {
+      "source_id": "pt_defence",
+      "status": "parser_pending",
+      "reason": "Dedicated defesa.gov.pt communications portal exists, but robots retrieval returns HTTP 513 on www host and the alternate hostname did not establish usable robots-verified content. Shared Sitecore list has zero dated items; no robots bypass. Recorded alternatives: tests/fixtures/ministry_pt_alternatives.json",
+      "attempts": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/defesa-nacional/noticias",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/defesa-nacional/noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:49:52.268075+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/defesa-nacional/ministro",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/defesa-nacional/ministro",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:49:58.131057+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.defesa.gov.pt/pt/Paginas/default.aspx",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://www.defesa.gov.pt: robots.txt unreachable: HTTP 513",
+          "observed_at": "2026-10-02T00:50:02.402024+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://www.defesa.gov.pt/pt/comunicacao/comunicados/Paginas/default.aspx",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://www.defesa.gov.pt: robots.txt unreachable: HTTP 513",
+          "observed_at": "2026-10-02T00:50:02.402044+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://defesa.gov.pt/pt/comunicacao/comunicados/Paginas/default.aspx",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://defesa.gov.pt: robots.txt unreachable: HTTP 513",
+          "observed_at": "2026-10-02T00:54:15.891390+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/defesa-nacional/noticias",
+          "observed_at": "2026-10-02T00:49:52.268075+00:00",
+          "http_status": 200,
+          "response_sha256": "12d610052203968db05239f27748d6821102543f2bc870d3781ef41a27183de7",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/defesa-nacional/ministro",
+          "observed_at": "2026-10-02T00:49:58.131057+00:00",
+          "http_status": 200,
+          "response_sha256": "d079953bae95199b38567dafb147df9200dd3b3e9c70de116ca0dac3a1e1ed86",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        }
+      ],
+      "ownership_links": []
+    },
+    {
+      "source_id": "pt_infrastructure_housing",
+      "status": "parser_pending",
+      "reason": "Shared ministry Sitecore list has zero dated items. Candidate sg.mih.gov.pt cannot resolve; the actual first-party SGPCM supporting portal sg.pcm.gov.pt is explicitly deactivated. No independent current ministry news feed established. Recorded alternatives: tests/fixtures/ministry_pt_alternatives.json",
+      "attempts": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/infraestruturas-e-habitacao/noticias",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/infraestruturas-e-habitacao/noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:49:53.006900+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/infraestruturas-e-habitacao/ministro",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/infraestruturas-e-habitacao/ministro",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:49:59.314029+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.mih.gov.pt/",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://www.sg.mih.gov.pt: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known",
+          "observed_at": "2026-10-02T00:50:05.025721+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/infraestruturas-e-habitacao/noticias",
+          "observed_at": "2026-10-02T00:49:53.006900+00:00",
+          "http_status": 200,
+          "response_sha256": "184db76768f55ae3167bb614b2d288beca317950ea62789aa299a0945f2b48b8",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/infraestruturas-e-habitacao/ministro",
+          "observed_at": "2026-10-02T00:49:59.314029+00:00",
+          "http_status": 200,
+          "response_sha256": "ca25b5a50ae741e2a80e88523d9f58110a5e3860a48a64ce52db03dce76101e7",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        }
+      ],
+      "ownership_links": []
+    },
+    {
+      "source_id": "pt_justice",
+      "status": "manual_verified",
+      "reason": "Production HttpClient returned HTTP 200 with enforced robots/verified TLS; full response and LF-normalized saved fixture replay agree on 4 dated items. Portal footer identifies Secretaria-Geral do Ministério da Justiça; news page directly advertises this public RSS endpoint. It covers the ministry and justice organisations, not other ministries. Provenance: tests/fixtures/ministry_pt_justice.provenance.json",
+      "attempts": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/justica/noticias",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/justica/noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:49:53.683191+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/justica/ministro",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/justica/ministro",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:00.493429+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://justica.gov.pt/",
+          "final_url": "https://justica.gov.pt/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:05.834231+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://justica.gov.pt/Noticias",
+          "final_url": "https://justica.gov.pt/Noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:06.238318+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://justica.gov.pt/API/JusticaGovPt.News/PublishingNews/Feed?myPortalId=0&myTabId=380&myModuleId=1649&organismo=",
+          "final_url": "https://justica.gov.pt/API/JusticaGovPt.News/PublishingNews/Feed?myPortalId=0&myTabId=380&myModuleId=1649&organismo=",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:06.555613+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://justica.gov.pt/{{ noticia.UrlDetalhes }}",
+          "http_status": 404,
+          "error": "HTTPStatusError: Client error '404 Not Found' for url 'https://justica.gov.pt/%7B%7B%20noticia.UrlDetalhes%20%7D%7D'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+          "observed_at": "2026-10-02T00:50:06.847826+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://justica.gov.pt/Noticias?organismo={{organismo._termId}}",
+          "final_url": "https://justica.gov.pt/Noticias?organismo={{organismo._termId}}",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:07.228164+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://justica.gov.pt/Noticias?tematica={{tematica._termId}}",
+          "final_url": "https://justica.gov.pt/Noticias?tematica={{tematica._termId}}",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:07.639618+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://justica.gov.pt/Sobre-a-Justica",
+          "http_status": 404,
+          "error": "HTTPStatusError: Client error '404 Not Found' for url 'https://justica.gov.pt/Sobre-a-Justica'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+          "observed_at": "2026-10-02T00:54:13.534693+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://justica.gov.pt/API/JusticaGovPt.News/PublishingNews/Feed?myPortalId=0&myTabId=380&myModuleId=1649&organismo=",
+          "final_url": "https://justica.gov.pt/API/JusticaGovPt.News/PublishingNews/Feed?myPortalId=0&myTabId=380&myModuleId=1649&organismo=",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:54:15.810971+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/justica/noticias",
+          "observed_at": "2026-10-02T00:49:53.683191+00:00",
+          "http_status": 200,
+          "response_sha256": "f4e4836a5b13776e785db80422ddf75323be4b2ac57b8e58c431e5b7dacd1924",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/justica/ministro",
+          "observed_at": "2026-10-02T00:50:00.493429+00:00",
+          "http_status": 200,
+          "response_sha256": "11d89735efb6f6b71d8c85e2b1d75ecd386648650d13c2d62e0317b3ac089e59",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://justica.gov.pt/",
+          "observed_at": "2026-10-02T00:50:05.834231+00:00",
+          "http_status": 200,
+          "response_sha256": "3b02b12a953b58f348dba141145b9157d8f4e09df7b11bd74cffa75934acf6f3",
+          "raw_parser_count": 52,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://justica.gov.pt/Noticias",
+          "observed_at": "2026-10-02T00:50:06.238318+00:00",
+          "http_status": 200,
+          "response_sha256": "52f128177d815a70316dd38560337c60fb03cdfd7581b26635c4fa0211e53b18",
+          "raw_parser_count": 40,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://justica.gov.pt/API/JusticaGovPt.News/PublishingNews/Feed?myPortalId=0&myTabId=380&myModuleId=1649&organismo=",
+          "observed_at": "2026-10-02T00:50:06.555613+00:00",
+          "http_status": 200,
+          "response_sha256": "0c95cd458204aa4e58b8b968099d1d359f92d972f8871a00f1ac61f3ccd52de2",
+          "raw_parser_count": 16,
+          "raw_dated_count": 16
+        },
+        {
+          "url": "https://justica.gov.pt/Noticias?organismo={{organismo._termId}}",
+          "observed_at": "2026-10-02T00:50:07.228164+00:00",
+          "http_status": 200,
+          "response_sha256": "9705681b3db9715dd510b251b871665348f7fce64392b379d72e01aeaed5812f",
+          "raw_parser_count": 40,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://justica.gov.pt/Noticias?tematica={{tematica._termId}}",
+          "observed_at": "2026-10-02T00:50:07.639618+00:00",
+          "http_status": 200,
+          "response_sha256": "ca3625e33d4bd460ebe172f5edc58757bf5df47e0a296a29e7c7ebfaacbe3a28",
+          "raw_parser_count": 40,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://justica.gov.pt/API/JusticaGovPt.News/PublishingNews/Feed?myPortalId=0&myTabId=380&myModuleId=1649&organismo=",
+          "observed_at": "2026-10-02T00:54:15.810971+00:00",
+          "http_status": 200,
+          "response_sha256": "0c95cd458204aa4e58b8b968099d1d359f92d972f8871a00f1ac61f3ccd52de2",
+          "raw_parser_count": 16,
+          "raw_dated_count": 16
+        }
+      ],
+      "ownership_links": []
+    },
+    {
+      "source_id": "pt_interior",
+      "status": "parser_pending",
+      "reason": "Shared Sitecore list has zero dated items. sg.mai.gov.pt robots response is HTML/challenge content and mai.gov.pt connection attempts failed; alternate hostname checks are recorded. No access-control bypass. Recorded alternatives: tests/fixtures/ministry_pt_alternatives.json",
+      "attempts": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/administracao-interna/noticias",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/administracao-interna/noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:49:54.366812+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/administracao-interna/ministro",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/administracao-interna/ministro",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:01.612081+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.mai.gov.pt/",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://www.sg.mai.gov.pt: robots.txt returned HTML/challenge content",
+          "observed_at": "2026-10-02T00:50:23.112769+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://www.mai.gov.pt/",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://www.mai.gov.pt: robots.txt unreachable: ConnectError: All connection attempts failed",
+          "observed_at": "2026-10-02T00:50:28.079602+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://sg.mai.gov.pt/",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://sg.mai.gov.pt: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known",
+          "observed_at": "2026-10-02T00:54:11.884181+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://mai.gov.pt/",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://mai.gov.pt: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known",
+          "observed_at": "2026-10-02T00:54:17.104248+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/administracao-interna/noticias",
+          "observed_at": "2026-10-02T00:49:54.366812+00:00",
+          "http_status": 200,
+          "response_sha256": "6080de313c99b6619a287eae78856f2e2ab1c5b483b3fe3599ab3ebb48362c65",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/administracao-interna/ministro",
+          "observed_at": "2026-10-02T00:50:01.612081+00:00",
+          "http_status": 200,
+          "response_sha256": "219cbcbfc400985e8f0ab7fb19bc71bf308ad22847570fa5cfce1a81f4df1630",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        }
+      ],
+      "ownership_links": []
+    },
+    {
+      "source_id": "pt_education_science",
+      "status": "parser_pending",
+      "reason": "Shared Sitecore list has zero dated items; sec-geral.mec.pt robots response is HTML/challenge content. Captured official Council communiqué of 2025-08-07 announces extinction of the Education and Science secretariat, so it is not enrolled as the current ministry. Recorded alternatives: tests/fixtures/ministry_pt_alternatives.json",
+      "attempts": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/educacao-ciencia-e-inovacao/noticias",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/educacao-ciencia-e-inovacao/noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:02.363591+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/educacao-ciencia-e-inovacao/ministro",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/educacao-ciencia-e-inovacao/ministro",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:03.443832+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sec-geral.mec.pt/",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://www.sec-geral.mec.pt: robots.txt returned HTML/challenge content",
+          "observed_at": "2026-10-02T00:50:12.320637+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://sec-geral.mec.pt/",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://sec-geral.mec.pt: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known",
+          "observed_at": "2026-10-02T00:54:14.531602+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/governo/comunicados-do-conselho-de-ministros/683",
+          "final_url": "https://portugal.gov.pt/pt/gc25/governo/comunicados-do-conselho-de-ministros/683",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:54:18.043560+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/educacao-ciencia-e-inovacao/noticias",
+          "observed_at": "2026-10-02T00:50:02.363591+00:00",
+          "http_status": 200,
+          "response_sha256": "bbf39ccbe24894946c830df7393831b9e940ff8227d71925951ec2fb3388bf62",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/educacao-ciencia-e-inovacao/ministro",
+          "observed_at": "2026-10-02T00:50:03.443832+00:00",
+          "http_status": 200,
+          "response_sha256": "219b382eb8b136931efd5554801695e93372200fd1d28aeeccb333b25b4671b8",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/governo/comunicados-do-conselho-de-ministros/683",
+          "observed_at": "2026-10-02T00:54:18.043560+00:00",
+          "http_status": 200,
+          "response_sha256": "ba88d721f56ed5f2705399c345cc921cb39f10626266ed4a87622b3dde2ff809",
+          "raw_parser_count": 1,
+          "raw_dated_count": 1
+        }
+      ],
+      "ownership_links": []
+    },
+    {
+      "source_id": "pt_health",
+      "status": "parser_pending",
+      "reason": "Shared Sitecore list has zero dated items. Official ministry page links SNS portal, but SNS homepage/feed alternatives returned access errors including HTTP 405, and sg.min-saude.pt is robots-denied. No normal readable current feed validated. Recorded alternatives: tests/fixtures/ministry_pt_alternatives.json",
+      "attempts": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/saude/noticias",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/saude/noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:04.170907+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/saude/ministro",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/saude/ministro",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:05.385914+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.min-saude.pt/",
+          "http_status": null,
+          "error": "RobotsDeniedError: robots.txt disallows: https://www.sg.min-saude.pt/",
+          "observed_at": "2026-10-02T00:50:07.045917+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://www.sns.gov.pt/",
+          "http_status": 405,
+          "error": "HTTPStatusError: Client error '405 Method Not Allowed' for url 'https://www.sns.gov.pt/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405",
+          "observed_at": "2026-10-02T00:50:09.450220+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://sns.gov.pt/",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://sns.gov.pt: robots.txt unreachable: ConnectTimeout: ",
+          "observed_at": "2026-10-02T00:54:23.480677+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://www.sns.gov.pt/feed/",
+          "http_status": 405,
+          "error": "HTTPStatusError: Client error '405 Method Not Allowed' for url 'https://www.sns.gov.pt/feed/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405",
+          "observed_at": "2026-10-02T00:54:25.923346+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/saude/noticias",
+          "observed_at": "2026-10-02T00:50:04.170907+00:00",
+          "http_status": 200,
+          "response_sha256": "36239d93828ba29ecda0e914e16003482ef8c96a0c0ad9f6ec0477738457721d",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/saude/ministro",
+          "observed_at": "2026-10-02T00:50:05.385914+00:00",
+          "http_status": 200,
+          "response_sha256": "6340911774de6964a1a2f08816d8f4b71d056a1c1bb8e667153b071622c40c38",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        }
+      ],
+      "ownership_links": [
+        {
+          "from_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/saude/noticias",
+          "to_url": "https://www.sns.gov.pt/",
+          "label": "Serviço Nacional de Saúde"
+        },
+        {
+          "from_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/saude/ministro",
+          "to_url": "https://www.sns.gov.pt/",
+          "label": "Serviço Nacional de Saúde"
+        }
+      ]
+    },
+    {
+      "source_id": "pt_labour_social",
+      "status": "parser_pending",
+      "reason": "Shared ministry Sitecore news list is client-rendered and produces no dated production-parser items. SGMTSSS publishes dated Secretariat training and administrative news, but its mission identifies a technical/administrative support service rather than the ministry itself. Secretariat ownership and a communication-support remit do not establish ministry-wide news attribution; candidate rejected rather than substituted for the ministry. Latest candidate item is 2026-01-23. Captured candidate retained in tests/fixtures/ministry_pt_labour_social.html and provenance; official alternative checks recorded in tests/fixtures/ministry_pt_alternatives.json.",
+      "attempts": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/trabalho-solidariedade-e-seguranca-social/noticias",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/trabalho-solidariedade-e-seguranca-social/noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:06.119726+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/trabalho-solidariedade-e-seguranca-social/ministro",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/trabalho-solidariedade-e-seguranca-social/ministro",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:07.284841+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/",
+          "final_url": "https://www.sg.mtsss.gov.pt/inicio",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:14.972595+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/inicio",
+          "final_url": "https://www.sg.mtsss.gov.pt/inicio",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:15.723820+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/noticias",
+          "final_url": "https://www.sg.mtsss.gov.pt/noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:17.635199+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt:443/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/comecou-o-curso-de-tecnico-superior-de-seguranca-no-trabalho-?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Finicio",
+          "final_url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/comecou-o-curso-de-tecnico-superior-de-seguranca-no-trabalho-?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Finicio",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:18.458335+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt:443/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/atencao-anuncio-fraudulento?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Finicio",
+          "final_url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/atencao-anuncio-fraudulento?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Finicio",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:18.854209+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt:443/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/10-edicao-da-formacao-financeira-aposta-em-publico-alvo-estrategico-para-multiplicar-conhecimento?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Finicio",
+          "final_url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/10-edicao-da-formacao-financeira-aposta-em-publico-alvo-estrategico-para-multiplicar-conhecimento?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Finicio",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:19.256841+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt:443/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/comecou-o-curso-de-tecnico-superior-de-seguranca-no-trabalho-?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "final_url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/comecou-o-curso-de-tecnico-superior-de-seguranca-no-trabalho-?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:19.641148+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt:443/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/atencao-anuncio-fraudulento?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "final_url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/atencao-anuncio-fraudulento?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:20.016338+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt:443/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/10-edicao-da-formacao-financeira-aposta-em-publico-alvo-estrategico-para-multiplicar-conhecimento?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "final_url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/10-edicao-da-formacao-financeira-aposta-em-publico-alvo-estrategico-para-multiplicar-conhecimento?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:20.419334+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt:443/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/atualizacao-programa-centros-qualifica-campanha-nacional-dar-valor-ao-que-sabes-?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "final_url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/atualizacao-programa-centros-qualifica-campanha-nacional-dar-valor-ao-que-sabes-?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:20.835363+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt:443/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/centro-qualifica-ap-sgmtsss-entrega-de-diplomas-a-48-finalistas-rvcc?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "final_url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/centro-qualifica-ap-sgmtsss-entrega-de-diplomas-a-48-finalistas-rvcc?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:21.249001+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt:443/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/o-livro-verde-para-a-sustentabilidade-do-sistema-previdencial?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "final_url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/o-livro-verde-para-a-sustentabilidade-do-sistema-previdencial?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:21.664762+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/quem-somos",
+          "final_url": "https://www.sg.mtsss.gov.pt/quem-somos",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:54:14.593096+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/quem-somos-missao-visao-e-valores",
+          "final_url": "https://www.sg.mtsss.gov.pt/quem-somos-missao-visao-e-valores",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:54:16.934695+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/noticias",
+          "final_url": "https://www.sg.mtsss.gov.pt/noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:54:18.358578+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt:443/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/comecou-o-curso-de-tecnico-superior-de-seguranca-no-trabalho-?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "final_url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/comecou-o-curso-de-tecnico-superior-de-seguranca-no-trabalho-?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:54:19.248779+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/trabalho-solidariedade-e-seguranca-social/noticias",
+          "observed_at": "2026-10-02T00:50:06.119726+00:00",
+          "http_status": 200,
+          "response_sha256": "29097c4b3cfe842567b01db79f34ffbe96c2db8571cd0891d236a10c3d738789",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/trabalho-solidariedade-e-seguranca-social/ministro",
+          "observed_at": "2026-10-02T00:50:07.284841+00:00",
+          "http_status": 200,
+          "response_sha256": "32b00637690e55f1e964cdf40eeeae851602a6f4f001f3ba87adb31d2d1585c1",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/inicio",
+          "observed_at": "2026-10-02T00:50:14.972595+00:00",
+          "http_status": 200,
+          "response_sha256": "b9a94aea60438a1d36878d32a96dc83fcf10d4f56099c6f4ab41a8760db4ed79",
+          "raw_parser_count": 4,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/inicio",
+          "observed_at": "2026-10-02T00:50:15.723820+00:00",
+          "http_status": 200,
+          "response_sha256": "d1e24b0411f28236f3037d5f650935be371e91027992942732516a414e73c2b1",
+          "raw_parser_count": 4,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/noticias",
+          "observed_at": "2026-10-02T00:50:17.635199+00:00",
+          "http_status": 200,
+          "response_sha256": "5019a63deba068f40d419b9f1f59b8f054957ade292aab29c1a33560cefb001e",
+          "raw_parser_count": 75,
+          "raw_dated_count": 75
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/comecou-o-curso-de-tecnico-superior-de-seguranca-no-trabalho-?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Finicio",
+          "observed_at": "2026-10-02T00:50:18.458335+00:00",
+          "http_status": 200,
+          "response_sha256": "85b4de558bad66666b464ef34a44ab2efa597e4f597179dbc1799d25c598b352",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/atencao-anuncio-fraudulento?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Finicio",
+          "observed_at": "2026-10-02T00:50:18.854209+00:00",
+          "http_status": 200,
+          "response_sha256": "a99b4985091237e712b2a1385ee4910533351cc30b1b45af7e7b7e713fddaa98",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/10-edicao-da-formacao-financeira-aposta-em-publico-alvo-estrategico-para-multiplicar-conhecimento?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Finicio",
+          "observed_at": "2026-10-02T00:50:19.256841+00:00",
+          "http_status": 200,
+          "response_sha256": "4a9297ede5c192a86ffbb6ca28111b402ffd8d9faa1956f670abe0a3112627d1",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/comecou-o-curso-de-tecnico-superior-de-seguranca-no-trabalho-?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "observed_at": "2026-10-02T00:50:19.641148+00:00",
+          "http_status": 200,
+          "response_sha256": "b4ba7bb3e97cd8b2c4620128027ff90984dc0310f0632eb44b176ac2b61ff680",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/atencao-anuncio-fraudulento?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "observed_at": "2026-10-02T00:50:20.016338+00:00",
+          "http_status": 200,
+          "response_sha256": "f29b3425c7c7adb0160274015b7b1c8c5fdb3f7ef0bc3dce2c5cd1b5693986ee",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/10-edicao-da-formacao-financeira-aposta-em-publico-alvo-estrategico-para-multiplicar-conhecimento?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "observed_at": "2026-10-02T00:50:20.419334+00:00",
+          "http_status": 200,
+          "response_sha256": "6936818c13a4b6bb70666c46d9ad8d3d54e215fc9163a46dcf9b9e18abce03b2",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/atualizacao-programa-centros-qualifica-campanha-nacional-dar-valor-ao-que-sabes-?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "observed_at": "2026-10-02T00:50:20.835363+00:00",
+          "http_status": 200,
+          "response_sha256": "7c6e86f62a4c885afb8cc1b50edfdade9964e8d77abb1bf433dff4f0417007e5",
+          "raw_parser_count": 2,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/centro-qualifica-ap-sgmtsss-entrega-de-diplomas-a-48-finalistas-rvcc?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "observed_at": "2026-10-02T00:50:21.249001+00:00",
+          "http_status": 200,
+          "response_sha256": "5a410fd5fa41cc0169bbb50a71770fcc15ac2df298652cf5eceaf7d31c1efc10",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/o-livro-verde-para-a-sustentabilidade-do-sistema-previdencial?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "observed_at": "2026-10-02T00:50:21.664762+00:00",
+          "http_status": 200,
+          "response_sha256": "ddb78d8b3c3db79217c266587336d2d305453c6f0a93a359b6c07491f7b30224",
+          "raw_parser_count": 9,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/quem-somos",
+          "observed_at": "2026-10-02T00:54:14.593096+00:00",
+          "http_status": 200,
+          "response_sha256": "9e30e392f4021b12682a95b956d2644ef37e4f9d5f210527b6b9a80d91d23323",
+          "raw_parser_count": 1,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/quem-somos-missao-visao-e-valores",
+          "observed_at": "2026-10-02T00:54:16.934695+00:00",
+          "http_status": 200,
+          "response_sha256": "78013817f01986cff35af90e0ea0a8380f3e6f0686c5feddf6fb201ac4111f4b",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/noticias",
+          "observed_at": "2026-10-02T00:54:18.358578+00:00",
+          "http_status": 200,
+          "response_sha256": "d310b090e7b354899dd6a6cc01cd58a284ce11c883be5e7791f37b48099167ae",
+          "raw_parser_count": 75,
+          "raw_dated_count": 75
+        },
+        {
+          "url": "https://www.sg.mtsss.gov.pt/noticias/-/asset_publisher/xBQpI7NGgI5Z/content/comecou-o-curso-de-tecnico-superior-de-seguranca-no-trabalho-?_101_INSTANCE_xBQpI7NGgI5Z_redirect=%2Fnoticias",
+          "observed_at": "2026-10-02T00:54:19.248779+00:00",
+          "http_status": 200,
+          "response_sha256": "3b7ad4d62342649471725844ccb7c2a03c5fa6d53e93c2ba7503ce559e94edc5",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        }
+      ],
+      "ownership_links": []
+    },
+    {
+      "source_id": "pt_environment_energy",
+      "status": "parser_pending",
+      "reason": "sgambiente.gov.pt publishes dated RSS, but its own homepage explicitly states the Secretariat was extinguished on 2025-05-31; latest captured news concerns its extinction in July 2025. Historical secretariat feed not assigned to current ministry. Shared Sitecore list is client-rendered. Recorded alternatives: tests/fixtures/ministry_pt_alternatives.json",
+      "attempts": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia/noticias",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia/noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:08.533260+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia/ministro",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia/ministro",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:09.477904+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/",
+          "final_url": "https://www.sgambiente.gov.pt/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:13.264078+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/feed/",
+          "final_url": "https://www.sgambiente.gov.pt/feed/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:14.270441+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.sgambiente.gov.pt%2F&format=xml",
+          "final_url": "https://www.sgambiente.gov.pt/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.sgambiente.gov.pt%2F&format=xml",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:14.829022+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/posts/",
+          "final_url": "https://www.sgambiente.gov.pt/posts/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:17.771983+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/category/noticias-eeagrants/",
+          "final_url": "https://www.sgambiente.gov.pt/category/noticias-eeagrants/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:20.977510+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.sgambiente.gov.pt%2Fposts%2F&format=xml",
+          "final_url": "https://www.sgambiente.gov.pt/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.sgambiente.gov.pt%2Fposts%2F&format=xml",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:21.557849+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/posts/?taxonomy=category&term=noticias-eeagrants",
+          "final_url": "https://www.sgambiente.gov.pt/posts/?taxonomy=category&term=noticias-eeagrants",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:24.545895+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/posts/?taxonomy=category&term=noticiasfma2018",
+          "final_url": "https://www.sgambiente.gov.pt/posts/?taxonomy=category&term=noticiasfma2018",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:27.361582+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/category/noticias-eeagrants/feed/",
+          "final_url": "https://www.sgambiente.gov.pt/category/noticias-eeagrants/feed/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:28.459221+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/category/noticias-eeagrants/page/2/",
+          "final_url": "https://www.sgambiente.gov.pt/category/noticias-eeagrants/page/2/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:31.421901+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/category/noticias-eeagrants/page/3/",
+          "final_url": "https://www.sgambiente.gov.pt/category/noticias-eeagrants/page/3/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:34.088841+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/category/noticias-eeagrants/page/4/",
+          "final_url": "https://www.sgambiente.gov.pt/category/noticias-eeagrants/page/4/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:36.678658+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/reforma-da-administracao-publica-extincao-da-secretaria-geral-do-ambiente/",
+          "http_status": 404,
+          "error": "HTTPStatusError: Client error '404 Not Found' for url 'https://www.sgambiente.gov.pt/reforma-da-administracao-publica-extincao-da-secretaria-geral-do-ambiente/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+          "observed_at": "2026-10-02T00:54:14.525186+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia/noticias",
+          "observed_at": "2026-10-02T00:50:08.533260+00:00",
+          "http_status": 200,
+          "response_sha256": "50a6874ffcf7cedc4bf48912747b22dc48e7fbaf3f10a1e6aeb31170c9dec402",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia/ministro",
+          "observed_at": "2026-10-02T00:50:09.477904+00:00",
+          "http_status": 200,
+          "response_sha256": "358b6db00fe8caed65794149ef420dd9b9b6dbe6e803d5cfa34f60a4a00e730e",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/",
+          "observed_at": "2026-10-02T00:50:13.264078+00:00",
+          "http_status": 200,
+          "response_sha256": "0641c4f845ac1e233f2e30dfa27a149b3f389a843f333dacf0762de772bb47e8",
+          "raw_parser_count": 3,
+          "raw_dated_count": 3
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/feed/",
+          "observed_at": "2026-10-02T00:50:14.270441+00:00",
+          "http_status": 200,
+          "response_sha256": "a94e66cd385bd79ede30d967a7dd997aa1ab8bc320e3a43bc5081e59283eb183",
+          "raw_parser_count": 10,
+          "raw_dated_count": 10
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.sgambiente.gov.pt%2F&format=xml",
+          "observed_at": "2026-10-02T00:50:14.829022+00:00",
+          "http_status": 200,
+          "response_sha256": "dde51a5eb43e2016fae09e3862e17eb3cf523b961fe2ecd008c5bf14396e9ca9",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/posts/",
+          "observed_at": "2026-10-02T00:50:17.771983+00:00",
+          "http_status": 200,
+          "response_sha256": "ccf001d040cdbe160c3cfb5b9f058fa12bdb26b29281f4db6005ddb0e4f386ed",
+          "raw_parser_count": 6,
+          "raw_dated_count": 6
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/category/noticias-eeagrants/",
+          "observed_at": "2026-10-02T00:50:20.977510+00:00",
+          "http_status": 200,
+          "response_sha256": "1c274cde645ceab8c57827d512aa68f8d39d72c3d9aa38f62dd361b85c10b7a9",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.sgambiente.gov.pt%2Fposts%2F&format=xml",
+          "observed_at": "2026-10-02T00:50:21.557849+00:00",
+          "http_status": 200,
+          "response_sha256": "7396d062e749dfb125a03514860a9fc09fa7e27612900b88607ad94af849742a",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/posts/?taxonomy=category&term=noticias-eeagrants",
+          "observed_at": "2026-10-02T00:50:24.545895+00:00",
+          "http_status": 200,
+          "response_sha256": "c562d69684399c5886368a1ee38967d0d9936f3b2c9c463f2f32407915d1c44f",
+          "raw_parser_count": 6,
+          "raw_dated_count": 6
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/posts/?taxonomy=category&term=noticiasfma2018",
+          "observed_at": "2026-10-02T00:50:27.361582+00:00",
+          "http_status": 200,
+          "response_sha256": "c7063f4f673044ff2612213a18c57c0d1b75e81f9d2b7fad8f693973086bd810",
+          "raw_parser_count": 4,
+          "raw_dated_count": 4
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/category/noticias-eeagrants/feed/",
+          "observed_at": "2026-10-02T00:50:28.459221+00:00",
+          "http_status": 200,
+          "response_sha256": "81557d0e0fc1aeaebb101e50620db09da87b360de603bdae9755040fabe47f33",
+          "raw_parser_count": 10,
+          "raw_dated_count": 10
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/category/noticias-eeagrants/page/2/",
+          "observed_at": "2026-10-02T00:50:31.421901+00:00",
+          "http_status": 200,
+          "response_sha256": "5dda8d23fea45b1dff19b2fa3a963744fc447f980af4f696a4ff14023bcaac27",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/category/noticias-eeagrants/page/3/",
+          "observed_at": "2026-10-02T00:50:34.088841+00:00",
+          "http_status": 200,
+          "response_sha256": "de81529568e3fb5ce742bb3b196c2e7df90cf24512fc2b0b65518c3f2da99381",
+          "raw_parser_count": 2,
+          "raw_dated_count": 2
+        },
+        {
+          "url": "https://www.sgambiente.gov.pt/category/noticias-eeagrants/page/4/",
+          "observed_at": "2026-10-02T00:50:36.678658+00:00",
+          "http_status": 200,
+          "response_sha256": "4e9dd5caa17fcc7a75c70fb903d2a526fe7212f3cac3516710f8cddddca34ac9",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        }
+      ],
+      "ownership_links": []
+    },
+    {
+      "source_id": "pt_culture_youth_sport",
+      "status": "parser_pending",
+      "reason": "Cultura Portugal is accessible; /pt/saber/ contains real news titles/links but no publication dates on listing cards. Existing listing parser yields zero dated articles. A captured detail shows date separately; a supported detail-date fixture/enrichment contract must be proposed before enrollment, not dates synthesized into listing HTML. GEPAC alternative yielded no dated general-news listing. Recorded alternatives: tests/fixtures/ministry_pt_alternatives.json",
+      "attempts": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/cultura-juventude-e-desporto/noticias",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/cultura-juventude-e-desporto/noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:10.294108+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/cultura-juventude-e-desporto/ministro",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/cultura-juventude-e-desporto/ministro",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:12.323442+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.culturaportugal.gov.pt/",
+          "final_url": "https://www.culturaportugal.gov.pt/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:18.606832+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.gepac.gov.pt/",
+          "final_url": "https://www.gepac.gov.pt/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:26.045565+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.culturaportugal.gov.pt/pt/saber/",
+          "final_url": "https://www.culturaportugal.gov.pt/pt/saber/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:27.966326+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.culturaportugal.gov.pt/pt/saber/2026/03/redskyfalls-foi-apresentado-a-imprensa/",
+          "final_url": "https://www.culturaportugal.gov.pt/pt/saber/2026/03/redskyfalls-foi-apresentado-a-imprensa/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:28.333346+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.culturaportugal.gov.pt/pt/quem-somos/",
+          "final_url": "https://www.culturaportugal.gov.pt/pt/quem-somos/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:54:15.794329+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/cultura-juventude-e-desporto/noticias",
+          "observed_at": "2026-10-02T00:50:10.294108+00:00",
+          "http_status": 200,
+          "response_sha256": "6c159671af5a0c75fc416205ee1639e8b410079b0f1ae4a02f974278ab7ad926",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/cultura-juventude-e-desporto/ministro",
+          "observed_at": "2026-10-02T00:50:12.323442+00:00",
+          "http_status": 200,
+          "response_sha256": "41b904e0c0f1c83763ca08101931afdafb56718141b56f08020e825fa583f52d",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.culturaportugal.gov.pt/",
+          "observed_at": "2026-10-02T00:50:18.606832+00:00",
+          "http_status": 200,
+          "response_sha256": "0449d49bd46839a32f671f98d284dd132d1e55a67f71ed2150d1b194598a40f1",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.gepac.gov.pt/",
+          "observed_at": "2026-10-02T00:50:26.045565+00:00",
+          "http_status": 200,
+          "response_sha256": "8ed6baa367289e3cdb548a632520e5bb7019f1396b371a724c252ce6699144b1",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.culturaportugal.gov.pt/pt/saber/",
+          "observed_at": "2026-10-02T00:50:27.966326+00:00",
+          "http_status": 200,
+          "response_sha256": "1122377c50da8bcb7260607e7d10a769d031ad81b425b7713d1cca353dc3f0a0",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.culturaportugal.gov.pt/pt/saber/2026/03/redskyfalls-foi-apresentado-a-imprensa/",
+          "observed_at": "2026-10-02T00:50:28.333346+00:00",
+          "http_status": 200,
+          "response_sha256": "618124a29f23aba99fe64e68b5e6566aa18d214b4f3406db0b8837c2bbdf37c3",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.culturaportugal.gov.pt/pt/quem-somos/",
+          "observed_at": "2026-10-02T00:54:15.794329+00:00",
+          "http_status": 200,
+          "response_sha256": "6209367938ea465e0af8f812a39e3cf33b5dd7946ca11260a83e0320261e3073",
+          "raw_parser_count": 3,
+          "raw_dated_count": 0
+        }
+      ],
+      "ownership_links": []
+    },
+    {
+      "source_id": "pt_agriculture_sea",
+      "status": "parser_pending",
+      "reason": "Official agricultura.gov.pt/portal/ could not establish usable robots/TLS-verified content. GPP identifies itself as a supporting agency; its listing omits publication dates and generic apparent dates come from report/event periods in titles. Official FeedBurner link is unavailable under enforced robots. Agency/topic items not misattributed as ministry news. Recorded alternatives: tests/fixtures/ministry_pt_alternatives.json",
+      "attempts": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/agricultura-e-mar/noticias",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/agricultura-e-mar/noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:11.076616+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/agricultura-e-mar/ministro",
+          "final_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/agricultura-e-mar/ministro",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:13.515014+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://agricultura.gov.pt/",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://agricultura.gov.pt: robots.txt unreachable: ConnectTimeout: ",
+          "observed_at": "2026-10-02T00:50:30.214956+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://www.gpp.pt/",
+          "final_url": "https://www.gpp.pt/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:34.176785+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://feeds.feedburner.com/GppRSS",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://feeds.feedburner.com: robots.txt returned HTML/challenge content",
+          "observed_at": "2026-10-02T00:50:34.778485+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://feeds.feedburner.com/",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://feeds.feedburner.com: robots.txt returned HTML/challenge content",
+          "observed_at": "2026-10-02T00:50:34.778608+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://www.gpp.pt/index.php/table/noticias/",
+          "final_url": "https://www.gpp.pt/index.php/table/noticias/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:36.554527+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.gpp.pt/index.php/noticias/gpp-divulga-a-edicao-de-setembro-2026-da-newsletter-flash",
+          "final_url": "https://www.gpp.pt/index.php/noticias/gpp-divulga-a-edicao-de-setembro-2026-da-newsletter-flash",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:37.519650+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.gpp.pt/index.php/noticias/dia-mundial-do-leite-escolar-30-de-setembro-de-2026",
+          "final_url": "https://www.gpp.pt/index.php/noticias/dia-mundial-do-leite-escolar-30-de-setembro-de-2026",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:38.508091+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.gpp.pt/index.php/noticias/observatorio-de-precos-agroalimentar-evolucao-dos-precos-dos-produtos-alimentares-10-08-2026-a-06-09-2026",
+          "final_url": "https://www.gpp.pt/index.php/noticias/observatorio-de-precos-agroalimentar-evolucao-dos-precos-dos-produtos-alimentares-10-08-2026-a-06-09-2026",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:39.349209+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.gpp.pt/index.php/noticias/lancamento-da-plataforma-tomaladaca-no-ambito-da-estrategia-de-combate-ao-desperdicio-alimentar",
+          "final_url": "https://www.gpp.pt/index.php/noticias/lancamento-da-plataforma-tomaladaca-no-ambito-da-estrategia-de-combate-ao-desperdicio-alimentar",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:40.289336+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.gpp.pt/index.php/noticias/cultivar-cadernos-de-analise-e-prospetiva",
+          "final_url": "https://www.gpp.pt/index.php/noticias/cultivar-cadernos-de-analise-e-prospetiva",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:41.106208+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.gpp.pt/index.php/noticias/hoje-assinala-se-o-dia-internacional-internacional-de-consciencializacao-sobre-perdas-e-desperdicio-alimentares",
+          "final_url": "https://www.gpp.pt/index.php/noticias/hoje-assinala-se-o-dia-internacional-internacional-de-consciencializacao-sobre-perdas-e-desperdicio-alimentares",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:41.935042+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.gpp.pt/index.php/noticias/conselho-agricultura-e-pescas-da-ue-28-e-29-de-setembro-2026",
+          "final_url": "https://www.gpp.pt/index.php/noticias/conselho-agricultura-e-pescas-da-ue-28-e-29-de-setembro-2026",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:42.867358+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://agricultura.gov.pt/portal/",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://agricultura.gov.pt: robots.txt unreachable: ConnectTimeout: ",
+          "observed_at": "2026-10-02T00:54:23.610984+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://www.gpp.pt/index.php/quem-somos/apresentacao",
+          "http_status": 404,
+          "error": "HTTPStatusError: Client error '404 Not Found' for url 'https://www.gpp.pt/index.php/quem-somos/apresentacao'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+          "observed_at": "2026-10-02T00:54:25.513517+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/agricultura-e-mar/noticias",
+          "observed_at": "2026-10-02T00:50:11.076616+00:00",
+          "http_status": 200,
+          "response_sha256": "4ebb64788d4111360712f3d8c9e010bce33214bbdf02d7ab5a7dd22b0a33bf8d",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/agricultura-e-mar/ministro",
+          "observed_at": "2026-10-02T00:50:13.515014+00:00",
+          "http_status": 200,
+          "response_sha256": "a1d6b07fbfb8d4a564ff2cc893bef36becfff4ee4fdc78fa752861902f16ee2e",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.gpp.pt/",
+          "observed_at": "2026-10-02T00:50:34.176785+00:00",
+          "http_status": 200,
+          "response_sha256": "59b36c76dbf7f8a0f17ca11219e749e2bb96fae6ff01d6a7e80e4ebbcec88d2a",
+          "raw_parser_count": 80,
+          "raw_dated_count": 1
+        },
+        {
+          "url": "https://www.gpp.pt/index.php/table/noticias/",
+          "observed_at": "2026-10-02T00:50:36.554527+00:00",
+          "http_status": 200,
+          "response_sha256": "4eea2e1479ceba5aed37095167bd998a48998834eee3b10a3ad7dc6c29b0c938",
+          "raw_parser_count": 18,
+          "raw_dated_count": 2
+        },
+        {
+          "url": "https://www.gpp.pt/index.php/noticias/gpp-divulga-a-edicao-de-setembro-2026-da-newsletter-flash",
+          "observed_at": "2026-10-02T00:50:37.519650+00:00",
+          "http_status": 200,
+          "response_sha256": "241ab95eb1eeda89a99feeaa43ffe0660315ce8d41bdec745c3b28d1ff96e1e4",
+          "raw_parser_count": 1,
+          "raw_dated_count": 1
+        },
+        {
+          "url": "https://www.gpp.pt/index.php/noticias/dia-mundial-do-leite-escolar-30-de-setembro-de-2026",
+          "observed_at": "2026-10-02T00:50:38.508091+00:00",
+          "http_status": 200,
+          "response_sha256": "a5e3e3cc15137b28dcd5bbb0e1365e2e37ba181664c98bd0d85bb666d613fc72",
+          "raw_parser_count": 1,
+          "raw_dated_count": 1
+        },
+        {
+          "url": "https://www.gpp.pt/index.php/noticias/observatorio-de-precos-agroalimentar-evolucao-dos-precos-dos-produtos-alimentares-10-08-2026-a-06-09-2026",
+          "observed_at": "2026-10-02T00:50:39.349209+00:00",
+          "http_status": 200,
+          "response_sha256": "0ab131c222ee76d1f759b4222c139d10657b5f54588bc4d5fa32e3c2293bdb99",
+          "raw_parser_count": 1,
+          "raw_dated_count": 1
+        },
+        {
+          "url": "https://www.gpp.pt/index.php/noticias/lancamento-da-plataforma-tomaladaca-no-ambito-da-estrategia-de-combate-ao-desperdicio-alimentar",
+          "observed_at": "2026-10-02T00:50:40.289336+00:00",
+          "http_status": 200,
+          "response_sha256": "840df7930fd96b1bda210118d05ca888489f21207d912958aa05e6de248c8f87",
+          "raw_parser_count": 1,
+          "raw_dated_count": 1
+        },
+        {
+          "url": "https://www.gpp.pt/index.php/noticias/cultivar-cadernos-de-analise-e-prospetiva",
+          "observed_at": "2026-10-02T00:50:41.106208+00:00",
+          "http_status": 200,
+          "response_sha256": "6bdfc443283d3acef51210b6a379878aceed7f6a787372d7c19a6e3100ac3a18",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://www.gpp.pt/index.php/noticias/hoje-assinala-se-o-dia-internacional-internacional-de-consciencializacao-sobre-perdas-e-desperdicio-alimentares",
+          "observed_at": "2026-10-02T00:50:41.935042+00:00",
+          "http_status": 200,
+          "response_sha256": "8b8c304811f758bd2130200b73345e065a6b5ca92f837ebb2cafbd10bef1c4f7",
+          "raw_parser_count": 1,
+          "raw_dated_count": 1
+        },
+        {
+          "url": "https://www.gpp.pt/index.php/noticias/conselho-agricultura-e-pescas-da-ue-28-e-29-de-setembro-2026",
+          "observed_at": "2026-10-02T00:50:42.867358+00:00",
+          "http_status": 200,
+          "response_sha256": "c690d0a9267e619708187ab7caef490218e539b13463091b0632202597b41bbc",
+          "raw_parser_count": 1,
+          "raw_dated_count": 1
+        }
+      ],
+      "ownership_links": []
+    },
+    {
+      "source_id": "pt_council_presidency",
+      "status": "parser_pending",
+      "reason": "Actual sg.pcm.gov.pt portal is explicitly deactivated; shared PM/Council news indexes are client-rendered. National homepage/detail items from other ministries were not enrolled as Presidency news. An attribution-preserving public Sitecore adapter remains conditional on a documented accessible normal-read endpoint. Recorded alternatives: tests/fixtures/ministry_pt_alternatives.json",
+      "attempts": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/primeiro-ministro/noticias",
+          "final_url": "https://portugal.gov.pt/pt/gc25/primeiro-ministro/noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:14.329947+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25",
+          "final_url": "https://portugal.gov.pt/pt/gc25",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:14.787868+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sgpcm.gov.pt/",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://www.sgpcm.gov.pt: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known",
+          "observed_at": "2026-10-02T00:50:19.870931+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://www.sg.gov.pt/",
+          "http_status": null,
+          "error": "RobotsUnavailableError: https://www.sg.gov.pt: robots.txt unreachable: ConnectError: [Errno 8] nodename nor servname provided, or not known",
+          "observed_at": "2026-10-02T00:50:22.052444+00:00",
+          "robots_enforced": true,
+          "tls_verified": null
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/execucao-bem-sucedida-do-prr-lanca-as-bases-para-novo-ciclo-de-crescimento",
+          "final_url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/execucao-bem-sucedida-do-prr-lanca-as-bases-para-novo-ciclo-de-crescimento",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:22.638061+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/complemento-solidario-para-idosos-aumenta-50-euros-a-partir-de-janeiro",
+          "final_url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/complemento-solidario-para-idosos-aumenta-50-euros-a-partir-de-janeiro",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:23.316371+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/prr-verbas-do-orcamento-de-estado-asseguram-conclusao-de-projetos-previstos",
+          "final_url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/prr-verbas-do-orcamento-de-estado-asseguram-conclusao-de-projetos-previstos",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:24.131028+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/passe-ferroviario-verde-alargado-aos-servicos-urbanos-da-cp-de-lisboa-e-do-porto-a-partir-de-27-de-setembro",
+          "final_url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/passe-ferroviario-verde-alargado-aos-servicos-urbanos-da-cp-de-lisboa-e-do-porto-a-partir-de-27-de-setembro",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:24.848575+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/antiga-sede-do-governo-vai-acolher-habitacao-acessivel",
+          "final_url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/antiga-sede-do-governo-vai-acolher-habitacao-acessivel",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:25.607842+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/governo/comunicados-do-conselho-de-ministros",
+          "final_url": "https://portugal.gov.pt/pt/gc25/governo/comunicados-do-conselho-de-ministros",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:26.324514+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias",
+          "final_url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:27.060276+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/governo/comunicados-do-conselho-de-ministros/comunicado-do-conselho-de-ministros-de-1-de-outubro-de-2026",
+          "final_url": "https://portugal.gov.pt/pt/gc25/governo/comunicados-do-conselho-de-ministros/comunicado-do-conselho-de-ministros-de-1-de-outubro-de-2026",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:27.806198+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/comunicacao/comunicados/passe-ferroviario-verde-alargado-aos-servicos-urbanos-da-cp-de-lisboa-e-porto-a-partir-de-amanha-",
+          "final_url": "https://portugal.gov.pt/pt/gc25/comunicacao/comunicados/passe-ferroviario-verde-alargado-aos-servicos-urbanos-da-cp-de-lisboa-e-porto-a-partir-de-amanha-",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:28.549062+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-reforca-rendimentos-e-apoios-perante-subida-dos-combustiveis",
+          "final_url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-reforca-rendimentos-e-apoios-perante-subida-dos-combustiveis",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:50:29.249428+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        },
+        {
+          "url": "https://www.sg.pcm.gov.pt/",
+          "final_url": "https://www.sg.pcm.gov.pt/",
+          "http_status": 200,
+          "observed_at": "2026-10-02T00:54:13.449057+00:00",
+          "robots_enforced": true,
+          "tls_verified": true
+        }
+      ],
+      "observations": [
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/primeiro-ministro/noticias",
+          "observed_at": "2026-10-02T00:50:14.329947+00:00",
+          "http_status": 200,
+          "response_sha256": "0730fbfadbb5835758c3917fcf8dc955ed1dad3eac5fec7528c85cf029da0a63",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25",
+          "observed_at": "2026-10-02T00:50:14.787868+00:00",
+          "http_status": 200,
+          "response_sha256": "387e6787570ccc60d8a1101e8b7b13c8017c20270d30988b46a836ca3dca6395",
+          "raw_parser_count": 1,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/execucao-bem-sucedida-do-prr-lanca-as-bases-para-novo-ciclo-de-crescimento",
+          "observed_at": "2026-10-02T00:50:22.638061+00:00",
+          "http_status": 200,
+          "response_sha256": "7a6a56dad46867bea92556d53b9b10631789e10f3d659f808140e1b55075786b",
+          "raw_parser_count": 1,
+          "raw_dated_count": 1
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/complemento-solidario-para-idosos-aumenta-50-euros-a-partir-de-janeiro",
+          "observed_at": "2026-10-02T00:50:23.316371+00:00",
+          "http_status": 200,
+          "response_sha256": "564d8292b9aef80ee68a8c78f8c9a7ea8f1ae24c24b916c0d90ef54d4d68249b",
+          "raw_parser_count": 1,
+          "raw_dated_count": 1
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/prr-verbas-do-orcamento-de-estado-asseguram-conclusao-de-projetos-previstos",
+          "observed_at": "2026-10-02T00:50:24.131028+00:00",
+          "http_status": 200,
+          "response_sha256": "3b1f4322fd291030c41bbc150f8bc0b612c3df942ec290738fa4f962c98f6211",
+          "raw_parser_count": 1,
+          "raw_dated_count": 1
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/passe-ferroviario-verde-alargado-aos-servicos-urbanos-da-cp-de-lisboa-e-do-porto-a-partir-de-27-de-setembro",
+          "observed_at": "2026-10-02T00:50:24.848575+00:00",
+          "http_status": 200,
+          "response_sha256": "947b3b05587867828af391cc24280f00ca57fcdc00a3793c3a3f3362fa266d28",
+          "raw_parser_count": 1,
+          "raw_dated_count": 1
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/antiga-sede-do-governo-vai-acolher-habitacao-acessivel",
+          "observed_at": "2026-10-02T00:50:25.607842+00:00",
+          "http_status": 200,
+          "response_sha256": "6509a9fbc8709059bdde4c82860daf5f7558b094c0e9ba1fe66914803e40ce62",
+          "raw_parser_count": 1,
+          "raw_dated_count": 1
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/governo/comunicados-do-conselho-de-ministros",
+          "observed_at": "2026-10-02T00:50:26.324514+00:00",
+          "http_status": 200,
+          "response_sha256": "ab0ac2cfff647a1a20365e74ea556656ceb62d4147f59ac9a2d17c5ceb298d4f",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias",
+          "observed_at": "2026-10-02T00:50:27.060276+00:00",
+          "http_status": 200,
+          "response_sha256": "68d773afc5d39fe3311ffeba8102d16dc7e446bb57c3944401f883b2bff46d19",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/governo/comunicados-do-conselho-de-ministros/comunicado-do-conselho-de-ministros-de-1-de-outubro-de-2026",
+          "observed_at": "2026-10-02T00:50:27.806198+00:00",
+          "http_status": 200,
+          "response_sha256": "6fc6ea48a879414394b665da047000e48d9ccfeae1c7982c4d7f9dfe11b14afe",
+          "raw_parser_count": 1,
+          "raw_dated_count": 1
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/comunicacao/comunicados/passe-ferroviario-verde-alargado-aos-servicos-urbanos-da-cp-de-lisboa-e-porto-a-partir-de-amanha-",
+          "observed_at": "2026-10-02T00:50:28.549062+00:00",
+          "http_status": 200,
+          "response_sha256": "9eb2525edd88a9e0675182701ae1762cfa40b0093589851e54296397f4e27e95",
+          "raw_parser_count": 1,
+          "raw_dated_count": 1
+        },
+        {
+          "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-reforca-rendimentos-e-apoios-perante-subida-dos-combustiveis",
+          "observed_at": "2026-10-02T00:50:29.249428+00:00",
+          "http_status": 200,
+          "response_sha256": "b5afae7e6bd7c42ed4ed624172f3b5a645bff76a2984a171f1710e2bf2529b43",
+          "raw_parser_count": 1,
+          "raw_dated_count": 1
+        },
+        {
+          "url": "https://www.sg.pcm.gov.pt/",
+          "observed_at": "2026-10-02T00:54:13.449057+00:00",
+          "http_status": 200,
+          "response_sha256": "ac4304f2a6d1f3be98bc539c4c222b830aa5ee1486343bc940d7e231b55e000c",
+          "raw_parser_count": 0,
+          "raw_dated_count": 0
+        }
+      ],
+      "ownership_links": []
+    }
+  ],
+  "sitecore_auth_boundary": "Main reported /sitecore/api/graph/edge HTTP 400 requiring authentication or SSC API key. This worker did not extract credentials or invoke authenticated endpoints; public client bootstrap is not treated as permission to bypass authentication."
+}

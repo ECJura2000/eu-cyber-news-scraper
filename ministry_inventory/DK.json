@@ -1,0 +1,465 @@
+{
+  "schema_version": 1,
+  "country": "DK",
+  "reviewed_on": "2026-10-03",
+  "official_roster_urls": [
+    "https://stm.dk/statsministeriet/kontakt/emneoversigt/"
+  ],
+  "roster_complete": true,
+  "limitations": [],
+  "ministries": [
+    {
+      "canonical_id": "dk_stm",
+      "name_zh": "丹麥首相府",
+      "name_local": "Statsministeriet",
+      "name_en": "Prime Minister's Office",
+      "kind": "government_head_office",
+      "language": "da",
+      "homepage": "https://stm.dk/",
+      "news_url": "https://stm.dk/",
+      "source_ids": [
+        "dk_stm"
+      ],
+      "status": "manual_verified",
+      "reason": "Source-scoped ministry news passed production scrape_source with 3 dated items; bounded genuine fixture reproduces 3 exact titles, URLs, local dates and confidence values. Next action: Manual collection only. Review freshness and publisher ownership during later observations before any separate scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://stm.dk/",
+        "https://stm.dk/presse/"
+      ]
+    },
+    {
+      "canonical_id": "dk_employment",
+      "name_zh": "丹麥就業與平等部",
+      "name_local": "Beskæftigelses- og Ligestillingsministeriet",
+      "name_en": "Ministry of Employment and Gender Equality",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://www.bm.dk/",
+      "news_url": "https://www.bm.dk/nyheder",
+      "source_ids": [
+        "dk_employment"
+      ],
+      "status": "manual_verified",
+      "reason": "Publisher-scoped north_ankiro passed production scrape_source with 10 parsed and dated articles; bounded genuine fixture preserves exact titles, URLs and local publication dates. Next action: Manual collection only; retain bounded-list truncation warning and verify archive completeness before any separately authorized scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://www.bm.dk/nyheder"
+      ]
+    },
+    {
+      "canonical_id": "dk_transport",
+      "name_zh": "丹麥城市、鄉村與交通部",
+      "name_local": "By-, Land og Transportministeriet",
+      "name_en": "Ministry of Cities, Rural Districts and Transport",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://www.bltm.dk/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh official ministry checks failed (robots_unavailable). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://www.bltm.dk/",
+        "https://en.wikipedia.org/wiki/Minister_of_Cities_and_Rural_Areas_(Denmark)",
+        "https://www.trm.dk",
+        "https://www.statensnet.dk/pligtarkiv/fremvis.pl?vaerkid=15676&reprid=1&iarkiv=1",
+        "https://da.wikipedia.org/wiki/Transportministeriet",
+        "https://da.wikipedia.org/wiki/Transportminister"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh official ministry checks failed (robots_unavailable). Actual local-language Wikipedia candidates and discovered alternatives are retained as historical observations. Accessible related agencies, data portals, justice-service feeds or broad government portals do not prove this ministry-specific publisher. No production-verifiable original dated article was established.",
+        "observed_at": "2026-10-03T13:16:09.394759+00:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "dk_children",
+      "name_zh": "丹麥兒童、高齡與住宅部",
+      "name_local": "Børne-, Ældre- og Boligministeriet",
+      "name_en": "Ministry of Children, Elderly and Housing",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://baebm.dk/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：parser_pending；The native encyclopedia article links the former aeldremin.dk ministry site, which redirects to the correct baebm.dk ministry. Current homepage and news archive are accessible, but the existing production north_gobasic parser submits the published ministry-filtered anonymous listing query and receives HTTP 400 at /gbapi/search/getPage (0 parsed/dated items). No production-verified article; publisher contract remains unmet.。 後續：Excluded under the explicit user policy after local-language Wikipedia recheck. Preserve all discovery/access evidence and original candidate URL in history; restore only after explicit review and successful ministry-specific publisher, original-publication and production-parser verification. This does not assert the ministry or website has ceased to exist. 證據：tests/fixtures/ministry_round6_north.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://baebm.dk/",
+        "https://baebm.dk/nyheder/nyhedsarkiv",
+        "https://baebm.dk/nyheder/presse",
+        "https://baebm.dk/nyheder",
+        "https://baebm.dk/arbejdsomraader/aeldreomraadet/raadet-for-et-aldersvenligt-danmark",
+        "https://cdn.baebm.dk/Assets/GoBasic/Applications/Release/application.min.js",
+        "https://cdn.baebm.dk/Assets/GoBasic/Applications/Release/downloadRestrictions.min.js",
+        "https://baebm.dk/gbapi/search/getPage",
+        "https://aeldremin.dk",
+        "https://da.wikipedia.org/wiki/B%C3%B8rne-,_%C3%86ldre-_og_Boligministeriet",
+        "https://english.aeldremin.dk"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "The native encyclopedia article links the former aeldremin.dk ministry site, which redirects to the correct baebm.dk ministry. Current homepage and news archive are accessible, but the existing production north_gobasic parser submits the published ministry-filtered anonymous listing query and receives HTTP 400 at /gbapi/search/getPage (0 parsed/dated items). No production-verified article; publisher contract remains unmet.",
+        "observed_at": "2026-10-03T13:16:09.395121+00:00",
+        "candidate_news_url": "https://baebm.dk/nyheder/nyhedsarkiv"
+      }
+    },
+    {
+      "canonical_id": "dk_business",
+      "name_zh": "丹麥商業部",
+      "name_local": "Erhvervsministeriet",
+      "name_en": "Ministry of Industry, Business and Financial Affairs",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://www.em.dk/",
+      "news_url": "https://www.em.dk/",
+      "source_ids": [
+        "dk_business"
+      ],
+      "status": "manual_verified",
+      "reason": "Publisher-scoped north_gobasic passed production scrape_source with 3 parsed and dated articles; bounded genuine fixture preserves exact titles, URLs and local publication dates. Next action: Manual collection only; retain bounded-list truncation warning and verify archive completeness before any separately authorized scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://www.em.dk/",
+        "https://www.em.dk/aktuelt",
+        "https://www.em.dk/proxy.gba"
+      ]
+    },
+    {
+      "canonical_id": "dk_finance",
+      "name_zh": "丹麥財政部",
+      "name_local": "Finansministeriet",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://fm.dk/",
+      "news_url": "https://fm.dk/nyheder/nyhedsarkiv/",
+      "source_ids": [
+        "dk_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "Official ministry news endpoint passed robots-respecting HttpClient and production scrape_source live parse with source dates; genuine bounded fixture replay verified; manual queries only, schedule disabled.",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://fm.dk/",
+        "https://fm.dk/nyheder/nyhedsarkiv/"
+      ]
+    },
+    {
+      "canonical_id": "dk_research",
+      "name_zh": "丹麥研究、教育與數位化部",
+      "name_local": "Forsknings-, Uddannelses- og Digitaliseringsministeriet",
+      "name_en": "Ministry of Research, Education and Digitalisation",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://ufm.dk/",
+      "news_url": "https://ufm.dk/aktuelt/pressemeddelelser/",
+      "source_ids": [
+        "dk_research"
+      ],
+      "status": "manual_verified",
+      "reason": "Official ministry news endpoint passed robots-respecting HttpClient and production scrape_source live parse with source dates; genuine bounded fixture replay verified; manual queries only, schedule disabled.",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://ufm.dk/",
+        "https://ufm.dk/aktuelt/pressemeddelelser/"
+      ]
+    },
+    {
+      "canonical_id": "dk_defence",
+      "name_zh": "丹麥國防部",
+      "name_local": "Forsvarsministeriet",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://www.fmn.dk/da/",
+      "news_url": "https://www.fmn.dk/da/",
+      "source_ids": [
+        "dk_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "Source-scoped ministry news passed production scrape_source with 4 dated items; bounded genuine fixture reproduces 4 exact titles, URLs, local dates and confidence values. Next action: Manual collection only. Review freshness and publisher ownership during later observations before any separate scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://www.fmn.dk/da/",
+        "https://www.fmn.dk/da/nyheder/nyhedsarkiv/"
+      ]
+    },
+    {
+      "canonical_id": "dk_justice",
+      "name_zh": "丹麥司法部",
+      "name_local": "Justitsministeriet",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://www.justitsministeriet.dk/",
+      "news_url": "https://www.justitsministeriet.dk/pressemeddelelse/",
+      "source_ids": [
+        "dk_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_dk_justice.provenance.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://www.justitsministeriet.dk/",
+        "https://www.justitsministeriet.dk/pressemeddelelse/"
+      ]
+    },
+    {
+      "canonical_id": "dk_climate",
+      "name_zh": "丹麥氣候、能源與公用事業部",
+      "name_local": "Klima-, Energi- og Forsyningsministeriet",
+      "name_en": "Ministry of Climate, Energy and Utilities",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://www.kefm.dk/",
+      "news_url": "https://www.kefm.dk/aktuelt",
+      "source_ids": [
+        "dk_climate"
+      ],
+      "status": "manual_verified",
+      "reason": "Publisher-scoped north_gobasic passed production scrape_source with 8 parsed and dated articles; bounded genuine fixture preserves exact titles, URLs and local publication dates. Next action: Manual collection only; retain bounded-list truncation warning and verify archive completeness before any separately authorized scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://www.kefm.dk/",
+        "https://www.kefm.dk/aktuelt",
+        "https://www.kefm.dk/aktuelt/proxy.gba"
+      ]
+    },
+    {
+      "canonical_id": "dk_culture",
+      "name_zh": "丹麥文化部",
+      "name_local": "Kulturministeriet",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://kum.dk/",
+      "news_url": "https://kum.dk/aktuelt/nyheder",
+      "source_ids": [
+        "dk_culture"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_dk_culture.provenance.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://kum.dk/",
+        "https://kum.dk/aktuelt/nyheder"
+      ]
+    },
+    {
+      "canonical_id": "dk_environment",
+      "name_zh": "丹麥環境部",
+      "name_local": "Miljøministeriet",
+      "name_en": "Ministry of Environment",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://mim.dk/",
+      "news_url": "https://mim.dk/nyheder/pressemeddelelser",
+      "source_ids": [
+        "dk_environment"
+      ],
+      "status": "manual_verified",
+      "reason": "Fresh fourth-round verification: manual_verified. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_north.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://mim.dk/",
+        "https://mim.dk/nyheder/pressemeddelelser",
+        "https://search.mst.dk/api/News/Search"
+      ]
+    },
+    {
+      "canonical_id": "dk_nature",
+      "name_zh": "丹麥自然與動物福利部",
+      "name_local": "Ministeriet for Natur og Dyrevelfærd",
+      "name_en": "Ministry of Nature and Animal Welfare",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://mgtp.dk/",
+      "news_url": "https://mgtp.dk/nyheder-og-debat",
+      "source_ids": [
+        "dk_nature"
+      ],
+      "status": "manual_verified",
+      "reason": "Publisher-scoped north_gobasic passed production scrape_source with 5 parsed and dated articles; bounded genuine fixture preserves exact titles, URLs and local publication dates. Next action: Manual collection only; retain bounded-list truncation warning and verify archive completeness before any separately authorized scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://mgtp.dk/",
+        "https://mgtp.dk/nyheder-og-debat",
+        "https://mgtp.dk/nyheder-og-debat/proxy.gba"
+      ]
+    },
+    {
+      "canonical_id": "dk_resilience",
+      "name_zh": "丹麥社會安全與應變部",
+      "name_local": "Ministeriet for Samfundssikkerhed og Beredskab",
+      "name_en": "Ministry of Societal Security and Resilience",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://mssb.dk/",
+      "news_url": "https://mssb.dk/nyheder/",
+      "source_ids": [
+        "dk_resilience"
+      ],
+      "status": "manual_verified",
+      "reason": "Fresh fourth-round verification: manual_verified. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_north.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://mssb.dk/",
+        "https://mssb.dk/nyheder/",
+        "https://mssb.dk/umbraco/api/DynamicListSearchApi/search"
+      ]
+    },
+    {
+      "canonical_id": "dk_taxation",
+      "name_zh": "丹麥稅務與成長部",
+      "name_local": "Skatte- og Vækstministeriet",
+      "name_en": "Ministry of Taxation and Growth",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://svmn.dk/",
+      "news_url": "https://svmn.dk/aktuelt/presse-nyheder/pressemeddelelser",
+      "source_ids": [
+        "dk_taxation"
+      ],
+      "status": "manual_verified",
+      "reason": "Publisher-scoped north_nextjs passed production scrape_source with 25 parsed and dated articles; bounded genuine fixture preserves exact titles, URLs and local publication dates. Next action: Manual collection only; retain bounded-list truncation warning and verify archive completeness before any separately authorized scheduling decision. Evidence: tests/fixtures/ministry_round3_north.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://svmn.dk/",
+        "https://svmn.dk/aktuelt/presse-nyheder/pressemeddelelser",
+        "https://svmn.dk/api/indexSearch"
+      ]
+    },
+    {
+      "canonical_id": "dk_social",
+      "name_zh": "丹麥社會部",
+      "name_local": "Socialministeriet",
+      "name_en": "Ministry of Social Affairs",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://www.sm.dk/",
+      "news_url": "https://www.sm.dk/handlers/DynamicRss.ashx?id=d66aadb0-8d96-4027-9a8f-7a3176ad49f9",
+      "source_ids": [
+        "dk_social"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_dk_social.provenance.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://www.sm.dk/",
+        "https://www.sm.dk/nyheder",
+        "https://www.sm.dk/handlers/DynamicRss.ashx?id=d66aadb0-8d96-4027-9a8f-7a3176ad49f9"
+      ]
+    },
+    {
+      "canonical_id": "dk_health",
+      "name_zh": "丹麥衛生與教會部",
+      "name_local": "Sundheds- og Kirkeministeriet",
+      "name_en": "Ministry of Health and Ecclesiastical Affairs",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://www.ism.dk/",
+      "news_url": "https://www.ism.dk/handlers/DynamicRss.ashx?id=3276f6e0-8386-41d5-b08a-642563d6a4c9",
+      "source_ids": [
+        "dk_health"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_dk_health.provenance.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://www.ism.dk/",
+        "https://www.ism.dk/nyheder",
+        "https://www.ism.dk/handlers/DynamicRss.ashx?id=3276f6e0-8386-41d5-b08a-642563d6a4c9"
+      ]
+    },
+    {
+      "canonical_id": "dk_foreign_affairs",
+      "name_zh": "丹麥外交部",
+      "name_local": "Udenrigsministeriet",
+      "name_en": "Ministry of Foreign Affairs",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://um.dk/",
+      "news_url": "https://um.dk/nyheder/",
+      "source_ids": [
+        "dk_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "Fresh fourth-round verification: manual_verified. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_north.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://um.dk/",
+        "https://um.dk/nyheder/",
+        "https://via.ritzau.dk/public-website-api/pressroom/2012662/releases/20/0",
+        "https://um.dk/robots.txt",
+        "https://via.ritzau.dk/robots.txt",
+        "https://via.ritzau.dk/public-website-api/pressroom/2012662"
+      ]
+    },
+    {
+      "canonical_id": "dk_immigration",
+      "name_zh": "丹麥移民與融合部",
+      "name_local": "Udlændinge- og Integrationsministeriet",
+      "name_en": "Ministry of Immigration and Integration",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://uim.dk/",
+      "news_url": "https://uim.dk/nyhedsarkiv/",
+      "source_ids": [
+        "dk_immigration"
+      ],
+      "status": "manual_verified",
+      "reason": "Official ministry news endpoint passed robots-respecting HttpClient and production scrape_source live parse with source dates; genuine bounded fixture replay verified; manual queries only, schedule disabled.",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://uim.dk/",
+        "https://uim.dk/nyhedsarkiv/"
+      ]
+    },
+    {
+      "canonical_id": "dk_education",
+      "name_zh": "丹麥教育部",
+      "name_local": "Undervisningsministeriet",
+      "name_en": "Ministry of Education",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://uvm.dk/",
+      "news_url": "https://uvm.dk/umbraco/api/DynamicRss/GetRss/?pageId=31390&moduleId=8d3d6977-899a-458e-99ef-b7c091047870",
+      "source_ids": [
+        "dk_education"
+      ],
+      "status": "manual_verified",
+      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_dk_education.provenance.json",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://uvm.dk/",
+        "https://uvm.dk/aktuelt/",
+        "https://uvm.dk/umbraco/api/DynamicRss/GetRss/?pageId=31390&moduleId=8d3d6977-899a-458e-99ef-b7c091047870"
+      ]
+    },
+    {
+      "canonical_id": "dk_economy",
+      "name_zh": "丹麥經濟與內政部",
+      "name_local": "Økonomi- og Indenrigsministeriet",
+      "name_en": "Ministry of Economic Affairs and the Interior",
+      "kind": "ministry",
+      "language": "da",
+      "homepage": "https://oem.dk/",
+      "news_url": "https://oem.dk/nyheder/nyhedsarkiv/",
+      "source_ids": [
+        "dk_economy"
+      ],
+      "status": "manual_verified",
+      "reason": "Official ministry news endpoint passed robots-respecting HttpClient and production scrape_source live parse with source dates; genuine bounded fixture replay verified; manual queries only, schedule disabled.",
+      "evidence_urls": [
+        "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
+        "https://oem.dk/",
+        "https://oem.dk/nyheder/nyhedsarkiv/"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,356 @@
+{
+  "schema_version": 1,
+  "country": "IE",
+  "reviewed_on": "2026-10-02",
+  "official_roster_urls": [
+    "https://www.gov.ie/en/departments/"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "2026-10-02 ministry news audit: 17 manually verified and 1 existing-source ministries; 0 unresolved. Roster enumeration does not imply searchable completeness. Exact tried URLs and robots/transport/parser/attribution limitations are recorded per ministry; unresolved rows have no runnable source. New sources retain disabled scheduling/noncritical status, all 15 topics, empty responsibility, and genuine checksum-backed fixture replay."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "ie_agriculture",
+      "name_zh": "愛爾蘭農業、食品暨海洋部",
+      "name_local": "Department of Agriculture, Food and the Marine",
+      "name_en": "Department of Agriculture, Food and the Marine",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": "https://www.gov.ie/en/department-of-agriculture-food-and-the-marine/",
+      "news_url": "https://www.gov.ie/en/department-of-agriculture-food-and-the-marine/",
+      "source_ids": [
+        "ie_agriculture"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (1 dated items); genuine bounded fixture replays 1 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_ie_agriculture.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.gov.ie/en/departments/",
+        "https://www.gov.ie/en/department-of-agriculture-food-and-the-marine/"
+      ]
+    },
+    {
+      "canonical_id": "ie_children",
+      "name_zh": "愛爾蘭兒童、身心障礙暨平等部",
+      "name_local": "Department of Children, Disability and Equality",
+      "name_en": "Department of Children, Disability and Equality",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": "https://www.gov.ie/en/department-of-children-disability-and-equality/",
+      "news_url": "https://www.gov.ie/en/department-of-children-disability-and-equality/",
+      "source_ids": [
+        "ie_children"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (1 dated items); genuine bounded fixture replays 1 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_ie_children.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.gov.ie/en/departments/",
+        "https://www.gov.ie/en/department-of-children-disability-and-equality/"
+      ]
+    },
+    {
+      "canonical_id": "ie_climate",
+      "name_zh": "愛爾蘭氣候、能源暨環境部",
+      "name_local": "Department of Climate, Energy and the Environment",
+      "name_en": "Department of Climate, Energy and the Environment",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": "https://www.gov.ie/en/department-of-climate-energy-and-the-environment/",
+      "news_url": "https://www.gov.ie/en/department-of-climate-energy-and-the-environment/",
+      "source_ids": [
+        "ie_climate"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (1 dated items); genuine bounded fixture replays 1 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_ie_climate.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.gov.ie/en/departments/",
+        "https://www.gov.ie/en/department-of-climate-energy-and-the-environment/"
+      ]
+    },
+    {
+      "canonical_id": "ie_culture",
+      "name_zh": "愛爾蘭文化、通訊暨體育部",
+      "name_local": "Department of Culture, Communications and Sport",
+      "name_en": "Department of Culture, Communications and Sport",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": "https://www.gov.ie/en/department-of-culture-communications-and-sport/",
+      "news_url": "https://www.gov.ie/en/department-of-culture-communications-and-sport/",
+      "source_ids": [
+        "ie_culture"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (1 dated items); genuine bounded fixture replays 1 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_ie_culture.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.gov.ie/en/departments/",
+        "https://www.gov.ie/en/department-of-culture-communications-and-sport/"
+      ]
+    },
+    {
+      "canonical_id": "ie_defence",
+      "name_zh": "愛爾蘭國防部",
+      "name_local": "Department of Defence",
+      "name_en": "Department of Defence",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": "https://www.gov.ie/en/department-of-defence/",
+      "news_url": "https://www.gov.ie/en/department-of-defence/",
+      "source_ids": [
+        "ie_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (1 dated items); genuine bounded fixture replays 1 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_ie_defence.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.gov.ie/en/departments/",
+        "https://www.gov.ie/en/department-of-defence/"
+      ]
+    },
+    {
+      "canonical_id": "ie_education",
+      "name_zh": "愛爾蘭教育暨青年部",
+      "name_local": "Department of Education and Youth",
+      "name_en": "Department of Education and Youth",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": "https://www.gov.ie/en/department-of-education/",
+      "news_url": "https://www.gov.ie/en/department-of-education/",
+      "source_ids": [
+        "ie_education"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (1 dated items); genuine bounded fixture replays 1 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_ie_education.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.gov.ie/en/departments/",
+        "https://www.gov.ie/en/department-of-education/"
+      ]
+    },
+    {
+      "canonical_id": "ie_dete",
+      "name_zh": "愛爾蘭企業、旅遊暨就業部",
+      "name_local": "Department of Enterprise, Tourism and Employment",
+      "name_en": "Department of Enterprise, Tourism and Employment",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": "https://www.gov.ie/en/department-of-enterprise-tourism-and-employment/",
+      "news_url": "https://enterprise.gov.ie/en/news-and-events/department-news/",
+      "source_ids": [
+        "ie_dete"
+      ],
+      "status": "existing_source",
+      "reason": "Existing ie_dete source is the same Department of Enterprise, Tourism and Employment; no agency alias used.",
+      "evidence_urls": [
+        "https://www.gov.ie/en/departments/",
+        "https://www.gov.ie/en/department-of-enterprise-tourism-and-employment/"
+      ]
+    },
+    {
+      "canonical_id": "ie_finance",
+      "name_zh": "愛爾蘭財政部",
+      "name_local": "Department of Finance",
+      "name_en": "Department of Finance",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": "https://www.gov.ie/en/department-of-finance/",
+      "news_url": "https://www.gov.ie/en/department-of-finance/",
+      "source_ids": [
+        "ie_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (1 dated items); genuine bounded fixture replays 1 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_ie_finance.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.gov.ie/en/departments/",
+        "https://www.gov.ie/en/department-of-finance/"
+      ]
+    },
+    {
+      "canonical_id": "ie_foreign_affairs",
+      "name_zh": "愛爾蘭外交暨貿易部",
+      "name_local": "Department of Foreign Affairs and Trade",
+      "name_en": "Department of Foreign Affairs and Trade",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": "https://www.gov.ie/en/department-of-foreign-affairs/",
+      "news_url": "https://www.gov.ie/en/department-of-foreign-affairs/",
+      "source_ids": [
+        "ie_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (1 dated items); genuine bounded fixture replays 1 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_ie_foreign_affairs.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.gov.ie/en/departments/",
+        "https://www.gov.ie/en/department-of-foreign-affairs/"
+      ]
+    },
+    {
+      "canonical_id": "ie_higher_education",
+      "name_zh": "愛爾蘭進修、高等教育、研究、創新暨科學部",
+      "name_local": "Department of Further and Higher Education, Research, Innovation and Science",
+      "name_en": "Department of Further and Higher Education, Research, Innovation and Science",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": "https://www.gov.ie/en/department-of-further-and-higher-education-research-innovation-and-science/",
+      "news_url": "https://www.gov.ie/en/department-of-further-and-higher-education-research-innovation-and-science/",
+      "source_ids": [
+        "ie_higher_education"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (1 dated items); genuine bounded fixture replays 1 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_ie_higher_education.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.gov.ie/en/departments/",
+        "https://www.gov.ie/en/department-of-further-and-higher-education-research-innovation-and-science/"
+      ]
+    },
+    {
+      "canonical_id": "ie_health",
+      "name_zh": "愛爾蘭衛生部",
+      "name_local": "Department of Health",
+      "name_en": "Department of Health",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": "https://www.gov.ie/en/department-of-health/",
+      "news_url": "https://www.gov.ie/en/department-of-health/",
+      "source_ids": [
+        "ie_health"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (1 dated items); genuine bounded fixture replays 1 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_ie_health.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.gov.ie/en/departments/",
+        "https://www.gov.ie/en/department-of-health/"
+      ]
+    },
+    {
+      "canonical_id": "ie_housing",
+      "name_zh": "愛爾蘭住宅、地方政府暨文化遺產部",
+      "name_local": "Department of Housing, Local Government and Heritage",
+      "name_en": "Department of Housing, Local Government and Heritage",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": "https://www.gov.ie/en/department-of-housing-local-government-and-heritage/",
+      "news_url": "https://www.gov.ie/en/department-of-housing-local-government-and-heritage/",
+      "source_ids": [
+        "ie_housing"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (1 dated items); genuine bounded fixture replays 1 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_ie_housing.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.gov.ie/en/departments/",
+        "https://www.gov.ie/en/department-of-housing-local-government-and-heritage/"
+      ]
+    },
+    {
+      "canonical_id": "ie_justice",
+      "name_zh": "愛爾蘭司法、內政暨移民部",
+      "name_local": "Department of Justice, Home Affairs and Migration",
+      "name_en": "Department of Justice, Home Affairs and Migration",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": "https://www.gov.ie/en/department-of-justice-home-affairs-and-migration/",
+      "news_url": "https://www.gov.ie/en/department-of-justice-home-affairs-and-migration/",
+      "source_ids": [
+        "ie_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (1 dated items); genuine bounded fixture replays 1 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_ie_justice.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.gov.ie/en/departments/",
+        "https://www.gov.ie/en/department-of-justice-home-affairs-and-migration/"
+      ]
+    },
+    {
+      "canonical_id": "ie_public_expenditure",
+      "name_zh": "愛爾蘭公共支出、基礎建設、公務改革暨數位化部",
+      "name_local": "Department of Public Expenditure, Infrastructure, Public Service Reform and Digitalisation",
+      "name_en": "Department of Public Expenditure, Infrastructure, Public Service Reform and Digitalisation",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": "https://www.gov.ie/en/department-of-public-expenditure-infrastructure-public-service-reform-and-digitalisation/",
+      "news_url": "https://www.gov.ie/en/department-of-public-expenditure-infrastructure-public-service-reform-and-digitalisation/",
+      "source_ids": [
+        "ie_public_expenditure"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (1 dated items); genuine bounded fixture replays 1 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_ie_public_expenditure.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.gov.ie/en/departments/",
+        "https://www.gov.ie/en/department-of-public-expenditure-infrastructure-public-service-reform-and-digitalisation/"
+      ]
+    },
+    {
+      "canonical_id": "ie_rural",
+      "name_zh": "愛爾蘭農村、社區發展暨愛爾蘭語地區部",
+      "name_local": "Department of Rural and Community Development and the Gaeltacht",
+      "name_en": "Department of Rural and Community Development and the Gaeltacht",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": "https://www.gov.ie/en/department-of-rural-and-community-development-and-the-gaeltacht/",
+      "news_url": "https://www.gov.ie/en/department-of-rural-and-community-development-and-the-gaeltacht/",
+      "source_ids": [
+        "ie_rural"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (1 dated items); genuine bounded fixture replays 1 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_ie_rural.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.gov.ie/en/departments/",
+        "https://www.gov.ie/en/department-of-rural-and-community-development-and-the-gaeltacht/"
+      ]
+    },
+    {
+      "canonical_id": "ie_social_protection",
+      "name_zh": "愛爾蘭社會保障部",
+      "name_local": "Department of Social Protection",
+      "name_en": "Department of Social Protection",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": "https://www.gov.ie/en/department-of-social-protection/",
+      "news_url": "https://www.gov.ie/en/department-of-social-protection/",
+      "source_ids": [
+        "ie_social_protection"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (1 dated items); genuine bounded fixture replays 1 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_ie_social_protection.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.gov.ie/en/departments/",
+        "https://www.gov.ie/en/department-of-social-protection/"
+      ]
+    },
+    {
+      "canonical_id": "ie_taoiseach",
+      "name_zh": "愛爾蘭總理府",
+      "name_local": "Department of the Taoiseach",
+      "name_en": "Department of the Taoiseach",
+      "kind": "government_head_office",
+      "language": "en",
+      "homepage": "https://www.gov.ie/en/department-of-the-taoiseach/",
+      "news_url": "https://www.gov.ie/en/department-of-the-taoiseach/",
+      "source_ids": [
+        "ie_taoiseach"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (1 dated items); genuine bounded fixture replays 1 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_ie_taoiseach.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.gov.ie/en/departments/",
+        "https://www.gov.ie/en/department-of-the-taoiseach/"
+      ]
+    },
+    {
+      "canonical_id": "ie_transport",
+      "name_zh": "愛爾蘭交通部",
+      "name_local": "Department of Transport",
+      "name_en": "Department of Transport",
+      "kind": "ministry",
+      "language": "en",
+      "homepage": "https://www.gov.ie/en/department-of-transport/",
+      "news_url": "https://www.gov.ie/en/department-of-transport/",
+      "source_ids": [
+        "ie_transport"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (1 dated items); genuine bounded fixture replays 1 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_ie_transport.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "evidence_urls": [
+        "https://www.gov.ie/en/departments/",
+        "https://www.gov.ie/en/department-of-transport/"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-10-03",
+  "scope": "Independent integration of three saved successful production source configurations; no inventory/docs/blocked-report edits.",
+  "checks": [
+    {
+      "canonical_id": "be_finance",
+      "country": "BE",
+      "result": "manual_verified",
+      "inventory_patch": {
+        "status": "manual_verified",
+        "homepage": "https://fin.belgium.be",
+        "news_url": "https://fin.belgium.be/nl/news",
+        "source_ids": [
+          "be_finance"
+        ],
+        "notes": "2026-10-03 round4 independent integration: production AuditHttpClient/scrape_source succeeded with 6/6 dated items. Full original HTML and bounded DOM fixture replay agree exactly on title, URL, publication instant, local date, raw date, timezone and confidence. Original response SHA-256 matches saved production evidence. Manual-only; all 15 observation topics; no responsibility assignments.",
+        "reason": "2026-10-03 round4 independent integration: production AuditHttpClient/scrape_source succeeded with 6/6 dated items. Full original HTML and bounded DOM fixture replay agree exactly on title, URL, publication instant, local date, raw date, timezone and confidence. Original response SHA-256 matches saved production evidence. Manual-only; all 15 observation topics; no responsibility assignments.",
+        "evidence_urls": [
+          "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+          "https://www.vlaanderen.be/Organisation/OVO005190",
+          "https://fin.belgium.be/nl/news"
+        ]
+      },
+      "fixture_path": "tests/fixtures/ministry_round4_be_finance.html",
+      "provenance_path": "tests/fixtures/ministry_round4_be_finance.provenance.json",
+      "production_raw_count": 6,
+      "production_dated_count": 6,
+      "fixture_bytes": 5386
+    },
+    {
+      "canonical_id": "be_justice",
+      "country": "BE",
+      "result": "manual_verified",
+      "inventory_patch": {
+        "status": "manual_verified",
+        "homepage": "https://justitie.belgium.be",
+        "news_url": "https://justitie.belgium.be/nl/nieuws",
+        "source_ids": [
+          "be_justice"
+        ],
+        "notes": "2026-10-03 round4 independent integration: production AuditHttpClient/scrape_source succeeded with 10/10 dated items. Full original HTML and bounded DOM fixture replay agree exactly on title, URL, publication instant, local date, raw date, timezone and confidence. Original response SHA-256 matches saved production evidence. Manual-only; all 15 observation topics; no responsibility assignments.",
+        "reason": "2026-10-03 round4 independent integration: production AuditHttpClient/scrape_source succeeded with 10/10 dated items. Full original HTML and bounded DOM fixture replay agree exactly on title, URL, publication instant, local date, raw date, timezone and confidence. Original response SHA-256 matches saved production evidence. Manual-only; all 15 observation topics; no responsibility assignments.",
+        "evidence_urls": [
+          "https://www.vlaanderen.be/organisaties/federale-overheidsdiensten",
+          "https://www.vlaanderen.be/Organisation/OVO003988",
+          "https://justitie.belgium.be/nl/nieuws"
+        ]
+      },
+      "fixture_path": "tests/fixtures/ministry_round4_be_justice.html",
+      "provenance_path": "tests/fixtures/ministry_round4_be_justice.provenance.json",
+      "production_raw_count": 10,
+      "production_dated_count": 10,
+      "fixture_bytes": 4294
+    },
+    {
+      "canonical_id": "fi_foreign_affairs",
+      "country": "FI",
+      "result": "manual_verified",
+      "inventory_patch": {
+        "status": "manual_verified",
+        "homepage": "https://um.fi",
+        "news_url": "https://um.fi/etusivu",
+        "source_ids": [
+          "fi_foreign_affairs"
+        ],
+        "notes": "2026-10-03 round4 independent integration: production AuditHttpClient/scrape_source succeeded with 6/6 dated items. Full original HTML and bounded DOM fixture replay agree exactly on title, URL, publication instant, local date, raw date, timezone and confidence. Original response SHA-256 matches saved production evidence. Manual-only; all 15 observation topics; no responsibility assignments.",
+        "reason": "2026-10-03 round4 independent integration: production AuditHttpClient/scrape_source succeeded with 6/6 dated items. Full original HTML and bounded DOM fixture replay agree exactly on title, URL, publication instant, local date, raw date, timezone and confidence. Original response SHA-256 matches saved production evidence. Manual-only; all 15 observation topics; no responsibility assignments.",
+        "evidence_urls": [
+          "https://valtioneuvosto.fi/ministeriot",
+          "https://valtioneuvosto.fi/en/ministries",
+          "https://um.fi",
+          "https://valtioneuvosto.fi/en/about-the-site",
+          "https://valtioneuvosto.fi/en/staattiset-feedit-en",
+          "https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss",
+          "https://um.fi/en/current-issues/press-releases",
+          "https://um.fi/rss",
+          "https://um.fi/etusivu"
+        ]
+      },
+      "fixture_path": "tests/fixtures/ministry_round4_fi_foreign_affairs.html",
+      "provenance_path": "tests/fixtures/ministry_round4_fi_foreign_affairs.provenance.json",
+      "production_raw_count": 6,
+      "production_dated_count": 6,
+      "fixture_bytes": 4667
+    }
+  ],
+  "excluded_ids": [
+    {
+      "canonical_id": "de_bmf",
+      "reason": "Production budget timeout; not promoted or edited."
+    }
+  ]
+}

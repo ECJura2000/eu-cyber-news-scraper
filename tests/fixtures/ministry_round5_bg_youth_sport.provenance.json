@@ -1,0 +1,208 @@
+{
+  "url": "https://www.nism.bg/bg/novini-i-sabitia/novini",
+  "http_status": 200,
+  "observed_at": "2026-10-03T08:43:49.914850+00:00",
+  "response_sha256": "14f9185a94c45ee700b479e35da540f95a5415d0a79245fdb6ee4b3cc2de0f7e",
+  "raw_response_bytes": 93438,
+  "raw_response_path": "/private/tmp/eu-round5-east-raw/bg_youth_sport.production.raw",
+  "source": {
+    "id": "bg_youth_sport",
+    "country": "BG",
+    "name_zh": "保加利亞青年與體育部",
+    "name": "Министерство на младежта и спорта",
+    "institution_type": "ministry",
+    "language": "bg",
+    "homepage": "https://www.nism.bg/bg/za-nas",
+    "listing_url": "https://www.nism.bg/bg/novini-i-sabitia/novini",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.nism.bg"
+    ],
+    "include_patterns": [
+      "^/bg/novini-i-sabitia/novini/[^/]+"
+    ],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Sofia",
+    "card_selectors": [
+      "article.item:has(.newsberg-article-introtext > p:first-child:-soup-contains(\"Министерството на младежта и спорта\"))"
+    ],
+    "link_selectors": [],
+    "title_selectors": [
+      ".article-header"
+    ],
+    "date_selectors": [
+      "time"
+    ],
+    "summary_selectors": [
+      ".newsberg-article-introtext > p:first-child"
+    ],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "live_status": {
+    "source_id": "bg_youth_sport",
+    "source_name": "保加利亞青年與體育部",
+    "country": "BG",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 2,
+    "relevant_count": 2,
+    "duration_seconds": 2.664,
+    "newest_published_at": "2026-10-02T12:08:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 2,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 2,
+    "freshness_lag_days": 1.49,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 2,
+    "bytes_downloaded": 94274,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200",
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "expected": [
+    {
+      "title": "ПОКАНА ЗА ВКЛЮЧВАНЕ КАТО ВЪНШНИ НАБЛЮДАТЕЛИ В РАБОТАТА НА ПРЕДСТОЯЩАТА ЕКСПЕРТНА КОМИСИЯ ЗА РАЗГЛЕЖДАНЕ, ОЦЕНКА И КЛАСИРАНЕ НА ПРОЕКТНИ ПРЕДЛОЖЕНИЯ ПО НАЦИОНАЛНА ПРОГРАМА ЗА ПРЕВЕНЦИЯ И ИНФОРМИРАНОСТ (2026-2030)",
+      "url": "https://www.nism.bg/bg/novini-i-sabitia/novini/pokana-za-vunshni-nabliudateli-2",
+      "published_date_local": "2026-10-02",
+      "date_confidence": "high",
+      "published_at_raw": "2026-10-02T15:08:00+03:00",
+      "published_at": "2026-10-02T12:08:00+00:00"
+    },
+    {
+      "title": "СТАРТИРА ВТОРА ПРОЦЕДУРА ЗА 2026 Г. ЗА НАБИРАНЕ НА ПРОЕКТНИ ПРЕДЛОЖЕНИЯ ПО НАЦИОНАЛНА ПРОГРАМА ЗА ПРЕВЕНЦИЯ И ИНФОРМИРАНОСТ (2026 – 2030)",
+      "url": "https://www.nism.bg/bg/novini-i-sabitia/novini/startira-vtora-procedura-za-nabirane-na-proektni-predlozheniya-po-nacionalna-programa-za-prevencia-i-informiranost",
+      "published_date_local": "2026-10-02",
+      "date_confidence": "high",
+      "published_at_raw": "2026-10-02T13:44:00+03:00",
+      "published_at": "2026-10-02T10:44:00+00:00"
+    }
+  ],
+  "schema_version": 1,
+  "source_id": "bg_youth_sport",
+  "country": "BG",
+  "source_config": {
+    "id": "bg_youth_sport",
+    "country": "BG",
+    "name_zh": "保加利亞青年與體育部",
+    "name": "Министерство на младежта и спорта",
+    "institution_type": "ministry",
+    "language": "bg",
+    "homepage": "https://www.nism.bg/bg/za-nas",
+    "listing_url": "https://www.nism.bg/bg/novini-i-sabitia/novini",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.nism.bg"
+    ],
+    "include_patterns": [
+      "^/bg/novini-i-sabitia/novini/[^/]+"
+    ],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Sofia",
+    "card_selectors": [
+      "article.item:has(.newsberg-article-introtext > p:first-child:-soup-contains(\"Министерството на младежта и спорта\"))"
+    ],
+    "link_selectors": [],
+    "title_selectors": [
+      ".article-header"
+    ],
+    "date_selectors": [
+      "time"
+    ],
+    "summary_selectors": [
+      ".newsberg-article-introtext > p:first-child"
+    ],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "robots_enforced": true,
+  "tls_verified": true,
+  "raw_response_sha256": "14f9185a94c45ee700b479e35da540f95a5415d0a79245fdb6ee4b3cc2de0f7e",
+  "fixture_path": "tests/fixtures/ministry_round5_bg_youth_sport.html",
+  "fixture_sha256": "82d17b4409914525831bee3f8b3fa9f7faba725f8abfb287da89776db71221df",
+  "fixture_bytes": 7990,
+  "fixture_method": "Selected complete official ministry-issued news DOM; remove forms/scripts/styles/hidden mail only. No title/link/date alteration.",
+  "selected_dom_count": 2,
+  "dom_selectors": [
+    "article.item:has(.newsberg-article-introtext > p:first-child:-soup-contains(\"Министерството на младежта и спорта\"))"
+  ],
+  "original_fixture_parity": {
+    "title_url_dates_equal": true,
+    "full_response_count": 2
+  },
+  "official_identity_evidence": {
+    "url": "https://www.nism.bg/bg/za-nas",
+    "observed_at": "2026-10-03T08:40:01.091356+00:00",
+    "robots_enforced": true,
+    "tls_verified": true,
+    "http_status": 200,
+    "final_url": "https://www.nism.bg/bg/za-nas",
+    "response_sha256": "82875d23cffee6117635b89cb742564cdfeef102bc1e3bc39a993cd6c0ed9587",
+    "title": "За нас",
+    "public_excerpt": "За нас Вход Вход Запомни ме Забравена парола? Вход в сайта Регистрация Начало За нас Новини Документи Национални документи Закони и наредби Стратегии Годишни доклади Планове и отчети Изследвания, анализи и отчети Други Международни документи Европейски съюз Съвет на Европа Консултативни органи Консултативен съвет Обществен съвет НРГ Младежка работа НРГ Диалог за младежта Проекти Младежта в цифри Младежки организации Контакти За дирекция „Младежки политики“ Функции на дирекция „МЛАДЕЖКИ ПОЛИТИКИ“: Подпомага министъра при планирането и изпълнението на националната политика за младежта осъществява координация с други ведомства при разработването на стратегически, програмни, нормативни и други, произтичащи от тях документи в областта на националната политика за младежта; участва в синхронизирането на националното законодателство с актовете на Европейския съюз, свързани с функционалната й компетентност; подготвя задания за социологически и статистически проучвания, които са свързани с плани"
+  },
+  "saved_production_record_path": "tests/fixtures/ministry_round5_east_live_records.json"
+}

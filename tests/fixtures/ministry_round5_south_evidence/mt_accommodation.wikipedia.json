@@ -1,0 +1,18 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Ministry for Accommodation and Lands Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Owen_Bonnici",
+      "title": "Owen Bonnici - Wikipedia",
+      "observed_at": "2026-10-03T08:37:34.896071+00:00",
+      "extracted_sha256": "eade5a251def34f95418d99b03b29b3f01edb4b1963b1d147e8d4b622e373a51",
+      "excerpt": "[Jump to content](https://en.wikipedia.org/wiki/Owen_Bonnici#bodyContent)\n\nFrom Wikipedia, the free encyclopedia\n\nMaltese politician (born 1980)\n\n**This article has multiple issues.**Please help**[improve it](https://en.wikipedia.org/wiki/Special:EditPage/Owen_Bonnici)**or discuss these issues on the**[talk page](https://en.wikipedia.org/wiki/Talk:Owen_Bonnici)**.*([Learn how and when to remove these messages](https://en.wikipedia.org/wiki/Help:Maintenance_template_removal))*\n\nThis[biography of a living person](https://en.wikipedia.org/wiki/Wikipedia:Biographies_of_living_persons)**needs additional[citations](https://en.wikipedia.org/wiki/Wikipedia:Citing_sources)for[verification](https://en.wikipedia.org/wiki/Wikipedia:Verifiability)**.Please help by adding[reliable sources](https://en.wikipedia.org/wiki/Wikipedia:Reliable_sources). Contentious material about living persons that is unsourced or poorly sourced**must be removed immediately**, especially if potentially[libelous](https://"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_accommodation.wikipedia.json"
+}

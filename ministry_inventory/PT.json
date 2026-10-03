@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "country": "PT",
+  "reviewed_on": "2026-10-02",
+  "official_roster_urls": [
+    "https://portugal.gov.pt/pt/gc25/governo/composicao",
+    "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2025-926588602"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "Government composition is client-rendered; official server-embedded area navigation and consolidated organisation law were checked. Presidency, State Reform and Parliamentary Affairs portfolios are integrated into Presidência do Conselho de Ministros (articles 13-17), not registered as separate ministries. Live parser support for the new Sitecore portal remains to be verified."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "pt_foreign_affairs",
+      "name_zh": "葡萄牙外交部",
+      "name_local": "Ministério dos Negócios Estrangeiros",
+      "name_en": "Ministry of Foreign Affairs",
+      "kind": "ministry",
+      "language": "pt",
+      "homepage": "https://portaldiplomatico.mne.gov.pt/",
+      "news_url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa",
+      "source_ids": [
+        "pt_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "Production HttpClient returned HTTP 200 with enforced robots/verified TLS; full response and LF-normalized saved fixture replay agree on 6 dated items. Homepage metadata explicitly identifies the official Ministry of Foreign Affairs website. Provenance: tests/fixtures/ministry_pt_foreign_affairs.provenance.json",
+      "evidence_urls": [
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/negocios-estrangeiros",
+        "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2025-926588602",
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/negocios-estrangeiros/noticias",
+        "https://portaldiplomatico.mne.gov.pt/",
+        "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa"
+      ]
+    },
+    {
+      "canonical_id": "pt_finance",
+      "name_zh": "葡萄牙財政部",
+      "name_local": "Ministério das Finanças",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "pt",
+      "homepage": "https://portugal.gov.pt/pt/gc25/area-de-governo/financas/ministro",
+      "news_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/financas/noticias",
+      "source_ids": [
+        "pt_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 official public frontend scope and anonymous content query verified: 87 dated ministry-attributable items; complete bounded pagination, 8 genuine fixture items. Manual only, no authenticated access. Evidence: tests/fixtures/ministry_pt_finance.provenance.json",
+      "evidence_urls": [
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/financas",
+        "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2025-926588602",
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/financas/noticias",
+        "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+      ]
+    },
+    {
+      "canonical_id": "pt_economy_cohesion",
+      "name_zh": "葡萄牙經濟與領土凝聚部",
+      "name_local": "Ministério da Economia e da Coesão Territorial",
+      "name_en": "Ministry of Economy and Territorial Cohesion",
+      "kind": "ministry",
+      "language": "pt",
+      "homepage": "https://portugal.gov.pt/pt/gc25/area-de-governo/economia-e-coesao-territorial/ministro",
+      "news_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/economia-e-coesao-territorial/noticias",
+      "source_ids": [
+        "pt_economy_cohesion"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 official public frontend scope and anonymous content query verified: 109 dated ministry-attributable items; complete bounded pagination, 8 genuine fixture items. Manual only, no authenticated access. Evidence: tests/fixtures/ministry_pt_economy_cohesion.provenance.json",
+      "evidence_urls": [
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/economia-e-coesao-territorial",
+        "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2025-926588602",
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/economia-e-coesao-territorial/noticias",
+        "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+      ]
+    },
+    {
+      "canonical_id": "pt_defence",
+      "name_zh": "葡萄牙國防部",
+      "name_local": "Ministério da Defesa Nacional",
+      "name_en": "Ministry of National Defence",
+      "kind": "ministry",
+      "language": "pt",
+      "homepage": "https://portugal.gov.pt/pt/gc25/area-de-governo/defesa-nacional/ministro",
+      "news_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/defesa-nacional/noticias",
+      "source_ids": [
+        "pt_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 official public frontend scope and anonymous content query verified: 34 dated ministry-attributable items; complete bounded pagination, 8 genuine fixture items. Manual only, no authenticated access. Evidence: tests/fixtures/ministry_pt_defence.provenance.json",
+      "evidence_urls": [
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/defesa-nacional",
+        "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2025-926588602",
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/defesa-nacional/noticias",
+        "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+      ]
+    },
+    {
+      "canonical_id": "pt_infrastructure_housing",
+      "name_zh": "葡萄牙基礎建設與住宅部",
+      "name_local": "Ministério das Infraestruturas e Habitação",
+      "name_en": "Ministry of Infrastructure and Housing",
+      "kind": "ministry",
+      "language": "pt",
+      "homepage": "https://portugal.gov.pt/pt/gc25/area-de-governo/infraestruturas-e-habitacao/ministro",
+      "news_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/infraestruturas-e-habitacao/noticias",
+      "source_ids": [
+        "pt_infrastructure_housing"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 official public frontend scope and anonymous content query verified: 92 dated ministry-attributable items; complete bounded pagination, 8 genuine fixture items. Manual only, no authenticated access. Evidence: tests/fixtures/ministry_pt_infrastructure_housing.provenance.json",
+      "evidence_urls": [
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/infraestruturas-e-habitacao",
+        "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2025-926588602",
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/infraestruturas-e-habitacao/noticias",
+        "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+      ]
+    },
+    {
+      "canonical_id": "pt_justice",
+      "name_zh": "葡萄牙司法部",
+      "name_local": "Ministério da Justiça",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "pt",
+      "homepage": "https://justica.gov.pt/",
+      "news_url": "https://justica.gov.pt/API/JusticaGovPt.News/PublishingNews/Feed?myPortalId=0&myTabId=380&myModuleId=1649&organismo=",
+      "source_ids": [
+        "pt_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "Production HttpClient returned HTTP 200 with enforced robots/verified TLS; full response and LF-normalized saved fixture replay agree on 4 dated items. Portal footer identifies Secretaria-Geral do Ministério da Justiça; news page directly advertises this public RSS endpoint. It covers the ministry and justice organisations, not other ministries. Provenance: tests/fixtures/ministry_pt_justice.provenance.json",
+      "evidence_urls": [
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/justica",
+        "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2025-926588602",
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/justica/noticias",
+        "https://justica.gov.pt/",
+        "https://justica.gov.pt/API/JusticaGovPt.News/PublishingNews/Feed?myPortalId=0&myTabId=380&myModuleId=1649&organismo="
+      ]
+    },
+    {
+      "canonical_id": "pt_interior",
+      "name_zh": "葡萄牙內政部",
+      "name_local": "Ministério da Administração Interna",
+      "name_en": "Ministry of Internal Administration",
+      "kind": "ministry",
+      "language": "pt",
+      "homepage": "https://portugal.gov.pt/pt/gc25/area-de-governo/administracao-interna/ministro",
+      "news_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/administracao-interna/noticias",
+      "source_ids": [
+        "pt_interior"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 official public frontend scope and anonymous content query verified: 64 dated ministry-attributable items; complete bounded pagination, 8 genuine fixture items. Manual only, no authenticated access. Evidence: tests/fixtures/ministry_pt_interior.provenance.json",
+      "evidence_urls": [
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/administracao-interna",
+        "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2025-926588602",
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/administracao-interna/noticias",
+        "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+      ]
+    },
+    {
+      "canonical_id": "pt_education_science",
+      "name_zh": "葡萄牙教育科學與創新部",
+      "name_local": "Ministério da Educação, Ciência e Inovação",
+      "name_en": "Ministry of Education, Science and Innovation",
+      "kind": "ministry",
+      "language": "pt",
+      "homepage": "https://portugal.gov.pt/pt/gc25/area-de-governo/educacao-ciencia-e-inovacao/ministro",
+      "news_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/educacao-ciencia-e-inovacao/noticias",
+      "source_ids": [
+        "pt_education_science"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 official public frontend scope and anonymous content query verified: 74 dated ministry-attributable items; complete bounded pagination, 8 genuine fixture items. Manual only, no authenticated access. Evidence: tests/fixtures/ministry_pt_education_science.provenance.json",
+      "evidence_urls": [
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/educacao-ciencia-e-inovacao",
+        "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2025-926588602",
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/educacao-ciencia-e-inovacao/noticias",
+        "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+      ]
+    },
+    {
+      "canonical_id": "pt_health",
+      "name_zh": "葡萄牙衛生部",
+      "name_local": "Ministério da Saúde",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "pt",
+      "homepage": "https://portugal.gov.pt/pt/gc25/area-de-governo/saude/ministro",
+      "news_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/saude/noticias",
+      "source_ids": [
+        "pt_health"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 official public frontend scope and anonymous content query verified: 79 dated ministry-attributable items; complete bounded pagination, 8 genuine fixture items. Manual only, no authenticated access. Evidence: tests/fixtures/ministry_pt_health.provenance.json",
+      "evidence_urls": [
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/saude",
+        "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2025-926588602",
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/saude/noticias",
+        "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+      ]
+    },
+    {
+      "canonical_id": "pt_labour_social",
+      "name_zh": "葡萄牙勞動團結與社會保障部",
+      "name_local": "Ministério do Trabalho, Solidariedade e Segurança Social",
+      "name_en": "Ministry of Labour, Solidarity and Social Security",
+      "kind": "ministry",
+      "language": "pt",
+      "homepage": "https://portugal.gov.pt/pt/gc25/area-de-governo/trabalho-solidariedade-e-seguranca-social/ministro",
+      "news_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/trabalho-solidariedade-e-seguranca-social/noticias",
+      "source_ids": [
+        "pt_labour_social"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 official public frontend scope and anonymous content query verified: 52 dated ministry-attributable items; complete bounded pagination, 8 genuine fixture items. Manual only, no authenticated access. Evidence: tests/fixtures/ministry_pt_labour_social.provenance.json",
+      "evidence_urls": [
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/trabalho-solidariedade-e-seguranca-social",
+        "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2025-926588602",
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/trabalho-solidariedade-e-seguranca-social/noticias",
+        "https://www.sg.mtsss.gov.pt/inicio",
+        "https://www.sg.mtsss.gov.pt/noticias",
+        "https://www.sg.mtsss.gov.pt/quem-somos-missao-visao-e-valores",
+        "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+      ]
+    },
+    {
+      "canonical_id": "pt_environment_energy",
+      "name_zh": "葡萄牙環境與能源部",
+      "name_local": "Ministério do Ambiente e Energia",
+      "name_en": "Ministry of Environment and Energy",
+      "kind": "ministry",
+      "language": "pt",
+      "homepage": "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia/ministro",
+      "news_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia/noticias",
+      "source_ids": [
+        "pt_environment_energy"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 official public frontend scope and anonymous content query verified: 128 dated ministry-attributable items; complete bounded pagination, 8 genuine fixture items. Manual only, no authenticated access. Evidence: tests/fixtures/ministry_pt_environment_energy.provenance.json",
+      "evidence_urls": [
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia",
+        "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2025-926588602",
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia/noticias",
+        "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+      ]
+    },
+    {
+      "canonical_id": "pt_culture_youth_sport",
+      "name_zh": "葡萄牙文化青年與體育部",
+      "name_local": "Ministério da Cultura, Juventude e Desporto",
+      "name_en": "Ministry of Culture, Youth and Sport",
+      "kind": "ministry",
+      "language": "pt",
+      "homepage": "https://portugal.gov.pt/pt/gc25/area-de-governo/cultura-juventude-e-desporto/ministro",
+      "news_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/cultura-juventude-e-desporto/noticias",
+      "source_ids": [
+        "pt_culture_youth_sport"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 official public frontend scope and anonymous content query verified: 63 dated ministry-attributable items; complete bounded pagination, 8 genuine fixture items. Manual only, no authenticated access. Evidence: tests/fixtures/ministry_pt_culture_youth_sport.provenance.json",
+      "evidence_urls": [
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/cultura-juventude-e-desporto",
+        "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2025-926588602",
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/cultura-juventude-e-desporto/noticias",
+        "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+      ]
+    },
+    {
+      "canonical_id": "pt_agriculture_sea",
+      "name_zh": "葡萄牙農業與海洋部",
+      "name_local": "Ministério da Agricultura e Mar",
+      "name_en": "Ministry of Agriculture and Sea",
+      "kind": "ministry",
+      "language": "pt",
+      "homepage": "https://portugal.gov.pt/pt/gc25/area-de-governo/agricultura-e-mar/ministro",
+      "news_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/agricultura-e-mar/noticias",
+      "source_ids": [
+        "pt_agriculture_sea"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 official public frontend scope and anonymous content query verified: 79 dated ministry-attributable items; complete bounded pagination, 8 genuine fixture items. Manual only, no authenticated access. Evidence: tests/fixtures/ministry_pt_agriculture_sea.provenance.json",
+      "evidence_urls": [
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/agricultura-e-mar",
+        "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2025-926588602",
+        "https://portugal.gov.pt/pt/gc25/area-de-governo/agricultura-e-mar/noticias",
+        "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+      ]
+    },
+    {
+      "canonical_id": "pt_council_presidency",
+      "name_zh": "葡萄牙部長會議主席府（含總理辦公室）",
+      "name_local": "Presidência do Conselho de Ministros",
+      "name_en": "Presidency of the Council of Ministers (including Prime Minister's Office)",
+      "kind": "government_head_office",
+      "language": "pt",
+      "homepage": "https://portugal.gov.pt/pt/gc25",
+      "news_url": "https://portugal.gov.pt/pt/gc25/primeiro-ministro/noticias",
+      "source_ids": [
+        "pt_council_presidency"
+      ],
+      "status": "manual_verified",
+      "reason": "2026-10-02 official public frontend scope and anonymous content query verified: 322 dated ministry-attributable items; complete bounded pagination, 8 genuine fixture items. Manual only, no authenticated access. Evidence: tests/fixtures/ministry_pt_council_presidency.provenance.json",
+      "evidence_urls": [
+        "https://diariodarepublica.pt/dr/legislacao-consolidada/decreto-lei/2025-926588602",
+        "https://portugal.gov.pt/pt/gc25/governo/composicao",
+        "https://portugal.gov.pt/pt/gc25/primeiro-ministro/noticias",
+        "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+      ]
+    }
+  ]
+}

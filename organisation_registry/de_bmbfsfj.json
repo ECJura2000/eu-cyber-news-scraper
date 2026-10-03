@@ -1,0 +1,97 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-10-02.1",
+  "canonical_id": "de_bmbfsfj",
+  "names": {
+    "zh": "德國教育、家庭、高齡、婦女與青年部",
+    "en": "Federal Ministry for Education, Family Affairs, Senior Citizens, Women and Youth",
+    "short": "de_bmbfsfj",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "de_bmbfsfj",
+      "country": "DE",
+      "name_zh": "德國教育、家庭、高齡、婦女與青年部",
+      "name": "Bundesministerium für Bildung, Familie, Senioren, Frauen und Jugend",
+      "institution_type": "ministry",
+      "language": "de",
+      "homepage": "https://www.bmbfsfj.bund.de/",
+      "listing_url": "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen",
+      "feed_urls": [],
+      "allow_domains": [
+        "www.bmbfsfj.bund.de"
+      ],
+      "critical": false,
+      "detail_pages": 0,
+      "timezone": "Europe/Berlin",
+      "card_selectors": [
+        ".teaser"
+      ],
+      "date_selectors": [
+        "time",
+        "[class*=date i]",
+        "[class*=datum i]"
+      ],
+      "schedule_enabled": false
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "數位身份",
+      "著作權",
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱",
+      "競爭規範面向（平台責任的市場結構面）",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-10-02",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-10-02",
+    "evidence_urls": [
+      "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien",
+      "https://www.bundesregierung.de/breg-de/bundesregierung/bundesministerien/bundesministerium-bildung-familie-senioren-frauen-und-jugend",
+      "https://www.bmbfsfj.bund.de/",
+      "https://www.bmbfsfj.bund.de/bmbfsfj/aktuelles/pressemitteilungen"
+    ],
+    "fixture_path": "tests/fixtures/ministry_de_bmbfsfj.html",
+    "provenance_path": "tests/fixtures/ministry_de_bmbfsfj.provenance.json",
+    "last_smoke": {
+      "tested_on": "2026-10-02",
+      "source_id": "de_bmbfsfj",
+      "success": true,
+      "raw_count": 10,
+      "dated_count": 10,
+      "http_statuses": [
+        "200"
+      ],
+      "robots_enforced": true,
+      "tls_verified": true
+    },
+    "schedule_batch": "eu27_central_ministries"
+  }
+}

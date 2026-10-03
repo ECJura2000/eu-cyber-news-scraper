@@ -1,0 +1,85 @@
+{
+  "source_id": "dk_social",
+  "url": "https://www.sm.dk/handlers/DynamicRss.ashx?id=d66aadb0-8d96-4027-9a8f-7a3176ad49f9",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:37.587889+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "5153db0cecde11c924a158130c110c61e35b4ce7190ed5bdd6df95173f81f590",
+  "response_sha256": "c45fa5bb07bb94df573c973b5fb63c3fcd37e6578affc3461316a444383bbe91",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Endelig model for grundfinansiering kræver mere involvering af civilsamfundet",
+      "url": "https://www.sm.dk/nyheder/nyhedsarkiv/2026/okt/endelig-model-for-grundfinansiering-kraever-mere-involvering-af-civilsamfundet",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Socialminister Monika Rubin: Psykisk vold bør have et langt større fokus",
+      "url": "https://www.sm.dk/nyheder/nyhedsarkiv/2026/sep/socialminister-monika-rubin-psykisk-vold-boer-have-et-langt-stoerre-fokus",
+      "published_date_local": "2026-09-28",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Socialministeren går ny vej for arbejdet med handicapområdet",
+      "url": "https://www.sm.dk/nyheder/nyhedsarkiv/2026/sep/socialministeren-gaar-ny-vej-for-arbejdet-med-handicapomraadet-",
+      "published_date_local": "2026-09-22",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Socialminister Monika Rubin: særdeles kritisk, at regler om ægteskaber med mindreårige er blevet brudt",
+      "url": "https://www.sm.dk/nyheder/nyhedsarkiv/2026/sep/socialminister-monika-rubin-saerdeles-kritisk-at-regler-om-aegteskaber-med-mindreaarige-er-blevet-brudt",
+      "published_date_local": "2026-09-22",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Stor interesse for lånepulje: 14 kommuner låner penge til flere botilbudspladser",
+      "url": "https://www.sm.dk/nyheder/nyhedsarkiv/2026/sep/stor-interesse-for-laanepulje-14-kommuner-laaner-penge-til-flere-botilbudspladser",
+      "published_date_local": "2026-09-17",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Danmark tilbyder hjælp til adopterede til Danmark fra Sydkorea, Indien, Vietnam og Libanon",
+      "url": "https://www.sm.dk/nyheder/nyhedsarkiv/2026/sep/danmark-tilbyder-hjaelp-til-adopterede-til-danmark-fra-sydkorea-indien-vietnam-og-libanon-",
+      "published_date_local": "2026-09-04",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Regeringen vil styrke indsatsen for LGBT+-personer i hjemløshed",
+      "url": "https://www.sm.dk/nyheder/nyhedsarkiv/2026/sep/nyhedsside",
+      "published_date_local": "2026-09-02",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Socialminister: Ny hjemløsetælling er nedslående",
+      "url": "https://www.sm.dk/nyheder/nyhedsarkiv/2026/aug/socialminister-ny-hjemloesetaelling-er-nedslaaende",
+      "published_date_local": "2026-08-31",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 50,
+  "live_dated_count": 50,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "dk_social",
+    "country": "DK",
+    "name_zh": "丹麥社會部",
+    "name": "Socialministeriet",
+    "institution_type": "ministry",
+    "language": "da",
+    "homepage": "https://www.sm.dk/",
+    "listing_url": "https://www.sm.dk/handlers/DynamicRss.ashx?id=d66aadb0-8d96-4027-9a8f-7a3176ad49f9",
+    "feed_urls": [
+      "https://www.sm.dk/handlers/DynamicRss.ashx?id=d66aadb0-8d96-4027-9a8f-7a3176ad49f9"
+    ],
+    "allow_domains": [
+      "www.sm.dk"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Copenhagen",
+    "schedule_enabled": false
+  }
+}

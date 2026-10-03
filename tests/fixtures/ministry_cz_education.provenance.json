@@ -1,0 +1,93 @@
+{
+  "source_id": "cz_education",
+  "url": "https://msmt.gov.cz/aktuality",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:31:25.990274+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "fd6d134dc4ee7aeb6c9cb5f92873a95031e345395e615a2aed811e398f8955b2",
+  "response_sha256": "be62248efb34e24effa8214e1200b6fde8898f8c543902382f53c95ae9c796fd",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "MŠMT podpoří sportující vysokoškoláky prostřednictvím výzvy UNIS 2027",
+      "url": "https://msmt.gov.cz/aktuality/msmt-podpori-sportujici-vysokoskolaky-prostrednictvim-vyzvy-unis-2027",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Den otevřených dveří na MŠMT",
+      "url": "https://msmt.gov.cz/aktuality/den-otevrenych-dveri-na-msmt",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Po čtyřech letech znovu změříme tělesnou zdatnost žáků",
+      "url": "https://msmt.gov.cz/aktuality/po-ctyrech-letech-znovu-zmerime-telesnou-zdatnost-zaku",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "České školství je v řadě oblastí nad průměrem OECD, ukazují nová data",
+      "url": "https://msmt.gov.cz/aktuality/ceske-skolstvi-je-v-rade-oblasti-nad-prumerem-oecd-ukazuji-nova-data",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Výzva Aktivní škola zná své vítěze",
+      "url": "https://msmt.gov.cz/aktuality/vyzva-aktivni-skola-zna-sve-viteze",
+      "published_date_local": "2026-09-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Česko-švýcarská spolupráce a špičkový výzkum: zahajovací konference programu výzkumných infrastruktur",
+      "url": "https://msmt.gov.cz/aktuality/cesko-svycarska-spoluprace-a-spickovy-vyzkum-zahajovaci-konference-programu-vyzkumnych-infrastruktur",
+      "published_date_local": "2026-09-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Co přináší dobrovolnictví samotným dobrovolníkům?",
+      "url": "https://msmt.gov.cz/aktuality/co-prinasi-dobrovolnictvi-samotnym-dobrovolnikum",
+      "published_date_local": "2026-09-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "V Hradci Králové byl slavnostně dokončen kampus MEPHARED 2",
+      "url": "https://msmt.gov.cz/aktuality/v-hradci-kralove-byl-slavnostne-dokoncen-kampus-mephared-2",
+      "published_date_local": "2026-09-23",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 12,
+  "live_dated_count": 12,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "cz_education",
+    "country": "CZ",
+    "name_zh": "捷克教育、青年與體育部",
+    "name": "Ministerstvo školství, mládeže a tělovýchovy",
+    "institution_type": "ministry",
+    "language": "cs",
+    "homepage": "https://msmt.gov.cz/",
+    "listing_url": "https://msmt.gov.cz/aktuality",
+    "feed_urls": [],
+    "allow_domains": [
+      "msmt.gov.cz"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Prague",
+    "card_selectors": [
+      "a.group[href^=\"/aktuality/\"]"
+    ],
+    "title_selectors": [
+      "h2",
+      "h3"
+    ],
+    "date_selectors": [
+      "div.items-center.text-neutral-700 span"
+    ],
+    "schedule_enabled": false
+  }
+}

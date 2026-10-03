@@ -1,0 +1,31 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Environment and Energy Greece"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_the_Environment_and_Energy_(Greece)",
+      "title": "Ministry of the Environment and Energy (Greece) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:18.503306+00:00",
+      "extracted_sha256": "32511d04dbe6697efa5be99b1cf009726a3cf217c8b7c9b07340d03de70a578c",
+      "excerpt": "The**Ministry of the Environment and Energy**([Greek](https://en.wikipedia.org/wiki/Greek_language):Υπουργείο Περιβάλλοντος και Ενέργειας) is a[government department](https://en.wikipedia.org/wiki/Ministry_(government_department))of[Greece](https://en.wikipedia.org/wiki/Greece)responsible for[environmental](https://en.wikipedia.org/wiki/Environmental_policy)and[energy policy](https://en.wikipedia.org/wiki/Energy_policy). It was created on 7 October 2009 as the**Ministry of the Environment, Energy and Climate Change**to succeed the[Ministry for the Environment, Physical Planning and Public Works](https://en.wikipedia.org/wiki/Ministry_for_the_Environment,_Physical_Planning_and_Public_Works). The incumbent minister is[Theodoros Skylakakis](https://en.wikipedia.org/wiki/Theodoros_Skylakakis)of[New Democracy](https://en.wikipedia.org/wiki/New_Democracy_(Greece)).\n\n## List of ministers[[edit](https://en.wikipedia.org/w/index.php?title=Ministry_of_the_Environment_and_Energy_(Greece)&action=e"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "https://ypen.gov.gr/",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_the_Environment_and_Energy_(Greece)",
+      "link_text": "ypen.gov.gr",
+      "relationship_excerpt": "ki/Ministry_of_the_Environment_and_Energy_(Greece)#cite_note-4)Website[ypen.gov.gr](https://ypen.gov.gr/)This article is part of[a series](https://en.wikipedia.org/wiki/Catego"
+    },
+    {
+      "url": "https://ypen.gov.gr",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_the_Environment_and_Energy_(Greece)",
+      "link_text": "Official website",
+      "relationship_excerpt": "stry_of_the_Environment_and_Energy_(Greece)&action=edit&section=6)]\n- [Official website](https://ypen.gov.gr)[](https://www.wikidata.org/wiki/Q3557152#P856)(in Greek)\n\n[Portals](h"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/gr_environment_energy.wikipedia.json"
+}

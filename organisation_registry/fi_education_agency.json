@@ -1,0 +1,163 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-10-03.fi.1",
+  "canonical_id": "fi_education_agency",
+  "names": {
+    "zh": "芬蘭國家教育署",
+    "en": "Finnish National Agency for Education (Opetushallitus)",
+    "short": "fi_education_agency",
+    "publisher_aliases": [
+      "Opetushallitus",
+      "Utbildningsstyrelsen",
+      "EDUFI"
+    ]
+  },
+  "sources": [
+    {
+      "id": "fi_education_agency",
+      "country": "FI",
+      "name_zh": "芬蘭國家教育署",
+      "name": "Finnish National Agency for Education (Opetushallitus)",
+      "institution_type": "national education agency",
+      "language": "fi",
+      "homepage": "https://www.oph.fi/",
+      "listing_url": "https://www.oph.fi/fi/tiedotteet",
+      "feed_urls": [],
+      "allow_domains": [
+        "oph.fi"
+      ],
+      "include_patterns": [
+        "/fi/uutiset/20\\d{2}/[^/]+$"
+      ],
+      "exclude_patterns": [],
+      "critical": false,
+      "detail_pages": 0,
+      "yearly_listing_url": "",
+      "pagination_url": "",
+      "max_pages": 1,
+      "observation_runs": 3,
+      "freshness_days": 45,
+      "timezone": "Europe/Helsinki",
+      "card_selectors": [
+        "main .listing-item.node--type-news"
+      ],
+      "link_selectors": [
+        "h3.listing-title a.listing-title__link[href]"
+      ],
+      "title_selectors": [],
+      "date_selectors": [
+        ".listing-item-footer .node-post-date"
+      ],
+      "summary_selectors": [],
+      "parser_adapter": "fi_oph_listing",
+      "date_policy": "required",
+      "date_exception_reason": "",
+      "date_evidence_url": "",
+      "date_reviewed_on": "",
+      "date_review_due": "",
+      "tls_intermediate_bundle": "",
+      "paused_until": "",
+      "pause_reason": "",
+      "pause_evidence_url": "",
+      "min_listing_bytes": 0,
+      "user_agent": "",
+      "schedule_enabled": false,
+      "feed_archive_fallback": false,
+      "minimum_budget_seconds": 0
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "數位身份",
+      "著作權",
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱",
+      "競爭規範面向（平台責任的市場結構面）",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 45
+  },
+  "history": {
+    "effective_from": "2026-10-03",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-10-03",
+    "evidence_urls": [
+      "https://www.oph.fi/",
+      "https://www.oph.fi/fi/tiedotteet",
+      "https://www.oph.fi/robots.txt"
+    ],
+    "fixture_path": "tests/fixtures/finland_fi_education_agency.html",
+    "provenance_path": "tests/fixtures/finland_fi_education_agency.provenance.json",
+    "identity_provenance_path": "tests/fixtures/finland_official_identity.provenance.json",
+    "parser_replay": {
+      "raw_count": 20,
+      "dated_count": 20,
+      "publisher_count": 1,
+      "success": true
+    },
+    "scope": "Manual-only production translated CLI and artifact smoke passed on 2026-10-03. Original publication dates and publisher identity verified using official endpoints, saved fixture replay and live source collection. This is not a formal weekly run, scheduled-run acceptance or durable-state advancement; inventory exclusions, pauses and quality gates remain unchanged.",
+    "coverage_limitations": "Page one of the Finnish press release listing; all 20 visible press cards have original publication dates. This agency is not fi_education_culture, and does not fulfil excluded ministry inventory coverage.",
+    "collection_mode": "manual_only",
+    "production_smoke_observed_at": "2026-10-03T14:52:27.653225+00:00",
+    "last_smoke": {
+      "source_id": "fi_education_agency",
+      "source_name": "芬蘭國家教育署",
+      "country": "FI",
+      "critical": false,
+      "success": true,
+      "fetched_via": "html-listing",
+      "raw_count": 20,
+      "relevant_count": 9,
+      "dated_count": 20,
+      "in_range_count": 9,
+      "newest_published_at": "2026-09-10T21:00:00+00:00",
+      "duration_seconds": 0.882,
+      "fetch_status": "ok",
+      "health_status": "healthy",
+      "parse_status": "healthy",
+      "freshness_status": "fresh",
+      "invalid_date_count": 0,
+      "unexplained_future_date_count": 0,
+      "http_statuses": [
+        "200",
+        "200"
+      ],
+      "run_id": "b4e18cbf3e144eff85ed0e0bd098e13b"
+    },
+    "run_quality": {
+      "run_id": "b4e18cbf3e144eff85ed0e0bd098e13b",
+      "quality_gate_passed": true,
+      "healthy_sources": 2,
+      "selected_articles": 35,
+      "translations_total": 35,
+      "translations_succeeded": 35,
+      "high_date_confidence_rate": 1.0,
+      "date_conflicts": 0,
+      "unexplained_future_dates": 0,
+      "artifact_bundle_complete": true,
+      "formal_weekly_verified": false,
+      "state_advancement_verified": false
+    }
+  }
+}

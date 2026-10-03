@@ -1,0 +1,91 @@
+{
+  "source_id": "cz_government",
+  "url": "https://vlada.gov.cz/scripts/detail.php?pgid=1305",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:13.284845+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "2d47cb53dec6857fa581239fdb959e2bd97a24d6ed1f9402b0a603caa8cc2355",
+  "response_sha256": "072f60443c0a84745bdf67cd1b0fe5f30fb1082645731e54f53da98e779cded1",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Premiér Andrej Babiš jednal s rumunským prezidentem Nicușorem Danem o spolupráci i budoucnosti Evropské unie",
+      "url": "https://vlada.gov.cz/cz/media-centrum/aktualne/premier-andrej-babis-jednal-s-rumunskym-prezidentem-nicusorem-danem-o-spolupraci-i-budoucnosti-evropske-unie-229109/",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Premiér Babiš po setkání Giorgiou Meloniovou: ČR a Itálie posílí spolupráci ve strategických oblastech",
+      "url": "https://vlada.gov.cz/cz/media-centrum/aktualne/premier-babis-po-setkani-giorgiou-meloniovou-cr-a-italie-posili-spolupraci-ve-strategickych-oblastech--229057/",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Premiér Babiš v Karlových Varech zahájil stavbu společného operačního střediska integrovaného záchranného systému",
+      "url": "https://vlada.gov.cz/cz/media-centrum/aktualne/premier-babis-v-karlovych-varech-zahajil-stavbu-spolecneho-operacniho-strediska-integrovaneho-zachranneho-systemu-229005/",
+      "published_date_local": "2026-09-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Vláda Andreje Babiše projednala návrh státního rozpočtu a rozhodla se obnovit regulaci cen pohonných hmot",
+      "url": "https://vlada.gov.cz/cz/media-centrum/aktualne/vlada-andreje-babise-projednala-navrh-statniho-rozpoctu-a-rozhodla-se-obnovit-regulaci-cen-pohonnych-hmot-228948/",
+      "published_date_local": "2026-09-21",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Premiér Babiš na Dnech NATO: Posilování protivzdušné obrany je prioritou vlády",
+      "url": "https://vlada.gov.cz/cz/media-centrum/aktualne/premier-babis-na-dnech-nato-posilovani-protivzdusne-obrany-je-prioritou-vlady-228915/",
+      "published_date_local": "2026-09-19",
+      "date_confidence": "high"
+    },
+    {
+      "title": "ÚZSVM získal stavební povolení k rekonstrukci bývalého Klárova ústavu v Praze",
+      "url": "https://vlada.gov.cz/cz/media-centrum/aktualne/uzsvm-ziskal-stavebni-povoleni-k-rekonstrukci-byvaleho-klarova-ustavu-v-praze-228807/",
+      "published_date_local": "2026-09-15",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Premiér Andrej Babiš otevřel nové Centrum kardiovaskulární a transplantační chirurgie v Brně",
+      "url": "https://vlada.gov.cz/cz/media-centrum/aktualne/premier-andrej-babis-otevrel-nove-centrum-kardiovaskularni-a-transplantacni-chirurgie-v-brne-228825/",
+      "published_date_local": "2026-09-15",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Vláda Andreje Babiše navrhuje zásadně zpřísnit pravidla pro prodej kratomu",
+      "url": "https://vlada.gov.cz/cz/media-centrum/aktualne/vlada-andreje-babise-navrhuje-zasadne-zprisnit-pravidla-pro-prodej-kratomu-228804/",
+      "published_date_local": "2026-09-14",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 10,
+  "live_dated_count": 10,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "cz_government",
+    "country": "CZ",
+    "name_zh": "捷克政府辦公室",
+    "name": "Úřad vlády České republiky",
+    "institution_type": "ministry",
+    "language": "cs",
+    "homepage": "https://vlada.gov.cz/",
+    "listing_url": "https://vlada.gov.cz/scripts/detail.php?pgid=1305",
+    "feed_urls": [],
+    "allow_domains": [
+      "vlada.gov.cz"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Prague",
+    "card_selectors": [
+      ".post"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

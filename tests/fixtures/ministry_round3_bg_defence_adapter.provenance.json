@@ -1,0 +1,53 @@
+{
+  "source_id": "bg_defence",
+  "url": "https://www.mod.bg/news",
+  "final_url": "https://www.mod.bg/news",
+  "observed_at": "2026-10-02T08:25:40.201787+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "6354b7045165ca7c855db8475befe697fd3977baaef01e2c07de98fe7b44f1a7",
+  "response_bytes": 20474,
+  "fixture_sha256": "5995688fe8a3a4581fc245144ce0223c70b4e9d1a103f5900665db6678eae7a5",
+  "fixture_bytes": 3740,
+  "fixture_path": "tests/fixtures/ministry_round3_bg_defence_adapter.html",
+  "transform": "html.parser serialization retaining four real news cards and original h4/p hierarchy, attributes, titles, routes and dates",
+  "verification_status": "adapter_proposal_not_a_verified_source",
+  "production_parsed_count": 0,
+  "production_dated_count": 0,
+  "expected_after_adapter": [
+    {
+      "title": "Професията „военнослужещ“ и висшето военно образование бяха акцент на събитията в парк „Артилерийски“ в Стара Загора",
+      "url": "https://www.mod.bg/news9611",
+      "raw_date": "01/10/2026 16:10",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high",
+      "date_basis": "Explicit date displayed inside original onclick news card; adapter unimplemented"
+    },
+    {
+      "title": "Министър Димитър Стоянов проведе разговор с министъра на отбраната на Кралство Саудитска Арабия",
+      "url": "https://www.mod.bg/news9604",
+      "raw_date": "30/09/2026 13:02",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high",
+      "date_basis": "Explicit date displayed inside original onclick news card; adapter unimplemented"
+    },
+    {
+      "title": "Приключи прочистването на района около фирма „ЕМКО“ след инцидента на 11 септември",
+      "url": "https://www.mod.bg/news9603",
+      "raw_date": "29/09/2026 15:36",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high",
+      "date_basis": "Explicit date displayed inside original onclick news card; adapter unimplemented"
+    },
+    {
+      "title": "България подкрепя по-силна роля на Европейската агенция по отбрана в изграждането на отбранителния капацитет на ЕС",
+      "url": "https://www.mod.bg/news9601",
+      "raw_date": "28/09/2026 18:19",
+      "published_date_local": "2026-09-28",
+      "date_confidence": "high",
+      "date_basis": "Explicit date displayed inside original onclick news card; adapter unimplemented"
+    }
+  ],
+  "next_action": "Official news cards expose article routes only in onclick location.href and dates in plain p; existing parse_listing returns zero. A narrowly scoped onclick-card adapter is needed; see genuine fixture and proposal. Do not fabricate anchors."
+}

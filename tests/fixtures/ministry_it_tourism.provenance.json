@@ -1,0 +1,139 @@
+{
+  "source_id": "it_tourism",
+  "url": "https://www.ministeroturismo.gov.it/feed/",
+  "final_url": "https://www.ministeroturismo.gov.it/feed/",
+  "observed_at": "2026-10-02T00:41:41.446487+00:00",
+  "http_status": 200,
+  "content_type": "application/rss+xml; charset=UTF-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "65e6655d59c498ff83ac7f82b8d312e6d6d62da25ab1d633355b05d786c57522",
+  "response_bytes": 21825,
+  "fixture_sha256": "5186b0358570ff4e93ad0fad46de9e502f9cd7a5fbed9c7d923a8e890601f6f4",
+  "fixture_bytes": 13046,
+  "transform": "XML parse and serialization retaining first six genuine feed entries; no title/link/date edits",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "Turismo, riunito il Gruppo di lavoro Italia-India in vista del 2027 Anno della Cultura e del Turismo",
+      "url": "https://www.ministeroturismo.gov.it/turismo-riunito-il-gruppo-di-lavoro-italia-india-in-vista-del-2027-anno-della-cultura-e-del-turismo/",
+      "published_date_local": "2026-09-30"
+    },
+    {
+      "title": "Oggi si celebra la giornata mondiale del turismo – TG5",
+      "url": "https://www.ministeroturismo.gov.it/oggi-si-celebra-la-giornata-mondiale-del-turismo-tg5/",
+      "published_date_local": "2026-09-29"
+    },
+    {
+      "title": "Giornata mondiale del Turismo, in Italia vale fino al 18% del PIL",
+      "url": "https://www.ministeroturismo.gov.it/giornata-mondiale-del-turismo-in-italia-vale-fino-al-18-del-pil/",
+      "published_date_local": "2026-09-29"
+    },
+    {
+      "title": "Giornata del Turismo 2026 – Tg2 ore 13 27/09/2026",
+      "url": "https://www.ministeroturismo.gov.it/giornata-del-turismo-2026-tg2-ore-13-27-09-2026/",
+      "published_date_local": "2026-09-29"
+    },
+    {
+      "title": "Giornata del turismo Italia prima in Europa – TG1 – 27/9/2026",
+      "url": "https://www.ministeroturismo.gov.it/giornata-del-turismo-italia-prima-in-europa-tg1-27-9-2026/",
+      "published_date_local": "2026-09-29"
+    },
+    {
+      "title": "Giornata Turismo, dati MiTur sull’estate 2026 – RaiNews24 ore 09 27/09/2026",
+      "url": "https://www.ministeroturismo.gov.it/giornata-turismo-dati-mitur-sullestate-2026-rainews24-ore-09-27-09-2026/",
+      "published_date_local": "2026-09-29"
+    }
+  ],
+  "live_status": {
+    "source_id": "it_tourism",
+    "source_name": "義大利旅遊部",
+    "country": "IT",
+    "critical": false,
+    "success": true,
+    "fetched_via": "configured-feed",
+    "raw_count": 10,
+    "relevant_count": 10,
+    "duration_seconds": 1.1,
+    "newest_published_at": "2026-09-30T13:47:31+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 0,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 10,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 10,
+    "freshness_lag_days": 2.43,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 21825,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "it_tourism",
+    "country": "IT",
+    "name_zh": "義大利旅遊部",
+    "name": "Ministero del Turismo",
+    "institution_type": "central ministry",
+    "language": "it",
+    "homepage": "https://www.ministeroturismo.gov.it/",
+    "listing_url": "https://www.ministeroturismo.gov.it/feed/",
+    "feed_urls": [
+      "https://www.ministeroturismo.gov.it/feed/"
+    ],
+    "allow_domains": [
+      "www.ministeroturismo.gov.it"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Rome",
+    "card_selectors": [],
+    "link_selectors": [],
+    "title_selectors": [],
+    "date_selectors": [],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_it_tourism.xml",
+  "format": "rss"
+}

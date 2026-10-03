@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.pl/web/rolnictwo/wiadomosci",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:53:42.856865+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "41d87fe711c62f56e2ed7c6303ad27177100d49d14b916a26d63e5bbea24854f",
+  "sha256": "5f5c6a0b816391a1cadfdfa99b3125370b5082203b8ffa72b08774cd366e3d76",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "pl_agriculture",
+  "expected": [
+    {
+      "title": "Dopłaty dla rolników. Ministerstwo ponownie sprawdzi ceny nawozów po zgłoszonych zastrzeżeniach",
+      "url": "https://www.gov.pl/web/rolnictwo/doplaty-dla-rolnikow-ministerstwo-ponownie-sprawdzi-ceny-nawozow-po-zgloszonych-zastrzezeniach",
+      "published_date_local": "2026-10-01",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Kojce dla psów - trwają konsultacje nowych przepisów",
+      "url": "https://www.gov.pl/web/rolnictwo/kojce-dla-psow--trwaja-konsultacje-nowych-przepisow",
+      "published_date_local": "2026-10-01",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Zapraszamy dzieci i młodzież do udziału w konkursie „Nie marnuj żywności. Żywność to wartość!”",
+      "url": "https://www.gov.pl/web/rolnictwo/zapraszamy-dzieci-i-mlodziez-do-udzialu-w-konkursie-nie-marnuj-zywnosci-zywnosc-to-wartosc",
+      "published_date_local": "2026-10-01",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "KPO - inwestycje, które wzmocniły polskie rolnictwo",
+      "url": "https://www.gov.pl/web/rolnictwo/kpo--inwestycje-ktore-wzmocnily-polskie-rolnictwo",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    }
+  ]
+}

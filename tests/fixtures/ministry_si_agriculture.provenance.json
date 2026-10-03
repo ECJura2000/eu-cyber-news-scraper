@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=4453",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:48:55.660398+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "1bf4e38c88c0be27b63882e5183a83e780a1d5c85f1aeb527eae29657bf8019d",
+  "sha256": "39deb32ab615e045f196791043bb55fd50dfba93329d4eb1e8944093858baf84",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 88,
+  "dated_count": 88,
+  "fixture_count": 4,
+  "source_id": "si_agriculture",
+  "expected": [
+    {
+      "title": "Minister Cigler Kralj: »Prenos kmetij mora postati privlačen, pravičen in podprt s pravimi ukrepi.«",
+      "url": "https://www.gov.si/novice/2026-09-30-minister-cigler-kralj-prenos-kmetij-mora-postati-privlacen-pravicen-in-podprt-s-pravimi-ukrepi/",
+      "published_date_local": "2026-09-30",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Minister Cigler Kralj: »Naša prioriteta je ciljna in učinkovita pomoč kmetom«",
+      "url": "https://www.gov.si/novice/2026-09-29-minister-cigler-kralj-nasa-prioriteta-je-ciljna-in-ucinkovita-pomoc-kmetom/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Ljubljana gosti mednarodni kongres Aquaculture Europe 2026",
+      "url": "https://www.gov.si/novice/2026-09-29-ljubljana-gosti-mednarodni-kongres-aquaculture-europe-2026/",
+      "published_date_local": "2026-09-29",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Minister Cigler Kralj predstavil pobudo za usklajen in učinkovit odziv EU na sušo v kmetijstvu",
+      "url": "https://www.gov.si/novice/2026-09-28-minister-cigler-kralj-predstavil-pobudo-za-usklajen-in-ucinkovit-odziv-eu-na-suso-v-kmetijstvu/",
+      "published_date_local": "2026-09-28",
+      "date_source": "feed-published"
+    }
+  ]
+}

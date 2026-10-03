@@ -38,7 +38,7 @@ _SENSITIVE = re.compile(r"token|secret|password|passwd|api[-_]?key|authorization
 _CHALLENGE = re.compile(
     r"cf-chl-|/cdn-cgi/challenge-platform/|challenge-form|anubis_challenge|"
     r"<title[^>]*>\s*(?:just a moment|access denied|checking your browser|attention required|"
-    r"verify you are human|captcha)", re.I,
+    r"verify you are human|captcha)|<title[^>]*>\s*radware page\s*</title>", re.I,
 )
 
 
@@ -227,7 +227,7 @@ def _content_error(response: httpx.Response, kind: str, source: Source) -> str:
         return "challenge_page"
     if not body.strip():
         return "empty_response"
-    if kind == "feed":
+    if kind == "feed" or (kind == "listing" and source.listing_url in source.feed_urls):
         if "html" in content_type or re.search(r"<(?:!doctype\s+html|html)\b", sample, re.I):
             return "feed_received_html"
         # ElementTree never fetches external entities; reject all DTDs explicitly.

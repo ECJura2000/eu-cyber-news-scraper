@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.pl/web/premier/wydarzenia",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:53:45.205462+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "546f401e858b51f7d2ee3aebf9571197425e4a7a234c80e3bcbbff5b4b58b336",
+  "sha256": "78441abc569024b86c9f2130e0891d73b2cc9a4978fe2121e0269fd023c64009",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "pl_prime_minister",
+  "expected": [
+    {
+      "title": "Premier z apelem do Prezydenta o podpisanie korzystnych dla obywateli ustaw",
+      "url": "https://www.gov.pl/web/premier/premier-apeluje-do-prezydenta-o-podpisanie-korzystnych-dla-obywateli-ustaw",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Premier po spotkaniu z premierem Bułgarii: Europejskie serce bije w naszym regionie",
+      "url": "https://www.gov.pl/web/premier/premier-po-spotkaniu-z-premierem-bulgarii-europejskie-serce-bije-w-naszym-regionie",
+      "published_date_local": "2026-09-24",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "50 lat KOR. Wspólne działanie ponad podziałami zmienia historię",
+      "url": "https://www.gov.pl/web/premier/50-lat-kor-wspolne-dzialanie-ponad-podzialami-zmienia-historie",
+      "published_date_local": "2026-09-23",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Szybko i skutecznie naprawimy system ochrony zdrowia - rząd przyjął pakiet ustaw zdrowotnych",
+      "url": "https://www.gov.pl/web/premier/szybko-i-skutecznie-naprawimy-system-ochrony-zdrowia--rzad-przyjal-pakiet-ustaw-zdrowotnych",
+      "published_date_local": "2026-09-22",
+      "date_source": "source-selector"
+    }
+  ]
+}

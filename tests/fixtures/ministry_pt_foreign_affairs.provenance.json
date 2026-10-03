@@ -1,0 +1,93 @@
+{
+  "source_id": "pt_foreign_affairs",
+  "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:50:02.634125+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "11b6c8f6d1ef1dcc207a38cd6ee3bf5f9de4b5fedced913d0fad75eb84ef2b1c",
+  "sha256": "9da0c4ba105e75c442dd8e4face0b837b513256373a88a81ca17c74e9fe74e9f",
+  "fixture_count": 6,
+  "parsed_count": 6,
+  "dated_count": 6,
+  "live_parser_count": 6,
+  "expected": [
+    {
+      "title": "Nota de pesar",
+      "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa/nota-de-pesar-6",
+      "published_date_local": "2026-09-22",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "DECLARAÇÃO DOS MINISTROS DOS NEGÓCIOS ESTRANGEIROS DE FRANÇA, DO REINO UNIDO, DO CANADÁ, DA DINAMARCA, DE ESPANHA, DA FINLÂNDIA, DA IRLANDA, DA ISLÂNDIA, DA NORUEGA, DA POLÓNIA, DE PORTUGAL E DA SUÉCIA SOBRE A SOLUÇÃO DE DOIS ESTADOS",
+      "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa/declaracao-dos-ministros-dos-negocios-estrangeiros-de-franca-do-reino-unido-do-canada-da-dinamarca-de-espanha-da-finlandia-da-irlanda-da-islandia-da-noruega-da-polonia-de-portugal-e-da-suecia-sobre-a-solucao-de-dois-estados",
+      "published_date_local": "2026-09-08",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Apoio extraordinário de emergência às associações portuguesas de cariz social na Venezuela",
+      "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa/apoio-extraordinario-de-emergencia-as-associacoes-portuguesas-de-cariz-social-na-venezuela",
+      "published_date_local": "2026-08-13",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Nota de Pesar - antigo Cônsul Honorário de Portugal em Ribeirão Preto, João Caldas Fernandes",
+      "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa/nota-de-pesar-antigo-consul-honorario-de-portugal-em-ribeirao-preto-joao-caldas-fernandes",
+      "published_date_local": "2026-08-04",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Nota à Imprensa",
+      "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa/nota-a-imprensa-4",
+      "published_date_local": "2026-07-23",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "COMUNICADO - AJUDA HUMANITÁRIA PARA A VENEZUELA E RETRAÇÃO DA FORÇA CONJUNTA NACIONAL PARA APOIO À VENEZUELA",
+      "url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa/comunicado-ajuda-humanitaria-para-a-venezuela-e-retracao-da-forca-conjunta-nacional-para-apoio-a-venezuela",
+      "published_date_local": "2026-07-07",
+      "date_source": "source-selector"
+    }
+  ],
+  "expected_date_confidence": {
+    "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa/nota-de-pesar-6": "high",
+    "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa/declaracao-dos-ministros-dos-negocios-estrangeiros-de-franca-do-reino-unido-do-canada-da-dinamarca-de-espanha-da-finlandia-da-irlanda-da-islandia-da-noruega-da-polonia-de-portugal-e-da-suecia-sobre-a-solucao-de-dois-estados": "high",
+    "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa/apoio-extraordinario-de-emergencia-as-associacoes-portuguesas-de-cariz-social-na-venezuela": "high",
+    "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa/nota-de-pesar-antigo-consul-honorario-de-portugal-em-ribeirao-preto-joao-caldas-fernandes": "high",
+    "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa/nota-a-imprensa-4": "high",
+    "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa/comunicado-ajuda-humanitaria-para-a-venezuela-e-retracao-da-forca-conjunta-nacional-para-apoio-a-venezuela": "high"
+  },
+  "transform": "Complete first original cards/feed entries; LF normalized before saving; original response checksum immutable.",
+  "source": {
+    "id": "pt_foreign_affairs",
+    "country": "PT",
+    "name_zh": "葡萄牙外交部",
+    "name": "Ministério dos Negócios Estrangeiros",
+    "institution_type": "ministry",
+    "language": "pt",
+    "homepage": "https://portaldiplomatico.mne.gov.pt/",
+    "listing_url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa",
+    "feed_urls": [],
+    "allow_domains": [
+      "portaldiplomatico.mne.gov.pt"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Lisbon",
+    "card_selectors": [
+      "div.item:has(time)"
+    ],
+    "title_selectors": [
+      "h2"
+    ],
+    "date_selectors": [
+      "time"
+    ],
+    "schedule_enabled": false
+  },
+  "ownership_evidence": {
+    "url": "https://portaldiplomatico.mne.gov.pt/",
+    "description": "Homepage metadata explicitly identifies the official Ministry of Foreign Affairs website."
+  }
+}

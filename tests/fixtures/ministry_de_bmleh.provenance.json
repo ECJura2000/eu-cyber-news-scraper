@@ -1,0 +1,131 @@
+{
+  "source_id": "de_bmleh",
+  "url": "https://www.bmleh.de/DE/Home/home_node.html",
+  "final_url": "https://www.bmleh.de/DE/Home/home_node.html",
+  "observed_at": "2026-10-02T08:40:55.072226+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "35b6b5d57b2ed3c29d6ac3dae20b3092be038d783a762e0d09746a7482bdca00",
+  "response_bytes": 944027,
+  "fixture_sha256": "f01e132335b08a0848e28e1870ef664fc51976881b76d757b22ae88288099df1",
+  "fixture_bytes": 2891,
+  "transform": "BeautifulSoup extraction of up to six genuine source-scoped news containers; original attributes/text retained, script/style removed; original base element retained; no title/link/date edits",
+  "expected": [
+    {
+      "title": "Kabinett beschließt Aktionsplan Nachhaltigkeit",
+      "url": "https://www.bmleh.de/SharedDocs/Pressemitteilungen/DE/2026/088-aktionsplan-nachhaltigkeit.html",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high",
+      "date_source": "source-selector",
+      "date_conflict": false
+    },
+    {
+      "title": "29. Bundeswettbewerb \"Unser Dorf hat Zukunft\" startet",
+      "url": "https://www.bmleh.de/SharedDocs/Pressemitteilungen/DE/2026/087-dorfwettbewerb.html",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high",
+      "date_source": "source-selector",
+      "date_conflict": false
+    }
+  ],
+  "live_status": {
+    "source_id": "de_bmleh",
+    "source_name": "德國農業、糧食與家鄉部",
+    "country": "DE",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 2,
+    "relevant_count": 2,
+    "duration_seconds": 36.974,
+    "newest_published_at": "2026-09-30T00:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 2,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 2,
+    "freshness_lag_days": 3.0,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 943997,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "de_bmleh",
+    "country": "DE",
+    "name_zh": "德國農業、糧食與家鄉部",
+    "name": "Bundesministerium für Landwirtschaft, Ernährung und Heimat",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.bmleh.de/DE/Home/home_node.html",
+    "listing_url": "https://www.bmleh.de/DE/Home/home_node.html",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.bmleh.de"
+    ],
+    "include_patterns": [
+      "/SharedDocs/Pressemitteilungen/DE/"
+    ],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Berlin",
+    "card_selectors": [
+      "div.c-teaser.c-teaser--PressRelease"
+    ],
+    "link_selectors": [
+      "h3 a"
+    ],
+    "title_selectors": [
+      "h3 a"
+    ],
+    "date_selectors": [
+      "time"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_de_bmleh.html",
+  "response_sha256_verified_against_saved_bytes": true
+}

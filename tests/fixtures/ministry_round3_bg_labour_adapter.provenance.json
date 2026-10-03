@@ -1,0 +1,53 @@
+{
+  "source_id": "bg_labour",
+  "url": "https://www.mlsp.government.bg/novini",
+  "final_url": "https://www.mlsp.government.bg/novini",
+  "observed_at": "2026-10-02T08:28:06.747020+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "8967f270ceac89bdb90fbf59f092f3cbd65e2ac3236fa1db4b656b9a5fd23512",
+  "response_bytes": 79027,
+  "fixture_sha256": "ae6569df76f78808af780de53b0c83f19feb72e22dfdd41bea9e30c4897f6279",
+  "fixture_bytes": 6900,
+  "fixture_path": "tests/fixtures/ministry_round3_bg_labour_adapter.html",
+  "transform": "Bounded original HTML card serialization retaining original hierarchy/text/attributes",
+  "verification_status": "adapter_proposal_not_a_verified_source",
+  "production_parsed_count": 12,
+  "production_dated_count": 0,
+  "expected_after_adapter": [
+    {
+      "title": "Министър Ефремова: МТСП и ДАЗД ще изградим информационна система за сигналите за деца в риск",
+      "url": "https://www.mlsp.government.bg/ministr-efremova-mtsp-i-dazd-shche-izgradim-informatsionna-sistema-za-signalite-za-detsa-v-risk",
+      "raw_date": "Oct 02, 2026",
+      "published_date_local": "2026-10-02",
+      "date_confidence": "high",
+      "date_basis": "Actual English month source date; preserve language=bg while adding explicit en date fallback"
+    },
+    {
+      "title": "В Деня на възрастните хора министър Ефремова откри нов Дом за стари хора в с. Липница",
+      "url": "https://www.mlsp.government.bg/v-denya-na-vzrastnite-khora-ministr-efremova-otkri-nov-dom-za-stari-khora-v-s-lipnitsa",
+      "raw_date": "Oct 01, 2026",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high",
+      "date_basis": "Actual English month source date; preserve language=bg while adding explicit en date fallback"
+    },
+    {
+      "title": "Зам.-министър Клисурска: Когато говорим за дом за стари хора, не говорим за сградата, а за грижата, която те получават",
+      "url": "https://www.mlsp.government.bg/zam-ministr-klisurska-kogato-govorim-za-dom-za-stari-khora-ne-govorim-za-sgradata-a-za-grizhata-koyato-te-poluchavat",
+      "raw_date": "Oct 01, 2026",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high",
+      "date_basis": "Actual English month source date; preserve language=bg while adding explicit en date fallback"
+    },
+    {
+      "title": "Министър Ефремова предлага ръст на семейните помощи за деца през 2027 г.",
+      "url": "https://www.mlsp.government.bg/ministr-efremova-predlaga-rst-na-semeynite-pomoshchi-za-detsa-prez-2027-g",
+      "raw_date": "Sep 30, 2026",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high",
+      "date_basis": "Actual English month source date; preserve language=bg while adding explicit en date fallback"
+    }
+  ],
+  "next_action": "Official /novini cards have English month dates (e.g. Oct 02, 2026) but language=bg. Add an explicit bilingual date parsing fallback for this source; retain Bulgarian article language and require source dates."
+}

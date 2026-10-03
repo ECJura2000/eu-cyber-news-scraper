@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=28",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:48:58.993647+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "fc3723232a5e61e3fc382998ba349dfbccd6e48882e8b25eb5cd6af049e601cc",
+  "sha256": "6e1e74a985662aa96ea9d9a5d73ffae3587cef6a1108563a2b5ea301f0ea3b3a",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 100,
+  "dated_count": 100,
+  "fixture_count": 4,
+  "source_id": "si_culture",
+  "expected": [
+    {
+      "title": "Javni razpis za povečanje odpornosti ogroženih kulturnih spomenikov",
+      "url": "https://www.gov.si/novice/2026-09-25-javni-razpis-za-povecanje-odpornosti-ogrozenih-kulturnih-spomenikov/",
+      "published_date_local": "2026-09-25",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "V Izoli o kulturnih poteh Sveta Evrope kot modelu trajnostnega razvoja po letu 2027",
+      "url": "https://www.gov.si/novice/2026-09-21-v-izoli-o-kulturnih-poteh-sveta-evrope-kot-modelu-trajnostnega-razvoja-po-letu-2027/",
+      "published_date_local": "2026-09-21",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Dva nova razpisa programa Interreg Euro-MED: priložnost za kulturo",
+      "url": "https://www.gov.si/novice/2026-09-18-dva-nova-razpisa-programa-interreg-euro-med-priloznost-za-kulturo/",
+      "published_date_local": "2026-09-18",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Najava javnega razpisa za povečanje odpornosti ogroženih kulturnih spomenikov",
+      "url": "https://www.gov.si/novice/2026-09-18-najava-javnega-razpisa-za-povecanje-odpornosti-ogrozenih-kulturnih-spomenikov/",
+      "published_date_local": "2026-09-18",
+      "date_source": "feed-published"
+    }
+  ]
+}

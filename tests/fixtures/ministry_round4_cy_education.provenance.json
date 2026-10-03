@@ -1,0 +1,120 @@
+{
+  "url": "https://enimerosi.moec.gov.cy/",
+  "observed_at": "2026-10-03T02:43:03.186738+00:00",
+  "http_status": 200,
+  "final_url": "https://enimerosi.moec.gov.cy/",
+  "content_type": "text/html; charset=utf-8",
+  "http_statuses": [
+    "404",
+    "200"
+  ],
+  "response_sha256": "cf77b27048a341240c49527ebffda81a4a9649fd5352bdb01cbe58caae7da642",
+  "response_bytes": 288381,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "source_id": "cy_education",
+  "source_config": {
+    "id": "cy_education",
+    "country": "CY",
+    "name_zh": "塞浦路斯教育、體育與青年部",
+    "name": "Υπουργείο Παιδείας, Αθλητισμού και Νεολαίας",
+    "institution_type": "ministry",
+    "language": "el",
+    "homepage": "https://www.moec.gov.cy/",
+    "listing_url": "https://enimerosi.moec.gov.cy/",
+    "allow_domains": [
+      "enimerosi.moec.gov.cy"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Nicosia",
+    "schedule_enabled": false,
+    "parser_adapter": "cy_minister_table",
+    "feed_urls": []
+  },
+  "fixture_path": "tests/fixtures/ministry_round4_cy_education.html",
+  "fixture_sha256": "8e657a904c6f658202d49cb678fe5e19d10c36e42f970831d4b2bdad5df3a409",
+  "fixture_bytes": 26138,
+  "transform": "Bounded literal original publication containers/JSON fields; no invented article URLs or dates.",
+  "expected": [
+    {
+      "title": "Δηλώσεις της Υπουργού στο πλαίσιο της επίσκεψής της στο Νηπιαγωγείο, Δημοτικό και Γυμνάσιο-Λύκειο του Κάτω Πύργου Τηλλυρίας",
+      "url": "https://enimerosi.moec.gov.cy/ypp20598",
+      "published_date_local": "2026-10-02",
+      "published_at": "2026-10-01T21:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Nicosia"
+    },
+    {
+      "title": "Δηλώσεις της Υπουργού μετά το πέρας της συνεδρίας του Υπουργικού Συμβουλίου",
+      "url": "https://enimerosi.moec.gov.cy/ypp20585",
+      "published_date_local": "2026-10-01",
+      "published_at": "2026-09-30T21:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Nicosia"
+    },
+    {
+      "title": "Μήνυμα της Υπουργού για την επέτειο της Ανακήρυξης της Κυπριακής Δημοκρατίας",
+      "url": "https://enimerosi.moec.gov.cy/ypp20580",
+      "published_date_local": "2026-09-29",
+      "published_at": "2026-09-28T21:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Nicosia"
+    },
+    {
+      "title": "Δηλώσεις της Υπουργού στο πλαίσιο της επίσκεψής της στο Ειδικό Σχολείο «Απόστολος Λουκάς» - Πέμπτη, 17 Σεπτεμβρίου 2026, Λεμεσός",
+      "url": "https://enimerosi.moec.gov.cy/ypp20507",
+      "published_date_local": "2026-09-17",
+      "published_at": "2026-09-16T21:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Nicosia"
+    }
+  ],
+  "live_status": {
+    "source_id": "cy_education",
+    "source_name": "塞浦路斯教育、體育與青年部",
+    "country": "CY",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 4,
+    "relevant_count": 4,
+    "duration_seconds": 3.486,
+    "newest_published_at": "2026-10-01T21:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0,
+    "health_alerts": [],
+    "dated_count": 4,
+    "undated_ratio": 0,
+    "unique_title_ratio": 1,
+    "in_range_count": 4,
+    "freshness_lag_days": 1.25,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 2,
+    "bytes_downloaded": 289624,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "404",
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0,
+    "historical_median_bytes": 0,
+    "historical_median_duration": 0
+  },
+  "dispatch_overlay": false,
+  "truncated": true,
+  "date_timezone_contract": "Naive Danish ISO times interpreted in Europe/Copenhagen; explicit offsets preserved."
+}

@@ -1,0 +1,25 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Health Italy"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Health_(Italy)",
+      "title": "Ministry of Health (Italy) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:28.917811+00:00",
+      "extracted_sha256": "a54d7e199b05fcbc19c69ff9aef673aff3ae52cb25b221d829cf5887c1e60157",
+      "excerpt": "The**Ministry of Health**([Italian](https://en.wikipedia.org/wiki/Italian_language):*Ministero della Salute*) is a governmental agency of[Italy](https://en.wikipedia.org/wiki/Italy). Its headquarters are in[Rome](https://en.wikipedia.org/wiki/Rome)[[1]](https://en.wikipedia.org/wiki/Ministry_of_Health_(Italy)#cite_note-1)and is led by the[Italian Minister of Health](https://en.wikipedia.org/wiki/Italian_Minister_of_Health).\n\nThe Ministry developed the[Italian Food Pyramid](https://en.wikipedia.org/wiki/List_of_nutrition_guides#Italy)(*Piramide Alimentare Italiana*) to guide food and meal planning. The divisions show healthy intake of water, fruits and vegetables, starches (bread, biscotti, pasta, etc.), protein (meat, cold cut meats, eggs, fish, etc.), milk and dairy, and occasional uses (oils, sweets, and alcohol). The pyramid is intended to represent the variety of foods eaten over an entire week, averaged into daily portions.\n\nAn example of their legislation is the[Italian Device Re"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "http://www.salute.gov.it",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_Health_(Italy)",
+      "link_text": "www.salute.gov.it",
+      "relationship_excerpt": "rters***\nLungotevere Ripa, 1 - 00153 Roma\n***Minister Office***Website[www.salute.gov.it](http://www.salute.gov.it)\n\nThe**Ministry of Health**([Italian](https://en.wikipedia.org/wiki/It"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/it_health.wikipedia.json"
+}

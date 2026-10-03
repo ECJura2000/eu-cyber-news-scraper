@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.si/novice/rss/?categoryID%5B0%5D=1&orgID%5B0%5D=31",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:49:07.910490+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "fe133d6c8c6cdf99aba6ebcad054f551f071c83a9f68799e647291a3fb9db7d8",
+  "sha256": "9c9c9b408e62c9e95b8d9e97c126c621c4b4358158963dee05aeb0f71c17ee3b",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 100,
+  "dated_count": 100,
+  "fixture_count": 4,
+  "source_id": "si_environment_spatial",
+  "expected": [
+    {
+      "title": "Začetek zasedanja Stalne slovensko-italijanske komisije za vodno gospodarstvo",
+      "url": "https://www.gov.si/novice/2026-10-01-zacetek-zasedanja-stalne-slovensko-italijanske-komisije-za-vodno-gospodarstvo/",
+      "published_date_local": "2026-10-01",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Za čistejši zrak pozimi lahko največ naredimo s pravilnim kurjenjem in zamenjavo starih naprav",
+      "url": "https://www.gov.si/novice/2026-10-01-za-cistejsi-zrak-pozimi-lahko-najvec-naredimo-s-pravilnim-kurjenjem-in-zamenjavo-starih-naprav/",
+      "published_date_local": "2026-10-01",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Vlada zagotovila nadaljevanje izdajanja gradbenih dovoljenj v 17 občinah",
+      "url": "https://www.gov.si/novice/2026-09-28-vlada-zagotovila-nadaljevanje-izdajanja-gradbenih-dovoljenj-v-17-obcinah/",
+      "published_date_local": "2026-09-28",
+      "date_source": "feed-published"
+    },
+    {
+      "title": "Evropska sredstva za varno in kakovostno oskrbo s pitno vodo v Pomurju",
+      "url": "https://www.gov.si/novice/2026-09-23-evropska-sredstva-za-varno-in-kakovostno-oskrbo-s-pitno-vodo-v-pomurju/",
+      "published_date_local": "2026-09-23",
+      "date_source": "feed-published"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Climate Crisis and Civil Protection Greece",
+    "site:wikipedia.org \"Υπουργείο Κλιματικής Κρίσης και Πολιτικής Προστασίας\""
+  ],
+  "pages": [
+    {
+      "url": "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9A%CE%BB%CE%B9%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%9A%CF%81%CE%AF%CF%83%CE%B7%CF%82_%CE%BA%CE%B1%CE%B9_%CE%A0%CE%BF%CE%BB%CE%B9%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%A0%CF%81%CE%BF%CF%83%CF%84%CE%B1%CF%83%CE%AF%CE%B1%CF%82",
+      "title": "Υπουργείο Κλιματικής Κρίσης και Πολιτικής Προστασίας - Βικιπαίδεια",
+      "observed_at": "2026-10-03T08:41:52.999509+00:00",
+      "extracted_sha256": "6a7a07ffda2694b1b1ffb2ed6d9c4651ead75005fb0eeffcb182fe405d5c417c",
+      "excerpt": "[Μετάβαση στο περιεχόμενο](https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9A%CE%BB%CE%B9%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%9A%CF%81%CE%AF%CF%83%CE%B7%CF%82_%CE%BA%CE%B1%CE%B9_%CE%A0%CE%BF%CE%BB%CE%B9%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%A0%CF%81%CE%BF%CF%83%CF%84%CE%B1%CF%83%CE%AF%CE%B1%CF%82#bodyContent)\n\nΑπό τη Βικιπαίδεια, την ελεύθερη εγκυκλοπαίδεια\n\nΤο λήμμα δεν περιέχει[**πηγές**](https://el.wikipedia.org/wiki/%CE%92%CE%B9%CE%BA%CE%B9%CF%80%CE%B1%CE%AF%CE%B4%CE%B5%CE%B9%CE%B1:%CE%95%CF%80%CE%B1%CE%BB%CE%B7%CE%B8%CE%B5%CF%85%CF%83%CE%B9%CE%BC%CF%8C%CF%84%CE%B7%CF%84%CE%B1)ή αυτές που περιέχει δεν επαρκούν.[Μπορείτε να βοηθήσετε](https://el.wikipedia.org/w/index.php?title=%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9A%CE%BB%CE%B9%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%9A%CF%81%CE%AF%CF%83%CE%B7%CF%82_%CE%BA%CE%B1%CE%B9_%CE%A0%CE%BF%CE%BB%CE%B9%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%A0%CF%81%CE%BF%CF%83%CF%84%CE%B1%"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "https://civilprotection.gov.gr",
+      "wikipedia_url": "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9A%CE%BB%CE%B9%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%9A%CF%81%CE%AF%CF%83%CE%B7%CF%82_%CE%BA%CE%B1%CE%B9_%CE%A0%CE%BF%CE%BB%CE%B9%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%A0%CF%81%CE%BF%CF%83%CF%84%CE%B1%CF%83%CE%AF%CE%B1%CF%82",
+      "link_text": "civilprotection.gov.gr",
+      "relationship_excerpt": "%CE%9A%CE%B1%CF%84%CF%83%CE%B1%CF%86%CE%AC%CE%B4%CE%BF%CF%82)Ιστότοπος[civilprotection.gov.gr](https://civilprotection.gov.gr)[δεδομένα](https://www.wikidata.org/wiki/Special:ItemByTitle?site=elwi"
+    },
+    {
+      "url": "https://civilprotection.gov.gr",
+      "wikipedia_url": "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9A%CE%BB%CE%B9%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%9A%CF%81%CE%AF%CF%83%CE%B7%CF%82_%CE%BA%CE%B1%CE%B9_%CE%A0%CE%BF%CE%BB%CE%B9%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%A0%CF%81%CE%BF%CF%83%CF%84%CE%B1%CF%83%CE%AF%CE%B1%CF%82",
+      "link_text": "Επίσημος ιστότοπος",
+      "relationship_excerpt": "F%CF%83%CF%84%CE%B1%CF%83%CE%AF%CE%B1%CF%82&action=edit&section=5)]\n- [Επίσημος ιστότοπος](https://civilprotection.gov.gr)\n\n- [π](https://el.wikipedia.org/wiki/%CE%A0%CF%81%CF%8C%CF%84%CF%85%C"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/gr_climate_civil_protection.wikipedia.json"
+}

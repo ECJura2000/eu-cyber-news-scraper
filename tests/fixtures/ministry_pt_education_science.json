@@ -1,0 +1,104 @@
+{
+  "source_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/educacao-ciencia-e-inovacao/noticias",
+  "scope": [
+    "7E76E52815D74B7EA2D4DAD95C3B555B"
+  ],
+  "articles": [
+    {
+      "id": "2B358F2760884F09886EC8145C8AD553",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/-resultados-dos-exames-nacionais-da-epoca-extraordinaria-ja-estao-disponiveis",
+      "title": " Resultados dos exames nacionais da época extraordinária já estão disponíveis",
+      "date": "20260916T184900Z",
+      "summary": "Classificações foram afixadas nas escolas e podem ser consideradas na 2.ª fase do Concurso Nacional de Acesso ao Ensino Superior",
+      "areas": [
+        "7E76E52815D74B7EA2D4DAD95C3B555B"
+      ]
+    },
+    {
+      "id": "8CB7F8C302CC4526A53204F4D010A69A",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/inaugurada-a-maior-residencia-de-estudantes-do-pais",
+      "title": "Inaugurada a maior residência de estudantes do país",
+      "date": "20260911T183300Z",
+      "summary": "Nova infraestrutura, em Braga, disponibiliza 786 camas e resulta de um investimento de 29,5 milhões de euros do Plano de Recuperação e Resiliência\n",
+      "areas": [
+        "7E76E52815D74B7EA2D4DAD95C3B555B"
+      ]
+    },
+    {
+      "id": "CE14DE5484F24075812A9D4A24A60A45",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/inicio-do-ano-letivo-ministro-da-educacao-ciencia-e-inovacao-destaca-compromisso-do-governo-com-a-escola-publica",
+      "title": "Início do ano letivo: Ministro da Educação, Ciência e Inovação destaca compromisso do Governo com a Escola Pública",
+      "date": "20260911T161000Z",
+      "summary": "Novo Centro Escolar Barbosa du Bocage, em Setúbal, foi inaugurado pelo Primeiro-Ministro e marca o arranque do ano letivo 2026/2027",
+      "areas": [
+        "7E76E52815D74B7EA2D4DAD95C3B555B"
+      ]
+    },
+    {
+      "id": "237879597C7042ED94EFC78C9BB3C0BE",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/verificacao-automatica-do-registo-criminal-dos-docentes-poupa-ate-cinco-5-dias-de-trabalho-aos-diretores-",
+      "title": "Verificação automática do registo criminal dos docentes poupa até cinco dias de trabalho aos diretores ",
+      "date": "20260904T130600Z",
+      "summary": "Até ao final do mês de setembro, as maiores escolas de todos os distritos de Portugal Continental vão receber ações de ativação da Chave Móvel Digital",
+      "areas": [
+        "A8A9D8911A3C45C9BE6B4A59FA3A1EB5",
+        "7E76E52815D74B7EA2D4DAD95C3B555B"
+      ]
+    },
+    {
+      "id": "89A2E818678A4C11A51CADE1A88FB304",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/mais-de-20-mil-professores-colocados-nas-escolas",
+      "title": "Mais de 20 mil professores colocados nas escolas",
+      "date": "20260817T114800Z",
+      "summary": "O número de docentes colocados aumenta 1 505 face a 2025/2026, com reforço nas zonas mais carenciadas\n",
+      "areas": [
+        "7E76E52815D74B7EA2D4DAD95C3B555B"
+      ]
+    },
+    {
+      "id": "BE242A387337447092786ECECD01CE3D",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/compete-2030-abre-concurso-de-45-milhoes-de-euros-para-reforcar-ligacao-entre-centros-de-interface-e-empresas",
+      "title": "Compete 2030 abre concurso de 45 milhões de euros para reforçar ligação entre Centros de Interface e empresas",
+      "date": "20260817T103500Z",
+      "summary": "As candidaturas dos Laboratórios e Centros das regiões Norte, Centro e Alentejo decorrem até 15 de outubro",
+      "areas": [
+        "6F295533DFFD48C88F14F102A37EDD38",
+        "7E76E52815D74B7EA2D4DAD95C3B555B"
+      ]
+    },
+    {
+      "id": "F25AF4D3191F463E9F7AB8C7B0F4D571",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/exames-nacionais-governo-autoriza-pagamento-aos-professores-classificadores-",
+      "title": "Exames Nacionais: Governo autoriza pagamento aos professores classificadores ",
+      "date": "20260814T124600Z",
+      "summary": "Medida retoma uma compensação interrompida em 2010 ",
+      "areas": [
+        "7E76E52815D74B7EA2D4DAD95C3B555B"
+      ]
+    },
+    {
+      "id": "9AEB47962E9E4576882A86B603D914A7",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/universidade-de-leiria-e-oeste-inicia-nova-etapa-com-tomada-de-posse-do-primeiro-reitor",
+      "title": "Universidade de Leiria e Oeste inicia nova etapa com tomada de posse do primeiro reitor",
+      "date": "20260811T102500Z",
+      "summary": "Nova universidade aposta na inovação e numa maior ligação à região e à sociedade",
+      "areas": [
+        "7E76E52815D74B7EA2D4DAD95C3B555B"
+      ]
+    }
+  ],
+  "truncated": false,
+  "response_sha256": [
+    "379d5a6e5afe4d1bb12c28a89e6c285f1211c56e3def2f9c87804f9bd7c6c685",
+    "e103cb55c22df8adf13635e5707b32eb62e89bf8ca3ef24e05db85e83ac7299b"
+  ],
+  "public_endpoint": "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+}

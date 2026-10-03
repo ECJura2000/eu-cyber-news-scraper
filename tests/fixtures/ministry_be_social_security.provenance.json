@@ -1,0 +1,73 @@
+{
+  "source_id": "be_social_security",
+  "url": "https://socialsecurity.belgium.be/nl/nieuws",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:11.224936+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "9b22973ae339f99e093e564fc44760d5e8c1be23fc5cfd90441b0cb6d9b109d0",
+  "response_sha256": "aa1c8bf13f2f7e4751334f21cf2fa9762ae4c7221206248edd80d0e6519b76e7",
+  "fixture_count": 5,
+  "expected": [
+    {
+      "title": "Nieuw trimestrieel rapport Osiris",
+      "url": "https://socialsecurity.belgium.be/nl/nieuws/nieuw-trimestrieel-rapport-osiris-29-09-2026",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "TSI- project: AI and Digitalisation for Employment Support in Belgium and Greece",
+      "url": "https://socialsecurity.belgium.be/nl/nieuws/tsi-project-ai-and-digitalisation-employment-support-belgium-and-greece-28-09-2026",
+      "published_date_local": "2026-09-28",
+      "date_confidence": "high"
+    },
+    {
+      "title": "BTSZ 67/2 - Van crisisbuffer tot kennisinstelling: wat 90 jaar RVA ons leert",
+      "url": "https://socialsecurity.belgium.be/nl/nieuws/btsz-672-van-crisisbuffer-tot-kennisinstelling-wat-90-jaar-rva-ons-leert-22-09-2026",
+      "published_date_local": "2026-09-22",
+      "date_confidence": "high"
+    },
+    {
+      "title": "De FOD Sociale Zekerheid publiceert nieuwe cijfers over de sociale bescherming in België.",
+      "url": "https://socialsecurity.belgium.be/nl/nieuws/de-fod-sociale-zekerheid-publiceert-nieuwe-cijfers-over-de-sociale-bescherming-belgie-13-08",
+      "published_date_local": "2026-08-13",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Informele EPSCO-bijeenkomst over werkgelegenheid voor personen met een handicap",
+      "url": "https://socialsecurity.belgium.be/nl/nieuws/informele-epsco-bijeenkomst-over-werkgelegenheid-voor-personen-met-een-handicap-22-07-2026",
+      "published_date_local": "2026-07-22",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 5,
+  "live_dated_count": 5,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "be_social_security",
+    "country": "BE",
+    "name_zh": "比利時社會保障公共服務部",
+    "name": "Federale Overheidsdienst Sociale Zekerheid",
+    "institution_type": "ministry",
+    "language": "nl",
+    "homepage": "https://socialsecurity.belgium.be/nl",
+    "listing_url": "https://socialsecurity.belgium.be/nl/nieuws",
+    "feed_urls": [],
+    "allow_domains": [
+      "socialsecurity.belgium.be"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Brussels",
+    "card_selectors": [
+      "div.node__content"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

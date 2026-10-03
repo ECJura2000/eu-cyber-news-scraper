@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+	<title>Tlačové správy a oznamy Úradu vlády Slovenskej republiky</title>
+	<link>https://www.vlada.gov.sk/rss/</link>
+	<atom:link href="https://www.vlada.gov.sk/rss/" rel="self" type="application/rss+xml" />
+	<description></description>
+	<pubDate>Thu, 01 Oct 2026 13:52:50 +0200</pubDate>
+	<ttl>60</ttl>
+	<item>
+		<title>Robert Fico k Vízii Slovensko 2040: Budúce generácie nás budú hodnotiť podľa toho, či sme Slovensko pripravili na zmeny</title>
+		<description><![CDATA[]]></description>
+		<pubDate>Tue, 29 Sep 2026 00:00:00 +0200</pubDate>
+		<link>https://www.vlada.gov.sk/tlacove-spravy/robert-fico-k-vizii-slovensko-2040-buduce-generacie-nas-budu-hodnotit-podla-toho-ci-sme-slovensko-pripravili-na-zmeny/</link>
+		<guid>https://www.vlada.gov.sk/tlacove-spravy/robert-fico-k-vizii-slovensko-2040-buduce-generacie-nas-budu-hodnotit-podla-toho-ci-sme-slovensko-pripravili-na-zmeny/</guid>
+	</item>
+	<item>
+		<title>Výjazdové rokovanie vlády v Uhrovci prinieslo do regiónu viac ako 3 milióny eur na rozvoj infraštruktúry, zdravotníctva, školstva a cestovného ruchu</title>
+		<description><![CDATA[]]></description>
+		<pubDate>Wed, 30 Sep 2026 00:00:00 +0200</pubDate>
+		<link>https://www.vlada.gov.sk/tlacove-spravy/vyjazdove-rokovanie-vlady-v-uhrovci-prinieslo-do-regionu-viac-ako-3-miliony-eur-na-rozvoj-infrastruktury-zdravotnictva-skolstva/</link>
+		<guid>https://www.vlada.gov.sk/tlacove-spravy/vyjazdove-rokovanie-vlady-v-uhrovci-prinieslo-do-regionu-viac-ako-3-miliony-eur-na-rozvoj-infrastruktury-zdravotnictva-skolstva/</guid>
+	</item>
+	<item>
+		<title>Predseda vlády SR Robert Fico ocenil dokončenú modernizáciu Nemocnice Poprad a vyzval na realistické hodnotenie slovenského zdravotníctva</title>
+		<description><![CDATA[]]></description>
+		<pubDate>Tue, 29 Sep 2026 00:00:00 +0200</pubDate>
+		<link>https://www.vlada.gov.sk/tlacove-spravy/predseda-vlady-sr-robert-fico-ocenil-dokoncenu-modernizaciu-nemocnice-poprad-a-vyzval-na-realisticke-hodnotenie-slovenskeho/</link>
+		<guid>https://www.vlada.gov.sk/tlacove-spravy/predseda-vlady-sr-robert-fico-ocenil-dokoncenu-modernizaciu-nemocnice-poprad-a-vyzval-na-realisticke-hodnotenie-slovenskeho/</guid>
+	</item>
+	<item>
+		<title>Obnova NKP kaštieľa v Rusovciach pokračuje, rekonštrukcia odhaľuje aj výnimočné rímske dedičstvo</title>
+		<description><![CDATA[]]></description>
+		<pubDate>Sat, 26 Sep 2026 00:00:00 +0200</pubDate>
+		<link>https://www.vlada.gov.sk/tlacove-spravy/obnova-nkp-kastiela-v-rusovciach-pokracuje-rekonstrukcia-odhaluje-aj-vynimocne-rimske-dedicstvo/</link>
+		<guid>https://www.vlada.gov.sk/tlacove-spravy/obnova-nkp-kastiela-v-rusovciach-pokracuje-rekonstrukcia-odhaluje-aj-vynimocne-rimske-dedicstvo/</guid>
+	</item>
+	
+	
+	
+	
+	
+	
+</channel>
+</rss>

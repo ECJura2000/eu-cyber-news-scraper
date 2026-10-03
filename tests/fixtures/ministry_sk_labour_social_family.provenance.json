@@ -1,0 +1,87 @@
+{
+  "source_id": "sk_labour_social_family",
+  "url": "https://www.employment.gov.sk/sk/informacie-media/aktuality/",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:34:27.935722+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "a41ef063f33cafc82b631fc723623fa4af550630db1f8ca38b2c60cfc7e4e740",
+  "fixture_count": 4,
+  "expected": [
+    {
+      "title": "Nové pracovné miesta v regióne Turiec",
+      "url": "https://www.employment.gov.sk/sk/uvodna-stranka/informacie-media/aktuality/nove-pracovne-miesta-regione-turiec.html",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Upravujeme maximálne kapacity zariadení sociálnych služieb",
+      "url": "https://www.employment.gov.sk/sk/uvodna-stranka/informacie-media/aktuality/upravujeme-maximalne-kapacity-zariadeni-socialnych-sluzieb.html",
+      "published_date_local": "2026-09-18",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Rezort práce splnil posledný míľnik Plánu obnovy: pribudne 3 125 miest v sociálnych službách",
+      "url": "https://www.employment.gov.sk/sk/uvodna-stranka/informacie-media/aktuality/rezort-prace-splnil-posledny-milnik-planu-obnovy-pribudne-3-125-miest-socialnych-sluzbach.html",
+      "published_date_local": "2026-09-10",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Rodičia prvákov dostanú zvýšený prídavok na dieťa 170 eur",
+      "url": "https://www.employment.gov.sk/sk/uvodna-stranka/informacie-media/aktuality/rodicia-prvakov-dostanu-zvyseny-pridavok-dieta-170-eur.html",
+      "published_date_local": "2026-09-01",
+      "date_source": "source-selector",
+      "date_confidence": "high"
+    }
+  ],
+  "parsed_count": 4,
+  "dated_count": 4,
+  "transform": "BeautifulSoup extraction of up to 8 genuine dated article containers (original attributes/text); scripts/styles/nav/header/footer removed; original base element retained where present",
+  "live_status": {
+    "source_id": "sk_labour_social_family",
+    "source_name": "斯洛伐克勞動社會事務與家庭部",
+    "country": "SK",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 4,
+    "relevant_count": 4,
+    "duration_seconds": 5.677,
+    "newest_published_at": "2026-09-29T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 4,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 4,
+    "freshness_lag_days": 2.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 74558,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  }
+}

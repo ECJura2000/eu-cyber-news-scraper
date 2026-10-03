@@ -1,0 +1,124 @@
+{
+  "source_id": "pt_health",
+  "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/saude/noticias",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T08:47:48.585204+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "cb6c0e4c704fd1eb0af249e972d0cbe6873049443bdc6edd7b36aaf1891e6bcb",
+  "listing_response_sha256": "36239d93828ba29ecda0e914e16003482ef8c96a0c0ad9f6ec0477738457721d",
+  "response_sha256": [
+    "f99cb197e9cc5371d5b834bf659faf35c7234f37861ab3a81c0cf07db42ec2a5",
+    "b79c7abbc46e8dbd48f8c8583aefe9623be28bee35cdd1d564fc3562a407ec79"
+  ],
+  "fixture_count": 8,
+  "parsed_count": 79,
+  "dated_count": 79,
+  "expected": [
+    {
+      "title": "Arrancou a campanha de vacinação contra a gripe e a COVID-19",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/arrancou-a-campanha-de-vacinacao-contra-a-gripe-e-a-covid-19-",
+      "published_date_local": "2026-10-01",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Lourinhã e Mafra inauguram novos centros de saúde",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/lourinha-e-mafra-inauguram-novos-centros-de-saude",
+      "published_date_local": "2026-10-01",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Ministra da Saúde defende resposta global e equitativa às pandemias",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/ministra-da-saude-defende-resposta-global-e-equitativa-as-pandemias-ana-paula-martins-apela-a-uma-estrategia-equitativa-solidaria-no-acesso-justo-a-vacinas-e-tratamentos",
+      "published_date_local": "2026-09-28",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Governo convida OMS a avaliar estado da reforma da saúde mental em Portugal",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-convida-oms-a-avaliar-estado-da-reforma-da-saude-mental-em-portugal",
+      "published_date_local": "2026-09-23",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Campanhas de imunização e vacinação sazonal arrancam em setembro",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/campanhas-de-imunizacao-e-vacinacao-sazonal-arrancam-em-setembro",
+      "published_date_local": "2026-09-22",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Portugal envia nova doação de medicamentos para a Venezuela",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/portugal-envia-nova-doacao-de-medicamentos-para-a-venezuela",
+      "published_date_local": "2026-09-18",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "SNS celebra 47 anos com compromisso de melhorar acesso aos cuidados de saúde",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/sns-celebra-47-anos-com-compromisso-de-melhorar-acesso-aos-cuidados-de-saude",
+      "published_date_local": "2026-09-16",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "INEM: greve dos técnicos de emergência desconvocada após entendimento",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/inem-greve-dos-tecnicos-de-emergencia-desconvocada-apos-entendimento",
+      "published_date_local": "2026-09-11",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    }
+  ],
+  "live_status": {
+    "source_id": "pt_health",
+    "source_name": "葡萄牙衛生部",
+    "country": "PT",
+    "critical": false,
+    "success": true,
+    "fetched_via": "public-sitecore",
+    "raw_count": 79,
+    "relevant_count": 79,
+    "duration_seconds": 1.161,
+    "newest_published_at": "2026-10-01T15:11:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 79,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 79,
+    "freshness_lag_days": 1.37,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 3,
+    "bytes_downloaded": 1013792,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200",
+      "200",
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "public_endpoint": "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1",
+  "transform": "Exact projection of official anonymous query title/path/CardDate/news-template/area IDs; biography fields omitted; first 8 genuine items; transient public routing value never saved",
+  "access": "No Authorization/API-key headers or authenticated fallback; public frontend routing identifier discovered afresh"
+}

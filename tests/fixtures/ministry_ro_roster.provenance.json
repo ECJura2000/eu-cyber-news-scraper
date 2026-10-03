@@ -1,0 +1,11 @@
+{
+  "url": "https://gov.ro/ro/guvernul/organizare/ministere",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:54:48.572737+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "e12a39b1798608a8b3ee0bfb2b853d221a417ab6671530c9316fd6572b49d48d",
+  "sha256": "38972daa9e769739e6f20c1e65e8f9a4558528f5b02e8f4ff84d750276e4eeab",
+  "extraction": "Deduplicated original official department roster anchor elements"
+}

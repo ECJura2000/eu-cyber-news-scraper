@@ -1,0 +1,91 @@
+{
+  "source_id": "bg_government",
+  "url": "https://www.gov.bg/en/Press-center/News",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:34:25.662471+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "b184b6718bb8d1a458f9cbf1af409155be2eb7c6aa2f81b6dad4bec50f9618ff",
+  "response_sha256": "5d132c2cbbc9676de263f5824cc94d9948f62d42fc1d5d6087d24cb301350468",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Prime Minister Rumen Radev meets EU member states’ ambassadors and European Commission Representation in Bulgaria",
+      "url": "https://www.gov.bg/en/Press-center/News/Prime-Minister-Rumen-Radev-meets-EU-member-states%E2%80%99-ambassadors-and-European-Commission-Representation-in-Bulgaria",
+      "published_date_local": "2026-09-11",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Prime Minister Rumen Radev: Europe needs a strong space ecosystem to be sovereign and prosperous",
+      "url": "https://www.gov.bg/en/Press-center/News/Prime-Minister-Rumen-Radev-Europe-needs-a-strong-space-ecosystem-to-be-sovereign-and-prosperous",
+      "published_date_local": "2026-09-10",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Rumen Radev: Bulgaria and France open door to deep and fruitful cooperation in high-tech and space",
+      "url": "https://www.gov.bg/en/Press-center/News/Rumen-Radev-Bulgaria-and-France-open-door-to-deep-and-fruitful-cooperation-in-high-tech-and-space",
+      "published_date_local": "2026-09-10",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Bulgaria and Slovakia advance cooperation in energy, security and high-tech sectors",
+      "url": "https://www.gov.bg/en/Press-center/News/Bulgaria-and-Slovakia-advance-cooperation-in-energy-security-and-high-tech-sectors",
+      "published_date_local": "2026-09-04",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Prime Minister Rumen Radev: All EU member states deserve equal entitlement to Europe’s technology and industry development",
+      "url": "https://www.gov.bg/en/Press-center/News/Prime-Minister-Rumen-Radev-All-EU-member-states-deserve-equal-entitlement-to-Europe%E2%80%99s-technology-and-industry-development",
+      "published_date_local": "2026-09-03",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Prime Minister Rumen Radev meets NATO Assistant Secretary General for Intelligence and Security Scott Bray",
+      "url": "https://www.gov.bg/en/Press-center/News/Prime-Minister-Rumen-Radev-meets-NATO-Assistant-Secretary-General-for-Intelligence-and-Security-Scott-Bray",
+      "published_date_local": "2026-09-02",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Prime Minister Rumen Radev: Government’s action against money laundering and corruption is a strong guarantee for Bulgaria’s removal from “the grey list”",
+      "url": "https://www.gov.bg/en/Press-center/News/Prime-Minister-Rumen-Radev-Government%E2%80%99s-action-against-money-laundering-and-corruption-is-a-strong-guarantee-for-Bulgaria%E2%80%99s-removal-from-%E2%80%9Cthe-grey-list%E2%80%9D",
+      "published_date_local": "2026-08-20",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Prime Minister Rumen Radev call with NATO Secretary General Mark Rutte",
+      "url": "https://www.gov.bg/en/Press-center/News/-Prime-Minister-Rumen-Radev-call-with-NATO-Secretary-General-Mark-Rutte",
+      "published_date_local": "2026-08-20",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 12,
+  "live_dated_count": 12,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "bg_government",
+    "country": "BG",
+    "name_zh": "保加利亞部長會議及總理辦公室",
+    "name": "Министерски съвет",
+    "institution_type": "ministry",
+    "language": "en",
+    "homepage": "https://www.gov.bg/bg",
+    "listing_url": "https://www.gov.bg/en/Press-center/News",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.gov.bg"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Sofia",
+    "card_selectors": [
+      "div.col-lg-7"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

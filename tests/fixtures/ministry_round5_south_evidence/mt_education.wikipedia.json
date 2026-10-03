@@ -1,0 +1,18 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Ministry for Education and Sport Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/List_of_education_ministries",
+      "title": "List of education ministries - Wikipedia",
+      "observed_at": "2026-10-03T08:37:38.827920+00:00",
+      "extracted_sha256": "febbef83910869a523584fd261eae36eea1c78cea77f5bcd230995c75e497642",
+      "excerpt": "[Jump to content](https://en.wikipedia.org/wiki/List_of_education_ministries#bodyContent)\n\nFrom Wikipedia, the free encyclopedia\n\n[](https://en.wikipedia.org/wiki/File:Question_book-new.svg)\n\nThis article**needs[more citations](https://en.wikipedia.org/wiki/Wikipedia:Verifiability)**.Please help[improve this article](https://en.wikipedia.org/wiki/Special:EditPage/List_of_education_ministries)by[adding citations to reliable sources](https://en.wikipedia.org/wiki/Help:Referencing_for_beginners). Unsourced material may be challenged and[removed](https://en.wikipedia.org/wiki/Wikipedia:Verifiability#Burden_of_evidence).\n*Find sources:*[\"List of education ministries\"](https://www.google.com/search?as_eq=wikipedia&q=%22List+of+education+ministries%22)–[news](https://www.google.com/search?tbm=nws&q=%22List+of+education+ministries%22+-wikipedia&tbs=ar:1)**·**[newspapers](https://www.google.com/search?&q=%22List+of+education+ministries%22&tbs=bkt:s&tbm=bks)**·**[books](https://www.google.com/se"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_education.wikipedia.json"
+}

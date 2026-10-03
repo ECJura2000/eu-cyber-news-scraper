@@ -1,0 +1,32 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Social Cohesion and Family Greece",
+    "site:wikipedia.org \"Υπουργείο Κοινωνικής Συνοχής και Οικογένειας\""
+  ],
+  "pages": [
+    {
+      "url": "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9A%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AE%CF%82_%CE%A3%CF%85%CE%BD%CE%BF%CF%87%CE%AE%CF%82_%CE%BA%CE%B1%CE%B9_%CE%9F%CE%B9%CE%BA%CE%BF%CE%B3%CE%AD%CE%BD%CE%B5%CE%B9%CE%B1%CF%82",
+      "title": "Υπουργείο Κοινωνικής Συνοχής και Οικογένειας - Βικιπαίδεια",
+      "observed_at": "2026-10-03T08:41:50.642163+00:00",
+      "extracted_sha256": "93b8fda625e55e5489a5830426a2f86e5d7edba2a13a2ea8296f3350bd33dfa7",
+      "excerpt": "[Μετάβαση στο περιεχόμενο](https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9A%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AE%CF%82_%CE%A3%CF%85%CE%BD%CE%BF%CF%87%CE%AE%CF%82_%CE%BA%CE%B1%CE%B9_%CE%9F%CE%B9%CE%BA%CE%BF%CE%B3%CE%AD%CE%BD%CE%B5%CE%B9%CE%B1%CF%82#bodyContent)\n\nΑπό τη Βικιπαίδεια, την ελεύθερη εγκυκλοπαίδεια\n\nΥπουργείο Κοινωνικής Συνοχής\nκαι Οικογένειας[](https://el.wikipedia.org/wiki/%CE%91%CF%81%CF%87%CE%B5%CE%AF%CE%BF:Minscfa-logo.png)Γενικές πληροφορίεςΣύσταση27 Ιουνίου 2023Δικαιοδοσία[](https://el.wikipedia.org/wiki/%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1)[Ελληνική Δημοκρατία](https://el.wikipedia.org/wiki/%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1)ΈδραΔραγατσανίου 8, ΑθήναΥπάλληλοι2.171 (04/2026)Ετήσιος προϋπολογισμός3.989.553.000€ (2025)[[1]](https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9A%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AE%CF%82_%CE%A3%CF%85%CE%BD%CE%BF%CF%87%CE%AE%CF%82_%CE%BA"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "https://minscfa.gov.gr",
+      "wikipedia_url": "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9A%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AE%CF%82_%CE%A3%CF%85%CE%BD%CE%BF%CF%87%CE%AE%CF%82_%CE%BA%CE%B1%CE%B9_%CE%9F%CE%B9%CE%BA%CE%BF%CE%B3%CE%AD%CE%BD%CE%B5%CE%B9%CE%B1%CF%82",
+      "link_text": "minscfa.gov.gr",
+      "relationship_excerpt": "CE%88%CE%BB%CE%B5%CE%BD%CE%B1_%CE%A1%CE%AC%CF%80%CF%84%CE%B7)Ιστότοπος[minscfa.gov.gr](https://minscfa.gov.gr)[δεδομένα](https://www.wikidata.org/wiki/Special:ItemByTitle?site=elwi"
+    },
+    {
+      "url": "https://minscfa.gov.gr",
+      "wikipedia_url": "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9A%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AE%CF%82_%CE%A3%CF%85%CE%BD%CE%BF%CF%87%CE%AE%CF%82_%CE%BA%CE%B1%CE%B9_%CE%9F%CE%B9%CE%BA%CE%BF%CE%B3%CE%AD%CE%BD%CE%B5%CE%B9%CE%B1%CF%82",
+      "link_text": "Επίσημος ιστότοπος",
+      "relationship_excerpt": "F%CE%B3%CE%AD%CE%BD%CE%B5%CE%B9%CE%B1%CF%82&action=edit&section=5)]\n- [Επίσημος ιστότοπος](https://minscfa.gov.gr)\n\n- [π](https://el.wikipedia.org/wiki/%CE%A0%CF%81%CF%8C%CF%84%CF%85%C"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/gr_social_family.wikipedia.json"
+}

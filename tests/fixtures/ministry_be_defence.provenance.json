@@ -1,0 +1,85 @@
+{
+  "source_id": "be_defence",
+  "url": "https://www.mil.be/nl/news/rss",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:49.194013+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "7701af52410bc31e3e8b8d93de05e9a8ca7abc2cc8616f01c9250fadf8fb8efd",
+  "response_sha256": "4b56b3bdcccc72122849356101559b28a9ab1d605b3157ccbfe5f735b88aaef2",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Fit to fly: hoe techniekers de A400M in de lucht houden boven Gaza",
+      "url": "https://www.mil.be/nl/news/fit-to-fly-hoe-techniekers-de-a400m-in-de-lucht-houden-boven-gaza/",
+      "published_date_local": "2025-08-12",
+      "date_confidence": "high"
+    },
+    {
+      "title": "De Marine rondt eerste opleiding tot Marinefuseliers af",
+      "url": "https://www.mil.be/nl/news/de-marine-rondt-eerste-opleiding-tot-marinefuseliers-af/",
+      "published_date_local": "2025-07-31",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Inhuldiging tweede Cyber Defense Factory in Brugge, op de Howest campus",
+      "url": "https://www.mil.be/nl/news/inhuldiging-tweede-cyber-defense-factory-in-brugge-op-de-howest-campus/",
+      "published_date_local": "2025-07-31",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Start bouw mijnenjager Liège in Roemenië",
+      "url": "https://www.mil.be/nl/news/start-bouw-mijnenjager-liege-in-roemenie/",
+      "published_date_local": "2025-07-31",
+      "date_confidence": "high"
+    },
+    {
+      "title": "België keert terug naar Kosovo met de Integrator",
+      "url": "https://www.mil.be/nl/news/belgie-keert-terug-naar-kosovo-met-de-integrator/",
+      "published_date_local": "2025-07-31",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Nieuwe Synaps-radio’s: een technologische sprong voor de Landmacht",
+      "url": "https://www.mil.be/nl/news/nieuwe-synaps-radio-s-een-technologische-sprong-voor-de-landmacht/",
+      "published_date_local": "2025-07-31",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Het luchtruim beheersen met beide voeten op de grond: aankomst van de Flight Sim F-35",
+      "url": "https://www.mil.be/nl/news/het-luchtruim-beheersen-met-beide-voeten-op-de-grond-aankomst-van-de-flight-sim-f-35/",
+      "published_date_local": "2025-07-31",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Eerste Belgische vlucht van de F-35A",
+      "url": "https://www.mil.be/nl/news/eerste-belgische-vlucht-van-de-f-35a/",
+      "published_date_local": "2025-07-31",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 230,
+  "live_dated_count": 230,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "be_defence",
+    "country": "BE",
+    "name_zh": "比利時國防部",
+    "name": "Ministerie van Defensie",
+    "institution_type": "ministry",
+    "language": "nl",
+    "homepage": "https://www.mil.be/nl/news/rss",
+    "listing_url": "https://www.mil.be/nl/news/rss",
+    "feed_urls": [
+      "https://www.mil.be/nl/news/rss"
+    ],
+    "allow_domains": [
+      "www.mil.be"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Brussels",
+    "schedule_enabled": false
+  }
+}

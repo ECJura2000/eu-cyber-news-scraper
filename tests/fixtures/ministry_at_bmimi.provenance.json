@@ -1,0 +1,91 @@
+{
+  "source_id": "at_bmimi",
+  "url": "https://www.bmimi.gv.at/service/presse/hanke.html",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:26.194476+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "15d9958b67efdcbc58cd1a57122588d0b4f797b237a7155b42180e9b02cbd48c",
+  "response_sha256": "59dbb03904325e93cdd0117bc99366c33801199d63e4cd1d62be4d66bd3f1949",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "30. September 2026 \n \n \n \t\t\tForschungs- und Technologiebericht 2026\n \n \n \n                                                                                    Forschungs- und Technologiebericht 2026 zeigt starke Ausgangsposition Österreichs. Fokus auf Schlüsseltechnologien, technologische Souveränität und wirksame Forschungsförderung.",
+      "url": "https://www.bmimi.gv.at/service/presse/hanke/2026/0930-ft-bericht.html",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "24. September 2026 \n \n \n \t\t\tÖsterreich und Deutschland stärken europäische Bahnforschung\n \n \n \n                                                                                    Mobilitätsminister Hanke und Deutschlands Verkehrsminister Bilger bei erstem bilateralem Austausch in Berlin. Innovation, Automatisiertes Fahren, Brenner und Luftverkehr im Fokus.",
+      "url": "https://www.bmimi.gv.at/service/presse/hanke/2026/0924-innotrans.html",
+      "published_date_local": "2026-09-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "18. September 2026 \n \n \n \t\t\tMobilitätsministerium sichert Millionenfinanzierung für Elektrifizierung von Zillertalbahn, Pinzgauer Lokalbahn und Murtalbahn zu\n \n \n \n                                                                                    Die drei Bahnen stehen vor demselben Schritt: dem Umstieg von Diesel- auf elektrischen beziehungsweise Akku-Hybrid-Betrieb. Die drei Länder haben sich nun darauf verständigt, die notwendigen neuen Fahrzeuge für die Schmalspurbahnen gemeinsam auszuschreiben.",
+      "url": "https://www.bmimi.gv.at/service/presse/hanke/2026/0918-bahnelektrifizierung.html",
+      "published_date_local": "2026-09-18",
+      "date_confidence": "high"
+    },
+    {
+      "title": "14. September 2026 \n \n \n \t\t\tNeue E-Moped-Regeln ab 1. Oktober sind gewaltiger Schritt für Verkehrssicherheit\n \n \n \n                                                                                    In wenigen Wochen treten die neuen Regeln für sogenannte „E-Mopeds“ in Österreich in Kraft. Ab 1. Oktober 2026 werden Fahrzeuge der Klasse L1e-B, die bisher rechtlich als Fahrräder behandelt wurden, als Kraftfahrzeuge eingestuft. E-Mopeds dürfen dann nicht – wie alle anderen Mopeds auch – auf Radwegen oder anderen Radfahranlagen unterwegs sein, sondern ausschließlich auf der Fahrbahn.",
+      "url": "https://www.bmimi.gv.at/service/presse/hanke/2026/0914_e-mopeds.html",
+      "published_date_local": "2026-09-14",
+      "date_confidence": "high"
+    },
+    {
+      "title": "11. September 2026 \n \n \n \t\t\tAktive Mobilität verbindet: Mobilitätsminister Peter Hanke zeichnet Vorbildprojekte für Rad- und Fußverkehr aus\n \n \n \n                                                                                    „Vorbildhafte Fuß- und Radverkehrsprojekte vor den Vorhang“ hieß es bei einer festlichen Auszeichnungsveranstaltung im Rahmen des 17. Österreichischen Radgipfels und des 2. Österreichischen Fußverkehrsgipfels von 9. bis 11. September 2026 in Eisenstadt. Die prämierten Städte, Gemeinden, Organisationen und Unternehmen haben als klimaaktiv mobil Partner innovative Projekte gestartet und fördern durch ihre Maßnahmen mehr aktive und sichere Mobilität.",
+      "url": "https://www.bmimi.gv.at/service/presse/hanke/2026/0911-aktive-mobilitaet.html",
+      "published_date_local": "2026-09-11",
+      "date_confidence": "high"
+    },
+    {
+      "title": "9. September 2026 \n \n \n \t\t\tGemeinsam #MeterMachen: Österreich startet in die Europäische Mobilitätswoche 2026\n \n \n \n                                                                                    Von 16. bis 22. September 2026 findet in ganz Österreich wieder die Europäische Mobilitätswoche statt. Unter dem diesjährigen Motto „Mobilität für alle Generationen“ setzen mehrere hundert Städte, Gemeinden, Bildungseinrichtungen, Betriebe und Organisationen ein gemeinsames Zeichen für aktive, sichere und leistbare Mobilität.",
+      "url": "https://www.bmimi.gv.at/service/presse/hanke/2026/0909-mobilitaetswoche.html",
+      "published_date_local": "2026-09-09",
+      "date_confidence": "high"
+    },
+    {
+      "title": "28. August 2026 \n \n \n \t\t\tPhilipp Piber als Geschäftsführer der Austro Control  GmbH  wiederbestellt\n \n \n \n                                                                                    Bundesminister Peter Hanke hat  Mag.  Philipp Piber als Geschäftsführer der Austro Control  GmbH  (ACG) wiederbestellt. Der neue Vertrag beginnt mit 1. Jänner 2027 und läuft über fünf Jahre. Piber, der seit 2022 Geschäftsführer ist, führt die österreichische Flugsicherung damit auch weiterhin gemeinsam mit Elisabeth Landrichter, die seit Mai 2024 Teil der Geschäftsführung ist.",
+      "url": "https://www.bmimi.gv.at/service/presse/hanke/2026/0828-austrocontrol.html",
+      "published_date_local": "2026-08-28",
+      "date_confidence": "high"
+    },
+    {
+      "title": "28. August 2026 \n \n \n \t\t\tNeuer Report Aktive Mobilität 2026: „Öffis“ immer besser mit dem Rad erreichbar\n \n \n \n                                                                                    Der neue Report Aktive Mobilität 2026 zeigt: Konstant viele Menschen in Österreich bewegen sich regelmäßig aktiv fort – sei es zu Fuß oder mit dem Rad. Besonders erfreulich ist das wachsende, sichere Radverkehrsnetz.",
+      "url": "https://www.bmimi.gv.at/service/presse/hanke/2026/0828-aktive-mobilitaet.html",
+      "published_date_local": "2026-08-28",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 25,
+  "live_dated_count": 25,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "at_bmimi",
+    "country": "AT",
+    "name_zh": "奧地利創新、交通與基礎建設部",
+    "name": "Bundesministerium für Innovation, Mobilität und Infrastruktur",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.bmimi.gv.at",
+    "listing_url": "https://www.bmimi.gv.at/service/presse/hanke.html",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.bmimi.gv.at"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Vienna",
+    "card_selectors": [
+      "a.card-link"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.pl/web/rodzina/aktualnosci-wiadomosci",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:53:42.816921+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "6f24fb1b8a6147c18896ab0da7d918e43aaebb6b797634340dde29ab90720ea4",
+  "sha256": "26c6444e3ba676767017389d7e9b4cafc346cdca9aaa3a3bb36d46c442c77a9b",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "pl_family_labour",
+  "expected": [
+    {
+      "title": "Większa niezależność, lepsze życie. Ustawa o asystencji osobistej przyjęta przez Sejm",
+      "url": "https://www.gov.pl/web/rodzina/wieksza-niezaleznosc-lepsze-zycie-ustawa-o-asystencji-osobistej-przyjeta-przez-sejm",
+      "published_date_local": "2026-09-18",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Pomoc Żywnościowa 2026. Ruszył przetarg na dostawy artykułów spożywczych",
+      "url": "https://www.gov.pl/web/rodzina/pomoc-zywnosciowa-2026-ruszyl-przetarg-na-dostawy-artykulow-spozywczych",
+      "published_date_local": "2026-09-04",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Jeszcze lepsza opieka nad najmłodszymi dziećmi staje się faktem",
+      "url": "https://www.gov.pl/web/rodzina/jeszcze-lepsza-opieka-nad-najmlodszymi-dziecmi-staje-sie-faktem",
+      "published_date_local": "2026-08-21",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Monika Sikora nową Pełnomocniczką Rządu do Spraw Osób Niepełnosprawnych",
+      "url": "https://www.gov.pl/web/rodzina/monika-sikora-nowa-pelnomocniczka-rzadu-do-spraw-osob-niepelnosprawnych",
+      "published_date_local": "2026-08-17",
+      "date_source": "source-selector"
+    }
+  ]
+}

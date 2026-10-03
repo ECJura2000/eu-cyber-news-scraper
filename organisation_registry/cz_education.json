@@ -1,0 +1,98 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-10-02.1",
+  "canonical_id": "cz_education",
+  "names": {
+    "zh": "捷克教育、青年與體育部",
+    "en": "Ministry of Education, Youth and Sports",
+    "short": "cz_education",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "cz_education",
+      "country": "CZ",
+      "name_zh": "捷克教育、青年與體育部",
+      "name": "Ministerstvo školství, mládeže a tělovýchovy",
+      "institution_type": "ministry",
+      "language": "cs",
+      "homepage": "https://msmt.gov.cz/",
+      "listing_url": "https://msmt.gov.cz/aktuality",
+      "feed_urls": [],
+      "allow_domains": [
+        "msmt.gov.cz"
+      ],
+      "critical": false,
+      "detail_pages": 0,
+      "timezone": "Europe/Prague",
+      "card_selectors": [
+        "a.group[href^=\"/aktuality/\"]"
+      ],
+      "title_selectors": [
+        "h2",
+        "h3"
+      ],
+      "date_selectors": [
+        "div.items-center.text-neutral-700 span"
+      ],
+      "schedule_enabled": false
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "數位身份",
+      "著作權",
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱",
+      "競爭規範面向（平台責任的市場結構面）",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-10-02",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-10-02",
+    "evidence_urls": [
+      "https://vlada.gov.cz/cz/vlada/ministerstva/",
+      "https://csu.gov.cz/ministries_and_state_authorities",
+      "https://msmt.gov.cz/aktuality"
+    ],
+    "fixture_path": "tests/fixtures/ministry_cz_education.html",
+    "provenance_path": "tests/fixtures/ministry_cz_education.provenance.json",
+    "last_smoke": {
+      "tested_on": "2026-10-02",
+      "source_id": "cz_education",
+      "success": true,
+      "raw_count": 12,
+      "dated_count": 12,
+      "http_statuses": [
+        "200"
+      ],
+      "robots_enforced": true,
+      "tls_verified": true
+    },
+    "schedule_batch": "eu27_central_ministries"
+  }
+}

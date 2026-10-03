@@ -1,0 +1,146 @@
+{
+  "canonical_id": "dk_resilience",
+  "url": "https://mssb.dk/nyheder/",
+  "observed_at": "2026-10-03T02:47:58.976047+00:00",
+  "http_status": 200,
+  "raw_sha256": "736efb54eaed953934b0edef2db38f36d74594e965951842b97e29a3d6aa953e",
+  "stats": {
+    "request_count": 2,
+    "bytes_downloaded": 10372,
+    "retry_count": 0,
+    "timeout_count": 0,
+    "cache_hits": 0,
+    "statuses": [
+      "200",
+      "200"
+    ]
+  },
+  "response_sha256": "736efb54eaed953934b0edef2db38f36d74594e965951842b97e29a3d6aa953e",
+  "response_bytes": 10015,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "source_id": "dk_resilience",
+  "source_config": {
+    "id": "dk_resilience",
+    "country": "DK",
+    "name_zh": "丹麥社會安全與應變部",
+    "name": "Ministeriet for Samfundssikkerhed og Beredskab",
+    "institution_type": "ministry",
+    "language": "da",
+    "homepage": "https://mssb.dk/",
+    "listing_url": "https://mssb.dk/nyheder/",
+    "allow_domains": [
+      "mssb.dk"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Copenhagen",
+    "schedule_enabled": false,
+    "parser_adapter": "dk_resilience_json",
+    "feed_urls": []
+  },
+  "fixture_path": "tests/fixtures/ministry_round4_dk_resilience.json",
+  "fixture_sha256": "a24b392f6a8261713d1bd9482540ef0f0dfa1f53b62f82013cfeb2ac0bc85b36",
+  "fixture_bytes": 2900,
+  "transform": "Bounded literal original publication containers/JSON fields; no invented article URLs or dates.",
+  "expected": [
+    {
+      "title": "EU-ekspertmission skal medvirke til at styrke samarbejdet mellem Grønland, Danmark og EU om det civile beredskab i Grønland",
+      "url": "https://mssb.dk/nyheder/nyhedsarkiv/2026/september/eu-ekspertmission-skal-medvirke-til-at-styrke-samarbejdet-mellem-groenland-danmark-og-eu-om-det-civile-beredskab-i-groenland/",
+      "published_date_local": "2026-09-28",
+      "published_at": "2026-09-28T00:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Myndighederne opretter midlertidig krisekontakt til  erhvervsliv og civilsamfundet",
+      "url": "https://mssb.dk/nyheder/nyhedsarkiv/2026/september/myndighederne-opretter-krisekontakt/",
+      "published_date_local": "2026-09-25",
+      "published_at": "2026-09-25T00:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Eftersynet af sikringsrum sættes i gang",
+      "url": "https://mssb.dk/nyheder/nyhedsarkiv/2026/september/eftersynet-af-sikringsrum-saettes-i-gang/",
+      "published_date_local": "2026-09-16",
+      "published_at": "2026-09-16T00:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Forsvarsministeren og minister for samfundssikkerhed og beredskab vil forbedre vilkår for veteraner og deres familier",
+      "url": "https://mssb.dk/nyheder/nyhedsarkiv/2026/september/flagdag-mssb-og-fmn-veteraner/",
+      "published_date_local": "2026-09-05",
+      "published_at": "2026-09-05T00:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    },
+    {
+      "title": "Lise Demant er ny næstformand for DanPilots bestyrelse",
+      "url": "https://mssb.dk/nyheder/nyhedsarkiv/2026/september/lise-demant-er-ny-naestformand/",
+      "published_date_local": "2026-09-04",
+      "published_at": "2026-09-04T00:00:00+00:00",
+      "date_confidence": "high",
+      "published_timezone": "Europe/Copenhagen"
+    }
+  ],
+  "live_status": {
+    "source_id": "dk_resilience",
+    "source_name": "丹麥社會安全與應變部",
+    "country": "DK",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 5,
+    "relevant_count": 5,
+    "duration_seconds": 5.562,
+    "newest_published_at": "2026-09-28T00:00:00+00:00",
+    "warning": "官方公開查詢尚有下一頁，已達設定頁數上限；此期間搜尋可能不完整。",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0,
+    "health_alerts": [],
+    "dated_count": 5,
+    "undated_ratio": 0,
+    "unique_title_ratio": 1,
+    "in_range_count": 5,
+    "freshness_lag_days": 5.12,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 3,
+    "bytes_downloaded": 45020,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200",
+      "200",
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0,
+    "historical_median_bytes": 0,
+    "historical_median_duration": 0
+  },
+  "dispatch_overlay": false,
+  "truncated": true,
+  "date_timezone_contract": "Naive Danish ISO times interpreted in Europe/Copenhagen; explicit offsets preserved.",
+  "raw_response": {
+    "url": "https://mssb.dk/umbraco/api/DynamicListSearchApi/search",
+    "observed_at": "2026-10-03T02:47:58.976047+00:00",
+    "http_status": 200,
+    "response_sha256": "736efb54eaed953934b0edef2db38f36d74594e965951842b97e29a3d6aa953e",
+    "response_bytes": 10015
+  },
+  "public_api_url": "https://mssb.dk/umbraco/api/DynamicListSearchApi/search",
+  "final_url": "https://mssb.dk/nyheder/",
+  "response_kind": "Public ministry-scoped API payload captured from raw_response.url; fixture dispatched against canonical source listing."
+}

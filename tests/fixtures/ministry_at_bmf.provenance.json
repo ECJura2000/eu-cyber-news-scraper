@@ -1,0 +1,91 @@
+{
+  "source_id": "at_bmf",
+  "url": "https://www.bmf.gv.at/presse/pressemeldungen.html",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:08.079425+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "6ba33293c8f6906650fb05b3a213baf0df93160fbdba3aa72660fc2a35d6af0a",
+  "response_sha256": "6849fdc04aedaa815dd20e7f2c5a10ee52373218f0e1788c29f2012ffdf8e8e9",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "29. September 2026 \n \n \n \t\t\tErleichterungen bei digitalen Rechnungen starten am 1. Oktober",
+      "url": "https://www.bmf.gv.at/presse/pressemeldungen/2026/september-2026/digitaler-beleg.html",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "26. September 2026 \n \n \n \t\t\tBMF und OeKB setzen weitere Maßnahmen zur Finanzierung der Energieinfrastruktur",
+      "url": "https://www.bmf.gv.at/presse/pressemeldungen/2026/september-2026/energieinfrastruktur.html",
+      "published_date_local": "2026-09-26",
+      "date_confidence": "high"
+    },
+    {
+      "title": "24. September 2026 \n \n \n \t\t\tBund-Länder-Gemeinden-Dialog zur Budgetkonsolidierung",
+      "url": "https://www.bmf.gv.at/presse/pressemeldungen/2026/september-2026/dialog-budget.html",
+      "published_date_local": "2026-09-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "18. September 2026 \n \n \n \t\t\tBereits 26 Millionen Euro an Abgabenverkürzungen durch Amt für Betrugsbekämpfung aufgedeckt",
+      "url": "https://www.bmf.gv.at/presse/pressemeldungen/2026/september-2026/halbjahresbilanz-abb.html",
+      "published_date_local": "2026-09-18",
+      "date_confidence": "high"
+    },
+    {
+      "title": "15. September 2026 \n \n \n \t\t\tFinanzstaatssekretärin Eibinger-Miedl: Wirtschaftliche Zusammenarbeit mit Vietnam weiter stärken",
+      "url": "https://www.bmf.gv.at/presse/pressemeldungen/2026/september-2026/vietnam-besuch.html",
+      "published_date_local": "2026-09-15",
+      "date_confidence": "high"
+    },
+    {
+      "title": "15. September 2026 \n \n \n \t\t\tÜberprüfungen der Covid Förderungen: Bisher fast 160 Millionen Euro zu Unrecht bezogene Förderungen festgestellt",
+      "url": "https://www.bmf.gv.at/presse/pressemeldungen/2026/september-2026/cofag-bericht.html",
+      "published_date_local": "2026-09-15",
+      "date_confidence": "high"
+    },
+    {
+      "title": "11. September 2026 \n \n \n \t\t\tBotox, Filler, Fettwegspritze: Finanzpolizei hebt illegales Beauty-Studio aus",
+      "url": "https://www.bmf.gv.at/presse/pressemeldungen/2026/september-2026/finpol-beautystudio.html",
+      "published_date_local": "2026-09-11",
+      "date_confidence": "high"
+    },
+    {
+      "title": "1. September 2026 \n \n \n \t\t\tWechsel in der Geschäftsführung des Bundesrechenzentrums BRZ",
+      "url": "https://www.bmf.gv.at/presse/pressemeldungen/2026/september-2026/brz-ulmer.html",
+      "published_date_local": "2026-09-01",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 10,
+  "live_dated_count": 10,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "at_bmf",
+    "country": "AT",
+    "name_zh": "奧地利財政部",
+    "name": "Bundesministerium für Finanzen",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.bmf.gv.at/",
+    "listing_url": "https://www.bmf.gv.at/presse/pressemeldungen.html",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.bmf.gv.at"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Vienna",
+    "card_selectors": [
+      "a.card-link"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

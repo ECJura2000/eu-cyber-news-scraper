@@ -1,0 +1,23 @@
+{
+  "url": "https://www.just.ro/feed/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:56:56.149251+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "a3cd1af8190426bfbea2f751c20fc4f5c071ec7773f194807da120f5e59f83ef",
+  "sha256": "4cf55a1f00f59fdbac92bfbbb149f2cf6bdbee184655c29172c5026ee307cf86",
+  "extraction": "Original feed retaining first four items",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 1,
+  "source_id": "ro_justice",
+  "expected": [
+    {
+      "title": "Intervenția în sistem video-conferință a Viceprim-ministrului Cătălin Predoiu, ministrul interimar al Justiției și ministrul interimar al Afacerilor Interne, în cadrul evenimentului la nivel înalt „De la Kyoto la Abu Dhabi: transpunerea viziunii în acțiune pentru justiția penală și tratamentul infractorilor”, din curpinsul celui de-al XV-lea Congres al Națiunilor Unite privind Prevenirea Criminalității și Justiția Penală – Abu Dhabi, 26 septembrie 2026",
+      "url": "https://www.just.ro/interventia-in-sistem-video-conferinta-a-viceprim-ministrului-catalin-predoiu-ministrul-interimar-al-justitiei-si-ministrul-interimar-al-afacerilor-interne-in-cadrul-evenimentului-la-nivel-inalt-d/",
+      "published_date_local": "2026-09-26",
+      "date_source": "feed-published"
+    }
+  ]
+}

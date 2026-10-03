@@ -1,0 +1,25 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Ministry for Finance Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Finance_Minister_of_Malta",
+      "title": "Finance Minister of Malta - Wikipedia",
+      "observed_at": "2026-10-03T08:37:41.072667+00:00",
+      "extracted_sha256": "bf5f707de08268c6c7baea156f3e96bd6f932d3da61976e77034e2b6d8f68dcc",
+      "excerpt": "The**finance minister of Malta**is the head of the Ministry for Finance.\n\n## Constitutional functions[[edit](https://en.wikipedia.org/w/index.php?title=Finance_Minister_of_Malta&action=edit&section=1)]\n\nThe finance minister has an important constitutional role. This constitution assigns the exclusive competence to the finance minister to initiate a legislative bill on financial measures. This means that financial measures cannot be introduced through a private member's bills amongst others. Furthermore, the constitution assigns the duty to the finance minister to lay before the[House of Representatives](https://en.wikipedia.org/wiki/House_of_Representatives_of_Malta)not later than thirty days after, the commencement of each financial year estimates of the revenues and expenditure of Malta for that year.\n\n## See also[[edit](https://en.wikipedia.org/w/index.php?title=Finance_Minister_of_Malta&action=edit&section=2)]\n- [Malta portal](https://en.wikipedia.org/wiki/Portal:Malta)\n- [](https:"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "http://finance.gov.mt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Finance_Minister_of_Malta",
+      "link_text": "finance.gov.mt",
+      "relationship_excerpt": "its are imposed on the office.Formation1921(105years ago)(1921)Website[finance.gov.mt](http://finance.gov.mt)\n\n[Politics of Malta](https://en.wikipedia.org/wiki/Politics_of_Malta)"
+    }
+  ],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_finance.wikipedia.json"
+}

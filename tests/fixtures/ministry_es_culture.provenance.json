@@ -1,0 +1,149 @@
+{
+  "source_id": "es_culture",
+  "url": "https://www.cultura.gob.es/actualidad.html",
+  "final_url": "https://www.cultura.gob.es/actualidad.html",
+  "observed_at": "2026-10-02T00:41:21.887414+00:00",
+  "http_status": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "1de24ca3a9242561c5a4e9b627e394944c7cd281ae0a9e9cc80707bd0bdb680b",
+  "response_bytes": 30252,
+  "fixture_sha256": "04511eb148ad26eed490e851195beb8326ff570518795d679a873686897f7289",
+  "fixture_bytes": 5264,
+  "transform": "BeautifulSoup extraction of genuine dated news containers retaining original attributes/text; scripts/styles removed; original base retained if present; bounded to six or fewer containers",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "El Ministerio de Cultura concede los Premios Nacionales de Danza 2026 a Amalia Fernández y Marco Flores",
+      "url": "https://www.cultura.gob.es/actualidad/2026/09/260930-premios-nacionales-de-danza-2026.html",
+      "published_date_local": "2026-09-30"
+    },
+    {
+      "title": "El Ministerio de Cultura concede el Premio Nacional de Artes Plásticas 2026 a Pilar Albarracín",
+      "url": "https://www.cultura.gob.es/actualidad/2026/09/260929-premio-nacional-artes-plasticas--2026.html",
+      "published_date_local": "2026-09-29"
+    },
+    {
+      "title": "El Museo Sorolla abre su ampliación al público el próximo 15 de octubre",
+      "url": "https://www.cultura.gob.es/actualidad/2026/09/260929-museo-sorolla-apertura-ampliacion.html",
+      "published_date_local": "2026-09-29"
+    },
+    {
+      "title": "El Ministerio de Cultura concede el Premio Nacional de Poesía Joven 'Miguel Hernández' 2026 a Ane Zubeldia Magriñá",
+      "url": "https://www.cultura.gob.es/actualidad/2026/09/260928-pn-poesia-joven.html",
+      "published_date_local": "2026-09-28"
+    },
+    {
+      "title": "El Ministerio de Cultura concede el Premio Nacional de Literatura Infantil y Juvenil 2026 a Antonio Rubio y Carmen Queralt",
+      "url": "https://www.cultura.gob.es/actualidad/2026/09/260924-premio-literatura-infantil-y-juvenil-2026.html",
+      "published_date_local": "2026-09-24"
+    },
+    {
+      "title": "'El poder de las letras. Memoria, exilio y democracia', lema de España País Invitado de Honor en la Feria Internacional del Libro de Buenos Aires 2027",
+      "url": "https://www.cultura.gob.es/actualidad/2026/09/260924-espana-invitada-honor-fil-buenos-aires.html",
+      "published_date_local": "2026-09-24"
+    }
+  ],
+  "live_status": {
+    "source_id": "es_culture",
+    "source_name": "西班牙文化部",
+    "country": "ES",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 15,
+    "relevant_count": 15,
+    "duration_seconds": 0.525,
+    "newest_published_at": "2026-09-29T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 15,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 15,
+    "freshness_lag_days": 3.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 30252,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "es_culture",
+    "country": "ES",
+    "name_zh": "西班牙文化部",
+    "name": "Ministerio de Cultura",
+    "institution_type": "central ministry",
+    "language": "es",
+    "homepage": "https://www.cultura.gob.es/",
+    "listing_url": "https://www.cultura.gob.es/actualidad.html",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.cultura.gob.es"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Madrid",
+    "card_selectors": [
+      "div.enlace"
+    ],
+    "link_selectors": [],
+    "title_selectors": [
+      "h2",
+      "h3",
+      "h4",
+      "[class*=title]"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]",
+      "[class*=fecha i]"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_es_culture.html",
+  "format": "html"
+}

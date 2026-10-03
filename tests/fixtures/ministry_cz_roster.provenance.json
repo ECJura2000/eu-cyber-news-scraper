@@ -1,0 +1,11 @@
+{
+  "url": "https://vlada.gov.cz/cz/vlada/ministerstva/",
+  "final_url": "https://vlada.gov.cz/cz/vlada/ministerstva/",
+  "observed_at": "2026-10-01T11:42:44.957702+00:00",
+  "observed_on": "2026-10-01",
+  "http_status": 200,
+  "sha256": "08e3b9f5e231a144c16a5c5782e216d4f6b843e7693e48985e6b3b0ccc07978c",
+  "transform": "BeautifulSoup main/body extraction; remove script/style/nav/header/footer/form; first 32700 UTF-8 bytes",
+  "truncated": false,
+  "expected_ministry_count": 15
+}

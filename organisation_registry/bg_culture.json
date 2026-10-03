@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-10-02.1",
+  "canonical_id": "bg_culture",
+  "names": {
+    "zh": "保加利亞文化部",
+    "en": "Ministry of Culture",
+    "short": "bg_culture",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "bg_culture",
+      "country": "BG",
+      "name_zh": "保加利亞文化部",
+      "name": "Министерство на културата",
+      "institution_type": "ministry",
+      "language": "bg",
+      "homepage": "https://mc.government.bg/",
+      "listing_url": "https://mc.government.bg/%D0%B2%D0%B8%D0%B4-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B0/%d0%bd%d0%be%d0%b2%d0%b8%d0%bd%d0%b8/feed/",
+      "feed_urls": [
+        "https://mc.government.bg/%D0%B2%D0%B8%D0%B4-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B0/%d0%bd%d0%be%d0%b2%d0%b8%d0%bd%d0%b8/feed/"
+      ],
+      "allow_domains": [
+        "mc.government.bg"
+      ],
+      "critical": false,
+      "detail_pages": 0,
+      "timezone": "Europe/Sofia",
+      "schedule_enabled": false
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "數位身份",
+      "著作權",
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱",
+      "競爭規範面向（平台責任的市場結構面）",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-10-02",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-10-02",
+    "evidence_urls": [
+      "https://iisda.government.bg/ras/executive_power/ministries",
+      "https://iisda.government.bg/ras/executive_power/ministry_organigram/80",
+      "https://mc.government.bg/",
+      "https://mc.government.bg/%D0%B2%D0%B8%D0%B4-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B0/%d0%bd%d0%be%d0%b2%d0%b8%d0%bd%d0%b8/feed/"
+    ],
+    "fixture_path": "tests/fixtures/ministry_bg_culture.xml",
+    "provenance_path": "tests/fixtures/ministry_bg_culture.provenance.json",
+    "last_smoke": {
+      "tested_on": "2026-10-02",
+      "source_id": "bg_culture",
+      "success": true,
+      "raw_count": 30,
+      "dated_count": 30,
+      "http_statuses": [
+        "200"
+      ],
+      "robots_enforced": true,
+      "tls_verified": true
+    },
+    "schedule_batch": "eu27_central_ministries"
+  }
+}

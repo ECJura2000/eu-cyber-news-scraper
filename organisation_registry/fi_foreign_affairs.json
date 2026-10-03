@@ -1,0 +1,160 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-10-03.4",
+  "canonical_id": "fi_foreign_affairs",
+  "names": {
+    "zh": "芬蘭外交部",
+    "en": "Ministry for Foreign Affairs",
+    "short": "fi_foreign_affairs",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "fi_foreign_affairs",
+      "country": "FI",
+      "name_zh": "芬蘭外交部",
+      "name": "Ulkoministeriö",
+      "institution_type": "ministry",
+      "language": "fi",
+      "homepage": "https://um.fi",
+      "listing_url": "https://um.fi/etusivu",
+      "feed_urls": [],
+      "allow_domains": [
+        "um.fi"
+      ],
+      "include_patterns": [
+        "^/ajankohtaista/-/asset_publisher/[^/]+/content/"
+      ],
+      "exclude_patterns": [],
+      "critical": false,
+      "detail_pages": 0,
+      "yearly_listing_url": "",
+      "pagination_url": "",
+      "max_pages": 1,
+      "observation_runs": 3,
+      "freshness_days": 45,
+      "timezone": "Europe/Helsinki",
+      "card_selectors": [
+        ".frontpage__mainlift .highlight-lift",
+        ".feed-list--simple li.item"
+      ],
+      "link_selectors": [],
+      "title_selectors": [
+        ".title"
+      ],
+      "date_selectors": [
+        ".date"
+      ],
+      "summary_selectors": [],
+      "parser_adapter": "",
+      "date_policy": "required",
+      "date_exception_reason": "",
+      "date_evidence_url": "",
+      "date_reviewed_on": "",
+      "date_review_due": "",
+      "tls_intermediate_bundle": "",
+      "paused_until": "",
+      "pause_reason": "",
+      "pause_evidence_url": "",
+      "min_listing_bytes": 0,
+      "user_agent": "",
+      "schedule_enabled": false,
+      "feed_archive_fallback": false,
+      "minimum_budget_seconds": 0
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "數位身份",
+      "著作權",
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱",
+      "競爭規範面向（平台責任的市場結構面）",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-10-03",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-10-03",
+    "evidence_urls": [
+      "https://valtioneuvosto.fi/ministeriot",
+      "https://valtioneuvosto.fi/en/ministries",
+      "https://um.fi",
+      "https://valtioneuvosto.fi/en/about-the-site",
+      "https://valtioneuvosto.fi/en/staattiset-feedit-en",
+      "https://valtioneuvosto.fi/ajankohtaista/tiedotteet/rss",
+      "https://um.fi/en/current-issues/press-releases",
+      "https://um.fi/rss",
+      "https://um.fi/etusivu"
+    ],
+    "fixture_path": "tests/fixtures/ministry_round4_fi_foreign_affairs.html",
+    "provenance_path": "tests/fixtures/ministry_round4_fi_foreign_affairs.provenance.json",
+    "last_smoke": {
+      "source_id": "fi_foreign_affairs",
+      "source_name": "芬蘭外交部",
+      "country": "FI",
+      "critical": false,
+      "success": true,
+      "fetched_via": "html-listing",
+      "raw_count": 6,
+      "relevant_count": 6,
+      "duration_seconds": 19.215,
+      "newest_published_at": "2026-09-30T21:00:00+00:00",
+      "warning": "",
+      "error": "",
+      "pages_fetched": 1,
+      "historical_median_count": 0,
+      "health_alerts": [],
+      "dated_count": 6,
+      "undated_ratio": 0,
+      "unique_title_ratio": 1,
+      "in_range_count": 6,
+      "freshness_lag_days": 3.12,
+      "content_warning": "",
+      "fetch_status": "ok",
+      "health_status": "healthy",
+      "invalid_date_count": 0,
+      "unexplained_future_date_count": 0,
+      "timeout_count": 0,
+      "parse_status": "healthy",
+      "freshness_status": "fresh",
+      "content_status": "hits",
+      "request_count": 1,
+      "bytes_downloaded": 320580,
+      "retry_count": 0,
+      "cache_hits": 0,
+      "budget_exhausted": false,
+      "http_statuses": [
+        "200"
+      ],
+      "error_code": "",
+      "historical_median_requests": 0,
+      "historical_median_bytes": 0,
+      "historical_median_duration": 0
+    },
+    "scope": "2026-10-03 round4 independent integration: production AuditHttpClient/scrape_source succeeded with 6/6 dated items. Full original HTML and bounded DOM fixture replay agree exactly on title, URL, publication instant, local date, raw date, timezone and confidence. Original response SHA-256 matches saved production evidence. Manual-only; all 15 observation topics; no responsibility assignments."
+  }
+}

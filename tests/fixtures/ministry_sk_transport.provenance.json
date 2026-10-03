@@ -1,0 +1,29 @@
+{
+  "url": "https://www.mindop.sk/pre-verejnost/tlacove-spravy",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:51.464524+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "2a1abfd5919b6399670210214f71782b6861e4931ad078f1984c81fdc3345ee3",
+  "sha256": "d213a311c17cad56165eb47b1e4972fb4e23edeedcfdd36a13224807357c34cd",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 2,
+  "source_id": "sk_transport",
+  "expected": [
+    {
+      "title": "Cestovné v autobusoch a MHD bude od 12. októbra o polovicu lacnejšie",
+      "url": "https://www.mindop.sk/media/tlacove-spravy/detail/cestovne-v-autobusoch-a-mhd-bude-od-12-oktobra-o-polovicu-lacnejsie",
+      "published_date_local": "2026-09-30",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Od októbra sa bude na STK kontrolovať aj povinné zmluvné poistenie",
+      "url": "https://www.mindop.sk/media/tlacove-spravy/detail/od-oktobra-sa-bude-na-stk-kontrolovat-aj-povinne-zmluvne-poistenie",
+      "published_date_local": "2026-09-29",
+      "date_source": "time-element"
+    }
+  ]
+}

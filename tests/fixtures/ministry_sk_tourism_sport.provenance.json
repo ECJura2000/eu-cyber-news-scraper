@@ -1,0 +1,41 @@
+{
+  "url": "https://www.mincrs.sk/aktuality",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:57:01.640485+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "866752c6af50a6d24173e9482535770a33355e1e0e36893807de0ce6425a9084",
+  "sha256": "9f84bd0214230bdf3e7b43d8d09bf04870f21b305afe44789bdc5861d6c2d7a3",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 12,
+  "dated_count": 12,
+  "fixture_count": 4,
+  "source_id": "sk_tourism_sport",
+  "expected": [
+    {
+      "title": "Uspeli sme v súdnom spore s NFŠ!",
+      "url": "https://www.mincrs.sk/aktuality/uspeli-sme-v-sudnom-spore-s-nfs-1",
+      "published_date_local": "2026-09-14",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Ministerstvo cestovného ruchu a športu Slovenskej republiky oznamuje, že dňa 15. septembra 2026, t. j. utorok bude zatvorené z technických príčin.",
+      "url": "https://www.mincrs.sk/aktuality/ministerstvo-cestovneho-ruchu-a-sportu-slovenskej-republiky-oznamuje-ze-dna-15-septembra-2026-t-j-utorok-bude-zatvorene-z-technickych-pricin",
+      "published_date_local": "2026-09-14",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Správa a hodnotení strategického dokumentu \"Stratégia rozvoja udržateľného cestovného ruchu Slovenska do roku 2035\"",
+      "url": "https://www.mincrs.sk/aktuality/sprava-a-hodnoteni-strategickeho-dokumentu-strategia-rozvoja-udrzatelneho-cestovneho-ruchu-slovenska-do-roku-2035",
+      "published_date_local": "2026-07-27",
+      "date_source": "time-element"
+    },
+    {
+      "title": "Minister Rudolf Huliak ocenil najúspešnejších slovenských kolkárov",
+      "url": "https://www.mincrs.sk/aktuality/minister-rudolf-huliak-ocenil-najuspesnejsich-slovenskych-kolkarov",
+      "published_date_local": "2026-07-15",
+      "date_source": "time-element"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
+  "final_url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/die-bundesregierung/bundesministerien.htm",
+  "observed_at": "2026-10-01T11:42:44.482355+00:00",
+  "observed_on": "2026-10-01",
+  "http_status": 200,
+  "sha256": "2aa32f752cfad85aa94ea393f4f747bcd6fb3a22a7c24b0ed1e3e1c1dfae0d2f",
+  "transform": "BeautifulSoup main/body extraction; remove script/style/nav/header/footer/form; first 32700 UTF-8 bytes",
+  "truncated": false,
+  "expected_ministry_count": 13
+}

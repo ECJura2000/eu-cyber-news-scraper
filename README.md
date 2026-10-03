@@ -6,11 +6,13 @@
 
 ## 機關 Registry
 
-v1.7.0 依使用者指示移除 `fr_institut_montaigne`、`eu_enisa_publications`、`ie_insight` 三個新聞入口。現有來源共 145 個，其中 52 個設定排程、50 個目前未暫停；ENISA 新聞與認證仍保留，歐洲議會及 CEA 的暫停不變。更新後預設線上抓取與離線查詢不再使用這三個來源；既存文章與 240 筆歷史分類回歸資料不刪除，外部自訂模組仍可由使用者明確提供。完整更新內容見 [CHANGELOG.md](CHANGELOG.md)。
+v1.8.0 整合 EU27 部會擴充與當地語言百科複查，新聞來源共 448 個；部會名錄共 460 個、已登錄 306 個、154 個候選依使用者決定保留為可追溯排除，名錄不是全部可搜尋的宣稱。新增芬蘭教育署與司法彙整入口使用獨立機關 ID，保留實際發布機關，不冒充原部會。新驗證機關先供手動查詢，正式未暫停排程仍為 50。不同 RSS、HTML 與公開 API 的分工、robots 例外及加入標準見 [抓取方法說明](CRAWLER_METHODS.md)。
+
+v1.7.0 依使用者指示移除 `fr_institut_montaigne`、`eu_enisa_publications`、`ie_insight` 三個新聞入口。該版來源共 145 個，其中 52 個設定排程、50 個未暫停；ENISA 新聞與認證仍保留，歐洲議會及 CEA 的暫停不變。更新後預設線上抓取與離線查詢不再使用這三個來源；既存文章與 240 筆歷史分類回歸資料不刪除，外部自訂模組仍可由使用者明確提供。完整更新內容見 [CHANGELOG.md](CHANGELOG.md)。
 
 新聞表使用英國新聞專案的三階黃色：高 `FFD966`、中 `FFE699`、低 `FFF2CC`。只標示標題、繁中標題、摘要、命中主題／詞與關聯分數，不把日期、來源健康或官方網址塗黃。沿用 EU 的 Boolean 關聯程度（4 分以上為高，2～3 分為中，1 分為低），BM25 仍是另列的主題排序分數；黃色不代表日期可信度或百分比。線上四個新聞工作表與離線查詢均採相同配色，規則未變重查仍可沿用結果；程式版本更新會重建查詢 Excel 快取，以套用新版格式。
 
-機關模組位於 [`organisation_registry/`](organisation_registry/)，145 個新聞來源各有一份 schema v2 JSON（PR #37 的 101 個來源，加上 24 個原未登錄歐盟國家來源與 23 個既有歐盟國家補充來源，再移除三個問題來源）。每個模組包含來源 URL 與解析設定、主題白名單、健康門檻、機關沿革、官方證據及驗證狀態；預設執行直接由這些 JSON 建立來源清單。新增或覆寫模組可放在 macOS 的 `~/Library/Application Support/EUCyberNewsScraper/organisations.d`，或使用 `EU_CYBER_ORGANISATION_DIR` 指定目錄，重啟後載入。外部模組驗證失敗會保留同 ID 的內建模組；無內建版本的新模組會略過，並讓 `.run.json` 的 `organisation_audit_status` 成為 `degraded`。
+機關模組位於 [`organisation_registry/`](organisation_registry/)，各來源使用 schema v2 JSON（v1.7.0 的 145 個來源，再加本版部會與獨立機關擴充）。每個模組包含來源 URL 與解析設定、主題白名單、健康門檻、機關沿革、官方證據及驗證狀態；預設執行直接由這些 JSON 建立來源清單。新增或覆寫模組可放在 macOS 的 `~/Library/Application Support/EUCyberNewsScraper/organisations.d`，或使用 `EU_CYBER_ORGANISATION_DIR` 指定目錄，重啟後載入。外部模組驗證失敗會保留同 ID 的內建模組；無內建版本的新模組會略過，並讓 `.run.json` 的 `organisation_audit_status` 成為 `degraded`。
 
 內建 `organisation_registry/*.json` 是正式設定的唯一來源；`src/eu_cyber_news_scraper/sources.toml` 是由 JSON 匯出的相容設定，仍可透過 `--config` 使用。修改內建來源時應先編輯 JSON，再匯出 TOML，不可反向從 TOML 重建機關 metadata。產生器只讀取內建模組，不納入環境變數或使用者覆寫；不帶參數與 `--check` 都只檢查，不寫檔。檢查依來源 ID 比對所有欄位與型別，不要求文字格式或排列順序相同；重複 ID、無效模組或設定不同均會失敗。
 
@@ -226,6 +228,36 @@ BMI 近期新聞使用[官方 RSS](https://www.bmi.bund.de/DE/service/rss-newsfe
 4. 累積下述三次連續合格解析觀察，並完成完整品質、翻譯、產物與同一次執行的 state observation 驗收，才人工審查是否加入排程；必要來源 `critical = true` 的設定另須至少連續觀察兩週。
 
 ## URL 稽核與候選機關目錄
+
+### EU27 中央部會名錄與新聞查詢
+
+新增的 [中央部會追蹤名錄](MINISTRIES.md) 按 27 個會員國列出所有中央部會、政府首長辦公室及制度相當機關。權威名單保存在 `ministry_inventory/` 的逐國 JSON，可維護部會名稱、官方名錄與查核日期、新聞入口、對應來源 ID 及缺口原因。
+
+[剩餘入口逐項複查](REMAINING_MINISTRIES.md) 公開起始 201 個未完成入口的歷次檢查結果與後續處理；每一輪涵蓋前一輪全部仍待處理 ID，各輪原始觀察保留，CI 驗證最新處置與名錄一致，不因成功新增其他來源就漏掉未完成項目。使用者明確排除的候選入口不會被自動重開。
+
+第五輪從維基百科條目尋找剩餘部會的官方網站線索，再到官網驗證新聞入口、發布機關與原文日期。百科條目可能過時，也可能沒有獨立條目，不能直接作為來源升級或部會不存在的證據。確認 404／410 或原文內容確實不是新聞的候選路徑才清理 `news_url`；首頁、部會名錄與歷史證據保留。robots、TLS、驗證頁、逾時或百科搜尋失敗不當成「沒有新聞」。新來源仍先供手動查詢，正式排程需另行驗收。
+
+第六輪依使用者指示，改以原文部會名稱搜尋當地語言維基百科，再驗證其官網新聞。仍未通過者移除目前的候選 `news_url`，狀態為 `user_excluded`，不再自動稽核或列入待處理入口；這是使用者排除決定，不是網站不存在的判定。`user_exclusion` 保存原因、時間及原候選網址，歷次官網與百科查核紀錄仍可追溯。名錄仍保留部會與官網；`registered_ministries`、`pending_ministries`、`user_excluded_ministries` 分別統計已登錄、待處理、使用者排除，`unresolved_ministries` 仍包含所有未通過者，不能將排除當成可搜尋完整覆蓋。若要恢復候選入口，須明確覆核與重新驗證，不會自動啟用正式排程。
+
+```console
+python -m eu_cyber_news_scraper ministries --country AT
+python -m eu_cyber_news_scraper ministries --json --country FI
+python -m eu_cyber_news_scraper ministries --check
+python -m eu_cyber_news_scraper ministries --country PL --audit-urls
+```
+
+`existing_source` 是已登錄部會，並不重新宣稱其解析已合格；`manual_verified` 是本次已完成 live 解析及原文樣本驗證、可明確指定 `--source` 或 `--country` 查詢的新來源。其他狀態只保留在名錄，列出待解析、網站阻擋、缺少獨立新聞入口或待查證原因，不會自行加入抓取來源。沒有命中現有 15 個主題時，仍可用 `--all` 查閱指定來源在期間內的官方新聞。
+
+`--check` 只驗證 JSON、日期與來源參照，完整名錄不等於全部新聞都可抓取。JSON 摘要另外提供 `registered_ministries`（已登錄）、`unresolved_ministries`（未完成）及 `searchable_inventory_complete`（名錄內是否全部已登錄）；最後一項仍不是即時網站或正式排程品質保證。`--audit-urls` 才即時檢查未登錄部會的網址，使用既有 robots、TLS、公網 DNS、重新導向與間隔限制，不驗證解析器、不自動登錄。每次對相同 URL 只檢查一次，來源共用的入口不會推定其發布部會。
+
+既有 15 個主題與可替換 JSON 保留，補充捷克語、斯洛伐克語原文詞；各概念的不同語言譯名仍只計一次，來源責任機關未查證時顯示「未設定」。
+
+葡萄牙動態新聞列表採官網公開前端同一個匿名內容查詢，不使用 API 金鑰、認證標頭或受保護後台。每次先讀官方列表的當屆新聞根節點與部會篩選，再獨立檢查回傳文章的新聞模板及部會標記；不以全站新聞代替單一部會。公開前端路由值僅在記憶體內使用，不寫入 JSON、HTTP 快取或診斷。共用前端程式每次執行只下載一次；仍遵循 robots、TLS 與每站間隔。查詢超過設定分頁上限會明示期間可能不完整，不沿用失效設定或改用認證查詢。
+
+特殊格式使用來源限定解析器：保加利亞國防部只讀取新聞卡片中的文字與固定文章路徑，不執行 onclick；勞動部保留保加利亞語文章與官網原始英文月份日期。保加利亞司法部與義大利國防部只解析已確認的公開新聞 JSON，保留發布時間原文並排除非該機關文章網址。網站回傳成功或具有日期，仍不能單獨證明可搜尋；每個登錄來源另有原文 fixture、獨立 SHA-256 與實際執行證據。
+
+新增 `EU27 central ministry source audit` 在每週三臺北時間 09:15 分國檢測，最多四國同時執行，每國最多八來源併行。逐國 artifact 保存解析觀察與未登錄入口的 URL 診斷，保留 90 天；首次執行可復原舊的共同診斷 history，若不可復原則明示重新累積。原網址稽核改查 EU 層級及挪威，繼續智庫候選探索。工作完成只代表診斷完成，失敗入口、待解析與排程升級證據均需檢視 artifact；正式來源仍須三次連續合格觀察及完整翻譯／artifact／state 驗收。
+
 
 `audit-sources` 讀取目前 registry，分別檢查官方首頁、新聞列表與所有已設定 feed 的 HTTP 狀態、重新導向、內容型別及錯誤原因；可辨識 TLS／DNS／逾時、robots、challenge page、feed 回傳 HTML、無效 XML 與過小列表等問題。URL 僅接受公開 HTTPS、443 port 及來源設定允許的網域；每一跳、探索出的 feed 與文章內頁也檢查網域與公開 DNS。HTTP 200 本身不代表能正確解析新聞。
 

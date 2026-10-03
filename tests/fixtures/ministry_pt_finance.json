@@ -1,0 +1,107 @@
+{
+  "source_url": "https://portugal.gov.pt/pt/gc25/area-de-governo/financas/noticias",
+  "scope": [
+    "847EE87D80774A00A5F802E885A86D16"
+  ],
+  "articles": [
+    {
+      "id": "DE8F3A01F8154D8F9460FCFF55AF2F82",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/prr-verbas-do-orcamento-de-estado-asseguram-conclusao-de-projetos-previstos",
+      "title": "PRR – verbas do Orçamento de Estado asseguram conclusão de projetos previstos",
+      "date": "20261001T164800Z",
+      "summary": "Conselho de Ministros define regras para concluir investimentos e autoriza compras de energia em conjunto para 2027",
+      "areas": [
+        "25802E46EA5E46F1A95916C4396959FF",
+        "847EE87D80774A00A5F802E885A86D16",
+        "1D5141F0B5D3434E8ADA5A042485336D",
+        "6F295533DFFD48C88F14F102A37EDD38"
+      ]
+    },
+    {
+      "id": "962F9D6F4DC14F3F94AF6FFFA1FEFC91",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/orcamento-do-estado-para-2027-governo-inicia-hoje-reunioes-com-representantes-parlamentares",
+      "title": "Orçamento do Estado para 2027: Governo inicia hoje reuniões com representantes parlamentares",
+      "date": "20260928T093500Z",
+      "summary": "Ministros das Finanças e dos Assuntos Parlamentares apresentam as linhas gerais da proposta de orçamento",
+      "areas": [
+        "847EE87D80774A00A5F802E885A86D16",
+        "511493A9B8964E5D9F6BD4538BCB2C84"
+      ]
+    },
+    {
+      "id": "ED8FCB1B82FA457CB8D78EE3C57D650A",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/portugal-regista-excedente-orcamental-de-05-do-pib-no-primeiro-semestre",
+      "title": "Portugal regista excedente orçamental de 0,5% do PIB no primeiro semestre",
+      "date": "20260924T111500Z",
+      "summary": "O saldo das Administrações Públicas fixou-se em 0,5% do PIB no primeiro semestre, um sinal de “equilíbrio orçamental” e de que “a despesa está controlada”\n",
+      "areas": [
+        "847EE87D80774A00A5F802E885A86D16"
+      ]
+    },
+    {
+      "id": "6CB33211460D442DAEBB43F8DA5A906A",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/operacao-de-aquisicao-de-capital-da-ren",
+      "title": "Operação de Aquisição de Capital da REN",
+      "date": "20260922T213500Z",
+      "summary": "",
+      "areas": [
+        "847EE87D80774A00A5F802E885A86D16"
+      ]
+    },
+    {
+      "id": "6225C6688C2340529FF668C5C7B38671",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/novas-taxas-de-irs-consulte-as-simulacoes-e-saiba-quanto-pode-poupar",
+      "title": "Novas taxas de IRS: consulte as simulações e saiba quanto pode poupar",
+      "date": "20260917T200000Z",
+      "summary": "IRS volta a descer e reforça rendimento das famílias",
+      "areas": [
+        "847EE87D80774A00A5F802E885A86D16"
+      ]
+    },
+    {
+      "id": "5773FAF4BF974AD89BD3EF0C7F873BB1",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/nova-linha-de-credito-de-15-mil-milhoes-de-euros-para-50-000-habitacoes",
+      "title": "Nova linha de crédito de 1,5 mil milhões de euros para 50 000 habitações",
+      "date": "20260907T190200Z",
+      "summary": "O financiamento destina-se à construção e renovação de habitações para as famílias mais vulneráveis",
+      "areas": [
+        "847EE87D80774A00A5F802E885A86D16",
+        "1A7CCD51EC644EE5AF22B927A03AC91D"
+      ]
+    },
+    {
+      "id": "E0025F139C9A4A25A65C36E719CFB935",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/fitch-sobe-rating-de-portugal-para-a-1",
+      "title": "Fitch sobe rating de Portugal para A+",
+      "date": "20260905T094700Z",
+      "summary": "Subida reflete redução da dívida pública, robustez das contas públicas e crescimento da economia",
+      "areas": [
+        "847EE87D80774A00A5F802E885A86D16"
+      ]
+    },
+    {
+      "id": "0CEDA940718E486CB426DE938DBBA3C9",
+      "template": "DC3CC8F2100446C7827CCAD36919C735",
+      "path": "/pt/gc25/comunicacao/noticias/fitch-destaca-reducao-da-divida-publica-de-portugal",
+      "title": "Fitch destaca redução da dívida pública de Portugal",
+      "date": "20260827T155700Z",
+      "summary": "Agência de notação financeira aponta a redução sustentada da dívida como fator para a melhoria da notação de Portugal",
+      "areas": [
+        "847EE87D80774A00A5F802E885A86D16"
+      ]
+    }
+  ],
+  "truncated": false,
+  "response_sha256": [
+    "f04d2180df749e80e9d693edf30218005475a460dc27dea8337d175f00ed7c35",
+    "abd8e01008ddb2730bce4cb29264dd7681a1b920ffd1a659dd1381764ea73998"
+  ],
+  "public_endpoint": "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1"
+}

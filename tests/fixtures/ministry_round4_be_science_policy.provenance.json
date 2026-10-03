@@ -1,0 +1,342 @@
+{
+  "source_id": "be_science_policy",
+  "url": "https://www.belspo.be/belspo/organisation/press_fr.stm",
+  "source_config": {
+    "id": "be_science_policy",
+    "country": "BE",
+    "name_zh": "比利時科學政策規劃公共服務部",
+    "name": "Programmatorische Federale Overheidsdienst Wetenschapsbeleid",
+    "institution_type": "ministry_equivalent",
+    "language": "fr",
+    "homepage": "https://www.belspo.be",
+    "listing_url": "https://www.belspo.be/belspo/organisation/press_fr.stm",
+    "allow_domains": [
+      "www.belspo.be"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Brussels",
+    "schedule_enabled": false,
+    "parser_adapter": "belspo_central_press",
+    "feed_urls": [],
+    "minimum_budget_seconds": 120
+  },
+  "raw_details": [
+    {
+      "url": "https://www.belspo.be/belspo/organisation/press/20260915_FLEX-Sentinel-3C_fr.stm",
+      "observed_at": "2026-10-03T02:50:13.895698+00:00",
+      "http_status": 200,
+      "final_url": "https://www.belspo.be/belspo/organisation/press/20260915_FLEX-Sentinel-3C_fr.stm",
+      "content_type": "text/html",
+      "http_statuses": [
+        "200",
+        "200"
+      ],
+      "response_sha256": "289bdf803379433880b0fbd928cffc1f2e21d4940b4f6f88c9f161f30d980132",
+      "response_bytes": 14169,
+      "robots_enforced": true,
+      "tls_verified": true
+    },
+    {
+      "url": "https://www.belspo.be/belspo/organisation/press/20260827_MTG-12_fr.stm",
+      "observed_at": "2026-10-03T02:50:13.897752+00:00",
+      "http_status": 200,
+      "final_url": "https://www.belspo.be/belspo/organisation/press/20260827_MTG-12_fr.stm",
+      "content_type": "text/html",
+      "http_statuses": [
+        "200"
+      ],
+      "response_sha256": "4eabf17aaa100f9e40fdd678f0b50849c3aa0188e74a74349317621f3309fb36",
+      "response_bytes": 12029,
+      "robots_enforced": true,
+      "tls_verified": true
+    },
+    {
+      "url": "https://www.belspo.be/belspo/organisation/press/20260825_ISS-Brain-DTI_fr.stm",
+      "observed_at": "2026-10-03T02:50:13.897772+00:00",
+      "http_status": 200,
+      "final_url": "https://www.belspo.be/belspo/organisation/press/20260825_ISS-Brain-DTI_fr.stm",
+      "content_type": "text/html",
+      "http_statuses": [
+        "200"
+      ],
+      "response_sha256": "e59fc2bfaec966039412d4c97fd4d71b2fe4a51a7b884bb3ee0f09d7bf8de0b1",
+      "response_bytes": 12144,
+      "robots_enforced": true,
+      "tls_verified": true
+    }
+  ],
+  "observed_at": "2026-10-03T02:50:13.895698+00:00",
+  "fixture_path": "tests/fixtures/ministry_round4_be_science_policy.json",
+  "fixture_sha256": "fc0ab08383676f1a0d82c95ed56df11b32aa21b06221b42b2d25e8ee24508060",
+  "fixture_bytes": 27936,
+  "transform": "Bounded original detail HTML containers bundled under canonical listing; each raw response SHA retained.",
+  "expected": [
+    {
+      "title": "Deux nouveaux satellites pour observer la santé de notre planète",
+      "url": "https://www.belspo.be/belspo/organisation/press/20260915_FLEX-Sentinel-3C_fr.stm",
+      "published_date_local": "2026-09-14",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Un nouveau satellite pour mieux prévoir la météo et détecter plus vite les orages violents",
+      "url": "https://www.belspo.be/belspo/organisation/press/20260827_MTG-12_fr.stm",
+      "published_date_local": "2026-08-27",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Une recherche inédite à bord de la Station spatiale internationale",
+      "url": "https://www.belspo.be/belspo/organisation/press/20260825_ISS-Brain-DTI_fr.stm",
+      "published_date_local": "2026-08-25",
+      "date_confidence": "high"
+    }
+  ],
+  "live_status": {
+    "source_id": "be_science_policy",
+    "source_name": "比利時科學政策規劃公共服務部",
+    "country": "BE",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 3,
+    "relevant_count": 3,
+    "duration_seconds": 47.172,
+    "newest_published_at": "2026-09-13T22:00:00+00:00",
+    "warning": "官方新聞內頁僅進行有界樣本抓取；此期間搜尋可能不完整。",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0,
+    "health_alerts": [],
+    "dated_count": 3,
+    "undated_ratio": 0,
+    "unique_title_ratio": 1,
+    "in_range_count": 3,
+    "freshness_lag_days": 19.21,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 5,
+    "bytes_downloaded": 88635,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200",
+      "200",
+      "200",
+      "200",
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0,
+    "historical_median_bytes": 0,
+    "historical_median_duration": 0
+  },
+  "robots_enforced": true,
+  "tls_verified": true,
+  "http_status": 200,
+  "top_level_transport_evidence_url": "https://www.belspo.be/belspo/organisation/press_fr.stm",
+  "prior_production_rechecks": [
+    {
+      "live_status": {
+        "source_id": "be_science_policy",
+        "source_name": "比利時科學政策規劃公共服務部",
+        "country": "BE",
+        "critical": false,
+        "success": true,
+        "fetched_via": "html-listing",
+        "raw_count": 3,
+        "relevant_count": 3,
+        "duration_seconds": 47.154,
+        "newest_published_at": "2026-09-13T22:00:00+00:00",
+        "warning": "",
+        "error": "",
+        "pages_fetched": 1,
+        "historical_median_count": 0,
+        "health_alerts": [],
+        "dated_count": 3,
+        "undated_ratio": 0,
+        "unique_title_ratio": 1,
+        "in_range_count": 3,
+        "freshness_lag_days": 19.21,
+        "content_warning": "",
+        "fetch_status": "ok",
+        "health_status": "healthy",
+        "invalid_date_count": 0,
+        "unexplained_future_date_count": 0,
+        "timeout_count": 0,
+        "parse_status": "healthy",
+        "freshness_status": "fresh",
+        "content_status": "hits",
+        "request_count": 5,
+        "bytes_downloaded": 88635,
+        "retry_count": 0,
+        "cache_hits": 0,
+        "budget_exhausted": false,
+        "http_statuses": [
+          "200",
+          "200",
+          "200",
+          "200",
+          "200"
+        ],
+        "error_code": "",
+        "historical_median_requests": 0,
+        "historical_median_bytes": 0,
+        "historical_median_duration": 0
+      }
+    }
+  ],
+  "latest_production_recheck": {
+    "canonical_id": "be_science_policy",
+    "source_config": {
+      "id": "be_science_policy",
+      "country": "BE",
+      "name_zh": "比利時科學政策規劃公共服務部",
+      "name": "Programmatorische Federale Overheidsdienst Wetenschapsbeleid",
+      "institution_type": "ministry_equivalent",
+      "language": "fr",
+      "homepage": "https://www.belspo.be",
+      "listing_url": "https://www.belspo.be/belspo/organisation/press_fr.stm",
+      "allow_domains": [
+        "www.belspo.be"
+      ],
+      "critical": false,
+      "detail_pages": 0,
+      "timezone": "Europe/Brussels",
+      "schedule_enabled": false,
+      "parser_adapter": "belspo_central_press",
+      "feed_urls": [],
+      "minimum_budget_seconds": 120
+    },
+    "observed_at": "2026-10-03T03:07:27.615918+00:00",
+    "live_status": {
+      "source_id": "be_science_policy",
+      "source_name": "比利時科學政策規劃公共服務部",
+      "country": "BE",
+      "critical": false,
+      "success": true,
+      "fetched_via": "html-listing",
+      "raw_count": 3,
+      "relevant_count": 3,
+      "duration_seconds": 47.172,
+      "newest_published_at": "2026-09-13T22:00:00+00:00",
+      "warning": "官方新聞內頁僅進行有界樣本抓取；此期間搜尋可能不完整。",
+      "error": "",
+      "pages_fetched": 1,
+      "historical_median_count": 0,
+      "health_alerts": [],
+      "dated_count": 3,
+      "undated_ratio": 0,
+      "unique_title_ratio": 1,
+      "in_range_count": 3,
+      "freshness_lag_days": 19.21,
+      "content_warning": "",
+      "fetch_status": "ok",
+      "health_status": "healthy",
+      "invalid_date_count": 0,
+      "unexplained_future_date_count": 0,
+      "timeout_count": 0,
+      "parse_status": "healthy",
+      "freshness_status": "fresh",
+      "content_status": "hits",
+      "request_count": 5,
+      "bytes_downloaded": 88635,
+      "retry_count": 0,
+      "cache_hits": 0,
+      "budget_exhausted": false,
+      "http_statuses": [
+        "200",
+        "200",
+        "200",
+        "200",
+        "200"
+      ],
+      "error_code": "",
+      "historical_median_requests": 0,
+      "historical_median_bytes": 0,
+      "historical_median_duration": 0
+    },
+    "dispatch_overlay": false,
+    "attempts": [
+      {
+        "url": "https://www.belspo.be/robots.txt",
+        "observed_at": "2026-10-03T03:07:27.651098+00:00",
+        "final_url": "https://www.belspo.be/robots.txt",
+        "http_status": 200,
+        "response_sha256": "ad6c1a9018162c385cfa25ac69c90cf248cbbb1d9ffaa7009403402c9b4d11c1",
+        "response_bytes": 4702,
+        "robots_enforced": true,
+        "tls_verified": true
+      },
+      {
+        "url": "https://www.belspo.be/belspo/organisation/press_fr.stm",
+        "observed_at": "2026-10-03T03:07:27.651074+00:00",
+        "final_url": "https://www.belspo.be/belspo/organisation/press_fr.stm",
+        "http_status": 200,
+        "response_sha256": "ceea40f437b2ead6b5acacacf7ae51236fa529781647b6406a12e9ce3ef00292",
+        "response_bytes": 45591,
+        "robots_enforced": true,
+        "tls_verified": true
+      },
+      {
+        "url": "https://www.belspo.be/belspo/organisation/press/20260915_FLEX-Sentinel-3C_fr.stm",
+        "observed_at": "2026-10-03T03:07:29.525972+00:00",
+        "final_url": "https://www.belspo.be/belspo/organisation/press/20260915_FLEX-Sentinel-3C_fr.stm",
+        "http_status": 200,
+        "response_sha256": "289bdf803379433880b0fbd928cffc1f2e21d4940b4f6f88c9f161f30d980132",
+        "response_bytes": 14169,
+        "robots_enforced": true,
+        "tls_verified": true
+      },
+      {
+        "url": "https://www.belspo.be/belspo/organisation/press/20260827_MTG-12_fr.stm",
+        "observed_at": "2026-10-03T03:07:44.864650+00:00",
+        "final_url": "https://www.belspo.be/belspo/organisation/press/20260827_MTG-12_fr.stm",
+        "http_status": 200,
+        "response_sha256": "4eabf17aaa100f9e40fdd678f0b50849c3aa0188e74a74349317621f3309fb36",
+        "response_bytes": 12029,
+        "robots_enforced": true,
+        "tls_verified": true
+      },
+      {
+        "url": "https://www.belspo.be/belspo/organisation/press/20260825_ISS-Brain-DTI_fr.stm",
+        "observed_at": "2026-10-03T03:07:59.804917+00:00",
+        "final_url": "https://www.belspo.be/belspo/organisation/press/20260825_ISS-Brain-DTI_fr.stm",
+        "http_status": 200,
+        "response_sha256": "e59fc2bfaec966039412d4c97fd4d71b2fe4a51a7b884bb3ee0f09d7bf8de0b1",
+        "response_bytes": 12144,
+        "robots_enforced": true,
+        "tls_verified": true
+      }
+    ],
+    "expected": [
+      {
+        "title": "Deux nouveaux satellites pour observer la santé de notre planète",
+        "url": "https://www.belspo.be/belspo/organisation/press/20260915_FLEX-Sentinel-3C_fr.stm",
+        "published_date_local": "2026-09-14",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Un nouveau satellite pour mieux prévoir la météo et détecter plus vite les orages violents",
+        "url": "https://www.belspo.be/belspo/organisation/press/20260827_MTG-12_fr.stm",
+        "published_date_local": "2026-08-27",
+        "date_confidence": "high"
+      },
+      {
+        "title": "Une recherche inédite à bord de la Station spatiale internationale",
+        "url": "https://www.belspo.be/belspo/organisation/press/20260825_ISS-Brain-DTI_fr.stm",
+        "published_date_local": "2026-08-25",
+        "date_confidence": "high"
+      }
+    ]
+  },
+  "dispatch_overlay": false,
+  "truncated": true
+}

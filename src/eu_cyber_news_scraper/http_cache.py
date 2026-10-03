@@ -6,8 +6,17 @@ import sqlite3
 import time
 from hashlib import sha256
 from pathlib import Path
+from urllib.parse import parse_qsl, urlsplit
 
 import httpx
+
+
+def _transient_public_routing(url: str) -> bool:
+    parts = urlsplit(url)
+    return any(name.casefold() == "sitecorecontextid" for name, _value in parse_qsl(parts.query)) or (
+        parts.hostname in {"portugal.gov.pt", "www.portugal.gov.pt"}
+        and parts.path.startswith("/_next/static/chunks/pages/_app-")
+    )
 
 
 class ResponseCache:
@@ -23,6 +32,9 @@ class ResponseCache:
         self.connection.close()
 
     def load(self, url: str, variant: str) -> httpx.Response | None:
+        if _transient_public_routing(url):
+            self.delete(url, variant)
+            return None
         key = sha256((url + "\n" + variant).encode()).hexdigest()
         row = self.connection.execute(
             "SELECT url, headers, body, digest, checked FROM responses WHERE key = ?", (key,),
@@ -52,7 +64,7 @@ class ResponseCache:
         url = str(response.url)
         controls = response.headers.get("cache-control", "").casefold()
         vary = {value.strip().casefold() for value in response.headers.get("vary", "").split(",") if value.strip()}
-        if (response.status_code != 200 or "no-store" in controls or "set-cookie" in response.headers
+        if (_transient_public_routing(url) or response.status_code != 200 or "no-store" in controls or "set-cookie" in response.headers
                 or vary - {"accept", "accept-language", "accept-encoding", "user-agent"}
                 or not (response.headers.get("etag") or response.headers.get("last-modified"))):
             self.delete(url, variant)

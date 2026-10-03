@@ -1,0 +1,85 @@
+{
+  "source_id": "dk_education",
+  "url": "https://uvm.dk/umbraco/api/DynamicRss/GetRss/?pageId=31390&moduleId=8d3d6977-899a-458e-99ef-b7c091047870",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:50.191233+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "32c6dcd398fc9a4daaaf3159080868c00a0ed475b081a002cee20ddd5e567a34",
+  "response_sha256": "0c9846a58ded97011dd9093dc6741029dff570e52c20472db50b69df8e418fc4",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Ny uddannelsestype skal løfte kvaliteten og være med til at løse udfordringer i skoler og dagtilbud",
+      "url": "https://uvm.dk/aktuelt/nyheder/2026/februar/ny-uddannelsestype-skal-loefte-kvaliteten-og-vaere-med-til-at-loese-udfordringer-i-skoler-og-dagtilbud/",
+      "published_date_local": "2026-02-26",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Et år efter: Børne- og Undervisningsministeriet i fuld gang med at følge op på anbefalinger fra Trivselskommissionen",
+      "url": "https://uvm.dk/aktuelt/nyheder/2026/februar/et-aar-efter-boerne-og-undervisningsministeriet-i-fuld-gang-med-at-foelge-op-paa-anbefalinger-fra-trivselskommissionen/",
+      "published_date_local": "2026-02-25",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Minister sløjfer materiale om systematisk introduktion til bogstaver i børnehaver",
+      "url": "https://uvm.dk/aktuelt/nyheder/2026/februar/minister-sloejfer-materiale-om-systematisk-introduktion-til-bogstaver-i-boernehaver/",
+      "published_date_local": "2026-02-23",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Ny opkvalificeringspulje skal bidrage til kompetenceløft i private pasningstilbud",
+      "url": "https://uvm.dk/aktuelt/nyheder/2026/februar/ny-opkvalificeringspulje-skal-bidrage-til-kompetenceloeft-i-private-pasningstilbud/",
+      "published_date_local": "2026-02-20",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Penge til flere ansatte og lavere forældrebetaling i dagtilbud er nu sendt afsted til kommunerne",
+      "url": "https://uvm.dk/aktuelt/nyheder/2026/januar/260121-penge-til-flere-ansatte-og-lavere-foraeldrebetaling-i-dagtilbud-er-nu-sendt-afsted-til-kommunerne/",
+      "published_date_local": "2026-01-21",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Ny ekspertgruppe skal give anbefalinger til mere kvalitet i dagtilbud",
+      "url": "https://uvm.dk/aktuelt/nyheder/2026/januar/260116-ny-ekspertgruppe-skal-give-anbefalinger-til-mere-kvalitet-i-dagtilbud/",
+      "published_date_local": "2026-01-16",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Lovforslag om ændring af dagtilbudsloven er sendt i offentlig høring",
+      "url": "https://uvm.dk/aktuelt/nyheder/2025/december/251218-lovforslag-om-aendring-af-dagtilbudsloven-er-sendt-i-offentlig-hoering/",
+      "published_date_local": "2025-12-18",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Ny trepartsaftale skal sikre mere uddannet personale i landets dagtilbud, ældrepleje og på sygehuse",
+      "url": "https://uvm.dk/aktuelt/nyheder/2025/december/ny-trepartsaftale-skal-sikre-mere-uddannet-personale-i-landets-dagtilbud-aeldrepleje-og-sygehuse/",
+      "published_date_local": "2025-12-18",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 156,
+  "live_dated_count": 156,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "dk_education",
+    "country": "DK",
+    "name_zh": "丹麥教育部",
+    "name": "Undervisningsministeriet",
+    "institution_type": "ministry",
+    "language": "da",
+    "homepage": "https://uvm.dk/",
+    "listing_url": "https://uvm.dk/umbraco/api/DynamicRss/GetRss/?pageId=31390&moduleId=8d3d6977-899a-458e-99ef-b7c091047870",
+    "feed_urls": [
+      "https://uvm.dk/umbraco/api/DynamicRss/GetRss/?pageId=31390&moduleId=8d3d6977-899a-458e-99ef-b7c091047870"
+    ],
+    "allow_domains": [
+      "uvm.dk"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Copenhagen",
+    "schedule_enabled": false
+  }
+}

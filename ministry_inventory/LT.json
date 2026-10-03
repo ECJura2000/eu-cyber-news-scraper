@@ -1,0 +1,465 @@
+{
+  "schema_version": 1,
+  "country": "LT",
+  "reviewed_on": "2026-10-03",
+  "official_roster_urls": [
+    "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+    "https://lrv.lt/en/ministries/"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "2026-10-02 ministry news audit: 0 manually verified and 0 existing-source ministries; 15 unresolved. Roster enumeration does not imply searchable completeness. Exact tried URLs and robots/transport/parser/attribution limitations are recorded per ministry; unresolved rows have no runnable source. New sources retain disabled scheduling/noncritical status, all 15 topics, empty responsibility, and genuine checksum-backed fixture replay."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "lt_environment",
+      "name_zh": "立陶宛環境部",
+      "name_local": "Aplinkos ministerija",
+      "name_en": "Ministry of Environment",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://am.lrv.lt/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://am.lrv.lt/",
+        "https://am.lrv.lt/lt/naujienos/",
+        "https://am.lrv.lt/rss/",
+        "https://am.lrv.lt/lt/rss/",
+        "https://am.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Environment_(Lithuania)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2).",
+        "observed_at": "2026-10-03T17:48:52.676912+08:00",
+        "candidate_news_url": "https://am.lrv.lt/lt/naujienos/"
+      }
+    },
+    {
+      "canonical_id": "lt_economy",
+      "name_zh": "立陶宛經濟暨創新部",
+      "name_local": "Ekonomikos ir inovacijų ministerija",
+      "name_en": "Ministry of Economy and Innovation",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://eimin.lrv.lt/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://eimin.lrv.lt/",
+        "https://eimin.lrv.lt/lt/ziniasklaidai/naujienos/",
+        "https://eimin.lrv.lt/rss/",
+        "https://eimin.lrv.lt/lt/rss/",
+        "https://eimin.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Economy_and_Innovation_(Lithuania)",
+        "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.1337?positionInSearchResults=32&searchModelUUID=0154b83f-df1f-404a-b71f-c1ce24a20d6f",
+        "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.1386?positionInSearchResults=31&searchModelUUID=0154b83f-df1f-404a-b71f-c1ce24a20d6f",
+        "https://www.lrt.lt/naujienos/lietuvoje/2/18685/oficialiai_atleista_b._vesaite",
+        "https://lt.wikipedia.org/wiki/Lietuvos_Respublikos_ekonomikos_ir_inovacij%C5%B3_ministerija"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.",
+        "observed_at": "2026-10-03T17:48:57.308514+08:00",
+        "candidate_news_url": "https://eimin.lrv.lt/lt/ziniasklaidai/naujienos/"
+      }
+    },
+    {
+      "canonical_id": "lt_energy",
+      "name_zh": "立陶宛能源部",
+      "name_local": "Energetikos ministerija",
+      "name_en": "Ministry of Energy",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://enmin.lrv.lt/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://enmin.lrv.lt/",
+        "https://enmin.lrv.lt/lt/naujienos/",
+        "https://enmin.lrv.lt/rss/",
+        "https://enmin.lrv.lt/lt/rss/",
+        "https://enmin.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Energy_(Lithuania)",
+        "https://enmin.lrv.lt/lt/",
+        "https://lt.wikipedia.org/wiki/Lietuvos_Respublikos_energetikos_ministerija"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).",
+        "observed_at": "2026-10-03T17:48:58.783479+08:00",
+        "candidate_news_url": "https://enmin.lrv.lt/lt/naujienos/"
+      }
+    },
+    {
+      "canonical_id": "lt_finance",
+      "name_zh": "立陶宛財政部",
+      "name_local": "Finansų ministerija",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://finmin.lrv.lt/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://finmin.lrv.lt/",
+        "https://finmin.lrv.lt/lt/naujienos/",
+        "https://finmin.lrv.lt/rss/",
+        "https://finmin.lrv.lt/lt/rss/",
+        "https://finmin.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Finance_(Lithuania)",
+        "https://finmin.lrv.lt",
+        "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.718?positionInSearchResults=40&searchModelUUID=0154b83f-df1f-404a-b71f-c1ce24a20d6f",
+        "https://lt.wikipedia.org/wiki/Lietuvos_Respublikos_finans%C5%B3_ministerija"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.",
+        "observed_at": "2026-10-03T17:49:04.203671+08:00",
+        "candidate_news_url": "https://finmin.lrv.lt/lt/naujienos/"
+      }
+    },
+    {
+      "canonical_id": "lt_defence",
+      "name_zh": "立陶宛國防部",
+      "name_local": "Krašto apsaugos ministerija",
+      "name_en": "Ministry of National Defence",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://kam.lt/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://kam.lt/",
+        "https://kam.lt/rss/",
+        "https://kam.lt/lt/rss/",
+        "https://kam.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_National_Defence_(Lithuania)",
+        "https://www.kam.lt/",
+        "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.2977?positionInSearchResults=23&searchModelUUID=0154b83f-df1f-404a-b71f-c1ce24a20d6f",
+        "https://lt.wikipedia.org/wiki/Lietuvos_Respublikos_kra%C5%A1to_apsaugos_ministerija"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.",
+        "observed_at": "2026-10-03T17:49:05.473858+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "lt_culture",
+      "name_zh": "立陶宛文化部",
+      "name_local": "Kultūros ministerija",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://lrkm.lrv.lt/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://lrkm.lrv.lt/",
+        "https://lrkm.lrv.lt/lt/naujienos/",
+        "https://lrkm.lrv.lt/rss/",
+        "https://lrkm.lrv.lt/lt/rss/",
+        "https://lrkm.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Culture_(Lithuania)",
+        "https://lt.wikipedia.org/wiki/Lietuvos_Respublikos_kult%C5%ABros_ministerija"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2).",
+        "observed_at": "2026-10-03T17:49:12.262702+08:00",
+        "candidate_news_url": "https://lrkm.lrv.lt/lt/naujienos/"
+      }
+    },
+    {
+      "canonical_id": "lt_social_security",
+      "name_zh": "立陶宛社會保障暨勞動部",
+      "name_local": "Socialinės apsaugos ir darbo ministerija",
+      "name_en": "Ministry of Social Security and Labour",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://socmin.lrv.lt/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://socmin.lrv.lt/",
+        "https://socmin.lrv.lt/lt/naujienos/",
+        "https://socmin.lrv.lt/rss/",
+        "https://socmin.lrv.lt/lt/rss/",
+        "https://socmin.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Social_Security_and_Labour_(Lithuania)",
+        "https://socmin.lrv.lt",
+        "https://lt.wikipedia.org/wiki/Lietuvos_Respublikos_socialin%C4%97s_apsaugos_ir_darbo_ministerija"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).",
+        "observed_at": "2026-10-03T17:49:08.977734+08:00",
+        "candidate_news_url": "https://socmin.lrv.lt/lt/naujienos/"
+      }
+    },
+    {
+      "canonical_id": "lt_transport",
+      "name_zh": "立陶宛交通暨通訊部",
+      "name_local": "Susisiekimo ministerija",
+      "name_en": "Ministry of Transport and Communications",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://sumin.lrv.lt/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://sumin.lrv.lt/",
+        "https://sumin.lrv.lt/lt/naujienos/",
+        "https://sumin.lrv.lt/rss/",
+        "https://sumin.lrv.lt/lt/rss/",
+        "https://sumin.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Transport_and_Communications_(Lithuania)",
+        "https://lt.wikipedia.org/wiki/Lietuvos_Respublikos_susisiekimo_ministerija"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2).",
+        "observed_at": "2026-10-03T17:49:11.383394+08:00",
+        "candidate_news_url": "https://sumin.lrv.lt/lt/naujienos/"
+      }
+    },
+    {
+      "canonical_id": "lt_health",
+      "name_zh": "立陶宛衛生部",
+      "name_local": "Sveikatos apsaugos ministerija",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://sam.lrv.lt/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://sam.lrv.lt/",
+        "https://sam.lrv.lt/lt/news/",
+        "https://sam.lrv.lt/rss/",
+        "https://sam.lrv.lt/lt/rss/",
+        "https://sam.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Health_(Lithuania)",
+        "https://lt.wikipedia.org/wiki/Lietuvos_Respublikos_sveikatos_apsaugos_ministerija"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2).",
+        "observed_at": "2026-10-03T17:49:11.536978+08:00",
+        "candidate_news_url": "https://sam.lrv.lt/lt/news/"
+      }
+    },
+    {
+      "canonical_id": "lt_education",
+      "name_zh": "立陶宛教育、科學暨體育部",
+      "name_local": "Švietimo, mokslo ir sporto ministerija",
+      "name_en": "Ministry of Education, Science and Sport",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://smsm.lrv.lt/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://smsm.lrv.lt/",
+        "https://smsm.lrv.lt/lt/naujienos-1/pranesimai-ziniasklaidai-1/",
+        "https://smsm.lrv.lt/rss/",
+        "https://smsm.lrv.lt/lt/rss/",
+        "https://smsm.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Education_and_Science_(Lithuania)",
+        "https://www.smm.lt/",
+        "https://lt.wikipedia.org/wiki/Lietuvos_Respublikos_%C5%A1vietimo,_mokslo_ir_sporto_ministerija"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).",
+        "observed_at": "2026-10-03T17:49:20.084615+08:00",
+        "candidate_news_url": "https://smsm.lrv.lt/lt/naujienos-1/pranesimai-ziniasklaidai-1/"
+      }
+    },
+    {
+      "canonical_id": "lt_justice",
+      "name_zh": "立陶宛司法部",
+      "name_local": "Teisingumo ministerija",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://tm.lrv.lt/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2), robots_unavailable (1). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://tm.lrv.lt/",
+        "https://tm.lrv.lt/lt/naujienos-2/",
+        "https://tm.lrv.lt/rss/",
+        "https://tm.lrv.lt/lt/rss/",
+        "https://tm.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Justice_(Lithuania)",
+        "https://www.tm.lt/",
+        "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.1128?positionInSearchResults=39&searchModelUUID=0154b83f-df1f-404a-b71f-c1ce24a20d6f",
+        "https://lt.wikipedia.org/wiki/Lietuvos_Respublikos_teisingumo_ministerija"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2), robots_unavailable (1). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.",
+        "observed_at": "2026-10-03T17:49:21.094795+08:00",
+        "candidate_news_url": "https://tm.lrv.lt/lt/naujienos-2/"
+      }
+    },
+    {
+      "canonical_id": "lt_foreign_affairs",
+      "name_zh": "立陶宛外交部",
+      "name_local": "Užsienio reikalų ministerija",
+      "name_en": "Ministry of Foreign Affairs",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://www.urm.lt/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://www.urm.lt/",
+        "https://www.urm.lt/naujienos/141",
+        "https://www.urm.lt/rss/",
+        "https://www.urm.lt/lt/rss/",
+        "https://www.urm.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_(Lithuania)",
+        "https://www.e-tar.lt/portal/lt/legalAct/TAR.BD6F04D9850F/TAIS_463791",
+        "https://lt.wikipedia.org/wiki/Lietuvos_Respublikos_u%C5%BEsienio_reikal%C5%B3_ministerija"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).",
+        "observed_at": "2026-10-03T17:49:15.069885+08:00",
+        "candidate_news_url": "https://www.urm.lt/naujienos/141"
+      }
+    },
+    {
+      "canonical_id": "lt_interior",
+      "name_zh": "立陶宛內政部",
+      "name_local": "Vidaus reikalų ministerija",
+      "name_en": "Ministry of Interior",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://vrm.lrv.lt/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://vrm.lrv.lt/",
+        "https://vrm.lrv.lt/lt/naujienos/",
+        "https://vrm.lrv.lt/rss/",
+        "https://vrm.lrv.lt/lt/rss/",
+        "https://vrm.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_the_Interior_(Lithuania)",
+        "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.2280?positionInSearchResults=20&searchModelUUID=0154b83f-df1f-404a-b71f-c1ce24a20d6f",
+        "https://lt.wikipedia.org/wiki/Lietuvos_Respublikos_vidaus_reikal%C5%B3_ministerija"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.",
+        "observed_at": "2026-10-03T17:49:18.628119+08:00",
+        "candidate_news_url": "https://vrm.lrv.lt/lt/naujienos/"
+      }
+    },
+    {
+      "canonical_id": "lt_agriculture",
+      "name_zh": "立陶宛農業部",
+      "name_local": "Žemės ūkio ministerija",
+      "name_en": "Ministry of Agriculture",
+      "kind": "ministry",
+      "language": "lt",
+      "homepage": "https://zum.lrv.lt/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://zum.lrv.lt/",
+        "https://zum.lrv.lt/lt/naujienos/",
+        "https://zum.lrv.lt/rss/",
+        "https://zum.lrv.lt/lt/rss/",
+        "https://zum.lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Ministry_of_Agriculture_(Lithuania)",
+        "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.718?positionInSearchResults=40&searchModelUUID=0154b83f-df1f-404a-b71f-c1ce24a20d6f",
+        "https://lt.wikipedia.org/wiki/Lietuvos_Respublikos_%C5%BEem%C4%97s_%C5%ABkio_ministerija"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.",
+        "observed_at": "2026-10-03T17:49:24.236434+08:00",
+        "candidate_news_url": "https://zum.lrv.lt/lt/naujienos/"
+      }
+    },
+    {
+      "canonical_id": "lt_government_office",
+      "name_zh": "立陶宛政府辦公室",
+      "name_local": "Lietuvos Respublikos Vyriausybės kanceliarija",
+      "name_en": "Office of the Government of the Republic of Lithuania",
+      "kind": "government_head_office",
+      "language": "lt",
+      "homepage": "https://lrv.lt/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (4).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://lrv.lt/lt/ministerijos-ir-istaigos/",
+        "https://lrv.lt/",
+        "https://lrv.lt/lt/naujienos/",
+        "https://lrv.lt/rss/",
+        "https://lrv.lt/lt/rss/",
+        "https://lrv.lt/lt/naujienos/?format=rss",
+        "https://en.wikipedia.org/wiki/Government_of_Lithuania",
+        "https://lrv.lt/lt/naujienos/darba-pradeda-vyriausybes-kancleris-eitvydas-bingelis-te9L/",
+        "https://lrvk.lrv.lt/lt",
+        "https://lt.wikipedia.org/wiki/Lietuvos_Respublikos_Vyriausyb%C4%97s_kanceliarija"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (4).",
+        "observed_at": "2026-10-03T17:49:23.837019+08:00",
+        "candidate_news_url": "https://lrv.lt/lt/naujienos/"
+      }
+    }
+  ]
+}

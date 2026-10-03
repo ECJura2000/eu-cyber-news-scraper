@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-10-01.1",
+  "canonical_id": "si_slovenians_abroad",
+  "names": {
+    "zh": "斯洛維尼亞境外斯洛維尼亞人事務辦公室",
+    "en": "Government Office for Slovenians Abroad",
+    "local": "Urad Vlade Republike Slovenije za Slovence v zamejstvu in po svetu",
+    "short": "si_slovenians_abroad",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "si_slovenians_abroad",
+      "country": "SI",
+      "name_zh": "斯洛維尼亞境外斯洛維尼亞人事務辦公室",
+      "name": "Urad Vlade Republike Slovenije za Slovence v zamejstvu in po svetu",
+      "institution_type": "中央部會",
+      "language": "sl",
+      "homepage": "https://www.gov.si/drzavni-organi/vladne-sluzbe/urad-vlade-za-slovence-v-zamejstvu-in-po-svetu/",
+      "listing_url": "https://www.gov.si/novice/rss/?categoryID%5B0%5D=1&orgID%5B0%5D=1962",
+      "feed_urls": [
+        "https://www.gov.si/novice/rss/?categoryID%5B0%5D=1&orgID%5B0%5D=1962"
+      ],
+      "allow_domains": [
+        "www.gov.si",
+        "www.gov.si"
+      ],
+      "include_patterns": [],
+      "exclude_patterns": [],
+      "critical": false,
+      "detail_pages": 0,
+      "yearly_listing_url": "",
+      "pagination_url": "",
+      "max_pages": 1,
+      "observation_runs": 3,
+      "freshness_days": 45,
+      "timezone": "Europe/Ljubljana",
+      "card_selectors": [],
+      "link_selectors": [],
+      "title_selectors": [],
+      "date_selectors": [],
+      "summary_selectors": [],
+      "parser_adapter": "",
+      "date_policy": "required",
+      "date_exception_reason": "",
+      "date_evidence_url": "",
+      "date_reviewed_on": "",
+      "date_review_due": "",
+      "tls_intermediate_bundle": "",
+      "paused_until": "",
+      "pause_reason": "",
+      "pause_evidence_url": "",
+      "min_listing_bytes": 0,
+      "user_agent": "",
+      "schedule_enabled": false,
+      "feed_archive_fallback": false,
+      "minimum_budget_seconds": 0
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "數位身份",
+      "著作權",
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱",
+      "競爭規範面向（平台責任的市場結構面）",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-10-01",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-10-01",
+    "evidence_urls": [
+      "https://www.gov.si/drzavni-organi/vladne-sluzbe/urad-vlade-za-slovence-v-zamejstvu-in-po-svetu/",
+      "https://www.gov.si/novice/rss/?categoryID%5B0%5D=1&orgID%5B0%5D=1962"
+    ],
+    "fixture_path": "tests/fixtures/ministry_si_slovenians_abroad.xml",
+    "provenance_path": "tests/fixtures/ministry_si_slovenians_abroad.provenance.json",
+    "live_parsed_count": 100,
+    "live_dated_count": 100,
+    "schedule_batch": "eu27_central_ministries"
+  }
+}

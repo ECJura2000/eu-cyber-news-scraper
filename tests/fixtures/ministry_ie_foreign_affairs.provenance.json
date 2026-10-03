@@ -1,0 +1,122 @@
+{
+  "source_id": "ie_foreign_affairs",
+  "url": "https://www.gov.ie/en/department-of-foreign-affairs/",
+  "final_url": "https://www.gov.ie/en/department-of-foreign-affairs/",
+  "observed_at": "2026-10-02T00:41:34.349692+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "837eda887bd171a801f4c8c7e49a6f479e7d335a592386f7b2f8336ae70b1e16",
+  "response_bytes": 384343,
+  "fixture_sha256": "3ff58b95e0a69d20d6ef00ab9c8c22862761ac12a20b6e3125bf03745535729d",
+  "fixture_bytes": 1450,
+  "transform": "BeautifulSoup extraction of genuine dated news containers retaining original attributes/text; scripts/styles removed; original base retained if present; bounded to six or fewer containers",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "New Ambassadors present Credentials, 1 October 2026",
+      "url": "https://www.gov.ie/en/department-of-foreign-affairs/press-releases/new-ambassadors-present-credentials-1-october-2026/",
+      "published_date_local": "2026-10-01"
+    }
+  ],
+  "live_status": {
+    "source_id": "ie_foreign_affairs",
+    "source_name": "愛爾蘭外交暨貿易部",
+    "country": "IE",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 1,
+    "relevant_count": 1,
+    "duration_seconds": 0.537,
+    "newest_published_at": "2026-09-30T23:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 1,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 1,
+    "freshness_lag_days": 2.04,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 384343,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "ie_foreign_affairs",
+    "country": "IE",
+    "name_zh": "愛爾蘭外交暨貿易部",
+    "name": "Department of Foreign Affairs and Trade",
+    "institution_type": "central ministry",
+    "language": "en",
+    "homepage": "https://www.gov.ie/en/department-of-foreign-affairs/",
+    "listing_url": "https://www.gov.ie/en/department-of-foreign-affairs/",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.gov.ie"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Dublin",
+    "card_selectors": [
+      "div[role=\"region\"][aria-label=\"Press releases Recent links\"]",
+      "div[role=\"region\"][aria-label=\"News Recent links\"]"
+    ],
+    "link_selectors": [
+      "a[href*=\"/en/department-of-foreign-affairs/press-releases/\"]",
+      "a[href*=\"/en/department-of-foreign-affairs/news/\"]"
+    ],
+    "title_selectors": [
+      "a.gi-title-ellipsis b"
+    ],
+    "date_selectors": [
+      "span.pinned-link-date"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_ie_foreign_affairs.html",
+  "format": "html"
+}

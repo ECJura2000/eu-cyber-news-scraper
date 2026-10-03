@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "country": "CY",
+  "reviewed_on": "2026-10-03",
+  "official_roster_urls": [
+    "https://www.gov.cy/en/government/",
+    "https://www.gov.cy/en/websites/"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "The official Cyprus government roster confirms 11 ministries. Gov.cy returned access-denied content during this review, so ministry homepages, news endpoints and parser fixtures are not asserted without a separately captured HTTPS response."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "cy_defence",
+      "name_zh": "塞浦路斯國防部",
+      "name_local": "Υπουργείο Άμυνας",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2), robots_unavailable (1).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/",
+        "https://www.gov.cy/mod/",
+        "https://www.mod.gov.cy/",
+        "https://army.gov.cy",
+        "https://mod.gov.cy/",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%86%CE%BC%CF%85%CE%BD%CE%B1%CF%82_(%CE%9A%CF%8D%CF%80%CF%81%CE%BF%CF%82)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (2), robots_unavailable (1).",
+        "observed_at": "2026-10-03T17:46:31.313234+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "cy_agriculture",
+      "name_zh": "塞浦路斯農業、農村發展與環境部",
+      "name_local": "Υπουργείο Γεωργίας, Αγροτικής Ανάπτυξης και Περιβάλλοντος",
+      "name_en": "Ministry of Agriculture, Rural Development and Environment",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/",
+        "https://www.gov.cy/moa/",
+        "https://www.moa.gov.cy/",
+        "https://moa.gov.cy/",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%93%CE%B5%CF%89%CF%81%CE%B3%CE%AF%CE%B1%CF%82,_%CE%91%CE%B3%CF%81%CE%BF%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%91%CE%BD%CE%AC%CF%80%CF%84%CF%85%CE%BE%CE%B7%CF%82_%CE%BA%CE%B1%CE%B9_%CE%A0%CE%B5%CF%81%CE%B9%CE%B2%CE%AC%CE%BB%CE%BB%CE%BF%CE%BD%CF%84%CE%BF%CF%82_(%CE%9A%CF%8D%CF%80%CF%81%CE%BF%CF%82)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).",
+        "observed_at": "2026-10-03T17:46:33.009172+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "cy_justice",
+      "name_zh": "塞浦路斯司法與公共秩序部",
+      "name_local": "Υπουργείο Δικαιοσύνης και Δημοσίας Τάξεως",
+      "name_en": "Ministry of Justice and Public Order",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (1), robots_unavailable (4).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/",
+        "https://www.gov.cy/mjpo/",
+        "https://www.mjpo.gov.cy/",
+        "https://www.mjpo.gov.cy",
+        "https://www.mjpo.gov.cy/mjpo/mjpo.nsf/dmlmission_en/dmlmission_en?OpenDocument",
+        "https://www.mjpo.gov.cy/mjpo/mjpo.nsf/dmlhistory_en/dmlhistory_en?OpenDocument",
+        "https://en.wikipedia.org/wiki/Ministry_of_Justice_and_Public_Order_(Cyprus)",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%94%CE%B9%CE%BA%CE%B1%CE%B9%CE%BF%CF%83%CF%8D%CE%BD%CE%B7%CF%82_%CE%BA%CE%B1%CE%B9_%CE%94%CE%B7%CE%BC%CE%BF%CF%83%CE%AF%CE%B1%CF%82_%CE%A4%CE%AC%CE%BE%CE%B5%CF%89%CF%82_(%CE%9A%CF%8D%CF%80%CF%81%CE%BF%CF%82)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (1), robots_unavailable (4).",
+        "observed_at": "2026-10-03T17:46:51.239259+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "cy_energy",
+      "name_zh": "塞浦路斯能源、商業與工業部",
+      "name_local": "Υπουργείο Ενέργειας, Εμπορίου και Βιομηχανίας",
+      "name_en": "Ministry of Energy, Commerce and Industry",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/",
+        "https://www.gov.cy/meci/",
+        "https://www.meci.gov.cy/",
+        "https://meci.gov.cy/gr/",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%95%CE%BD%CE%AD%CF%81%CE%B3%CE%B5%CE%B9%CE%B1%CF%82,_%CE%95%CE%BC%CF%80%CE%BF%CF%81%CE%AF%CE%BF%CF%85_%CE%BA%CE%B1%CE%B9_%CE%92%CE%B9%CE%BF%CE%BC%CE%B7%CF%87%CE%B1%CE%BD%CE%AF%CE%B1%CF%82_(%CE%9A%CF%8D%CF%80%CF%81%CE%BF%CF%82)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).",
+        "observed_at": "2026-10-03T17:46:35.688844+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "cy_foreign_affairs",
+      "name_zh": "塞浦路斯外交部",
+      "name_local": "Υπουργείο Εξωτερικών",
+      "name_en": "Ministry of Foreign Affairs",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/",
+        "https://www.gov.cy/mfa/",
+        "https://www.mfa.gov.cy/",
+        "https://mfa.gov.cy/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_(Cyprus)",
+        "https://mfa.gov.cy/el/",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%95%CE%BE%CF%89%CF%84%CE%B5%CF%81%CE%B9%CE%BA%CF%8E%CE%BD_(%CE%9A%CF%8D%CF%80%CF%81%CE%BF%CF%82)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).",
+        "observed_at": "2026-10-03T17:46:42.270978+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "cy_labour",
+      "name_zh": "塞浦路斯勞動與社會保險部",
+      "name_local": "Υπουργείο Εργασίας και Κοινωνικών Ασφαλίσεων",
+      "name_en": "Ministry of Labour and Social Insurance",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/",
+        "https://www.gov.cy/mlsi/",
+        "https://www.mlsi.gov.cy/",
+        "https://www.mlsi.gov.cy/mlsi/mlsi.nsf/home-el/home-el?openform",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%95%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1%CF%82_%CE%BA%CE%B1%CE%B9_%CE%9A%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CF%8E%CE%BD_%CE%91%CF%83%CF%86%CE%B1%CE%BB%CE%AF%CF%83%CE%B5%CF%89%CE%BD_(%CE%9A%CF%8D%CF%80%CF%81%CE%BF%CF%82)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).",
+        "observed_at": "2026-10-03T17:46:40.828889+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "cy_interior",
+      "name_zh": "塞浦路斯內政部",
+      "name_local": "Υπουργείο Εσωτερικών",
+      "name_en": "Ministry of Interior",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/",
+        "https://www.gov.cy/moi/",
+        "https://www.moi.gov.cy/",
+        "https://www.gov.cy/moi/en/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Interior_(Cyprus)",
+        "https://www.moi.gov.cy/moi/moiup/moi.nsf/index_gr/index_gr?OpenDocument",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%95%CF%83%CF%89%CF%84%CE%B5%CF%81%CE%B9%CE%BA%CF%8E%CE%BD_(%CE%9A%CF%8D%CF%80%CF%81%CE%BF%CF%82)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).",
+        "observed_at": "2026-10-03T17:46:44.570211+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "cy_finance",
+      "name_zh": "塞浦路斯財政部",
+      "name_local": "Υπουργείο Οικονομικών",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/",
+        "https://www.gov.cy/mof/",
+        "https://www.mof.gov.cy/",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9F%CE%B9%CE%BA%CE%BF%CE%BD%CE%BF%CE%BC%CE%B9%CE%BA%CF%8E%CE%BD_(%CE%9A%CF%8D%CF%80%CF%81%CE%BF%CF%82)",
+        "https://mof.gov.cy/gr/"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).",
+        "observed_at": "2026-10-03T17:46:45.947783+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "cy_education",
+      "name_zh": "塞浦路斯教育、體育與青年部",
+      "name_local": "Υπουργείο Παιδείας, Αθλητισμού και Νεολαίας",
+      "name_en": "Ministry of Education, Sport and Youth",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": "https://www.moec.gov.cy/",
+      "news_url": "https://enimerosi.moec.gov.cy/",
+      "source_ids": [
+        "cy_education"
+      ],
+      "status": "manual_verified",
+      "reason": "Fresh fourth-round verification: manual_verified. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_north.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/",
+        "https://enimerosi.moec.gov.cy/"
+      ]
+    },
+    {
+      "canonical_id": "cy_transport",
+      "name_zh": "塞浦路斯運輸、通信與工程部",
+      "name_local": "Υπουργείο Μεταφορών, Επικοινωνιών και Έργων",
+      "name_en": "Ministry of Transport, Communications and Works",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/",
+        "https://www.gov.cy/mtcw/",
+        "https://www.mtcw.gov.cy/",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%9C%CE%B5%CF%84%CE%B1%CF%86%CE%BF%CF%81%CF%8E%CE%BD,_%CE%95%CF%80%CE%B9%CE%BA%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CF%8E%CE%BD_%CE%BA%CE%B1%CE%B9_%CE%88%CF%81%CE%B3%CF%89%CE%BD_(%CE%9A%CF%8D%CF%80%CF%81%CE%BF%CF%82)",
+        "https://www.mcw.gov.cy/mtcw/mtcw.nsf/home/home?opendocument"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).",
+        "observed_at": "2026-10-03T17:46:48.136047+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "cy_health",
+      "name_zh": "塞浦路斯衛生部",
+      "name_local": "Υπουργείο Υγείας",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "el",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://www.gov.cy/en/government/",
+        "https://www.gov.cy/moh/",
+        "https://www.moh.gov.cy/",
+        "https://el.wikipedia.org/wiki/%CE%A5%CF%80%CE%BF%CF%85%CF%81%CE%B3%CE%B5%CE%AF%CE%BF_%CE%A5%CE%B3%CE%B5%CE%AF%CE%B1%CF%82_(%CE%9A%CF%8D%CF%80%CF%81%CE%BF%CF%82)",
+        "https://www.moh.gov.cy/moh/moh.nsf/index_gr/index_gr?OpenDocument"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (3).",
+        "observed_at": "2026-10-03T17:46:47.816717+08:00",
+        "candidate_news_url": null
+      }
+    }
+  ]
+}

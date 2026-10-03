@@ -6,6 +6,7 @@ import re
 import ssl
 import time
 import zlib
+from collections.abc import Callable
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
@@ -121,15 +122,18 @@ class HttpClient:
         ssl_bundle: str = "",
         user_agent: str = "",
         _check_robots: bool = True,
+        redirect_guard: Callable[[str], bool] | None = None,
     ) -> httpx.Response:
         metrics = stats or HttpStats()
         original_https = urlsplit(url).scheme == "https"
         history: list[httpx.Response] = []
         for _hop in range(11):
+            if redirect_guard is not None and not redirect_guard(url):
+                raise httpx.InvalidURL("Request or redirect target is outside source scope")
             if urlsplit(url).scheme not in {"http", "https"}:
                 raise httpx.InvalidURL(f"unsupported redirect scheme: {url}")
             if self.obey_robots and _check_robots:
-                await self._ensure_robots(url, metrics, ssl_bundle, user_agent)
+                await self._ensure_robots(url, metrics, ssl_bundle, user_agent, redirect_guard)
             response = await self._get_with_retry(url, metrics, ssl_bundle, user_agent)
             if response.has_redirect_location:
                 history.append(response)
@@ -165,8 +169,8 @@ class HttpClient:
             response: httpx.Response | None = None
             try:
                 async with host_limiter:
-                    await self._pace(host)
                     async with self._global_limiter:
+                        await self._pace(host)
                         metrics.request_count += 1
                         response = await self._read_response(
                             url,
@@ -224,11 +228,13 @@ class HttpClient:
                 raise RetryDeferredError(f"{host}: origin is cooling down for {cooldown:.1f}s")
             ready = max(self._host_clocks.get(host, 0.0), self._host_cooldowns.get(host, 0.0))
             remaining = ready - time.monotonic()
-            if remaining > 0:
+            while remaining > 0:
                 await asyncio.sleep(remaining)
+                remaining = ready - time.monotonic()
             self._host_clocks[host] = time.monotonic() + max(self.min_interval, self._host_delays.get(host, 0.0))
 
-    async def _ensure_robots(self, url: str, stats: HttpStats, bundle: str, user_agent: str) -> None:
+    async def _ensure_robots(self, url: str, stats: HttpStats, bundle: str, user_agent: str,
+                             redirect_guard: Callable[[str], bool] | None = None) -> None:
         parsed = urlsplit(url)
         origin = f"{parsed.scheme}://{parsed.netloc}"
         key = origin + "\n" + user_agent + "\n" + bundle
@@ -239,7 +245,8 @@ class HttpClient:
                 policy: RobotsPolicy | str
                 try:
                     response = await self.get(origin + "/robots.txt", stats=stats, ssl_bundle=bundle,
-                                              user_agent=user_agent, _check_robots=False)
+                                              user_agent=user_agent, _check_robots=False,
+                                              redirect_guard=redirect_guard)
                     content_type = response.headers.get("content-type", "").casefold()
                     text = response.text.lstrip("\ufeff")
                     # Some official servers label plain robots rules text/html.

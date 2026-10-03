@@ -1,0 +1,91 @@
+{
+  "source_id": "at_bmb",
+  "url": "https://www.bmb.gv.at/Ministerium/presse.html",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:08.656605+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "d4fe8b71f9f76d9a5d8335bf48b5672267d685eec37706ff8b604fd46a618be4",
+  "response_sha256": "f2492427e7ff4e3663844e932ef60bbe744c9898550fa5b1f575dff8438ededd",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "29. September 2026 \n \n \n   OECD -Bildungsbericht „ Education at a Glance “: Österreich punktet bei Lehrkräfteversorgung, Bildungsniveau und Betreuungsverhältnissen\n \n \n \n                                                                                    Wiederkehr: „Österreich investiert viel in Bildung – und die  OECD -Daten zeigen, dass diese Investitionen Wirkung zeigen“",
+      "url": "https://www.bmb.gv.at/Ministerium/presse/20260929.html",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "28. September 2026 \n \n \n \t\t\tEvaluierung zeigt: Quereinstieg bringt neue Perspektiven in die Schule\n \n \n \n                                                                                    Wissenschaftliche Begleitung des Quereinstiegs in der Sekundarstufe abgeschlossen – 90% der Quereinsteigenden wollen im Beruf bleiben",
+      "url": "https://www.bmb.gv.at/Ministerium/presse/20260928a.html",
+      "published_date_local": "2026-09-28",
+      "date_confidence": "high"
+    },
+    {
+      "title": "28. September 2026 \n \n \n \t\t\tTanja Leitner wird neue Bildungsdirektorin für Kärnten\n \n \n \n                                                                                    Bildungsminister Christoph Wiederkehr bestellt  MMag.  Tanja Leitner,  MA  – neue Funktionsperiode beginnt mit 1. Oktober 2026",
+      "url": "https://www.bmb.gv.at/Ministerium/presse/20260928.html",
+      "published_date_local": "2026-09-28",
+      "date_confidence": "high"
+    },
+    {
+      "title": "17. September 2026 \n \n \n \t\t\tLesepatenschaften werden ausgebaut: Bildungsministerium stellt 120.000 Euro für Leseförderung bereit\n \n \n \n                                                                                    Minister Wiederkehr: „Lesen zu fördern ist eine Zukunftsinvestition - es beflügelt die Fantasie, stärkt den Spracherwerb und bildet die Grundlage, auf der weiteres Lernen aufbaut.“",
+      "url": "https://www.bmb.gv.at/Ministerium/presse/20260917.html",
+      "published_date_local": "2026-09-17",
+      "date_confidence": "high"
+    },
+    {
+      "title": "28. August 2026 \n \n \n \t\t\tVon Nervenzellen bis zu entfernten Galaxien: Vifzack Academy am  ISTA   begeistert junge Talente für Forschung\n \n \n \n                                                                                    Eine Woche lang tauchten 75 Schüler:innen von 11 bis 14 Jahren aus ganz Österreich am Institute of Science and Technology Austria (ISTA) in die Welt der Spitzenforschung ein.",
+      "url": "https://www.bmb.gv.at/Ministerium/presse/20260828a.html",
+      "published_date_local": "2026-08-28",
+      "date_confidence": "high"
+    },
+    {
+      "title": "28. August 2026 \n \n \n \t\t\tBildungsministerium nimmt Angebote von DERAD aus dem Programm",
+      "url": "https://www.bmb.gv.at/Ministerium/presse/20260828.html",
+      "published_date_local": "2026-08-28",
+      "date_confidence": "high"
+    },
+    {
+      "title": "27. August 2026 \n \n \n \t\t\tSonderdienstverhältnis mit 30. September 2026 aufgelöst",
+      "url": "https://www.bmb.gv.at/Ministerium/presse/20260827.html",
+      "published_date_local": "2026-08-27",
+      "date_confidence": "high"
+    },
+    {
+      "title": "14. Juli 2026 \n \n \n \t\t\tWiederkehr/Pröll:  KI -Kompetenzen müssen so selbstverständlich werden wie Lesen, Schreiben und Rechnen",
+      "url": "https://www.bmb.gv.at/Ministerium/presse/20260714.html",
+      "published_date_local": "2026-07-14",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 25,
+  "live_dated_count": 25,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "at_bmb",
+    "country": "AT",
+    "name_zh": "奧地利教育部",
+    "name": "Bundesministerium für Bildung",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.bmb.gv.at",
+    "listing_url": "https://www.bmb.gv.at/Ministerium/presse.html",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.bmb.gv.at"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Vienna",
+    "card_selectors": [
+      "a.card-link"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

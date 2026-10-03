@@ -1,0 +1,149 @@
+{
+  "source_id": "es_education",
+  "url": "https://www.educacionfpydeportes.gob.es/prensa/actualidad.html",
+  "final_url": "https://www.educacionfpydeportes.gob.es/prensa/actualidad.html",
+  "observed_at": "2026-10-02T00:41:22.629443+00:00",
+  "http_status": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "9dd3b6647ced941f976d81008d34b271004fa1fbc0978a3a613d40f12190d2c8",
+  "response_bytes": 77583,
+  "fixture_sha256": "1a1a4685eda96afc59beb2ad202b2df9e74f750272852d3144cdd95c4cab1f8b",
+  "fixture_bytes": 4344,
+  "transform": "BeautifulSoup extraction of genuine dated news containers retaining original attributes/text; scripts/styles removed; original base retained if present; bounded to six or fewer containers",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "Milagros Tolón anuncia un Plan Psicosocial de Apoyo para la comunidad educativa de Ceuta",
+      "url": "https://www.educacionfpydeportes.gob.es/prensa/actualidad/2026/10/20260929-ruedaoctubreceuta.html",
+      "published_date_local": "2026-10-01"
+    },
+    {
+      "title": "Milagros Tolón confirma en Ceuta que la asistencia a clase es del 90%, como todos los inicios de curso",
+      "url": "https://www.educacionfpydeportes.gob.es/prensa/actualidad/2026/09/30092026-segundavisitaceuta.html",
+      "published_date_local": "2026-09-30"
+    },
+    {
+      "title": "Más del 73% de los niños y niñas de 2 años está escolarizado en España, por encima del 50% de media de los países de la OCDE",
+      "url": "https://www.educacionfpydeportes.gob.es/prensa/actualidad/2026/09/20260929-panoramaocde2026.html",
+      "published_date_local": "2026-09-29"
+    },
+    {
+      "title": "El Ministerio distribuye 107,39 millones de euros a las comunidades autónomas para la formación de los trabajadores en centros de titularidad pública",
+      "url": "https://www.educacionfpydeportes.gob.es/prensa/actualidad/2026/09/280926-formaciontrabajadores.html",
+      "published_date_local": "2026-09-28"
+    },
+    {
+      "title": "La FP virtual tendrá entre un 15% y un 39% de presencialidad y la semipresencial entre un 40% y un 60%",
+      "url": "https://www.educacionfpydeportes.gob.es/prensa/actualidad/2026/09/20260928-realdecretofp.html",
+      "published_date_local": "2026-09-28"
+    },
+    {
+      "title": "España logra un resultado histórico en WorldSkills 2026 en Shanghái, con un bronce y cinco medallas de excelencia",
+      "url": "https://www.educacionfpydeportes.gob.es/prensa/actualidad/2026/09/20260927-resultadosworldskills.html",
+      "published_date_local": "2026-09-27"
+    }
+  ],
+  "live_status": {
+    "source_id": "es_education",
+    "source_name": "西班牙教育、職業訓練與體育部",
+    "country": "ES",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 15,
+    "relevant_count": 15,
+    "duration_seconds": 0.649,
+    "newest_published_at": "2026-09-30T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 15,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 15,
+    "freshness_lag_days": 2.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 77583,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "es_education",
+    "country": "ES",
+    "name_zh": "西班牙教育、職業訓練與體育部",
+    "name": "Ministerio de Educación, Formación Profesional y Deportes",
+    "institution_type": "central ministry",
+    "language": "es",
+    "homepage": "https://www.educacionyfp.gob.es/",
+    "listing_url": "https://www.educacionfpydeportes.gob.es/prensa/actualidad.html",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.educacionfpydeportes.gob.es"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Madrid",
+    "card_selectors": [
+      "div.enlace"
+    ],
+    "link_selectors": [],
+    "title_selectors": [
+      "h2",
+      "h3",
+      "h4",
+      "[class*=title]"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]",
+      "[class*=fecha i]"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_es_education.html",
+  "format": "html"
+}

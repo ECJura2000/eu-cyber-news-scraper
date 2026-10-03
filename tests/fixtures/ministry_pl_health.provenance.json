@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.pl/web/zdrowie/wiadomosci",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:53:45.019528+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "c82aa17075bb511af5134ab057682f96d86b50a8d47957158257ca11f73cf5ba",
+  "sha256": "123c70c80fc2abb08864b71e5c8b15f80fa5f952484cd39e3161b06bbab2dc7c",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "pl_health",
+  "expected": [
+    {
+      "title": "Startuje kardiologia.gov.pl - nowe publiczne źródło rzetelnej wiedzy o zdrowiu sercowo-naczyniowym",
+      "url": "https://www.gov.pl/web/zdrowie/startuje-kardiologiagovpl---nowe-publiczne-zrodlo-rzetelnej-wiedzy-o-zdrowiu-sercowo-naczyniowym",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Nielegalny wywóz leków i działania państwa na rzecz bezpieczeństwa pacjentów",
+      "url": "https://www.gov.pl/web/zdrowie/nielegalny-wywoz-lekow-i-dzialania-panstwa-na-rzecz-bezpieczenstwa-pacjentow",
+      "published_date_local": "2026-09-28",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Uroczyste wręczenia odznak „Zasłużony Dawca Przeszczepu” w Ministerstwie Zdrowia",
+      "url": "https://www.gov.pl/web/zdrowie/uroczyste-wreczenia-odznak-zasluzony-dawca-przeszczepu-w-ministerstwie-zdrowia",
+      "published_date_local": "2026-09-24",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Minister zdrowia: System wreszcie bazuje nie na przypuszczeniach, a na faktach i z mocnym akcentem na rzecz naszych pacjentów",
+      "url": "https://www.gov.pl/web/zdrowie/minister-zdrowia-system-wreszcie-bazuje-nie-na-przypuszczeniach-a-na-faktach-i-z-mocnym-akcentem-na-rzecz-naszych-pacjentow",
+      "published_date_local": "2026-09-23",
+      "date_source": "source-selector"
+    }
+  ]
+}

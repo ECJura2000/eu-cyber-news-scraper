@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "country": "SE",
+  "reviewed_on": "2026-10-01",
+  "official_roster_urls": [
+    "https://www.regeringen.se/sveriges-regering/"
+  ],
+  "roster_complete": true,
+  "limitations": [],
+  "ministries": [
+    {
+      "canonical_id": "se_prime_minister",
+      "name_zh": "瑞典首相辦公室",
+      "name_local": "Statsrådsberedningen",
+      "name_en": "Prime Minister's Office",
+      "kind": "government_head_office",
+      "language": "sv",
+      "homepage": "https://www.regeringen.se/sveriges-regering/statsradsberedningen/",
+      "news_url": "https://www.regeringen.se/sveriges-regering/statsradsberedningen/",
+      "source_ids": [
+        "se_prime_minister"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.regeringen.se/sveriges-regering/",
+        "https://www.regeringen.se/sveriges-regering/statsradsberedningen/"
+      ]
+    },
+    {
+      "canonical_id": "se_employment",
+      "name_zh": "瑞典勞動部",
+      "name_local": "Arbetsmarknadsdepartementet",
+      "name_en": "Ministry of Employment",
+      "kind": "ministry",
+      "language": "sv",
+      "homepage": "https://www.regeringen.se/sveriges-regering/arbetsmarknadsdepartementet/",
+      "news_url": "https://www.regeringen.se/sveriges-regering/arbetsmarknadsdepartementet/",
+      "source_ids": [
+        "se_employment"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.regeringen.se/sveriges-regering/",
+        "https://www.regeringen.se/sveriges-regering/arbetsmarknadsdepartementet/"
+      ]
+    },
+    {
+      "canonical_id": "se_finance",
+      "name_zh": "瑞典財政部",
+      "name_local": "Finansdepartementet",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "sv",
+      "homepage": "https://www.regeringen.se/sveriges-regering/finansdepartementet/",
+      "news_url": "https://www.regeringen.se/sveriges-regering/finansdepartementet/",
+      "source_ids": [
+        "se_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.regeringen.se/sveriges-regering/",
+        "https://www.regeringen.se/sveriges-regering/finansdepartementet/"
+      ]
+    },
+    {
+      "canonical_id": "se_defence",
+      "name_zh": "瑞典國防部",
+      "name_local": "Försvarsdepartementet",
+      "name_en": "Ministry of Defence",
+      "kind": "ministry",
+      "language": "sv",
+      "homepage": "https://www.regeringen.se/sveriges-regering/forsvarsdepartementet/",
+      "news_url": "https://www.regeringen.se/sveriges-regering/forsvarsdepartementet/",
+      "source_ids": [
+        "se_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.regeringen.se/sveriges-regering/",
+        "https://www.regeringen.se/sveriges-regering/forsvarsdepartementet/"
+      ]
+    },
+    {
+      "canonical_id": "se_justice",
+      "name_zh": "瑞典司法部",
+      "name_local": "Justitiedepartementet",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "sv",
+      "homepage": "https://www.regeringen.se/sveriges-regering/justitiedepartementet/",
+      "news_url": "https://www.regeringen.se/sveriges-regering/justitiedepartementet/",
+      "source_ids": [
+        "se_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.regeringen.se/sveriges-regering/",
+        "https://www.regeringen.se/sveriges-regering/justitiedepartementet/"
+      ]
+    },
+    {
+      "canonical_id": "se_climate_enterprise",
+      "name_zh": "瑞典氣候與企業部",
+      "name_local": "Klimat- och näringslivsdepartementet",
+      "name_en": "Ministry of Climate and Enterprise",
+      "kind": "ministry",
+      "language": "sv",
+      "homepage": "https://www.regeringen.se/sveriges-regering/klimat--och-naringslivsdepartementet/",
+      "news_url": "https://www.regeringen.se/sveriges-regering/klimat--och-naringslivsdepartementet/",
+      "source_ids": [
+        "se_climate_enterprise"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.regeringen.se/sveriges-regering/",
+        "https://www.regeringen.se/sveriges-regering/klimat--och-naringslivsdepartementet/"
+      ]
+    },
+    {
+      "canonical_id": "se_culture",
+      "name_zh": "瑞典文化部",
+      "name_local": "Kulturdepartementet",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "sv",
+      "homepage": "https://www.regeringen.se/sveriges-regering/kulturdepartementet/",
+      "news_url": "https://www.regeringen.se/sveriges-regering/kulturdepartementet/",
+      "source_ids": [
+        "se_culture"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.regeringen.se/sveriges-regering/",
+        "https://www.regeringen.se/sveriges-regering/kulturdepartementet/"
+      ]
+    },
+    {
+      "canonical_id": "se_rural_infrastructure",
+      "name_zh": "瑞典農村事務與基礎建設部",
+      "name_local": "Landsbygds- och infrastrukturdepartementet",
+      "name_en": "Ministry of Rural Affairs and Infrastructure",
+      "kind": "ministry",
+      "language": "sv",
+      "homepage": "https://www.regeringen.se/sveriges-regering/landsbygds--och-infrastrukturdepartementet/",
+      "news_url": "https://www.regeringen.se/sveriges-regering/landsbygds--och-infrastrukturdepartementet/",
+      "source_ids": [
+        "se_rural_infrastructure"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.regeringen.se/sveriges-regering/",
+        "https://www.regeringen.se/sveriges-regering/landsbygds--och-infrastrukturdepartementet/"
+      ]
+    },
+    {
+      "canonical_id": "se_health_social",
+      "name_zh": "瑞典衛生與社會事務部",
+      "name_local": "Socialdepartementet",
+      "name_en": "Ministry of Health and Social Affairs",
+      "kind": "ministry",
+      "language": "sv",
+      "homepage": "https://www.regeringen.se/sveriges-regering/socialdepartementet/",
+      "news_url": "https://www.regeringen.se/sveriges-regering/socialdepartementet/",
+      "source_ids": [
+        "se_health_social"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.regeringen.se/sveriges-regering/",
+        "https://www.regeringen.se/sveriges-regering/socialdepartementet/"
+      ]
+    },
+    {
+      "canonical_id": "se_education_research",
+      "name_zh": "瑞典教育與研究部",
+      "name_local": "Utbildningsdepartementet",
+      "name_en": "Ministry of Education and Research",
+      "kind": "ministry",
+      "language": "sv",
+      "homepage": "https://www.regeringen.se/sveriges-regering/utbildningsdepartementet/",
+      "news_url": "https://www.regeringen.se/sveriges-regering/utbildningsdepartementet/",
+      "source_ids": [
+        "se_education_research"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.regeringen.se/sveriges-regering/",
+        "https://www.regeringen.se/sveriges-regering/utbildningsdepartementet/"
+      ]
+    },
+    {
+      "canonical_id": "se_foreign_affairs",
+      "name_zh": "瑞典外交部",
+      "name_local": "Utrikesdepartementet",
+      "name_en": "Ministry for Foreign Affairs",
+      "kind": "ministry",
+      "language": "sv",
+      "homepage": "https://www.regeringen.se/sveriges-regering/utrikesdepartementet/",
+      "news_url": "https://www.regeringen.se/sveriges-regering/utrikesdepartementet/",
+      "source_ids": [
+        "se_foreign_affairs"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://www.regeringen.se/sveriges-regering/",
+        "https://www.regeringen.se/sveriges-regering/utrikesdepartementet/"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Inclusion, Social Security and Migration Spain"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Inclusion,_Social_Security_and_Migration",
+      "title": "Ministry of Inclusion, Social Security and Migration - Wikipedia",
+      "observed_at": "2026-10-03T08:32:49.879161+00:00",
+      "extracted_sha256": "a4696f07392435404aa1797b5226a338dcf1cc7b10dfcbca95cd27c00d67642c",
+      "excerpt": "The**Ministry of Inclusion, Social Security and Migration**is a[department](https://en.wikipedia.org/wiki/Spanish_government_departments)of the[government of Spain](https://en.wikipedia.org/wiki/Government_of_Spain)responsible for planning and carrying out the government policy on[Social Security](https://en.wikipedia.org/wiki/Social_security_in_Spain),[foreigners](https://en.wikipedia.org/wiki/Alien_(law)),[immigration](https://en.wikipedia.org/wiki/Immigration)and[emigration](https://en.wikipedia.org/wiki/Emigration).\n\nThe Ministry's purpose is to guarantee a sufficient and sustainable[pension system](https://en.wikipedia.org/wiki/Pension_system), to establish new inclusive policies that reduce inequality, uncertainty and[social exclusion](https://en.wikipedia.org/wiki/Social_exclusion)and to develop a new legal framework to order and give security for migrants.[[1]](https://en.wikipedia.org/wiki/Ministry_of_Inclusion,_Social_Security_and_Migration#cite_note-1)The major policy planne"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "https://www.inclusion.gob.es/",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_Inclusion,_Social_Security_and_Migration",
+      "link_text": "www.inclusion.gob.es",
+      "relationship_excerpt": " [Elma Saiz](https://en.wikipedia.org/wiki/Elma_Saiz), MinisterWebsite[www.inclusion.gob.es](https://www.inclusion.gob.es/)\n\nThe**Ministry of Inclusion, Social Security and Migration**is a[depa"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/es_inclusion.wikipedia.json"
+}

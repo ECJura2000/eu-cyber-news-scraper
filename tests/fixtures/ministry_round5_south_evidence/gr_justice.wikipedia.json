@@ -1,0 +1,18 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Justice Greece"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Justice_(Greece)",
+      "title": "Ministry of Justice (Greece) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:21.480169+00:00",
+      "extracted_sha256": "b088bbd61a077e4a593b23a5a12e9caed15db766b58b8a08ff85e876860c3f9b",
+      "excerpt": "The**Ministry of Justice**([Greek](https://en.wikipedia.org/wiki/Greek_language):Υπουργείο Δικαιοσύνης,[romanized](https://en.wikipedia.org/wiki/Romanization_of_Greek):*Ypourgeío Dikaiosýnis*) is the[government department](https://en.wikipedia.org/wiki/Ministry_(government_department))entrusted with the supervision of the[legal](https://en.wikipedia.org/wiki/Civil_law_(legal_system))and[judicial system](https://en.wikipedia.org/wiki/Judiciary_of_Greece)of[Greece](https://en.wikipedia.org/wiki/Greece). The incumbent minister is Giorgos Floridis independent, formerly member of PASOK and Prefector of Kilkis.\n\nIt was founded as the**State Secretariat for Justice**(Ἡ ἐπὶ τῆς Δικαιοσύνης Γραμματεία τῆς Ἐπικρατείας) on 25 January 1833, and later known as the**Ministry of Justice**([Katharevousa](https://en.wikipedia.org/wiki/Katharevousa):Ὑπουργεῖον Δικαιοσύνης,[Demotic](https://en.wikipedia.org/wiki/Demotic_Greek):Υπουργείο Δικαιοσύνης). It was renamed the**Ministry of Justice, Transparency "
+    }
+  ],
+  "website_candidates": [],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/gr_justice.wikipedia.json"
+}

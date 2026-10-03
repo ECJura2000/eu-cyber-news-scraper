@@ -14,5 +14,6 @@ source-audit/
 source-audit-history/
 source-discovery.json
 .source-inventory/
+.ministry-inventory/
 新聞放置區/*
 !新聞放置區/.gitkeep

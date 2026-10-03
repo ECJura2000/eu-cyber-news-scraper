@@ -1,0 +1,11 @@
+{
+  "url": "https://portugal.gov.pt/pt/gc25/governo/composicao",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:54:45.449345+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "2e27c349e8e98fb49d2bc56916ef432e19bf8028e7dbf289651332cc563ad24a",
+  "sha256": "958b57ff107b1adaa30597eea2ee971a8f452b7ecc80b7c6d8ddf5f573e97f80",
+  "extraction": "Server-embedded official area navigation extracted from __NEXT_DATA__; no invented entries"
+}

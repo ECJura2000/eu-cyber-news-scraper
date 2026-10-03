@@ -1,0 +1,85 @@
+{
+  "source_id": "bg_transport",
+  "url": "https://www.mtc.government.bg/bg/taxonomy/term/1/feed",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:31:04.474121+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "dc3c6bc4ef70982365ed2709a675797adfc9c22da51257829da842091f6b176d",
+  "response_sha256": "386d7f37e3aea667ddb72daa63d9b6448a98eb539878c8e4f8cb7b9885fb66b0",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Министър Георги Пеев: Работим за развитието на транспортните проекти и устойчивостта на „Български пощи“",
+      "url": "https://www.mtc.government.bg/bg/category/1/ministr-georgi-peev-rabotim-za-razvitieto-na-transportnite-proekti-i-ustoychivostta-na-blgarski-poshchi",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "МТС и БДЖ осигуряват безплатно пътуване с влак за посрещането на тленните останки на цар Самуил",
+      "url": "https://www.mtc.government.bg/bg/category/1/mts-i-bdzh-osiguryavat-bezplatno-ptuvane-s-vlak-za-posreshchaneto-na-tlennite-ostanki-na-car-samuil",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Министър Георги Пеев : За първи път има политическа воля за публично-частно партньорство при стратегическите транспортни обекти",
+      "url": "https://www.mtc.government.bg/bg/category/1/ministr-georgi-peev-za-prvi-pt-ima-politicheska-volya-za-publichno-chastno-partnorstvo-pri-strategicheskite-transportni-obekti",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Започна работа по възраждането на аероклубната авиация в България",
+      "url": "https://www.mtc.government.bg/bg/category/1/zapochna-rabota-po-vzrazhdaneto-na-aeroklubnata-aviaciya-v-blgariya",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Министър Георги Пеев подписа Дунавската декларация в Брюксел и настоя за ускоряване на ключовите проекти по реката",
+      "url": "https://www.mtc.government.bg/bg/category/1/ministr-georgi-peev-podpisa-dunavskata-deklaraciya-v-bryuksel-i-nastoya-za-uskoryavane-na-klyuchovite-proekti-po-rekata",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "България, Гърция и Румъния с екшън план за 25 ключови транспортни проекти по оста Егейско море – Дунав – Черно море",
+      "url": "https://www.mtc.government.bg/bg/category/1/blgariya-grciya-i-rumniya-s-ekshn-plan-za-25-klyuchovi-transportni-proekti-po-osta-egeysko-more-dunav-cherno-more",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Република България и Република Северна Македония правят поредна крачка към изграждането на трансграничния жп тунел",
+      "url": "https://www.mtc.government.bg/bg/category/1/republika-blgariya-i-republika-severna-makedoniya-pravyat-poredna-krachka-km-izgrazhdaneto-na-transgranichniya-zhp-tunel",
+      "published_date_local": "2026-09-25",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Зам.-министър Тимева: Свързваме европейските инвестиции в инфраструктура с европейските инвестиции в нов подвижен състав",
+      "url": "https://www.mtc.government.bg/bg/category/1/zam-ministr-timeva-svrzvame-evropeyskite-investicii-v-infrastruktura-s-evropeyskite-investicii-v-nov-podvizhen-sstav",
+      "published_date_local": "2026-09-24",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 10,
+  "live_dated_count": 10,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "bg_transport",
+    "country": "BG",
+    "name_zh": "保加利亞交通與通訊部",
+    "name": "Министерство на транспорта и съобщенията",
+    "institution_type": "ministry",
+    "language": "bg",
+    "homepage": "https://www.mtc.government.bg/bg/category/1?page=0",
+    "listing_url": "https://www.mtc.government.bg/bg/taxonomy/term/1/feed",
+    "feed_urls": [
+      "https://www.mtc.government.bg/bg/taxonomy/term/1/feed"
+    ],
+    "allow_domains": [
+      "www.mtc.government.bg"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Sofia",
+    "schedule_enabled": false
+  }
+}

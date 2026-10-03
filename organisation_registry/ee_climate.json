@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "module_version": "2026-10-01.1",
+  "canonical_id": "ee_climate",
+  "names": {
+    "zh": "愛沙尼亞氣候部",
+    "en": "Ministry of Climate",
+    "short": "ee_climate",
+    "publisher_aliases": []
+  },
+  "sources": [
+    {
+      "id": "ee_climate",
+      "country": "EE",
+      "name_zh": "愛沙尼亞氣候部",
+      "name": "Kliimaministeerium",
+      "institution_type": "central ministry",
+      "language": "et",
+      "homepage": "https://kliimaministeerium.ee/",
+      "listing_url": "https://kliimaministeerium.ee/rss-feeds/rss.xml",
+      "feed_urls": [
+        "https://kliimaministeerium.ee/rss-feeds/rss.xml"
+      ],
+      "allow_domains": [
+        "kliimaministeerium.ee"
+      ],
+      "timezone": "Europe/Tallinn",
+      "schedule_enabled": false,
+      "critical": false,
+      "detail_pages": 0,
+      "date_policy": "required"
+    }
+  ],
+  "filter": {
+    "topics": [
+      "AI法、模型評估、演算法問責、自動化決策、AI與著作權",
+      "跨境資料流通、資料主權、資料開放與再利用",
+      "隱私框架（含個人資料保護）",
+      "數位身份",
+      "著作權",
+      "平台責任、內容審查、推薦演算法",
+      "媒體多元與資訊操縱",
+      "競爭規範面向（平台責任的市場結構面）",
+      "NIS2、關鍵基礎設施保護",
+      "產品資安、漏洞揭露義務、SBOM",
+      "供應鏈安全",
+      "資安產品認證",
+      "關鍵基礎設施的實體與數位融合保護",
+      "半導體",
+      "量子技術"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": []
+  },
+  "health": {
+    "required": false,
+    "minimum_items": 1,
+    "maximum_age_days": 90
+  },
+  "history": {
+    "effective_from": "2026-10-01",
+    "predecessors": [],
+    "successors": [],
+    "transitional_sources": []
+  },
+  "responsibility_by_topic": {},
+  "verification": {
+    "status": "smoke_healthy",
+    "verified_on": "2026-10-01",
+    "evidence_urls": [
+      "https://www.valitsus.ee/",
+      "https://kliimaministeerium.ee/",
+      "https://kliimaministeerium.ee/rss-feeds/rss.xml"
+    ],
+    "evidence_fixture": "tests/fixtures/ministry_ee_climate.xml",
+    "evidence_provenance": "tests/fixtures/ministry_ee_climate.provenance.json",
+    "scope": "central ministry; dated live feed; scheduled collection disabled"
+  }
+}

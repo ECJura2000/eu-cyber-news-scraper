@@ -125,6 +125,9 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main() -> None:
+    if len(sys.argv) > 1 and sys.argv[1] == "ministries":
+        from .ministry_inventory import main as ministry_main
+        raise SystemExit(ministry_main(sys.argv[2:]))
     if len(sys.argv) > 1 and sys.argv[1] == "audit-sources":
         from .source_audit import main as audit_main
         raise SystemExit(audit_main(sys.argv[2:]))

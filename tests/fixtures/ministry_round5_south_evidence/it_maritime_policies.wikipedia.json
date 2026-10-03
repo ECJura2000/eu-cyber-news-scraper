@@ -1,0 +1,25 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Department for Maritime Policies Italy"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Minister_for_Civil_Protection_and_Maritime_Policies",
+      "title": "Minister for Civil Protection and Maritime Policies - Wikipedia",
+      "observed_at": "2026-10-03T08:37:30.672428+00:00",
+      "extracted_sha256": "4561c8a7cee269224f203db8a3bbf949d3b468f38fed865b3a6c5e1fe85b631a",
+      "excerpt": "The**minister for civil protection and maritime policies**(Italian:*ministro per la protezione civile e le politiche del mare*) is one of the positions in the[Italian government](https://en.wikipedia.org/wiki/Cabinet_of_Italy). The minister coordinates the relations between the government and Italian[Civil Protection](https://en.wikipedia.org/wiki/Protezione_Civile).\n\nThe current minister is[Nello Musumeci](https://en.wikipedia.org/wiki/Nello_Musumeci), a member of the[Brothers of Italy](https://en.wikipedia.org/wiki/Brothers_of_Italy), who held the office since 22 October 2022 in the cabinet of[Giorgia Meloni](https://en.wikipedia.org/wiki/Giorgia_Meloni).[[1]](https://en.wikipedia.org/wiki/Minister_for_Civil_Protection_and_Maritime_Policies#cite_note-1)The first and longest-serving minister was[Giuseppe Zamberletti](https://en.wikipedia.org/wiki/Giuseppe_Zamberletti), widely considered as the founder of Italian Civil Protection.[[2]](https://en.wikipedia.org/wiki/Minister_for_Civil_P"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "http://www.protezionecivile.gov.it",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Minister_for_Civil_Protection_and_Maritime_Policies",
+      "link_text": "www.protezionecivile.gov.it",
+      "relationship_excerpt": "amberletti](https://en.wikipedia.org/wiki/Giuseppe_Zamberletti)Website[www.protezionecivile.gov.it](http://www.protezionecivile.gov.it)\n\nThe**minister for civil protection and maritime policies**(Italian:*"
+    }
+  ],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/it_maritime_policies.wikipedia.json"
+}

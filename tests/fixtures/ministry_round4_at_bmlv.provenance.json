@@ -1,0 +1,60 @@
+{
+  "source_id": "at_bmlv",
+  "url": "https://www.bmlv.gv.at/aktuell/index.shtml",
+  "source_config": {
+    "id": "at_bmlv",
+    "country": "AT",
+    "name_zh": "奧地利國防部",
+    "name": "Bundesministerium für Landesverteidigung",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.bmlv.gv.at/",
+    "listing_url": "https://www.bmlv.gv.at/aktuell/index.shtml",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.bmlv.gv.at"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Vienna",
+    "schedule_enabled": false,
+    "parser_adapter": "bmlv_publication"
+  },
+  "raw_details": [
+    {
+      "url": "https://www.bmlv.gv.at/cms/artikel.php?ID=12221",
+      "observed_at": "2026-10-03T02:42:06.666932+00:00",
+      "http_status": 200,
+      "final_url": "https://www.bmlv.gv.at/cms/artikel.php?ID=12221",
+      "content_type": "text/html; charset=UTF-8",
+      "http_statuses": [
+        "200",
+        "200"
+      ],
+      "response_sha256": "8ad9bb20e4b842f62f26e9cfcccc3f103470765495e6cb03b027e92a5fee9023",
+      "response_bytes": 25659,
+      "robots_enforced": true,
+      "tls_verified": true
+    },
+    {
+      "url": "https://www.bmlv.gv.at/cms/artikel.php?ID=12218",
+      "observed_at": "2026-10-03T02:42:06.667066+00:00",
+      "http_status": 200,
+      "final_url": "https://www.bmlv.gv.at/cms/artikel.php?ID=12218",
+      "content_type": "text/html; charset=UTF-8",
+      "http_statuses": [
+        "200"
+      ],
+      "response_sha256": "4cdcbe83f883855c3db6352b63a4d56f82d15d460f9f80f04f52b62770943fe3",
+      "response_bytes": 28148,
+      "robots_enforced": true,
+      "tls_verified": true
+    }
+  ],
+  "observed_at": "2026-10-03T02:42:06.666932+00:00",
+  "fixture_path": "tests/fixtures/ministry_round4_at_bmlv.json",
+  "fixture_sha256": "476ee908481104468727ccc1e378bff749e90f2f99673d253de8ca14d08fcf6c",
+  "fixture_bytes": 9832,
+  "transform": "Bounded original detail HTML containers bundled under canonical listing; each raw response SHA retained.",
+  "expected": []
+}

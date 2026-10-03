@@ -1,0 +1,18 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Ministry for Tourism Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Clayton_Bartolo",
+      "title": "Clayton Bartolo - Wikipedia",
+      "observed_at": "2026-10-03T08:37:41.958082+00:00",
+      "extracted_sha256": "cd7c3e966f97c16a674888b464af6eb3e21ef5cbaa07a83e10e2f2d363bc481c",
+      "excerpt": "[Jump to content](https://en.wikipedia.org/wiki/Clayton_Bartolo#bodyContent)\n\nFrom Wikipedia, the free encyclopedia\n\nMaltese politician (born 1987)\n\nThe Honourable\n\nClayton Bartolo[](https://en.wikipedia.org/wiki/File:BD6A5174.jpg)\n\nBartolo in 2022Member of the[Maltese Parliament](https://en.wikipedia.org/wiki/Maltese_Parliament)**In office**\n20 June 2017–27 April 2026Prime Minister[Joseph Muscat](https://en.wikipedia.org/wiki/Joseph_Muscat)(2013-2020)\n[Robert Abela](https://en.wikipedia.org/wiki/Robert_Abela)(2020-current)Parliamentary Secretary for Financial Services and Digital Economy**In office**\n15 January 2020–23 November 2020Prime Minister[Robert Abela](https://en.wikipedia.org/wiki/Robert_Abela)Minister for Tourism and Consumer Protection**In office**\n23 November 2020–20 February 2022Prime Minister[Robert Abela](https://en.wikipedia.org/wiki/Robert_Abela)Minister for Tourism**In office**\n30 March 2022–06 January 2024Prime Minister[Robert Abela](https://en.wikipedia.org/wiki/Ro"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_tourism.wikipedia.json"
+}

@@ -1,0 +1,139 @@
+{
+  "source_id": "es_social_rights",
+  "url": "https://www.dsca.gob.es/es",
+  "final_url": "https://www.dsca.gob.es/es",
+  "observed_at": "2026-10-02T00:41:27.942248+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "988937084c4f17ebc5662f5932668c80527caa771dfedd439f8dbe31f66a89aa",
+  "response_bytes": 186049,
+  "fixture_sha256": "c03a71b66278188263982aff7048d6d5dcf89310e57600adb44e55fbd0e89a19",
+  "fixture_bytes": 6006,
+  "transform": "BeautifulSoup extraction of genuine dated news containers retaining original attributes/text; scripts/styles removed; original base retained if present; bounded to six or fewer containers",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "Derechos Sociales presenta una radiografía de los centros residenciales en España: hay 7.893 centros para personas mayores y personas con discapacidad",
+      "url": "https://www.dsca.gob.es/es/comunicacion/notas-prensa/derechos-sociales-presenta-radiografia-centros-residenciales-espana-hay",
+      "published_date_local": "2026-09-24"
+    },
+    {
+      "title": "El Ministerio de Consumo, premiado por aplicar inteligencia artificial en la protección de las personas consumidoras",
+      "url": "https://www.dsca.gob.es/es/comunicacion/notas-prensa/ministerio-consumo-premiado-aplicar-inteligencia-artificial-proteccion",
+      "published_date_local": "2026-09-18"
+    },
+    {
+      "title": "El Congreso aprueba la gran reforma de la dependencia y la discapacidad: nuevos derechos, más financiación y cuidados en casa",
+      "url": "https://www.dsca.gob.es/es/comunicacion/notas-prensa/congreso-aprueba-gran-reforma-dependencia-discapacidad-nuevos-derechos",
+      "published_date_local": "2026-09-16"
+    },
+    {
+      "title": "La tarifa plana de 50 euros para los jubilados con pensiones más bajas triunfa en su primera temporada: fue utilizada por 5.221 usuarios",
+      "url": "https://www.dsca.gob.es/es/comunicacion/notas-prensa/tarifa-plana-50-euros-jubilados-pensiones-mas-bajas-triunfa-su-primera",
+      "published_date_local": "2026-09-10"
+    }
+  ],
+  "live_status": {
+    "source_id": "es_social_rights",
+    "source_name": "西班牙社會權利、消費與 2030 議程部",
+    "country": "ES",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 4,
+    "relevant_count": 4,
+    "duration_seconds": 1.046,
+    "newest_published_at": "2026-09-24T08:40:48+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 4,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 4,
+    "freshness_lag_days": 8.64,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 186049,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "es_social_rights",
+    "country": "ES",
+    "name_zh": "西班牙社會權利、消費與 2030 議程部",
+    "name": "Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+    "institution_type": "central ministry",
+    "language": "es",
+    "homepage": "https://www.dsca.gob.es/es",
+    "listing_url": "https://www.dsca.gob.es/es",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.dsca.gob.es"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Madrid",
+    "card_selectors": [
+      "div.slide__description"
+    ],
+    "link_selectors": [],
+    "title_selectors": [
+      "h2",
+      "h3",
+      "h4",
+      "[class*=title]"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]",
+      "[class*=fecha i]"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_es_social_rights.html",
+  "format": "html"
+}

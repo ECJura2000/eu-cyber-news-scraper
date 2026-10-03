@@ -1,0 +1,18 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Ministry for Energy, the Environment and the Regeneration of the Grand Harbour Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Miriam_Dalli",
+      "title": "Miriam Dalli - Wikipedia",
+      "observed_at": "2026-10-03T08:37:39.594704+00:00",
+      "extracted_sha256": "80b3924df5bc70d275654cbccd8c23f17be4eefd735b4359787a376bded88cd3",
+      "excerpt": "[Jump to content](https://en.wikipedia.org/wiki/Miriam_Dalli#bodyContent)\n\nFrom Wikipedia, the free encyclopedia\n\nVice President of the Socialists & Democrats\n\nMP\n\nMiriam Dalli[](https://en.wikipedia.org/wiki/File:EU2024BE_240304_Miriam_Dalli.jpg)\n\nDalli in 2024Minister for Energy, the Environment and the Regeneration of the Grand Harbour\n\n**[Incumbent](https://en.wikipedia.org/wiki/Incumbent)****Assumed office**\n04 June 2026Prime Minister[Robert Abela](https://en.wikipedia.org/wiki/Robert_Abela)Minister for the Environment, Energy and Public Cleanliness**In office**\n28 November 2024–30 May 2026Prime Minister[Robert Abela](https://en.wikipedia.org/wiki/Robert_Abela)Minister for the Environment, Energy and Enterprise**In office**\n30 March 2022–28 November 2024Prime Minister[Robert Abela](https://en.wikipedia.org/wiki/Robert_Abela)Minister for Energy, Enterprise and Sustainable Development**In office**\n21 November 2020–26 March 2022Prime Minister[Robert Abela](https://en.wikipedia.org/wi"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_energy.wikipedia.json"
+}

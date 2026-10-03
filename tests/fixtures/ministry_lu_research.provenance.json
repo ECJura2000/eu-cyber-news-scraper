@@ -1,0 +1,145 @@
+{
+  "source_id": "lu_research",
+  "url": "https://mesr.gouvernement.lu/fr.html",
+  "final_url": "https://mesr.gouvernement.lu/fr.html",
+  "observed_at": "2026-10-02T00:41:44.972203+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "1d8a518b5ed94a568d34e4ccda4b6e3a1ff88be4448b18f10577aa03f5a376d6",
+  "response_bytes": 115737,
+  "fixture_sha256": "e6b6fb8524582555eecbe993ba7a118e84cc974a504b9d5f1bc73192bf41a261",
+  "fixture_bytes": 6867,
+  "transform": "BeautifulSoup extraction of genuine dated news containers retaining original attributes/text; scripts/styles removed; original base retained if present; bounded to six or fewer containers",
+  "truncated": true,
+  "expected": [
+    {
+      "title": "Mobibus: un cadre renforcé pour plus de transparence et de fiabilité",
+      "url": "https://mesr.gouvernement.lu/fr/actualites.gouvernement2024%2Bfr%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2026%2B10-octobre%2B01-mobibus.html",
+      "published_date_local": "2026-10-01"
+    },
+    {
+      "title": "La Commission nationale d'éthique publie son \"Avis relatif à la PMA et à la GPA\"",
+      "url": "https://mesr.gouvernement.lu/fr/actualites.gouvernement2024%2Bfr%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2026%2B08-aout%2B03-cne-pma-gpa.html",
+      "published_date_local": "2026-08-03"
+    },
+    {
+      "title": "Stéphanie Obertin au Conseil informel des ministres européens de la Recherche à Dublin",
+      "url": "https://mesr.gouvernement.lu/fr/actualites.gouvernement2024%2Bfr%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2026%2B07-juillet%2B21-obertin-conseil-ue-recherche.html",
+      "published_date_local": "2026-07-21"
+    },
+    {
+      "title": "Accord sur le premier statut spécifique pour les médecins en voie de spécialisation au Luxembourg",
+      "url": "https://mesr.gouvernement.lu/fr/actualites.gouvernement2024%2Bfr%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2026%2B07-juillet%2B17-statut-medecins.html",
+      "published_date_local": "2026-07-17"
+    },
+    {
+      "title": "Visite de travail de la ministre costaricienne Paula Bogantes Zamora au Luxembourg",
+      "url": "https://mesr.gouvernement.lu/fr/actualites.gouvernement2024%2Bfr%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2026%2B07-juillet%2B08-obertin-bogantes.html",
+      "published_date_local": "2026-07-08"
+    },
+    {
+      "title": "Instruction judiciaire en matière d'immigration frauduleuse: Pas d'inculpation au ministère de la Recherche et de l'Enseignement supérieur",
+      "url": "https://mesr.gouvernement.lu/fr/actualites.gouvernement2024%2Bfr%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2026%2B07-juillet%2B07-instruction-immigration-frauduleuse-recherche-enseignement-superieur.html",
+      "published_date_local": "2026-07-07"
+    }
+  ],
+  "live_status": {
+    "source_id": "lu_research",
+    "source_name": "盧森堡研究暨高等教育部",
+    "country": "LU",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 6,
+    "relevant_count": 6,
+    "duration_seconds": 0.287,
+    "newest_published_at": "2026-10-01T00:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 6,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 6,
+    "freshness_lag_days": 2.0,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 115738,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "lu_research",
+    "country": "LU",
+    "name_zh": "盧森堡研究暨高等教育部",
+    "name": "Ministère de la Recherche et de l'Enseignement supérieur",
+    "institution_type": "central ministry",
+    "language": "fr",
+    "homepage": "https://mesr.gouvernement.lu/fr.html",
+    "listing_url": "https://mesr.gouvernement.lu/fr.html",
+    "feed_urls": [],
+    "allow_domains": [
+      "mesr.gouvernement.lu"
+    ],
+    "include_patterns": [],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Luxembourg",
+    "card_selectors": [
+      "li.cmp-focus-list-item:has(time.article-published)"
+    ],
+    "link_selectors": [
+      "a.blocklink"
+    ],
+    "title_selectors": [
+      "h3.focus-page-title"
+    ],
+    "date_selectors": [
+      "time.article-published"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_lu_research.html",
+  "format": "html"
+}

@@ -1,0 +1,81 @@
+{
+  "source_id": "de_bmvg",
+  "url": "https://www.bmvg.de/de/presse",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:31:40.686234+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "30f26ff5ab5bccbdaf833c9d444515ad9ab52991119804f8ad8212fd8793d6df",
+  "response_sha256": "8e10b1d2b40b53fcb122d4387beca7ecc1359b119082b17f894609adf0f27b79",
+  "fixture_count": 6,
+  "expected": [
+    {
+      "title": "Pressestatement beim Besuch auf dem Truppenübungsplatz in Bergen",
+      "url": "https://www.bmvg.de/de/presse/pressestatement-truppenuebungsplatz-bergen-6161042",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Deutsches Kontingent verlässt Feldlager in Erbil",
+      "url": "https://www.bmvg.de/de/presse/bundeswehr-ende-einsatz-irak-6161022",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Rede zur Schiffstaufe auf der Fassmer-Werft",
+      "url": "https://www.bmvg.de/de/presse/rede-pistorius-schiffstaufe-6160910",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Pistorius zum Führungswechsel an der Spitze der Deutschen Marine",
+      "url": "https://www.bmvg.de/de/presse/pistorius-zum-fuehrungswechsel-an-der-spitze-der-marine-6160430",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Pressekonferenz Ministerpräsident Lies und Boris Pistorius",
+      "url": "https://www.bmvg.de/de/presse/pressekonferenz-pistorius-lies-emden-6160004",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Download: Statement und Q&A zum „Deployment Hub Bremerhaven 2031“",
+      "url": "https://www.bmvg.de/de/presse/pressestatement-qa-deployment-hub-6159962",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 6,
+  "live_dated_count": 6,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "de_bmvg",
+    "country": "DE",
+    "name_zh": "德國國防部",
+    "name": "Bundesministerium der Verteidigung",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.bmvg.de/de",
+    "listing_url": "https://www.bmvg.de/de/presse",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.bmvg.de"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Berlin",
+    "card_selectors": [
+      "article.Teaser:has(time)"
+    ],
+    "title_selectors": [
+      "h3",
+      "h2"
+    ],
+    "date_selectors": [
+      "time"
+    ],
+    "schedule_enabled": false
+  }
+}

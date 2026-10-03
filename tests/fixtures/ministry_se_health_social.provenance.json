@@ -1,0 +1,41 @@
+{
+  "url": "https://www.regeringen.se/sveriges-regering/socialdepartementet/",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:20.748716+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "04d8cdad60ce41326a190f420327a54ac8f327df920cc14046518ce2263e4f09",
+  "sha256": "74a7f609025e341bcf95d049a15cca03d130e57c76912e71441893eafcc0a383",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 20,
+  "dated_count": 20,
+  "fixture_count": 4,
+  "source_id": "se_health_social",
+  "expected": [
+    {
+      "title": "Uppdrag till Folkhälsomyndigheten om inköp av antivirala läkemedel mot influensa och andra pandemivirus",
+      "url": "https://www.regeringen.se/regeringsuppdrag/2026/09/uppdrag-till-folkhalsomyndigheten-om-inkop-av-antivirala-lakemedel-mot-influensa-och-andra-pandemivirus/",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Socialminister Jakob Forssmed deltar på hälsoministermöte i Dublin",
+      "url": "https://www.regeringen.se/pressmeddelanden/2026/09/socialminister-jakob-forssmed-deltar-pa-halsoministermote-i-dublin/",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Prisbasbelopp för 2027 fastställt",
+      "url": "https://www.regeringen.se/artiklar/2026/09/prisbasbelopp-for-2027-faststallt/",
+      "published_date_local": "2026-09-24",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Prisbasbelopp för 2027 fastställt",
+      "url": "https://www.regeringen.se/pressmeddelanden/2026/09/prisbasbeloppfor-2027-faststallt/",
+      "published_date_local": "2026-09-24",
+      "date_source": "source-selector"
+    }
+  ]
+}

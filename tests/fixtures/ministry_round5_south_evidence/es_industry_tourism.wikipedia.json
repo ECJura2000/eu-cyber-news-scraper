@@ -1,0 +1,25 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Industry and Tourism Spain"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Industry_(Spain)",
+      "title": "Ministry of Industry (Spain) - Wikipedia",
+      "observed_at": "2026-10-03T08:32:49.966226+00:00",
+      "extracted_sha256": "10cef86ad4ab7b11f361dc58eee66bd4c7e25203856b90c4a8b159f2b29a3c58",
+      "excerpt": "The**Ministry of Industry and Tourism**(**MINCOTUR**) is the[department](https://en.wikipedia.org/wiki/Spanish_government_departments)of the[Government of Spain](https://en.wikipedia.org/wiki/Government_of_Spain)responsible for designing and implementing the government policy on[industry](https://en.wikipedia.org/wiki/Industrial_policy)and[tourism](https://en.wikipedia.org/wiki/Tourism_in_Spain). This includes designing the industrial strategy and[development](https://en.wikipedia.org/wiki/Industrialisation), as well as fostering[entrepreneurship](https://en.wikipedia.org/wiki/Entrepreneurship)and[small and medium-sized enterprises](https://en.wikipedia.org/wiki/Small_and_medium-sized_enterprises)and defending[industrial property](https://en.wikipedia.org/wiki/Industrial_property). At the international level, these powers are exercised in coordination with the[Ministry of Foreign Affairs](https://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_(Spain)).[[2]](https://en.wikipedia.org/"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "https://www.mintur.gob.es/es-es/Paginas/index.aspx",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_Industry_(Spain)",
+      "link_text": "Ministry of Industry and Tourism",
+      "relationship_excerpt": "ent_and_Trademark_Office)\n- Spanish Metrology Centre\n- SEGITTURWebsite[Ministry of Industry and Tourism](https://www.mintur.gob.es/es-es/Paginas/index.aspx)(in Spanish)\n\nThe**Ministry of Industry and Tourism**(**MINCOTUR**) is"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/es_industry_tourism.wikipedia.json"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Ministry for Social Policy and the Family Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Michael_Falzon_(politician,_born_1961)",
+      "title": "Michael Falzon (politician, born 1961) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:37.817845+00:00",
+      "extracted_sha256": "bd5ec8d7bf9acc5823c4c113bef284997e4e41ff3892db73100b67d1e71d5656",
+      "excerpt": "[Jump to content](https://en.wikipedia.org/wiki/Michael_Falzon_(politician,_born_1961)#bodyContent)\n\nFrom Wikipedia, the free encyclopedia\n\nMaltese politician\n\nFor the politician, born 1945, see[Michael Falzon (politician, born 1945)](https://en.wikipedia.org/wiki/Michael_Falzon_(politician,_born_1945)).\n\n[](https://en.wikipedia.org/wiki/File:Question_book-new.svg)\n\nThis article**needs[more citations](https://en.wikipedia.org/wiki/Wikipedia:Verifiability)**.Please help[improve this article](https://en.wikipedia.org/wiki/Special:EditPage/Michael_Falzon_(politician,_born_1961))by[adding citations to reliable sources](https://en.wikipedia.org/wiki/Help:Referencing_for_beginners). Unsourced material may be challenged and[removed](https://en.wikipedia.org/wiki/Wikipedia:Verifiability#Burden_of_evidence).\n*Find sources:*[\"Michael Falzon\"politician, born 1961](https://www.google.com/search?as_eq=wikipedia&q=%22Michael+Falzon%22+politician%2C+born+1961)–[news](https://www.google.com/search?tbm"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_social_policy.wikipedia.json"
+}

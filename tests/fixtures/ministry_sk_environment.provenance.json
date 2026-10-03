@@ -1,0 +1,115 @@
+{
+  "source_id": "sk_environment",
+  "url": "https://www.minzp.sk/spravy/",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:34:27.933924+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "88e6d7b7d4a366722bb710352d7d0e37ea6017e36534b5f1750dc135e312fd74",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Modernizácia spaľovne zníži emisie v hlavnom meste",
+      "url": "https://www.minzp.sk/spravy/2026/september/modernizacia-spalovne-znizi-emisie-hlavnom-meste.html",
+      "published_date_local": "2026-09-25",
+      "date_source": "visible-text",
+      "date_confidence": "low"
+    },
+    {
+      "title": "Taraba rozdelil 215 miliónov na opravu škôl a kultúrnych domov",
+      "url": "https://www.minzp.sk/spravy/2026/september/taraba-rozdelil-215-milionov-opravu-skol-kulturnych-domov.html",
+      "published_date_local": "2026-09-24",
+      "date_source": "visible-text",
+      "date_confidence": "low"
+    },
+    {
+      "title": "Taraba smeruje významné investície na ochranu vôd na Žitnom ostrove",
+      "url": "https://www.minzp.sk/spravy/2026/september/taraba-smeruje-vyznamne-investicie-ochranu-vod-zitnom-ostrove.html",
+      "published_date_local": "2026-09-22",
+      "date_source": "visible-text",
+      "date_confidence": "low"
+    },
+    {
+      "title": "247 miliónov smeruje do modernizácie teplárenstva",
+      "url": "https://www.minzp.sk/spravy/2026/september/247-milionov-smeruje-do-modernizacie-teplarenstva.html",
+      "published_date_local": "2026-09-21",
+      "date_source": "visible-text",
+      "date_confidence": "low"
+    },
+    {
+      "title": "Taraba zrušil výstavbu spaľovne pri kúpeľnom meste Dudince",
+      "url": "https://www.minzp.sk/spravy/2026/september/taraba-zrusil-vystavbu-spalovne-pri-kupelnom-meste-dudince.html",
+      "published_date_local": "2026-09-18",
+      "date_source": "visible-text",
+      "date_confidence": "low"
+    },
+    {
+      "title": "Vicepremiér Taraba zastupuje Slovensko na pohrebe nórskeho kráľa",
+      "url": "https://www.minzp.sk/spravy/2026/september/vicepremier-taraba-zastupuje-slovensko-pohrebe-norskeho-krala.html",
+      "published_date_local": "2026-09-09",
+      "date_source": "visible-text",
+      "date_confidence": "low"
+    },
+    {
+      "title": "Štát vyhral pri Málinci ďalší súd",
+      "url": "https://www.minzp.sk/spravy/2026/september/stat-vyhral-pri-malinci-dalsi-sud.html",
+      "published_date_local": "2026-09-07",
+      "date_source": "visible-text",
+      "date_confidence": "low"
+    },
+    {
+      "title": "Envirorezort vyhlásil výzvu z Programu Slovensko na podporu budovania centier opätovného použitia",
+      "url": "https://www.minzp.sk/aktuality/envirorezort-vyhlasil-vyzvu-z-programu-slovensko-podporu-budovania-centier-opatovneho-pouzitia.html",
+      "published_date_local": "2026-09-04",
+      "date_source": "visible-text",
+      "date_confidence": "low"
+    }
+  ],
+  "parsed_count": 200,
+  "dated_count": 200,
+  "transform": "BeautifulSoup extraction of up to 8 genuine dated article containers (original attributes/text); scripts/styles/nav/header/footer removed; original base element retained where present",
+  "live_status": {
+    "source_id": "sk_environment",
+    "source_name": "斯洛伐克環境部",
+    "country": "SK",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 200,
+    "relevant_count": 200,
+    "duration_seconds": 1.71,
+    "newest_published_at": "2026-09-24T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 200,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 200,
+    "freshness_lag_days": 7.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 203977,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "url": "https://www.gov.pl/web/kultura/aktualnosci",
+  "observed_on": "2026-10-01",
+  "observed_at_utc": "2026-10-01T11:52:16.270547+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "100bec3da1e899b943c859eee7a20a58ddd645fa6312bb40af05180a62e3955a",
+  "sha256": "1c578d799b221667352db2b28979d0f635234ed5cf9e5095625cc5e277177fbc",
+  "extraction": "Up to four complete dated HTML content cards extracted from genuine response",
+  "parsed_count": 10,
+  "dated_count": 10,
+  "fixture_count": 4,
+  "source_id": "pl_culture",
+  "expected": [
+    {
+      "title": "Ogłaszamy konkurs na dyrektora Polskiego Wydawnictwa Muzycznego",
+      "url": "https://www.gov.pl/web/kultura/oglaszamy-konkurs-na-dyrektora-polskiego-wydawnictwa-muzycznego2",
+      "published_date_local": "2026-10-01",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Rozpoczynamy rok akademicki 2026/2027 w uczelniach artystycznych",
+      "url": "https://www.gov.pl/web/kultura/rozpoczynamy-rok-akademicki-20262027-w-uczelniach-artystycznych",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Powołaliśmy członków Rady Ochrony Dziedzictwa Archeologicznego III kadencji",
+      "url": "https://www.gov.pl/web/kultura/powolalismy-czlonkow-rady-ochrony-dziedzictwa-archeologicznego-iii-kadencji",
+      "published_date_local": "2026-09-30",
+      "date_source": "source-selector"
+    },
+    {
+      "title": "Zaprezentowaliśmy odrestaurowany portret Józefa Piłsudskiego",
+      "url": "https://www.gov.pl/web/kultura/zaprezentowalismy-odrestaurowany-portret-jozefa-pilsudskiego",
+      "published_date_local": "2026-09-29",
+      "date_source": "source-selector"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Culture Italy"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Culture_(Italy)",
+      "title": "Ministry of Culture (Italy) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:28.582358+00:00",
+      "extracted_sha256": "8deee4385a26a740706e60894d6175dbd42e0e06a20a60e43cfb62f302741ff1",
+      "excerpt": "The**Ministry of Culture**([Italian](https://en.wikipedia.org/wiki/Italian_language):*Ministero della Cultura - MiC*) is the[ministry](https://en.wikipedia.org/wiki/Ministry_(government_department))of the[Government of Italy](https://en.wikipedia.org/wiki/Government_of_Italy)in charge of[national museums](https://en.wikipedia.org/wiki/List_of_museums_in_Italy)and maintenance of historical monuments. MiC's headquarters are located in the historic[Collegio Romano Palace](https://en.wikipedia.org/wiki/Roman_Colleges)(via del Collegio Romano 27, in central Rome) and the current[Minister of Culture](https://en.wikipedia.org/wiki/Italian_Minister_of_Culture)is[Alessandro Giuli](https://en.wikipedia.org/wiki/Alessandro_Giuli).\n\n## History[[edit](https://en.wikipedia.org/w/index.php?title=Ministry_of_Culture_(Italy)&action=edit&section=1)]\n\nIt was set up in 1974 as the**Ministry for Cultural Assets and Environments**([Italian](https://en.wikipedia.org/wiki/Italian_language):*Ministero per i Be"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "https://www.cultura.gov.it/",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_Culture_(Italy)",
+      "link_text": "www.cultura.gov.it",
+      "relationship_excerpt": "essandro Giuli](https://en.wikipedia.org/wiki/Alessandro_Giuli)Website[www.cultura.gov.it](https://www.cultura.gov.it/)[](https://www.wikidata.org/wiki/Q1347047#P856)\n\nThe**Ministry of Cult"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/it_culture.wikipedia.json"
+}

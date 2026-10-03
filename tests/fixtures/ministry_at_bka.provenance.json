@@ -1,0 +1,163 @@
+{
+  "source_id": "at_bka",
+  "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026.html",
+  "final_url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026.html",
+  "observed_at": "2026-10-02T08:34:21.157885+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "response_sha256": "c50e6a4016d79aceb68a246bbaaa743b6cb1b7b69df3871209a922393317ff68",
+  "response_bytes": 126899,
+  "fixture_sha256": "ac42e7a49324162bf29b1bbf6b18b59787e3177935bfe848453645f004e9f022",
+  "fixture_bytes": 4747,
+  "transform": "BeautifulSoup extraction of up to six genuine source-scoped news containers; original attributes/text retained, script/style removed; original base element retained; no title/link/date edits",
+  "expected": [
+    {
+      "title": "Gemeindepaket im Rahmen der Reformpartnerschaft auf den Weg gebracht",
+      "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/09/gemeindepaket-im-rahmen-der-reformpartnerschaft-auf-den-weg-gebracht.html",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high",
+      "date_source": "source-selector",
+      "date_conflict": false
+    },
+    {
+      "title": "Staatssekretärin Zehetner: \"Aufschwung kann man nicht verordnen, aber man kann die Bedingungen dafür schaffen\"",
+      "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/09/staatssekretaerin-zehetner-aufschwung-kann-man-nicht-verordnen-aber-man-kann-die-bedingungen-dafuer-schaffen.html",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high",
+      "date_source": "source-selector",
+      "date_conflict": false
+    },
+    {
+      "title": "EU-Aufbauplan: Österreich holt Mittel in vollem Umfang ab",
+      "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/09/eu-aufbauplan-oesterreich-holt-mittel-in-vollem-umfang-ab.html",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high",
+      "date_source": "source-selector",
+      "date_conflict": false
+    },
+    {
+      "title": "Europaministerin Bauer: Den Westbalkan näher an die EU bringen",
+      "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/09/europaministerin-bauer-den-westbalkan-naeher-an-die-eu-bringen.html",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high",
+      "date_source": "source-selector",
+      "date_conflict": false
+    },
+    {
+      "title": "Integrationsministerin Bauer: \"Dürfen beim Religionsunterricht nicht auf einem Auge blind sein\"",
+      "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/09/integrationsministerin-bauer-duerfen-beim-religionsunterricht-nicht-auf-einem-auge-blind-sein.html",
+      "published_date_local": "2026-09-28",
+      "date_confidence": "high",
+      "date_source": "source-selector",
+      "date_conflict": false
+    },
+    {
+      "title": "Pröll:  KI  zieht in den elektronischen Akt ein",
+      "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/09/ki-zieht-in-den-elektronischen-akt-ein.html",
+      "published_date_local": "2026-09-26",
+      "date_confidence": "high",
+      "date_source": "source-selector",
+      "date_conflict": false
+    }
+  ],
+  "live_status": {
+    "source_id": "at_bka",
+    "source_name": "奧地利聯邦總理府",
+    "country": "AT",
+    "critical": false,
+    "success": true,
+    "fetched_via": "html-listing",
+    "raw_count": 50,
+    "relevant_count": 50,
+    "duration_seconds": 0.362,
+    "newest_published_at": "2026-09-30T22:00:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 50,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 50,
+    "freshness_lag_days": 2.08,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 1,
+    "bytes_downloaded": 126899,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "source_config": {
+    "id": "at_bka",
+    "country": "AT",
+    "name_zh": "奧地利聯邦總理府",
+    "name": "Bundeskanzleramt",
+    "institution_type": "government_head_office",
+    "language": "de",
+    "homepage": "https://www.bundeskanzleramt.gv.at/",
+    "listing_url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026.html",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.bundeskanzleramt.gv.at"
+    ],
+    "include_patterns": [
+      "/nachrichten-der-bundesregierung/2026/"
+    ],
+    "exclude_patterns": [],
+    "critical": false,
+    "detail_pages": 0,
+    "yearly_listing_url": "",
+    "pagination_url": "",
+    "max_pages": 1,
+    "observation_runs": 3,
+    "freshness_days": 45,
+    "timezone": "Europe/Vienna",
+    "card_selectors": [
+      "a.card-link"
+    ],
+    "link_selectors": [],
+    "title_selectors": [
+      ".card-title",
+      "h3",
+      "h2"
+    ],
+    "date_selectors": [
+      "small.card-date"
+    ],
+    "summary_selectors": [],
+    "parser_adapter": "",
+    "date_policy": "required",
+    "date_exception_reason": "",
+    "date_evidence_url": "",
+    "date_reviewed_on": "",
+    "date_review_due": "",
+    "tls_intermediate_bundle": "",
+    "paused_until": "",
+    "pause_reason": "",
+    "pause_evidence_url": "",
+    "min_listing_bytes": 0,
+    "user_agent": "",
+    "schedule_enabled": false,
+    "feed_archive_fallback": false,
+    "minimum_budget_seconds": 0
+  },
+  "fixture_path": "tests/fixtures/ministry_at_bka.html",
+  "response_sha256_verified_against_saved_bytes": true
+}

@@ -1,0 +1,91 @@
+{
+  "source_id": "at_bmj",
+  "url": "https://www.bmj.gv.at/ministerium/presse/Pressemitteilungen-2026.html",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:34:32.964680+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "170f0614b8f14fcb1ea8b63c7f32e4cb66f028f6c5c6a17cbc2c36352d80554a",
+  "response_sha256": "89ddfb8f060765df3a62341cd138ff37831e1aa24ff9db0c930e36c5833a0829",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "22. September 2026 Allgemein \n \n \n \t\t\tJustizministerin Sporrer eröffnete 34. Forum der Staatsanwältinnen und Staatsanwälte\n \n \n \n                                                                                    Fachtagung in Kössen widmet sich aktuellen Herausforderungen und Zukunftsfragen der Strafjustiz",
+      "url": "https://www.bmj.gv.at/ministerium/presse/Pressemitteilungen-2026/Justizministerin-Sporrer-er%C3%B6ffnete-34.-Forum-der-Staatsanw%C3%A4ltinnen-und-Staatsanw%C3%A4lte.html",
+      "published_date_local": "2026-09-22",
+      "date_confidence": "high"
+    },
+    {
+      "title": "9. Jänner 2026 Allgemein \n \n \n \t\t\tNeueste Studie bestätigt: Group Counselling im Straf- und Maßnahmenvollzug zeigt nachhaltige Wirkung",
+      "url": "https://www.bmj.gv.at/ministerium/presse/Pressemitteilungen-2026/Neueste-Studie-best%C3%A4tigt--Group-Counselling-im-Straf--und-Ma%C3%9Fnahmenvollzug-zeigt-nachhaltige-Wirkung.html",
+      "published_date_local": "2026-01-09",
+      "date_confidence": "high"
+    },
+    {
+      "title": "19. Jänner 2026 Allgemein \n \n \n \t\t\tAmtseinführung der Leiterin der neuen Justizanstalt für den Jugendvollzug Wien-Münnichplatz\n \n \n \n                                                                                    Vorstellung der neuen Sonderanstalt für den Jugendvollzug und offizielle Amtseinführung von Hofrätin Mag. a  Seada Killinger, BA MA",
+      "url": "https://www.bmj.gv.at/ministerium/presse/Pressemitteilungen-2026/Amtseinf%C3%BChrung-der-Leiterin-der-neuen-Justizanstalt-f%C3%BCr-den-Jugendvollzug-Wien-M%C3%BCnnichplatz.html",
+      "published_date_local": "2026-01-19",
+      "date_confidence": "high"
+    },
+    {
+      "title": "27. Jänner 2026 Allgemein \n \n \n \t\t\tJustizministerin Anna Sporrer zum Tag des Gedenkens an die Opfer des Holocaust: „Die Erinnerung ist ein Auftrag für die Gegenwart“\n \n \n \n                                                                                    Arbeitsgespräch mit IRG-Präsident Oskar Deutsch: Justiz entschlossene Verbündete im Kampf gegen Antisemitismus und Hasskriminalität",
+      "url": "https://www.bmj.gv.at/ministerium/presse/Pressemitteilungen-2026/Justizministerin-Anna-Sporrer-zum-Tag-des-Gedenkens-an-die-Opfer-des-Holocaust--%E2%80%9EDie-Erinnerung-ist-ein-Auftrag-f%C3%BCr-die-Gegenwart%E2%80%9C.html",
+      "published_date_local": "2026-01-27",
+      "date_confidence": "high"
+    },
+    {
+      "title": "4. Februar 2026 Allgemein \n \n \n \t\t\tJustizministerin Sporrer präsentiert Expert:innenkommission und Maßnahmen für den Strafvollzug\n \n \n \n                                                                                    Unabhängige, interdisziplinäre und internationale Kommission soll strukturelle Mängel im Strafvollzug analysieren",
+      "url": "https://www.bmj.gv.at/ministerium/presse/Pressemitteilungen-2026/Justizministerin-Sporrer-pr%C3%A4sentiert-Expert-innenkommission-und-Ma%C3%9Fnahmen-f%C3%BCr-den-Strafvollzug.html",
+      "published_date_local": "2026-02-04",
+      "date_confidence": "high"
+    },
+    {
+      "title": "12. Februar 2026 Allgemein \n \n \n \t\t\tNeue Leitung der Staatsanwaltschaft Feldkirch offiziell ernannt \n \n \n \n \n                                                                                    Dekretüberreichung an Dr. Heinz Rusch mit Justizministerin Dr. in  Anna Sporrer",
+      "url": "https://www.bmj.gv.at/ministerium/presse/Pressemitteilungen-2026/Neue-Leitung-der-Staatsanwaltschaft-Feldkirch-offiziell-ernannt.html",
+      "published_date_local": "2026-02-12",
+      "date_confidence": "high"
+    },
+    {
+      "title": "14. Februar 2026 Allgemein \n \n \n \t\t\tJustizministerin Anna Sporrer empfängt deutsche Amtskollegin Stefanie Hubig zu Arbeitsgespräch in Wien\n \n \n \n                                                                                    Austausch zu wirksamem Gewaltschutz, leistbarem Wohnen und Stärkung des EU-Binnenmarkts. Sporrer: „Voneinander lernen, um das Leben der Menschen sicherer und leistbarer zu machen.“",
+      "url": "https://www.bmj.gv.at/ministerium/presse/Pressemitteilungen-2026/Justizministerin-Anna-Sporrer-empf%C3%A4ngt-deutsche-Amtskollegin-Stefanie-Hubig-zu-Arbeitsgespr%C3%A4ch-in-Wien-.html",
+      "published_date_local": "2026-02-14",
+      "date_confidence": "high"
+    },
+    {
+      "title": "16. Februar 2026 \n \n \n \t\t\tLandesgericht St. Pölten unter neuer Leitung \n \n \n \n                                                                                    Offizielle Amtseinführung der neuen Präsidentin Mag. a  Martina Spreitzer-Kropiunik",
+      "url": "https://www.bmj.gv.at/ministerium/presse/Pressemitteilungen-2026/Landesgericht-St.-P%C3%B6lten-unter-neuer-Leitung-.html",
+      "published_date_local": "2026-02-16",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 10,
+  "live_dated_count": 10,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "at_bmj",
+    "country": "AT",
+    "name_zh": "奧地利司法部",
+    "name": "Bundesministerium für Justiz",
+    "institution_type": "ministry",
+    "language": "de",
+    "homepage": "https://www.bmj.gv.at/public.html",
+    "listing_url": "https://www.bmj.gv.at/ministerium/presse/Pressemitteilungen-2026.html",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.bmj.gv.at"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Vienna",
+    "card_selectors": [
+      "a.card-link"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

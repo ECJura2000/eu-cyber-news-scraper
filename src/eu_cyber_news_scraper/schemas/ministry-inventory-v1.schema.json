@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Official EU27 central ministry roster snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "country", "reviewed_on", "official_roster_urls", "roster_complete", "limitations", "ministries"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "country": {"enum": ["AT", "BE", "BG", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GR", "HR", "HU", "IE", "IT", "LT", "LU", "LV", "MT", "NL", "PL", "PT", "RO", "SE", "SI", "SK"]},
+    "reviewed_on": {"type": "string", "format": "date"},
+    "official_roster_urls": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "format": "uri"}},
+    "roster_complete": {"type": "boolean"},
+    "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "ministries": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["canonical_id", "name_zh", "name_local", "name_en", "kind", "language", "homepage", "news_url", "source_ids", "status", "reason", "evidence_urls"],
+        "properties": {
+          "canonical_id": {"type": "string", "pattern": "^[a-z]{2}_[a-z0-9_]+$"},
+          "name_zh": {"type": "string", "minLength": 1},
+          "name_local": {"type": "string", "minLength": 1},
+          "name_en": {"type": "string", "minLength": 1},
+          "kind": {"enum": ["ministry", "government_head_office", "ministry_equivalent"]},
+          "language": {"type": "string", "pattern": "^[a-z]{2}(?:-[A-Z]{2})?$"},
+          "homepage": {"type": ["string", "null"], "format": "uri"},
+          "news_url": {"type": ["string", "null"], "format": "uri"},
+          "source_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+          "status": {"enum": ["existing_source", "manual_verified", "parser_pending", "blocked", "no_news_endpoint", "needs_review", "user_excluded"]},
+          "user_exclusion": {
+            "type": "object", "additionalProperties": false,
+            "required": ["policy", "reason", "observed_at", "candidate_news_url"],
+            "properties": {
+              "policy": {"const": "exclude_unverified_after_local_wikipedia_recheck"},
+              "reason": {"type": "string", "minLength": 1},
+              "observed_at": {"type": "string", "format": "date-time"},
+              "candidate_news_url": {"type": ["string", "null"], "format": "uri"}
+            }
+          },
+          "reason": {"type": "string", "minLength": 1},
+          "evidence_urls": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "format": "uri"}}
+        }
+      }
+    }
+  }
+}

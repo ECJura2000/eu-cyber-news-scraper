@@ -1,0 +1,463 @@
+{
+  "schema_version": 1,
+  "country": "RO",
+  "reviewed_on": "2026-10-03",
+  "official_roster_urls": [
+    "https://gov.ro/ro/guvernul/organizare/ministere",
+    "https://gov.ro/ro/guvernul/organizare",
+    "https://gov.ro/ro/guvernul/organizare/aparatul-de-lucru-al-guvernului"
+  ],
+  "roster_complete": true,
+  "limitations": [
+    "2026-10-02 round3 south: 7 manually verified, 0 existing-source ministries, 11 unresolved. Exact current failures and parser/attribution limitations are recorded per initial unresolved ID in tests/fixtures/ministry_round3_south.json. Endpoint failures are not obsolete designations. New sources are manual-only, schedule_enabled=false, critical=false, all 15 OBSERVATION_TOPICS, empty responsibility_by_topic."
+  ],
+  "ministries": [
+    {
+      "canonical_id": "ro_transport",
+      "name_zh": "羅馬尼亞交通與基礎建設部",
+      "name_local": "Ministerul Transporturilor și Infrastructurii",
+      "name_en": "Ministry of Transport and Infrastructure",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://www.mt.ro",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (2).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://www.mt.ro",
+        "https://ro.wikipedia.org/wiki/Ministerul_Transporturilor_%C8%99i_Infrastructurii_(Rom%C3%A2nia)",
+        "https://www.mt.gov.ro"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (2).",
+        "observed_at": "2026-10-03T17:49:25.364801+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "ro_finance",
+      "name_zh": "羅馬尼亞財政部",
+      "name_local": "Ministerul Finanțelor",
+      "name_en": "Ministry of Finance",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://mfinante.gov.ro/ro/web/site",
+      "news_url": "https://mfinante.gov.ro/ro/presa-comunicate-de-presa",
+      "source_ids": [
+        "ro_finance"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 30 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://mfinante.gov.ro/ro/presa-comunicate-de-presa"
+      ]
+    },
+    {
+      "canonical_id": "ro_interior",
+      "name_zh": "羅馬尼亞內政部",
+      "name_local": "Ministerul Afacerilor Interne",
+      "name_en": "Ministry of Internal Affairs",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://www.mai.gov.ro/",
+      "news_url": "https://www.mai.gov.ro/feed/",
+      "source_ids": [
+        "ro_interior"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware feed production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://www.mai.gov.ro/category/comunicate-de-presa/",
+        "https://www.mai.gov.ro/feed/"
+      ]
+    },
+    {
+      "canonical_id": "ro_foreign_affairs",
+      "name_zh": "羅馬尼亞外交部",
+      "name_local": "Ministerul Afacerilor Externe",
+      "name_en": "Ministry of Foreign Affairs",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (2).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://gov.ro/ro/guvernul/sedinte-guvern",
+        "https://gov.ro/ro/media/comunicate",
+        "https://gov.ro/ro/media/comunicate/guvernul-raspunde-cetatenilor&page=1",
+        "https://gov.ro/ro/rss",
+        "https://www.mae.gov.ro/",
+        "https://www.mae.ro/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_(Romania)",
+        "https://ro.wikipedia.org/wiki/Ministerul_Afacerilor_Externe_(Rom%C3%A2nia)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (2).",
+        "observed_at": "2026-10-03T17:49:28.359670+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "ro_justice",
+      "name_zh": "羅馬尼亞司法部",
+      "name_local": "Ministerul Justiției",
+      "name_en": "Ministry of Justice",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://www.just.ro/",
+      "news_url": "https://www.just.ro/feed/",
+      "source_ids": [
+        "ro_justice"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware feed production parse: 10 dated items; genuine bounded fixture replay: 1 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://www.just.ro/",
+        "https://www.just.ro/media/comunicate-de-presa/",
+        "https://www.just.ro/feed/"
+      ]
+    },
+    {
+      "canonical_id": "ro_defence",
+      "name_zh": "羅馬尼亞國防部",
+      "name_local": "Ministerul Apărării Naționale",
+      "name_en": "Ministry of National Defence",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://www.mapn.ro/",
+      "news_url": "https://www.mapn.ro/cpresa/index.php",
+      "source_ids": [
+        "ro_defence"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 3 dated items; genuine bounded fixture replay: 3 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://www.mapn.ro/cpresa/index.php"
+      ]
+    },
+    {
+      "canonical_id": "ro_economy_digital",
+      "name_zh": "羅馬尼亞經濟數位化創業與觀光部",
+      "name_local": "Ministerul Economiei, Digitalizării, Antreprenoriatului și Turismului",
+      "name_en": "Ministry of Economy, Digitalisation, Entrepreneurship and Tourism",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://economie.gov.ro/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (2).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://economie.gov.ro/",
+        "https://www.imm.gov.ro/",
+        "https://ro.wikipedia.org/wiki/Ministerul_Economiei,_Digitaliz%C4%83rii,_Antreprenoriatului_%C8%99i_Turismului_(Rom%C3%A2nia)",
+        "https://www.economie.gov.ro/"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (2).",
+        "observed_at": "2026-10-03T17:49:29.599813+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "ro_energy",
+      "name_zh": "羅馬尼亞能源部",
+      "name_local": "Ministerul Energiei",
+      "name_en": "Ministry of Energy",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (1), robots_unavailable (1).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://gov.ro/ro/guvernul/sedinte-guvern",
+        "https://gov.ro/ro/media/comunicate",
+        "https://gov.ro/ro/media/comunicate/guvernul-raspunde-cetatenilor&page=1",
+        "https://gov.ro/ro/rss",
+        "https://energie.gov.ro/",
+        "https://ro.wikipedia.org/wiki/Ministerul_Energiei_(Rom%C3%A2nia)",
+        "https://www.facebook.com/MinisterulEnergiei"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (1), robots_unavailable (1).",
+        "observed_at": "2026-10-03T17:49:29.455454+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "ro_agriculture",
+      "name_zh": "羅馬尼亞農業與農村發展部",
+      "name_local": "Ministerul Agriculturii și Dezvoltării Rurale",
+      "name_en": "Ministry of Agriculture and Rural Development",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (1), robots_unavailable (2).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://gov.ro/ro/guvernul/sedinte-guvern",
+        "https://gov.ro/ro/media/comunicate",
+        "https://gov.ro/ro/media/comunicate/guvernul-raspunde-cetatenilor&page=1",
+        "https://gov.ro/ro/rss",
+        "https://www.madr.ro/",
+        "https://ro.wikipedia.org/wiki/Ministerul_Agriculturii_%C8%99i_Dezvolt%C4%83rii_Rurale_(Rom%C3%A2nia)",
+        "https://www.facebook.com/madr.ro",
+        "https://www.madr.ro"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_denied (1), robots_unavailable (2).",
+        "observed_at": "2026-10-03T17:49:30.028251+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "ro_environment",
+      "name_zh": "羅馬尼亞環境水利與森林部",
+      "name_local": "Ministerul Mediului, Apelor și Pădurilor",
+      "name_en": "Ministry of Environment, Waters and Forests",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://mmediu.ro/",
+      "news_url": "https://mmediu.ro/comunicare/comunicate-de-presa/",
+      "source_ids": [
+        "ro_environment"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 6 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://mmediu.ro/comunicare/comunicate-de-presa/"
+      ]
+    },
+    {
+      "canonical_id": "ro_development",
+      "name_zh": "羅馬尼亞發展公共工程與行政部",
+      "name_local": "Ministerul Dezvoltării, Lucrărilor Publice și Administrației",
+      "name_en": "Ministry of Development, Public Works and Administration",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://www.mdlpa.ro/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (1).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://www.mdlpa.ro/",
+        "https://www.mdrap.ro/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Regional_Development_and_Public_Administration",
+        "https://ro.wikipedia.org/wiki/Ministerul_Dezvolt%C4%83rii,_Lucr%C4%83rilor_Publice_%C8%99i_Administra%C8%9Biei"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (1).",
+        "observed_at": "2026-10-03T17:49:48.967702+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "ro_european_investment",
+      "name_zh": "羅馬尼亞投資與歐洲計畫部",
+      "name_local": "Ministerul Investițiilor și Proiectelor Europene",
+      "name_en": "Ministry of Investments and European Projects",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": null,
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (1). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://gov.ro/ro/guvernul/sedinte-guvern",
+        "https://gov.ro/ro/media/comunicate",
+        "https://gov.ro/ro/media/comunicate/guvernul-raspunde-cetatenilor&page=1",
+        "https://gov.ro/ro/rss",
+        "https://mfe.gov.ro/",
+        "https://gov.ro/en",
+        "https://gov.ro/en/news",
+        "https://gov.ro/en/news/prime-minister-ilie-bolojan-received-prime-minister-of-the-republic-of-moldova-vasile-tofan-at-victoria-palace",
+        "https://gov.ro/en/news/welcoming-by-prime-minister-ilie-bolojan-of-the-president-of-the-republic-of-india-droupadi-murmu-followed-by-the-meeting-between-the-two-official-delegations",
+        "https://ro.wikipedia.org/wiki/Ministerul_Investi%C8%9Biilor_%C8%99i_Proiectelor_Europene_(Rom%C3%A2nia)",
+        "https://gov.ro/en/media/press-releases",
+        "https://gov.ro/en/media/press-accreditation",
+        "https://gov.ro/ro/stiri"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (1). Accessible historical archives, legislation, aggregate or other-publisher pages are not ministry-specific live news proof.",
+        "observed_at": "2026-10-03T17:49:40.697682+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "ro_labour_family_youth",
+      "name_zh": "羅馬尼亞勞動家庭青年與社會團結部",
+      "name_local": "Ministerul Muncii, Familiei, Tineretului și Solidarității Sociale",
+      "name_en": "Ministry of Labour, Family, Youth and Social Solidarity",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://mmuncii.gov.ro/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (2).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://mmuncii.gov.ro/",
+        "https://www.mmuncii.ro/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Labor_and_Social_Protection_(Romania)",
+        "https://www.mmuncii.ro",
+        "https://ro.wikipedia.org/wiki/Ministerul_Muncii,_Familiei,_Tineretului_%C8%99i_Solidarit%C4%83%C8%9Bii_Sociale_(Rom%C3%A2nia)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (2).",
+        "observed_at": "2026-10-03T17:49:33.580426+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "ro_health",
+      "name_zh": "羅馬尼亞衛生部",
+      "name_local": "Ministerul Sănătății",
+      "name_en": "Ministry of Health",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://www.ms.ro/ro/",
+      "news_url": "https://www.ms.ro/informatii-de-interes-public/noutati/",
+      "source_ids": [
+        "ro_health"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://www.ms.ro/ro/",
+        "https://www.ms.ro/informatii-de-interes-public/noutati/"
+      ]
+    },
+    {
+      "canonical_id": "ro_education_research",
+      "name_zh": "羅馬尼亞教育與研究部",
+      "name_local": "Ministerul Educației și Cercetării",
+      "name_en": "Ministry of Education and Research",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://www.edu.ro/",
+      "news_url": "https://www.edu.ro/comunicate",
+      "source_ids": [
+        "ro_education_research"
+      ],
+      "status": "manual_verified",
+      "reason": "Live robots-aware html production parse: 10 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://www.edu.ro/",
+        "https://www.edu.ro/comunicate"
+      ]
+    },
+    {
+      "canonical_id": "ro_culture",
+      "name_zh": "羅馬尼亞文化部",
+      "name_local": "Ministerul Culturii",
+      "name_en": "Ministry of Culture",
+      "kind": "ministry",
+      "language": "ro",
+      "homepage": "https://www.cultura.ro",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (1).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare/ministere",
+        "https://www.cultura.ro",
+        "https://www.cultura.ro/",
+        "https://en.wikipedia.org/wiki/Ministry_of_Culture_(Romania)",
+        "https://ro.wikipedia.org/wiki/Ministerul_Culturii_(Rom%C3%A2nia)"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (1).",
+        "observed_at": "2026-10-03T17:49:34.997184+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "ro_prime_minister",
+      "name_zh": "羅馬尼亞總理辦公廳",
+      "name_local": "Cancelaria Prim-ministrului",
+      "name_en": "Chancellery of the Prime Minister",
+      "kind": "government_head_office",
+      "language": "ro",
+      "homepage": "https://cancelarie.gov.ro/",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (1).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare",
+        "https://gov.ro/ro/guvernul/organizare/aparatul-de-lucru-al-guvernului",
+        "https://cancelarie.gov.ro/",
+        "https://gov.ro/ro/guvernul/cabinetul-de-ministri/prim-ministru1575537361",
+        "https://ro.wikipedia.org/wiki/Guvernul_Rom%C3%A2niei"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (1).",
+        "observed_at": "2026-10-03T17:49:37.635106+08:00",
+        "candidate_news_url": null
+      }
+    },
+    {
+      "canonical_id": "ro_government_secretariat",
+      "name_zh": "羅馬尼亞政府秘書處",
+      "name_local": "Secretariatul General al Guvernului",
+      "name_en": "General Secretariat of the Government",
+      "kind": "ministry_equivalent",
+      "language": "ro",
+      "homepage": "https://sgg.gov.ro",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "第六輪當地語言維基百科與官網重查仍未通過，依使用者指示排除候選新聞入口；不宣稱部會或網站不存在。實際原因：blocked；Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (1).。 後續：Excluded under user policy; restore only after explicit review and successful publisher/date/production-parser verification. 證據：tests/fixtures/ministry_round6_east.json",
+      "evidence_urls": [
+        "https://gov.ro/ro/guvernul/organizare",
+        "https://gov.ro/ro/guvernul/organizare/aparatul-de-lucru-al-guvernului",
+        "https://sgg.gov.ro",
+        "https://gov.ro/en",
+        "https://gov.ro/en/news",
+        "https://gov.ro/en/news/prime-minister-ilie-bolojan-received-prime-minister-of-the-republic-of-moldova-vasile-tofan-at-victoria-palace",
+        "https://gov.ro/en/news/welcoming-by-prime-minister-ilie-bolojan-of-the-president-of-the-republic-of-india-droupadi-murmu-followed-by-the-meeting-between-the-two-official-delegations",
+        "https://ro.wikipedia.org/wiki/Secretariatul_General_al_Guvernului"
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unverified_after_local_wikipedia_recheck",
+        "reason": "Fresh ministry requests did not establish a ministry-specific dated production scrape. Observed failures: robots_unavailable (1).",
+        "observed_at": "2026-10-03T17:49:40.955984+08:00",
+        "candidate_news_url": null
+      }
+    }
+  ]
+}

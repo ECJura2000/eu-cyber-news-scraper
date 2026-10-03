@@ -1,0 +1,91 @@
+{
+  "source_id": "bg_tourism",
+  "url": "https://www.tourism.government.bg/bg/kategorii/novini?page=1",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:31:07.203198+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "a113ca02b859a3a685d96477dabbca785410fb9e3d6d64e3e9ff1623585976e1",
+  "response_sha256": "c39bdd1cd136394bdf70c8a2e67f7c7608c79a26a178964bcd762ef622fd41ae",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Ямбол е домакин на Фестивала на драконовите лодки през уикенда",
+      "url": "https://www.tourism.government.bg/bg/kategorii/novini/yambol-e-domakin-na-festivala-na-drakonovite-lodki-prez-uikenda",
+      "published_date_local": "2026-09-13",
+      "date_confidence": "high"
+    },
+    {
+      "title": "България и Полша превръщат добрите резултати в нови туристически партньорства",
+      "url": "https://www.tourism.government.bg/bg/kategorii/novini/bulgariya-i-polsha-prevrushtat-dobrite-rezultati-v-novi-turisticheski-partnorstva",
+      "published_date_local": "2026-09-11",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Министър Илин Димитров: Китай е пазар с огромен потенциал за българския туризъм",
+      "url": "https://www.tourism.government.bg/bg/kategorii/novini/ministur-ilin-dimitrov-kitay-e-pazar-s-ogromen-potencial-za-bulgarskiya-turizum",
+      "published_date_local": "2026-09-10",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Министерството на туризма става национален партньор на Българската федерация по волейбол за Европейското първенство за мъже през 2026 г.",
+      "url": "https://www.tourism.government.bg/bg/kategorii/novini/ministerstvoto-na-turizma-stava-nacionalen-partnor-na-bulgarskata-federaciya-po",
+      "published_date_local": "2026-09-08",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Министър Илин Димитров ще посети Китай за участие в Българо-китайската междуправителствена смесена комисия",
+      "url": "https://www.tourism.government.bg/bg/kategorii/novini/ministur-ilin-dimitrov-shte-poseti-kitay-za-uchastie-v-bulgaro-kitayskata",
+      "published_date_local": "2026-09-05",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Министърът на туризма д-р Илин Димитров на среща с бранша в Несебър: Изсветляването на краткосрочните наеми ще донесе повече ресурс за въздушна свързаност и реклама",
+      "url": "https://www.tourism.government.bg/bg/kategorii/novini/ministurut-na-turizma-d-r-ilin-dimitrov-na-sreshta-s-bransha-v-nesebur",
+      "published_date_local": "2026-09-04",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Министър Илин Димитров: Ще променим начина, по който България прави туризъм",
+      "url": "https://www.tourism.government.bg/bg/kategorii/novini/ministur-ilin-dimitrov-shte-promenim-nachina-po-koyto-bulgariya-pravi-turizum",
+      "published_date_local": "2026-09-02",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Стилияна Николова става посланик на българския туризъм",
+      "url": "https://www.tourism.government.bg/bg/kategorii/novini/stiliyana-nikolova-stava-poslanik-na-bulgarskiya-turizum",
+      "published_date_local": "2026-09-01",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 12,
+  "live_dated_count": 12,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "bg_tourism",
+    "country": "BG",
+    "name_zh": "保加利亞觀光部",
+    "name": "Министерство на туризма",
+    "institution_type": "ministry",
+    "language": "bg",
+    "homepage": "https://www.tourism.government.bg/bg/kategorii/novini?page=1",
+    "listing_url": "https://www.tourism.government.bg/bg/kategorii/novini?page=1",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.tourism.government.bg"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Sofia",
+    "card_selectors": [
+      "div.node"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

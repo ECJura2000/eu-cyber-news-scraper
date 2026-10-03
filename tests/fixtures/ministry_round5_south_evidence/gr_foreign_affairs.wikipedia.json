@@ -1,0 +1,18 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of Foreign Affairs Greece"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Foreign_Affairs_(Greece)",
+      "title": "Ministry of Foreign Affairs (Greece) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:17.103391+00:00",
+      "extracted_sha256": "679fb280ae1c2e44a22c2aaccc363c9bc95cedbdfbf2278b1677462501e84a98",
+      "excerpt": "The**Hellenic Ministry of Foreign Affairs**([Greek](https://en.wikipedia.org/wiki/Greek_language):Υπουργείο Εξωτερικών,[romanized](https://en.wikipedia.org/wiki/Romanization_of_Greek):*Ypourgeío Exōterikṓn*) is a[government department](https://en.wikipedia.org/wiki/Ministry_(government_department))of[Greece](https://en.wikipedia.org/wiki/Greece), headed by the Minister for Foreign Affairs. The ministry has its headquarters in[Athens](https://en.wikipedia.org/wiki/Athens).\n\nThe incumbent minister is[Giorgos Gerapetritis](https://en.wikipedia.org/wiki/Giorgos_Gerapetritis)in the[Second Cabinet of Kyriakos Mitsotakis](https://en.wikipedia.org/wiki/Second_Cabinet_of_Kyriakos_Mitsotakis).\n\n## History[[edit](https://en.wikipedia.org/w/index.php?title=Ministry_of_Foreign_Affairs_(Greece)&action=edit&section=1)]\n\nThe Ministry of Foreign Affairs is one of Greece’s oldest ministries.[Theodoros Negris](https://en.wikipedia.org/wiki/Theodoros_Negris)is regarded as its first minister, serving from "
+    }
+  ],
+  "website_candidates": [],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/gr_foreign_affairs.wikipedia.json"
+}

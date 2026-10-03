@@ -1,0 +1,124 @@
+{
+  "source_id": "pt_infrastructure_housing",
+  "url": "https://portugal.gov.pt/pt/gc25/area-de-governo/infraestruturas-e-habitacao/noticias",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T08:47:37.403774+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "19a52ba7f5a71be32d32d3b21594f0f475b7c318e2b253c90b16b440f5710b9b",
+  "listing_response_sha256": "184db76768f55ae3167bb614b2d288beca317950ea62789aa299a0945f2b48b8",
+  "response_sha256": [
+    "69bc77afc8ecf061862e887329fe948669ac2123f28dc44ab26fd59ebd6e6dda",
+    "b7e5bce56aaa67af332b2e67c58af4b6f1be129061ddbbd4724ddc13c3e8af4b"
+  ],
+  "fixture_count": 8,
+  "parsed_count": 92,
+  "dated_count": 92,
+  "expected": [
+    {
+      "title": "Transportes públicos avançam para pagamento generalizado com cartão bancário",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/transportes-publicos-avancam-para-pagamento-generalizado-com-cartao-bancario",
+      "published_date_local": "2026-09-30",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Passe Ferroviário Verde alargado aos serviços urbanos da CP de Lisboa e do Porto a partir de 27 de setembro",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/passe-ferroviario-verde-alargado-aos-servicos-urbanos-da-cp-de-lisboa-e-do-porto-a-partir-de-27-de-setembro",
+      "published_date_local": "2026-09-26",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "PRR reforça oferta da Carris e descarbonização do transporte público",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/prr-reforca-oferta-da-carris-e-descarbonizacao-do-transporte-publico",
+      "published_date_local": "2026-09-08",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Nova linha de crédito de 1,5 mil milhões de euros para 50 000 habitações",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/nova-linha-de-credito-de-15-mil-milhoes-de-euros-para-50-000-habitacoes",
+      "published_date_local": "2026-09-07",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Passe Ferroviário Verde nos comboios urbanos de Lisboa e Porto",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/passe-ferroviario-verde-nos-comboios-urbanos-de-lisboa-e-porto",
+      "published_date_local": "2026-08-21",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "PRR permite disponibilizar mais de 28 mil casas até final de agosto",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/prr-permite-disponibilizar-mais-de-28-mil-casas-ate-final-de-agosto",
+      "published_date_local": "2026-08-17",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Transportes urbanos e logística modernizados com novas regras de segurança e eficiência",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/transportes-urbanos-e-logistica-modernizados-com-novas-regras-de-seguranca-e-eficiencia",
+      "published_date_local": "2026-08-07",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Governo lança apoios à logística urbana, mobilidade escolar e descarbonização dos táxis",
+      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/noticias/governo-lanca-apoios-a-logistica-urbana-mobilidade-escolar-e-descarbonizacao-dos-taxis",
+      "published_date_local": "2026-08-03",
+      "date_source": "json-api",
+      "date_confidence": "high"
+    }
+  ],
+  "live_status": {
+    "source_id": "pt_infrastructure_housing",
+    "source_name": "葡萄牙基礎建設與住宅部",
+    "country": "PT",
+    "critical": false,
+    "success": true,
+    "fetched_via": "public-sitecore",
+    "raw_count": 92,
+    "relevant_count": 92,
+    "duration_seconds": 1.19,
+    "newest_published_at": "2026-09-30T16:07:00+00:00",
+    "warning": "",
+    "error": "",
+    "pages_fetched": 1,
+    "historical_median_count": 0.0,
+    "health_alerts": [],
+    "dated_count": 92,
+    "undated_ratio": 0.0,
+    "unique_title_ratio": 1.0,
+    "in_range_count": 92,
+    "freshness_lag_days": 2.33,
+    "content_warning": "",
+    "fetch_status": "ok",
+    "health_status": "healthy",
+    "invalid_date_count": 0,
+    "unexplained_future_date_count": 0,
+    "timeout_count": 0,
+    "parse_status": "healthy",
+    "freshness_status": "fresh",
+    "content_status": "hits",
+    "request_count": 3,
+    "bytes_downloaded": 1250637,
+    "retry_count": 0,
+    "cache_hits": 0,
+    "budget_exhausted": false,
+    "http_statuses": [
+      "200",
+      "200",
+      "200"
+    ],
+    "error_code": "",
+    "historical_median_requests": 0.0,
+    "historical_median_bytes": 0.0,
+    "historical_median_duration": 0.0
+  },
+  "public_endpoint": "https://edge-platform.sitecorecloud.io/v1/content/api/graphql/v1",
+  "transform": "Exact projection of official anonymous query title/path/CardDate/news-template/area IDs; biography fields omitted; first 8 genuine items; transient public routing value never saved",
+  "access": "No Authorization/API-key headers or authenticated fallback; public frontend routing identifier discovered afresh"
+}

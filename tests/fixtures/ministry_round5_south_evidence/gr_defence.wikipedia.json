@@ -1,0 +1,31 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry of National Defence Greece"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_National_Defence_(Greece)",
+      "title": "Ministry of National Defence (Greece) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:18.239650+00:00",
+      "extracted_sha256": "100993f17a44896964fc6f3e34234de7ed573a881ca29b156d9fc21e131bcac0",
+      "excerpt": "The**Ministry of National Defence**([Greek](https://en.wikipedia.org/wiki/Greek_language):Υπουργείο Εθνικής Άμυνας,[romanized](https://en.wikipedia.org/wiki/Romanization_of_Greek):*Ypourgeío Ethnikís Ámynas*, abbreviatedΥΠΕΘΑ,*YPETHA*), is the civilian cabinet organisation responsible for managing the[Hellenic Armed Forces](https://en.wikipedia.org/wiki/Military_of_Greece), the[leader](https://en.wikipedia.org/wiki/Commander-in-chief)of which is, according to the[Constitution](https://en.wikipedia.org/wiki/Constitution_of_Greece)(Article 45), the[President of the Republic](https://en.wikipedia.org/wiki/President_of_Greece)but their administration is exercised only by the[Prime Minister](https://en.wikipedia.org/wiki/Prime_Minister_of_Greece)and the[Government of Greece](https://en.wikipedia.org/wiki/Government_of_Greece). It is located at 227-231 Messogion Avenue, in the Papagos camp (Pentagon) in Athens, between Papagos and Holargos.\n\nToday is hierarchically ranked 3rd in the rankings"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "https://www.mod.mil.gr/en/",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_National_Defence_(Greece)",
+      "link_text": "www.mod.mil.gr/en/",
+      "relationship_excerpt": "https://en.wikipedia.org/wiki/Hellenic_Air_Force_General_Staff)Website[www.mod.mil.gr/en/](https://www.mod.mil.gr/en/)This article is part of[a series](https://en.wikipedia.org/wiki/Catego"
+    },
+    {
+      "url": "https://www.mod.mil.gr",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_National_Defence_(Greece)",
+      "link_text": "Official website",
+      "relationship_excerpt": "title=Ministry_of_National_Defence_(Greece)&action=edit&section=8)]\n- [Official website](https://www.mod.mil.gr)[](https://www.wikidata.org/wiki/Q2606039#P856)(in Greek and English)\n"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/gr_defence.wikipedia.json"
+}

@@ -1,0 +1,18 @@
+{
+  "status": "ambiguous",
+  "queries": [
+    "site:wikipedia.org Ministry for Justice, Research and Innovation Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_justice",
+      "title": "Ministry of justice - Wikipedia",
+      "observed_at": "2026-10-03T08:37:40.159761+00:00",
+      "extracted_sha256": "401f5796db49ce260a76104c2fbdd740fa840ff272d7bb1bace8d0e4dc500703",
+      "excerpt": "[Jump to content](https://en.wikipedia.org/wiki/Ministry_of_justice#bodyContent)\n\nFrom Wikipedia, the free encyclopedia\n\nGovernment agency in charge of justice\n\n\"DoJ\" and \"Justice Department\" redirect here. For the federal executive department of the United States, see[United States Department of Justice](https://en.wikipedia.org/wiki/United_States_Department_of_Justice). For other uses, see[DOJ](https://en.wikipedia.org/wiki/DOJ_(disambiguation)).\n\nA**justice ministry**,**ministry of justice**,[[1]](https://en.wikipedia.org/wiki/Ministry_of_justice#cite_note-1)or**department of justice**,[[2]](https://en.wikipedia.org/wiki/Ministry_of_justice#cite_note-2)is a[ministry](https://en.wikipedia.org/wiki/Ministry_(government_department))or other[government agency](https://en.wikipedia.org/wiki/Government_agency)in charge of the[administration of justice](https://en.wikipedia.org/wiki/Administration_of_justice). The ministry or department is often headed by a**minister of justice**(**ministe"
+    }
+  ],
+  "website_candidates": [],
+  "note": "Search returned a related minister, generic list, or different-country institution, not an unambiguous current ministry match; retain roster and verify official identity separately.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_justice.wikipedia.json"
+}

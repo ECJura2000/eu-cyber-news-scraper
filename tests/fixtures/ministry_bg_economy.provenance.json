@@ -1,0 +1,91 @@
+{
+  "source_id": "bg_economy",
+  "url": "https://www.mi.government.bg/novini/novini/",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:57.381680+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "5ec89d9cdacc739aa3d1e64ef290408bdaaac8acdc3d08919887cc8f5c21716d",
+  "response_sha256": "d4a2c468e742c230f661619d21a20628fafbddb5f3cb1659ae8a34b73d504e28",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Красимир Якимов: България не трябва да бъде само пазар, а производител на технологиите на бъдещето       01.10.2026      България не може и не трябва да бъде единствено пазар за технологиите на бъдещето. Това, за което ние работим, е България да се превърне в мястото, на което тези технологии се произвеждат. Това заяви заместник-министърът на икономиката, инвестициите и индустрията Красимир Якимов по време на официалното откриване на изцяло автоматизиран завод за фотоволтaични модули VESS […]   Прочети повече",
+      "url": "https://www.mi.government.bg/news/krasimir-yakimov-balgariya-ne-tryabva-da-bade-samo-pazar-a-proizvoditel-na-tehnologiite-na-badestheto/",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Асен Ненчев е новият изпълнителен директор на Българската агенция за инвестиции       01.10.2026      Със заповед на заместник-министър председателя и министър на икономиката, инвестициите и индустрията Александър Пулев считано от днес Асен Ненчев е назначен за изпълнителен директор на Българската агенция за инвестиции (БАИ). Асен Ненчев е магистър по мениджмънт от Imperial College London и бакалавър по икономика и бизнес от University College London, където защитава дипломна работа на […]   Прочети повече",
+      "url": "https://www.mi.government.bg/news/asen-nenchev-e-noviyat-izpalnitelen-direktor-na-balgarskata-agencziya-za-investiczii/",
+      "published_date_local": "2026-10-01",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Вицепремиерът Пулев: Насочваме 300 млн. евро към хората и ключовите сектори на икономиката       30.09.2026      Инициативата „Кошница с грижа“ трябва да носи реална полза за потребителите, обяви той Предприехме целеви мерки и осигурихме 300 млн. евро за подкрепа както на най-уязвимите групи, така и на ключови за икономиката сектори – транспорт, логистика, енергоемка индустрия и земеделие. Това заяви вицепремиерът и министър на икономиката, инвестициите и индустрията Александър Пулев, който представи […]   Прочети повече",
+      "url": "https://www.mi.government.bg/news/viczepremierat-pulev-nasochvame-300-mln-evro-kam-horata-i-klyuchovite-sektori-na-ikonomikata/",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Вицепремиерът Александър Пулев : Целта ни е да ускорим инвестиционните процеси и да подобрим бизнес средата       30.09.2026      Целта ни е да намалим административните пречки пред бизнеса, да ускорим инвестиционните процеси и да създадем по-предвидима и конкурентна среда за инвеститорите. Това заяви вицепремиерът и министър на икономиката, инвестициите и индустрията Александър Пулев по време на среща с делегация на Международния валутен фонд (МВФ), ръководена от Фабиан Борнхост. Министър Пулев представи предприетите мерки за […]   Прочети повече",
+      "url": "https://www.mi.government.bg/news/viczepremierat-aleksandar-pulev-czelta-ni-e-da-uskorim-investiczionnite-proczesi-i-da-podobrim-biznes-sredata/",
+      "published_date_local": "2026-09-30",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Вицепремиерът Пулев: Публично-частните партньорства ще бъдат инструмент за модернизация на инфраструктура       29.09.2026      Икономическият министър и вицепрезидентът на ЕБВР подписаха меморандум за подготовка на публично-частни партньорства Вицепремиерът и министър на икономиката, инвестициите и индустрията Александър Пулев и вицепрезидентът на Европейската банка за възстановяване и развитие (ЕБВР) Марк Боумън подписаха Меморандум за разбирателство, насочен към създаването на механизъм за подготовка на публично-частни партньорства. „ЕБВР е златният стандарт в международното […]   Прочети повече",
+      "url": "https://www.mi.government.bg/news/viczepremierat-pulev-publichno-chastnite-partnorstva-sthe-badat-instrument-za-modernizacziya-na-infrastruktura/",
+      "published_date_local": "2026-09-29",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Вицепремиерът Пулев: Засилваме партньорството с INSAIT за развитие и внедряване на високотехнологични решения       25.09.2026      Заместник министър-председателят и министър на икономиката, инвестициите и индустрията Александър Пулев проведе среща с ръководството на Института за компютърни науки, изкуствен интелект и технологии (INSAIT) – проф. Мартин Вечев, основател и научен директор на института, и изпълнителния директор инж. Борислав Петров. По време на разговора бяха обсъдени следващият етап в развитието на INSAIT и възможностите […]   Прочети повече",
+      "url": "https://www.mi.government.bg/news/viczepremierat-pulev-zasilvame-partnorstvoto-s-insait-za-razvitie-i-vnedryavane-na-visokotehnologichni-resheniya/",
+      "published_date_local": "2026-09-25",
+      "date_confidence": "high"
+    },
+    {
+      "title": "България и Полша задълбочават стратегическото си сътрудничество в редица ключови сектори       25.09.2026      По време на официалното посещение на министър-председателя Румен Радев в Република Полша вицепремиерът и министър на икономиката, инвестициите и индустрията Александър Пулев участва в срещата между българския премиер и министър-председателя на Полша Доналд Туск. Основни теми на разговорите бяха задълбочаването на двустранните отношения и развитието на нови възможности за сътрудничество в икономиката, енергетиката, отбраната и […]   Прочети повече",
+      "url": "https://www.mi.government.bg/news/balgariya-i-polsha-zadalbochavat-strategicheskoto-si-satrudnichestvo-v-redicza-klyuchovi-sektori/",
+      "published_date_local": "2026-09-25",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Зам.-министър Михаела Карадимова: Първо трябва да бъдат обезпечени нуждите на българските граждани и бизнеса и едва след това да се реализират излишните количества нефтопродуктичрез износ       23.09.2026      Парламентът отмени решението, с което временно се забраняваше износът на нефтопродукти „Водещият принцип трябва да остане гарантирането на вътрешното потребление и енергийната сигурност на страната. Първо трябва да бъдат обезпечени нуждите на българските граждани и бизнеса и едва след това да се реализират излишните количества чрез износ.“ Това заяви заместник-министърът на икономиката, инвестициите и индустрията […]   Прочети повече",
+      "url": "https://www.mi.government.bg/news/zam-ministar-mihaela-karadimova-parvo-tryabva-da-badat-obezpecheni-nuzhdite-na-balgarskite-grazhdani-i-biznesa-i-edva-sled-tova-da-se-realizirat-izlishnite-kolichestva-goriva-chrez-iznos/",
+      "published_date_local": "2026-09-23",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 10,
+  "live_dated_count": 10,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "bg_economy",
+    "country": "BG",
+    "name_zh": "保加利亞經濟、投資與工業部",
+    "name": "Министерство на икономиката, инвестициите и индустрията",
+    "institution_type": "ministry",
+    "language": "bg",
+    "homepage": "https://www.mi.government.bg/novini/novini/",
+    "listing_url": "https://www.mi.government.bg/novini/novini/",
+    "feed_urls": [],
+    "allow_domains": [
+      "www.mi.government.bg"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Sofia",
+    "card_selectors": [
+      "a.card-link"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

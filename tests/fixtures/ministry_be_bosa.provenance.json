@@ -1,0 +1,91 @@
+{
+  "source_id": "be_bosa",
+  "url": "https://bosa.belgium.be/nl/news",
+  "observed_on": "2026-10-02",
+  "observed_at": "2026-10-02T00:30:09.800115+00:00",
+  "http_status": 200,
+  "robots_enforced": true,
+  "tls_verified": true,
+  "sha256": "854775e2b18a699e097c5478bcc7376da48985072919d2daa60da1f25f902754",
+  "response_sha256": "791de077e3c6ee1caeb603e58fd66ec8383b5e44f0aa59ec21c070da27b3a8da",
+  "fixture_count": 8,
+  "expected": [
+    {
+      "title": "Indexering van de wedden vanaf september 2026",
+      "url": "https://bosa.belgium.be/nl/news/indexering-van-de-wedden-vanaf-september-2026",
+      "published_date_local": "2026-09-28",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Brugdagen: nieuwe regeling vanaf 2027",
+      "url": "https://bosa.belgium.be/nl/news/brugdagen-nieuwe-regeling-vanaf-2027",
+      "published_date_local": "2026-09-28",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Talent Belgium: nieuwe functionaliteiten gelinkt aan vaardigheden zijn volop in ontwikkeling",
+      "url": "https://bosa.belgium.be/nl/news/talent-belgium-nieuwe-functionaliteiten-gelinkt-aan-vaardigheden-zijn-volop-ontwikkeling",
+      "published_date_local": "2026-09-25",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Fietslease: volg een webinar en zet de eerste stap",
+      "url": "https://bosa.belgium.be/nl/news/fietslease-volg-een-webinar-en-zet-de-eerste-stap",
+      "published_date_local": "2026-09-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Federale Inclusieprijs 2026: stem nu!",
+      "url": "https://bosa.belgium.be/nl/news/federale-inclusieprijs-2026-stem-nu",
+      "published_date_local": "2026-09-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Federale dag van de inclusie: 'Van intentie naar impact: inclusie in actie'",
+      "url": "https://bosa.belgium.be/nl/news/federale-dag-van-de-inclusie-van-intentie-naar-impact-inclusie-actie",
+      "published_date_local": "2026-09-24",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Spelletjeslunch in de FOD BOSA-bibliotheek",
+      "url": "https://bosa.belgium.be/nl/news/spelletjeslunch-de-fod-bosa-bibliotheek-4",
+      "published_date_local": "2026-09-21",
+      "date_confidence": "high"
+    },
+    {
+      "title": "Top Skills 2026: zet jezelf op weg naar een nieuwe functie als topmanager",
+      "url": "https://bosa.belgium.be/nl/news/top-skills-2026-zet-jezelf-op-weg-naar-een-nieuwe-functie-als-topmanager",
+      "published_date_local": "2026-09-18",
+      "date_confidence": "high"
+    }
+  ],
+  "live_parser_count": 10,
+  "live_dated_count": 10,
+  "transform": "First eight complete original feed entries or complete original news-card DOM nodes; no title/date/URL values synthesized.",
+  "source": {
+    "id": "be_bosa",
+    "country": "BE",
+    "name_zh": "比利時聯邦政策與支援公共服務部",
+    "name": "Federale Overheidsdienst Beleid en Ondersteuning",
+    "institution_type": "ministry",
+    "language": "nl",
+    "homepage": "https://bosa.belgium.be/nl",
+    "listing_url": "https://bosa.belgium.be/nl/news",
+    "feed_urls": [],
+    "allow_domains": [
+      "bosa.belgium.be"
+    ],
+    "critical": false,
+    "detail_pages": 0,
+    "timezone": "Europe/Brussels",
+    "card_selectors": [
+      "article.node--promoted"
+    ],
+    "date_selectors": [
+      "time",
+      "[class*=date i]",
+      "[class*=datum i]"
+    ],
+    "schedule_enabled": false
+  }
+}

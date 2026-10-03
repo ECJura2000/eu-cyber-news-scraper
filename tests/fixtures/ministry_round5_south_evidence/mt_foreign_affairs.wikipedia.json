@@ -1,0 +1,31 @@
+{
+  "status": "matched",
+  "queries": [
+    "site:wikipedia.org Ministry for Foreign and European Affairs Malta"
+  ],
+  "pages": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ministry_for_Foreign_and_European_Affairs_(Malta)",
+      "title": "Ministry for Foreign and European Affairs (Malta) - Wikipedia",
+      "observed_at": "2026-10-03T08:37:41.940137+00:00",
+      "extracted_sha256": "1af213726bddd3bcf5cfd283e064d0f85e2a401f0a1b20aac39d5e0c28f278d9",
+      "excerpt": "The**Ministry for Foreign and European Affairs and Trade**([Maltese](https://en.wikipedia.org/wiki/Maltese_language):*Ministeru għall-Affarijiet Barranin u Ewropej u l-Kummerċ*) is responsible for maintaining[Malta](https://en.wikipedia.org/wiki/Malta)'s[external relations](https://en.wikipedia.org/wiki/Foreign_relations_of_Malta)and the management of its[international diplomatic missions](https://en.wikipedia.org/wiki/List_of_diplomatic_missions_of_Malta). The current[minister](https://en.wikipedia.org/wiki/List_of_ministers_for_foreign_affairs_of_Malta)is Chris Fearne.[[1]](https://en.wikipedia.org/wiki/Ministry_for_Foreign_and_European_Affairs_(Malta)#cite_note-USDOS-1)The ministry is headquartered at[Palazzo Parisio](https://en.wikipedia.org/wiki/Palazzo_Parisio_(Valletta)), a historic building situated on Merchants Street in[Valletta](https://en.wikipedia.org/wiki/Valletta).[[2]](https://en.wikipedia.org/wiki/Ministry_for_Foreign_and_European_Affairs_(Malta)#cite_note-2)[[3]](http"
+    }
+  ],
+  "website_candidates": [
+    {
+      "url": "http://foreignandeu.gov.mt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_for_Foreign_and_European_Affairs_(Malta)",
+      "link_text": "foreignandeu.gov.mt",
+      "relationship_excerpt": "ris_Fearne), Minister of Foreign and European Affairs and TradeWebsite[foreignandeu.gov.mt](http://foreignandeu.gov.mt)\n\n[Politics of Malta](https://en.wikipedia.org/wiki/Politics_of_Malta)"
+    },
+    {
+      "url": "https://foreignandeu.gov.mt",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_for_Foreign_and_European_Affairs_(Malta)",
+      "link_text": "Official website",
+      "relationship_excerpt": "ry_for_Foreign_and_European_Affairs_(Malta)&action=edit&section=6)]\n- [Official website](https://foreignandeu.gov.mt)\n\n- [v](https://en.wikipedia.org/wiki/Template:Foreign_relations_of_Ma"
+    }
+  ],
+  "note": "Retrieved encyclopedia article identifies the assigned country/ministry or current successor. Official source verification remains a separate gate.",
+  "evidence_path": "tests/fixtures/ministry_round5_south_evidence/mt_foreign_affairs.wikipedia.json"
+}

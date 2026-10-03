@@ -1,6 +1,8 @@
 # 官方與公共研究來源
 
-本清單以機關正式網站為主。`sources.toml` 是程式實際執行的權威設定；本文件用於說明來源的制度定位。新聞內容及附件仍受各網站條款約束，程式只保存必要的書目資訊、短摘要與官方連結。
+本清單以機關正式網站為主。`organisation_registry/` 的 JSON 是預設執行的權威設定，`sources.toml` 是可明確指定的相容匯出；本文件用於說明來源的制度定位。新聞內容及附件仍受各網站條款約束，程式只保存必要的書目資訊、短摘要與官方連結。
+
+27 國的全部中央部會與政府首長辦公室另見 [中央部會追蹤名錄](MINISTRIES.md)，逐一標示官方新聞入口、既有／新增可查詢來源及待驗證原因。名錄由逐國 JSON 產生，與智庫、大學候選清單分開。
 
 ## 歐盟
 
@@ -143,6 +145,15 @@
 | 芬蘭 | `fi_haic` 阿爾托／赫爾辛基大學與 VTT 聯合資安研究所 | [新聞首頁](https://haic.aalto.fi/) | 手動抓取健康；11 筆列表結果 |
 
 上述研究與公私協力來源的文章不等於法定主管機關意見。每個來源的職掌與範圍、原文語言、主題、查證日期及連結均記於同名 `organisation_registry/*.json`；職掌未查證為正式責任機關時 `responsibility_by_topic` 維持空值。
+
+## v1.8.0 允許入口補充
+
+| 代碼 | 機關／入口 | 抓取方式與歸屬 | 排程 |
+| --- | --- | --- | --- |
+| `fi_education_agency` | [芬蘭教育署 Opetushallitus](https://www.oph.fi/fi/tiedotteet) | 芬蘭語新聞主列表、原文發布日期；獨立行政機關，不歸為教育文化部 | 僅手動 |
+| `fi_judicial_administration_portal` | [芬蘭司法入口 Oikeus.fi](https://www.oikeus.fi/feed/rss-feed?post_type=ajankohtaiset) | 多司法機關新聞 RSS，保留實際發布機關與 pubDate；不全部歸為司法部 | 僅手動 |
+
+兩個來源使用獨立 JSON 與專用解析 adapter；原部會名錄與排除歷史不變。抓取方法與 robots 例外見 [CRAWLER_METHODS.md](CRAWLER_METHODS.md)。
 
 ## 維護原則
 
