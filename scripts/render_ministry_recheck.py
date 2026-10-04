@@ -42,14 +42,15 @@ def render() -> str:
              "robots、TLS、網站阻擋及需要認證的入口不繞過；未建立發布機關歸屬或日期證據的入口不登錄。", "",
              "逐項原始檢查紀錄：" + '、'.join(f"[第 {r['number']} 輪／{p.rsplit('_',1)[-1][:-5]}](tests/fixtures/{p})"
                                                   for r in rounds for p in r['reports']) + "。",
-             "完整 460 筆名錄見 [MINISTRIES.md](MINISTRIES.md)。", "",
+             "完整 460 筆名錄見 [MINISTRIES.md](MINISTRIES.md)。2026-10-04 後續清理另見 [SOURCE_CLEANUP.md](SOURCE_CLEANUP.md)；上方累計數是歷次觀察，不覆寫歷史成功，目前狀態以下表與部會名錄為準。", "",
              "維基百科只用於尋找官方網址線索；條目可能過時，不作為新聞發布機關、日期或可抓取性的合格證據。第五輪確認失效／非新聞的候選網址才清理；第六輪依使用者指示，當地語言重查仍未通過者移除候選新聞入口，標示為使用者排除而非網站失效，部會官網與歷史證據保留。", "",
              "百科短摘錄的來源署名與授權見 [WIKIPEDIA_ATTRIBUTION.md](tests/fixtures/WIKIPEDIA_ATTRIBUTION.md)。", "",
              "| 國家 | 部會 | 最新結果 | 嘗試入口數 | 維基百科線索 | 後續處理 |", "| --- | --- | --- | --- | --- | --- |"]
     for identifier in sorted(checks):
         check = checks[identifier]
         row = rows[identifier]
-        if check["result"] != row["status"]:
+        removed_after_recheck = row.get('user_exclusion', {}).get('policy') == 'exclude_unreadable_registered_source'
+        if check["result"] != row["status"] and not removed_after_recheck:
             raise ValueError(f"Recheck/inventory status mismatch: {identifier}")
         review = check.get('wikipedia', {})
         pages = review.get('pages', [])
@@ -60,8 +61,10 @@ def render() -> str:
         cleanup = f"已清理 {len(check['removed_news_urls'])} 個候選網址；" if check.get('removed_news_urls') else ''
         if check['result'] == 'user_excluded':
             cleanup += '已依使用者指示移除候選新聞入口；'
+        if removed_after_recheck:
+            cleanup += '後續抓取複查失敗，已移除；詳見 SOURCE_CLEANUP.md。'
         lines.append(f"| {check['country']} | {cell(row['name_zh'])}（`{identifier}`） | "
-                     f"{LABELS[check['result']]} | {len(check['attempts'])} | {wiki} | {cell(cleanup+check['next_action'])} |")
+                     f"{LABELS[row['status']]} | {len(check['attempts'])} | {wiki} | {cell(cleanup+check['next_action'])} |")
     return "\n".join(lines) + "\n"
 
 

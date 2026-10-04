@@ -1,6 +1,7 @@
 """Source-specific parliamentary cards must not borrow dates from neighbouring news."""
 
-from eu_cyber_news_scraper.config import load_sources_and_registry
+from historical_sources import load_sources_and_registry
+
 from eu_cyber_news_scraper.parsers import parse_listing
 
 

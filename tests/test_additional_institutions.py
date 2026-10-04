@@ -24,7 +24,7 @@ def test_previously_unlisted_eu_countries_have_manual_audited_sources():
 def test_new_dutch_sources_are_manual_and_auditable():
     sources = {source.id: source for source in load_sources()}
     registry = load_organisation_registry()
-    for source_id in ("nl_acm", "nl_rdi", "nl_tno", "nl_nwo"):
+    for source_id in ("nl_acm", "nl_tno", "nl_nwo"):
         source = sources[source_id]
         module = registry.module_for_source(source_id)
         assert not source.schedule_enabled
@@ -32,7 +32,8 @@ def test_new_dutch_sources_are_manual_and_auditable():
         assert module is not None
         assert module.payload["responsibility_by_topic"] == {}
         assert len(module.payload["verification"]["evidence_urls"]) >= 2
-    assert registry.module_for_source("nl_rdi").payload["verification"]["status"] == "parse_empty"
+    assert registry.module_for_source("nl_rdi") is None
+    assert "nl_rdi" not in sources
 
 
 def test_tno_card_uses_article_title_and_own_date():

@@ -401,12 +401,10 @@
       "kind": "ministry",
       "language": "en",
       "homepage": "https://foreign.gov.mt/",
-      "news_url": "https://foreign.gov.mt/feed/",
-      "source_ids": [
-        "mt_foreign_affairs"
-      ],
-      "status": "manual_verified",
-      "reason": "第六輪當地語言維基百科與官網新聞解析驗證通過；僅供手動查詢。 後續：Manual verification complete for the ministry-owned dated RSS; remain unscheduled and non-critical. The latest feed item is 24 July 2026, within the explicit 90-day freshness window, and the general DOI feed is not assigned to this ministry. 證據：tests/fixtures/ministry_round6_south.json",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "2026-10-04 兩次實際抓取均失敗，依使用者要求移除可查詢入口。mt_foreign_affairs: ROBOTS_DENIED。原設定與觀察保留於 source_exclusions/manifest.json；不判定機關或網站已不存在。",
       "evidence_urls": [
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/default.aspx",
         "https://www.gov.mt/en/Government/Government%20of%20Malta/Ministries%20and%20Entities/Pages/Ministries%202026/Foreign.aspx",
@@ -420,7 +418,13 @@
         "https://foreign.gov.mt/press-releases-media/",
         "https://foreign.gov.mt/calls/call-for-bids-cooperation-with-the-ministry-for-foreign-and-european-affairs-on-humanitarian-assistance-in-gaza/",
         "https://mt.wikipedia.org/wiki/Ian_Borg"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unreadable_registered_source",
+        "reason": "mt_foreign_affairs: ROBOTS_DENIED",
+        "observed_at": "2026-10-04T02:14:43.552583+00:00",
+        "candidate_news_url": "https://foreign.gov.mt/feed/"
+      }
     },
     {
       "canonical_id": "mt_local_government",

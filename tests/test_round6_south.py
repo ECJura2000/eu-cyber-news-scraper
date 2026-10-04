@@ -12,8 +12,6 @@ from zoneinfo import ZoneInfo
 
 import pytest
 
-from eu_cyber_news_scraper.config import load_sources
-from eu_cyber_news_scraper.organisation_registry import load_organisation_registry
 from eu_cyber_news_scraper.parsers import parse_feed
 from eu_cyber_news_scraper.topics import OBSERVATION_TOPICS
 from eu_cyber_news_scraper.wikipedia_review import (
@@ -106,8 +104,11 @@ def test_excluded_failures_preserve_the_exact_baseline_candidate(check):
 
 
 def test_ministry_feed_exact_replay_and_manual_only_contract():
-    source = next(source for source in load_sources() if source.id == 'mt_foreign_affairs')
-    module = load_organisation_registry().module_for_source(source.id)
+    from historical_sources import load_sources_and_registry
+
+    historical_sources, historical_registry = load_sources_and_registry()
+    source = next(source for source in historical_sources if source.id == 'mt_foreign_affairs')
+    module = historical_registry.module_for_source(source.id)
     assert module is not None
     assert not source.schedule_enabled and not source.critical
     assert type(source.detail_pages) is int and source.detail_pages == 0

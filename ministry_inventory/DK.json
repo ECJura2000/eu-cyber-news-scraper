@@ -258,18 +258,22 @@
       "kind": "ministry",
       "language": "da",
       "homepage": "https://mim.dk/",
-      "news_url": "https://mim.dk/nyheder/pressemeddelelser",
-      "source_ids": [
-        "dk_environment"
-      ],
-      "status": "manual_verified",
-      "reason": "Fresh fourth-round verification: manual_verified. Next action: 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 Evidence: tests/fixtures/ministry_round4_north.json",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "2026-10-04 兩次實際抓取均失敗，依使用者要求移除可查詢入口。dk_environment: PARSE_EMPTY。原設定與觀察保留於 source_exclusions/manifest.json；不判定機關或網站已不存在。",
       "evidence_urls": [
         "https://stm.dk/statsministeriet/kontakt/emneoversigt/",
         "https://mim.dk/",
         "https://mim.dk/nyheder/pressemeddelelser",
         "https://search.mst.dk/api/News/Search"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unreadable_registered_source",
+        "reason": "dk_environment: PARSE_EMPTY",
+        "observed_at": "2026-10-04T02:14:43.552583+00:00",
+        "candidate_news_url": "https://mim.dk/nyheder/pressemeddelelser"
+      }
     },
     {
       "canonical_id": "dk_nature",

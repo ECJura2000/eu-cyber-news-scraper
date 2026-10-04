@@ -280,18 +280,22 @@
       "kind": "ministry",
       "language": "it",
       "homepage": "https://www.miur.gov.it/",
-      "news_url": "https://www.mim.gov.it/web/guest/comunicati",
-      "source_ids": [
-        "it_education"
-      ],
-      "status": "manual_verified",
-      "reason": "2026-10-02: official ministry-scoped news listing passed robots-enforced, TLS-verified production scrape (100 dated items); genuine bounded fixture replays 6 items with exact titles, URLs and publication dates. Original response and fixture SHA-256 recorded in tests/fixtures/ministry_it_education.provenance.json; schedule_enabled=false, critical=false, all 15 observation topics, no topic responsibility.",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "2026-10-04 兩次實際抓取均失敗，依使用者要求移除可查詢入口。it_education: ROBOTS_DENIED。原設定與觀察保留於 source_exclusions/manifest.json；不判定機關或網站已不存在。",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://www.miur.gov.it/",
         "https://www.mim.gov.it/web/guest/comunicati"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unreadable_registered_source",
+        "reason": "it_education: ROBOTS_DENIED",
+        "observed_at": "2026-10-04T02:14:43.552583+00:00",
+        "candidate_news_url": "https://www.mim.gov.it/web/guest/comunicati"
+      }
     },
     {
       "canonical_id": "it_mur",
@@ -301,17 +305,21 @@
       "kind": "ministry",
       "language": "it",
       "homepage": "https://www.mur.gov.it/it",
-      "news_url": "https://www.mur.gov.it/it/news",
-      "source_ids": [
-        "it_mur"
-      ],
-      "status": "existing_source",
-      "reason": "Existing it_mur is the actual universities/research ministry; previous module verification status is retained.",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "2026-10-04 兩次實際抓取均失敗，依使用者要求移除可查詢入口。it_mur: ROBOTS_DENIED。原設定與觀察保留於 source_exclusions/manifest.json；不判定機關或網站已不存在。",
       "evidence_urls": [
         "https://www.governo.it/it/i-ministeri-0",
         "https://www.governo.it/it/organizzazione/uffici-dipartimenti-strutture/69",
         "https://www.mur.gov.it/it"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unreadable_registered_source",
+        "reason": "it_mur: ROBOTS_DENIED",
+        "observed_at": "2026-10-04T02:14:43.552583+00:00",
+        "candidate_news_url": "https://www.mur.gov.it/it/news"
+      }
     },
     {
       "canonical_id": "it_culture",

@@ -8,7 +8,7 @@
 robots、TLS、網站阻擋及需要認證的入口不繞過；未建立發布機關歸屬或日期證據的入口不登錄。
 
 逐項原始檢查紀錄：[第 3 輪／north](tests/fixtures/ministry_round3_north.json)、[第 3 輪／portugal](tests/fixtures/ministry_round3_portugal.json)、[第 3 輪／south](tests/fixtures/ministry_round3_south.json)、[第 4 輪／blocked](tests/fixtures/ministry_round4_blocked.json)、[第 4 輪／north](tests/fixtures/ministry_round4_north.json)、[第 4 輪／south](tests/fixtures/ministry_round4_south.json)、[第 5 輪／east](tests/fixtures/ministry_round5_east.json)、[第 5 輪／north](tests/fixtures/ministry_round5_north.json)、[第 5 輪／south](tests/fixtures/ministry_round5_south.json)、[第 6 輪／east](tests/fixtures/ministry_round6_east.json)、[第 6 輪／north](tests/fixtures/ministry_round6_north.json)、[第 6 輪／south](tests/fixtures/ministry_round6_south.json)。
-完整 460 筆名錄見 [MINISTRIES.md](MINISTRIES.md)。
+完整 460 筆名錄見 [MINISTRIES.md](MINISTRIES.md)。2026-10-04 後續清理另見 [SOURCE_CLEANUP.md](SOURCE_CLEANUP.md)；上方累計數是歷次觀察，不覆寫歷史成功，目前狀態以下表與部會名錄為準。
 
 維基百科只用於尋找官方網址線索；條目可能過時，不作為新聞發布機關、日期或可抓取性的合格證據。第五輪確認失效／非新聞的候選網址才清理；第六輪依使用者指示，當地語言重查仍未通過者移除候選新聞入口，標示為使用者排除而非網站失效，部會官網與歷史證據保留。
 
@@ -61,7 +61,7 @@ robots、TLS、網站阻擋及需要認證的入口不繞過；未建立發布�
 | DK | 丹麥氣候、能源與公用事業部（`dk_climate`） | 已驗證手動來源 | 8 | 先前已完成官網驗證 | Manual collection only; retain bounded-list truncation warning and verify archive completeness before any separately authorized scheduling decision. |
 | DK | 丹麥國防部（`dk_defence`） | 已驗證手動來源 | 6 | 先前已完成官網驗證 | Manual collection only. Review freshness and publisher ownership during later observations before any separate scheduling decision. |
 | DK | 丹麥就業與平等部（`dk_employment`） | 已驗證手動來源 | 7 | 先前已完成官網驗證 | Manual collection only; retain bounded-list truncation warning and verify archive completeness before any separately authorized scheduling decision. |
-| DK | 丹麥環境部（`dk_environment`） | 已驗證手動來源 | 2 | 先前已完成官網驗證 | 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 |
+| DK | 丹麥環境部（`dk_environment`） | 使用者排除（不宣稱網站失效） | 2 | 先前已完成官網驗證 | 後續抓取複查失敗，已移除；詳見 SOURCE_CLEANUP.md。已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 |
 | DK | 丹麥外交部（`dk_foreign_affairs`） | 已驗證手動來源 | 7 | 先前已完成官網驗證 | 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 |
 | DK | 丹麥自然與動物福利部（`dk_nature`） | 已驗證手動來源 | 7 | 先前已完成官網驗證 | Manual collection only; retain bounded-list truncation warning and verify archive completeness before any separately authorized scheduling decision. |
 | DK | 丹麥社會安全與應變部（`dk_resilience`） | 已驗證手動來源 | 2 | 先前已完成官網驗證 | 已驗證原文抓取與發布日期，僅供手動查詢；保留有界列表／內頁樣本的不完整警告。正式排程須另行完成升級驗收。 |
@@ -179,7 +179,7 @@ robots、TLS、網站阻擋及需要認證的入口不繞過；未建立發布�
 | MT | 馬爾他平等暨公民權利部（`mt_equality`） | 使用者排除（不宣稱網站失效） | 4 | 未找到可匹配條目 | 已依使用者指示移除候選新聞入口；Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. |
 | MT | 馬爾他歐洲基金、社會對話暨消費者保護部（`mt_european_funds`） | 使用者排除（不宣稱網站失效） | 3 | 未找到可匹配條目 | 已依使用者指示移除候選新聞入口；Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. |
 | MT | 馬爾他財政部（`mt_finance`） | 使用者排除（不宣稱網站失效） | 4 | 未找到可匹配條目 | 已依使用者指示移除候選新聞入口；Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. |
-| MT | 馬爾他外交暨歐洲事務部（`mt_foreign_affairs`） | 已驗證手動來源 | 11 | [條目 1](https://mt.wikipedia.org/wiki/Ian_Borg) | Manual verification complete for the ministry-owned dated RSS; remain unscheduled and non-critical. The latest feed item is 24 July 2026, within the explicit 90-day freshness window, and the general DOI feed is not assigned to this ministry. |
+| MT | 馬爾他外交暨歐洲事務部（`mt_foreign_affairs`） | 使用者排除（不宣稱網站失效） | 11 | [條目 1](https://mt.wikipedia.org/wiki/Ian_Borg) | 後續抓取複查失敗，已移除；詳見 SOURCE_CLEANUP.md。Manual verification complete for the ministry-owned dated RSS; remain unscheduled and non-critical. The latest feed item is 24 July 2026, within the explicit 90-day freshness window, and the general DOI feed is not assigned to this ministry. |
 | MT | 馬爾他Gozo 部（`mt_gozo`） | 使用者排除（不宣稱網站失效） | 3 | 未找到可匹配條目 | 已依使用者指示移除候選新聞入口；Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. |
 | MT | 馬爾他副總理府暨衛生部（`mt_health`） | 使用者排除（不宣稱網站失效） | 3 | 未找到可匹配條目 | 已依使用者指示移除候選新聞入口；Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. |
 | MT | 馬爾他內政暨安全部（`mt_home_affairs`） | 使用者排除（不宣稱網站失效） | 3 | 未找到可匹配條目 | 已依使用者指示移除候選新聞入口；Excluded under the user policy; restore only after explicit review verifies the ministry-specific publisher, original publication dates and production scrape_source. This exclusion does not assert the ministry or website no longer exists. |
