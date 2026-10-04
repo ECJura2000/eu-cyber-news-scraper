@@ -2,6 +2,7 @@
 
 本清單以機關正式網站為主。`organisation_registry/` 的 JSON 是預設執行的權威設定，`sources.toml` 是可明確指定的相容匯出；本文件用於說明來源的制度定位。新聞內容及附件仍受各網站條款約束，程式只保存必要的書目資訊、短摘要與官方連結。
 
+2026-10-04 移除兩輪抓取仍失敗的 39 個來源；完整原網址與原因見 [來源清理紀錄](SOURCE_CLEANUP.md)。
 27 國的全部中央部會與政府首長辦公室另見 [中央部會追蹤名錄](MINISTRIES.md)，逐一標示官方新聞入口、既有／新增可查詢來源及待驗證原因。名錄由逐國 JSON 產生，與智庫、大學候選清單分開。
 
 ## 歐盟
@@ -85,36 +86,24 @@
 | 西班牙 | `es_aepd` 西班牙資料保護局（獨立資料保護監管機關） | [官方頁面](https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa) | M |
 | 西班牙 | `es_cnmc` 西班牙國家市場及競爭委員會（獨立市場及競爭監管機關） | [官方頁面](https://www.cnmc.es/prensa/noticias?page=0) | M |
 | 葡萄牙 | `pt_cnpd` 葡萄牙國家資料保護委員會（獨立資料保護監管機關） | [官方頁面](https://www.cnpd.pt/comunicacao-publica/noticias/) | M |
-| 葡萄牙 | `pt_anacom` 葡萄牙國家通訊管理局（獨立通訊監管機關） | [官方頁面](https://www.anacom.pt/render.jsp?categoryId=166043) | M |
 | 義大利 | `it_garante` 義大利個人資料保護局（獨立資料保護監管機關） | [官方頁面](https://www.garanteprivacy.it/news) | M |
-| 義大利 | `it_mur` 義大利大學及研究部（政府研究主管機關） | [官方頁面](https://www.mur.gov.it/it/news) | B |
 | 波蘭 | `pl_cyfryzacja` 波蘭數位事務部（政府數位政策主管機關） | [官方頁面](https://www.gov.pl/web/cyfryzacja/wiadomosci?page=1) | M |
 | 波蘭 | `pl_uodo` 波蘭個人資料保護局（獨立資料保護監管機關） | [官方頁面](https://uodo.gov.pl/pl/138) | M |
 | 丹麥 | `dk_digst` 丹麥數位政府署（政府數位政策及服務機關） | [新聞存檔](https://digst.dk/nyheder/nyhedsarkiv/) | M |
 | 丹麥 | `dk_datatilsynet` 丹麥資料保護局（獨立資料保護監管機關） | [官方頁面](https://www.datatilsynet.dk/presse-og-nyheder)／[RSS](https://www.datatilsynet.dk/gbapi/rss/feed?id=N2Y3M2VkM2EtODEzYi00MDZlLWJkNzEtY2I4ZWQ0YmJmYTVmfDIwY2VlNWY4LTQ5MGMtNDdiYy05NjIxLTZmNjAwZGQwNzhhOA%3D%3D) | M |
-| 挪威 | `no_nsm` 挪威國家安全局（國家安全及資安主管機關） | [官方頁面](https://nsm.no/aktuelt/) | B |
-| 挪威 | `no_datatilsynet` 挪威資料保護局（獨立資料保護監管機關） | [官方頁面](https://www.datatilsynet.no/aktuelt/) | M |
 | 瑞典 | `se_pts` 瑞典郵政及電信局（獨立通訊監管機關） | [官方頁面](https://www.pts.se/nyheter-och-pressmeddelanden/) | M |
 | 瑞典 | `se_imy` 瑞典隱私保護局（獨立資料保護監管機關） | [官方頁面](https://www.imy.se/nyheter/) | M |
-| 愛沙尼亞 | `ee_ria` 愛沙尼亞資訊系統局（國家資訊系統及資安主管機關） | [官方頁面](https://www.ria.ee/otsing?type=Uudis) | B |
-| 愛沙尼亞 | `ee_aki` 愛沙尼亞資料保護監察局（獨立資料保護監管機關） | [官方頁面](https://www.aki.ee/otsing?f%5B0%5D=type%3Anews) | B |
 | 拉脫維亞 | `lv_cert` 拉脫維亞國家資安事件應變中心（國家資安事件應變機構） | [官方頁面](https://www.cert.gov.lv/lv/) | M |
 | 拉脫維亞 | `lv_dvi` 拉脫維亞國家資料監察局（獨立資料保護監管機關） | [官方頁面](https://www.dvi.gov.lv/lv/jaunumi) | M |
-| 立陶宛 | `lt_nksc` 立陶宛國家網路安全中心（國家資安主管機關） | [官方頁面](https://nksc.lrv.lt/lt/naujienos/) | B |
-| 立陶宛 | `lt_vdai` 立陶宛國家資料保護監察局（獨立資料保護監管機關） | [官方頁面](https://vdai.lrv.lt/lt/naujienos/) | B |
 
 第二批新增國會及公立研究來源，同樣只供手動驗證。`M` 代表本機擷取可用但尚未通過完整內頁、翻譯與 runner 驗證；`B` 代表本機入口失敗；`A` 代表日期解析仍需改善。
 
 | 國家 | 來源 | 官方新聞入口 | 首次本機狀態 |
 | --- | --- | --- | --- |
-| 西班牙 | `es_congreso` 西班牙眾議院 | [新聞稿](https://www.congreso.es/es/notas-de-prensa) | B：403 |
 | 葡萄牙 | `pt_fct` 葡萄牙科學與技術基金會 | [新聞](https://www.fct.pt/media/noticias) | M：12/12 有日期 |
 | 義大利 | `it_camera` 義大利眾議院 | [新聞稿](https://comunicazione.camera.it/comunicati-stampa) | M：10/11 有日期 |
-| 波蘭 | `pl_sejm` 波蘭眾議院 | [動態](https://www.sejm.gov.pl/Sejm10.nsf/wydarzenia.xsp) | A：0/35 有日期 |
-| 丹麥 | `dk_folketing` 丹麥國會 | [新聞](https://www.ft.dk/da/aktuelt/nyheder) | B：403 |
 | 挪威 | `no_storting` 挪威國會 | [新聞庫](https://www.stortinget.no/no/Hva-skjer-pa-Stortinget/Nyhetsarkiv/) | A：0/1 有日期 |
 | 瑞典 | `se_riksdag` 瑞典國會 | [動態](https://www.riksdagen.se/sv/aktuellt/) | A：17/25 有日期 |
-| 愛沙尼亞 | `ee_riigikogu` 愛沙尼亞國會 | [新聞稿](https://www.riigikogu.ee/info-ja-meedia/uudised-ja-pressiteated/)／[官網列示 RSS](https://www.riigikogu.ee/telli-rss/) | M：RSS 10/10 有日期 |
 | 拉脫維亞 | `lv_saeima` 拉脫維亞國會 | [新聞](https://www.saeima.lv/lv/aktualitates/saeimas-zinas) | M：新聞卡片 10/10 有日期 |
 | 立陶宛 | `lt_seimas` 立陶宛國會 | [新聞](https://www.lrs.lt/sip/portal.show?p_k=1&p_r=35403) | M：新聞卡片 9/9 有日期 |
 
@@ -132,15 +121,11 @@
 | 荷蘭 | `nl_surf` 教育與研究 ICT 合作社 | [新聞](https://www.surf.nl/en/news) | 手動抓取健康，9 筆列表結果 |
 | 荷蘭 | `nl_security_delta` 企業、政府與學研公私協力群聚 | [新聞](https://securitydelta.nl/news/overview) | 專用卡片規則重跑，12/12 標題與日期正確 |
 | 荷蘭 | `nl_tudelft` 公立大學資安研究 | [新聞](https://www.tudelft.nl/en/cybersecurity/news) | 通用解析誤含導覽；待專用選擇器 |
-| 葡萄牙 | `pt_cncs` 國家資安中心 | [新聞](https://dyn.cncs.gov.pt/pt/noticias/) | 本機 HTTP 513／連線異常；待重試 |
 | 葡萄牙 | `pt_inesc_tec` 非營利產學聯合研究機構 | [新聞稿](https://www.inesctec.pt/en/press-releases) | 通用解析有非新聞項目；待專用選擇器 |
 | 葡萄牙 | `pt_ist` 里斯本大學高等技術學院 | [新聞](https://tecnico.ulisboa.pt/pt/noticias/) | 新聞卡片未顯示日期；需內頁核對 |
-| 羅馬尼亞 | `ro_dnsc` 國家資安局 | [官網](https://www.dnsc.ro/) | 本機 HTTP 403；待取得穩定新聞入口 |
 | 羅馬尼亞 | `ro_anspdcp` 獨立資料保護監管機關 | [官網新聞](https://www.dataprotection.ro/index.jsp?page=home&lang=ro) | 通用解析混入導覽；待專用選擇器 |
-| 羅馬尼亞 | `ro_ici` 國家資訊科技研究發展院 | [官網](https://ici.ro/) | 本機連線逾時；待重試 |
 | 羅馬尼亞 | `ro_upb` 布加勒斯特理工大學 | [新聞](https://upb.ro/category/stiri/) | 專用卡片規則排除作者頁；手動抓取健康 |
 | 芬蘭 | `fi_ncsc` 交通與通訊局國家資安中心 | [新聞](https://www.kyberturvallisuuskeskus.fi/fi/ajankohtaista)、[官方 RSS 說明](https://kyberturvallisuuskeskus.fi/fi/rss-syotteet) | RSS 500/500 有日期 |
-| 芬蘭 | `fi_tietosuoja` 獨立資料保護監管機關 | [新聞](https://tietosuoja.fi/uutiset-tiedotteet) | 本機 HTTP 403；待重試 |
 | 芬蘭 | `fi_vtt` 國有非營利應用研究機構 | [新聞](https://www.vttresearch.com/en/news-stories/news-and-stories) | 通用解析有非新聞項目；待專用選擇器 |
 | 芬蘭 | `fi_haic` 阿爾托／赫爾辛基大學與 VTT 聯合資安研究所 | [新聞首頁](https://haic.aalto.fi/) | 手動抓取健康；11 筆列表結果 |
 

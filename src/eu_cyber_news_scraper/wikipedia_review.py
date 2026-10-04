@@ -109,7 +109,7 @@ def validate_user_exclusion(
     if not authorized or not isinstance(exclusion, dict):
         raise ValueError('Candidate exclusion requires explicit user authorization')
     reason = exclusion.get('reason')
-    if exclusion.get('policy') != USER_EXCLUSION_POLICY or not isinstance(reason, str) or not reason.strip():
+    if exclusion.get('policy') not in {USER_EXCLUSION_POLICY, 'exclude_unreadable_registered_source'} or not isinstance(reason, str) or not reason.strip():
         raise ValueError('Candidate exclusion requires policy and reason')
     _observed(exclusion['observed_at'], minimum)
     if exclusion.get('candidate_news_url') != original_url:

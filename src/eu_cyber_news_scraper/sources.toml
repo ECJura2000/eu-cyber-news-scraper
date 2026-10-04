@@ -302,22 +302,6 @@
 "timezone" = "Europe/Brussels"
 
 [[sources]]
-"id" = "be_ccb"
-"allow_domains" = ["ccb.belgium.be"]
-"country" = "BE"
-"critical" = false
-"detail_pages" = 8
-"exclude_patterns" = []
-"homepage" = "https://ccb.belgium.be/en"
-"include_patterns" = []
-"institution_type" = "聯邦網路安全主管機關"
-"language" = "en"
-"listing_url" = "https://ccb.belgium.be/en/news"
-"name" = "Centre for Cybersecurity Belgium"
-"name_zh" = "比利時網路安全中心"
-"schedule_enabled" = false
-
-[[sources]]
 "id" = "be_defence"
 "allow_domains" = ["www.mil.be"]
 "country" = "BE"
@@ -723,26 +707,6 @@
 "schedule_enabled" = false
 "timezone" = "Europe/Sofia"
 "title_selectors" = [".card-title"]
-
-[[sources]]
-"id" = "bg_interior"
-"allow_domains" = ["mvr.bg"]
-"card_selectors" = [".card"]
-"country" = "BG"
-"critical" = false
-"date_selectors" = [".card__meta"]
-"detail_pages" = 0
-"feed_urls" = []
-"homepage" = "https://mvr.bg/"
-"institution_type" = "ministry"
-"language" = "bg"
-"link_selectors" = ["a.card__title"]
-"listing_url" = "https://mvr.bg/press/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%BE/%2A"
-"name" = "Министерство на вътрешните работи"
-"name_zh" = "保加利亞內政部"
-"schedule_enabled" = false
-"timezone" = "Europe/Sofia"
-"title_selectors" = [".card__title"]
 
 [[sources]]
 "id" = "bg_justice"
@@ -1805,23 +1769,6 @@
 "timezone" = "Europe/Copenhagen"
 
 [[sources]]
-"id" = "dk_environment"
-"allow_domains" = ["mim.dk"]
-"country" = "DK"
-"critical" = false
-"detail_pages" = 0
-"feed_urls" = []
-"homepage" = "https://mim.dk/"
-"institution_type" = "ministry"
-"language" = "da"
-"listing_url" = "https://mim.dk/nyheder/pressemeddelelser"
-"name" = "Miljøministeriet"
-"name_zh" = "丹麥環境部"
-"parser_adapter" = "dk_environment_json"
-"schedule_enabled" = false
-"timezone" = "Europe/Copenhagen"
-
-[[sources]]
 "id" = "dk_finance"
 "allow_domains" = ["fm.dk"]
 "country" = "DK"
@@ -1836,20 +1783,6 @@
 "name_zh" = "丹麥財政部"
 "schedule_enabled" = false
 "timezone" = "Europe/Copenhagen"
-
-[[sources]]
-"id" = "dk_folketing"
-"allow_domains" = ["www.ft.dk"]
-"country" = "DK"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://www.ft.dk/"
-"institution_type" = "國會"
-"language" = "da"
-"listing_url" = "https://www.ft.dk/da/aktuelt/nyheder"
-"name" = "Folketinget"
-"name_zh" = "丹麥國會"
-"schedule_enabled" = false
 
 [[sources]]
 "id" = "dk_foreign_affairs"
@@ -2028,20 +1961,6 @@
 "parser_adapter" = "north_nextjs"
 "schedule_enabled" = false
 "timezone" = "Europe/Copenhagen"
-
-[[sources]]
-"id" = "ee_aki"
-"allow_domains" = ["www.aki.ee"]
-"country" = "EE"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://www.aki.ee/"
-"institution_type" = "獨立資料保護監管機關"
-"language" = "et"
-"listing_url" = "https://www.aki.ee/otsing?f%5B0%5D=type%3Anews"
-"name" = "Andmekaitse Inspektsioon"
-"name_zh" = "愛沙尼亞資料保護監察局"
-"schedule_enabled" = false
 
 [[sources]]
 "id" = "ee_climate"
@@ -2231,35 +2150,6 @@
 "timezone" = "Europe/Tallinn"
 
 [[sources]]
-"id" = "ee_ria"
-"allow_domains" = ["www.ria.ee"]
-"country" = "EE"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://www.ria.ee/"
-"institution_type" = "國家資訊系統及資安主管機關"
-"language" = "et"
-"listing_url" = "https://www.ria.ee/otsing?type=Uudis"
-"name" = "Riigi Infosüsteemi Amet"
-"name_zh" = "愛沙尼亞資訊系統局"
-"schedule_enabled" = false
-
-[[sources]]
-"id" = "ee_riigikogu"
-"allow_domains" = ["www.riigikogu.ee", "feeds.feedburner.com"]
-"country" = "EE"
-"critical" = false
-"detail_pages" = 8
-"feed_urls" = ["https://feeds.feedburner.com/RiigikoguPressiteated"]
-"homepage" = "https://www.riigikogu.ee/"
-"institution_type" = "國會"
-"language" = "et"
-"listing_url" = "https://www.riigikogu.ee/info-ja-meedia/uudised-ja-pressiteated/"
-"name" = "Riigikogu"
-"name_zh" = "愛沙尼亞國會"
-"schedule_enabled" = false
-
-[[sources]]
 "id" = "ee_social_affairs"
 "allow_domains" = ["www.sm.ee", "sm.ee"]
 "country" = "EE"
@@ -2275,20 +2165,6 @@
 "name_zh" = "愛沙尼亞社會事務部"
 "schedule_enabled" = false
 "timezone" = "Europe/Tallinn"
-
-[[sources]]
-"id" = "ee_taltech"
-"allow_domains" = ["taltech.ee", "www.taltech.ee"]
-"country" = "EE"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://taltech.ee/en"
-"institution_type" = "公立科技研究型大學"
-"language" = "en"
-"listing_url" = "https://taltech.ee/en/news"
-"name" = "Tallinn University of Technology (TalTech)"
-"name_zh" = "愛沙尼亞塔林理工大學"
-"schedule_enabled" = false
 
 [[sources]]
 "id" = "es_aepd"
@@ -2336,20 +2212,6 @@
 "timezone" = "Europe/Madrid"
 
 [[sources]]
-"id" = "es_bsc"
-"allow_domains" = ["www.bsc.es"]
-"country" = "ES"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://www.bsc.es/es"
-"institution_type" = "公共超級運算研究聯合體"
-"language" = "es"
-"listing_url" = "https://www.bsc.es/es/noticias"
-"name" = "Barcelona Supercomputing Center - Centro Nacional de Supercomputación"
-"name_zh" = "巴塞隆納超級運算中心"
-"schedule_enabled" = false
-
-[[sources]]
 "id" = "es_cnmc"
 "allow_domains" = ["www.cnmc.es"]
 "country" = "ES"
@@ -2362,20 +2224,6 @@
 "listing_url" = "https://www.cnmc.es/prensa/noticias?page=0"
 "name" = "Comisión Nacional de los Mercados y la Competencia"
 "name_zh" = "西班牙國家市場及競爭委員會"
-"schedule_enabled" = false
-
-[[sources]]
-"id" = "es_congreso"
-"allow_domains" = ["www.congreso.es"]
-"country" = "ES"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://www.congreso.es/"
-"institution_type" = "國會下議院"
-"language" = "es"
-"listing_url" = "https://www.congreso.es/es/notas-de-prensa"
-"name" = "Congreso de los Diputados"
-"name_zh" = "西班牙眾議院"
 "schedule_enabled" = false
 
 [[sources]]
@@ -2963,20 +2811,6 @@
 "name_zh" = "歐洲智慧網路與服務聯合事業"
 
 [[sources]]
-"id" = "fi_business_finland"
-"allow_domains" = ["www.businessfinland.fi", "businessfinland.fi"]
-"country" = "FI"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://www.businessfinland.fi/en/"
-"institution_type" = "公共創新資助與成長服務機構"
-"language" = "en"
-"listing_url" = "https://www.businessfinland.fi/en/whats-new/news/"
-"name" = "Business Finland"
-"name_zh" = "芬蘭商務署"
-"schedule_enabled" = false
-
-[[sources]]
 "id" = "fi_csc"
 "allow_domains" = ["csc.fi"]
 "country" = "FI"
@@ -3143,20 +2977,6 @@
 "listing_url" = "https://www.kyberturvallisuuskeskus.fi/fi/ajankohtaista"
 "name" = "Traficomin Kyberturvallisuuskeskus"
 "name_zh" = "芬蘭交通與通訊局國家網路安全中心"
-"schedule_enabled" = false
-
-[[sources]]
-"id" = "fi_tietosuoja"
-"allow_domains" = ["tietosuoja.fi", "www.tietosuoja.fi"]
-"country" = "FI"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://tietosuoja.fi/"
-"institution_type" = "獨立資料保護監管機關"
-"language" = "fi"
-"listing_url" = "https://tietosuoja.fi/uutiset-tiedotteet"
-"name" = "Tietosuojavaltuutetun toimisto"
-"name_zh" = "芬蘭資料保護監察官辦公室"
 "schedule_enabled" = false
 
 [[sources]]
@@ -3834,22 +3654,6 @@
 "title_selectors" = ["h2.article-card__title"]
 
 [[sources]]
-"id" = "hu_nki"
-"allow_domains" = ["nki.gov.hu", "en.nki.gov.hu"]
-"country" = "HU"
-"critical" = false
-"detail_pages" = 8
-"exclude_patterns" = []
-"homepage" = "https://en.nki.gov.hu/"
-"include_patterns" = []
-"institution_type" = "政府國家資安中心／CSIRT"
-"language" = "hu"
-"listing_url" = "https://nki.gov.hu/figyelmeztetesek/tajekoztatas/"
-"name" = "National Cyber Security Centre (NKI)"
-"name_zh" = "匈牙利國家網路安全研究所"
-"schedule_enabled" = false
-
-[[sources]]
 "id" = "hu_nmhh"
 "allow_domains" = ["nmhh.hu"]
 "country" = "HU"
@@ -4525,20 +4329,6 @@
 "name_zh" = "愛爾蘭廷德爾國家研究所"
 
 [[sources]]
-"id" = "it_acn"
-"allow_domains" = ["www.acn.gov.it"]
-"country" = "IT"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://www.acn.gov.it/portale/home"
-"institution_type" = "國家資安主管機關"
-"language" = "it"
-"listing_url" = "https://www.acn.gov.it/portale/comunicazione"
-"name" = "Agenzia per la Cybersicurezza Nazionale"
-"name_zh" = "義大利國家網路安全局"
-"schedule_enabled" = false
-
-[[sources]]
 "id" = "it_agid"
 "allow_domains" = ["www.agid.gov.it"]
 "country" = "IT"
@@ -4649,25 +4439,6 @@
 "schedule_enabled" = false
 "timezone" = "Europe/Rome"
 "title_selectors" = ["h2", "h3", "h4", "h5", "p.title", "[class*=title]"]
-
-[[sources]]
-"id" = "it_education"
-"allow_domains" = ["www.mim.gov.it"]
-"card_selectors" = ["div.box_list_large.even"]
-"country" = "IT"
-"critical" = false
-"date_policy" = "required"
-"date_selectors" = ["time", "[class*=date i]", "[class*=datum i]", "[class*=fecha i]"]
-"detail_pages" = 0
-"homepage" = "https://www.miur.gov.it/"
-"institution_type" = "central ministry"
-"language" = "it"
-"listing_url" = "https://www.mim.gov.it/web/guest/comunicati"
-"name" = "Ministero dell'Istruzione e del Merito"
-"name_zh" = "義大利教育暨功績部"
-"schedule_enabled" = false
-"timezone" = "Europe/Rome"
-"title_selectors" = ["h2", "h3", "h4", "[class*=title]"]
 
 [[sources]]
 "id" = "it_enterprises"
@@ -4792,20 +4563,6 @@
 "timezone" = "Europe/Rome"
 
 [[sources]]
-"id" = "it_mur"
-"allow_domains" = ["www.mur.gov.it"]
-"country" = "IT"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://www.mur.gov.it/"
-"institution_type" = "政府研究主管機關"
-"language" = "it"
-"listing_url" = "https://www.mur.gov.it/it/news"
-"name" = "Ministero dell'Università e della Ricerca"
-"name_zh" = "義大利大學及研究部"
-"schedule_enabled" = false
-
-[[sources]]
 "id" = "it_parliament_relations"
 "allow_domains" = ["www.rapportiparlamento.gov.it"]
 "country" = "IT"
@@ -4891,20 +4648,6 @@
 "timezone" = "Europe/Rome"
 
 [[sources]]
-"id" = "lt_nksc"
-"allow_domains" = ["nksc.lrv.lt"]
-"country" = "LT"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://nksc.lrv.lt/lt/"
-"institution_type" = "國家資安主管機關"
-"language" = "lt"
-"listing_url" = "https://nksc.lrv.lt/lt/naujienos/"
-"name" = "Nacionalinis kibernetinio saugumo centras"
-"name_zh" = "立陶宛國家網路安全中心"
-"schedule_enabled" = false
-
-[[sources]]
 "id" = "lt_rrt"
 "allow_domains" = ["rrt.lt", "www.rrt.lt"]
 "country" = "LT"
@@ -4935,20 +4678,6 @@
 "name_zh" = "立陶宛國會"
 "schedule_enabled" = false
 "title_selectors" = [".naujiena-title > a[href]"]
-
-[[sources]]
-"id" = "lt_vdai"
-"allow_domains" = ["vdai.lrv.lt"]
-"country" = "LT"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://vdai.lrv.lt/lt/"
-"institution_type" = "獨立資料保護監管機關"
-"language" = "lt"
-"listing_url" = "https://vdai.lrv.lt/lt/naujienos/"
-"name" = "Valstybinė duomenų apsaugos inspekcija"
-"name_zh" = "立陶宛國家資料保護監察局"
-"schedule_enabled" = false
 
 [[sources]]
 "id" = "lu_agriculture"
@@ -6109,48 +5838,6 @@
 "yearly_listing_url" = ""
 
 [[sources]]
-"id" = "mt_foreign_affairs"
-"allow_domains" = ["foreign.gov.mt"]
-"card_selectors" = []
-"country" = "MT"
-"critical" = false
-"date_evidence_url" = ""
-"date_exception_reason" = ""
-"date_policy" = "required"
-"date_review_due" = ""
-"date_reviewed_on" = ""
-"date_selectors" = []
-"detail_pages" = 0
-"exclude_patterns" = []
-"feed_archive_fallback" = false
-"feed_urls" = ["https://foreign.gov.mt/feed/"]
-"freshness_days" = 90
-"homepage" = "https://foreign.gov.mt/"
-"include_patterns" = ["/(?:calls|other-updates|publications|previous-publications)/"]
-"institution_type" = "central ministry"
-"language" = "en"
-"link_selectors" = []
-"listing_url" = "https://foreign.gov.mt/press-releases-media/"
-"max_pages" = 1
-"min_listing_bytes" = 0
-"minimum_budget_seconds" = 0
-"name" = "Ministry for Foreign and European Affairs"
-"name_zh" = "馬爾他外交暨歐洲事務部"
-"observation_runs" = 3
-"pagination_url" = ""
-"parser_adapter" = ""
-"pause_evidence_url" = ""
-"pause_reason" = ""
-"paused_until" = ""
-"schedule_enabled" = false
-"summary_selectors" = []
-"timezone" = "Europe/Malta"
-"title_selectors" = []
-"tls_intermediate_bundle" = ""
-"user_agent" = ""
-"yearly_listing_url" = ""
-
-[[sources]]
 "id" = "mt_idpc"
 "allow_domains" = ["idpc.org.mt", "www.idpc.org.mt"]
 "country" = "MT"
@@ -6164,22 +5851,6 @@
 "listing_url" = "https://idpc.org.mt/news-latest/"
 "name" = "Information and Data Protection Commissioner"
 "name_zh" = "馬爾他資訊與資料保護專員公署"
-"schedule_enabled" = false
-
-[[sources]]
-"id" = "mt_ncc"
-"allow_domains" = ["ncc-mita.gov.mt", "mita.gov.mt"]
-"country" = "MT"
-"critical" = false
-"detail_pages" = 8
-"exclude_patterns" = []
-"homepage" = "https://ncc-mita.gov.mt/about-us/"
-"include_patterns" = []
-"institution_type" = "政府機構／國家協調中心／產學研 PPP"
-"language" = "en"
-"listing_url" = "https://ncc-mita.gov.mt/category/news/"
-"name" = "National Cybersecurity Coordination Centre (NCC-MT)"
-"name_zh" = "馬爾他國家網路安全協調中心"
 "schedule_enabled" = false
 
 [[sources]]
@@ -6704,20 +6375,6 @@
 "schedule_enabled" = false
 
 [[sources]]
-"id" = "nl_rdi"
-"allow_domains" = ["www.rdi.nl", "rdi.nl"]
-"country" = "NL"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://www.rdi.nl/"
-"institution_type" = "政府數位基礎設施與資安監管機關"
-"language" = "nl"
-"listing_url" = "https://www.rdi.nl/actueel/nieuws"
-"name" = "Rijksinspectie Digitale Infrastructuur"
-"name_zh" = "荷蘭數位基礎設施監察局"
-"schedule_enabled" = false
-
-[[sources]]
 "id" = "nl_security_delta"
 "allow_domains" = ["securitydelta.nl"]
 "card_selectors" = [".grid-layout a.item.news-item[href]"]
@@ -6822,34 +6479,6 @@
 "listing_url" = "https://www.tudelft.nl/en/cybersecurity/news"
 "name" = "TU Delft Cybersecurity"
 "name_zh" = "荷蘭代爾夫特理工大學資安研究"
-"schedule_enabled" = false
-
-[[sources]]
-"id" = "no_datatilsynet"
-"allow_domains" = ["www.datatilsynet.no"]
-"country" = "NO"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://www.datatilsynet.no/"
-"institution_type" = "獨立資料保護監管機關"
-"language" = "no"
-"listing_url" = "https://www.datatilsynet.no/aktuelt/"
-"name" = "Datatilsynet"
-"name_zh" = "挪威資料保護局"
-"schedule_enabled" = false
-
-[[sources]]
-"id" = "no_nsm"
-"allow_domains" = ["nsm.no"]
-"country" = "NO"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://nsm.no/"
-"institution_type" = "國家安全及資安主管機關"
-"language" = "no"
-"listing_url" = "https://nsm.no/aktuelt/"
-"name" = "Nasjonal sikkerhetsmyndighet"
-"name_zh" = "挪威國家安全局"
 "schedule_enabled" = false
 
 [[sources]]
@@ -7603,20 +7232,6 @@
 "yearly_listing_url" = ""
 
 [[sources]]
-"id" = "pl_sejm"
-"allow_domains" = ["www.sejm.gov.pl", "sejm.gov.pl"]
-"country" = "PL"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://www.sejm.gov.pl/"
-"institution_type" = "國會下議院"
-"language" = "pl"
-"listing_url" = "https://www.sejm.gov.pl/Sejm10.nsf/wydarzenia.xsp"
-"name" = "Sejm Rzeczypospolitej Polskiej"
-"name_zh" = "波蘭眾議院"
-"schedule_enabled" = false
-
-[[sources]]
 "id" = "pl_sport_tourism"
 "allow_domains" = ["www.gov.pl", "www.gov.pl"]
 "card_selectors" = ["li:has(.event .date)"]
@@ -7747,20 +7362,6 @@
 "timezone" = "Europe/Lisbon"
 
 [[sources]]
-"id" = "pt_anacom"
-"allow_domains" = ["www.anacom.pt"]
-"country" = "PT"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://www.anacom.pt/"
-"institution_type" = "獨立通訊監管機關"
-"language" = "pt"
-"listing_url" = "https://www.anacom.pt/render.jsp?categoryId=166043"
-"name" = "Autoridade Nacional de Comunicações"
-"name_zh" = "葡萄牙國家通訊管理局"
-"schedule_enabled" = false
-
-[[sources]]
 "id" = "pt_arte"
 "allow_domains" = ["www.arte.gov.pt"]
 "country" = "PT"
@@ -7772,20 +7373,6 @@
 "listing_url" = "https://www.arte.gov.pt/noticias/"
 "name" = "Agência para a Reforma Tecnológica do Estado"
 "name_zh" = "葡萄牙國家技術改革局"
-"schedule_enabled" = false
-
-[[sources]]
-"id" = "pt_cncs"
-"allow_domains" = ["www.cncs.gov.pt", "dyn.cncs.gov.pt"]
-"country" = "PT"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://www.cncs.gov.pt/"
-"institution_type" = "國家資安主管機關"
-"language" = "pt"
-"listing_url" = "https://dyn.cncs.gov.pt/pt/noticias/"
-"name" = "Centro Nacional de Cibersegurança"
-"name_zh" = "葡萄牙國家網路安全中心"
 "schedule_enabled" = false
 
 [[sources]]
@@ -8176,20 +7763,6 @@
 "yearly_listing_url" = ""
 
 [[sources]]
-"id" = "ro_dnsc"
-"allow_domains" = ["www.dnsc.ro", "dnsc.ro"]
-"country" = "RO"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://www.dnsc.ro/"
-"institution_type" = "國家資安主管機關"
-"language" = "ro"
-"listing_url" = "https://www.dnsc.ro/"
-"name" = "Directoratul Național de Securitate Cibernetică"
-"name_zh" = "羅馬尼亞國家網路安全局"
-"schedule_enabled" = false
-
-[[sources]]
 "id" = "ro_education_research"
 "allow_domains" = ["www.edu.ro", "www.edu.ro"]
 "card_selectors" = []
@@ -8358,20 +7931,6 @@
 "yearly_listing_url" = ""
 
 [[sources]]
-"id" = "ro_ici"
-"allow_domains" = ["ici.ro", "www.ici.ro"]
-"country" = "RO"
-"critical" = false
-"detail_pages" = 8
-"homepage" = "https://ici.ro/"
-"institution_type" = "國家資訊科技研究發展機構"
-"language" = "ro"
-"listing_url" = "https://ici.ro/"
-"name" = "ICI București"
-"name_zh" = "羅馬尼亞布加勒斯特資訊研究發展院"
-"schedule_enabled" = false
-
-[[sources]]
 "id" = "ro_interior"
 "allow_domains" = ["www.mai.gov.ro", "www.mai.gov.ro"]
 "card_selectors" = []
@@ -8473,342 +8032,6 @@
 "schedule_enabled" = false
 
 [[sources]]
-"id" = "se_climate_enterprise"
-"allow_domains" = ["www.regeringen.se", "www.regeringen.se"]
-"card_selectors" = ["div.sortcompact:has(time)"]
-"country" = "SE"
-"critical" = false
-"date_evidence_url" = ""
-"date_exception_reason" = ""
-"date_policy" = "required"
-"date_review_due" = ""
-"date_reviewed_on" = ""
-"date_selectors" = ["time:first-of-type"]
-"detail_pages" = 0
-"exclude_patterns" = []
-"feed_archive_fallback" = false
-"feed_urls" = []
-"freshness_days" = 45
-"homepage" = "https://www.regeringen.se/sveriges-regering/klimat--och-naringslivsdepartementet/"
-"include_patterns" = []
-"institution_type" = "中央部會"
-"language" = "sv"
-"link_selectors" = []
-"listing_url" = "https://www.regeringen.se/sveriges-regering/klimat--och-naringslivsdepartementet/"
-"max_pages" = 1
-"min_listing_bytes" = 0
-"minimum_budget_seconds" = 0
-"name" = "Klimat- och näringslivsdepartementet"
-"name_zh" = "瑞典氣候與企業部"
-"observation_runs" = 3
-"pagination_url" = ""
-"parser_adapter" = ""
-"pause_evidence_url" = ""
-"pause_reason" = ""
-"paused_until" = ""
-"schedule_enabled" = false
-"summary_selectors" = []
-"timezone" = "Europe/Stockholm"
-"title_selectors" = []
-"tls_intermediate_bundle" = ""
-"user_agent" = ""
-"yearly_listing_url" = ""
-
-[[sources]]
-"id" = "se_culture"
-"allow_domains" = ["www.regeringen.se", "www.regeringen.se"]
-"card_selectors" = ["div.sortcompact:has(time)"]
-"country" = "SE"
-"critical" = false
-"date_evidence_url" = ""
-"date_exception_reason" = ""
-"date_policy" = "required"
-"date_review_due" = ""
-"date_reviewed_on" = ""
-"date_selectors" = ["time:first-of-type"]
-"detail_pages" = 0
-"exclude_patterns" = []
-"feed_archive_fallback" = false
-"feed_urls" = []
-"freshness_days" = 45
-"homepage" = "https://www.regeringen.se/sveriges-regering/kulturdepartementet/"
-"include_patterns" = []
-"institution_type" = "中央部會"
-"language" = "sv"
-"link_selectors" = []
-"listing_url" = "https://www.regeringen.se/sveriges-regering/kulturdepartementet/"
-"max_pages" = 1
-"min_listing_bytes" = 0
-"minimum_budget_seconds" = 0
-"name" = "Kulturdepartementet"
-"name_zh" = "瑞典文化部"
-"observation_runs" = 3
-"pagination_url" = ""
-"parser_adapter" = ""
-"pause_evidence_url" = ""
-"pause_reason" = ""
-"paused_until" = ""
-"schedule_enabled" = false
-"summary_selectors" = []
-"timezone" = "Europe/Stockholm"
-"title_selectors" = []
-"tls_intermediate_bundle" = ""
-"user_agent" = ""
-"yearly_listing_url" = ""
-
-[[sources]]
-"id" = "se_defence"
-"allow_domains" = ["www.regeringen.se", "www.regeringen.se"]
-"card_selectors" = ["div.sortcompact:has(time)"]
-"country" = "SE"
-"critical" = false
-"date_evidence_url" = ""
-"date_exception_reason" = ""
-"date_policy" = "required"
-"date_review_due" = ""
-"date_reviewed_on" = ""
-"date_selectors" = ["time:first-of-type"]
-"detail_pages" = 0
-"exclude_patterns" = []
-"feed_archive_fallback" = false
-"feed_urls" = []
-"freshness_days" = 45
-"homepage" = "https://www.regeringen.se/sveriges-regering/forsvarsdepartementet/"
-"include_patterns" = []
-"institution_type" = "中央部會"
-"language" = "sv"
-"link_selectors" = []
-"listing_url" = "https://www.regeringen.se/sveriges-regering/forsvarsdepartementet/"
-"max_pages" = 1
-"min_listing_bytes" = 0
-"minimum_budget_seconds" = 0
-"name" = "Försvarsdepartementet"
-"name_zh" = "瑞典國防部"
-"observation_runs" = 3
-"pagination_url" = ""
-"parser_adapter" = ""
-"pause_evidence_url" = ""
-"pause_reason" = ""
-"paused_until" = ""
-"schedule_enabled" = false
-"summary_selectors" = []
-"timezone" = "Europe/Stockholm"
-"title_selectors" = []
-"tls_intermediate_bundle" = ""
-"user_agent" = ""
-"yearly_listing_url" = ""
-
-[[sources]]
-"id" = "se_education_research"
-"allow_domains" = ["www.regeringen.se", "www.regeringen.se"]
-"card_selectors" = ["div.sortcompact:has(time)"]
-"country" = "SE"
-"critical" = false
-"date_evidence_url" = ""
-"date_exception_reason" = ""
-"date_policy" = "required"
-"date_review_due" = ""
-"date_reviewed_on" = ""
-"date_selectors" = ["time:first-of-type"]
-"detail_pages" = 0
-"exclude_patterns" = []
-"feed_archive_fallback" = false
-"feed_urls" = []
-"freshness_days" = 45
-"homepage" = "https://www.regeringen.se/sveriges-regering/utbildningsdepartementet/"
-"include_patterns" = []
-"institution_type" = "中央部會"
-"language" = "sv"
-"link_selectors" = []
-"listing_url" = "https://www.regeringen.se/sveriges-regering/utbildningsdepartementet/"
-"max_pages" = 1
-"min_listing_bytes" = 0
-"minimum_budget_seconds" = 0
-"name" = "Utbildningsdepartementet"
-"name_zh" = "瑞典教育與研究部"
-"observation_runs" = 3
-"pagination_url" = ""
-"parser_adapter" = ""
-"pause_evidence_url" = ""
-"pause_reason" = ""
-"paused_until" = ""
-"schedule_enabled" = false
-"summary_selectors" = []
-"timezone" = "Europe/Stockholm"
-"title_selectors" = []
-"tls_intermediate_bundle" = ""
-"user_agent" = ""
-"yearly_listing_url" = ""
-
-[[sources]]
-"id" = "se_employment"
-"allow_domains" = ["www.regeringen.se", "www.regeringen.se"]
-"card_selectors" = ["div.sortcompact:has(time)"]
-"country" = "SE"
-"critical" = false
-"date_evidence_url" = ""
-"date_exception_reason" = ""
-"date_policy" = "required"
-"date_review_due" = ""
-"date_reviewed_on" = ""
-"date_selectors" = ["time:first-of-type"]
-"detail_pages" = 0
-"exclude_patterns" = []
-"feed_archive_fallback" = false
-"feed_urls" = []
-"freshness_days" = 45
-"homepage" = "https://www.regeringen.se/sveriges-regering/arbetsmarknadsdepartementet/"
-"include_patterns" = []
-"institution_type" = "中央部會"
-"language" = "sv"
-"link_selectors" = []
-"listing_url" = "https://www.regeringen.se/sveriges-regering/arbetsmarknadsdepartementet/"
-"max_pages" = 1
-"min_listing_bytes" = 0
-"minimum_budget_seconds" = 0
-"name" = "Arbetsmarknadsdepartementet"
-"name_zh" = "瑞典勞動部"
-"observation_runs" = 3
-"pagination_url" = ""
-"parser_adapter" = ""
-"pause_evidence_url" = ""
-"pause_reason" = ""
-"paused_until" = ""
-"schedule_enabled" = false
-"summary_selectors" = []
-"timezone" = "Europe/Stockholm"
-"title_selectors" = []
-"tls_intermediate_bundle" = ""
-"user_agent" = ""
-"yearly_listing_url" = ""
-
-[[sources]]
-"id" = "se_finance"
-"allow_domains" = ["www.regeringen.se", "www.regeringen.se"]
-"card_selectors" = ["div.sortcompact:has(time)"]
-"country" = "SE"
-"critical" = false
-"date_evidence_url" = ""
-"date_exception_reason" = ""
-"date_policy" = "required"
-"date_review_due" = ""
-"date_reviewed_on" = ""
-"date_selectors" = ["time:first-of-type"]
-"detail_pages" = 0
-"exclude_patterns" = []
-"feed_archive_fallback" = false
-"feed_urls" = []
-"freshness_days" = 45
-"homepage" = "https://www.regeringen.se/sveriges-regering/finansdepartementet/"
-"include_patterns" = []
-"institution_type" = "中央部會"
-"language" = "sv"
-"link_selectors" = []
-"listing_url" = "https://www.regeringen.se/sveriges-regering/finansdepartementet/"
-"max_pages" = 1
-"min_listing_bytes" = 0
-"minimum_budget_seconds" = 0
-"name" = "Finansdepartementet"
-"name_zh" = "瑞典財政部"
-"observation_runs" = 3
-"pagination_url" = ""
-"parser_adapter" = ""
-"pause_evidence_url" = ""
-"pause_reason" = ""
-"paused_until" = ""
-"schedule_enabled" = false
-"summary_selectors" = []
-"timezone" = "Europe/Stockholm"
-"title_selectors" = []
-"tls_intermediate_bundle" = ""
-"user_agent" = ""
-"yearly_listing_url" = ""
-
-[[sources]]
-"id" = "se_foreign_affairs"
-"allow_domains" = ["www.regeringen.se", "www.regeringen.se"]
-"card_selectors" = ["div.sortcompact:has(time)"]
-"country" = "SE"
-"critical" = false
-"date_evidence_url" = ""
-"date_exception_reason" = ""
-"date_policy" = "required"
-"date_review_due" = ""
-"date_reviewed_on" = ""
-"date_selectors" = ["time:first-of-type"]
-"detail_pages" = 0
-"exclude_patterns" = []
-"feed_archive_fallback" = false
-"feed_urls" = []
-"freshness_days" = 45
-"homepage" = "https://www.regeringen.se/sveriges-regering/utrikesdepartementet/"
-"include_patterns" = []
-"institution_type" = "中央部會"
-"language" = "sv"
-"link_selectors" = []
-"listing_url" = "https://www.regeringen.se/sveriges-regering/utrikesdepartementet/"
-"max_pages" = 1
-"min_listing_bytes" = 0
-"minimum_budget_seconds" = 0
-"name" = "Utrikesdepartementet"
-"name_zh" = "瑞典外交部"
-"observation_runs" = 3
-"pagination_url" = ""
-"parser_adapter" = ""
-"pause_evidence_url" = ""
-"pause_reason" = ""
-"paused_until" = ""
-"schedule_enabled" = false
-"summary_selectors" = []
-"timezone" = "Europe/Stockholm"
-"title_selectors" = []
-"tls_intermediate_bundle" = ""
-"user_agent" = ""
-"yearly_listing_url" = ""
-
-[[sources]]
-"id" = "se_health_social"
-"allow_domains" = ["www.regeringen.se", "www.regeringen.se"]
-"card_selectors" = ["div.sortcompact:has(time)"]
-"country" = "SE"
-"critical" = false
-"date_evidence_url" = ""
-"date_exception_reason" = ""
-"date_policy" = "required"
-"date_review_due" = ""
-"date_reviewed_on" = ""
-"date_selectors" = ["time:first-of-type"]
-"detail_pages" = 0
-"exclude_patterns" = []
-"feed_archive_fallback" = false
-"feed_urls" = []
-"freshness_days" = 45
-"homepage" = "https://www.regeringen.se/sveriges-regering/socialdepartementet/"
-"include_patterns" = []
-"institution_type" = "中央部會"
-"language" = "sv"
-"link_selectors" = []
-"listing_url" = "https://www.regeringen.se/sveriges-regering/socialdepartementet/"
-"max_pages" = 1
-"min_listing_bytes" = 0
-"minimum_budget_seconds" = 0
-"name" = "Socialdepartementet"
-"name_zh" = "瑞典衛生與社會事務部"
-"observation_runs" = 3
-"pagination_url" = ""
-"parser_adapter" = ""
-"pause_evidence_url" = ""
-"pause_reason" = ""
-"paused_until" = ""
-"schedule_enabled" = false
-"summary_selectors" = []
-"timezone" = "Europe/Stockholm"
-"title_selectors" = []
-"tls_intermediate_bundle" = ""
-"user_agent" = ""
-"yearly_listing_url" = ""
-
-[[sources]]
 "id" = "se_imy"
 "allow_domains" = ["www.imy.se"]
 "country" = "SE"
@@ -8821,90 +8044,6 @@
 "name" = "Integritetsskyddsmyndigheten"
 "name_zh" = "瑞典隱私保護局"
 "schedule_enabled" = false
-
-[[sources]]
-"id" = "se_justice"
-"allow_domains" = ["www.regeringen.se", "www.regeringen.se"]
-"card_selectors" = ["div.sortcompact:has(time)"]
-"country" = "SE"
-"critical" = false
-"date_evidence_url" = ""
-"date_exception_reason" = ""
-"date_policy" = "required"
-"date_review_due" = ""
-"date_reviewed_on" = ""
-"date_selectors" = ["time:first-of-type"]
-"detail_pages" = 0
-"exclude_patterns" = []
-"feed_archive_fallback" = false
-"feed_urls" = []
-"freshness_days" = 45
-"homepage" = "https://www.regeringen.se/sveriges-regering/justitiedepartementet/"
-"include_patterns" = []
-"institution_type" = "中央部會"
-"language" = "sv"
-"link_selectors" = []
-"listing_url" = "https://www.regeringen.se/sveriges-regering/justitiedepartementet/"
-"max_pages" = 1
-"min_listing_bytes" = 0
-"minimum_budget_seconds" = 0
-"name" = "Justitiedepartementet"
-"name_zh" = "瑞典司法部"
-"observation_runs" = 3
-"pagination_url" = ""
-"parser_adapter" = ""
-"pause_evidence_url" = ""
-"pause_reason" = ""
-"paused_until" = ""
-"schedule_enabled" = false
-"summary_selectors" = []
-"timezone" = "Europe/Stockholm"
-"title_selectors" = []
-"tls_intermediate_bundle" = ""
-"user_agent" = ""
-"yearly_listing_url" = ""
-
-[[sources]]
-"id" = "se_prime_minister"
-"allow_domains" = ["www.regeringen.se", "www.regeringen.se"]
-"card_selectors" = ["div.sortcompact:has(time)"]
-"country" = "SE"
-"critical" = false
-"date_evidence_url" = ""
-"date_exception_reason" = ""
-"date_policy" = "required"
-"date_review_due" = ""
-"date_reviewed_on" = ""
-"date_selectors" = ["time:first-of-type"]
-"detail_pages" = 0
-"exclude_patterns" = []
-"feed_archive_fallback" = false
-"feed_urls" = []
-"freshness_days" = 45
-"homepage" = "https://www.regeringen.se/sveriges-regering/statsradsberedningen/"
-"include_patterns" = []
-"institution_type" = "中央部會"
-"language" = "sv"
-"link_selectors" = []
-"listing_url" = "https://www.regeringen.se/sveriges-regering/statsradsberedningen/"
-"max_pages" = 1
-"min_listing_bytes" = 0
-"minimum_budget_seconds" = 0
-"name" = "Statsrådsberedningen"
-"name_zh" = "瑞典首相辦公室"
-"observation_runs" = 3
-"pagination_url" = ""
-"parser_adapter" = ""
-"pause_evidence_url" = ""
-"pause_reason" = ""
-"paused_until" = ""
-"schedule_enabled" = false
-"summary_selectors" = []
-"timezone" = "Europe/Stockholm"
-"title_selectors" = []
-"tls_intermediate_bundle" = ""
-"user_agent" = ""
-"yearly_listing_url" = ""
 
 [[sources]]
 "id" = "se_pts"
@@ -8933,48 +8072,6 @@
 "name" = "Sveriges riksdag"
 "name_zh" = "瑞典國會"
 "schedule_enabled" = false
-
-[[sources]]
-"id" = "se_rural_infrastructure"
-"allow_domains" = ["www.regeringen.se", "www.regeringen.se"]
-"card_selectors" = ["div.sortcompact:has(time)"]
-"country" = "SE"
-"critical" = false
-"date_evidence_url" = ""
-"date_exception_reason" = ""
-"date_policy" = "required"
-"date_review_due" = ""
-"date_reviewed_on" = ""
-"date_selectors" = ["time:first-of-type"]
-"detail_pages" = 0
-"exclude_patterns" = []
-"feed_archive_fallback" = false
-"feed_urls" = []
-"freshness_days" = 45
-"homepage" = "https://www.regeringen.se/sveriges-regering/landsbygds--och-infrastrukturdepartementet/"
-"include_patterns" = []
-"institution_type" = "中央部會"
-"language" = "sv"
-"link_selectors" = []
-"listing_url" = "https://www.regeringen.se/sveriges-regering/landsbygds--och-infrastrukturdepartementet/"
-"max_pages" = 1
-"min_listing_bytes" = 0
-"minimum_budget_seconds" = 0
-"name" = "Landsbygds- och infrastrukturdepartementet"
-"name_zh" = "瑞典農村事務與基礎建設部"
-"observation_runs" = 3
-"pagination_url" = ""
-"parser_adapter" = ""
-"pause_evidence_url" = ""
-"pause_reason" = ""
-"paused_until" = ""
-"schedule_enabled" = false
-"summary_selectors" = []
-"timezone" = "Europe/Stockholm"
-"title_selectors" = []
-"tls_intermediate_bundle" = ""
-"user_agent" = ""
-"yearly_listing_url" = ""
 
 [[sources]]
 "id" = "si_agriculture"

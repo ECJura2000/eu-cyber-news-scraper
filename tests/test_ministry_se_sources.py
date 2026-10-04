@@ -38,7 +38,7 @@ def test_official_roster_and_source_identity(tmp_path):
         shutil.copyfile(path, isolated / path.name)
     registry = load_organisation_registry(builtin_dir=isolated, external_dir=tmp_path / "external")
     assert not registry.errors
-    validate_country(payload, registry, today=date(2026, 10, 2))
+    validate_country(payload, registry, today=date(2026, 10, 4))
     assert payload["roster_complete"] is True
     assert len(payload["ministries"]) == EXPECTED_COUNT
     assert any(m["kind"] == "government_head_office" for m in payload["ministries"])

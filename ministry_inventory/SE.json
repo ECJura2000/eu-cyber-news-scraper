@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "country": "SE",
-  "reviewed_on": "2026-10-01",
+  "reviewed_on": "2026-10-03",
   "official_roster_urls": [
     "https://www.regeringen.se/sveriges-regering/"
   ],
@@ -16,16 +16,20 @@
       "kind": "government_head_office",
       "language": "sv",
       "homepage": "https://www.regeringen.se/sveriges-regering/statsradsberedningen/",
-      "news_url": "https://www.regeringen.se/sveriges-regering/statsradsberedningen/",
-      "source_ids": [
-        "se_prime_minister"
-      ],
-      "status": "manual_verified",
-      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "2026-10-04 兩次實際抓取均失敗，依使用者要求移除可查詢入口。se_prime_minister: HTTP_CHALLENGE。原設定與觀察保留於 source_exclusions/manifest.json；不判定機關或網站已不存在。",
       "evidence_urls": [
         "https://www.regeringen.se/sveriges-regering/",
         "https://www.regeringen.se/sveriges-regering/statsradsberedningen/"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unreadable_registered_source",
+        "reason": "se_prime_minister: HTTP_CHALLENGE",
+        "observed_at": "2026-10-04T02:14:43.552583+00:00",
+        "candidate_news_url": "https://www.regeringen.se/sveriges-regering/statsradsberedningen/"
+      }
     },
     {
       "canonical_id": "se_employment",
@@ -35,16 +39,20 @@
       "kind": "ministry",
       "language": "sv",
       "homepage": "https://www.regeringen.se/sveriges-regering/arbetsmarknadsdepartementet/",
-      "news_url": "https://www.regeringen.se/sveriges-regering/arbetsmarknadsdepartementet/",
-      "source_ids": [
-        "se_employment"
-      ],
-      "status": "manual_verified",
-      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "2026-10-04 兩次實際抓取均失敗，依使用者要求移除可查詢入口。se_employment: HTTP_CHALLENGE。原設定與觀察保留於 source_exclusions/manifest.json；不判定機關或網站已不存在。",
       "evidence_urls": [
         "https://www.regeringen.se/sveriges-regering/",
         "https://www.regeringen.se/sveriges-regering/arbetsmarknadsdepartementet/"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unreadable_registered_source",
+        "reason": "se_employment: HTTP_CHALLENGE",
+        "observed_at": "2026-10-04T02:14:43.552583+00:00",
+        "candidate_news_url": "https://www.regeringen.se/sveriges-regering/arbetsmarknadsdepartementet/"
+      }
     },
     {
       "canonical_id": "se_finance",
@@ -54,16 +62,20 @@
       "kind": "ministry",
       "language": "sv",
       "homepage": "https://www.regeringen.se/sveriges-regering/finansdepartementet/",
-      "news_url": "https://www.regeringen.se/sveriges-regering/finansdepartementet/",
-      "source_ids": [
-        "se_finance"
-      ],
-      "status": "manual_verified",
-      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "2026-10-04 兩次實際抓取均失敗，依使用者要求移除可查詢入口。se_finance: HTTP_CHALLENGE。原設定與觀察保留於 source_exclusions/manifest.json；不判定機關或網站已不存在。",
       "evidence_urls": [
         "https://www.regeringen.se/sveriges-regering/",
         "https://www.regeringen.se/sveriges-regering/finansdepartementet/"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unreadable_registered_source",
+        "reason": "se_finance: HTTP_CHALLENGE",
+        "observed_at": "2026-10-04T02:14:43.552583+00:00",
+        "candidate_news_url": "https://www.regeringen.se/sveriges-regering/finansdepartementet/"
+      }
     },
     {
       "canonical_id": "se_defence",
@@ -73,16 +85,20 @@
       "kind": "ministry",
       "language": "sv",
       "homepage": "https://www.regeringen.se/sveriges-regering/forsvarsdepartementet/",
-      "news_url": "https://www.regeringen.se/sveriges-regering/forsvarsdepartementet/",
-      "source_ids": [
-        "se_defence"
-      ],
-      "status": "manual_verified",
-      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "2026-10-04 兩次實際抓取均失敗，依使用者要求移除可查詢入口。se_defence: HTTP_CHALLENGE。原設定與觀察保留於 source_exclusions/manifest.json；不判定機關或網站已不存在。",
       "evidence_urls": [
         "https://www.regeringen.se/sveriges-regering/",
         "https://www.regeringen.se/sveriges-regering/forsvarsdepartementet/"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unreadable_registered_source",
+        "reason": "se_defence: HTTP_CHALLENGE",
+        "observed_at": "2026-10-04T02:14:43.552583+00:00",
+        "candidate_news_url": "https://www.regeringen.se/sveriges-regering/forsvarsdepartementet/"
+      }
     },
     {
       "canonical_id": "se_justice",
@@ -92,16 +108,20 @@
       "kind": "ministry",
       "language": "sv",
       "homepage": "https://www.regeringen.se/sveriges-regering/justitiedepartementet/",
-      "news_url": "https://www.regeringen.se/sveriges-regering/justitiedepartementet/",
-      "source_ids": [
-        "se_justice"
-      ],
-      "status": "manual_verified",
-      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "2026-10-04 兩次實際抓取均失敗，依使用者要求移除可查詢入口。se_justice: HTTP_CHALLENGE。原設定與觀察保留於 source_exclusions/manifest.json；不判定機關或網站已不存在。",
       "evidence_urls": [
         "https://www.regeringen.se/sveriges-regering/",
         "https://www.regeringen.se/sveriges-regering/justitiedepartementet/"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unreadable_registered_source",
+        "reason": "se_justice: HTTP_CHALLENGE",
+        "observed_at": "2026-10-04T02:14:43.552583+00:00",
+        "candidate_news_url": "https://www.regeringen.se/sveriges-regering/justitiedepartementet/"
+      }
     },
     {
       "canonical_id": "se_climate_enterprise",
@@ -111,16 +131,20 @@
       "kind": "ministry",
       "language": "sv",
       "homepage": "https://www.regeringen.se/sveriges-regering/klimat--och-naringslivsdepartementet/",
-      "news_url": "https://www.regeringen.se/sveriges-regering/klimat--och-naringslivsdepartementet/",
-      "source_ids": [
-        "se_climate_enterprise"
-      ],
-      "status": "manual_verified",
-      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "2026-10-04 兩次實際抓取均失敗，依使用者要求移除可查詢入口。se_climate_enterprise: HTTP_CHALLENGE。原設定與觀察保留於 source_exclusions/manifest.json；不判定機關或網站已不存在。",
       "evidence_urls": [
         "https://www.regeringen.se/sveriges-regering/",
         "https://www.regeringen.se/sveriges-regering/klimat--och-naringslivsdepartementet/"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unreadable_registered_source",
+        "reason": "se_climate_enterprise: HTTP_CHALLENGE",
+        "observed_at": "2026-10-04T02:14:43.552583+00:00",
+        "candidate_news_url": "https://www.regeringen.se/sveriges-regering/klimat--och-naringslivsdepartementet/"
+      }
     },
     {
       "canonical_id": "se_culture",
@@ -130,16 +154,20 @@
       "kind": "ministry",
       "language": "sv",
       "homepage": "https://www.regeringen.se/sveriges-regering/kulturdepartementet/",
-      "news_url": "https://www.regeringen.se/sveriges-regering/kulturdepartementet/",
-      "source_ids": [
-        "se_culture"
-      ],
-      "status": "manual_verified",
-      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "2026-10-04 兩次實際抓取均失敗，依使用者要求移除可查詢入口。se_culture: HTTP_CHALLENGE。原設定與觀察保留於 source_exclusions/manifest.json；不判定機關或網站已不存在。",
       "evidence_urls": [
         "https://www.regeringen.se/sveriges-regering/",
         "https://www.regeringen.se/sveriges-regering/kulturdepartementet/"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unreadable_registered_source",
+        "reason": "se_culture: HTTP_CHALLENGE",
+        "observed_at": "2026-10-04T02:14:43.552583+00:00",
+        "candidate_news_url": "https://www.regeringen.se/sveriges-regering/kulturdepartementet/"
+      }
     },
     {
       "canonical_id": "se_rural_infrastructure",
@@ -149,16 +177,20 @@
       "kind": "ministry",
       "language": "sv",
       "homepage": "https://www.regeringen.se/sveriges-regering/landsbygds--och-infrastrukturdepartementet/",
-      "news_url": "https://www.regeringen.se/sveriges-regering/landsbygds--och-infrastrukturdepartementet/",
-      "source_ids": [
-        "se_rural_infrastructure"
-      ],
-      "status": "manual_verified",
-      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "2026-10-04 兩次實際抓取均失敗，依使用者要求移除可查詢入口。se_rural_infrastructure: HTTP_CHALLENGE。原設定與觀察保留於 source_exclusions/manifest.json；不判定機關或網站已不存在。",
       "evidence_urls": [
         "https://www.regeringen.se/sveriges-regering/",
         "https://www.regeringen.se/sveriges-regering/landsbygds--och-infrastrukturdepartementet/"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unreadable_registered_source",
+        "reason": "se_rural_infrastructure: HTTP_CHALLENGE",
+        "observed_at": "2026-10-04T02:14:43.552583+00:00",
+        "candidate_news_url": "https://www.regeringen.se/sveriges-regering/landsbygds--och-infrastrukturdepartementet/"
+      }
     },
     {
       "canonical_id": "se_health_social",
@@ -168,16 +200,20 @@
       "kind": "ministry",
       "language": "sv",
       "homepage": "https://www.regeringen.se/sveriges-regering/socialdepartementet/",
-      "news_url": "https://www.regeringen.se/sveriges-regering/socialdepartementet/",
-      "source_ids": [
-        "se_health_social"
-      ],
-      "status": "manual_verified",
-      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "2026-10-04 兩次實際抓取均失敗，依使用者要求移除可查詢入口。se_health_social: HTTP_CHALLENGE。原設定與觀察保留於 source_exclusions/manifest.json；不判定機關或網站已不存在。",
       "evidence_urls": [
         "https://www.regeringen.se/sveriges-regering/",
         "https://www.regeringen.se/sveriges-regering/socialdepartementet/"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unreadable_registered_source",
+        "reason": "se_health_social: HTTP_CHALLENGE",
+        "observed_at": "2026-10-04T02:14:43.552583+00:00",
+        "candidate_news_url": "https://www.regeringen.se/sveriges-regering/socialdepartementet/"
+      }
     },
     {
       "canonical_id": "se_education_research",
@@ -187,16 +223,20 @@
       "kind": "ministry",
       "language": "sv",
       "homepage": "https://www.regeringen.se/sveriges-regering/utbildningsdepartementet/",
-      "news_url": "https://www.regeringen.se/sveriges-regering/utbildningsdepartementet/",
-      "source_ids": [
-        "se_education_research"
-      ],
-      "status": "manual_verified",
-      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "2026-10-04 兩次實際抓取均失敗，依使用者要求移除可查詢入口。se_education_research: HTTP_CHALLENGE。原設定與觀察保留於 source_exclusions/manifest.json；不判定機關或網站已不存在。",
       "evidence_urls": [
         "https://www.regeringen.se/sveriges-regering/",
         "https://www.regeringen.se/sveriges-regering/utbildningsdepartementet/"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unreadable_registered_source",
+        "reason": "se_education_research: HTTP_CHALLENGE",
+        "observed_at": "2026-10-04T02:14:43.552583+00:00",
+        "candidate_news_url": "https://www.regeringen.se/sveriges-regering/utbildningsdepartementet/"
+      }
     },
     {
       "canonical_id": "se_foreign_affairs",
@@ -206,16 +246,20 @@
       "kind": "ministry",
       "language": "sv",
       "homepage": "https://www.regeringen.se/sveriges-regering/utrikesdepartementet/",
-      "news_url": "https://www.regeringen.se/sveriges-regering/utrikesdepartementet/",
-      "source_ids": [
-        "se_foreign_affairs"
-      ],
-      "status": "manual_verified",
-      "reason": "Live robots-aware html production parse: 20 dated items; genuine bounded fixture replay: 4 items. Scheduling disabled.",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "2026-10-04 兩次實際抓取均失敗，依使用者要求移除可查詢入口。se_foreign_affairs: HTTP_CHALLENGE。原設定與觀察保留於 source_exclusions/manifest.json；不判定機關或網站已不存在。",
       "evidence_urls": [
         "https://www.regeringen.se/sveriges-regering/",
         "https://www.regeringen.se/sveriges-regering/utrikesdepartementet/"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unreadable_registered_source",
+        "reason": "se_foreign_affairs: HTTP_CHALLENGE",
+        "observed_at": "2026-10-04T02:14:43.552583+00:00",
+        "candidate_news_url": "https://www.regeringen.se/sveriges-regering/utrikesdepartementet/"
+      }
     }
   ]
 }

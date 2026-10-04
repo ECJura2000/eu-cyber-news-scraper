@@ -43,4 +43,8 @@ def test_all_201_remaining_ministries_have_one_evidence_backed_recheck():
     latest = latest_checks(load_rechecks(FIXTURES))
     assert set(latest) == set(initial)
     for identifier, check in latest.items():
-        assert check['result'] == current[identifier]['status']
+        row = current[identifier]
+        if row.get('user_exclusion', {}).get('policy') == 'exclude_unreadable_registered_source':
+            assert row['status'] == 'user_excluded' and not row['source_ids'] and row['news_url'] is None
+        else:
+            assert check['result'] == row['status']

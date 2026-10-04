@@ -61,18 +61,22 @@
       "kind": "ministry",
       "language": "bg",
       "homepage": "https://mvr.bg/",
-      "news_url": "https://mvr.bg/press/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%BE/%2A",
-      "source_ids": [
-        "bg_interior"
-      ],
-      "status": "manual_verified",
-      "reason": "Robots-enforcing, TLS-verifying production HttpClient returned HTTP 200; full production parser replay and bounded fixture replay agree on 8 dated items. Evidence: tests/fixtures/ministry_bg_interior.provenance.json",
+      "news_url": null,
+      "source_ids": [],
+      "status": "user_excluded",
+      "reason": "2026-10-04 兩次實際抓取均失敗，依使用者要求移除可查詢入口。bg_interior: HTTP_CHALLENGE。原設定與觀察保留於 source_exclusions/manifest.json；不判定機關或網站已不存在。",
       "evidence_urls": [
         "https://iisda.government.bg/ras/executive_power/ministries",
         "https://iisda.government.bg/ras/executive_power/ministry_organigram/78",
         "https://mvr.bg/",
         "https://mvr.bg/press/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%BE/%2A"
-      ]
+      ],
+      "user_exclusion": {
+        "policy": "exclude_unreadable_registered_source",
+        "reason": "bg_interior: HTTP_CHALLENGE",
+        "observed_at": "2026-10-04T02:14:43.552583+00:00",
+        "candidate_news_url": "https://mvr.bg/press/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%B0-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F/%D0%B0%D0%BA%D1%82%D1%83%D0%B0%D0%BB%D0%BD%D0%BE/%2A"
+      }
     },
     {
       "canonical_id": "bg_energy",

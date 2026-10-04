@@ -25,6 +25,11 @@ def test_round6_closes_every_pending_id_without_claiming_full_search_coverage():
     excluded = 0
     for identifier, check in current['checks'].items():
         row = rows[identifier]
+        if row.get('user_exclusion', {}).get('policy') == 'exclude_unreadable_registered_source':
+            assert check['result'] == 'manual_verified'
+            assert row['status'] == 'user_excluded' and not row['source_ids'] and row['news_url'] is None
+            promoted += 1
+            continue
         assert row['status'] == check['result']
         if check['result'] == 'manual_verified':
             promoted += 1
@@ -45,8 +50,10 @@ def test_round6_closes_every_pending_id_without_claiming_full_search_coverage():
         assert row['evidence_urls']
     report = inventory_report(inventory)
     assert promoted + excluded == 156
-    assert report['registered_ministries'] == 304 + promoted
-    assert report['user_excluded_ministries'] == excluded
+    subsequently_removed = sum(row.get('user_exclusion', {}).get('policy') == 'exclude_unreadable_registered_source'
+                               for row in rows.values())
+    assert report['registered_ministries'] == 304 + promoted - subsequently_removed
+    assert report['user_excluded_ministries'] == excluded + subsequently_removed
     assert report['pending_ministries'] == 0
     assert report['searchable_inventory_complete'] == (excluded == 0)
     assert sum(source.schedule_enabled and not source.paused_until for source in load_sources()) == 50

@@ -31,7 +31,7 @@
             "type": "object", "additionalProperties": false,
             "required": ["policy", "reason", "observed_at", "candidate_news_url"],
             "properties": {
-              "policy": {"const": "exclude_unverified_after_local_wikipedia_recheck"},
+              "policy": {"enum": ["exclude_unverified_after_local_wikipedia_recheck", "exclude_unreadable_registered_source"]},
               "reason": {"type": "string", "minLength": 1},
               "observed_at": {"type": "string", "format": "date-time"},
               "candidate_news_url": {"type": ["string", "null"], "format": "uri"}

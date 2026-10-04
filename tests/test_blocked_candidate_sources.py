@@ -4,8 +4,8 @@ import asyncio
 from datetime import datetime, timezone
 
 import httpx
+from historical_sources import load_sources_and_registry
 
-from eu_cyber_news_scraper.config import load_sources_and_registry
 from eu_cyber_news_scraper.scraper import scrape_source
 
 

@@ -50,7 +50,7 @@ def test_new_sources_are_manual_only_until_promoted():
     assert len(_select_sources(sources, None, None, scheduled=True)) == 50
     assert len(_select_sources(sources, None, None)) == 50
     assert {
-        "es_aepd", "es_cnmc", "es_congreso", "es_incibe", "es_aesia", "es_bsc"
+        "es_aepd", "es_cnmc", "es_incibe", "es_aesia"
     } <= {source.id for source in _select_sources(sources, ["ES"], None)}
     assert all(source.country == "ES" for source in _select_sources(sources, ["ES"], None))
     assert not _select_sources(sources, ["ES"], None, scheduled=True)
@@ -299,7 +299,7 @@ def test_organisation_status_prints_hash_and_modules(capsys):
 def test_cli_reports_package_version(capsys):
     with pytest.raises(SystemExit, match="0"):
         build_parser().parse_args(["--version"])
-    assert capsys.readouterr().out.endswith(" 1.8.0\n")
+    assert capsys.readouterr().out.endswith(" 1.8.1\n")
 
 
 def test_main_reports_period_and_lock_errors(monkeypatch, tmp_path):
