@@ -12585,6 +12585,1023 @@
           }
         ]
       }
+    },
+    "d18a534ddbebc319": {
+      "profile": {
+        "period_mode": "rolling",
+        "fetch_details": true,
+        "include_undated": false,
+        "include_unmatched": false,
+        "source_budget": 60,
+        "paused_source_ids": [
+          "eu_parliament_press",
+          "fr_cea_list"
+        ],
+        "topic_profile_sha256": "4fc8a5175a8dc0ffd094ee86b0b1decf0b83ac1dd85f2d6d4c9e71e026aab668"
+      },
+      "updated_at": "2026-10-05T04:52:19.161087+00:00",
+      "sources": {
+        "de_athene": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "e66325c1721d33e1",
+            "source_fingerprint": "f347bdd97d84b4a3",
+            "success": true,
+            "raw_count": 5,
+            "newest_published_at": "2026-09-07T08:37:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 28.31,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 68255,
+            "duration_seconds": 1.463
+          }
+        ],
+        "de_bbk": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "e79ed90160eac26b",
+            "source_fingerprint": "08c0af313eb2a9c1",
+            "success": true,
+            "raw_count": 3,
+            "newest_published_at": "2026-09-29T00:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 6.67,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 107128,
+            "duration_seconds": 2.738
+          }
+        ],
+        "de_bfdi": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "dc732a2530efdaba",
+            "source_fingerprint": "15a733b87da55f77",
+            "success": true,
+            "raw_count": 50,
+            "newest_published_at": "2026-09-30T22:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 4.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 174735,
+            "duration_seconds": 2.112
+          }
+        ],
+        "de_bmi": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "a85e47f445177f45",
+            "source_fingerprint": "4473d9117d5f1112",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-09-26T05:37:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 9.43,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 4,
+            "bytes_downloaded": 5819,
+            "duration_seconds": 12.857
+          }
+        ],
+        "de_bnetza": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "9846252151a8d189",
+            "source_fingerprint": "927545e853100ccc",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-09-30T22:00:00+00:00",
+            "in_range_count": 5,
+            "freshness_lag_days": 4.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 7,
+            "bytes_downloaded": 370894,
+            "duration_seconds": 3.98
+          }
+        ],
+        "de_bsi_news": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "91979da405c89e32",
+            "source_fingerprint": "19d58f2f574ee983",
+            "success": true,
+            "raw_count": 15,
+            "newest_published_at": "2026-09-30T22:00:00+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 4.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 5,
+            "bytes_downloaded": 252962,
+            "duration_seconds": 35.72
+          }
+        ],
+        "de_bundeskartellamt": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "dac60f81fae59c26",
+            "source_fingerprint": "3d240409c5b1b799",
+            "success": true,
+            "raw_count": 8,
+            "newest_published_at": "2026-10-01T22:00:00+00:00",
+            "in_range_count": 5,
+            "freshness_lag_days": 3.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 7,
+            "bytes_downloaded": 879453,
+            "duration_seconds": 154.952
+          }
+        ],
+        "de_cispa": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "6d9fa61815f57e0d",
+            "source_fingerprint": "51adba11d6680a0b",
+            "success": true,
+            "raw_count": 6,
+            "newest_published_at": "2026-10-01T22:00:00+00:00",
+            "in_range_count": 6,
+            "freshness_lag_days": 3.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 3,
+            "bytes_downloaded": 137671,
+            "duration_seconds": 1.576
+          }
+        ],
+        "de_dpma": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "1314b1a75a377303",
+            "source_fingerprint": "a1058b878e3f32a0",
+            "success": true,
+            "raw_count": 16,
+            "newest_published_at": "2026-09-28T22:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 6.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 14,
+            "bytes_downloaded": 469542,
+            "duration_seconds": 8.074
+          }
+        ],
+        "de_fraunhofer_aisec": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "b299a0bccd4ce30e",
+            "source_fingerprint": "956b7b3163a448c5",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-09-27T22:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 7.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 3,
+            "bytes_downloaded": 94407,
+            "duration_seconds": 2.474
+          }
+        ],
+        "de_interface": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "f11e95d895492552",
+            "source_fingerprint": "e75ed6e7781d1a37",
+            "success": true,
+            "raw_count": 12,
+            "newest_published_at": "2026-09-30T22:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 4.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 14,
+            "bytes_downloaded": 4213925,
+            "duration_seconds": 14.033
+          }
+        ],
+        "de_swp": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "73d7dc2897687e8f",
+            "source_fingerprint": "f625089c0d7d1ab2",
+            "success": true,
+            "raw_count": 6,
+            "newest_published_at": "2026-08-06T22:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 59.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 274604,
+            "duration_seconds": 1.72
+          }
+        ],
+        "eu_cert_advisories": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "69d6fe99e3d2d17e",
+            "source_fingerprint": "3957566aff64ca6b",
+            "success": true,
+            "raw_count": 14,
+            "newest_published_at": "2026-09-27T15:40:52+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 8.01,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 11,
+            "bytes_downloaded": 226135,
+            "duration_seconds": 6.876
+          }
+        ],
+        "eu_cert_threat": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "81180b4f01040110",
+            "source_fingerprint": "ce69dde6d41fc915",
+            "success": true,
+            "raw_count": 12,
+            "newest_published_at": "2026-10-02T13:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 3.12,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 12,
+            "bytes_downloaded": 506081,
+            "duration_seconds": 11.922
+          }
+        ],
+        "eu_chips_ju": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "1856e4d108425f3c",
+            "source_fingerprint": "1f45cf293d711cf2",
+            "success": true,
+            "raw_count": 6,
+            "newest_published_at": "2026-09-22T22:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 12.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 160247,
+            "duration_seconds": 2.247
+          }
+        ],
+        "eu_dg_connect": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "a9b55d84423b6d1a",
+            "source_fingerprint": "93db45815733dcf0",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-10-01T22:00:00+00:00",
+            "in_range_count": 10,
+            "freshness_lag_days": 3.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 73150,
+            "duration_seconds": 0.86
+          }
+        ],
+        "eu_dg_home": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "8970a20484afee51",
+            "source_fingerprint": "e521e49326d78e4a",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-10-02T12:00:00+00:00",
+            "in_range_count": 8,
+            "freshness_lag_days": 3.17,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 383784,
+            "duration_seconds": 1.293
+          }
+        ],
+        "eu_edpb": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "a558082f1b3abd6b",
+            "source_fingerprint": "e93e80328dcc8e39",
+            "success": true,
+            "raw_count": 32,
+            "newest_published_at": "2026-09-22T22:00:00+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 12.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 6,
+            "bytes_downloaded": 324081,
+            "duration_seconds": 3.646
+          }
+        ],
+        "eu_eeas": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "161b6c84975c2de1",
+            "source_fingerprint": "ef809a4956cf03cb",
+            "success": true,
+            "raw_count": 2,
+            "newest_published_at": "2026-10-01T22:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 3.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 312943,
+            "duration_seconds": 0.799
+          }
+        ],
+        "eu_enisa_certification": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "fcb63e6d183e14a0",
+            "source_fingerprint": "b620ae8f67600bab",
+            "success": true,
+            "raw_count": 3,
+            "newest_published_at": "2026-08-10T12:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 56.17,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 76826,
+            "duration_seconds": 1.867
+          }
+        ],
+        "eu_enisa_news": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "4432d03d5b5531ff",
+            "source_fingerprint": "2ca9f2bfe17defd4",
+            "success": true,
+            "raw_count": 11,
+            "newest_published_at": "2026-09-30T10:55:56+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 5.21,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 87138,
+            "duration_seconds": 0.579
+          }
+        ],
+        "eu_eurohpc": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "b794b393f0c55cc4",
+            "source_fingerprint": "4df4faff1b01c18d",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-09-23T12:00:00+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 12.17,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 97772,
+            "duration_seconds": 1.969
+          }
+        ],
+        "eu_jrc_news": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "7b37fecf0b07a79b",
+            "source_fingerprint": "a382414c80a490db",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-09-28T12:00:00+00:00",
+            "in_range_count": 4,
+            "freshness_lag_days": 7.17,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 184364,
+            "duration_seconds": 1.626
+          }
+        ],
+        "eu_presscorner": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "f4f70b28cbbc2d39",
+            "source_fingerprint": "046e8c55f396dc0a",
+            "success": true,
+            "raw_count": 100,
+            "newest_published_at": "2026-10-02T00:00:00+00:00",
+            "in_range_count": 63,
+            "freshness_lag_days": 3.67,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 12,
+            "bytes_downloaded": 282991,
+            "duration_seconds": 9.342
+          }
+        ],
+        "eu_sns_ju": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "bd26804c612ca604",
+            "source_fingerprint": "66c36611b9ed4e48",
+            "success": true,
+            "raw_count": 257,
+            "newest_published_at": "2026-10-02T09:08:55+00:00",
+            "in_range_count": 4,
+            "freshness_lag_days": 3.29,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 13,
+            "bytes_downloaded": 2524442,
+            "duration_seconds": 27.275
+          }
+        ],
+        "fr_anssi": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "f4a63247e8396e4d",
+            "source_fingerprint": "dce6d40a1b698ef5",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-09-29T22:00:00+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 5.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 7,
+            "bytes_downloaded": 175259,
+            "duration_seconds": 3.476
+          }
+        ],
+        "fr_arcep": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "e5edd508372f86eb",
+            "source_fingerprint": "46730428c4816613",
+            "success": true,
+            "raw_count": 6,
+            "newest_published_at": "2026-09-24T00:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 11.67,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 114062,
+            "duration_seconds": 4.539
+          }
+        ],
+        "fr_arcom": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "4c2bd7ac13026fcf",
+            "source_fingerprint": "b10ea760d8f52ebb",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-10-01T22:00:00+00:00",
+            "in_range_count": 4,
+            "freshness_lag_days": 3.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 12,
+            "bytes_downloaded": 1655770,
+            "duration_seconds": 7.21
+          }
+        ],
+        "fr_campus_cyber": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "99dc627211992a61",
+            "source_fingerprint": "ebc8f9cf2fc36911",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-09-28T12:28:27+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 7.15,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 43256,
+            "duration_seconds": 1.33
+          }
+        ],
+        "fr_cnil": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "b175bdc593693174",
+            "source_fingerprint": "dadb20a78fb1388c",
+            "success": true,
+            "raw_count": 25,
+            "newest_published_at": "2026-09-09T22:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 25.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 6,
+            "bytes_downloaded": 539299,
+            "duration_seconds": 4.813
+          }
+        ],
+        "fr_concurrence": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "ef45d12dd2c7ecef",
+            "source_fingerprint": "10b23231c31de7e4",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-10-01T07:29:48+00:00",
+            "in_range_count": 6,
+            "freshness_lag_days": 4.35,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 8,
+            "bytes_downloaded": 428884,
+            "duration_seconds": 4.726
+          }
+        ],
+        "fr_culture": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "ebbcd976bcd57cb4",
+            "source_fingerprint": "a2cf4f1c79284d44",
+            "success": true,
+            "raw_count": 15,
+            "newest_published_at": "2026-09-24T00:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 11.67,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 3,
+            "bytes_downloaded": 270928,
+            "duration_seconds": 3.261
+          }
+        ],
+        "fr_cybermalveillance": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "2f8b712fb5b53563",
+            "source_fingerprint": "ae535dd970737570",
+            "success": true,
+            "raw_count": 24,
+            "newest_published_at": "2026-10-01T16:11:46+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 3.99,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 9,
+            "bytes_downloaded": 988134,
+            "duration_seconds": 12.729
+          }
+        ],
+        "fr_dge": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "6b290f74b5260279",
+            "source_fingerprint": "b064d0895cf40e94",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-10-01T22:00:00+00:00",
+            "in_range_count": 6,
+            "freshness_lag_days": 3.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 12,
+            "bytes_downloaded": 631169,
+            "duration_seconds": 13.69
+          }
+        ],
+        "fr_dinum": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "b2f144ffd8a9c6ee",
+            "source_fingerprint": "3021e572f4163122",
+            "success": true,
+            "raw_count": 4,
+            "newest_published_at": "2026-09-09T22:00:00+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 25.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 44415,
+            "duration_seconds": 1.136
+          }
+        ],
+        "fr_inria": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "69a986448414dd56",
+            "source_fingerprint": "e7b3e85af57f7e59",
+            "success": true,
+            "raw_count": 1742,
+            "newest_published_at": "2026-10-02T15:37:46+00:00",
+            "in_range_count": 75,
+            "freshness_lag_days": 3.02,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 1495878,
+            "duration_seconds": 10.711
+          }
+        ],
+        "fr_viginum": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "5f6d826b368d7ef9",
+            "source_fingerprint": "5b9140b70927c529",
+            "success": true,
+            "raw_count": 9,
+            "newest_published_at": "2026-09-28T22:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 6.75,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 4,
+            "bytes_downloaded": 178872,
+            "duration_seconds": 11.725
+          }
+        ],
+        "ie_adapt": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "96c1312052b98606",
+            "source_fingerprint": "6af24d1696dbcea7",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-09-29T23:10:11+00:00",
+            "in_range_count": 8,
+            "freshness_lag_days": 5.7,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 14960,
+            "duration_seconds": 0.91
+          }
+        ],
+        "ie_ceadar": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "c496f49eba2f7b8b",
+            "source_fingerprint": "0a3611eb34f28b27",
+            "success": true,
+            "raw_count": 8,
+            "newest_published_at": "2026-09-28T15:02:57+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 7.04,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 3,
+            "bytes_downloaded": 426681,
+            "duration_seconds": 13.439
+          }
+        ],
+        "ie_cnam": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "21142c21ae423381",
+            "source_fingerprint": "ff8046d101758d7e",
+            "success": true,
+            "raw_count": 20,
+            "newest_published_at": "2026-09-29T11:00:55+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 6.21,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 13,
+            "bytes_downloaded": 1792170,
+            "duration_seconds": 7.338
+          }
+        ],
+        "ie_comreg": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "5e78f4991f8c0995",
+            "source_fingerprint": "80972b8e9ae8ac85",
+            "success": true,
+            "raw_count": 20,
+            "newest_published_at": "2026-10-01T23:00:00+00:00",
+            "in_range_count": 5,
+            "freshness_lag_days": 3.71,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 269979,
+            "duration_seconds": 5.629
+          }
+        ],
+        "ie_cyber_ireland": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "d10aafd097f70005",
+            "source_fingerprint": "7d8bda61a4e86e99",
+            "success": true,
+            "raw_count": 100,
+            "newest_published_at": "2026-10-01T13:43:21+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 4.09,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 3,
+            "bytes_downloaded": 222728,
+            "duration_seconds": 1.891
+          }
+        ],
+        "ie_dete": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "4b91348dd843dc23",
+            "source_fingerprint": "4de6726272c0335a",
+            "success": true,
+            "raw_count": 2,
+            "newest_published_at": "2026-10-01T23:00:00+00:00",
+            "in_range_count": 2,
+            "freshness_lag_days": 3.71,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 4,
+            "bytes_downloaded": 97815,
+            "duration_seconds": 2.171
+          }
+        ],
+        "ie_dpc": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "d8358eeb7e677d12",
+            "source_fingerprint": "ac05ae0f4006b2a3",
+            "success": true,
+            "raw_count": 5,
+            "newest_published_at": "2026-09-20T23:00:00+00:00",
+            "in_range_count": 1,
+            "freshness_lag_days": 14.71,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 44557,
+            "duration_seconds": 0.959
+          }
+        ],
+        "ie_electoral_commission": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "e7cb0923f55fe8da",
+            "source_fingerprint": "93322ad25dbb4ac5",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-09-10T09:15:36+00:00",
+            "in_range_count": 0,
+            "freshness_lag_days": 25.28,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 3,
+            "bytes_downloaded": 100595,
+            "duration_seconds": 1.862
+          }
+        ],
+        "ie_esri": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "b4b964f471023527",
+            "source_fingerprint": "454f1809949fd307",
+            "success": true,
+            "raw_count": 24,
+            "newest_published_at": "2026-10-02T08:49:06+00:00",
+            "in_range_count": 8,
+            "freshness_lag_days": 3.3,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 11,
+            "bytes_downloaded": 715335,
+            "duration_seconds": 9.007
+          }
+        ],
+        "ie_ncsc": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "5ed8c88dd8e8ad9f",
+            "source_fingerprint": "1b7ca3f44626cb75",
+            "success": true,
+            "raw_count": 243,
+            "newest_published_at": "2026-10-02T00:00:00+00:00",
+            "in_range_count": 5,
+            "freshness_lag_days": 3.67,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 136583,
+            "duration_seconds": 2.287
+          }
+        ],
+        "ie_nsai": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "b5ce9bf8edaf023c",
+            "source_fingerprint": "530f6a63c7af86ac",
+            "success": true,
+            "raw_count": 8,
+            "newest_published_at": "2026-10-01T23:00:00+00:00",
+            "in_range_count": 3,
+            "freshness_lag_days": 3.71,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 10,
+            "bytes_downloaded": 939492,
+            "duration_seconds": 17.318
+          }
+        ],
+        "ie_research_ireland": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "38106d117b9ccac6",
+            "source_fingerprint": "e3cbce2bccf6c726",
+            "success": true,
+            "raw_count": 203,
+            "newest_published_at": "2026-09-28T15:30:09+00:00",
+            "in_range_count": 5,
+            "freshness_lag_days": 7.02,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 3,
+            "bytes_downloaded": 648747,
+            "duration_seconds": 6.95
+          }
+        ],
+        "ie_tyndall": [
+          {
+            "run_id": "694585d8ea9f47a3b654e58d7ed1b500",
+            "recorded_at": "2026-10-05T04:52:19.161087+00:00",
+            "observation_key": "971c55c70d16375a",
+            "source_fingerprint": "01bc01139a84ad48",
+            "success": true,
+            "raw_count": 10,
+            "newest_published_at": "2026-10-01T15:46:17+00:00",
+            "in_range_count": 4,
+            "freshness_lag_days": 4.01,
+            "parse_status": "healthy",
+            "freshness_status": "fresh",
+            "baseline_failure": false,
+            "health_status": "healthy",
+            "request_count": 2,
+            "bytes_downloaded": 13806,
+            "duration_seconds": 0.604
+          }
+        ]
+      }
     }
   }
 }

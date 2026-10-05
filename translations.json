@@ -1,6 +1,90 @@
 {
   "schema_version": 3,
   "translations": {
+    "fr\u0000Quand la recherche devient un outil d'apprentissage de la physique quantique": {
+      "text": "當研究成為學習量子物理的工具時",
+      "provider": "translate",
+      "created_at": "2026-10-05T04:52:16.900318+00:00",
+      "last_accessed_at": "2026-10-05T04:52:16.900318+00:00"
+    },
+    "en\u0000Critical vulnerability in Fortinet: FortiMail (CVE-2026-104286)": {
+      "text": "Fortinet中的嚴重漏洞： FortiMail (CVE-2026-104286)",
+      "provider": "translate",
+      "created_at": "2026-10-05T04:52:16.900318+00:00",
+      "last_accessed_at": "2026-10-05T04:52:16.900318+00:00"
+    },
+    "en\u0000Minister Smyth announces Ireland’s first AI Sectoral Champions to drive enterprise adoption of artificial intelligence": {
+      "text": "史密斯部長宣佈愛爾蘭首位人工智慧部門冠軍，以推動企業採用人工智慧",
+      "provider": "translate",
+      "created_at": "2026-10-05T04:52:16.900318+00:00",
+      "last_accessed_at": "2026-10-05T04:52:16.900318+00:00"
+    },
+    "en\u0000Critical vulnerability in Cisco Catalyst SD-WAN Manager (CVE-2026-76504)": {
+      "text": "Cisco Catalyst SD-WAN Manager中的嚴重漏洞(CVE-2026-76504)",
+      "provider": "translate",
+      "created_at": "2026-10-05T04:52:16.900318+00:00",
+      "last_accessed_at": "2026-10-05T04:52:16.900318+00:00"
+    },
+    "de\u0000Moritz Hennemann tritt Amt als Bundesbeauftragter für den Datenschutz und die Informationsfreiheit an": {
+      "text": "Moritz Hennemann就任聯邦資料保護和資訊自由專員",
+      "provider": "translate",
+      "created_at": "2026-10-05T04:52:16.900318+00:00",
+      "last_accessed_at": "2026-10-05T04:52:16.900318+00:00"
+    },
+    "en\u0000Commission asks Bulgaria to comply with the Digital Services Act and empower the national authorities to enforce it": {
+      "text": "委員會要求保加利亞遵守《數位服務法》，並授權國家當局執行該法",
+      "provider": "translate",
+      "created_at": "2026-10-05T04:52:16.900318+00:00",
+      "last_accessed_at": "2026-10-05T04:52:16.900318+00:00"
+    },
+    "en\u0000Three in four EU employees faced cyber threats at work, new Eurobarometer finds": {
+      "text": "新的Eurobarometer發現，四分之三的歐盟員工在工作中面臨網路威脅",
+      "provider": "translate",
+      "created_at": "2026-10-05T04:52:16.900318+00:00",
+      "last_accessed_at": "2026-10-05T04:52:16.900318+00:00"
+    },
+    "en\u0000Commission seeks feedback on challenges and way forward in the area of effect of technology on copyright": {
+      "text": "委員會就技術對版權的影響領域的挑戰和前進方向尋求反饋",
+      "provider": "translate",
+      "created_at": "2026-10-05T04:52:16.900318+00:00",
+      "last_accessed_at": "2026-10-05T04:52:16.900318+00:00"
+    },
+    "fr\u0000L’ANSSI publie le rapport d’incident sur les cyberattaques ayant touché la DGFiP": {
+      "text": "ANSSI發布影響DGFiP的網路攻擊事件報告",
+      "provider": "translate",
+      "created_at": "2026-10-05T04:52:16.900318+00:00",
+      "last_accessed_at": "2026-10-05T04:52:16.900318+00:00"
+    },
+    "fr\u0000Reliefs 2026 : VIGINUM organise son premier hackathon à Marseille pour sensibiliser aux ingérences numériques étrangères": {
+      "text": "Reliefs 2026 ： VIGINUM在馬賽舉辦首次駭客鬆，以提高對外國數字幹擾的認識",
+      "provider": "translate",
+      "created_at": "2026-10-05T04:52:16.900318+00:00",
+      "last_accessed_at": "2026-10-05T04:52:16.900318+00:00"
+    },
+    "en\u0000CeADAR welcomes visit from newly established AI Office of Ireland": {
+      "text": "CeADAR歡迎新成立的愛爾蘭人工智慧辦公室來訪",
+      "provider": "translate",
+      "created_at": "2026-10-05T04:52:16.900318+00:00",
+      "last_accessed_at": "2026-10-05T04:52:16.900318+00:00"
+    },
+    "en\u0000Critical vulnerabilities in Citrix NetScaler Gateway & ADC": {
+      "text": "Citrix NetScaler Gateway和ADC中的嚴重漏洞",
+      "provider": "translate",
+      "created_at": "2026-10-05T04:52:16.900318+00:00",
+      "last_accessed_at": "2026-10-05T04:52:16.900318+00:00"
+    },
+    "en\u0000Ireland’s Semiconductor Strengths on Display During EU Ambassador Visit to Tyndall": {
+      "text": "愛爾蘭的半導體優勢在歐盟大使訪問廷德爾期間展出",
+      "provider": "translate",
+      "created_at": "2026-10-05T04:52:16.900318+00:00",
+      "last_accessed_at": "2026-10-05T04:52:16.900318+00:00"
+    },
+    "en\u0000Speech by President von der Leyen at the high-level dialogue on ‘Protecting Children's Rights facing Artificial Intelligence'": {
+      "text": "馮德萊恩總統在“保護面對人工智慧的兒童權利”高階別對話中的講話",
+      "provider": "translate",
+      "created_at": "2026-10-05T04:52:16.900318+00:00",
+      "last_accessed_at": "2026-10-05T04:52:16.900318+00:00"
+    },
     "en\u0000Security Advisory 2026-014": {
       "text": "安全諮詢 2026-014",
       "provider": "googletrans",
