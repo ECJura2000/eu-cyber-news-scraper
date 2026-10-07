@@ -17,7 +17,7 @@
       "institution_type": "公益團體／行政法人性質",
       "language": "fr",
       "homepage": "https://www.cybermalveillance.gouv.fr/",
-      "listing_url": "https://www.cybermalveillance.gouv.fr/blog",
+      "listing_url": "https://www.cybermalveillance.gouv.fr/blog", "timezone": "Europe/Paris", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "cybermalveillance.gouv.fr",
         "www.cybermalveillance.gouv.fr"

@@ -6,7 +6,7 @@
   "sources": [{
     "id": "govcert_bg", "country": "BG", "name_zh": "保加利亞 CERT", "name": "CERT Bulgaria",
     "institution_type": "國家 CSIRT／政府網路安全機構", "language": "bg",
-    "homepage": "https://www.govcert.bg/en/", "listing_url": "https://www.govcert.bg/en/?id=767",
+    "homepage": "https://www.govcert.bg/en/", "listing_url": "https://www.govcert.bg/en/?id=767", "timezone": "Europe/Sofia", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
     "allow_domains": ["govcert.bg", "www.govcert.bg"], "include_patterns": [], "exclude_patterns": [],
     "critical": false, "schedule_enabled": false, "detail_pages": 8
   }],

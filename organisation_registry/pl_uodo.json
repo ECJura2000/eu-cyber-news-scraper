@@ -17,7 +17,7 @@
       "institution_type": "獨立資料保護監管機關",
       "language": "pl",
       "homepage": "https://uodo.gov.pl/",
-      "listing_url": "https://uodo.gov.pl/pl/138",
+      "listing_url": "https://uodo.gov.pl/pl/138", "timezone": "Europe/Warsaw", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "uodo.gov.pl"
       ],

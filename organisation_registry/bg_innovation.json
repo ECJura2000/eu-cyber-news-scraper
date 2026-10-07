@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "bg",
       "homepage": "https://midt.gov.bg/bg/news",
-      "listing_url": "https://midt.gov.bg/bg/news",
+      "listing_url": "https://midt.gov.bg/bg/news", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "midt.gov.bg"

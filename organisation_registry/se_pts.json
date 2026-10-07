@@ -17,7 +17,7 @@
       "institution_type": "獨立通訊監管機關",
       "language": "sv",
       "homepage": "https://www.pts.se/",
-      "listing_url": "https://www.pts.se/nyheter-och-pressmeddelanden/",
+      "listing_url": "https://www.pts.se/nyheter-och-pressmeddelanden/", "timezone": "Europe/Stockholm", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "www.pts.se"
       ],

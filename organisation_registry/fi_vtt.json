@@ -17,7 +17,7 @@
       "institution_type": "國有非營利應用研究機構",
       "language": "en",
       "homepage": "https://www.vttresearch.com/en",
-      "listing_url": "https://www.vttresearch.com/en/news-stories/news-and-stories",
+      "listing_url": "https://www.vttresearch.com/en/news-stories/news-and-stories", "timezone": "Europe/Helsinki", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "www.vttresearch.com"
       ],

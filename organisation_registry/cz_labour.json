@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "cs",
       "homepage": "https://mpsv.gov.cz/",
-      "listing_url": "https://mpsv.gov.cz/novinky",
+      "listing_url": "https://mpsv.gov.cz/novinky", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "mpsv.gov.cz"

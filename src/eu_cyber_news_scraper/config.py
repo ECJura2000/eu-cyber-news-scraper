@@ -9,6 +9,7 @@ from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from . import __version__
+from .date_config import validate_date_settings
 from .models import Source
 from .organisation_registry import OrganisationRegistry, load_organisation_registry
 
@@ -84,6 +85,8 @@ def load_sources_and_registry(
         rows = registry.source_rows
     sources = []
     for row in rows:
+        validate_date_settings(row['language'], row.get('timezone', COUNTRY_TIMEZONES.get(row['country'], 'UTC')),
+                               row.get('date_order', 'DMY'), row.get('date_formats', []))
         for flag in ("schedule_enabled", "feed_archive_fallback"):
             if flag in row and not isinstance(row[flag], bool):
                 raise ValueError(f"{row['id']}: {flag} must be boolean")
@@ -112,6 +115,8 @@ def load_sources_and_registry(
                 observation_runs=int(row.get("observation_runs", 3)),
                 freshness_days=int(row.get("freshness_days", 45 if row.get("critical", False) else 90)),
                 timezone=str(row.get("timezone", COUNTRY_TIMEZONES.get(row["country"], "UTC"))),
+                date_order=row.get("date_order", "DMY"),
+                date_formats=tuple(row.get("date_formats", [])),
                 card_selectors=tuple(row.get("card_selectors", [])),
                 link_selectors=tuple(row.get("link_selectors", [])),
                 title_selectors=tuple(row.get("title_selectors", [])),
@@ -151,6 +156,7 @@ def _validate_sources(sources: list[Source]) -> None:
     if not sources:
         raise ValueError("No sources configured")
     for source in sources:
+        validate_date_settings(source.language, source.timezone, source.date_order, source.date_formats)
         if not source.id.strip() or not source.name.strip() or not source.name_zh.strip():
             raise ValueError("Source id and names must not be blank")
         if source.detail_pages < 0:

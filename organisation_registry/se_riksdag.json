@@ -7,7 +7,7 @@
     "id": "se_riksdag", "country": "SE", "name_zh": "瑞典國會",
     "name": "Sveriges riksdag", "institution_type": "國會",
     "language": "sv", "homepage": "https://www.riksdagen.se/",
-    "listing_url": "https://www.riksdagen.se/sv/aktuellt/",
+    "listing_url": "https://www.riksdagen.se/sv/aktuellt/", "timezone": "Europe/Stockholm", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
     "allow_domains": ["www.riksdagen.se"], "critical": false,
     "schedule_enabled": false, "detail_pages": 8
   }],

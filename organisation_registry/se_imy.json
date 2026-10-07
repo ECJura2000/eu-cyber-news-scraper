@@ -17,7 +17,7 @@
       "institution_type": "獨立資料保護監管機關",
       "language": "sv",
       "homepage": "https://www.imy.se/",
-      "listing_url": "https://www.imy.se/nyheter/",
+      "listing_url": "https://www.imy.se/nyheter/", "timezone": "Europe/Stockholm", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "www.imy.se"
       ],

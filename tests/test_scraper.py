@@ -349,7 +349,8 @@ def test_yearly_listing_is_parsed_even_when_a_discovered_feed_has_entries():
         until=datetime(2027, 1, 1, tzinfo=timezone.utc),
         fetch_details=False,
     )
-    assert result.status.newest_published_at.startswith("2026-05-10")
+    assert result.status.newest_published_at == "2026-05-09T22:00:00+00:00"
+    assert result.articles[0].published_date_local == "2026-05-10"
     assert result.status.in_range_count == 1
 
 

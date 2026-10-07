@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "nl",
       "homepage": "https://bosa.belgium.be/nl",
-      "listing_url": "https://bosa.belgium.be/nl/news",
+      "listing_url": "https://bosa.belgium.be/nl/news", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "bosa.belgium.be"

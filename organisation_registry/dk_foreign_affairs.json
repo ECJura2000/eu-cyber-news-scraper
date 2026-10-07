@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "da",
       "homepage": "https://um.dk/",
-      "listing_url": "https://um.dk/nyheder/",
+      "listing_url": "https://um.dk/nyheder/", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "um.dk",
         "via.ritzau.dk"

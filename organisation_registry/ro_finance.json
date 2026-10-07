@@ -18,7 +18,7 @@
       "institution_type": "中央部會",
       "language": "ro",
       "homepage": "https://mfinante.gov.ro/ro/web/site",
-      "listing_url": "https://mfinante.gov.ro/ro/presa-comunicate-de-presa",
+      "listing_url": "https://mfinante.gov.ro/ro/presa-comunicate-de-presa", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "mfinante.gov.ro",

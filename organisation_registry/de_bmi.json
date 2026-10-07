@@ -17,7 +17,7 @@
       "institution_type": "聯邦行政機關",
       "language": "de",
       "homepage": "https://www.bmi.bund.de/",
-      "listing_url": "https://www.bmi.bund.de/DE/presse/presse-node.html",
+      "listing_url": "https://www.bmi.bund.de/DE/presse/presse-node.html", "timezone": "Europe/Berlin", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://www.bmi.bund.de/DE/service/rss-newsfeed/function/rssnewsfeed-pressemitteilungen.xml"
       ],

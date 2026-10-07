@@ -3,7 +3,7 @@
   "module_version": "2026-09-26.1",
   "canonical_id": "nl_nwo",
   "names": {"zh": "荷蘭研究委員會", "en": "Dutch Research Council (NWO)", "short": "nl_nwo", "publisher_aliases": []},
-  "sources": [{"id": "nl_nwo", "country": "NL", "name_zh": "荷蘭研究委員會", "name": "Dutch Research Council (NWO)", "institution_type": "國家研究資助與研究基礎設施機構", "language": "en", "homepage": "https://www.nwo.nl/en", "listing_url": "https://www.nwo.nl/en/news", "allow_domains": ["www.nwo.nl", "nwo.nl"], "critical": false, "schedule_enabled": false, "detail_pages": 8}],
+  "sources": [{"id": "nl_nwo", "country": "NL", "name_zh": "荷蘭研究委員會", "name": "Dutch Research Council (NWO)", "institution_type": "國家研究資助與研究基礎設施機構", "language": "en", "homepage": "https://www.nwo.nl/en", "listing_url": "https://www.nwo.nl/en/news", "timezone": "Europe/Amsterdam", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"], "allow_domains": ["www.nwo.nl", "nwo.nl"], "critical": false, "schedule_enabled": false, "detail_pages": 8}],
   "filter": {"topics": ["AI法、模型評估、演算法問責、自動化決策、AI與著作權", "半導體", "量子技術", "產品資安、漏洞揭露義務、SBOM"], "include_patterns": [], "exclude_patterns": []},
   "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
   "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},

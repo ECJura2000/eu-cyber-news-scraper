@@ -17,7 +17,7 @@
       "institution_type": "中央部會",
       "language": "lv",
       "homepage": "https://www.kem.gov.lv/lv",
-      "listing_url": "https://www.kem.gov.lv/lv/jaunumi",
+      "listing_url": "https://www.kem.gov.lv/lv/jaunumi", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "www.kem.gov.lv"

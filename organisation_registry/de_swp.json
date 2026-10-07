@@ -22,7 +22,7 @@
       "institution_type": "聯邦資助獨立政策智庫／基金會",
       "language": "de",
       "homepage": "https://www.swp-berlin.org/",
-      "listing_url": "https://www.swp-berlin.org/themen/dossiers/cybersicherheit-und-digitalpolitik-die-rolle-des-digitalen-in-der-internationalen-politik",
+      "listing_url": "https://www.swp-berlin.org/themen/dossiers/cybersicherheit-und-digitalpolitik-die-rolle-des-digitalen-in-der-internationalen-politik", "timezone": "Europe/Berlin", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "swp-berlin.org",
         "www.swp-berlin.org"

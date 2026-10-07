@@ -18,7 +18,7 @@
       "institution_type": "歐盟法定聯合事業／公私協力",
       "language": "en",
       "homepage": "https://www.chips-ju.europa.eu/",
-      "listing_url": "https://www.chips-ju.europa.eu/News/",
+      "listing_url": "https://www.chips-ju.europa.eu/News/", "timezone": "Europe/Brussels", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "chips-ju.europa.eu",
         "www.chips-ju.europa.eu"

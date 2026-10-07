@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "it",
       "homepage": "https://www.difesa.it/",
-      "listing_url": "https://www.difesa.it/data/primopiano/elenco.json",
+      "listing_url": "https://www.difesa.it/data/primopiano/elenco.json", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://www.difesa.it/data/primopiano/elenco.json"
       ],

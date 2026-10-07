@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "nl",
       "homepage": "https://www.mil.be/nl/news/rss",
-      "listing_url": "https://www.mil.be/nl/news/rss",
+      "listing_url": "https://www.mil.be/nl/news/rss", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://www.mil.be/nl/news/rss"
       ],

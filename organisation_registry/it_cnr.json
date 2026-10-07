@@ -17,7 +17,7 @@
       "institution_type": "國家公共研究機構",
       "language": "it",
       "homepage": "https://www.cnr.it/it",
-      "listing_url": "https://www.cnr.it/it/news?area-tematica=ingegneria-ict",
+      "listing_url": "https://www.cnr.it/it/news?area-tematica=ingegneria-ict", "timezone": "Europe/Rome", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": ["www.cnr.it"],
       "critical": false,
       "schedule_enabled": false,

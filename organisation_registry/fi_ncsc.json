@@ -17,7 +17,7 @@
       "institution_type": "國家資安主管機關",
       "language": "fi",
       "homepage": "https://www.kyberturvallisuuskeskus.fi/",
-      "listing_url": "https://www.kyberturvallisuuskeskus.fi/fi/ajankohtaista",
+      "listing_url": "https://www.kyberturvallisuuskeskus.fi/fi/ajankohtaista", "timezone": "Europe/Helsinki", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": ["https://www.kyberturvallisuuskeskus.fi/feed/rss/fi"],
       "allow_domains": [
         "www.kyberturvallisuuskeskus.fi",

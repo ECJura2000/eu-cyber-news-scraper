@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "de",
       "homepage": "https://www.bmj.gv.at/public.html",
-      "listing_url": "https://www.bmj.gv.at/ministerium/presse/Pressemitteilungen-2026.html",
+      "listing_url": "https://www.bmj.gv.at/ministerium/presse/Pressemitteilungen-2026.html", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "www.bmj.gv.at"

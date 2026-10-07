@@ -17,7 +17,7 @@
       "institution_type": "國有資安公共服務公司",
       "language": "es",
       "homepage": "https://www.incibe.es/",
-      "listing_url": "https://www.incibe.es/incibe/sala-de-prensa",
+      "listing_url": "https://www.incibe.es/incibe/sala-de-prensa", "timezone": "Europe/Madrid", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": ["https://www.incibe.es/incibe/sala-de-prensa/feed"],
       "allow_domains": ["www.incibe.es"],
       "critical": false,

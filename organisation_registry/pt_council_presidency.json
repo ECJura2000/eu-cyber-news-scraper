@@ -18,7 +18,7 @@
       "institution_type": "ministry",
       "language": "pt",
       "homepage": "https://portugal.gov.pt/pt/gc25",
-      "listing_url": "https://portugal.gov.pt/pt/gc25/primeiro-ministro/noticias",
+      "listing_url": "https://portugal.gov.pt/pt/gc25/primeiro-ministro/noticias", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "portugal.gov.pt",

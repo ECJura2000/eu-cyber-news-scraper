@@ -9,6 +9,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
+from .date_config import validate_date_settings
 from .topics import OBSERVATION_TOPICS
 
 REGISTRY_SCHEMA_VERSION = 2
@@ -192,6 +193,8 @@ def _validate_payload(payload: Any) -> None:
             raise ValueError(f"source missing fields: {sorted(missing)}")
         if row["country"] not in {"EU", "FR", "DE", "IE", "ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT", "NL", "RO", "FI", "AT", "BE", "BG", "CY", "CZ", "GR", "HR", "HU", "LU", "MT", "SK", "SI"}:
             raise ValueError(f"unsupported source country: {row['country']}")
+        validate_date_settings(row['language'], row.get('timezone', 'UTC'),
+                               row.get('date_order', 'DMY'), row.get('date_formats', []))
         for flag in ("schedule_enabled", "feed_archive_fallback"):
             if flag in row and not isinstance(row[flag], bool):
                 raise ValueError(f"{flag} must be boolean")

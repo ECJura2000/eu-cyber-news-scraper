@@ -19,7 +19,7 @@
       "institution_type": "ministry",
       "language": "hu",
       "homepage": "https://honvedelem.hu/impresszum.html",
-      "listing_url": "https://honvedelem.hu/hirek/tartalekos-rendszer.html",
+      "listing_url": "https://honvedelem.hu/hirek/tartalekos-rendszer.html", "date_order": "YMD", "date_formats": ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"],
       "feed_urls": [],
       "allow_domains": [
         "honvedelem.hu"

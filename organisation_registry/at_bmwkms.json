@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "de",
       "homepage": "https://www.bmwkms.gv.at",
-      "listing_url": "https://www.bmwkms.gv.at/themen/aktuell.html",
+      "listing_url": "https://www.bmwkms.gv.at/themen/aktuell.html", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "www.bmwkms.gv.at"

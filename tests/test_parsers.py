@@ -193,7 +193,7 @@ def test_discover_and_parse_french_listing(fixture_dir):
     assert discover_feeds(html, fr_source.listing_url) == ["https://cyber.example/actualites/rss/"]
     articles = parse_listing(html, fr_source, fr_source.listing_url)
     assert len(articles) == 1
-    assert articles[0].published_at.date().isoformat() == "2026-03-18"
+    assert articles[0].published_date_local == "2026-03-18"
 
 
 def test_enrich_article_from_open_graph(fixture_dir):
@@ -401,7 +401,7 @@ def test_parse_presscorner_json_feed():
     )
     articles = parse_feed(payload, press_source, "official-api")
     assert articles[0].url.endswith("/ip_26_1579")
-    assert articles[0].published_at.date().isoformat() == "2026-07-10"
+    assert articles[0].published_date_local == "2026-07-10"
 
 
 def test_parse_wordpress_rest_feed():

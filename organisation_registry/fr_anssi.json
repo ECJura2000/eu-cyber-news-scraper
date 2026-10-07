@@ -17,7 +17,7 @@
       "institution_type": "國家主管機關",
       "language": "fr",
       "homepage": "https://cyber.gouv.fr/",
-      "listing_url": "https://cyber.gouv.fr/actualites/",
+      "listing_url": "https://cyber.gouv.fr/actualites/", "timezone": "Europe/Paris", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://cyber.gouv.fr/actualites/rss/",
         "https://cyber.gouv.fr/actualites/atom/"

@@ -7,7 +7,7 @@
     "id": "mt_idpc", "country": "MT", "name_zh": "馬爾他資訊與資料保護專員公署",
     "name": "Information and Data Protection Commissioner", "institution_type": "獨立資料保護監管機關",
     "language": "en", "homepage": "https://idpc.org.mt/",
-    "listing_url": "https://idpc.org.mt/news-latest/",
+    "listing_url": "https://idpc.org.mt/news-latest/", "timezone": "Europe/Malta", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
     "allow_domains": ["idpc.org.mt", "www.idpc.org.mt"], "include_patterns": [], "exclude_patterns": [],
     "critical": false, "schedule_enabled": false, "detail_pages": 8
   }],

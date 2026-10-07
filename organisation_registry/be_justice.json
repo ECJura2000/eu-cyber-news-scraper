@@ -17,7 +17,7 @@
       "institution_type": "ministry_equivalent",
       "language": "nl",
       "homepage": "https://justitie.belgium.be",
-      "listing_url": "https://justitie.belgium.be/nl/nieuws",
+      "listing_url": "https://justitie.belgium.be/nl/nieuws", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "justitie.belgium.be"

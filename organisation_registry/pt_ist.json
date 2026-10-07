@@ -17,7 +17,7 @@
       "institution_type": "公立大學工程與資安研究機構",
       "language": "pt",
       "homepage": "https://tecnico.ulisboa.pt/pt/",
-      "listing_url": "https://tecnico.ulisboa.pt/pt/noticias/",
+      "listing_url": "https://tecnico.ulisboa.pt/pt/noticias/", "timezone": "Europe/Lisbon", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "tecnico.ulisboa.pt"
       ],

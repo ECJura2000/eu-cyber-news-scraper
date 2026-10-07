@@ -22,7 +22,7 @@
       "institution_type": "國家公共研究機構",
       "language": "fr",
       "homepage": "https://www.inria.fr/",
-      "listing_url": "https://www.inria.fr/fr/actualites-recherche-savoir-numerique",
+      "listing_url": "https://www.inria.fr/fr/actualites-recherche-savoir-numerique", "timezone": "Europe/Paris", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://www.inria.fr/fr/rss/recherche/actualites"
       ],

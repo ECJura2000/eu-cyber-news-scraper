@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "de",
       "homepage": "https://www.bundesumweltministerium.de/",
-      "listing_url": "https://www.bundesumweltministerium.de/umwelt.rss",
+      "listing_url": "https://www.bundesumweltministerium.de/umwelt.rss", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://www.bundesumweltministerium.de/umwelt.rss"
       ],

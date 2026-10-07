@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "de",
       "homepage": "https://bmds.bund.de/",
-      "listing_url": "https://bmds.bund.de/aktuelles/pressemitteilungen",
+      "listing_url": "https://bmds.bund.de/aktuelles/pressemitteilungen", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "bmds.bund.de"

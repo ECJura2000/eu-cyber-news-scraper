@@ -17,7 +17,7 @@
       "institution_type": "大學與國家研究機構聯合資安研究所",
       "language": "en",
       "homepage": "https://haic.aalto.fi/",
-      "listing_url": "https://haic.aalto.fi/",
+      "listing_url": "https://haic.aalto.fi/", "timezone": "Europe/Helsinki", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "haic.aalto.fi",
         "haic.fi"

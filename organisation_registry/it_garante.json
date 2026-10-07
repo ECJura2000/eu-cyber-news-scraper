@@ -17,7 +17,7 @@
       "institution_type": "獨立資料保護監管機關",
       "language": "it",
       "homepage": "https://www.garanteprivacy.it/",
-      "listing_url": "https://www.garanteprivacy.it/news",
+      "listing_url": "https://www.garanteprivacy.it/news", "timezone": "Europe/Rome", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "www.garanteprivacy.it"
       ],

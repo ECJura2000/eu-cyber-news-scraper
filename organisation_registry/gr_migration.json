@@ -17,7 +17,7 @@
       "institution_type": "central ministry",
       "language": "el",
       "homepage": "https://migration.gov.gr/",
-      "listing_url": "https://migration.gov.gr/feed/",
+      "listing_url": "https://migration.gov.gr/feed/", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://migration.gov.gr/feed/"
       ],

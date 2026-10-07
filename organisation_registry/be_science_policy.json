@@ -17,7 +17,7 @@
       "institution_type": "ministry_equivalent",
       "language": "fr",
       "homepage": "https://www.belspo.be",
-      "listing_url": "https://www.belspo.be/belspo/organisation/press_fr.stm",
+      "listing_url": "https://www.belspo.be/belspo/organisation/press_fr.stm", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "www.belspo.be"
       ],

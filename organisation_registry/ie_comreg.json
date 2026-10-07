@@ -17,7 +17,7 @@
       "institution_type": "法定獨立監理機關／NIS2主管機關",
       "language": "en",
       "homepage": "https://www.comreg.ie/",
-      "listing_url": "https://www.comreg.ie/news/",
+      "listing_url": "https://www.comreg.ie/news/", "timezone": "Europe/Dublin", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": ["https://www.comreg.ie/feed/"],
       "allow_domains": [
         "comreg.ie",

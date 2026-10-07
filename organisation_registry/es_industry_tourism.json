@@ -17,7 +17,7 @@
       "institution_type": "central ministry",
       "language": "es",
       "homepage": "https://www.mintur.gob.es/",
-      "listing_url": "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/Paginas/listadoNotasPrensa.aspx",
+      "listing_url": "https://www.mintur.gob.es/es-es/GabinetePrensa/NotasPrensa/Paginas/listadoNotasPrensa.aspx", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "www.mintur.gob.es",

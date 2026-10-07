@@ -17,7 +17,7 @@
       "institution_type": "中央政策主管機關／AI、競爭、智慧財產與半導體",
       "language": "en",
       "homepage": "https://enterprise.gov.ie/",
-      "listing_url": "https://enterprise.gov.ie/en/news-and-events/department-news/",
+      "listing_url": "https://enterprise.gov.ie/en/news-and-events/department-news/", "timezone": "Europe/Dublin", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "yearly_listing_url": "https://enterprise.gov.ie/en/news-and-events/department-news/{year}/",
       "allow_domains": [
         "enterprise.gov.ie"

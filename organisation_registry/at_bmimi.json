@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "de",
       "homepage": "https://www.bmimi.gv.at",
-      "listing_url": "https://www.bmimi.gv.at/service/presse/hanke.html",
+      "listing_url": "https://www.bmimi.gv.at/service/presse/hanke.html", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "www.bmimi.gv.at"

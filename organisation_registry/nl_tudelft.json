@@ -17,7 +17,7 @@
       "institution_type": "公立大學資安研究中心",
       "language": "en",
       "homepage": "https://www.tudelft.nl/en/cybersecurity",
-      "listing_url": "https://www.tudelft.nl/en/cybersecurity/news",
+      "listing_url": "https://www.tudelft.nl/en/cybersecurity/news", "timezone": "Europe/Amsterdam", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "www.tudelft.nl"
       ],

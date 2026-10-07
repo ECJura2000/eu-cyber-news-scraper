@@ -6,7 +6,7 @@
   "sources": [{
     "id": "at_cert", "country": "AT", "name_zh": "奧地利國家 CERT", "name": "CERT.at",
     "institution_type": "國家資安事件應變團隊", "language": "de",
-    "homepage": "https://www.cert.at/en/", "listing_url": "https://www.cert.at/en/",
+    "homepage": "https://www.cert.at/en/", "listing_url": "https://www.cert.at/en/", "timezone": "Europe/Vienna", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
     "feed_urls": ["https://www.cert.at/cert-at.de.warnings.rss_2.0.xml", "https://www.cert.at/cert-at.de.blog.rss_2.0.xml"],
     "allow_domains": ["www.cert.at", "cert.at"], "include_patterns": [], "exclude_patterns": [],
     "critical": false, "schedule_enabled": false, "detail_pages": 8

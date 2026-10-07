@@ -17,7 +17,7 @@
       "institution_type": "公共行政數位轉型機構",
       "language": "pt",
       "homepage": "https://www.arte.gov.pt/",
-      "listing_url": "https://www.arte.gov.pt/noticias/",
+      "listing_url": "https://www.arte.gov.pt/noticias/", "timezone": "Europe/Lisbon", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": ["www.arte.gov.pt"],
       "critical": false,
       "schedule_enabled": false,

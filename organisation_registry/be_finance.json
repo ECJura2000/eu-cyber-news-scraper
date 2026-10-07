@@ -17,7 +17,7 @@
       "institution_type": "ministry_equivalent",
       "language": "nl",
       "homepage": "https://fin.belgium.be",
-      "listing_url": "https://fin.belgium.be/nl/news",
+      "listing_url": "https://fin.belgium.be/nl/news", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "fin.belgium.be"

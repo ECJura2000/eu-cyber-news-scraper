@@ -7,7 +7,7 @@
     "id": "pt_fct", "country": "PT", "name_zh": "葡萄牙科學與技術基金會",
     "name": "Fundação para a Ciência e a Tecnologia", "institution_type": "公立研究資助機構",
     "language": "pt", "homepage": "https://www.fct.pt/",
-    "listing_url": "https://www.fct.pt/media/noticias",
+    "listing_url": "https://www.fct.pt/media/noticias", "timezone": "Europe/Lisbon", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
     "allow_domains": ["www.fct.pt"], "critical": false,
     "schedule_enabled": false, "detail_pages": 8
   }],

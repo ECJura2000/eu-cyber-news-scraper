@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "de",
       "homepage": "https://www.bmwsb.bund.de/DE/home/home_node.html",
-      "listing_url": "https://www.bmwsb.bund.de/DE/tools-services/rssfeed/_functions/rssnewsfeed.xml",
+      "listing_url": "https://www.bmwsb.bund.de/DE/tools-services/rssfeed/_functions/rssnewsfeed.xml", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://www.bmwsb.bund.de/DE/tools-services/rssfeed/_functions/rssnewsfeed.xml"
       ],

@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "bg",
       "homepage": "https://www.mlsp.government.bg/",
-      "listing_url": "https://www.mlsp.government.bg/novini",
+      "listing_url": "https://www.mlsp.government.bg/novini", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "www.mlsp.government.bg"

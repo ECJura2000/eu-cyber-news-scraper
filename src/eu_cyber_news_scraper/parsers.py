@@ -70,11 +70,27 @@ def parse_datetime(
     value: str | None,
     languages: Iterable[str] = (),
     timezone_name: str = "UTC",
+    *,
+    date_order: str = "DMY",
+    date_formats: Iterable[str] = (),
 ) -> datetime | None:
     if not value:
         return None
     languages = tuple(languages)
     normalized = value.strip()
+    exact_dates: set[datetime] = set()
+    for date_format in date_formats:
+        try:
+            exact = datetime.strptime(normalized, date_format)
+            if exact.tzinfo is None:
+                exact = exact.replace(tzinfo=ZoneInfo(timezone_name))
+            exact_dates.add(exact.astimezone(timezone.utc))
+        except ValueError:
+            continue
+    if len(exact_dates) > 1:
+        return None
+    if exact_dates:
+        return next(iter(exact_dates))
     if re.fullmatch(r"\d{8}T\d{6}Z", normalized):
         try:
             return datetime.strptime(normalized, "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc)
@@ -113,11 +129,12 @@ def parse_datetime(
         try:
             parsed = datetime.fromisoformat(normalized.replace("Z", "+00:00"))
             if parsed.tzinfo is None:
-                parsed = parsed.replace(tzinfo=timezone.utc)
+                parsed = parsed.replace(tzinfo=ZoneInfo(timezone_name))
             return parsed.astimezone(timezone.utc)
         except ValueError:
             pass
-    settings = {**DATE_SETTINGS, "TIMEZONE": timezone_name}
+    settings = {**DATE_SETTINGS, "TIMEZONE": timezone_name, "DATE_ORDER": date_order,
+                "PREFER_LOCALE_DATE_ORDER": False, "STRICT_PARSING": True}
     parsed_value = dateparser.parse(normalized, languages=list(languages) or None, settings=settings)
     if not isinstance(parsed_value, datetime):
         return None
@@ -135,10 +152,16 @@ def apply_publication_date(
     languages: Iterable[str],
     source: str,
     confidence: str,
+    date_order: str = "DMY",
+    date_formats: Iterable[str] = (),
 ) -> bool:
     raw = str(raw_value or "").strip()
-    parsed = parse_datetime(raw, languages, timezone_name)
+    parsed = parse_datetime(raw, languages, timezone_name, date_order=date_order, date_formats=date_formats)
     if not parsed:
+        if raw and article.published_at is None:
+            article.published_at_raw = raw
+            article.date_source = source
+            article.date_confidence = "low"
         return False
     precision = "datetime" if re.search(r"\d{1,2}:\d{2}|T\d{2}", raw) else "date"
     local_date = parsed.astimezone(ZoneInfo(timezone_name)).date().isoformat()
@@ -220,7 +243,7 @@ def parse_feed(payload: bytes | str, source: Source, fetched_from: str) -> list[
         apply_publication_date(
             article,
             raw_date,
-            timezone_name=source.timezone,
+            timezone_name=source.timezone, date_order=source.date_order, date_formats=source.date_formats,
             languages=tuple(dict.fromkeys(("en", *_date_languages(source.language)))),
             source="feed-published",
             confidence="high",
@@ -254,7 +277,7 @@ def _parse_sitecore_public(payload: str, source: Source) -> list[Article]:
                           summary=plain_text(row.get("summary")), fetched_via=f"public-sitecore:{source.listing_url}")
         if str(row.get("date") or "").startswith("00010101"):
             raise ValueError("Official public news item has no valid publication date")
-        if not apply_publication_date(article, row.get("date"), timezone_name=source.timezone,
+        if not apply_publication_date(article, row.get("date"), timezone_name=source.timezone, date_order=source.date_order, date_formats=source.date_formats,
                                       languages=(source.language,), source="json-api", confidence="high"):
             raise ValueError("Official public news item has no valid publication date")
         articles.append(article)
@@ -369,7 +392,7 @@ def parse_listing(html: str, source: Source, base_url: str) -> list[Article]:
         apply_publication_date(
             article,
             date_text,
-            timezone_name=source.timezone,
+            timezone_name=source.timezone, date_order=source.date_order, date_formats=source.date_formats,
             languages=_date_languages(source.language),
             source=date_source,
             confidence=date_confidence,
@@ -419,7 +442,7 @@ def _parse_wordpress_json(payload: bytes | str, source: Source, fetched_from: st
         apply_publication_date(
             article,
             f"{date_gmt}Z" if date_gmt else str(row.get("date") or ""),
-            timezone_name=source.timezone,
+            timezone_name=source.timezone, date_order=source.date_order, date_formats=source.date_formats,
             languages=_date_languages(source.language),
             source="json-api",
             confidence="high",
@@ -459,7 +482,7 @@ def _parse_presscorner_json(payload: bytes | str, source: Source, fetched_from: 
         apply_publication_date(
             article,
             row.get("eventDate"),
-            timezone_name=source.timezone,
+            timezone_name=source.timezone, date_order=source.date_order, date_formats=source.date_formats,
             languages=_date_languages(source.language),
             source="json-api",
             confidence="high",
@@ -504,7 +527,9 @@ def enrich_from_detail(article: Article, html: str, source: Source | None = None
         apply_publication_date(
             article,
             str(date_value or ""),
-            timezone_name=article.published_timezone or "UTC",
+            timezone_name=source.timezone if source else (article.published_timezone or "UTC"),
+            date_order=source.date_order if source else "DMY",
+            date_formats=source.date_formats if source else (),
             languages=_date_languages(article.language),
             source=date_source,
             confidence=confidence,
@@ -549,6 +574,7 @@ def allowed_article_url(source: Source, url: str) -> bool:
 
 
 def _date_languages(language: str) -> tuple[str, ...]:
+    language = language.split('-')[0]
     return ("nb",) if language == "no" else ((language,) if language in {"en", "fr", "de", "es", "pt", "it", "pl", "da", "sv", "et", "lv", "lt", "nl", "ro", "fi", "bg", "hr", "el", "cs", "hu", "lb", "mt", "sk", "sl"} else ())
 
 

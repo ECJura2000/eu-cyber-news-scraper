@@ -7,7 +7,7 @@
     "id": "gr_grnet", "country": "GR", "name_zh": "希臘國家研究與技術網路",
     "name": "National Infrastructures for Research and Technology", "institution_type": "公營研究與教育網路機構",
     "language": "en", "homepage": "https://grnet.gr/en/",
-    "listing_url": "https://grnet.gr/en/category/news_en-en/",
+    "listing_url": "https://grnet.gr/en/category/news_en-en/", "timezone": "Europe/Athens", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
     "allow_domains": ["grnet.gr", "www.grnet.gr"], "include_patterns": [], "exclude_patterns": [],
     "critical": false, "schedule_enabled": false, "detail_pages": 8
   }],

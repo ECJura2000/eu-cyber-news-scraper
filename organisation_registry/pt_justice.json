@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "pt",
       "homepage": "https://justica.gov.pt/",
-      "listing_url": "https://justica.gov.pt/API/JusticaGovPt.News/PublishingNews/Feed?myPortalId=0&myTabId=380&myModuleId=1649&organismo=",
+      "listing_url": "https://justica.gov.pt/API/JusticaGovPt.News/PublishingNews/Feed?myPortalId=0&myTabId=380&myModuleId=1649&organismo=", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://justica.gov.pt/API/JusticaGovPt.News/PublishingNews/Feed?myPortalId=0&myTabId=380&myModuleId=1649&organismo="
       ],

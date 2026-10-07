@@ -19,7 +19,7 @@
       "institution_type": "judicial administration aggregate",
       "language": "fi",
       "homepage": "https://www.oikeus.fi/",
-      "listing_url": "https://www.oikeus.fi/feed/rss-feed?post_type=ajankohtaiset",
+      "listing_url": "https://www.oikeus.fi/feed/rss-feed?post_type=ajankohtaiset", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://www.oikeus.fi/feed/rss-feed?post_type=ajankohtaiset"
       ],

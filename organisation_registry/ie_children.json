@@ -17,7 +17,7 @@
       "institution_type": "central ministry",
       "language": "en",
       "homepage": "https://www.gov.ie/en/department-of-children-disability-and-equality/",
-      "listing_url": "https://www.gov.ie/en/department-of-children-disability-and-equality/",
+      "listing_url": "https://www.gov.ie/en/department-of-children-disability-and-equality/", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "www.gov.ie"
       ],

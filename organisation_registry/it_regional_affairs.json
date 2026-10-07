@@ -17,7 +17,7 @@
       "institution_type": "central ministry",
       "language": "it",
       "homepage": "https://www.affariregionali.it/",
-      "listing_url": "https://www.affariregionali.it/it/comunicazione/notizie/",
+      "listing_url": "https://www.affariregionali.it/it/comunicazione/notizie/", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "www.affariregionali.it"
       ],

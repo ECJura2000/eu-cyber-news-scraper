@@ -17,7 +17,7 @@
       "institution_type": "central ministry",
       "language": "it",
       "homepage": "https://www.lavoro.gov.it/",
-      "listing_url": "https://www.lavoro.gov.it/_layouts/15/Lavoro.Web/AppPages/RSS",
+      "listing_url": "https://www.lavoro.gov.it/_layouts/15/Lavoro.Web/AppPages/RSS", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://www.lavoro.gov.it/_layouts/15/Lavoro.Web/AppPages/RSS"
       ],

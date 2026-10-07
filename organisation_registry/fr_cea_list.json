@@ -21,7 +21,7 @@
       "institution_type": "公立科技研究機構／行政法人性質",
       "language": "en",
       "homepage": "https://list.cea.fr/en/",
-      "listing_url": "https://list.cea.fr/en/news/",
+      "listing_url": "https://list.cea.fr/en/news/", "timezone": "Europe/Paris", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://list.cea.fr/en/feed/"
       ],

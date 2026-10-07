@@ -17,7 +17,7 @@
       "institution_type": "central ministry",
       "language": "et",
       "homepage": "https://www.mkm.ee",
-      "listing_url": "https://www.mkm.ee/rss-feeds/rss.xml",
+      "listing_url": "https://www.mkm.ee/rss-feeds/rss.xml", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://www.mkm.ee/rss-feeds/rss.xml"
       ],

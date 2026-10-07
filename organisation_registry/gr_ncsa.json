@@ -7,7 +7,7 @@
     "id": "gr_ncsa", "country": "GR", "name_zh": "希臘國家網路安全局",
     "name": "National Cybersecurity Authority", "institution_type": "國家資安主管機關",
     "language": "el", "homepage": "https://cyber.gov.gr/",
-    "listing_url": "https://cyber.gov.gr/nea-plirofories/grafeio-typoy-old/",
+    "listing_url": "https://cyber.gov.gr/nea-plirofories/grafeio-typoy-old/", "timezone": "Europe/Athens", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
     "allow_domains": ["cyber.gov.gr"], "include_patterns": [], "exclude_patterns": [],
     "critical": false, "schedule_enabled": false, "detail_pages": 8
   }],

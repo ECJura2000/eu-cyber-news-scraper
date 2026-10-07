@@ -17,7 +17,7 @@
       "institution_type": "公益非營利聯合研究所",
       "language": "en",
       "homepage": "https://www.inesc-id.pt/",
-      "listing_url": "https://www.inesc-id.pt/news-events/",
+      "listing_url": "https://www.inesc-id.pt/news-events/", "timezone": "Europe/Lisbon", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": ["www.inesc-id.pt"],
       "critical": false,
       "schedule_enabled": false,

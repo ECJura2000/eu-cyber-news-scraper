@@ -17,7 +17,7 @@
       "institution_type": "歐盟執委會／政策主管機關",
       "language": "en",
       "homepage": "https://digital-strategy.ec.europa.eu/",
-      "listing_url": "https://digital-strategy.ec.europa.eu/en/news",
+      "listing_url": "https://digital-strategy.ec.europa.eu/en/news", "timezone": "Europe/Brussels", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "digital-strategy.ec.europa.eu"
       ],

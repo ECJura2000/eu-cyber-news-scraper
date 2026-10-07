@@ -17,7 +17,7 @@
       "institution_type": "歐盟法定聯合事業／公私協力",
       "language": "en",
       "homepage": "https://www.eurohpc-ju.europa.eu/index_en",
-      "listing_url": "https://www.eurohpc-ju.europa.eu/media-events/press-releases_en",
+      "listing_url": "https://www.eurohpc-ju.europa.eu/media-events/press-releases_en", "timezone": "Europe/Brussels", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "eurohpc-ju.europa.eu",
         "www.eurohpc-ju.europa.eu"

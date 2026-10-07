@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "cs",
       "homepage": "https://msmt.gov.cz/",
-      "listing_url": "https://msmt.gov.cz/aktuality",
+      "listing_url": "https://msmt.gov.cz/aktuality", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "msmt.gov.cz"
