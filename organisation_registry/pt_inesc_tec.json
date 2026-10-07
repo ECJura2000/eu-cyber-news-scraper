@@ -17,7 +17,7 @@
       "institution_type": "公私協力非營利聯合研究機構",
       "language": "en",
       "homepage": "https://www.inesctec.pt/en",
-      "listing_url": "https://www.inesctec.pt/en/press-releases",
+      "listing_url": "https://www.inesctec.pt/en/press-releases", "timezone": "Europe/Lisbon", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "www.inesctec.pt"
       ],

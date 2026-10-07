@@ -17,7 +17,7 @@
       "institution_type": "獨立資料保護監管機關",
       "language": "nl",
       "homepage": "https://www.autoriteitpersoonsgegevens.nl/",
-      "listing_url": "https://www.autoriteitpersoonsgegevens.nl/actueel",
+      "listing_url": "https://www.autoriteitpersoonsgegevens.nl/actueel", "timezone": "Europe/Amsterdam", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": ["https://www.autoriteitpersoonsgegevens.nl/feed/article/rss.xml"],
       "allow_domains": [
         "www.autoriteitpersoonsgegevens.nl",

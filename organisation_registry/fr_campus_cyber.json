@@ -17,7 +17,7 @@
       "institution_type": "國家倡議公私協力平台／簡化股份公司",
       "language": "fr",
       "homepage": "https://campuscyber.fr/",
-      "listing_url": "https://campuscyber.fr/",
+      "listing_url": "https://campuscyber.fr/", "timezone": "Europe/Paris", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://campuscyber.fr/feed/"
       ],

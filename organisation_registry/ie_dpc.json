@@ -18,7 +18,7 @@
       "institution_type": "獨立監理機關",
       "language": "en",
       "homepage": "https://dataprotection.ie/",
-      "listing_url": "https://dataprotection.ie/en/news-media/press-releases?page=0",
+      "listing_url": "https://dataprotection.ie/en/news-media/press-releases?page=0", "timezone": "Europe/Dublin", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "dataprotection.ie",
         "www.dataprotection.ie"

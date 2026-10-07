@@ -3,7 +3,7 @@
   "module_version": "2026-09-26.1",
   "canonical_id": "ro_adr",
   "names": {"zh": "羅馬尼亞數位化局", "en": "Autoritatea pentru Digitalizarea României", "short": "ro_adr", "publisher_aliases": []},
-  "sources": [{"id": "ro_adr", "country": "RO", "name_zh": "羅馬尼亞數位化局", "name": "Autoritatea pentru Digitalizarea României", "institution_type": "政府數位轉型政策與公共服務機關", "language": "ro", "homepage": "https://www.adr.gov.ro/", "listing_url": "https://www.adr.gov.ro/articole", "allow_domains": ["www.adr.gov.ro", "adr.gov.ro"], "critical": false, "schedule_enabled": false, "detail_pages": 8}],
+  "sources": [{"id": "ro_adr", "country": "RO", "name_zh": "羅馬尼亞數位化局", "name": "Autoritatea pentru Digitalizarea României", "institution_type": "政府數位轉型政策與公共服務機關", "language": "ro", "homepage": "https://www.adr.gov.ro/", "listing_url": "https://www.adr.gov.ro/articole", "timezone": "Europe/Bucharest", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"], "allow_domains": ["www.adr.gov.ro", "adr.gov.ro"], "critical": false, "schedule_enabled": false, "detail_pages": 8}],
   "filter": {"topics": ["AI法、模型評估、演算法問責、自動化決策、AI與著作權", "數位身份", "跨境資料流通、資料主權、資料開放與再利用", "NIS2、關鍵基礎設施保護"], "include_patterns": [], "exclude_patterns": []},
   "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
   "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},

@@ -17,7 +17,7 @@
       "institution_type": "聯邦智慧財產權機關",
       "language": "de",
       "homepage": "https://www.dpma.de/",
-      "listing_url": "https://www.dpma.de/service/presse/pressemitteilungen/archiv/index.html",
+      "listing_url": "https://www.dpma.de/service/presse/pressemitteilungen/archiv/index.html", "timezone": "Europe/Berlin", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "dpma.de",
         "www.dpma.de"

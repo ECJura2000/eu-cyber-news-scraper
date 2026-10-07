@@ -17,7 +17,7 @@
       "institution_type": "歐盟獨立資料保護機關",
       "language": "en",
       "homepage": "https://www.edpb.europa.eu/",
-      "listing_url": "https://www.edpb.europa.eu/news_en",
+      "listing_url": "https://www.edpb.europa.eu/news_en", "timezone": "Europe/Brussels", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "edpb.europa.eu",
         "www.edpb.europa.eu"

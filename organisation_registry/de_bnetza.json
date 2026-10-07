@@ -18,7 +18,7 @@
       "institution_type": "聯邦監理機關",
       "language": "de",
       "homepage": "https://www.bundesnetzagentur.de/DE/Home/home_node.html",
-      "listing_url": "https://www.bundesnetzagentur.de/DE/Allgemeines/Presse/Pressemitteilungen/start.html",
+      "listing_url": "https://www.bundesnetzagentur.de/DE/Allgemeines/Presse/Pressemitteilungen/start.html", "timezone": "Europe/Berlin", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "bundesnetzagentur.de",
         "www.bundesnetzagentur.de"

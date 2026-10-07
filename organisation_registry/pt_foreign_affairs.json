@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "pt",
       "homepage": "https://portaldiplomatico.mne.gov.pt/",
-      "listing_url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa",
+      "listing_url": "https://portaldiplomatico.mne.gov.pt/comunicacao-e-media/comunciados-de-imprensa", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "portaldiplomatico.mne.gov.pt"

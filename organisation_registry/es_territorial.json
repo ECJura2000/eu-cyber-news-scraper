@@ -17,7 +17,7 @@
       "institution_type": "central ministry",
       "language": "es",
       "homepage": "https://mpt.gob.es/",
-      "listing_url": "https://mptmd.gob.es/portal/prensa/noticias",
+      "listing_url": "https://mptmd.gob.es/portal/prensa/noticias", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "mptmd.gob.es"
       ],

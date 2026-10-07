@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "da",
       "homepage": "https://uvm.dk/",
-      "listing_url": "https://uvm.dk/umbraco/api/DynamicRss/GetRss/?pageId=31390&moduleId=8d3d6977-899a-458e-99ef-b7c091047870",
+      "listing_url": "https://uvm.dk/umbraco/api/DynamicRss/GetRss/?pageId=31390&moduleId=8d3d6977-899a-458e-99ef-b7c091047870", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://uvm.dk/umbraco/api/DynamicRss/GetRss/?pageId=31390&moduleId=8d3d6977-899a-458e-99ef-b7c091047870"
       ],

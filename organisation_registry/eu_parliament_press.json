@@ -20,7 +20,7 @@
       "institution_type": "歐盟立法機關",
       "language": "en",
       "homepage": "https://www.europarl.europa.eu/",
-      "listing_url": "https://www.europarl.europa.eu/news/en/press-room",
+      "listing_url": "https://www.europarl.europa.eu/news/en/press-room", "timezone": "Europe/Brussels", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://www.europarl.europa.eu/rss/doc/press-releases/en.xml"
       ],

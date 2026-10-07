@@ -26,6 +26,8 @@ class Source:
     observation_runs: int = 3
     freshness_days: int = 45
     timezone: str = "Europe/Brussels"
+    date_order: str = "DMY"
+    date_formats: tuple[str, ...] = ()
     card_selectors: tuple[str, ...] = ()
     link_selectors: tuple[str, ...] = ()
     title_selectors: tuple[str, ...] = ()

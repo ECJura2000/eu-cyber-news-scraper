@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "da",
       "homepage": "https://fm.dk/",
-      "listing_url": "https://fm.dk/nyheder/nyhedsarkiv/",
+      "listing_url": "https://fm.dk/nyheder/nyhedsarkiv/", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "fm.dk"

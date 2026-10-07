@@ -3,7 +3,7 @@
   "module_version": "2026-09-26.1",
   "canonical_id": "ro_ancom",
   "names": {"zh": "羅馬尼亞通訊管理與監管局", "en": "Autoritatea Națională pentru Administrare și Reglementare în Comunicații", "short": "ro_ancom", "publisher_aliases": []},
-  "sources": [{"id": "ro_ancom", "country": "RO", "name_zh": "羅馬尼亞通訊管理與監管局", "name": "Autoritatea Națională pentru Administrare și Reglementare în Comunicații", "institution_type": "國會監督下的獨立通訊與數位服務監管機關", "language": "en", "homepage": "https://www.ancom.ro/en/home/", "listing_url": "https://www.ancom.ro/en/category/about-us/media-en/press-releases/", "allow_domains": ["www.ancom.ro", "ancom.ro"], "critical": false, "schedule_enabled": false, "detail_pages": 8}],
+  "sources": [{"id": "ro_ancom", "country": "RO", "name_zh": "羅馬尼亞通訊管理與監管局", "name": "Autoritatea Națională pentru Administrare și Reglementare în Comunicații", "institution_type": "國會監督下的獨立通訊與數位服務監管機關", "language": "en", "homepage": "https://www.ancom.ro/en/home/", "listing_url": "https://www.ancom.ro/en/category/about-us/media-en/press-releases/", "timezone": "Europe/Bucharest", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"], "allow_domains": ["www.ancom.ro", "ancom.ro"], "critical": false, "schedule_enabled": false, "detail_pages": 8}],
   "filter": {"topics": ["平台責任、內容審查、推薦演算法", "NIS2、關鍵基礎設施保護", "關鍵基礎設施的實體與數位融合保護", "跨境資料流通、資料主權、資料開放與再利用"], "include_patterns": [], "exclude_patterns": []},
   "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
   "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},

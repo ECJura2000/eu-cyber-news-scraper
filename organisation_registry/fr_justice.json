@@ -17,7 +17,7 @@
       "institution_type": "central ministry",
       "language": "fr",
       "homepage": "https://www.justice.gouv.fr/",
-      "listing_url": "https://www.justice.gouv.fr/rss.xml",
+      "listing_url": "https://www.justice.gouv.fr/rss.xml", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://www.justice.gouv.fr/rss.xml"
       ],

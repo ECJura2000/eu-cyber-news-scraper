@@ -17,7 +17,7 @@
       "institution_type": "central ministry",
       "language": "fr",
       "homepage": "https://maint.gouvernement.lu/fr.html",
-      "listing_url": "https://maint.gouvernement.lu/fr.html",
+      "listing_url": "https://maint.gouvernement.lu/fr.html", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "maint.gouvernement.lu"
       ],

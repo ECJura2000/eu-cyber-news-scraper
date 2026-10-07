@@ -97,7 +97,10 @@ def test_new_source_policy_and_independent_saved_live_record():
     module = registry.module_for_source("bg_youth_sport")
     assert module is not None
     payload = module.payload
-    assert payload["sources"] == [LIVE["source"]] == [PROOF["source_config"]]
+    assert LIVE["source"] == PROOF["source_config"]
+    actual = payload["sources"][0]
+    assert {key: actual[key] for key in LIVE["source"]} == LIVE["source"]
+    assert set(actual) - set(LIVE["source"]) <= {"date_order", "date_formats", "timezone"}
     assert payload["filter"]["topics"] == list(OBSERVATION_TOPICS)
     assert len(OBSERVATION_TOPICS) == 15
     assert payload["responsibility_by_topic"] == {}

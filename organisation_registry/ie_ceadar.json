@@ -17,7 +17,7 @@
       "institution_type": "國家資助產學公私協力研究中心",
       "language": "en",
       "homepage": "https://ceadar.ie/",
-      "listing_url": "https://ceadar.ie/latest-news/",
+      "listing_url": "https://ceadar.ie/latest-news/", "timezone": "Europe/Dublin", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "ceadar.ie"
       ],

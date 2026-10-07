@@ -18,7 +18,7 @@
       "institution_type": "中央部會",
       "language": "sk",
       "homepage": "https://www.mosr.sk/",
-      "listing_url": "https://www.mosr.sk/54297-sk/aktuality/",
+      "listing_url": "https://www.mosr.sk/54297-sk/aktuality/", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "www.mosr.sk",
         "mosr.sk"

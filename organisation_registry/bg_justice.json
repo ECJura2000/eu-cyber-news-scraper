@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "bg",
       "homepage": "https://justice.government.bg/home/",
-      "listing_url": "https://justice.government.bg/api/content/GetNewsSQData?count=3&blockId=5&lang=bg",
+      "listing_url": "https://justice.government.bg/api/content/GetNewsSQData?count=3&blockId=5&lang=bg", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://justice.government.bg/api/content/GetNewsSQData?count=3&blockId=5&lang=bg"
       ],

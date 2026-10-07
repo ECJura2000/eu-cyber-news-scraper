@@ -17,7 +17,7 @@
       "institution_type": "獨立監理機關／數位服務與媒體",
       "language": "en",
       "homepage": "https://www.cnam.ie/",
-      "listing_url": "https://www.cnam.ie/news-and-publications/news/",
+      "listing_url": "https://www.cnam.ie/news-and-publications/news/", "timezone": "Europe/Dublin", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "cnam.ie",
         "www.cnam.ie"

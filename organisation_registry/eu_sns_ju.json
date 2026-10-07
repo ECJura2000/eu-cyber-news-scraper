@@ -17,7 +17,7 @@
       "institution_type": "歐盟法定聯合事業／公私協力",
       "language": "en",
       "homepage": "https://smart-networks.europa.eu/",
-      "listing_url": "https://smart-networks.europa.eu/news/",
+      "listing_url": "https://smart-networks.europa.eu/news/", "timezone": "Europe/Brussels", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "smart-networks.europa.eu"
       ],

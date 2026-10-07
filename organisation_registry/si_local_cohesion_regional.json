@@ -18,7 +18,7 @@
       "institution_type": "中央部會",
       "language": "sl",
       "homepage": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-lokalno-samoupravo-kohezijo-in-regionalni-razvoj/",
-      "listing_url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=4455",
+      "listing_url": "https://www.gov.si/novice/rss/?orgID%5B0%5D=4455", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://www.gov.si/novice/rss/?orgID%5B0%5D=4455"
       ],

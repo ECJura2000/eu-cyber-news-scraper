@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "en",
       "homepage": "https://www.gov.bg/bg",
-      "listing_url": "https://www.gov.bg/en/Press-center/News",
+      "listing_url": "https://www.gov.bg/en/Press-center/News", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "www.gov.bg"

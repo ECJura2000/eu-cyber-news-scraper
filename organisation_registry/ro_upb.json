@@ -17,7 +17,7 @@
       "institution_type": "公立大學科技與資安研究機構",
       "language": "ro",
       "homepage": "https://upb.ro/",
-      "listing_url": "https://upb.ro/category/stiri/",
+      "listing_url": "https://upb.ro/category/stiri/", "timezone": "Europe/Bucharest", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "upb.ro"
       ],

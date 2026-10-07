@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "cs",
       "homepage": "https://msp.gov.cz/",
-      "listing_url": "https://msp.gov.cz/web/msp/tiskove-zpravy",
+      "listing_url": "https://msp.gov.cz/web/msp/tiskove-zpravy", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "msp.gov.cz"

@@ -17,7 +17,7 @@
       "institution_type": "政府數位政策主管機關",
       "language": "pl",
       "homepage": "https://www.gov.pl/web/cyfryzacja",
-      "listing_url": "https://www.gov.pl/web/cyfryzacja/wiadomosci?page=1",
+      "listing_url": "https://www.gov.pl/web/cyfryzacja/wiadomosci?page=1", "timezone": "Europe/Warsaw", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "www.gov.pl"
       ],

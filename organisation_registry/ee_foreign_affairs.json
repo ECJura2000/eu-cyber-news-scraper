@@ -17,7 +17,7 @@
       "institution_type": "central ministry",
       "language": "et",
       "homepage": "https://vm.ee",
-      "listing_url": "https://vm.ee/rss-feeds/rss.xml",
+      "listing_url": "https://vm.ee/rss-feeds/rss.xml", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://vm.ee/rss-feeds/rss.xml"
       ],

@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "bg",
       "homepage": "https://mh.government.bg/",
-      "listing_url": "https://mh.government.bg/bg/novini/aktualno",
+      "listing_url": "https://mh.government.bg/bg/novini/aktualno", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "mh.government.bg"

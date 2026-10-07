@@ -17,7 +17,7 @@
       "institution_type": "中央部會",
       "language": "nl",
       "homepage": "https://www.rijksoverheid.nl/ministeries/ministerie-van-financien",
-      "listing_url": "https://www.rijksoverheid.nl/ministeries/ministerie-van-financien",
+      "listing_url": "https://www.rijksoverheid.nl/ministeries/ministerie-van-financien", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "www.rijksoverheid.nl"

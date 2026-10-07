@@ -19,7 +19,7 @@
       "homepage": "https://portal.mineco.gob.es/",
       "parser_adapter": "round4_es_sharepoint",
       "institution_type": "central ministry",
-      "listing_url": "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$select=TituloSP,FechaPublicacionSP,FechaPublicacionCalculadaSP,FileRef,PublishingPageLayout,CanalesSP&$orderby=FechaPublicacionSP%20desc&$top=30",
+      "listing_url": "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$select=TituloSP,FechaPublicacionSP,FechaPublicacionCalculadaSP,FileRef,PublishingPageLayout,CanalesSP&$orderby=FechaPublicacionSP%20desc&$top=30", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$select=TituloSP,FechaPublicacionSP,FechaPublicacionCalculadaSP,FileRef,PublishingPageLayout,CanalesSP&$orderby=FechaPublicacionSP%20desc&$top=30"
       ],

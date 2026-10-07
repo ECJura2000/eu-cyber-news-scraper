@@ -6,6 +6,8 @@
 
 ## 機關 Registry
 
+v1.8.2 為全部 409 個來源補齊可替換的語言、日期格式、日期順序與時區設定；修正無時區時間的 UTC 判讀，對衝突或不完整日期保留原文而不猜測。來源名單、暫停與正式品質門檻維持不變，設定範例與舊格式相容說明如下。
+
 v1.8.1 依使用者要求，移除兩輪實際抓取仍失敗的 39 個新聞來源，現有 409 個可選來源；部會名錄共 460 個、已登錄 290 個、170 個保留為可追溯排除。原網址、設定與兩輪失敗原因見 [來源清理紀錄](SOURCE_CLEANUP.md)。名錄不是全部可搜尋的宣稱，保留來源也未全數通過正式排程升級驗收。芬蘭教育署與司法彙整入口使用獨立機關 ID，司法文章保留實際發布機關。正式未暫停排程仍為 50。不同 RSS、HTML 與公開 API 的分工、robots 例外及加入標準見 [抓取方法說明](CRAWLER_METHODS.md)。
 
 v1.7.0 依使用者指示移除 `fr_institut_montaigne`、`eu_enisa_publications`、`ie_insight` 三個新聞入口。該版來源共 145 個，其中 52 個設定排程、50 個未暫停；ENISA 新聞與認證仍保留，歐洲議會及 CEA 的暫停不變。更新後預設線上抓取與離線查詢不再使用這三個來源；既存文章與 240 筆歷史分類回歸資料不刪除，外部自訂模組仍可由使用者明確提供。完整更新內容見 [CHANGELOG.md](CHANGELOG.md)。
@@ -13,6 +15,19 @@ v1.7.0 依使用者指示移除 `fr_institut_montaigne`、`eu_enisa_publications
 新聞表使用英國新聞專案的三階黃色：高 `FFD966`、中 `FFE699`、低 `FFF2CC`。只標示標題、繁中標題、摘要、命中主題／詞與關聯分數，不把日期、來源健康或官方網址塗黃。沿用 EU 的 Boolean 關聯程度（4 分以上為高，2～3 分為中，1 分為低），BM25 仍是另列的主題排序分數；黃色不代表日期可信度或百分比。線上四個新聞工作表與離線查詢均採相同配色，規則未變重查仍可沿用結果；程式版本更新會重建查詢 Excel 快取，以套用新版格式。
 
 機關模組位於 [`organisation_registry/`](organisation_registry/)，各來源使用 schema v2 JSON（v1.7.0 的 145 個來源，再加本版部會與獨立機關擴充）。每個模組包含來源 URL 與解析設定、主題白名單、健康門檻、機關沿革、官方證據及驗證狀態；預設執行直接由這些 JSON 建立來源清單。新增或覆寫模組可放在 macOS 的 `~/Library/Application Support/EUCyberNewsScraper/organisations.d`，或使用 `EU_CYBER_ORGANISATION_DIR` 指定目錄，重啟後載入。外部模組驗證失敗會保留同 ID 的內建模組；無內建版本的新模組會略過，並讓 `.run.json` 的 `organisation_audit_status` 成為 `degraded`。
+
+每個內建來源與範例現在明列 `language`、`timezone`、`date_order`、`date_formats`。語言用於原文月份，時區使用 IANA 名稱（如 `Europe/Paris`），數字順序可指定 `DMY`／`MDY`／`YMD`；`date_formats` 使用 Python strptime 格式，例如：
+
+```json
+{
+  "language": "fr",
+  "timezone": "Europe/Paris",
+  "date_order": "DMY",
+  "date_formats": ["%Y-%m-%d", "%d/%m/%Y", "%d.%m.%Y"]
+}
+```
+
+以上欄位放在機關 JSON 的 `sources` 每筆來源中，換檔後重新執行即可生效。通用 HTML 列表、內頁與 feed 日期解析優先使用明列格式，再以原文語言及明確數字順序解析完整日期；專用官方 API 解析器保留已驗證的固定格式契約。沒有時區的日期／時間以來源時區解讀，明示 UTC／時差的時間則保留原時刻，內部統一轉 UTC，另外保存來源當地日期。相互衝突的格式不猜測；解析失敗時保留原始文字並標記低信心，不補造缺失的年／月／日，也不自動換算其他紀年。舊 JSON 未提供新欄位時仍可讀取，沿用 DMY 與原文語言解析；未明列時區則由來源國家取得。無效語言、IANA 時區或日期設定在來源載入時拒絕，既有模組錯誤與外部覆寫稽核機制維持不變。
 
 內建 `organisation_registry/*.json` 是正式設定的唯一來源；`src/eu_cyber_news_scraper/sources.toml` 是由 JSON 匯出的相容設定，仍可透過 `--config` 使用。修改內建來源時應先編輯 JSON，再匯出 TOML，不可反向從 TOML 重建機關 metadata。產生器只讀取內建模組，不納入環境變數或使用者覆寫；不帶參數與 `--check` 都只檢查，不寫檔。檢查依來源 ID 比對所有欄位與型別，不要求文字格式或排列順序相同；重複 ID、無效模組或設定不同均會失敗。
 

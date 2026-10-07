@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "es",
       "homepage": "https://www.exteriores.gob.es/",
-      "listing_url": "https://www.exteriores.gob.es/es/Comunicacion/Noticias/Paginas/index.aspx",
+      "listing_url": "https://www.exteriores.gob.es/es/Comunicacion/Noticias/Paginas/index.aspx", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "www.exteriores.gob.es"
       ],

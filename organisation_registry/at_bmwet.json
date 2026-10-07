@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "de",
       "homepage": "https://www.bmwet.gv.at",
-      "listing_url": "https://www.bmwet.gv.at/Presse/AktuellePressemeldungen.html",
+      "listing_url": "https://www.bmwet.gv.at/Presse/AktuellePressemeldungen.html", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "www.bmwet.gv.at"

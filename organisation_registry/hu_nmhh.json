@@ -7,7 +7,7 @@
     "id": "hu_nmhh", "country": "HU", "name_zh": "匈牙利國家媒體與資訊通訊管理局",
     "name": "National Media and Infocommunications Authority", "institution_type": "法定媒體與通訊監管機關",
     "language": "hu", "homepage": "https://nmhh.hu/",
-    "listing_url": "https://nmhh.hu/hirek-esemenyek",
+    "listing_url": "https://nmhh.hu/hirek-esemenyek", "timezone": "Europe/Budapest", "date_order": "YMD", "date_formats": ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"],
     "allow_domains": ["nmhh.hu"], "include_patterns": [], "exclude_patterns": [],
     "critical": false, "schedule_enabled": false, "detail_pages": 8
   }],

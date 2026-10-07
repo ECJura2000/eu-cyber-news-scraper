@@ -163,7 +163,9 @@ def test_bounded_fixture_replays_actual_live_ministry_publication():
     assert PROOF['coverage_limitations'].startswith('Bounded coverage: only page 1')
     assert source.card_selectors[0].startswith('.articleList #list .card:')
     module = load_organisation_registry().module_for_source('hu_defence')
-    assert module.payload['sources'] == [PROOF['source_config']]
+    actual = module.payload['sources'][0]
+    assert {key: actual[key] for key in PROOF['source_config']} == PROOF['source_config']
+    assert set(actual) - set(PROOF['source_config']) <= {'date_order', 'date_formats', 'timezone'}
     assert module.payload['verification']['last_smoke'] == PROOF['live_status']
     assert PROOF['http_status'] == 200 and PROOF['robots_enforced'] and PROOF['tls_verified']
 

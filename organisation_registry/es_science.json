@@ -17,7 +17,7 @@
       "institution_type": "central ministry",
       "language": "es",
       "homepage": "https://www.ciencia.gob.es/",
-      "listing_url": "https://www.ciencia.gob.es/Actualidad.html",
+      "listing_url": "https://www.ciencia.gob.es/Actualidad.html", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "www.ciencia.gob.es"
       ],

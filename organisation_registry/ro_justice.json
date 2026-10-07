@@ -18,7 +18,7 @@
       "institution_type": "中央部會",
       "language": "ro",
       "homepage": "https://www.just.ro/",
-      "listing_url": "https://www.just.ro/feed/",
+      "listing_url": "https://www.just.ro/feed/", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://www.just.ro/feed/"
       ],

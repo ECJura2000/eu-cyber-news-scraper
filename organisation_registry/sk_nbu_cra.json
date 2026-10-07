@@ -6,7 +6,7 @@
   "sources": [{
     "id": "sk_nbu_cra", "country": "SK", "name_zh": "斯洛伐克國家安全局 CRA 資訊服務", "name": "National Security Authority of the Slovak Republic – Cyber Resilience Act",
     "institution_type": "國家安全局／CRA 資安法規與認證主管服務", "language": "en",
-    "homepage": "https://cra.nbu.gov.sk/en/", "listing_url": "https://cra.nbu.gov.sk/en/guidance-and-updates/news-and-events/",
+    "homepage": "https://cra.nbu.gov.sk/en/", "listing_url": "https://cra.nbu.gov.sk/en/guidance-and-updates/news-and-events/", "timezone": "Europe/Bratislava", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
     "allow_domains": ["cra.nbu.gov.sk", "nbu.gov.sk"], "include_patterns": [], "exclude_patterns": [],
     "critical": false, "schedule_enabled": false, "detail_pages": 8
   }],

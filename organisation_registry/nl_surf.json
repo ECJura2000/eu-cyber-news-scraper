@@ -17,7 +17,7 @@
       "institution_type": "教育研究機構數位基礎設施合作社",
       "language": "en",
       "homepage": "https://www.surf.nl/en",
-      "listing_url": "https://www.surf.nl/en/news",
+      "listing_url": "https://www.surf.nl/en/news", "timezone": "Europe/Amsterdam", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "www.surf.nl"
       ],

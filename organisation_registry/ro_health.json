@@ -18,7 +18,7 @@
       "institution_type": "中央部會",
       "language": "ro",
       "homepage": "https://www.ms.ro/ro/",
-      "listing_url": "https://www.ms.ro/ro/informatii-de-interes-public/noutati/",
+      "listing_url": "https://www.ms.ro/ro/informatii-de-interes-public/noutati/", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "www.ms.ro",

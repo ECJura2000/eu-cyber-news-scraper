@@ -17,7 +17,7 @@
       "institution_type": "歐盟官方研究機構",
       "language": "en",
       "homepage": "https://joint-research-centre.ec.europa.eu/",
-      "listing_url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates_en",
+      "listing_url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates_en", "timezone": "Europe/Brussels", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "joint-research-centre.ec.europa.eu"
       ],

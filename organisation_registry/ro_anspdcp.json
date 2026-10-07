@@ -17,7 +17,7 @@
       "institution_type": "獨立資料保護監管機關",
       "language": "ro",
       "homepage": "https://www.dataprotection.ro/",
-      "listing_url": "https://www.dataprotection.ro/index.jsp?page=home&lang=ro",
+      "listing_url": "https://www.dataprotection.ro/index.jsp?page=home&lang=ro", "timezone": "Europe/Bucharest", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "www.dataprotection.ro",
         "dataprotection.ro"

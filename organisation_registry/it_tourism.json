@@ -17,7 +17,7 @@
       "institution_type": "central ministry",
       "language": "it",
       "homepage": "https://www.ministeroturismo.gov.it/",
-      "listing_url": "https://www.ministeroturismo.gov.it/feed/",
+      "listing_url": "https://www.ministeroturismo.gov.it/feed/", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://www.ministeroturismo.gov.it/feed/"
       ],

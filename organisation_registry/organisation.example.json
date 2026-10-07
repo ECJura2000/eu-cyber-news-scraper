@@ -3,7 +3,7 @@
   "module_version": "2026-09-15.2",
   "canonical_id": "example_authority",
   "names": {"zh": "範例機關", "en": "Example Authority", "short": "Example", "publisher_aliases": []},
-  "sources": [{"id": "example_authority", "country": "EU", "name_zh": "範例機關", "name": "Example Authority", "institution_type": "主管機關", "language": "en", "homepage": "https://example.eu/", "listing_url": "https://example.eu/news", "parser_adapter": ""}],
+  "sources": [{"id": "example_authority", "country": "EU", "name_zh": "範例機關", "name": "Example Authority", "institution_type": "主管機關", "language": "en", "homepage": "https://example.eu/", "listing_url": "https://example.eu/news", "timezone": "Europe/Brussels", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"], "parser_adapter": ""}],
   "filter": {"topics": ["NIS2、關鍵基礎設施保護"], "include_patterns": ["/news/"], "exclude_patterns": []},
   "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
   "history": {"effective_from": "2026-09-15", "predecessors": [], "successors": [], "transitional_sources": []},

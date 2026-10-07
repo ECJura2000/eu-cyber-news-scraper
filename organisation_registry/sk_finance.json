@@ -18,7 +18,7 @@
       "institution_type": "中央部會",
       "language": "sk",
       "homepage": "https://www.mfsr.sk/sk/",
-      "listing_url": "https://www.mfsr.sk/sk/media/tlacove-spravy/",
+      "listing_url": "https://www.mfsr.sk/sk/media/tlacove-spravy/", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "www.mfsr.sk"
       ],

@@ -18,7 +18,7 @@
       "institution_type": "聯邦競爭監理機關",
       "language": "de",
       "homepage": "https://www.bundeskartellamt.de/",
-      "listing_url": "https://www.bundeskartellamt.de/DE/Home/home_node.html",
+      "listing_url": "https://www.bundeskartellamt.de/DE/Home/home_node.html", "timezone": "Europe/Berlin", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "bundeskartellamt.de",
         "www.bundeskartellamt.de"

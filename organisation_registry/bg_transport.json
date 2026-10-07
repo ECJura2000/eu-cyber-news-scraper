@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "bg",
       "homepage": "https://www.mtc.government.bg/bg/category/1?page=0",
-      "listing_url": "https://www.mtc.government.bg/bg/taxonomy/term/1/feed",
+      "listing_url": "https://www.mtc.government.bg/bg/taxonomy/term/1/feed", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://www.mtc.government.bg/bg/taxonomy/term/1/feed"
       ],

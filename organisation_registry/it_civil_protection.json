@@ -19,7 +19,7 @@
       "homepage": "https://www.protezionecivile.gov.it/",
       "parser_adapter": "round4_it_dpc_gatsby",
       "institution_type": "central ministry",
-      "listing_url": "https://www.protezionecivile.gov.it/page-data/it/page-data.json",
+      "listing_url": "https://www.protezionecivile.gov.it/page-data/it/page-data.json", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://www.protezionecivile.gov.it/page-data/it/page-data.json"
       ],

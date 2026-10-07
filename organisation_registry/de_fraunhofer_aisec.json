@@ -22,7 +22,7 @@
       "institution_type": "公共研究機構",
       "language": "de",
       "homepage": "https://www.aisec.fraunhofer.de/",
-      "listing_url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen.html",
+      "listing_url": "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen.html", "timezone": "Europe/Berlin", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "aisec.fraunhofer.de",
         "www.aisec.fraunhofer.de"

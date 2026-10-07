@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "cs",
       "homepage": "https://mmr.gov.cz/cs/uvod",
-      "listing_url": "https://mmr.gov.cz/cs/ostatni/web/rss?rss=AllPageFefed",
+      "listing_url": "https://mmr.gov.cz/cs/ostatni/web/rss?rss=AllPageFefed", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://mmr.gov.cz/cs/ostatni/web/rss?rss=AllPageFefed"
       ],

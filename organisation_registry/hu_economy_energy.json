@@ -17,7 +17,7 @@
       "institution_type": "central ministry",
       "language": "hu",
       "homepage": "https://kormany.hu/kormanyzat/gazdasagi-es-energetikai-miniszterium",
-      "listing_url": "https://kormany.hu/kormanyzat/gazdasagi-es-energetikai-miniszterium",
+      "listing_url": "https://kormany.hu/kormanyzat/gazdasagi-es-energetikai-miniszterium", "date_order": "YMD", "date_formats": ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"],
       "allow_domains": [
         "kormany.hu"
       ],

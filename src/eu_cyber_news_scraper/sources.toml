@@ -7,6 +7,8 @@
 "card_selectors" = ["a.card-link"]
 "country" = "AT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["small.card-date"]
 "detail_pages" = 0
 "homepage" = "https://www.bundeskanzleramt.gv.at/"
@@ -26,6 +28,8 @@
 "card_selectors" = ["a.card-link"]
 "country" = "AT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -44,6 +48,8 @@
 "card_selectors" = ["a.card-link"]
 "country" = "AT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -62,6 +68,8 @@
 "card_selectors" = ["a.card-link"]
 "country" = "AT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -79,6 +87,8 @@
 "allow_domains" = ["www.bmi.gv.at"]
 "country" = "AT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = ["https://www.bmi.gv.at/rss/bmi_presse.xml"]
 "homepage" = "https://www.bmi.gv.at/"
@@ -96,6 +106,8 @@
 "card_selectors" = ["a.card-link"]
 "country" = "AT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -114,6 +126,8 @@
 "card_selectors" = ["a.card-link"]
 "country" = "AT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -132,6 +146,8 @@
 "card_selectors" = ["a.card-link"]
 "country" = "AT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -150,6 +166,8 @@
 "card_selectors" = ["a.card-link"]
 "country" = "AT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -168,6 +186,8 @@
 "card_selectors" = ["a.card-link"]
 "country" = "AT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -185,6 +205,8 @@
 "allow_domains" = ["www.cert.at", "cert.at"]
 "country" = "AT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "exclude_patterns" = []
 "feed_urls" = ["https://www.cert.at/cert-at.de.warnings.rss_2.0.xml", "https://www.cert.at/cert-at.de.blog.rss_2.0.xml"]
@@ -196,12 +218,15 @@
 "name" = "CERT.at"
 "name_zh" = "奧地利國家 CERT"
 "schedule_enabled" = false
+"timezone" = "Europe/Vienna"
 
 [[sources]]
 "id" = "at_dsb"
 "allow_domains" = ["dsb.gv.at"]
 "country" = "AT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "exclude_patterns" = []
 "homepage" = "https://dsb.gv.at/"
@@ -212,12 +237,15 @@
 "name" = "Datenschutzbehörde"
 "name_zh" = "奧地利資料保護局"
 "schedule_enabled" = false
+"timezone" = "Europe/Vienna"
 
 [[sources]]
 "id" = "at_rtr"
 "allow_domains" = ["www.rtr.at", "rtr.at"]
 "country" = "AT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "exclude_patterns" = []
 "homepage" = "https://www.rtr.at/rtr/wer_wir_sind/Organisation/Organisation.en.html"
@@ -228,6 +256,7 @@
 "name" = "Austrian Regulatory Authority for Broadcasting and Telecommunications"
 "name_zh" = "奧地利廣播與電信監管機關"
 "schedule_enabled" = false
+"timezone" = "Europe/Vienna"
 
 [[sources]]
 "id" = "at_sozialministerium"
@@ -235,6 +264,8 @@
 "card_selectors" = ["a.card-link"]
 "country" = "AT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -253,6 +284,8 @@
 "card_selectors" = ["div.media"]
 "country" = "BE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".media-img .text"]
 "detail_pages" = 8
 "exclude_patterns" = []
@@ -265,6 +298,7 @@
 "name" = "Autorité de protection des données / Gegevensbeschermingsautoriteit"
 "name_zh" = "比利時資料保護局"
 "schedule_enabled" = false
+"timezone" = "Europe/Brussels"
 "title_selectors" = ["h3.media-title"]
 
 [[sources]]
@@ -272,6 +306,8 @@
 "allow_domains" = ["www.bipt.be", "bipt.be"]
 "country" = "BE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "exclude_patterns" = []
 "homepage" = "https://www.bipt.be/"
@@ -282,6 +318,7 @@
 "name" = "Belgian Institute for Postal Services and Telecommunications"
 "name_zh" = "比利時郵政與電信研究所"
 "schedule_enabled" = false
+"timezone" = "Europe/Brussels"
 
 [[sources]]
 "id" = "be_bosa"
@@ -289,6 +326,8 @@
 "card_selectors" = ["article.node--promoted"]
 "country" = "BE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -306,6 +345,8 @@
 "allow_domains" = ["www.mil.be"]
 "country" = "BE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = ["https://www.mil.be/nl/news/rss"]
 "homepage" = "https://www.mil.be/nl/news/rss"
@@ -323,6 +364,8 @@
 "card_selectors" = ["li.media"]
 "country" = "BE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -342,6 +385,8 @@
 "card_selectors" = ["article"]
 "country" = "BE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -362,6 +407,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -402,6 +449,8 @@
 "card_selectors" = ["article"]
 "country" = "BE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -422,6 +471,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -462,6 +513,8 @@
 "card_selectors" = ["article"]
 "country" = "BE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -479,6 +532,8 @@
 "allow_domains" = ["www.belspo.be"]
 "country" = "BE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://www.belspo.be"
@@ -498,6 +553,8 @@
 "card_selectors" = ["article"]
 "country" = "BE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -516,6 +573,8 @@
 "card_selectors" = ["div.node__content"]
 "country" = "BE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -534,6 +593,8 @@
 "card_selectors" = ["li.news"]
 "country" = "BG"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -551,6 +612,8 @@
 "allow_domains" = ["mc.government.bg"]
 "country" = "BG"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = ["https://mc.government.bg/%D0%B2%D0%B8%D0%B4-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B0/%d0%bd%d0%be%d0%b2%d0%b8%d0%bd%d0%b8/feed/"]
 "homepage" = "https://mc.government.bg/"
@@ -567,6 +630,8 @@
 "allow_domains" = ["www.mod.bg"]
 "country" = "BG"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = []
@@ -586,6 +651,8 @@
 "card_selectors" = ["a.card-link"]
 "country" = "BG"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -604,6 +671,8 @@
 "card_selectors" = ["article"]
 "country" = "BG"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -622,6 +691,8 @@
 "card_selectors" = ["ul.news-list-internal > li"]
 "country" = "BG"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["span.date"]
 "detail_pages" = 0
@@ -641,6 +712,8 @@
 "allow_domains" = ["www.mfa.bg"]
 "country" = "BG"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = ["https://www.mfa.bg/bg/rss"]
 "homepage" = "https://www.mfa.bg/bg"
@@ -658,6 +731,8 @@
 "card_selectors" = ["div.col-lg-7"]
 "country" = "BG"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -676,6 +751,8 @@
 "card_selectors" = ["article"]
 "country" = "BG"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -695,6 +772,8 @@
 "card_selectors" = ["a.card--news"]
 "country" = "BG"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".card-meta"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -713,6 +792,8 @@
 "allow_domains" = ["justice.government.bg"]
 "country" = "BG"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://justice.government.bg/api/content/GetNewsSQData?count=3&blockId=5&lang=bg"]
@@ -731,6 +812,8 @@
 "allow_domains" = ["www.mlsp.government.bg"]
 "country" = "BG"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = []
@@ -750,6 +833,8 @@
 "card_selectors" = ["div.node"]
 "country" = "BG"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -767,6 +852,8 @@
 "allow_domains" = ["www.mtc.government.bg"]
 "country" = "BG"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = ["https://www.mtc.government.bg/bg/taxonomy/term/1/feed"]
 "homepage" = "https://www.mtc.government.bg/bg/category/1?page=0"
@@ -786,6 +873,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -825,6 +914,8 @@
 "allow_domains" = ["cert.hr", "www.cert.hr"]
 "country" = "HR"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "exclude_patterns" = []
 "homepage" = "https://www.cert.hr/en/home-page/"
@@ -835,12 +926,15 @@
 "name" = "National CERT (CERT.hr)"
 "name_zh" = "克羅埃西亞國家 CERT"
 "schedule_enabled" = false
+"timezone" = "Europe/Zagreb"
 
 [[sources]]
 "id" = "cy_dsa"
 "allow_domains" = ["dsa.cy", "www.dsa.cy"]
 "country" = "CY"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "exclude_patterns" = []
 "homepage" = "https://dsa.cy/EN"
@@ -851,12 +945,15 @@
 "name" = "Digital Security Authority"
 "name_zh" = "塞浦路斯數位安全局"
 "schedule_enabled" = false
+"timezone" = "Asia/Nicosia"
 
 [[sources]]
 "id" = "cy_education"
 "allow_domains" = ["enimerosi.moec.gov.cy"]
 "country" = "CY"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://www.moec.gov.cy/"
@@ -875,6 +972,8 @@
 "card_selectors" = ["a.malaNovinka"]
 "country" = "CZ"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".novinkaDatum"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -894,6 +993,8 @@
 "card_selectors" = ["div.news-list__item__text"]
 "country" = "CZ"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -912,6 +1013,8 @@
 "card_selectors" = ["a.group[href^=\"/aktuality/\"]"]
 "country" = "CZ"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["div.items-center.text-neutral-700 span"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -930,6 +1033,8 @@
 "allow_domains" = ["mzp.gov.cz"]
 "country" = "CZ"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = ["https://mzp.gov.cz/rss.xml"]
 "homepage" = "https://mzp.gov.cz/cz"
@@ -947,6 +1052,8 @@
 "card_selectors" = ["article.b-article.link-mask.u-mb-sm"]
 "country" = "CZ"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".b-article__date"]
 "detail_pages" = 0
 "homepage" = "https://mf.gov.cz/"
@@ -967,6 +1074,8 @@
 "card_selectors" = ["div.article_content"]
 "country" = "CZ"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["p.articleDate"]
 "detail_pages" = 0
 "homepage" = "https://mzv.gov.cz/jnp/cz/index.html"
@@ -987,6 +1096,8 @@
 "card_selectors" = [".post"]
 "country" = "CZ"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -1004,6 +1115,8 @@
 "allow_domains" = ["mzd.gov.cz"]
 "country" = "CZ"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = ["https://mzd.gov.cz/feed/"]
 "homepage" = "https://mzd.gov.cz/"
@@ -1020,6 +1133,8 @@
 "allow_domains" = ["mv.gov.cz"]
 "country" = "CZ"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://mv.gov.cz/"
@@ -1038,6 +1153,8 @@
 "card_selectors" = [".asset-abstract"]
 "country" = "CZ"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".asset-header-date"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -1058,6 +1175,8 @@
 "card_selectors" = [".card__basic"]
 "country" = "CZ"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".card__basic-date"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -1077,6 +1196,8 @@
 "allow_domains" = ["nukib.gov.cz"]
 "country" = "CZ"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 12
 "exclude_patterns" = []
 "homepage" = "https://nukib.gov.cz/en/"
@@ -1087,12 +1208,15 @@
 "name" = "National Cyber and Information Security Agency (NÚKIB)"
 "name_zh" = "捷克國家網路與資訊安全局"
 "schedule_enabled" = false
+"timezone" = "Europe/Prague"
 
 [[sources]]
 "id" = "cz_regional_development"
 "allow_domains" = ["mmr.gov.cz"]
 "country" = "CZ"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = ["https://mmr.gov.cz/cs/ostatni/web/rss?rss=AllPageFefed"]
 "homepage" = "https://mmr.gov.cz/cs/uvod"
@@ -1109,6 +1233,8 @@
 "allow_domains" = ["md.gov.cz"]
 "country" = "CZ"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://md.gov.cz/"
@@ -1126,6 +1252,8 @@
 "card_selectors" = ["div.c-teaser--timeline"]
 "country" = "DE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -1143,6 +1271,8 @@
 "allow_domains" = ["athene-center.de", "www.athene-center.de"]
 "card_selectors" = [".news-list"]
 "country" = "DE"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".news-list__date"]
 "detail_pages" = 10
 "exclude_patterns" = ["^/aktuelles/news/?$"]
@@ -1155,6 +1285,7 @@
 "name" = "National Research Center for Applied Cybersecurity ATHENE"
 "name_zh" = "德國 ATHENE 國家應用資安研究中心"
 "summary_selectors" = ["p"]
+"timezone" = "Europe/Berlin"
 "title_selectors" = [".news-list__title"]
 
 [[sources]]
@@ -1162,6 +1293,8 @@
 "allow_domains" = ["bbk.bund.de", "www.bbk.bund.de"]
 "card_selectors" = [".c-news-grid__element"]
 "country" = "DE"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time[datetime]"]
 "detail_pages" = 12
 "exclude_patterns" = ["unsere-meldungen_node\\.html$"]
@@ -1174,6 +1307,7 @@
 "name" = "Bundesamt für Bevölkerungsschutz und Katastrophenhilfe"
 "name_zh" = "德國聯邦民防暨災害救助署"
 "summary_selectors" = [".c-news-grid__text > p:not(.c-news-grid__topline)"]
+"timezone" = "Europe/Berlin"
 "title_selectors" = [".c-news-grid__headline"]
 
 [[sources]]
@@ -1181,6 +1315,8 @@
 "allow_domains" = ["bfdi.bund.de", "www.bfdi.bund.de"]
 "card_selectors" = ["table.textualData tbody tr"]
 "country" = "DE"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["td:first-child"]
 "detail_pages" = 0
@@ -1193,12 +1329,15 @@
 "listing_url" = "https://www.bfdi.bund.de/DE/BfDI/Presse/Pressemitteilungen/pressemitteilungen_node.html"
 "name" = "Bundesbeauftragte für den Datenschutz und die Informationsfreiheit"
 "name_zh" = "德國聯邦資料保護與資訊自由專員"
+"timezone" = "Europe/Berlin"
 
 [[sources]]
 "id" = "de_bmas"
 "allow_domains" = ["www.bmas.de"]
 "country" = "DE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = ["https://www.bmas.de/SiteGlobals/Functions/RSSFeed/DE/RSSNewsfeed/RSSNewsfeed.xml"]
 "homepage" = "https://www.bmas.de/DE/Startseite/start.html"
@@ -1216,6 +1355,8 @@
 "card_selectors" = [".teaser"]
 "country" = "DE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -1234,6 +1375,8 @@
 "card_selectors" = [".results-entry"]
 "country" = "DE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".date"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -1256,6 +1399,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -1296,6 +1441,8 @@
 "card_selectors" = ["div.c-teaser__text-wrapper.c-teaser__News"]
 "country" = "DE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".c-topline__element:last-child"]
 "detail_pages" = 0
 "homepage" = "https://www.bmftr.bund.de/DE/Home/home_node.html"
@@ -1315,6 +1462,8 @@
 "card_selectors" = ["div.c-teaser--no-image"]
 "country" = "DE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -1331,6 +1480,8 @@
 "id" = "de_bmi"
 "allow_domains" = ["bmi.bund.de", "www.bmi.bund.de"]
 "country" = "DE"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".c-content-teaser__small"]
 "detail_pages" = 10
 "exclude_patterns" = ["/pressemitteilungen\\.html$"]
@@ -1343,6 +1494,7 @@
 "listing_url" = "https://www.bmi.bund.de/DE/presse/presse-node.html"
 "name" = "Bundesministerium des Innern"
 "name_zh" = "德國聯邦內政部"
+"timezone" = "Europe/Berlin"
 
 [[sources]]
 "id" = "de_bmjv"
@@ -1350,6 +1502,8 @@
 "card_selectors" = ["div.c-teaser__text-wrapper"]
 "country" = "DE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".c-teaser__date", "time"]
 "detail_pages" = 0
 "homepage" = "https://www.bmjv.de/DE/Startseite/Startseite_node.html"
@@ -1369,6 +1523,8 @@
 "card_selectors" = ["div.c-teaser.c-teaser--PressRelease"]
 "country" = "DE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time"]
 "detail_pages" = 0
 "homepage" = "https://www.bmleh.de/DE/Home/home_node.html"
@@ -1388,6 +1544,8 @@
 "allow_domains" = ["www.bundesumweltministerium.de"]
 "country" = "DE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = ["https://www.bundesumweltministerium.de/umwelt.rss"]
 "homepage" = "https://www.bundesumweltministerium.de/"
@@ -1405,6 +1563,8 @@
 "card_selectors" = ["article.Teaser:has(time)"]
 "country" = "DE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -1423,6 +1583,8 @@
 "allow_domains" = ["www.bmwsb.bund.de"]
 "country" = "DE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = ["https://www.bmwsb.bund.de/DE/tools-services/rssfeed/_functions/rssnewsfeed.xml"]
 "homepage" = "https://www.bmwsb.bund.de/DE/home/home_node.html"
@@ -1439,6 +1601,8 @@
 "allow_domains" = ["www.bmz.de"]
 "country" = "DE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = ["https://www.bmz.de/de/feed.rss"]
 "homepage" = "https://www.bmz.de/de"
@@ -1455,6 +1619,8 @@
 "allow_domains" = ["bundesnetzagentur.de", "www.bundesnetzagentur.de"]
 "card_selectors" = ["table.textualData tbody tr"]
 "country" = "DE"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["td:first-child"]
 "detail_pages" = 10
@@ -1467,6 +1633,7 @@
 "listing_url" = "https://www.bundesnetzagentur.de/DE/Allgemeines/Presse/Pressemitteilungen/start.html"
 "name" = "Bundesnetzagentur"
 "name_zh" = "德國聯邦網路管理局"
+"timezone" = "Europe/Berlin"
 
 [[sources]]
 "id" = "de_bsi_news"
@@ -1474,6 +1641,8 @@
 "card_selectors" = ["table.textualData tbody tr"]
 "country" = "DE"
 "critical" = true
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["td:first-child"]
 "detail_pages" = 16
 "exclude_patterns" = ["alle-meldungen-news_node\\.html$"]
@@ -1485,12 +1654,15 @@
 "listing_url" = "https://www.bsi.bund.de/DE/Service-Navi/Presse/Alle-Meldungen-News/alle-meldungen-news_node.html"
 "name" = "Bundesamt für Sicherheit in der Informationstechnik"
 "name_zh" = "德國聯邦資訊安全局（所有消息）"
+"timezone" = "Europe/Berlin"
 
 [[sources]]
 "id" = "de_bundeskartellamt"
 "allow_domains" = ["bundeskartellamt.de", "www.bundeskartellamt.de"]
 "card_selectors" = ["div.c-teaser"]
 "country" = "DE"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = [".c-topline__item:last-child"]
 "detail_pages" = 12
@@ -1503,6 +1675,7 @@
 "minimum_budget_seconds" = 600
 "name" = "Bundeskartellamt"
 "name_zh" = "德國聯邦卡特爾局"
+"timezone" = "Europe/Berlin"
 "title_selectors" = [".c-teaser__headline"]
 
 [[sources]]
@@ -1510,6 +1683,8 @@
 "allow_domains" = ["cispa.de"]
 "card_selectors" = [".news-card a.news[href]"]
 "country" = "DE"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = [".label"]
 "detail_pages" = 10
@@ -1522,12 +1697,15 @@
 "name" = "CISPA Helmholtz Center for Information Security"
 "name_zh" = "德國 CISPA 亥姆霍茲資訊安全中心"
 "summary_selectors" = ["p"]
+"timezone" = "Europe/Berlin"
 "title_selectors" = ["h3.news-title"]
 
 [[sources]]
 "id" = "de_dpma"
 "allow_domains" = ["dpma.de", "www.dpma.de"]
 "country" = "DE"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 12
 "exclude_patterns" = ["^/service/presse/pressemitteilungen/(?:archiv/)?index\\.html$"]
 "homepage" = "https://www.dpma.de/"
@@ -1538,6 +1716,7 @@
 "name" = "Deutsches Patent- und Markenamt"
 "name_zh" = "德國專利商標局"
 "parser_adapter" = "dpma_press_release"
+"timezone" = "Europe/Berlin"
 
 [[sources]]
 "id" = "de_fraunhofer_aisec"
@@ -1547,6 +1726,8 @@
 "critical" = false
 "date_evidence_url" = "https://www.aisec.fraunhofer.de/de/presse-und-veranstaltungen/pressemitteilungen.html"
 "date_exception_reason" = "The listing contains event and release cards with inconsistent date markup."
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "best_effort"
 "date_review_due" = "2027-01-31"
 "date_reviewed_on" = "2026-07-18"
@@ -1563,6 +1744,7 @@
 "name_zh" = "德國弗勞恩霍夫應用暨整合安全研究所"
 "observation_runs" = 3
 "summary_selectors" = [".copytext"]
+"timezone" = "Europe/Berlin"
 "title_selectors" = ["h3"]
 
 [[sources]]
@@ -1570,6 +1752,8 @@
 "allow_domains" = ["interface-eu.org", "www.interface-eu.org"]
 "card_selectors" = ["main a[href^='/publications/']"]
 "country" = "DE"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["div.space-y-1 > p:last-child"]
 "detail_pages" = 12
@@ -1581,6 +1765,7 @@
 "listing_url" = "https://www.interface-eu.org/publications"
 "name" = "interface - Tech analysis and policy ideas for Europe"
 "name_zh" = "德國 Interface 科技政策智庫"
+"timezone" = "Europe/Berlin"
 "title_selectors" = ["h2"]
 
 [[sources]]
@@ -1590,6 +1775,8 @@
 "country" = "DE"
 "date_evidence_url" = "https://www.swp-berlin.org/themen/dossiers/cybersicherheit-und-digitalpolitik-die-rolle-des-digitalen-in-der-internationalen-politik"
 "date_exception_reason" = "The dossier page aggregates publications with inconsistent date presentation."
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "best_effort"
 "date_review_due" = "2027-01-31"
 "date_reviewed_on" = "2026-07-18"
@@ -1605,6 +1792,7 @@
 "name" = "Stiftung Wissenschaft und Politik"
 "name_zh" = "德國國際暨安全事務研究所"
 "summary_selectors" = ["h3 + p"]
+"timezone" = "Europe/Berlin"
 "title_selectors" = ["h3"]
 
 [[sources]]
@@ -1612,6 +1800,8 @@
 "allow_domains" = ["em.dk", "www.em.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "homepage" = "https://www.em.dk/"
 "institution_type" = "ministry"
@@ -1628,6 +1818,8 @@
 "allow_domains" = ["kefm.dk", "www.kefm.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "homepage" = "https://www.kefm.dk/"
 "institution_type" = "ministry"
@@ -1645,6 +1837,8 @@
 "card_selectors" = ["tr"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["td.tdright"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -1663,6 +1857,8 @@
 "allow_domains" = ["www.datatilsynet.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "feed_urls" = ["https://www.datatilsynet.dk/gbapi/rss/feed?id=N2Y3M2VkM2EtODEzYi00MDZlLWJkNzEtY2I4ZWQ0YmJmYTVmfDIwY2VlNWY4LTQ5MGMtNDdiYy05NjIxLTZmNjAwZGQwNzhhOA%3D%3D"]
 "homepage" = "https://www.datatilsynet.dk/"
@@ -1672,6 +1868,7 @@
 "name" = "Datatilsynet"
 "name_zh" = "丹麥資料保護局"
 "schedule_enabled" = false
+"timezone" = "Europe/Copenhagen"
 
 [[sources]]
 "id" = "dk_defence"
@@ -1679,6 +1876,8 @@
 "card_selectors" = ["div.item.itemFeed"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]", "[class*=published i]"]
 "detail_pages" = 0
 "homepage" = "https://www.fmn.dk/da/"
@@ -1697,6 +1896,8 @@
 "allow_domains" = ["digst.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://digst.dk/"
 "institution_type" = "政府數位政策及服務機關"
@@ -1705,12 +1906,15 @@
 "name" = "Digitaliseringsstyrelsen"
 "name_zh" = "丹麥數位政府署"
 "schedule_enabled" = false
+"timezone" = "Europe/Copenhagen"
 
 [[sources]]
 "id" = "dk_dtu"
 "allow_domains" = ["www.dtu.dk", "dtu.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.dtu.dk/english"
 "institution_type" = "政府資助的自治技術大學"
@@ -1719,12 +1923,15 @@
 "name" = "Technical University of Denmark"
 "name_zh" = "丹麥技術大學"
 "schedule_enabled" = false
+"timezone" = "Europe/Copenhagen"
 
 [[sources]]
 "id" = "dk_economy"
 "allow_domains" = ["oem.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://oem.dk/"
@@ -1741,6 +1948,8 @@
 "allow_domains" = ["uvm.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = ["https://uvm.dk/umbraco/api/DynamicRss/GetRss/?pageId=31390&moduleId=8d3d6977-899a-458e-99ef-b7c091047870"]
 "homepage" = "https://uvm.dk/"
@@ -1757,6 +1966,8 @@
 "allow_domains" = ["bm.dk", "www.bm.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "homepage" = "https://www.bm.dk/"
 "institution_type" = "ministry"
@@ -1773,6 +1984,8 @@
 "allow_domains" = ["fm.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://fm.dk/"
@@ -1789,6 +2002,8 @@
 "allow_domains" = ["um.dk", "via.ritzau.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://um.dk/"
@@ -1806,6 +2021,8 @@
 "allow_domains" = ["www.ism.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = ["https://www.ism.dk/handlers/DynamicRss.ashx?id=3276f6e0-8386-41d5-b08a-642563d6a4c9"]
 "homepage" = "https://www.ism.dk/"
@@ -1822,6 +2039,8 @@
 "allow_domains" = ["uim.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://uim.dk/"
@@ -1839,6 +2058,8 @@
 "card_selectors" = ["article"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -1856,6 +2077,8 @@
 "allow_domains" = ["mgtp.dk", "www.mgtp.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "homepage" = "https://mgtp.dk/"
 "institution_type" = "ministry"
@@ -1872,6 +2095,8 @@
 "allow_domains" = ["ufm.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://ufm.dk/"
@@ -1888,6 +2113,8 @@
 "allow_domains" = ["mssb.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://mssb.dk/"
@@ -1905,6 +2132,8 @@
 "allow_domains" = ["samsik.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://samsik.dk/"
 "institution_type" = "政府社會安全、資安與危機協調機關"
@@ -1913,12 +2142,15 @@
 "name" = "Styrelsen for Samfundssikkerhed"
 "name_zh" = "丹麥社會安全署"
 "schedule_enabled" = false
+"timezone" = "Europe/Copenhagen"
 
 [[sources]]
 "id" = "dk_social"
 "allow_domains" = ["www.sm.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = ["https://www.sm.dk/handlers/DynamicRss.ashx?id=d66aadb0-8d96-4027-9a8f-7a3176ad49f9"]
 "homepage" = "https://www.sm.dk/"
@@ -1935,6 +2167,8 @@
 "allow_domains" = ["stm.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "homepage" = "https://stm.dk/"
 "include_patterns" = ["/presse/(pressemeddelelser|nyheder)/20\\d\\d/"]
@@ -1951,6 +2185,8 @@
 "allow_domains" = ["svmn.dk", "www.svmn.dk"]
 "country" = "DK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "homepage" = "https://svmn.dk/"
 "institution_type" = "ministry"
@@ -1967,6 +2203,8 @@
 "allow_domains" = ["kliimaministeerium.ee"]
 "country" = "EE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://kliimaministeerium.ee/rss-feeds/rss.xml"]
@@ -1984,6 +2222,8 @@
 "allow_domains" = ["www.kul.ee", "kul.ee"]
 "country" = "EE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.kul.ee/rss-feeds/rss.xml"]
@@ -2001,6 +2241,8 @@
 "allow_domains" = ["www.kaitseministeerium.ee", "kaitseministeerium.ee"]
 "country" = "EE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.kaitseministeerium.ee/rss-feeds/rss.xml"]
@@ -2018,6 +2260,8 @@
 "allow_domains" = ["www.mkm.ee", "mkm.ee"]
 "country" = "EE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.mkm.ee/rss-feeds/rss.xml"]
@@ -2035,6 +2279,8 @@
 "allow_domains" = ["www.hm.ee", "hm.ee"]
 "country" = "EE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.hm.ee/rss-feeds/rss.xml"]
@@ -2052,6 +2298,8 @@
 "allow_domains" = ["fin.ee"]
 "country" = "EE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://fin.ee/rss-feeds/rss.xml"]
@@ -2069,6 +2317,8 @@
 "allow_domains" = ["vm.ee"]
 "country" = "EE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://vm.ee/rss-feeds/rss.xml"]
@@ -2086,6 +2336,8 @@
 "allow_domains" = ["www.riigikantselei.ee", "riigikantselei.ee"]
 "country" = "EE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.riigikantselei.ee/rss-feeds/rss.xml"]
@@ -2103,6 +2355,8 @@
 "allow_domains" = ["www.siseministeerium.ee", "siseministeerium.ee"]
 "country" = "EE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.siseministeerium.ee/rss-feeds/rss.xml"]
@@ -2120,6 +2374,8 @@
 "allow_domains" = ["www.justdigi.ee"]
 "country" = "EE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.justdigi.ee/rss-feeds/rss.xml"]
@@ -2137,6 +2393,8 @@
 "allow_domains" = ["www.agri.ee", "agri.ee"]
 "country" = "EE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.agri.ee/rss-feeds/rss.xml"]
@@ -2154,6 +2412,8 @@
 "allow_domains" = ["www.sm.ee", "sm.ee"]
 "country" = "EE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.sm.ee/rss-feeds/rss.xml"]
@@ -2171,6 +2431,8 @@
 "allow_domains" = ["www.aepd.es"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.aepd.es/"
 "institution_type" = "獨立資料保護監管機關"
@@ -2179,12 +2441,15 @@
 "name" = "Agencia Española de Protección de Datos"
 "name_zh" = "西班牙資料保護局"
 "schedule_enabled" = false
+"timezone" = "Europe/Madrid"
 
 [[sources]]
 "id" = "es_aesia"
 "allow_domains" = ["aesia.digital.gob.es"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://aesia.digital.gob.es/es"
 "institution_type" = "國家人工智慧監督機構"
@@ -2193,12 +2458,15 @@
 "name" = "Agencia Española de Supervisión de Inteligencia Artificial"
 "name_zh" = "西班牙人工智慧監督局"
 "schedule_enabled" = false
+"timezone" = "Europe/Madrid"
 
 [[sources]]
 "id" = "es_agriculture"
 "allow_domains" = ["www.mapa.gob.es"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.mapa.gob.es/es/prensa/noticiasrss"]
@@ -2216,6 +2484,8 @@
 "allow_domains" = ["www.cnmc.es"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "feed_urls" = ["https://www.cnmc.es/feed/prensa/noticias"]
 "homepage" = "https://www.cnmc.es/"
@@ -2225,6 +2495,7 @@
 "name" = "Comisión Nacional de los Mercados y la Competencia"
 "name_zh" = "西班牙國家市場及競爭委員會"
 "schedule_enabled" = false
+"timezone" = "Europe/Madrid"
 
 [[sources]]
 "id" = "es_culture"
@@ -2232,6 +2503,8 @@
 "card_selectors" = ["div.enlace"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]", "[class*=fecha i]"]
 "detail_pages" = 0
@@ -2251,6 +2524,8 @@
 "card_selectors" = ["li.listados1.list-group-item.noticias"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]", "[class*=fecha i]"]
 "detail_pages" = 0
@@ -2269,6 +2544,8 @@
 "allow_domains" = ["digital.gob.es"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "homepage" = "https://digital.gob.es/"
@@ -2286,6 +2563,8 @@
 "allow_domains" = ["www.miteco.gob.es"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.miteco.gob.es/es/prensa/ultimas-noticias.newsfeed.rss.xml"]
@@ -2303,6 +2582,8 @@
 "allow_domains" = ["portal.mineco.gob.es"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://portal.mineco.gob.es/es-es/comunicacion/_api/web/lists(guid'de1040a8-90d1-4f24-9455-423894813206')/items?$select=TituloSP,FechaPublicacionSP,FechaPublicacionCalculadaSP,FileRef,PublishingPageLayout,CanalesSP&$orderby=FechaPublicacionSP%20desc&$top=30"]
@@ -2322,6 +2603,8 @@
 "card_selectors" = ["div.enlace"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]", "[class*=fecha i]"]
 "detail_pages" = 0
@@ -2340,6 +2623,8 @@
 "allow_domains" = ["www.igualdad.gob.es"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.igualdad.gob.es/feed/"]
@@ -2358,6 +2643,8 @@
 "card_selectors" = ["div.Noticia"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]", "[class*=fecha i]"]
 "detail_pages" = 0
@@ -2377,6 +2664,8 @@
 "card_selectors" = ["div.cardType1__top"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["[class*=date i]", "[class*=fecha i]"]
 "detail_pages" = 0
@@ -2396,6 +2685,8 @@
 "allow_domains" = ["www.sanidad.gob.es"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.sanidad.gob.es/gabinete/notap_rss.do"]
@@ -2414,6 +2705,8 @@
 "card_selectors" = ["div.detalle_noticia"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]", "[class*=fecha i]"]
 "detail_pages" = 0
@@ -2432,6 +2725,8 @@
 "allow_domains" = ["www.incibe.es"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "feed_urls" = ["https://www.incibe.es/incibe/sala-de-prensa/feed"]
 "homepage" = "https://www.incibe.es/"
@@ -2441,6 +2736,7 @@
 "name" = "Instituto Nacional de Ciberseguridad de España"
 "name_zh" = "西班牙國家網路安全研究所"
 "schedule_enabled" = false
+"timezone" = "Europe/Madrid"
 
 [[sources]]
 "id" = "es_industry_tourism"
@@ -2450,6 +2746,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -2490,6 +2788,8 @@
 "card_selectors" = ["a:has(div.news.noticia)"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = [".date"]
 "detail_pages" = 0
@@ -2509,6 +2809,8 @@
 "card_selectors" = ["div.slide__description"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]", "[class*=fecha i]"]
 "detail_pages" = 0
@@ -2527,6 +2829,8 @@
 "allow_domains" = ["mptmd.gob.es"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "homepage" = "https://mpt.gob.es/"
@@ -2544,6 +2848,8 @@
 "allow_domains" = ["www.transportes.gob.es"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "homepage" = "https://www.mitma.gob.es/"
@@ -2561,6 +2867,8 @@
 "allow_domains" = ["www.juventudeinfancia.gob.es"]
 "country" = "ES"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "homepage" = "https://www.juventudeinfancia.gob.es/"
@@ -2577,6 +2885,8 @@
 "id" = "eu_cert_advisories"
 "allow_domains" = ["cert.europa.eu"]
 "country" = "EU"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "exclude_patterns" = ["/markdown$", "/json$", "/pdf$"]
 "homepage" = "https://cert.europa.eu/"
@@ -2586,6 +2896,7 @@
 "listing_url" = "https://cert.europa.eu/publications/security-advisories/"
 "name" = "CERT-EU Security Advisories"
 "name_zh" = "歐盟機構電腦緊急應變小組（安全公告）"
+"timezone" = "Europe/Brussels"
 
 [[sources]]
 "id" = "eu_cert_threat"
@@ -2593,6 +2904,8 @@
 "country" = "EU"
 "date_evidence_url" = "https://cert.europa.eu/publications/threat-intelligence/"
 "date_exception_reason" = "Threat reports do not expose a consistent machine-readable publication date on every listing card."
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "best_effort"
 "date_review_due" = "2027-01-31"
 "date_reviewed_on" = "2026-07-18"
@@ -2605,12 +2918,15 @@
 "listing_url" = "https://cert.europa.eu/publications/threat-intelligence/"
 "name" = "CERT-EU Threat Intelligence"
 "name_zh" = "歐盟機構電腦緊急應變小組（威脅情資）"
+"timezone" = "Europe/Brussels"
 
 [[sources]]
 "id" = "eu_chips_ju"
 "allow_domains" = ["chips-ju.europa.eu", "www.chips-ju.europa.eu"]
 "card_selectors" = ["div.col-lg-4.col-md-6.mb10"]
 "country" = "EU"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = [".mb-1 .d-inline", ".de-bloglist-type-1 .blog-item-row:nth-child(1) div"]
 "detail_pages" = 12
@@ -2622,6 +2938,7 @@
 "listing_url" = "https://www.chips-ju.europa.eu/News/"
 "name" = "Chips Joint Undertaking"
 "name_zh" = "歐洲晶片聯合事業"
+"timezone" = "Europe/Brussels"
 "title_selectors" = ["h4"]
 
 [[sources]]
@@ -2630,6 +2947,8 @@
 "card_selectors" = [".ecl-content-item--divider"]
 "country" = "EU"
 "critical" = true
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".ecl-content-block__primary-meta-item:last-child"]
 "detail_pages" = 18
 "exclude_patterns" = ["^/en/news/?$"]
@@ -2642,12 +2961,15 @@
 "name" = "European Commission DG CONNECT - Shaping Europe's Digital Future"
 "name_zh" = "歐盟執委會通訊網路、內容與技術總署"
 "summary_selectors" = [".ecl-content-block__description"]
+"timezone" = "Europe/Brussels"
 "title_selectors" = [".ecl-content-block__title"]
 
 [[sources]]
 "id" = "eu_dg_home"
 "allow_domains" = ["home-affairs.ec.europa.eu"]
 "country" = "EU"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 12
 "exclude_patterns" = ["^/news_en$"]
 "homepage" = "https://home-affairs.ec.europa.eu/"
@@ -2657,12 +2979,15 @@
 "listing_url" = "https://home-affairs.ec.europa.eu/news_en"
 "name" = "Directorate-General for Migration and Home Affairs"
 "name_zh" = "歐盟執委會移民與內政總署"
+"timezone" = "Europe/Brussels"
 
 [[sources]]
 "id" = "eu_edpb"
 "allow_domains" = ["edpb.europa.eu", "www.edpb.europa.eu"]
 "country" = "EU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 12
 "exclude_patterns" = ["^/news_en$"]
 "homepage" = "https://www.edpb.europa.eu/"
@@ -2675,6 +3000,7 @@
 "name_zh" = "歐洲資料保護委員會"
 "observation_runs" = 3
 "pagination_url" = "https://www.edpb.europa.eu/news_en?page={page}"
+"timezone" = "Europe/Brussels"
 
 [[sources]]
 "id" = "eu_eeas"
@@ -2683,6 +3009,8 @@
 "country" = "EU"
 "date_evidence_url" = "https://www.eeas.europa.eu/eeas/press-material_en"
 "date_exception_reason" = "The press-material listing mixes several card variants with inconsistent visible dates."
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "best_effort"
 "date_review_due" = "2027-01-31"
 "date_reviewed_on" = "2026-07-18"
@@ -2698,12 +3026,15 @@
 "name" = "European External Action Service"
 "name_zh" = "歐盟對外事務部"
 "summary_selectors" = [".card-text"]
+"timezone" = "Europe/Brussels"
 "title_selectors" = [".card-title"]
 
 [[sources]]
 "id" = "eu_enisa_certification"
 "allow_domains" = ["certification.enisa.europa.eu"]
 "country" = "EU"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 10
 "homepage" = "https://certification.enisa.europa.eu/"
 "include_patterns" = ["^/news/.+"]
@@ -2712,6 +3043,7 @@
 "listing_url" = "https://certification.enisa.europa.eu/news-events_en"
 "name" = "ENISA European Cybersecurity Certification"
 "name_zh" = "歐盟資安局（資安認證）"
+"timezone" = "Europe/Brussels"
 
 [[sources]]
 "id" = "eu_enisa_news"
@@ -2719,6 +3051,8 @@
 "card_selectors" = [".featured-items", ".publications-item", "main article"]
 "country" = "EU"
 "critical" = true
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time[datetime]"]
 "detail_pages" = 18
 "exclude_patterns" = ["^/news/?$"]
@@ -2731,12 +3065,15 @@
 "name" = "European Union Agency for Cybersecurity - News"
 "name_zh" = "歐盟資安局（新聞）"
 "summary_selectors" = [".content", "p"]
+"timezone" = "Europe/Brussels"
 "title_selectors" = ["h3", "h2"]
 
 [[sources]]
 "id" = "eu_eurohpc"
 "allow_domains" = ["eurohpc-ju.europa.eu", "www.eurohpc-ju.europa.eu"]
 "country" = "EU"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 12
 "homepage" = "https://www.eurohpc-ju.europa.eu/index_en"
 "include_patterns" = ["^/.+-20\\d{2}-\\d{2}-\\d{2}_en$"]
@@ -2745,11 +3082,14 @@
 "listing_url" = "https://www.eurohpc-ju.europa.eu/media-events/press-releases_en"
 "name" = "European High Performance Computing Joint Undertaking"
 "name_zh" = "歐洲高效能運算聯合事業"
+"timezone" = "Europe/Brussels"
 
 [[sources]]
 "id" = "eu_jrc_news"
 "allow_domains" = ["joint-research-centre.ec.europa.eu"]
 "country" = "EU"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 12
 "homepage" = "https://joint-research-centre.ec.europa.eu/"
 "include_patterns" = ["/jrc-news-and-updates/"]
@@ -2758,12 +3098,15 @@
 "listing_url" = "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates_en"
 "name" = "European Commission Joint Research Centre"
 "name_zh" = "歐盟聯合研究中心"
+"timezone" = "Europe/Brussels"
 
 [[sources]]
 "id" = "eu_parliament_press"
 "allow_domains" = ["europarl.europa.eu", "www.europarl.europa.eu"]
 "card_selectors" = ["article.ep_gridcolumn.ep-m_product", "article.ep-m_product"]
 "country" = "EU"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time[datetime]"]
 "detail_pages" = 10
 "exclude_patterns" = ["^/news/en/press-room/?$"]
@@ -2780,12 +3123,15 @@
 "pause_reason" = "The official listing and RSS endpoints returned an HTTP 202 JavaScript challenge to GitHub-hosted runners on 2026-07-28, while the same RSS feed returned valid XML locally; pause scheduled requests until review."
 "paused_until" = "2026-10-31"
 "summary_selectors" = [".ep_description"]
+"timezone" = "Europe/Brussels"
 "title_selectors" = [".ep_title .ep_name"]
 
 [[sources]]
 "id" = "eu_presscorner"
 "allow_domains" = ["ec.europa.eu"]
 "country" = "EU"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 10
 "feed_urls" = ["https://ec.europa.eu/commission/presscorner/api/latestnews?language=en&pageSize=100"]
 "homepage" = "https://ec.europa.eu/commission/presscorner/"
@@ -2795,11 +3141,14 @@
 "listing_url" = "https://ec.europa.eu/commission/presscorner/home/en"
 "name" = "European Commission Press Corner"
 "name_zh" = "歐盟執委會新聞發布中心"
+"timezone" = "Europe/Brussels"
 
 [[sources]]
 "id" = "eu_sns_ju"
 "allow_domains" = ["smart-networks.europa.eu"]
 "country" = "EU"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 10
 "exclude_patterns" = ["^/(missions-and-objectives|reference-documents|current-call-for-proposals|previous-calls-for-proposals|data-protection-declaration)/$"]
 "homepage" = "https://smart-networks.europa.eu/"
@@ -2809,12 +3158,15 @@
 "listing_url" = "https://smart-networks.europa.eu/news/"
 "name" = "Smart Networks and Services Joint Undertaking"
 "name_zh" = "歐洲智慧網路與服務聯合事業"
+"timezone" = "Europe/Brussels"
 
 [[sources]]
 "id" = "fi_csc"
 "allow_domains" = ["csc.fi"]
 "country" = "FI"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://csc.fi/en/"
 "institution_type" = "政府與高等教育機構持有的非營利特殊任務公司"
@@ -2823,6 +3175,7 @@
 "name" = "CSC – IT Center for Science"
 "name_zh" = "芬蘭 CSC 科學資訊中心"
 "schedule_enabled" = false
+"timezone" = "Europe/Helsinki"
 
 [[sources]]
 "id" = "fi_education_agency"
@@ -2832,6 +3185,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -2874,6 +3229,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -2913,6 +3270,8 @@
 "allow_domains" = ["haic.aalto.fi", "haic.fi"]
 "country" = "FI"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://haic.aalto.fi/"
 "institution_type" = "大學與國家研究機構聯合資安研究所"
@@ -2921,6 +3280,7 @@
 "name" = "Helsinki-Aalto Institute for Cybersecurity"
 "name_zh" = "赫爾辛基－阿爾托大學資安研究所"
 "schedule_enabled" = false
+"timezone" = "Europe/Helsinki"
 
 [[sources]]
 "id" = "fi_judicial_administration_portal"
@@ -2930,6 +3290,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -2969,6 +3331,8 @@
 "allow_domains" = ["www.kyberturvallisuuskeskus.fi", "kyberturvallisuuskeskus.fi"]
 "country" = "FI"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "feed_urls" = ["https://www.kyberturvallisuuskeskus.fi/feed/rss/fi"]
 "homepage" = "https://www.kyberturvallisuuskeskus.fi/"
@@ -2978,12 +3342,15 @@
 "name" = "Traficomin Kyberturvallisuuskeskus"
 "name_zh" = "芬蘭交通與通訊局國家網路安全中心"
 "schedule_enabled" = false
+"timezone" = "Europe/Helsinki"
 
 [[sources]]
 "id" = "fi_vtt"
 "allow_domains" = ["www.vttresearch.com"]
 "country" = "FI"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.vttresearch.com/en"
 "institution_type" = "國有非營利應用研究機構"
@@ -2992,12 +3359,15 @@
 "name" = "VTT Technical Research Centre of Finland"
 "name_zh" = "芬蘭國家技術研究中心 VTT"
 "schedule_enabled" = false
+"timezone" = "Europe/Helsinki"
 
 [[sources]]
 "id" = "fr_agriculture"
 "allow_domains" = ["agriculture.gouv.fr"]
 "country" = "FR"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://agriculture.gouv.fr/rss.xml"]
@@ -3016,6 +3386,8 @@
 "card_selectors" = ["div.fr-card__content"]
 "country" = "FR"
 "critical" = true
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["p.fr-card__desc"]
 "detail_pages" = 16
 "exclude_patterns" = ["/actualites/(rss|atom)/?$", "^/actualites/\\?(tag|page)="]
@@ -3030,12 +3402,15 @@
 "name" = "Agence nationale de la sécurité des systèmes d'information"
 "name_zh" = "法國國家資訊系統安全局"
 "pagination_url" = "https://cyber.gouv.fr/actualites/?page={page}"
+"timezone" = "Europe/Paris"
 
 [[sources]]
 "id" = "fr_arcep"
 "allow_domains" = ["arcep.fr", "www.arcep.fr"]
 "card_selectors" = ["ol.list-group > li.list-group-item.row"]
 "country" = "FR"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time[datetime]"]
 "detail_pages" = 10
 "exclude_patterns" = ["actualites-et-communiques\\.html$", "/actualites/agenda-et-evenements\\.html$"]
@@ -3048,12 +3423,15 @@
 "name" = "Autorité de régulation des communications électroniques, des postes et de la distribution de la presse"
 "name_zh" = "法國電子通訊、郵政與新聞傳播監理局"
 "summary_selectors" = [".col-sm-8 p"]
+"timezone" = "Europe/Paris"
 "title_selectors" = ["h3"]
 
 [[sources]]
 "id" = "fr_arcom"
 "allow_domains" = ["arcom.fr", "www.arcom.fr"]
 "country" = "FR"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 12
 "exclude_patterns" = ["^/actualites/toutes-nos-actualites/?$"]
 "homepage" = "https://www.arcom.fr/"
@@ -3063,6 +3441,7 @@
 "listing_url" = "https://www.arcom.fr/actualites/toutes-nos-actualites"
 "name" = "Autorité de régulation de la communication audiovisuelle et numérique"
 "name_zh" = "法國視聽及數位傳播監理局"
+"timezone" = "Europe/Paris"
 
 [[sources]]
 "id" = "fr_armed_forces"
@@ -3070,6 +3449,8 @@
 "card_selectors" = ["article.fr-card"]
 "country" = "FR"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = [".fr-card__detail"]
 "detail_pages" = 0
@@ -3088,6 +3469,8 @@
 "id" = "fr_campus_cyber"
 "allow_domains" = ["campuscyber.fr"]
 "country" = "FR"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 10
 "exclude_patterns" = ["^/(evenements|formations|innovations|mentions-legales|politique-de-confidentialite|rejoindre-le-campus|services-evenementiels)/?$"]
 "feed_urls" = ["https://campuscyber.fr/feed/"]
@@ -3098,11 +3481,14 @@
 "listing_url" = "https://campuscyber.fr/"
 "name" = "Campus Cyber"
 "name_zh" = "法國 Campus Cyber"
+"timezone" = "Europe/Paris"
 
 [[sources]]
 "id" = "fr_cea_list"
 "allow_domains" = ["list.cea.fr"]
 "country" = "FR"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 10
 "exclude_patterns" = ["^/en/news/?$"]
 "feed_urls" = ["https://list.cea.fr/en/feed/"]
@@ -3116,6 +3502,7 @@
 "pause_evidence_url" = "https://list.cea.fr/en/news/"
 "pause_reason" = "Direct TLS connections to the official home, news and feed endpoints repeatedly exceeded the connection budget on 2026-07-28; retain the source but avoid weekly no-op waits until review."
 "paused_until" = "2026-10-31"
+"timezone" = "Europe/Paris"
 "tls_intermediate_bundle" = "geant-tls-rsa-1.pem"
 
 [[sources]]
@@ -3123,6 +3510,8 @@
 "allow_domains" = ["cnil.fr", "www.cnil.fr"]
 "card_selectors" = ["div.view-content > div.views-row"]
 "country" = "FR"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".date"]
 "detail_pages" = 12
 "exclude_patterns" = ["^/fr/actualites/?$"]
@@ -3134,12 +3523,15 @@
 "listing_url" = "https://www.cnil.fr/fr/actualites"
 "name" = "Commission nationale de l'informatique et des libertés"
 "name_zh" = "法國國家資訊與自由委員會"
+"timezone" = "Europe/Paris"
 
 [[sources]]
 "id" = "fr_concurrence"
 "allow_domains" = ["autoritedelaconcurrence.fr", "www.autoritedelaconcurrence.fr"]
 "card_selectors" = [".views-row .press.search-index"]
 "country" = "FR"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time"]
 "detail_pages" = 10
 "exclude_patterns" = ["^/fr/communiques-de-presse/?$"]
@@ -3151,6 +3543,7 @@
 "listing_url" = "https://www.autoritedelaconcurrence.fr/fr/communiques-de-presse"
 "name" = "Autorité de la concurrence"
 "name_zh" = "法國競爭管理局"
+"timezone" = "Europe/Paris"
 "title_selectors" = ["h2"]
 
 [[sources]]
@@ -3158,6 +3551,8 @@
 "allow_domains" = ["culture.gouv.fr", "www.culture.gouv.fr"]
 "country" = "FR"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 12
 "exclude_patterns" = ["^/presse/communiques-de-presse/?$"]
 "homepage" = "https://www.culture.gouv.fr/"
@@ -3168,12 +3563,15 @@
 "name" = "Ministère de la Culture"
 "name_zh" = "法國文化部"
 "observation_runs" = 3
+"timezone" = "Europe/Paris"
 
 [[sources]]
 "id" = "fr_cybermalveillance"
 "allow_domains" = ["cybermalveillance.gouv.fr", "www.cybermalveillance.gouv.fr"]
 "country" = "FR"
 "critical" = true
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 12
 "exclude_patterns" = ["^/tous-nos-contenus/actualites/?$"]
 "homepage" = "https://www.cybermalveillance.gouv.fr/"
@@ -3183,11 +3581,14 @@
 "listing_url" = "https://www.cybermalveillance.gouv.fr/blog"
 "name" = "Cybermalveillance.gouv.fr - GIP ACYMA"
 "name_zh" = "法國網路惡意行為協助平台"
+"timezone" = "Europe/Paris"
 
 [[sources]]
 "id" = "fr_dge"
 "allow_domains" = ["entreprises.gouv.fr", "www.entreprises.gouv.fr"]
 "country" = "FR"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 10
 "exclude_patterns" = ["^/la-dge/actualites/?$"]
 "homepage" = "https://www.entreprises.gouv.fr/"
@@ -3197,12 +3598,15 @@
 "listing_url" = "https://www.entreprises.gouv.fr/la-dge/actualites"
 "name" = "Direction générale des Entreprises"
 "name_zh" = "法國企業總署"
+"timezone" = "Europe/Paris"
 
 [[sources]]
 "id" = "fr_dinum"
 "allow_domains" = ["numerique.gouv.fr", "www.numerique.gouv.fr"]
 "card_selectors" = [".fr-card"]
 "country" = "FR"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = [".fr-card__detail"]
 "detail_pages" = 0
@@ -3216,6 +3620,7 @@
 "name" = "Direction interministérielle du numérique"
 "name_zh" = "法國跨部會數位總局"
 "summary_selectors" = [".fr-card__desc"]
+"timezone" = "Europe/Paris"
 "title_selectors" = [".fr-card__title"]
 
 [[sources]]
@@ -3225,6 +3630,8 @@
 "country" = "FR"
 "date_evidence_url" = "https://www.inria.fr/fr/actualites-recherche-savoir-numerique"
 "date_exception_reason" = "The research listing mixes dated releases with evergreen institutional content."
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "best_effort"
 "date_review_due" = "2027-01-31"
 "date_reviewed_on" = "2026-07-18"
@@ -3241,6 +3648,7 @@
 "min_listing_bytes" = 50000
 "name" = "Institut national de recherche en sciences et technologies du numérique"
 "name_zh" = "法國國家資訊與自動化研究院"
+"timezone" = "Europe/Paris"
 "title_selectors" = ["h3"]
 "user_agent" = "eu-cyber-news-scraper/1.5.0 (+https://github.com/ECJura2000/eu-cyber-news-scraper)"
 
@@ -3249,6 +3657,8 @@
 "allow_domains" = ["www.justice.gouv.fr"]
 "country" = "FR"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.justice.gouv.fr/rss.xml"]
@@ -3266,6 +3676,8 @@
 "allow_domains" = ["www.sports.gouv.fr"]
 "country" = "FR"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "homepage" = "https://www.sports.gouv.fr/"
@@ -3283,6 +3695,8 @@
 "allow_domains" = ["sgdsn.gouv.fr", "www.sgdsn.gouv.fr"]
 "card_selectors" = ["article.node--type-actualite.fr-card"]
 "country" = "FR"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".fr-card__detail"]
 "detail_pages" = 10
 "exclude_patterns" = ["^/viginum/actualites/?$"]
@@ -3295,6 +3709,7 @@
 "name" = "VIGINUM - SGDSN"
 "name_zh" = "法國防範外國數位干預局"
 "summary_selectors" = [".fr-card__desc"]
+"timezone" = "Europe/Paris"
 "title_selectors" = [".fr-card__title"]
 
 [[sources]]
@@ -3302,6 +3717,8 @@
 "allow_domains" = ["govcert.bg", "www.govcert.bg"]
 "country" = "BG"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "exclude_patterns" = []
 "homepage" = "https://www.govcert.bg/en/"
@@ -3312,12 +3729,15 @@
 "name" = "CERT Bulgaria"
 "name_zh" = "保加利亞 CERT"
 "schedule_enabled" = false
+"timezone" = "Europe/Sofia"
 
 [[sources]]
 "id" = "gr_development"
 "allow_domains" = ["www.mindev.gov.gr"]
 "country" = "GR"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.mindev.gov.gr/feed/"]
@@ -3335,6 +3755,8 @@
 "allow_domains" = ["www.dpa.gr", "dpa.gr"]
 "country" = "GR"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "exclude_patterns" = []
 "homepage" = "https://www.dpa.gr/en"
@@ -3345,12 +3767,15 @@
 "name" = "Hellenic Data Protection Authority"
 "name_zh" = "希臘資料保護局"
 "schedule_enabled" = false
+"timezone" = "Europe/Athens"
 
 [[sources]]
 "id" = "gr_education"
 "allow_domains" = ["www.minedu.gov.gr"]
 "country" = "GR"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.minedu.gov.gr/?format=feed&type=rss"]
@@ -3368,6 +3793,8 @@
 "allow_domains" = ["grnet.gr", "www.grnet.gr"]
 "country" = "GR"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "exclude_patterns" = []
 "homepage" = "https://grnet.gr/en/"
@@ -3378,6 +3805,7 @@
 "name" = "National Infrastructures for Research and Technology"
 "name_zh" = "希臘國家研究與技術網路"
 "schedule_enabled" = false
+"timezone" = "Europe/Athens"
 
 [[sources]]
 "id" = "gr_health"
@@ -3385,6 +3813,8 @@
 "card_selectors" = ["div.item"]
 "country" = "GR"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time", "[class*=date i]", "[class*=datum i]", "[class*=fecha i]"]
 "detail_pages" = 0
@@ -3403,6 +3833,8 @@
 "allow_domains" = ["migration.gov.gr"]
 "country" = "GR"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://migration.gov.gr/feed/"]
@@ -3420,6 +3852,8 @@
 "allow_domains" = ["cyber.gov.gr"]
 "country" = "GR"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "exclude_patterns" = []
 "homepage" = "https://cyber.gov.gr/"
@@ -3430,6 +3864,7 @@
 "name" = "National Cybersecurity Authority"
 "name_zh" = "希臘國家網路安全局"
 "schedule_enabled" = false
+"timezone" = "Europe/Athens"
 
 [[sources]]
 "id" = "hu_agriculture"
@@ -3437,6 +3872,8 @@
 "card_selectors" = ["article.article-card"]
 "country" = "HU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"]
+"date_order" = "YMD"
 "date_policy" = "required"
 "date_selectors" = [".article-card__date"]
 "detail_pages" = 0
@@ -3459,6 +3896,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"]
+"date_order" = "YMD"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -3499,6 +3938,8 @@
 "card_selectors" = ["article.article-card"]
 "country" = "HU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"]
+"date_order" = "YMD"
 "date_policy" = "required"
 "date_selectors" = [".article-card__date"]
 "detail_pages" = 0
@@ -3519,6 +3960,8 @@
 "card_selectors" = ["article.article-card"]
 "country" = "HU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"]
+"date_order" = "YMD"
 "date_policy" = "required"
 "date_selectors" = [".article-card__date"]
 "detail_pages" = 0
@@ -3539,6 +3982,8 @@
 "card_selectors" = ["article.article-card"]
 "country" = "HU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"]
+"date_order" = "YMD"
 "date_policy" = "required"
 "date_selectors" = [".article-card__date"]
 "detail_pages" = 0
@@ -3559,6 +4004,8 @@
 "card_selectors" = ["article.article-card"]
 "country" = "HU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"]
+"date_order" = "YMD"
 "date_policy" = "required"
 "date_selectors" = [".article-card__date"]
 "detail_pages" = 0
@@ -3579,6 +4026,8 @@
 "card_selectors" = ["article.article-card"]
 "country" = "HU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"]
+"date_order" = "YMD"
 "date_policy" = "required"
 "date_selectors" = [".article-card__date"]
 "detail_pages" = 0
@@ -3599,6 +4048,8 @@
 "card_selectors" = ["article.article-card"]
 "country" = "HU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"]
+"date_order" = "YMD"
 "date_policy" = "required"
 "date_selectors" = [".article-card__date"]
 "detail_pages" = 0
@@ -3619,6 +4070,8 @@
 "card_selectors" = ["article.article-card"]
 "country" = "HU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"]
+"date_order" = "YMD"
 "date_policy" = "required"
 "date_selectors" = [".article-card__date"]
 "detail_pages" = 0
@@ -3639,6 +4092,8 @@
 "card_selectors" = ["article.article-card"]
 "country" = "HU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"]
+"date_order" = "YMD"
 "date_policy" = "required"
 "date_selectors" = [".article-card__date"]
 "detail_pages" = 0
@@ -3658,6 +4113,8 @@
 "allow_domains" = ["nmhh.hu"]
 "country" = "HU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"]
+"date_order" = "YMD"
 "detail_pages" = 8
 "exclude_patterns" = []
 "homepage" = "https://nmhh.hu/"
@@ -3668,6 +4125,7 @@
 "name" = "National Media and Infocommunications Authority"
 "name_zh" = "匈牙利國家媒體與資訊通訊管理局"
 "schedule_enabled" = false
+"timezone" = "Europe/Budapest"
 
 [[sources]]
 "id" = "hu_rural_development"
@@ -3675,6 +4133,8 @@
 "card_selectors" = ["article.article-card"]
 "country" = "HU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"]
+"date_order" = "YMD"
 "date_policy" = "required"
 "date_selectors" = [".article-card__date"]
 "detail_pages" = 0
@@ -3695,6 +4155,8 @@
 "card_selectors" = ["article.article-card"]
 "country" = "HU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"]
+"date_order" = "YMD"
 "date_policy" = "required"
 "date_selectors" = [".article-card__date"]
 "detail_pages" = 0
@@ -3715,6 +4177,8 @@
 "card_selectors" = ["article.article-card"]
 "country" = "HU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"]
+"date_order" = "YMD"
 "date_policy" = "required"
 "date_selectors" = [".article-card__date"]
 "detail_pages" = 0
@@ -3735,6 +4199,8 @@
 "card_selectors" = ["article.article-card"]
 "country" = "HU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"]
+"date_order" = "YMD"
 "date_policy" = "required"
 "date_selectors" = [".article-card__date"]
 "detail_pages" = 0
@@ -3755,6 +4221,8 @@
 "card_selectors" = ["article.article-card"]
 "country" = "HU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%Y. %m. %d.", "%Y.%m.%d.", "%Y/%m/%d"]
+"date_order" = "YMD"
 "date_policy" = "required"
 "date_selectors" = [".article-card__date"]
 "detail_pages" = 0
@@ -3774,6 +4242,8 @@
 "allow_domains" = ["adaptcentre.ie", "www.adaptcentre.ie"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 12
 "exclude_patterns" = ["^/(?:news|news-and-events)/?$"]
 "feed_urls" = ["https://www.adaptcentre.ie/news-and-events/feed/"]
@@ -3785,6 +4255,7 @@
 "name" = "ADAPT Centre"
 "name_zh" = "愛爾蘭 ADAPT 數位內容科技研究中心"
 "observation_runs" = 3
+"timezone" = "Europe/Dublin"
 
 [[sources]]
 "id" = "ie_agriculture"
@@ -3792,6 +4263,8 @@
 "card_selectors" = ["div[role=\"region\"][aria-label=\"Press releases Recent links\" i]", "div[role=\"region\"][aria-label=\"News Recent links\" i]"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["span.pinned-link-date"]
 "detail_pages" = 0
@@ -3810,6 +4283,8 @@
 "id" = "ie_ceadar"
 "allow_domains" = ["ceadar.ie"]
 "country" = "IE"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 10
 "exclude_patterns" = ["^/latest-news/?$"]
 "homepage" = "https://ceadar.ie/"
@@ -3819,6 +4294,7 @@
 "listing_url" = "https://ceadar.ie/latest-news/"
 "name" = "CeADAR - Ireland's Centre for Applied AI"
 "name_zh" = "愛爾蘭應用 AI 中心 CeADAR"
+"timezone" = "Europe/Dublin"
 
 [[sources]]
 "id" = "ie_children"
@@ -3826,6 +4302,8 @@
 "card_selectors" = ["div[role=\"region\"][aria-label=\"Press releases Recent links\" i]", "div[role=\"region\"][aria-label=\"News Recent links\" i]"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["span.pinned-link-date"]
 "detail_pages" = 0
@@ -3846,6 +4324,8 @@
 "card_selectors" = ["div[role=\"region\"][aria-label=\"Press releases Recent links\" i]", "div[role=\"region\"][aria-label=\"News Recent links\" i]"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["span.pinned-link-date"]
 "detail_pages" = 0
@@ -3864,6 +4344,8 @@
 "id" = "ie_cnam"
 "allow_domains" = ["cnam.ie", "www.cnam.ie"]
 "country" = "IE"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 12
 "exclude_patterns" = ["^/(news-and-publications|about|contact|careers|publications|)$"]
 "homepage" = "https://www.cnam.ie/"
@@ -3873,6 +4355,7 @@
 "listing_url" = "https://www.cnam.ie/news-and-publications/news/"
 "name" = "Coimisiún na Meán"
 "name_zh" = "愛爾蘭媒體委員會"
+"timezone" = "Europe/Dublin"
 
 [[sources]]
 "id" = "ie_comreg"
@@ -3880,6 +4363,8 @@
 "card_selectors" = [".ajax-posts"]
 "country" = "IE"
 "critical" = true
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".News_Block_content_inn_date span"]
 "detail_pages" = 0
 "exclude_patterns" = ["^/news/?$"]
@@ -3892,6 +4377,7 @@
 "listing_url" = "https://www.comreg.ie/news/"
 "name" = "Commission for Communications Regulation"
 "name_zh" = "愛爾蘭通訊監理委員會"
+"timezone" = "Europe/Dublin"
 "title_selectors" = [".News_Block_content_inn_title h3"]
 
 [[sources]]
@@ -3900,6 +4386,8 @@
 "card_selectors" = ["div[role=\"region\"][aria-label=\"Press releases Recent links\" i]", "div[role=\"region\"][aria-label=\"News Recent links\" i]"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["span.pinned-link-date"]
 "detail_pages" = 0
@@ -3919,6 +4407,8 @@
 "allow_domains" = ["cyberireland.ie"]
 "card_selectors" = ["article.elementor-post"]
 "country" = "IE"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".elementor-post-date"]
 "detail_pages" = 10
 "exclude_patterns" = ["^/(building-the-community-2|business-growth-2|develop-the-workforce|promotion-and-advocacy|membership-2|event-calendar|about-us|blog-20\\d{2})/?$"]
@@ -3932,6 +4422,7 @@
 "name" = "Cyber Ireland"
 "name_zh" = "愛爾蘭 Cyber Ireland 產業群聚"
 "parser_adapter" = "wordpress_rest"
+"timezone" = "Europe/Dublin"
 "yearly_listing_url" = "https://cyberireland.ie/blog-{year}/"
 
 [[sources]]
@@ -3940,6 +4431,8 @@
 "card_selectors" = ["div[role=\"region\"][aria-label=\"Press releases Recent links\" i]", "div[role=\"region\"][aria-label=\"News Recent links\" i]"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["span.pinned-link-date"]
 "detail_pages" = 0
@@ -3959,6 +4452,8 @@
 "allow_domains" = ["enterprise.gov.ie"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 12
 "exclude_patterns" = ["/department-news/20\\d{2}/?$"]
 "homepage" = "https://enterprise.gov.ie/"
@@ -3969,6 +4464,7 @@
 "name" = "Department of Enterprise, Tourism and Employment"
 "name_zh" = "愛爾蘭企業、旅遊暨就業部"
 "observation_runs" = 3
+"timezone" = "Europe/Dublin"
 "yearly_listing_url" = "https://enterprise.gov.ie/en/news-and-events/department-news/{year}/"
 
 [[sources]]
@@ -3976,6 +4472,8 @@
 "allow_domains" = ["dataprotection.ie", "www.dataprotection.ie"]
 "card_selectors" = ["article.node--type-article"]
 "country" = "IE"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["p.date"]
 "detail_pages" = 10
 "exclude_patterns" = ["^/en/news-media/(?:latest-news|press-releases|contact-us|consultations)/?(?:\\?.*)?$"]
@@ -3988,6 +4486,7 @@
 "name" = "Data Protection Commission"
 "name_zh" = "愛爾蘭資料保護委員會"
 "summary_selectors" = [".node__content"]
+"timezone" = "Europe/Dublin"
 "tls_intermediate_bundle" = "sectigo-dv-r36.pem"
 
 [[sources]]
@@ -3996,6 +4495,8 @@
 "card_selectors" = ["div[role=\"region\"][aria-label=\"Press releases Recent links\" i]", "div[role=\"region\"][aria-label=\"News Recent links\" i]"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["span.pinned-link-date"]
 "detail_pages" = 0
@@ -4014,6 +4515,8 @@
 "id" = "ie_electoral_commission"
 "allow_domains" = ["electoralcommission.ie", "www.electoralcommission.ie"]
 "country" = "IE"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 10
 "exclude_patterns" = ["^/media-releases/?$"]
 "homepage" = "https://www.electoralcommission.ie/"
@@ -4023,6 +4526,7 @@
 "listing_url" = "https://www.electoralcommission.ie/media-releases/"
 "name" = "An Coimisiún Toghcháin - Electoral Commission"
 "name_zh" = "愛爾蘭選舉委員會"
+"timezone" = "Europe/Dublin"
 
 [[sources]]
 "id" = "ie_esri"
@@ -4031,6 +4535,8 @@
 "country" = "IE"
 "date_evidence_url" = "https://www.esri.ie/news"
 "date_exception_reason" = "The news archive mixes content types and does not expose a uniform date field on every card."
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "best_effort"
 "date_review_due" = "2027-01-31"
 "date_reviewed_on" = "2026-07-18"
@@ -4047,6 +4553,7 @@
 "name" = "Economic and Social Research Institute"
 "name_zh" = "愛爾蘭經濟社會研究所"
 "pagination_url" = "https://www.esri.ie/news?page={page}"
+"timezone" = "Europe/Dublin"
 "title_selectors" = [".teaser__title"]
 
 [[sources]]
@@ -4055,6 +4562,8 @@
 "card_selectors" = ["div[role=\"region\"][aria-label=\"Press releases Recent links\" i]", "div[role=\"region\"][aria-label=\"News Recent links\" i]"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["span.pinned-link-date"]
 "detail_pages" = 0
@@ -4075,6 +4584,8 @@
 "card_selectors" = ["div[role=\"region\"][aria-label=\"Press releases Recent links\"]", "div[role=\"region\"][aria-label=\"News Recent links\"]"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["span.pinned-link-date"]
 "detail_pages" = 0
@@ -4095,6 +4606,8 @@
 "card_selectors" = ["div[role=\"region\"][aria-label=\"Press releases Recent links\" i]", "div[role=\"region\"][aria-label=\"News Recent links\" i]"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["span.pinned-link-date"]
 "detail_pages" = 0
@@ -4115,6 +4628,8 @@
 "card_selectors" = ["div[role=\"region\"][aria-label=\"Press releases Recent links\" i]", "div[role=\"region\"][aria-label=\"News Recent links\" i]"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["span.pinned-link-date"]
 "detail_pages" = 0
@@ -4135,6 +4650,8 @@
 "card_selectors" = ["div[role=\"region\"][aria-label=\"Press releases Recent links\" i]", "div[role=\"region\"][aria-label=\"News Recent links\" i]"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["span.pinned-link-date"]
 "detail_pages" = 0
@@ -4155,6 +4672,8 @@
 "card_selectors" = ["div[role=\"region\"][aria-label=\"Press releases Recent links\" i]", "div[role=\"region\"][aria-label=\"News Recent links\" i]"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["span.pinned-link-date"]
 "detail_pages" = 0
@@ -4174,6 +4693,8 @@
 "allow_domains" = ["ncsc.gov.ie", "www.ncsc.gov.ie"]
 "country" = "IE"
 "critical" = true
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 12
 "exclude_patterns" = ["/news/alerts\\.(rss|atom)$"]
 "feed_urls" = ["https://www.ncsc.gov.ie/news/alerts.rss", "https://www.ncsc.gov.ie/news/alerts.atom"]
@@ -4184,11 +4705,14 @@
 "listing_url" = "https://www.ncsc.gov.ie/news/"
 "name" = "National Cyber Security Centre Ireland"
 "name_zh" = "愛爾蘭國家網路安全中心"
+"timezone" = "Europe/Dublin"
 
 [[sources]]
 "id" = "ie_nsai"
 "allow_domains" = ["nsai.ie", "www.nsai.ie"]
 "country" = "IE"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 10
 "exclude_patterns" = ["^/about/news/?$"]
 "homepage" = "https://www.nsai.ie/"
@@ -4198,6 +4722,7 @@
 "listing_url" = "https://www.nsai.ie/about/news/"
 "name" = "National Standards Authority of Ireland"
 "name_zh" = "愛爾蘭國家標準局"
+"timezone" = "Europe/Dublin"
 
 [[sources]]
 "id" = "ie_public_expenditure"
@@ -4205,6 +4730,8 @@
 "card_selectors" = ["div[role=\"region\"][aria-label=\"Press releases Recent links\" i]", "div[role=\"region\"][aria-label=\"News Recent links\" i]"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["span.pinned-link-date"]
 "detail_pages" = 0
@@ -4223,6 +4750,8 @@
 "id" = "ie_research_ireland"
 "allow_domains" = ["researchireland.ie", "www.researchireland.ie"]
 "country" = "IE"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 10
 "exclude_patterns" = ["^/news/?$"]
 "homepage" = "https://www.researchireland.ie/"
@@ -4232,6 +4761,7 @@
 "listing_url" = "https://www.researchireland.ie/news/"
 "name" = "Research Ireland"
 "name_zh" = "愛爾蘭研究署"
+"timezone" = "Europe/Dublin"
 
 [[sources]]
 "id" = "ie_rural"
@@ -4239,6 +4769,8 @@
 "card_selectors" = ["div[role=\"region\"][aria-label=\"Press releases Recent links\" i]", "div[role=\"region\"][aria-label=\"News Recent links\" i]"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["span.pinned-link-date"]
 "detail_pages" = 0
@@ -4259,6 +4791,8 @@
 "card_selectors" = ["div[role=\"region\"][aria-label=\"Press releases Recent links\" i]", "div[role=\"region\"][aria-label=\"News Recent links\" i]"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["span.pinned-link-date"]
 "detail_pages" = 0
@@ -4279,6 +4813,8 @@
 "card_selectors" = ["div[role=\"region\"][aria-label=\"Press releases Recent links\" i]", "div[role=\"region\"][aria-label=\"News Recent links\" i]"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["span.pinned-link-date"]
 "detail_pages" = 0
@@ -4299,6 +4835,8 @@
 "card_selectors" = ["div[role=\"region\"][aria-label=\"Press releases Recent links\" i]", "div[role=\"region\"][aria-label=\"News Recent links\" i]"]
 "country" = "IE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["span.pinned-link-date"]
 "detail_pages" = 0
@@ -4317,6 +4855,8 @@
 "id" = "ie_tyndall"
 "allow_domains" = ["tyndall.ie", "www.tyndall.ie"]
 "country" = "IE"
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 10
 "exclude_patterns" = ["^/(news|news-and-events)/?$"]
 "feed_urls" = ["https://www.tyndall.ie/feed/"]
@@ -4327,12 +4867,15 @@
 "listing_url" = "https://www.tyndall.ie/news/"
 "name" = "Tyndall National Institute"
 "name_zh" = "愛爾蘭廷德爾國家研究所"
+"timezone" = "Europe/Dublin"
 
 [[sources]]
 "id" = "it_agid"
 "allow_domains" = ["www.agid.gov.it"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.agid.gov.it/it"
 "institution_type" = "國家數位政策技術機構"
@@ -4341,12 +4884,15 @@
 "name" = "Agenzia per l'Italia Digitale"
 "name_zh" = "義大利數位署"
 "schedule_enabled" = false
+"timezone" = "Europe/Rome"
 
 [[sources]]
 "id" = "it_camera"
 "allow_domains" = ["comunicazione.camera.it", "www.camera.it"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.camera.it/"
 "institution_type" = "國會下議院"
@@ -4355,12 +4901,15 @@
 "name" = "Camera dei deputati"
 "name_zh" = "義大利眾議院"
 "schedule_enabled" = false
+"timezone" = "Europe/Rome"
 
 [[sources]]
 "id" = "it_civil_protection"
 "allow_domains" = ["www.protezionecivile.gov.it"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.protezionecivile.gov.it/page-data/it/page-data.json"]
@@ -4379,6 +4928,8 @@
 "allow_domains" = ["www.cnr.it"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.cnr.it/it"
 "institution_type" = "國家公共研究機構"
@@ -4387,12 +4938,15 @@
 "name" = "Consiglio Nazionale delle Ricerche"
 "name_zh" = "義大利國家研究委員會"
 "schedule_enabled" = false
+"timezone" = "Europe/Rome"
 
 [[sources]]
 "id" = "it_cohesion"
 "allow_domains" = ["politichecoesione.governo.it"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "homepage" = "https://politichecoesione.governo.it/it/"
@@ -4410,6 +4964,8 @@
 "allow_domains" = ["www.difesa.it"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.difesa.it/data/primopiano/elenco.json"]
@@ -4428,6 +4984,8 @@
 "allow_domains" = ["www.disabilita.governo.it"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "homepage" = "https://www.disabilita.governo.it/"
@@ -4445,6 +5003,8 @@
 "allow_domains" = ["www.mimit.gov.it"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.mimit.gov.it/index.php/it/notizie-stampa?format=feed&type=rss"]
@@ -4462,6 +5022,8 @@
 "allow_domains" = ["www.famiglia.governo.it"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "homepage" = "https://www.famiglia.governo.it/"
@@ -4480,6 +5042,8 @@
 "card_selectors" = ["div.card-body"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["p.card-title"]
 "detail_pages" = 0
@@ -4499,6 +5063,8 @@
 "allow_domains" = ["www.esteri.it"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.esteri.it/it/feed/"]
@@ -4517,6 +5083,8 @@
 "card_selectors" = [".journal-content-article p"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["em"]
 "detail_pages" = 8
 "homepage" = "https://www.garanteprivacy.it/"
@@ -4527,12 +5095,15 @@
 "name" = "Garante per la protezione dei dati personali"
 "name_zh" = "義大利個人資料保護局"
 "schedule_enabled" = false
+"timezone" = "Europe/Rome"
 
 [[sources]]
 "id" = "it_infrastructure"
 "allow_domains" = ["www.mit.gov.it"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "homepage" = "https://www.mit.gov.it/"
@@ -4550,6 +5121,8 @@
 "allow_domains" = ["www.lavoro.gov.it"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.lavoro.gov.it/_layouts/15/Lavoro.Web/AppPages/RSS"]
@@ -4567,6 +5140,8 @@
 "allow_domains" = ["www.rapportiparlamento.gov.it"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "homepage" = "https://www.rapportiparlamento.gov.it/"
@@ -4584,6 +5159,8 @@
 "allow_domains" = ["www.governo.it"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.governo.it/feed/rss"]
@@ -4601,6 +5178,8 @@
 "allow_domains" = ["www.affariregionali.it"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "homepage" = "https://www.affariregionali.it/"
@@ -4618,6 +5197,8 @@
 "allow_domains" = ["www.sport.governo.it"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "homepage" = "https://www.sportgoverno.it/"
@@ -4635,6 +5216,8 @@
 "allow_domains" = ["www.ministeroturismo.gov.it"]
 "country" = "IT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "detail_pages" = 0
 "feed_urls" = ["https://www.ministeroturismo.gov.it/feed/"]
@@ -4652,6 +5235,8 @@
 "allow_domains" = ["rrt.lt", "www.rrt.lt"]
 "country" = "LT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://rrt.lt/"
 "institution_type" = "獨立通訊與數位空間監管機關"
@@ -4660,6 +5245,7 @@
 "name" = "Lietuvos Respublikos ryšių reguliavimo tarnyba"
 "name_zh" = "立陶宛通訊監管局"
 "schedule_enabled" = false
+"timezone" = "Europe/Vilnius"
 
 [[sources]]
 "id" = "lt_seimas"
@@ -4667,6 +5253,8 @@
 "card_selectors" = [".naujiena"]
 "country" = "LT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".naujiena-laikas"]
 "detail_pages" = 8
 "homepage" = "https://www.lrs.lt/"
@@ -4677,6 +5265,7 @@
 "name" = "Lietuvos Respublikos Seimas"
 "name_zh" = "立陶宛國會"
 "schedule_enabled" = false
+"timezone" = "Europe/Vilnius"
 "title_selectors" = [".naujiena-title > a[href]"]
 
 [[sources]]
@@ -4685,6 +5274,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -4705,6 +5296,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -4724,6 +5317,8 @@
 "allow_domains" = ["cnpd.public.lu"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "exclude_patterns" = []
 "homepage" = "https://cnpd.public.lu/en.html"
@@ -4734,6 +5329,7 @@
 "name" = "Commission nationale pour la protection des données"
 "name_zh" = "盧森堡國家資料保護委員會"
 "schedule_enabled" = false
+"timezone" = "Europe/Luxembourg"
 
 [[sources]]
 "id" = "lu_culture"
@@ -4741,6 +5337,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -4761,6 +5359,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -4781,6 +5381,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -4801,6 +5403,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -4821,6 +5425,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -4841,6 +5447,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -4861,6 +5469,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -4881,6 +5491,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -4901,6 +5513,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -4920,6 +5534,8 @@
 "allow_domains" = ["govcert.lu"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "exclude_patterns" = []
 "homepage" = "https://govcert.lu/"
@@ -4930,6 +5546,7 @@
 "name" = "GOVCERT.LU"
 "name_zh" = "盧森堡政府 CERT"
 "schedule_enabled" = false
+"timezone" = "Europe/Luxembourg"
 
 [[sources]]
 "id" = "lu_health"
@@ -4937,6 +5554,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -4957,6 +5576,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -4977,6 +5598,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -4996,6 +5619,8 @@
 "allow_domains" = ["www.ilr.lu", "ilr.lu"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "exclude_patterns" = []
 "homepage" = "https://www.ilr.lu/"
@@ -5006,6 +5631,7 @@
 "name" = "Institut Luxembourgeois de Régulation"
 "name_zh" = "盧森堡監管研究所"
 "schedule_enabled" = false
+"timezone" = "Europe/Luxembourg"
 
 [[sources]]
 "id" = "lu_justice"
@@ -5013,6 +5639,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -5033,6 +5661,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -5053,6 +5683,8 @@
 "card_selectors" = ["article.lt-event-card"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".lt-info p"]
 "detail_pages" = 8
 "exclude_patterns" = []
@@ -5065,6 +5697,7 @@
 "name" = "Luxembourg Institute of Science and Technology"
 "name_zh" = "盧森堡科學與技術研究院"
 "schedule_enabled" = false
+"timezone" = "Europe/Luxembourg"
 "title_selectors" = ["h6.lt-heading"]
 
 [[sources]]
@@ -5073,6 +5706,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -5093,6 +5728,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -5113,6 +5750,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -5133,6 +5772,8 @@
 "card_selectors" = ["li.cmp-focus-list-item:has(time.article-published)"]
 "country" = "LU"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_selectors" = ["time.article-published"]
 "detail_pages" = 0
@@ -5155,6 +5796,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -5194,6 +5837,8 @@
 "allow_domains" = ["www.cert.gov.lv"]
 "country" = "LV"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.cert.gov.lv/"
 "institution_type" = "國家資安事件應變機構"
@@ -5202,6 +5847,7 @@
 "name" = "CERT.LV"
 "name_zh" = "拉脫維亞國家資安事件應變中心"
 "schedule_enabled" = false
+"timezone" = "Europe/Riga"
 
 [[sources]]
 "id" = "lv_chancellery"
@@ -5211,6 +5857,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -5253,6 +5901,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -5295,6 +5945,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -5337,6 +5989,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -5376,6 +6030,8 @@
 "allow_domains" = ["www.dvi.gov.lv"]
 "country" = "LV"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.dvi.gov.lv/lv"
 "institution_type" = "獨立資料保護監管機關"
@@ -5384,6 +6040,7 @@
 "name" = "Datu valsts inspekcija"
 "name_zh" = "拉脫維亞國家資料監察局"
 "schedule_enabled" = false
+"timezone" = "Europe/Riga"
 
 [[sources]]
 "id" = "lv_economy"
@@ -5393,6 +6050,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -5435,6 +6094,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -5477,6 +6138,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -5519,6 +6182,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -5561,6 +6226,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -5603,6 +6270,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -5645,6 +6314,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -5684,6 +6355,8 @@
 "allow_domains" = ["www.lvrtc.lv", "lvrtc.lv"]
 "country" = "LV"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.lvrtc.lv/en/"
 "institution_type" = "百分之百國有的關鍵數位基礎設施與信任服務公司"
@@ -5692,6 +6365,7 @@
 "name" = "Latvijas Valsts radio un televīzijas centrs"
 "name_zh" = "拉脫維亞國家廣播電視中心"
 "schedule_enabled" = false
+"timezone" = "Europe/Riga"
 
 [[sources]]
 "id" = "lv_saeima"
@@ -5699,6 +6373,8 @@
 "card_selectors" = [".news-block"]
 "country" = "LV"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".post-content .title > .date"]
 "detail_pages" = 8
 "homepage" = "https://www.saeima.lv/"
@@ -5709,6 +6385,7 @@
 "name" = "Saeima"
 "name_zh" = "拉脫維亞國會"
 "schedule_enabled" = false
+"timezone" = "Europe/Riga"
 "title_selectors" = [".post-content .title > a[href]"]
 
 [[sources]]
@@ -5719,6 +6396,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -5761,6 +6440,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -5803,6 +6484,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -5842,6 +6525,8 @@
 "allow_domains" = ["idpc.org.mt", "www.idpc.org.mt"]
 "country" = "MT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "exclude_patterns" = []
 "homepage" = "https://idpc.org.mt/"
@@ -5852,12 +6537,15 @@
 "name" = "Information and Data Protection Commissioner"
 "name_zh" = "馬爾他資訊與資料保護專員公署"
 "schedule_enabled" = false
+"timezone" = "Europe/Malta"
 
 [[sources]]
 "id" = "nl_acm"
 "allow_domains" = ["www.acm.nl", "acm.nl"]
 "country" = "NL"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.acm.nl/"
 "include_patterns" = ["^/nl/publicaties/"]
@@ -5867,6 +6555,7 @@
 "name" = "Autoriteit Consument & Markt"
 "name_zh" = "荷蘭消費者與市場管理局"
 "schedule_enabled" = false
+"timezone" = "Europe/Amsterdam"
 
 [[sources]]
 "id" = "nl_agriculture"
@@ -5876,6 +6565,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -5915,6 +6606,8 @@
 "allow_domains" = ["www.autoriteitpersoonsgegevens.nl", "autoriteitpersoonsgegevens.nl"]
 "country" = "NL"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "feed_urls" = ["https://www.autoriteitpersoonsgegevens.nl/feed/article/rss.xml"]
 "homepage" = "https://www.autoriteitpersoonsgegevens.nl/"
@@ -5924,6 +6617,7 @@
 "name" = "Autoriteit Persoonsgegevens"
 "name_zh" = "荷蘭個人資料保護局"
 "schedule_enabled" = false
+"timezone" = "Europe/Amsterdam"
 
 [[sources]]
 "id" = "nl_az"
@@ -5933,6 +6627,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -5975,6 +6671,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6017,6 +6715,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6059,6 +6759,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6101,6 +6803,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6143,6 +6847,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6185,6 +6891,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6227,6 +6935,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6269,6 +6979,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6311,6 +7023,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6350,6 +7064,8 @@
 "allow_domains" = ["www.ncsc.nl", "feeds.ncsc.nl"]
 "country" = "NL"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "feed_urls" = ["https://feeds.ncsc.nl/nieuws.rss"]
 "homepage" = "https://www.ncsc.nl/"
@@ -6359,12 +7075,15 @@
 "name" = "Nationaal Cyber Security Centrum"
 "name_zh" = "荷蘭國家網路安全中心"
 "schedule_enabled" = false
+"timezone" = "Europe/Amsterdam"
 
 [[sources]]
 "id" = "nl_nwo"
 "allow_domains" = ["www.nwo.nl", "nwo.nl"]
 "country" = "NL"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.nwo.nl/en"
 "institution_type" = "國家研究資助與研究基礎設施機構"
@@ -6373,6 +7092,7 @@
 "name" = "Dutch Research Council (NWO)"
 "name_zh" = "荷蘭研究委員會"
 "schedule_enabled" = false
+"timezone" = "Europe/Amsterdam"
 
 [[sources]]
 "id" = "nl_security_delta"
@@ -6380,6 +7100,8 @@
 "card_selectors" = [".grid-layout a.item.news-item[href]"]
 "country" = "NL"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".date"]
 "detail_pages" = 8
 "homepage" = "https://securitydelta.nl/"
@@ -6389,6 +7111,7 @@
 "name" = "Security Delta (HSD)"
 "name_zh" = "荷蘭 Security Delta 公私協力資安群聚"
 "schedule_enabled" = false
+"timezone" = "Europe/Amsterdam"
 "title_selectors" = [".title"]
 
 [[sources]]
@@ -6399,6 +7122,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6438,6 +7163,8 @@
 "allow_domains" = ["www.surf.nl"]
 "country" = "NL"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.surf.nl/en"
 "institution_type" = "教育研究機構數位基礎設施合作社"
@@ -6446,6 +7173,7 @@
 "name" = "SURF"
 "name_zh" = "荷蘭 SURF 教育研究數位合作社"
 "schedule_enabled" = false
+"timezone" = "Europe/Amsterdam"
 
 [[sources]]
 "id" = "nl_tno"
@@ -6453,6 +7181,8 @@
 "card_selectors" = [".rol-collage-card"]
 "country" = "NL"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".meta-date"]
 "detail_pages" = 8
 "homepage" = "https://www.tno.nl/en/"
@@ -6465,6 +7195,7 @@
 "name_zh" = "荷蘭應用科學研究組織"
 "schedule_enabled" = false
 "summary_selectors" = [".iprox-content"]
+"timezone" = "Europe/Amsterdam"
 "title_selectors" = ["h3"]
 
 [[sources]]
@@ -6472,6 +7203,8 @@
 "allow_domains" = ["www.tudelft.nl"]
 "country" = "NL"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.tudelft.nl/en/cybersecurity"
 "institution_type" = "公立大學資安研究中心"
@@ -6480,12 +7213,15 @@
 "name" = "TU Delft Cybersecurity"
 "name_zh" = "荷蘭代爾夫特理工大學資安研究"
 "schedule_enabled" = false
+"timezone" = "Europe/Amsterdam"
 
 [[sources]]
 "id" = "no_storting"
 "allow_domains" = ["www.stortinget.no", "stortinget.no"]
 "country" = "NO"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.stortinget.no/"
 "institution_type" = "國會"
@@ -6494,6 +7230,7 @@
 "name" = "Stortinget"
 "name_zh" = "挪威國會"
 "schedule_enabled" = false
+"timezone" = "Europe/Oslo"
 
 [[sources]]
 "id" = "pl_agriculture"
@@ -6503,6 +7240,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6545,6 +7284,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6587,6 +7328,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6626,6 +7369,8 @@
 "allow_domains" = ["www.gov.pl"]
 "country" = "PL"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.gov.pl/web/cyfryzacja"
 "institution_type" = "政府數位政策主管機關"
@@ -6634,6 +7379,7 @@
 "name" = "Ministerstwo Cyfryzacji"
 "name_zh" = "波蘭數位事務部"
 "schedule_enabled" = false
+"timezone" = "Europe/Warsaw"
 
 [[sources]]
 "id" = "pl_defence"
@@ -6643,6 +7389,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6685,6 +7433,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6727,6 +7477,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6769,6 +7521,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6811,6 +7565,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6853,6 +7609,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6895,6 +7653,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6934,6 +7694,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -6976,6 +7738,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -7018,6 +7782,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -7060,6 +7826,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -7099,6 +7867,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -7138,6 +7908,8 @@
 "allow_domains" = ["www.nask.pl", "nask.pl"]
 "country" = "PL"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.nask.pl/"
 "institution_type" = "國家網路安全與人工智慧研究機構"
@@ -7146,6 +7918,7 @@
 "name" = "NASK – Państwowy Instytut Badawczy"
 "name_zh" = "波蘭國家研究院 NASK"
 "schedule_enabled" = false
+"timezone" = "Europe/Warsaw"
 
 [[sources]]
 "id" = "pl_prime_minister"
@@ -7155,6 +7928,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -7197,6 +7972,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -7239,6 +8016,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -7281,6 +8060,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -7320,6 +8101,8 @@
 "allow_domains" = ["uke.gov.pl", "www.uke.gov.pl"]
 "country" = "PL"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://uke.gov.pl/en/"
 "institution_type" = "獨立通訊與頻譜監管機關"
@@ -7328,12 +8111,15 @@
 "name" = "Urząd Komunikacji Elektronicznej"
 "name_zh" = "波蘭電子通訊局"
 "schedule_enabled" = false
+"timezone" = "Europe/Warsaw"
 
 [[sources]]
 "id" = "pl_uodo"
 "allow_domains" = ["uodo.gov.pl"]
 "country" = "PL"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://uodo.gov.pl/"
 "institution_type" = "獨立資料保護監管機關"
@@ -7342,12 +8128,15 @@
 "name" = "Urząd Ochrony Danych Osobowych"
 "name_zh" = "波蘭個人資料保護局"
 "schedule_enabled" = false
+"timezone" = "Europe/Warsaw"
 
 [[sources]]
 "id" = "pt_agriculture_sea"
 "allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/agricultura-e-mar/ministro"
@@ -7366,6 +8155,8 @@
 "allow_domains" = ["www.arte.gov.pt"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.arte.gov.pt/"
 "institution_type" = "公共行政數位轉型機構"
@@ -7374,12 +8165,15 @@
 "name" = "Agência para a Reforma Tecnológica do Estado"
 "name_zh" = "葡萄牙國家技術改革局"
 "schedule_enabled" = false
+"timezone" = "Europe/Lisbon"
 
 [[sources]]
 "id" = "pt_cnpd"
 "allow_domains" = ["www.cnpd.pt"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.cnpd.pt/"
 "institution_type" = "獨立資料保護監管機關"
@@ -7388,12 +8182,15 @@
 "name" = "Comissão Nacional de Proteção de Dados"
 "name_zh" = "葡萄牙國家資料保護委員會"
 "schedule_enabled" = false
+"timezone" = "Europe/Lisbon"
 
 [[sources]]
 "id" = "pt_council_presidency"
 "allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://portugal.gov.pt/pt/gc25"
@@ -7412,6 +8209,8 @@
 "allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/cultura-juventude-e-desporto/ministro"
@@ -7430,6 +8229,8 @@
 "allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/defesa-nacional/ministro"
@@ -7448,6 +8249,8 @@
 "allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/economia-e-coesao-territorial/ministro"
@@ -7466,6 +8269,8 @@
 "allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/educacao-ciencia-e-inovacao/ministro"
@@ -7484,6 +8289,8 @@
 "allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/ambiente-e-energia/ministro"
@@ -7502,6 +8309,8 @@
 "allow_domains" = ["www.fct.pt"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.fct.pt/"
 "institution_type" = "公立研究資助機構"
@@ -7510,12 +8319,15 @@
 "name" = "Fundação para a Ciência e a Tecnologia"
 "name_zh" = "葡萄牙科學與技術基金會"
 "schedule_enabled" = false
+"timezone" = "Europe/Lisbon"
 
 [[sources]]
 "id" = "pt_finance"
 "allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/financas/ministro"
@@ -7535,6 +8347,8 @@
 "card_selectors" = ["div.item:has(time)"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -7553,6 +8367,8 @@
 "allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/saude/ministro"
@@ -7571,6 +8387,8 @@
 "allow_domains" = ["www.inesc-id.pt"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.inesc-id.pt/"
 "institution_type" = "公益非營利聯合研究所"
@@ -7579,12 +8397,15 @@
 "name" = "INESC-ID"
 "name_zh" = "葡萄牙 INESC-ID 資訊與電機研究所"
 "schedule_enabled" = false
+"timezone" = "Europe/Lisbon"
 
 [[sources]]
 "id" = "pt_inesc_tec"
 "allow_domains" = ["www.inesctec.pt"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.inesctec.pt/en"
 "institution_type" = "公私協力非營利聯合研究機構"
@@ -7593,12 +8414,15 @@
 "name" = "INESC TEC"
 "name_zh" = "葡萄牙 INESC TEC 產學研究機構"
 "schedule_enabled" = false
+"timezone" = "Europe/Lisbon"
 
 [[sources]]
 "id" = "pt_infrastructure_housing"
 "allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/infraestruturas-e-habitacao/ministro"
@@ -7617,6 +8441,8 @@
 "allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/administracao-interna/ministro"
@@ -7635,6 +8461,8 @@
 "allow_domains" = ["tecnico.ulisboa.pt"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://tecnico.ulisboa.pt/pt/"
 "institution_type" = "公立大學工程與資安研究機構"
@@ -7643,12 +8471,15 @@
 "name" = "Instituto Superior Técnico"
 "name_zh" = "葡萄牙里斯本大學高等技術學院"
 "schedule_enabled" = false
+"timezone" = "Europe/Lisbon"
 
 [[sources]]
 "id" = "pt_justice"
 "allow_domains" = ["justica.gov.pt"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = ["https://justica.gov.pt/API/JusticaGovPt.News/PublishingNews/Feed?myPortalId=0&myTabId=380&myModuleId=1649&organismo="]
 "homepage" = "https://justica.gov.pt/"
@@ -7665,6 +8496,8 @@
 "allow_domains" = ["portugal.gov.pt", "www.portugal.gov.pt", "edge-platform.sitecorecloud.io"]
 "country" = "PT"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://portugal.gov.pt/pt/gc25/area-de-governo/trabalho-solidariedade-e-seguranca-social/ministro"
@@ -7683,6 +8516,8 @@
 "allow_domains" = ["www.adr.gov.ro", "adr.gov.ro"]
 "country" = "RO"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.adr.gov.ro/"
 "institution_type" = "政府數位轉型政策與公共服務機關"
@@ -7691,12 +8526,15 @@
 "name" = "Autoritatea pentru Digitalizarea României"
 "name_zh" = "羅馬尼亞數位化局"
 "schedule_enabled" = false
+"timezone" = "Europe/Bucharest"
 
 [[sources]]
 "id" = "ro_ancom"
 "allow_domains" = ["www.ancom.ro", "ancom.ro"]
 "country" = "RO"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.ancom.ro/en/home/"
 "institution_type" = "國會監督下的獨立通訊與數位服務監管機關"
@@ -7705,12 +8543,15 @@
 "name" = "Autoritatea Națională pentru Administrare și Reglementare în Comunicații"
 "name_zh" = "羅馬尼亞通訊管理與監管局"
 "schedule_enabled" = false
+"timezone" = "Europe/Bucharest"
 
 [[sources]]
 "id" = "ro_anspdcp"
 "allow_domains" = ["www.dataprotection.ro", "dataprotection.ro"]
 "country" = "RO"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.dataprotection.ro/"
 "institution_type" = "獨立資料保護監管機關"
@@ -7719,6 +8560,7 @@
 "name" = "Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal"
 "name_zh" = "羅馬尼亞個人資料處理監督局"
 "schedule_enabled" = false
+"timezone" = "Europe/Bucharest"
 
 [[sources]]
 "id" = "ro_defence"
@@ -7728,6 +8570,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -7770,6 +8614,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -7812,6 +8658,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -7854,6 +8702,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -7896,6 +8746,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -7938,6 +8790,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -7980,6 +8834,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8020,6 +8876,8 @@
 "card_selectors" = ["article.post"]
 "country" = "RO"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time.entry-date"]
 "detail_pages" = 8
 "homepage" = "https://upb.ro/"
@@ -8030,12 +8888,15 @@
 "name" = "Universitatea Națională de Știință și Tehnologie POLITEHNICA București"
 "name_zh" = "羅馬尼亞布加勒斯特理工大學"
 "schedule_enabled" = false
+"timezone" = "Europe/Bucharest"
 
 [[sources]]
 "id" = "se_imy"
 "allow_domains" = ["www.imy.se"]
 "country" = "SE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.imy.se/"
 "institution_type" = "獨立資料保護監管機關"
@@ -8044,12 +8905,15 @@
 "name" = "Integritetsskyddsmyndigheten"
 "name_zh" = "瑞典隱私保護局"
 "schedule_enabled" = false
+"timezone" = "Europe/Stockholm"
 
 [[sources]]
 "id" = "se_pts"
 "allow_domains" = ["www.pts.se"]
 "country" = "SE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.pts.se/"
 "institution_type" = "獨立通訊監管機關"
@@ -8058,12 +8922,15 @@
 "name" = "Post- och telestyrelsen"
 "name_zh" = "瑞典郵政及電信局"
 "schedule_enabled" = false
+"timezone" = "Europe/Stockholm"
 
 [[sources]]
 "id" = "se_riksdag"
 "allow_domains" = ["www.riksdagen.se"]
 "country" = "SE"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "homepage" = "https://www.riksdagen.se/"
 "institution_type" = "國會"
@@ -8072,6 +8939,7 @@
 "name" = "Sveriges riksdag"
 "name_zh" = "瑞典國會"
 "schedule_enabled" = false
+"timezone" = "Europe/Stockholm"
 
 [[sources]]
 "id" = "si_agriculture"
@@ -8081,6 +8949,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8120,6 +8990,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8159,6 +9031,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8198,6 +9072,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8237,6 +9113,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8276,6 +9154,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8315,6 +9195,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8354,6 +9236,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8391,6 +9275,8 @@
 "card_selectors" = [".news-list .list-item"]
 "country" = "SI"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["time"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -8412,6 +9298,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8454,6 +9342,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8493,6 +9383,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8532,6 +9424,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8571,6 +9465,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8607,6 +9503,8 @@
 "allow_domains" = ["www.gov.si"]
 "country" = "SI"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = ["https://www.gov.si/novice/rss/?orgID%5B0%5D=4457"]
 "homepage" = "https://www.gov.si/drzavni-organi/vladne-sluzbe/kabinet-predsednika-vlade/"
@@ -8623,6 +9521,8 @@
 "allow_domains" = ["cert.si", "www.cert.si"]
 "country" = "SI"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "exclude_patterns" = []
 "homepage" = "https://www.cert.si/"
@@ -8633,6 +9533,7 @@
 "name" = "SI-CERT"
 "name_zh" = "斯洛維尼亞 SI-CERT"
 "schedule_enabled" = false
+"timezone" = "Europe/Ljubljana"
 
 [[sources]]
 "id" = "si_slovenians_abroad"
@@ -8642,6 +9543,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8681,6 +9584,8 @@
 "allow_domains" = ["gov.si"]
 "country" = "SI"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "exclude_patterns" = []
 "homepage" = "https://www.gov.si/en/state-authorities/government-offices/government-information-security-office/"
@@ -8691,6 +9596,7 @@
 "name" = "Urad Vlade Republike Slovenije za informacijsko varnost (URSIV)"
 "name_zh" = "斯洛維尼亞政府資訊安全辦公室"
 "schedule_enabled" = false
+"timezone" = "Europe/Ljubljana"
 
 [[sources]]
 "id" = "sk_culture"
@@ -8700,6 +9606,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8740,6 +9648,8 @@
 "card_selectors" = ["article.art--list"]
 "country" = "SK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["date.art__meta"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -8761,6 +9671,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8800,6 +9712,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8839,6 +9753,8 @@
 "allow_domains" = ["www.minzp.sk"]
 "country" = "SK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = []
 "homepage" = "https://www.minzp.sk/"
@@ -8856,6 +9772,8 @@
 "card_selectors" = [".news-list li"]
 "country" = "SK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".date"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -8877,6 +9795,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -8917,6 +9837,8 @@
 "card_selectors" = ["li:has(a[href^=\"Clanok?\"]):has(strong)"]
 "country" = "SK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = ["strong"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -8935,6 +9857,8 @@
 "allow_domains" = ["www.minv.sk"]
 "country" = "SK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 0
 "feed_urls" = ["https://www.minv.sk/rss.php?rss-tlacove-spravy"]
 "homepage" = "https://www.minv.sk/"
@@ -8952,6 +9876,8 @@
 "card_selectors" = [".idsk-card-secondary"]
 "country" = "SK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".idsk-card-meta-date"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -8973,6 +9899,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -9013,6 +9941,8 @@
 "card_selectors" = [".news_content_box"]
 "country" = "SK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_selectors" = [".news_date"]
 "detail_pages" = 0
 "feed_urls" = []
@@ -9031,6 +9961,8 @@
 "allow_domains" = ["cra.nbu.gov.sk", "nbu.gov.sk"]
 "country" = "SK"
 "critical" = false
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "detail_pages" = 8
 "exclude_patterns" = []
 "homepage" = "https://cra.nbu.gov.sk/en/"
@@ -9041,6 +9973,7 @@
 "name" = "National Security Authority of the Slovak Republic – Cyber Resilience Act"
 "name_zh" = "斯洛伐克國家安全局 CRA 資訊服務"
 "schedule_enabled" = false
+"timezone" = "Europe/Bratislava"
 
 [[sources]]
 "id" = "sk_recovery_knowledge"
@@ -9050,6 +9983,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -9092,6 +10027,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""
@@ -9134,6 +10071,8 @@
 "critical" = false
 "date_evidence_url" = ""
 "date_exception_reason" = ""
+"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
+"date_order" = "DMY"
 "date_policy" = "required"
 "date_review_due" = ""
 "date_reviewed_on" = ""

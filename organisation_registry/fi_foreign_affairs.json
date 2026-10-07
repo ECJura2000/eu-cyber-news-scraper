@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "fi",
       "homepage": "https://um.fi",
-      "listing_url": "https://um.fi/etusivu",
+      "listing_url": "https://um.fi/etusivu", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "um.fi"

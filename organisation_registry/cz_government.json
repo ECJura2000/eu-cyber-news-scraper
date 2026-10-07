@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "cs",
       "homepage": "https://vlada.gov.cz/",
-      "listing_url": "https://vlada.gov.cz/scripts/detail.php?pgid=1305",
+      "listing_url": "https://vlada.gov.cz/scripts/detail.php?pgid=1305", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "vlada.gov.cz"

@@ -3,7 +3,7 @@
   "module_version": "2026-09-26.1",
   "canonical_id": "lt_rrt",
   "names": {"zh": "立陶宛通訊監管局", "en": "Lietuvos Respublikos ryšių reguliavimo tarnyba", "short": "lt_rrt", "publisher_aliases": []},
-  "sources": [{"id": "lt_rrt", "country": "LT", "name_zh": "立陶宛通訊監管局", "name": "Lietuvos Respublikos ryšių reguliavimo tarnyba", "institution_type": "獨立通訊與數位空間監管機關", "language": "lt", "homepage": "https://rrt.lt/", "listing_url": "https://rrt.lt/en/about-rrt/news", "allow_domains": ["rrt.lt", "www.rrt.lt"], "critical": false, "schedule_enabled": false, "detail_pages": 8}],
+  "sources": [{"id": "lt_rrt", "country": "LT", "name_zh": "立陶宛通訊監管局", "name": "Lietuvos Respublikos ryšių reguliavimo tarnyba", "institution_type": "獨立通訊與數位空間監管機關", "language": "lt", "homepage": "https://rrt.lt/", "listing_url": "https://rrt.lt/en/about-rrt/news", "timezone": "Europe/Vilnius", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"], "allow_domains": ["rrt.lt", "www.rrt.lt"], "critical": false, "schedule_enabled": false, "detail_pages": 8}],
   "filter": {"topics": ["平台責任、內容審查、推薦演算法", "NIS2、關鍵基礎設施保護", "關鍵基礎設施的實體與數位融合保護"], "include_patterns": [], "exclude_patterns": []},
   "health": {"required": false, "minimum_items": 1, "maximum_age_days": 90},
   "history": {"effective_from": "2026-09-26", "predecessors": [], "successors": [], "transitional_sources": []},

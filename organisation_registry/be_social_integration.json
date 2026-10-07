@@ -17,7 +17,7 @@
       "institution_type": "ministry",
       "language": "nl",
       "homepage": "https://www.mi-is.be/nl",
-      "listing_url": "https://www.mi-is.be/nl/actueel",
+      "listing_url": "https://www.mi-is.be/nl/actueel", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [],
       "allow_domains": [
         "www.mi-is.be"

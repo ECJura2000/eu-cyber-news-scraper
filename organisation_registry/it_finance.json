@@ -17,7 +17,7 @@
       "institution_type": "central ministry",
       "language": "it",
       "homepage": "https://www.mef.gov.it/",
-      "listing_url": "https://www.mef.gov.it/ufficio-stampa/notizie.html",
+      "listing_url": "https://www.mef.gov.it/ufficio-stampa/notizie.html", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "www.mef.gov.it"
       ],

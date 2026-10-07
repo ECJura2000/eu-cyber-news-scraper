@@ -6,7 +6,7 @@
   "sources": [{
     "id": "cy_dsa", "country": "CY", "name_zh": "塞浦路斯數位安全局", "name": "Digital Security Authority",
     "institution_type": "國家資安主管機關／National CSIRT", "language": "en",
-    "homepage": "https://dsa.cy/EN", "listing_url": "https://dsa.cy/EN",
+    "homepage": "https://dsa.cy/EN", "listing_url": "https://dsa.cy/EN", "timezone": "Asia/Nicosia", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
     "allow_domains": ["dsa.cy", "www.dsa.cy"], "include_patterns": [], "exclude_patterns": [],
     "critical": false, "schedule_enabled": false, "detail_pages": 8
   }],

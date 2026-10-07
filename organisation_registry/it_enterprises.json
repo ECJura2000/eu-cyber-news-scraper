@@ -17,7 +17,7 @@
       "institution_type": "central ministry",
       "language": "it",
       "homepage": "https://www.mise.gov.it/it/",
-      "listing_url": "https://www.mimit.gov.it/index.php/it/notizie-stampa?format=feed&type=rss",
+      "listing_url": "https://www.mimit.gov.it/index.php/it/notizie-stampa?format=feed&type=rss", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
         "https://www.mimit.gov.it/index.php/it/notizie-stampa?format=feed&type=rss"
       ],

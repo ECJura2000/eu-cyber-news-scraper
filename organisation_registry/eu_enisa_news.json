@@ -17,7 +17,7 @@
       "institution_type": "歐盟行政機關",
       "language": "en",
       "homepage": "https://www.enisa.europa.eu/",
-      "listing_url": "https://www.enisa.europa.eu/news",
+      "listing_url": "https://www.enisa.europa.eu/news", "timezone": "Europe/Brussels", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "enisa.europa.eu",
         "www.enisa.europa.eu"

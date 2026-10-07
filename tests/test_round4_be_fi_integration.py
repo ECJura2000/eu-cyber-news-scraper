@@ -35,7 +35,9 @@ def test_production_exact_source_policy_and_publication_parity(identifier):
     registry = load_organisation_registry()
     module = registry.module_for_source(identifier)
     assert module is not None
-    assert module.payload["sources"] == [record["source"]]
+    actual = module.payload["sources"][0]
+    assert {key: actual[key] for key in record["source"]} == record["source"]
+    assert set(actual) - set(record["source"]) <= {'date_order', 'date_formats', 'timezone'}
     assert module.payload["filter"]["topics"] == list(OBSERVATION_TOPICS)
     assert module.payload["responsibility_by_topic"] == {}
     s = source(identifier)

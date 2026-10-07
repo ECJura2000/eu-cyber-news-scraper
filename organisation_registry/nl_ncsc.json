@@ -17,7 +17,7 @@
       "institution_type": "國家資安主管機關",
       "language": "nl",
       "homepage": "https://www.ncsc.nl/",
-      "listing_url": "https://www.ncsc.nl/nieuws",
+      "listing_url": "https://www.ncsc.nl/nieuws", "timezone": "Europe/Amsterdam", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": ["https://feeds.ncsc.nl/nieuws.rss"],
       "allow_domains": [
         "www.ncsc.nl",

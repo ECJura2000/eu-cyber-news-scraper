@@ -17,7 +17,7 @@
       "institution_type": "獨立資料保護監管機關",
       "language": "lv",
       "homepage": "https://www.dvi.gov.lv/lv",
-      "listing_url": "https://www.dvi.gov.lv/lv/jaunumi",
+      "listing_url": "https://www.dvi.gov.lv/lv/jaunumi", "timezone": "Europe/Riga", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "allow_domains": [
         "www.dvi.gov.lv"
       ],
