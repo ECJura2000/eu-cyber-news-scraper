@@ -1,6 +1,108 @@
 {
   "schema_version": 3,
   "translations": {
+    "fr\u0000Mila et Inria renforcent la coopération en recherche sur l’IA  entre le Canada et la France": {
+      "text": "Mila和Inria加強了加拿大和法國之間的人工智慧研究合作",
+      "provider": "translate",
+      "created_at": "2026-10-12T05:11:28.572220+00:00",
+      "last_accessed_at": "2026-10-12T05:11:28.572220+00:00"
+    },
+    "en\u0000Critical Vulnerability in Citrix NetScaler ADC and Gateway (CVE-2026-107406)": {
+      "text": "Citrix NetScaler ADC和閘道中的嚴重弱點(CVE-2026-107406)",
+      "provider": "translate",
+      "created_at": "2026-10-12T05:11:28.572220+00:00",
+      "last_accessed_at": "2026-10-12T05:11:28.572220+00:00"
+    },
+    "en\u0000Italian DPA fines Emirates EUR 180 000 for infringements concerning passengers’ health data | European Data Protection Board": {
+      "text": "義大利DPA對阿聯酋航空處以18萬歐元的罰款，原因是涉及乘客健康資料的侵權行為|歐洲資料保護委員會",
+      "provider": "translate",
+      "created_at": "2026-10-12T05:11:28.572220+00:00",
+      "last_accessed_at": "2026-10-12T05:11:28.572220+00:00"
+    },
+    "en\u0000Italian DPA fines BBVA EUR 5 508 000 for failing to respect a customer’s objection to direct marketing | European Data Protection Board": {
+      "text": "義大利DPA因未能尊重客戶對直接行銷的反對而罰款BBVA 5508 000歐元|歐洲資料保護委員會",
+      "provider": "translate",
+      "created_at": "2026-10-12T05:11:28.572220+00:00",
+      "last_accessed_at": "2026-10-12T05:11:28.572220+00:00"
+    },
+    "en\u0000Italian DPA fines IQVIA EUR 7 000 000 for unlawful processing of patients’ health data | European Data Protection Board": {
+      "text": "義大利DPA因非法處理病患健康資料而罰款IQVIA 7,000,000歐元|歐洲資料保護委員會",
+      "provider": "translate",
+      "created_at": "2026-10-12T05:11:28.572220+00:00",
+      "last_accessed_at": "2026-10-12T05:11:28.572220+00:00"
+    },
+    "en\u0000Italian DPA fines security company EUR 39 000 for violations concerning employees’ data | European Data Protection Board": {
+      "text": "義大利DPA對違反員工資料規定的安全公司處以39,000歐元的罰款|歐洲資料保護委員會",
+      "provider": "translate",
+      "created_at": "2026-10-12T05:11:28.572220+00:00",
+      "last_accessed_at": "2026-10-12T05:11:28.572220+00:00"
+    },
+    "fr\u0000Une meilleure IA pour développer du code": {
+      "text": "更好的人工智慧開發程式碼",
+      "provider": "translate",
+      "created_at": "2026-10-12T05:11:28.572220+00:00",
+      "last_accessed_at": "2026-10-12T05:11:28.572220+00:00"
+    },
+    "en\u0000Hellenic DPA decision on a data breach involving E.E.T.A.A. S.A. as processor for the Ministry of Social Cohesion and Family Affairs | European Data Protection Board": {
+      "text": "希臘DPA對涉及E.E.T.A.A. S.A.作為社會凝聚力和家庭事務部處理器的資料洩露的決定|歐洲資料保護委員會",
+      "provider": "translate",
+      "created_at": "2026-10-12T05:11:28.572220+00:00",
+      "last_accessed_at": "2026-10-12T05:11:28.572220+00:00"
+    },
+    "en\u0000Swedish DPA fines Miljödata i Karlskrona approximately EUR 160 000 for insufficient technical and organisational measures to ensure information security | European Data Protection Board": {
+      "text": "瑞典DPA對Miljödata i Karlskrona處以約16萬歐元的罰款，原因是其技術和組織措施不足以確保資訊安全|歐洲資料保護委員會",
+      "provider": "translate",
+      "created_at": "2026-10-12T05:11:28.572220+00:00",
+      "last_accessed_at": "2026-10-12T05:11:28.572220+00:00"
+    },
+    "en\u0000Dutch DPA fines Uber EUR 824 990 000 for unlawful automated decision-making and insufficient information on profiling | European Data Protection Board": {
+      "text": "荷蘭DPA因非法自動決策和資料不足而罰款Uber EUR 824 990 000 |歐洲資料保護委員會",
+      "provider": "translate",
+      "created_at": "2026-10-12T05:11:28.572220+00:00",
+      "last_accessed_at": "2026-10-12T05:11:28.572220+00:00"
+    },
+    "fr\u0000Une nouvelle équipe-projet pour repenser la cryptographie face à la menace quantique": {
+      "text": "一個新的專案團隊，在面對量子威脅時重新思考密碼學",
+      "provider": "translate",
+      "created_at": "2026-10-12T05:11:28.572220+00:00",
+      "last_accessed_at": "2026-10-12T05:11:28.572220+00:00"
+    },
+    "en\u0000Security Advisory 2026-015": {
+      "text": "安全公告2026-015",
+      "provider": "translate",
+      "created_at": "2026-10-12T05:11:28.572220+00:00",
+      "last_accessed_at": "2026-10-12T05:11:28.572220+00:00"
+    },
+    "en\u0000Critical Vulnerability in SonicWall:SMA1000 (CVE-2026-102255)": {
+      "text": "SonicWall中的嚴重弱點： SMA1000 (CVE-2026-102255)",
+      "provider": "translate",
+      "created_at": "2026-10-12T05:11:28.572220+00:00",
+      "last_accessed_at": "2026-10-12T05:11:28.572220+00:00"
+    },
+    "fr\u0000Découvrez le rapport annuel 2025 d’Inria !": {
+      "text": "檢視Inria的2025年年報！",
+      "provider": "translate",
+      "created_at": "2026-10-12T05:11:28.572220+00:00",
+      "last_accessed_at": "2026-10-12T05:11:28.572220+00:00"
+    },
+    "en\u0000Critical Arbitrary File Access Vulnerability impacting Multiple Atlassian Products (CVE-2026-21589)": {
+      "text": "影響多個Atlassian產品的嚴重任意檔案存取弱點(CVE-2026-21589)",
+      "provider": "translate",
+      "created_at": "2026-10-12T05:11:28.572220+00:00",
+      "last_accessed_at": "2026-10-12T05:11:28.572220+00:00"
+    },
+    "en\u0000Vulnerability in Citrix NetScaler ADC and Gateway (CVE-2026-88779)": {
+      "text": "Citrix NetScaler ADC和閘道中的弱點(CVE-2026-88779)",
+      "provider": "translate",
+      "created_at": "2026-10-12T05:11:28.572220+00:00",
+      "last_accessed_at": "2026-10-12T05:11:28.572220+00:00"
+    },
+    "fr\u0000Rencontres Informatique & Libertés 2026 : voir la rediffusion de l'évènement": {
+      "text": "2026年資料保護會議：檢視活動重播",
+      "provider": "translate",
+      "created_at": "2026-10-12T05:11:28.572220+00:00",
+      "last_accessed_at": "2026-10-12T05:11:28.572220+00:00"
+    },
     "fr\u0000Quand la recherche devient un outil d'apprentissage de la physique quantique": {
       "text": "當研究成為學習量子物理的工具時",
       "provider": "translate",
