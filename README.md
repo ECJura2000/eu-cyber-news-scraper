@@ -231,6 +231,10 @@ python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95
 
 BMI、DG CONNECT、EEAS、VIGINUM 在 registry 明確宣告 `browser_transport: true`，使用已安裝的系統 Chrome／Chromium 讀取主文件，以處理一般 HTTP client 遭網站防護拒絕的情況。可用 `CHROME_PATH` 指定執行檔；未安裝時回報錯誤，不自動下載或安裝瀏覽器。不開啟 GUI、不讀取個人設定檔、不停用憑證驗證；使用暫存的獨立 session，真實 Chrome 識別資訊附加本程式名稱。停用頁面 JavaScript、service worker、附帶資源與框架；HTTP 轉址交回原流程逐跳檢查 robots 與來源網域。`.run.json` 的來源列另記錄 `browser_requests`。瀏覽器內容不共用一般 HTTP 條件式快取。
 
+GitHub-hosted runner 仍可能因來源網站的網路存取限制而失敗；換成 Chrome 不代表能解除 IP 層級封鎖。每週工作流程預設仍使用 `ubuntu-latest`，可透過 repository Actions variable `EU_NEWS_RUNNER` 指定 runner 的 JSON 標籤陣列，例如 `["self-hosted","macOS","ARM64","eu-news-network"]`。啟用前必須先在能正常存取來源的專用環境註冊同標籤 runner，並確認已安裝 Python 與系統 Chrome；否則工作會一直排隊。此設定只影響每週蒐集，PR 的 CI 保持使用 GitHub-hosted runner。
+
+在個人 Mac 安裝 runner 服務會讓獲准的 GitHub 工作流程於該 Mac 執行，並且排程時需保持開機與連網；安裝或啟動常駐服務前應由機器擁有者確認。尚未註冊 runner 時不要設定上述 variable。本次修復只提供切換設定，不會自動註冊 runner、安裝服務或變更 repository variable。
+
 正式抓取另在 state 目錄的 `.http-cache/responses.sqlite3` 保存條件式 HTTP 快取：優先使用 ETag／`If-None-Match`，其次使用 Last-Modified／`If-Modified-Since`，每次仍向伺服器重新驗證，只有 304 才重用內容。快取包含內容 SHA-256 檢查，保留最多 30 天、本文合計最多 100 MiB；`no-store`、`Set-Cookie`、不支援的 `Vary` 或沒有驗證標頭的回應不保存。URL 稽核與目錄探索目前未配置持久 HTTP 本文快取。
 
 有效來源預算取 `--source-budget` 與 JSON 的 `minimum_budget_seconds` 較大值；來源下限僅接受 0～900 秒整數，預設 0。Bundeskartellamt 的[官方 robots](https://www.bundeskartellamt.de/robots.txt) 指定每次間隔 30 秒，因此單獨設定 600 秒下限，保留最多 12 篇內頁的日期及摘要查證；其他來源仍維持基本 60 秒。這是等待時間預算，不改變日期、來源健康或 state 寫入門檻，較短的命令列基本預算也不會覆蓋此下限。BNetzA 的純文字 robots 雖被官網標成 HTML，仍依實際規則解析；真正的 HTML／驗證頁繼續阻擋，`/SiteGlobals` 也仍禁止存取。首頁採用不會降至 HTTP 的已驗證 HTTPS 入口。

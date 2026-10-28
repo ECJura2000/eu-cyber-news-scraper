@@ -25,7 +25,7 @@ concurrency:
 
 jobs:
   scrape:
-    runs-on: ubuntu-latest
+    runs-on: ${{ fromJSON(vars.EU_NEWS_RUNNER || '"ubuntu-latest"') }}
     timeout-minutes: 35
     permissions:
       contents: write
