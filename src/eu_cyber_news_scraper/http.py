@@ -205,7 +205,7 @@ class HttpClient:
                     request=response.request,
                     response=response,
                 )
-            except (httpx.TimeoutException, httpx.NetworkError) as exc:
+            except (httpx.TimeoutException, httpx.NetworkError, httpx.RemoteProtocolError) as exc:
                 last_error = exc
                 if isinstance(exc, httpx.TimeoutException):
                     metrics.timeout_count += 1
