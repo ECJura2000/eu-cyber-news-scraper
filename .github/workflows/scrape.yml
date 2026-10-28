@@ -38,14 +38,20 @@ jobs:
           ref: state
           path: .state-branch
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        if: runner.environment != 'self-hosted'
         with:
           python-version: "3.13"
           cache: pip
           cache-dependency-path: uv.lock
       - name: Install locked runtime
         run: |
-          python -m pip install --disable-pip-version-check uv==0.11.29
-          uv sync --frozen --no-dev
+          if [[ "$RUNNER_ENVIRONMENT" == "self-hosted" ]]; then
+            test "$(uv --version)" = "uv 0.11.29"
+            uv sync --frozen --no-dev --python python3 --no-python-downloads
+          else
+            python -m pip install --disable-pip-version-check uv==0.11.29
+            uv sync --frozen --no-dev
+          fi
       - name: Verify installed system Chrome
         run: uv run python -c 'from eu_cyber_news_scraper.browser_http import system_chrome; print(system_chrome())'
       - name: Restore durable state
