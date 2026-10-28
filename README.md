@@ -233,7 +233,7 @@ BMI、DG CONNECT、EEAS、VIGINUM 在 registry 明確宣告 `browser_transport: 
 
 GitHub-hosted runner 仍可能因來源網站的網路存取限制而失敗；換成 Chrome 不代表能解除 IP 層級封鎖。每週工作流程預設仍使用 `ubuntu-latest`，可透過 repository Actions variable `EU_NEWS_RUNNER` 指定 runner 的 JSON 標籤陣列，例如 `["self-hosted","macOS","ARM64","eu-news-network"]`。啟用前必須先在能正常存取來源的專用環境註冊同標籤 runner，並確認已安裝 Python 與系統 Chrome；否則工作會一直排隊。此設定只影響每週蒐集，PR 的 CI 保持使用 GitHub-hosted runner。
 
-在個人 Mac 安裝 runner 服務會讓獲准的 GitHub 工作流程於該 Mac 執行，並且排程時需保持開機與連網；安裝或啟動常駐服務前應由機器擁有者確認。尚未註冊 runner 時不要設定上述 variable。本次修復只提供切換設定，不會自動註冊 runner、安裝服務或變更 repository variable。
+在個人 Mac 安裝 runner 服務會讓獲准的 GitHub 工作流程於該 Mac 執行，並且排程時需保持開機、登入與連網；安裝或啟動常駐服務前應由機器擁有者確認。尚未註冊 runner 時不要設定上述 variable。程式不會自動註冊 runner、安裝服務或變更 repository variable。本機工作使用暫存環境安裝指定版本的 uv，不更動全域 Python 或 uv。
 
 正式抓取另在 state 目錄的 `.http-cache/responses.sqlite3` 保存條件式 HTTP 快取：優先使用 ETag／`If-None-Match`，其次使用 Last-Modified／`If-Modified-Since`，每次仍向伺服器重新驗證，只有 304 才重用內容。快取包含內容 SHA-256 檢查，保留最多 30 天、本文合計最多 100 MiB；`no-store`、`Set-Cookie`、不支援的 `Vary` 或沒有驗證標頭的回應不保存。URL 稽核與目錄探索目前未配置持久 HTTP 本文快取。
 

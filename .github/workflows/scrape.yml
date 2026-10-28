@@ -46,7 +46,10 @@ jobs:
       - name: Install locked runtime
         run: |
           if [[ "$RUNNER_ENVIRONMENT" == "self-hosted" ]]; then
-            test "$(uv --version)" = "uv 0.11.29"
+            python3 -m venv "$RUNNER_TEMP/eu-news-tools"
+            "$RUNNER_TEMP/eu-news-tools/bin/python" -m pip install --disable-pip-version-check uv==0.11.29
+            export PATH="$RUNNER_TEMP/eu-news-tools/bin:$PATH"
+            echo "$RUNNER_TEMP/eu-news-tools/bin" >> "$GITHUB_PATH"
             uv sync --frozen --no-dev --python python3 --no-python-downloads
           else
             python -m pip install --disable-pip-version-check uv==0.11.29
