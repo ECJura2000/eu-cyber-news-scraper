@@ -45,6 +45,8 @@ def source_config_fingerprint(source: Source) -> str:
         values["feed_archive_fallback"] = True
     if source.minimum_budget_seconds:
         values["minimum_budget_seconds"] = source.minimum_budget_seconds
+    if source.browser_transport:
+        values["browser_transport"] = True
     return health_profile_fingerprint(values)
 
 

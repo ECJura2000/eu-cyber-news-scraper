@@ -273,6 +273,7 @@ def test_default_fetch_policies_preserve_legacy_fr_anssi_baseline(legacy_fr_anss
 
 @pytest.mark.parametrize("changes", [
     {"feed_archive_fallback": True},
+    {"browser_transport": True},
     {"minimum_budget_seconds": 600},
     {"feed_archive_fallback": True, "minimum_budget_seconds": 600},
 ])
