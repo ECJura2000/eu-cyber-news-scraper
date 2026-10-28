@@ -57,6 +57,7 @@ class HttpStats:
     retry_count: int = 0
     timeout_count: int = 0
     cache_hits: int = 0
+    browser_requests: int = 0
     statuses: list[str] = field(default_factory=list)
 
 
@@ -101,6 +102,7 @@ class HttpClient:
         self._transport = transport
         self._client = self._new_client(truststore.SSLContext(ssl.PROTOCOL_TLS_CLIENT))
         self._special_clients: dict[str, httpx.AsyncClient] = {}
+        self._browser_client: httpx.AsyncClient | None = None
 
     async def __aenter__(self) -> HttpClient:
         return self
@@ -111,6 +113,8 @@ class HttpClient:
     async def aclose(self) -> None:
         await self._client.aclose()
         await asyncio.gather(*(client.aclose() for client in self._special_clients.values()))
+        if self._browser_client is not None:
+            await self._browser_client.aclose()
         if self._cache:
             self._cache.close()
 
@@ -121,6 +125,7 @@ class HttpClient:
         stats: HttpStats | None = None,
         ssl_bundle: str = "",
         user_agent: str = "",
+        browser_transport: bool = False,
         _check_robots: bool = True,
         redirect_guard: Callable[[str], bool] | None = None,
     ) -> httpx.Response:
@@ -133,8 +138,8 @@ class HttpClient:
             if urlsplit(url).scheme not in {"http", "https"}:
                 raise httpx.InvalidURL(f"unsupported redirect scheme: {url}")
             if self.obey_robots and _check_robots:
-                await self._ensure_robots(url, metrics, ssl_bundle, user_agent, redirect_guard)
-            response = await self._get_with_retry(url, metrics, ssl_bundle, user_agent)
+                await self._ensure_robots(url, metrics, ssl_bundle, user_agent, redirect_guard, browser_transport)
+            response = await self._get_with_retry(url, metrics, ssl_bundle, user_agent, browser_transport)
             if response.has_redirect_location:
                 history.append(response)
                 url = str(response.url.join(response.headers["location"]))
@@ -146,18 +151,20 @@ class HttpClient:
         raise httpx.TooManyRedirects("too many redirects", request=httpx.Request("GET", url))
 
     async def _get_with_retry(
-        self, url: str, metrics: HttpStats, ssl_bundle: str, user_agent: str,
+        self, url: str, metrics: HttpStats, ssl_bundle: str, user_agent: str, browser_transport: bool = False,
     ) -> httpx.Response:
         host = (urlsplit(url).hostname or "").casefold()
         host_limiter = self._host_limiters.setdefault(host, asyncio.Semaphore(self._per_host_limit))
         # Cookie names need not be unique across domains or paths. Cookies.items()
         # raises CookieConflict in that normal case for a multi-site crawler.
+        client = self._client_for_transport(ssl_bundle, browser_transport)
+        cache = self._cache if not browser_transport else None
         cookies = repr(sorted(
             (cookie.domain, cookie.path, cookie.name, cookie.value)
             for cookie in self._client_for_bundle(ssl_bundle).cookies.jar
-        )) if self._cache else ""
+        )) if cache else ""
         variant = (user_agent or USER_AGENT) + "\n" + ssl_bundle + "\n" + self._headers["Accept-Language"] + cookies
-        cached = self._cache.load(url, variant) if self._cache else None
+        cached = cache.load(url, variant) if cache else None
         conditional: dict[str, str] = {}
         if cached is not None:
             if cached.headers.get("etag"):
@@ -172,9 +179,11 @@ class HttpClient:
                     async with self._global_limiter:
                         await self._pace(host)
                         metrics.request_count += 1
+                        if browser_transport:
+                            metrics.browser_requests += 1
                         response = await self._read_response(
                             url,
-                            self._client_for_bundle(ssl_bundle),
+                            client,
                             user_agent=user_agent,
                             headers=conditional,
                         )
@@ -189,8 +198,8 @@ class HttpClient:
                     response = httpx.Response(200, headers=merged, content=cached.content,
                                               request=response.request, extensions={"cache_revalidated": True})
                     metrics.cache_hits += 1
-                if self._cache and response.status_code == 200:
-                    self._cache.save(response, variant)
+                if cache and response.status_code == 200:
+                    cache.save(response, variant)
                 if attempt == 1 and response.status_code in RETRYABLE_STATUSES and response.headers.get("retry-after"):
                     # Exhausting this request's retries does not release other
                     # requests from a fresh server-specified origin cooldown.
@@ -234,10 +243,11 @@ class HttpClient:
             self._host_clocks[host] = time.monotonic() + max(self.min_interval, self._host_delays.get(host, 0.0))
 
     async def _ensure_robots(self, url: str, stats: HttpStats, bundle: str, user_agent: str,
-                             redirect_guard: Callable[[str], bool] | None = None) -> None:
+                             redirect_guard: Callable[[str], bool] | None = None,
+                             browser_transport: bool = False) -> None:
         parsed = urlsplit(url)
         origin = f"{parsed.scheme}://{parsed.netloc}"
-        key = origin + "\n" + user_agent + "\n" + bundle
+        key = origin + "\n" + user_agent + "\n" + bundle + "\n" + str(browser_transport)
         lock = self._robots_locks.setdefault(key, asyncio.Lock())
         async with lock:
             entry = self._robots.get(key)
@@ -246,7 +256,7 @@ class HttpClient:
                 try:
                     response = await self.get(origin + "/robots.txt", stats=stats, ssl_bundle=bundle,
                                               user_agent=user_agent, _check_robots=False,
-                                              redirect_guard=redirect_guard)
+                                              redirect_guard=redirect_guard, browser_transport=browser_transport)
                     content_type = response.headers.get("content-type", "").casefold()
                     text = response.text.lstrip("\ufeff")
                     # Some official servers label plain robots rules text/html.
@@ -262,8 +272,10 @@ class HttpClient:
                         policy = RobotsPolicy.parse(text)
                 except httpx.HTTPStatusError as exc:
                     code = exc.response.status_code
-                    if 400 <= code < 500 and code != 429:
-                        policy = RobotsPolicy(((False, "/"),)) if code in {401, 403} else RobotsPolicy()
+                    if code in {401, 403}:
+                        policy = f"robots.txt access blocked: HTTP {code}; rules could not be read"
+                    elif 400 <= code < 500 and code != 429:
+                        policy = RobotsPolicy()
                     else:
                         policy = f"robots.txt unreachable: HTTP {code}"
                 except (httpx.HTTPError, ResponseTooLargeError, RetryDeferredError) as exc:
@@ -276,6 +288,22 @@ class HttpClient:
             self._host_delays[parsed.hostname or ""] = max(self.min_interval, selected.crawl_delay)
             if not selected.allows(url):
                 raise RobotsDeniedError(f"robots.txt disallows: {url}")
+
+    def _client_for_transport(self, bundle: str, browser_transport: bool) -> httpx.AsyncClient:
+        if not browser_transport:
+            return self._client_for_bundle(bundle)
+        if bundle:
+            raise ValueError("System browser transport cannot use a custom TLS intermediate bundle")
+        if self._transport is not None:
+            # An explicitly injected transport also owns declared browser requests.
+            return self._client_for_bundle(bundle)
+        if self._browser_client is None:
+            from .browser_http import BrowserHttpTransport
+            self._browser_client = httpx.AsyncClient(
+                headers=self._headers, transport=BrowserHttpTransport(self.max_response_bytes),
+                follow_redirects=False,
+            )
+        return self._browser_client
 
     def _new_client(self, verify: ssl.SSLContext) -> httpx.AsyncClient:
         return httpx.AsyncClient(

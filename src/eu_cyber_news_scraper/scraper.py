@@ -32,6 +32,7 @@ class RedirectDomainError(RuntimeError):
 
 class _RedirectOptions(TypedDict, total=False):
     redirect_guard: Callable[[str], bool]
+    browser_transport: bool
 
 
 class ChallengePageError(RuntimeError):
@@ -91,6 +92,7 @@ async def scrape_source(
                 bytes_downloaded=stats.bytes_downloaded,
                 retry_count=stats.retry_count,
                 cache_hits=stats.cache_hits,
+                browser_requests=stats.browser_requests,
                 timeout_count=stats.timeout_count + 1,
                 budget_exhausted=True,
                 http_statuses=tuple(stats.statuses),
@@ -288,6 +290,7 @@ async def _scrape_source_impl(
         bytes_downloaded=stats.bytes_downloaded,
         retry_count=stats.retry_count,
         cache_hits=stats.cache_hits,
+        browser_requests=stats.browser_requests,
         http_statuses=tuple(stats.statuses),
         error_code=(
             ""
@@ -410,6 +413,8 @@ async def _get_source_response(
 ) -> httpx.Response:
     guarded: _RedirectOptions = {}
     if isinstance(client, HttpClient):
+        if source.browser_transport:
+            guarded["browser_transport"] = True
         origin = urlsplit(url)
 
         def redirect_guard(target: str) -> bool:

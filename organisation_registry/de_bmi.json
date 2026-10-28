@@ -11,6 +11,7 @@
   "sources": [
     {
       "id": "de_bmi",
+      "browser_transport": true,
       "country": "DE",
       "name_zh": "德國聯邦內政部",
       "name": "Bundesministerium des Innern",

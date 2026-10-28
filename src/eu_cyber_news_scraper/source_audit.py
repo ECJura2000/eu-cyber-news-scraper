@@ -283,7 +283,11 @@ async def check_endpoint(
                                 "final_url": "", "redirects": [], "error_code": "", "error_type": ""}
     try:
         validate_url(url, expected_domains(source))
-        response = await client.get(url, ssl_bundle=source.tls_intermediate_bundle, user_agent=source.user_agent)
+        if source.browser_transport:
+            response = await client.get(url, ssl_bundle=source.tls_intermediate_bundle,
+                                        user_agent=source.user_agent, browser_transport=True)
+        else:
+            response = await client.get(url, ssl_bundle=source.tls_intermediate_bundle, user_agent=source.user_agent)
         endpoint.update(http_status=response.status_code, final_url=_safe_url(str(response.url)),
                         content_type=response.headers.get("content-type", ""), bytes=len(response.content),
                         redirects=[{"url": _safe_url(str(item.url)), "http_status": item.status_code,

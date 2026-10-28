@@ -87,7 +87,7 @@ def load_sources_and_registry(
     for row in rows:
         validate_date_settings(row['language'], row.get('timezone', COUNTRY_TIMEZONES.get(row['country'], 'UTC')),
                                row.get('date_order', 'DMY'), row.get('date_formats', []))
-        for flag in ("schedule_enabled", "feed_archive_fallback"):
+        for flag in ("schedule_enabled", "feed_archive_fallback", "browser_transport"):
             if flag in row and not isinstance(row[flag], bool):
                 raise ValueError(f"{row['id']}: {flag} must be boolean")
         minimum_budget = row.get("minimum_budget_seconds", 0)
@@ -139,6 +139,7 @@ def load_sources_and_registry(
                 schedule_enabled=row.get("schedule_enabled", True),
                 feed_archive_fallback=row.get("feed_archive_fallback", False),
                 minimum_budget_seconds=minimum_budget,
+                browser_transport=row.get("browser_transport", False),
             )
         )
     _validate_sources(sources)
@@ -161,6 +162,10 @@ def _validate_sources(sources: list[Source]) -> None:
             raise ValueError("Source id and names must not be blank")
         if source.detail_pages < 0:
             raise ValueError(f"{source.id}: detail_pages must be non-negative")
+        if type(source.browser_transport) is not bool:
+            raise ValueError(f"{source.id}: browser_transport must be boolean")
+        if source.browser_transport and source.tls_intermediate_bundle:
+            raise ValueError(f"{source.id}: browser transport cannot use a custom TLS bundle")
         if type(source.minimum_budget_seconds) is not int or not 0 <= source.minimum_budget_seconds <= 900:
             raise ValueError(f"{source.id}: minimum_budget_seconds must be an integer between 0 and 900")
         if source.min_listing_bytes < 0:

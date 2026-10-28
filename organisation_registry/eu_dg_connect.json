@@ -11,6 +11,7 @@
   "sources": [
     {
       "id": "eu_dg_connect",
+      "browser_transport": true,
       "country": "EU",
       "name_zh": "歐盟執委會通訊網路、內容與技術總署",
       "name": "European Commission DG CONNECT - Shaping Europe's Digital Future",

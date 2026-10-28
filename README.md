@@ -227,7 +227,13 @@ python -m eu_cyber_news_scraper --days 14 --jsonl --min-source-success-rate 0.95
 
 來源以 `asyncio` 與共享 `httpx.AsyncClient` 執行，預設最多同時處理 8 個來源，可用 `--workers` 調整；全域最多 16 個 HTTP 請求、同網域最多 2 個，連線逾時上限 8 秒、最多一次冪等重試、單一回應上限 5 MiB。`--source-budget` 以 `asyncio.timeout` 包住來源的 feed、列表與內頁完整流程，期限到達會取消未完成請求。相同輸出檔同一時間只允許一個工作執行，健康資料與翻譯快取另共用狀態鎖，避免遺失更新。
 
-正式抓取、URL 稽核與目錄探索均啟用 `robots.txt` 檢查，重新導向的每一跳也會檢查；同主機請求至少間隔 0.5 秒，若有較長 `Crawl-delay` 則採較長值。robots 規則在同一 client 內快取 24 小時；401／403 視為禁止存取，429、伺服器錯誤、連線失敗或回傳 HTML／challenge 時停止該請求，其他 4xx 視為無 robots 規則。HTTP 429／500／502／503／504 與網路逾時可重試一次；`Retry-After` 支援秒數與 HTTP 日期，並共用同主機冷卻時間。所需等待超過上限時回報延後請求，不縮短伺服器指定等待；一般上限 30 秒，目錄探索為 2 秒。HTTPS 重新導向不得降為 HTTP，TLS 憑證與主機名稱仍需驗證。
+正式抓取、URL 稽核與目錄探索均啟用 `robots.txt` 檢查，重新導向的每一跳也會檢查；同主機請求至少間隔 0.5 秒，若有較長 `Crawl-delay` 則採較長值。robots 規則在同一 client 內快取 24 小時；401／403 回報規則讀取遭封鎖並停止，不誤報為已讀到 Disallow 規則；429、伺服器錯誤、連線失敗或回傳 HTML／challenge 時停止該請求，其他 4xx 視為無 robots 規則。HTTP 429／500／502／503／504、網路逾時與遠端提前斷線可重試一次；`Retry-After` 支援秒數與 HTTP 日期，並共用同主機冷卻時間。所需等待超過上限時回報延後請求，不縮短伺服器指定等待；一般上限 30 秒，目錄探索為 2 秒。HTTPS 重新導向不得降為 HTTP，TLS 憑證與主機名稱仍需驗證。
+
+BMI、DG CONNECT、EEAS、VIGINUM 在 registry 明確宣告 `browser_transport: true`，使用已安裝的系統 Chrome／Chromium 讀取主文件，以處理一般 HTTP client 遭網站防護拒絕的情況。可用 `CHROME_PATH` 指定執行檔；未安裝時回報錯誤，不自動下載或安裝瀏覽器。不開啟 GUI、不讀取個人設定檔、不停用憑證驗證；使用暫存的獨立 session，真實 Chrome 識別資訊附加本程式名稱。停用頁面 JavaScript、service worker、附帶資源與框架；HTTP 轉址交回原流程逐跳檢查 robots 與來源網域。`.run.json` 的來源列另記錄 `browser_requests`。瀏覽器內容不共用一般 HTTP 條件式快取。
+
+GitHub-hosted runner 仍可能因來源網站的網路存取限制而失敗；換成 Chrome 不代表能解除 IP 層級封鎖。每週工作流程預設仍使用 `ubuntu-latest`，可透過 repository Actions variable `EU_NEWS_RUNNER` 指定 runner 的 JSON 標籤陣列，例如 `["self-hosted","macOS","ARM64","eu-news-network"]`。啟用前必須先在能正常存取來源的專用環境註冊同標籤 runner，並確認已安裝 Python 與系統 Chrome；否則工作會一直排隊。此設定只影響每週蒐集，PR 的 CI 保持使用 GitHub-hosted runner。
+
+在個人 Mac 安裝 runner 服務會讓獲准的 GitHub 工作流程於該 Mac 執行，並且排程時需保持開機、登入與連網；安裝或啟動常駐服務前應由機器擁有者確認。尚未註冊 runner 時不要設定上述 variable。程式不會自動註冊 runner、安裝服務或變更 repository variable。本機工作使用暫存環境安裝指定版本的 uv，不更動全域 Python 或 uv。
 
 正式抓取另在 state 目錄的 `.http-cache/responses.sqlite3` 保存條件式 HTTP 快取：優先使用 ETag／`If-None-Match`，其次使用 Last-Modified／`If-Modified-Since`，每次仍向伺服器重新驗證，只有 304 才重用內容。快取包含內容 SHA-256 檢查，保留最多 30 天、本文合計最多 100 MiB；`no-store`、`Set-Cookie`、不支援的 `Vary` 或沒有驗證標頭的回應不保存。URL 稽核與目錄探索目前未配置持久 HTTP 本文快取。
 

@@ -11,6 +11,7 @@
   "sources": [
     {
       "id": "eu_eeas",
+      "browser_transport": true,
       "date_policy": "best_effort",
       "date_exception_reason": "The press-material listing mixes several card variants with inconsistent visible dates.",
       "date_evidence_url": "https://www.eeas.europa.eu/eeas/press-material_en",
