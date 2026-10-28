@@ -21,6 +21,7 @@ dependencies = [
   "lxml>=5.3,<7",
   "openpyxl>=3.1.5,<4",
   "opencc-python-reimplemented>=0.1.7,<1",
+  "playwright>=1.64,<2",
   "truststore>=0.10,<1",
 ]
 

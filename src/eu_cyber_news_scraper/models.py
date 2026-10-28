@@ -48,6 +48,7 @@ class Source:
     schedule_enabled: bool = True
     feed_archive_fallback: bool = False
     minimum_budget_seconds: int = 0
+    browser_transport: bool = False
 
     @property
     def display_name(self) -> str:
@@ -146,6 +147,7 @@ class SourceStatus:
     bytes_downloaded: int = 0
     retry_count: int = 0
     cache_hits: int = 0
+    browser_requests: int = 0
     budget_exhausted: bool = False
     http_statuses: tuple[str, ...] = ()
     error_code: str = ""

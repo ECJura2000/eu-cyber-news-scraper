@@ -105,7 +105,7 @@ def test_robots_is_fetched_once_and_disallowed_paths_never_downloaded():
 
 
 @pytest.mark.parametrize("status,html,exception", [
-    (404, False, None), (403, False, RobotsDeniedError),
+    (404, False, None), (401, False, RobotsUnavailableError), (403, False, RobotsUnavailableError),
     (500, False, RobotsUnavailableError), (200, True, RobotsUnavailableError),
 ])
 def test_robots_http_error_policy(status, html, exception, monkeypatch):

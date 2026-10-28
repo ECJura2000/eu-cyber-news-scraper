@@ -1479,6 +1479,7 @@
 [[sources]]
 "id" = "de_bmi"
 "allow_domains" = ["bmi.bund.de", "www.bmi.bund.de"]
+"browser_transport" = true
 "country" = "DE"
 "date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
 "date_order" = "DMY"
@@ -2944,6 +2945,7 @@
 [[sources]]
 "id" = "eu_dg_connect"
 "allow_domains" = ["digital-strategy.ec.europa.eu"]
+"browser_transport" = true
 "card_selectors" = [".ecl-content-item--divider"]
 "country" = "EU"
 "critical" = true
@@ -3005,6 +3007,7 @@
 [[sources]]
 "id" = "eu_eeas"
 "allow_domains" = ["eeas.europa.eu", "www.eeas.europa.eu"]
+"browser_transport" = true
 "card_selectors" = [".related-grid > .card"]
 "country" = "EU"
 "date_evidence_url" = "https://www.eeas.europa.eu/eeas/press-material_en"
@@ -3693,6 +3696,7 @@
 [[sources]]
 "id" = "fr_viginum"
 "allow_domains" = ["sgdsn.gouv.fr", "www.sgdsn.gouv.fr"]
+"browser_transport" = true
 "card_selectors" = ["article.node--type-actualite.fr-card"]
 "country" = "FR"
 "date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]

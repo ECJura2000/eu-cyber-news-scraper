@@ -11,6 +11,7 @@
   "sources": [
     {
       "id": "fr_viginum",
+      "browser_transport": true,
       "country": "FR",
       "name_zh": "法國防範外國數位干預局",
       "name": "VIGINUM - SGDSN",

@@ -195,7 +195,7 @@ def _validate_payload(payload: Any) -> None:
             raise ValueError(f"unsupported source country: {row['country']}")
         validate_date_settings(row['language'], row.get('timezone', 'UTC'),
                                row.get('date_order', 'DMY'), row.get('date_formats', []))
-        for flag in ("schedule_enabled", "feed_archive_fallback"):
+        for flag in ("schedule_enabled", "feed_archive_fallback", "browser_transport"):
             if flag in row and not isinstance(row[flag], bool):
                 raise ValueError(f"{flag} must be boolean")
         minimum_budget = row.get("minimum_budget_seconds", 0)
