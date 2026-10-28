@@ -403,7 +403,7 @@ wheels = [
 
 [[package]]
 name = "eu-cyber-news-scraper"
-version = "1.8.2"
+version = "1.8.3"
 source = { editable = "." }
 dependencies = [
     { name = "beautifulsoup4" },
