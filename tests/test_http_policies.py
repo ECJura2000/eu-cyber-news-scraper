@@ -129,6 +129,34 @@ def test_robots_http_error_policy(status, html, exception, monkeypatch):
         assert asyncio.run(run()).text == "news"
 
 
+@pytest.mark.parametrize("failure_count", [1, 2])
+def test_robots_remote_disconnect_uses_bounded_retry(failure_count):
+    calls = []
+    stats = HttpStats()
+
+    async def handler(request):
+        calls.append(request.url.path)
+        if request.url.path == "/robots.txt":
+            if calls.count("/robots.txt") <= failure_count:
+                raise httpx.RemoteProtocolError("Server disconnected without sending a response", request=request)
+            return httpx.Response(200, text="User-agent: *\nDisallow: /private", request=request)
+        return httpx.Response(200, text="news", request=request)
+
+    async def run():
+        async with HttpClient(obey_robots=True, transport=httpx.MockTransport(handler)) as client:
+            if failure_count == 2:
+                with pytest.raises(RobotsUnavailableError, match="RemoteProtocolError"):
+                    await client.get("https://example.eu/news", stats=stats)
+            else:
+                assert (await client.get("https://example.eu/news", stats=stats)).text == "news"
+                with pytest.raises(RobotsDeniedError):
+                    await client.get("https://example.eu/private", stats=stats)
+
+    asyncio.run(run())
+    assert calls == ["/robots.txt", "/robots.txt"] + (["/news"] if failure_count == 1 else [])
+    assert stats.retry_count == 1
+
+
 def test_retry_after_accepts_full_seconds_and_http_dates():
     response = httpx.Response(429, headers={"retry-after": "120"})
     assert _retry_delay(response) == 120
