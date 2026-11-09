@@ -58,20 +58,10 @@ def test_source_budget_floor_preserves_permitted_crawl_delay(monkeypatch, floor,
 def test_fetch_policy_changes_reset_source_fingerprint():
     from eu_cyber_news_scraper.health import source_config_fingerprint
 
-    source = next(item for item in load_sources() if item.id == "ie_comreg")
+    source = next(item for item in load_sources() if item.id == "ie_ncsc")
     original = source_config_fingerprint(source)
     assert original != source_config_fingerprint(replace(source, feed_archive_fallback=True))
     assert original != source_config_fingerprint(replace(source, minimum_budget_seconds=600))
-
-
-def test_comreg_only_requests_the_news_listing():
-    source = next(item for item in load_sources() if item.id == "ie_comreg")
-    result = run_scraper(source, MappingClient({source.listing_url: httpx.ReadTimeout("news timed out")}),
-                         since=datetime(2026, 10, 26, tzinfo=timezone.utc),
-                         until=datetime(2026, 11, 10, tzinfo=timezone.utc), fetch_details=False)
-    assert not source.feed_urls
-    assert result.status.error_code == "FETCH_FAILED"
-    assert "news timed out" in result.status.error
 
 
 @pytest.mark.parametrize("listing_kind", ["healthy", "empty", "challenge"])
@@ -120,11 +110,14 @@ def test_anssi_prefers_its_listing_and_falls_back_to_dated_cert_bulletins(fixtur
     (True, False, True, True), (False, True, False, False),
 ])
 def test_feed_archive_fallback_is_explicit_and_date_aware(enabled, older, undated, fallback):
-    source = replace(next(item for item in load_sources() if item.id == "ie_comreg"),
-                     id="custom_feed", feed_archive_fallback=enabled, feed_urls=("https://www.comreg.ie/feed/",))
+    source = Source(
+        "custom_feed", "IE", "測試機關", "Test", "official", "en",
+        "https://agency.example/", "https://agency.example/news/",
+        feed_archive_fallback=enabled, feed_urls=("https://agency.example/feed/",),
+    )
     date_xml = "" if undated else "<pubDate>Sun, 20 Sep 2026 10:00:00 GMT</pubDate>"
     feed = ("<rss version='2.0'><channel><item><title>NIS2 security update</title>"
-            "<link>https://www.comreg.ie/security-update/</link>"
+            "<link>https://agency.example/security-update/</link>"
             f"{date_xml}</item></channel></rss>").encode()
 
     class Client:

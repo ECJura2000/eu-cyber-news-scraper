@@ -8,7 +8,7 @@ name = "AI法、模型評估、演算法問責、自動化決策、AI與著作�
 EU = { authorities = "歐盟執委會 AI Office／DG CONNECT、JRC、EDPB、EUIPO；EuroHPC 公私協力生態系", source_ids = ["eu_dg_connect", "eu_jrc_news", "eu_edpb", "eu_presscorner", "eu_eurohpc"], evidence_urls = ["https://digital-strategy.ec.europa.eu/en/policies/ai-act-governance-and-enforcement"] }
 FR = { authorities = "DGCCRF／DGE、CNIL、INESIA（ANSSI、Inria、LNE、PEReN）、文化部／CSPLA；CEA-List", source_ids = ["fr_dge", "fr_cnil", "fr_anssi", "fr_inria", "fr_culture", "fr_cea_list"], evidence_urls = ["https://www.cnil.fr/fr/entree-en-vigueur-du-reglement-europeen-sur-lia-les-premieres-questions-reponses-de-la-cnil"] }
 DE = { authorities = "聯邦網路局（AI協調中心）、BfDI、BMJV／DPMA；ATHENE、Interface", source_ids = ["de_bnetza", "de_bfdi", "de_dpma", "de_athene", "de_interface"], evidence_urls = ["https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/1_Ziel/start_ziel.html"] }
-IE = { authorities = "企業部；2026 年法案擬設 Oifig IS na hÉireann（AI Office of Ireland）為中央協調機關，另由 DPC 與產業監理機關分工；CeADAR", source_ids = ["ie_dete", "ie_dpc", "ie_cnam", "ie_comreg", "ie_ceadar"], evidence_urls = ["https://enterprise.gov.ie/en/news-and-events/department-news/2026/june/20260617.html"] }
+IE = { authorities = "企業部；2026 年法案擬設 Oifig IS na hÉireann（AI Office of Ireland）為中央協調機關，另由 DPC 與產業監理機關分工；CeADAR", source_ids = ["ie_dete", "ie_dpc", "ie_cnam", "ie_ceadar"], evidence_urls = ["https://enterprise.gov.ie/en/news-and-events/department-news/2026/june/20260617.html"] }
 
 [[topics]]
 name = "跨境資料流通、資料主權、資料開放與再利用"
@@ -64,7 +64,7 @@ name = "NIS2、關鍵基礎設施保護"
 EU = { authorities = "DG CONNECT、ENISA、DG HOME（CER）", source_ids = ["eu_dg_connect", "eu_enisa_news", "eu_dg_home"] }
 FR = { authorities = "ANSSI、SGDSN／內政體系；Campus Cyber", source_ids = ["fr_anssi", "fr_viginum", "fr_campus_cyber"], evidence_urls = ["https://messervices.cyber.gouv.fr/nis2/"] }
 DE = { authorities = "BMI、BSI、BBK；ATHENE、SWP", source_ids = ["de_bmi", "de_bsi_news", "de_bbk", "de_athene", "de_swp"] }
-IE = { authorities = "NCSC、ComReg及各部門主管機關；Cyber Ireland", source_ids = ["ie_ncsc", "ie_comreg", "ie_cyber_ireland"], evidence_urls = ["https://www.ncsc.gov.ie/nis2/FAQ/"] }
+IE = { authorities = "NCSC、ComReg及各部門主管機關；Cyber Ireland", source_ids = ["ie_ncsc", "ie_cyber_ireland"], evidence_urls = ["https://www.ncsc.gov.ie/nis2/FAQ/"] }
 
 [[topics]]
 name = "產品資安、漏洞揭露義務、SBOM"
@@ -92,7 +92,7 @@ name = "關鍵基礎設施的實體與數位融合保護"
 EU = { authorities = "DG HOME（CER）、DG CONNECT（NIS2）、ENISA", source_ids = ["eu_dg_home", "eu_dg_connect", "eu_enisa_news"] }
 FR = { authorities = "SGDSN、ANSSI、內政部；Campus Cyber、CEA-List", source_ids = ["fr_anssi", "fr_viginum", "fr_campus_cyber", "fr_cea_list"] }
 DE = { authorities = "BMI、BBK、BSI；ATHENE", source_ids = ["de_bmi", "de_bbk", "de_bsi_news", "de_athene"] }
-IE = { authorities = "NCSC、政府緊急規劃辦公室、部門主管機關；Cyber Ireland", source_ids = ["ie_ncsc", "ie_comreg", "ie_cyber_ireland"] }
+IE = { authorities = "NCSC、政府緊急規劃辦公室、部門主管機關；Cyber Ireland", source_ids = ["ie_ncsc", "ie_cyber_ireland"] }
 
 [[topics]]
 name = "半導體"

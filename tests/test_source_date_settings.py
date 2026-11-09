@@ -20,7 +20,7 @@ def test_every_builtin_source_has_explicit_settings_and_toml_matches():
             assert all(key in row for key in ('language', 'timezone', 'date_order', 'date_formats'))
             assert row['date_formats']
             rows.append(row)
-    assert len(rows) == 410  # 409 runnable sources plus the replaceable example.
+    assert len(rows) == 409  # 408 runnable sources plus the replaceable example.
     assert load_sources() == load_sources(ROOT / 'src/eu_cyber_news_scraper/sources.toml')
 
 

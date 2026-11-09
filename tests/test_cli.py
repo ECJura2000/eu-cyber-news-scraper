@@ -45,7 +45,7 @@ def test_select_sources_combines_country_and_source_filters():
     assert [source.id for source in selected] == ["fr_anssi"]
 
 
-@pytest.mark.parametrize("today, count", [(date(2026, 10, 31), 50), (date(2026, 11, 1), 52)])
+@pytest.mark.parametrize("today, count", [(date(2026, 10, 31), 49), (date(2026, 11, 1), 51)])
 def test_new_sources_are_manual_only_until_promoted(monkeypatch, today, count):
     from eu_cyber_news_scraper import cli
 

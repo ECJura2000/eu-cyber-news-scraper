@@ -4361,28 +4361,6 @@
 "timezone" = "Europe/Dublin"
 
 [[sources]]
-"id" = "ie_comreg"
-"allow_domains" = ["comreg.ie", "www.comreg.ie"]
-"card_selectors" = [".ajax-posts"]
-"country" = "IE"
-"critical" = true
-"date_formats" = ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"]
-"date_order" = "DMY"
-"date_selectors" = [".News_Block_content_inn_date span"]
-"detail_pages" = 0
-"exclude_patterns" = ["^/news/?$"]
-"homepage" = "https://www.comreg.ie/"
-"include_patterns" = ["^/[^/]+/?$", "/industry/nis2-cer/.+"]
-"institution_type" = "法定獨立監理機關／NIS2主管機關"
-"language" = "en"
-"link_selectors" = [".News_Block_content_inn_title h3 a"]
-"listing_url" = "https://www.comreg.ie/news/"
-"name" = "Commission for Communications Regulation"
-"name_zh" = "愛爾蘭通訊監理委員會"
-"timezone" = "Europe/Dublin"
-"title_selectors" = [".News_Block_content_inn_title h3"]
-
-[[sources]]
 "id" = "ie_culture"
 "allow_domains" = ["www.gov.ie"]
 "card_selectors" = ["div[role=\"region\"][aria-label=\"Press releases Recent links\" i]", "div[role=\"region\"][aria-label=\"News Recent links\" i]"]

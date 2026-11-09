@@ -142,8 +142,7 @@ async def _scrape_source_impl(
     # Feeds are often truncated. Sources with explicit archive rules must also
     # traverse their listing so historical fixed periods remain complete.
     feed_dates = [item.published_at for item in articles if item.published_at]
-    archive_capable = source.feed_archive_fallback or source.id == "ie_comreg"
-    archive_gap = archive_capable and bool(articles) and (
+    archive_gap = source.feed_archive_fallback and bool(articles) and (
         not feed_dates or since < min(feed_dates)
     )
     if not articles or archive_gap or source.yearly_listing_url or source.pagination_url:
