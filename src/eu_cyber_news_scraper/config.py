@@ -87,7 +87,7 @@ def load_sources_and_registry(
     for row in rows:
         validate_date_settings(row['language'], row.get('timezone', COUNTRY_TIMEZONES.get(row['country'], 'UTC')),
                                row.get('date_order', 'DMY'), row.get('date_formats', []))
-        for flag in ("schedule_enabled", "feed_archive_fallback", "browser_transport"):
+        for flag in ("schedule_enabled", "feed_archive_fallback", "browser_transport", "feed_fallback_only"):
             if flag in row and not isinstance(row[flag], bool):
                 raise ValueError(f"{row['id']}: {flag} must be boolean")
         minimum_budget = row.get("minimum_budget_seconds", 0)
@@ -140,6 +140,7 @@ def load_sources_and_registry(
                 feed_archive_fallback=row.get("feed_archive_fallback", False),
                 minimum_budget_seconds=minimum_budget,
                 browser_transport=row.get("browser_transport", False),
+                feed_fallback_only=row.get("feed_fallback_only", False),
             )
         )
     _validate_sources(sources)

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "module_version": "2026-09-15.2",
+  "module_version": "2026-11-09.1",
   "canonical_id": "fr_anssi",
   "names": {
     "zh": "法國國家資訊系統安全局",
@@ -19,14 +19,15 @@
       "homepage": "https://cyber.gouv.fr/",
       "listing_url": "https://cyber.gouv.fr/actualites/", "timezone": "Europe/Paris", "date_order": "DMY", "date_formats": ["%Y-%m-%d", "%d.%m.%Y", "%d/%m/%Y", "%d-%m-%Y"],
       "feed_urls": [
-        "https://cyber.gouv.fr/actualites/rss/",
-        "https://cyber.gouv.fr/actualites/atom/"
+        "https://www.cert.cyber.gouv.fr/actualite/feed/"
       ],
+      "feed_fallback_only": true,
       "allow_domains": [
         "cyber.gouv.fr"
       ],
       "include_patterns": [
-        "/actualites/.+"
+        "/actualites/.+",
+        "^/actualite/CERTFR-[0-9]{4}-ACT-[0-9]+/?$"
       ],
       "exclude_patterns": [
         "/actualites/(rss|atom)/?$",
@@ -34,8 +35,6 @@
       ],
       "critical": true,
       "detail_pages": 16,
-      "pagination_url": "https://cyber.gouv.fr/actualites/?page={page}",
-      "max_pages": 10,
       "card_selectors": [
         "div.fr-card__content"
       ],
@@ -57,7 +56,8 @@
       "關鍵基礎設施的實體與數位融合保護"
     ],
     "include_patterns": [
-      "/actualites/.+"
+      "/actualites/.+",
+      "^/actualite/CERTFR-[0-9]{4}-ACT-[0-9]+/?$"
     ],
     "exclude_patterns": [
       "/actualites/(rss|atom)/?$",

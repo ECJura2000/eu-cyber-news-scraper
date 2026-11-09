@@ -3394,17 +3394,16 @@
 "date_selectors" = ["p.fr-card__desc"]
 "detail_pages" = 16
 "exclude_patterns" = ["/actualites/(rss|atom)/?$", "^/actualites/\\?(tag|page)="]
-"feed_urls" = ["https://cyber.gouv.fr/actualites/rss/", "https://cyber.gouv.fr/actualites/atom/"]
+"feed_fallback_only" = true
+"feed_urls" = ["https://www.cert.cyber.gouv.fr/actualite/feed/"]
 "homepage" = "https://cyber.gouv.fr/"
-"include_patterns" = ["/actualites/.+"]
+"include_patterns" = ["/actualites/.+", "^/actualite/CERTFR-[0-9]{4}-ACT-[0-9]+/?$"]
 "institution_type" = "國家主管機關"
 "language" = "fr"
 "link_selectors" = ["h3.fr-card__title a[href]"]
 "listing_url" = "https://cyber.gouv.fr/actualites/"
-"max_pages" = 10
 "name" = "Agence nationale de la sécurité des systèmes d'information"
 "name_zh" = "法國國家資訊系統安全局"
-"pagination_url" = "https://cyber.gouv.fr/actualites/?page={page}"
 "timezone" = "Europe/Paris"
 
 [[sources]]
@@ -4372,7 +4371,6 @@
 "date_selectors" = [".News_Block_content_inn_date span"]
 "detail_pages" = 0
 "exclude_patterns" = ["^/news/?$"]
-"feed_urls" = ["https://www.comreg.ie/feed/"]
 "homepage" = "https://www.comreg.ie/"
 "include_patterns" = ["^/[^/]+/?$", "/industry/nis2-cer/.+"]
 "institution_type" = "法定獨立監理機關／NIS2主管機關"

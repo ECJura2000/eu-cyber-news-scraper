@@ -1,5 +1,5 @@
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 
 import pytest
 
@@ -45,10 +45,19 @@ def test_select_sources_combines_country_and_source_filters():
     assert [source.id for source in selected] == ["fr_anssi"]
 
 
-def test_new_sources_are_manual_only_until_promoted():
+@pytest.mark.parametrize("today, count", [(date(2026, 10, 31), 50), (date(2026, 11, 1), 52)])
+def test_new_sources_are_manual_only_until_promoted(monkeypatch, today, count):
+    from eu_cyber_news_scraper import cli
+
+    class FixedDate(date):
+        @classmethod
+        def today(cls):
+            return today
+
+    monkeypatch.setattr(cli, "date", FixedDate)
     sources = load_sources()
-    assert len(_select_sources(sources, None, None, scheduled=True)) == 50
-    assert len(_select_sources(sources, None, None)) == 50
+    assert len(_select_sources(sources, None, None, scheduled=True)) == count
+    assert len(_select_sources(sources, None, None)) == count
     assert {
         "es_aepd", "es_cnmc", "es_incibe", "es_aesia"
     } <= {source.id for source in _select_sources(sources, ["ES"], None)}
