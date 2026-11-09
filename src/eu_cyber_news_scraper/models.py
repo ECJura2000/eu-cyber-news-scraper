@@ -49,6 +49,7 @@ class Source:
     feed_archive_fallback: bool = False
     minimum_budget_seconds: int = 0
     browser_transport: bool = False
+    feed_fallback_only: bool = False
 
     @property
     def display_name(self) -> str:

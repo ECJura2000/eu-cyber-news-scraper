@@ -16,8 +16,8 @@ def run() -> None:
         with corpus.open("w", encoding="utf-8") as stream:
             for index in range(10_000):
                 stream.write(json.dumps({
-                    "url": f"https://www.comreg.ie/benchmark-{index}/",
-                    "source_id": "ie_comreg", "country": "IE", "source_name": "ComReg",
+                    "url": f"https://www.ncsc.gov.ie/benchmark-{index}/",
+                    "source_id": "ie_ncsc", "country": "IE", "source_name": "NCSC",
                     "institution_type": "監理機關", "language": "en",
                     "title": (f"NIS2 cybersecurity update {index}" if index % 2
                               else f"Artificial intelligence model security {index}"),
@@ -28,9 +28,9 @@ def run() -> None:
             "period": {"period_start_utc": "2026-09-01T00:00:00+00:00",
                        "period_end_exclusive_utc": "2026-10-01T00:00:00+00:00"},
             "artifact_bundle_complete": True, "quality_gate": {"passed": True},
-            "sources": [{"source_id": "ie_comreg", "fetch_status": "ok", "parse_status": "ok"}],
+            "sources": [{"source_id": "ie_ncsc", "fetch_status": "ok", "parse_status": "ok"}],
         }), encoding="utf-8")
-        args = ["--corpus-dir", str(root), "--source", "ie_comreg", "--since", "2026-09-20",
+        args = ["--corpus-dir", str(root), "--source", "ie_ncsc", "--since", "2026-09-20",
                 "--until", "2026-09-20", "--output", str(root / "result.xlsx")]
         started = time.perf_counter()
         main(args)

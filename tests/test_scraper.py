@@ -58,35 +58,51 @@ def test_source_budget_floor_preserves_permitted_crawl_delay(monkeypatch, floor,
 def test_fetch_policy_changes_reset_source_fingerprint():
     from eu_cyber_news_scraper.health import source_config_fingerprint
 
-    source = next(item for item in load_sources() if item.id == "ie_comreg")
+    source = next(item for item in load_sources() if item.id == "ie_ncsc")
     original = source_config_fingerprint(source)
     assert original != source_config_fingerprint(replace(source, feed_archive_fallback=True))
     assert original != source_config_fingerprint(replace(source, minimum_budget_seconds=600))
 
 
-def test_comreg_uses_feed_for_recent_period_and_listing_for_archive():
-    source = next(item for item in load_sources() if item.id == "ie_comreg")
-    feed = b"""<?xml version='1.0'?><rss version='2.0'><channel><item>
-        <title>NIS2 security update</title><link>https://www.comreg.ie/security-update/</link>
-        <pubDate>Sun, 20 Sep 2026 10:00:00 GMT</pubDate></item></channel></rss>"""
+@pytest.mark.parametrize("listing_kind", ["healthy", "empty", "challenge"])
+def test_anssi_prefers_its_listing_and_falls_back_to_dated_cert_bulletins(fixture_dir, listing_kind):
+    source = next(item for item in load_sources() if item.id == "fr_anssi")
+    feed_url, = source.feed_urls
+    bulletin = "https://www.cert.cyber.gouv.fr/actualite/CERTFR-2026-ACT-046/"
+    if listing_kind == "healthy":
+        listing = (fixture_dir / "critical_fr_anssi.html").read_bytes()
+        payloads = {source.listing_url: listing}
+    else:
+        feed = f"""<rss version="2.0"><channel><item>
+            <title>Bulletin d'actualité CERT-FR</title><link>{bulletin}</link>
+            <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+            </item></channel></rss>""".encode()
+        listing = (
+            b'<html><script src="/_Incapsula_Resource?challenge"></script></html>'
+            if listing_kind == "challenge" else b"<main></main>"
+        )
+        payloads = {source.listing_url: listing, feed_url: feed}
 
-    class Client:
-        def __init__(self):
-            self.urls = []
-
+    class Client(MappingClient):
         async def get(self, url, *, stats=None):
-            self.urls.append(url)
-            payload = feed if url.endswith("/feed/") else b"<html><main></main></html>"
-            return httpx.Response(200, content=payload, request=httpx.Request("GET", url))
+            requested.append(url)
+            response = await super().get(url, stats=stats)
+            if url == source.listing_url:
+                response.headers["content-type"] = "text/html"
+            return response
 
-    recent = Client()
-    run_scraper(source, recent, since=datetime(2026, 9, 20, 10, tzinfo=timezone.utc),
-                until=datetime(2026, 9, 25, tzinfo=timezone.utc), fetch_details=False)
-    assert recent.urls == ["https://www.comreg.ie/feed/"]
-    archive = Client()
-    run_scraper(source, archive, since=datetime(2026, 8, 1, tzinfo=timezone.utc),
-                until=datetime(2026, 8, 10, tzinfo=timezone.utc), fetch_details=False)
-    assert "https://www.comreg.ie/news/" in archive.urls
+    requested = []
+    result = run_scraper(source, Client(payloads),
+                         since=datetime(2026, 1, 1, tzinfo=timezone.utc),
+                         until=datetime(2026, 11, 10, tzinfo=timezone.utc), fetch_details=False)
+    assert result.status.parse_status == "healthy"
+    assert requested == list(payloads)
+    assert result.status.dated_count == 1
+    assert result.status.fetched_via == ("html-listing" if listing_kind == "healthy" else "fallback-feed")
+    if listing_kind != "healthy":
+        assert result.parsed_articles[0].url == bulletin
+        assert result.parsed_articles[0].date_source == "feed-published"
+        assert ("ChallengePageError" in result.status.warning) is (listing_kind == "challenge")
 
 
 @pytest.mark.parametrize("enabled, older, undated, fallback", [
@@ -94,11 +110,14 @@ def test_comreg_uses_feed_for_recent_period_and_listing_for_archive():
     (True, False, True, True), (False, True, False, False),
 ])
 def test_feed_archive_fallback_is_explicit_and_date_aware(enabled, older, undated, fallback):
-    source = replace(next(item for item in load_sources() if item.id == "ie_comreg"),
-                     id="custom_feed", feed_archive_fallback=enabled)
+    source = Source(
+        "custom_feed", "IE", "測試機關", "Test", "official", "en",
+        "https://agency.example/", "https://agency.example/news/",
+        feed_archive_fallback=enabled, feed_urls=("https://agency.example/feed/",),
+    )
     date_xml = "" if undated else "<pubDate>Sun, 20 Sep 2026 10:00:00 GMT</pubDate>"
     feed = ("<rss version='2.0'><channel><item><title>NIS2 security update</title>"
-            "<link>https://www.comreg.ie/security-update/</link>"
+            "<link>https://agency.example/security-update/</link>"
             f"{date_xml}</item></channel></rss>").encode()
 
     class Client:

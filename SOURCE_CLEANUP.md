@@ -1,6 +1,6 @@
 # 無法抓取來源清理（2026-10-04）
 
-對 v1.8.0 的 448 個來源檢查 446 個未暫停來源，再以正式抓取方式複查首輪失敗入口。已複查 72 個，移除 39 個，現有 409 個可選來源。
+對 v1.8.0 的 448 個來源檢查 446 個未暫停來源，再以正式抓取方式複查首輪失敗入口。已複查 72 個，移除 39 個，當時有 409 個可選來源。
 
 移除原因代表本次兩輪抓取失敗，不代表機關或網站不存在。零筆且解析失敗、robots 拒絕、robots 無法取得及驗證頁均依使用者要求移出可查詢設定。只在備用端點失敗、但正式抓取成功的來源保留。
 
@@ -49,3 +49,7 @@
 | SE | 瑞典司法部（`se_justice`） | [原新聞入口](https://www.regeringen.se/sveriges-regering/justitiedepartementet/) | `HTTP_CHALLENGE` |
 | SE | 瑞典首相辦公室（`se_prime_minister`） | [原新聞入口](https://www.regeringen.se/sveriges-regering/statsradsberedningen/) | `HTTP_CHALLENGE` |
 | SE | 瑞典農村事務與基礎建設部（`se_rural_infrastructure`） | [原新聞入口](https://www.regeringen.se/sveriges-regering/landsbygds--och-infrastrukturdepartementet/) | `HTTP_CHALLENGE` |
+
+## 2026-11-09 補充排除
+
+依使用者指示移除愛爾蘭通訊監理委員會（`ie_comreg`）。11 月 2 日與 9 日的週報排程均無法抓取，11 月 9 日的[全量重跑](https://github.com/ECJura2000/eu-cyber-news-scraper/actions/runs/42585397370)再現 Sucuri HTTP 307。新聞、出版品及 NIS2 更新頁均受阻，兩個 RSS 路徑受 [robots.txt](https://www.comreg.ie/robots.txt) 限制。可讀取的網站地圖提供的是修改時間。原設定已封存，可選來源降為 408 個，其中 51 個設定排程。

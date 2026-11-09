@@ -14,10 +14,10 @@ def test_default_sources_cover_all_target_jurisdictions():
     sources = load_sources()
     assert len(sources) >= 145
     assert {source.country for source in sources} == EU_MEMBER_COUNTRIES | {"EU", "NO"}
-    assert sum(source.schedule_enabled for source in sources) == 52
+    assert sum(source.schedule_enabled for source in sources) == 51
     assert len([source for source in sources if source.country in {"ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT"}]) >= 48
     assert all(not source.schedule_enabled for source in sources if source.country in {"ES", "PT", "IT", "PL", "DK", "NO", "SE", "EE", "LV", "LT"})
-    assert sum(not source.schedule_enabled for source in sources) == len(sources) - 52
+    assert sum(not source.schedule_enabled for source in sources) == len(sources) - 51
     assert all(not source.schedule_enabled for source in sources if source.country not in {"EU", "FR", "DE", "IE"})
     assert any(source.id == "fr_anssi" and source.feed_urls for source in sources)
     assert any(source.id == "ie_ncsc" and source.critical for source in sources)
@@ -60,13 +60,6 @@ def test_europarl_runner_challenge_is_auditable_and_overridable():
     assert source.paused_until == "2026-10-31"
     assert "HTTP 202" in source.pause_reason
     assert source.pause_evidence_url == "https://www.europarl.europa.eu/at-your-service/en/stay-informed/rss-feeds"
-
-
-def test_comreg_uses_complete_listing_without_slow_detail_requests():
-    source = next(item for item in load_sources() if item.id == "ie_comreg")
-    assert source.card_selectors
-    assert source.date_selectors
-    assert source.detail_pages == 0
 
 
 def test_tls_intermediate_bundles_are_limited_to_affected_sources():

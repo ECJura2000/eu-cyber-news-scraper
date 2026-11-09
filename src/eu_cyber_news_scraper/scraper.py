@@ -121,24 +121,28 @@ async def _scrape_source_impl(
     transport_succeeded = False
     listing_truncated = False
 
-    for feed_url in source.feed_urls:
-        try:
-            response = await _get_source_response(client, feed_url, source, stats)
-            _validate_source_response(response, source, feed_url)
-            transport_succeeded = True
-            parsed = parse_feed(response.content, source, feed_url)
-            if parsed:
-                articles.extend(parsed)
-                fetched_via = "configured-feed"
-                break
-        except Exception as exc:  # source failure must not stop other sources
-            errors.append(f"{feed_url}: {type(exc).__name__}: {exc}")
+    async def collect_configured_feed() -> None:
+        nonlocal fetched_via, transport_succeeded
+        for feed_url in source.feed_urls:
+            try:
+                response = await _get_source_response(client, feed_url, source, stats)
+                _validate_source_response(response, source, feed_url)
+                transport_succeeded = True
+                parsed = parse_feed(response.content, source, feed_url)
+                if parsed:
+                    articles.extend(parsed)
+                    fetched_via = "configured-feed"
+                    break
+            except Exception as exc:  # source failure must not stop other sources
+                errors.append(f"{feed_url}: {type(exc).__name__}: {exc}")
+
+    if not source.feed_fallback_only:
+        await collect_configured_feed()
 
     # Feeds are often truncated. Sources with explicit archive rules must also
     # traverse their listing so historical fixed periods remain complete.
     feed_dates = [item.published_at for item in articles if item.published_at]
-    archive_capable = source.feed_archive_fallback or source.id == "ie_comreg"
-    archive_gap = archive_capable and bool(articles) and (
+    archive_gap = source.feed_archive_fallback and bool(articles) and (
         not feed_dates or since < min(feed_dates)
     )
     if not articles or archive_gap or source.yearly_listing_url or source.pagination_url:
@@ -205,6 +209,11 @@ async def _scrape_source_impl(
             except Exception as exc:
                 errors.append(f"{listing_url}: {type(exc).__name__}: {exc}")
 
+    if source.feed_fallback_only and not articles:
+        await collect_configured_feed()
+        if articles:
+            fetched_via = "fallback-feed"
+
     articles = dedupe_articles(articles)
     unique_title_ratio = (
         len({item.title.casefold().strip() for item in articles}) / len(articles) if articles else 1.0
@@ -240,7 +249,10 @@ async def _scrape_source_impl(
     newest = max((item.published_at for item in articles if item.published_at), default=None)
     dated_count = sum(item.published_at is not None for item in articles)
     undated_ratio = (len(articles) - dated_count) / len(articles) if articles else 0.0
-    warning = ""
+    warning = (
+        "官方新聞列表未解析出文章，已使用官方備援 RSS。"
+        if fetched_via == "fallback-feed" and not errors else ""
+    )
     if listing_truncated:
         warning = "官方公開查詢尚有下一頁，已達設定頁數上限；此期間搜尋可能不完整。"
         if source.parser_adapter in {"belspo_central_press", "bmlv_publication"}:
@@ -379,7 +391,9 @@ def _validate_source_response(response: httpx.Response, source: Source, url: str
     )
     too_small = source.min_listing_bytes and len(response.content) < source.min_listing_bytes
     radware_loader = bool(title_match and title_match.group(1).strip() == "radware page")
-    if any(marker in body for marker in challenge_markers) or challenge_title or radware_loader or too_small:
+    incapsula_challenge = len(response.content) < 2048 and "/_incapsula_resource?" in body
+    if (any(marker in body for marker in challenge_markers) or challenge_title
+            or radware_loader or incapsula_challenge or too_small):
         raise ChallengePageError(
             f"unexpected challenge or undersized listing ({len(response.content)} bytes): {url}"
         )

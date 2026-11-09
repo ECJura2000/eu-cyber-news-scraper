@@ -64,7 +64,6 @@
 | 代碼 | 機關 | 制度定位 | 新聞入口 |
 | --- | --- | --- | --- |
 | `ie_ncsc` | NCSC Ireland | 國家資安主管機關與 CSIRT | [News & Advisories](https://www.ncsc.gov.ie/news/) |
-| `ie_comreg` | ComReg | 法定獨立監理機關；數位基礎設施等 NIS2 主管機關 | [News](https://www.comreg.ie/news/) |
 | `ie_dpc` | Data Protection Commission | 獨立資料保護監理機關 | [Press Releases](https://dataprotection.ie/en/news-media/press-releases?page=0)（公開 Sectigo intermediate 補鏈，維持 TLS 驗證） |
 | `ie_nsai` | NSAI | 法定標準及合格評定機構 | [News](https://www.nsai.ie/about/news/) |
 | `ie_adapt` | ADAPT Centre | 國家資助公共研究中心 | [News and Events](https://www.adaptcentre.ie/news-and-events/) |

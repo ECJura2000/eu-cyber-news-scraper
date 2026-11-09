@@ -8,6 +8,23 @@
   "rechecked_source_count": 72,
   "removed_source_count": 39,
   "remaining_source_count": 409,
+  "subsequent_exclusions": [
+    {
+      "source_id": "ie_comreg",
+      "country": "IE",
+      "reviewed_on": "2026-11-09",
+      "listing_url": "https://www.comreg.ie/news/",
+      "archive": "source_exclusions/modules/ie_comreg.json",
+      "reason": "HTTP_CHALLENGE",
+      "policy": "exclude_unreadable_registered_source",
+      "workflow_run_ids": [41392395384, 42567386167, 42585397370],
+      "robots_disallowed_urls": [
+        "https://www.comreg.ie/feed/",
+        "https://www.comreg.ie/feed/?post_type=dlm_download"
+      ],
+      "notes": "The news, publications and NIS2 pages returned a Sucuri HTTP 307 challenge. The accessible post sitemap supplies modification times rather than publication dates."
+    }
+  ],
   "paused_sources_skipped": [
     "eu_parliament_press",
     "fr_cea_list"

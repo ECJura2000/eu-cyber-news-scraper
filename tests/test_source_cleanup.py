@@ -39,7 +39,8 @@ def test_removal_accounting_and_two_actual_failures():
         assert entry["reason"] == second["source_status"]["error_code"]
 
 
-@pytest.mark.parametrize("entry", MANIFEST["exclusions"], ids=lambda entry: entry["source_id"])
+@pytest.mark.parametrize("entry", MANIFEST["exclusions"] + MANIFEST["subsequent_exclusions"],
+                         ids=lambda entry: entry["source_id"])
 def test_removed_sources_are_not_queryable_from_json_or_toml(entry):
     for sources in (load_sources(), load_sources(ROOT / "src/eu_cyber_news_scraper/sources.toml")):
         assert entry["source_id"] not in {source.id for source in sources}
@@ -47,16 +48,27 @@ def test_removed_sources_are_not_queryable_from_json_or_toml(entry):
             _select_sources(sources, None, [entry["source_id"]])
 
 
+def test_comreg_exclusion_is_archived_and_evidence_backed():
+    entry, = MANIFEST["subsequent_exclusions"]
+    archive = json.loads((ROOT / entry["archive"]).read_text())
+    source, = archive["sources"]
+    assert archive["canonical_id"] == source["id"] == entry["source_id"] == "ie_comreg"
+    assert source["listing_url"] == entry["listing_url"]
+    assert not source["schedule_enabled"]
+    assert len(set(entry["workflow_run_ids"])) == 3
+    assert set(source["feed_urls"]) <= set(entry["robots_disallowed_urls"])
+
+
 def test_ministry_links_and_schedule_preserve_current_truth():
     sources = load_sources()
     registry = load_organisation_registry()
-    assert not registry.errors and len(sources) == 409
+    assert not registry.errors and len(sources) == 408
     records = load_inventory(inventory_directory(), registry)
     report = inventory_report(records)
     assert report["registered_ministries"] == 290
     assert report["user_excluded_ministries"] == 170
     assert report["pending_ministries"] == 0
-    assert sum(source.schedule_enabled and not source.paused_until for source in sources) == 50
+    assert sum(source.schedule_enabled and not source.paused_until for source in sources) == 49
     removed_ids = {entry["source_id"] for entry in MANIFEST["exclusions"]}
     removed_ministries = [row for country in records for row in country["ministries"]
                          if row.get("user_exclusion", {}).get("policy") == "exclude_unreadable_registered_source"]

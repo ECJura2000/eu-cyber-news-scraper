@@ -56,4 +56,4 @@ def test_round6_closes_every_pending_id_without_claiming_full_search_coverage():
     assert report['user_excluded_ministries'] == excluded + subsequently_removed
     assert report['pending_ministries'] == 0
     assert report['searchable_inventory_complete'] == (excluded == 0)
-    assert sum(source.schedule_enabled and not source.paused_until for source in load_sources()) == 50
+    assert sum(source.schedule_enabled and not source.paused_until for source in load_sources()) == 49

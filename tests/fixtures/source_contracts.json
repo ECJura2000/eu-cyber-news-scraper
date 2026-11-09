@@ -336,14 +336,6 @@
     "sha256": "b3b3137369814fdd1908955de681ee87e412517de067563858b93b7076fd34e1"
   },
   {
-    "source_id": "ie_comreg",
-    "title": "Consumer News from Q2 2026",
-    "url": "https://www.comreg.ie/consumer-news-from-q2-2026/",
-    "captured_at": "2026-07-18",
-    "source_url": "https://www.comreg.ie/feed/",
-    "sha256": "eeac2ebc90abbf16981f3f386933eafc6d37a0d5e220a04ccd7453a60f3810ef"
-  },
-  {
     "source_id": "ie_cyber_ireland",
     "title": "Cybersecurity for Health Annual Conference. July 1st 2026, Dundalk",
     "url": "https://cyberireland.ie/cybersecurity-for-health-annual-conference-july-1st-2026-dundalk/",

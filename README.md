@@ -6,9 +6,11 @@
 
 ## 機關 Registry
 
+2026-11-09 將持續無法自動讀取的 ComReg（`ie_comreg`）移出內建來源。目前有 408 個可選來源，其中 51 個設定每週排程。原設定與失敗證據見[來源清理紀錄](SOURCE_CLEANUP.md#2026-11-09-補充排除)。
+
 v1.8.2 為全部 409 個來源補齊可替換的語言、日期格式、日期順序與時區設定；修正無時區時間的 UTC 判讀，對衝突或不完整日期保留原文而不猜測。來源名單、暫停與正式品質門檻維持不變，設定範例與舊格式相容說明如下。
 
-v1.8.1 依使用者要求，移除兩輪實際抓取仍失敗的 39 個新聞來源，現有 409 個可選來源；部會名錄共 460 個、已登錄 290 個、170 個保留為可追溯排除。原網址、設定與兩輪失敗原因見 [來源清理紀錄](SOURCE_CLEANUP.md)。名錄不是全部可搜尋的宣稱，保留來源也未全數通過正式排程升級驗收。芬蘭教育署與司法彙整入口使用獨立機關 ID，司法文章保留實際發布機關。正式未暫停排程仍為 50。不同 RSS、HTML 與公開 API 的分工、robots 例外及加入標準見 [抓取方法說明](CRAWLER_METHODS.md)。
+v1.8.1 依使用者要求，移除兩輪實際抓取仍失敗的 39 個新聞來源，當時有 409 個可選來源；部會名錄共 460 個、已登錄 290 個、170 個保留為可追溯排除。原網址、設定與兩輪失敗原因見 [來源清理紀錄](SOURCE_CLEANUP.md)。名錄不是全部可搜尋的宣稱，保留來源也未全數通過正式排程升級驗收。芬蘭教育署與司法彙整入口使用獨立機關 ID，司法文章保留實際發布機關。當時正式未暫停排程為 50。不同 RSS、HTML 與公開 API 的分工、robots 例外及加入標準見 [抓取方法說明](CRAWLER_METHODS.md)。
 
 v1.7.0 依使用者指示移除 `fr_institut_montaigne`、`eu_enisa_publications`、`ie_insight` 三個新聞入口。該版來源共 145 個，其中 52 個設定排程、50 個未暫停；ENISA 新聞與認證仍保留，歐洲議會及 CEA 的暫停不變。更新後預設線上抓取與離線查詢不再使用這三個來源；既存文章與 240 筆歷史分類回歸資料不刪除，外部自訂模組仍可由使用者明確提供。完整更新內容見 [CHANGELOG.md](CHANGELOG.md)。
 
@@ -239,7 +241,9 @@ GitHub-hosted runner 仍可能因來源網站的網路存取限制而失敗；�
 
 有效來源預算取 `--source-budget` 與 JSON 的 `minimum_budget_seconds` 較大值；來源下限僅接受 0～900 秒整數，預設 0。Bundeskartellamt 的[官方 robots](https://www.bundeskartellamt.de/robots.txt) 指定每次間隔 30 秒，因此單獨設定 600 秒下限，保留最多 12 篇內頁的日期及摘要查證；其他來源仍維持基本 60 秒。這是等待時間預算，不改變日期、來源健康或 state 寫入門檻，較短的命令列基本預算也不會覆蓋此下限。BNetzA 的純文字 robots 雖被官網標成 HTML，仍依實際規則解析；真正的 HTML／驗證頁繼續阻擋，`/SiteGlobals` 也仍禁止存取。首頁採用不會降至 HTTP 的已驗證 HTTPS 入口。
 
-BMI 近期新聞使用[官方 RSS](https://www.bmi.bund.de/DE/service/rss-newsfeed/function/rssnewsfeed-pressemitteilungen.xml)，不再存取 robots 禁止的搜尋表單。設定 `feed_archive_fallback: true` 時，feed 失敗、沒有文章、缺乏日期，或查詢起日早於 feed 最舊日期，仍會查允許的新聞列表；ComReg 保留既有較早期間回查行為。列表回查不保證完整歷史覆蓋，未設定歷史分頁的來源不能因此宣稱已找齊較早期間新聞。此旗標與時間預算變更都會改變來源 fingerprint，重新累積該設定的健康觀察。
+BMI 近期新聞使用[官方 RSS](https://www.bmi.bund.de/DE/service/rss-newsfeed/function/rssnewsfeed-pressemitteilungen.xml)。設定 `feed_archive_fallback: true` 時，feed 失敗、沒有文章、缺乏日期，或查詢起日早於 feed 最舊日期，仍會查允許的新聞列表。列表回查不保證完整歷史覆蓋，未設定歷史分頁的來源不能因此宣稱已找齊較早期間新聞。此旗標與時間預算變更都會改變來源 fingerprint，重新累積該設定的健康觀察。
+
+ANSSI 先查機關新聞列表首頁，取不到文章時才使用 [CERT-FR 資安動態公告 RSS](https://www.cert.cyber.gouv.fr/flux-rss)，來源摘要會標為 `fallback-feed`。備援只涵蓋 CERT-FR 動態公告，ANSSI 機關新聞的歷史分頁不在此備援範圍內。
 
 新增正式來源應依序完成：
 
@@ -347,7 +351,7 @@ uv run pip-audit
 既有專案 `.venv` 可直接執行 `scripts/check`，不依賴 shell 的 `uv` PATH；`scripts/live-audit`
 會在 `/tmp` 以正式品質門檻執行 rolling 14 天全量驗收，且固定使用 `--health-write never`。
 
-測試採本地 RSS／HTML fixtures，不依賴即時網站；目前 52 個排程來源各保存實際官方 URL、來源入口、擷取日與 SHA-256 合約，並保存可執行的精簡 parser fixture。新增候選來源仍需逐一完成同等驗證，通過前不加入排程。議題輔助回歸集包含 240 筆獨立官方英、法、德項目，每種語言 80 筆，並區分 dev 與 locked test、hard negative 及 provenance；目前全部標示為 `assisted`，尚未完成具名人工覆核，因此不宣稱為人工 gold set。回歸門檻為整體 precision、recall 均至少 0.90，每個主題 recall 至少 0.75。翻譯另有 60 筆英、法、德審核資料，驗證繁體中文輸出與必要法制／資安術語；新語言仍須另做人工覆核。CI 會在 Python 3.11、3.12、3.13 執行，要求至少 92% 覆蓋率、Ruff、mypy strict、`pip-audit`、`uv.lock` 一致性及 wheel／sdist 安裝測試；每週工作的必要來源由同一次完整抓取結果檢查。
+測試採本地 RSS／HTML fixtures，不依賴即時網站；目前 51 個排程來源各保存實際官方 URL、來源入口、擷取日與 SHA-256 合約，並保存可執行的精簡 parser fixture。新增候選來源仍需逐一完成同等驗證，通過前不加入排程。議題輔助回歸集包含 240 筆獨立官方英、法、德項目，每種語言 80 筆，並區分 dev 與 locked test、hard negative 及 provenance；目前全部標示為 `assisted`，尚未完成具名人工覆核，因此不宣稱為人工 gold set。回歸門檻為整體 precision、recall 均至少 0.90，每個主題 recall 至少 0.75。翻譯另有 60 筆英、法、德審核資料，驗證繁體中文輸出與必要法制／資安術語；新語言仍須另做人工覆核。CI 會在 Python 3.11、3.12、3.13 執行，要求至少 92% 覆蓋率、Ruff、mypy strict、`pip-audit`、`uv.lock` 一致性及 wheel／sdist 安裝測試；每週工作的必要來源由同一次完整抓取結果檢查。
 
 ## 已知限制
 

@@ -16,7 +16,8 @@ def test_all_27_rosters_and_only_verified_new_runnable_sources():
     assert report["status"] == "complete"
     assert report["country_count"] == 27
     baseline = set(json.loads((ROOT / "tests/fixtures/v170_source_ids.json").read_text())["source_ids"])
-    removed = {row['source_id'] for row in json.loads((ROOT / 'source_exclusions/manifest.json').read_text())['exclusions']}
+    exclusions = json.loads((ROOT / "source_exclusions/manifest.json").read_text())
+    removed = {row["source_id"] for row in exclusions["exclusions"] + exclusions["subsequent_exclusions"]}
     assert len(baseline) == 145 and baseline <= registry.source_ids | removed
     assert not registry.source_ids & removed
     additions = registry.source_ids - baseline
